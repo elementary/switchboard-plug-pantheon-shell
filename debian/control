@@ -1,0 +1,23 @@
+Source: switchboard-plug-desktop-effects
+Section: x11
+Priority: optional
+Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), cmake, libpantheon-dev, gconf-2.0, granite
+Standards-Version: 3.9.2
+Homepage: https://launchpad.net/pantheon-plugs
+
+Package: switchboard-plug-desktop-effects
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Enhances: switchboard
+Description: Change compiz settings
+    Switchboard plug allowing you to change some compiz settings
+
+Package: switchboard-plug-desktop-effects-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: switchboard-plug-desktop-effects (= ${binary:Version}), ${misc:Depends}
+Enhances: switchboard-plug-desktop-effects
+Description: Change compiz settings (debugging symbols)
+    This package contains debugging symbols for switchboard-plug-template.
