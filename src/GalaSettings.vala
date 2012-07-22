@@ -15,6 +15,10 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // 
 
+/*
+taken from gala code
+*/
+
 const string SCHEMA = "org.pantheon.desktop.gala";
 
 public class BehaviorSettings : Granite.Services.Settings
@@ -85,18 +89,6 @@ public class ShadowSettings : Granite.Services.Settings
 		
 		return instance;
 	}
-	/*
-	public Meta.ShadowParams get_shadowparams (string class_name)
-	{
-		string[] val;
-		get (class_name, out val);
-		
-		if (val == null || int.parse (val[0]) < 1)
-			return Meta.ShadowParams () {radius = 1, top_fade = 0, x_offset = 0, y_offset = 0, opacity = 0};
-		
-		return Meta.ShadowParams () {radius = int.parse (val[0]), top_fade = int.parse (val[1]), 
-			x_offset = int.parse (val[2]), y_offset = int.parse (val[3]), opacity = (uint8)int.parse (val[4])};
-	}*/
 }
 
 public class AnimationSettings : Granite.Services.Settings
@@ -104,6 +96,7 @@ public class AnimationSettings : Granite.Services.Settings
 	public bool enable_animations { get; set; }
 	public int open_duration { get; set; }
 	public int snap_duration { get; set; }
+	public int minimize_duration { get; set; }
 	public int close_duration { get; set; }
 	public int workspace_switch_duration { get; set; }
 	

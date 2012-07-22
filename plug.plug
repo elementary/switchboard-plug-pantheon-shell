@@ -1,4 +1,4 @@
-[gala-effects.plug]
+[@PLUGNAME@.plug]
 exec=@PLUGNAME@
 icon=@PLUGICON@
 title=@PLUGTITLE@

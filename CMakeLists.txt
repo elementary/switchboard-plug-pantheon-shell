@@ -7,14 +7,14 @@ cmake_policy (VERSION 2.6)
 # Set the Properties of your Plug
 
 # Set the Name of the plug, should be an executable command, lowercase, no spaces 
-set (PLUGNAME "gala-effects")
+set (PLUGNAME "desktop")
 # Set the Category of the Plug, one of:
 # personal, hardware, network, system
 set (PLUGCATEGORY "personal")
 # Set the Title to use for the Plug in the Overview and in the Titlebar
-set (PLUGTITLE "Effects")
+set (PLUGTITLE "Desktop")
 # The symbolic name of the Icon to use for the plug
-set (PLUGICON "preferences-desktop-effects")
+set (PLUGICON "preferences-desktop-wallpaper")
 
 project (${PLUGNAME})
 
