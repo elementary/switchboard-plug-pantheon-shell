@@ -18,6 +18,7 @@ vala_precompile (VALA_C
     GalaSettings.vala
     PlankSettings.vala
     Wallpaper.vala
+    SlingshotSettings.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     pantheon
