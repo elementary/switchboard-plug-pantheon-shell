@@ -51,7 +51,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 	public GalaPlug ()
 	{
 		
-		var notebook = new Granite.Widgets.StaticNotebook ();
+		var notebook = new Granite.Widgets.StaticNotebook (false);
 		notebook.margin = 12;
 		
 		/*dock*/
@@ -193,8 +193,34 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		
 		/*hot corners*/
 		var hotc_grid = new Gtk.Grid ();
-		hotc_grid.column_homogeneous = true;
 		hotc_grid.column_spacing = 12;
+		hotc_grid.margin = 26;
+		hotc_grid.margin_top = 12;
+		
+		var expl = new LLabel (_("Select the actions to be executed when your mouse enters a screen corner."));
+		expl.margin_bottom = 10;
+		
+		var topleft = create_hotcorner ();
+		topleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topleft").to_string ();
+		topleft.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-topleft", int.parse (topleft.active_id)));
+		var topright = create_hotcorner ();
+		topright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topright").to_string ();
+		topright.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-topright", int.parse (topright.active_id)));
+		var bottomleft = create_hotcorner ();
+		bottomleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topright").to_string ();
+		bottomleft.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-bottomleft", int.parse (bottomleft.active_id)));
+		var bottomright = create_hotcorner ();
+		bottomright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomright").to_string ();
+		bottomright.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-bottomright", int.parse (bottomright.active_id)));
+		
+		var icon = new Gtk.Image.from_pixbuf (Gtk.IconTheme.get_default ().load_icon ("display", 256, 0));
+		
+		hotc_grid.attach (expl, 0, 0, 3, 1);
+		hotc_grid.attach (icon, 1, 2, 1, 1);
+		hotc_grid.attach (topleft, 0, 1, 1, 1);
+		hotc_grid.attach (topright, 2, 1, 1, 1);
+		hotc_grid.attach (bottomleft, 0, 3, 1, 1);
+		hotc_grid.attach (bottomright, 2, 3, 1, 1);
 		
 		notebook.append_page (hotc_grid, new Gtk.Label (_("Hot Corners")));
 		
@@ -248,6 +274,23 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		
 		
 		add (notebook);
+	}
+	
+	Gtk.ComboBoxText create_hotcorner ()
+	{
+		var box = new Gtk.ComboBoxText ();
+		box.append ("0", _("None"));
+		box.append ("1", _("Show Workspace View"));
+		box.append ("2", _("Switch to Left Workspace"));
+		box.append ("3", _("Switch to Right Workspace"));
+		box.append ("4", _("Move Window to Left Workspace"));
+		box.append ("5", _("Move Window to Right Workspace"));
+		box.append ("6", _("Maximize Current Window"));
+		box.append ("7", _("Minimize Current Window"));
+		box.append ("8", _("Close Current Window"));
+		box.append ("9", _("Open Launcher"));
+		
+		return box;
 	}
 	
 	Gtk.Box get_shadow_box (bool focused)
