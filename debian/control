@@ -2,13 +2,17 @@ Source: switchboard-plug-pantheon-shell
 Section: x11
 Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), cmake, libpantheon-dev, libgranite-dev, valac-0.16 | valac (>= 0.16)
+Build-Depends: cmake (>= 2.6),
+               debhelper (>= 7.0.50~),
+               libgranite-dev,
+               libpantheon-dev,
+               valac-0.16 | valac (>= 0.16)
 Standards-Version: 3.9.2
 Homepage: https://launchpad.net/pantheon-plugs
 
 Package: switchboard-plug-pantheon-shell
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, slingshot-launcher, gala
+Depends: gala, slingshot-launcher, ${misc:Depends}, ${shlibs:Depends}
 Recommends: plank
 Enhances: switchboard
 Description: Change compiz settings
