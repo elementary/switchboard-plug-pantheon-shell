@@ -13,7 +13,7 @@
 	dh $@ 
 
 override_dh_strip:
-	dh_strip --dbg-package=switchboard-plug-desktop-effects-dbg
+	dh_strip --dbg-package=switchboard-plug-pantheon-shell-dbg
 
 override_dh_auto_install:
-	dh_auto_install --destdir=debian/switchboard-plug-desktop-effects
+	dh_auto_install --destdir=debian/switchboard-plug-pantheon-shell
