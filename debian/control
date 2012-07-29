@@ -2,7 +2,7 @@ Source: switchboard-plug-pantheon-shell
 Section: x11
 Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), cmake, libpantheon-dev, gconf-2.0, granite
+Build-Depends: debhelper (>= 7.0.50~), cmake, libpantheon-dev, gconf-2.0, libgranite-dev
 Standards-Version: 3.9.2
 Homepage: https://launchpad.net/pantheon-plugs
 
@@ -11,7 +11,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Enhances: switchboard
 Description: Change compiz settings
- Switchboard plug for controlling Pantheon Shell
+ Switchboard plug for controlling Pantheon Shell.
 
 Package: switchboard-plug-pantheon-shell-dbg
 Architecture: any
@@ -20,4 +20,6 @@ Priority: extra
 Depends: switchboard-plug-pantheon-shell (= ${binary:Version}), ${misc:Depends}
 Enhances: switchboard-plug-pantheon-shell
 Description: Change compiz settings (debugging symbols)
- Debugging symbols for Switchboard plug for controlling Pantheon Shell
+ Switchboard plug for controlling Pantheon Shell.
+ .
+ This package contains debugging symbols for switchboard-plug-template.
