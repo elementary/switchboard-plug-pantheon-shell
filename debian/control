@@ -8,7 +8,8 @@ Homepage: https://launchpad.net/pantheon-plugs
 
 Package: switchboard-plug-pantheon-shell
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, slingshot-launcher, gala
+Recommends: plank
 Enhances: switchboard
 Description: Change compiz settings
  Switchboard plug for controlling Pantheon Shell.
