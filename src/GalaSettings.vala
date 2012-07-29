@@ -32,6 +32,8 @@ public class BehaviorSettings : Granite.Services.Settings
 	public int hotcorner_bottomleft { get; set; }
 	public int hotcorner_bottomright { get; set; }
 	
+	public string hotcorner_custom_command { get; set; }
+	
 	static BehaviorSettings? instance = null;
 	
 	private BehaviorSettings ()

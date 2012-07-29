@@ -194,8 +194,8 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		/*hot corners*/
 		var hotc_grid = new Gtk.Grid ();
 		hotc_grid.column_spacing = 12;
-		hotc_grid.margin = 26;
-		hotc_grid.margin_top = 12;
+		hotc_grid.margin = 24;
+		hotc_grid.margin_top = hotc_grid.margin_bottom = 6;
 		
 		var expl = new LLabel (_("Select the actions to be executed when your mouse enters a screen corner."));
 		expl.margin_bottom = 10;
@@ -207,13 +207,21 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		topright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topright").to_string ();
 		topright.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-topright", int.parse (topright.active_id)));
 		var bottomleft = create_hotcorner ();
-		bottomleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topright").to_string ();
+		bottomleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomleft").to_string ();
 		bottomleft.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-bottomleft", int.parse (bottomleft.active_id)));
 		var bottomright = create_hotcorner ();
 		bottomright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomright").to_string ();
 		bottomright.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-bottomright", int.parse (bottomright.active_id)));
 		
 		var icon = new Gtk.Image.from_pixbuf (Gtk.IconTheme.get_default ().load_icon ("display", 256, 0));
+		var custom_command = new Gtk.Entry ();
+		custom_command.text = BehaviorSettings.get_default ().hotcorner_custom_command;
+		custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
+		
+		var cc_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+		cc_box.margin_top = 10;
+		cc_box.pack_start (new LLabel (_("Custom Command:")), false);
+		cc_box.pack_start (custom_command, false);
 		
 		hotc_grid.attach (expl, 0, 0, 3, 1);
 		hotc_grid.attach (icon, 1, 2, 1, 1);
@@ -221,6 +229,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		hotc_grid.attach (topright, 2, 1, 1, 1);
 		hotc_grid.attach (bottomleft, 0, 3, 1, 1);
 		hotc_grid.attach (bottomright, 2, 3, 1, 1);
+		hotc_grid.attach (cc_box, 0, 4, 2, 1);
 		
 		notebook.append_page (hotc_grid, new Gtk.Label (_("Hot Corners")));
 		
@@ -281,14 +290,10 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		var box = new Gtk.ComboBoxText ();
 		box.append ("0", _("None"));
 		box.append ("1", _("Show Workspace View"));
-		box.append ("2", _("Switch to Left Workspace"));
-		box.append ("3", _("Switch to Right Workspace"));
-		box.append ("4", _("Move Window to Left Workspace"));
-		box.append ("5", _("Move Window to Right Workspace"));
-		box.append ("6", _("Maximize Current Window"));
-		box.append ("7", _("Minimize Current Window"));
-		box.append ("8", _("Close Current Window"));
-		box.append ("9", _("Open Launcher"));
+		box.append ("2", _("Maximize Current Window"));
+		box.append ("3", _("Minimize Current Window"));
+		box.append ("4", _("Open Launcher"));
+		box.append ("5", _("Custom Command"));
 		
 		return box;
 	}
