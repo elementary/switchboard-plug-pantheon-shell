@@ -15,7 +15,7 @@ Architecture: any
 Depends: gala, slingshot-launcher, ${misc:Depends}, ${shlibs:Depends}
 Recommends: plank
 Enhances: switchboard
-Description: Change compiz settings
+Description: Change desktop settings
  Switchboard plug for controlling Pantheon Shell.
 
 Package: switchboard-plug-pantheon-shell-dbg
@@ -24,7 +24,7 @@ Section: debug
 Priority: extra
 Depends: switchboard-plug-pantheon-shell (= ${binary:Version}), ${misc:Depends}
 Enhances: switchboard-plug-pantheon-shell
-Description: Change compiz settings (debugging symbols)
+Description: Change desktop settings (debugging symbols)
  Switchboard plug for controlling Pantheon Shell.
  .
  This package contains debugging symbols for switchboard-plug-template.
