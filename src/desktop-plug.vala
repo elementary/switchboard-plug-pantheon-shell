@@ -57,10 +57,23 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		/*dock*/
 		var dock_grid = new Gtk.Grid ();
 		
+		var icon_size_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+		
+		Gtk.Scale icon_size_range = null;
 		var icon_size = new Gtk.SpinButton.with_range (32, 96, 1);
 		icon_size.set_value (PlankSettings.get_default ().icon_size);
-		icon_size.button_release_event.connect (() => {PlankSettings.get_default ().icon_size = (int)icon_size.get_value ();return false;});
+		icon_size.value_changed.connect (() => {
+			PlankSettings.get_default ().icon_size = (int)icon_size.get_value ();
+			icon_size_range.set_value (icon_size.get_value ());
+		});
 		icon_size.halign = Gtk.Align.START;
+		
+		icon_size_range = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 32, 96, 1);
+		icon_size_range.set_value (PlankSettings.get_default ().icon_size);
+		icon_size_range.button_release_event.connect (() => {icon_size.value = icon_size_range.get_value (); return false;});
+		
+		icon_size_box.pack_start (icon_size_range, true);
+		icon_size_box.pack_start (icon_size, false);
 		
 		var hide_mode = new Gtk.ComboBoxText ();
 		hide_mode.append ("0", _("Don't hide"));
@@ -69,21 +82,25 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		hide_mode.append ("3", _("Elementary hide"));
 		hide_mode.active_id = PlankSettings.get_default ().hide_mode.to_string ();
 		hide_mode.changed.connect (() => PlankSettings.get_default ().hide_mode = int.parse (hide_mode.active_id));
+		hide_mode.halign = Gtk.Align.START;
+		hide_mode.width_request = 164;
 		
 		var monitor = new Gtk.ComboBoxText ();
 		for (var i=0;i<Gdk.Screen.get_default ().get_n_monitors ();i ++)
 			monitor.append ((i+1).to_string (), _("Monitor")+" "+(i+1).to_string ());
 		monitor.active_id = (PlankSettings.get_default ().monitor+1).to_string ();
 		monitor.changed.connect (() => PlankSettings.get_default ().monitor = int.parse (monitor.active_id));
+		monitor.halign = Gtk.Align.START;
+		monitor.width_request = 164;
 		
 		dock_grid.column_homogeneous = true;
 		dock_grid.column_spacing = 12;
 		dock_grid.row_spacing = 6;
-		dock_grid.margin = 164;
+		dock_grid.margin = 64;
 		dock_grid.margin_top = 24;
 		
 		dock_grid.attach (new LLabel.right (_("Icon Size:")), 0, 0, 1, 1);
-		dock_grid.attach (icon_size, 1, 0, 1, 1);
+		dock_grid.attach (icon_size_box, 1, 0, 1, 1);
 		dock_grid.attach (new LLabel.right (_("Hide Mode:")), 0, 1, 1, 1);
 		dock_grid.attach (hide_mode, 1, 1, 1, 1);
 		dock_grid.attach (new LLabel.right (_("Monitor")+":"), 0, 2, 1, 1);
