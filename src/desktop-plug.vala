@@ -86,7 +86,8 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		hide_mode.width_request = 164;
 		
 		var monitor = new Gtk.ComboBoxText ();
-		for (var i=0;i<Gdk.Screen.get_default ().get_n_monitors ();i ++)
+		int i;
+		for (i=0;i<Gdk.Screen.get_default ().get_n_monitors ();i ++)
 			monitor.append ((i+1).to_string (), _("Monitor")+" "+(i+1).to_string ());
 		monitor.active_id = (PlankSettings.get_default ().monitor+1).to_string ();
 		monitor.changed.connect (() => PlankSettings.get_default ().monitor = int.parse (monitor.active_id));
@@ -103,8 +104,10 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		dock_grid.attach (icon_size_box, 1, 0, 1, 1);
 		dock_grid.attach (new LLabel.right (_("Hide Mode:")), 0, 1, 1, 1);
 		dock_grid.attach (hide_mode, 1, 1, 1, 1);
-		dock_grid.attach (new LLabel.right (_("Monitor")+":"), 0, 2, 1, 1);
-		dock_grid.attach (monitor, 1, 2, 1, 1);
+		if (i < 1) {
+			dock_grid.attach (new LLabel.right (_("Monitor")+":"), 0, 2, 1, 1);
+			dock_grid.attach (monitor, 1, 2, 1, 1);
+		}
 		
 		notebook.append_page (dock_grid, new Gtk.Label (_("Dock")));
 		
