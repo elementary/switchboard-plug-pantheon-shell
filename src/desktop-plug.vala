@@ -79,7 +79,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		hide_mode.append ("0", _("Don't hide"));
 		hide_mode.append ("1", _("Intelligent hide"));
 		hide_mode.append ("2", _("Auto hide"));
-		hide_mode.append ("3", _("Elementary hide"));
+		hide_mode.append ("3", _("Hide on maximize"));
 		hide_mode.active_id = PlankSettings.get_default ().hide_mode.to_string ();
 		hide_mode.changed.connect (() => PlankSettings.get_default ().hide_mode = int.parse (hide_mode.active_id));
 		hide_mode.halign = Gtk.Align.START;
