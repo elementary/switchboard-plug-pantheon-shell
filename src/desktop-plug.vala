@@ -200,54 +200,6 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		
 		notebook.append_page (hotc_grid, new Gtk.Label (_("Hot Corners")));
 		
-		/*slingshot*/
-		var launch_grid = new Gtk.Grid ();
-		launch_grid.margin = 24;
-		launch_grid.column_homogeneous = true;
-		launch_grid.column_spacing = 12;
-		launch_grid.row_spacing = 6;
-		
-		var icon_size_s = new Gtk.SpinButton.with_range (16, 96, 1);
-		icon_size_s.value = SlingshotSettings.get_default ().icon_size;
-		icon_size_s.value_changed.connect (() => SlingshotSettings.get_default ().icon_size = (int)icon_size_s.value);
-		icon_size_s.halign = Gtk.Align.START;
-		
-		var cols = new Gtk.SpinButton.with_range (1, 20, 1);
-		var rows = new Gtk.SpinButton.with_range (1, 20, 1);
-		var x = new Gtk.Label ("x");
-		cols.halign = Gtk.Align.START;
-		rows.halign = Gtk.Align.START;
-		x.halign = Gtk.Align.START;
-		cols.value = SlingshotSettings.get_default ().columns;
-		cols.value_changed.connect (() => SlingshotSettings.get_default ().columns = (int)cols.value);
-		rows.value = SlingshotSettings.get_default ().rows;
-		rows.value_changed.connect (() => SlingshotSettings.get_default ().rows = (int)rows.value);
-		
-		var grid_size_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-		grid_size_box.pack_start (rows, false);
-		grid_size_box.pack_start (x, false);
-		grid_size_box.pack_start (cols, false);
-		
-		var open_at_mouse = new Gtk.Switch ();
-		open_at_mouse.halign = Gtk.Align.START;
-		open_at_mouse.active = SlingshotSettings.get_default ().open_on_mouse;
-		open_at_mouse.notify["active"].connect (() => SlingshotSettings.get_default ().open_on_mouse = open_at_mouse.active);
-		var category_switch = new Gtk.Switch ();
-		category_switch.halign = Gtk.Align.START;
-		category_switch.active = SlingshotSettings.get_default ().show_category_filter;
-		category_switch.notify["active"].connect (() => SlingshotSettings.get_default ().show_category_filter = category_switch.active);
-		
-		launch_grid.attach (new LLabel.right (_("Icon Grid Size:")), 0, 0, 1, 1);
-		launch_grid.attach (grid_size_box, 1, 0, 1, 1);
-		launch_grid.attach (new LLabel.right (_("Open at Mouse:")), 0, 1, 1, 1);
-		launch_grid.attach (open_at_mouse, 1, 1, 1, 1);
-		launch_grid.attach (new LLabel.right (_("Category Switch:")), 0, 2, 1, 1);
-		launch_grid.attach (category_switch, 1, 2, 1, 1);
-		launch_grid.attach (new LLabel.right (_("Icon Size:")), 0, 3, 1, 1);
-		launch_grid.attach (icon_size_s, 1, 3, 1, 1);
-		
-		notebook.append_page (launch_grid, new Gtk.Label (_("Launcher")));
-		
 		
 		add (notebook);
 	}
