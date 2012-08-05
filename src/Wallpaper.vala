@@ -66,6 +66,9 @@ class Wallpaper : EventBox {
 	
 	Pantheon.Switchboard.Plug plug;
 	
+	//shows that we got or wallpapers together
+	public bool finished;
+	
 	public Wallpaper (Pantheon.Switchboard.Plug _plug) {
 		
 		plug = _plug;
@@ -97,6 +100,7 @@ class Wallpaper : EventBox {
 		wallpaper_view.selection_changed.connect (update_wallpaper);
 		wallpaper_view.get_style_context ().add_class ("wallpaper-view");
 		wallpaper_view.get_style_context ().add_provider (icon_view_style, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+		wallpaper_view.item_padding = 5;
 		
 		TargetEntry e = {"text/uri-list", 0, 0};
 		wallpaper_view.drag_data_received.connect (on_drag_data_received);
@@ -234,7 +238,6 @@ class Wallpaper : EventBox {
 		
 		// Make the progress bar visible, since we're gonna be using it.
 		try {
-			plug.switchboard_controller.progress_bar_set_visible(true);
 			plug.switchboard_controller.progress_bar_set_text("Importing wallpapers from " + WALLPAPER_DIR);
 		} catch (Error e) { warning (e.message); }
 		
@@ -290,6 +293,7 @@ class Wallpaper : EventBox {
 			}
 			// Hide the progress bar since we're done with it.
 			plug.switchboard_controller.progress_bar_set_visible(false);
+			finished = true;
 			
 			folder_combo.set_sensitive (true);
 			

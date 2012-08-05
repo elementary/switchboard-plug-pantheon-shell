@@ -202,6 +202,14 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		
 		
 		add (notebook);
+		
+		notebook.page_changed.connect ((page) => {
+			if (page == 1 && !wallpaper.finished) {
+				switchboard_controller.progress_bar_set_visible (true);
+			} else {
+				switchboard_controller.progress_bar_set_visible (false);
+			}
+		});
 	}
 	
 	Gtk.ComboBoxText create_hotcorner ()
