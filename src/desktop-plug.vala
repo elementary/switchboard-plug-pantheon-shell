@@ -118,6 +118,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		/*appearance*/
 		var app_grid = new Gtk.Grid ();
 		var themes = new Gtk.ComboBoxText ();
+		var ui = new Gtk.ComboBoxText ();
 		
 		app_grid.row_spacing = 6;
 		app_grid.column_spacing = 12;
@@ -137,6 +138,13 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		themes.changed.connect (() => AppearanceSettings.get_default ().theme = themes.active_id );
 		themes.halign = Gtk.Align.START;
 		
+		var ui_scheme = new Settings ("org.gnome.desktop.interface");
+		
+		ui.model = themes.model;
+		ui.halign = Gtk.Align.START;
+		ui.active_id = ui_scheme.get_string ("gtk-theme");
+		ui.changed.connect (() => ui_scheme.set_string ("gtk-theme", ui.active_id) );
+		
 		var shadow_lbl = new LLabel.markup ("<b>"+_("Shadows:")+"</b>");
 		shadow_lbl.width_request = 300;
 		
@@ -149,12 +157,14 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		
 		app_grid.attach (new LLabel.right (_("Window Decoration Theme:")), 0, 0, 1, 1);
 		app_grid.attach (themes, 1, 0, 1, 1);
-		app_grid.attach (shadow_lbl, 0, 1, 1, 1);
-		app_grid.attach (shadow_exp, 1, 2, 1, 1);
-		app_grid.attach (new LLabel.right (_("Normal:")), 0, 3, 1, 1);
-		app_grid.attach (get_shadow_box (true), 1, 3, 1, 1);
-		app_grid.attach (new LLabel.right (_("Unfocused:")), 0, 4, 1, 1);
-		app_grid.attach (get_shadow_box (false), 1, 4, 1, 1);
+		app_grid.attach (new LLabel.right (_("Interface Theme:")), 0, 1, 1, 1);
+		app_grid.attach (ui, 1, 1, 1, 1);
+		app_grid.attach (shadow_lbl, 0, 2, 1, 1);
+		app_grid.attach (shadow_exp, 1, 3, 1, 1);
+		app_grid.attach (new LLabel.right (_("Normal:")), 0, 4, 1, 1);
+		app_grid.attach (get_shadow_box (true), 1, 4, 1, 1);
+		app_grid.attach (new LLabel.right (_("Unfocused:")), 0, 5, 1, 1);
+		app_grid.attach (get_shadow_box (false), 1, 5, 1, 1);
 		
 		notebook.append_page (app_grid, new Gtk.Label (_("Appearance")));
 		
