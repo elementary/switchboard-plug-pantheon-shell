@@ -71,6 +71,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		icon_size_range = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 32, 96, 1);
 		icon_size_range.set_value (PlankSettings.get_default ().icon_size);
 		icon_size_range.button_release_event.connect (() => {icon_size.value = icon_size_range.get_value (); return false;});
+		icon_size_range.draw_value = false;
 		
 		icon_size_box.pack_start (icon_size_range, true);
 		icon_size_box.pack_start (icon_size, false);
@@ -273,6 +274,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		});
 		
 		var reset = new Gtk.Button ();
+		reset.margin_left = 6;
 		reset.add (new Gtk.Image.from_stock (Gtk.Stock.CLEAR, Gtk.IconSize.BUTTON));
 		reset.tooltip_text = _("Reset to default");
 		reset.clicked.connect (() => {
