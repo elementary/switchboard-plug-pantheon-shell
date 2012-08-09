@@ -13,6 +13,7 @@ Homepage: https://launchpad.net/pantheon-plugs
 Package: switchboard-plug-pantheon-shell
 Architecture: any
 Depends: gala, slingshot-launcher, ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: dpkg (>= 1.15.6)
 Recommends: plank
 Enhances: switchboard
 Conflicts: switchboard-plug-wallpaper
@@ -25,6 +26,7 @@ Architecture: any
 Section: debug
 Priority: extra
 Depends: switchboard-plug-pantheon-shell (= ${binary:Version}), ${misc:Depends}
+Pre-Depends: dpkg (>= 1.15.6)
 Enhances: switchboard-plug-pantheon-shell
 Description: Change desktop settings (debugging symbols)
  Switchboard plug for controlling Pantheon Shell.
