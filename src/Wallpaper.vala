@@ -53,8 +53,6 @@ class Wallpaper : EventBox {
 	
 	GLib.Settings settings;
 	
-	private GLib.List<string> dragged = new GLib.List<string> ();
-	
 	ListStore store;
 	GLib.List <TreeIter?> iters = new GLib.List <TreeIter?> ();
 	Gtk.TreeIter selected_plug;
@@ -184,10 +182,7 @@ class Wallpaper : EventBox {
 			this.store.get_iter(out this.selected_plug, item);
 			this.store.get_value(this.selected_plug, 1, out filename);
 			
-			foreach (string f in dragged) {
-				if (f == filename.get_string()) current_wallpaper_path = filename.get_string();
-				else current_wallpaper_path = WALLPAPER_DIR + "/" + filename.get_string();
-			}
+			current_wallpaper_path = filename.get_string();
 			
 			settings.set_string ("picture-uri", "file://" + filename.get_string ());
 		
@@ -213,7 +208,10 @@ class Wallpaper : EventBox {
 		else if (folder_combo.get_active () == 1) {
 			clean_wallpapers ();
 			WALLPAPER_DIR = "/usr/share/backgrounds";
-			load_wallpapers ();
+			load_wallpapers.begin (() => {
+				WALLPAPER_DIR = Environment.get_user_data_dir () + "/backgrounds";
+				load_wallpapers ();
+			});
 		}
 		else if (folder_combo.get_active () == 2) {
 			
@@ -307,18 +305,30 @@ class Wallpaper : EventBox {
 	void on_drag_data_received (Widget widget, Gdk.DragContext ctx, 
 		int x, int y, SelectionData sel, uint information, uint timestamp) {		   
 		if (sel.get_length () > 0){
-			string uri = sel.get_uris ()[0];
-			File file = File.new_for_uri (uri);
-			string filename = file.get_path ();
-			string display_name = Filename.display_basename (filename);
+			File file = File.new_for_uri (sel.get_uris ()[0]);
+			
+			string display_name = Filename.display_basename (file.get_path ());
+			
+			var dest_folder = File.new_for_path (Environment.get_user_data_dir ()+"/backgrounds");
+			var dest = File.new_for_path (Environment.get_user_data_dir ()+"/backgrounds/"+display_name);
+			if (!dest_folder.query_exists ()) {
+				try {
+					dest_folder.make_directory ();
+				} catch (Error e) { warning (e.message); }
+			}
+			
+			try {
+				file.copy (dest, 0);
+			} catch (Error e) { warning (e.message); }
+			
+			string filename = dest.get_path ();
+			
 			string extension = display_name.split(".")[display_name.split(".").length - 1];
 			
 			if (extension != "jpg" && extension != "png" && extension != "jpeg" && extension != "gif") {
 				Gtk.drag_finish (ctx, false, false, timestamp);
 				return;
 			}
-			
-			dragged.append (filename);
 			
 			// Create a thumbnail of the image and load it into the IconView
 			Gdk.Pixbuf image = null;
