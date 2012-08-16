@@ -116,59 +116,6 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		var wallpaper = new Wallpaper (this);
 		notebook.append_page (wallpaper, new Gtk.Label (_("Wallpaper")));
 		
-		/*appearance*/
-		var app_grid = new Gtk.Grid ();
-		var themes = new Gtk.ComboBoxText ();
-		var ui = new Gtk.ComboBoxText ();
-		
-		app_grid.row_spacing = 6;
-		app_grid.column_spacing = 12;
-		app_grid.margin_top = 24;
-		
-		try {
-			var enumerator = File.new_for_path ("/usr/share/themes/").enumerate_children (FileAttribute.STANDARD_NAME, 0);
-			FileInfo file_info;
-			while ((file_info = enumerator.next_file ()) != null) {
-				var name = file_info.get_name ();
-				if (name == "elementary")
-					name = "elementary ("+_("default")+")";
-				themes.append (file_info.get_name (), name);
-			}
-		} catch (Error e) { warning (e.message); }
-		themes.active_id = AppearanceSettings.get_default ().theme;
-		themes.changed.connect (() => AppearanceSettings.get_default ().theme = themes.active_id );
-		themes.halign = Gtk.Align.START;
-		
-		var ui_scheme = new Settings ("org.gnome.desktop.interface");
-		
-		ui.model = themes.model;
-		ui.halign = Gtk.Align.START;
-		ui.active_id = ui_scheme.get_string ("gtk-theme");
-		ui.changed.connect (() => ui_scheme.set_string ("gtk-theme", ui.active_id) );
-		
-		var shadow_lbl = new LLabel.markup ("<b>"+_("Shadows:")+"</b>");
-		shadow_lbl.width_request = 300;
-		
-		var shadow_exp = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-		shadow_exp.homogeneous = true;
-		shadow_exp.pack_start (new LLabel.markup ("<i>"+_("X Offset")+"</i>"));
-		shadow_exp.pack_start (new LLabel.markup ("<i>"+_("Y Offset")+"</i>"));
-		shadow_exp.pack_start (new LLabel.markup ("<i>"+_("Radius")+"</i>"));
-		shadow_exp.pack_start (new LLabel.markup ("<i>"+_("Opacity")+"</i>"));
-		
-		app_grid.attach (new LLabel.right (_("Window Decoration Theme:")), 0, 0, 1, 1);
-		app_grid.attach (themes, 1, 0, 1, 1);
-		app_grid.attach (new LLabel.right (_("Interface Theme:")), 0, 1, 1, 1);
-		app_grid.attach (ui, 1, 1, 1, 1);
-		app_grid.attach (shadow_lbl, 0, 2, 1, 1);
-		app_grid.attach (shadow_exp, 1, 3, 1, 1);
-		app_grid.attach (new LLabel.right (_("Normal:")), 0, 4, 1, 1);
-		app_grid.attach (get_shadow_box (true), 1, 4, 1, 1);
-		app_grid.attach (new LLabel.right (_("Unfocused:")), 0, 5, 1, 1);
-		app_grid.attach (get_shadow_box (false), 1, 5, 1, 1);
-		
-		notebook.append_page (app_grid, new Gtk.Label (_("Appearance")));
-		
 		/*hot corners*/
 		var hotc_grid = new Gtk.Grid ();
 		hotc_grid.column_spacing = 12;
@@ -237,63 +184,6 @@ public class GalaPlug : Pantheon.Switchboard.Plug
 		box.append ("4", _("Open Launcher"));
 		box.append ("6", _("Expose All Windows"));
 		box.append ("5", _("Execute Custom Command"));
-		
-		return box;
-	}
-	
-	Gtk.Box get_shadow_box (bool focused)
-	{
-		var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-		
-		var x = new Gtk.SpinButton.with_range (-200, 200, 1);
-		var y = new Gtk.SpinButton.with_range (-200, 200, 1);
-		var r = new Gtk.SpinButton.with_range (1, 200, 1);
-		var o = new Gtk.SpinButton.with_range (0, 255, 1);
-		
-		var p = (focused)?ShadowSettings.get_default ().normal_focused:ShadowSettings.get_default ().normal_unfocused;
-		
-		x.value = int.parse (p[2]);
-		y.value = int.parse (p[3]);
-		r.value = int.parse (p[0]);
-		o.value = int.parse (p[4]);
-		
-		x.value_changed.connect (() => {
-			p[2] = ((int)x.value).to_string ();
-			(focused)?ShadowSettings.get_default ().normal_focused = p:
-					  ShadowSettings.get_default ().normal_unfocused = p;
-		});
-		y.value_changed.connect (() => {
-			p[3] = ((int)y.value).to_string ();
-			(focused)?ShadowSettings.get_default ().normal_focused = p:
-					  ShadowSettings.get_default ().normal_unfocused = p;
-		});
-		r.value_changed.connect (() => {
-			p[0] = ((int)r.value).to_string ();
-			(focused)?ShadowSettings.get_default ().normal_focused = p:
-					  ShadowSettings.get_default ().normal_unfocused = p;
-		});
-		o.value_changed.connect (() => {
-			p[4] = ((int)o.value).to_string ();
-			(focused)?ShadowSettings.get_default ().normal_focused = p:
-					  ShadowSettings.get_default ().normal_unfocused = p;
-		});
-		
-		var reset = new Gtk.Button ();
-		reset.margin_left = 6;
-		reset.add (new Gtk.Image.from_stock (Gtk.Stock.CLEAR, Gtk.IconSize.BUTTON));
-		reset.tooltip_text = _("Reset to default");
-		reset.clicked.connect (() => {
-			x.value = (focused)?0:0;
-			y.value = (focused)?15:6;
-			o.value = (focused)?220:150;
-			r.value = (focused)?20:8;
-		});
-		
-		box.pack_start (x);
-		box.pack_start (y);
-		box.pack_start (r);
-		box.pack_start (o);
-		box.pack_start (reset);
 		
 		return box;
 	}
