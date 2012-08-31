@@ -246,6 +246,8 @@ class Wallpaper : EventBox {
 		try {
 			// Count the # of wallpapers
 			int count = IOHelper.count_wallpapers(directory);
+			if (count == 0)
+				folder_combo.set_sensitive (true);
 			
 			// Enumerator object that will let us read through the wallpapers asynchronously
 			var e = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME, 0, Priority.DEFAULT);
