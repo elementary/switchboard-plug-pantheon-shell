@@ -1,0 +1,105 @@
+# Swahili translation for maya
+# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# This file is distributed under the same license as the maya package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maya\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-11 21:29+0200\n"
+"PO-Revision-Date: 2012-03-22 00:10+0000\n"
+"Last-Translator: Jkakolwa <Unknown>\n"
+"Language-Team: Swahili <sw@li.org>\n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-03-23 05:05+0000\n"
+"X-Generator: Launchpad (build 14996)\n"
+
+#~ msgid "%H:%M"
+#~ msgstr "%saa:%dakika"
+
+#~ msgid "Add Event"
+#~ msgstr "Ongeza tukio"
+
+#~ msgid "All day:"
+#~ msgstr "Siku yote"
+
+#~ msgid "Comments"
+#~ msgstr "Maoni"
+
+#~ msgid "Create Event"
+#~ msgstr "Tengeneza tukio"
+
+#~ msgid "Create a new event"
+#~ msgstr "Andika tukio jipya"
+
+#~ msgid "Delete the selected event"
+#~ msgstr "Futa hili tukio"
+
+#~ msgid "Edit Event"
+#~ msgstr "Hariri Tukio"
+
+#~ msgid "Edit the selected event"
+#~ msgstr "Hariri hili tukio"
+
+#~ msgid "From:"
+#~ msgstr "Kutoka:"
+
+#~ msgid "Fullscreen"
+#~ msgstr "Skrini-yote"
+
+#~ msgid "Guests"
+#~ msgstr "Mgeni"
+
+#~ msgid "Import..."
+#~ msgstr "Ingiza"
+
+#~ msgid "John Smith OR Example St."
+#~ msgstr "John Smith au mfano St."
+
+#~ msgid "Location"
+#~ msgstr "Mahali"
+
+#~ msgid "Name of Event"
+#~ msgstr "Jina la tukio"
+
+#~ msgid "Name or Email Address"
+#~ msgstr "Jina au Anwani ya barua pepe"
+
+#~ msgid "Search For Events.."
+#~ msgstr "Tafuta matukio"
+
+#~ msgid "Select calendars to display"
+#~ msgstr "Chagua kalenda zionyeshwe"
+
+#~ msgid "Show Week Numbers"
+#~ msgstr "Onesha namba za wiki"
+
+#~ msgid "Sync..."
+#~ msgstr "Sync..."
+
+#~ msgid "To:"
+#~ msgstr "Kwa:"
+
+#~ msgid "Today"
+#~ msgstr "Leo"
+
+#~ msgid ""
+#~ "Your upcoming events will be displayed here when you select a date with "
+#~ "events."
+#~ msgstr ""
+#~ "Matukio yako ya jayo yataoshwa hapa wakati kama utachagua tarehe na "
+#~ "matukio."
+
+#, fuzzy
+#~ msgid "all day"
+#~ msgstr "Siku yote"
+
+#~ msgid "all the day"
+#~ msgstr "Siku nzima"
+
+#~ msgid "at"
+#~ msgstr "katika"

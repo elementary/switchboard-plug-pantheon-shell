@@ -24,7 +24,7 @@ project (${PLUGNAME})
 
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/lib/plugs")
 set (PKGDATADIR "${DATADIR}/pantheon/${PLUGNAME}")
-set (GETTEXT_PACKAGE "${PLUGNAME}")
+set (GETTEXT_PACKAGE "${PLUGNAME}-plug")
 
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 

@@ -105,7 +105,9 @@ class Wallpaper : EventBox {
 		drag_dest_set (wallpaper_view, DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
 		
 		var scrolled = new ScrolledWindow (null, null);
-		scrolled.set_size_request (250, 300);
+		scrolled.set_size_request (250, 250);
+		scrolled.set_margin_left (12);
+		scrolled.set_margin_right (12);
 		scrolled.add (wallpaper_view);
 		
 		vbox.pack_start (scrolled, true, true, 5);
@@ -236,7 +238,7 @@ class Wallpaper : EventBox {
 		
 		// Make the progress bar visible, since we're gonna be using it.
 		try {
-			plug.switchboard_controller.progress_bar_set_text("Importing wallpapers from " + WALLPAPER_DIR);
+			plug.switchboard_controller.progress_bar_set_text(_("Importing wallpapers from %s").printf(WALLPAPER_DIR));
 		} catch (Error e) { warning (e.message); }
 		
 		var directory = File.new_for_path (WALLPAPER_DIR);
@@ -305,7 +307,7 @@ class Wallpaper : EventBox {
 	}
 	
 	void on_drag_data_received (Widget widget, Gdk.DragContext ctx, 
-		int x, int y, SelectionData sel, uint information, uint timestamp) {		   
+		int x, int y, SelectionData sel, uint information, uint timestamp) {
 		if (sel.get_length () > 0){
 			File file = File.new_for_uri (sel.get_uris ()[0]);
 			

@@ -1,0 +1,120 @@
+# Spanish translation for maya
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the maya package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maya\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-11 21:29+0200\n"
+"PO-Revision-Date: 2012-03-31 19:15+0000\n"
+"Last-Translator: Alfredo Hernández <Unknown>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2012-04-01 04:52+0000\n"
+"X-Generator: Launchpad (build 15032)\n"
+
+#~ msgid "%A, %b %d"
+#~ msgstr "%A, %d de %b"
+
+#~ msgid "%B %e, %Y"
+#~ msgstr "%e de %B del %Y"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgid "%l:%M %p"
+#~ msgstr "%l:%M %p"
+
+#~ msgid "Add Event"
+#~ msgstr "Añadir evento"
+
+#~ msgid "All day:"
+#~ msgstr "Todo el día:"
+
+#~ msgid "Comments"
+#~ msgstr "Comentarios"
+
+#~ msgid "Create Event"
+#~ msgstr "Crear evento"
+
+#~ msgid "Create a new event"
+#~ msgstr "Crear un evento nuevo"
+
+#~ msgid "Delete the selected event"
+#~ msgstr "Eliminar el evento seleccionado"
+
+#~ msgid "Edit Event"
+#~ msgstr "Editar evento"
+
+#~ msgid "Edit the selected event"
+#~ msgstr "Editar el evento seleccionado"
+
+#~ msgid "Export or Share the default Calendar"
+#~ msgstr "Exportar o compartir el calendario predeterminado"
+
+#~ msgid "From:"
+#~ msgstr "Desde:"
+
+#~ msgid "Fullscreen"
+#~ msgstr "Pantalla completa"
+
+#~ msgid "Guests"
+#~ msgstr "Invitados"
+
+#~ msgid "Import..."
+#~ msgstr "Importar..."
+
+#~ msgid "John Smith OR Example St."
+#~ msgstr "John Smith o Calle Ejemplo"
+
+#~ msgid "Location"
+#~ msgstr "Ubicación"
+
+#~ msgid "Name of Event"
+#~ msgstr "Nombre del evento"
+
+#~ msgid "Name or Email Address"
+#~ msgstr "Nombre o dirección de correo electrónico"
+
+#~ msgid "Search For Events.."
+#~ msgstr "Buscar eventos..."
+
+#~ msgid "Select calendars to display"
+#~ msgstr "Seleccionar los calendarios a mostrar"
+
+#~ msgid "Show Week Numbers"
+#~ msgstr "Mostrar los números de las semanas"
+
+#~ msgid "Sync..."
+#~ msgstr "Sincronizar..."
+
+#~ msgid "Title"
+#~ msgstr "Título"
+
+#~ msgid "To:"
+#~ msgstr "Hasta:"
+
+#~ msgid "Today"
+#~ msgstr "Hoy"
+
+#~ msgid ""
+#~ "Your upcoming events will be displayed here when you select a date with "
+#~ "events."
+#~ msgstr ""
+#~ "Sus próximos eventos se mostrarán aquí cuando seleccione una fecha con "
+#~ "eventos."
+
+#, fuzzy
+#~ msgid "all day"
+#~ msgstr "Todo el día:"
+
+#~ msgid "all the day"
+#~ msgstr "todo el día"
+
+#~ msgid "at"
+#~ msgstr "en"
