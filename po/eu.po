@@ -7,114 +7,140 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-11 21:29+0200\n"
-"PO-Revision-Date: 2012-04-06 19:25+0000\n"
-"Last-Translator: Eneko Sarasola <Unknown>\n"
+"POT-Creation-Date: 2012-10-26 17:39+0200\n"
+"PO-Revision-Date: 2012-10-26 19:35+0000\n"
+"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
 "Language-Team: Basque <eu@li.org>\n"
-"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-07 05:06+0000\n"
-"X-Generator: Launchpad (build 15060)\n"
+"X-Launchpad-Export-Date: 2012-10-27 05:29+0000\n"
+"X-Generator: Launchpad (build 16194)\n"
+"Language: eu\n"
 
-#~ msgid "%A, %b %d"
-#~ msgstr "%A, %b %d"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:116
+msgid "Pictures folder"
+msgstr "Irudiak karpeta"
 
-#~ msgid "%B %e, %Y"
-#~ msgstr "%Y %B %e"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:117
+msgid "Backgrounds folder"
+msgstr "Atzeko planoak karpeta"
 
-#~ msgid "%H:%M"
-#~ msgstr "%H:%M"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:118
+msgid "Custom folder"
+msgstr "Karpeta pertsonalizatua"
 
-#~ msgid "%l:%M %p"
-#~ msgstr "%I:%M %p"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:123
+msgid "None"
+msgstr "Bat ere ez"
 
-#~ msgid "Add Event"
-#~ msgstr "Ekitaldia gehitu"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:124
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
+msgid "Wallpaper"
+msgstr "Horma-papera"
 
-#~ msgid "All day:"
-#~ msgstr "Egun osoa:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:125
+msgid "Centered"
+msgstr "Erdiratua"
 
-#~ msgid "Comments"
-#~ msgstr "Iruzkinak"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:126
+msgid "Scaled"
+msgstr "Eskalatua"
 
-#~ msgid "Create Event"
-#~ msgstr "Ekitaldia Sortu"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:127
+msgid "Stretched"
+msgstr "Luzatua"
 
-#~ msgid "Create a new event"
-#~ msgstr "Ekitaldi berri bat sortu"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:128
+msgid "Zoom"
+msgstr "Zooma"
 
-#~ msgid "Delete the selected event"
-#~ msgstr "Aukeratutako ekitaldia ezabatu"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:220
+msgid "Select a folder"
+msgstr "Hautatu karpeta bat"
 
-#~ msgid "Edit Event"
-#~ msgstr "Ekitaldia Aldatu"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:241
+#, c-format
+msgid "Importing wallpapers from %s"
+msgstr ""
 
-#~ msgid "Edit the selected event"
-#~ msgstr "Aukeratutako ekitaldia aldatu"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
+msgid "Don't hide"
+msgstr "Ez ezkutatu"
 
-#~ msgid "Export or Share the default Calendar"
-#~ msgstr "Esportatu edo Partekatu  Egutegi lehenetsia"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:84
+msgid "Intelligent hide"
+msgstr "Ezkutatze adimentsua"
 
-#~ msgid "From:"
-#~ msgstr "Nondik:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:85
+msgid "Auto hide"
+msgstr "Ezkutatu automatikoki"
 
-#~ msgid "Fullscreen"
-#~ msgstr "Pantaila osoa"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:86
+msgid "Hide on maximize"
+msgstr "Ezkutatu maximizatzean"
 
-#~ msgid "Guests"
-#~ msgstr "Gonbidatuak"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:95
+#, c-format
+msgid "Monitor %d"
+msgstr ""
 
-#~ msgid "Import..."
-#~ msgstr "Inportatu..."
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:102
+msgid "Icon Size:"
+msgstr "Ikonoaren tamaina:"
 
-#~ msgid "John Smith OR Example St."
-#~ msgstr "John Smith edo Adibide kalea"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:105
+msgid "Hide Mode:"
+msgstr "Ezkutatzeko modua:"
 
-#~ msgid "Location"
-#~ msgstr "Kokapena"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:108
+msgid "Monitor:"
+msgstr ""
 
-#~ msgid "Name of Event"
-#~ msgstr "Ekitaldiaren Izena"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:116
+msgid "Dock"
+msgstr "Atrakatu"
 
-#~ msgid "Name or Email Address"
-#~ msgstr "Izena edo Email-helbidea"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:124
+msgid "When the cursor enters the corner of the display:"
+msgstr "Kurtsorea pantailaren ertzean sartzean:"
 
-#~ msgid "Search For Events.."
-#~ msgstr "Ekitaldiak Bilatu..."
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:153
+msgid "Custom Command:"
+msgstr "Komando pertsonalizatua:"
 
-#~ msgid "Select calendars to display"
-#~ msgstr "Hautatu bistaratuko diren egutegiak"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:165
+msgid "Hot Corners"
+msgstr "Izkina beroak"
 
-#~ msgid "Show Week Numbers"
-#~ msgstr "Erakutsi asteen zenbakiak"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:182
+msgid "Do Nothing"
+msgstr "Ez egin ezer"
 
-#~ msgid "Sync..."
-#~ msgstr "Sinkronizatu..."
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:183
+msgid "Show Workspace View"
+msgstr "Erakutsi 'laneko areak' ikuspegia"
 
-#~ msgid "Title"
-#~ msgstr "Izenburua"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:184
+msgid "Maximize Current Window"
+msgstr "Maximizatu uneko leihoa"
 
-#~ msgid "To:"
-#~ msgstr "Noiz arte:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:185
+msgid "Minimize Current Window"
+msgstr "Minimizatu uneko leihoa"
 
-#~ msgid "Today"
-#~ msgstr "Gaur"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:186
+msgid "Open Launcher"
+msgstr "Ireki abiarazlea"
 
-#~ msgid ""
-#~ "Your upcoming events will be displayed here when you select a date with "
-#~ "events."
-#~ msgstr ""
-#~ "Zure hurrengo gertakizunak hemen erakutsiko dira data bat aukeratzen "
-#~ "duzunean."
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:187
+msgid "Expose All Windows"
+msgstr "Erakutsi leiho guztiak"
 
-#, fuzzy
-#~ msgid "all day"
-#~ msgstr "Egun osoa:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:188
+msgid "Execute Custom Command"
+msgstr "Exekutatu komando pertsonalizatua"
 
-#~ msgid "all the day"
-#~ msgstr "egun osoa"
-
-#~ msgid "at"
-#~ msgstr "nondik:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:207
+msgid "Desktop"
+msgstr ""

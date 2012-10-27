@@ -7,114 +7,140 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-11 21:29+0200\n"
-"PO-Revision-Date: 2012-03-31 19:15+0000\n"
-"Last-Translator: Alfredo Hernández <Unknown>\n"
+"POT-Creation-Date: 2012-10-26 17:39+0200\n"
+"PO-Revision-Date: 2012-10-26 19:36+0000\n"
+"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
 "Language-Team: Spanish <es@li.org>\n"
-"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-04-01 04:52+0000\n"
-"X-Generator: Launchpad (build 15032)\n"
+"X-Launchpad-Export-Date: 2012-10-27 05:29+0000\n"
+"X-Generator: Launchpad (build 16194)\n"
+"Language: es\n"
 
-#~ msgid "%A, %b %d"
-#~ msgstr "%A, %d de %b"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:116
+msgid "Pictures folder"
+msgstr "Carpeta de imágenes"
 
-#~ msgid "%B %e, %Y"
-#~ msgstr "%e de %B del %Y"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:117
+msgid "Backgrounds folder"
+msgstr "Carpeta de fondos de pantalla"
 
-#~ msgid "%H:%M"
-#~ msgstr "%H:%M"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:118
+msgid "Custom folder"
+msgstr "Carpeta personalizada"
 
-#~ msgid "%l:%M %p"
-#~ msgstr "%l:%M %p"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:123
+msgid "None"
+msgstr "Ninguno"
 
-#~ msgid "Add Event"
-#~ msgstr "Añadir evento"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:124
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
+msgid "Wallpaper"
+msgstr "Fondo de pantalla"
 
-#~ msgid "All day:"
-#~ msgstr "Todo el día:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:125
+msgid "Centered"
+msgstr "Centrado"
 
-#~ msgid "Comments"
-#~ msgstr "Comentarios"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:126
+msgid "Scaled"
+msgstr "Escalado"
 
-#~ msgid "Create Event"
-#~ msgstr "Crear evento"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:127
+msgid "Stretched"
+msgstr "Estirado"
 
-#~ msgid "Create a new event"
-#~ msgstr "Crear un evento nuevo"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:128
+msgid "Zoom"
+msgstr "Ampliado"
 
-#~ msgid "Delete the selected event"
-#~ msgstr "Eliminar el evento seleccionado"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:220
+msgid "Select a folder"
+msgstr "Seleccione una carpeta"
 
-#~ msgid "Edit Event"
-#~ msgstr "Editar evento"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:241
+#, c-format
+msgid "Importing wallpapers from %s"
+msgstr ""
 
-#~ msgid "Edit the selected event"
-#~ msgstr "Editar el evento seleccionado"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
+msgid "Don't hide"
+msgstr "No ocultar"
 
-#~ msgid "Export or Share the default Calendar"
-#~ msgstr "Exportar o compartir el calendario predeterminado"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:84
+msgid "Intelligent hide"
+msgstr "Ocultación inteligente"
 
-#~ msgid "From:"
-#~ msgstr "Desde:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:85
+msgid "Auto hide"
+msgstr "Ocultar automáticamente"
 
-#~ msgid "Fullscreen"
-#~ msgstr "Pantalla completa"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:86
+msgid "Hide on maximize"
+msgstr "Ocultar al maximizar"
 
-#~ msgid "Guests"
-#~ msgstr "Invitados"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:95
+#, c-format
+msgid "Monitor %d"
+msgstr ""
 
-#~ msgid "Import..."
-#~ msgstr "Importar..."
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:102
+msgid "Icon Size:"
+msgstr "Tamaño de los iconos:"
 
-#~ msgid "John Smith OR Example St."
-#~ msgstr "John Smith o Calle Ejemplo"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:105
+msgid "Hide Mode:"
+msgstr "Modo de ocultación"
 
-#~ msgid "Location"
-#~ msgstr "Ubicación"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:108
+msgid "Monitor:"
+msgstr ""
 
-#~ msgid "Name of Event"
-#~ msgstr "Nombre del evento"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:116
+msgid "Dock"
+msgstr "Dock"
 
-#~ msgid "Name or Email Address"
-#~ msgstr "Nombre o dirección de correo electrónico"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:124
+msgid "When the cursor enters the corner of the display:"
+msgstr "Cuando el cursor entre a una esquina de la pantalla:"
 
-#~ msgid "Search For Events.."
-#~ msgstr "Buscar eventos..."
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:153
+msgid "Custom Command:"
+msgstr "Orden personalizada:"
 
-#~ msgid "Select calendars to display"
-#~ msgstr "Seleccionar los calendarios a mostrar"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:165
+msgid "Hot Corners"
+msgstr "Esquinas activas"
 
-#~ msgid "Show Week Numbers"
-#~ msgstr "Mostrar los números de las semanas"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:182
+msgid "Do Nothing"
+msgstr "No hacer nada"
 
-#~ msgid "Sync..."
-#~ msgstr "Sincronizar..."
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:183
+msgid "Show Workspace View"
+msgstr "Mostrar espacios de trabajo"
 
-#~ msgid "Title"
-#~ msgstr "Título"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:184
+msgid "Maximize Current Window"
+msgstr "Maximizar la ventana actual"
 
-#~ msgid "To:"
-#~ msgstr "Hasta:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:185
+msgid "Minimize Current Window"
+msgstr "Minimizar la ventana actual"
 
-#~ msgid "Today"
-#~ msgstr "Hoy"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:186
+msgid "Open Launcher"
+msgstr "Abrir lanzador"
 
-#~ msgid ""
-#~ "Your upcoming events will be displayed here when you select a date with "
-#~ "events."
-#~ msgstr ""
-#~ "Sus próximos eventos se mostrarán aquí cuando seleccione una fecha con "
-#~ "eventos."
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:187
+msgid "Expose All Windows"
+msgstr "Mostrar todas las ventanas"
 
-#, fuzzy
-#~ msgid "all day"
-#~ msgstr "Todo el día:"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:188
+msgid "Execute Custom Command"
+msgstr "Ejecutar orden personalizada"
 
-#~ msgid "all the day"
-#~ msgstr "todo el día"
-
-#~ msgid "at"
-#~ msgstr "en"
+#: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:207
+msgid "Desktop"
+msgstr ""
