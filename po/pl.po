@@ -8,27 +8,27 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 17:39+0200\n"
-"PO-Revision-Date: 2012-10-27 11:59+0000\n"
-"Last-Translator: Adrian Widerski <Unknown>\n"
+"PO-Revision-Date: 2012-11-01 16:10+0000\n"
+"Last-Translator: Piotr Sokół <Unknown>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-10-28 05:03+0000\n"
-"X-Generator: Launchpad (build 16194)\n"
+"X-Launchpad-Export-Date: 2012-11-02 05:35+0000\n"
+"X-Generator: Launchpad (build 16218)\n"
 "Language: pl\n"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:116
 msgid "Pictures folder"
-msgstr "Katalog zdjęć"
+msgstr "Katalog obrazów"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:117
 msgid "Backgrounds folder"
-msgstr "Tapety systemowe"
+msgstr "Katalog teł pulpitu"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:118
 msgid "Custom folder"
-msgstr "Dowolny folder"
+msgstr "Własny katalog"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:123
 msgid "None"
@@ -37,44 +37,44 @@ msgstr "Brak"
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:124
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
 msgid "Wallpaper"
-msgstr "Tapeta"
+msgstr "Tło pulpitu"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:125
 msgid "Centered"
-msgstr "Wyśrodkuj"
+msgstr "Wyśrodkowanie"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:126
 msgid "Scaled"
-msgstr "Skaluj"
+msgstr "Przeskalowanie"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:127
 msgid "Stretched"
-msgstr "Rozciągnij"
+msgstr "Rozciągnięcie"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:128
 msgid "Zoom"
-msgstr "Przybliż"
+msgstr "Przybliżenie"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:220
 msgid "Select a folder"
-msgstr "Wybierz folder"
+msgstr "Wybór katalogu"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:241
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr "Importowanie tapet z %s"
+msgstr "Importowanie teł pulpitu z %s"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
-msgstr "Nie ukrywaj"
+msgstr "Brak"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
-msgstr "Ukryj inteligentnie"
+msgstr "Inteligentnie"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
-msgstr "Ukryj automatycznie"
+msgstr "Automatycznie"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
@@ -83,7 +83,7 @@ msgstr "Ukryj, gdy okno zajmuje pełen ekran"
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:95
 #, c-format
 msgid "Monitor %d"
-msgstr "Monitor %d"
+msgstr "Ekran %d"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:102
 msgid "Icon Size:"
@@ -95,7 +95,7 @@ msgstr "Sposób ukrywania:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:108
 msgid "Monitor:"
-msgstr "Monitor:"
+msgstr "Ekran:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:116
 msgid "Dock"
@@ -119,27 +119,27 @@ msgstr "Nic nie rób"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:183
 msgid "Show Workspace View"
-msgstr "Pokaż podgląd pulpitów"
+msgstr "Wyświetlenie obszarów roboczych"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:184
 msgid "Maximize Current Window"
-msgstr "Zmaksymalizuj aktywne okno"
+msgstr "Zmaksymalizowanie bieżącego okna"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:185
 msgid "Minimize Current Window"
-msgstr "Zminimalizuj aktywne okno"
+msgstr "Zminimalizowanie bieżącego okna"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:186
 msgid "Open Launcher"
-msgstr "Otwórz menu systemowe"
+msgstr "Wyświetlenie panelu uruchamiania"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:187
 msgid "Expose All Windows"
-msgstr "Prezentuj okna"
+msgstr "Wyświetlenie wszystkich okien"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:188
 msgid "Execute Custom Command"
-msgstr "Uwzględnij własne polecenie"
+msgstr "Wykonanie zdefiniowanego polecenia"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:207
 msgid "Desktop"
