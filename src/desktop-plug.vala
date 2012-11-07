@@ -109,10 +109,6 @@ public class GalaPlug : Pantheon.Switchboard.Plug
             dock_grid.attach (monitor, 2, 2, 2, 1);
         }
         
-        var fake_label = new Gtk.Label ("");
-        fake_label.set_hexpand (true);
-        dock_grid.attach (fake_label, 0, 0, 1, 1);
-        
         notebook.append_page (dock_grid, new Gtk.Label (_("Dock")));
         
         /*hot corners*/
