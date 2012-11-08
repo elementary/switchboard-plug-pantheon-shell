@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 17:39+0200\n"
-"PO-Revision-Date: 2012-10-30 20:38+0000\n"
-"Last-Translator: Alexander Wilms <Unknown>\n"
+"PO-Revision-Date: 2012-11-07 17:20+0000\n"
+"Last-Translator: Eduard Gotwig <eduardgotwig@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-10-31 05:29+0000\n"
-"X-Generator: Launchpad (build 16218)\n"
+"X-Launchpad-Export-Date: 2012-11-08 05:19+0000\n"
+"X-Generator: Launchpad (build 16232)\n"
 "Language: de\n"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:116
@@ -24,11 +24,11 @@ msgstr "Bilderordner"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:117
 msgid "Backgrounds folder"
-msgstr "Hintergründe"
+msgstr "System Ordner"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:118
 msgid "Custom folder"
-msgstr "Aus Ordner laden"
+msgstr "Anderer Ordner..."
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:123
 msgid "None"
@@ -37,7 +37,7 @@ msgstr "Kein Hintergrundbild"
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:124
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
 msgid "Wallpaper"
-msgstr "Angepasst"
+msgstr "Hintergrund"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:125
 msgid "Centered"
