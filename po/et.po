@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-10-26 17:39+0200\n"
-"PO-Revision-Date: 2012-11-13 14:52+0000\n"
+"PO-Revision-Date: 2012-11-14 20:36+0000\n"
 "Last-Translator: Kristjan Vool <Unknown>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-14 05:08+0000\n"
-"X-Generator: Launchpad (build 16251)\n"
+"X-Launchpad-Export-Date: 2012-11-15 05:18+0000\n"
+"X-Generator: Launchpad (build 16265)\n"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:116
 msgid "Pictures folder"
@@ -27,7 +27,7 @@ msgstr "Taustapiltide kaust"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:118
 msgid "Custom folder"
-msgstr "Kohandatud kaust"
+msgstr "Elementary kaust"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:123
 msgid "None"
@@ -40,11 +40,11 @@ msgstr "Taustapilt"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:125
 msgid "Centered"
-msgstr "Keskjoondatud"
+msgstr "Täidetud"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:126
 msgid "Scaled"
-msgstr "Skaleeritud"
+msgstr "Sobitatud"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:127
 msgid "Stretched"
@@ -56,90 +56,90 @@ msgstr "Suurendatud"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:220
 msgid "Select a folder"
-msgstr "Kausta valimine"
+msgstr "Kohandatud kausta valimine"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:241
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr ""
+msgstr "Taustapiltide hankimine asukohast %s"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
-msgstr ""
+msgstr "Puudub"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
-msgstr ""
+msgstr "Akna ettejäämisel"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
-msgstr ""
+msgstr "Automaatselt"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
-msgstr ""
+msgstr "Akna maksimeerimisel"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:95
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "Monitor %d"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:102
 msgid "Icon Size:"
-msgstr ""
+msgstr "Ikooni suurus:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:105
 msgid "Hide Mode:"
-msgstr ""
+msgstr "Dokki peitmine:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:108
 msgid "Monitor:"
-msgstr ""
+msgstr "Monitor:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:116
 msgid "Dock"
-msgstr ""
+msgstr "Dokk"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:124
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "Kursori liigutamisel ekraani nurka:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:153
 msgid "Custom Command:"
-msgstr ""
+msgstr "Kohandatud käsk:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:165
 msgid "Hot Corners"
-msgstr ""
+msgstr "Abistavad nurgad"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:182
 msgid "Do Nothing"
-msgstr ""
+msgstr "Ei tehta midagi"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:183
 msgid "Show Workspace View"
-msgstr ""
+msgstr "Näidatakse tööalasid"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:184
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "Maksimeeritakse aken"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:185
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "Minimeeritakse aken"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:186
 msgid "Open Launcher"
-msgstr ""
+msgstr "Avatakse rakenduste menüü"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:187
 msgid "Expose All Windows"
-msgstr ""
+msgstr "Näidatakse kõiki aknaid"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:188
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "Käivitatakse kohandatud käsk"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:207
 msgid "Desktop"
-msgstr ""
+msgstr "Töölaud"
