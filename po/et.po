@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-10-26 17:39+0200\n"
-"PO-Revision-Date: 2012-11-14 20:36+0000\n"
+"PO-Revision-Date: 2012-11-15 06:50+0000\n"
 "Last-Translator: Kristjan Vool <Unknown>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-15 05:18+0000\n"
-"X-Generator: Launchpad (build 16265)\n"
+"X-Launchpad-Export-Date: 2012-11-16 05:01+0000\n"
+"X-Generator: Launchpad (build 16272)\n"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:116
 msgid "Pictures folder"
@@ -23,11 +23,11 @@ msgstr "Piltide kaust"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:117
 msgid "Backgrounds folder"
-msgstr "Taustapiltide kaust"
+msgstr "Elementary kaust"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:118
 msgid "Custom folder"
-msgstr "Elementary kaust"
+msgstr "Kohandatud kaust"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:123
 msgid "None"
@@ -90,7 +90,7 @@ msgstr "Ikooni suurus:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:105
 msgid "Hide Mode:"
-msgstr "Dokki peitmine:"
+msgstr "Doki peitmine:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:108
 msgid "Monitor:"
@@ -130,7 +130,7 @@ msgstr "Minimeeritakse aken"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:186
 msgid "Open Launcher"
-msgstr "Avatakse rakenduste menüü"
+msgstr "Avatakse rakenduste käivitaja"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:187
 msgid "Expose All Windows"

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-10-26 17:39+0200\n"
-"PO-Revision-Date: 2012-10-26 19:35+0000\n"
-"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
+"PO-Revision-Date: 2012-11-15 21:10+0000\n"
+"Last-Translator: Ibai Oihanguren <Unknown>\n"
 "Language-Team: Basque <eu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-10-27 05:29+0000\n"
-"X-Generator: Launchpad (build 16194)\n"
+"X-Launchpad-Export-Date: 2012-11-16 05:01+0000\n"
+"X-Generator: Launchpad (build 16272)\n"
 "Language: eu\n"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:116
@@ -62,7 +62,7 @@ msgstr "Hautatu karpeta bat"
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:241
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr ""
+msgstr "Horma-paperak inportatzen %s(e)tik"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
@@ -83,7 +83,7 @@ msgstr "Ezkutatu maximizatzean"
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:95
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "%d monitorea"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:102
 msgid "Icon Size:"
@@ -95,11 +95,11 @@ msgstr "Ezkutatzeko modua:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:108
 msgid "Monitor:"
-msgstr ""
+msgstr "Monitorea:"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:116
 msgid "Dock"
-msgstr "Atrakatu"
+msgstr "Atrakea"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:124
 msgid "When the cursor enters the corner of the display:"
@@ -143,4 +143,4 @@ msgstr "Exekutatu komando pertsonalizatua"
 
 #: /home/noelco/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:207
 msgid "Desktop"
-msgstr ""
+msgstr "Mahaigaina"
