@@ -104,7 +104,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         dock_grid.attach (icon_size, 3, 0, 1, 1);
         dock_grid.attach (new LLabel.right (_("Hide Mode:")), 0, 1, 2, 1);
         dock_grid.attach (hide_mode, 2, 1, 2, 1);
-        if (i < 1) {
+        if (i > 1) {
             dock_grid.attach (new LLabel.right (_("Monitor:")), 0, 2, 2, 1);
             dock_grid.attach (monitor, 2, 2, 2, 1);
         }
