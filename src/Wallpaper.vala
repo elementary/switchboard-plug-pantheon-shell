@@ -99,6 +99,12 @@ class Wallpaper : EventBox {
 		wallpaper_view.get_style_context ().add_class ("wallpaper-view");
 		wallpaper_view.get_style_context ().add_provider (icon_view_style, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 		wallpaper_view.item_padding = 5;
+
+		wallpaper_view.size_allocate.connect ( () => {
+			int width = wallpaper_view.get_allocated_width ();
+			int columns = (int) GLib.Math.floor(width/130);
+			wallpaper_view.set_columns (columns);
+		});
 		
 		TargetEntry e = {"text/uri-list", 0, 0};
 		wallpaper_view.drag_data_received.connect (on_drag_data_received);
