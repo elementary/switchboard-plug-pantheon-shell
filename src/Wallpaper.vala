@@ -126,6 +126,7 @@ class Wallpaper : EventBox {
 		combo.append ("scaled", _("Scaled"));
 		combo.append ("stretched", _("Stretched"));
 		combo.append ("zoom", _("Zoom"));
+		combo.append ("spanned", _("Spanned"));
 		combo.changed.connect (update_mode);
 		
 		color = new ColorButton ();
