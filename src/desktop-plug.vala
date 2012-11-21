@@ -90,9 +90,10 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         hide_mode.width_request = 164;
         
         var monitor = new Gtk.ComboBoxText ();
+        monitor.append ("-1", _("Primary Monitor"));
         int i = 0;
         for (i = 0; i < Gdk.Screen.get_default ().get_n_monitors () ; i ++) {
-            monitor.append ( (i+1).to_string (), _("Monitor %d").printf (i+1) );
+            monitor.append ( (i).to_string (), _("Monitor %d").printf (i+1) );
         }
         monitor.active_id = ( PlankSettings.get_default ().monitor +1 ).to_string ();
         monitor.changed.connect (() => PlankSettings.get_default ().monitor = int.parse (monitor.active_id));
