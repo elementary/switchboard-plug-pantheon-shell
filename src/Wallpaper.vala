@@ -7,14 +7,28 @@ stolen from old wallpaper plug
 // Helper class for the file IO functions we'll need
 // Not needed at all, but helpful for organization
 public class IOHelper : GLib.Object {
-	
+
 	// Check if the filename has a picture file extension.
-	public static bool is_valid_file_type (string fname) {
+	public static bool is_valid_file_type (GLib.FileInfo file_info) {
 		
-		// Cache a lowe-cased copy of the file name
-		string fname_down = fname.down();
-		// Short-circuit if it's not a picture file extension
-		return (fname_down.has_suffix(".png") || fname_down.has_suffix(".jpeg") || fname_down.has_suffix(".jpg") || fname_down.has_suffix(".gif"));
+		// Check for correct file type, don't try to load directories and such
+		if (file_info.get_file_type () != GLib.FileType.REGULAR)
+			return false;
+
+		// Now check if it is an accepted content type
+		string[] accepted_types = {
+			"image/jpeg",
+			"image/png",
+			"image/tiff",
+			"image/gif"
+		};
+
+		foreach (var type in accepted_types) {
+			if (GLib.ContentType.equals (file_info.get_content_type (), type))
+				return true;
+		}
+
+		return false;
 	}
 
 	// Quickly count up all of the valid wallpapers in the wallpaper folder.
@@ -24,11 +38,11 @@ public class IOHelper : GLib.Object {
 		int count = 0;
 		try {
 			// Get an enumerator for all of the plain old files in the wallpaper folder.
-			var enumerator = wallpaper_folder.enumerate_children(FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE, 0);
+			var enumerator = wallpaper_folder.enumerate_children(FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
 			// While there's still files left to count
 			while ((file_info = enumerator.next_file ()) != null) {
 				// If it's a picture file
-				if (file_info.get_file_type() == GLib.FileType.REGULAR && is_valid_file_type(file_info.get_name())) {
+				if (is_valid_file_type(file_info)) {
 					count++;
 				}
 			}
@@ -253,7 +267,7 @@ class Wallpaper : EventBox {
 				folder_combo.set_sensitive (true);
 			
 			// Enumerator object that will let us read through the wallpapers asynchronously
-			var e = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME, 0, Priority.DEFAULT);
+			var e = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0, Priority.DEFAULT);
 			
 			while (true) {
 				// Grab a batch of 10 wallpapers
@@ -267,7 +281,7 @@ class Wallpaper : EventBox {
 					// We're going to add another wallpaper
 					done++;
 					// Skip the file if it's not a picture
-					if (!IOHelper.is_valid_file_type(info.get_name())) {
+					if (!IOHelper.is_valid_file_type(info)) {
 						continue;
 					}
 					string filename = WALLPAPER_DIR + "/" + info.get_name ();
