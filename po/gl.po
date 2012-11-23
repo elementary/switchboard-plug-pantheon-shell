@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-11-21 16:48+0100\n"
-"PO-Revision-Date: 2012-11-03 06:57+0000\n"
+"PO-Revision-Date: 2012-11-22 13:40+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-22 05:29+0000\n"
+"X-Launchpad-Export-Date: 2012-11-23 05:27+0000\n"
 "X-Generator: Launchpad (build 16293)\n"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:59
@@ -40,7 +40,7 @@ msgstr "Agochar ao maximizar"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "Monitor primario"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:96
 #, c-format
@@ -97,7 +97,7 @@ msgstr "Abrir o iniciador"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:184
 msgid "Expose Windows"
-msgstr ""
+msgstr "Expoñer as xanelas"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:185
 msgid "Expose All Windows"
@@ -145,7 +145,7 @@ msgstr "Ampliación"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:129
 msgid "Spanned"
-msgstr ""
+msgstr "Expandido"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:221
 msgid "Select a folder"
