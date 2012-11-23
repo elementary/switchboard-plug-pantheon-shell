@@ -9,12 +9,19 @@ stolen from old wallpaper plug
 public class IOHelper : GLib.Object {
 	
 	// Check if the filename has a picture file extension.
-	public static bool is_valid_file_type (string fname) {
+	public static bool is_valid_file_type (GLib.FileInfo file_info) {
 		
-		// Cache a lowe-cased copy of the file name
-		string fname_down = fname.down();
-		// Short-circuit if it's not a picture file extension
-		return (fname_down.has_suffix(".png") || fname_down.has_suffix(".jpeg") || fname_down.has_suffix(".jpg") || fname_down.has_suffix(".gif"));
+		// Check for correct file type, don't try to load directories and such
+		if (file_info.get_file_type () != GLib.FileType.REGULAR)
+			return false;
+
+		// Now check if it is an accepted content type
+		string file_name = file_info.get_name ().down ();
+
+		return (file_name.has_suffix(".png") || 
+			    file_name.has_suffix(".jpeg") || 
+			    file_name.has_suffix(".jpg") || 
+			    file_name.has_suffix(".gif"));
 	}
 
 	// Quickly count up all of the valid wallpapers in the wallpaper folder.
@@ -28,7 +35,7 @@ public class IOHelper : GLib.Object {
 			// While there's still files left to count
 			while ((file_info = enumerator.next_file ()) != null) {
 				// If it's a picture file
-				if (file_info.get_file_type() == GLib.FileType.REGULAR && is_valid_file_type(file_info.get_name())) {
+				if (is_valid_file_type(file_info)) {
 					count++;
 				}
 			}
@@ -267,7 +274,7 @@ class Wallpaper : EventBox {
 					// We're going to add another wallpaper
 					done++;
 					// Skip the file if it's not a picture
-					if (!IOHelper.is_valid_file_type(info.get_name())) {
+					if (!IOHelper.is_valid_file_type(info)) {
 						continue;
 					}
 					string filename = WALLPAPER_DIR + "/" + info.get_name ();
