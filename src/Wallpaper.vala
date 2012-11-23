@@ -7,7 +7,7 @@ stolen from old wallpaper plug
 // Helper class for the file IO functions we'll need
 // Not needed at all, but helpful for organization
 public class IOHelper : GLib.Object {
-	
+
 	// Check if the filename has a picture file extension.
 	public static bool is_valid_file_type (GLib.FileInfo file_info) {
 		
@@ -16,12 +16,19 @@ public class IOHelper : GLib.Object {
 			return false;
 
 		// Now check if it is an accepted content type
-		string file_name = file_info.get_name ().down ();
+		string[] accepted_types = {
+			"image/jpeg",
+			"image/png",
+			"image/tiff",
+			"image/gif"
+		};
 
-		return (file_name.has_suffix(".png") || 
-			    file_name.has_suffix(".jpeg") || 
-			    file_name.has_suffix(".jpg") || 
-			    file_name.has_suffix(".gif"));
+		foreach (var type in accepted_types) {
+			if (GLib.ContentType.equals (file_info.get_content_type (), type))
+				return true;
+		}
+
+		return false;
 	}
 
 	// Quickly count up all of the valid wallpapers in the wallpaper folder.
@@ -31,7 +38,7 @@ public class IOHelper : GLib.Object {
 		int count = 0;
 		try {
 			// Get an enumerator for all of the plain old files in the wallpaper folder.
-			var enumerator = wallpaper_folder.enumerate_children(FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE, 0);
+			var enumerator = wallpaper_folder.enumerate_children(FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
 			// While there's still files left to count
 			while ((file_info = enumerator.next_file ()) != null) {
 				// If it's a picture file
@@ -260,7 +267,7 @@ class Wallpaper : EventBox {
 				folder_combo.set_sensitive (true);
 			
 			// Enumerator object that will let us read through the wallpapers asynchronously
-			var e = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME, 0, Priority.DEFAULT);
+			var e = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0, Priority.DEFAULT);
 			
 			while (true) {
 				// Grab a batch of 10 wallpapers
