@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-11-21 16:48+0100\n"
-"PO-Revision-Date: 2012-11-16 05:11+0000\n"
+"PO-Revision-Date: 2012-11-23 23:05+0000\n"
 "Last-Translator: abuyop <Unknown>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-22 05:29+0000\n"
+"X-Launchpad-Export-Date: 2012-11-24 07:44+0000\n"
 "X-Generator: Launchpad (build 16293)\n"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:59
@@ -28,7 +28,7 @@ msgstr "Jangan sembunyi"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
-msgstr ""
+msgstr "Sembunyi pintar"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
@@ -36,16 +36,16 @@ msgstr "Sembunyi sendiri"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
-msgstr ""
+msgstr "Sembunyi bila dimaksimumkan"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "Monitor Utama"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "Monitor %d"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
@@ -53,7 +53,7 @@ msgstr "Saiz Ikon:"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:106
 msgid "Hide Mode:"
-msgstr ""
+msgstr "Mod Sembunyi:"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:109
 msgid "Monitor:"
@@ -65,7 +65,7 @@ msgstr "Labuh"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:121
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "Bila kursor memasuki bucu paparan:"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:150
 msgid "Custom Command:"
@@ -73,7 +73,7 @@ msgstr "Perintah Suai:"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:162
 msgid "Hot Corners"
-msgstr ""
+msgstr "Bucu Panas"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:179
 msgid "Do Nothing"
@@ -81,35 +81,35 @@ msgstr "Jangan Buat Apa-apa"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:180
 msgid "Show Workspace View"
-msgstr ""
+msgstr "Papar Paparan Ruang Kerja"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "Maksimuman Tetingkap Semasa"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:182
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "Minimumkan Tetingkap Semasa"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:183
 msgid "Open Launcher"
-msgstr ""
+msgstr "Buka Pelancar"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:184
 msgid "Expose Windows"
-msgstr ""
+msgstr "Dedah Tetingkap"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:185
 msgid "Expose All Windows"
-msgstr ""
+msgstr "Dedah Semua Tetingkap"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "Lakukan Perintah Suai"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:205
 msgid "Desktop"
-msgstr ""
+msgstr "Desktop"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:116
 msgid "Pictures folder"
@@ -145,7 +145,7 @@ msgstr "Zum"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:129
 msgid "Spanned"
-msgstr ""
+msgstr "Diretang"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:221
 msgid "Select a folder"
@@ -154,4 +154,4 @@ msgstr "Pilih folder"
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:242
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr ""
+msgstr "Mengimport kertas dinding dari %s"

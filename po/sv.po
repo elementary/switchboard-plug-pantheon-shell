@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-21 16:48+0100\n"
-"PO-Revision-Date: 2012-11-21 17:17+0000\n"
-"Last-Translator: KlavKalashj <Unknown>\n"
+"PO-Revision-Date: 2012-11-23 10:09+0000\n"
+"Last-Translator: Jon Persson <Unknown>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-22 05:29+0000\n"
+"X-Launchpad-Export-Date: 2012-11-24 07:44+0000\n"
 "X-Generator: Launchpad (build 16293)\n"
 "Language: sv\n"
 
@@ -41,12 +41,12 @@ msgstr "Dölj vid maximerat"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "Standardskärm"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "Bildskärm %d"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
@@ -54,7 +54,7 @@ msgstr "Ikonstorlek:"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:106
 msgid "Hide Mode:"
-msgstr ""
+msgstr "Sätt att dölja:"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:109
 msgid "Monitor:"
@@ -82,7 +82,7 @@ msgstr "Gör inget"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:180
 msgid "Show Workspace View"
-msgstr ""
+msgstr "Visa arbetsyta"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
