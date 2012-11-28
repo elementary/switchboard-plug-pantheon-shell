@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-21 16:48+0100\n"
-"PO-Revision-Date: 2012-11-20 14:56+0000\n"
+"PO-Revision-Date: 2012-11-27 16:46+0000\n"
 "Last-Translator: Bence Lukács <Unknown>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-22 05:29+0000\n"
-"X-Generator: Launchpad (build 16293)\n"
+"X-Launchpad-Export-Date: 2012-11-28 05:20+0000\n"
+"X-Generator: Launchpad (build 16309)\n"
 "Language: hu\n"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:59
@@ -37,11 +37,11 @@ msgstr "Automatikus elrejtés"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
-msgstr ""
+msgstr "Elrejtés teljes méret esetén"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "Elsődleges monitor"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:96
 #, c-format
@@ -82,7 +82,7 @@ msgstr "Ne tegyen semmit"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:180
 msgid "Show Workspace View"
-msgstr ""
+msgstr "Munkaasztalnézet mutatása"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
@@ -98,11 +98,11 @@ msgstr "Indító megnyitása"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:184
 msgid "Expose Windows"
-msgstr ""
+msgstr "Ablakok szétterítése"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:185
 msgid "Expose All Windows"
-msgstr ""
+msgstr "Minden ablak szétterítése"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
@@ -146,7 +146,7 @@ msgstr "Nagyítás"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:129
 msgid "Spanned"
-msgstr ""
+msgstr "Kiterjesztett"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:221
 msgid "Select a folder"
