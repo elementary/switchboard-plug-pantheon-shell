@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-21 16:48+0100\n"
-"PO-Revision-Date: 2012-11-01 12:14+0000\n"
+"PO-Revision-Date: 2012-12-01 07:33+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-22 05:29+0000\n"
-"X-Generator: Launchpad (build 16293)\n"
+"X-Launchpad-Export-Date: 2012-12-02 05:08+0000\n"
+"X-Generator: Launchpad (build 16319)\n"
 "Language: \n"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:59
@@ -41,7 +41,7 @@ msgstr "最大化時隱藏"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "主螢幕"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:96
 #, c-format
@@ -98,7 +98,7 @@ msgstr "開啟啟動器"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:184
 msgid "Expose Windows"
-msgstr ""
+msgstr "揭展視窗"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:185
 msgid "Expose All Windows"
@@ -146,7 +146,7 @@ msgstr "遠近"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:129
 msgid "Spanned"
-msgstr ""
+msgstr "橫跨"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:221
 msgid "Select a folder"
