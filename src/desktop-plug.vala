@@ -95,7 +95,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         for (i = 0; i < Gdk.Screen.get_default ().get_n_monitors () ; i ++) {
             monitor.append ( (i).to_string (), _("Monitor %d").printf (i+1) );
         }
-        monitor.active_id = ( PlankSettings.get_default ().monitor +1 ).to_string ();
+        monitor.active_id = PlankSettings.get_default ().monitor.to_string ();
         monitor.changed.connect (() => PlankSettings.get_default ().monitor = int.parse (monitor.active_id));
         monitor.halign = Gtk.Align.START;
         monitor.width_request = 164;
