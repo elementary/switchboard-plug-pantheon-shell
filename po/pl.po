@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-11-21 16:48+0100\n"
-"PO-Revision-Date: 2012-11-28 15:00+0000\n"
-"Last-Translator: Adrian Widerski <Unknown>\n"
+"PO-Revision-Date: 2012-12-08 08:26+0000\n"
+"Last-Translator: Piotr Sokół <Unknown>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-29 05:36+0000\n"
-"X-Generator: Launchpad (build 16319)\n"
+"X-Launchpad-Export-Date: 2012-12-09 05:10+0000\n"
+"X-Generator: Launchpad (build 16341)\n"
 "Language: pl\n"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:59
@@ -94,15 +94,15 @@ msgstr "Zminimalizowanie bieżącego okna"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:183
 msgid "Open Launcher"
-msgstr "Otwarcie menu aplikacji"
+msgstr "Wyświetlenie menu programów"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:184
 msgid "Expose Windows"
-msgstr "Prezentacja okien"
+msgstr "Wyświetlenie podglądu okien"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:185
 msgid "Expose All Windows"
-msgstr "Prezentacja wszystkich okien"
+msgstr "Wyświetlenie podglądu wszystkich okien"
 
 #: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
