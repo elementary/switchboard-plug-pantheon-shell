@@ -7,152 +7,152 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-21 16:48+0100\n"
+"POT-Creation-Date: 2012-12-14 23:31-0600\n"
 "PO-Revision-Date: 2012-11-24 11:32+0000\n"
 "Last-Translator: Jaap Broekhuizen <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-25 07:02+0000\n"
-"X-Generator: Launchpad (build 16293)\n"
+"X-Launchpad-Export-Date: 2012-12-16 05:25+0000\n"
+"X-Generator: Launchpad (build 16372)\n"
 "Language: nl\n"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:59
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:124
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:59
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:144
 msgid "Wallpaper"
 msgstr "Achtergrondafbeelding"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:83
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
 msgstr "Niet verbergen"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:84
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
 msgstr "Intelligent verbergen"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:85
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
 msgstr "Automatisch verbergen"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:86
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
 msgstr "Verbergen bij maximaliseren"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:93
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
 msgstr "Primaire monitor"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:96
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
 msgstr "Beeldscherm %d"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:103
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
 msgstr "Pictogramgrootte:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:106
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:106
 msgid "Hide Mode:"
 msgstr "Verbergmodus:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:109
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:109
 msgid "Monitor:"
 msgstr "Beeldscherm:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:113
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:113
 msgid "Dock"
 msgstr "Dock"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:121
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:121
 msgid "When the cursor enters the corner of the display:"
 msgstr "Als de muisaanwijzer de hoek van het scherm bereikt:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:150
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:150
 msgid "Custom Command:"
 msgstr "Aangepast commando:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:162
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:162
 msgid "Hot Corners"
 msgstr "Actieve hoeken"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:179
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:179
 msgid "Do Nothing"
 msgstr "Niets doen"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:180
-msgid "Show Workspace View"
-msgstr "Werkbladoverzicht tonen"
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:180
+msgid "Workspace Overview"
+msgstr ""
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:181
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
 msgstr "Huidig venster maximaliseren"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:182
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:182
 msgid "Minimize Current Window"
 msgstr "Huidig venster minimaliseren"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:183
-msgid "Open Launcher"
-msgstr "Toepassingenstarter tonen"
-
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:184
-msgid "Expose Windows"
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:183
+msgid "Show Apps"
 msgstr ""
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:185
-msgid "Expose All Windows"
-msgstr "Vensteroverzicht tonen"
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:184
+msgid "Window Overview"
+msgstr ""
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:186
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:185
+msgid "Show All Windows"
+msgstr ""
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
 msgstr "Aangepast commando uitvoeren"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:205
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:205
 msgid "Desktop"
 msgstr "Bureaublad"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:116
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:136
 msgid "Pictures folder"
 msgstr "Afbeeldingenmap"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:117
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:137
 msgid "Backgrounds folder"
 msgstr "Achtergrondenmap"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:118
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:138
 msgid "Custom folder"
 msgstr "Zelf gekozen map"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:123
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "None"
 msgstr "Geen"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:125
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:145
 msgid "Centered"
 msgstr "Gecentreerd"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:126
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:146
 msgid "Scaled"
 msgstr "Geschaald"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:127
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:147
 msgid "Stretched"
 msgstr "Uitgerekt"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:128
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Zoom"
 msgstr "Vergroten"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:129
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Spanned"
 msgstr "Omspannen"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:221
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:241
 msgid "Select a folder"
 msgstr "Kies een map"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:242
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:262
 #, c-format
 msgid "Importing wallpapers from %s"
 msgstr "Importeer achtergronden van %s"

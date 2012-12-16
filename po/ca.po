@@ -7,152 +7,152 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-21 16:48+0100\n"
+"POT-Creation-Date: 2012-12-14 23:31-0600\n"
 "PO-Revision-Date: 2012-11-27 22:40+0000\n"
 "Last-Translator: Alfredo Hernández <Unknown>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-11-28 05:20+0000\n"
-"X-Generator: Launchpad (build 16309)\n"
+"X-Launchpad-Export-Date: 2012-12-16 05:25+0000\n"
+"X-Generator: Launchpad (build 16372)\n"
 "Language: ca\n"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:59
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:124
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:59
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:144
 msgid "Wallpaper"
 msgstr "Fons d'escriptori"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:83
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
 msgstr "No l'amagis"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:84
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
 msgstr "Ocultació intel·ligent"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:85
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
 msgstr "Oculta automàticament"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:86
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
 msgstr "Oculta en maximitzar"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:93
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
 msgstr "Monitor principal"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:96
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:103
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
 msgstr "Mida de les icones:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:106
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:106
 msgid "Hide Mode:"
 msgstr "Mode d'ocultació:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:109
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:109
 msgid "Monitor:"
 msgstr "Monitor:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:113
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:113
 msgid "Dock"
 msgstr "Acoblador"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:121
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:121
 msgid "When the cursor enters the corner of the display:"
 msgstr "Quan el cursor toqui una cantonada de la pantalla:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:150
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:150
 msgid "Custom Command:"
 msgstr "Ordre personalitzada:"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:162
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:162
 msgid "Hot Corners"
 msgstr "Cantonades actives"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:179
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:179
 msgid "Do Nothing"
 msgstr "No facis res"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:180
-msgid "Show Workspace View"
-msgstr "Mostra els espais de treball"
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:180
+msgid "Workspace Overview"
+msgstr ""
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:181
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
 msgstr "Maximitza la finestra actual"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:182
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:182
 msgid "Minimize Current Window"
 msgstr "Minimitza la finestra actual"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:183
-msgid "Open Launcher"
-msgstr "Obre un executador"
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:183
+msgid "Show Apps"
+msgstr ""
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:184
-msgid "Expose Windows"
-msgstr "Exposa les finestres"
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:184
+msgid "Window Overview"
+msgstr ""
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:185
-msgid "Expose All Windows"
-msgstr "Mostra totes les finestres"
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:185
+msgid "Show All Windows"
+msgstr ""
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:186
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
 msgstr "Executa una ordre personalitzada"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//desktop-plug.vala:205
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:205
 msgid "Desktop"
 msgstr "Escriptori"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:116
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:136
 msgid "Pictures folder"
 msgstr "Carpeta d'imatges"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:117
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:137
 msgid "Backgrounds folder"
 msgstr "Carpeta de fons d'escriptori"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:118
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:138
 msgid "Custom folder"
 msgstr "Carpeta personalitzada"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:123
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "None"
 msgstr "Cap"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:125
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:145
 msgid "Centered"
 msgstr "Centrat"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:126
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:146
 msgid "Scaled"
 msgstr "Escalat"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:127
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:147
 msgid "Stretched"
 msgstr "Estirat"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:128
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Zoom"
 msgstr "Ampliat"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:129
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Spanned"
 msgstr "Distribuït"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:221
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:241
 msgid "Select a folder"
 msgstr "Seleccioneu una carpeta"
 
-#: /home/jaapz/Programmeren/Elementary/fix-1062850/po/../src//Wallpaper.vala:242
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:262
 #, c-format
 msgid "Importing wallpapers from %s"
 msgstr "S'estan important fons d'escriptori de %s..."
