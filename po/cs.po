@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-14 23:31-0600\n"
-"PO-Revision-Date: 2012-12-22 22:28+0000\n"
-"Last-Translator: Mirek2 <Unknown>\n"
+"PO-Revision-Date: 2012-12-23 09:52+0000\n"
+"Last-Translator: Marek Suchánek <suchm@seznam.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-12-23 05:06+0000\n"
+"X-Launchpad-Export-Date: 2012-12-24 05:08+0000\n"
 "X-Generator: Launchpad (build 16378)\n"
 "Language: cs\n"
 
@@ -66,7 +66,7 @@ msgstr "Lišta aplikací"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:121
 msgid "When the cursor enters the corner of the display:"
-msgstr "Pokud se kurzor dostane do rohu obrazovky:"
+msgstr "Když se kurzor dotkne rohu obrazovky:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:150
 msgid "Custom Command:"
