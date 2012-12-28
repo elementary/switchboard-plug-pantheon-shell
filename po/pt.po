@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-14 23:31-0600\n"
-"PO-Revision-Date: 2012-11-15 10:19+0000\n"
+"PO-Revision-Date: 2012-12-27 11:54+0000\n"
 "Last-Translator: Sérgio Marques <Unknown>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-12-16 05:25+0000\n"
-"X-Generator: Launchpad (build 16372)\n"
+"X-Launchpad-Export-Date: 2012-12-28 05:34+0000\n"
+"X-Generator: Launchpad (build 16378)\n"
 "Language: pt\n"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:59
@@ -29,7 +29,7 @@ msgstr "Não ocultar"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
-msgstr "ocultação inteligente"
+msgstr "Ocultação inteligente"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
@@ -41,12 +41,12 @@ msgstr "Ocultar ao maximizar"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "Monitor principal"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
-msgstr "Ecrã %d"
+msgstr "Monitor %d"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
@@ -74,7 +74,7 @@ msgstr "Comando personalizado:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:162
 msgid "Hot Corners"
-msgstr "Cantos ativos:"
+msgstr "Cantos ativos"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:179
 msgid "Do Nothing"
@@ -82,7 +82,7 @@ msgstr "Nada fazer"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:180
 msgid "Workspace Overview"
-msgstr ""
+msgstr "Visão geral da área de trabalho"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
@@ -94,15 +94,15 @@ msgstr "Minimizar janela atual"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:183
 msgid "Show Apps"
-msgstr ""
+msgstr "Mostrar aplicações"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:184
 msgid "Window Overview"
-msgstr ""
+msgstr "Visão geral da janela"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:185
 msgid "Show All Windows"
-msgstr ""
+msgstr "Mostrar todas as janelas"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
@@ -114,19 +114,19 @@ msgstr "Área de trabalho"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:136
 msgid "Pictures folder"
-msgstr "Pasta de imagens"
+msgstr "Diretório de imagens"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:137
 msgid "Backgrounds folder"
-msgstr "Pasta de fundos"
+msgstr "Diretório de fundos"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:138
 msgid "Custom folder"
-msgstr "Pasta personalizada"
+msgstr "Diretório personalizado"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "None"
-msgstr "Nenhuma"
+msgstr "Nenhum"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:145
 msgid "Centered"
@@ -146,13 +146,13 @@ msgstr "Ampliar"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Spanned"
-msgstr ""
+msgstr "Expandido"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:241
 msgid "Select a folder"
-msgstr "Escolha uma pasta"
+msgstr "Escolha um diretório"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:262
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr "Importar fundos de %s"
+msgstr "Importar papel de parede de %s"
