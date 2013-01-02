@@ -1,158 +1,158 @@
 # Persian translation for maya
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
 # This file is distributed under the same license as the maya package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+# Mohammad Zali <mohamadzali@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-14 23:31-0600\n"
-"PO-Revision-Date: 2012-10-26 19:35+0000\n"
-"Last-Translator: DaashAli <ali.sarchami@gmail.com>\n"
+"PO-Revision-Date: 2013-01-01 16:31+0000\n"
+"Last-Translator: Mohammad Zali <mohamadzali@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-12-16 05:25+0000\n"
-"X-Generator: Launchpad (build 16372)\n"
+"X-Launchpad-Export-Date: 2013-01-02 05:11+0000\n"
+"X-Generator: Launchpad (build 16378)\n"
 "Language: fa\n"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:59
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:144
 msgid "Wallpaper"
-msgstr ""
+msgstr "کاغذدیواری"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
-msgstr ""
+msgstr "پنهان نشود"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
-msgstr ""
+msgstr "پنهان شدن هوشمند"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
-msgstr ""
+msgstr "پنهان شدن خودکار"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
-msgstr ""
+msgstr "پس از بیشینه شدن پنهان شود"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "نمایشگر اصلی"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "نمایشگر %d"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
-msgstr ""
+msgstr "اندازه شمایل:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:106
 msgid "Hide Mode:"
-msgstr ""
+msgstr "حالت پنهان شدن:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:109
 msgid "Monitor:"
-msgstr ""
+msgstr "نمایشگر:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:113
 msgid "Dock"
-msgstr ""
+msgstr "طاقچه"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:121
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "هنگام ورود مکان‌نمای موس به گوشه‌های صفحه نمایش:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:150
 msgid "Custom Command:"
-msgstr ""
+msgstr "فرمان سفارشی:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:162
 msgid "Hot Corners"
-msgstr ""
+msgstr "گوشه‌های داغ"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:179
 msgid "Do Nothing"
-msgstr ""
+msgstr "هیچ کاری انجام نشود"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:180
 msgid "Workspace Overview"
-msgstr ""
+msgstr "پیش‌نمایش محیط کاری"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "بیشینه کردن پنجره کنونی"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:182
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "کمینه کردن پنجره کنونی"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:183
 msgid "Show Apps"
-msgstr ""
+msgstr "نمایش برنامه‌ها"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:184
 msgid "Window Overview"
-msgstr ""
+msgstr "پیش‌نمایش پنجره"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:185
 msgid "Show All Windows"
-msgstr ""
+msgstr "نمایش همه پنجره‌ها"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "اجراء فرمان سفارشی"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:205
 msgid "Desktop"
-msgstr ""
+msgstr "پیشخوان"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:136
 msgid "Pictures folder"
-msgstr ""
+msgstr "پوشه تصاویر"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:137
 msgid "Backgrounds folder"
-msgstr ""
+msgstr "پوشه کاغذدیواری‌ها"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:138
 msgid "Custom folder"
-msgstr ""
+msgstr "پوشه سفارشی"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "None"
-msgstr ""
+msgstr "هیچکدام"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:145
 msgid "Centered"
-msgstr ""
+msgstr "مرکزی"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:146
 msgid "Scaled"
-msgstr ""
+msgstr "متناسب"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:147
 msgid "Stretched"
-msgstr ""
+msgstr "کشیده"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Zoom"
-msgstr ""
+msgstr "زوم"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Spanned"
-msgstr ""
+msgstr "پوشیده"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:241
 msgid "Select a folder"
-msgstr ""
+msgstr "انتخاب پوشه"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:262
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr ""
+msgstr "وارد کردن کاغذدیواری‌ها از %s"
