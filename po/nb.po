@@ -8,151 +8,151 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-14 23:31-0600\n"
-"PO-Revision-Date: 2012-10-26 19:33+0000\n"
-"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
+"PO-Revision-Date: 2013-01-21 15:34+0000\n"
+"Last-Translator: Niklas Fjeldberg <niklasolai@gmail.com>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-12-16 05:25+0000\n"
-"X-Generator: Launchpad (build 16372)\n"
+"X-Launchpad-Export-Date: 2013-01-22 05:30+0000\n"
+"X-Generator: Launchpad (build 16430)\n"
 "Language: nb\n"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:59
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:144
 msgid "Wallpaper"
-msgstr ""
+msgstr "Bakgrunnsbilde"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
-msgstr ""
+msgstr "Ikke skjul"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
-msgstr ""
+msgstr "skjul Intelligent"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
-msgstr ""
+msgstr "Autoskjul"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
-msgstr ""
+msgstr "Skjul når maksimert"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "Hoved Skjerm"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "Skjerm %d"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
-msgstr ""
+msgstr "Ikonstørrelse:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:106
 msgid "Hide Mode:"
-msgstr ""
+msgstr "Skjul Modus:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:109
 msgid "Monitor:"
-msgstr ""
+msgstr "Skjerm:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:113
 msgid "Dock"
-msgstr ""
+msgstr "Dokk"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:121
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "Når markøren kommer inn i hjørnet av skjermen:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:150
 msgid "Custom Command:"
-msgstr ""
+msgstr "Egendefinert kommando:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:162
 msgid "Hot Corners"
-msgstr ""
+msgstr "Hot Corners"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:179
 msgid "Do Nothing"
-msgstr ""
+msgstr "Ikke gjør noe"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:180
 msgid "Workspace Overview"
-msgstr ""
+msgstr "Arbeidsområde Oversikt"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "Maksimer Gjeldende Vindu"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:182
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "Minimer Gjeldende Vindu"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:183
 msgid "Show Apps"
-msgstr ""
+msgstr "Vis Apps"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:184
 msgid "Window Overview"
-msgstr ""
+msgstr "Vindu Oversikt"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:185
 msgid "Show All Windows"
-msgstr ""
+msgstr "Vis Alle Vinduer"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "Utfør Egendefinert Kommando"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:205
 msgid "Desktop"
-msgstr ""
+msgstr "Skrivebord"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:136
 msgid "Pictures folder"
-msgstr ""
+msgstr "Bildemappe"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:137
 msgid "Backgrounds folder"
-msgstr ""
+msgstr "Bakgrunnsmappe"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:138
 msgid "Custom folder"
-msgstr ""
+msgstr "Tilpassa mappe"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "None"
-msgstr ""
+msgstr "Ingen"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:145
 msgid "Centered"
-msgstr ""
+msgstr "Midtstilt"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:146
 msgid "Scaled"
-msgstr ""
+msgstr "Skalert"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:147
 msgid "Stretched"
-msgstr ""
+msgstr "Strukket"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Zoom"
-msgstr ""
+msgstr "Forstørr"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Spanned"
-msgstr ""
+msgstr "Spredte"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:241
 msgid "Select a folder"
-msgstr ""
+msgstr "Velg en mappe"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:262
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr ""
+msgstr "Importerer bakgrunnsbilder fra %s"
