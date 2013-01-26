@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-14 23:31-0600\n"
-"PO-Revision-Date: 2013-01-08 11:44+0000\n"
+"PO-Revision-Date: 2013-01-25 17:48+0000\n"
 "Last-Translator: Adrian Widerski <Unknown>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-01-09 05:40+0000\n"
-"X-Generator: Launchpad (build 16412)\n"
+"X-Launchpad-Export-Date: 2013-01-26 05:34+0000\n"
+"X-Generator: Launchpad (build 16451)\n"
 "Language: pl\n"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:59
@@ -25,7 +25,7 @@ msgstr "Tło pulpitu"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
-msgstr "Brak"
+msgstr "Nie ukrywaj"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
@@ -37,7 +37,7 @@ msgstr "Automatycznie"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
-msgstr "Ukryj, gdy okno zajmuje pełen ekran"
+msgstr "Ukryj, gdy okno zajmuje cały ekran"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
@@ -46,7 +46,7 @@ msgstr "Główny monitor"
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
-msgstr "Ekran %d"
+msgstr "Monitor %d"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
@@ -58,7 +58,7 @@ msgstr "Sposób ukrywania:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:109
 msgid "Monitor:"
-msgstr "Ekran:"
+msgstr "Monitor:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:113
 msgid "Dock"
@@ -86,11 +86,11 @@ msgstr "Pokaż obszary robocze"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
-msgstr "Zmaksymalizowanie bieżącego okna"
+msgstr "Maksymalizuj aktywne okno"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:182
 msgid "Minimize Current Window"
-msgstr "Zminimalizowanie bieżącego okna"
+msgstr "Minimalizuj aktywne okno"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:183
 msgid "Show Apps"
@@ -98,15 +98,15 @@ msgstr "Pokaż Aplikacje"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:184
 msgid "Window Overview"
-msgstr "Prezentuj okna"
+msgstr "Prezentuj okna aktywnego obszaru roboczego"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:185
 msgid "Show All Windows"
-msgstr "Pokaż wszystkie okna"
+msgstr "Prezentuj wszystkie okna"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
-msgstr "Wykonanie zdefiniowanego polecenia"
+msgstr "Wykonaj zdefiniowane polecenie"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:205
 msgid "Desktop"
@@ -118,7 +118,7 @@ msgstr "Katalog obrazów"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:137
 msgid "Backgrounds folder"
-msgstr "Katalog teł pulpitu"
+msgstr "Tła systemu"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:138
 msgid "Custom folder"
@@ -146,11 +146,11 @@ msgstr "Przybliżenie"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Spanned"
-msgstr "Na środku"
+msgstr "Rozpięcie"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:241
 msgid "Select a folder"
-msgstr "Wybór katalogu"
+msgstr "Wybierz katalog"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:262
 #, c-format
