@@ -81,6 +81,10 @@ class Wallpaper : EventBox {
 	//shows that we got or wallpapers together
 	public bool finished;
 	
+	//name of the default-wallpaper-link that we can prevent loading it again
+	//(assumes that the defaultwallpaper is also in the system wallpaper directory)
+	static string default_link = "/usr/share/backgrounds/elementaryos-default";
+
 	public Wallpaper (Pantheon.Switchboard.Plug _plug) {
 		
 		plug = _plug;
@@ -291,6 +295,11 @@ class Wallpaper : EventBox {
 						continue;
 					}
 					string filename = WALLPAPER_DIR + "/" + info.get_name ();
+					// Skip the default_wallpaper as seen in the description of the
+					// default_link variable
+					if (filename == default_link) {
+						continue;
+					}
 					// Create a thumbnail of the image and load it into the IconView
 					var image = new Gdk.Pixbuf.from_file_at_scale(filename, 110, 80, false);
 					// Add the wallpaper name and thumbnail to the IconView
