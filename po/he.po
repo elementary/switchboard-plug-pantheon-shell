@@ -8,151 +8,151 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-12-14 23:31-0600\n"
-"PO-Revision-Date: 2012-10-26 19:35+0000\n"
-"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2013-02-25 20:59+0000\n"
+"Last-Translator: Danny Damsky <dannydamsky99@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2012-12-16 05:25+0000\n"
-"X-Generator: Launchpad (build 16372)\n"
+"X-Launchpad-Export-Date: 2013-02-26 05:23+0000\n"
+"X-Generator: Launchpad (build 16506)\n"
 "Language: he\n"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:59
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:144
 msgid "Wallpaper"
-msgstr ""
+msgstr "תמונת רקע"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
-msgstr ""
+msgstr "אל תסתיר"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
-msgstr ""
+msgstr "הסתרה חכמה"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
-msgstr ""
+msgstr "הסתרה אוטומטית"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
-msgstr ""
+msgstr "החבה כאשר מגדילים"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:93
 msgid "Primary Monitor"
-msgstr ""
+msgstr "מסך מחשב ראשי"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:96
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "מסך מחשב %d"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:103
 msgid "Icon Size:"
-msgstr ""
+msgstr "גודל אייקון:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:106
 msgid "Hide Mode:"
-msgstr ""
+msgstr "מצב הסתרה:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:109
 msgid "Monitor:"
-msgstr ""
+msgstr "מסך מחשב:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:113
 msgid "Dock"
-msgstr ""
+msgstr "רציף"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:121
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "כאשר הסמן מגיע לקצה של המסך:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:150
 msgid "Custom Command:"
-msgstr ""
+msgstr "פקודה מותאמת אישית:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:162
 msgid "Hot Corners"
-msgstr ""
+msgstr "קצות חמות"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:179
 msgid "Do Nothing"
-msgstr ""
+msgstr "אל תעשה דבר"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:180
 msgid "Workspace Overview"
-msgstr ""
+msgstr "סקירת סביבת העבודה"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:181
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "הגדל חלון נוכחי"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:182
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "הקטן חלון נוכחי"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:183
 msgid "Show Apps"
-msgstr ""
+msgstr "הצג אפליקציות"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:184
 msgid "Window Overview"
-msgstr ""
+msgstr "סקירת חלון"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:185
 msgid "Show All Windows"
-msgstr ""
+msgstr "הראה את כל החלונות"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "סגור פקודה מותאמת אישית"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:205
 msgid "Desktop"
-msgstr ""
+msgstr "שולחן העבודה"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:136
 msgid "Pictures folder"
-msgstr ""
+msgstr "תיקיית התמונות"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:137
 msgid "Backgrounds folder"
-msgstr ""
+msgstr "תיקיית הרקעים"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:138
 msgid "Custom folder"
-msgstr ""
+msgstr "תיקייה מותאמת אישית"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "None"
-msgstr ""
+msgstr "אין"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:145
 msgid "Centered"
-msgstr ""
+msgstr "ממורכז"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:146
 msgid "Scaled"
-msgstr ""
+msgstr "בגודל מותאם"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:147
 msgid "Stretched"
-msgstr ""
+msgstr "מתוחה"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Zoom"
-msgstr ""
+msgstr "תקריב"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Spanned"
-msgstr ""
+msgstr "מגושר"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:241
 msgid "Select a folder"
-msgstr ""
+msgstr "בחר תיקייה"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:262
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr ""
+msgstr "הוספת תמונות מתוך %s"
