@@ -89,6 +89,33 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         hide_mode.halign = Gtk.Align.START;
         hide_mode.width_request = 164;
         
+        
+        var theme = new Gtk.ComboBoxText ();
+        
+		try {
+			int index = 0;
+			string name;
+			var dirs = Environment.get_system_data_dirs ();
+			dirs += Environment.get_user_data_dir ();
+			
+			// append the system themes to the combo box
+			foreach (string dir in dirs) {
+				if (FileUtils.test (dir + "/plank/themes", FileTest.EXISTS)) {
+					var d = Dir.open(dir + "/plank/themes");
+					while ((name = d.read_name()) != null) {
+						theme.append(index.to_string (), _(name));
+						if (PlankSettings.get_default ().theme.to_string () == name)
+							theme.active = index;
+						index++;
+					}
+				}
+			}
+		} catch (GLib.FileError ex){ }
+		
+        theme.changed.connect (() => PlankSettings.get_default ().theme = theme.get_active_text ());
+        theme.halign = Gtk.Align.START;
+        theme.width_request = 164;
+        
         var monitor = new Gtk.ComboBoxText ();
         monitor.append ("-1", _("Primary Monitor"));
         int i = 0;
@@ -105,9 +132,11 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         dock_grid.attach (icon_size, 3, 0, 1, 1);
         dock_grid.attach (new LLabel.right (_("Hide Mode:")), 0, 1, 2, 1);
         dock_grid.attach (hide_mode, 2, 1, 2, 1);
+        dock_grid.attach (new LLabel.right (_("Theme:")), 0, 2, 2, 1);
+        dock_grid.attach (theme, 2, 2, 2, 1);
         if (i > 1) {
-            dock_grid.attach (new LLabel.right (_("Monitor:")), 0, 2, 2, 1);
-            dock_grid.attach (monitor, 2, 2, 2, 1);
+            dock_grid.attach (new LLabel.right (_("Monitor:")), 0, 3, 2, 1);
+            dock_grid.attach (monitor, 2, 3, 2, 1);
         }
         
         notebook.append_page (dock_grid, new Gtk.Label (_("Dock")));
