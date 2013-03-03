@@ -300,27 +300,30 @@ class Wallpaper : EventBox {
 					if (filename == default_link) {
 						continue;
 					}
-					// Create a thumbnail of the image and load it into the IconView
-					var image = new Gdk.Pixbuf.from_file_at_scale(filename, 110, 80, false);
-					// Add the wallpaper name and thumbnail to the IconView
-					Gtk.TreeIter root;
-					this.store.append(out root);
-					this.store.set(root, 0, image, -1);
-					this.store.set(root, 1, filename, -1);
 					
-					// Select the wallpaper if it is the current wallpaper
-					if (filename == current_wallpaper_path) {
-						this.wallpaper_view.select_path (this.store.get_path (root));
-					}
+					try {
+						// Create a thumbnail of the image and load it into the IconView
+						var image = new Gdk.Pixbuf.from_file_at_scale(filename, 110, 80, false);
+						// Add the wallpaper name and thumbnail to the IconView
+						Gtk.TreeIter root;
+						this.store.append(out root);
+						this.store.set(root, 0, image, -1);
+						this.store.set(root, 1, filename, -1);
 					
-					this.iters.append (root);
-					// Update the progress bar
-					plug.switchboard_controller.progress_bar_set_fraction(done/count);
-					// Have GTK update the UI even while we're busy
-					// working on file IO.
-					while(Gtk.events_pending ()) {
-						Gtk.main_iteration();
-					}
+						// Select the wallpaper if it is the current wallpaper
+						if (filename == current_wallpaper_path) {
+							this.wallpaper_view.select_path (this.store.get_path (root));
+						}
+					
+						this.iters.append (root);
+						// Update the progress bar
+						plug.switchboard_controller.progress_bar_set_fraction(done/count);
+						// Have GTK update the UI even while we're busy
+						// working on file IO.
+						while(Gtk.events_pending ()) {
+							Gtk.main_iteration();
+						}
+					} catch (Error e) { warning (e.message); }
 				}
 			}
 			// Hide the progress bar since we're done with it.
