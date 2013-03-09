@@ -27,6 +27,7 @@ OPTIONS
 )
 
 add_executable (${PLUGNAME} ${VALA_C})
+target_link_libraries(${PLUGNAME} m)
 
 # Installation
 install (TARGETS ${PLUGNAME} DESTINATION ${PKGDATADIR})
