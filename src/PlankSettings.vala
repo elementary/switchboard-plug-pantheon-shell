@@ -34,6 +34,21 @@ public class PlankSettings : Object
 		}
 	}
 	
+	private string _theme;
+	public string theme {
+		get {
+			try {
+				_theme = configs.get_value ("PlankDockPreferences", "Theme");
+				return _theme;
+			} catch (Error e) { warning (e.message); }
+			return "";
+		}
+		set {
+			configs.set_string ("PlankDockPreferences", "Theme", value);
+			save ();
+		}
+	}
+	
 	public int monitor {
 		get {
 			try {
