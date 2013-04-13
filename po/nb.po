@@ -7,152 +7,156 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 23:31-0600\n"
+"POT-Creation-Date: 2013-04-12 16:47-0500\n"
 "PO-Revision-Date: 2013-01-21 15:34+0000\n"
-"Last-Translator: Niklas Fjeldberg <niklasolai@gmail.com>\n"
+"Last-Translator: Niklas Fjeldberg <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-01-22 05:30+0000\n"
-"X-Generator: Launchpad (build 16430)\n"
+"X-Launchpad-Export-Date: 2013-04-13 05:55+0000\n"
+"X-Generator: Launchpad (build 16564)\n"
 "Language: nb\n"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:59
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:144
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:140
+msgid "Pictures folder"
+msgstr "Bildemappe"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:141
+msgid "Backgrounds folder"
+msgstr "Bakgrunnsmappe"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:142
+msgid "Custom folder"
+msgstr "Tilpassa mappe"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:147
+msgid "None"
+msgstr "Ingen"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:148
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
 msgid "Wallpaper"
 msgstr "Bakgrunnsbilde"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:83
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:149
+msgid "Centered"
+msgstr "Midtstilt"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:150
+msgid "Scaled"
+msgstr "Skalert"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:151
+msgid "Stretched"
+msgstr "Strukket"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:152
+msgid "Zoom"
+msgstr "Forstørr"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:153
+msgid "Spanned"
+msgstr "Spredte"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:245
+msgid "Select a folder"
+msgstr "Velg en mappe"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:266
+#, c-format
+msgid "Importing wallpapers from %s"
+msgstr "Importerer bakgrunnsbilder fra %s"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
 msgstr "Ikke skjul"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:84
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:84
 msgid "Intelligent hide"
 msgstr "skjul Intelligent"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:85
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:85
 msgid "Auto hide"
 msgstr "Autoskjul"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:86
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:86
 msgid "Hide on maximize"
 msgstr "Skjul når maksimert"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:93
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:122
 msgid "Primary Monitor"
 msgstr "Hoved Skjerm"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:96
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:125
 #, c-format
 msgid "Monitor %d"
 msgstr "Skjerm %d"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:103
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:132
 msgid "Icon Size:"
 msgstr "Ikonstørrelse:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:106
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:135
 msgid "Hide Mode:"
 msgstr "Skjul Modus:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:109
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:138
+msgid "Theme:"
+msgstr ""
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:142
 msgid "Monitor:"
 msgstr "Skjerm:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:113
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:146
 msgid "Dock"
 msgstr "Dokk"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:121
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:154
 msgid "When the cursor enters the corner of the display:"
 msgstr "Når markøren kommer inn i hjørnet av skjermen:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:150
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:183
 msgid "Custom Command:"
 msgstr "Egendefinert kommando:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:162
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:195
 msgid "Hot Corners"
 msgstr "Hot Corners"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:179
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:212
 msgid "Do Nothing"
 msgstr "Ikke gjør noe"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:180
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:213
 msgid "Workspace Overview"
 msgstr "Arbeidsområde Oversikt"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:181
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:214
 msgid "Maximize Current Window"
 msgstr "Maksimer Gjeldende Vindu"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:182
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:215
 msgid "Minimize Current Window"
 msgstr "Minimer Gjeldende Vindu"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:183
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:216
 msgid "Show Apps"
 msgstr "Vis Apps"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:184
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:217
 msgid "Window Overview"
 msgstr "Vindu Oversikt"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:185
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:218
 msgid "Show All Windows"
 msgstr "Vis Alle Vinduer"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:186
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:219
 msgid "Execute Custom Command"
 msgstr "Utfør Egendefinert Kommando"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:205
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:238
 msgid "Desktop"
 msgstr "Skrivebord"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:136
-msgid "Pictures folder"
-msgstr "Bildemappe"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:137
-msgid "Backgrounds folder"
-msgstr "Bakgrunnsmappe"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:138
-msgid "Custom folder"
-msgstr "Tilpassa mappe"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:143
-msgid "None"
-msgstr "Ingen"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:145
-msgid "Centered"
-msgstr "Midtstilt"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:146
-msgid "Scaled"
-msgstr "Skalert"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:147
-msgid "Stretched"
-msgstr "Strukket"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:148
-msgid "Zoom"
-msgstr "Forstørr"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:149
-msgid "Spanned"
-msgstr "Spredte"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:241
-msgid "Select a folder"
-msgstr "Velg en mappe"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:262
-#, c-format
-msgid "Importing wallpapers from %s"
-msgstr "Importerer bakgrunnsbilder fra %s"
