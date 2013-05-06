@@ -61,24 +61,27 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         
         /*dock*/
         var dock_grid = new Gtk.Grid ();
-        dock_grid.set_column_spacing (12);
-        dock_grid.set_row_spacing (6);
-        dock_grid.margin = 12;
+        dock_grid.column_spacing = 12;
+        dock_grid.row_spacing = 6;
+        dock_grid.margin = 24;
+        dock_grid.column_homogeneous = true;
+
+        var icon_size = new Gtk.ComboBoxText ();
+        icon_size.append ("32", _("Small"));
+        icon_size.append ("48", _("Medium"));
+        icon_size.append ("64", _("Large"));
+        icon_size.append ("128", _("Extra Large"));
         
-        var icon_size_range = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 32, 96, 1);
-        var icon_size = new Gtk.SpinButton.with_range (32, 96, 1);
-        icon_size.set_value (PlankSettings.get_default ().icon_size);
-        icon_size.value_changed.connect (() => {
-            PlankSettings.get_default ().icon_size = (int)icon_size.get_value ();
-            icon_size_range.set_value (icon_size.get_value ());
-        });
+        var current = PlankSettings.get_default ().icon_size;
+        
+        if (current != 32 && current != 48 && current != 64 && current != 128)
+            icon_size.append (current.to_string (), _(@"Custom ($(current)px)" ));
+        
+        icon_size.active_id = current.to_string ();
+        icon_size.changed.connect (() => PlankSettings.get_default ().icon_size = int.parse (icon_size.active_id));
         icon_size.halign = Gtk.Align.START;
-        
-        icon_size_range.set_value (PlankSettings.get_default ().icon_size);
-        icon_size_range.button_release_event.connect (() => {icon_size.value = icon_size_range.get_value (); return false;});
-        icon_size_range.draw_value = false;
-        icon_size_range.set_hexpand (true);
-        
+        icon_size.width_request = 164;
+
         var hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append ("0", _("Don't hide"));
         hide_mode.append ("1", _("Intelligent hide"));
@@ -130,17 +133,17 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         monitor.width_request = 164;
         
         dock_grid.attach (new LLabel.right (_("Icon Size:")), 0, 0, 2, 1);
-        dock_grid.attach (icon_size_range,2, 0, 1, 1);
-        dock_grid.attach (icon_size, 3, 0, 1, 1);
+        dock_grid.attach (icon_size, 2, 0, 1, 1);
         dock_grid.attach (new LLabel.right (_("Hide Mode:")), 0, 1, 2, 1);
         dock_grid.attach (hide_mode, 2, 1, 2, 1);
+
         if (theme_index > 1) {
             dock_grid.attach (new LLabel.right (_("Theme:")), 0, 2, 2, 1);
-            dock_grid.attach (theme, 2, 2, 2, 1);
+            dock_grid.attach (theme, 2, 2, 1, 1);
         }
         if (i > 1) {
             dock_grid.attach (new LLabel.right (_("Monitor:")), 0, 3, 2, 1);
-            dock_grid.attach (monitor, 2, 3, 2, 1);
+            dock_grid.attach (monitor, 2, 3, 1, 1);
         }
         
         notebook.append_page (dock_grid, new Gtk.Label (_("Dock")));
@@ -206,8 +209,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         });
     }
     
-    Gtk.ComboBoxText create_hotcorner ()
-    {
+    Gtk.ComboBoxText create_hotcorner () {
         var box = new Gtk.ComboBoxText ();
         box.append ("0", _("Do Nothing"));
         box.append ("1", _("Workspace Overview"));
