@@ -145,7 +145,6 @@ class Wallpaper : EventBox {
 		
 		combo = new ComboBoxText ();
 		combo.append ("none", _("None"));
-		combo.append ("wallpaper", _("Wallpaper"));
 		combo.append ("centered", _("Centered"));
 		combo.append ("scaled", _("Scaled"));
 		combo.append ("stretched", _("Stretched"));
