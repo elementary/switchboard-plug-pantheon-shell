@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-12 16:47-0500\n"
-"PO-Revision-Date: 2013-04-15 17:03+0000\n"
+"PO-Revision-Date: 2013-05-07 20:55+0000\n"
 "Last-Translator: Alfredo Hernández <Unknown>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-04-16 05:14+0000\n"
-"X-Generator: Launchpad (build 16564)\n"
+"X-Launchpad-Export-Date: 2013-05-08 05:55+0000\n"
+"X-Generator: Launchpad (build 16598)\n"
 "Language: es\n"
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:140
@@ -66,7 +66,7 @@ msgstr "Seleccione una carpeta"
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:266
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr "Importando fondos de pantalla de %s..."
+msgstr "Importando fondos de pantalla de %s…"
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
