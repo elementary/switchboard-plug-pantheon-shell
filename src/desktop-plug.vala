@@ -213,7 +213,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug
         box.append ("1", _("Workspace Overview"));
         box.append ("2", _("Maximize Current Window"));
         box.append ("3", _("Minimize Current Window"));
-        box.append ("4", _("Show Apps"));
+        box.append ("4", _("Show Applications Menu"));
         box.append ("6", _("Window Overview"));
         box.append ("7", _("Show All Windows"));
         box.append ("5", _("Execute Custom Command"));
