@@ -37,13 +37,15 @@ public class IOHelper : GLib.Object {
 		GLib.FileInfo file_info = null;
 		int count = 0;
 		try {
-			// Get an enumerator for all of the plain old files in the wallpaper folder.
-			var enumerator = wallpaper_folder.enumerate_children(FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
-			// While there's still files left to count
-			while ((file_info = enumerator.next_file ()) != null) {
-				// If it's a picture file
-				if (is_valid_file_type(file_info)) {
-					count++;
+			if(wallpaper_folder.query_exists()) {
+				// Get an enumerator for all of the plain old files in the wallpaper folder.
+				var enumerator = wallpaper_folder.enumerate_children(FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
+				// While there's still files left to count
+				while ((file_info = enumerator.next_file ()) != null) {
+					// If it's a picture file
+					if (is_valid_file_type(file_info)) {
+						count++;
+					}
 				}
 			}
 		} catch(GLib.Error err) {
@@ -275,62 +277,63 @@ class Wallpaper : EventBox {
 			if (count == 0)
 				folder_combo.set_sensitive (true);
 			
-			// Enumerator object that will let us read through the wallpapers asynchronously
-			var e = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0, Priority.DEFAULT);
-			
-			while (true) {
-				// Grab a batch of 10 wallpapers
-				var files = yield e.next_files_async (10, Priority.DEFAULT);
-				// Stop the loop if we've run out of wallpapers
-				if (files == null) {
-					break;
-				}
-				// Loop through and add each wallpaper in the batch
-				foreach (var info in files) {
-					// We're going to add another wallpaper
-					done++;
-					// Skip the file if it's not a picture
-					if (!IOHelper.is_valid_file_type(info)) {
-						continue;
+			if(directory.query_exists()) {
+				// Enumerator object that will let us read through the wallpapers asynchronously
+				var e = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0, Priority.DEFAULT);
+				
+				while (true) {
+					// Grab a batch of 10 wallpapers
+					var files = yield e.next_files_async (10, Priority.DEFAULT);
+					// Stop the loop if we've run out of wallpapers
+					if (files == null) {
+						break;
 					}
-					string filename = WALLPAPER_DIR + "/" + info.get_name ();
-					// Skip the default_wallpaper as seen in the description of the
-					// default_link variable
-					if (filename == default_link) {
-						continue;
+					// Loop through and add each wallpaper in the batch
+					foreach (var info in files) {
+						// We're going to add another wallpaper
+						done++;
+						// Skip the file if it's not a picture
+						if (!IOHelper.is_valid_file_type(info)) {
+							continue;
+						}
+						string filename = WALLPAPER_DIR + "/" + info.get_name ();
+						// Skip the default_wallpaper as seen in the description of the
+						// default_link variable
+						if (filename == default_link) {
+							continue;
+						}
+						
+						try {
+							// Create a thumbnail of the image and load it into the IconView
+							var image = new Gdk.Pixbuf.from_file_at_scale(filename, 110, 80, false);
+							// Add the wallpaper name and thumbnail to the IconView
+							Gtk.TreeIter root;
+							this.store.append(out root);
+							this.store.set(root, 0, image, -1);
+							this.store.set(root, 1, filename, -1);
+						
+							// Select the wallpaper if it is the current wallpaper
+							if (filename == current_wallpaper_path) {
+								this.wallpaper_view.select_path (this.store.get_path (root));
+							}
+						
+							this.iters.append (root);
+							// Update the progress bar
+							plug.switchboard_controller.progress_bar_set_fraction(done/count);
+							// Have GTK update the UI even while we're busy
+							// working on file IO.
+							while(Gtk.events_pending ()) {
+								Gtk.main_iteration();
+							}
+						} catch (Error e) { warning (e.message); }
 					}
-					
-					try {
-						// Create a thumbnail of the image and load it into the IconView
-						var image = new Gdk.Pixbuf.from_file_at_scale(filename, 110, 80, false);
-						// Add the wallpaper name and thumbnail to the IconView
-						Gtk.TreeIter root;
-						this.store.append(out root);
-						this.store.set(root, 0, image, -1);
-						this.store.set(root, 1, filename, -1);
-					
-						// Select the wallpaper if it is the current wallpaper
-						if (filename == current_wallpaper_path) {
-							this.wallpaper_view.select_path (this.store.get_path (root));
-						}
-					
-						this.iters.append (root);
-						// Update the progress bar
-						plug.switchboard_controller.progress_bar_set_fraction(done/count);
-						// Have GTK update the UI even while we're busy
-						// working on file IO.
-						while(Gtk.events_pending ()) {
-							Gtk.main_iteration();
-						}
-					} catch (Error e) { warning (e.message); }
 				}
+				// Hide the progress bar since we're done with it.
+				plug.switchboard_controller.progress_bar_set_visible(false);
+				finished = true;
+				
+				folder_combo.set_sensitive (true);
 			}
-			// Hide the progress bar since we're done with it.
-			plug.switchboard_controller.progress_bar_set_visible(false);
-			finished = true;
-			
-			folder_combo.set_sensitive (true);
-			
 		} catch (Error e) { warning (e.message); }
 	}
 	
