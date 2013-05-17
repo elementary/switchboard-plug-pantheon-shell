@@ -47,7 +47,7 @@ public class IOHelper : GLib.Object {
 				}
 			}
 		} catch(GLib.Error err) {
-			// ignore file not found errors
+			// ignore folder not found errors
 			if(!(err is IOError.NOT_FOUND)) {
 				// Just for debugging sake
 				warning ("Could not pre-scan wallpaper folder. Progress percentage may be off: %s\n", err.message);
@@ -334,7 +334,7 @@ class Wallpaper : EventBox {
 			
 			folder_combo.set_sensitive (true);
 		} catch (Error err) {
-			// ignore file not found errors
+			// ignore folder not found errors
 			if(!(err is IOError.NOT_FOUND)) {
 				warning (err.message);
 			}
