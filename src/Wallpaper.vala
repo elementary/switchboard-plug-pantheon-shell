@@ -47,8 +47,9 @@ public class IOHelper : GLib.Object {
 				}
 			}
 		} catch(GLib.Error err) {
-			// Just for debugging sake
-			warning ("Could not pre-scan wallpaper folder. Progress percentage may be off: %s\n", err.message);
+			if (!(err is IOError.NOT_FOUND)) {
+				warning ("Could not pre-scan wallpaper folder. Progress percentage may be off: %s", err.message);
+			}
 		}
 		return count;
 	}
@@ -330,8 +331,11 @@ class Wallpaper : EventBox {
 			finished = true;
 			
 			folder_combo.set_sensitive (true);
-			
-		} catch (Error e) { warning (e.message); }
+		} catch (Error err) {
+			if (!(err is IOError.NOT_FOUND)) {
+				warning (err.message);
+			}
+		}
 	}
 	
 	void clean_wallpapers () {
