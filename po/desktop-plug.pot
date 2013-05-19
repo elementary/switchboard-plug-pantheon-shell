@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-12 16:47-0500\n"
+"POT-Creation-Date: 2013-05-09 22:15-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,37 +34,36 @@ msgid "None"
 msgstr ""
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:148
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
-msgid "Wallpaper"
-msgstr ""
-
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:150
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:149
 msgid "Scaled"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:151
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:150
 msgid "Stretched"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:152
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:151
 msgid "Zoom"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:153
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:152
 msgid "Spanned"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:245
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:244
 msgid "Select a folder"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:266
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:265
 #, c-format
 msgid "Importing wallpapers from %s"
+msgstr ""
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
+msgid "Wallpaper"
 msgstr ""
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
@@ -141,7 +140,7 @@ msgid "Minimize Current Window"
 msgstr ""
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:216
-msgid "Show Apps"
+msgid "Show Applications Menu"
 msgstr ""
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:217
