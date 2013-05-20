@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-04-12 16:47-0500\n"
+"POT-Creation-Date: 2013-05-09 22:15-0500\n"
 "PO-Revision-Date: 2013-01-27 06:42+0000\n"
 "Last-Translator: Ngô Trung <ndtrung4419@gmail.com>\n"
 "Language-Team: Vietnamese <vi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-04-13 05:56+0000\n"
-"X-Generator: Launchpad (build 16564)\n"
+"X-Launchpad-Export-Date: 2013-05-20 05:54+0000\n"
+"X-Generator: Launchpad (build 16626)\n"
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:140
 msgid "Pictures folder"
@@ -34,38 +34,37 @@ msgid "None"
 msgstr "Không dùng ảnh nền"
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:148
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
-msgid "Wallpaper"
-msgstr "Hình nền"
-
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
 msgstr "Canh giữa"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:150
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:149
 msgid "Scaled"
 msgstr "Phóng to theo chiều dọc"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:151
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:150
 msgid "Stretched"
 msgstr "Kéo căng"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:152
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:151
 msgid "Zoom"
 msgstr "Phóng to theo chiều ngang"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:153
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:152
 msgid "Spanned"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:245
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:244
 msgid "Select a folder"
 msgstr "Chọn thư mục"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:266
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:265
 #, c-format
 msgid "Importing wallpapers from %s"
 msgstr "Đang nhập ảnh từ thư mục %s"
+
+#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
+msgid "Wallpaper"
+msgstr "Hình nền"
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
 msgid "Don't hide"
@@ -141,8 +140,8 @@ msgid "Minimize Current Window"
 msgstr "Ẩn cửa sổ hiện tại vào thanh trình đơn"
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:216
-msgid "Show Apps"
-msgstr "Hiển thị danh sách ứng dụng"
+msgid "Show Applications Menu"
+msgstr ""
 
 #: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:217
 msgid "Window Overview"
