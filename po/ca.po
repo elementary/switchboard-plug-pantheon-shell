@@ -7,155 +7,175 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-09 22:15-0500\n"
-"PO-Revision-Date: 2013-05-07 20:53+0000\n"
+"POT-Creation-Date: 2013-05-23 04:16-0500\n"
+"PO-Revision-Date: 2013-05-23 17:37+0000\n"
 "Last-Translator: Alfredo Hernández <Unknown>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-05-20 05:54+0000\n"
-"X-Generator: Launchpad (build 16626)\n"
+"X-Launchpad-Export-Date: 2013-05-24 06:10+0000\n"
+"X-Generator: Launchpad (build 16640)\n"
 "Language: ca\n"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:140
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures folder"
 msgstr "Carpeta d'imatges"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:141
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds folder"
 msgstr "Carpeta de fons d'escriptori"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:142
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom folder"
 msgstr "Carpeta personalitzada"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:147
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "None"
 msgstr "Cap"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:148
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
 msgstr "Centrat"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:149
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:150
 msgid "Scaled"
 msgstr "Escalat"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:150
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:151
 msgid "Stretched"
 msgstr "Estirat"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:151
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:152
 msgid "Zoom"
 msgstr "Ampliat"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:152
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:153
 msgid "Spanned"
 msgstr "Distribuït"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:244
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:245
 msgid "Select a folder"
 msgstr "Seleccioneu una carpeta"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:265
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:266
 #, c-format
 msgid "Importing wallpapers from %s"
 msgstr "S'estan important fons d'escriptori de %s…"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:59
 msgid "Wallpaper"
 msgstr "Fons d'escriptori"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:70
+msgid "Small"
+msgstr "Petit"
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:71
+msgid "Medium"
+msgstr "Mitjà"
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:72
+msgid "Large"
+msgstr "Gran"
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:73
+msgid "Extra Large"
+msgstr "Molt gran"
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:78
+msgid "Custom ($(current)px)"
+msgstr ""
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Don't hide"
 msgstr "No l'amagis"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:84
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:87
 msgid "Intelligent hide"
 msgstr "Ocultació intel·ligent"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:85
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:88
 msgid "Auto hide"
 msgstr "Oculta automàticament"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:86
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:89
 msgid "Hide on maximize"
 msgstr "Oculta en maximitzar"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:122
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:125
 msgid "Primary Monitor"
 msgstr "Monitor principal"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:125
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:128
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:132
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:135
 msgid "Icon Size:"
 msgstr "Mida de les icones:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:135
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:137
 msgid "Hide Mode:"
 msgstr "Mode d'ocultació:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:138
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:141
 msgid "Theme:"
 msgstr "Tema:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:142
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:145
 msgid "Monitor:"
 msgstr "Monitor:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:146
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:149
 msgid "Dock"
 msgstr "Acoblador"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:154
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:157
 msgid "When the cursor enters the corner of the display:"
 msgstr "Quan el cursor toqui una cantonada de la pantalla:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:183
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Custom Command:"
 msgstr "Ordre personalitzada:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:195
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:198
 msgid "Hot Corners"
 msgstr "Cantonades actives"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:212
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:214
 msgid "Do Nothing"
 msgstr "No facis res"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:213
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:215
 msgid "Workspace Overview"
 msgstr "Visualitza les àrees de treball"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:214
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:216
 msgid "Maximize Current Window"
 msgstr "Maximitza la finestra actual"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:215
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:217
 msgid "Minimize Current Window"
 msgstr "Minimitza la finestra actual"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:216
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:218
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Mostra el menú d'aplicacions"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:217
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:219
 msgid "Window Overview"
 msgstr "Visualitza les finestres"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:218
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:220
 msgid "Show All Windows"
 msgstr "Mostra totes les finestres"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:219
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:221
 msgid "Execute Custom Command"
 msgstr "Executa una ordre personalitzada"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:238
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:240
 msgid "Desktop"
 msgstr "Escriptori"

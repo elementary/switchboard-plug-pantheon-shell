@@ -7,155 +7,175 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-09 22:15-0500\n"
+"POT-Creation-Date: 2013-05-23 04:16-0500\n"
 "PO-Revision-Date: 2013-01-01 16:31+0000\n"
 "Last-Translator: Mohammad Zali <mohamadzali@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-05-20 05:54+0000\n"
-"X-Generator: Launchpad (build 16626)\n"
+"X-Launchpad-Export-Date: 2013-05-24 06:10+0000\n"
+"X-Generator: Launchpad (build 16640)\n"
 "Language: fa\n"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:140
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures folder"
 msgstr "پوشه تصاویر"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:141
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds folder"
 msgstr "پوشه کاغذدیواری‌ها"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:142
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom folder"
 msgstr "پوشه سفارشی"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:147
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "None"
 msgstr "هیچکدام"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:148
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
 msgstr "مرکزی"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:149
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:150
 msgid "Scaled"
 msgstr "متناسب"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:150
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:151
 msgid "Stretched"
 msgstr "کشیده"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:151
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:152
 msgid "Zoom"
 msgstr "زوم"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:152
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:153
 msgid "Spanned"
 msgstr "پوشیده"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:244
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:245
 msgid "Select a folder"
 msgstr "انتخاب پوشه"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//Wallpaper.vala:265
+#: /home/codygarver/shell/po/../src//Wallpaper.vala:266
 #, c-format
 msgid "Importing wallpapers from %s"
 msgstr "وارد کردن کاغذدیواری‌ها از %s"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:59
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:59
 msgid "Wallpaper"
 msgstr "کاغذدیواری"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:83
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:70
+msgid "Small"
+msgstr ""
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:71
+msgid "Medium"
+msgstr ""
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:72
+msgid "Large"
+msgstr ""
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:73
+msgid "Extra Large"
+msgstr ""
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:78
+msgid "Custom ($(current)px)"
+msgstr ""
+
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Don't hide"
 msgstr "پنهان نشود"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:84
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:87
 msgid "Intelligent hide"
 msgstr "پنهان شدن هوشمند"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:85
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:88
 msgid "Auto hide"
 msgstr "پنهان شدن خودکار"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:86
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:89
 msgid "Hide on maximize"
 msgstr "پس از بیشینه شدن پنهان شود"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:122
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:125
 msgid "Primary Monitor"
 msgstr "نمایشگر اصلی"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:125
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:128
 #, c-format
 msgid "Monitor %d"
 msgstr "نمایشگر %d"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:132
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:135
 msgid "Icon Size:"
 msgstr "اندازه شمایل:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:135
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:137
 msgid "Hide Mode:"
 msgstr "حالت پنهان شدن:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:138
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:141
 msgid "Theme:"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:142
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:145
 msgid "Monitor:"
 msgstr "نمایشگر:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:146
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:149
 msgid "Dock"
 msgstr "طاقچه"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:154
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:157
 msgid "When the cursor enters the corner of the display:"
 msgstr "هنگام ورود مکان‌نمای موس به گوشه‌های صفحه نمایش:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:183
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Custom Command:"
 msgstr "فرمان سفارشی:"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:195
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:198
 msgid "Hot Corners"
 msgstr "گوشه‌های داغ"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:212
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:214
 msgid "Do Nothing"
 msgstr "هیچ کاری انجام نشود"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:213
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:215
 msgid "Workspace Overview"
 msgstr "پیش‌نمایش محیط کاری"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:214
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:216
 msgid "Maximize Current Window"
 msgstr "بیشینه کردن پنجره کنونی"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:215
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:217
 msgid "Minimize Current Window"
 msgstr "کمینه کردن پنجره کنونی"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:216
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:218
 msgid "Show Applications Menu"
 msgstr ""
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:217
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:219
 msgid "Window Overview"
 msgstr "پیش‌نمایش پنجره"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:218
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:220
 msgid "Show All Windows"
 msgstr "نمایش همه پنجره‌ها"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:219
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:221
 msgid "Execute Custom Command"
 msgstr "اجراء فرمان سفارشی"
 
-#: /home/codygarver/switchboard-plug-pantheon-shell/po/../src//desktop-plug.vala:238
+#: /home/codygarver/shell/po/../src//desktop-plug.vala:240
 msgid "Desktop"
 msgstr "پیشخوان"
