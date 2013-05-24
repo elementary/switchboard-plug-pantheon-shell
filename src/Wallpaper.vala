@@ -121,7 +121,7 @@ class Wallpaper : EventBox {
 
 		wallpaper_view.size_allocate.connect ( () => {
 			int width = wallpaper_view.get_allocated_width ();
-			int columns = (int) GLib.Math.floor(width/130);
+			int columns = (int) GLib.Math.floor(width/200);
 			wallpaper_view.set_columns (columns);
 		});
 		
@@ -303,7 +303,7 @@ class Wallpaper : EventBox {
 					
 					try {
 						// Create a thumbnail of the image and load it into the IconView
-						var image = new Gdk.Pixbuf.from_file_at_scale(filename, 110, 80, false);
+						var image = new Gdk.Pixbuf.from_file_at_scale(filename, 180, 120, false);
 						// Add the wallpaper name and thumbnail to the IconView
 						Gtk.TreeIter root;
 						this.store.append(out root);
@@ -373,7 +373,7 @@ class Wallpaper : EventBox {
 			// Create a thumbnail of the image and load it into the IconView
 			Gdk.Pixbuf image = null;
 			try {
-				image = new Gdk.Pixbuf.from_file_at_scale(filename, 110, 80, false);
+				image = new Gdk.Pixbuf.from_file_at_scale(filename, 180, 120, false);
 			} catch (Error e) { warning (e.message); }
 			// Add the wallpaper name and thumbnail to the IconView
 			Gtk.TreeIter root;
