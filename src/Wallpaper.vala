@@ -145,7 +145,7 @@ class Wallpaper : EventBox {
 		folder_combo.set_active (1);
 		
 		combo = new ComboBoxText ();
-		combo.append ("none", _("None"));
+		combo.append ("none", _("Solid Color"));
 		combo.append ("centered", _("Centered"));
 		combo.append ("scaled", _("Scaled"));
 		combo.append ("stretched", _("Stretched"));
