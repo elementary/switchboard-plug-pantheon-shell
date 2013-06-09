@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-08 12:54-0500\n"
+"POT-Creation-Date: 2013-06-08 19:12-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
-msgid "Pictures folder"
+msgid "Pictures"
 msgstr ""
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
-msgid "Backgrounds folder"
+msgid "Backgrounds"
 msgstr ""
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
-msgid "Custom folder"
+msgid "Custom"
 msgstr ""
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
