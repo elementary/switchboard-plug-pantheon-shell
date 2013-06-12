@@ -138,9 +138,9 @@ class Wallpaper : EventBox {
 		vbox.pack_start (scrolled, true, true, 5);
 		
 		folder_combo = new ComboBoxText ();
-		folder_combo.append ("pic", _("Pictures folder"));
-		folder_combo.append ("sys", _("Backgrounds folder"));
-		folder_combo.append ("cus", _("Custom folder"));
+		folder_combo.append ("pic", _("Pictures"));
+		folder_combo.append ("sys", _("Backgrounds"));
+		folder_combo.append ("cus", _("Custom…"));
 		folder_combo.changed.connect (update_wallpaper_folder);
 		folder_combo.set_active (1);
 		
