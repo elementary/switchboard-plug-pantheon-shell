@@ -7,28 +7,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-08 12:54-0500\n"
-"PO-Revision-Date: 2013-06-10 15:11+0000\n"
+"POT-Creation-Date: 2013-06-12 00:42-0500\n"
+"PO-Revision-Date: 2013-06-12 19:43+0000\n"
 "Last-Translator: Phillip Sz <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-11 06:13+0000\n"
+"X-Launchpad-Export-Date: 2013-06-13 05:46+0000\n"
 "X-Generator: Launchpad (build 16667)\n"
 "Language: de\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
-msgid "Pictures folder"
-msgstr "Bilder Ordner"
+msgid "Pictures"
+msgstr "Bilder"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
-msgid "Backgrounds folder"
-msgstr "System Ordner"
+msgid "Backgrounds"
+msgstr "Hintergrundbild"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
-msgid "Custom folder"
-msgstr "Anderer Ordner …"
+msgid "Custom…"
+msgstr "Benutzerdefiniert …"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Solid Color"
