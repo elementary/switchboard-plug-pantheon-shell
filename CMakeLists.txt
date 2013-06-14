@@ -15,6 +15,8 @@ set (PLUGCATEGORY "personal")
 set (PLUGTITLE "Desktop")
 # The symbolic name of the Icon to use for the plug
 set (PLUGICON "preferences-desktop-wallpaper")
+# Set the version for the plug
+set (VERSION "0.1.1")
 
 project (${PLUGNAME})
 
@@ -33,6 +35,14 @@ configure_file (plug.plug ${CMAKE_BINARY_DIR}/${PLUGNAME}.plug)
 install (FILES ${CMAKE_BINARY_DIR}/${PLUGNAME}.plug DESTINATION ${PKGDATADIR})
 configure_file (${CMAKE_SOURCE_DIR}/config.vala.cmake ${CMAKE_BINARY_DIR}/src/config.vala)
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
+
+# Add 'make dist' command for creating release tarball
+set (CPACK_PACKAGE_VERSION ${VERSION})
+set (CPACK_SOURCE_GENERATOR "TGZ")
+set (CPACK_SOURCE_PACKAGE_FILE_NAME "${CMAKE_PROJECT_NAME}-${CPACK_PACKAGE_VERSION}")
+set (CPACK_SOURCE_IGNORE_FILES "/build/;/.bzr/;/.bzrignore;~$;${CPACK_SOURCE_IGNORE_FILES}")
+include (CPack)
+add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 
 # Files
 file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*")
