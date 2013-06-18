@@ -8,27 +8,27 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2013-06-13 20:27+0000\n"
+"PO-Revision-Date: 2013-06-17 10:04+0000\n"
 "Last-Translator: Joachim Johansson <joachim.j@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-14 06:26+0000\n"
-"X-Generator: Launchpad (build 16667)\n"
+"X-Launchpad-Export-Date: 2013-06-18 06:31+0000\n"
+"X-Generator: Launchpad (build 16673)\n"
 "Language: sv\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures"
-msgstr ""
+msgstr "Bilder"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds"
-msgstr ""
+msgstr "Bakgrundsbilder"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom…"
-msgstr ""
+msgstr "Anpassad…"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Solid Color"
@@ -36,7 +36,7 @@ msgstr "Enfärgad"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
-msgstr "Centrerat"
+msgstr "Centrera"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:150
 msgid "Scaled"
@@ -44,15 +44,15 @@ msgstr "Skalad"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:151
 msgid "Stretched"
-msgstr "Utsträckt"
+msgstr "Sträck för att passa skärmen"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:152
 msgid "Zoom"
-msgstr "Zooma"
+msgstr "Zooma in"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:153
 msgid "Spanned"
-msgstr "Utsträckt"
+msgstr "Sträck för att passa bilden"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:245
 msgid "Select a folder"
@@ -61,7 +61,7 @@ msgstr "Välj mapp"
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:266
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr "Importerar bakgrunder från %s"
+msgstr "Importerar bakgrundsbilder från %s"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:59
 msgid "Wallpaper"
@@ -69,7 +69,7 @@ msgstr "Bakgrundsbild"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:70
 msgid "Small"
-msgstr ""
+msgstr "Liten"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:71
 msgid "Medium"
@@ -81,11 +81,11 @@ msgstr "Stor"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:73
 msgid "Extra Large"
-msgstr ""
+msgstr "Extra stor"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:78
 msgid "Custom ($(current)px)"
-msgstr ""
+msgstr "Valfri storlek ($(current)px)"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Don't hide"
@@ -134,7 +134,7 @@ msgstr "Docka"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:157
 msgid "When the cursor enters the corner of the display:"
-msgstr "När musen är vid hörnet av skärmen"
+msgstr "När muspekaren når hörnet på skärmen"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Custom Command:"
@@ -142,11 +142,11 @@ msgstr "Anpassat kommando:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:198
 msgid "Hot Corners"
-msgstr "Hot Corners"
+msgstr "Aktiva hörn"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:214
 msgid "Do Nothing"
-msgstr "Gör inget"
+msgstr "Gör ingenting"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:215
 msgid "Workspace Overview"
