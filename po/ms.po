@@ -8,30 +8,30 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2013-01-02 15:30+0000\n"
+"PO-Revision-Date: 2013-06-18 08:42+0000\n"
 "Last-Translator: abuyop <Unknown>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-13 05:46+0000\n"
-"X-Generator: Launchpad (build 16667)\n"
+"X-Launchpad-Export-Date: 2013-06-19 05:46+0000\n"
+"X-Generator: Launchpad (build 16673)\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures"
-msgstr ""
+msgstr "Gambar"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds"
-msgstr ""
+msgstr "Latar Belakang"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom…"
-msgstr ""
+msgstr "Suai..."
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Solid Color"
-msgstr ""
+msgstr "Warna Tegar"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
@@ -68,23 +68,23 @@ msgstr "Kertas dinding"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:70
 msgid "Small"
-msgstr ""
+msgstr "Kecil"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:71
 msgid "Medium"
-msgstr ""
+msgstr "Sederhana"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:72
 msgid "Large"
-msgstr ""
+msgstr "Besar"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:73
 msgid "Extra Large"
-msgstr ""
+msgstr "Sangat Besar"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:78
 msgid "Custom ($(current)px)"
-msgstr ""
+msgstr "Suai($(current)px)"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Don't hide"
@@ -121,7 +121,7 @@ msgstr "Mod Sembunyi:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:141
 msgid "Theme:"
-msgstr ""
+msgstr "Tema:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:145
 msgid "Monitor:"
@@ -161,7 +161,7 @@ msgstr "Minimumkan Tetingkap Semasa"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:218
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Tunjuk Menu Aplikasi"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:219
 msgid "Window Overview"
