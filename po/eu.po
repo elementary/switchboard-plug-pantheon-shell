@@ -8,31 +8,31 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2013-04-28 15:49+0000\n"
-"Last-Translator: Ibai Oihanguren <Unknown>\n"
+"PO-Revision-Date: 2013-06-19 21:36+0000\n"
+"Last-Translator: Ibai Oihanguren Sala <Unknown>\n"
 "Language-Team: Basque <eu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-13 05:45+0000\n"
-"X-Generator: Launchpad (build 16667)\n"
+"X-Launchpad-Export-Date: 2013-06-20 05:50+0000\n"
+"X-Generator: Launchpad (build 16673)\n"
 "Language: eu\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures"
-msgstr ""
+msgstr "Irudiak"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds"
-msgstr ""
+msgstr "Atzeko planoak"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom…"
-msgstr ""
+msgstr "Pertsonalizatua…"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Solid Color"
-msgstr ""
+msgstr "Kolore solidoa"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
@@ -69,23 +69,23 @@ msgstr "Horma-papera"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:70
 msgid "Small"
-msgstr ""
+msgstr "Txikia"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:71
 msgid "Medium"
-msgstr ""
+msgstr "Ertaina"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:72
 msgid "Large"
-msgstr ""
+msgstr "Handia"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:73
 msgid "Extra Large"
-msgstr ""
+msgstr "Oso handia"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:78
 msgid "Custom ($(current)px)"
-msgstr ""
+msgstr "Pertsonalizatua ($(current)px)"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Don't hide"
@@ -162,7 +162,7 @@ msgstr "Minimizatu uneko leihoa"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:218
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Erakutsi aplikazio-menua"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:219
 msgid "Window Overview"
