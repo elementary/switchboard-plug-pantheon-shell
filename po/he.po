@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2013-06-17 20:52+0000\n"
+"PO-Revision-Date: 2013-07-21 20:39+0000\n"
 "Last-Translator: Danny Damsky <dannydamsky99@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-18 06:31+0000\n"
-"X-Generator: Launchpad (build 16673)\n"
+"X-Launchpad-Export-Date: 2013-07-22 05:58+0000\n"
+"X-Generator: Launchpad (build 16696)\n"
 "Language: he\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
@@ -85,7 +85,7 @@ msgstr "גדול במיוחד"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:78
 msgid "Custom ($(current)px)"
-msgstr ""
+msgstr "מותאם אישים ($(current)px)"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Don't hide"
