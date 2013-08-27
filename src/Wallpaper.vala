@@ -227,13 +227,13 @@ class Wallpaper : EventBox {
         if (folder_combo.get_active () == 0) {
             clean_wallpapers ();
             WALLPAPER_DIR = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES);
-            load_wallpapers ();
+            load_wallpapers (WALLPAPER_DIR);
         } else if (folder_combo.get_active () == 1) {
             clean_wallpapers ();
             WALLPAPER_DIR = "/usr/share/backgrounds";
-            load_wallpapers.begin (() => {
+            load_wallpapers.begin (WALLPAPER_DIR, () => {
                 WALLPAPER_DIR = Environment.get_user_data_dir () + "/backgrounds";
-                load_wallpapers ();
+                load_wallpapers (WALLPAPER_DIR);
             });
         } else if (folder_combo.get_active () == 2) {
             var dialog = new Gtk.FileChooserDialog (_("Select a folder"), null, FileChooserAction.SELECT_FOLDER);
@@ -244,7 +244,7 @@ class Wallpaper : EventBox {
             if (dialog.run () == ResponseType.ACCEPT) {
                 clean_wallpapers ();
                 WALLPAPER_DIR = dialog.get_filename ();
-                load_wallpapers ();
+                load_wallpapers (WALLPAPER_DIR);
                 dialog.destroy ();
             } else {
                 dialog.destroy ();
@@ -252,17 +252,17 @@ class Wallpaper : EventBox {
         }
     }
 
-    async void load_wallpapers () {
+    async void load_wallpapers (string basefolder) {
         folder_combo.set_sensitive (false);
 
         // Make the progress bar visible, since we're gonna be using it.
         try {
-            plug.switchboard_controller.progress_bar_set_text(_("Importing wallpapers from %s").printf(WALLPAPER_DIR));
+            plug.switchboard_controller.progress_bar_set_text(_("Importing wallpapers from %s").printf(basefolder));
         } catch (Error e) {
             warning (e.message);
         }
 
-        var directory = File.new_for_path (WALLPAPER_DIR);
+        var directory = File.new_for_path (basefolder);
         // The number of wallpapers we've added so far
         double done = 0.0;
 
@@ -287,11 +287,13 @@ class Wallpaper : EventBox {
                 foreach (var info in files) {
                     // We're going to add another wallpaper
                     done++;
-                    // Skip the file if it's not a picture
-                    if (!IOHelper.is_valid_file_type(info)) {
+                    // Skip the file if it's not a picture and continue search for directories
+                    if (info.get_file_type() == FileType.DIRECTORY) {
+                        load_wallpapers (basefolder + "/" + info.get_name());
+                    } else if (!IOHelper.is_valid_file_type(info)) {
                         continue;
                     }
-                    string filename = WALLPAPER_DIR + "/" + info.get_name ();
+                    string filename = basefolder + "/" + info.get_name ();
                     // Skip the default_wallpaper as seen in the description of the
                     // default_link variable
                     if (filename == default_link) {
