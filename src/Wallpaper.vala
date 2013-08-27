@@ -341,15 +341,14 @@ class Wallpaper : EventBox {
         store.clear ();
     }
 
-    void on_drag_data_received (Widget widget, Gdk.DragContext ctx,
-        int x, int y, SelectionData sel, uint information, uint timestamp) {
+    void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
             File file = File.new_for_uri (sel.get_uris ()[0]);
 
             string display_name = Filename.display_basename (file.get_path ());
 
-            var dest_folder = File.new_for_path (Environment.get_user_data_dir ()+"/backgrounds");
-            var dest = File.new_for_path (Environment.get_user_data_dir ()+"/backgrounds/"+display_name);
+            var dest_folder = File.new_for_path (Environment.get_user_data_dir () + "/backgrounds");
+            var dest = File.new_for_path (Environment.get_user_data_dir () + "/backgrounds/" + display_name);
             if (!dest_folder.query_exists ()) {
                 try {
                     dest_folder.make_directory ();
@@ -366,7 +365,7 @@ class Wallpaper : EventBox {
 
             string filename = dest.get_path ();
 
-            string extension = display_name.split(".")[display_name.split(".").length - 1];
+            string extension = display_name.split (".")[display_name.split (".").length - 1];
 
             if (extension != "jpg" && extension != "png" && extension != "jpeg" && extension != "gif") {
                 Gtk.drag_finish (ctx, false, false, timestamp);
