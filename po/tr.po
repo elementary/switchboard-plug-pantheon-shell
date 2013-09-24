@@ -8,31 +8,31 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2012-11-21 19:02+0000\n"
-"Last-Translator: Ferhat TUNÇTAN <ferhattnctn66@gmail.com>\n"
+"PO-Revision-Date: 2013-09-23 19:13+0000\n"
+"Last-Translator: Ebubekir KARUL <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-09-04 04:58+0000\n"
-"X-Generator: Launchpad (build 16753)\n"
+"X-Launchpad-Export-Date: 2013-09-24 06:35+0000\n"
+"X-Generator: Launchpad (build 16771)\n"
 "Language: tr\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures"
-msgstr ""
+msgstr "Resimler"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds"
-msgstr ""
+msgstr "Arkaplanlar"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom…"
-msgstr ""
+msgstr "Özel…"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Solid Color"
-msgstr ""
+msgstr "Düz Renk"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
@@ -69,19 +69,19 @@ msgstr "Duvar Kağıdı"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:70
 msgid "Small"
-msgstr ""
+msgstr "Küçük"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:71
 msgid "Medium"
-msgstr ""
+msgstr "Orta"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:72
 msgid "Large"
-msgstr ""
+msgstr "Büyük"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:73
 msgid "Extra Large"
-msgstr ""
+msgstr "Çok Büyük"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:78
 msgid "Custom ($(current)px)"
@@ -122,7 +122,7 @@ msgstr "Saklama Modu:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:141
 msgid "Theme:"
-msgstr ""
+msgstr "Tema:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:145
 msgid "Monitor:"
@@ -150,7 +150,7 @@ msgstr "Hiçbir Şey Yapma"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:215
 msgid "Workspace Overview"
-msgstr ""
+msgstr "Çalışma Alanı Görünümü"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:216
 msgid "Maximize Current Window"
@@ -162,15 +162,15 @@ msgstr "Geçerli Pencereyi Küçült"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:218
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Uygulamalar Menüsünü Göster"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:219
 msgid "Window Overview"
-msgstr ""
+msgstr "Pencere Görünümü"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:220
 msgid "Show All Windows"
-msgstr ""
+msgstr "Tüm Pencereleri Göster"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:221
 msgid "Execute Custom Command"
