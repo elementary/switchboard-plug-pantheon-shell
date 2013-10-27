@@ -8,31 +8,31 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2012-10-26 19:35+0000\n"
-"Last-Translator: George Fragos <fragos.george@hotmail.com>\n"
+"PO-Revision-Date: 2013-10-26 09:29+0000\n"
+"Last-Translator: Nikos Tourvas <nikostourvas@gmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-09-04 04:58+0000\n"
-"X-Generator: Launchpad (build 16753)\n"
+"X-Launchpad-Export-Date: 2013-10-27 06:11+0000\n"
+"X-Generator: Launchpad (build 16810)\n"
 "Language: el\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures"
-msgstr ""
+msgstr "Εικόνες"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds"
-msgstr ""
+msgstr "Παρασκήνια"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom…"
-msgstr ""
+msgstr "Προσαρμοσμένο..."
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Solid Color"
-msgstr ""
+msgstr "Χρώμα χωρίς διαβαθμίσεις"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
@@ -61,7 +61,7 @@ msgstr "Επιλέξτε ένα φάκελο"
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:266
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr ""
+msgstr "Εισαγωγή παρασκηνίων από %s"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:59
 msgid "Wallpaper"
@@ -69,31 +69,31 @@ msgstr "Ταπετσαρία"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:70
 msgid "Small"
-msgstr ""
+msgstr "Μικρό"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:71
 msgid "Medium"
-msgstr ""
+msgstr "Μεσαίο"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:72
 msgid "Large"
-msgstr ""
+msgstr "Μεγάλο"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:73
 msgid "Extra Large"
-msgstr ""
+msgstr "Πολύ μεγάλο"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:78
 msgid "Custom ($(current)px)"
-msgstr ""
+msgstr "Προσαρμοσμένο ($(current)px)"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Don't hide"
-msgstr ""
+msgstr "Χωρίς απόκρυψη"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:87
 msgid "Intelligent hide"
-msgstr ""
+msgstr "Έξυπνη απόκρυψη"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:88
 msgid "Auto hide"
@@ -101,16 +101,16 @@ msgstr "Αυτόματη απόκρυψη"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:89
 msgid "Hide on maximize"
-msgstr ""
+msgstr "Απόκρυψη στη μεγιστοποίηση"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:125
 msgid "Primary Monitor"
-msgstr ""
+msgstr "Κύρια οθόνη"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:128
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "Οθόνη %d"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:135
 msgid "Icon Size:"
@@ -118,15 +118,15 @@ msgstr "Μέγεθος εικονιδίου:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:137
 msgid "Hide Mode:"
-msgstr ""
+msgstr "Λειτουργία απόκρυψης:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:141
 msgid "Theme:"
-msgstr ""
+msgstr "Θέμα:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:145
 msgid "Monitor:"
-msgstr ""
+msgstr "Οθόνη:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:149
 msgid "Dock"
@@ -134,48 +134,48 @@ msgstr ""
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:157
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "Όταν ο δείκτης μπαίνει στη γωνία της οθόνης:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Custom Command:"
-msgstr ""
+msgstr "Προσαρμοσμένη εντολή:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:198
 msgid "Hot Corners"
-msgstr ""
+msgstr "Ενεργές γωνίες"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:214
 msgid "Do Nothing"
-msgstr ""
+msgstr "Καμία ενέργεια"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:215
 msgid "Workspace Overview"
-msgstr ""
+msgstr "Επισκόπηση χώρων εργασίας"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:216
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "Μεγιστοποίηση του τρέχοντος παραθύρου"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:217
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "Ελαχιστοποίηση του τρέχοντος παραθύρου"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:218
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Εμφάνιση μενού εφαρμογών"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:219
 msgid "Window Overview"
-msgstr ""
+msgstr "Επισκόπηση παραθύρων"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:220
 msgid "Show All Windows"
-msgstr ""
+msgstr "Επισκόπηση όλων των παραθύρων"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:221
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "Εκτέλεση προσαρμοσμένης εντολής"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:240
 msgid "Desktop"
-msgstr ""
+msgstr "Επιφάνεια εργασίας"
