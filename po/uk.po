@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2012-10-26 19:34+0000\n"
-"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
+"PO-Revision-Date: 2013-12-21 23:50+0000\n"
+"Last-Translator: neiron13 <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-09-04 04:58+0000\n"
-"X-Generator: Launchpad (build 16753)\n"
+"X-Launchpad-Export-Date: 2013-12-22 05:55+0000\n"
+"X-Generator: Launchpad (build 16872)\n"
 "Language: uk\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures"
-msgstr ""
+msgstr "Зображення"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds"
-msgstr ""
+msgstr "Зображення тла"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom…"
@@ -32,56 +32,56 @@ msgstr ""
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Solid Color"
-msgstr ""
+msgstr "Однотонний"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
-msgstr ""
+msgstr "Відцентровано"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:150
 msgid "Scaled"
-msgstr ""
+msgstr "Маштабування"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:151
 msgid "Stretched"
-msgstr ""
+msgstr "Розтягнути"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:152
 msgid "Zoom"
-msgstr ""
+msgstr "Збільшити"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:153
 msgid "Spanned"
-msgstr ""
+msgstr "Складові"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:245
 msgid "Select a folder"
-msgstr ""
+msgstr "Оберіть теку"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:266
 #, c-format
 msgid "Importing wallpapers from %s"
-msgstr ""
+msgstr "Імпортувати шпалери з %s"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:59
 msgid "Wallpaper"
-msgstr ""
+msgstr "Шпалери"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:70
 msgid "Small"
-msgstr ""
+msgstr "Малий"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:71
 msgid "Medium"
-msgstr ""
+msgstr "Середній"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:72
 msgid "Large"
-msgstr ""
+msgstr "Великий"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:73
 msgid "Extra Large"
-msgstr ""
+msgstr "Дуже великий"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:78
 msgid "Custom ($(current)px)"
@@ -89,93 +89,93 @@ msgstr ""
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:86
 msgid "Don't hide"
-msgstr ""
+msgstr "Не приховувати"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:87
 msgid "Intelligent hide"
-msgstr ""
+msgstr "Інтелектуальне приховування"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:88
 msgid "Auto hide"
-msgstr ""
+msgstr "Автоматично ховати"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:89
 msgid "Hide on maximize"
-msgstr ""
+msgstr "Приховувати при розгортанні"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:125
 msgid "Primary Monitor"
-msgstr ""
+msgstr "Основний монітор"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:128
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "Монітор %d"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:135
 msgid "Icon Size:"
-msgstr ""
+msgstr "Розмір іконок:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:137
 msgid "Hide Mode:"
-msgstr ""
+msgstr "Прихований режим"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:141
 msgid "Theme:"
-msgstr ""
+msgstr "Тема:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:145
 msgid "Monitor:"
-msgstr ""
+msgstr "Монітор:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:149
 msgid "Dock"
-msgstr ""
+msgstr "Панель"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:157
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "Коли курсор потрапляє в куток монітору:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Custom Command:"
-msgstr ""
+msgstr "Команди користувача:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:198
 msgid "Hot Corners"
-msgstr ""
+msgstr "Активні кути"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:214
 msgid "Do Nothing"
-msgstr ""
+msgstr "Нічого не робити"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:215
 msgid "Workspace Overview"
-msgstr ""
+msgstr "Огляд робочої області"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:216
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "Збільшити поточне вікно"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:217
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "Зменшити поточне вікно"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:218
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Показати Меню програм"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:219
 msgid "Window Overview"
-msgstr ""
+msgstr "Вікно огляду"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:220
 msgid "Show All Windows"
-msgstr ""
+msgstr "Показати всі вікна"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:221
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "Виконання команд користувача"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:240
 msgid "Desktop"
-msgstr ""
+msgstr "Стільниця"
