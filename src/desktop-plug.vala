@@ -32,11 +32,10 @@ public class GalaPlug : Switchboard.Plug {
         if (main_grid == null) {
             main_grid = new Gtk.Grid ();
             stack = new Gtk.Stack ();
-            stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
             var stack_switcher = new Gtk.StackSwitcher ();
             stack_switcher.stack = stack;
-            stack_switcher.set_halign (Gtk.Align.CENTER);
-            stack_switcher.set_margin_top (12);
+            stack_switcher.halign = Gtk.Align.CENTER;
+            stack_switcher.margin_top = 12;
             
             /*wallpaper*/
             var wallpaper = new Wallpaper (this);
@@ -250,33 +249,8 @@ public class GalaPlug : Switchboard.Plug {
     }
 }
 
-
-public class Desktop.Plugin : Peas.ExtensionBase, Peas.Activatable {
-    
-    public GLib.Object object { owned get; construct; }
-    
-    public Plugin () {
-        GLib.Object ();
-    }
-
-    public void activate () {
-        message ("Activating Desktop plugin");
-        var gala_plug = new GalaPlug ();
-        Switchboard.PlugsManager.get_default ().register_plug (gala_plug);
-    }
-
-    public void deactivate () {
-        message ("Deactivating Desktop plugin");
-    }
-
-    public void update_state () {
-        
-    }
-}
-
-[ModuleInit]
-public void peas_register_types (GLib.TypeModule module) {
-    var objmodule = module as Peas.ObjectModule;
-    objmodule.register_extension_type (typeof (Peas.Activatable),
-                                     typeof (Desktop.Plugin));
+public Switchboard.Plug get_plug (Module module) {
+    debug ("Activating Desktop plug");
+    var plug = new GalaPlug ();
+    return plug;
 }

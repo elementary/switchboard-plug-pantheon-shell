@@ -1,9 +1,9 @@
 find_package (PkgConfig)
 
 # Add all your dependencies to the list below
-pkg_check_modules (DEPS REQUIRED switchboard-2.0 granite gtk+-3.0>=3.10)
+pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite gtk+-3.0>=3.10)
 
-add_definitions (${DEPS_CFLAGS} -I/usr/include/polkit-1)
+add_definitions (${DEPS_CFLAGS})
 link_libraries (${DEPS_LIBRARIES})
 link_directories (${DEPS_LIBRARY_DIRS})
 
