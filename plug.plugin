@@ -1,0 +1,11 @@
+[Plugin]
+Module=@PLUGNAME@
+IAge=2
+Name=@PLUGTITLE@
+Description=@PLUGDESCRIPTION@
+Authors=Switchboard Developers
+Copyright=Copyright © 2013 Switchboard Developers
+Website=http://launchpad.net/switchboard
+Icon=@PLUGICON@
+X-Category=@PLUGCATEGORY@
+X-GNOME-Gettext-Domain=@GETTEXT_PACKAGE@

@@ -75,16 +75,16 @@ class Wallpaper : EventBox {
     ColorButton color;
     string current_wallpaper_path;
 
-    Pantheon.Switchboard.Plug plug;
+    Switchboard.Plug plug;
 
     //shows that we got or wallpapers together
     public bool finished;
 
     //name of the default-wallpaper-link that we can prevent loading it again
     //(assumes that the defaultwallpaper is also in the system wallpaper directory)
-    static string default_link = "/usr/share/backgrounds/elementaryos-default";
+    static string default_link = "file:///usr/share/backgrounds/elementaryos-default";
 
-    public Wallpaper (Pantheon.Switchboard.Plug _plug) {
+    public Wallpaper (Switchboard.Plug _plug) {
         plug = _plug;
 
         settings = new GLib.Settings ("org.gnome.desktop.background");
@@ -98,8 +98,8 @@ class Wallpaper : EventBox {
                 background-color: @background_color;
             }
             .wallpaper-view:selected {
-                background-color: #FFFFFF;
-                border-color: shade (mix (rgb (34, 255, 120), #fff, 0.5), 0.9);
+                background-color: shade (#DEDEDE, 0.80);
+                color: #323232; 
             }
         """;
         var icon_view_style = new Gtk.CssProvider ();
@@ -117,22 +117,12 @@ class Wallpaper : EventBox {
         wallpaper_view.selection_changed.connect (update_wallpaper);
         wallpaper_view.get_style_context ().add_class ("wallpaper-view");
         wallpaper_view.get_style_context ().add_provider (icon_view_style, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-        wallpaper_view.item_padding = 5;
-
-        wallpaper_view.size_allocate.connect ( () => {
-            int width = wallpaper_view.get_allocated_width ();
-            int columns = (int) GLib.Math.floor(width/200);
-            wallpaper_view.set_columns (columns);
-        });
 
         TargetEntry e = {"text/uri-list", 0, 0};
         wallpaper_view.drag_data_received.connect (on_drag_data_received);
         drag_dest_set (wallpaper_view, DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
 
         var scrolled = new ScrolledWindow (null, null);
-        scrolled.set_size_request (250, 250);
-        scrolled.set_margin_left (12);
-        scrolled.set_margin_right (12);
         scrolled.add (wallpaper_view);
 
         vbox.pack_start (scrolled, true, true, 5);
@@ -209,7 +199,7 @@ class Wallpaper : EventBox {
 
             current_wallpaper_path = filename.get_string();
 
-            settings.set_string ("picture-uri", "file://" + filename.get_string ());
+            settings.set_string ("picture-uri", filename.get_string ());
         }
     }
 
@@ -226,25 +216,27 @@ class Wallpaper : EventBox {
     void update_wallpaper_folder () {
         if (folder_combo.get_active () == 0) {
             clean_wallpapers ();
-            WALLPAPER_DIR = GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES);
-            load_wallpapers ();
+            var picture_file = GLib.File.new_for_path (GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES));
+            WALLPAPER_DIR = picture_file.get_uri ();
+            load_wallpapers.begin ();
         } else if (folder_combo.get_active () == 1) {
             clean_wallpapers ();
-            WALLPAPER_DIR = "/usr/share/backgrounds";
+            WALLPAPER_DIR = "file:///usr/share/backgrounds";
             load_wallpapers.begin (() => {
-                WALLPAPER_DIR = Environment.get_user_data_dir () + "/backgrounds";
-                load_wallpapers ();
+                var backgrounds_file = GLib.File.new_for_path (GLib.Environment.get_user_data_dir () + "/backgrounds");
+                WALLPAPER_DIR = backgrounds_file.get_uri ();
+                load_wallpapers.begin ();
             });
         } else if (folder_combo.get_active () == 2) {
             var dialog = new Gtk.FileChooserDialog (_("Select a folder"), null, FileChooserAction.SELECT_FOLDER);
-            dialog.add_button (Stock.CANCEL, ResponseType.CANCEL);
-            dialog.add_button (Stock.OPEN, ResponseType.ACCEPT);
+            dialog.add_button (_("Cancel"), ResponseType.CANCEL);
+            dialog.add_button (_("Open"), ResponseType.ACCEPT);
             dialog.set_default_response (ResponseType.ACCEPT);
 
             if (dialog.run () == ResponseType.ACCEPT) {
                 clean_wallpapers ();
-                WALLPAPER_DIR = dialog.get_filename ();
-                load_wallpapers ();
+                WALLPAPER_DIR = dialog.get_file ().get_uri ();
+                load_wallpapers.begin ();
                 dialog.destroy ();
             } else {
                 dialog.destroy ();
@@ -255,14 +247,7 @@ class Wallpaper : EventBox {
     async void load_wallpapers () {
         folder_combo.set_sensitive (false);
 
-        // Make the progress bar visible, since we're gonna be using it.
-        try {
-            plug.switchboard_controller.progress_bar_set_text(_("Importing wallpapers from %s").printf(WALLPAPER_DIR));
-        } catch (Error e) {
-            warning (e.message);
-        }
-
-        var directory = File.new_for_path (WALLPAPER_DIR);
+        var directory = File.new_for_uri (WALLPAPER_DIR);
         // The number of wallpapers we've added so far
         double done = 0.0;
 
@@ -291,7 +276,8 @@ class Wallpaper : EventBox {
                     if (!IOHelper.is_valid_file_type(info)) {
                         continue;
                     }
-                    string filename = WALLPAPER_DIR + "/" + info.get_name ();
+                    var file = File.new_for_uri (WALLPAPER_DIR + "/" + info.get_name ());
+                    string filename = file.get_path ();
                     // Skip the default_wallpaper as seen in the description of the
                     // default_link variable
                     if (filename == default_link) {
@@ -300,7 +286,7 @@ class Wallpaper : EventBox {
 
                     try {
                         // Create a thumbnail of the image and load it into the IconView
-                        var image = new Gdk.Pixbuf.from_file_at_scale(filename, 180, 120, false);
+                        var image = new Gdk.Pixbuf.from_file_at_scale(filename, 150, 100, false);
                         // Add the wallpaper name and thumbnail to the IconView
                         Gtk.TreeIter root;
                         this.store.append(out root);
@@ -308,13 +294,11 @@ class Wallpaper : EventBox {
                         this.store.set(root, 1, filename, -1);
 
                         // Select the wallpaper if it is the current wallpaper
-                        if (filename == current_wallpaper_path) {
+                        if (current_wallpaper_path.has_suffix (filename)) {
                             this.wallpaper_view.select_path (this.store.get_path (root));
                         }
 
                         this.iters.append (root);
-                        // Update the progress bar
-                        plug.switchboard_controller.progress_bar_set_fraction(done/count);
                         // Have GTK update the UI even while we're busy
                         // working on file IO.
                         while(Gtk.events_pending ()) {
@@ -325,8 +309,6 @@ class Wallpaper : EventBox {
                     }
                 }
             }
-            // Hide the progress bar since we're done with it.
-            plug.switchboard_controller.progress_bar_set_visible(false);
             finished = true;
 
             folder_combo.set_sensitive (true);
@@ -363,7 +345,7 @@ class Wallpaper : EventBox {
                 warning (e.message);
             }
 
-            string filename = dest.get_path ();
+            string filename = dest.get_uri ();
 
             string extension = display_name.split (".")[display_name.split (".").length - 1];
 
