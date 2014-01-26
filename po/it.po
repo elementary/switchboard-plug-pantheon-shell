@@ -8,31 +8,31 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2013-05-31 16:19+0000\n"
-"Last-Translator: DarkSaivor <ds.aureli@gmail.com>\n"
+"PO-Revision-Date: 2014-01-25 10:54+0000\n"
+"Last-Translator: Bennici Piercarlo <piercarlo.bennici@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-01-18 07:03+0000\n"
-"X-Generator: Launchpad (build 16901)\n"
+"X-Launchpad-Export-Date: 2014-01-26 05:13+0000\n"
+"X-Generator: Launchpad (build 16914)\n"
 "Language: it\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures"
-msgstr ""
+msgstr "Immagini"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:142
 msgid "Backgrounds"
-msgstr ""
+msgstr "Sfondi"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:143
 msgid "Custom…"
-msgstr ""
+msgstr "Personalizzato…"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:148
 msgid "Solid Color"
-msgstr ""
+msgstr "Tinta unita"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:149
 msgid "Centered"
@@ -48,7 +48,7 @@ msgstr "Stirato"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:152
 msgid "Zoom"
-msgstr "Ingrandito"
+msgstr "Ingradimento"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:153
 msgid "Spanned"
