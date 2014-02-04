@@ -257,7 +257,7 @@ class Wallpaper : EventBox {
 
         // Make the progress bar visible, since we're gonna be using it.
         try {
-            plug.switchboard_controller.progress_bar_set_text(_("Importing wallpapers from %s").printf(basefolder));
+            plug.switchboard_controller.progress_bar_set_text (_("Importing wallpapers from %s").printf(basefolder));
         } catch (Error e) {
             warning (e.message);
         }
@@ -288,9 +288,9 @@ class Wallpaper : EventBox {
                     // We're going to add another wallpaper
                     done++;
                     // Skip the file if it's not a picture and continue search for directories
-                    if (info.get_file_type() == FileType.DIRECTORY) {
+                    if (info.get_file_type () == FileType.DIRECTORY) {
                         load_wallpapers (basefolder + "/" + info.get_name());
-                    } else if (!IOHelper.is_valid_file_type(info)) {
+                    } else if (!IOHelper.is_valid_file_type (info)) {
                         continue;
                     }
                     string filename = basefolder + "/" + info.get_name ();
