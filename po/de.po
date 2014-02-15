@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2013-12-14 15:37+0000\n"
+"PO-Revision-Date: 2014-02-14 14:26+0000\n"
 "Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-01-18 07:03+0000\n"
-"X-Generator: Launchpad (build 16901)\n"
+"X-Launchpad-Export-Date: 2014-02-15 07:36+0000\n"
+"X-Generator: Launchpad (build 16916)\n"
 "Language: de\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
@@ -138,11 +138,11 @@ msgstr "Beim Berühren der Bildschirmecken mit dem Mauszeiger:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:186
 msgid "Custom Command:"
-msgstr "Terminal-Befehl ausführen:"
+msgstr "Benutzerdefinierter Befehl:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:198
 msgid "Hot Corners"
-msgstr "Hot Corners"
+msgstr "Aktive Ecken"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:214
 msgid "Do Nothing"
@@ -178,4 +178,4 @@ msgstr "Benutzerdefinierten Befehl ausführen"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:240
 msgid "Desktop"
-msgstr "Arbeitsfläche"
+msgstr "Schreibtisch"
