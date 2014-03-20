@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2014-03-19 06:24+0000\n"
+"PO-Revision-Date: 2014-03-19 06:38+0000\n"
 "Last-Translator: SyedKhaleel Jageer <jskcse4@gmail.com>\n"
 "Language-Team: Tamil <ta@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-03-19 06:28+0000\n"
-"X-Generator: Launchpad (build 16963)\n"
+"X-Launchpad-Export-Date: 2014-03-20 06:17+0000\n"
+"X-Generator: Launchpad (build 16967)\n"
 
 #: /home/codygarver/shell/po/../src//Wallpaper.vala:141
 msgid "Pictures"
@@ -100,7 +100,7 @@ msgstr "தன்னியக்க மறைதல்"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:89
 msgid "Hide on maximize"
-msgstr ""
+msgstr "பெரிதாக்கும் போது மறைக்க"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:125
 msgid "Primary Monitor"
@@ -117,7 +117,7 @@ msgstr "ஐகான் அளவு:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:137
 msgid "Hide Mode:"
-msgstr ""
+msgstr "மறைக்கும் முறை:"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:141
 msgid "Theme:"
@@ -149,31 +149,31 @@ msgstr "ஒன்றும் செய்யாதே"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:215
 msgid "Workspace Overview"
-msgstr ""
+msgstr "பணியிட கண்ணோட்டம்"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:216
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "தற்போதைய சாளரத்தை பெரிதாக்கு"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:217
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "தற்போதைய சாளரத்தில் குறை"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:218
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "பயன்பாடுகள் மெனுவை காட்டு"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:219
 msgid "Window Overview"
-msgstr ""
+msgstr "விண்டோ கண்ணோட்டம்"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:220
 msgid "Show All Windows"
-msgstr ""
+msgstr "அனைத்து சாளரங்களை காட்டு"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:221
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "தனிபயன் கட்டளையை இயக்கவும்"
 
 #: /home/codygarver/shell/po/../src//desktop-plug.vala:240
 msgid "Desktop"
