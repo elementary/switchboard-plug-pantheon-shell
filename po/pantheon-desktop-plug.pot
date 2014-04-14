@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-14 22:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/desktop-plug.vala:26
+msgid "Desktop"
+msgstr ""
+
+#: ../src/desktop-plug.vala:27
+msgid "Change your wallpaper and customize your dock"
+msgstr ""
+
+#: ../src/desktop-plug.vala:43
+msgid "Wallpaper"
+msgstr ""
+
+#: ../src/desktop-plug.vala:68
+msgid "Small"
+msgstr ""
+
+#: ../src/desktop-plug.vala:69
+msgid "Medium"
+msgstr ""
+
+#: ../src/desktop-plug.vala:70
+msgid "Large"
+msgstr ""
+
+#: ../src/desktop-plug.vala:71
+msgid "Extra Large"
+msgstr ""
+
+#: ../src/desktop-plug.vala:77
+msgid "Custom ($(current)px)"
+msgstr ""
+
+#: ../src/desktop-plug.vala:85
+msgid "Don't hide"
+msgstr ""
+
+#: ../src/desktop-plug.vala:86
+msgid "Intelligent hide"
+msgstr ""
+
+#: ../src/desktop-plug.vala:87
+msgid "Auto hide"
+msgstr ""
+
+#: ../src/desktop-plug.vala:88
+msgid "Hide on maximize"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Primary Monitor"
+msgstr ""
+
+#: ../src/desktop-plug.vala:126
+msgid "Monitor %d"
+msgstr ""
+
+#: ../src/desktop-plug.vala:133
+msgid "Icon Size:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:135
+msgid "Hide Mode:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:150
+msgid "Theme:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:156
+msgid "Monitor:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:162
+msgid "Dock"
+msgstr ""
+
+#: ../src/desktop-plug.vala:172
+msgid "When the cursor enters the corner of the display:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:199
+msgid "Custom Command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:217
+msgid "Hot Corners"
+msgstr ""
+
+#: ../src/desktop-plug.vala:222
+msgid "Do Nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:223
+msgid "Workspace Overview"
+msgstr ""
+
+#: ../src/desktop-plug.vala:224
+msgid "Maximize Current Window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:225
+msgid "Minimize Current Window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:226
+msgid "Show Applications Menu"
+msgstr ""
+
+#: ../src/desktop-plug.vala:227
+msgid "Window Overview"
+msgstr ""
+
+#: ../src/desktop-plug.vala:228
+msgid "Show All Windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:229
+msgid "Execute Custom Command"
+msgstr ""
+
+#: ../src/Wallpaper.vala:131
+msgid "Pictures"
+msgstr ""
+
+#: ../src/Wallpaper.vala:132
+msgid "Backgrounds"
+msgstr ""
+
+#: ../src/Wallpaper.vala:133
+msgid "Custom…"
+msgstr ""
+
+#: ../src/Wallpaper.vala:138
+msgid "Solid Color"
+msgstr ""
+
+#: ../src/Wallpaper.vala:139
+msgid "Centered"
+msgstr ""
+
+#: ../src/Wallpaper.vala:140
+msgid "Scaled"
+msgstr ""
+
+#: ../src/Wallpaper.vala:141
+msgid "Stretched"
+msgstr ""
+
+#: ../src/Wallpaper.vala:142
+msgid "Zoom"
+msgstr ""
+
+#: ../src/Wallpaper.vala:143
+msgid "Spanned"
+msgstr ""
+
+#: ../src/Wallpaper.vala:231
+msgid "Select a folder"
+msgstr ""
+
+#: ../src/Wallpaper.vala:232
+msgid "Cancel"
+msgstr ""
+
+#: ../src/Wallpaper.vala:233
+msgid "Open"
+msgstr ""
