@@ -22,7 +22,7 @@ public class GalaPlug : Switchboard.Plug {
     
     public GalaPlug () {
         Object (category: Category.PERSONAL,
-                code_name: "hardware-gcc-color",
+                code_name: "pantheon-desktop",
                 display_name: _("Desktop"),
                 description: _("Change you wallpaper and customize your dock"),
                 icon: "preferences-desktop-wallpaper");
