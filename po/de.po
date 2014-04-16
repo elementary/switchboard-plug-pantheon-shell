@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-14 22:16+0200\n"
-"PO-Revision-Date: 2014-04-11 20:18+0000\n"
-"Last-Translator: Tobias Bannert <Unknown>\n"
+"PO-Revision-Date: 2014-04-15 13:50+0000\n"
+"Last-Translator: Simeon <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
+"X-Launchpad-Export-Date: 2014-04-16 07:04+0000\n"
 "X-Generator: Launchpad (build 16976)\n"
 "Language: de\n"
 
@@ -24,7 +24,7 @@ msgstr "Schreibtisch"
 
 #: ../src/desktop-plug.vala:27
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Ändern Sie das Hintergrundbild und passen Sie das Dock an"
 
 #: ../src/desktop-plug.vala:43
 msgid "Wallpaper"
@@ -180,8 +180,8 @@ msgstr "Ordner auswählen"
 
 #: ../src/Wallpaper.vala:232
 msgid "Cancel"
-msgstr ""
+msgstr "Abbrechen"
 
 #: ../src/Wallpaper.vala:233
 msgid "Open"
-msgstr ""
+msgstr "Öffnen"
