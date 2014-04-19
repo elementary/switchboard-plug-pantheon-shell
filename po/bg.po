@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-14 22:16+0200\n"
-"PO-Revision-Date: 2013-06-24 09:21+0000\n"
-"Last-Translator: Veselin Trakiyski <Unknown>\n"
+"PO-Revision-Date: 2014-04-18 19:11+0000\n"
+"Last-Translator: ITPROJECTS <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-04-19 06:33+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: bg\n"
 
 #: ../src/desktop-plug.vala:26
@@ -24,7 +24,7 @@ msgstr "Десктоп"
 
 #: ../src/desktop-plug.vala:27
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Променете вашият тапет и персонализирате долната лента"
 
 #: ../src/desktop-plug.vala:43
 msgid "Wallpaper"
@@ -48,7 +48,7 @@ msgstr "Много голям"
 
 #: ../src/desktop-plug.vala:77
 msgid "Custom ($(current)px)"
-msgstr ""
+msgstr "По избор ($(current)px)"
 
 #: ../src/desktop-plug.vala:85
 msgid "Don't hide"
@@ -180,8 +180,8 @@ msgstr "Избиране на папка"
 
 #: ../src/Wallpaper.vala:232
 msgid "Cancel"
-msgstr ""
+msgstr "Отказ"
 
 #: ../src/Wallpaper.vala:233
 msgid "Open"
-msgstr ""
+msgstr "Отвoри"
