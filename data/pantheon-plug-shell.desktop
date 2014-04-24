@@ -9,5 +9,4 @@ StartupNotify=true
 Categories=X-PANTHEON-Switchboard-Plugs;
 OnlyShowIn=Pantheon;
 Keywords=Shell;Pantheon;Wallpaper;Hotcorners;
-X-Ubuntu-Gettext-Domain=switchboard
 X-GNOME-Gettext-Domain=switchboard
