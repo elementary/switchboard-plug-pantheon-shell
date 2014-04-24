@@ -49,7 +49,7 @@ add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 # Files
 file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*.png")
 
-install (FILES "${CMAKE_CURRENT_SOURCE_DIR}/data/pantheon-plug-shell.desktop" DESTINATION "/usr/share/applications")
+install (FILES "${CMAKE_CURRENT_SOURCE_DIR}/data/pantheon-plug-shell.desktop" DESTINATION "${CMAKE_INSTALL_FULL_DATAROOTDIR}/applications")
 
 # Traslation stuff
 add_subdirectory (po)
