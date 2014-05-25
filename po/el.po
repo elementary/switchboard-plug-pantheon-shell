@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-14 22:16+0200\n"
-"PO-Revision-Date: 2014-04-11 16:07+0000\n"
-"Last-Translator: Nikos Tourvas <nikostourvas@gmail.com>\n"
+"PO-Revision-Date: 2014-05-24 14:45+0000\n"
+"Last-Translator: John Brracciano <john.bracciano@hotmail.gr>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-05-25 06:07+0000\n"
+"X-Generator: Launchpad (build 17017)\n"
 "Language: el\n"
 
 #: ../src/desktop-plug.vala:26
@@ -24,7 +24,7 @@ msgstr "Επιφάνεια εργασίας"
 
 #: ../src/desktop-plug.vala:27
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Αλλάξτε την ταπετσαρία σας και προσαρμόστε την μπάρα εφαρμογών σας"
 
 #: ../src/desktop-plug.vala:43
 msgid "Wallpaper"
@@ -152,7 +152,7 @@ msgstr "Προσαρμοσμένο..."
 
 #: ../src/Wallpaper.vala:138
 msgid "Solid Color"
-msgstr "Χρώμα χωρίς διαβαθμίσεις"
+msgstr "Αμιγές χρώμα"
 
 #: ../src/Wallpaper.vala:139
 msgid "Centered"
@@ -172,7 +172,7 @@ msgstr "Μεγέθυνση"
 
 #: ../src/Wallpaper.vala:143
 msgid "Spanned"
-msgstr ""
+msgstr "Εκτεταμένο"
 
 #: ../src/Wallpaper.vala:231
 msgid "Select a folder"
@@ -180,8 +180,8 @@ msgstr "Επιλέξτε ένα φάκελο"
 
 #: ../src/Wallpaper.vala:232
 msgid "Cancel"
-msgstr ""
+msgstr "Ακύρωση"
 
 #: ../src/Wallpaper.vala:233
 msgid "Open"
-msgstr ""
+msgstr "Άνοιγμα"
