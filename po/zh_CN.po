@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-14 22:16+0200\n"
-"PO-Revision-Date: 2013-06-15 06:30+0000\n"
-"Last-Translator: Wang Dianjin <Unknown>\n"
+"PO-Revision-Date: 2014-06-03 10:03+0000\n"
+"Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-06-04 06:27+0000\n"
+"X-Generator: Launchpad (build 17031)\n"
 "Language: \n"
 
 #: ../src/desktop-plug.vala:26
@@ -24,7 +24,7 @@ msgstr "桌面"
 
 #: ../src/desktop-plug.vala:27
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "更换壁纸和自定义您的Dock"
 
 #: ../src/desktop-plug.vala:43
 msgid "Wallpaper"
@@ -180,8 +180,8 @@ msgstr "选择文件夹"
 
 #: ../src/Wallpaper.vala:232
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: ../src/Wallpaper.vala:233
 msgid "Open"
-msgstr ""
+msgstr "打开"
