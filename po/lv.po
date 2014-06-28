@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-14 22:16+0200\n"
-"PO-Revision-Date: 2012-10-26 19:36+0000\n"
-"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
+"PO-Revision-Date: 2014-06-28 01:55+0000\n"
+"Last-Translator: Matiss Roberts Treinis <matiss@marolind.com>\n"
 "Language-Team: Latvian <lv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-06-28 06:00+0000\n"
+"X-Generator: Launchpad (build 17077)\n"
 "Language: lv\n"
 
 #: ../src/desktop-plug.vala:26
 msgid "Desktop"
-msgstr ""
+msgstr "Darbvirsma"
 
 #: ../src/desktop-plug.vala:27
 msgid "Change your wallpaper and customize your dock"
@@ -28,23 +28,23 @@ msgstr ""
 
 #: ../src/desktop-plug.vala:43
 msgid "Wallpaper"
-msgstr ""
+msgstr "Ekrāntapete"
 
 #: ../src/desktop-plug.vala:68
 msgid "Small"
-msgstr ""
+msgstr "Mazs"
 
 #: ../src/desktop-plug.vala:69
 msgid "Medium"
-msgstr ""
+msgstr "Vidējs"
 
 #: ../src/desktop-plug.vala:70
 msgid "Large"
-msgstr ""
+msgstr "Liels"
 
 #: ../src/desktop-plug.vala:71
 msgid "Extra Large"
-msgstr ""
+msgstr "Īpaši liels"
 
 #: ../src/desktop-plug.vala:77
 msgid "Custom ($(current)px)"
