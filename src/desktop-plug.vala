@@ -167,7 +167,7 @@ public class GalaPlug : Switchboard.Plug {
         hotc_grid.expand = true;
         hotc_grid.column_spacing = 12;
         hotc_grid.margin = 32;
-        hotc_grid.margin_top = 50;
+        hotc_grid.margin_top = 48;
 
         var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
         expl.set_halign (Gtk.Align.START);
@@ -202,7 +202,7 @@ public class GalaPlug : Switchboard.Plug {
         var cc_grid = new Gtk.Grid ();
         cc_grid.expand = true;
         cc_grid.set_column_spacing (12);
-        cc_grid.set_margin_top (6);
+        cc_grid.set_margin_top (48);
         cc_grid.attach (cc_label, 0, 0, 1, 1);
         cc_grid.attach (custom_command, 1, 0, 1, 1);
 
