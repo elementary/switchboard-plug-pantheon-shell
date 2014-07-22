@@ -1,186 +1,186 @@
-# Estonian translation for switchboard-plug-pantheon-shell
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Tamil translation for switchboard-plug-pantheon-shell
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
 # This file is distributed under the same license as the switchboard-plug-pantheon-shell package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-14 22:16+0200\n"
-"PO-Revision-Date: 2014-04-22 15:19+0000\n"
-"Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
-"Language-Team: Estonian <et@li.org>\n"
+"PO-Revision-Date: 2014-03-19 06:38+0000\n"
+"Last-Translator: SyedKhaleel Jageer <jskcse4@gmail.com>\n"
+"Language-Team: Tamil <ta@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-23 06:56+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 
 #: ../src/desktop-plug.vala:26
 msgid "Desktop"
-msgstr "Töölaud"
+msgstr "பணித்திரை"
 
 #: ../src/desktop-plug.vala:27
 msgid "Change your wallpaper and customize your dock"
-msgstr "Taustapildi muutmine ja doki kohandamine"
+msgstr ""
 
 #: ../src/desktop-plug.vala:43
 msgid "Wallpaper"
-msgstr "Taustapilt"
+msgstr "சுவரொட்டி"
 
 #: ../src/desktop-plug.vala:68
 msgid "Small"
-msgstr "Väike"
+msgstr "சிறிய"
 
 #: ../src/desktop-plug.vala:69
 msgid "Medium"
-msgstr "Keskmine"
+msgstr "நடுத்தரம்"
 
 #: ../src/desktop-plug.vala:70
 msgid "Large"
-msgstr "Suur"
+msgstr "பெரிய"
 
 #: ../src/desktop-plug.vala:71
 msgid "Extra Large"
-msgstr "Eriti suur"
+msgstr "மிகப் பெரிய"
 
 #: ../src/desktop-plug.vala:77
 msgid "Custom ($(current)px)"
-msgstr "Kohandatud ($(current)px)"
+msgstr "தனிபயன்($(current)px)"
 
 #: ../src/desktop-plug.vala:85
 msgid "Don't hide"
-msgstr "Mitte kunagi"
+msgstr "மறைக்காதே"
 
 #: ../src/desktop-plug.vala:86
 msgid "Intelligent hide"
-msgstr "Akna ettejäämisel"
+msgstr "அறிவார்ந்து மறைக்க"
 
 #: ../src/desktop-plug.vala:87
 msgid "Auto hide"
-msgstr "Automaatselt"
+msgstr "தன்னியக்க மறைதல்"
 
 #: ../src/desktop-plug.vala:88
 msgid "Hide on maximize"
-msgstr "Akna maksimeerimisel"
+msgstr "பெரிதாக்கும் போது மறைக்க"
 
 #: ../src/desktop-plug.vala:123
 msgid "Primary Monitor"
-msgstr "Põhiekraan"
+msgstr "முதன்மையான மானிட்டர்"
 
 #: ../src/desktop-plug.vala:126
 msgid "Monitor %d"
-msgstr "Ekraan %d"
+msgstr "மானிட்டர் %d"
 
 #: ../src/desktop-plug.vala:133
 msgid "Icon Size:"
-msgstr "Ikooni suurus:"
+msgstr "ஐகான் அளவு:"
 
 #: ../src/desktop-plug.vala:135
 msgid "Hide Mode:"
-msgstr "Dokk peidetakse:"
+msgstr "மறைக்கும் முறை:"
 
 #: ../src/desktop-plug.vala:150
 msgid "Theme:"
-msgstr "Teema:"
+msgstr "அலங்காரம்:"
 
 #: ../src/desktop-plug.vala:156
 msgid "Monitor:"
-msgstr "Ekraan:"
+msgstr "மானிட்டர்:"
 
 #: ../src/desktop-plug.vala:162
 msgid "Dock"
-msgstr "Dokk"
+msgstr "டாக்"
 
 #: ../src/desktop-plug.vala:172
 msgid "When the cursor enters the corner of the display:"
-msgstr "Kursori liigutamisel ekraani nurka:"
+msgstr "கர்சர் திரையின் மூலையில் நுழையும் போது:"
 
 #: ../src/desktop-plug.vala:199
 msgid "Custom Command:"
-msgstr "Kohandatud käsk:"
+msgstr "தனிப்பயன் கட்டளை:"
 
 #: ../src/desktop-plug.vala:217
 msgid "Hot Corners"
-msgstr "Abistavad nurgad"
+msgstr "ஹாட் மூலைகள்"
 
 #: ../src/desktop-plug.vala:222
 msgid "Do Nothing"
-msgstr "Ei tehta midagi"
+msgstr "ஒன்றும் செய்யாதே"
 
 #: ../src/desktop-plug.vala:223
 msgid "Workspace Overview"
-msgstr "Tööalade ülevaade"
+msgstr "பணியிட கண்ணோட்டம்"
 
 #: ../src/desktop-plug.vala:224
 msgid "Maximize Current Window"
-msgstr "Aken maksimeeritakse"
+msgstr "தற்போதைய சாளரத்தை பெரிதாக்கு"
 
 #: ../src/desktop-plug.vala:225
 msgid "Minimize Current Window"
-msgstr "Aken minimeeritakse"
+msgstr "தற்போதைய சாளரத்தில் குறை"
 
 #: ../src/desktop-plug.vala:226
 msgid "Show Applications Menu"
-msgstr "Näita rakenduste menüüd"
+msgstr "பயன்பாடுகள் மெனுவை காட்டு"
 
 #: ../src/desktop-plug.vala:227
 msgid "Window Overview"
-msgstr "Tööala akende ülevaade"
+msgstr "விண்டோ கண்ணோட்டம்"
 
 #: ../src/desktop-plug.vala:228
 msgid "Show All Windows"
-msgstr "Kõikide akende ülevaade"
+msgstr "அனைத்து சாளரங்களை காட்டு"
 
 #: ../src/desktop-plug.vala:229
 msgid "Execute Custom Command"
-msgstr "Käivita kohandatud käsk"
+msgstr "தனிபயன் கட்டளையை இயக்கவும்"
 
 #: ../src/Wallpaper.vala:131
 msgid "Pictures"
-msgstr "Pildid"
+msgstr "படங்கள்"
 
 #: ../src/Wallpaper.vala:132
 msgid "Backgrounds"
-msgstr "Taustapildid"
+msgstr "பின்னணிகள்"
 
 #: ../src/Wallpaper.vala:133
 msgid "Custom…"
-msgstr "Kohandatud…"
+msgstr "தனிப்பயன்..."
 
 #: ../src/Wallpaper.vala:138
 msgid "Solid Color"
-msgstr "Ühtlane värv"
+msgstr "திட வண்ணம்"
 
 #: ../src/Wallpaper.vala:139
 msgid "Centered"
-msgstr "Täidetud"
+msgstr "மையப்படுத்தப்பட்ட"
 
 #: ../src/Wallpaper.vala:140
 msgid "Scaled"
-msgstr "Sobitatud"
+msgstr "அளவிடப்பட்ட"
 
 #: ../src/Wallpaper.vala:141
 msgid "Stretched"
-msgstr "Venitatud"
+msgstr "நீட்டப்பட்டது"
 
 #: ../src/Wallpaper.vala:142
 msgid "Zoom"
-msgstr "Suurendatud"
+msgstr "பெரிதாக்கு"
 
 #: ../src/Wallpaper.vala:143
 msgid "Spanned"
-msgstr "Kogu pilt"
+msgstr "பரப்பப்பட்டது"
 
 #: ../src/Wallpaper.vala:231
 msgid "Select a folder"
-msgstr "Kohandatud kausta valimine"
+msgstr "ஒரு கோப்புறையை தேர்ந்தெடு"
 
 #: ../src/Wallpaper.vala:232
 msgid "Cancel"
-msgstr "Loobu"
+msgstr ""
 
 #: ../src/Wallpaper.vala:233
 msgid "Open"
-msgstr "Ava"
+msgstr ""

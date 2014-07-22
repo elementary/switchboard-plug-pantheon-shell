@@ -7,175 +7,181 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-12 00:42-0500\n"
+"POT-Creation-Date: 2014-04-14 22:16+0200\n"
 "PO-Revision-Date: 2013-06-18 23:06+0000\n"
-"Last-Translator: Joachim Johansson <joachim.j@gmail.com>\n"
+"Last-Translator: Joachim Johansson <Unknown>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-19 05:46+0000\n"
-"X-Generator: Launchpad (build 16673)\n"
+"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
+"X-Generator: Launchpad (build 16976)\n"
 "Language: sv\n"
 
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:141
-msgid "Pictures"
-msgstr "Bilder"
+#: ../src/desktop-plug.vala:26
+msgid "Desktop"
+msgstr "Skrivbordet"
 
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:142
-msgid "Backgrounds"
-msgstr "Bakgrundsbilder"
+#: ../src/desktop-plug.vala:27
+msgid "Change your wallpaper and customize your dock"
+msgstr ""
 
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:143
-msgid "Custom…"
-msgstr "Anpassad…"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:148
-msgid "Solid Color"
-msgstr "Enfärgad"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:149
-msgid "Centered"
-msgstr "Centrera"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:150
-msgid "Scaled"
-msgstr "Skalad"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:151
-msgid "Stretched"
-msgstr "Sträck för att passa skärmen"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:152
-msgid "Zoom"
-msgstr "Zooma in"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:153
-msgid "Spanned"
-msgstr "Sträck för att passa bilden"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:245
-msgid "Select a folder"
-msgstr "Välj en mapp"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:266
-#, c-format
-msgid "Importing wallpapers from %s"
-msgstr "Importerar bakgrundsbilder från %s"
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:59
+#: ../src/desktop-plug.vala:43
 msgid "Wallpaper"
 msgstr "Bakgrundsbild"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:70
+#: ../src/desktop-plug.vala:68
 msgid "Small"
 msgstr "Liten"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:71
+#: ../src/desktop-plug.vala:69
 msgid "Medium"
 msgstr "Mellan"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:72
+#: ../src/desktop-plug.vala:70
 msgid "Large"
 msgstr "Stor"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:73
+#: ../src/desktop-plug.vala:71
 msgid "Extra Large"
 msgstr "Extra stor"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:78
+#: ../src/desktop-plug.vala:77
 msgid "Custom ($(current)px)"
 msgstr "Valfri storlek ($(current)px)"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:86
+#: ../src/desktop-plug.vala:85
 msgid "Don't hide"
 msgstr "Dölj inte"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:87
+#: ../src/desktop-plug.vala:86
 msgid "Intelligent hide"
 msgstr "Dölj smart"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:88
+#: ../src/desktop-plug.vala:87
 msgid "Auto hide"
 msgstr "Dölj automatiskt"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:89
+#: ../src/desktop-plug.vala:88
 msgid "Hide on maximize"
 msgstr "Dölj vid maximerat"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:125
+#: ../src/desktop-plug.vala:123
 msgid "Primary Monitor"
 msgstr "Standardskärm"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:128
-#, c-format
+#: ../src/desktop-plug.vala:126
 msgid "Monitor %d"
 msgstr "Bildskärm %d"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:135
+#: ../src/desktop-plug.vala:133
 msgid "Icon Size:"
 msgstr "Ikonstorlek:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:137
+#: ../src/desktop-plug.vala:135
 msgid "Hide Mode:"
 msgstr "Sätt att dölja:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:141
+#: ../src/desktop-plug.vala:150
 msgid "Theme:"
 msgstr "Tema:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:145
+#: ../src/desktop-plug.vala:156
 msgid "Monitor:"
 msgstr "Bildskärm:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:149
+#: ../src/desktop-plug.vala:162
 msgid "Dock"
 msgstr "Docka"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:157
+#: ../src/desktop-plug.vala:172
 msgid "When the cursor enters the corner of the display:"
 msgstr "När muspekaren når hörnet på skärmen"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:186
+#: ../src/desktop-plug.vala:199
 msgid "Custom Command:"
 msgstr "Anpassat kommando:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:198
+#: ../src/desktop-plug.vala:217
 msgid "Hot Corners"
 msgstr "Aktiva hörn"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:214
+#: ../src/desktop-plug.vala:222
 msgid "Do Nothing"
 msgstr "Gör ingenting"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:215
+#: ../src/desktop-plug.vala:223
 msgid "Workspace Overview"
 msgstr "Överblicka arbetsytan"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:216
+#: ../src/desktop-plug.vala:224
 msgid "Maximize Current Window"
 msgstr "Maximera nuvarande fönster"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:217
+#: ../src/desktop-plug.vala:225
 msgid "Minimize Current Window"
 msgstr "Minimera nuvarande fönster"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:218
+#: ../src/desktop-plug.vala:226
 msgid "Show Applications Menu"
 msgstr "Visa programmenyn"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:219
+#: ../src/desktop-plug.vala:227
 msgid "Window Overview"
 msgstr "Överblicka fönster"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:220
+#: ../src/desktop-plug.vala:228
 msgid "Show All Windows"
 msgstr "Visa alla fönster"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:221
+#: ../src/desktop-plug.vala:229
 msgid "Execute Custom Command"
 msgstr "Utför anpassat kommando"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:240
-msgid "Desktop"
-msgstr "Skrivbordet"
+#: ../src/Wallpaper.vala:131
+msgid "Pictures"
+msgstr "Bilder"
+
+#: ../src/Wallpaper.vala:132
+msgid "Backgrounds"
+msgstr "Bakgrundsbilder"
+
+#: ../src/Wallpaper.vala:133
+msgid "Custom…"
+msgstr "Anpassad…"
+
+#: ../src/Wallpaper.vala:138
+msgid "Solid Color"
+msgstr "Enfärgad"
+
+#: ../src/Wallpaper.vala:139
+msgid "Centered"
+msgstr "Centrera"
+
+#: ../src/Wallpaper.vala:140
+msgid "Scaled"
+msgstr "Skalad"
+
+#: ../src/Wallpaper.vala:141
+msgid "Stretched"
+msgstr "Sträck för att passa skärmen"
+
+#: ../src/Wallpaper.vala:142
+msgid "Zoom"
+msgstr "Zooma in"
+
+#: ../src/Wallpaper.vala:143
+msgid "Spanned"
+msgstr "Sträck för att passa bilden"
+
+#: ../src/Wallpaper.vala:231
+msgid "Select a folder"
+msgstr "Välj en mapp"
+
+#: ../src/Wallpaper.vala:232
+msgid "Cancel"
+msgstr ""
+
+#: ../src/Wallpaper.vala:233
+msgid "Open"
+msgstr ""

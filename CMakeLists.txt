@@ -1,13 +1,13 @@
 # This a sample CMakeLists.txt for compiling plug for Switchboard
 # http://elementaryos.org/docs/developer-guide/cmake 
 
-cmake_minimum_required (VERSION 2.6)
-cmake_policy (VERSION 2.6)
+cmake_minimum_required (VERSION 2.8)
+cmake_policy (VERSION 2.8)
 
 # Set the Properties of your Plug
 
 # Set the Name of the plug, should be an executable command, lowercase, no spaces 
-set (PLUGNAME "desktop")
+set (PLUGNAME "pantheon-desktop")
 # Set the Category of the Plug, one of:
 # personal, hardware, network, system
 set (PLUGCATEGORY "personal")
@@ -24,15 +24,17 @@ project (${PLUGNAME})
 # Only alter stuff below if you know what you are doing #
 #########################################################
 
-set (DATADIR "${CMAKE_INSTALL_PREFIX}/lib/plugs")
-set (PKGDATADIR "${DATADIR}/pantheon/${PLUGNAME}")
+include (GNUInstallDirs)
+set (DATADIR "${CMAKE_INSTALL_FULL_LIBDIR}/switchboard")
+set (PKGDATADIR "${DATADIR}/${PLUGCATEGORY}/${PLUGNAME}")
 set (GETTEXT_PACKAGE "${PLUGNAME}-plug")
 
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
+# Comment this out to enable C compiler warnings
+add_definitions (-w)
+
 # Configure file
-configure_file (plug.plug ${CMAKE_BINARY_DIR}/${PLUGNAME}.plug)
-install (FILES ${CMAKE_BINARY_DIR}/${PLUGNAME}.plug DESTINATION ${PKGDATADIR})
 configure_file (${CMAKE_SOURCE_DIR}/config.vala.cmake ${CMAKE_BINARY_DIR}/src/config.vala)
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 
@@ -45,7 +47,9 @@ include (CPack)
 add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 
 # Files
-file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*")
+file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*.png")
+
+install (FILES "${CMAKE_CURRENT_SOURCE_DIR}/data/pantheon-plug-shell.desktop" DESTINATION "${CMAKE_INSTALL_FULL_DATAROOTDIR}/applications")
 
 # Traslation stuff
 add_subdirectory (po)

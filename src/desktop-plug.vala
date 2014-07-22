@@ -15,42 +15,50 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-class LLabel : Gtk.Label {
-    public LLabel (string label) {
-        this.set_halign (Gtk.Align.START);
-        this.label = label;
-    }
-    public LLabel.indent (string label) {
-        this (label);
-        this.margin_left = 10;
-    }
-    public LLabel.markup (string label) {
-        this (label);
-        this.use_markup = true;
-    }
-    public LLabel.right (string label) {
-        this.set_halign (Gtk.Align.END);
-        this.label = label;
-    }
-    public LLabel.right_with_markup (string label) {
-        this.set_halign (Gtk.Align.END);
-        this.use_markup = true;
-        this.label = label;
-    }
-}
-
-public class GalaPlug : Pantheon.Switchboard.Plug {
+public class GalaPlug : Switchboard.Plug {
+    
+    Gtk.Stack stack;
+    Gtk.Grid main_grid;
+    
     public GalaPlug () {
-        var notebook = new Granite.Widgets.StaticNotebook (false);
-        notebook.set_margin_top (12);
-
-        /*wallpaper*/
-        var wallpaper = new Wallpaper (this);
-        notebook.append_page (wallpaper, new Gtk.Label (_("Wallpaper")));
-        switchboard_controller.progress_bar_set_visible (true);
-
-        /*dock*/
+        Object (category: Category.PERSONAL,
+                code_name: "pantheon-desktop",
+                display_name: _("Desktop"),
+                description: _("Change your wallpaper and customize your dock"),
+                icon: "preferences-desktop-wallpaper");
+    }
+    
+    public override Gtk.Widget get_widget () {
+        if (main_grid == null) {
+            main_grid = new Gtk.Grid ();
+            stack = new Gtk.Stack ();
+            var stack_switcher = new Gtk.StackSwitcher ();
+            stack_switcher.stack = stack;
+            stack_switcher.halign = Gtk.Align.CENTER;
+            stack_switcher.margin_top = 12;
+            
+            /*wallpaper*/
+            var wallpaper = new Wallpaper (this);
+            wallpaper.expand = true;
+            stack.add_titled (wallpaper, "wallpaper", _("Wallpaper"));
+            
+            /*dock*/
+            build_dock_panel ();
+            
+            /*hot corners*/
+            build_hotcorners_panel ();
+            
+            main_grid.attach (stack_switcher, 0, 0, 1, 1);
+            main_grid.attach (stack, 0, 1, 1, 1);
+            main_grid.show_all ();
+        }
+        
+        return main_grid;
+    }
+    
+    private void build_dock_panel () {
         var dock_grid = new Gtk.Grid ();
+        dock_grid.expand = true;
         dock_grid.column_spacing = 12;
         dock_grid.row_spacing = 6;
         dock_grid.margin = 24;
@@ -61,6 +69,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug {
         icon_size.append ("48", _("Medium"));
         icon_size.append ("64", _("Large"));
         icon_size.append ("128", _("Extra Large"));
+        icon_size.hexpand = true;
 
         var current = PlankSettings.get_default ().icon_size;
 
@@ -71,7 +80,6 @@ public class GalaPlug : Pantheon.Switchboard.Plug {
         icon_size.active_id = current.to_string ();
         icon_size.changed.connect (() => PlankSettings.get_default ().icon_size = int.parse (icon_size.active_id));
         icon_size.halign = Gtk.Align.START;
-        icon_size.width_request = 164;
 
         var hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append ("0", _("Don't hide"));
@@ -81,7 +89,7 @@ public class GalaPlug : Pantheon.Switchboard.Plug {
         hide_mode.active_id = PlankSettings.get_default ().hide_mode.to_string ();
         hide_mode.changed.connect (() => PlankSettings.get_default ().hide_mode = int.parse (hide_mode.active_id));
         hide_mode.halign = Gtk.Align.START;
-        hide_mode.width_request = 164;
+        hide_mode.hexpand = true;
 
         var theme = new Gtk.ComboBoxText ();
 
@@ -103,13 +111,13 @@ public class GalaPlug : Pantheon.Switchboard.Plug {
                     }
                 }
             }
-        } catch (GLib.FileError e){
+        } catch (GLib.FileError e) {
             warning (e.message);
         }
 
         theme.changed.connect (() => PlankSettings.get_default ().theme = theme.get_active_text ());
         theme.halign = Gtk.Align.START;
-        theme.width_request = 164;
+        theme.hexpand = true;
 
         var monitor = new Gtk.ComboBoxText ();
         monitor.append ("-1", _("Primary Monitor"));
@@ -120,31 +128,49 @@ public class GalaPlug : Pantheon.Switchboard.Plug {
         monitor.active_id = PlankSettings.get_default ().monitor.to_string ();
         monitor.changed.connect (() => PlankSettings.get_default ().monitor = int.parse (monitor.active_id));
         monitor.halign = Gtk.Align.START;
-        monitor.width_request = 164;
-
-        dock_grid.attach (new LLabel.right (_("Icon Size:")), 0, 0, 2, 1);
+        monitor.hexpand = true;
+        
+        var icon_label = new Gtk.Label (_("Icon Size:"));
+        icon_label.set_halign (Gtk.Align.END);
+        var hide_label = new Gtk.Label (_("Hide Mode:"));
+        hide_label.set_halign (Gtk.Align.END);
+        var fake_label_1 = new Gtk.Label ("");
+        fake_label_1.hexpand = true;
+        var fake_label_2 = new Gtk.Label ("");
+        fake_label_2.hexpand = true;
+        
+        dock_grid.attach (fake_label_1, 0, 0, 1, 1);
+        dock_grid.attach (fake_label_2, 3, 0, 1, 1);
+        dock_grid.attach (icon_label, 1, 0, 1, 1);
         dock_grid.attach (icon_size, 2, 0, 1, 1);
-        dock_grid.attach (new LLabel.right (_("Hide Mode:")), 0, 1, 2, 1);
-        dock_grid.attach (hide_mode, 2, 1, 2, 1);
+        dock_grid.attach (hide_label, 1, 1, 1, 1);
+        dock_grid.attach (hide_mode, 2, 1, 1, 1);
 
         if (theme_index > 1) {
-            dock_grid.attach (new LLabel.right (_("Theme:")), 0, 2, 2, 1);
+            var theme_label = new Gtk.Label (_("Theme:"));
+            theme_label.set_halign (Gtk.Align.END);
+            dock_grid.attach (theme_label, 1, 2, 1, 1);
             dock_grid.attach (theme, 2, 2, 1, 1);
         }
         if (i > 1) {
-            dock_grid.attach (new LLabel.right (_("Monitor:")), 0, 3, 2, 1);
+            var monitor_label = new Gtk.Label (_("Monitor:"));
+            monitor_label.set_halign (Gtk.Align.END);
+            dock_grid.attach (monitor_label, 1, 3, 1, 1);
             dock_grid.attach (monitor, 2, 3, 1, 1);
         }
 
-        notebook.append_page (dock_grid, new Gtk.Label (_("Dock")));
-
-        /*hot corners*/
+        stack.add_titled (dock_grid, "dock", _("Dock"));
+    }
+    
+    private void build_hotcorners_panel () {
         var hotc_grid = new Gtk.Grid ();
+        hotc_grid.expand = true;
         hotc_grid.column_spacing = 12;
         hotc_grid.margin = 32;
-        hotc_grid.margin_top = 50;
+        hotc_grid.margin_top = 48;
 
-        var expl = new LLabel (_("When the cursor enters the corner of the display:"));
+        var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
+        expl.set_halign (Gtk.Align.START);
         expl.margin_bottom = 10;
         expl.set_hexpand (true);
 
@@ -169,11 +195,15 @@ public class GalaPlug : Pantheon.Switchboard.Plug {
         var custom_command = new Gtk.Entry ();
         custom_command.text = BehaviorSettings.get_default ().hotcorner_custom_command;
         custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
-
+        
+        var cc_label = new Gtk.Label (_("Custom Command:"));
+        cc_label.set_halign (Gtk.Align.START);
+        
         var cc_grid = new Gtk.Grid ();
+        cc_grid.expand = true;
         cc_grid.set_column_spacing (12);
-        cc_grid.set_margin_top (6);
-        cc_grid.attach (new LLabel (_("Custom Command:")), 0, 0, 1, 1);
+        cc_grid.set_margin_top (48);
+        cc_grid.attach (cc_label, 0, 0, 1, 1);
         cc_grid.attach (custom_command, 1, 0, 1, 1);
 
         hotc_grid.attach (expl, 0, 0, 3, 1);
@@ -184,20 +214,10 @@ public class GalaPlug : Pantheon.Switchboard.Plug {
         hotc_grid.attach (bottomright, 2, 3, 1, 1);
         hotc_grid.attach (cc_grid, 0, 4, 2, 1);
 
-        notebook.append_page (hotc_grid, new Gtk.Label (_("Hot Corners")));
-
-        add (notebook);
-
-        notebook.page_changed.connect ((page) => {
-            if (page == 0 && !wallpaper.finished) {
-                switchboard_controller.progress_bar_set_visible (true);
-            } else {
-                switchboard_controller.progress_bar_set_visible (false);
-            }
-        });
+        stack.add_titled (hotc_grid, "hotc", _("Hot Corners"));
     }
 
-    Gtk.ComboBoxText create_hotcorner () {
+    private Gtk.ComboBoxText create_hotcorner () {
         var box = new Gtk.ComboBoxText ();
         box.append ("0", _("Do Nothing"));
         box.append ("1", _("Workspace Overview"));
@@ -210,19 +230,27 @@ public class GalaPlug : Pantheon.Switchboard.Plug {
 
         return box;
     }
+    
+    public override void shown () {
+        
+    }
+    
+    public override void hidden () {
+        
+    }
+    
+    public override void search_callback (string location) {
+    
+    }
+    
+    // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
+    public override async Gee.TreeMap<string, string> search (string search) {
+        return new Gee.TreeMap<string, string> (null, null);
+    }
 }
 
-public static int main (string[] args) {
-    Gtk.init (ref args);
-
+public Switchboard.Plug get_plug (Module module) {
+    debug ("Activating Desktop plug");
     var plug = new GalaPlug ();
-    plug.register ("Effects");
-    plug.show_all ();
-
-    Gtk.main ();
-    return 0;
-}
-
-public static void translations () {
-    string desktop_name = _("Desktop");
+    return plug;
 }

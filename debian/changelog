@@ -1,3 +1,9 @@
+switchboard-plug-pantheon-shell (0.1.3) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Corentin Noël <tintou@mailoo.org>  Mon, 14 Apr 2014 21:56:22 +0200
+
 switchboard-plug-pantheon-shell (0.1.2) precise; urgency=low
 
   * New upstream release.

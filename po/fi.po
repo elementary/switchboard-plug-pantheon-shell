@@ -7,175 +7,181 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2013-06-14 06:48+0000\n"
+"POT-Creation-Date: 2014-04-14 22:16+0200\n"
+"PO-Revision-Date: 2014-04-16 19:23+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-15 05:36+0000\n"
-"X-Generator: Launchpad (build 16667)\n"
+"X-Launchpad-Export-Date: 2014-04-17 06:51+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: fi\n"
 
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:141
-msgid "Pictures"
-msgstr "Kuvat"
+#: ../src/desktop-plug.vala:26
+msgid "Desktop"
+msgstr "Työpöytä"
 
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:142
-msgid "Backgrounds"
-msgstr "Taustakuvat"
+#: ../src/desktop-plug.vala:27
+msgid "Change your wallpaper and customize your dock"
+msgstr "Vaihda taustakuvaa ja mukauta telakkaa"
 
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:143
-msgid "Custom…"
-msgstr "Omavalintainen…"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:148
-msgid "Solid Color"
-msgstr "Yhtenäinen väri"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:149
-msgid "Centered"
-msgstr "Keskitetty"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:150
-msgid "Scaled"
-msgstr "Skaalattu"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:151
-msgid "Stretched"
-msgstr "Venytetty"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:152
-msgid "Zoom"
-msgstr "Lähennetty"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:153
-msgid "Spanned"
-msgstr "Peitetty"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:245
-msgid "Select a folder"
-msgstr "Valitse kansio"
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:266
-#, c-format
-msgid "Importing wallpapers from %s"
-msgstr "Tuodaan taustakuvia kohteesta %s"
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:59
+#: ../src/desktop-plug.vala:43
 msgid "Wallpaper"
 msgstr "Taustakuva"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:70
+#: ../src/desktop-plug.vala:68
 msgid "Small"
 msgstr "Pieni"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:71
+#: ../src/desktop-plug.vala:69
 msgid "Medium"
 msgstr "Tavallinen"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:72
+#: ../src/desktop-plug.vala:70
 msgid "Large"
 msgstr "Suuri"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:73
+#: ../src/desktop-plug.vala:71
 msgid "Extra Large"
 msgstr "Erittäin suuri"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:78
+#: ../src/desktop-plug.vala:77
 msgid "Custom ($(current)px)"
 msgstr "Omavalintainen ($(current) px)"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:86
+#: ../src/desktop-plug.vala:85
 msgid "Don't hide"
 msgstr "Älä piilota"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:87
+#: ../src/desktop-plug.vala:86
 msgid "Intelligent hide"
 msgstr "Älykäs piilotus"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:88
+#: ../src/desktop-plug.vala:87
 msgid "Auto hide"
 msgstr "Piilota automaattisesti"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:89
+#: ../src/desktop-plug.vala:88
 msgid "Hide on maximize"
 msgstr "Piilota suurennettaessa"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:125
+#: ../src/desktop-plug.vala:123
 msgid "Primary Monitor"
 msgstr "Ensisijainen näyttö"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:128
-#, c-format
+#: ../src/desktop-plug.vala:126
 msgid "Monitor %d"
 msgstr "Näyttö %d"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:135
+#: ../src/desktop-plug.vala:133
 msgid "Icon Size:"
 msgstr "Kuvakekoko:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:137
+#: ../src/desktop-plug.vala:135
 msgid "Hide Mode:"
 msgstr "Piilotustila:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:141
+#: ../src/desktop-plug.vala:150
 msgid "Theme:"
 msgstr "Teema:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:145
+#: ../src/desktop-plug.vala:156
 msgid "Monitor:"
 msgstr "Näyttö:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:149
+#: ../src/desktop-plug.vala:162
 msgid "Dock"
 msgstr "Telakka"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:157
+#: ../src/desktop-plug.vala:172
 msgid "When the cursor enters the corner of the display:"
 msgstr "Kun hiiren osoitin kohdistetaan näytön reunaan:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:186
+#: ../src/desktop-plug.vala:199
 msgid "Custom Command:"
 msgstr "Omavalintainen komento:"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:198
+#: ../src/desktop-plug.vala:217
 msgid "Hot Corners"
 msgstr "Toimintokulmat"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:214
+#: ../src/desktop-plug.vala:222
 msgid "Do Nothing"
 msgstr "Älä tee mitään"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:215
+#: ../src/desktop-plug.vala:223
 msgid "Workspace Overview"
 msgstr "Työtilan yleisnäkymä"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:216
+#: ../src/desktop-plug.vala:224
 msgid "Maximize Current Window"
 msgstr "Suurenna nykyinen ikkuna"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:217
+#: ../src/desktop-plug.vala:225
 msgid "Minimize Current Window"
 msgstr "Pienennä nykyinen ikkuna"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:218
+#: ../src/desktop-plug.vala:226
 msgid "Show Applications Menu"
 msgstr "Näytä Sovellukset-valikko"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:219
+#: ../src/desktop-plug.vala:227
 msgid "Window Overview"
 msgstr "Ikkunan yleisnäkymä"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:220
+#: ../src/desktop-plug.vala:228
 msgid "Show All Windows"
 msgstr "Näytä kaikki ikkunat"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:221
+#: ../src/desktop-plug.vala:229
 msgid "Execute Custom Command"
 msgstr "Suorita omavalintainen komento"
 
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:240
-msgid "Desktop"
-msgstr "Työpöytä"
+#: ../src/Wallpaper.vala:131
+msgid "Pictures"
+msgstr "Kuvat"
+
+#: ../src/Wallpaper.vala:132
+msgid "Backgrounds"
+msgstr "Taustakuvat"
+
+#: ../src/Wallpaper.vala:133
+msgid "Custom…"
+msgstr "Omavalintainen…"
+
+#: ../src/Wallpaper.vala:138
+msgid "Solid Color"
+msgstr "Yhtenäinen väri"
+
+#: ../src/Wallpaper.vala:139
+msgid "Centered"
+msgstr "Keskitetty"
+
+#: ../src/Wallpaper.vala:140
+msgid "Scaled"
+msgstr "Skaalattu"
+
+#: ../src/Wallpaper.vala:141
+msgid "Stretched"
+msgstr "Venytetty"
+
+#: ../src/Wallpaper.vala:142
+msgid "Zoom"
+msgstr "Lähennetty"
+
+#: ../src/Wallpaper.vala:143
+msgid "Spanned"
+msgstr "Peitetty"
+
+#: ../src/Wallpaper.vala:231
+msgid "Select a folder"
+msgstr "Valitse kansio"
+
+#: ../src/Wallpaper.vala:232
+msgid "Cancel"
+msgstr "Peru"
+
+#: ../src/Wallpaper.vala:233
+msgid "Open"
+msgstr "Avaa"

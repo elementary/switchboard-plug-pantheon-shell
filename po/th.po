@@ -7,175 +7,181 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-12 00:42-0500\n"
-"PO-Revision-Date: 2012-10-26 19:33+0000\n"
-"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
+"POT-Creation-Date: 2014-04-14 22:16+0200\n"
+"PO-Revision-Date: 2014-07-06 10:26+0000\n"
+"Last-Translator: Jirayu Yingthawornsuk <me@jirayu.in.th>\n"
 "Language-Team: Thai <th@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-13 05:46+0000\n"
-"X-Generator: Launchpad (build 16667)\n"
+"X-Launchpad-Export-Date: 2014-07-07 06:03+0000\n"
+"X-Generator: Launchpad (build 17086)\n"
 "Language: th\n"
 
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:141
-msgid "Pictures"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:142
-msgid "Backgrounds"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:143
-msgid "Custom…"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:148
-msgid "Solid Color"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:149
-msgid "Centered"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:150
-msgid "Scaled"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:151
-msgid "Stretched"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:152
-msgid "Zoom"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:153
-msgid "Spanned"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:245
-msgid "Select a folder"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//Wallpaper.vala:266
-#, c-format
-msgid "Importing wallpapers from %s"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:59
-msgid "Wallpaper"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:70
-msgid "Small"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:71
-msgid "Medium"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:72
-msgid "Large"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:73
-msgid "Extra Large"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:78
-msgid "Custom ($(current)px)"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:86
-msgid "Don't hide"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:87
-msgid "Intelligent hide"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:88
-msgid "Auto hide"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:89
-msgid "Hide on maximize"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:125
-msgid "Primary Monitor"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:128
-#, c-format
-msgid "Monitor %d"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:135
-msgid "Icon Size:"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:137
-msgid "Hide Mode:"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:141
-msgid "Theme:"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:145
-msgid "Monitor:"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:149
-msgid "Dock"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:157
-msgid "When the cursor enters the corner of the display:"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:186
-msgid "Custom Command:"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:198
-msgid "Hot Corners"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:214
-msgid "Do Nothing"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:215
-msgid "Workspace Overview"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:216
-msgid "Maximize Current Window"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:217
-msgid "Minimize Current Window"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:218
-msgid "Show Applications Menu"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:219
-msgid "Window Overview"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:220
-msgid "Show All Windows"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:221
-msgid "Execute Custom Command"
-msgstr ""
-
-#: /home/codygarver/shell/po/../src//desktop-plug.vala:240
+#: ../src/desktop-plug.vala:26
 msgid "Desktop"
-msgstr ""
+msgstr "เดสก์ท็อป"
+
+#: ../src/desktop-plug.vala:27
+msgid "Change your wallpaper and customize your dock"
+msgstr "เปลี่ยนภาพพื้นหลังและตั้งค่าด็อค"
+
+#: ../src/desktop-plug.vala:43
+msgid "Wallpaper"
+msgstr "ภาพพื้นหลัง"
+
+#: ../src/desktop-plug.vala:68
+msgid "Small"
+msgstr "ขนาดเล็ก"
+
+#: ../src/desktop-plug.vala:69
+msgid "Medium"
+msgstr "ขนาดกลาง"
+
+#: ../src/desktop-plug.vala:70
+msgid "Large"
+msgstr "ขนาดใหญ่"
+
+#: ../src/desktop-plug.vala:71
+msgid "Extra Large"
+msgstr "ขนาดใหญ่พิเศษ"
+
+#: ../src/desktop-plug.vala:77
+msgid "Custom ($(current)px)"
+msgstr "กำหนดเอง ($(current)px)"
+
+#: ../src/desktop-plug.vala:85
+msgid "Don't hide"
+msgstr "ไม่ซ่อน"
+
+#: ../src/desktop-plug.vala:86
+msgid "Intelligent hide"
+msgstr "ซ่อนเมื่อถูกบัง"
+
+#: ../src/desktop-plug.vala:87
+msgid "Auto hide"
+msgstr "ซ่อนอัตโนมัติ"
+
+#: ../src/desktop-plug.vala:88
+msgid "Hide on maximize"
+msgstr "ซ่อนเมื่อขยายหน้าต่างเต็มจอ"
+
+#: ../src/desktop-plug.vala:123
+msgid "Primary Monitor"
+msgstr "จอภาพหลัก"
+
+#: ../src/desktop-plug.vala:126
+msgid "Monitor %d"
+msgstr "จอภาพ %d"
+
+#: ../src/desktop-plug.vala:133
+msgid "Icon Size:"
+msgstr "ขนาดไอคอน:"
+
+#: ../src/desktop-plug.vala:135
+msgid "Hide Mode:"
+msgstr "โหมดการซ่อน"
+
+#: ../src/desktop-plug.vala:150
+msgid "Theme:"
+msgstr "ธีม:"
+
+#: ../src/desktop-plug.vala:156
+msgid "Monitor:"
+msgstr "จอภาพ:"
+
+#: ../src/desktop-plug.vala:162
+msgid "Dock"
+msgstr "ด็อค"
+
+#: ../src/desktop-plug.vala:172
+msgid "When the cursor enters the corner of the display:"
+msgstr "เมื่อเลื่อนเคอร์เซอร์ไปยังมุมจอ"
+
+#: ../src/desktop-plug.vala:199
+msgid "Custom Command:"
+msgstr "คำสั่งที่กำหนดเอง"
+
+#: ../src/desktop-plug.vala:217
+msgid "Hot Corners"
+msgstr "ฮอตคอร์เนอร์"
+
+#: ../src/desktop-plug.vala:222
+msgid "Do Nothing"
+msgstr "ไม่ดำเนินการ"
+
+#: ../src/desktop-plug.vala:223
+msgid "Workspace Overview"
+msgstr "ภาพรวมพื้นที่ทำงาน"
+
+#: ../src/desktop-plug.vala:224
+msgid "Maximize Current Window"
+msgstr "ขยายหน้าต่างปัจจุบัน"
+
+#: ../src/desktop-plug.vala:225
+msgid "Minimize Current Window"
+msgstr "ซ่อนหน้าต่างปัจจุบัน"
+
+#: ../src/desktop-plug.vala:226
+msgid "Show Applications Menu"
+msgstr "แสดงเมนูแอพพลิเคชัน"
+
+#: ../src/desktop-plug.vala:227
+msgid "Window Overview"
+msgstr "ภาพรวมหน้าต่าง"
+
+#: ../src/desktop-plug.vala:228
+msgid "Show All Windows"
+msgstr "แสดงหน้าต่างทั้งหมด"
+
+#: ../src/desktop-plug.vala:229
+msgid "Execute Custom Command"
+msgstr "ปฏิบัติคำสั่งที่กำหนดเอง"
+
+#: ../src/Wallpaper.vala:131
+msgid "Pictures"
+msgstr "รูปภาพ"
+
+#: ../src/Wallpaper.vala:132
+msgid "Backgrounds"
+msgstr "พื้นหลัง"
+
+#: ../src/Wallpaper.vala:133
+msgid "Custom…"
+msgstr "กำหนดเอง…"
+
+#: ../src/Wallpaper.vala:138
+msgid "Solid Color"
+msgstr "สีทึบ"
+
+#: ../src/Wallpaper.vala:139
+msgid "Centered"
+msgstr "กึ่งกลาง"
+
+#: ../src/Wallpaper.vala:140
+msgid "Scaled"
+msgstr "ปรับขนาดให้พอดีตามสัดส่วน"
+
+#: ../src/Wallpaper.vala:141
+msgid "Stretched"
+msgstr "ยืดภาพให้พอดีจอ"
+
+#: ../src/Wallpaper.vala:142
+msgid "Zoom"
+msgstr "ซูม"
+
+#: ../src/Wallpaper.vala:143
+msgid "Spanned"
+msgstr "ยืดขยาย"
+
+#: ../src/Wallpaper.vala:231
+msgid "Select a folder"
+msgstr "เลือกโฟลเดอร์"
+
+#: ../src/Wallpaper.vala:232
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: ../src/Wallpaper.vala:233
+msgid "Open"
+msgstr "เปิด"

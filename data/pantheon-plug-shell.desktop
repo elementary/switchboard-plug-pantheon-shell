@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Desktop
+Comment=Change your wallpaper and customize your dock…
+Exec=switchboard -o pantheon-desktop
+Icon=preferences-desktop-wallpaper
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=X-PANTHEON-Switchboard-Plugs;
+OnlyShowIn=Pantheon;
+Keywords=Shell;Pantheon;Wallpaper;Hotcorners;
+X-GNOME-Gettext-Domain=switchboard
