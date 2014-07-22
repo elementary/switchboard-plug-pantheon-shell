@@ -61,7 +61,7 @@ public enum ColumnType {
     NAME
 }
 
-class Wallpaper : EventBox { 
+class Wallpaper : EventBox {
 
     GLib.Settings settings;
 
