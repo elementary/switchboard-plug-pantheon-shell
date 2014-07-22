@@ -244,13 +244,6 @@ class Wallpaper : EventBox {
     async void load_wallpapers (string basefolder) {
         folder_combo.set_sensitive (false);
 
-        // Make the progress bar visible, since we're gonna be using it.
-        try {
-            plug.switchboard_controller.progress_bar_set_text (_("Importing wallpapers from %s").printf(basefolder));
-        } catch (Error e) {
-            warning (e.message);
-        }
- 
         var directory = File.new_for_uri (basefolder);
 
         // The number of wallpapers we've added so far
@@ -278,16 +271,16 @@ class Wallpaper : EventBox {
                     // We're going to add another wallpaper
                     done++;
 
-                    var file = File.new_for_uri (basefolder + "/" + info.get_name ());
-                    string filename = file.get_path ();
-
                     if (info.get_file_type () == FileType.DIRECTORY) {
                         // Spawn off another loader for the subdirectory
-                        load_wallpapers (filename);
+                        load_wallpapers (basefolder + "/" + info.get_name ());
                     } else if (!IOHelper.is_valid_file_type (info)) {
                         // Skip non-picture files
                         continue;
                     }
+
+                    var file = File.new_for_uri (basefolder + "/" + info.get_name ());
+                    string filename = file.get_path ();
 
                     // Skip the default_wallpaper as seen in the description of the
                     // default_link variable
