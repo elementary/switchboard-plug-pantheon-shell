@@ -22,7 +22,7 @@ public class Dock : Gtk.Grid {
         var current = plank_settings.icon_size;
 
         if (current != 32 && current != 48 && current != 64 && current != 128) {
-            icon_size.append (current.to_string (), _(@"Custom ($(current)px)" ));
+            icon_size.append (current.to_string (), _("Custom (%dpx)").printf (current));
         }
 
         icon_size.active_id = current.to_string ();
@@ -71,11 +71,11 @@ public class Dock : Gtk.Grid {
         monitor.halign = Gtk.Align.START;
         monitor.hexpand = true;
 
-        primary_monitor_label = new Gtk.Label (_("Primary Monitor:"));
+        primary_monitor_label = new Gtk.Label (_("Primary Display:"));
         primary_monitor_label.halign = Gtk.Align.END;
         primary_monitor_label.no_show_all = true;
 
-        monitor_label = new Gtk.Label (_("Monitor:"));
+        monitor_label = new Gtk.Label (_("Display:"));
         monitor_label.no_show_all = true;
         monitor_label.halign = Gtk.Align.END;
 
@@ -150,13 +150,13 @@ public class Dock : Gtk.Grid {
                         primary_screen = i;
                     }
                 } else {
-                    monitor.append_text (_("Monitor %d").printf (i+1) );
+                    monitor.append_text (_("Display %d").printf (i+1) );
                 }
             }
         } catch (Error e) {
             critical (e.message);
             for (i = 0; i < default_screen.get_n_monitors () ; i ++) {
-                monitor.append_text (_("Monitor %d").printf (i+1) );
+                monitor.append_text (_("Display %d").printf (i+1) );
             }
         }
 
