@@ -62,7 +62,6 @@ public enum ColumnType {
 }
 
 class Wallpaper : EventBox {
-    string WALLPAPER_DIR = "/usr/share/backgrounds";
 
     GLib.Settings settings;
 
@@ -216,17 +215,16 @@ class Wallpaper : EventBox {
     void update_wallpaper_folder () {
         if (folder_combo.get_active () == 0) {
             clean_wallpapers ();
-            var picture_file = GLib.File.new_for_path (GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES));
-            WALLPAPER_DIR = picture_file.get_uri ();
-            load_wallpapers.begin ();
+            var picture_dir = GLib.File.new_for_path (GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES));
+            load_wallpapers (picture_dir.get_uri ());
         } else if (folder_combo.get_active () == 1) {
             clean_wallpapers ();
-            WALLPAPER_DIR = "file:///usr/share/backgrounds";
-            load_wallpapers.begin (() => {
-                var backgrounds_file = GLib.File.new_for_path (GLib.Environment.get_user_data_dir () + "/backgrounds");
-                WALLPAPER_DIR = backgrounds_file.get_uri ();
-                load_wallpapers.begin ();
-            });
+
+            var system_uri = "file:///usr/share/backgrounds";
+            var user_uri = GLib.File.new_for_path (GLib.Environment.get_user_data_dir () + "/backgrounds").get_uri ();
+
+            load_wallpapers (system_uri);
+            load_wallpapers (user_uri);
         } else if (folder_combo.get_active () == 2) {
             var dialog = new Gtk.FileChooserDialog (_("Select a folder"), null, FileChooserAction.SELECT_FOLDER);
             dialog.add_button (_("Cancel"), ResponseType.CANCEL);
@@ -235,8 +233,7 @@ class Wallpaper : EventBox {
 
             if (dialog.run () == ResponseType.ACCEPT) {
                 clean_wallpapers ();
-                WALLPAPER_DIR = dialog.get_file ().get_uri ();
-                load_wallpapers.begin ();
+                load_wallpapers (dialog.get_file ().get_uri ());
                 dialog.destroy ();
             } else {
                 dialog.destroy ();
@@ -244,10 +241,11 @@ class Wallpaper : EventBox {
         }
     }
 
-    async void load_wallpapers () {
+    async void load_wallpapers (string basefolder) {
         folder_combo.set_sensitive (false);
 
-        var directory = File.new_for_uri (WALLPAPER_DIR);
+        var directory = File.new_for_uri (basefolder);
+
         // The number of wallpapers we've added so far
         double done = 0.0;
 
@@ -272,12 +270,18 @@ class Wallpaper : EventBox {
                 foreach (var info in files) {
                     // We're going to add another wallpaper
                     done++;
-                    // Skip the file if it's not a picture
-                    if (!IOHelper.is_valid_file_type(info)) {
+
+                    if (info.get_file_type () == FileType.DIRECTORY) {
+                        // Spawn off another loader for the subdirectory
+                        load_wallpapers (basefolder + "/" + info.get_name ());
+                    } else if (!IOHelper.is_valid_file_type (info)) {
+                        // Skip non-picture files
                         continue;
                     }
-                    var file = File.new_for_uri (WALLPAPER_DIR + "/" + info.get_name ());
+
+                    var file = File.new_for_uri (basefolder + "/" + info.get_name ());
                     string filename = file.get_path ();
+
                     // Skip the default_wallpaper as seen in the description of the
                     // default_link variable
                     if (filename == default_link) {
