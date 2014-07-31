@@ -33,6 +33,7 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 # Comment this out to enable C compiler warnings
 add_definitions (-w)
+add_definitions (-DGNOME_DESKTOP_USE_UNSTABLE_API)
 
 # Configure file
 configure_file (${CMAKE_SOURCE_DIR}/config.vala.cmake ${CMAKE_BINARY_DIR}/src/config.vala)

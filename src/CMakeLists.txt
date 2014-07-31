@@ -1,7 +1,7 @@
 find_package (PkgConfig)
 
 # Add all your dependencies to the list below
-pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite gtk+-3.0>=3.10)
+pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite gtk+-3.0>=3.10 gnome-desktop-3.0)
 
 add_definitions (${DEPS_CFLAGS})
 link_libraries (${DEPS_LIBRARIES})
@@ -21,10 +21,12 @@ vala_precompile (VALA_C ${PLUGNAME}
     SlingshotSettings.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
+    gnome-desktop-3.0
     switchboard-2.0
     granite
 OPTIONS
     --thread
+    --vapidir=${CMAKE_SOURCE_DIR}/vapi
 )
 
 add_library (${PLUGNAME} MODULE ${VALA_C})
