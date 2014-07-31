@@ -16,10 +16,9 @@
 //
 
 public class GalaPlug : Switchboard.Plug {
-    
     Gtk.Stack stack;
     Gtk.Grid main_grid;
-    
+
     public GalaPlug () {
         Object (category: Category.PERSONAL,
                 code_name: "pantheon-desktop",
@@ -27,7 +26,7 @@ public class GalaPlug : Switchboard.Plug {
                 description: _("Change your wallpaper and customize your dock"),
                 icon: "preferences-desktop-wallpaper");
     }
-    
+
     public override Gtk.Widget get_widget () {
         if (main_grid == null) {
             main_grid = new Gtk.Grid ();
@@ -43,125 +42,21 @@ public class GalaPlug : Switchboard.Plug {
             stack.add_titled (wallpaper, "wallpaper", _("Wallpaper"));
             
             /*dock*/
-            build_dock_panel ();
-            
+            var dock = new Dock ();
+            dock.expand = true;
+            stack.add_titled (dock, "dock", _("Dock"));
+
             /*hot corners*/
             build_hotcorners_panel ();
-            
+
             main_grid.attach (stack_switcher, 0, 0, 1, 1);
             main_grid.attach (stack, 0, 1, 1, 1);
             main_grid.show_all ();
         }
-        
+
         return main_grid;
     }
-    
-    private void build_dock_panel () {
-        var dock_grid = new Gtk.Grid ();
-        dock_grid.expand = true;
-        dock_grid.column_spacing = 12;
-        dock_grid.row_spacing = 6;
-        dock_grid.margin = 24;
-        dock_grid.column_homogeneous = true;
 
-        var icon_size = new Gtk.ComboBoxText ();
-        icon_size.append ("32", _("Small"));
-        icon_size.append ("48", _("Medium"));
-        icon_size.append ("64", _("Large"));
-        icon_size.append ("128", _("Extra Large"));
-        icon_size.hexpand = true;
-
-        var current = PlankSettings.get_default ().icon_size;
-
-        if (current != 32 && current != 48 && current != 64 && current != 128) {
-            icon_size.append (current.to_string (), _(@"Custom ($(current)px)" ));
-        }
-
-        icon_size.active_id = current.to_string ();
-        icon_size.changed.connect (() => PlankSettings.get_default ().icon_size = int.parse (icon_size.active_id));
-        icon_size.halign = Gtk.Align.START;
-
-        var hide_mode = new Gtk.ComboBoxText ();
-        hide_mode.append ("0", _("Don't hide"));
-        hide_mode.append ("1", _("Intelligent hide"));
-        hide_mode.append ("2", _("Auto hide"));
-        hide_mode.append ("3", _("Hide on maximize"));
-        hide_mode.active_id = PlankSettings.get_default ().hide_mode.to_string ();
-        hide_mode.changed.connect (() => PlankSettings.get_default ().hide_mode = int.parse (hide_mode.active_id));
-        hide_mode.halign = Gtk.Align.START;
-        hide_mode.hexpand = true;
-
-        var theme = new Gtk.ComboBoxText ();
-
-        int theme_index = 0;
-        try {
-            string name;
-            var dirs = Environment.get_system_data_dirs ();
-            dirs += Environment.get_user_data_dir ();
-
-            foreach (string dir in dirs) {
-                if (FileUtils.test (dir + "/plank/themes", FileTest.EXISTS)) {
-                    var d = Dir.open(dir + "/plank/themes");
-                    while ((name = d.read_name()) != null) {
-                        theme.append(theme_index.to_string (), _(name));
-                        if (PlankSettings.get_default ().theme.to_string () == name) {
-                            theme.active = theme_index;
-                        }
-                        theme_index++;
-                    }
-                }
-            }
-        } catch (GLib.FileError e) {
-            warning (e.message);
-        }
-
-        theme.changed.connect (() => PlankSettings.get_default ().theme = theme.get_active_text ());
-        theme.halign = Gtk.Align.START;
-        theme.hexpand = true;
-
-        var monitor = new Gtk.ComboBoxText ();
-        monitor.append ("-1", _("Primary Monitor"));
-        int i = 0;
-        for (i = 0; i < Gdk.Screen.get_default ().get_n_monitors () ; i ++) {
-            monitor.append ( (i).to_string (), _("Monitor %d").printf (i+1) );
-        }
-        monitor.active_id = PlankSettings.get_default ().monitor.to_string ();
-        monitor.changed.connect (() => PlankSettings.get_default ().monitor = int.parse (monitor.active_id));
-        monitor.halign = Gtk.Align.START;
-        monitor.hexpand = true;
-        
-        var icon_label = new Gtk.Label (_("Icon Size:"));
-        icon_label.set_halign (Gtk.Align.END);
-        var hide_label = new Gtk.Label (_("Hide Mode:"));
-        hide_label.set_halign (Gtk.Align.END);
-        var fake_label_1 = new Gtk.Label ("");
-        fake_label_1.hexpand = true;
-        var fake_label_2 = new Gtk.Label ("");
-        fake_label_2.hexpand = true;
-        
-        dock_grid.attach (fake_label_1, 0, 0, 1, 1);
-        dock_grid.attach (fake_label_2, 3, 0, 1, 1);
-        dock_grid.attach (icon_label, 1, 0, 1, 1);
-        dock_grid.attach (icon_size, 2, 0, 1, 1);
-        dock_grid.attach (hide_label, 1, 1, 1, 1);
-        dock_grid.attach (hide_mode, 2, 1, 1, 1);
-
-        if (theme_index > 1) {
-            var theme_label = new Gtk.Label (_("Theme:"));
-            theme_label.set_halign (Gtk.Align.END);
-            dock_grid.attach (theme_label, 1, 2, 1, 1);
-            dock_grid.attach (theme, 2, 2, 1, 1);
-        }
-        if (i > 1) {
-            var monitor_label = new Gtk.Label (_("Monitor:"));
-            monitor_label.set_halign (Gtk.Align.END);
-            dock_grid.attach (monitor_label, 1, 3, 1, 1);
-            dock_grid.attach (monitor, 2, 3, 1, 1);
-        }
-
-        stack.add_titled (dock_grid, "dock", _("Dock"));
-    }
-    
     private void build_hotcorners_panel () {
         var hotc_grid = new Gtk.Grid ();
         hotc_grid.expand = true;
