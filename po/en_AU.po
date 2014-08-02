@@ -7,135 +7,135 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 22:16+0200\n"
+"POT-Creation-Date: 2014-08-01 14:40-0500\n"
 "PO-Revision-Date: 2012-10-26 19:34+0000\n"
-"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
+"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: English (Australia) <en_AU@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:32+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 "Language: \n"
 
-#: ../src/desktop-plug.vala:26
+#: ../src/desktop-plug.vala:25
 msgid "Desktop"
 msgstr ""
 
-#: ../src/desktop-plug.vala:27
+#: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
 msgstr ""
 
-#: ../src/desktop-plug.vala:43
+#: ../src/desktop-plug.vala:42
 msgid "Wallpaper"
 msgstr ""
 
-#: ../src/desktop-plug.vala:68
-msgid "Small"
-msgstr ""
-
-#: ../src/desktop-plug.vala:69
-msgid "Medium"
-msgstr ""
-
-#: ../src/desktop-plug.vala:70
-msgid "Large"
-msgstr ""
-
-#: ../src/desktop-plug.vala:71
-msgid "Extra Large"
-msgstr ""
-
-#: ../src/desktop-plug.vala:77
-msgid "Custom ($(current)px)"
-msgstr ""
-
-#: ../src/desktop-plug.vala:85
-msgid "Don't hide"
-msgstr ""
-
-#: ../src/desktop-plug.vala:86
-msgid "Intelligent hide"
-msgstr ""
-
-#: ../src/desktop-plug.vala:87
-msgid "Auto hide"
-msgstr ""
-
-#: ../src/desktop-plug.vala:88
-msgid "Hide on maximize"
-msgstr ""
-
-#: ../src/desktop-plug.vala:123
-msgid "Primary Monitor"
-msgstr ""
-
-#: ../src/desktop-plug.vala:126
-msgid "Monitor %d"
-msgstr ""
-
-#: ../src/desktop-plug.vala:133
-msgid "Icon Size:"
-msgstr ""
-
-#: ../src/desktop-plug.vala:135
-msgid "Hide Mode:"
-msgstr ""
-
-#: ../src/desktop-plug.vala:150
-msgid "Theme:"
-msgstr ""
-
-#: ../src/desktop-plug.vala:156
-msgid "Monitor:"
-msgstr ""
-
-#: ../src/desktop-plug.vala:162
+#: ../src/desktop-plug.vala:47
 msgid "Dock"
 msgstr ""
 
-#: ../src/desktop-plug.vala:172
+#: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
 msgstr ""
 
-#: ../src/desktop-plug.vala:199
+#: ../src/desktop-plug.vala:94
 msgid "Custom Command:"
 msgstr ""
 
-#: ../src/desktop-plug.vala:217
+#: ../src/desktop-plug.vala:112
 msgid "Hot Corners"
 msgstr ""
 
-#: ../src/desktop-plug.vala:222
+#: ../src/desktop-plug.vala:117
 msgid "Do Nothing"
 msgstr ""
 
-#: ../src/desktop-plug.vala:223
+#: ../src/desktop-plug.vala:118
 msgid "Workspace Overview"
 msgstr ""
 
-#: ../src/desktop-plug.vala:224
+#: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
 msgstr ""
 
-#: ../src/desktop-plug.vala:225
+#: ../src/desktop-plug.vala:120
 msgid "Minimize Current Window"
 msgstr ""
 
-#: ../src/desktop-plug.vala:226
+#: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
 msgstr ""
 
-#: ../src/desktop-plug.vala:227
+#: ../src/desktop-plug.vala:122
 msgid "Window Overview"
 msgstr ""
 
-#: ../src/desktop-plug.vala:228
+#: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
 msgstr ""
 
-#: ../src/desktop-plug.vala:229
+#: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
+msgstr ""
+
+#: ../src/Dock.vala:15
+msgid "Small"
+msgstr ""
+
+#: ../src/Dock.vala:16
+msgid "Medium"
+msgstr ""
+
+#: ../src/Dock.vala:17
+msgid "Large"
+msgstr ""
+
+#: ../src/Dock.vala:18
+msgid "Extra Large"
+msgstr ""
+
+#: ../src/Dock.vala:25
+msgid "Custom (%dpx)"
+msgstr ""
+
+#: ../src/Dock.vala:33
+msgid "Don't hide"
+msgstr ""
+
+#: ../src/Dock.vala:34
+msgid "Intelligent hide"
+msgstr ""
+
+#: ../src/Dock.vala:35
+msgid "Auto hide"
+msgstr ""
+
+#: ../src/Dock.vala:36
+msgid "Hide on maximize"
+msgstr ""
+
+#: ../src/Dock.vala:74
+msgid "Primary Display:"
+msgstr ""
+
+#: ../src/Dock.vala:78
+msgid "Display:"
+msgstr ""
+
+#: ../src/Dock.vala:104
+msgid "Icon Size:"
+msgstr ""
+
+#: ../src/Dock.vala:106
+msgid "Hide Mode:"
+msgstr ""
+
+#: ../src/Dock.vala:127
+msgid "Theme:"
+msgstr ""
+
+#: ../src/Dock.vala:153 ../src/Dock.vala:159
+msgid "Display %d"
 msgstr ""
 
 #: ../src/Wallpaper.vala:131
@@ -174,14 +174,14 @@ msgstr ""
 msgid "Spanned"
 msgstr ""
 
-#: ../src/Wallpaper.vala:231
+#: ../src/Wallpaper.vala:235
 msgid "Select a folder"
 msgstr ""
 
-#: ../src/Wallpaper.vala:232
+#: ../src/Wallpaper.vala:236
 msgid "Cancel"
 msgstr ""
 
-#: ../src/Wallpaper.vala:233
+#: ../src/Wallpaper.vala:237
 msgid "Open"
 msgstr ""

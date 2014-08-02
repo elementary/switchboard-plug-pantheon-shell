@@ -7,135 +7,135 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-04-14 22:16+0200\n"
+"POT-Creation-Date: 2014-08-01 14:40-0500\n"
 "PO-Revision-Date: 2014-03-19 06:38+0000\n"
 "Last-Translator: SyedKhaleel Jageer <jskcse4@gmail.com>\n"
 "Language-Team: Tamil <ta@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:32+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 
-#: ../src/desktop-plug.vala:26
+#: ../src/desktop-plug.vala:25
 msgid "Desktop"
 msgstr "பணித்திரை"
 
-#: ../src/desktop-plug.vala:27
+#: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
 msgstr ""
 
-#: ../src/desktop-plug.vala:43
+#: ../src/desktop-plug.vala:42
 msgid "Wallpaper"
 msgstr "சுவரொட்டி"
 
-#: ../src/desktop-plug.vala:68
-msgid "Small"
-msgstr "சிறிய"
-
-#: ../src/desktop-plug.vala:69
-msgid "Medium"
-msgstr "நடுத்தரம்"
-
-#: ../src/desktop-plug.vala:70
-msgid "Large"
-msgstr "பெரிய"
-
-#: ../src/desktop-plug.vala:71
-msgid "Extra Large"
-msgstr "மிகப் பெரிய"
-
-#: ../src/desktop-plug.vala:77
-msgid "Custom ($(current)px)"
-msgstr "தனிபயன்($(current)px)"
-
-#: ../src/desktop-plug.vala:85
-msgid "Don't hide"
-msgstr "மறைக்காதே"
-
-#: ../src/desktop-plug.vala:86
-msgid "Intelligent hide"
-msgstr "அறிவார்ந்து மறைக்க"
-
-#: ../src/desktop-plug.vala:87
-msgid "Auto hide"
-msgstr "தன்னியக்க மறைதல்"
-
-#: ../src/desktop-plug.vala:88
-msgid "Hide on maximize"
-msgstr "பெரிதாக்கும் போது மறைக்க"
-
-#: ../src/desktop-plug.vala:123
-msgid "Primary Monitor"
-msgstr "முதன்மையான மானிட்டர்"
-
-#: ../src/desktop-plug.vala:126
-msgid "Monitor %d"
-msgstr "மானிட்டர் %d"
-
-#: ../src/desktop-plug.vala:133
-msgid "Icon Size:"
-msgstr "ஐகான் அளவு:"
-
-#: ../src/desktop-plug.vala:135
-msgid "Hide Mode:"
-msgstr "மறைக்கும் முறை:"
-
-#: ../src/desktop-plug.vala:150
-msgid "Theme:"
-msgstr "அலங்காரம்:"
-
-#: ../src/desktop-plug.vala:156
-msgid "Monitor:"
-msgstr "மானிட்டர்:"
-
-#: ../src/desktop-plug.vala:162
+#: ../src/desktop-plug.vala:47
 msgid "Dock"
 msgstr "டாக்"
 
-#: ../src/desktop-plug.vala:172
+#: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
 msgstr "கர்சர் திரையின் மூலையில் நுழையும் போது:"
 
-#: ../src/desktop-plug.vala:199
+#: ../src/desktop-plug.vala:94
 msgid "Custom Command:"
 msgstr "தனிப்பயன் கட்டளை:"
 
-#: ../src/desktop-plug.vala:217
+#: ../src/desktop-plug.vala:112
 msgid "Hot Corners"
 msgstr "ஹாட் மூலைகள்"
 
-#: ../src/desktop-plug.vala:222
+#: ../src/desktop-plug.vala:117
 msgid "Do Nothing"
 msgstr "ஒன்றும் செய்யாதே"
 
-#: ../src/desktop-plug.vala:223
+#: ../src/desktop-plug.vala:118
 msgid "Workspace Overview"
 msgstr "பணியிட கண்ணோட்டம்"
 
-#: ../src/desktop-plug.vala:224
+#: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
 msgstr "தற்போதைய சாளரத்தை பெரிதாக்கு"
 
-#: ../src/desktop-plug.vala:225
+#: ../src/desktop-plug.vala:120
 msgid "Minimize Current Window"
 msgstr "தற்போதைய சாளரத்தில் குறை"
 
-#: ../src/desktop-plug.vala:226
+#: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
 msgstr "பயன்பாடுகள் மெனுவை காட்டு"
 
-#: ../src/desktop-plug.vala:227
+#: ../src/desktop-plug.vala:122
 msgid "Window Overview"
 msgstr "விண்டோ கண்ணோட்டம்"
 
-#: ../src/desktop-plug.vala:228
+#: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
 msgstr "அனைத்து சாளரங்களை காட்டு"
 
-#: ../src/desktop-plug.vala:229
+#: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "தனிபயன் கட்டளையை இயக்கவும்"
+
+#: ../src/Dock.vala:15
+msgid "Small"
+msgstr "சிறிய"
+
+#: ../src/Dock.vala:16
+msgid "Medium"
+msgstr "நடுத்தரம்"
+
+#: ../src/Dock.vala:17
+msgid "Large"
+msgstr "பெரிய"
+
+#: ../src/Dock.vala:18
+msgid "Extra Large"
+msgstr "மிகப் பெரிய"
+
+#: ../src/Dock.vala:25
+msgid "Custom (%dpx)"
+msgstr ""
+
+#: ../src/Dock.vala:33
+msgid "Don't hide"
+msgstr "மறைக்காதே"
+
+#: ../src/Dock.vala:34
+msgid "Intelligent hide"
+msgstr "அறிவார்ந்து மறைக்க"
+
+#: ../src/Dock.vala:35
+msgid "Auto hide"
+msgstr "தன்னியக்க மறைதல்"
+
+#: ../src/Dock.vala:36
+msgid "Hide on maximize"
+msgstr "பெரிதாக்கும் போது மறைக்க"
+
+#: ../src/Dock.vala:74
+msgid "Primary Display:"
+msgstr ""
+
+#: ../src/Dock.vala:78
+msgid "Display:"
+msgstr ""
+
+#: ../src/Dock.vala:104
+msgid "Icon Size:"
+msgstr "ஐகான் அளவு:"
+
+#: ../src/Dock.vala:106
+msgid "Hide Mode:"
+msgstr "மறைக்கும் முறை:"
+
+#: ../src/Dock.vala:127
+msgid "Theme:"
+msgstr "அலங்காரம்:"
+
+#: ../src/Dock.vala:153 ../src/Dock.vala:159
+msgid "Display %d"
+msgstr ""
 
 #: ../src/Wallpaper.vala:131
 msgid "Pictures"
@@ -173,14 +173,14 @@ msgstr "பெரிதாக்கு"
 msgid "Spanned"
 msgstr "பரப்பப்பட்டது"
 
-#: ../src/Wallpaper.vala:231
+#: ../src/Wallpaper.vala:235
 msgid "Select a folder"
 msgstr "ஒரு கோப்புறையை தேர்ந்தெடு"
 
-#: ../src/Wallpaper.vala:232
+#: ../src/Wallpaper.vala:236
 msgid "Cancel"
 msgstr ""
 
-#: ../src/Wallpaper.vala:233
+#: ../src/Wallpaper.vala:237
 msgid "Open"
 msgstr ""

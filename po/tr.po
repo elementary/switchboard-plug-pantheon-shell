@@ -7,136 +7,136 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 22:16+0200\n"
+"POT-Creation-Date: 2014-08-01 14:40-0500\n"
 "PO-Revision-Date: 2013-09-23 19:13+0000\n"
 "Last-Translator: Ebubekir KARUL <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-15 07:49+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:32+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 "Language: tr\n"
 
-#: ../src/desktop-plug.vala:26
+#: ../src/desktop-plug.vala:25
 msgid "Desktop"
 msgstr "Masaüstü"
 
-#: ../src/desktop-plug.vala:27
+#: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
 msgstr ""
 
-#: ../src/desktop-plug.vala:43
+#: ../src/desktop-plug.vala:42
 msgid "Wallpaper"
 msgstr "Duvar Kağıdı"
 
-#: ../src/desktop-plug.vala:68
-msgid "Small"
-msgstr "Küçük"
-
-#: ../src/desktop-plug.vala:69
-msgid "Medium"
-msgstr "Orta"
-
-#: ../src/desktop-plug.vala:70
-msgid "Large"
-msgstr "Büyük"
-
-#: ../src/desktop-plug.vala:71
-msgid "Extra Large"
-msgstr "Çok Büyük"
-
-#: ../src/desktop-plug.vala:77
-msgid "Custom ($(current)px)"
-msgstr ""
-
-#: ../src/desktop-plug.vala:85
-msgid "Don't hide"
-msgstr "Gizleme"
-
-#: ../src/desktop-plug.vala:86
-msgid "Intelligent hide"
-msgstr "Akıllı gizle"
-
-#: ../src/desktop-plug.vala:87
-msgid "Auto hide"
-msgstr "Otomatik gizle"
-
-#: ../src/desktop-plug.vala:88
-msgid "Hide on maximize"
-msgstr "Tam ekran olduğunda gizle"
-
-#: ../src/desktop-plug.vala:123
-msgid "Primary Monitor"
-msgstr "Birincil Monitör"
-
-#: ../src/desktop-plug.vala:126
-msgid "Monitor %d"
-msgstr "%d Ekranı"
-
-#: ../src/desktop-plug.vala:133
-msgid "Icon Size:"
-msgstr "Simge Boyutu:"
-
-#: ../src/desktop-plug.vala:135
-msgid "Hide Mode:"
-msgstr "Saklama Modu:"
-
-#: ../src/desktop-plug.vala:150
-msgid "Theme:"
-msgstr "Tema:"
-
-#: ../src/desktop-plug.vala:156
-msgid "Monitor:"
-msgstr "Ekran:"
-
-#: ../src/desktop-plug.vala:162
+#: ../src/desktop-plug.vala:47
 msgid "Dock"
 msgstr "Rıhtım"
 
-#: ../src/desktop-plug.vala:172
+#: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
 msgstr "İmleç ekranın köşesine geldiğinde:"
 
-#: ../src/desktop-plug.vala:199
+#: ../src/desktop-plug.vala:94
 msgid "Custom Command:"
 msgstr "Özel Komut:"
 
-#: ../src/desktop-plug.vala:217
+#: ../src/desktop-plug.vala:112
 msgid "Hot Corners"
 msgstr "Etkin Köşeler"
 
-#: ../src/desktop-plug.vala:222
+#: ../src/desktop-plug.vala:117
 msgid "Do Nothing"
 msgstr "Hiçbir Şey Yapma"
 
-#: ../src/desktop-plug.vala:223
+#: ../src/desktop-plug.vala:118
 msgid "Workspace Overview"
 msgstr "Çalışma Alanı Görünümü"
 
-#: ../src/desktop-plug.vala:224
+#: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
 msgstr "Geçerli Pencere Ekranı Kaplasın"
 
-#: ../src/desktop-plug.vala:225
+#: ../src/desktop-plug.vala:120
 msgid "Minimize Current Window"
 msgstr "Geçerli Pencereyi Küçült"
 
-#: ../src/desktop-plug.vala:226
+#: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
 msgstr "Uygulamalar Menüsünü Göster"
 
-#: ../src/desktop-plug.vala:227
+#: ../src/desktop-plug.vala:122
 msgid "Window Overview"
 msgstr "Pencere Görünümü"
 
-#: ../src/desktop-plug.vala:228
+#: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
 msgstr "Tüm Pencereleri Göster"
 
-#: ../src/desktop-plug.vala:229
+#: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "Özel Komut Çalıştır"
+
+#: ../src/Dock.vala:15
+msgid "Small"
+msgstr "Küçük"
+
+#: ../src/Dock.vala:16
+msgid "Medium"
+msgstr "Orta"
+
+#: ../src/Dock.vala:17
+msgid "Large"
+msgstr "Büyük"
+
+#: ../src/Dock.vala:18
+msgid "Extra Large"
+msgstr "Çok Büyük"
+
+#: ../src/Dock.vala:25
+msgid "Custom (%dpx)"
+msgstr ""
+
+#: ../src/Dock.vala:33
+msgid "Don't hide"
+msgstr "Gizleme"
+
+#: ../src/Dock.vala:34
+msgid "Intelligent hide"
+msgstr "Akıllı gizle"
+
+#: ../src/Dock.vala:35
+msgid "Auto hide"
+msgstr "Otomatik gizle"
+
+#: ../src/Dock.vala:36
+msgid "Hide on maximize"
+msgstr "Tam ekran olduğunda gizle"
+
+#: ../src/Dock.vala:74
+msgid "Primary Display:"
+msgstr ""
+
+#: ../src/Dock.vala:78
+msgid "Display:"
+msgstr ""
+
+#: ../src/Dock.vala:104
+msgid "Icon Size:"
+msgstr "Simge Boyutu:"
+
+#: ../src/Dock.vala:106
+msgid "Hide Mode:"
+msgstr "Saklama Modu:"
+
+#: ../src/Dock.vala:127
+msgid "Theme:"
+msgstr "Tema:"
+
+#: ../src/Dock.vala:153 ../src/Dock.vala:159
+msgid "Display %d"
+msgstr ""
 
 #: ../src/Wallpaper.vala:131
 msgid "Pictures"
@@ -174,14 +174,14 @@ msgstr "Yakınlaştır"
 msgid "Spanned"
 msgstr "Yayılmış"
 
-#: ../src/Wallpaper.vala:231
+#: ../src/Wallpaper.vala:235
 msgid "Select a folder"
 msgstr "Bir klasör seçiniz"
 
-#: ../src/Wallpaper.vala:232
+#: ../src/Wallpaper.vala:236
 msgid "Cancel"
 msgstr ""
 
-#: ../src/Wallpaper.vala:233
+#: ../src/Wallpaper.vala:237
 msgid "Open"
 msgstr ""
