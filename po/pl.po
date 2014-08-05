@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:40-0500\n"
-"PO-Revision-Date: 2013-06-12 20:34+0000\n"
-"Last-Translator: Adrian Widerski <Unknown>\n"
+"PO-Revision-Date: 2014-08-04 11:13+0000\n"
+"Last-Translator: M <marktechfriend@hotmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:32+0000\n"
+"X-Launchpad-Export-Date: 2014-08-05 06:37+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: pl\n"
 
@@ -24,11 +24,11 @@ msgstr "Pulpit"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Zmień tło pulpitu i dostosuj dok"
 
 #: ../src/desktop-plug.vala:42
 msgid "Wallpaper"
-msgstr "Tło"
+msgstr "Tapeta pulpitu"
 
 #: ../src/desktop-plug.vala:47
 msgid "Dock"
@@ -96,7 +96,7 @@ msgstr "Bardzo duży"
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Własny (%d px)"
 
 #: ../src/Dock.vala:33
 msgid "Don't hide"
@@ -116,11 +116,11 @@ msgstr "Ukryj, gdy okno zajmuje cały ekran"
 
 #: ../src/Dock.vala:74
 msgid "Primary Display:"
-msgstr ""
+msgstr "Główny ekran:"
 
 #: ../src/Dock.vala:78
 msgid "Display:"
-msgstr ""
+msgstr "Ekran:"
 
 #: ../src/Dock.vala:104
 msgid "Icon Size:"
@@ -132,11 +132,11 @@ msgstr "Sposób ukrywania:"
 
 #: ../src/Dock.vala:127
 msgid "Theme:"
-msgstr "Styl:"
+msgstr "Motyw:"
 
 #: ../src/Dock.vala:153 ../src/Dock.vala:159
 msgid "Display %d"
-msgstr ""
+msgstr "Ekran %d"
 
 #: ../src/Wallpaper.vala:131
 msgid "Pictures"
@@ -180,8 +180,8 @@ msgstr "Wybór katalogu"
 
 #: ../src/Wallpaper.vala:236
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 #: ../src/Wallpaper.vala:237
 msgid "Open"
-msgstr ""
+msgstr "Otwórz"
