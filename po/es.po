@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:40-0500\n"
-"PO-Revision-Date: 2014-05-15 20:57+0000\n"
-"Last-Translator: Alfredo Hernández <Unknown>\n"
+"PO-Revision-Date: 2014-08-07 05:24+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:32+0000\n"
+"X-Launchpad-Export-Date: 2014-08-07 06:21+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: es\n"
 
@@ -96,7 +96,7 @@ msgstr "Muy grande"
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Personalizado (%d px)"
 
 #: ../src/Dock.vala:33
 msgid "Don't hide"
@@ -116,11 +116,11 @@ msgstr "Ocultar al maximizar"
 
 #: ../src/Dock.vala:74
 msgid "Primary Display:"
-msgstr ""
+msgstr "Pantalla principal:"
 
 #: ../src/Dock.vala:78
 msgid "Display:"
-msgstr ""
+msgstr "Pantalla:"
 
 #: ../src/Dock.vala:104
 msgid "Icon Size:"
@@ -136,7 +136,7 @@ msgstr "Tema:"
 
 #: ../src/Dock.vala:153 ../src/Dock.vala:159
 msgid "Display %d"
-msgstr ""
+msgstr "Pantalla %d"
 
 #: ../src/Wallpaper.vala:131
 msgid "Pictures"

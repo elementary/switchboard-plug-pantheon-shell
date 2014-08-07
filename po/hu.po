@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:40-0500\n"
-"PO-Revision-Date: 2014-07-13 10:17+0000\n"
+"PO-Revision-Date: 2014-08-06 21:11+0000\n"
 "Last-Translator: Mark Lutring <marcus@elitemail.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:32+0000\n"
+"X-Launchpad-Export-Date: 2014-08-07 06:21+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: hu\n"
 
@@ -116,11 +116,11 @@ msgstr "Elrejtés teljes méret esetén"
 
 #: ../src/Dock.vala:74
 msgid "Primary Display:"
-msgstr ""
+msgstr "Elsődleges képernyő:"
 
 #: ../src/Dock.vala:78
 msgid "Display:"
-msgstr ""
+msgstr "Képernyő:"
 
 #: ../src/Dock.vala:104
 msgid "Icon Size:"
