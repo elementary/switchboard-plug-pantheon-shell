@@ -63,12 +63,26 @@ public enum ColumnType {
 
 class Wallpaper : EventBox {
 
+    class WallpaperContainer : Gtk.FlowBoxChild {
+        public string filename { get; construct; }
+
+        Gtk.Image image;
+
+        public WallpaperContainer (string filename) {
+            Object (filename: filename);
+
+            try {
+                image = new Gtk.Image.from_pixbuf (new Gdk.Pixbuf.from_file_at_scale (filename, 150, 100, false));
+                add (image);
+            } catch (Error e) {
+                warning ("Failed to load wallpaper thumbnail: %s", e.message);
+            }
+        }
+    }
+
     GLib.Settings settings;
 
-    ListStore store;
-    GLib.List <TreeIter?> iters = new GLib.List <TreeIter?> ();
-    Gtk.TreeIter selected_plug;
-    IconView wallpaper_view;
+    Gtk.FlowBox wallpaper_view;
     ComboBoxText combo;
     ComboBoxText folder_combo;
     ColorButton color;
@@ -89,34 +103,15 @@ class Wallpaper : EventBox {
 
         settings = new GLib.Settings ("org.gnome.desktop.background");
 
-        store = new Gtk.ListStore (2, typeof (Gdk.Pixbuf), typeof (string));
-
         var vbox = new Box (Orientation.VERTICAL, 4);
 
-        string icon_style = """
-            .wallpaper-view {
-                background-color: @background_color;
-            }
-            .wallpaper-view:selected {
-                background-color: shade (#DEDEDE, 0.80);
-                color: #323232; 
-            }
-        """;
-        var icon_view_style = new Gtk.CssProvider ();
-
-        try {
-            icon_view_style.load_from_data (icon_style, -1);
-        } catch (Error e) {
-            warning (e.message);
-        }
-
-        wallpaper_view = new IconView ();
-        wallpaper_view.set_selection_mode (Gtk.SelectionMode.SINGLE);
-        wallpaper_view.set_pixbuf_column (0);
-        wallpaper_view.set_model (this.store);
-        wallpaper_view.selection_changed.connect (update_wallpaper);
-        wallpaper_view.get_style_context ().add_class ("wallpaper-view");
-        wallpaper_view.get_style_context ().add_provider (icon_view_style, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        wallpaper_view = new Gtk.FlowBox ();
+        wallpaper_view.activate_on_single_click = true;
+        wallpaper_view.column_spacing = wallpaper_view.row_spacing = 6;
+        wallpaper_view.margin = 12;
+        wallpaper_view.homogeneous = true;
+        wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
+        wallpaper_view.child_activated.connect (update_wallpaper);
 
         TargetEntry e = {"text/uri-list", 0, 0};
         wallpaper_view.drag_data_received.connect (on_drag_data_received);
@@ -188,19 +183,10 @@ class Wallpaper : EventBox {
         current_wallpaper_path = settings.get_string ("picture-uri");
     }
 
-    void update_wallpaper () {
-        var selected = wallpaper_view.get_selected_items ();
-        if (selected.length() == 1) {
-            GLib.Value filename;
-            // Get the filename of the selected wallpaper.
-            var item = selected.nth_data(0);
-            this.store.get_iter(out this.selected_plug, item);
-            this.store.get_value(this.selected_plug, 1, out filename);
-
-            current_wallpaper_path = filename.get_string();
-
-            settings.set_string ("picture-uri", filename.get_string ());
-        }
+    void update_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
+        var selected = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
+        current_wallpaper_path = selected.filename;
+        settings.set_string ("picture-uri", current_wallpaper_path);
     }
 
     void update_color () {
@@ -290,6 +276,7 @@ class Wallpaper : EventBox {
                     if (info.get_file_type () == FileType.DIRECTORY) {
                         // Spawn off another loader for the subdirectory
                         load_wallpapers (basefolder + "/" + info.get_name (), cancellable);
+                        continue;
                     } else if (!IOHelper.is_valid_file_type (info)) {
                         // Skip non-picture files
                         continue;
@@ -305,20 +292,15 @@ class Wallpaper : EventBox {
                     }
 
                     try {
-                        // Create a thumbnail of the image and load it into the IconView
-                        var image = new Gdk.Pixbuf.from_file_at_scale(filename, 150, 100, false);
-                        // Add the wallpaper name and thumbnail to the IconView
-                        Gtk.TreeIter root;
-                        this.store.append(out root);
-                        this.store.set(root, 0, image, -1);
-                        this.store.set(root, 1, filename, -1);
+                        var wallpaper = new WallpaperContainer (filename);
+                        wallpaper_view.add (wallpaper);
+                        wallpaper.show_all ();
 
                         // Select the wallpaper if it is the current wallpaper
                         if (current_wallpaper_path.has_suffix (filename)) {
-                            this.wallpaper_view.select_path (this.store.get_path (root));
+                            this.wallpaper_view.select_child (wallpaper);
                         }
 
-                        this.iters.append (root);
                         // Have GTK update the UI even while we're busy
                         // working on file IO.
                         while(Gtk.events_pending ()) {
@@ -340,12 +322,20 @@ class Wallpaper : EventBox {
     }
 
     void clean_wallpapers () {
-        store.clear ();
+        foreach (var child in wallpaper_view.get_children ())
+            child.destroy ();
     }
 
     void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
             File file = File.new_for_uri (sel.get_uris ()[0]);
+            var info = file.query_info (FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
+
+            if (!IOHelper.is_valid_file_type (info)) {
+                Gtk.drag_finish (ctx, false, false, timestamp);
+                return;
+            }
+
 
             string display_name = Filename.display_basename (file.get_path ());
 
@@ -355,37 +345,22 @@ class Wallpaper : EventBox {
                 try {
                     dest_folder.make_directory ();
                 } catch (Error e) {
-                    warning (e.message);
+                    warning ("Creating local wallpaper directory failed: %s", e.message);
                 }
             }
 
             try {
                 file.copy (dest, 0);
             } catch (Error e) {
-                warning (e.message);
+                warning ("Copying wallpaper to local directory failed: %s", e.message);
             }
 
-            string filename = dest.get_uri ();
+            string filename = dest.get_path ();
 
-            string extension = display_name.split (".")[display_name.split (".").length - 1];
-
-            if (extension != "jpg" && extension != "png" && extension != "jpeg" && extension != "gif") {
-                Gtk.drag_finish (ctx, false, false, timestamp);
-                return;
-            }
-
-            // Create a thumbnail of the image and load it into the IconView
-            Gdk.Pixbuf image = null;
-            try {
-                image = new Gdk.Pixbuf.from_file_at_scale(filename, 180, 120, false);
-            } catch (Error e) {
-                warning (e.message);
-            }
             // Add the wallpaper name and thumbnail to the IconView
-            Gtk.TreeIter root;
-            this.store.append(out root);
-            this.store.set(root, 0, image, -1);
-            this.store.set(root, 1, filename, -1);
+            var wallpaper = new WallpaperContainer (filename);
+            wallpaper_view.add (wallpaper);
+            wallpaper.show_all ();
 
             Gtk.drag_finish (ctx, true, false, timestamp);
             return;
