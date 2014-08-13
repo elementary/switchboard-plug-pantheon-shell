@@ -276,6 +276,7 @@ class Wallpaper : EventBox {
                     if (info.get_file_type () == FileType.DIRECTORY) {
                         // Spawn off another loader for the subdirectory
                         load_wallpapers (basefolder + "/" + info.get_name (), cancellable);
+                        continue;
                     } else if (!IOHelper.is_valid_file_type (info)) {
                         // Skip non-picture files
                         continue;
@@ -306,7 +307,7 @@ class Wallpaper : EventBox {
                             Gtk.main_iteration();
                         }
                     } catch (Error e) {
-                        warning ("DEF %s", e.message);
+                        warning (e.message);
                     }
                 }
             }
@@ -315,7 +316,7 @@ class Wallpaper : EventBox {
             folder_combo.set_sensitive (true);
         } catch (Error err) {
             if (!(err is IOError.NOT_FOUND)) {
-                warning ("ABC %s", err.message);
+                warning (err.message);
             }
         }
     }
@@ -328,6 +329,13 @@ class Wallpaper : EventBox {
     void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
             File file = File.new_for_uri (sel.get_uris ()[0]);
+            var info = file.query_info (FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
+
+            if (!IOHelper.is_valid_file_type (info)) {
+                Gtk.drag_finish (ctx, false, false, timestamp);
+                return;
+            }
+
 
             string display_name = Filename.display_basename (file.get_path ());
 
@@ -348,13 +356,6 @@ class Wallpaper : EventBox {
             }
 
             string filename = dest.get_path ();
-
-            string extension = display_name.split (".")[display_name.split (".").length - 1];
-
-            if (extension != "jpg" && extension != "png" && extension != "jpeg" && extension != "gif") {
-                Gtk.drag_finish (ctx, false, false, timestamp);
-                return;
-            }
 
             // Add the wallpaper name and thumbnail to the IconView
             var wallpaper = new WallpaperContainer (filename);
