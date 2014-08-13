@@ -70,13 +70,12 @@ class Wallpaper : EventBox {
 
         public WallpaperContainer (string filename) {
             Object (filename: filename);
-            halign = Gtk.Align.CENTER;
 
             try {
                 image = new Gtk.Image.from_pixbuf (new Gdk.Pixbuf.from_file_at_scale (filename, 150, 100, false));
                 add (image);
             } catch (Error e) {
-                warning (e.message);
+                warning ("Failed to load wallpaper thumbnail: %s", e.message);
             }
         }
     }
@@ -108,6 +107,8 @@ class Wallpaper : EventBox {
 
         wallpaper_view = new Gtk.FlowBox ();
         wallpaper_view.activate_on_single_click = true;
+        wallpaper_view.column_spacing = wallpaper_view.row_spacing = 6;
+        wallpaper_view.margin = 12;
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_wallpaper);
@@ -292,6 +293,7 @@ class Wallpaper : EventBox {
                     try {
                         var wallpaper = new WallpaperContainer (filename);
                         wallpaper_view.add (wallpaper);
+                        wallpaper.show_all ();
 
                         // Select the wallpaper if it is the current wallpaper
                         if (current_wallpaper_path.has_suffix (filename)) {
@@ -304,7 +306,7 @@ class Wallpaper : EventBox {
                             Gtk.main_iteration();
                         }
                     } catch (Error e) {
-                        warning (e.message);
+                        warning ("DEF %s", e.message);
                     }
                 }
             }
@@ -313,7 +315,7 @@ class Wallpaper : EventBox {
             folder_combo.set_sensitive (true);
         } catch (Error err) {
             if (!(err is IOError.NOT_FOUND)) {
-                warning (err.message);
+                warning ("ABC %s", err.message);
             }
         }
     }
@@ -335,17 +337,17 @@ class Wallpaper : EventBox {
                 try {
                     dest_folder.make_directory ();
                 } catch (Error e) {
-                    warning (e.message);
+                    warning ("Creating local wallpaper directory failed: %s", e.message);
                 }
             }
 
             try {
                 file.copy (dest, 0);
             } catch (Error e) {
-                warning (e.message);
+                warning ("Copying wallpaper to local directory failed: %s", e.message);
             }
 
-            string filename = dest.get_uri ();
+            string filename = dest.get_path ();
 
             string extension = display_name.split (".")[display_name.split (".").length - 1];
 
@@ -357,6 +359,7 @@ class Wallpaper : EventBox {
             // Add the wallpaper name and thumbnail to the IconView
             var wallpaper = new WallpaperContainer (filename);
             wallpaper_view.add (wallpaper);
+            wallpaper.show_all ();
 
             Gtk.drag_finish (ctx, true, false, timestamp);
             return;
