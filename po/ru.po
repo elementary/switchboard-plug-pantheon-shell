@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:40-0500\n"
-"PO-Revision-Date: 2014-08-23 17:47+0000\n"
+"PO-Revision-Date: 2014-08-24 21:00+0000\n"
 "Last-Translator: qpMM <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-24 06:41+0000\n"
+"X-Launchpad-Export-Date: 2014-08-25 07:29+0000\n"
 "X-Generator: Launchpad (build 17163)\n"
 "Language: ru\n"
 
@@ -96,7 +96,7 @@ msgstr "Огромный"
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Другой (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Don't hide"
