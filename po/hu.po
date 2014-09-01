@@ -7,76 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-01 14:40-0500\n"
+"POT-Creation-Date: 2014-08-31 15:33-0500\n"
 "PO-Revision-Date: 2014-08-06 21:11+0000\n"
 "Last-Translator: Mark Lutring <marcus@elitemail.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-07 06:21+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-09-01 07:26+0000\n"
+"X-Generator: Launchpad (build 17176)\n"
 "Language: hu\n"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Asztali környezet"
-
-#: ../src/desktop-plug.vala:26
-msgid "Change your wallpaper and customize your dock"
-msgstr "A háttérkép megváltoztatása és a dock egyénire szabása"
-
-#: ../src/desktop-plug.vala:42
-msgid "Wallpaper"
-msgstr "Háttérkép"
-
-#: ../src/desktop-plug.vala:47
-msgid "Dock"
-msgstr "Dokk"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Ha a kurzor eléri a képernyő szélét:"
-
-#: ../src/desktop-plug.vala:94
-msgid "Custom Command:"
-msgstr "Saját parancs:"
-
-#: ../src/desktop-plug.vala:112
-msgid "Hot Corners"
-msgstr "Forró sarkok"
-
-#: ../src/desktop-plug.vala:117
-msgid "Do Nothing"
-msgstr "Ne tegyen semmit"
-
-#: ../src/desktop-plug.vala:118
-msgid "Workspace Overview"
-msgstr "Munkaasztal nézet"
-
-#: ../src/desktop-plug.vala:119
-msgid "Maximize Current Window"
-msgstr "Jelenlegi ablak maximalizálása"
-
-#: ../src/desktop-plug.vala:120
-msgid "Minimize Current Window"
-msgstr "Jelenlegi ablak minimalizálása"
-
-#: ../src/desktop-plug.vala:121
-msgid "Show Applications Menu"
-msgstr "Alkalmazás menü megjelenítése"
-
-#: ../src/desktop-plug.vala:122
-msgid "Window Overview"
-msgstr "Ablakáttekintő nézet"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show All Windows"
-msgstr "Összes ablak megtekintése"
-
-#: ../src/desktop-plug.vala:124
-msgid "Execute Custom Command"
-msgstr "Egyéni parancs végrehajtása"
 
 #: ../src/Dock.vala:15
 msgid "Small"
@@ -134,54 +74,118 @@ msgstr "Elrejtési mód:"
 msgid "Theme:"
 msgstr "Téma:"
 
-#: ../src/Dock.vala:153 ../src/Dock.vala:159
+#: ../src/Dock.vala:158
+msgid "Monitor %d"
+msgstr ""
+
+#: ../src/Dock.vala:163
 msgid "Display %d"
 msgstr ""
 
-#: ../src/Wallpaper.vala:131
+#: ../src/Wallpaper.vala:126
 msgid "Pictures"
 msgstr "Képek"
 
-#: ../src/Wallpaper.vala:132
+#: ../src/Wallpaper.vala:127
 msgid "Backgrounds"
 msgstr "Háttérképek"
 
-#: ../src/Wallpaper.vala:133
+#: ../src/Wallpaper.vala:128
 msgid "Custom…"
 msgstr "Egyéni…"
 
-#: ../src/Wallpaper.vala:138
+#: ../src/Wallpaper.vala:133
 msgid "Solid Color"
 msgstr "Szolid szín"
 
-#: ../src/Wallpaper.vala:139
+#: ../src/Wallpaper.vala:134
 msgid "Centered"
 msgstr "Középre"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/Wallpaper.vala:135
 msgid "Scaled"
 msgstr "Méretezés"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:136
 msgid "Stretched"
 msgstr "Nyújtás"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:137
 msgid "Zoom"
 msgstr "Nagyítás"
 
-#: ../src/Wallpaper.vala:143
+#: ../src/Wallpaper.vala:138
 msgid "Spanned"
 msgstr "Kiterjesztett"
 
-#: ../src/Wallpaper.vala:235
+#: ../src/Wallpaper.vala:221
 msgid "Select a folder"
 msgstr "Mappa kiválasztása"
 
-#: ../src/Wallpaper.vala:236
+#: ../src/Wallpaper.vala:222
 msgid "Cancel"
 msgstr "Mégse"
 
-#: ../src/Wallpaper.vala:237
+#: ../src/Wallpaper.vala:223
 msgid "Open"
 msgstr "Megnyitás"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Asztali környezet"
+
+#: ../src/desktop-plug.vala:26
+msgid "Change your wallpaper and customize your dock"
+msgstr "A háttérkép megváltoztatása és a dock egyénire szabása"
+
+#: ../src/desktop-plug.vala:42
+msgid "Wallpaper"
+msgstr "Háttérkép"
+
+#: ../src/desktop-plug.vala:47
+msgid "Dock"
+msgstr "Dokk"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Ha a kurzor eléri a képernyő szélét:"
+
+#: ../src/desktop-plug.vala:94
+msgid "Custom Command:"
+msgstr "Saját parancs:"
+
+#: ../src/desktop-plug.vala:112
+msgid "Hot Corners"
+msgstr "Forró sarkok"
+
+#: ../src/desktop-plug.vala:117
+msgid "Do Nothing"
+msgstr "Ne tegyen semmit"
+
+#: ../src/desktop-plug.vala:118
+msgid "Multitasking View"
+msgstr ""
+
+#: ../src/desktop-plug.vala:119
+msgid "Maximize Current Window"
+msgstr "Jelenlegi ablak maximalizálása"
+
+#: ../src/desktop-plug.vala:120
+msgid "Minimize Current Window"
+msgstr "Jelenlegi ablak minimalizálása"
+
+#: ../src/desktop-plug.vala:121
+msgid "Show Applications Menu"
+msgstr "Alkalmazás menü megjelenítése"
+
+#: ../src/desktop-plug.vala:122
+msgid "Window Overview"
+msgstr "Ablakáttekintő nézet"
+
+#: ../src/desktop-plug.vala:123
+msgid "Show All Windows"
+msgstr "Összes ablak megtekintése"
+
+#: ../src/desktop-plug.vala:124
+msgid "Execute Custom Command"
+msgstr "Egyéni parancs végrehajtása"
