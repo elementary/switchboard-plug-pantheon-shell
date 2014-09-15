@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-31 15:33-0500\n"
-"PO-Revision-Date: 2014-09-12 15:10+0000\n"
-"Last-Translator: Christopher Schatz <Unknown>\n"
+"PO-Revision-Date: 2014-09-14 16:17+0000\n"
+"Last-Translator: UweS <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-13 08:13+0000\n"
+"X-Launchpad-Export-Date: 2014-09-15 07:01+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: de\n"
 
@@ -180,7 +180,7 @@ msgstr "Anwendungsmenü anzeigen"
 
 #: ../src/desktop-plug.vala:122
 msgid "Window Overview"
-msgstr "Übersicht aller Fenster der aktuellen Arbeitsfläche"
+msgstr "Übersicht aller Fenster der aktiven Arbeitsfläche"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
