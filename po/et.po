@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-31 15:33-0500\n"
-"PO-Revision-Date: 2014-08-13 01:08+0000\n"
+"PO-Revision-Date: 2014-09-21 07:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-01 07:26+0000\n"
-"X-Generator: Launchpad (build 17176)\n"
+"X-Launchpad-Export-Date: 2014-09-22 06:58+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
 
 #: ../src/Dock.vala:15
 msgid "Small"
@@ -75,7 +75,7 @@ msgstr "Teema:"
 
 #: ../src/Dock.vala:158
 msgid "Monitor %d"
-msgstr ""
+msgstr "Kuvar %d"
 
 #: ../src/Dock.vala:163
 msgid "Display %d"
@@ -163,7 +163,7 @@ msgstr "Ei tehta midagi"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr ""
+msgstr "Tööalade ülevaade"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
