@@ -12,16 +12,14 @@ public class Dock : Gtk.Grid {
         column_homogeneous = true;
 
         var icon_size = new Gtk.ComboBoxText ();
-        icon_size.append ("32", _("Small"));
-        icon_size.append ("48", _("Medium"));
+        icon_size.append ("48", _("Normal"));
         icon_size.append ("64", _("Large"));
-        icon_size.append ("128", _("Extra Large"));
         icon_size.hexpand = true;
 
         var plank_settings = PlankSettings.get_default ();
         var current = plank_settings.icon_size;
 
-        if (current != 32 && current != 48 && current != 64 && current != 128) {
+        if (current != 48 && current != 64) {
             icon_size.append (current.to_string (), _("Custom (%dpx)").printf (current));
         }
 
