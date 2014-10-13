@@ -119,15 +119,9 @@ public class Dock : Gtk.Grid {
         hide_label.set_halign (Gtk.Align.END);
         hide_label.set_valign (Gtk.Align.START);
         hide_label.set_margin_top (4);
-        var fake_label_1 = new Gtk.Label ("");
-        fake_label_1.hexpand = true;
-        var fake_label_2 = new Gtk.Label ("");
-        fake_label_2.hexpand = true;
         var primary_monitor_grid = new Gtk.Grid ();
         primary_monitor_grid.add (primary_monitor);
 
-        attach (fake_label_1, 0, 0, 1, 1);
-        attach (fake_label_2, 3, 0, 1, 1);
         attach (icon_label, 1, 0, 1, 1);
         attach (icon_size, 2, 0, 1, 1);
         attach (hide_label, 1, 1, 1, 1);
