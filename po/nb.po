@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-31 15:33-0500\n"
-"PO-Revision-Date: 2014-10-04 13:22+0000\n"
+"PO-Revision-Date: 2014-10-12 07:40+0000\n"
 "Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-05 06:26+0000\n"
+"X-Launchpad-Export-Date: 2014-10-13 06:10+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: nb\n"
 
@@ -44,11 +44,11 @@ msgstr "Ikke skjul"
 
 #: ../src/Dock.vala:34
 msgid "Intelligent hide"
-msgstr "skjul Intelligent"
+msgstr "Skjul intelligent"
 
 #: ../src/Dock.vala:35
 msgid "Auto hide"
-msgstr "Autoskjul"
+msgstr "Skjul automatisk"
 
 #: ../src/Dock.vala:36
 msgid "Hide on maximize"
@@ -68,7 +68,7 @@ msgstr "Ikonstørrelse:"
 
 #: ../src/Dock.vala:106
 msgid "Hide Mode:"
-msgstr "Skjul Modus:"
+msgstr "Skjulemodus:"
 
 #: ../src/Dock.vala:127
 msgid "Theme:"
@@ -112,11 +112,11 @@ msgstr "Strukket"
 
 #: ../src/Wallpaper.vala:137
 msgid "Zoom"
-msgstr "Forstørr"
+msgstr "Forstørret"
 
 #: ../src/Wallpaper.vala:138
 msgid "Spanned"
-msgstr "Spredte"
+msgstr "Spredt"
 
 #: ../src/Wallpaper.vala:221
 msgid "Select a folder"
@@ -164,15 +164,15 @@ msgstr "Ikke gjør noe"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr "Multitasking-visning"
+msgstr "Fleroppgavevisning"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
-msgstr "Maksimer Gjeldende Vindu"
+msgstr "Maksimer gjeldende vindu"
 
 #: ../src/desktop-plug.vala:120
 msgid "Minimize Current Window"
-msgstr "Minimer Gjeldende Vindu"
+msgstr "Minimer gjeldende vindu"
 
 #: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
@@ -180,12 +180,12 @@ msgstr "Vis applikasjonsmeny"
 
 #: ../src/desktop-plug.vala:122
 msgid "Window Overview"
-msgstr "Vindu Oversikt"
+msgstr "Vindusoversikt"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
-msgstr "Vis Alle Vinduer"
+msgstr "Vis alle vinduer"
 
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
-msgstr "Utfør Egendefinert Kommando"
+msgstr "Utfør egendefinert kommando"
