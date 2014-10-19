@@ -1,16 +1,16 @@
-# Korean translation for switchboard-plug-pantheon-shell
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
+# Burmese translation for switchboard-plug-pantheon-shell
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
 # This file is distributed under the same license as the switchboard-plug-pantheon-shell package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-31 15:33-0500\n"
-"PO-Revision-Date: 2014-10-18 14:19+0000\n"
-"Last-Translator: Juyoung <ejuyoung@gmail.com>\n"
-"Language-Team: Korean <ko@li.org>\n"
+"PO-Revision-Date: 2014-10-18 14:56+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Burmese <my@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../src/Dock.vala:15
 msgid "Small"
-msgstr "작게"
+msgstr ""
 
 #: ../src/Dock.vala:16
 msgid "Medium"
-msgstr "중간"
+msgstr ""
 
 #: ../src/Dock.vala:17
 msgid "Large"
-msgstr "크게"
+msgstr ""
 
 #: ../src/Dock.vala:18
 msgid "Extra Large"
-msgstr "매우 크게"
+msgstr ""
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
@@ -39,23 +39,23 @@ msgstr ""
 
 #: ../src/Dock.vala:33
 msgid "Don't hide"
-msgstr "숨기지 않기"
+msgstr ""
 
 #: ../src/Dock.vala:34
 msgid "Intelligent hide"
-msgstr "지능적으로 숨기기"
+msgstr ""
 
 #: ../src/Dock.vala:35
 msgid "Auto hide"
-msgstr "자동으로 숨기기"
+msgstr ""
 
 #: ../src/Dock.vala:36
 msgid "Hide on maximize"
-msgstr "최대화 때 숨기기"
+msgstr ""
 
 #: ../src/Dock.vala:74
 msgid "Primary Display:"
-msgstr "주 화면:"
+msgstr ""
 
 #: ../src/Dock.vala:78
 msgid "Display:"
@@ -63,19 +63,19 @@ msgstr ""
 
 #: ../src/Dock.vala:104
 msgid "Icon Size:"
-msgstr "아이콘 크기:"
+msgstr ""
 
 #: ../src/Dock.vala:106
 msgid "Hide Mode:"
-msgstr "숨기기 모드:"
+msgstr ""
 
 #: ../src/Dock.vala:127
 msgid "Theme:"
-msgstr "테마:"
+msgstr ""
 
 #: ../src/Dock.vala:158
 msgid "Monitor %d"
-msgstr "모니터 %d"
+msgstr ""
 
 #: ../src/Dock.vala:163
 msgid "Display %d"
@@ -83,108 +83,108 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:126
 msgid "Pictures"
-msgstr "사진"
+msgstr ""
 
 #: ../src/Wallpaper.vala:127
 msgid "Backgrounds"
-msgstr "배경화면"
+msgstr ""
 
 #: ../src/Wallpaper.vala:128
 msgid "Custom…"
-msgstr "사용자 지정…"
+msgstr ""
 
 #: ../src/Wallpaper.vala:133
 msgid "Solid Color"
-msgstr "단색"
+msgstr ""
 
 #: ../src/Wallpaper.vala:134
 msgid "Centered"
-msgstr "중앙 정렬"
+msgstr ""
 
 #: ../src/Wallpaper.vala:135
 msgid "Scaled"
-msgstr "비율 유지"
+msgstr ""
 
 #: ../src/Wallpaper.vala:136
 msgid "Stretched"
-msgstr "늘이기"
+msgstr ""
 
 #: ../src/Wallpaper.vala:137
 msgid "Zoom"
-msgstr "확대"
+msgstr ""
 
 #: ../src/Wallpaper.vala:138
 msgid "Spanned"
-msgstr "지연됨"
+msgstr ""
 
 #: ../src/Wallpaper.vala:221
 msgid "Select a folder"
-msgstr "폴더를 선택하세요."
+msgstr ""
 
 #: ../src/Wallpaper.vala:222
 msgid "Cancel"
-msgstr "취소"
+msgstr ""
 
 #: ../src/Wallpaper.vala:223
 msgid "Open"
-msgstr "열기"
+msgstr ""
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
-msgstr "바탕화면"
+msgstr ""
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr "배경화면 변경 및 독 개인화 설정"
+msgstr ""
 
 #: ../src/desktop-plug.vala:42
 msgid "Wallpaper"
-msgstr "배경화면"
+msgstr ""
 
 #: ../src/desktop-plug.vala:47
 msgid "Dock"
-msgstr "독"
+msgstr ""
 
 #: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
-msgstr "커서가 디스플레이의 가장자리로 이동했을 때 동작:"
+msgstr ""
 
 #: ../src/desktop-plug.vala:94
 msgid "Custom Command:"
-msgstr "사용자 정의 명령"
+msgstr ""
 
 #: ../src/desktop-plug.vala:112
 msgid "Hot Corners"
-msgstr "활성화 된 가장자리"
+msgstr ""
 
 #: ../src/desktop-plug.vala:117
 msgid "Do Nothing"
-msgstr "아무것도 하지 않기"
+msgstr ""
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr "멀티태스킹 보기"
+msgstr ""
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
-msgstr "현재 창을 최대화하기"
+msgstr ""
 
 #: ../src/desktop-plug.vala:120
 msgid "Minimize Current Window"
-msgstr "현재 창을 최소화하기"
+msgstr ""
 
 #: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
-msgstr "어플리케이션 메뉴 보이기"
+msgstr ""
 
 #: ../src/desktop-plug.vala:122
 msgid "Window Overview"
-msgstr "창 개요"
+msgstr ""
 
 #: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
-msgstr "모든 창 보이기"
+msgstr ""
 
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
-msgstr "사용자 지정 명령 실행"
+msgstr ""
