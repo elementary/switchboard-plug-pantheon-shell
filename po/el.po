@@ -14,25 +14,17 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-01 07:26+0000\n"
-"X-Generator: Launchpad (build 17176)\n"
+"X-Launchpad-Export-Date: 2014-11-07 06:47+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
 "Language: el\n"
 
-#: ../src/Dock.vala:15
-msgid "Small"
-msgstr "Μικρό"
-
 #: ../src/Dock.vala:16
-msgid "Medium"
-msgstr "Μεσαίο"
+msgid "Normal"
+msgstr ""
 
 #: ../src/Dock.vala:17
 msgid "Large"
 msgstr "Μεγάλο"
-
-#: ../src/Dock.vala:18
-msgid "Extra Large"
-msgstr "Πολύ μεγάλο"
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
@@ -189,3 +181,12 @@ msgstr "Επισκόπηση Όλων των Παραθύρων"
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "Εκτέλεση Προσαρμοσμένης Εντολής"
+
+#~ msgid "Extra Large"
+#~ msgstr "Πολύ μεγάλο"
+
+#~ msgid "Medium"
+#~ msgstr "Μεσαίο"
+
+#~ msgid "Small"
+#~ msgstr "Μικρό"

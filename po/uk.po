@@ -14,25 +14,17 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-01 07:27+0000\n"
-"X-Generator: Launchpad (build 17176)\n"
+"X-Launchpad-Export-Date: 2014-11-07 06:47+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
 "Language: uk\n"
 
-#: ../src/Dock.vala:15
-msgid "Small"
-msgstr "Малий"
-
 #: ../src/Dock.vala:16
-msgid "Medium"
-msgstr "Середній"
+msgid "Normal"
+msgstr ""
 
 #: ../src/Dock.vala:17
 msgid "Large"
 msgstr "Великий"
-
-#: ../src/Dock.vala:18
-msgid "Extra Large"
-msgstr "Дуже великий"
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
@@ -189,3 +181,12 @@ msgstr "Показати Всі Вікна"
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "Виконати Особливу Команду"
+
+#~ msgid "Medium"
+#~ msgstr "Середній"
+
+#~ msgid "Extra Large"
+#~ msgstr "Дуже великий"
+
+#~ msgid "Small"
+#~ msgstr "Малий"

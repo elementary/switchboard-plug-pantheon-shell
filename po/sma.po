@@ -14,24 +14,16 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-01 07:27+0000\n"
-"X-Generator: Launchpad (build 17176)\n"
-
-#: ../src/Dock.vala:15
-msgid "Small"
-msgstr "Onne"
+"X-Launchpad-Export-Date: 2014-11-07 06:47+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
 
 #: ../src/Dock.vala:16
-msgid "Medium"
+msgid "Normal"
 msgstr ""
 
 #: ../src/Dock.vala:17
 msgid "Large"
 msgstr "Storre"
-
-#: ../src/Dock.vala:18
-msgid "Extra Large"
-msgstr ""
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
@@ -188,3 +180,6 @@ msgstr ""
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr ""
+
+#~ msgid "Small"
+#~ msgstr "Onne"

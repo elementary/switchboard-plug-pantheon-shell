@@ -14,25 +14,17 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-01 07:26+0000\n"
-"X-Generator: Launchpad (build 17176)\n"
+"X-Launchpad-Export-Date: 2014-11-07 06:47+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
 "Language: ca\n"
 
-#: ../src/Dock.vala:15
-msgid "Small"
-msgstr "Petit"
-
 #: ../src/Dock.vala:16
-msgid "Medium"
-msgstr "Mitjà"
+msgid "Normal"
+msgstr ""
 
 #: ../src/Dock.vala:17
 msgid "Large"
 msgstr "Gran"
-
-#: ../src/Dock.vala:18
-msgid "Extra Large"
-msgstr "Molt gran"
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
@@ -189,3 +181,12 @@ msgstr "Mostra totes les finestres"
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "Executa una ordre personalitzada"
+
+#~ msgid "Medium"
+#~ msgstr "Mitjà"
+
+#~ msgid "Extra Large"
+#~ msgstr "Molt gran"
+
+#~ msgid "Small"
+#~ msgstr "Petit"

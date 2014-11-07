@@ -14,24 +14,16 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-12 06:50+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
-
-#: ../src/Dock.vala:15
-msgid "Small"
-msgstr "Kecil"
+"X-Launchpad-Export-Date: 2014-11-07 06:47+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
 
 #: ../src/Dock.vala:16
-msgid "Medium"
-msgstr "Sederhana"
+msgid "Normal"
+msgstr ""
 
 #: ../src/Dock.vala:17
 msgid "Large"
 msgstr "Besar"
-
-#: ../src/Dock.vala:18
-msgid "Extra Large"
-msgstr "Sangat Besar"
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
@@ -188,3 +180,12 @@ msgstr "Papar Semua Tetingkap"
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "Lakukan Perintah Suai"
+
+#~ msgid "Extra Large"
+#~ msgstr "Sangat Besar"
+
+#~ msgid "Medium"
+#~ msgstr "Sederhana"
+
+#~ msgid "Small"
+#~ msgstr "Kecil"
