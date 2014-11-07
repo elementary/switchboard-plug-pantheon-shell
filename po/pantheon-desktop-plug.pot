@@ -17,20 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/Dock.vala:15
-msgid "Small"
-msgstr ""
-
 #: ../src/Dock.vala:16
-msgid "Medium"
+msgid "Normal"
 msgstr ""
 
 #: ../src/Dock.vala:17
 msgid "Large"
-msgstr ""
-
-#: ../src/Dock.vala:18
-msgid "Extra Large"
 msgstr ""
 
 #: ../src/Dock.vala:25
