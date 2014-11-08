@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-07 06:47+0000\n"
+"X-Launchpad-Export-Date: 2014-11-08 06:11+0000\n"
 "X-Generator: Launchpad (build 17231)\n"
 "Language: th\n"
 
@@ -181,12 +181,3 @@ msgstr "แสดงหน้าต่างทั้งหมด"
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "ปฏิบัติคำสั่งที่กำหนดเอง"
-
-#~ msgid "Extra Large"
-#~ msgstr "ขนาดใหญ่พิเศษ"
-
-#~ msgid "Medium"
-#~ msgstr "ขนาดกลาง"
-
-#~ msgid "Small"
-#~ msgstr "ขนาดเล็ก"
