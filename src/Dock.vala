@@ -5,6 +5,7 @@ public class Dock : Gtk.Grid {
     Gtk.Switch primary_monitor;
     Gtk.Label monitor_label;
     Gtk.ComboBoxText monitor;
+
     public Dock () {
         column_spacing = 12;
         row_spacing = 6;
@@ -27,15 +28,26 @@ public class Dock : Gtk.Grid {
         icon_size.changed.connect (() => plank_settings.icon_size = int.parse (icon_size.active_id));
         icon_size.halign = Gtk.Align.START;
 
-        var hide_mode = new Gtk.ComboBoxText ();
-        hide_mode.append ("0", _("Don't hide"));
-        hide_mode.append ("1", _("Intelligent hide"));
-        hide_mode.append ("2", _("Auto hide"));
-        hide_mode.append ("3", _("Hide on maximize"));
-        hide_mode.active_id = plank_settings.hide_mode.to_string ();
-        hide_mode.changed.connect (() => plank_settings.hide_mode = int.parse (hide_mode.active_id));
-        hide_mode.halign = Gtk.Align.START;
-        hide_mode.hexpand = true;
+        Gtk.Box hide_mode = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        string[] hide_mode_labels = new string[4];
+        hide_mode_labels[0] = _("Hide when focused window is maximized");
+        hide_mode_labels[1] = _("Hide when focused window overlaps the dock");
+        hide_mode_labels[2] = _("Automatically hide when not being used");
+        hide_mode_labels[3] = _("Never hide");
+        int[] hide_mode_ids = {3, 1, 2, 0};
+
+        Gtk.RadioButton button = new Gtk.RadioButton(null);
+        for (int i = 0; i < hide_mode_labels.length; i++) {  
+            int index = i;          
+            button = new Gtk.RadioButton.with_label_from_widget (button, hide_mode_labels[i]);
+            hide_mode.pack_start (button, false, false, 2);
+            if (i == plank_settings.hide_mode)
+                button.set_active (true);
+            button.toggled.connect ((b) => {
+                if (b.get_active ())
+                    plank_settings.hide_mode = hide_mode_ids[index];
+            });
+        }
 
         var theme = new Gtk.ComboBoxText ();
         int theme_index = 0;
@@ -103,15 +115,11 @@ public class Dock : Gtk.Grid {
         icon_label.set_halign (Gtk.Align.END);
         var hide_label = new Gtk.Label (_("Hide Mode:"));
         hide_label.set_halign (Gtk.Align.END);
-        var fake_label_1 = new Gtk.Label ("");
-        fake_label_1.hexpand = true;
-        var fake_label_2 = new Gtk.Label ("");
-        fake_label_2.hexpand = true;
+        hide_label.set_valign (Gtk.Align.START);
+        hide_label.set_margin_top (4);
         var primary_monitor_grid = new Gtk.Grid ();
         primary_monitor_grid.add (primary_monitor);
 
-        attach (fake_label_1, 0, 0, 1, 1);
-        attach (fake_label_2, 3, 0, 1, 1);
         attach (icon_label, 1, 0, 1, 1);
         attach (icon_size, 2, 0, 1, 1);
         attach (hide_label, 1, 1, 1, 1);
