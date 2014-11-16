@@ -64,15 +64,15 @@ public enum ColumnType {
 class Wallpaper : EventBox {
 
     class WallpaperContainer : Gtk.FlowBoxChild {
-        public string filename { get; construct; }
+        public string uri { get; construct; }
 
         Gtk.Image image;
 
-        public WallpaperContainer (string filename) {
-            Object (filename: filename);
+        public WallpaperContainer (string uri) {
+            Object (uri: uri);
 
             try {
-                image = new Gtk.Image.from_pixbuf (new Gdk.Pixbuf.from_file_at_scale (filename, 150, 100, false));
+                image = new Gtk.Image.from_pixbuf (new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false));
                 add (image);
             } catch (Error e) {
                 warning ("Failed to load wallpaper thumbnail: %s", e.message);
@@ -185,7 +185,7 @@ class Wallpaper : EventBox {
 
     void update_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
         var selected = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
-        current_wallpaper_path = selected.filename;
+        current_wallpaper_path = selected.uri;
         settings.set_string ("picture-uri", current_wallpaper_path);
     }
 
@@ -283,21 +283,21 @@ class Wallpaper : EventBox {
                     }
 
                     var file = File.new_for_uri (basefolder + "/" + info.get_name ());
-                    string filename = file.get_path ();
+                    string uri = file.get_uri ();
 
                     // Skip the default_wallpaper as seen in the description of the
                     // default_link variable
-                    if (filename == default_link) {
+                    if (uri == default_link) {
                         continue;
                     }
 
                     try {
-                        var wallpaper = new WallpaperContainer (filename);
+                        var wallpaper = new WallpaperContainer (uri);
                         wallpaper_view.add (wallpaper);
                         wallpaper.show_all ();
 
                         // Select the wallpaper if it is the current wallpaper
-                        if (current_wallpaper_path.has_suffix (filename)) {
+                        if (current_wallpaper_path.has_suffix (uri)) {
                             this.wallpaper_view.select_child (wallpaper);
                         }
 
@@ -355,10 +355,10 @@ class Wallpaper : EventBox {
                 warning ("Copying wallpaper to local directory failed: %s", e.message);
             }
 
-            string filename = dest.get_path ();
+            string uri = dest.get_uri ();
 
             // Add the wallpaper name and thumbnail to the IconView
-            var wallpaper = new WallpaperContainer (filename);
+            var wallpaper = new WallpaperContainer (uri);
             wallpaper_view.add (wallpaper);
             wallpaper.show_all ();
 
