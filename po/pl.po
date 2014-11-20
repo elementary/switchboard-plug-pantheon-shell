@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-31 15:33-0500\n"
-"PO-Revision-Date: 2014-11-08 12:59+0000\n"
-"Last-Translator: Damian Dygulski <dygulski13@gmail.com>\n"
+"PO-Revision-Date: 2014-11-19 16:13+0000\n"
+"Last-Translator: Arkadiusz <elementary@gmx.ru>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-09 06:48+0000\n"
-"X-Generator: Launchpad (build 17231)\n"
+"X-Launchpad-Export-Date: 2014-11-20 06:21+0000\n"
+"X-Generator: Launchpad (build 17252)\n"
 "Language: pl\n"
 
 #: ../src/Dock.vala:16
@@ -68,7 +68,7 @@ msgstr "Motyw:"
 
 #: ../src/Dock.vala:158
 msgid "Monitor %d"
-msgstr ""
+msgstr "Monitor %d"
 
 #: ../src/Dock.vala:163
 msgid "Display %d"
@@ -156,7 +156,7 @@ msgstr "Brak czynnności"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr ""
+msgstr "Widok wielozadaniowy"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
