@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-31 15:33-0500\n"
-"PO-Revision-Date: 2014-11-26 18:14+0000\n"
+"PO-Revision-Date: 2014-12-07 17:55+0000\n"
 "Last-Translator: 13i <merkvlad@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-27 07:24+0000\n"
-"X-Generator: Launchpad (build 17261)\n"
+"X-Launchpad-Export-Date: 2014-12-08 06:36+0000\n"
+"X-Generator: Launchpad (build 17274)\n"
 "Language: ru\n"
 
 #: ../src/Dock.vala:16
@@ -36,7 +36,7 @@ msgstr "Не скрывать"
 
 #: ../src/Dock.vala:34
 msgid "Intelligent hide"
-msgstr "Интеллектуальное скрытие"
+msgstr "Интеллигентное скрытие"
 
 #: ../src/Dock.vala:35
 msgid "Auto hide"
@@ -80,7 +80,7 @@ msgstr "Изображения"
 
 #: ../src/Wallpaper.vala:127
 msgid "Backgrounds"
-msgstr "Фоновые изображения"
+msgstr "Обои"
 
 #: ../src/Wallpaper.vala:128
 msgid "Custom…"
