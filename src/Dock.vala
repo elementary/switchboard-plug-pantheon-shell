@@ -34,14 +34,14 @@ public class Dock : Gtk.Grid {
         hide_mode_labels[1] = _("Hide when focused window overlaps the dock");
         hide_mode_labels[2] = _("Automatically hide when not being used");
         hide_mode_labels[3] = _("Never hide");
-        int[] hide_mode_ids = {0, 1, 2, 3};
+        int[] hide_mode_ids = {3, 1, 2, 0};
 
         Gtk.RadioButton button = new Gtk.RadioButton(null);
-        for (int i = 0; i < hide_mode_labels.length; i++) {  
-            int index = i;          
+        for (int i = 0; i < hide_mode_labels.length; i++) {
+            int index = i;
             button = new Gtk.RadioButton.with_label_from_widget (button, hide_mode_labels[i]);
             hide_mode.pack_start (button, false, false, 2);
-            if (i == plank_settings.hide_mode)
+            if (hide_mode_ids[i] == plank_settings.hide_mode)
                 button.set_active (true);
             button.toggled.connect ((b) => {
                 if (b.get_active ())
