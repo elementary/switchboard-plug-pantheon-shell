@@ -34,7 +34,7 @@ public class Dock : Gtk.Grid {
         hide_mode_labels[1] = _("Hide when focused window overlaps the dock");
         hide_mode_labels[2] = _("Automatically hide when not being used");
         hide_mode_labels[3] = _("Never hide");
-        int[] hide_mode_ids = {3, 1, 2, 0};
+        int[] hide_mode_ids = {0, 1, 2, 3};
 
         Gtk.RadioButton button = new Gtk.RadioButton(null);
         for (int i = 0; i < hide_mode_labels.length; i++) {  
