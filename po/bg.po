@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-31 15:33-0500\n"
-"PO-Revision-Date: 2014-04-18 19:11+0000\n"
+"PO-Revision-Date: 2014-12-11 15:29+0000\n"
 "Last-Translator: ITPROJECTS <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-08 06:10+0000\n"
-"X-Generator: Launchpad (build 17231)\n"
+"X-Launchpad-Export-Date: 2014-12-12 06:32+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 "Language: bg\n"
 
 #: ../src/Dock.vala:16
 msgid "Normal"
-msgstr ""
+msgstr "Обикновенно"
 
 #: ../src/Dock.vala:17
 msgid "Large"
@@ -28,7 +28,7 @@ msgstr "Голям"
 
 #: ../src/Dock.vala:25
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Необикновенно (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Don't hide"
@@ -48,11 +48,11 @@ msgstr "Скриване при цял екран"
 
 #: ../src/Dock.vala:74
 msgid "Primary Display:"
-msgstr ""
+msgstr "Основен Екран:"
 
 #: ../src/Dock.vala:78
 msgid "Display:"
-msgstr ""
+msgstr "Екран:"
 
 #: ../src/Dock.vala:104
 msgid "Icon Size:"
@@ -68,11 +68,11 @@ msgstr "Тема:"
 
 #: ../src/Dock.vala:158
 msgid "Monitor %d"
-msgstr ""
+msgstr "Монитор %d"
 
 #: ../src/Dock.vala:163
 msgid "Display %d"
-msgstr ""
+msgstr "Екран %d"
 
 #: ../src/Wallpaper.vala:126
 msgid "Pictures"
@@ -156,7 +156,7 @@ msgstr "Да не се прави нищо"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr ""
+msgstr "Пногозадачен изглед"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
