@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-31 15:33-0500\n"
-"PO-Revision-Date: 2014-12-11 15:29+0000\n"
+"PO-Revision-Date: 2014-12-12 16:30+0000\n"
 "Last-Translator: ITPROJECTS <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-12 06:32+0000\n"
+"X-Launchpad-Export-Date: 2014-12-13 07:06+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 "Language: bg\n"
 
@@ -156,7 +156,7 @@ msgstr "Да не се прави нищо"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr "Пногозадачен изглед"
+msgstr "Многозадачен изглед"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
