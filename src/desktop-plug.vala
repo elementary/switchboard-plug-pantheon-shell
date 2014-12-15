@@ -151,22 +151,22 @@ public class GalaPlug : Switchboard.Plug {
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
         var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
-        bool matches_plug = display_name.match_string (search, true);
-        if (matches_plug || _("Wallpaper").match_string (search, true))
+        bool matches_plug = search in display_name.down ();
+        if (matches_plug || search in _("Wallpaper").down ())
             search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
 
-        bool matches_dock = _("Dock").match_string (search, true);
+        bool matches_dock = search in _("Dock").down ();
         if (matches_plug || matches_dock)
             search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
-        if (matches_plug || matches_dock || _("Theme").match_string (search, true))
+        if (matches_plug || matches_dock || search in _("Theme").down ())
             search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Theme")), "dock");
-        if (matches_plug || matches_dock || _("Hide Mode").match_string (search, true))
+        if (matches_plug || matches_dock || search in _("Hide Mode").down ())
             search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
-        if (matches_plug || matches_dock || _("Icon Size").match_string (search, true))
+        if (matches_plug || matches_dock || search in _("Icon Size").down ())
             search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Icon Size")), "dock");
-        if (matches_plug || matches_dock || _("Display").match_string (search, true))
+        if (matches_plug || matches_dock || search in _("Display").down ())
             search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
-        if (matches_plug || _("Hot Corners").match_string (search, true))
+        if (matches_plug || search in _("Hot Corners").down ())
             search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
         return search_results;
     }
