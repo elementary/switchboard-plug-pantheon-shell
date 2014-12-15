@@ -125,22 +125,50 @@ public class GalaPlug : Switchboard.Plug {
 
         return box;
     }
-    
+
     public override void shown () {
         
     }
-    
+
     public override void hidden () {
         
     }
-    
+
     public override void search_callback (string location) {
-    
+        switch (location) {
+            case "wallpaper":
+                stack.set_visible_child_name ("wallpaper");
+                break;
+            case "dock":
+                stack.set_visible_child_name ("dock");
+                break;
+            case "hotc":
+                stack.set_visible_child_name ("hotc");
+                break;
+        }
     }
-    
+
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
-        return new Gee.TreeMap<string, string> (null, null);
+        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        bool matches_plug = display_name.match_string (search, true);
+        if (matches_plug || _("Wallpaper").match_string (search, true))
+            search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
+
+        bool matches_dock = _("Dock").match_string (search, true);
+        if (matches_plug || matches_dock)
+            search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
+        if (matches_plug || matches_dock || _("Theme").match_string (search, true))
+            search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Theme")), "dock");
+        if (matches_plug || matches_dock || _("Hide Mode").match_string (search, true))
+            search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
+        if (matches_plug || matches_dock || _("Icon Size").match_string (search, true))
+            search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Icon Size")), "dock");
+        if (matches_plug || matches_dock || _("Display").match_string (search, true))
+            search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
+        if (matches_plug || _("Hot Corners").match_string (search, true))
+            search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
+        return search_results;
     }
 }
 
