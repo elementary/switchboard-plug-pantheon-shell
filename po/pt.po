@@ -7,72 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-31 15:33-0500\n"
+"POT-Creation-Date: 2014-12-15 23:01+0100\n"
 "PO-Revision-Date: 2014-11-27 21:53+0000\n"
 "Last-Translator: Pedro Monteiro <Unknown>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-28 07:05+0000\n"
-"X-Generator: Launchpad (build 17261)\n"
+"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 "Language: pt\n"
-
-#: ../src/Dock.vala:16
-msgid "Normal"
-msgstr "Normal"
-
-#: ../src/Dock.vala:17
-msgid "Large"
-msgstr "Grande"
-
-#: ../src/Dock.vala:25
-msgid "Custom (%dpx)"
-msgstr "Personalizado (%dpx)"
-
-#: ../src/Dock.vala:33
-msgid "Don't hide"
-msgstr "Não ocultar"
-
-#: ../src/Dock.vala:34
-msgid "Intelligent hide"
-msgstr "Ocultação inteligente"
-
-#: ../src/Dock.vala:35
-msgid "Auto hide"
-msgstr "Ocultar automaticamente"
-
-#: ../src/Dock.vala:36
-msgid "Hide on maximize"
-msgstr "Ocultar ao maximizar"
-
-#: ../src/Dock.vala:74
-msgid "Primary Display:"
-msgstr "Ecrã Principal:"
-
-#: ../src/Dock.vala:78
-msgid "Display:"
-msgstr "Ecrã:"
-
-#: ../src/Dock.vala:104
-msgid "Icon Size:"
-msgstr "Tamanho dos ícones:"
-
-#: ../src/Dock.vala:106
-msgid "Hide Mode:"
-msgstr "Modo de ocultação:"
-
-#: ../src/Dock.vala:127
-msgid "Theme:"
-msgstr "Tema:"
-
-#: ../src/Dock.vala:158
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: ../src/Dock.vala:163
-msgid "Display %d"
-msgstr "Ecrã %d"
 
 #: ../src/Wallpaper.vala:126
 msgid "Pictures"
@@ -122,6 +66,62 @@ msgstr "Cancelar"
 msgid "Open"
 msgstr "Abrir"
 
+#: ../src/Dock.vala:16
+msgid "Normal"
+msgstr "Normal"
+
+#: ../src/Dock.vala:17
+msgid "Large"
+msgstr "Grande"
+
+#: ../src/Dock.vala:24
+msgid "Custom (%dpx)"
+msgstr "Personalizado (%dpx)"
+
+#: ../src/Dock.vala:33
+msgid "Hide when focused window is maximized"
+msgstr ""
+
+#: ../src/Dock.vala:34
+msgid "Hide when focused window overlaps the dock"
+msgstr ""
+
+#: ../src/Dock.vala:35
+msgid "Automatically hide when not being used"
+msgstr ""
+
+#: ../src/Dock.vala:36
+msgid "Never hide"
+msgstr ""
+
+#: ../src/Dock.vala:84
+msgid "Primary Display:"
+msgstr "Ecrã Principal:"
+
+#: ../src/Dock.vala:88
+msgid "Display:"
+msgstr "Ecrã:"
+
+#: ../src/Dock.vala:114
+msgid "Icon Size:"
+msgstr "Tamanho dos ícones:"
+
+#: ../src/Dock.vala:116
+msgid "Hide Mode:"
+msgstr "Modo de ocultação:"
+
+#: ../src/Dock.vala:133
+msgid "Theme:"
+msgstr "Tema:"
+
+#: ../src/Dock.vala:164
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: ../src/Dock.vala:169
+msgid "Display %d"
+msgstr "Ecrã %d"
+
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
 msgstr "Área de trabalho"
@@ -130,11 +130,13 @@ msgstr "Área de trabalho"
 msgid "Change your wallpaper and customize your dock"
 msgstr "Alterar imagem de fundo e personalizar  a dock"
 
-#: ../src/desktop-plug.vala:42
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:154
 msgid "Wallpaper"
 msgstr "Papel de parede"
 
-#: ../src/desktop-plug.vala:47
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:155
+#: ../src/desktop-plug.vala:156 ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:158 ../src/desktop-plug.vala:159
 msgid "Dock"
 msgstr "Dock"
 
@@ -146,7 +148,7 @@ msgstr "Quando o cursor vai para o canto do ecrã:"
 msgid "Custom Command:"
 msgstr "Comando personalizado:"
 
-#: ../src/desktop-plug.vala:112
+#: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:160
 msgid "Hot Corners"
 msgstr "Cantos ativos"
 
@@ -181,3 +183,19 @@ msgstr "Mostrar todas as janelas"
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "Executar comando personalizado"
+
+#: ../src/desktop-plug.vala:156
+msgid "Theme"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Hide Mode"
+msgstr ""
+
+#: ../src/desktop-plug.vala:158
+msgid "Icon Size"
+msgstr ""
+
+#: ../src/desktop-plug.vala:159
+msgid "Display"
+msgstr ""

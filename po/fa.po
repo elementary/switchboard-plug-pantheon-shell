@@ -7,72 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-31 15:33-0500\n"
+"POT-Creation-Date: 2014-12-15 23:01+0100\n"
 "PO-Revision-Date: 2013-01-01 16:31+0000\n"
 "Last-Translator: Mohammad Zali <mohamadzali@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-08 06:11+0000\n"
-"X-Generator: Launchpad (build 17231)\n"
+"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 "Language: fa\n"
-
-#: ../src/Dock.vala:16
-msgid "Normal"
-msgstr ""
-
-#: ../src/Dock.vala:17
-msgid "Large"
-msgstr ""
-
-#: ../src/Dock.vala:25
-msgid "Custom (%dpx)"
-msgstr ""
-
-#: ../src/Dock.vala:33
-msgid "Don't hide"
-msgstr "پنهان نشود"
-
-#: ../src/Dock.vala:34
-msgid "Intelligent hide"
-msgstr "پنهان شدن هوشمند"
-
-#: ../src/Dock.vala:35
-msgid "Auto hide"
-msgstr "پنهان شدن خودکار"
-
-#: ../src/Dock.vala:36
-msgid "Hide on maximize"
-msgstr "پس از بیشینه شدن پنهان شود"
-
-#: ../src/Dock.vala:74
-msgid "Primary Display:"
-msgstr ""
-
-#: ../src/Dock.vala:78
-msgid "Display:"
-msgstr ""
-
-#: ../src/Dock.vala:104
-msgid "Icon Size:"
-msgstr "اندازه شمایل:"
-
-#: ../src/Dock.vala:106
-msgid "Hide Mode:"
-msgstr "حالت پنهان شدن:"
-
-#: ../src/Dock.vala:127
-msgid "Theme:"
-msgstr ""
-
-#: ../src/Dock.vala:158
-msgid "Monitor %d"
-msgstr ""
-
-#: ../src/Dock.vala:163
-msgid "Display %d"
-msgstr ""
 
 #: ../src/Wallpaper.vala:126
 msgid "Pictures"
@@ -122,6 +66,62 @@ msgstr ""
 msgid "Open"
 msgstr ""
 
+#: ../src/Dock.vala:16
+msgid "Normal"
+msgstr ""
+
+#: ../src/Dock.vala:17
+msgid "Large"
+msgstr ""
+
+#: ../src/Dock.vala:24
+msgid "Custom (%dpx)"
+msgstr ""
+
+#: ../src/Dock.vala:33
+msgid "Hide when focused window is maximized"
+msgstr ""
+
+#: ../src/Dock.vala:34
+msgid "Hide when focused window overlaps the dock"
+msgstr ""
+
+#: ../src/Dock.vala:35
+msgid "Automatically hide when not being used"
+msgstr ""
+
+#: ../src/Dock.vala:36
+msgid "Never hide"
+msgstr ""
+
+#: ../src/Dock.vala:84
+msgid "Primary Display:"
+msgstr ""
+
+#: ../src/Dock.vala:88
+msgid "Display:"
+msgstr ""
+
+#: ../src/Dock.vala:114
+msgid "Icon Size:"
+msgstr "اندازه شمایل:"
+
+#: ../src/Dock.vala:116
+msgid "Hide Mode:"
+msgstr "حالت پنهان شدن:"
+
+#: ../src/Dock.vala:133
+msgid "Theme:"
+msgstr ""
+
+#: ../src/Dock.vala:164
+msgid "Monitor %d"
+msgstr ""
+
+#: ../src/Dock.vala:169
+msgid "Display %d"
+msgstr ""
+
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
 msgstr "پیشخوان"
@@ -130,11 +130,13 @@ msgstr "پیشخوان"
 msgid "Change your wallpaper and customize your dock"
 msgstr ""
 
-#: ../src/desktop-plug.vala:42
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:154
 msgid "Wallpaper"
 msgstr "کاغذدیواری"
 
-#: ../src/desktop-plug.vala:47
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:155
+#: ../src/desktop-plug.vala:156 ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:158 ../src/desktop-plug.vala:159
 msgid "Dock"
 msgstr "طاقچه"
 
@@ -146,7 +148,7 @@ msgstr "هنگام ورود مکان‌نمای موس به گوشه‌های ص
 msgid "Custom Command:"
 msgstr "فرمان سفارشی:"
 
-#: ../src/desktop-plug.vala:112
+#: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:160
 msgid "Hot Corners"
 msgstr "گوشه‌های داغ"
 
@@ -181,3 +183,19 @@ msgstr "نمایش همه پنجره‌ها"
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
 msgstr "اجراء فرمان سفارشی"
+
+#: ../src/desktop-plug.vala:156
+msgid "Theme"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Hide Mode"
+msgstr ""
+
+#: ../src/desktop-plug.vala:158
+msgid "Icon Size"
+msgstr ""
+
+#: ../src/desktop-plug.vala:159
+msgid "Display"
+msgstr ""
