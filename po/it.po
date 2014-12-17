@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-11-07 12:55+0000\n"
+"PO-Revision-Date: 2014-12-16 13:29+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
+"X-Launchpad-Export-Date: 2014-12-17 07:00+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 "Language: it\n"
 
@@ -80,19 +80,19 @@ msgstr "Personalizzato (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Nascondi quando la finestra focalizzata viene massimizzata"
 
 #: ../src/Dock.vala:34
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Nascondi quando la finestra focalizzata sovrappone la dock"
 
 #: ../src/Dock.vala:35
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Nascondi automaticamente quando non viene utilizzata"
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Mai nascondere"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
@@ -100,7 +100,7 @@ msgstr "Monitor principale:"
 
 #: ../src/Dock.vala:88
 msgid "Display:"
-msgstr "Monitor"
+msgstr "Monitor:"
 
 #: ../src/Dock.vala:114
 msgid "Icon Size:"
@@ -108,7 +108,7 @@ msgstr "Dimensione icone:"
 
 #: ../src/Dock.vala:116
 msgid "Hide Mode:"
-msgstr "Modalità nascondimento"
+msgstr "Modalità nascondimento:"
 
 #: ../src/Dock.vala:133
 msgid "Theme:"
@@ -186,16 +186,16 @@ msgstr "Esegui comando personalizzato"
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
-msgstr ""
+msgstr "Modo di nascondere"
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Dimensione icone"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
-msgstr ""
+msgstr "Monitor"
