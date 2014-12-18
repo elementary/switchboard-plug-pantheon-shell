@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-12-12 16:30+0000\n"
-"Last-Translator: ITPROJECTS <Unknown>\n"
+"PO-Revision-Date: 2014-12-17 13:14+0000\n"
+"Last-Translator: Radoslav <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
+"X-Launchpad-Export-Date: 2014-12-18 06:44+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 "Language: bg\n"
 
@@ -80,19 +80,19 @@ msgstr "Необикновенно (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Скрий когато активният прозорец е увеличен"
 
 #: ../src/Dock.vala:34
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Скрий когато активният прозорец застъпва дока"
 
 #: ../src/Dock.vala:35
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Автоматично скривай дока, когато не се използва"
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Винаги видим"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
@@ -186,7 +186,7 @@ msgstr "Изпълняване на команда по избор"
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
@@ -194,7 +194,7 @@ msgstr ""
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Размер на иконите"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
