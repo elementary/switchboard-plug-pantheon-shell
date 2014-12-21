@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-12-07 17:55+0000\n"
-"Last-Translator: 13i <merkvlad@gmail.com>\n"
+"PO-Revision-Date: 2014-12-20 17:34+0000\n"
+"Last-Translator: Artem Anufrij <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
+"X-Launchpad-Export-Date: 2014-12-21 06:07+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 "Language: ru\n"
 
@@ -68,7 +68,7 @@ msgstr "Открыть"
 
 #: ../src/Dock.vala:16
 msgid "Normal"
-msgstr ""
+msgstr "Нормальный"
 
 #: ../src/Dock.vala:17
 msgid "Large"
@@ -80,19 +80,19 @@ msgstr "Другой (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Прятать когда окно в фокусе развёрнуто на весь экран"
 
 #: ../src/Dock.vala:34
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Прятать когда окно в фокусе перекрывает Docks"
 
 #: ../src/Dock.vala:35
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Автоматически прятать кода в не использование"
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Никогда не прятать"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
@@ -186,15 +186,15 @@ msgstr "Выполнить команду"
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Оформление"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
-msgstr ""
+msgstr "Режим скрытия"
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Размер значков"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
