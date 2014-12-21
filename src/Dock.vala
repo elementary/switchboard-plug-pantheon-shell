@@ -59,35 +59,18 @@ public class Dock : Gtk.Grid {
         var theme = new Gtk.ComboBoxText ();
         theme.halign = Gtk.Align.START;
         theme.hexpand = true;
-        theme.append (Plank.Drawing.Theme.GTK_THEME_NAME, _("Desktop Theme"));
-
-        bool theme_found = false;
-
-        var folder = Plank.Services.Paths.AppThemeFolder;
-        if (folder.query_exists () == true) {
-            try {
-                var dir = Dir.open(folder.get_path ());
-                string name = null;
-                while ((name = dir.read_name ()) != null) {
-                    theme.append (name, name);
-                    theme_found = true;
-                }
-            } catch (GLib.FileError e) {
-                critical (e.message);
-            }
-        }
-
-        folder = Plank.Services.Paths.ThemeFolder;
-        if (folder.query_exists () == true) {
-            try {
-                var dir = Dir.open(folder.get_path ());
-                string name = null;
-                while ((name = dir.read_name ()) != null) {
-                    theme.append (name, name);
-                    theme_found = true;
-                }
-            } catch (GLib.FileError e) {
-                critical (e.message);
+        var themes_list = Plank.Drawing.Theme.get_theme_list ();
+        foreach (string theme_name in themes_list) {
+            switch (theme_name) {
+                case Plank.Drawing.Theme.GTK_THEME_NAME:
+                    theme.append (theme_name, _("Desktop Theme"));
+                    break;
+                case Plank.Drawing.Theme.DEFAULT_NAME:
+                    theme.append (theme_name, _("Default"));
+                    break;
+                default:
+                    theme.append (theme_name, theme_name);
+                    break;
             }
         }
 
@@ -153,7 +136,7 @@ public class Dock : Gtk.Grid {
         attach (monitor_label, 1, 4, 1, 1);
         attach (monitor, 2, 4, 1, 1);
 
-        if (theme_found == true) {
+        if (themes_list.size > 0) {
             var theme_label = new Gtk.Label (_("Theme:"));
             theme_label.set_halign (Gtk.Align.END);
             attach (theme_label, 1, 2, 1, 1);
