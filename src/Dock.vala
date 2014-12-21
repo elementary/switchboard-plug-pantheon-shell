@@ -18,7 +18,7 @@ public class Dock : Gtk.Grid {
         icon_size.append ("64", _("Large"));
         icon_size.hexpand = true;
 
-        Plank.Services.Paths.initialize ("plank", Constants.PLANKDATADIR + "/plank");
+        Plank.Services.Paths.initialize ("plank", Constants.PLANKDATADIR);
         dock_preferences = new Plank.DockPreferences.with_file (Plank.Services.Paths.AppConfigFolder.get_child ("dock1").get_child ("settings"));
         var current = dock_preferences.IconSize;
 
