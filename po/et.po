@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-11-07 14:13+0000\n"
+"PO-Revision-Date: 2014-12-21 11:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
+"X-Launchpad-Export-Date: 2014-12-22 06:57+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Wallpaper.vala:126
@@ -79,19 +79,19 @@ msgstr "Kohandatud (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Kui aktiivne aken on maksimeeritud"
 
 #: ../src/Dock.vala:34
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Kui aktiivne aken asetseb doki peal"
 
 #: ../src/Dock.vala:35
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Automaatselt, kui ei kasutata"
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Mitte kunagi"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
@@ -185,16 +185,16 @@ msgstr "Käivita kohandatud käsk"
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Välimus"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
-msgstr ""
+msgstr "Peitmise režiim"
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Ikooni suurus"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
-msgstr ""
+msgstr "Kuvamine"
