@@ -30,7 +30,6 @@ public class Dock : Gtk.Grid {
         icon_size.halign = Gtk.Align.START;
         icon_size.changed.connect (() => {
             dock_preferences.IconSize = int.parse (icon_size.active_id);
-            dock_preferences.apply ();
         });
 
         Gtk.Box hide_mode = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
@@ -51,7 +50,6 @@ public class Dock : Gtk.Grid {
             button.toggled.connect ((b) => {
                 if (b.get_active ()) {
                     dock_preferences.HideMode = hide_mode_ids[index];
-                    dock_preferences.apply ();
                 }
             });
         }
@@ -77,7 +75,6 @@ public class Dock : Gtk.Grid {
         theme.active_id = dock_preferences.Theme;
         theme.changed.connect (() => {
             dock_preferences.Theme = theme.get_active_id ();
-            dock_preferences.apply ();
         });
 
         monitor = new Gtk.ComboBoxText ();
@@ -104,15 +101,12 @@ public class Dock : Gtk.Grid {
                 monitor_label.sensitive = true;
                 monitor.sensitive = true;
             }
-
-            dock_preferences.apply ();
         });
         primary_monitor.active = (dock_preferences.Monitor == -1);
 
         monitor.notify["active"].connect (() => {
             if (monitor.active >= 0 && primary_monitor.active == false) {
                 dock_preferences.Monitor = monitor.active;
-                dock_preferences.apply ();
             }
         });
 
