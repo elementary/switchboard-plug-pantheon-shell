@@ -58,13 +58,24 @@ public class Dock : Gtk.Grid {
         theme.halign = Gtk.Align.START;
         theme.hexpand = true;
         var themes_list = Plank.Drawing.Theme.get_theme_list ();
+        // Let's handle the 4 default themes. Default is renamed to Compact because of consistency.
         foreach (string theme_name in themes_list) {
             switch (theme_name) {
                 case Plank.Drawing.Theme.GTK_THEME_NAME:
-                    theme.append (theme_name, _("Desktop Theme"));
+                    /// Translators : This is a theme name.
+                    theme.append (theme_name, _("Default"));
                     break;
                 case Plank.Drawing.Theme.DEFAULT_NAME:
-                    theme.append (theme_name, _("Default"));
+                    /// Translators : This is a theme name.
+                    theme.append (theme_name, _("Compact"));
+                    break;
+                case "Matte":
+                    /// Translators : This is a theme name.
+                    theme.append (theme_name, _("Matte"));
+                    break;
+                case "Transparent":
+                    /// Translators : This is a theme name.
+                    theme.append (theme_name, _("Transparent"));
                     break;
                 default:
                     theme.append (theme_name, theme_name);
