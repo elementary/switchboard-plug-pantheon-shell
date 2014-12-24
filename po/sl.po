@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2013-08-11 14:50+0000\n"
-"Last-Translator: MarkoD <Unknown>\n"
+"PO-Revision-Date: 2014-12-23 21:49+0000\n"
+"Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
+"X-Launchpad-Export-Date: 2014-12-24 06:49+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/Wallpaper.vala:126
@@ -51,7 +51,7 @@ msgstr "Približano"
 
 #: ../src/Wallpaper.vala:138
 msgid "Spanned"
-msgstr ""
+msgstr "Razpeto"
 
 #: ../src/Wallpaper.vala:221
 msgid "Select a folder"
@@ -59,15 +59,15 @@ msgstr "Izberite mapo"
 
 #: ../src/Wallpaper.vala:222
 msgid "Cancel"
-msgstr ""
+msgstr "Prekliči"
 
 #: ../src/Wallpaper.vala:223
 msgid "Open"
-msgstr ""
+msgstr "Odpri"
 
 #: ../src/Dock.vala:16
 msgid "Normal"
-msgstr ""
+msgstr "Običajna"
 
 #: ../src/Dock.vala:17
 msgid "Large"
@@ -75,31 +75,31 @@ msgstr "Veliko"
 
 #: ../src/Dock.vala:24
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Po meri (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Skrij ko je fokusirano okno maksimizirano"
 
 #: ../src/Dock.vala:34
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Skrij ko fokusirano okno prekriva sidrišče"
 
 #: ../src/Dock.vala:35
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Samodejno skrij ko ni v uporabi"
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Nikoli ne skrij"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
-msgstr ""
+msgstr "Primarni zaslon:"
 
 #: ../src/Dock.vala:88
 msgid "Display:"
-msgstr ""
+msgstr "Zaslon:"
 
 #: ../src/Dock.vala:114
 msgid "Icon Size:"
@@ -115,11 +115,11 @@ msgstr "Tema:"
 
 #: ../src/Dock.vala:164
 msgid "Monitor %d"
-msgstr ""
+msgstr "Monitor %d"
 
 #: ../src/Dock.vala:169
 msgid "Display %d"
-msgstr ""
+msgstr "Zaslon %d"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -127,7 +127,7 @@ msgstr "Namizje"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Spremenite vaše ozadje in prilagodite sidrišče"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:154
 msgid "Wallpaper"
@@ -157,7 +157,7 @@ msgstr "Ne naredi ničesar"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr ""
+msgstr "Pokaži vsa okna"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
@@ -185,16 +185,16 @@ msgstr "Izvrši ukaz po meri"
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
-msgstr ""
+msgstr "Način skrivanja"
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Velikost ikon"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
-msgstr ""
+msgstr "Zaslon"
