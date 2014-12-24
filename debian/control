@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 9),
-               libbamf3-dev,
                libgnome-desktop-3-dev,
                libgranite-dev,
                libgtk-3-dev (>= 3.10),
