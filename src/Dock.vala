@@ -5,6 +5,7 @@ public class Dock : Gtk.Grid {
     Gtk.Switch primary_monitor;
     Gtk.Label monitor_label;
     Gtk.ComboBoxText monitor;
+    Plank.DockPreferences dock_preferences;
 
     public Dock () {
         column_spacing = 12;
@@ -17,16 +18,19 @@ public class Dock : Gtk.Grid {
         icon_size.append ("64", _("Large"));
         icon_size.hexpand = true;
 
-        var plank_settings = PlankSettings.get_default ();
-        var current = plank_settings.icon_size;
+        Plank.Services.Paths.initialize ("plank", Constants.PLANKDATADIR);
+        dock_preferences = new Plank.DockPreferences.with_file (Plank.Services.Paths.AppConfigFolder.get_child ("dock1").get_child ("settings"));
+        var current = dock_preferences.IconSize;
 
         if (current != 48 && current != 64) {
             icon_size.append (current.to_string (), _("Custom (%dpx)").printf (current));
         }
 
         icon_size.active_id = current.to_string ();
-        icon_size.changed.connect (() => plank_settings.icon_size = int.parse (icon_size.active_id));
         icon_size.halign = Gtk.Align.START;
+        icon_size.changed.connect (() => {
+            dock_preferences.IconSize = int.parse (icon_size.active_id);
+        });
 
         Gtk.Box hide_mode = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         string[] hide_mode_labels = new string[4];
@@ -34,48 +38,55 @@ public class Dock : Gtk.Grid {
         hide_mode_labels[1] = _("Hide when focused window overlaps the dock");
         hide_mode_labels[2] = _("Automatically hide when not being used");
         hide_mode_labels[3] = _("Never hide");
-        int[] hide_mode_ids = {3, 1, 2, 0};
+        Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.AUTO, Plank.HideType.NONE};
 
         Gtk.RadioButton button = new Gtk.RadioButton(null);
         for (int i = 0; i < hide_mode_labels.length; i++) {
             int index = i;
             button = new Gtk.RadioButton.with_label_from_widget (button, hide_mode_labels[i]);
             hide_mode.pack_start (button, false, false, 2);
-            if (hide_mode_ids[i] == plank_settings.hide_mode)
+            if (hide_mode_ids[i] == dock_preferences.HideMode)
                 button.set_active (true);
             button.toggled.connect ((b) => {
-                if (b.get_active ())
-                    plank_settings.hide_mode = hide_mode_ids[index];
+                if (b.get_active ()) {
+                    dock_preferences.HideMode = hide_mode_ids[index];
+                }
             });
         }
 
         var theme = new Gtk.ComboBoxText ();
-        int theme_index = 0;
-        string name;
-        var dirs = Environment.get_system_data_dirs ();
-        dirs += Environment.get_user_data_dir ();
-
-        foreach (string dir in dirs) {
-            if (FileUtils.test (dir + "/plank/themes", FileTest.EXISTS)) {
-                try {
-                    var d = Dir.open(dir + "/plank/themes");
-                    while ((name = d.read_name()) != null) {
-                        theme.append(theme_index.to_string (), _(name));
-                        if (plank_settings.theme.to_string () == name) {
-                            theme.active = theme_index;
-                        }
-
-                        theme_index++;
-                    }
-                } catch (GLib.FileError e) {
-                    critical (e.message);
-                }
+        theme.halign = Gtk.Align.START;
+        theme.hexpand = true;
+        var themes_list = Plank.Drawing.Theme.get_theme_list ();
+        // Let's handle the 4 default themes. Default is renamed to Compact because of consistency.
+        foreach (string theme_name in themes_list) {
+            switch (theme_name) {
+                case Plank.Drawing.Theme.GTK_THEME_NAME:
+                    /// Translators : This is a theme name.
+                    theme.append (theme_name, _("Default"));
+                    break;
+                case Plank.Drawing.Theme.DEFAULT_NAME:
+                    /// Translators : This is a theme name.
+                    theme.append (theme_name, _("Compact"));
+                    break;
+                case "Matte":
+                    /// Translators : This is a theme name.
+                    theme.append (theme_name, _("Matte"));
+                    break;
+                case "Transparent":
+                    /// Translators : This is a theme name.
+                    theme.append (theme_name, _("Transparent"));
+                    break;
+                default:
+                    theme.append (theme_name, theme_name);
+                    break;
             }
         }
 
-        theme.changed.connect (() => plank_settings.theme = theme.get_active_text ());
-        theme.halign = Gtk.Align.START;
-        theme.hexpand = true;
+        theme.active_id = dock_preferences.Theme;
+        theme.changed.connect (() => {
+            dock_preferences.Theme = theme.get_active_id ();
+        });
 
         monitor = new Gtk.ComboBoxText ();
         monitor.halign = Gtk.Align.START;
@@ -93,20 +104,21 @@ public class Dock : Gtk.Grid {
         primary_monitor.no_show_all = true;
         primary_monitor.notify["active"].connect (() => {
             if (primary_monitor.active == true) {
-                plank_settings.monitor = -1;
+                dock_preferences.Monitor = -1;
                 monitor_label.sensitive = false;
                 monitor.sensitive = false;
             } else {
-                plank_settings.monitor = monitor.active;
+                dock_preferences.Monitor = monitor.active;
                 monitor_label.sensitive = true;
                 monitor.sensitive = true;
             }
         });
-        primary_monitor.active = (plank_settings.monitor == -1);
+        primary_monitor.active = (dock_preferences.Monitor == -1);
 
         monitor.notify["active"].connect (() => {
-            if (monitor.active >= 0 && primary_monitor.active == false)
-                plank_settings.monitor = monitor.active;
+            if (monitor.active >= 0 && primary_monitor.active == false) {
+                dock_preferences.Monitor = monitor.active;
+            }
         });
 
         Gdk.Screen.get_default ().monitors_changed.connect (() => {check_for_screens ();});
@@ -129,7 +141,7 @@ public class Dock : Gtk.Grid {
         attach (monitor_label, 1, 4, 1, 1);
         attach (monitor, 2, 4, 1, 1);
 
-        if (theme_index > 1) {
+        if (themes_list.size > 0) {
             var theme_label = new Gtk.Label (_("Theme:"));
             theme_label.set_halign (Gtk.Align.END);
             attach (theme_label, 1, 2, 1, 1);
@@ -142,7 +154,6 @@ public class Dock : Gtk.Grid {
     private void check_for_screens () {
         int i = 0;
         int primary_screen = 0;
-        var plank_settings = PlankSettings.get_default ();
         var default_screen = Gdk.Screen.get_default ();
         monitor.remove_all ();
         try {
@@ -177,8 +188,8 @@ public class Dock : Gtk.Grid {
             monitor.no_show_all = true;
             monitor.hide ();
         } else {
-            if (plank_settings.monitor >= 0) {
-                monitor.active = plank_settings.monitor;
+            if (dock_preferences.Monitor >= 0) {
+                monitor.active = dock_preferences.Monitor;
             } else {
                 monitor.active = primary_screen;
             }
