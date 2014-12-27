@@ -54,40 +54,6 @@ public class Dock : Gtk.Grid {
             });
         }
 
-        var theme = new Gtk.ComboBoxText ();
-        theme.halign = Gtk.Align.START;
-        theme.hexpand = true;
-        var themes_list = Plank.Drawing.Theme.get_theme_list ();
-        // Let's handle the 4 default themes. Default is renamed to Compact because of consistency.
-        foreach (string theme_name in themes_list) {
-            switch (theme_name) {
-                case Plank.Drawing.Theme.GTK_THEME_NAME:
-                    /// Translators : This is a theme name.
-                    theme.append (theme_name, _("Default"));
-                    break;
-                case Plank.Drawing.Theme.DEFAULT_NAME:
-                    /// Translators : This is a theme name.
-                    theme.append (theme_name, _("Compact"));
-                    break;
-                case "Matte":
-                    /// Translators : This is a theme name.
-                    theme.append (theme_name, _("Matte"));
-                    break;
-                case "Transparent":
-                    /// Translators : This is a theme name.
-                    theme.append (theme_name, _("Transparent"));
-                    break;
-                default:
-                    theme.append (theme_name, theme_name);
-                    break;
-            }
-        }
-
-        theme.active_id = dock_preferences.Theme;
-        theme.changed.connect (() => {
-            dock_preferences.Theme = theme.get_active_id ();
-        });
-
         monitor = new Gtk.ComboBoxText ();
         monitor.halign = Gtk.Align.START;
         monitor.hexpand = true;
@@ -140,13 +106,6 @@ public class Dock : Gtk.Grid {
         attach (primary_monitor_grid, 2, 3, 1, 1);
         attach (monitor_label, 1, 4, 1, 1);
         attach (monitor, 2, 4, 1, 1);
-
-        if (themes_list.size > 0) {
-            var theme_label = new Gtk.Label (_("Theme:"));
-            theme_label.set_halign (Gtk.Align.END);
-            attach (theme_label, 1, 2, 1, 1);
-            attach (theme, 2, 2, 1, 1);
-        }
 
         check_for_screens ();
     }
