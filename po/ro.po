@@ -8,31 +8,31 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2013-03-17 19:35+0000\n"
-"Last-Translator: Richard B. <Unknown>\n"
+"PO-Revision-Date: 2015-01-31 18:44+0000\n"
+"Last-Translator: Dobrescu Cristian <Unknown>\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-02-01 06:29+0000\n"
+"X-Generator: Launchpad (build 17306)\n"
 "Language: ro\n"
 
 #: ../src/Wallpaper.vala:126
 msgid "Pictures"
-msgstr ""
+msgstr "Imagini"
 
 #: ../src/Wallpaper.vala:127
 msgid "Backgrounds"
-msgstr ""
+msgstr "Fundaluri"
 
 #: ../src/Wallpaper.vala:128
 msgid "Custom…"
-msgstr ""
+msgstr "Personalizat..."
 
 #: ../src/Wallpaper.vala:133
 msgid "Solid Color"
-msgstr ""
+msgstr "Culoare plină"
 
 #: ../src/Wallpaper.vala:134
 msgid "Centered"
@@ -52,7 +52,7 @@ msgstr "Mărește"
 
 #: ../src/Wallpaper.vala:138
 msgid "Spanned"
-msgstr ""
+msgstr "Extins"
 
 #: ../src/Wallpaper.vala:221
 msgid "Select a folder"
@@ -60,43 +60,43 @@ msgstr "Selectati un dosar"
 
 #: ../src/Wallpaper.vala:222
 msgid "Cancel"
-msgstr ""
+msgstr "Anulează"
 
 #: ../src/Wallpaper.vala:223
 msgid "Open"
-msgstr ""
+msgstr "Deschide"
 
 #: ../src/Dock.vala:16
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: ../src/Dock.vala:17
 msgid "Large"
-msgstr ""
+msgstr "Larg"
 
 #: ../src/Dock.vala:24
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Particularizat"
 
 #: ../src/Dock.vala:33
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Ascunde atunci când fereastra activă este maximizată"
 
 #: ../src/Dock.vala:34
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Ascunde atunci când fereastra activă se suprapune peste dock"
 
 #: ../src/Dock.vala:35
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Ascunde automat atunci când nu este folosit"
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Menține vizibil"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
-msgstr ""
+msgstr "Ecran Principal:"
 
 #: ../src/Dock.vala:88
 msgid "Display:"
@@ -112,7 +112,7 @@ msgstr "Modul ascundere"
 
 #: ../src/Dock.vala:133
 msgid "Theme:"
-msgstr ""
+msgstr "Temă:"
 
 #: ../src/Dock.vala:164
 msgid "Monitor %d"
@@ -128,7 +128,7 @@ msgstr "Spațiu de lucru"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Schimbati imaginea de fundal si personalizați dock-ul"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:154
 msgid "Wallpaper"
@@ -150,7 +150,7 @@ msgstr "Comanda personalizata"
 
 #: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:160
 msgid "Hot Corners"
-msgstr ""
+msgstr "Colțuri sensibile"
 
 #: ../src/desktop-plug.vala:117
 msgid "Do Nothing"
@@ -170,7 +170,7 @@ msgstr "Minimizeaza fereastra curenta"
 
 #: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Afișează meniul de aplicații"
 
 #: ../src/desktop-plug.vala:122
 msgid "Window Overview"
@@ -186,15 +186,15 @@ msgstr "Executa comanda personalizata"
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Temă"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
-msgstr ""
+msgstr "Mod ascundere"
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Dimensiune Pictogramă"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
