@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-11-01 16:40+0000\n"
-"Last-Translator: Jonas Mindemark <fonclbrisch@gmail.com>\n"
+"PO-Revision-Date: 2015-02-04 17:22+0000\n"
+"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:28+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-02-05 07:35+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 "Language: sv\n"
 
 #: ../src/Wallpaper.vala:126
@@ -68,7 +68,7 @@ msgstr "Öppna"
 
 #: ../src/Dock.vala:16
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: ../src/Dock.vala:17
 msgid "Large"
@@ -128,7 +128,7 @@ msgstr "Skrivbordet"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Ändra din bakgrundsbild och anpassa din docka"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:154
 msgid "Wallpaper"
