@@ -61,6 +61,11 @@ public enum ColumnType {
     NAME
 }
 
+[DBus (name = "org.freedesktop.Accounts.User")]
+interface AccountsServiceUser : Object {
+    public abstract void set_background_file (string filename) throws IOError;
+}
+
 class Wallpaper : EventBox {
 
     class WallpaperContainer : Gtk.FlowBoxChild {
@@ -81,6 +86,7 @@ class Wallpaper : EventBox {
     }
 
     GLib.Settings settings;
+    AccountsServiceUser accountsservice = null;
 
     Gtk.FlowBox wallpaper_view;
     ComboBoxText combo;
@@ -102,6 +108,15 @@ class Wallpaper : EventBox {
         plug = _plug;
 
         settings = new GLib.Settings ("org.gnome.desktop.background");
+
+         try {
+            string uid = "%d".printf ((int) Posix.getuid ());
+            accountsservice = Bus.get_proxy_sync (BusType.SYSTEM,
+                    "org.freedesktop.Accounts",
+                    "/org/freedesktop/Accounts/User" + uid);
+        } catch (Error e) {
+            warning (e.message);
+        }
 
         var vbox = new Box (Orientation.VERTICAL, 4);
 
@@ -183,10 +198,21 @@ class Wallpaper : EventBox {
         current_wallpaper_path = settings.get_string ("picture-uri");
     }
 
+    void update_accountsservice () {
+        try {
+            var file = File.new_for_uri (current_wallpaper_path);
+
+            accountsservice.set_background_file (file.get_path ());
+        } catch (Error e) {
+            warning (e.message);
+        }
+    }
+
     void update_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
         var selected = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
         current_wallpaper_path = selected.uri;
         settings.set_string ("picture-uri", current_wallpaper_path);
+        update_accountsservice ();
     }
 
     void update_color () {

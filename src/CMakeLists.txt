@@ -24,6 +24,7 @@ PACKAGES
     gnome-desktop-3.0
     switchboard-2.0
     granite
+    posix
     plank
 OPTIONS
     --thread
