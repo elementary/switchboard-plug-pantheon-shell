@@ -86,6 +86,8 @@ class Wallpaper : EventBox {
     }
 
     GLib.Settings settings;
+
+    //Instance of the AccountsServices-Interface for this user
     AccountsServiceUser accountsservice = null;
 
     Gtk.FlowBox wallpaper_view;
@@ -109,6 +111,8 @@ class Wallpaper : EventBox {
 
         settings = new GLib.Settings ("org.gnome.desktop.background");
 
+        //DBus connection needed in update_wallpaper for
+        //passing the wallpaper-information to accountsservice.
          try {
             string uid = "%d".printf ((int) Posix.getuid ());
             accountsservice = Bus.get_proxy_sync (BusType.SYSTEM,
@@ -199,6 +203,12 @@ class Wallpaper : EventBox {
     }
 
     void update_accountsservice () {
+        /*
+         * We pass the path to accountsservices that the login-screen can
+         * see what background we selected. This is right now just a patched-in functionality of
+         * accountsservice, so we expect that it is maybe not there
+         * and do nothing if we encounter a unpatched accountsservices-backend.
+        */
         try {
             var file = File.new_for_uri (current_wallpaper_path);
 
