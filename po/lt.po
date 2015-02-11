@@ -3,42 +3,42 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-12-16 09:22+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-02-11 05:51+0000\n"
+"Last-Translator: Mantas Kriaučiūnas <mantas@akl.lt>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-17 07:00+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-02-11 06:21+0000\n"
+"X-Generator: Launchpad (build 17336)\n"
 
 #: ../src/Wallpaper.vala:126
 msgid "Pictures"
-msgstr ""
+msgstr "Paveikslėliai"
 
 #: ../src/Wallpaper.vala:127
 msgid "Backgrounds"
-msgstr ""
+msgstr "Fonai"
 
 #: ../src/Wallpaper.vala:128
 msgid "Custom…"
-msgstr ""
+msgstr "Pasirinktinis…"
 
 #: ../src/Wallpaper.vala:133
 msgid "Solid Color"
-msgstr ""
+msgstr "Viena spalva"
 
 #: ../src/Wallpaper.vala:134
 msgid "Centered"
-msgstr ""
+msgstr "Centruotas"
 
 #: ../src/Wallpaper.vala:135
 msgid "Scaled"
-msgstr ""
+msgstr "Pakeisto mastelio"
 
 #: ../src/Wallpaper.vala:136
 msgid "Stretched"
-msgstr ""
+msgstr "Ištemptas"
 
 #: ../src/Wallpaper.vala:137
 msgid "Zoom"
@@ -50,15 +50,15 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:221
 msgid "Select a folder"
-msgstr ""
+msgstr "Pasirinkite aplanką"
 
 #: ../src/Wallpaper.vala:222
 msgid "Cancel"
-msgstr ""
+msgstr "Atsisakyti"
 
 #: ../src/Wallpaper.vala:223
 msgid "Open"
-msgstr ""
+msgstr "Atverti"
 
 #: ../src/Dock.vala:16
 msgid "Normal"
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../src/Dock.vala:17
 msgid "Large"
-msgstr ""
+msgstr "Dideli"
 
 #: ../src/Dock.vala:24
 msgid "Custom (%dpx)"
@@ -86,27 +86,27 @@ msgstr ""
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Rodyti visada"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
-msgstr ""
+msgstr "Pagrindinis ekranas:"
 
 #: ../src/Dock.vala:88
 msgid "Display:"
-msgstr ""
+msgstr "Ekranas:"
 
 #: ../src/Dock.vala:114
 msgid "Icon Size:"
-msgstr ""
+msgstr "Piktogramų dydis:"
 
 #: ../src/Dock.vala:116
 msgid "Hide Mode:"
-msgstr ""
+msgstr "Slėpimo būdas:"
 
 #: ../src/Dock.vala:133
 msgid "Theme:"
-msgstr ""
+msgstr "Tema:"
 
 #: ../src/Dock.vala:164
 msgid "Monitor %d"
@@ -114,25 +114,25 @@ msgstr ""
 
 #: ../src/Dock.vala:169
 msgid "Display %d"
-msgstr ""
+msgstr "Ekranas %d"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
-msgstr ""
+msgstr "Darbastalis"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Keisti darbastalio foną bei skydelio nustatymus"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:154
 msgid "Wallpaper"
-msgstr ""
+msgstr "Darbalaukio fonas"
 
 #: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:155
 #: ../src/desktop-plug.vala:156 ../src/desktop-plug.vala:157
 #: ../src/desktop-plug.vala:158 ../src/desktop-plug.vala:159
 msgid "Dock"
-msgstr ""
+msgstr "Skydelis"
 
 #: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
@@ -140,15 +140,15 @@ msgstr ""
 
 #: ../src/desktop-plug.vala:94
 msgid "Custom Command:"
-msgstr ""
+msgstr "Parenkama komanda:"
 
 #: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:160
 msgid "Hot Corners"
-msgstr ""
+msgstr "Karštieji kampai"
 
 #: ../src/desktop-plug.vala:117
 msgid "Do Nothing"
-msgstr ""
+msgstr "Nedaryti nieko"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
@@ -156,23 +156,23 @@ msgstr ""
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "Išdidinti aktyvų langą"
 
 #: ../src/desktop-plug.vala:120
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "Sumažinti aktyvų langą"
 
 #: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Rodyti programų meniu"
 
 #: ../src/desktop-plug.vala:122
 msgid "Window Overview"
-msgstr ""
+msgstr "Langų apžvalga"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
-msgstr ""
+msgstr "Rodyti visus langus"
 
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
@@ -180,15 +180,15 @@ msgstr ""
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
-msgstr ""
+msgstr "Slėpimo būdas"
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Piktogramų dydis"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
