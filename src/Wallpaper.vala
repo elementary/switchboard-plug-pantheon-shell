@@ -61,6 +61,11 @@ public enum ColumnType {
     NAME
 }
 
+[DBus (name = "org.freedesktop.Accounts.User")]
+interface AccountsServiceUser : Object {
+    public abstract void set_background_file (string filename) throws IOError;
+}
+
 class Wallpaper : EventBox {
 
     class WallpaperContainer : Gtk.FlowBoxChild {
@@ -82,6 +87,9 @@ class Wallpaper : EventBox {
 
     GLib.Settings settings;
 
+    //Instance of the AccountsServices-Interface for this user
+    AccountsServiceUser accountsservice = null;
+
     Gtk.FlowBox wallpaper_view;
     ComboBoxText combo;
     ComboBoxText folder_combo;
@@ -102,6 +110,17 @@ class Wallpaper : EventBox {
         plug = _plug;
 
         settings = new GLib.Settings ("org.gnome.desktop.background");
+
+        //DBus connection needed in update_wallpaper for
+        //passing the wallpaper-information to accountsservice.
+         try {
+            string uid = "%d".printf ((int) Posix.getuid ());
+            accountsservice = Bus.get_proxy_sync (BusType.SYSTEM,
+                    "org.freedesktop.Accounts",
+                    "/org/freedesktop/Accounts/User" + uid);
+        } catch (Error e) {
+            warning (e.message);
+        }
 
         var vbox = new Box (Orientation.VERTICAL, 4);
 
@@ -183,10 +202,27 @@ class Wallpaper : EventBox {
         current_wallpaper_path = settings.get_string ("picture-uri");
     }
 
+    void update_accountsservice () {
+        /*
+         * We pass the path to accountsservices that the login-screen can
+         * see what background we selected. This is right now just a patched-in functionality of
+         * accountsservice, so we expect that it is maybe not there
+         * and do nothing if we encounter a unpatched accountsservices-backend.
+        */
+        try {
+            var file = File.new_for_uri (current_wallpaper_path);
+
+            accountsservice.set_background_file (file.get_path ());
+        } catch (Error e) {
+            warning (e.message);
+        }
+    }
+
     void update_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
         var selected = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
         current_wallpaper_path = selected.uri;
         settings.set_string ("picture-uri", current_wallpaper_path);
+        update_accountsservice ();
     }
 
     void update_color () {
