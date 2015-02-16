@@ -70,18 +70,51 @@ class Wallpaper : EventBox {
 
     class WallpaperContainer : Gtk.FlowBoxChild {
         public string uri { get; construct; }
-
-        Gtk.Image image;
+        public ImageWidget image;
 
         public WallpaperContainer (string uri) {
             Object (uri: uri);
 
             try {
-                image = new Gtk.Image.from_pixbuf (new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false));
+                if(Cache.is_cached (uri)) {
+                    var pixbuf = Cache.get_cached_image (uri);
+                    image = new ImageWidget (pixbuf);
+                } else {
+                    var pixbuf = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false);
+                    image = new ImageWidget (pixbuf);
+                    Cache.cache_image_pixbuf(pixbuf, uri);
+                }
                 add (image);
+                image.show();
             } catch (Error e) {
                 warning ("Failed to load wallpaper thumbnail: %s", e.message);
             }
+
+            //removes the ugly default selection in flowbox
+            var item_style_provider = new Gtk.CssProvider();
+            item_style_provider.load_from_data("""
+            GtkFlowBoxChild:selected {
+                background-color: transparent;
+            }
+            """, -1);
+            get_style_context().add_provider(item_style_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
+
+            image.clicked.connect(() => {
+                activate();
+            });
+
+            activate.connect(() => {
+                image.set_activated (true);
+            });
+
+            draw.connect(()=> {
+                //prevent extra drawing and cpu usage
+                if (image.get_selected() == is_selected())
+                    return false;
+                //re-drawing if needed
+                image.set_selected ( is_selected () );
+                return false;
+            });
         }
     }
 
@@ -91,6 +124,7 @@ class Wallpaper : EventBox {
     AccountsServiceUser accountsservice = null;
 
     Gtk.FlowBox wallpaper_view;
+    WallpaperContainer active_wallpaper = null;
     ComboBoxText combo;
     ComboBoxText folder_combo;
     ColorButton color;
@@ -223,6 +257,16 @@ class Wallpaper : EventBox {
         current_wallpaper_path = selected.uri;
         settings.set_string ("picture-uri", current_wallpaper_path);
         update_accountsservice ();
+
+        if (active_wallpaper == null) {
+            active_wallpaper = selected;
+            return;
+        }
+
+        if (active_wallpaper.uri != selected.uri ) {
+            active_wallpaper.image.set_activated (false);
+            active_wallpaper = selected;
+        }
     }
 
     void update_color () {
@@ -335,6 +379,8 @@ class Wallpaper : EventBox {
                         // Select the wallpaper if it is the current wallpaper
                         if (current_wallpaper_path.has_suffix (uri)) {
                             this.wallpaper_view.select_child (wallpaper);
+                            wallpaper.image.set_activated(true);
+                            active_wallpaper = wallpaper;
                         }
 
                         // Have GTK update the UI even while we're busy
