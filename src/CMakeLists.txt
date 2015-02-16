@@ -20,7 +20,7 @@ vala_precompile (VALA_C ${PLUGNAME}
     Wallpaper.vala
     SlingshotSettings.vala
     Cache.vala
-    ImageWidget.vala
+    WallpaperContainer.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gnome-desktop-3.0

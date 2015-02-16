@@ -1,14 +1,15 @@
 using Gdk;
 using Gtk;
 
-public class ImageWidget : Gtk.DrawingArea {
+public class WallpaperContainer : Gtk.FlowBoxChild {
 
     public signal void clicked();
     
+    public string uri { get; construct; }
     private bool selected = false;
     private bool activated = false;
     private Pixbuf thumb;
-    private int thumb_margin = 4;
+    private int thumb_margin = 3;
     private static Pixbuf activated_icon = null;
     private RGBA selected_color;
     private RGBA active_color;
@@ -23,9 +24,20 @@ public class ImageWidget : Gtk.DrawingArea {
                                       background-color: @active_bg_color;;
                                     }""";
 
+    public WallpaperContainer (string uri) {
 
-    public ImageWidget (Pixbuf thumb) {
-        this.thumb = thumb;
+        Object (uri: uri);
+
+        try {
+            if(Cache.is_cached (uri)) {
+                this.thumb = Cache.get_cached_image (uri);
+            } else {
+                this.thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false);
+                Cache.cache_image_pixbuf(thumb, uri);
+            }
+        } catch (Error e) {
+            warning ("Failed to load wallpaper thumbnail: %s", e.message);
+        }
 
         //style
         var item_style_provider = new Gtk.CssProvider ();
@@ -38,7 +50,6 @@ public class ImageWidget : Gtk.DrawingArea {
         active_color = get_style_context ().get_background_color (StateFlags.ACTIVE);
 
         //events
-        add_events (Gdk.EventMask.BUTTON_PRESS_MASK | Gdk.EventMask.BUTTON_RELEASE_MASK);
         this.height_request = thumb.get_height() + 2*thumb_margin;
         this.width_request = thumb.get_width()+ 2*thumb_margin;
 
@@ -52,6 +63,14 @@ public class ImageWidget : Gtk.DrawingArea {
         }
 
         button_release_event.connect(on_button_press);
+
+        clicked.connect(() => {
+            set_checked (true);
+        });
+
+        activate.connect(() => {
+            set_checked (true);
+        });
     }
 
     public bool on_button_press(Gdk.EventButton event) {
@@ -64,11 +83,14 @@ public class ImageWidget : Gtk.DrawingArea {
 
     public void set_selected (bool is_selected) {
         this.selected = is_selected;
-        queue_draw();
     }
 
-    public void set_activated (bool is_activated) {
-         this.activated = is_activated;
+    public void set_checked (bool is_checked) {
+         if (is_checked) {
+            set_state_flags( get_state_flags() | StateFlags.CHECKED, false);
+         } else {
+            unset_state_flags(StateFlags.CHECKED);
+         }
          queue_draw();
     }
 
@@ -76,8 +98,8 @@ public class ImageWidget : Gtk.DrawingArea {
         return selected;
     }
 
-    public bool get_activated () {
-        return activated;
+    public bool get_checked () {
+        return ( (get_state_flags() & StateFlags.CHECKED) == StateFlags.CHECKED );
     }
 
     public override bool draw (Cairo.Context cr) {
@@ -85,7 +107,7 @@ public class ImageWidget : Gtk.DrawingArea {
         int width = (int) (thumb.get_width() + 2*thumb_margin);
         int height = (int) (thumb.get_height() + 2*thumb_margin);
 
-        if (selected) {
+        if ((get_state_flags() & StateFlags.SELECTED) == StateFlags.SELECTED) {
             //paint selection background
             cr.set_source_rgba (selected_color.red,selected_color.green,selected_color.blue,1);
             //cr.set_source_rgba (60.0/255,146.0/255,202.0/255,1);
@@ -97,14 +119,15 @@ public class ImageWidget : Gtk.DrawingArea {
         cairo_set_source_pixbuf (cr, thumb, thumb_margin, thumb_margin);
         cr.paint ();
 
-        if (activated) {
+        if ((get_state_flags() & StateFlags.CHECKED) == StateFlags.CHECKED) {
             int x = width/2 - activated_icon.get_width()/2;
             int y = height/2 - activated_icon.get_height()/2;
             cairo_set_source_pixbuf (cr, activated_icon, x, y);
             cr.paint ();
         }
         cr.restore ();
-        return false;
+        return true;
     }
 
 }
+
