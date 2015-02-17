@@ -1,6 +1,7 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
  * Copyright (c) 2013-2014 Foto Developers (http://launchpad.net/foto)
+ * Copyright (c) 2015 Erasmo Marín
  *
  * This software is licensed under the GNU General Public License
  * (version 3 or later). See the COPYING file in this distribution.
@@ -10,18 +11,12 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 02111-1307, USA.
  *
- * Authored by: Erasmo Marín <erasmo.marin@gmail.com>
  */
-
-using Gdk;
-using Gdk;
-using GLib;
-using Gee;
 
 public class Cache {
 
     static string cache_folder = null;
-    static HashMap<string,Pixbuf> images = null;
+    static Gee.HashMap<string, Gdk.Pixbuf> images = null;
     static bool cache_folder_exists = false;
 
     /*
@@ -31,7 +26,7 @@ public class Cache {
         if (cache_folder == null)
             cache_folder = Environment.get_user_cache_dir () + "/wallpapers-plug-thumbs/";
         if (images == null) {
-            images = new HashMap<string, Pixbuf>();
+            images = new Gee.HashMap<string, Gdk.Pixbuf>();
         }
         if(!cache_folder_exists) {
             create_cache_path (cache_folder);
@@ -44,7 +39,7 @@ public class Cache {
     public static bool cache_image (string uri, int width, int height) {
         try {
             Cache.init.begin();
-            var pixbuf = new Pixbuf.from_file_at_scale (uri, width, height, true);
+            var pixbuf = new Gdk.Pixbuf.from_file_at_scale (uri, width, height, true);
             debug ("Image cached: " + get_cache_path () + compute_key (uri));
             pixbuf.save (get_cache_path () + compute_key (uri) , "png");
             images.set(compute_key (uri), pixbuf);
@@ -58,7 +53,7 @@ public class Cache {
     /*
      *create a new cache file for the image pixbuf at the same size
      */
-    public static bool cache_image_pixbuf (Pixbuf pixbuf, string uri) {
+    public static bool cache_image_pixbuf (Gdk.Pixbuf pixbuf, string uri) {
         try {
             Cache.init.begin();
             pixbuf.save (get_cache_path () + compute_key (uri) , "png");
@@ -86,15 +81,15 @@ public class Cache {
     /*
      *returns the cached thumbnail
      */
-    public static Pixbuf? get_cached_image (string uri) {
+    public static Gdk.Pixbuf? get_cached_image (string uri) {
         Cache.init.begin();
         string computed_key = compute_key (uri);
         if (images.has_key(computed_key))
             return images.get(computed_key);
 
-        Pixbuf pixbuf = null;
+        Gdk.Pixbuf pixbuf = null;
         try {
-            pixbuf = new Pixbuf.from_file (get_cache_path () + computed_key);
+            pixbuf = new Gdk.Pixbuf.from_file (get_cache_path () + computed_key);
         } catch (GLib.Error err) {
  	        warning("get_cached_image failed");
             return null;
@@ -133,7 +128,7 @@ public class Cache {
      *compute a key with the uri
      */
     private static string compute_key_uri (string uri) {
-        string key_uri = Checksum.compute_for_string (ChecksumType.MD5, uri);
+        string key_uri = GLib.Checksum.compute_for_string (ChecksumType.MD5, uri);
         return key_uri;
     }
 
@@ -143,7 +138,7 @@ public class Cache {
     private static string compute_key_mod (string uri) {
         GLib.File file = GLib.File.new_for_uri (uri);
         FileInfo info = file.query_info (GLib.FileAttribute.TIME_MODIFIED, 0);
-        string key_mod = Checksum.compute_for_string (ChecksumType.MD5, 
+        string key_mod = GLib.Checksum.compute_for_string (GLib.ChecksumType.MD5, 
                                                       info.get_modification_time().tv_sec.to_string());
         return key_mod;
     }

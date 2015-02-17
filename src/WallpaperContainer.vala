@@ -1,13 +1,24 @@
-using Gdk;
-using Gtk;
+// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
+/*-
+ * Copyright (c) 2015 Erasmo Marín
+ *
+ * This software is licensed under the GNU General Public License
+ * (version 3 or later). See the COPYING file in this distribution.
+ *
+ * You should have received a copy of the GNU Library General Public
+ * License along with this software; if not, write to the
+ * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ * Boston, MA 02111-1307, USA.
+ *
+ */
 
 public class WallpaperContainer : Gtk.FlowBoxChild {
     
     public string uri { get; construct; }
-    private Pixbuf thumb;
+    private Gdk.Pixbuf thumb;
     private int thumb_margin = 3;
-    private static Pixbuf checked_icon = null;
-    private RGBA selected_color;
+    private static Gdk.Pixbuf checked_icon = null;
+    private Gdk.RGBA selected_color;
 
     private static string style_str = """GtkFlowBoxChild:selected {
                                                background-color: @selected_bg_color;
@@ -40,7 +51,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
 
 
         //load selected color
-        selected_color = get_style_context ().get_background_color (StateFlags.SELECTED);
+        selected_color = get_style_context ().get_background_color (Gtk.StateFlags.SELECTED);
 
         this.height_request = thumb.get_height() + 2*thumb_margin;
         this.width_request = thumb.get_width()+ 2*thumb_margin;
@@ -48,7 +59,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         if (checked_icon == null) {
             try {
                 Gtk.IconTheme icon_theme = Gtk.IconTheme.get_default();
-                checked_icon = icon_theme.load_icon ("selection-checked", 32, IconLookupFlags.FORCE_SIZE);
+                checked_icon = icon_theme.load_icon ("selection-checked", 32, Gtk.IconLookupFlags.FORCE_SIZE);
             } catch (GLib.Error err) {
      	        warning ("Getting selection-checked icon from theme failed");
             }
@@ -61,28 +72,28 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
 
     public void set_selected (bool is_selected) {
          if (is_selected) {
-            set_state_flags ( get_state_flags() | StateFlags.SELECTED, false);
+            set_state_flags ( get_state_flags() | Gtk.StateFlags.SELECTED, false);
          } else {
-            unset_state_flags (StateFlags.SELECTED);
+            unset_state_flags (Gtk.StateFlags.SELECTED);
          }
          queue_draw ();
     }
 
     public void set_checked (bool is_checked) {
          if (is_checked) {
-            set_state_flags ( get_state_flags() | StateFlags.CHECKED, false);
+            set_state_flags ( get_state_flags() | Gtk.StateFlags.CHECKED, false);
          } else {
-            unset_state_flags (StateFlags.CHECKED);
+            unset_state_flags (Gtk.StateFlags.CHECKED);
          }
          queue_draw ();
     }
 
     public bool get_selected () {
-        return ((get_state_flags () & StateFlags.SELECTED) == StateFlags.SELECTED);
+        return ((get_state_flags () & Gtk.StateFlags.SELECTED) == Gtk.StateFlags.SELECTED);
     }
 
     public bool get_checked () {
-        return ((get_state_flags () & StateFlags.CHECKED) == StateFlags.CHECKED );
+        return ((get_state_flags () & Gtk.StateFlags.CHECKED) == Gtk.StateFlags.CHECKED );
     }
 
     public override bool draw (Cairo.Context cr) {
@@ -90,7 +101,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         int width = (int) (thumb.get_width() + 2*thumb_margin);
         int height = (int) (thumb.get_height() + 2*thumb_margin);
 
-        if ((get_state_flags () & StateFlags.SELECTED) == StateFlags.SELECTED) {
+        if ((get_state_flags () & Gtk.StateFlags.SELECTED) == Gtk.StateFlags.SELECTED) {
             //paint selection background
             cr.set_source_rgba (selected_color.red, selected_color.green, selected_color.blue, selected_color.alpha);
             Granite.Drawing.Utilities.cairo_rounded_rectangle (cr, 0, 0, width, height, 3);
@@ -98,11 +109,11 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
 
         cr.save ();
-        cairo_set_source_pixbuf (cr, thumb, thumb_margin, thumb_margin);
+        Gdk.cairo_set_source_pixbuf (cr, thumb, thumb_margin, thumb_margin);
         cr.paint ();
 
-        if ((get_state_flags () & StateFlags.CHECKED) == StateFlags.CHECKED) {
-            cairo_set_source_pixbuf (cr, checked_icon, thumb_margin, thumb_margin);
+        if ((get_state_flags () & Gtk.StateFlags.CHECKED) == Gtk.StateFlags.CHECKED) {
+            Gdk.cairo_set_source_pixbuf (cr, checked_icon, thumb_margin, thumb_margin);
             cr.paint ();
         }
 
