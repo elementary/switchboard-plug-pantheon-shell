@@ -2,27 +2,17 @@ using Gdk;
 using Gtk;
 
 public class WallpaperContainer : Gtk.FlowBoxChild {
-
-    public signal void clicked();
     
     public string uri { get; construct; }
-    private bool selected = false;
-    private bool activated = false;
     private Pixbuf thumb;
     private int thumb_margin = 3;
-    private static Pixbuf activated_icon = null;
+    private static Pixbuf checked_icon = null;
     private RGBA selected_color;
-    private RGBA active_color;
 
-    private static string style= """
-                                    *:selected {
-                                      background-color: @selected_bg_color;
-                                      color: @selected_fg_color;
-                                    }
-
-                                    *:active {
-                                      background-color: @active_bg_color;;
-                                    }""";
+    private static string style_str = """GtkFlowBoxChild:selected {
+                                               background-color: @selected_bg_color;
+                                               color: @selected_fg_color;
+                                           }""";
 
     public WallpaperContainer (string uri) {
 
@@ -33,73 +23,66 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
                 this.thumb = Cache.get_cached_image (uri);
             } else {
                 this.thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false);
-                Cache.cache_image_pixbuf(thumb, uri);
+                Cache.cache_image_pixbuf (thumb, uri);
             }
         } catch (Error e) {
             warning ("Failed to load wallpaper thumbnail: %s", e.message);
         }
 
         //style
-        var item_style_provider = new Gtk.CssProvider ();
-        item_style_provider.load_from_data (style, -1);
-        get_style_context ().add_provider (item_style_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
+        try {
+            var item_style_provider = new Gtk.CssProvider ();
+            item_style_provider.load_from_data (style_str, -1);
+            get_style_context ().add_provider (item_style_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
+        } catch (GLib.Error err) {
+ 	        warning("Loading style failed");
+        }
 
 
-        //load colors into structs
+        //load selected color
         selected_color = get_style_context ().get_background_color (StateFlags.SELECTED);
-        active_color = get_style_context ().get_background_color (StateFlags.ACTIVE);
 
-        //events
         this.height_request = thumb.get_height() + 2*thumb_margin;
         this.width_request = thumb.get_width()+ 2*thumb_margin;
 
-        if (activated_icon == null) {
+        if (checked_icon == null) {
             try {
                 Gtk.IconTheme icon_theme = Gtk.IconTheme.get_default();
-                activated_icon = icon_theme.load_icon ("selection-checked", 32, IconLookupFlags.FORCE_SIZE);
+                checked_icon = icon_theme.load_icon ("selection-checked", 32, IconLookupFlags.FORCE_SIZE);
             } catch (GLib.Error err) {
-     	        warning("Getting selection-checked icon from theme failed");
+     	        warning ("Getting selection-checked icon from theme failed");
             }
         }
 
-        button_release_event.connect(on_button_press);
-
-        clicked.connect(() => {
+        activate.connect (() => {
             set_checked (true);
         });
-
-        activate.connect(() => {
-            set_checked (true);
-        });
-    }
-
-    public bool on_button_press(Gdk.EventButton event) {
-
-        if ( event.button == 1) {
-            clicked();
-        }
-        return false;
     }
 
     public void set_selected (bool is_selected) {
-        this.selected = is_selected;
+         if (is_selected) {
+            set_state_flags ( get_state_flags() | StateFlags.SELECTED, false);
+         } else {
+            unset_state_flags (StateFlags.SELECTED);
+         }
+         queue_draw ();
     }
 
     public void set_checked (bool is_checked) {
          if (is_checked) {
-            set_state_flags( get_state_flags() | StateFlags.CHECKED, false);
+            set_state_flags ( get_state_flags() | StateFlags.CHECKED, false);
          } else {
-            unset_state_flags(StateFlags.CHECKED);
+            unset_state_flags (StateFlags.CHECKED);
          }
-         queue_draw();
+         queue_draw ();
     }
 
     public bool get_selected () {
-        return selected;
+        return ((get_state_flags () & StateFlags.SELECTED) == StateFlags.SELECTED);
     }
 
     public bool get_checked () {
-        return ( (get_state_flags() & StateFlags.CHECKED) == StateFlags.CHECKED );
+        return ((get_state_flags () & StateFlags.CHECKED) == StateFlags.CHECKED );
     }
 
     public override bool draw (Cairo.Context cr) {
@@ -107,10 +90,9 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         int width = (int) (thumb.get_width() + 2*thumb_margin);
         int height = (int) (thumb.get_height() + 2*thumb_margin);
 
-        if ((get_state_flags() & StateFlags.SELECTED) == StateFlags.SELECTED) {
+        if ((get_state_flags () & StateFlags.SELECTED) == StateFlags.SELECTED) {
             //paint selection background
-            cr.set_source_rgba (selected_color.red,selected_color.green,selected_color.blue,1);
-            //cr.set_source_rgba (60.0/255,146.0/255,202.0/255,1);
+            cr.set_source_rgba (selected_color.red, selected_color.green, selected_color.blue, selected_color.alpha);
             Granite.Drawing.Utilities.cairo_rounded_rectangle (cr, 0, 0, width, height, 3);
             cr.fill ();
         }
@@ -119,12 +101,11 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         cairo_set_source_pixbuf (cr, thumb, thumb_margin, thumb_margin);
         cr.paint ();
 
-        if ((get_state_flags() & StateFlags.CHECKED) == StateFlags.CHECKED) {
-            int x = width/2 - activated_icon.get_width()/2;
-            int y = height/2 - activated_icon.get_height()/2;
-            cairo_set_source_pixbuf (cr, activated_icon, x, y);
+        if ((get_state_flags () & StateFlags.CHECKED) == StateFlags.CHECKED) {
+            cairo_set_source_pixbuf (cr, checked_icon, thumb_margin, thumb_margin);
             cr.paint ();
         }
+
         cr.restore ();
         return true;
     }

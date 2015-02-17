@@ -114,6 +114,7 @@ class Wallpaper : EventBox {
         wallpaper_view.margin = 12;
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
+        wallpaper_view.child_activated.connect (update_checked_wallpaper);
         wallpaper_view.child_activated.connect (update_wallpaper);
 
         TargetEntry e = {"text/uri-list", 0, 0};
@@ -207,15 +208,17 @@ class Wallpaper : EventBox {
         current_wallpaper_path = selected.uri;
         settings.set_string ("picture-uri", current_wallpaper_path);
         update_accountsservice ();
+    }
 
-        if (active_wallpaper == null) {
-            active_wallpaper = selected;
-            return;
-        }
+    //check activated wallpaper and uncheck old active wallpaper
+    void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
 
-        //check activated wallpaper and uncheck old active wallpaper
-        active_wallpaper.set_checked (false);
-        selected.set_checked(true);
+        var selected = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
+        selected.set_checked (true);
+
+        if (active_wallpaper != null) {
+            active_wallpaper.set_checked (false);
+        }     
         active_wallpaper = selected;
     }
 
@@ -357,6 +360,8 @@ class Wallpaper : EventBox {
     void clean_wallpapers () {
         foreach (var child in wallpaper_view.get_children ())
             child.destroy ();
+        //reduce memory usage and prevent to load old thumbnail
+        Cache.clear ();
     }
 
     void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
