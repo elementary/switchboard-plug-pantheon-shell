@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-12-16 09:22+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-02-26 15:37+0000\n"
+"Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-17 07:00+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-02-27 05:50+0000\n"
+"X-Generator: Launchpad (build 17361)\n"
 
 #: ../src/Wallpaper.vala:126
 msgid "Pictures"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:127
 msgid "Backgrounds"
-msgstr ""
+msgstr "Sfondet"
 
 #: ../src/Wallpaper.vala:128
 msgid "Custom…"
@@ -30,19 +30,19 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:134
 msgid "Centered"
-msgstr ""
+msgstr "Qendërzuar"
 
 #: ../src/Wallpaper.vala:135
 msgid "Scaled"
-msgstr ""
+msgstr "Shkallëzuar"
 
 #: ../src/Wallpaper.vala:136
 msgid "Stretched"
-msgstr ""
+msgstr "Zgjeruar"
 
 #: ../src/Wallpaper.vala:137
 msgid "Zoom"
-msgstr ""
+msgstr "Zmadhimi"
 
 #: ../src/Wallpaper.vala:138
 msgid "Spanned"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:221
 msgid "Select a folder"
-msgstr ""
+msgstr "Përzgjidh një dosje"
 
 #: ../src/Wallpaper.vala:222
 msgid "Cancel"
