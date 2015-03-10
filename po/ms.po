@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-10-11 07:24+0000\n"
+"PO-Revision-Date: 2015-03-09 23:03+0000\n"
 "Last-Translator: abuyop <Unknown>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:27+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-03-10 05:36+0000\n"
+"X-Generator: Launchpad (build 17389)\n"
 
 #: ../src/Wallpaper.vala:126
 msgid "Pictures"
@@ -67,7 +67,7 @@ msgstr "Buka"
 
 #: ../src/Dock.vala:16
 msgid "Normal"
-msgstr ""
+msgstr "Biasa"
 
 #: ../src/Dock.vala:17
 msgid "Large"
@@ -79,19 +79,19 @@ msgstr "Suai (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Sembunyi bila tetingkap terfokus dimaksimumkan"
 
 #: ../src/Dock.vala:34
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Sembunyi bila tetingkap terfokuss menindih labuh"
 
 #: ../src/Dock.vala:35
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Sembunyi secara automatik bila tidak digunakan"
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Tidak sesekali sembunyi"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
@@ -185,16 +185,16 @@ msgstr "Lakukan Perintah Suai"
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
-msgstr ""
+msgstr "Mod Sembunyi"
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Saiz Ikon"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
-msgstr ""
+msgstr "Paparan"
