@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-15 23:01+0100\n"
-"PO-Revision-Date: 2014-05-01 16:49+0000\n"
-"Last-Translator: Max_ym <kontact.cat@gmail.com>\n"
+"PO-Revision-Date: 2015-03-15 11:16+0000\n"
+"Last-Translator: lem8r <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-16 07:28+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-03-16 05:58+0000\n"
+"X-Generator: Launchpad (build 17389)\n"
 "Language: uk\n"
 
 #: ../src/Wallpaper.vala:126
@@ -24,15 +24,15 @@ msgstr "Зображення"
 
 #: ../src/Wallpaper.vala:127
 msgid "Backgrounds"
-msgstr "Тло"
+msgstr "Фонові зображення"
 
 #: ../src/Wallpaper.vala:128
 msgid "Custom…"
-msgstr "Вибраний..."
+msgstr "Власна…"
 
 #: ../src/Wallpaper.vala:133
 msgid "Solid Color"
-msgstr "Однотонний Колір"
+msgstr "Суцільний колір"
 
 #: ../src/Wallpaper.vala:134
 msgid "Centered"
@@ -40,23 +40,23 @@ msgstr "У центрі"
 
 #: ../src/Wallpaper.vala:135
 msgid "Scaled"
-msgstr "Масштабовано"
+msgstr "Масштабувати"
 
 #: ../src/Wallpaper.vala:136
 msgid "Stretched"
-msgstr "Розтягнуто"
+msgstr "Розтягнути"
 
 #: ../src/Wallpaper.vala:137
 msgid "Zoom"
-msgstr "Збільшено"
+msgstr "Збільшити"
 
 #: ../src/Wallpaper.vala:138
 msgid "Spanned"
-msgstr "Замостити"
+msgstr "Заповнити"
 
 #: ../src/Wallpaper.vala:221
 msgid "Select a folder"
-msgstr "Оберіть теку"
+msgstr "Вибрати теку"
 
 #: ../src/Wallpaper.vala:222
 msgid "Cancel"
@@ -68,7 +68,7 @@ msgstr "Відкрити"
 
 #: ../src/Dock.vala:16
 msgid "Normal"
-msgstr ""
+msgstr "Звичайний"
 
 #: ../src/Dock.vala:17
 msgid "Large"
@@ -76,31 +76,31 @@ msgstr "Великий"
 
 #: ../src/Dock.vala:24
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Власний (%dpx)"
 
 #: ../src/Dock.vala:33
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Ховати коли вікно в фокусі розгорнуто на весь екран"
 
 #: ../src/Dock.vala:34
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Ховати коли вікно в фокусі перекриває док"
 
 #: ../src/Dock.vala:35
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Автоматично ховати коли не використовується"
 
 #: ../src/Dock.vala:36
 msgid "Never hide"
-msgstr ""
+msgstr "Ніколи не ховати"
 
 #: ../src/Dock.vala:84
 msgid "Primary Display:"
-msgstr ""
+msgstr "Основний екран:"
 
 #: ../src/Dock.vala:88
 msgid "Display:"
-msgstr ""
+msgstr "Екран:"
 
 #: ../src/Dock.vala:114
 msgid "Icon Size:"
@@ -116,11 +116,11 @@ msgstr "Тема:"
 
 #: ../src/Dock.vala:164
 msgid "Monitor %d"
-msgstr ""
+msgstr "Монітор %d"
 
 #: ../src/Dock.vala:169
 msgid "Display %d"
-msgstr ""
+msgstr "Екран %d"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -128,7 +128,7 @@ msgstr "Стільниця"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr "Змінюйте тло та налаштовуйте док вашого столу"
+msgstr "Змінити тло та налаштувати ваш док"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:154
 msgid "Wallpaper"
@@ -138,64 +138,64 @@ msgstr "Шпалери"
 #: ../src/desktop-plug.vala:156 ../src/desktop-plug.vala:157
 #: ../src/desktop-plug.vala:158 ../src/desktop-plug.vala:159
 msgid "Dock"
-msgstr "Панель"
+msgstr "Док"
 
 #: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
-msgstr "Коли курсор потрапляє в куток монітору:"
+msgstr "Коли курсор потрапляє в куток екрану:"
 
 #: ../src/desktop-plug.vala:94
 msgid "Custom Command:"
-msgstr "Особлива Команда:"
+msgstr "Власна команда:"
 
 #: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:160
 msgid "Hot Corners"
-msgstr "Гарячі Кути"
+msgstr "Гарячі кути"
 
 #: ../src/desktop-plug.vala:117
 msgid "Do Nothing"
-msgstr "Нічого Не Робити"
+msgstr "Нічого не робити"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr ""
+msgstr "Багатозадачний вид"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
-msgstr "Збільшити Поточне Вікно"
+msgstr "Збільшити поточне вікно"
 
 #: ../src/desktop-plug.vala:120
 msgid "Minimize Current Window"
-msgstr "Зменшити Поточне Вікно"
+msgstr "Зменшити поточне вікно"
 
 #: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
-msgstr "Показати Меню Програм"
+msgstr "Показати меню програм"
 
 #: ../src/desktop-plug.vala:122
 msgid "Window Overview"
-msgstr "Вікно Огляду"
+msgstr "Огляд вікон"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
-msgstr "Показати Всі Вікна"
+msgstr "Показати всі вікна"
 
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
-msgstr "Виконати Особливу Команду"
+msgstr "Виконати власну команду"
 
 #: ../src/desktop-plug.vala:156
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: ../src/desktop-plug.vala:157
 msgid "Hide Mode"
-msgstr ""
+msgstr "Режим ховання"
 
 #: ../src/desktop-plug.vala:158
 msgid "Icon Size"
-msgstr ""
+msgstr "Розмір піктограм"
 
 #: ../src/desktop-plug.vala:159
 msgid "Display"
-msgstr ""
+msgstr "Екран"
