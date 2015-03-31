@@ -68,29 +68,13 @@ interface AccountsServiceUser : Object {
 
 class Wallpaper : EventBox {
 
-    class WallpaperContainer : Gtk.FlowBoxChild {
-        public string uri { get; construct; }
-
-        Gtk.Image image;
-
-        public WallpaperContainer (string uri) {
-            Object (uri: uri);
-
-            try {
-                image = new Gtk.Image.from_pixbuf (new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false));
-                add (image);
-            } catch (Error e) {
-                warning ("Failed to load wallpaper thumbnail: %s", e.message);
-            }
-        }
-    }
-
     GLib.Settings settings;
 
     //Instance of the AccountsServices-Interface for this user
     AccountsServiceUser accountsservice = null;
 
     Gtk.FlowBox wallpaper_view;
+    WallpaperContainer active_wallpaper = null;
     ComboBoxText combo;
     ComboBoxText folder_combo;
     ColorButton color;
@@ -130,6 +114,7 @@ class Wallpaper : EventBox {
         wallpaper_view.margin = 12;
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
+        wallpaper_view.child_activated.connect (update_checked_wallpaper);
         wallpaper_view.child_activated.connect (update_wallpaper);
 
         TargetEntry e = {"text/uri-list", 0, 0};
@@ -223,6 +208,18 @@ class Wallpaper : EventBox {
         current_wallpaper_path = selected.uri;
         settings.set_string ("picture-uri", current_wallpaper_path);
         update_accountsservice ();
+    }
+
+    //check activated wallpaper and uncheck old active wallpaper
+    void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
+
+        var selected = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
+        selected.set_checked (true);
+
+        if (active_wallpaper != null) {
+            active_wallpaper.set_checked (false);
+        }     
+        active_wallpaper = selected;
     }
 
     void update_color () {
@@ -335,6 +332,9 @@ class Wallpaper : EventBox {
                         // Select the wallpaper if it is the current wallpaper
                         if (current_wallpaper_path.has_suffix (uri)) {
                             this.wallpaper_view.select_child (wallpaper);
+                            //set the widget activated without activating it
+                            wallpaper.set_checked (true);
+                            active_wallpaper = wallpaper;
                         }
 
                         // Have GTK update the UI even while we're busy
@@ -360,6 +360,8 @@ class Wallpaper : EventBox {
     void clean_wallpapers () {
         foreach (var child in wallpaper_view.get_children ())
             child.destroy ();
+        //reduce memory usage and prevent to load old thumbnail
+        Cache.clear ();
     }
 
     void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
