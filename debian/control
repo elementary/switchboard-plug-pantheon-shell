@@ -9,7 +9,7 @@ Build-Depends: cmake (>= 2.8),
                libgtk-3-dev (>= 3.10),
                libplank-dev,
                libswitchboard-2.0-dev,
-               valac (>= 0.22)
+               valac-0.26
 Standards-Version: 3.9.5
 Homepage: https://launchpad.net/pantheon-plugs
 
