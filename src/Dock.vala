@@ -70,24 +70,28 @@ public class Dock : Gtk.Grid {
         primary_monitor.no_show_all = true;
         primary_monitor.notify["active"].connect (() => {
             if (primary_monitor.active == true) {
-                dock_preferences.Monitor = -1;
+                dock_preferences.Monitor = "";
                 monitor_label.sensitive = false;
                 monitor.sensitive = false;
             } else {
-                dock_preferences.Monitor = monitor.active;
+                var plug_names = get_monitor_plug_names (get_screen ());
+                if (plug_names.length > monitor.active)
+                    dock_preferences.Monitor = plug_names[monitor.active];
                 monitor_label.sensitive = true;
                 monitor.sensitive = true;
             }
         });
-        primary_monitor.active = (dock_preferences.Monitor == -1);
+        primary_monitor.active = (dock_preferences.Monitor == "");
 
         monitor.notify["active"].connect (() => {
             if (monitor.active >= 0 && primary_monitor.active == false) {
-                dock_preferences.Monitor = monitor.active;
+                var plug_names = get_monitor_plug_names (get_screen ());
+                if (plug_names.length > monitor.active)
+                    dock_preferences.Monitor = plug_names[monitor.active];
             }
         });
 
-        Gdk.Screen.get_default ().monitors_changed.connect (() => {check_for_screens ();});
+        get_screen ().monitors_changed.connect (() => {check_for_screens ();});
 
         var icon_label = new Gtk.Label (_("Icon Size:"));
         icon_label.set_halign (Gtk.Align.END);
@@ -113,7 +117,7 @@ public class Dock : Gtk.Grid {
     private void check_for_screens () {
         int i = 0;
         int primary_screen = 0;
-        var default_screen = Gdk.Screen.get_default ();
+        var default_screen = get_screen ();
         monitor.remove_all ();
         try {
             var screen = new Gnome.RRScreen (default_screen);
@@ -147,8 +151,8 @@ public class Dock : Gtk.Grid {
             monitor.no_show_all = true;
             monitor.hide ();
         } else {
-            if (dock_preferences.Monitor >= 0) {
-                monitor.active = dock_preferences.Monitor;
+            if (dock_preferences.Monitor != "") {
+                monitor.active = find_monitor_number (get_screen (), dock_preferences.Monitor);
             } else {
                 monitor.active = primary_screen;
             }
@@ -158,5 +162,27 @@ public class Dock : Gtk.Grid {
             monitor_label.show ();
             monitor.show ();
         }
+    }
+
+    static string[] get_monitor_plug_names (Gdk.Screen screen) {
+        int n_monitors = screen.get_n_monitors ();
+        var result = new string[n_monitors];
+
+        for (int i = 0; i < n_monitors; i++)
+            result[i] = screen.get_monitor_plug_name (i);
+
+        return result;
+    }
+
+    static int find_monitor_number (Gdk.Screen screen, string plug_name) {
+        int n_monitors = screen.get_n_monitors ();
+
+        for (int i = 0; i < n_monitors; i++) {
+            var name = screen.get_monitor_plug_name (i);
+            if (plug_name == name)
+                return i;
+        }
+
+        return screen.get_primary_monitor ();
     }
 }
