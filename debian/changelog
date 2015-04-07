@@ -1,4 +1,10 @@
-switchboard-plug-pantheon-shell (0.1.3) UNRELEASED; urgency=low
+switchboard-plug-pantheon-shell (0.2.0) trusty; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementaryos.org>  Mon, 06 Apr 2015 20:24:06 -0500
+
+switchboard-plug-pantheon-shell (0.1.3) trusty; urgency=low
 
   * New upstream release.
 
