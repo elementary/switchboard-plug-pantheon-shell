@@ -33,12 +33,13 @@ public class Dock : Gtk.Grid {
         });
 
         Gtk.Box hide_mode = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        string[] hide_mode_labels = new string[4];
+        string[] hide_mode_labels = new string[5];
         hide_mode_labels[0] = _("Hide when focused window is maximized");
         hide_mode_labels[1] = _("Hide when focused window overlaps the dock");
         hide_mode_labels[2] = _("Automatically hide when not being used");
-        hide_mode_labels[3] = _("Never hide");
-        Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.AUTO, Plank.HideType.NONE};
+        hide_mode_labels[3] = _("Hide when any window overlaps the dock");
+        hide_mode_labels[4] = _("Never hide");
+        Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.AUTO, Plank.HideType.WINDOW_DODGE, Plank.HideType.NONE};
 
         Gtk.RadioButton button = new Gtk.RadioButton(null);
         for (int i = 0; i < hide_mode_labels.length; i++) {
