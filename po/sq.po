@@ -2,117 +2,69 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-15 23:01+0100\n"
+"POT-Creation-Date: 2015-04-17 06:33-0500\n"
 "PO-Revision-Date: 2015-02-27 10:55+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-04-07 05:25+0000\n"
-"X-Generator: Launchpad (build 17413)\n"
+"X-Launchpad-Export-Date: 2015-04-18 05:42+0000\n"
+"X-Generator: Launchpad (build 17430)\n"
 
-#: ../src/Wallpaper.vala:126
-msgid "Pictures"
-msgstr "Imazhet"
-
-#: ../src/Wallpaper.vala:127
-msgid "Backgrounds"
-msgstr "Sfondet"
-
-#: ../src/Wallpaper.vala:128
-msgid "Custom…"
-msgstr "Të personalizuar..."
-
-#: ../src/Wallpaper.vala:133
-msgid "Solid Color"
-msgstr ""
-
-#: ../src/Wallpaper.vala:134
-msgid "Centered"
-msgstr "Të qendërzuar"
-
-#: ../src/Wallpaper.vala:135
-msgid "Scaled"
-msgstr "Të shkallëzuar"
-
-#: ../src/Wallpaper.vala:136
-msgid "Stretched"
-msgstr "Të zgjeruar"
-
-#: ../src/Wallpaper.vala:137
-msgid "Zoom"
-msgstr "Të zmadhuar"
-
-#: ../src/Wallpaper.vala:138
-msgid "Spanned"
-msgstr ""
-
-#: ../src/Wallpaper.vala:221
-msgid "Select a folder"
-msgstr "Përzgjidh një dosje"
-
-#: ../src/Wallpaper.vala:222
-msgid "Cancel"
-msgstr "Anulo"
-
-#: ../src/Wallpaper.vala:223
-msgid "Open"
-msgstr "Hap"
-
-#: ../src/Dock.vala:16
+#: ../src/Dock.vala:17
 msgid "Normal"
 msgstr "Normale"
 
-#: ../src/Dock.vala:17
+#: ../src/Dock.vala:18
 msgid "Large"
 msgstr "Të mëdha"
 
-#: ../src/Dock.vala:24
+#: ../src/Dock.vala:26
 msgid "Custom (%dpx)"
 msgstr ""
 
-#: ../src/Dock.vala:33
+#: ../src/Dock.vala:37
 msgid "Hide when focused window is maximized"
 msgstr "Fshehe kur dritarja e fokusuar maksimizohet"
 
-#: ../src/Dock.vala:34
+#: ../src/Dock.vala:38
 msgid "Hide when focused window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:35
+#: ../src/Dock.vala:39
 msgid "Automatically hide when not being used"
 msgstr "Fshehe vetvetishëm kur nuk përdoret"
 
-#: ../src/Dock.vala:36
+#: ../src/Dock.vala:40
+msgid "Hide when any window overlaps the dock"
+msgstr ""
+
+#: ../src/Dock.vala:41
 msgid "Never hide"
 msgstr "Mos e fsheh kurrë"
 
-#: ../src/Dock.vala:84
+#: ../src/Dock.vala:62
 msgid "Primary Display:"
 msgstr "Ekrani kryesor:"
 
-#: ../src/Dock.vala:88
+#: ../src/Dock.vala:66
 msgid "Display:"
 msgstr ""
 
-#: ../src/Dock.vala:114
+#: ../src/Dock.vala:97
 msgid "Icon Size:"
 msgstr "Madhësia e ikonave:"
 
-#: ../src/Dock.vala:116
+#: ../src/Dock.vala:99
 msgid "Hide Mode:"
 msgstr "Mënyra e fshehjes:"
 
-#: ../src/Dock.vala:133
-msgid "Theme:"
-msgstr "Tema:"
-
-#: ../src/Dock.vala:164
+#: ../src/Dock.vala:139
 msgid "Monitor %d"
 msgstr ""
 
-#: ../src/Dock.vala:169
+#: ../src/Dock.vala:144
 msgid "Display %d"
 msgstr ""
 
@@ -124,13 +76,15 @@ msgstr ""
 msgid "Change your wallpaper and customize your dock"
 msgstr ""
 
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:154
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+#: ../src/desktop-plug.vala:156
 msgid "Wallpaper"
 msgstr "Sfondi"
 
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:155
-#: ../src/desktop-plug.vala:156 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158 ../src/desktop-plug.vala:159
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:160 ../src/desktop-plug.vala:162
+#: ../src/desktop-plug.vala:164 ../src/desktop-plug.vala:166
+#: ../src/desktop-plug.vala:168
 msgid "Dock"
 msgstr ""
 
@@ -142,7 +96,8 @@ msgstr ""
 msgid "Custom Command:"
 msgstr "Komandë të personalizuar:"
 
-#: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:160
+#: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:169
+#: ../src/desktop-plug.vala:170
 msgid "Hot Corners"
 msgstr ""
 
@@ -178,18 +133,66 @@ msgstr "Shfaqi të gjitha dritaret"
 msgid "Execute Custom Command"
 msgstr ""
 
-#: ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:161 ../src/desktop-plug.vala:162
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
 msgid "Hide Mode"
 msgstr "Mënyra e fshehjes"
 
-#: ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
 msgid "Icon Size"
 msgstr "Madhësia e ikonave"
 
-#: ../src/desktop-plug.vala:159
+#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
 msgid "Display"
 msgstr ""
+
+#: ../src/Wallpaper.vala:130
+msgid "Pictures"
+msgstr "Imazhet"
+
+#: ../src/Wallpaper.vala:131
+msgid "Backgrounds"
+msgstr "Sfondet"
+
+#: ../src/Wallpaper.vala:132
+msgid "Custom…"
+msgstr "Të personalizuar..."
+
+#: ../src/Wallpaper.vala:137
+msgid "Solid Color"
+msgstr ""
+
+#: ../src/Wallpaper.vala:138
+msgid "Centered"
+msgstr "Të qendërzuar"
+
+#: ../src/Wallpaper.vala:139
+msgid "Scaled"
+msgstr "Të shkallëzuar"
+
+#: ../src/Wallpaper.vala:140
+msgid "Stretched"
+msgstr "Të zgjeruar"
+
+#: ../src/Wallpaper.vala:141
+msgid "Zoom"
+msgstr "Të zmadhuar"
+
+#: ../src/Wallpaper.vala:142
+msgid "Spanned"
+msgstr ""
+
+#: ../src/Wallpaper.vala:254
+msgid "Select a folder"
+msgstr "Përzgjidh një dosje"
+
+#: ../src/Wallpaper.vala:255
+msgid "Cancel"
+msgstr "Anulo"
+
+#: ../src/Wallpaper.vala:256
+msgid "Open"
+msgstr "Hap"
