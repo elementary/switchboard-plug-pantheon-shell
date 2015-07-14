@@ -1,4 +1,10 @@
-switchboard-plug-pantheon-shell (0.2.0.1) UNRELEASED; urgency=medium
+switchboard-plug-pantheon-shell (0.2.0.2) trusty; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Tue, 14 Jul 2015 17:40:16 -0500
+
+switchboard-plug-pantheon-shell (0.2.0.1) trusty; urgency=medium
 
   * Adapt to Plank's "Monitor" settings change
 
