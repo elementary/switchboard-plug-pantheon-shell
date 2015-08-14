@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-17 06:33-0500\n"
-"PO-Revision-Date: 2013-08-07 19:55+0000\n"
-"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"PO-Revision-Date: 2015-08-13 22:17+0000\n"
+"Last-Translator: needhelp007 <iempie3@hotmail.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-10 06:05+0000\n"
-"X-Generator: Launchpad (build 17656)\n"
+"X-Launchpad-Export-Date: 2015-08-14 06:01+0000\n"
+"X-Generator: Launchpad (build 17686)\n"
 "Language: nl\n"
 
 #: ../src/Dock.vala:17
 msgid "Normal"
-msgstr ""
+msgstr "Standaard"
 
 #: ../src/Dock.vala:18
 msgid "Large"
@@ -28,35 +28,35 @@ msgstr "Groot"
 
 #: ../src/Dock.vala:26
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Aangepast (%dpx)"
 
 #: ../src/Dock.vala:37
 msgid "Hide when focused window is maximized"
-msgstr ""
+msgstr "Verbergen wanneer actieve venster is gemaximaliseerd"
 
 #: ../src/Dock.vala:38
 msgid "Hide when focused window overlaps the dock"
-msgstr ""
+msgstr "Verbergen wanneer actieve venster over het dock overlapt"
 
 #: ../src/Dock.vala:39
 msgid "Automatically hide when not being used"
-msgstr ""
+msgstr "Automatisch verbergen wanneer niet wordt gebruikt"
 
 #: ../src/Dock.vala:40
 msgid "Hide when any window overlaps the dock"
-msgstr ""
+msgstr "Verberg als een venster het dock overlapt"
 
 #: ../src/Dock.vala:41
 msgid "Never hide"
-msgstr ""
+msgstr "Nooit verbergen"
 
 #: ../src/Dock.vala:62
 msgid "Primary Display:"
-msgstr ""
+msgstr "Primair beeldscherm:"
 
 #: ../src/Dock.vala:66
 msgid "Display:"
-msgstr ""
+msgstr "Beeldscherm:"
 
 #: ../src/Dock.vala:97
 msgid "Icon Size:"
@@ -68,11 +68,11 @@ msgstr "Verbergmodus:"
 
 #: ../src/Dock.vala:139
 msgid "Monitor %d"
-msgstr ""
+msgstr "Beeldscherm %d"
 
 #: ../src/Dock.vala:144
 msgid "Display %d"
-msgstr ""
+msgstr "Beeldscherm %d"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -80,7 +80,7 @@ msgstr "Bureaublad"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "Uw achtergrondafbeelding en dock aanpassen"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
 #: ../src/desktop-plug.vala:156
@@ -113,7 +113,7 @@ msgstr "Niets doen"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr ""
+msgstr "Multitasking weergave"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
@@ -141,19 +141,19 @@ msgstr "Aangepast commando uitvoeren"
 
 #: ../src/desktop-plug.vala:161 ../src/desktop-plug.vala:162
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 #: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
 msgid "Hide Mode"
-msgstr ""
+msgstr "Verbergmodus"
 
 #: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
 msgid "Icon Size"
-msgstr ""
+msgstr "Pictogramgrootte"
 
 #: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
 msgid "Display"
-msgstr ""
+msgstr "Beeldscherm"
 
 #: ../src/Wallpaper.vala:130
 msgid "Pictures"
@@ -197,8 +197,8 @@ msgstr "Kies een map"
 
 #: ../src/Wallpaper.vala:255
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: ../src/Wallpaper.vala:256
 msgid "Open"
-msgstr ""
+msgstr "Open"
