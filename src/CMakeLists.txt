@@ -18,6 +18,7 @@ vala_precompile (VALA_C ${PLUGNAME}
     desktop-plug.vala
     GalaSettings.vala
     Wallpaper.vala
+    SolidColorContainer.vala
     SlingshotSettings.vala
     Cache.vala
     WallpaperContainer.vala

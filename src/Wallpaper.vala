@@ -75,13 +75,20 @@ class Wallpaper : EventBox {
 
     Gtk.FlowBox wallpaper_view;
     WallpaperContainer active_wallpaper = null;
+    SolidColorContainer solid_color = null;
+
     ComboBoxText combo;
     ComboBoxText folder_combo;
-    ColorButton color;
+
+    ColorButton color_button;
+
     string current_wallpaper_path;
     Cancellable last_cancellable;
 
     Switchboard.Plug plug;
+
+    // When restoring the combo state, don't trigger the update.
+    bool prevent_update_mode = false;
 
     //shows that we got or wallpapers together
     public bool finished;
@@ -92,7 +99,6 @@ class Wallpaper : EventBox {
 
     public Wallpaper (Switchboard.Plug _plug) {
         plug = _plug;
-
         settings = new GLib.Settings ("org.gnome.desktop.background");
 
         //DBus connection needed in update_wallpaper for
@@ -115,7 +121,9 @@ class Wallpaper : EventBox {
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
-        wallpaper_view.child_activated.connect (update_wallpaper);
+
+        var color = settings.get_string ("primary-color");
+        create_solid_color_container (color);
 
         TargetEntry e = {"text/uri-list", 0, 0};
         wallpaper_view.drag_data_received.connect (on_drag_data_received);
@@ -134,7 +142,6 @@ class Wallpaper : EventBox {
         folder_combo.set_active (1);
 
         combo = new ComboBoxText ();
-        combo.append ("none", _("Solid Color"));
         combo.append ("centered", _("Centered"));
         combo.append ("scaled", _("Scaled"));
         combo.append ("stretched", _("Stretched"));
@@ -142,8 +149,14 @@ class Wallpaper : EventBox {
         combo.append ("spanned", _("Spanned"));
         combo.changed.connect (update_mode);
 
-        color = new ColorButton ();
-        color.color_set.connect (update_color);
+        Gdk.RGBA rgba_color = {};
+        if (!rgba_color.parse (color)) {
+            rgba_color = { 1, 1, 1, 1 };
+        }
+        
+        color_button = new ColorButton ();
+        color_button.rgba = rgba_color;
+        color_button.color_set.connect (update_color);
 
         load_settings ();
 
@@ -167,7 +180,7 @@ class Wallpaper : EventBox {
         bbox.set_margin_bottom (8);
         bbox.set_layout (ButtonBoxStyle.END);
         bbox.add (combo);
-        bbox.add (color);
+        bbox.add (color_button);
 
         hbox.pack_end (bbox, false, false);
 
@@ -178,11 +191,16 @@ class Wallpaper : EventBox {
     }
 
     void load_settings () {
-        combo.set_active_id (settings.get_string ("picture-options"));
-
-        Gdk.Color c;
-        Gdk.Color.parse (settings.get_string ("primary-color"), out c);
-        color.set_color (c);
+        // TODO: need to store the previous state, before changing to none
+        // when a solid color is selected, because the combobox doesn't know
+        // about it anymore. The previous state should be loaded instead here.
+        string picture_options = settings.get_string ("picture-options");
+        if (picture_options == "none") {
+            combo.set_sensitive (false);
+            picture_options = "stretched";
+        }
+        prevent_update_mode = true;
+        combo.set_active_id (picture_options);
 
         current_wallpaper_path = settings.get_string ("picture-uri");
     }
@@ -203,33 +221,79 @@ class Wallpaper : EventBox {
         }
     }
 
-    void update_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
-        var selected = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
-        current_wallpaper_path = selected.uri;
-        settings.set_string ("picture-uri", current_wallpaper_path);
-        update_accountsservice ();
-    }
-
-    //check activated wallpaper and uncheck old active wallpaper
     void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
+        var children = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
 
-        var selected = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
-        selected.set_checked (true);
+        if (!(children is SolidColorContainer)) {
+            current_wallpaper_path = children.uri;
+            settings.set_string ("picture-uri", current_wallpaper_path);
+            update_accountsservice ();
+
+            if (active_wallpaper == solid_color) {
+                combo.set_sensitive (true);
+                settings.set_string ("picture-options", combo.get_active_id ());
+            }
+
+        } else {
+            set_combo_disabled_if_necessary ();
+            settings.set_string ("primary-color", solid_color.color);
+        }
+
+        children.set_checked (true);
 
         if (active_wallpaper != null) {
             active_wallpaper.set_checked (false);
-        }     
-        active_wallpaper = selected;
+        }
+
+        active_wallpaper = children;
     }
 
     void update_color () {
-        Gdk.Color c;
-        color.get_color (out c);
-        settings.set_string ("primary-color", c.to_string ());
+        if (finished) {
+            set_combo_disabled_if_necessary ();
+            create_solid_color_container (color_button.rgba.to_string ());
+            wallpaper_view.add (solid_color);
+            wallpaper_view.select_child (solid_color);
+
+            if (active_wallpaper != null) {
+                active_wallpaper.set_checked (false);
+            }
+
+            active_wallpaper = solid_color;
+            active_wallpaper.set_checked (true);
+            settings.set_string ("primary-color", solid_color.color);
+        }
     }
 
     void update_mode () {
-        settings.set_string ("picture-options", combo.get_active_id ());
+        if (!prevent_update_mode) {
+            settings.set_string ("picture-options", combo.get_active_id ());
+
+            // Changing the mode, while a solid color is selected, change focus to the
+            // wallpaper tile.
+            if (active_wallpaper == solid_color) {
+                active_wallpaper.set_checked (false);
+
+                foreach (var child in wallpaper_view.get_children ()) {
+                    var container = (WallpaperContainer) child;
+                    if (container.uri == current_wallpaper_path) {
+                        container.set_checked (true);
+                        wallpaper_view.select_child (container);
+                        active_wallpaper = container;
+                        break;
+                    }
+                }
+            }
+        } else {
+            prevent_update_mode = false;
+        }
+    }
+
+    void set_combo_disabled_if_necessary () {
+        if (active_wallpaper != solid_color) {
+            combo.set_sensitive (false);
+            settings.set_string ("picture-options", "none");
+        }
     }
 
     void update_wallpaper_folder () {
@@ -330,7 +394,7 @@ class Wallpaper : EventBox {
                         wallpaper.show_all ();
 
                         // Select the wallpaper if it is the current wallpaper
-                        if (current_wallpaper_path.has_suffix (uri)) {
+                        if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
                             this.wallpaper_view.select_child (wallpaper);
                             //set the widget activated without activating it
                             wallpaper.set_checked (true);
@@ -347,9 +411,27 @@ class Wallpaper : EventBox {
                     }
                 }
             }
+
             finished = true;
 
+            if (solid_color == null) {
+                create_solid_color_container (color_button.rgba.to_string ());
+            } else {
+                // Ugly workaround to keep the solid color last, because currently
+                // load_wallpapers is running async, recursively. Just let each of them
+                // add / remove the tile until it's settled.
+                wallpaper_view.remove (solid_color);
+            }
+            
+            wallpaper_view.add (solid_color);
+            if (settings.get_string ("picture-options") == "none") {
+                wallpaper_view.select_child (solid_color);
+                solid_color.set_checked (true);
+                active_wallpaper = solid_color;
+            }
+
             folder_combo.set_sensitive (true);
+
         } catch (Error err) {
             if (!(err is IOError.NOT_FOUND)) {
                 warning (err.message);
@@ -357,9 +439,23 @@ class Wallpaper : EventBox {
         }
     }
 
+    void create_solid_color_container (string color) {
+        if (solid_color != null) {
+            wallpaper_view.unselect_child (solid_color);
+            wallpaper_view.remove (solid_color);
+            solid_color.destroy ();
+        }
+
+        solid_color = new SolidColorContainer (color);
+        solid_color.show_all ();
+    }
+
     void clean_wallpapers () {
-        foreach (var child in wallpaper_view.get_children ())
+        foreach (var child in wallpaper_view.get_children ()) {
             child.destroy ();
+        }
+
+        solid_color = null;
         //reduce memory usage and prevent to load old thumbnail
         Cache.clear ();
     }
