@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-17 06:33-0500\n"
-"PO-Revision-Date: 2015-09-03 20:17+0000\n"
-"Last-Translator: Artem Anufrij <Unknown>\n"
+"PO-Revision-Date: 2015-09-04 19:02+0000\n"
+"Last-Translator: Andrei Filinov <kryhtas@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-04 05:30+0000\n"
+"X-Launchpad-Export-Date: 2015-09-05 05:31+0000\n"
 "X-Generator: Launchpad (build 17706)\n"
 "Language: ru\n"
 
@@ -153,7 +153,7 @@ msgstr "Размер значков"
 
 #: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
 msgid "Display"
-msgstr ""
+msgstr "Фон"
 
 #: ../src/Wallpaper.vala:130
 msgid "Pictures"
