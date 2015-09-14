@@ -20,6 +20,7 @@ public class IOHelper : GLib.Object {
             "image/jpeg",
             "image/png",
             "image/tiff",
+            "image/svg+xml",
             "image/gif"
         };
 
