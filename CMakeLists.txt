@@ -49,7 +49,7 @@ include (CPack)
 add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 
 # Files
-file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*.png")
+file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*.svg")
 
 # Traslation stuff
 add_subdirectory (po)
