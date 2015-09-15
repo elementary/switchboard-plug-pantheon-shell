@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-17 06:33-0500\n"
+"POT-Creation-Date: 2015-09-14 20:22-0500\n"
 "PO-Revision-Date: 2015-09-13 14:27+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-14 05:56+0000\n"
-"X-Generator: Launchpad (build 17720)\n"
+"X-Launchpad-Export-Date: 2015-09-15 05:41+0000\n"
+"X-Generator: Launchpad (build 17737)\n"
 "Language: \n"
 
 #: ../src/Dock.vala:17
@@ -30,47 +30,43 @@ msgstr "大"
 msgid "Custom (%dpx)"
 msgstr "自訂 (%dpx)"
 
-#: ../src/Dock.vala:37
-msgid "Hide when focused window is maximized"
-msgstr "當聚焦的視窗最大化時隱藏"
+#: ../src/Dock.vala:42
+msgid "Focused window is maximized"
+msgstr ""
 
-#: ../src/Dock.vala:38
-msgid "Hide when focused window overlaps the dock"
-msgstr "當聚焦的視窗與 Dock 重疊時隱藏"
+#: ../src/Dock.vala:43
+msgid "Focused window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:39
-msgid "Automatically hide when not being used"
-msgstr "當不使用時自動隱藏"
+#: ../src/Dock.vala:44
+msgid "Any window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:40
-msgid "Hide when any window overlaps the dock"
-msgstr "當任何視窗蓋住 Dock 時隱藏"
+#: ../src/Dock.vala:45
+msgid "Not being used"
+msgstr ""
 
-#: ../src/Dock.vala:41
-msgid "Never hide"
-msgstr "永不隱藏"
-
-#: ../src/Dock.vala:62
+#: ../src/Dock.vala:82
 msgid "Primary Display:"
 msgstr "主要顯示器："
 
-#: ../src/Dock.vala:66
+#: ../src/Dock.vala:86
 msgid "Display:"
 msgstr "顯示器："
 
-#: ../src/Dock.vala:97
+#: ../src/Dock.vala:117
 msgid "Icon Size:"
 msgstr "圖示大小："
 
-#: ../src/Dock.vala:99
-msgid "Hide Mode:"
-msgstr "隱藏模式："
+#: ../src/Dock.vala:119
+msgid "Hide when:"
+msgstr ""
 
-#: ../src/Dock.vala:139
+#: ../src/Dock.vala:159
 msgid "Monitor %d"
 msgstr "螢幕 %d"
 
-#: ../src/Dock.vala:144
+#: ../src/Dock.vala:164
 msgid "Display %d"
 msgstr "顯示器 %d"
 
@@ -155,50 +151,67 @@ msgstr "圖示大小"
 msgid "Display"
 msgstr "顯示"
 
-#: ../src/Wallpaper.vala:130
+#: ../src/Wallpaper.vala:139
 msgid "Pictures"
 msgstr "圖片"
 
-#: ../src/Wallpaper.vala:131
+#: ../src/Wallpaper.vala:140
 msgid "Backgrounds"
 msgstr "背景"
 
-#: ../src/Wallpaper.vala:132
+#: ../src/Wallpaper.vala:141
 msgid "Custom…"
 msgstr "自訂…"
 
-#: ../src/Wallpaper.vala:137
-msgid "Solid Color"
-msgstr "實心填色"
-
-#: ../src/Wallpaper.vala:138
+#: ../src/Wallpaper.vala:146
 msgid "Centered"
 msgstr "置中"
 
-#: ../src/Wallpaper.vala:139
+#: ../src/Wallpaper.vala:147
 msgid "Scaled"
 msgstr "縮放"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/Wallpaper.vala:148
 msgid "Stretched"
 msgstr "延展"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:149
 msgid "Zoom"
 msgstr "遠近"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:150
 msgid "Spanned"
 msgstr "橫跨"
 
-#: ../src/Wallpaper.vala:254
+#: ../src/Wallpaper.vala:319
 msgid "Select a folder"
 msgstr "選取資料夾"
 
-#: ../src/Wallpaper.vala:255
+#: ../src/Wallpaper.vala:320
 msgid "Cancel"
 msgstr "取消"
 
-#: ../src/Wallpaper.vala:256
+#: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "開啟"
+
+#~ msgid "Hide Mode:"
+#~ msgstr "隱藏模式："
+
+#~ msgid "Solid Color"
+#~ msgstr "實心填色"
+
+#~ msgid "Never hide"
+#~ msgstr "永不隱藏"
+
+#~ msgid "Automatically hide when not being used"
+#~ msgstr "當不使用時自動隱藏"
+
+#~ msgid "Hide when focused window is maximized"
+#~ msgstr "當聚焦的視窗最大化時隱藏"
+
+#~ msgid "Hide when any window overlaps the dock"
+#~ msgstr "當任何視窗蓋住 Dock 時隱藏"
+
+#~ msgid "Hide when focused window overlaps the dock"
+#~ msgstr "當聚焦的視窗與 Dock 重疊時隱藏"

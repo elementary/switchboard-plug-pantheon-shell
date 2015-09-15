@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-17 06:33-0500\n"
+"POT-Creation-Date: 2015-09-14 20:22-0500\n"
 "PO-Revision-Date: 2014-12-06 18:33+0000\n"
 "Last-Translator: George Chalkitis <chalkitisge@gmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-10 06:05+0000\n"
-"X-Generator: Launchpad (build 17656)\n"
+"X-Launchpad-Export-Date: 2015-09-15 05:40+0000\n"
+"X-Generator: Launchpad (build 17737)\n"
 "Language: el\n"
 
 #: ../src/Dock.vala:17
@@ -30,47 +30,43 @@ msgstr "Μεγάλο"
 msgid "Custom (%dpx)"
 msgstr "Προσαρμοσμένο (%dpx)"
 
-#: ../src/Dock.vala:37
-msgid "Hide when focused window is maximized"
+#: ../src/Dock.vala:42
+msgid "Focused window is maximized"
 msgstr ""
 
-#: ../src/Dock.vala:38
-msgid "Hide when focused window overlaps the dock"
+#: ../src/Dock.vala:43
+msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:39
-msgid "Automatically hide when not being used"
+#: ../src/Dock.vala:44
+msgid "Any window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:40
-msgid "Hide when any window overlaps the dock"
+#: ../src/Dock.vala:45
+msgid "Not being used"
 msgstr ""
 
-#: ../src/Dock.vala:41
-msgid "Never hide"
-msgstr ""
-
-#: ../src/Dock.vala:62
+#: ../src/Dock.vala:82
 msgid "Primary Display:"
 msgstr "Πρωτεύουσα Οθόνη:"
 
-#: ../src/Dock.vala:66
+#: ../src/Dock.vala:86
 msgid "Display:"
 msgstr "Οθόνη:"
 
-#: ../src/Dock.vala:97
+#: ../src/Dock.vala:117
 msgid "Icon Size:"
 msgstr "Μέγεθος Εικονιδίου:"
 
-#: ../src/Dock.vala:99
-msgid "Hide Mode:"
-msgstr "Λειτουργία Απόκρυψης:"
+#: ../src/Dock.vala:119
+msgid "Hide when:"
+msgstr ""
 
-#: ../src/Dock.vala:139
+#: ../src/Dock.vala:159
 msgid "Monitor %d"
 msgstr ""
 
-#: ../src/Dock.vala:144
+#: ../src/Dock.vala:164
 msgid "Display %d"
 msgstr "Εμφάνιση %d"
 
@@ -155,50 +151,52 @@ msgstr ""
 msgid "Display"
 msgstr ""
 
-#: ../src/Wallpaper.vala:130
+#: ../src/Wallpaper.vala:139
 msgid "Pictures"
 msgstr "Εικόνες"
 
-#: ../src/Wallpaper.vala:131
+#: ../src/Wallpaper.vala:140
 msgid "Backgrounds"
 msgstr "Παρασκήνια"
 
-#: ../src/Wallpaper.vala:132
+#: ../src/Wallpaper.vala:141
 msgid "Custom…"
 msgstr "Προσαρμοσμένο..."
 
-#: ../src/Wallpaper.vala:137
-msgid "Solid Color"
-msgstr "Αμιγές Χρώμα"
-
-#: ../src/Wallpaper.vala:138
+#: ../src/Wallpaper.vala:146
 msgid "Centered"
 msgstr "Στο κέντρο"
 
-#: ../src/Wallpaper.vala:139
+#: ../src/Wallpaper.vala:147
 msgid "Scaled"
 msgstr "Σε κλίμακα"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/Wallpaper.vala:148
 msgid "Stretched"
 msgstr "Τεντωμένο"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:149
 msgid "Zoom"
 msgstr "Μεγέθυνση"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:150
 msgid "Spanned"
 msgstr "Εκτεταμένο"
 
-#: ../src/Wallpaper.vala:254
+#: ../src/Wallpaper.vala:319
 msgid "Select a folder"
 msgstr "Επιλέξτε ένα φάκελο"
 
-#: ../src/Wallpaper.vala:255
+#: ../src/Wallpaper.vala:320
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: ../src/Wallpaper.vala:256
+#: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Άνοιγμα"
+
+#~ msgid "Hide Mode:"
+#~ msgstr "Λειτουργία Απόκρυψης:"
+
+#~ msgid "Solid Color"
+#~ msgstr "Αμιγές Χρώμα"

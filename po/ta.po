@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-04-17 06:33-0500\n"
+"POT-Creation-Date: 2015-09-14 20:22-0500\n"
 "PO-Revision-Date: 2014-03-19 06:38+0000\n"
 "Last-Translator: Khaleel Jageer <jskcse4@gmail.com>\n"
 "Language-Team: Tamil <ta@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-10 06:06+0000\n"
-"X-Generator: Launchpad (build 17656)\n"
+"X-Launchpad-Export-Date: 2015-09-15 05:40+0000\n"
+"X-Generator: Launchpad (build 17737)\n"
 
 #: ../src/Dock.vala:17
 msgid "Normal"
@@ -29,47 +29,43 @@ msgstr "பெரிய"
 msgid "Custom (%dpx)"
 msgstr ""
 
-#: ../src/Dock.vala:37
-msgid "Hide when focused window is maximized"
+#: ../src/Dock.vala:42
+msgid "Focused window is maximized"
 msgstr ""
 
-#: ../src/Dock.vala:38
-msgid "Hide when focused window overlaps the dock"
+#: ../src/Dock.vala:43
+msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:39
-msgid "Automatically hide when not being used"
+#: ../src/Dock.vala:44
+msgid "Any window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:40
-msgid "Hide when any window overlaps the dock"
+#: ../src/Dock.vala:45
+msgid "Not being used"
 msgstr ""
 
-#: ../src/Dock.vala:41
-msgid "Never hide"
-msgstr ""
-
-#: ../src/Dock.vala:62
+#: ../src/Dock.vala:82
 msgid "Primary Display:"
 msgstr ""
 
-#: ../src/Dock.vala:66
+#: ../src/Dock.vala:86
 msgid "Display:"
 msgstr ""
 
-#: ../src/Dock.vala:97
+#: ../src/Dock.vala:117
 msgid "Icon Size:"
 msgstr "ஐகான் அளவு:"
 
-#: ../src/Dock.vala:99
-msgid "Hide Mode:"
-msgstr "மறைக்கும் முறை:"
+#: ../src/Dock.vala:119
+msgid "Hide when:"
+msgstr ""
 
-#: ../src/Dock.vala:139
+#: ../src/Dock.vala:159
 msgid "Monitor %d"
 msgstr ""
 
-#: ../src/Dock.vala:144
+#: ../src/Dock.vala:164
 msgid "Display %d"
 msgstr ""
 
@@ -154,50 +150,52 @@ msgstr ""
 msgid "Display"
 msgstr ""
 
-#: ../src/Wallpaper.vala:130
+#: ../src/Wallpaper.vala:139
 msgid "Pictures"
 msgstr "படங்கள்"
 
-#: ../src/Wallpaper.vala:131
+#: ../src/Wallpaper.vala:140
 msgid "Backgrounds"
 msgstr "பின்னணிகள்"
 
-#: ../src/Wallpaper.vala:132
+#: ../src/Wallpaper.vala:141
 msgid "Custom…"
 msgstr "தனிப்பயன்..."
 
-#: ../src/Wallpaper.vala:137
-msgid "Solid Color"
-msgstr "திட வண்ணம்"
-
-#: ../src/Wallpaper.vala:138
+#: ../src/Wallpaper.vala:146
 msgid "Centered"
 msgstr "மையப்படுத்தப்பட்ட"
 
-#: ../src/Wallpaper.vala:139
+#: ../src/Wallpaper.vala:147
 msgid "Scaled"
 msgstr "அளவிடப்பட்ட"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/Wallpaper.vala:148
 msgid "Stretched"
 msgstr "நீட்டப்பட்டது"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:149
 msgid "Zoom"
 msgstr "பெரிதாக்கு"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:150
 msgid "Spanned"
 msgstr "பரப்பப்பட்டது"
 
-#: ../src/Wallpaper.vala:254
+#: ../src/Wallpaper.vala:319
 msgid "Select a folder"
 msgstr "ஒரு கோப்புறையை தேர்ந்தெடு"
 
-#: ../src/Wallpaper.vala:255
+#: ../src/Wallpaper.vala:320
 msgid "Cancel"
 msgstr ""
 
-#: ../src/Wallpaper.vala:256
+#: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr ""
+
+#~ msgid "Solid Color"
+#~ msgstr "திட வண்ணம்"
+
+#~ msgid "Hide Mode:"
+#~ msgstr "மறைக்கும் முறை:"

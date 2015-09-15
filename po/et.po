@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-04-17 06:33-0500\n"
+"POT-Creation-Date: 2015-09-14 20:22-0500\n"
 "PO-Revision-Date: 2015-08-18 10:01+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-19 05:52+0000\n"
-"X-Generator: Launchpad (build 17690)\n"
+"X-Launchpad-Export-Date: 2015-09-15 05:40+0000\n"
+"X-Generator: Launchpad (build 17737)\n"
 
 #: ../src/Dock.vala:17
 msgid "Normal"
@@ -29,47 +29,43 @@ msgstr "Suur"
 msgid "Custom (%dpx)"
 msgstr "Kohandatud (%dpx)"
 
-#: ../src/Dock.vala:37
-msgid "Hide when focused window is maximized"
-msgstr "Kui aktiivne aken on maksimeeritud"
+#: ../src/Dock.vala:42
+msgid "Focused window is maximized"
+msgstr ""
 
-#: ../src/Dock.vala:38
-msgid "Hide when focused window overlaps the dock"
-msgstr "Kui aktiivne aken asetseb doki peal"
+#: ../src/Dock.vala:43
+msgid "Focused window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:39
-msgid "Automatically hide when not being used"
-msgstr "Automaatselt, kui ei kasutata"
+#: ../src/Dock.vala:44
+msgid "Any window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:40
-msgid "Hide when any window overlaps the dock"
-msgstr "Kui rakenduse aken asetseb doki peal"
+#: ../src/Dock.vala:45
+msgid "Not being used"
+msgstr ""
 
-#: ../src/Dock.vala:41
-msgid "Never hide"
-msgstr "Mitte kunagi"
-
-#: ../src/Dock.vala:62
+#: ../src/Dock.vala:82
 msgid "Primary Display:"
 msgstr "Põhiline ekraan:"
 
-#: ../src/Dock.vala:66
+#: ../src/Dock.vala:86
 msgid "Display:"
 msgstr "Ekraan:"
 
-#: ../src/Dock.vala:97
+#: ../src/Dock.vala:117
 msgid "Icon Size:"
 msgstr "Ikooni suurus:"
 
-#: ../src/Dock.vala:99
-msgid "Hide Mode:"
-msgstr "Dokk peidetakse:"
+#: ../src/Dock.vala:119
+msgid "Hide when:"
+msgstr ""
 
-#: ../src/Dock.vala:139
+#: ../src/Dock.vala:159
 msgid "Monitor %d"
 msgstr "Kuvar %d"
 
-#: ../src/Dock.vala:144
+#: ../src/Dock.vala:164
 msgid "Display %d"
 msgstr "Ekraan %d"
 
@@ -154,50 +150,67 @@ msgstr "Ikooni suurus"
 msgid "Display"
 msgstr "Kuvamine"
 
-#: ../src/Wallpaper.vala:130
+#: ../src/Wallpaper.vala:139
 msgid "Pictures"
 msgstr "Pildid"
 
-#: ../src/Wallpaper.vala:131
+#: ../src/Wallpaper.vala:140
 msgid "Backgrounds"
 msgstr "Taustapildid"
 
-#: ../src/Wallpaper.vala:132
+#: ../src/Wallpaper.vala:141
 msgid "Custom…"
 msgstr "Kohandatud…"
 
-#: ../src/Wallpaper.vala:137
-msgid "Solid Color"
-msgstr "Ühtlane värv"
-
-#: ../src/Wallpaper.vala:138
+#: ../src/Wallpaper.vala:146
 msgid "Centered"
 msgstr "Täidetud"
 
-#: ../src/Wallpaper.vala:139
+#: ../src/Wallpaper.vala:147
 msgid "Scaled"
 msgstr "Sobitatud"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/Wallpaper.vala:148
 msgid "Stretched"
 msgstr "Venitatud"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:149
 msgid "Zoom"
 msgstr "Suurendatud"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:150
 msgid "Spanned"
 msgstr "Kogu pilt"
 
-#: ../src/Wallpaper.vala:254
+#: ../src/Wallpaper.vala:319
 msgid "Select a folder"
 msgstr "Kohandatud kausta valimine"
 
-#: ../src/Wallpaper.vala:255
+#: ../src/Wallpaper.vala:320
 msgid "Cancel"
 msgstr "Loobu"
 
-#: ../src/Wallpaper.vala:256
+#: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Ava"
+
+#~ msgid "Hide Mode:"
+#~ msgstr "Dokk peidetakse:"
+
+#~ msgid "Solid Color"
+#~ msgstr "Ühtlane värv"
+
+#~ msgid "Never hide"
+#~ msgstr "Mitte kunagi"
+
+#~ msgid "Automatically hide when not being used"
+#~ msgstr "Automaatselt, kui ei kasutata"
+
+#~ msgid "Hide when focused window overlaps the dock"
+#~ msgstr "Kui aktiivne aken asetseb doki peal"
+
+#~ msgid "Hide when focused window is maximized"
+#~ msgstr "Kui aktiivne aken on maksimeeritud"
+
+#~ msgid "Hide when any window overlaps the dock"
+#~ msgstr "Kui rakenduse aken asetseb doki peal"

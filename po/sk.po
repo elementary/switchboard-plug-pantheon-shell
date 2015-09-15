@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-17 06:33-0500\n"
+"POT-Creation-Date: 2015-09-14 20:22-0500\n"
 "PO-Revision-Date: 2015-04-26 09:18+0000\n"
 "Last-Translator: pyler <pyler@azet.sk>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-10 06:06+0000\n"
-"X-Generator: Launchpad (build 17656)\n"
+"X-Launchpad-Export-Date: 2015-09-15 05:40+0000\n"
+"X-Generator: Launchpad (build 17737)\n"
 "Language: sk\n"
 
 #: ../src/Dock.vala:17
@@ -30,47 +30,43 @@ msgstr "Veľké"
 msgid "Custom (%dpx)"
 msgstr "Vlastné"
 
-#: ../src/Dock.vala:37
-msgid "Hide when focused window is maximized"
-msgstr "Skryť pri maximalizovanom aktívnom okne"
+#: ../src/Dock.vala:42
+msgid "Focused window is maximized"
+msgstr ""
 
-#: ../src/Dock.vala:38
-msgid "Hide when focused window overlaps the dock"
-msgstr "Skryť, ak aktuálne okno prekrýva panel"
+#: ../src/Dock.vala:43
+msgid "Focused window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:39
-msgid "Automatically hide when not being used"
-msgstr "Automaicky skryť, ak sa nepoužíva"
+#: ../src/Dock.vala:44
+msgid "Any window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:40
-msgid "Hide when any window overlaps the dock"
-msgstr "Skryť, ak akékoľvek okno prekrýva panel"
+#: ../src/Dock.vala:45
+msgid "Not being used"
+msgstr ""
 
-#: ../src/Dock.vala:41
-msgid "Never hide"
-msgstr "Nikdy neskrývať"
-
-#: ../src/Dock.vala:62
+#: ../src/Dock.vala:82
 msgid "Primary Display:"
 msgstr "Primárna obrazovka"
 
-#: ../src/Dock.vala:66
+#: ../src/Dock.vala:86
 msgid "Display:"
 msgstr "Zobrazenie:"
 
-#: ../src/Dock.vala:97
+#: ../src/Dock.vala:117
 msgid "Icon Size:"
 msgstr "Veľkosť ikôn:"
 
-#: ../src/Dock.vala:99
-msgid "Hide Mode:"
-msgstr "Skrytý mód"
+#: ../src/Dock.vala:119
+msgid "Hide when:"
+msgstr ""
 
-#: ../src/Dock.vala:139
+#: ../src/Dock.vala:159
 msgid "Monitor %d"
 msgstr "Obrazovka %d"
 
-#: ../src/Dock.vala:144
+#: ../src/Dock.vala:164
 msgid "Display %d"
 msgstr "Zobrazenie %d"
 
@@ -155,50 +151,67 @@ msgstr "Veľkosti ikony"
 msgid "Display"
 msgstr "Obrazovka"
 
-#: ../src/Wallpaper.vala:130
+#: ../src/Wallpaper.vala:139
 msgid "Pictures"
 msgstr "Obrázky"
 
-#: ../src/Wallpaper.vala:131
+#: ../src/Wallpaper.vala:140
 msgid "Backgrounds"
 msgstr "Pozadia"
 
-#: ../src/Wallpaper.vala:132
+#: ../src/Wallpaper.vala:141
 msgid "Custom…"
 msgstr "Vlastné…"
 
-#: ../src/Wallpaper.vala:137
-msgid "Solid Color"
-msgstr "Výplň jednou farbou"
-
-#: ../src/Wallpaper.vala:138
+#: ../src/Wallpaper.vala:146
 msgid "Centered"
 msgstr "Centrovať"
 
-#: ../src/Wallpaper.vala:139
+#: ../src/Wallpaper.vala:147
 msgid "Scaled"
 msgstr "Prispôsobené"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/Wallpaper.vala:148
 msgid "Stretched"
 msgstr "Roztiahnuť"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:149
 msgid "Zoom"
 msgstr "Priblížiť"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:150
 msgid "Spanned"
 msgstr "Roztiahnuté"
 
-#: ../src/Wallpaper.vala:254
+#: ../src/Wallpaper.vala:319
 msgid "Select a folder"
 msgstr "Vybrať prečinok"
 
-#: ../src/Wallpaper.vala:255
+#: ../src/Wallpaper.vala:320
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: ../src/Wallpaper.vala:256
+#: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Otvoriť"
+
+#~ msgid "Hide Mode:"
+#~ msgstr "Skrytý mód"
+
+#~ msgid "Solid Color"
+#~ msgstr "Výplň jednou farbou"
+
+#~ msgid "Never hide"
+#~ msgstr "Nikdy neskrývať"
+
+#~ msgid "Automatically hide when not being used"
+#~ msgstr "Automaicky skryť, ak sa nepoužíva"
+
+#~ msgid "Hide when focused window is maximized"
+#~ msgstr "Skryť pri maximalizovanom aktívnom okne"
+
+#~ msgid "Hide when focused window overlaps the dock"
+#~ msgstr "Skryť, ak aktuálne okno prekrýva panel"
+
+#~ msgid "Hide when any window overlaps the dock"
+#~ msgstr "Skryť, ak akékoľvek okno prekrýva panel"

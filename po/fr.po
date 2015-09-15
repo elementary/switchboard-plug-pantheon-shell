@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-17 06:33-0500\n"
+"POT-Creation-Date: 2015-09-14 20:22-0500\n"
 "PO-Revision-Date: 2015-05-26 22:56+0000\n"
 "Last-Translator: Romain De Filippi <romain@defilippi.fr>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-10 06:05+0000\n"
-"X-Generator: Launchpad (build 17656)\n"
+"X-Launchpad-Export-Date: 2015-09-15 05:40+0000\n"
+"X-Generator: Launchpad (build 17737)\n"
 "Language: fr\n"
 
 #: ../src/Dock.vala:17
@@ -30,48 +30,43 @@ msgstr "Grand"
 msgid "Custom (%dpx)"
 msgstr "Personnaliser (%dpx)"
 
-#: ../src/Dock.vala:37
-msgid "Hide when focused window is maximized"
-msgstr "Masquer lorsque la fenêtre qui a le focus est maximisée"
-
-#: ../src/Dock.vala:38
-msgid "Hide when focused window overlaps the dock"
+#: ../src/Dock.vala:42
+msgid "Focused window is maximized"
 msgstr ""
-"Masquer lorsque la fenêtre qui a le focus se trouve au dessus du dock"
 
-#: ../src/Dock.vala:39
-msgid "Automatically hide when not being used"
-msgstr "Masquer automatiquement lorsqu'il n'est pas utilisé"
+#: ../src/Dock.vala:43
+msgid "Focused window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:40
-msgid "Hide when any window overlaps the dock"
-msgstr "Masquer lorsque n'importe quelle fenêtre recouvre le dock"
+#: ../src/Dock.vala:44
+msgid "Any window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:41
-msgid "Never hide"
-msgstr "Ne jamais masquer"
+#: ../src/Dock.vala:45
+msgid "Not being used"
+msgstr ""
 
-#: ../src/Dock.vala:62
+#: ../src/Dock.vala:82
 msgid "Primary Display:"
 msgstr "Affichage principal"
 
-#: ../src/Dock.vala:66
+#: ../src/Dock.vala:86
 msgid "Display:"
 msgstr "Affichage :"
 
-#: ../src/Dock.vala:97
+#: ../src/Dock.vala:117
 msgid "Icon Size:"
 msgstr "Taille d'icône :"
 
-#: ../src/Dock.vala:99
-msgid "Hide Mode:"
-msgstr "Comportement :"
+#: ../src/Dock.vala:119
+msgid "Hide when:"
+msgstr ""
 
-#: ../src/Dock.vala:139
+#: ../src/Dock.vala:159
 msgid "Monitor %d"
 msgstr "Écran %d"
 
-#: ../src/Dock.vala:144
+#: ../src/Dock.vala:164
 msgid "Display %d"
 msgstr "Affichage %d"
 
@@ -156,50 +151,68 @@ msgstr "Taille de l'icône"
 msgid "Display"
 msgstr "Affichage"
 
-#: ../src/Wallpaper.vala:130
+#: ../src/Wallpaper.vala:139
 msgid "Pictures"
 msgstr "Images"
 
-#: ../src/Wallpaper.vala:131
+#: ../src/Wallpaper.vala:140
 msgid "Backgrounds"
 msgstr "Arrière-plans"
 
-#: ../src/Wallpaper.vala:132
+#: ../src/Wallpaper.vala:141
 msgid "Custom…"
 msgstr "Personnalisé…"
 
-#: ../src/Wallpaper.vala:137
-msgid "Solid Color"
-msgstr "Couleur unie"
-
-#: ../src/Wallpaper.vala:138
+#: ../src/Wallpaper.vala:146
 msgid "Centered"
 msgstr "Centré"
 
-#: ../src/Wallpaper.vala:139
+#: ../src/Wallpaper.vala:147
 msgid "Scaled"
 msgstr "Mis à l'échelle"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/Wallpaper.vala:148
 msgid "Stretched"
 msgstr "Étiré"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:149
 msgid "Zoom"
 msgstr "Zoom"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:150
 msgid "Spanned"
 msgstr "Étendu"
 
-#: ../src/Wallpaper.vala:254
+#: ../src/Wallpaper.vala:319
 msgid "Select a folder"
 msgstr "Sélectionner un dossier"
 
-#: ../src/Wallpaper.vala:255
+#: ../src/Wallpaper.vala:320
 msgid "Cancel"
 msgstr "Annuler"
 
-#: ../src/Wallpaper.vala:256
+#: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Ouvrir"
+
+#~ msgid "Hide Mode:"
+#~ msgstr "Comportement :"
+
+#~ msgid "Solid Color"
+#~ msgstr "Couleur unie"
+
+#~ msgid "Never hide"
+#~ msgstr "Ne jamais masquer"
+
+#~ msgid "Automatically hide when not being used"
+#~ msgstr "Masquer automatiquement lorsqu'il n'est pas utilisé"
+
+#~ msgid "Hide when focused window is maximized"
+#~ msgstr "Masquer lorsque la fenêtre qui a le focus est maximisée"
+
+#~ msgid "Hide when focused window overlaps the dock"
+#~ msgstr ""
+#~ "Masquer lorsque la fenêtre qui a le focus se trouve au dessus du dock"
+
+#~ msgid "Hide when any window overlaps the dock"
+#~ msgstr "Masquer lorsque n'importe quelle fenêtre recouvre le dock"

@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-17 06:33-0500\n"
+"POT-Creation-Date: 2015-09-14 20:22-0500\n"
 "PO-Revision-Date: 2015-08-12 18:17+0000\n"
 "Last-Translator: Gabriel_P <Unknown>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-13 05:35+0000\n"
-"X-Generator: Launchpad (build 17686)\n"
+"X-Launchpad-Export-Date: 2015-09-15 05:40+0000\n"
+"X-Generator: Launchpad (build 17737)\n"
 "Language: es\n"
 
 #: ../src/Dock.vala:17
@@ -30,47 +30,43 @@ msgstr "Grande"
 msgid "Custom (%dpx)"
 msgstr "Personalizado (%d px)"
 
-#: ../src/Dock.vala:37
-msgid "Hide when focused window is maximized"
-msgstr "Ocultar al maximizar la ventana enfocada"
+#: ../src/Dock.vala:42
+msgid "Focused window is maximized"
+msgstr ""
 
-#: ../src/Dock.vala:38
-msgid "Hide when focused window overlaps the dock"
-msgstr "Ocultar cuando la ventana enfocada se superponga al dock"
+#: ../src/Dock.vala:43
+msgid "Focused window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:39
-msgid "Automatically hide when not being used"
-msgstr "Ocultar automáticamente cuando no se use"
+#: ../src/Dock.vala:44
+msgid "Any window overlaps the dock"
+msgstr ""
 
-#: ../src/Dock.vala:40
-msgid "Hide when any window overlaps the dock"
-msgstr "Ocultar cuando cualquier ventana cubra el dock"
+#: ../src/Dock.vala:45
+msgid "Not being used"
+msgstr ""
 
-#: ../src/Dock.vala:41
-msgid "Never hide"
-msgstr "No ocultar nunca"
-
-#: ../src/Dock.vala:62
+#: ../src/Dock.vala:82
 msgid "Primary Display:"
 msgstr "Pantalla principal:"
 
-#: ../src/Dock.vala:66
+#: ../src/Dock.vala:86
 msgid "Display:"
 msgstr "Pantalla:"
 
-#: ../src/Dock.vala:97
+#: ../src/Dock.vala:117
 msgid "Icon Size:"
 msgstr "Tamaño de los iconos:"
 
-#: ../src/Dock.vala:99
-msgid "Hide Mode:"
-msgstr "Modo de ocultación"
+#: ../src/Dock.vala:119
+msgid "Hide when:"
+msgstr ""
 
-#: ../src/Dock.vala:139
+#: ../src/Dock.vala:159
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: ../src/Dock.vala:144
+#: ../src/Dock.vala:164
 msgid "Display %d"
 msgstr "Pantalla %d"
 
@@ -155,50 +151,67 @@ msgstr "Tamaño de los iconos"
 msgid "Display"
 msgstr "Pantalla"
 
-#: ../src/Wallpaper.vala:130
+#: ../src/Wallpaper.vala:139
 msgid "Pictures"
 msgstr "Imágenes"
 
-#: ../src/Wallpaper.vala:131
+#: ../src/Wallpaper.vala:140
 msgid "Backgrounds"
 msgstr "Fondos de pantalla"
 
-#: ../src/Wallpaper.vala:132
+#: ../src/Wallpaper.vala:141
 msgid "Custom…"
 msgstr "Personalizado…"
 
-#: ../src/Wallpaper.vala:137
-msgid "Solid Color"
-msgstr "Color sólido"
-
-#: ../src/Wallpaper.vala:138
+#: ../src/Wallpaper.vala:146
 msgid "Centered"
 msgstr "Centrado"
 
-#: ../src/Wallpaper.vala:139
+#: ../src/Wallpaper.vala:147
 msgid "Scaled"
 msgstr "Escalado"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/Wallpaper.vala:148
 msgid "Stretched"
 msgstr "Estirado"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:149
 msgid "Zoom"
 msgstr "Ampliado"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:150
 msgid "Spanned"
 msgstr "Distribuido"
 
-#: ../src/Wallpaper.vala:254
+#: ../src/Wallpaper.vala:319
 msgid "Select a folder"
 msgstr "Seleccione una carpeta"
 
-#: ../src/Wallpaper.vala:255
+#: ../src/Wallpaper.vala:320
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../src/Wallpaper.vala:256
+#: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Abrir"
+
+#~ msgid "Hide Mode:"
+#~ msgstr "Modo de ocultación"
+
+#~ msgid "Solid Color"
+#~ msgstr "Color sólido"
+
+#~ msgid "Never hide"
+#~ msgstr "No ocultar nunca"
+
+#~ msgid "Automatically hide when not being used"
+#~ msgstr "Ocultar automáticamente cuando no se use"
+
+#~ msgid "Hide when focused window is maximized"
+#~ msgstr "Ocultar al maximizar la ventana enfocada"
+
+#~ msgid "Hide when focused window overlaps the dock"
+#~ msgstr "Ocultar cuando la ventana enfocada se superponga al dock"
+
+#~ msgid "Hide when any window overlaps the dock"
+#~ msgstr "Ocultar cuando cualquier ventana cubra el dock"
