@@ -32,28 +32,48 @@ public class Dock : Gtk.Grid {
             dock_preferences.IconSize = int.parse (icon_size.active_id);
         });
 
-        Gtk.Box hide_mode = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-        string[] hide_mode_labels = new string[5];
-        hide_mode_labels[0] = _("Hide when focused window is maximized");
-        hide_mode_labels[1] = _("Hide when focused window overlaps the dock");
-        hide_mode_labels[2] = _("Automatically hide when not being used");
-        hide_mode_labels[3] = _("Hide when any window overlaps the dock");
-        hide_mode_labels[4] = _("Never hide");
-        Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.AUTO, Plank.HideType.WINDOW_DODGE, Plank.HideType.NONE};
+        Gtk.Box hide_mode_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, column_spacing);
+        hide_mode_box.hexpand = true;        
+        hide_mode_box.halign = Gtk.Align.START;
 
-        Gtk.RadioButton button = new Gtk.RadioButton(null);
-        for (int i = 0; i < hide_mode_labels.length; i++) {
-            int index = i;
-            button = new Gtk.RadioButton.with_label_from_widget (button, hide_mode_labels[i]);
-            hide_mode.pack_start (button, false, false, 2);
-            if (hide_mode_ids[i] == dock_preferences.HideMode)
-                button.set_active (true);
-            button.toggled.connect ((b) => {
-                if (b.get_active ()) {
-                    dock_preferences.HideMode = hide_mode_ids[index];
-                }
-            });
+        Gtk.ComboBoxText hide_mode = new Gtk.ComboBoxText ();
+        hide_mode.hexpand = true;        
+        hide_mode.halign = Gtk.Align.START;
+        hide_mode.append_text (_("Focused window is maximized"));
+        hide_mode.append_text (_("Focused window overlaps the dock"));
+        hide_mode.append_text (_("Any window overlaps the dock"));
+        hide_mode.append_text (_("Not being used"));
+
+        Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.WINDOW_DODGE, Plank.HideType.AUTO};
+
+        Gtk.Switch hide_switch = new Gtk.Switch ();
+
+        var hide_none = (dock_preferences.HideMode != Plank.HideType.NONE);
+        hide_switch.set_active (hide_none);
+        if (hide_none) {
+            for (int i = 0; i < hide_mode_ids.length; i++) {
+                if (hide_mode_ids[i] == dock_preferences.HideMode)                    
+                    hide_mode.active = i;
+            }
+        } else {
+            hide_mode.set_sensitive (false);
         }
+
+        hide_mode.changed.connect (() => {
+            dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
+        });
+
+        hide_switch.notify["active"].connect (() => {
+            if (hide_switch.active) {
+                hide_mode.set_sensitive (true);
+                dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
+            } else {                
+                hide_mode.set_sensitive (false);
+                dock_preferences.HideMode = Plank.HideType.NONE;
+            }
+        });
+        hide_mode_box.add (hide_mode);
+        hide_mode_box.add (hide_switch);
 
         monitor = new Gtk.ComboBoxText ();
         monitor.halign = Gtk.Align.START;
@@ -96,7 +116,7 @@ public class Dock : Gtk.Grid {
 
         var icon_label = new Gtk.Label (_("Icon Size:"));
         icon_label.set_halign (Gtk.Align.END);
-        var hide_label = new Gtk.Label (_("Hide Mode:"));
+        var hide_label = new Gtk.Label (_("Hide when:"));
         hide_label.set_halign (Gtk.Align.END);
         hide_label.set_valign (Gtk.Align.START);
         hide_label.set_margin_top (4);
@@ -106,7 +126,7 @@ public class Dock : Gtk.Grid {
         attach (icon_label, 1, 0, 1, 1);
         attach (icon_size, 2, 0, 1, 1);
         attach (hide_label, 1, 1, 1, 1);
-        attach (hide_mode, 2, 1, 1, 1);
+        attach (hide_mode_box, 2, 1, 1, 1);
         attach (primary_monitor_label, 1, 3, 1, 1);
         attach (primary_monitor_grid, 2, 3, 1, 1);
         attach (monitor_label, 1, 4, 1, 1);
