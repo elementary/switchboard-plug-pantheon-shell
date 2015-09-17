@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 20:22-0500\n"
-"PO-Revision-Date: 2015-04-21 08:11+0000\n"
+"PO-Revision-Date: 2015-09-16 08:27+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:44+0000\n"
+"X-Launchpad-Export-Date: 2015-09-17 05:42+0000\n"
 "X-Generator: Launchpad (build 17737)\n"
 "Language: \n"
 
@@ -32,19 +32,19 @@ msgstr "自定义（%dpx）"
 
 #: ../src/Dock.vala:42
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "活动窗口最大化时"
 
 #: ../src/Dock.vala:43
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "活动窗口与Dock重叠时"
 
 #: ../src/Dock.vala:44
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "任何窗口与Dock重叠时"
 
 #: ../src/Dock.vala:45
 msgid "Not being used"
-msgstr ""
+msgstr "不使用时"
 
 #: ../src/Dock.vala:82
 msgid "Primary Display:"
@@ -60,7 +60,7 @@ msgstr "图标尺寸："
 
 #: ../src/Dock.vala:119
 msgid "Hide when:"
-msgstr ""
+msgstr "隐藏条件："
 
 #: ../src/Dock.vala:159
 msgid "Monitor %d"
@@ -194,24 +194,3 @@ msgstr "取消"
 #: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "打开"
-
-#~ msgid "Hide Mode:"
-#~ msgstr "隐藏模式："
-
-#~ msgid "Solid Color"
-#~ msgstr "纯色"
-
-#~ msgid "Never hide"
-#~ msgstr "永不隐藏"
-
-#~ msgid "Automatically hide when not being used"
-#~ msgstr "不使用时自动隐藏"
-
-#~ msgid "Hide when any window overlaps the dock"
-#~ msgstr "任何窗口与Dock重叠时隐藏"
-
-#~ msgid "Hide when focused window is maximized"
-#~ msgstr "焦点窗口最大化时隐藏"
-
-#~ msgid "Hide when focused window overlaps the dock"
-#~ msgstr "焦点窗口与Dock重叠时隐藏"
