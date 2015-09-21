@@ -86,7 +86,9 @@ public class GalaPlug : Switchboard.Plug {
         bottomright.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-bottomright", int.parse (bottomright.active_id)));
         bottomright.valign = Gtk.Align.END;
 
-        var icon = new Gtk.Image.from_file (Constants.PKGDATADIR + "/hotcornerdisplay.png");
+        var icon = new Gtk.Image.from_file (Constants.PKGDATADIR + "/hotcornerdisplay.svg");
+        icon.get_style_context ().add_class ("hotcorner-display");
+        icon.expand = true;
         var custom_command = new Gtk.Entry ();
         custom_command.text = BehaviorSettings.get_default ().hotcorner_custom_command;
         custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
