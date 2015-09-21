@@ -57,3 +57,4 @@ add_subdirectory (po)
 install (FILES ${resources} DESTINATION ${PKGDATADIR})
 
 add_subdirectory(src)
+add_subdirectory(set-wallpaper-contract)
