@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-09-14 20:22-0500\n"
-"PO-Revision-Date: 2015-08-18 10:01+0000\n"
+"PO-Revision-Date: 2015-09-22 18:14+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:44+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-09-23 06:27+0000\n"
+"X-Generator: Launchpad (build 17749)\n"
 
 #: ../src/Dock.vala:17
 msgid "Normal"
@@ -31,19 +31,19 @@ msgstr "Kohandatud (%dpx)"
 
 #: ../src/Dock.vala:42
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "Aktiivne aken on maksimeeritud"
 
 #: ../src/Dock.vala:43
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "Aktiivne aken asetseb doki peal"
 
 #: ../src/Dock.vala:44
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Üks akendest asetseb doki peal"
 
 #: ../src/Dock.vala:45
 msgid "Not being used"
-msgstr ""
+msgstr "Kui ei kasutata"
 
 #: ../src/Dock.vala:82
 msgid "Primary Display:"
@@ -59,7 +59,7 @@ msgstr "Ikooni suurus:"
 
 #: ../src/Dock.vala:119
 msgid "Hide when:"
-msgstr ""
+msgstr "Doki peitmine:"
 
 #: ../src/Dock.vala:159
 msgid "Monitor %d"
@@ -193,24 +193,3 @@ msgstr "Loobu"
 #: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Ava"
-
-#~ msgid "Hide Mode:"
-#~ msgstr "Dokk peidetakse:"
-
-#~ msgid "Solid Color"
-#~ msgstr "Ühtlane värv"
-
-#~ msgid "Never hide"
-#~ msgstr "Mitte kunagi"
-
-#~ msgid "Automatically hide when not being used"
-#~ msgstr "Automaatselt, kui ei kasutata"
-
-#~ msgid "Hide when focused window overlaps the dock"
-#~ msgstr "Kui aktiivne aken asetseb doki peal"
-
-#~ msgid "Hide when focused window is maximized"
-#~ msgstr "Kui aktiivne aken on maksimeeritud"
-
-#~ msgid "Hide when any window overlaps the dock"
-#~ msgstr "Kui rakenduse aken asetseb doki peal"
