@@ -1,40 +1,46 @@
+# Persian translation for maya
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the maya package.
+# Mohammad Zali <mohamadzali@gmail.com>, 2013.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 20:22-0500\n"
-"PO-Revision-Date: 2014-12-16 09:22+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-10-02 19:40+0000\n"
+"Last-Translator: qezwan <Unknown>\n"
+"Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:44+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-10-03 05:35+0000\n"
+"X-Generator: Launchpad (build 17783)\n"
+"Language: fa\n"
 
 #: ../src/Dock.vala:17
 msgid "Normal"
-msgstr ""
+msgstr "ئاسایی"
 
 #: ../src/Dock.vala:18
 msgid "Large"
-msgstr ""
+msgstr "زۆر گەورە"
 
 #: ../src/Dock.vala:26
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "راسپێردراو(%dpx)"
 
 #: ../src/Dock.vala:42
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "سەرنجدانی پەنجێرەی گەورەکراوە"
 
 #: ../src/Dock.vala:43
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "سەرنجدانی پەنجێرەی سەر لەنگەرگا"
 
 #: ../src/Dock.vala:44
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "هیچ پەنجێرەیێک لەسە لەنگەرگا نییە"
 
 #: ../src/Dock.vala:45
 msgid "Not being used"
@@ -42,149 +48,149 @@ msgstr ""
 
 #: ../src/Dock.vala:82
 msgid "Primary Display:"
-msgstr ""
+msgstr "ساشەی سەرەکی"
 
 #: ../src/Dock.vala:86
 msgid "Display:"
-msgstr ""
+msgstr "نیشاندان:"
 
 #: ../src/Dock.vala:117
 msgid "Icon Size:"
-msgstr ""
+msgstr "ئەندازەی وێنۆچکە"
 
 #: ../src/Dock.vala:119
 msgid "Hide when:"
-msgstr ""
+msgstr "شاردن تاکوو :"
 
 #: ../src/Dock.vala:159
 msgid "Monitor %d"
-msgstr ""
+msgstr "شاشەی %d"
 
 #: ../src/Dock.vala:164
 msgid "Display %d"
-msgstr ""
+msgstr "نیشاندان %d"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
-msgstr ""
+msgstr "پێشخان"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr ""
+msgstr "گۆڕانی کاغەز دیواری و سفارشی کردنی لەنگەرگا"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
 #: ../src/desktop-plug.vala:156
 msgid "Wallpaper"
-msgstr ""
+msgstr "کاغەزی دیوار"
 
 #: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:158
 #: ../src/desktop-plug.vala:160 ../src/desktop-plug.vala:162
 #: ../src/desktop-plug.vala:164 ../src/desktop-plug.vala:166
 #: ../src/desktop-plug.vala:168
 msgid "Dock"
-msgstr ""
+msgstr "لەنگەرگا(دۆک)"
 
 #: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "کاتی ڕۆیشتنی جێنیشاندەری مشک بۆ کۆشەکانی شاشە:"
 
 #: ../src/desktop-plug.vala:94
 msgid "Custom Command:"
-msgstr ""
+msgstr "فەرمانی راسپێردراو:"
 
 #: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:169
 #: ../src/desktop-plug.vala:170
 msgid "Hot Corners"
-msgstr ""
+msgstr "کۆشەکانی داخ"
 
 #: ../src/desktop-plug.vala:117
 msgid "Do Nothing"
-msgstr ""
+msgstr "هیج کاریک نەکرا"
 
 #: ../src/desktop-plug.vala:118
 msgid "Multitasking View"
-msgstr ""
+msgstr "دیتنی چەندین شاشە"
 
 #: ../src/desktop-plug.vala:119
 msgid "Maximize Current Window"
-msgstr ""
+msgstr "گەورەکردنی پەنجێرەی ئێستا"
 
 #: ../src/desktop-plug.vala:120
 msgid "Minimize Current Window"
-msgstr ""
+msgstr "چکۆلەکردنی پنجێرەی ئێستا"
 
 #: ../src/desktop-plug.vala:121
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "نیشاندانی مینیۆی ئەپلیکەیشێن"
 
 #: ../src/desktop-plug.vala:122
 msgid "Window Overview"
-msgstr ""
+msgstr "پیشاندانی پەنجێرە"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
-msgstr ""
+msgstr "نیشاندانی هەمو پەنجێرەکان"
 
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "اجراء فرمان سفارشی"
 
 #: ../src/desktop-plug.vala:161 ../src/desktop-plug.vala:162
 msgid "Theme"
-msgstr ""
+msgstr "ڕووکار"
 
 #: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
 msgid "Hide Mode"
-msgstr ""
+msgstr "شاردنەوەی مۆد"
 
 #: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
 msgid "Icon Size"
-msgstr ""
+msgstr "ئەندازەی وێنۆچکە"
 
 #: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
 msgid "Display"
-msgstr ""
+msgstr "نیشاندان"
 
 #: ../src/Wallpaper.vala:139
 msgid "Pictures"
-msgstr ""
+msgstr "وێنەکان"
 
 #: ../src/Wallpaper.vala:140
 msgid "Backgrounds"
-msgstr ""
+msgstr "پاشبنەماکان"
 
 #: ../src/Wallpaper.vala:141
 msgid "Custom…"
-msgstr ""
+msgstr "راسپێردراو"
 
 #: ../src/Wallpaper.vala:146
 msgid "Centered"
-msgstr ""
+msgstr "ناوەندی"
 
 #: ../src/Wallpaper.vala:147
 msgid "Scaled"
-msgstr ""
+msgstr "گونجاو"
 
 #: ../src/Wallpaper.vala:148
 msgid "Stretched"
-msgstr ""
+msgstr "کێشراوە"
 
 #: ../src/Wallpaper.vala:149
 msgid "Zoom"
-msgstr ""
+msgstr "زووم"
 
 #: ../src/Wallpaper.vala:150
 msgid "Spanned"
-msgstr ""
+msgstr "سپانەر"
 
 #: ../src/Wallpaper.vala:319
 msgid "Select a folder"
-msgstr ""
+msgstr "هەڵبژاردنی بوخچەیێک"
 
 #: ../src/Wallpaper.vala:320
 msgid "Cancel"
-msgstr ""
+msgstr "هەڵوەشاندنەوە"
 
 #: ../src/Wallpaper.vala:321
 msgid "Open"
-msgstr ""
+msgstr "کراوەیە"
