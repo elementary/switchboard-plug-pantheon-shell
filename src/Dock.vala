@@ -1,5 +1,3 @@
-
-
 public class Dock : Gtk.Grid {
     Gtk.Label primary_monitor_label;
     Gtk.Switch primary_monitor;
