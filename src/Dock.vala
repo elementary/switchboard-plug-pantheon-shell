@@ -16,7 +16,6 @@ public class Dock : Gtk.Grid {
         var icon_size = new Gtk.ComboBoxText ();
         icon_size.append ("48", _("Normal"));
         icon_size.append ("64", _("Large"));
-        icon_size.hexpand = true;
 
         Plank.Services.Paths.initialize ("plank", Constants.PLANKDATADIR);
         dock_preferences = new Plank.DockPreferences.with_file (Plank.Services.Paths.AppConfigFolder.get_child ("dock1").get_child ("settings"));
@@ -27,18 +26,11 @@ public class Dock : Gtk.Grid {
         }
 
         icon_size.active_id = current.to_string ();
-        icon_size.halign = Gtk.Align.START;
         icon_size.changed.connect (() => {
             dock_preferences.IconSize = int.parse (icon_size.active_id);
         });
 
-        Gtk.Box hide_mode_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, column_spacing);
-        hide_mode_box.hexpand = true;        
-        hide_mode_box.halign = Gtk.Align.START;
-
         Gtk.ComboBoxText hide_mode = new Gtk.ComboBoxText ();
-        hide_mode.hexpand = true;        
-        hide_mode.halign = Gtk.Align.START;
         hide_mode.append_text (_("Focused window is maximized"));
         hide_mode.append_text (_("Focused window overlaps the dock"));
         hide_mode.append_text (_("Any window overlaps the dock"));
@@ -47,12 +39,14 @@ public class Dock : Gtk.Grid {
         Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.WINDOW_DODGE, Plank.HideType.AUTO};
 
         Gtk.Switch hide_switch = new Gtk.Switch ();
+        hide_switch.halign = Gtk.Align.START;
+        hide_switch.valign = Gtk.Align.CENTER;
 
         var hide_none = (dock_preferences.HideMode != Plank.HideType.NONE);
         hide_switch.set_active (hide_none);
         if (hide_none) {
             for (int i = 0; i < hide_mode_ids.length; i++) {
-                if (hide_mode_ids[i] == dock_preferences.HideMode)                    
+                if (hide_mode_ids[i] == dock_preferences.HideMode)
                     hide_mode.active = i;
             }
         } else {
@@ -67,17 +61,13 @@ public class Dock : Gtk.Grid {
             if (hide_switch.active) {
                 hide_mode.set_sensitive (true);
                 dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
-            } else {                
+            } else {
                 hide_mode.set_sensitive (false);
                 dock_preferences.HideMode = Plank.HideType.NONE;
             }
         });
-        hide_mode_box.add (hide_mode);
-        hide_mode_box.add (hide_switch);
 
         monitor = new Gtk.ComboBoxText ();
-        monitor.halign = Gtk.Align.START;
-        monitor.hexpand = true;
 
         primary_monitor_label = new Gtk.Label (_("Primary Display:"));
         primary_monitor_label.halign = Gtk.Align.END;
@@ -118,15 +108,14 @@ public class Dock : Gtk.Grid {
         icon_label.set_halign (Gtk.Align.END);
         var hide_label = new Gtk.Label (_("Hide when:"));
         hide_label.set_halign (Gtk.Align.END);
-        hide_label.set_valign (Gtk.Align.START);
-        hide_label.set_margin_top (4);
         var primary_monitor_grid = new Gtk.Grid ();
         primary_monitor_grid.add (primary_monitor);
 
         attach (icon_label, 1, 0, 1, 1);
         attach (icon_size, 2, 0, 1, 1);
         attach (hide_label, 1, 1, 1, 1);
-        attach (hide_mode_box, 2, 1, 1, 1);
+        attach (hide_mode, 2, 1, 1, 1);
+        attach (hide_switch, 3, 1, 1, 1);
         attach (primary_monitor_label, 1, 3, 1, 1);
         attach (primary_monitor_grid, 2, 3, 1, 1);
         attach (monitor_label, 1, 4, 1, 1);
