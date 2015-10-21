@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 20:22-0500\n"
-"PO-Revision-Date: 2015-10-20 02:44+0000\n"
-"Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
+"PO-Revision-Date: 2015-10-20 14:14+0000\n"
+"Last-Translator: Mukusev Vladimir <damon95@yandex.ru>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-20 05:38+0000\n"
+"X-Launchpad-Export-Date: 2015-10-21 06:13+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 "Language: ru\n"
 
@@ -32,19 +32,19 @@ msgstr "Другой (%dpx)"
 
 #: ../src/Dock.vala:42
 msgid "Focused window is maximized"
-msgstr "Сфокусировано развернутое окно"
+msgstr "Активное окно развёрнуто"
 
 #: ../src/Dock.vala:43
 msgid "Focused window overlaps the dock"
-msgstr "Сфокусировано окно, перекрывающее панель"
+msgstr "Активное окно перекрывает док-панель"
 
 #: ../src/Dock.vala:44
 msgid "Any window overlaps the dock"
-msgstr "Любое окно перекрывает панель"
+msgstr "Любое окно перекрывает док-панель"
 
 #: ../src/Dock.vala:45
 msgid "Not being used"
-msgstr "Не использовать"
+msgstr "Никогда"
 
 #: ../src/Dock.vala:82
 msgid "Primary Display:"
@@ -60,7 +60,7 @@ msgstr "Размер значков:"
 
 #: ../src/Dock.vala:119
 msgid "Hide when:"
-msgstr "Скрывать, если:"
+msgstr "Условие скрытия:"
 
 #: ../src/Dock.vala:159
 msgid "Monitor %d"
@@ -76,7 +76,7 @@ msgstr "Рабочий стол"
 
 #: ../src/desktop-plug.vala:26
 msgid "Change your wallpaper and customize your dock"
-msgstr "Изменить обои и настроить панель"
+msgstr "Выбор обоев и настройка док-панели"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
 #: ../src/desktop-plug.vala:156
@@ -88,7 +88,7 @@ msgstr "Фон рабочего стола"
 #: ../src/desktop-plug.vala:164 ../src/desktop-plug.vala:166
 #: ../src/desktop-plug.vala:168
 msgid "Dock"
-msgstr "Панель"
+msgstr "Док-панель"
 
 #: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
@@ -129,11 +129,11 @@ msgstr "Показать открытые окна"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show All Windows"
-msgstr "Показать все окна"
+msgstr "Показать все открытые окна"
 
 #: ../src/desktop-plug.vala:124
 msgid "Execute Custom Command"
-msgstr "Выполнить команду"
+msgstr "Выполнить пользовательскую команду"
 
 #: ../src/desktop-plug.vala:161 ../src/desktop-plug.vala:162
 msgid "Theme"
@@ -161,7 +161,7 @@ msgstr "Обои"
 
 #: ../src/Wallpaper.vala:141
 msgid "Custom…"
-msgstr "Другой…"
+msgstr "Другое…"
 
 #: ../src/Wallpaper.vala:146
 msgid "Centered"
@@ -169,11 +169,11 @@ msgstr "По центру"
 
 #: ../src/Wallpaper.vala:147
 msgid "Scaled"
-msgstr "Масштабированный"
+msgstr "Масштабировать"
 
 #: ../src/Wallpaper.vala:148
 msgid "Stretched"
-msgstr "Растянутый"
+msgstr "Растянуть"
 
 #: ../src/Wallpaper.vala:149
 msgid "Zoom"
@@ -181,7 +181,7 @@ msgstr "Увеличить"
 
 #: ../src/Wallpaper.vala:150
 msgid "Spanned"
-msgstr "Объединенный"
+msgstr "Составить"
 
 #: ../src/Wallpaper.vala:319
 msgid "Select a folder"
