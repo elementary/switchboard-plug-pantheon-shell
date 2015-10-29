@@ -100,18 +100,6 @@ namespace SetWallpaperContractor {
         return folder;
     }
 
-    private bool copy_to_local_folder (File source) {
-        try {
-            var dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
-            source.copy (dest, FileCopyFlags.OVERWRITE|FileCopyFlags.NOFOLLOW_SYMLINKS);
-        } catch (Error e) {
-            warning ("%s\n", e.message);
-            return false;
-        }
-
-        return true;
-    }
-
     public static int main (string[] args) {
         Gtk.init (ref args);
 
@@ -129,17 +117,16 @@ namespace SetWallpaperContractor {
         var files = new List<File> ();
         for (var i = 1; i < args.length; i++) {
             var file = File.new_for_path (args[i]);
-            var localfile = File.new_for_path (get_local_bg_location () + file.get_basename ());
 
             if (file != null) {
-                if (copy_to_local_folder (file)) {
-                    files.append (localfile);
-                } else {
-                    files.append (file);
-                }
+                string path = file.get_path ();
+                Posix.chmod (path, 0644);
+                FileUtils.symlink (path, get_local_bg_location () + file.get_basename ());
+                
+                files.append (file);
 
                 try {
-                    accounts_service.set_background_file (file.get_path ());
+                    accounts_service.set_background_file (path);
                 } catch (Error e) {
                     warning ("%s\n", e.message);
                 }        

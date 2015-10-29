@@ -215,8 +215,15 @@ class Wallpaper : EventBox {
         */
         try {
             var file = File.new_for_uri (current_wallpaper_path);
+            string path = file.get_path ();
 
-            accountsservice.set_background_file (file.get_path ());
+            var file_info = file.query_info ("*", 0);
+            if (file_info.get_is_symlink ()) {
+                path = file_info.get_symlink_target ();
+            }
+
+            Posix.chmod (path, 0644);
+            accountsservice.set_background_file (path);
         } catch (Error e) {
             warning (e.message);
         }
