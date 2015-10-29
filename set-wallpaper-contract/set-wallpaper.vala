@@ -100,6 +100,19 @@ namespace SetWallpaperContractor {
         return folder;
     }
 
+    private File? copy_bg_to_local (File source) {
+        File? dest = null;
+        try {
+            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.NOFOLLOW_SYMLINKS);
+        } catch (Error e) {
+            warning ("%s\n", e.message);
+            return null;
+        }
+
+        return dest;
+    }
+
     public static int main (string[] args) {
         Gtk.init (ref args);
 
@@ -120,10 +133,16 @@ namespace SetWallpaperContractor {
 
             if (file != null) {
                 string path = file.get_path ();
-                Posix.chmod (path, 0644);
-                FileUtils.symlink (path, get_local_bg_location () + file.get_basename ());
+                var localfile = copy_bg_to_local (file);
                 
-                files.append (file);
+                if (localfile != null) {
+                    files.append (localfile);
+                    path = localfile.get_path ();
+                } else {
+                    files.append (file);
+                }
+
+                Posix.chmod (path, 0644);
 
                 try {
                     accounts_service.set_background_file (path);
