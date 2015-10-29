@@ -229,7 +229,7 @@ class Wallpaper : EventBox {
 
         if (!(children is SolidColorContainer)) {
             current_wallpaper_path = children.uri;
-            settings.set_string ("picture-uri", current_wallpaper_path);
+            settings.set_string ("picture-uri", children.local_uri);
             update_accountsservice ();
 
             if (active_wallpaper == solid_color) {
@@ -391,8 +391,13 @@ class Wallpaper : EventBox {
                         continue;
                     }
 
+                    string local_uri = uri;
+                    if (!directory.get_path ().has_prefix ("/usr/share/backgrounds")) {
+                        local_uri = copy_bg_to_local (file).get_uri ();
+                    }
+
                     try {
-                        var wallpaper = new WallpaperContainer (uri);
+                        var wallpaper = new WallpaperContainer (uri, local_uri);
                         wallpaper_view.add (wallpaper);
                         wallpaper.show_all ();
 
@@ -463,6 +468,28 @@ class Wallpaper : EventBox {
         Cache.clear ();
     }
 
+    string get_local_bg_location () {
+        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
+    }
+
+    File? copy_bg_to_local (File source) {
+        File? dest = null;
+        try {
+            var dest_folder = File.new_for_path (get_local_bg_location ());
+            if (!dest_folder.query_exists ()) {
+                dest_folder.make_directory ();
+            }
+
+            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+        } catch (Error e) {
+            warning ("%s\n", e.message);
+            return null;
+        }
+
+        return dest;        
+    }
+
     void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
             File file = File.new_for_uri (sel.get_uris ()[0]);
@@ -473,29 +500,10 @@ class Wallpaper : EventBox {
                 return;
             }
 
-
-            string display_name = Filename.display_basename (file.get_path ());
-
-            var dest_folder = File.new_for_path (Environment.get_user_data_dir () + "/backgrounds");
-            var dest = File.new_for_path (Environment.get_user_data_dir () + "/backgrounds/" + display_name);
-            if (!dest_folder.query_exists ()) {
-                try {
-                    dest_folder.make_directory ();
-                } catch (Error e) {
-                    warning ("Creating local wallpaper directory failed: %s", e.message);
-                }
-            }
-
-            try {
-                file.copy (dest, 0);
-            } catch (Error e) {
-                warning ("Copying wallpaper to local directory failed: %s", e.message);
-            }
-
-            string uri = dest.get_uri ();
+            var dest = copy_bg_to_local (file);
 
             // Add the wallpaper name and thumbnail to the IconView
-            var wallpaper = new WallpaperContainer (uri);
+            var wallpaper = new WallpaperContainer (file.get_uri (), dest.get_uri ());
             wallpaper_view.add (wallpaper);
             wallpaper.show_all ();
 

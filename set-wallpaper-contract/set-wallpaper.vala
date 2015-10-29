@@ -103,6 +103,11 @@ namespace SetWallpaperContractor {
     private File? copy_bg_to_local (File source) {
         File? dest = null;
         try {
+            var dest_folder = File.new_for_path (get_local_bg_location ());
+            if (!dest_folder.query_exists ()) {
+                dest_folder.make_directory ();
+            }
+
             dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
