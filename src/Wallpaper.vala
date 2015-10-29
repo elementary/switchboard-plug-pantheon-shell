@@ -217,7 +217,6 @@ class Wallpaper : EventBox {
             var file = File.new_for_uri (current_wallpaper_path);
             string path = file.get_path ();
 
-            Posix.chmod (path, 0644);
             accountsservice.set_background_file (path);
         } catch (Error e) {
             warning (e.message);

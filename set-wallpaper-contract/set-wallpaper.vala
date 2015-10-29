@@ -104,7 +104,7 @@ namespace SetWallpaperContractor {
         File? dest = null;
         try {
             dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
-            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.NOFOLLOW_SYMLINKS);
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
             return null;
@@ -134,10 +134,9 @@ namespace SetWallpaperContractor {
             if (file != null) {
                 string path = file.get_path ();
                 var localfile = copy_bg_to_local (file);
-                
+
                 if (localfile != null) {
                     files.append (localfile);
-                    path = localfile.get_path ();
                 } else {
                     files.append (file);
                 }
