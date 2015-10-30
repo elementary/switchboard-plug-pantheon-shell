@@ -113,8 +113,6 @@ class Wallpaper : EventBox {
             warning (e.message);
         }
 
-        var vbox = new Box (Orientation.VERTICAL, 4);
-
         wallpaper_view = new Gtk.FlowBox ();
         wallpaper_view.activate_on_single_click = true;
         wallpaper_view.column_spacing = wallpaper_view.row_spacing = 6;
@@ -131,11 +129,12 @@ class Wallpaper : EventBox {
         drag_dest_set (wallpaper_view, DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
 
         var scrolled = new ScrolledWindow (null, null);
+        scrolled.expand = true;
         scrolled.add (wallpaper_view);
 
-        vbox.pack_start (scrolled, true, true, 5);
-
         folder_combo = new ComboBoxText ();
+        folder_combo.halign = Gtk.Align.START;
+        folder_combo.margin = 6;
         folder_combo.append ("pic", _("Pictures"));
         folder_combo.append ("sys", _("Backgrounds"));
         folder_combo.append ("cus", _("Custom…"));
@@ -161,34 +160,21 @@ class Wallpaper : EventBox {
 
         load_settings ();
 
-        var hbox = new Box (Orientation.HORIZONTAL, 0);
-
         var bbox = new ButtonBox (Orientation.HORIZONTAL);
-        bbox.set_margin_left (10);
-        bbox.set_spacing (5);
-        bbox.set_margin_top (8);
-        bbox.set_margin_bottom (8);
-        bbox.set_layout (ButtonBoxStyle.START);
-        bbox.add (folder_combo);
-
-        hbox.pack_start (bbox, false, false);
-
-        //Spacer
-        bbox = new ButtonBox (Orientation.HORIZONTAL);
-        bbox.set_margin_right (10);
-        bbox.set_spacing (5);
-        bbox.set_margin_top (8);
-        bbox.set_margin_bottom (8);
+        bbox.halign = Gtk.Align.END;
+        bbox.margin = 6;
+        bbox.set_spacing (6);
         bbox.set_layout (ButtonBoxStyle.END);
         bbox.add (combo);
         bbox.add (color_button);
 
-        hbox.pack_end (bbox, false, false);
-
-        vbox.pack_start (new Separator (Orientation.HORIZONTAL), false, true);
-        vbox.pack_start (hbox, false, false);
-
-        add (vbox);
+        var grid = new Gtk.Grid ();
+        grid.margin_top = 12;
+        grid.attach (scrolled, 0, 0, 2, 1);
+        grid.attach (new Separator (Orientation.HORIZONTAL), 0, 1, 2, 1);
+        grid.attach (folder_combo, 0, 2, 1, 1);
+        grid.attach (bbox, 1, 2, 1, 1);
+        add (grid);
     }
 
     void load_settings () {
