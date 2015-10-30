@@ -471,7 +471,7 @@ class Wallpaper : EventBox {
     }
 
     string get_local_bg_location () {
-        return Path.build_filename (Environment.get_user_config_dir (), "backgrounds") + "/";
+        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
     File? copy_bg_to_local (File source) {
@@ -502,10 +502,10 @@ class Wallpaper : EventBox {
                 return;
             }
 
-            string local_uri = file.get_path ();
+            string local_uri = file.get_uri ();
             var dest = copy_bg_to_local (file);
             if (dest != null) {
-                local_uri = dest.get_path ();
+                local_uri = dest.get_uri ();
             }
 
             // Add the wallpaper name and thumbnail to the IconView

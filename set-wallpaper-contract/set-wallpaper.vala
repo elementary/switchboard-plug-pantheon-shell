@@ -84,7 +84,7 @@ namespace SetWallpaperContractor {
     }
 
     private string get_local_bg_location () {
-        return Path.build_filename (Environment.get_user_config_dir (), "backgrounds") + "/";
+        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
     private File ensure_local_bg_exists () {
