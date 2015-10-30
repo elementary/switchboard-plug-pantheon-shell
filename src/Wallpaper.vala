@@ -215,9 +215,17 @@ class Wallpaper : EventBox {
         */
         try {
             var file = File.new_for_uri (current_wallpaper_path);
+            string uri = file.get_uri ();
             string path = file.get_path ();
 
+            var localfile = copy_bg_to_local (file);
+            if (localfile != null) {
+                uri = localfile.get_uri ();
+                path = localfile.get_path ();
+            }
+
             Posix.chmod (path, 0644);
+            settings.set_string ("picture-uri", uri);
             accountsservice.set_background_file (path);
         } catch (Error e) {
             warning (e.message);
@@ -229,7 +237,6 @@ class Wallpaper : EventBox {
 
         if (!(children is SolidColorContainer)) {
             current_wallpaper_path = children.uri;
-            settings.set_string ("picture-uri", children.local_uri);
             update_accountsservice ();
 
             if (active_wallpaper == solid_color) {
@@ -313,7 +320,7 @@ class Wallpaper : EventBox {
             clean_wallpapers ();
 
             var system_uri = "file:///usr/share/backgrounds";
-            var user_uri = GLib.File.new_for_path (GLib.Environment.get_user_data_dir () + "/backgrounds").get_uri ();
+            var user_uri = GLib.File.new_for_path (get_local_bg_location ()).get_uri ();
 
             load_wallpapers (system_uri, cancellable);
             load_wallpapers (user_uri, cancellable);
@@ -391,13 +398,8 @@ class Wallpaper : EventBox {
                         continue;
                     }
 
-                    string local_uri = uri;
-                    if (!directory.get_path ().has_prefix ("/usr/share/backgrounds")) {
-                        local_uri = copy_bg_to_local (file).get_uri ();
-                    }
-
                     try {
-                        var wallpaper = new WallpaperContainer (uri, local_uri);
+                        var wallpaper = new WallpaperContainer (uri);
                         wallpaper_view.add (wallpaper);
                         wallpaper.show_all ();
 
@@ -469,7 +471,7 @@ class Wallpaper : EventBox {
     }
 
     string get_local_bg_location () {
-        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
+        return Path.build_filename (Environment.get_user_config_dir (), "backgrounds") + "/";
     }
 
     File? copy_bg_to_local (File source) {
@@ -500,10 +502,14 @@ class Wallpaper : EventBox {
                 return;
             }
 
+            string local_uri = file.get_path ();
             var dest = copy_bg_to_local (file);
+            if (dest != null) {
+                local_uri = dest.get_path ();
+            }
 
             // Add the wallpaper name and thumbnail to the IconView
-            var wallpaper = new WallpaperContainer (file.get_uri (), dest.get_uri ());
+            var wallpaper = new WallpaperContainer (local_uri);
             wallpaper_view.add (wallpaper);
             wallpaper.show_all ();
 

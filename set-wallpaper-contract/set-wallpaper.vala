@@ -84,7 +84,7 @@ namespace SetWallpaperContractor {
     }
 
     private string get_local_bg_location () {
-        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
+        return Path.build_filename (Environment.get_user_config_dir (), "backgrounds") + "/";
     }
 
     private File ensure_local_bg_exists () {
@@ -137,11 +137,12 @@ namespace SetWallpaperContractor {
             var file = File.new_for_path (args[i]);
 
             if (file != null) {
-                string path = file.get_path ();
                 var localfile = copy_bg_to_local (file);
 
+                string path = file.get_path ();
                 if (localfile != null) {
                     files.append (localfile);
+                    path = localfile.get_path ();
                 } else {
                     files.append (file);
                 }

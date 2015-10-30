@@ -15,7 +15,6 @@
 public class WallpaperContainer : Gtk.FlowBoxChild {
     
     public string uri { get; construct; }
-    public string local_uri { get; construct; }
     public Gdk.Pixbuf thumb { get; construct; }
 
     private int thumb_margin = 3;
@@ -27,8 +26,8 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
                                                color: @selected_fg_color;
                                            }""";
 
-    public WallpaperContainer (string uri, string local_uri) {
-        Object (uri: uri, local_uri: local_uri, thumb: null);
+    public WallpaperContainer (string uri) {
+        Object (uri: uri, thumb: null);
     }
 
     construct {
