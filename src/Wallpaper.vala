@@ -96,7 +96,9 @@ class Wallpaper : EventBox {
 
     //name of the default-wallpaper-link that we can prevent loading it again
     //(assumes that the defaultwallpaper is also in the system wallpaper directory)
-    static string default_link = "file:///usr/share/backgrounds/elementaryos-default";
+    static string default_link = "file://%s/elementaryos-default".printf (SYSTEM_BACKGROUNDS_PATH);
+
+    const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
 
     public Wallpaper (Switchboard.Plug _plug) {
         plug = _plug;
@@ -218,7 +220,7 @@ class Wallpaper : EventBox {
             string uri = file.get_uri ();
             string path = file.get_path ();
 
-            if (!path.has_prefix ("/usr/share/backgrounds")) {
+            if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH)) {
                 var localfile = copy_for_library (file);
                 if (localfile != null) {
                     uri = localfile.get_uri ();
@@ -324,7 +326,7 @@ class Wallpaper : EventBox {
         } else if (folder_combo.get_active () == 1) {
             clean_wallpapers ();
 
-            var system_uri = "file:///usr/share/backgrounds";
+            var system_uri = "file://" + SYSTEM_BACKGROUNDS_PATH;
             var user_uri = GLib.File.new_for_path (get_local_bg_location ()).get_uri ();
 
             load_wallpapers (system_uri, cancellable);
