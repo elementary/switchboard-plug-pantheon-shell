@@ -477,7 +477,7 @@ class Wallpaper : EventBox {
         Cache.clear ();
     }
 
-    string get_local_bg_location () {
+    private string get_local_bg_location () {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
