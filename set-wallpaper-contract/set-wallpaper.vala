@@ -161,7 +161,6 @@ namespace SetWallpaperContractor {
             var file = File.new_for_path (args[i]);
 
             if (file != null) {
-                var greeter_file = copy_for_greeter (file);
 
                 string path = file.get_path ();
                 File append_file = file;
@@ -174,6 +173,7 @@ namespace SetWallpaperContractor {
 
                 files.append (append_file);
 
+                var greeter_file = copy_for_greeter (file);
                 if (greeter_file != null) {
                     path = greeter_file.get_path ();
                 }
