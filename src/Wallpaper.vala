@@ -218,13 +218,18 @@ class Wallpaper : EventBox {
             string uri = file.get_uri ();
             string path = file.get_path ();
 
-            var localfile = copy_bg_to_local (file);
-            if (localfile != null) {
-                uri = localfile.get_uri ();
-                path = localfile.get_path ();
+            if (!path.has_prefix ("/usr/share/backgrounds")) {
+                var localfile = copy_for_library (file);
+                if (localfile != null) {
+                    uri = localfile.get_uri ();
+                }
             }
 
-            Posix.chmod (path, 0644);
+            var greeter_file = copy_for_greeter (file);
+            if (greeter_file != null) {
+                path = greeter_file.get_path ();
+            }
+
             settings.set_string ("picture-uri", uri);
             accountsservice.set_background_file (path);
         } catch (Error e) {
@@ -474,22 +479,46 @@ class Wallpaper : EventBox {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
-    File? copy_bg_to_local (File source) {
+    private File? copy_for_library (File source) {
+        File? dest = null;
+
+        try {
+            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+        } catch (Error e) {
+            warning ("%s\n", e.message);
+        }   
+
+        return dest;    
+    }
+
+    private File? copy_for_greeter (File source) {
         File? dest = null;
         try {
-            var dest_folder = File.new_for_path (get_local_bg_location ());
-            if (!dest_folder.query_exists ()) {
-                dest_folder.make_directory ();
+            string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
+            if (greeter_data_dir == "") {
+                greeter_data_dir = Path.build_filename ("/var/lib/lightdm-data/", Environment.get_user_name (), "wallpaper");
             }
 
-            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            var folder = File.new_for_path (greeter_data_dir);
+            if (folder.query_exists ()) {
+                var enumerator = folder.enumerate_children ("standard::*", FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                FileInfo? info = null;
+                while ((info = enumerator.next_file ()) != null) {
+                    enumerator.get_child (info).@delete ();
+                }
+            } else {
+                folder.make_directory_with_parents ();
+            }
+
+            dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
             return null;
         }
 
-        return dest;        
+        return dest;
     }
 
     void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
@@ -503,7 +532,7 @@ class Wallpaper : EventBox {
             }
 
             string local_uri = file.get_uri ();
-            var dest = copy_bg_to_local (file);
+            var dest = copy_for_library (file);
             if (dest != null) {
                 local_uri = dest.get_uri ();
             }

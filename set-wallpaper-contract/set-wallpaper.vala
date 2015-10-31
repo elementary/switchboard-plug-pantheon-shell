@@ -100,15 +100,39 @@ namespace SetWallpaperContractor {
         return folder;
     }
 
-    private File? copy_bg_to_local (File source) {
+    private File? copy_for_library (File source) {
+        File? dest = null;
+
+        try {
+            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+        } catch (Error e) {
+            warning ("%s\n", e.message);
+        }   
+
+        return dest;    
+    }
+
+    private File? copy_for_greeter (File source) {
         File? dest = null;
         try {
-            var dest_folder = File.new_for_path (get_local_bg_location ());
-            if (!dest_folder.query_exists ()) {
-                dest_folder.make_directory ();
+            string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
+            if (greeter_data_dir == "") {
+                greeter_data_dir = Path.build_filename ("/var/lib/lightdm-data/", Environment.get_user_name (), "wallpaper");
             }
 
-            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            var folder = File.new_for_path (greeter_data_dir);
+            if (folder.query_exists ()) {
+                var enumerator = folder.enumerate_children ("standard::*", FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                FileInfo? info = null;
+                while ((info = enumerator.next_file ()) != null) {
+                    enumerator.get_child (info).@delete ();
+                }
+            } else {
+                folder.make_directory_with_parents ();
+            }
+
+            dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
@@ -137,17 +161,22 @@ namespace SetWallpaperContractor {
             var file = File.new_for_path (args[i]);
 
             if (file != null) {
-                var localfile = copy_bg_to_local (file);
+                var greeter_file = copy_for_greeter (file);
 
                 string path = file.get_path ();
-                if (localfile != null) {
-                    files.append (localfile);
-                    path = localfile.get_path ();
-                } else {
-                    files.append (file);
+                File append_file = file;
+                if (!path.has_prefix ("/usr/share/backgrounds")) {
+                    var local_file = copy_for_library (file);
+                    if (local_file != null) {
+                        append_file = local_file;
+                    }
                 }
 
-                Posix.chmod (path, 0644);
+                files.append (append_file);
+
+                if (greeter_file != null) {
+                    path = greeter_file.get_path ();
+                }
 
                 try {
                     accounts_service.set_background_file (path);
