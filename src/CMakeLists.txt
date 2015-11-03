@@ -3,6 +3,11 @@ find_package (PkgConfig)
 # Add all your dependencies to the list below
 pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite gtk+-3.0>=3.14 gnome-desktop-3.0 plank>=0.7.1.1137)
 
+pkg_check_modules(PLANK011 QUIET plank>=0.10.9)
+if (PLANK011_FOUND)
+  set (PLANK_OPTIONS --define=HAVE_PLANK_0_11)
+endif ()
+
 add_definitions (${DEPS_CFLAGS})
 link_libraries (${DEPS_LIBRARIES})
 link_directories (${DEPS_LIBRARY_DIRS})
@@ -32,6 +37,7 @@ PACKAGES
 OPTIONS
     --thread
     --vapidir=${CMAKE_SOURCE_DIR}/vapi
+    ${PLANK_OPTIONS}
 )
 
 add_library (${PLUGNAME} MODULE ${VALA_C})

@@ -15,8 +15,13 @@ public class Dock : Gtk.Grid {
         icon_size.append ("48", _("Normal"));
         icon_size.append ("64", _("Large"));
 
+#if HAVE_PLANK_0_11
+        Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
+        dock_preferences = new Plank.DockPreferences ("dock1");
+#else
         Plank.Services.Paths.initialize ("plank", Constants.PLANKDATADIR);
         dock_preferences = new Plank.DockPreferences.with_file (Plank.Services.Paths.AppConfigFolder.get_child ("dock1").get_child ("settings"));
+#endif
         var current = dock_preferences.IconSize;
 
         if (current != 48 && current != 64) {
