@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 20:22-0500\n"
-"PO-Revision-Date: 2015-10-31 23:53+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
+"PO-Revision-Date: 2015-11-04 12:52+0000\n"
+"Last-Translator: Rafael Belenos Govannon <Unknown>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-02 05:28+0000\n"
+"X-Launchpad-Export-Date: 2015-11-05 05:42+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
 "Language: pt_BR\n"
 
@@ -177,7 +177,7 @@ msgstr "Esticado"
 
 #: ../src/Wallpaper.vala:149
 msgid "Zoom"
-msgstr "Ampliar"
+msgstr "Ampliado"
 
 #: ../src/Wallpaper.vala:150
 msgid "Spanned"
