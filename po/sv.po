@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:44+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-11-11 05:43+0000\n"
+"X-Generator: Launchpad (build 17843)\n"
 "Language: sv\n"
 
 #: ../src/Dock.vala:17
@@ -194,24 +194,3 @@ msgstr "Avbryt"
 #: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Öppna"
-
-#~ msgid "Hide Mode:"
-#~ msgstr "Sätt att dölja:"
-
-#~ msgid "Solid Color"
-#~ msgstr "Enfärgad"
-
-#~ msgid "Never hide"
-#~ msgstr "Dölj aldrig"
-
-#~ msgid "Automatically hide when not being used"
-#~ msgstr "Dölj automatiskt när dockan inte används"
-
-#~ msgid "Hide when focused window overlaps the dock"
-#~ msgstr "Dölj när aktivt fönster täcker dockan"
-
-#~ msgid "Hide when focused window is maximized"
-#~ msgstr "Dölj när aktivt fönster är maximerat"
-
-#~ msgid "Hide when any window overlaps the dock"
-#~ msgstr "Dölj när fönster täcker dockan"

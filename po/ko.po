@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:44+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-11-11 05:43+0000\n"
+"X-Generator: Launchpad (build 17843)\n"
 
 #: ../src/Dock.vala:17
 msgid "Normal"
@@ -193,24 +193,3 @@ msgstr "취소"
 #: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "열기"
-
-#~ msgid "Hide Mode:"
-#~ msgstr "숨기기 모드:"
-
-#~ msgid "Solid Color"
-#~ msgstr "단색"
-
-#~ msgid "Never hide"
-#~ msgstr "숨기지 않기"
-
-#~ msgid "Automatically hide when not being used"
-#~ msgstr "사용되지 않을 때 자동으로 숨기기"
-
-#~ msgid "Hide when focused window is maximized"
-#~ msgstr "초점 된 창이 최대화 될 때 숨기기"
-
-#~ msgid "Hide when focused window overlaps the dock"
-#~ msgstr "초점 된 창이 독에 중첩될 때 숨기기"
-
-#~ msgid "Hide when any window overlaps the dock"
-#~ msgstr "독과 겹칠땐 언제나 창을 숨기기"

@@ -9,8 +9,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:43+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-11-11 05:43+0000\n"
+"X-Generator: Launchpad (build 17843)\n"
 
 #: ../src/Dock.vala:17
 msgid "Normal"
@@ -188,15 +188,3 @@ msgstr "Anulo"
 #: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Hap"
-
-#~ msgid "Automatically hide when not being used"
-#~ msgstr "Fshehe vetvetishëm kur nuk përdoret"
-
-#~ msgid "Never hide"
-#~ msgstr "Mos e fsheh kurrë"
-
-#~ msgid "Hide Mode:"
-#~ msgstr "Mënyra e fshehjes:"
-
-#~ msgid "Hide when focused window is maximized"
-#~ msgstr "Fshehe kur dritarja e fokusuar maksimizohet"

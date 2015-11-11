@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:43+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-11-11 05:43+0000\n"
+"X-Generator: Launchpad (build 17843)\n"
 "Language: cs\n"
 
 #: ../src/Dock.vala:17
@@ -194,21 +194,3 @@ msgstr "Zrušit"
 #: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Otevřít"
-
-#~ msgid "Hide Mode:"
-#~ msgstr "Režim skrývání:"
-
-#~ msgid "Solid Color"
-#~ msgstr "Jednobarevný"
-
-#~ msgid "Never hide"
-#~ msgstr "Nikdy neskrývat"
-
-#~ msgid "Automatically hide when not being used"
-#~ msgstr "Automaticky skrýt pokud není použita"
-
-#~ msgid "Hide when focused window overlaps the dock"
-#~ msgstr "Skrýt pokud aktuální okno přesahuje Lištu aplikací"
-
-#~ msgid "Hide when focused window is maximized"
-#~ msgstr "Skrýt pokud je aktuální okno maximalizováno"

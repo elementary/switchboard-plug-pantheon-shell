@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-16 05:44+0000\n"
-"X-Generator: Launchpad (build 17737)\n"
+"X-Launchpad-Export-Date: 2015-11-11 05:43+0000\n"
+"X-Generator: Launchpad (build 17843)\n"
 "Language: pt\n"
 
 #: ../src/Dock.vala:17
@@ -194,24 +194,3 @@ msgstr "Cancelar"
 #: ../src/Wallpaper.vala:321
 msgid "Open"
 msgstr "Abrir"
-
-#~ msgid "Hide Mode:"
-#~ msgstr "Modo de ocultação:"
-
-#~ msgid "Solid Color"
-#~ msgstr "Cor Sólida"
-
-#~ msgid "Never hide"
-#~ msgstr "Nunca esconder"
-
-#~ msgid "Automatically hide when not being used"
-#~ msgstr "Esconder automaticamente quando não está em uso"
-
-#~ msgid "Hide when focused window overlaps the dock"
-#~ msgstr "Esconder quando a janela em foco sobrepor a dock"
-
-#~ msgid "Hide when focused window is maximized"
-#~ msgstr "Esconder quando a janela em foco é maximizada"
-
-#~ msgid "Hide when any window overlaps the dock"
-#~ msgstr "Esconder quando qualquer aplicação se sobrepor à dock"
