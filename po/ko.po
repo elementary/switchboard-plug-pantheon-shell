@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-09-14 20:22-0500\n"
-"PO-Revision-Date: 2015-05-17 05:52+0000\n"
+"PO-Revision-Date: 2015-11-12 13:50+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-11 05:43+0000\n"
-"X-Generator: Launchpad (build 17843)\n"
+"X-Launchpad-Export-Date: 2015-11-13 05:27+0000\n"
+"X-Generator: Launchpad (build 17845)\n"
 
 #: ../src/Dock.vala:17
 msgid "Normal"
@@ -31,19 +31,19 @@ msgstr "사용자 설정 (%dpx)"
 
 #: ../src/Dock.vala:42
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "사용 중인 창이 최대화 됨"
 
 #: ../src/Dock.vala:43
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "사용 중인 창이 런처를 덮음"
 
 #: ../src/Dock.vala:44
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "런처를 덮는 모든 창"
 
 #: ../src/Dock.vala:45
 msgid "Not being used"
-msgstr ""
+msgstr "사용된 적 없음"
 
 #: ../src/Dock.vala:82
 msgid "Primary Display:"
@@ -59,7 +59,7 @@ msgstr "아이콘 크기:"
 
 #: ../src/Dock.vala:119
 msgid "Hide when:"
-msgstr ""
+msgstr "다음 경우에 숨김:"
 
 #: ../src/Dock.vala:159
 msgid "Monitor %d"
