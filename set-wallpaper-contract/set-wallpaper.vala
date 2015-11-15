@@ -19,6 +19,8 @@ namespace SetWallpaperContractor {
         </transition>
     """;
 
+    const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
+
     private int delay_value = 60;
 
     [DBus (name = "org.freedesktop.Accounts.User")]
@@ -117,9 +119,6 @@ namespace SetWallpaperContractor {
         File? dest = null;
         try {
             string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
-            if (greeter_data_dir == "") {
-                greeter_data_dir = Path.build_filename ("/var/lib/lightdm-data/", Environment.get_user_name (), "wallpaper");
-            }
 
             var folder = File.new_for_path (greeter_data_dir);
             if (folder.query_exists ()) {
@@ -164,7 +163,7 @@ namespace SetWallpaperContractor {
 
                 string path = file.get_path ();
                 File append_file = file;
-                if (!path.has_prefix ("/usr/share/backgrounds")) {
+                if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH)) {
                     var local_file = copy_for_library (file);
                     if (local_file != null) {
                         append_file = local_file;
