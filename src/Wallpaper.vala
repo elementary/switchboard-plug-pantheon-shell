@@ -96,7 +96,9 @@ class Wallpaper : EventBox {
 
     //name of the default-wallpaper-link that we can prevent loading it again
     //(assumes that the defaultwallpaper is also in the system wallpaper directory)
-    static string default_link = "file:///usr/share/backgrounds/elementaryos-default";
+    static string default_link = "file://%s/elementaryos-default".printf (SYSTEM_BACKGROUNDS_PATH);
+
+    const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
 
     public Wallpaper (Switchboard.Plug _plug) {
         plug = _plug;
@@ -201,8 +203,23 @@ class Wallpaper : EventBox {
         */
         try {
             var file = File.new_for_uri (current_wallpaper_path);
+            string uri = file.get_uri ();
+            string path = file.get_path ();
 
-            accountsservice.set_background_file (file.get_path ());
+            if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH)) {
+                var localfile = copy_for_library (file);
+                if (localfile != null) {
+                    uri = localfile.get_uri ();
+                }
+            }
+
+            var greeter_file = copy_for_greeter (file);
+            if (greeter_file != null) {
+                path = greeter_file.get_path ();
+            }
+
+            settings.set_string ("picture-uri", uri);
+            accountsservice.set_background_file (path);
         } catch (Error e) {
             warning (e.message);
         }
@@ -213,7 +230,6 @@ class Wallpaper : EventBox {
 
         if (!(children is SolidColorContainer)) {
             current_wallpaper_path = children.uri;
-            settings.set_string ("picture-uri", current_wallpaper_path);
             update_accountsservice ();
 
             if (active_wallpaper == solid_color) {
@@ -296,8 +312,8 @@ class Wallpaper : EventBox {
         } else if (folder_combo.get_active () == 1) {
             clean_wallpapers ();
 
-            var system_uri = "file:///usr/share/backgrounds";
-            var user_uri = GLib.File.new_for_path (GLib.Environment.get_user_data_dir () + "/backgrounds").get_uri ();
+            var system_uri = "file://" + SYSTEM_BACKGROUNDS_PATH;
+            var user_uri = GLib.File.new_for_path (get_local_bg_location ()).get_uri ();
 
             load_wallpapers (system_uri, cancellable);
             load_wallpapers (user_uri, cancellable);
@@ -447,6 +463,52 @@ class Wallpaper : EventBox {
         Cache.clear ();
     }
 
+    private string get_local_bg_location () {
+        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
+    }
+
+    private File? copy_for_library (File source) {
+        File? dest = null;
+
+        try {
+            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+        } catch (Error e) {
+            warning ("%s\n", e.message);
+        }   
+
+        return dest;    
+    }
+
+    private File? copy_for_greeter (File source) {
+        File? dest = null;
+        try {
+            string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
+            if (greeter_data_dir == "") {
+                greeter_data_dir = Path.build_filename ("/var/lib/lightdm-data/", Environment.get_user_name (), "wallpaper");
+            }
+
+            var folder = File.new_for_path (greeter_data_dir);
+            if (folder.query_exists ()) {
+                var enumerator = folder.enumerate_children ("standard::*", FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                FileInfo? info = null;
+                while ((info = enumerator.next_file ()) != null) {
+                    enumerator.get_child (info).@delete ();
+                }
+            } else {
+                folder.make_directory_with_parents ();
+            }
+
+            dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+        } catch (Error e) {
+            warning ("%s\n", e.message);
+            return null;
+        }
+
+        return dest;
+    }
+
     void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
             File file = File.new_for_uri (sel.get_uris ()[0]);
@@ -457,29 +519,14 @@ class Wallpaper : EventBox {
                 return;
             }
 
-
-            string display_name = Filename.display_basename (file.get_path ());
-
-            var dest_folder = File.new_for_path (Environment.get_user_data_dir () + "/backgrounds");
-            var dest = File.new_for_path (Environment.get_user_data_dir () + "/backgrounds/" + display_name);
-            if (!dest_folder.query_exists ()) {
-                try {
-                    dest_folder.make_directory ();
-                } catch (Error e) {
-                    warning ("Creating local wallpaper directory failed: %s", e.message);
-                }
+            string local_uri = file.get_uri ();
+            var dest = copy_for_library (file);
+            if (dest != null) {
+                local_uri = dest.get_uri ();
             }
-
-            try {
-                file.copy (dest, 0);
-            } catch (Error e) {
-                warning ("Copying wallpaper to local directory failed: %s", e.message);
-            }
-
-            string uri = dest.get_uri ();
 
             // Add the wallpaper name and thumbnail to the IconView
-            var wallpaper = new WallpaperContainer (uri);
+            var wallpaper = new WallpaperContainer (local_uri);
             wallpaper_view.add (wallpaper);
             wallpaper.show_all ();
 

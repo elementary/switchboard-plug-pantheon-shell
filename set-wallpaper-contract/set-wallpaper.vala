@@ -19,6 +19,8 @@ namespace SetWallpaperContractor {
         </transition>
     """;
 
+    const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
+
     private int delay_value = 60;
 
     [DBus (name = "org.freedesktop.Accounts.User")]
@@ -100,16 +102,43 @@ namespace SetWallpaperContractor {
         return folder;
     }
 
-    private bool copy_to_local_folder (File source) {
+    private File? copy_for_library (File source) {
+        File? dest = null;
+
         try {
-            var dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
-            source.copy (dest, FileCopyFlags.OVERWRITE|FileCopyFlags.NOFOLLOW_SYMLINKS);
+            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
-            return false;
+        }   
+
+        return dest;    
+    }
+
+    private File? copy_for_greeter (File source) {
+        File? dest = null;
+        try {
+            string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
+
+            var folder = File.new_for_path (greeter_data_dir);
+            if (folder.query_exists ()) {
+                var enumerator = folder.enumerate_children ("standard::*", FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
+                FileInfo? info = null;
+                while ((info = enumerator.next_file ()) != null) {
+                    enumerator.get_child (info).@delete ();
+                }
+            } else {
+                folder.make_directory_with_parents ();
+            }
+
+            dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
+            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+        } catch (Error e) {
+            warning ("%s\n", e.message);
+            return null;
         }
 
-        return true;
+        return dest;
     }
 
     public static int main (string[] args) {
@@ -129,17 +158,27 @@ namespace SetWallpaperContractor {
         var files = new List<File> ();
         for (var i = 1; i < args.length; i++) {
             var file = File.new_for_path (args[i]);
-            var localfile = File.new_for_path (get_local_bg_location () + file.get_basename ());
 
             if (file != null) {
-                if (copy_to_local_folder (file)) {
-                    files.append (localfile);
-                } else {
-                    files.append (file);
+
+                string path = file.get_path ();
+                File append_file = file;
+                if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH)) {
+                    var local_file = copy_for_library (file);
+                    if (local_file != null) {
+                        append_file = local_file;
+                    }
+                }
+
+                files.append (append_file);
+
+                var greeter_file = copy_for_greeter (file);
+                if (greeter_file != null) {
+                    path = greeter_file.get_path ();
                 }
 
                 try {
-                    accounts_service.set_background_file (file.get_path ());
+                    accounts_service.set_background_file (path);
                 } catch (Error e) {
                     warning ("%s\n", e.message);
                 }        
