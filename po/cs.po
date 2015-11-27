@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 20:22-0500\n"
-"PO-Revision-Date: 2015-02-23 16:56+0000\n"
-"Last-Translator: Tomo Moto <Unknown>\n"
+"PO-Revision-Date: 2015-11-26 21:19+0000\n"
+"Last-Translator: Pavel Vybíral <vybiral.pav@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-25 05:30+0000\n"
+"X-Launchpad-Export-Date: 2015-11-27 05:33+0000\n"
 "X-Generator: Launchpad (build 17850)\n"
 "Language: cs\n"
 
@@ -32,19 +32,19 @@ msgstr "Vlastní (%dpx)"
 
 #: ../src/Dock.vala:42
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "Aktivní okno je maximalizováno"
 
 #: ../src/Dock.vala:43
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "Aktivní okno překrývá dok"
 
 #: ../src/Dock.vala:44
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Jakékoliv okno překrývá dok"
 
 #: ../src/Dock.vala:45
 msgid "Not being used"
-msgstr ""
+msgstr "Nepoužíváno"
 
 #: ../src/Dock.vala:82
 msgid "Primary Display:"
@@ -60,7 +60,7 @@ msgstr "Velikost ikon:"
 
 #: ../src/Dock.vala:119
 msgid "Hide when:"
-msgstr ""
+msgstr "Skrýt když:"
 
 #: ../src/Dock.vala:159
 msgid "Monitor %d"
