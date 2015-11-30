@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 20:22-0500\n"
-"PO-Revision-Date: 2015-04-18 13:31+0000\n"
+"PO-Revision-Date: 2015-11-29 23:00+0000\n"
 "Last-Translator: Pedro Monteiro <Unknown>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-25 05:31+0000\n"
+"X-Launchpad-Export-Date: 2015-11-30 05:26+0000\n"
 "X-Generator: Launchpad (build 17850)\n"
 "Language: pt\n"
 
@@ -32,15 +32,15 @@ msgstr "Personalizado (%dpx)"
 
 #: ../src/Dock.vala:42
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "Janela focada está maximizada"
 
 #: ../src/Dock.vala:43
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "Janela focada sobrepõe-se à dock"
 
 #: ../src/Dock.vala:44
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Qualquer janela se sobrepõe à dock"
 
 #: ../src/Dock.vala:45
 msgid "Not being used"
@@ -60,7 +60,7 @@ msgstr "Tamanho dos ícones:"
 
 #: ../src/Dock.vala:119
 msgid "Hide when:"
-msgstr ""
+msgstr "Esconder quando:"
 
 #: ../src/Dock.vala:159
 msgid "Monitor %d"
