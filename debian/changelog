@@ -1,3 +1,9 @@
+switchboard-plug-pantheon-shell (0.2.2.1) trusty; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Wed, 09 Dec 2015 14:12:55 -0600
+
 switchboard-plug-pantheon-shell (0.2.2) trusty; urgency=medium
 
   * New upstream release.
