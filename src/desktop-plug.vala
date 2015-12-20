@@ -23,7 +23,7 @@ public class GalaPlug : Switchboard.Plug {
         Object (category: Category.PERSONAL,
                 code_name: "pantheon-desktop",
                 display_name: _("Desktop"),
-                description: _("Change your wallpaper and customize your dock"),
+                description: _("Configure the dock, hot corners, and change wallpaper"),
                 icon: "preferences-desktop-wallpaper");
     }
 
