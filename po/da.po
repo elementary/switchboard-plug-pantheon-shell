@@ -7,86 +7,130 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 20:22-0500\n"
+"POT-Creation-Date: 2015-12-21 12:26-0200\n"
 "PO-Revision-Date: 2015-12-08 11:52+0000\n"
 "Last-Translator: Jimmy Merrild Krag <jimmy@kragenet.dk>\n"
 "Language-Team: Danish <da@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-17 05:29+0000\n"
+"X-Launchpad-Export-Date: 2015-12-22 05:02+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 "Language: da\n"
 
-#: ../src/Dock.vala:17
+#: ../src/Dock.vala:15
 msgid "Normal"
 msgstr "Normal"
 
-#: ../src/Dock.vala:18
+#: ../src/Dock.vala:16
 msgid "Large"
 msgstr "Stor"
 
-#: ../src/Dock.vala:26
+#: ../src/Dock.vala:28
 msgid "Custom (%dpx)"
 msgstr "Brugerdefineret (%dpx)"
 
-#: ../src/Dock.vala:42
+#: ../src/Dock.vala:37
 msgid "Focused window is maximized"
 msgstr "Det aktive vindue er maksimeret"
 
-#: ../src/Dock.vala:43
+#: ../src/Dock.vala:38
 msgid "Focused window overlaps the dock"
 msgstr "Det aktive vindue overlapper dokken"
 
-#: ../src/Dock.vala:44
+#: ../src/Dock.vala:39
 msgid "Any window overlaps the dock"
 msgstr "Et hvilket som helst vindue overlapper dokken"
 
-#: ../src/Dock.vala:45
+#: ../src/Dock.vala:40
 msgid "Not being used"
 msgstr "Anvendes ikke"
 
-#: ../src/Dock.vala:82
+#: ../src/Dock.vala:75
 msgid "Primary Display:"
 msgstr "Primær skærm:"
 
-#: ../src/Dock.vala:86
+#: ../src/Dock.vala:79
 msgid "Display:"
 msgstr "Skærm:"
 
-#: ../src/Dock.vala:117
+#: ../src/Dock.vala:110
 msgid "Icon Size:"
 msgstr "Ikonstørrelse:"
 
-#: ../src/Dock.vala:119
+#: ../src/Dock.vala:112
 msgid "Hide when:"
 msgstr "Skjul når:"
 
-#: ../src/Dock.vala:159
+#: ../src/Dock.vala:151
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: ../src/Dock.vala:164
+#: ../src/Dock.vala:156
 msgid "Display %d"
 msgstr "Skærm %d"
+
+#: ../src/Wallpaper.vala:140
+msgid "Pictures"
+msgstr "Billeder"
+
+#: ../src/Wallpaper.vala:141
+msgid "Backgrounds"
+msgstr "Baggrunde"
+
+#: ../src/Wallpaper.vala:142
+msgid "Custom…"
+msgstr "Tilpasset…"
+
+#: ../src/Wallpaper.vala:147
+msgid "Centered"
+msgstr "Centreret"
+
+#: ../src/Wallpaper.vala:148
+msgid "Scaled"
+msgstr "Skaleret"
+
+#: ../src/Wallpaper.vala:149
+msgid "Stretched"
+msgstr "Strukket"
+
+#: ../src/Wallpaper.vala:150
+msgid "Zoom"
+msgstr "Zoom"
+
+#: ../src/Wallpaper.vala:151
+msgid "Spanned"
+msgstr "Udspændt"
+
+#: ../src/Wallpaper.vala:321
+msgid "Select a folder"
+msgstr "Vælg en mappe"
+
+#: ../src/Wallpaper.vala:322
+msgid "Cancel"
+msgstr "Annullér"
+
+#: ../src/Wallpaper.vala:323
+msgid "Open"
+msgstr "Åbn"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
 msgstr "Skrivebord"
 
 #: ../src/desktop-plug.vala:26
-msgid "Change your wallpaper and customize your dock"
-msgstr "Skift baggrundsbillede og konfigurér din dok"
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
 
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
-#: ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:158
 msgid "Wallpaper"
 msgstr "Baggrundsbillede"
 
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:158
-#: ../src/desktop-plug.vala:160 ../src/desktop-plug.vala:162
-#: ../src/desktop-plug.vala:164 ../src/desktop-plug.vala:166
-#: ../src/desktop-plug.vala:168
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
+#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
+#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
+#: ../src/desktop-plug.vala:170
 msgid "Dock"
 msgstr "Dok"
 
@@ -94,103 +138,59 @@ msgstr "Dok"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Når markøren flyttes til et hjørne af skærmen:"
 
-#: ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:96
 msgid "Custom Command:"
 msgstr "Brugerdefineret kommando:"
 
-#: ../src/desktop-plug.vala:112 ../src/desktop-plug.vala:169
-#: ../src/desktop-plug.vala:170
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
+#: ../src/desktop-plug.vala:172
 msgid "Hot Corners"
 msgstr "Skærmhjørner"
 
-#: ../src/desktop-plug.vala:117
+#: ../src/desktop-plug.vala:119
 msgid "Do Nothing"
 msgstr "Gør ingenting"
 
-#: ../src/desktop-plug.vala:118
+#: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
 msgstr "Multitasking synsvinkel"
 
-#: ../src/desktop-plug.vala:119
+#: ../src/desktop-plug.vala:121
 msgid "Maximize Current Window"
 msgstr "Maksimér nuværende vindue"
 
-#: ../src/desktop-plug.vala:120
+#: ../src/desktop-plug.vala:122
 msgid "Minimize Current Window"
 msgstr "Minimér nuværende vindue"
 
-#: ../src/desktop-plug.vala:121
+#: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
 msgstr "Vis applikationsmenuen"
 
-#: ../src/desktop-plug.vala:122
+#: ../src/desktop-plug.vala:124
 msgid "Window Overview"
 msgstr "Vinduesoversigt"
 
-#: ../src/desktop-plug.vala:123
+#: ../src/desktop-plug.vala:125
 msgid "Show All Windows"
 msgstr "Vis alle vinduer"
 
-#: ../src/desktop-plug.vala:124
+#: ../src/desktop-plug.vala:126
 msgid "Execute Custom Command"
 msgstr "Kør brugerdefineret kommando"
 
-#: ../src/desktop-plug.vala:161 ../src/desktop-plug.vala:162
+#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
+#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
 msgid "Hide Mode"
 msgstr "Skjult tilstand"
 
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
+#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
 msgid "Icon Size"
 msgstr "Ikonstørrelse"
 
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
+#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
 msgid "Display"
 msgstr "Skærm"
-
-#: ../src/Wallpaper.vala:139
-msgid "Pictures"
-msgstr "Billeder"
-
-#: ../src/Wallpaper.vala:140
-msgid "Backgrounds"
-msgstr "Baggrunde"
-
-#: ../src/Wallpaper.vala:141
-msgid "Custom…"
-msgstr "Tilpasset…"
-
-#: ../src/Wallpaper.vala:146
-msgid "Centered"
-msgstr "Centreret"
-
-#: ../src/Wallpaper.vala:147
-msgid "Scaled"
-msgstr "Skaleret"
-
-#: ../src/Wallpaper.vala:148
-msgid "Stretched"
-msgstr "Strukket"
-
-#: ../src/Wallpaper.vala:149
-msgid "Zoom"
-msgstr "Zoom"
-
-#: ../src/Wallpaper.vala:150
-msgid "Spanned"
-msgstr "Udspændt"
-
-#: ../src/Wallpaper.vala:319
-msgid "Select a folder"
-msgstr "Vælg en mappe"
-
-#: ../src/Wallpaper.vala:320
-msgid "Cancel"
-msgstr "Annullér"
-
-#: ../src/Wallpaper.vala:321
-msgid "Open"
-msgstr "Åbn"
