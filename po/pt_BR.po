@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:26-0200\n"
-"PO-Revision-Date: 2015-11-04 12:52+0000\n"
-"Last-Translator: Rafael Belenos Govannon <Unknown>\n"
+"PO-Revision-Date: 2016-02-11 18:06+0000\n"
+"Last-Translator: Pedro H. Garcia <pedrohega@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-22 05:03+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-02-12 05:35+0000\n"
+"X-Generator: Launchpad (build 17923)\n"
 "Language: pt_BR\n"
 
 #: ../src/Dock.vala:15
@@ -120,7 +120,7 @@ msgstr "Área de trabalho"
 
 #: ../src/desktop-plug.vala:26
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Configure o dock, os cantos, e mude o fundo de tela"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
 #: ../src/desktop-plug.vala:158
