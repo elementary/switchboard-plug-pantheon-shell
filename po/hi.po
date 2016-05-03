@@ -7,16 +7,105 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-21 12:26-0200\n"
+"POT-Creation-Date: 2016-05-02 15:46+0400\n"
 "PO-Revision-Date: 2012-10-26 19:29+0000\n"
 "Last-Translator: Niels Avonds <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-22 05:02+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-05-03 05:36+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
 "Language: hi\n"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr ""
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:158
+msgid "Wallpaper"
+msgstr ""
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
+#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
+#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
+#: ../src/desktop-plug.vala:170
+msgid "Dock"
+msgstr ""
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom Command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
+#: ../src/desktop-plug.vala:172
+msgid "Hot Corners"
+msgstr ""
+
+#: ../src/desktop-plug.vala:119
+msgid "Do Nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr ""
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize Current Window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize Current Window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr ""
+
+#: ../src/desktop-plug.vala:124
+msgid "Window Overview"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Show All Windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:126
+msgid "Execute Custom Command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
+msgid "Theme"
+msgstr ""
+
+#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
+msgid "Hide Mode"
+msgstr ""
+
+#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
+msgid "Icon Size"
+msgstr ""
+
+#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
+msgid "Display"
+msgstr ""
 
 #: ../src/Dock.vala:15
 msgid "Normal"
@@ -112,85 +201,4 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:323
 msgid "Open"
-msgstr ""
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr ""
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr ""
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr ""
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr ""
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr ""
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr ""
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr ""
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr ""
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr ""
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr ""
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr ""
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr ""
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr ""
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr ""
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr ""
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr ""
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr ""
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
 msgstr ""

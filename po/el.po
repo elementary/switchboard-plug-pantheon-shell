@@ -7,16 +7,105 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-21 12:26-0200\n"
+"POT-Creation-Date: 2016-05-02 15:46+0400\n"
 "PO-Revision-Date: 2014-12-06 18:33+0000\n"
 "Last-Translator: George Chalkitis <chalkitisge@gmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-22 05:02+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-05-03 05:36+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
 "Language: el\n"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Επιφάνεια εργασίας"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:158
+msgid "Wallpaper"
+msgstr "Ταπετσαρία"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
+#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
+#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
+#: ../src/desktop-plug.vala:170
+msgid "Dock"
+msgstr "Μπάρα εφαρμογών"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Όταν ο δείκτης μπαίνει στη γωνία της οθόνης:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom Command:"
+msgstr "Προσαρμοσμένη Εντολή:"
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
+#: ../src/desktop-plug.vala:172
+msgid "Hot Corners"
+msgstr "Γωνίες Συντομεύσεων"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do Nothing"
+msgstr "Kαμία Ενέργεια"
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr ""
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize Current Window"
+msgstr "Μεγιστοποίηση Τρέχοντος Παραθύρου"
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize Current Window"
+msgstr "Ελαχιστοποίηση Τρέχοντος Παραθύρου"
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "Εμφάνιση Μενού Εφαρμογών"
+
+#: ../src/desktop-plug.vala:124
+msgid "Window Overview"
+msgstr "Επισκόπηση Παραθύρων"
+
+#: ../src/desktop-plug.vala:125
+msgid "Show All Windows"
+msgstr "Επισκόπηση Όλων των Παραθύρων"
+
+#: ../src/desktop-plug.vala:126
+msgid "Execute Custom Command"
+msgstr "Εκτέλεση Προσαρμοσμένης Εντολής"
+
+#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
+msgid "Theme"
+msgstr ""
+
+#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
+msgid "Hide Mode"
+msgstr ""
+
+#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
+msgid "Icon Size"
+msgstr ""
+
+#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
+msgid "Display"
+msgstr ""
 
 #: ../src/Dock.vala:15
 msgid "Normal"
@@ -113,84 +202,3 @@ msgstr "Ακύρωση"
 #: ../src/Wallpaper.vala:323
 msgid "Open"
 msgstr "Άνοιγμα"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Επιφάνεια εργασίας"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Ταπετσαρία"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Μπάρα εφαρμογών"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Όταν ο δείκτης μπαίνει στη γωνία της οθόνης:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Προσαρμοσμένη Εντολή:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Γωνίες Συντομεύσεων"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "Kαμία Ενέργεια"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr ""
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Μεγιστοποίηση Τρέχοντος Παραθύρου"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Ελαχιστοποίηση Τρέχοντος Παραθύρου"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Εμφάνιση Μενού Εφαρμογών"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Επισκόπηση Παραθύρων"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Επισκόπηση Όλων των Παραθύρων"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Εκτέλεση Προσαρμοσμένης Εντολής"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr ""
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr ""
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr ""
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr ""

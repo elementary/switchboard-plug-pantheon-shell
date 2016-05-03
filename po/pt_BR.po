@@ -7,16 +7,105 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-21 12:26-0200\n"
+"POT-Creation-Date: 2016-05-02 15:46+0400\n"
 "PO-Revision-Date: 2016-02-11 18:06+0000\n"
 "Last-Translator: Pedro H. Garcia <pedrohega@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-02-12 05:35+0000\n"
-"X-Generator: Launchpad (build 17923)\n"
+"X-Launchpad-Export-Date: 2016-05-03 05:37+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
 "Language: pt_BR\n"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Área de trabalho"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Configure o dock, os cantos, e mude o fundo de tela"
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:158
+msgid "Wallpaper"
+msgstr "Papel de parede"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
+#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
+#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
+#: ../src/desktop-plug.vala:170
+msgid "Dock"
+msgstr "Dock"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Quando o cursor toca o canto da tela:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom Command:"
+msgstr "Comando personalizado:"
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
+#: ../src/desktop-plug.vala:172
+msgid "Hot Corners"
+msgstr "Hot Corners"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do Nothing"
+msgstr "Fazer nada"
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr "Visualização de multitarefa"
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize Current Window"
+msgstr "Maximizar a janela atual"
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize Current Window"
+msgstr "Minimizar a janela atual"
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "Mostrar menu de aplicativos"
+
+#: ../src/desktop-plug.vala:124
+msgid "Window Overview"
+msgstr "Visão geral das janelas"
+
+#: ../src/desktop-plug.vala:125
+msgid "Show All Windows"
+msgstr "Mostrar todas as janelas"
+
+#: ../src/desktop-plug.vala:126
+msgid "Execute Custom Command"
+msgstr "Executar comando personalizado"
+
+#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
+msgid "Hide Mode"
+msgstr "Modo de ocultação"
+
+#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
+msgid "Icon Size"
+msgstr "Tamanho dos ícones"
+
+#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
+msgid "Display"
+msgstr "Exibir"
 
 #: ../src/Dock.vala:15
 msgid "Normal"
@@ -113,84 +202,3 @@ msgstr "Cancelar"
 #: ../src/Wallpaper.vala:323
 msgid "Open"
 msgstr "Abrir"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Área de trabalho"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configure o dock, os cantos, e mude o fundo de tela"
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Papel de parede"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Dock"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Quando o cursor toca o canto da tela:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Comando personalizado:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Hot Corners"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "Fazer nada"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "Visualização de multitarefa"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Maximizar a janela atual"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Minimizar a janela atual"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Mostrar menu de aplicativos"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Visão geral das janelas"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Mostrar todas as janelas"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Executar comando personalizado"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr "Modo de ocultação"
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr "Tamanho dos ícones"
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr "Exibir"

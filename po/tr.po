@@ -7,16 +7,105 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-21 12:26-0200\n"
-"PO-Revision-Date: 2016-04-09 14:34+0000\n"
-"Last-Translator: Melih Güçlü <melihguclu@hotmail.com>\n"
+"POT-Creation-Date: 2016-05-02 15:46+0400\n"
+"PO-Revision-Date: 2016-05-02 20:42+0000\n"
+"Last-Translator: Sadık Poyraz <sadikpoyraz01@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-10 05:36+0000\n"
-"X-Generator: Launchpad (build 17990)\n"
+"X-Launchpad-Export-Date: 2016-05-03 05:37+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
 "Language: tr\n"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr "_Masaüstü Arkapalanı Olarak Ayarla"
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr "Seçili resmi yeni masaüstü arkaplanı olarak ayarla"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Masaüstü"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Rıhtım ve köşeleri yapılandır.Duvar kağıdını değiştir"
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:158
+msgid "Wallpaper"
+msgstr "Duvar Kağıdı"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
+#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
+#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
+#: ../src/desktop-plug.vala:170
+msgid "Dock"
+msgstr "Rıhtım"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "İmleç ekranın köşesine geldiğinde:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom Command:"
+msgstr "Özel Komut:"
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
+#: ../src/desktop-plug.vala:172
+msgid "Hot Corners"
+msgstr "Etkin Köşeler"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do Nothing"
+msgstr "Hiçbir Şey Yapma"
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr "Çoklu Görev Görünümü"
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize Current Window"
+msgstr "Geçerli Pencere Ekranı Kaplasın"
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize Current Window"
+msgstr "Geçerli Pencereyi Küçült"
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "Uygulamalar Menüsünü Göster"
+
+#: ../src/desktop-plug.vala:124
+msgid "Window Overview"
+msgstr "Pencere Görünümü"
+
+#: ../src/desktop-plug.vala:125
+msgid "Show All Windows"
+msgstr "Tüm Pencereleri Göster"
+
+#: ../src/desktop-plug.vala:126
+msgid "Execute Custom Command"
+msgstr "Özel Komut Çalıştır"
+
+#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
+msgid "Hide Mode"
+msgstr "Gizleme Modu"
+
+#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
+msgid "Icon Size"
+msgstr "Simge Boyutu"
+
+#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
+msgid "Display"
+msgstr "Göster"
 
 #: ../src/Dock.vala:15
 msgid "Normal"
@@ -113,84 +202,3 @@ msgstr "Vazgeç"
 #: ../src/Wallpaper.vala:323
 msgid "Open"
 msgstr "Aç"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Masaüstü"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Rıhtım ve köşeleri yapılandır.Duvar kağıdını değiştir"
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Duvar Kağıdı"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Rıhtım"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "İmleç ekranın köşesine geldiğinde:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Özel Komut:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Etkin Köşeler"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "Hiçbir Şey Yapma"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "Çoklu Görev Görünümü"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Geçerli Pencere Ekranı Kaplasın"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Geçerli Pencereyi Küçült"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Uygulamalar Menüsünü Göster"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Pencere Görünümü"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Tüm Pencereleri Göster"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Özel Komut Çalıştır"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr "Gizleme Modu"
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr "Simge Boyutu"
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr "Göster"
