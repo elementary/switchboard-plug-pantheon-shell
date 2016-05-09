@@ -4,4 +4,4 @@ Icon=preferences-desktop-wallpaper
 Description=Set selected image to be the new desktop background
 MimeType=image
 Exec=set-wallpaper %F
-X-GNOME-Gettext-Domain=switchboard
+X-GNOME-Gettext-Domain=pantheon-desktop-plug
