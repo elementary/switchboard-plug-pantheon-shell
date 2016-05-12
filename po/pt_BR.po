@@ -8,23 +8,25 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-02 15:46+0400\n"
-"PO-Revision-Date: 2016-02-11 18:06+0000\n"
-"Last-Translator: Pedro H. Garcia <pedrohega@gmail.com>\n"
+"PO-Revision-Date: 2016-05-11 13:00+0000\n"
+"Last-Translator: Leonardo Lemos <Unknown>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-03 05:37+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-05-12 05:34+0000\n"
+"X-Generator: Launchpad (build 18025)\n"
 "Language: pt_BR\n"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Definir como _plano de fundo da área de trabalho"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+"Definir a imagem selecionada como um novo plano de fundo para a área de "
+"trabalho"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
