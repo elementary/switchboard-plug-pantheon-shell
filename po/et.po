@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-09 12:47+0400\n"
-"PO-Revision-Date: 2016-02-10 22:47+0000\n"
+"PO-Revision-Date: 2016-06-13 17:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-06-10 06:24+0000\n"
+"X-Launchpad-Export-Date: 2016-06-14 06:17+0000\n"
 "X-Generator: Launchpad (build 18097)\n"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Määra _töölaua taustaks"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Valitud pildi määramine uueks töölaua taustapildiks"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -206,33 +206,33 @@ msgstr "Ava"
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d sekund"
+msgstr[1] "%d sekundit"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d minut"
+msgstr[1] "%d minutit"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d tund"
+msgstr[1] "%d tundi"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:81
 msgid "1 day"
-msgstr ""
+msgstr "1 päev"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr ""
+msgstr "Iga fotot kuvatakse"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Määra töölaua taustapiltide esitlusena"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
+msgstr "Taustapiltide esitlus"
