@@ -8,24 +8,25 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 12:47+0400\n"
-"PO-Revision-Date: 2015-12-23 19:43+0000\n"
+"PO-Revision-Date: 2016-06-17 17:21+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-06-10 06:24+0000\n"
+"X-Launchpad-Export-Date: 2016-06-18 05:58+0000\n"
 "X-Generator: Launchpad (build 18097)\n"
 "Language: it\n"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Imposta come sfondo della _scrivania"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+"Imposta l'immagine selezionata per essere il nuovo sfondo della scrivania"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -53,7 +54,7 @@ msgstr "Quando il cursore entra nell'angolo dello schermo:"
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom Command:"
-msgstr "Comando Personalizzato:"
+msgstr "Comando personalizzato:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
 #: ../src/desktop-plug.vala:172
@@ -207,33 +208,33 @@ msgstr "Apri"
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d secondo"
+msgstr[1] "%d secondi"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d minuto"
+msgstr[1] "%d minuti"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d ora"
+msgstr[1] "%d ore"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:81
 msgid "1 day"
-msgstr ""
+msgstr "1 giorno"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr ""
+msgstr "Mostra ogni foto per"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Imposta come presentazione del desktop"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
+msgstr "Crea presentazione"
