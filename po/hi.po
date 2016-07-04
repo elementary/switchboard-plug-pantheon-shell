@@ -8,28 +8,28 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 12:47+0400\n"
-"PO-Revision-Date: 2012-10-26 19:29+0000\n"
-"Last-Translator: Niels Avonds <Unknown>\n"
+"PO-Revision-Date: 2016-07-04 03:15+0000\n"
+"Last-Translator: Anand Kumar <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-06-10 06:24+0000\n"
-"X-Generator: Launchpad (build 18097)\n"
+"X-Launchpad-Export-Date: 2016-07-04 06:06+0000\n"
+"X-Generator: Launchpad (build 18115)\n"
 "Language: hi\n"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "डेक्सटॉप पृष्ठभूमि के रुप में नियत करें (_D)"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "चुने गए छवि को नए डेस्कटॉप पृष्ठभूमि के रुप में नियत करें"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
-msgstr ""
+msgstr "डेस्कटॉप"
 
 #: ../src/desktop-plug.vala:26
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -38,14 +38,14 @@ msgstr ""
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
 #: ../src/desktop-plug.vala:158
 msgid "Wallpaper"
-msgstr ""
+msgstr "वॉलपेपर"
 
 #: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
 #: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
 #: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
 #: ../src/desktop-plug.vala:170
 msgid "Dock"
-msgstr ""
+msgstr "डॉक"
 
 #: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
@@ -62,11 +62,11 @@ msgstr ""
 
 #: ../src/desktop-plug.vala:119
 msgid "Do Nothing"
-msgstr ""
+msgstr "कुछ न करें"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
-msgstr ""
+msgstr "सभी खिड़किया देखे"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize Current Window"
@@ -94,11 +94,11 @@ msgstr ""
 
 #: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
 msgid "Theme"
-msgstr ""
+msgstr "थीम"
 
 #: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
 msgid "Hide Mode"
-msgstr ""
+msgstr "छुपा मोड"
 
 #: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
 msgid "Icon Size"
@@ -114,7 +114,7 @@ msgstr ""
 
 #: ../src/Dock.vala:16
 msgid "Large"
-msgstr ""
+msgstr "विशाल"
 
 #: ../src/Dock.vala:28
 msgid "Custom (%dpx)"
@@ -162,11 +162,11 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
-msgstr ""
+msgstr "छवियाँ"
 
 #: ../src/Wallpaper.vala:141
 msgid "Backgrounds"
-msgstr ""
+msgstr "पृष्ठभूमि"
 
 #: ../src/Wallpaper.vala:142
 msgid "Custom…"
