@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-09 12:47+0400\n"
-"PO-Revision-Date: 2015-10-30 22:38+0000\n"
+"PO-Revision-Date: 2016-07-24 15:59+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,16 +16,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2016-06-10 06:24+0000\n"
-"X-Generator: Launchpad (build 18097)\n"
+"X-Launchpad-Export-Date: 2016-07-25 05:29+0000\n"
+"X-Generator: Launchpad (build 18147)\n"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Nastavi za ozadje"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Nastavi izbrano sliko za novo ozadje namizja"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -33,7 +33,7 @@ msgstr "Namizje"
 
 #: ../src/desktop-plug.vala:26
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Nastavitve sidrišča, vročih kotov in ozadja"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
 #: ../src/desktop-plug.vala:158
@@ -110,11 +110,11 @@ msgstr "Zaslon"
 
 #: ../src/Dock.vala:15
 msgid "Normal"
-msgstr "Običajna"
+msgstr "običajna"
 
 #: ../src/Dock.vala:16
 msgid "Large"
-msgstr "Veliko"
+msgstr "velika"
 
 #: ../src/Dock.vala:28
 msgid "Custom (%dpx)"
@@ -122,19 +122,19 @@ msgstr "Po meri (%dpx)"
 
 #: ../src/Dock.vala:37
 msgid "Focused window is maximized"
-msgstr "Fokusirano okno je maksimizirano"
+msgstr "je fokusirano okno maksimizirano"
 
 #: ../src/Dock.vala:38
 msgid "Focused window overlaps the dock"
-msgstr "Fokusirano okno prekriva sidrišče"
+msgstr "fokusirano okno prekriva sidrišče"
 
 #: ../src/Dock.vala:39
 msgid "Any window overlaps the dock"
-msgstr "Katerokoli okno prekriva sidrišče"
+msgstr "katerokoli okno prekriva sidrišče"
 
 #: ../src/Dock.vala:40
 msgid "Not being used"
-msgstr "Ni v uporabi"
+msgstr "ni v uporabi"
 
 #: ../src/Dock.vala:75
 msgid "Primary Display:"
