@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-09 12:47+0400\n"
-"PO-Revision-Date: 2016-07-24 15:59+0000\n"
+"PO-Revision-Date: 2016-07-25 18:10+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2016-07-25 05:29+0000\n"
-"X-Generator: Launchpad (build 18147)\n"
+"X-Launchpad-Export-Date: 2016-07-26 05:32+0000\n"
+"X-Generator: Launchpad (build 18153)\n"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
@@ -110,11 +110,11 @@ msgstr "Zaslon"
 
 #: ../src/Dock.vala:15
 msgid "Normal"
-msgstr "običajna"
+msgstr "Običajna"
 
 #: ../src/Dock.vala:16
 msgid "Large"
-msgstr "velika"
+msgstr "Velika"
 
 #: ../src/Dock.vala:28
 msgid "Custom (%dpx)"
@@ -122,19 +122,19 @@ msgstr "Po meri (%dpx)"
 
 #: ../src/Dock.vala:37
 msgid "Focused window is maximized"
-msgstr "je fokusirano okno maksimizirano"
+msgstr "Je fokusirano okno maksimizirano"
 
 #: ../src/Dock.vala:38
 msgid "Focused window overlaps the dock"
-msgstr "fokusirano okno prekriva sidrišče"
+msgstr "Fokusirano okno prekriva sidrišče"
 
 #: ../src/Dock.vala:39
 msgid "Any window overlaps the dock"
-msgstr "katerokoli okno prekriva sidrišče"
+msgstr "Katerokoli okno prekriva sidrišče"
 
 #: ../src/Dock.vala:40
 msgid "Not being used"
-msgstr "ni v uporabi"
+msgstr "Ni v uporabi"
 
 #: ../src/Dock.vala:75
 msgid "Primary Display:"
@@ -207,33 +207,39 @@ msgstr "Odpri"
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d sekund"
+msgstr[1] "%d sekunda"
+msgstr[2] "%d sekundi"
+msgstr[3] "%d sekunde"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d minut"
+msgstr[1] "%d minuta"
+msgstr[2] "%d minuti"
+msgstr[3] "%d minute"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d ur"
+msgstr[1] "%d ura"
+msgstr[2] "%d uri"
+msgstr[3] "%d ure"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:81
 msgid "1 day"
-msgstr ""
+msgstr "1 dan"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr ""
+msgstr "Pokaži vsako fotografijo za"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Nastavi kot projekcijo na namizju"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
+msgstr "Ustvari projekcijo"
