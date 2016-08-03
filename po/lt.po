@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 12:47+0400\n"
-"PO-Revision-Date: 2015-02-11 05:51+0000\n"
+"PO-Revision-Date: 2016-08-02 12:05+0000\n"
 "Last-Translator: Mantas Kriaučiūnas <mantas@akl.lt>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -11,24 +11,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-06-10 06:24+0000\n"
-"X-Generator: Launchpad (build 18097)\n"
+"X-Launchpad-Export-Date: 2016-08-03 05:52+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Nustatyti kaip _darbalaukio foną"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Nustatyti pasirinktą paveikslą naujuoju darbalaukio fonu"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
-msgstr "Darbastalis"
+msgstr "Darbalaukis"
 
 #: ../src/desktop-plug.vala:26
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Konfigūruoti skydelį, karštuosius kampus ir keisti darbalaukio foną"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
 #: ../src/desktop-plug.vala:158
@@ -44,11 +44,11 @@ msgstr "Skydelis"
 
 #: ../src/desktop-plug.vala:67
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "Kai žymeklis pasiekia ekrano kampą:"
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom Command:"
-msgstr "Parenkama komanda:"
+msgstr "Tinkinta komanda:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
 #: ../src/desktop-plug.vala:172
@@ -57,19 +57,19 @@ msgstr "Karštieji kampai"
 
 #: ../src/desktop-plug.vala:119
 msgid "Do Nothing"
-msgstr "Nedaryti nieko"
+msgstr "Nieko nedaryti"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
-msgstr ""
+msgstr "Rodyti daugiaprogramį apdorojimą"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize Current Window"
-msgstr "Išdidinti aktyvų langą"
+msgstr "Išskleisti esamą langą"
 
 #: ../src/desktop-plug.vala:122
 msgid "Minimize Current Window"
-msgstr "Sumažinti aktyvų langą"
+msgstr "Suskleisti esamą langą"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
@@ -85,7 +85,7 @@ msgstr "Rodyti visus langus"
 
 #: ../src/desktop-plug.vala:126
 msgid "Execute Custom Command"
-msgstr ""
+msgstr "Vykdyti tinkintą komandą"
 
 #: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
 msgid "Theme"
@@ -93,7 +93,7 @@ msgstr "Tema"
 
 #: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
 msgid "Hide Mode"
-msgstr "Slėpimo būdas"
+msgstr "Slėpimo veiksena"
 
 #: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
 msgid "Icon Size"
@@ -101,39 +101,39 @@ msgstr "Piktogramų dydis"
 
 #: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
 msgid "Display"
-msgstr ""
+msgstr "Ekranas"
 
 #: ../src/Dock.vala:15
 msgid "Normal"
-msgstr ""
+msgstr "Normalus"
 
 #: ../src/Dock.vala:16
 msgid "Large"
-msgstr "Dideli"
+msgstr "Didelis"
 
 #: ../src/Dock.vala:28
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Tinkintas (%dpx)"
 
 #: ../src/Dock.vala:37
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "Fokusuotas langas išskleidžiamas"
 
 #: ../src/Dock.vala:38
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "Fokusuotas langas užkloja skydelį"
 
 #: ../src/Dock.vala:39
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Bet kuris langas užkloja skydelį"
 
 #: ../src/Dock.vala:40
 msgid "Not being used"
-msgstr ""
+msgstr "Nenaudojamas"
 
 #: ../src/Dock.vala:75
 msgid "Primary Display:"
-msgstr "Pagrindinis ekranas:"
+msgstr "Pirminis ekranas:"
 
 #: ../src/Dock.vala:79
 msgid "Display:"
@@ -145,11 +145,11 @@ msgstr "Piktogramų dydis:"
 
 #: ../src/Dock.vala:112
 msgid "Hide when:"
-msgstr ""
+msgstr "Slėpti kai:"
 
 #: ../src/Dock.vala:151
 msgid "Monitor %d"
-msgstr ""
+msgstr "Vaizduoklis %d"
 
 #: ../src/Dock.vala:156
 msgid "Display %d"
@@ -157,7 +157,7 @@ msgstr "Ekranas %d"
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
-msgstr "Paveikslėliai"
+msgstr "Paveikslai"
 
 #: ../src/Wallpaper.vala:141
 msgid "Backgrounds"
@@ -165,11 +165,11 @@ msgstr "Fonai"
 
 #: ../src/Wallpaper.vala:142
 msgid "Custom…"
-msgstr "Pasirinktinis…"
+msgstr "Tinkintas..."
 
 #: ../src/Wallpaper.vala:147
 msgid "Centered"
-msgstr "Centruotas"
+msgstr "Centruoti"
 
 #: ../src/Wallpaper.vala:148
 msgid "Scaled"
@@ -177,15 +177,15 @@ msgstr "Pakeisto mastelio"
 
 #: ../src/Wallpaper.vala:149
 msgid "Stretched"
-msgstr "Ištemptas"
+msgstr "Ištempti"
 
 #: ../src/Wallpaper.vala:150
 msgid "Zoom"
-msgstr ""
+msgstr "Padidinti"
 
 #: ../src/Wallpaper.vala:151
 msgid "Spanned"
-msgstr ""
+msgstr "Per kelis ekranus"
 
 #: ../src/Wallpaper.vala:321
 msgid "Select a folder"
@@ -202,33 +202,36 @@ msgstr "Atverti"
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d sekundę"
+msgstr[1] "%d sekundes"
+msgstr[2] "%d sekundžių"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d minutę"
+msgstr[1] "%d minutes"
+msgstr[2] "%d minučių"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d valandą"
+msgstr[1] "%d valandas"
+msgstr[2] "%d valandų"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:81
 msgid "1 day"
-msgstr ""
+msgstr "1 dieną"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr ""
+msgstr "Rodyti kiekvieną nuotrauką"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Nustatyti kaip darbalaukio skaidrių rodymą"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
+msgstr "Kurti skaidrių rodymą"
