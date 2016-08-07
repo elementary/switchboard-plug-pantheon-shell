@@ -8,24 +8,24 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-09 12:47+0400\n"
-"PO-Revision-Date: 2015-09-25 14:16+0000\n"
+"PO-Revision-Date: 2016-08-06 10:05+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-06-10 06:24+0000\n"
-"X-Generator: Launchpad (build 18097)\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:30+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 "Language: \n"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "設為桌面背景(_D)"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "將所選的影像設為新的桌面背景"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -33,7 +33,7 @@ msgstr "桌面"
 
 #: ../src/desktop-plug.vala:26
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "調整 Dock、熱角、和更改桌布"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
 #: ../src/desktop-plug.vala:158
@@ -207,33 +207,30 @@ msgstr "開啟"
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d 秒"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d 分鐘"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d 小時"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:81
 msgid "1 day"
-msgstr ""
+msgstr "1 日"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr ""
+msgstr "顯示每張相片"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "設為桌面投影秀"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
+msgstr "製作投影秀"
