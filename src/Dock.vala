@@ -59,7 +59,7 @@ public class Dock : Gtk.Grid {
 
         dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
 
-        Gtk.ComboBoxText hide_mode = new Gtk.ComboBoxText ();
+        var hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append_text (_("Focused window is maximized"));
         hide_mode.append_text (_("Focused window overlaps the dock"));
         hide_mode.append_text (_("Any window overlaps the dock"));
@@ -67,19 +67,19 @@ public class Dock : Gtk.Grid {
 
         Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.WINDOW_DODGE, Plank.HideType.AUTO};
 
-        Gtk.Switch hide_switch = new Gtk.Switch ();
+        var hide_switch = new Gtk.Switch ();
         hide_switch.halign = Gtk.Align.START;
         hide_switch.valign = Gtk.Align.CENTER;
 
         var hide_none = (dock_preferences.HideMode != Plank.HideType.NONE);
-        hide_switch.set_active (hide_none);
+        hide_switch.active = hide_none;
         if (hide_none) {
             for (int i = 0; i < hide_mode_ids.length; i++) {
                 if (hide_mode_ids[i] == dock_preferences.HideMode)
                     hide_mode.active = i;
             }
         } else {
-            hide_mode.set_sensitive (false);
+            hide_mode.sensitive = false;
         }
 
         hide_mode.changed.connect (() => {
@@ -135,9 +135,9 @@ public class Dock : Gtk.Grid {
         get_screen ().monitors_changed.connect (() => {check_for_screens ();});
 
         var icon_label = new Gtk.Label (_("Icon Size:"));
-        icon_label.set_halign (Gtk.Align.END);
+        icon_label.halign = Gtk.Align.END;
         var hide_label = new Gtk.Label (_("Hide when:"));
-        hide_label.set_halign (Gtk.Align.END);
+        hide_label.halign = Gtk.Align.END;
         var primary_monitor_grid = new Gtk.Grid ();
         primary_monitor_grid.add (primary_monitor);
         var pressure_label = new Gtk.Label (_("Pressure reveal:"));
