@@ -39,7 +39,7 @@ public class Dock : Gtk.Grid {
 
         dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
 
-        var hide_mode = new Gtk.ComboBoxText ();
+        Gtk.ComboBoxText hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append_text (_("Focused window is maximized"));
         hide_mode.append_text (_("Focused window overlaps the dock"));
         hide_mode.append_text (_("Any window overlaps the dock"));
@@ -47,7 +47,7 @@ public class Dock : Gtk.Grid {
 
         Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.WINDOW_DODGE, Plank.HideType.AUTO};
 
-        var hide_switch = new Gtk.Switch ();
+        Gtk.Switch hide_switch = new Gtk.Switch ();
         hide_switch.halign = Gtk.Align.START;
         hide_switch.valign = Gtk.Align.CENTER;
 
