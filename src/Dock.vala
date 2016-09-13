@@ -1,3 +1,23 @@
+/*
+* Copyright (c) 2016 elementary LLC. (https://elementary.io)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+* Boston, MA 02111-1307, USA.
+*
+*/
+
 public class Dock : Gtk.Grid {
     Gtk.Label primary_monitor_label;
     Gtk.Switch primary_monitor;
@@ -66,14 +86,13 @@ public class Dock : Gtk.Grid {
             dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
         });
 
+        hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.DEFAULT);
+        hide_switch.bind_property ("active", hide_mode, "sensitive", BindingFlags.DEFAULT);
+
         hide_switch.notify["active"].connect (() => {
             if (hide_switch.active) {
-                hide_mode.set_sensitive (true);
-                pressure_switch.sensitive = true;
                 dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
             } else {
-                hide_mode.set_sensitive (false);
-                pressure_switch.sensitive = false;
                 dock_preferences.HideMode = Plank.HideType.NONE;
             }
         });
