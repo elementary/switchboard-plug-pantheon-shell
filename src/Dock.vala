@@ -37,16 +37,7 @@ public class Dock : Gtk.Grid {
         pressure_switch.halign = Gtk.Align.START;
         pressure_switch.valign = Gtk.Align.CENTER;
 
-        var pressure = dock_preferences.PressureReveal;
-        pressure_switch.set_active (pressure);
-
-        pressure_switch.notify["active"].connect (() => {
-            if (pressure_switch.active) {
-                dock_preferences.PressureReveal = true;
-            } else {
-                dock_preferences.PressureReveal = false;
-            }
-        });
+        dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
 
         Gtk.ComboBoxText hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append_text (_("Focused window is maximized"));
