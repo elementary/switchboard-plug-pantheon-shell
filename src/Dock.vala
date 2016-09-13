@@ -66,14 +66,13 @@ public class Dock : Gtk.Grid {
             dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
         });
 
+        hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.DEFAULT);
+        hide_switch.bind_property ("active", hide_mode, "sensitive", BindingFlags.DEFAULT);
+
         hide_switch.notify["active"].connect (() => {
             if (hide_switch.active) {
-                hide_mode.set_sensitive (true);
-                pressure_switch.sensitive = true;
                 dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
             } else {
-                hide_mode.set_sensitive (false);
-                pressure_switch.sensitive = false;
                 dock_preferences.HideMode = Plank.HideType.NONE;
             }
         });
