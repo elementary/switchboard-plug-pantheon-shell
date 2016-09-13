@@ -69,7 +69,7 @@ public class Dock : Gtk.Grid {
         hide_switch.notify["active"].connect (() => {
             if (hide_switch.active) {
                 hide_mode.set_sensitive (true);
-                pressure_switch.sensitive =true;
+                pressure_switch.sensitive = true;
                 dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
             } else {
                 hide_mode.set_sensitive (false);
