@@ -33,6 +33,21 @@ public class Dock : Gtk.Grid {
             dock_preferences.IconSize = int.parse (icon_size.active_id);
         });
 
+        Gtk.Switch pressure_switch = new Gtk.Switch ();
+        pressure_switch.halign = Gtk.Align.START;
+        pressure_switch.valign = Gtk.Align.CENTER;
+
+        var pressure = dock_preferences.PressureReveal;
+        pressure_switch.set_active (pressure);
+
+        pressure_switch.notify["active"].connect (() => {
+            if (pressure_switch.active) {
+                dock_preferences.PressureReveal = true;
+            } else {
+                dock_preferences.PressureReveal = false;
+            }
+        });
+
         Gtk.ComboBoxText hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append_text (_("Focused window is maximized"));
         hide_mode.append_text (_("Focused window overlaps the dock"));
@@ -63,9 +78,11 @@ public class Dock : Gtk.Grid {
         hide_switch.notify["active"].connect (() => {
             if (hide_switch.active) {
                 hide_mode.set_sensitive (true);
+                pressure_switch.set_sensitive (true);
                 dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
             } else {
                 hide_mode.set_sensitive (false);
+                pressure_switch.set_sensitive (false);
                 dock_preferences.HideMode = Plank.HideType.NONE;
             }
         });
@@ -113,6 +130,8 @@ public class Dock : Gtk.Grid {
         hide_label.set_halign (Gtk.Align.END);
         var primary_monitor_grid = new Gtk.Grid ();
         primary_monitor_grid.add (primary_monitor);
+        var pressure_label = new Gtk.Label (_("Pressure reveal:"));
+        pressure_label.set_halign (Gtk.Align.END);
 
         attach (icon_label, 1, 0, 1, 1);
         attach (icon_size, 2, 0, 1, 1);
@@ -123,6 +142,8 @@ public class Dock : Gtk.Grid {
         attach (primary_monitor_grid, 2, 3, 1, 1);
         attach (monitor_label, 1, 4, 1, 1);
         attach (monitor, 2, 4, 1, 1);
+        attach (pressure_label, 1, 5, 1, 1);
+        attach (pressure_switch, 2, 5, 1, 1);
 
         check_for_screens ();
     }
