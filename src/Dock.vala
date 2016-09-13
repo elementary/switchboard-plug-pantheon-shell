@@ -33,7 +33,7 @@ public class Dock : Gtk.Grid {
             dock_preferences.IconSize = int.parse (icon_size.active_id);
         });
 
-        Gtk.Switch pressure_switch = new Gtk.Switch ();
+        var pressure_switch = new Gtk.Switch ();
         pressure_switch.halign = Gtk.Align.START;
         pressure_switch.valign = Gtk.Align.CENTER;
 
@@ -69,11 +69,11 @@ public class Dock : Gtk.Grid {
         hide_switch.notify["active"].connect (() => {
             if (hide_switch.active) {
                 hide_mode.set_sensitive (true);
-                pressure_switch.set_sensitive (true);
+                pressure_switch.sensitive =true;
                 dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
             } else {
                 hide_mode.set_sensitive (false);
-                pressure_switch.set_sensitive (false);
+                pressure_switch.sensitive = false;
                 dock_preferences.HideMode = Plank.HideType.NONE;
             }
         });
@@ -122,7 +122,7 @@ public class Dock : Gtk.Grid {
         var primary_monitor_grid = new Gtk.Grid ();
         primary_monitor_grid.add (primary_monitor);
         var pressure_label = new Gtk.Label (_("Pressure reveal:"));
-        pressure_label.set_halign (Gtk.Align.END);
+        pressure_label.halign = Gtk.Align.END;
 
         attach (icon_label, 1, 0, 1, 1);
         attach (icon_size, 2, 0, 1, 1);
