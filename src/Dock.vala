@@ -39,7 +39,7 @@ public class Dock : Gtk.Grid {
 
         dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
 
-        Gtk.ComboBoxText hide_mode = new Gtk.ComboBoxText ();
+        var hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append_text (_("Focused window is maximized"));
         hide_mode.append_text (_("Focused window overlaps the dock"));
         hide_mode.append_text (_("Any window overlaps the dock"));
@@ -47,7 +47,7 @@ public class Dock : Gtk.Grid {
 
         Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.WINDOW_DODGE, Plank.HideType.AUTO};
 
-        Gtk.Switch hide_switch = new Gtk.Switch ();
+        var hide_switch = new Gtk.Switch ();
         hide_switch.halign = Gtk.Align.START;
         hide_switch.valign = Gtk.Align.CENTER;
 
@@ -66,14 +66,13 @@ public class Dock : Gtk.Grid {
             dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
         });
 
+        hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
+        hide_switch.bind_property ("active", hide_mode, "sensitive", BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
+
         hide_switch.notify["active"].connect (() => {
             if (hide_switch.active) {
-                hide_mode.set_sensitive (true);
-                pressure_switch.sensitive = true;
                 dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
             } else {
-                hide_mode.set_sensitive (false);
-                pressure_switch.sensitive = false;
                 dock_preferences.HideMode = Plank.HideType.NONE;
             }
         });
