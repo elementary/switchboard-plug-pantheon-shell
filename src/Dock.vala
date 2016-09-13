@@ -52,14 +52,14 @@ public class Dock : Gtk.Grid {
         hide_switch.valign = Gtk.Align.CENTER;
 
         var hide_none = (dock_preferences.HideMode != Plank.HideType.NONE);
-        hide_switch.set_active (hide_none);
+        hide_switch.active = hide_none;
         if (hide_none) {
             for (int i = 0; i < hide_mode_ids.length; i++) {
                 if (hide_mode_ids[i] == dock_preferences.HideMode)
                     hide_mode.active = i;
             }
         } else {
-            hide_mode.set_sensitive (false);
+            hide_mode.sensitive = false;
         }
 
         hide_mode.changed.connect (() => {
@@ -116,9 +116,9 @@ public class Dock : Gtk.Grid {
         get_screen ().monitors_changed.connect (() => {check_for_screens ();});
 
         var icon_label = new Gtk.Label (_("Icon Size:"));
-        icon_label.set_halign (Gtk.Align.END);
+        icon_label.halign = Gtk.Align.END;
         var hide_label = new Gtk.Label (_("Hide when:"));
-        hide_label.set_halign (Gtk.Align.END);
+        hide_label.halign = Gtk.Align.END;
         var primary_monitor_grid = new Gtk.Grid ();
         primary_monitor_grid.add (primary_monitor);
         var pressure_label = new Gtk.Label (_("Pressure reveal:"));
