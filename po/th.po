@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 12:47+0400\n"
+"POT-Creation-Date: 2016-09-13 11:11-0700\n"
 "PO-Revision-Date: 2014-11-08 09:04+0000\n"
 "Last-Translator: Nathan Yiangsupapaanontr <zartre.y@gmail.com>\n"
 "Language-Team: Thai <th@li.org>\n"
@@ -15,16 +15,64 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-06-10 06:24+0000\n"
-"X-Generator: Launchpad (build 18097)\n"
+"X-Launchpad-Export-Date: 2016-09-14 06:08+0000\n"
+"X-Generator: Launchpad (build 18186)\n"
 "Language: th\n"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
+#: ../src/Dock.vala:15
+msgid "Normal"
+msgstr "ปกติ"
+
+#: ../src/Dock.vala:16
+msgid "Large"
+msgstr "ขนาดใหญ่"
+
+#: ../src/Dock.vala:28
+msgid "Custom (%dpx)"
+msgstr "กำหนดเอง  (%dpx)"
+
+#: ../src/Dock.vala:43
+msgid "Focused window is maximized"
 msgstr ""
 
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
+#: ../src/Dock.vala:44
+msgid "Focused window overlaps the dock"
+msgstr ""
+
+#: ../src/Dock.vala:45
+msgid "Any window overlaps the dock"
+msgstr ""
+
+#: ../src/Dock.vala:46
+msgid "Not being used"
+msgstr ""
+
+#: ../src/Dock.vala:83
+msgid "Primary Display:"
+msgstr "จอแสดงผลหลัก"
+
+#: ../src/Dock.vala:87
+msgid "Display:"
+msgstr "จอแสดงผล:"
+
+#: ../src/Dock.vala:118
+msgid "Icon Size:"
+msgstr "ขนาดไอคอน:"
+
+#: ../src/Dock.vala:120
+msgid "Hide when:"
+msgstr ""
+
+#: ../src/Dock.vala:124
+msgid "Pressure reveal:"
+msgstr ""
+
+#: ../src/Dock.vala:163
+msgid "Monitor %d"
+msgstr ""
+
+#: ../src/Dock.vala:168
+msgid "Display %d"
 msgstr ""
 
 #: ../src/desktop-plug.vala:25
@@ -108,56 +156,12 @@ msgstr ""
 msgid "Display"
 msgstr ""
 
-#: ../src/Dock.vala:15
-msgid "Normal"
-msgstr "ปกติ"
-
-#: ../src/Dock.vala:16
-msgid "Large"
-msgstr "ขนาดใหญ่"
-
-#: ../src/Dock.vala:28
-msgid "Custom (%dpx)"
-msgstr "กำหนดเอง  (%dpx)"
-
-#: ../src/Dock.vala:37
-msgid "Focused window is maximized"
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
 msgstr ""
 
-#: ../src/Dock.vala:38
-msgid "Focused window overlaps the dock"
-msgstr ""
-
-#: ../src/Dock.vala:39
-msgid "Any window overlaps the dock"
-msgstr ""
-
-#: ../src/Dock.vala:40
-msgid "Not being used"
-msgstr ""
-
-#: ../src/Dock.vala:75
-msgid "Primary Display:"
-msgstr "จอแสดงผลหลัก"
-
-#: ../src/Dock.vala:79
-msgid "Display:"
-msgstr "จอแสดงผล:"
-
-#: ../src/Dock.vala:110
-msgid "Icon Size:"
-msgstr "ขนาดไอคอน:"
-
-#: ../src/Dock.vala:112
-msgid "Hide when:"
-msgstr ""
-
-#: ../src/Dock.vala:151
-msgid "Monitor %d"
-msgstr ""
-
-#: ../src/Dock.vala:156
-msgid "Display %d"
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
 msgstr ""
 
 #: ../src/Wallpaper.vala:140
