@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-13 11:11-0700\n"
+"POT-Creation-Date: 2016-09-14 21:09-0500\n"
 "PO-Revision-Date: 2014-09-03 11:41+0000\n"
 "Last-Translator: Иван Благојевић <ivan_blagojevic@mail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
@@ -16,63 +16,115 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-09-14 06:07+0000\n"
+"X-Launchpad-Export-Date: 2016-09-15 06:14+0000\n"
 "X-Generator: Launchpad (build 18186)\n"
 "Language: sr\n"
 
-#: ../src/Dock.vala:15
+#: ../src/Wallpaper.vala:140
+msgid "Pictures"
+msgstr "Слике"
+
+#: ../src/Wallpaper.vala:141
+msgid "Backgrounds"
+msgstr "Позадине"
+
+#: ../src/Wallpaper.vala:142
+msgid "Custom…"
+msgstr "Прилагођено…"
+
+#: ../src/Wallpaper.vala:147
+msgid "Centered"
+msgstr "Центрирано"
+
+#: ../src/Wallpaper.vala:148
+msgid "Scaled"
+msgstr "Сразмерно"
+
+#: ../src/Wallpaper.vala:149
+msgid "Stretched"
+msgstr "Развучено"
+
+#: ../src/Wallpaper.vala:150
+msgid "Zoom"
+msgstr "Увећано"
+
+#: ../src/Wallpaper.vala:151
+msgid "Spanned"
+msgstr "Развучено"
+
+#: ../src/Wallpaper.vala:321
+msgid "Select a folder"
+msgstr "Изабери фасциклу"
+
+#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
+msgid "Cancel"
+msgstr "Одустани"
+
+#: ../src/Wallpaper.vala:323
+msgid "Open"
+msgstr "Отвори"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
+
+#: ../src/Dock.vala:35
 msgid "Normal"
 msgstr ""
 
-#: ../src/Dock.vala:16
+#: ../src/Dock.vala:36
 msgid "Large"
 msgstr "Велико"
 
-#: ../src/Dock.vala:28
+#: ../src/Dock.vala:48
 msgid "Custom (%dpx)"
 msgstr "Прилагођено (%dpx)"
 
-#: ../src/Dock.vala:43
+#: ../src/Dock.vala:63
 msgid "Focused window is maximized"
 msgstr ""
 
-#: ../src/Dock.vala:44
+#: ../src/Dock.vala:64
 msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:45
+#: ../src/Dock.vala:65
 msgid "Any window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:46
+#: ../src/Dock.vala:66
 msgid "Not being used"
 msgstr ""
 
-#: ../src/Dock.vala:83
+#: ../src/Dock.vala:102
 msgid "Primary Display:"
 msgstr "Примарни екран"
 
-#: ../src/Dock.vala:87
+#: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "Приказ:"
 
-#: ../src/Dock.vala:118
+#: ../src/Dock.vala:137
 msgid "Icon Size:"
 msgstr "Величина иконе:"
 
-#: ../src/Dock.vala:120
+#: ../src/Dock.vala:139
 msgid "Hide when:"
 msgstr ""
 
-#: ../src/Dock.vala:124
+#: ../src/Dock.vala:143
 msgid "Pressure reveal:"
 msgstr ""
 
-#: ../src/Dock.vala:163
+#: ../src/Dock.vala:182
 msgid "Monitor %d"
 msgstr "Монитор %d"
 
-#: ../src/Dock.vala:168
+#: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "Приказ %d"
 
@@ -156,58 +208,6 @@ msgstr ""
 #: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
 msgid "Display"
 msgstr ""
-
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr ""
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr ""
-
-#: ../src/Wallpaper.vala:140
-msgid "Pictures"
-msgstr "Слике"
-
-#: ../src/Wallpaper.vala:141
-msgid "Backgrounds"
-msgstr "Позадине"
-
-#: ../src/Wallpaper.vala:142
-msgid "Custom…"
-msgstr "Прилагођено…"
-
-#: ../src/Wallpaper.vala:147
-msgid "Centered"
-msgstr "Центрирано"
-
-#: ../src/Wallpaper.vala:148
-msgid "Scaled"
-msgstr "Сразмерно"
-
-#: ../src/Wallpaper.vala:149
-msgid "Stretched"
-msgstr "Развучено"
-
-#: ../src/Wallpaper.vala:150
-msgid "Zoom"
-msgstr "Увећано"
-
-#: ../src/Wallpaper.vala:151
-msgid "Spanned"
-msgstr "Развучено"
-
-#: ../src/Wallpaper.vala:321
-msgid "Select a folder"
-msgstr "Изабери фасциклу"
-
-#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
-msgid "Cancel"
-msgstr "Одустани"
-
-#: ../src/Wallpaper.vala:323
-msgid "Open"
-msgstr "Отвори"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"

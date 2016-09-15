@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-09-13 11:11-0700\n"
+"POT-Creation-Date: 2016-09-14 21:09-0500\n"
 "PO-Revision-Date: 2016-06-13 17:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -15,62 +15,114 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-09-14 06:07+0000\n"
+"X-Launchpad-Export-Date: 2016-09-15 06:14+0000\n"
 "X-Generator: Launchpad (build 18186)\n"
 
-#: ../src/Dock.vala:15
+#: ../src/Wallpaper.vala:140
+msgid "Pictures"
+msgstr "Pildid"
+
+#: ../src/Wallpaper.vala:141
+msgid "Backgrounds"
+msgstr "Taustapildid"
+
+#: ../src/Wallpaper.vala:142
+msgid "Custom…"
+msgstr "Kohandatud…"
+
+#: ../src/Wallpaper.vala:147
+msgid "Centered"
+msgstr "Täidetud"
+
+#: ../src/Wallpaper.vala:148
+msgid "Scaled"
+msgstr "Sobitatud"
+
+#: ../src/Wallpaper.vala:149
+msgid "Stretched"
+msgstr "Venitatud"
+
+#: ../src/Wallpaper.vala:150
+msgid "Zoom"
+msgstr "Suurendatud"
+
+#: ../src/Wallpaper.vala:151
+msgid "Spanned"
+msgstr "Kogu pilt"
+
+#: ../src/Wallpaper.vala:321
+msgid "Select a folder"
+msgstr "Kohandatud kausta valimine"
+
+#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
+msgid "Cancel"
+msgstr "Loobu"
+
+#: ../src/Wallpaper.vala:323
+msgid "Open"
+msgstr "Ava"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr "Määra _töölaua taustaks"
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr "Valitud pildi määramine uueks töölaua taustapildiks"
+
+#: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "Tavaline"
 
-#: ../src/Dock.vala:16
+#: ../src/Dock.vala:36
 msgid "Large"
 msgstr "Suur"
 
-#: ../src/Dock.vala:28
+#: ../src/Dock.vala:48
 msgid "Custom (%dpx)"
 msgstr "Kohandatud (%dpx)"
 
-#: ../src/Dock.vala:43
+#: ../src/Dock.vala:63
 msgid "Focused window is maximized"
 msgstr "Aktiivne aken on maksimeeritud"
 
-#: ../src/Dock.vala:44
+#: ../src/Dock.vala:64
 msgid "Focused window overlaps the dock"
 msgstr "Aktiivne aken asetseb doki peal"
 
-#: ../src/Dock.vala:45
+#: ../src/Dock.vala:65
 msgid "Any window overlaps the dock"
 msgstr "Üks akendest asetseb doki peal"
 
-#: ../src/Dock.vala:46
+#: ../src/Dock.vala:66
 msgid "Not being used"
 msgstr "Kui ei kasutata"
 
-#: ../src/Dock.vala:83
+#: ../src/Dock.vala:102
 msgid "Primary Display:"
 msgstr "Põhiline ekraan:"
 
-#: ../src/Dock.vala:87
+#: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "Ekraan:"
 
-#: ../src/Dock.vala:118
+#: ../src/Dock.vala:137
 msgid "Icon Size:"
 msgstr "Ikooni suurus:"
 
-#: ../src/Dock.vala:120
+#: ../src/Dock.vala:139
 msgid "Hide when:"
 msgstr "Doki peitmine:"
 
-#: ../src/Dock.vala:124
+#: ../src/Dock.vala:143
 msgid "Pressure reveal:"
 msgstr ""
 
-#: ../src/Dock.vala:163
+#: ../src/Dock.vala:182
 msgid "Monitor %d"
 msgstr "Kuvar %d"
 
-#: ../src/Dock.vala:168
+#: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "Ekraan %d"
 
@@ -154,58 +206,6 @@ msgstr "Ikooni suurus"
 #: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
 msgid "Display"
 msgstr "Kuvamine"
-
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Määra _töölaua taustaks"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "Valitud pildi määramine uueks töölaua taustapildiks"
-
-#: ../src/Wallpaper.vala:140
-msgid "Pictures"
-msgstr "Pildid"
-
-#: ../src/Wallpaper.vala:141
-msgid "Backgrounds"
-msgstr "Taustapildid"
-
-#: ../src/Wallpaper.vala:142
-msgid "Custom…"
-msgstr "Kohandatud…"
-
-#: ../src/Wallpaper.vala:147
-msgid "Centered"
-msgstr "Täidetud"
-
-#: ../src/Wallpaper.vala:148
-msgid "Scaled"
-msgstr "Sobitatud"
-
-#: ../src/Wallpaper.vala:149
-msgid "Stretched"
-msgstr "Venitatud"
-
-#: ../src/Wallpaper.vala:150
-msgid "Zoom"
-msgstr "Suurendatud"
-
-#: ../src/Wallpaper.vala:151
-msgid "Spanned"
-msgstr "Kogu pilt"
-
-#: ../src/Wallpaper.vala:321
-msgid "Select a folder"
-msgstr "Kohandatud kausta valimine"
-
-#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
-msgid "Cancel"
-msgstr "Loobu"
-
-#: ../src/Wallpaper.vala:323
-msgid "Open"
-msgstr "Ava"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"

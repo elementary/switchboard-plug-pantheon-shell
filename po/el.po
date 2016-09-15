@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-13 11:11-0700\n"
+"POT-Creation-Date: 2016-09-14 21:09-0500\n"
 "PO-Revision-Date: 2014-12-06 18:33+0000\n"
 "Last-Translator: George Chalkitis <chalkitisge@gmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -15,63 +15,115 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-09-14 06:07+0000\n"
+"X-Launchpad-Export-Date: 2016-09-15 06:14+0000\n"
 "X-Generator: Launchpad (build 18186)\n"
 "Language: el\n"
 
-#: ../src/Dock.vala:15
+#: ../src/Wallpaper.vala:140
+msgid "Pictures"
+msgstr "Εικόνες"
+
+#: ../src/Wallpaper.vala:141
+msgid "Backgrounds"
+msgstr "Παρασκήνια"
+
+#: ../src/Wallpaper.vala:142
+msgid "Custom…"
+msgstr "Προσαρμοσμένο..."
+
+#: ../src/Wallpaper.vala:147
+msgid "Centered"
+msgstr "Στο κέντρο"
+
+#: ../src/Wallpaper.vala:148
+msgid "Scaled"
+msgstr "Σε κλίμακα"
+
+#: ../src/Wallpaper.vala:149
+msgid "Stretched"
+msgstr "Τεντωμένο"
+
+#: ../src/Wallpaper.vala:150
+msgid "Zoom"
+msgstr "Μεγέθυνση"
+
+#: ../src/Wallpaper.vala:151
+msgid "Spanned"
+msgstr "Εκτεταμένο"
+
+#: ../src/Wallpaper.vala:321
+msgid "Select a folder"
+msgstr "Επιλέξτε ένα φάκελο"
+
+#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: ../src/Wallpaper.vala:323
+msgid "Open"
+msgstr "Άνοιγμα"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
+
+#: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "Κανονικό"
 
-#: ../src/Dock.vala:16
+#: ../src/Dock.vala:36
 msgid "Large"
 msgstr "Μεγάλο"
 
-#: ../src/Dock.vala:28
+#: ../src/Dock.vala:48
 msgid "Custom (%dpx)"
 msgstr "Προσαρμοσμένο (%dpx)"
 
-#: ../src/Dock.vala:43
+#: ../src/Dock.vala:63
 msgid "Focused window is maximized"
 msgstr ""
 
-#: ../src/Dock.vala:44
+#: ../src/Dock.vala:64
 msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:45
+#: ../src/Dock.vala:65
 msgid "Any window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:46
+#: ../src/Dock.vala:66
 msgid "Not being used"
 msgstr ""
 
-#: ../src/Dock.vala:83
+#: ../src/Dock.vala:102
 msgid "Primary Display:"
 msgstr "Πρωτεύουσα Οθόνη:"
 
-#: ../src/Dock.vala:87
+#: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "Οθόνη:"
 
-#: ../src/Dock.vala:118
+#: ../src/Dock.vala:137
 msgid "Icon Size:"
 msgstr "Μέγεθος Εικονιδίου:"
 
-#: ../src/Dock.vala:120
+#: ../src/Dock.vala:139
 msgid "Hide when:"
 msgstr ""
 
-#: ../src/Dock.vala:124
+#: ../src/Dock.vala:143
 msgid "Pressure reveal:"
 msgstr ""
 
-#: ../src/Dock.vala:163
+#: ../src/Dock.vala:182
 msgid "Monitor %d"
 msgstr ""
 
-#: ../src/Dock.vala:168
+#: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "Εμφάνιση %d"
 
@@ -155,58 +207,6 @@ msgstr ""
 #: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
 msgid "Display"
 msgstr ""
-
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr ""
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr ""
-
-#: ../src/Wallpaper.vala:140
-msgid "Pictures"
-msgstr "Εικόνες"
-
-#: ../src/Wallpaper.vala:141
-msgid "Backgrounds"
-msgstr "Παρασκήνια"
-
-#: ../src/Wallpaper.vala:142
-msgid "Custom…"
-msgstr "Προσαρμοσμένο..."
-
-#: ../src/Wallpaper.vala:147
-msgid "Centered"
-msgstr "Στο κέντρο"
-
-#: ../src/Wallpaper.vala:148
-msgid "Scaled"
-msgstr "Σε κλίμακα"
-
-#: ../src/Wallpaper.vala:149
-msgid "Stretched"
-msgstr "Τεντωμένο"
-
-#: ../src/Wallpaper.vala:150
-msgid "Zoom"
-msgstr "Μεγέθυνση"
-
-#: ../src/Wallpaper.vala:151
-msgid "Spanned"
-msgstr "Εκτεταμένο"
-
-#: ../src/Wallpaper.vala:321
-msgid "Select a folder"
-msgstr "Επιλέξτε ένα φάκελο"
-
-#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
-msgid "Cancel"
-msgstr "Ακύρωση"
-
-#: ../src/Wallpaper.vala:323
-msgid "Open"
-msgstr "Άνοιγμα"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"

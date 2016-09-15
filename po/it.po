@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-13 11:11-0700\n"
+"POT-Creation-Date: 2016-09-14 21:09-0500\n"
 "PO-Revision-Date: 2016-06-17 17:21+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -15,63 +15,116 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-09-14 06:07+0000\n"
+"X-Launchpad-Export-Date: 2016-09-15 06:14+0000\n"
 "X-Generator: Launchpad (build 18186)\n"
 "Language: it\n"
 
-#: ../src/Dock.vala:15
+#: ../src/Wallpaper.vala:140
+msgid "Pictures"
+msgstr "Immagini"
+
+#: ../src/Wallpaper.vala:141
+msgid "Backgrounds"
+msgstr "Sfondi"
+
+#: ../src/Wallpaper.vala:142
+msgid "Custom…"
+msgstr "Personalizzato…"
+
+#: ../src/Wallpaper.vala:147
+msgid "Centered"
+msgstr "Centrato"
+
+#: ../src/Wallpaper.vala:148
+msgid "Scaled"
+msgstr "In scala"
+
+#: ../src/Wallpaper.vala:149
+msgid "Stretched"
+msgstr "Stirato"
+
+#: ../src/Wallpaper.vala:150
+msgid "Zoom"
+msgstr "Ingradimento"
+
+#: ../src/Wallpaper.vala:151
+msgid "Spanned"
+msgstr "Misurato"
+
+#: ../src/Wallpaper.vala:321
+msgid "Select a folder"
+msgstr "Seleziona una cartella"
+
+#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
+msgid "Cancel"
+msgstr "Annulla"
+
+#: ../src/Wallpaper.vala:323
+msgid "Open"
+msgstr "Apri"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr "Imposta come sfondo della _scrivania"
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
+"Imposta l'immagine selezionata per essere il nuovo sfondo della scrivania"
+
+#: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "Normale"
 
-#: ../src/Dock.vala:16
+#: ../src/Dock.vala:36
 msgid "Large"
 msgstr "Grande"
 
-#: ../src/Dock.vala:28
+#: ../src/Dock.vala:48
 msgid "Custom (%dpx)"
 msgstr "Personalizzato (%dpx)"
 
-#: ../src/Dock.vala:43
+#: ../src/Dock.vala:63
 msgid "Focused window is maximized"
 msgstr "La finestra corrente è massimizzata"
 
-#: ../src/Dock.vala:44
+#: ../src/Dock.vala:64
 msgid "Focused window overlaps the dock"
 msgstr "La finestra corrente si sovrappone alla dock"
 
-#: ../src/Dock.vala:45
+#: ../src/Dock.vala:65
 msgid "Any window overlaps the dock"
 msgstr "Qualsiasi finestra si sovrappone alla dock"
 
-#: ../src/Dock.vala:46
+#: ../src/Dock.vala:66
 msgid "Not being used"
 msgstr "Non è utilizzata"
 
-#: ../src/Dock.vala:83
+#: ../src/Dock.vala:102
 msgid "Primary Display:"
 msgstr "Monitor principale:"
 
-#: ../src/Dock.vala:87
+#: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "Monitor:"
 
-#: ../src/Dock.vala:118
+#: ../src/Dock.vala:137
 msgid "Icon Size:"
 msgstr "Dimensione icone:"
 
-#: ../src/Dock.vala:120
+#: ../src/Dock.vala:139
 msgid "Hide when:"
 msgstr "Nascondi quando:"
 
-#: ../src/Dock.vala:124
+#: ../src/Dock.vala:143
 msgid "Pressure reveal:"
 msgstr ""
 
-#: ../src/Dock.vala:163
+#: ../src/Dock.vala:182
 msgid "Monitor %d"
 msgstr "Schermo %d"
 
-#: ../src/Dock.vala:168
+#: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "Display %d"
 
@@ -155,59 +208,6 @@ msgstr "Dimensione icone"
 #: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
 msgid "Display"
 msgstr "Monitor"
-
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Imposta come sfondo della _scrivania"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr ""
-"Imposta l'immagine selezionata per essere il nuovo sfondo della scrivania"
-
-#: ../src/Wallpaper.vala:140
-msgid "Pictures"
-msgstr "Immagini"
-
-#: ../src/Wallpaper.vala:141
-msgid "Backgrounds"
-msgstr "Sfondi"
-
-#: ../src/Wallpaper.vala:142
-msgid "Custom…"
-msgstr "Personalizzato…"
-
-#: ../src/Wallpaper.vala:147
-msgid "Centered"
-msgstr "Centrato"
-
-#: ../src/Wallpaper.vala:148
-msgid "Scaled"
-msgstr "In scala"
-
-#: ../src/Wallpaper.vala:149
-msgid "Stretched"
-msgstr "Stirato"
-
-#: ../src/Wallpaper.vala:150
-msgid "Zoom"
-msgstr "Ingradimento"
-
-#: ../src/Wallpaper.vala:151
-msgid "Spanned"
-msgstr "Misurato"
-
-#: ../src/Wallpaper.vala:321
-msgid "Select a folder"
-msgstr "Seleziona una cartella"
-
-#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
-msgid "Cancel"
-msgstr "Annulla"
-
-#: ../src/Wallpaper.vala:323
-msgid "Open"
-msgstr "Apri"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
