@@ -116,14 +116,13 @@ public class GalaPlug : Switchboard.Plug {
 
     private Gtk.ComboBoxText create_hotcorner () {
         var box = new Gtk.ComboBoxText ();
-        box.append ("0", _("Do nothing"));
-        box.append ("1", _("Multitasking View"));
-        box.append ("2", _("Maximize current window"));
-        box.append ("3", _("Minimize current window"));
-        box.append ("4", _("Show Applications Menu"));
-        box.append ("6", _("Window Overview"));
-        box.append ("7", _("Show all windows"));
-        box.append ("5", _("Execute custom command"));
+        box.append ("0", _("Do nothing"));              // none
+        box.append ("1", _("Multitasking View"));       // show-workspace-view
+        box.append ("2", _("Maximize current window")); // maximize-current
+        box.append ("3", _("Minimize current window")); // minimize-current
+        box.append ("4", _("Show Applications Menu"));  // open-launcher
+        box.append ("7", _("Show all windows"));        // window-overview-all
+        box.append ("5", _("Execute custom command"));  // custom-command
 
         return box;
     }
