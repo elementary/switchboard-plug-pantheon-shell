@@ -93,7 +93,7 @@ public class GalaPlug : Switchboard.Plug {
         custom_command.text = BehaviorSettings.get_default ().hotcorner_custom_command;
         custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
         
-        var cc_label = new Gtk.Label (_("Custom Command:"));
+        var cc_label = new Gtk.Label (_("Custom command:"));
         cc_label.set_halign (Gtk.Align.START);
         
         var cc_grid = new Gtk.Grid ();
@@ -116,14 +116,14 @@ public class GalaPlug : Switchboard.Plug {
 
     private Gtk.ComboBoxText create_hotcorner () {
         var box = new Gtk.ComboBoxText ();
-        box.append ("0", _("Do Nothing"));
+        box.append ("0", _("Do nothing"));
         box.append ("1", _("Multitasking View"));
-        box.append ("2", _("Maximize Current Window"));
-        box.append ("3", _("Minimize Current Window"));
+        box.append ("2", _("Maximize current window"));
+        box.append ("3", _("Minimize current window"));
         box.append ("4", _("Show Applications Menu"));
         box.append ("6", _("Window Overview"));
-        box.append ("7", _("Show All Windows"));
-        box.append ("5", _("Execute Custom Command"));
+        box.append ("7", _("Show all windows"));
+        box.append ("5", _("Execute custom command"));
 
         return box;
     }

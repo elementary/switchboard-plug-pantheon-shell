@@ -99,7 +99,7 @@ public class Dock : Gtk.Grid {
 
         monitor = new Gtk.ComboBoxText ();
 
-        primary_monitor_label = new Gtk.Label (_("Primary Display:"));
+        primary_monitor_label = new Gtk.Label (_("Primary display:"));
         primary_monitor_label.halign = Gtk.Align.END;
         primary_monitor_label.no_show_all = true;
 
@@ -134,7 +134,7 @@ public class Dock : Gtk.Grid {
 
         get_screen ().monitors_changed.connect (() => {check_for_screens ();});
 
-        var icon_label = new Gtk.Label (_("Icon Size:"));
+        var icon_label = new Gtk.Label (_("Icon size:"));
         icon_label.halign = Gtk.Align.END;
         var hide_label = new Gtk.Label (_("Hide when:"));
         hide_label.halign = Gtk.Align.END;
