@@ -152,23 +152,13 @@ public class GalaPlug : Switchboard.Plug {
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
         var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
-        bool matches_plug = search in display_name.down ();
-        if (matches_plug || search in _("Wallpaper").down ())
-            search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
-
-        bool matches_dock = search in _("Dock").down ();
-        if (matches_plug || matches_dock)
-            search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
-        if (matches_plug || matches_dock || search in _("Theme").down ())
-            search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Theme")), "dock");
-        if (matches_plug || matches_dock || search in _("Hide Mode").down ())
-            search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
-        if (matches_plug || matches_dock || search in _("Icon Size").down ())
-            search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Icon Size")), "dock");
-        if (matches_plug || matches_dock || search in _("Display").down ())
-            search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
-        if (matches_plug || search in _("Hot Corners").down ())
-            search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
+        search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
+        search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Theme")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Icon Size")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
+        search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
         return search_results;
     }
 }
