@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-14 21:09-0500\n"
-"PO-Revision-Date: 2016-08-04 09:39+0000\n"
+"PO-Revision-Date: 2016-09-29 12:22+0000\n"
 "Last-Translator: Адмирал АнимЕ <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-09-16 07:45+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-09-30 06:09+0000\n"
+"X-Generator: Launchpad (build 18204)\n"
 "Language: bg\n"
 
 #: ../src/Wallpaper.vala:140
@@ -61,7 +61,7 @@ msgstr "Отказ"
 
 #: ../src/Wallpaper.vala:323
 msgid "Open"
-msgstr "Отвoри"
+msgstr "Отваряне"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
@@ -73,7 +73,7 @@ msgstr "Задава избраното изображение като фон �
 
 #: ../src/Dock.vala:35
 msgid "Normal"
-msgstr "Обикновенно"
+msgstr "Обикновен"
 
 #: ../src/Dock.vala:36
 msgid "Large"
@@ -81,7 +81,7 @@ msgstr "Голям"
 
 #: ../src/Dock.vala:48
 msgid "Custom (%dpx)"
-msgstr "Необикновенно (%dpx)"
+msgstr "По избор (%dpx)"
 
 #: ../src/Dock.vala:63
 msgid "Focused window is maximized"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../src/Dock.vala:66
 msgid "Not being used"
-msgstr ""
+msgstr "не се използва"
 
 #: ../src/Dock.vala:102
 msgid "Primary Display:"
