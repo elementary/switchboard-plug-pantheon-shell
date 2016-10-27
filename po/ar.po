@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2012-10-21 12:00+0000\n"
 "Last-Translator: Mohamed-Touhami MAHDI <dragnucs@legtux.org>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -16,8 +16,90 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2016-09-16 07:45+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr ""
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "خلفية الشاشة"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "مرسى"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "عند دخول المؤشر ركن الشاشة:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "ركن ساخن"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr ""
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr ""
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr ""
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr ""
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr ""
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr ""
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -63,14 +145,6 @@ msgstr ""
 msgid "Open"
 msgstr ""
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr ""
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr ""
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr ""
@@ -100,7 +174,7 @@ msgid "Not being used"
 msgstr ""
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
+msgid "Primary display:"
 msgstr ""
 
 #: ../src/Dock.vala:106
@@ -108,8 +182,8 @@ msgid "Display:"
 msgstr ""
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "حجم الأيقونات:"
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -125,87 +199,6 @@ msgstr ""
 
 #: ../src/Dock.vala:187
 msgid "Display %d"
-msgstr ""
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr ""
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "خلفية الشاشة"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "مرسى"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "عند دخول المؤشر ركن الشاشة:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "أمر مخصص:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "ركن ساخن"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "لا تفعل شيئاً"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr ""
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "تكبير النافذة الحالية"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "تصغير النافذة الحالية"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr ""
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr ""
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr ""
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "تنفيذ أمر مخصص"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr ""
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr ""
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr ""
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
 msgstr ""
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
@@ -241,3 +234,21 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
+
+#~ msgid "Custom Command:"
+#~ msgstr "أمر مخصص:"
+
+#~ msgid "Icon Size:"
+#~ msgstr "حجم الأيقونات:"
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "تنفيذ أمر مخصص"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "تصغير النافذة الحالية"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "تكبير النافذة الحالية"
+
+#~ msgid "Do Nothing"
+#~ msgstr "لا تفعل شيئاً"

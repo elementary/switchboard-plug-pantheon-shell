@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2014-05-15 20:58+0000\n"
 "Last-Translator: Alfredo Hernández <Unknown>\n"
 "Language-Team: Catalan <ca@li.org>\n"
@@ -15,9 +15,91 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-09-16 07:45+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
 "Language: ca\n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Escriptori"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "Fons d'escriptori"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "Acoblador"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Quan el cursor toqui una cantonada de la pantalla:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "Cantonades actives"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr ""
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "Mostra el menú d'aplicacions"
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr ""
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr ""
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr ""
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr ""
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -63,14 +145,6 @@ msgstr "Cancel·la"
 msgid "Open"
 msgstr "Obre"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr ""
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr ""
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr ""
@@ -100,7 +174,7 @@ msgid "Not being used"
 msgstr ""
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
+msgid "Primary display:"
 msgstr ""
 
 #: ../src/Dock.vala:106
@@ -108,8 +182,8 @@ msgid "Display:"
 msgstr ""
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "Mida de les icones:"
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -125,87 +199,6 @@ msgstr ""
 
 #: ../src/Dock.vala:187
 msgid "Display %d"
-msgstr ""
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Escriptori"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Fons d'escriptori"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Acoblador"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Quan el cursor toqui una cantonada de la pantalla:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Ordre personalitzada:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Cantonades actives"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "No facis res"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr ""
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Maximitza la finestra actual"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Minimitza la finestra actual"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Mostra el menú d'aplicacions"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Visualitza les finestres"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Mostra totes les finestres"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Executa una ordre personalitzada"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr ""
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr ""
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr ""
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
 msgstr ""
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
@@ -241,3 +234,27 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
+
+#~ msgid "Custom Command:"
+#~ msgstr "Ordre personalitzada:"
+
+#~ msgid "Icon Size:"
+#~ msgstr "Mida de les icones:"
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "Executa una ordre personalitzada"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "Minimitza la finestra actual"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "Maximitza la finestra actual"
+
+#~ msgid "Do Nothing"
+#~ msgstr "No facis res"
+
+#~ msgid "Show All Windows"
+#~ msgstr "Mostra totes les finestres"
+
+#~ msgid "Window Overview"
+#~ msgstr "Visualitza les finestres"

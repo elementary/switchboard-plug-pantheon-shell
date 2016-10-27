@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2015-11-14 22:27+0000\n"
 "Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,8 +10,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-09-16 07:45+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "სამუშაო მაგიდა"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "ფონური გამოსახულება"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "დოკი"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "როცა კურსორი დისპლეის კუთხეში მივა:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "ცხელი კუთხეები"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr "მრავალამოცანიანი ხედი"
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "პროგრამების მენიუს ჩვენება"
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr "თემა"
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr "დამალვის რეჟიმი"
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr "ხატულას ზომა"
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr "დისპლეი"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -57,14 +139,6 @@ msgstr "გაუქმება"
 msgid "Open"
 msgstr "გახსნა"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr ""
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr ""
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "ჩვეულებრივი"
@@ -94,16 +168,16 @@ msgid "Not being used"
 msgstr "არ გამოიყენება"
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
-msgstr "მთავარი დისპლეი:"
+msgid "Primary display:"
+msgstr ""
 
 #: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "დისპლეი:"
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "ხატულების ზომა:"
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -120,87 +194,6 @@ msgstr "მონიტორი %d"
 #: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "დისპლეი %d"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "სამუშაო მაგიდა"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "ფონური გამოსახულება"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "დოკი"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "როცა კურსორი დისპლეის კუთხეში მივა:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "ბრძანების მითითება"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "ცხელი კუთხეები"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "არაფერი"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "მრავალამოცანიანი ხედი"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "მიმდინარე ფანჯრის გაშლა"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "მიმდინარე ფანჯრის ჩაკეცვა"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "პროგრამების მენიუს ჩვენება"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "ფანჯრის ზოგადი მიმოხილვა"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "ყველა ფანჯრის ჩვენება"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "მითითებული ბრძანების გაშვება"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr "თემა"
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr "დამალვის რეჟიმი"
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr "ხატულას ზომა"
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr "დისპლეი"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
@@ -235,3 +228,30 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
+
+#~ msgid "Icon Size:"
+#~ msgstr "ხატულების ზომა:"
+
+#~ msgid "Primary Display:"
+#~ msgstr "მთავარი დისპლეი:"
+
+#~ msgid "Custom Command:"
+#~ msgstr "ბრძანების მითითება"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "მიმდინარე ფანჯრის ჩაკეცვა"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "მიმდინარე ფანჯრის გაშლა"
+
+#~ msgid "Do Nothing"
+#~ msgstr "არაფერი"
+
+#~ msgid "Window Overview"
+#~ msgstr "ფანჯრის ზოგადი მიმოხილვა"
+
+#~ msgid "Show All Windows"
+#~ msgstr "ყველა ფანჯრის ჩვენება"
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "მითითებული ბრძანების გაშვება"

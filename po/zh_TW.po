@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2016-10-14 15:25+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
@@ -15,9 +15,91 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-10-15 06:11+0000\n"
-"X-Generator: Launchpad (build 18232)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
 "Language: \n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "桌面"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "調整 Dock、熱角、和更改桌布"
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "桌布"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "Dock"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "當游標進入顯示器的角落時："
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "熱角"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr "多工作業檢視"
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "顯示應用程式選單"
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr "主題"
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr "隱藏模式"
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr "圖示大小"
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr "顯示"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr "設為桌面背景(_D)"
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr "將所選的影像設為新的桌面背景"
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -63,14 +145,6 @@ msgstr "取消"
 msgid "Open"
 msgstr "開啟"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "設為桌面背景(_D)"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "將所選的影像設為新的桌面背景"
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "一般"
@@ -100,16 +174,16 @@ msgid "Not being used"
 msgstr "不使用"
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
-msgstr "主要顯示器："
+msgid "Primary display:"
+msgstr ""
 
 #: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "顯示器："
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "圖示大小："
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -126,87 +200,6 @@ msgstr "螢幕 %d"
 #: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "顯示器 %d"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "桌面"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "調整 Dock、熱角、和更改桌布"
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "桌布"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Dock"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "當游標進入顯示器的角落時："
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "自訂指令："
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "熱角"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "什麼也不做"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "多工作業檢視"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "最大化目前的視窗"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "最小化目前的視窗"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "顯示應用程式選單"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "視窗概覽"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "顯示所有視窗"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "執行自訂指令"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr "主題"
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr "隱藏模式"
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr "圖示大小"
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr "顯示"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
@@ -238,3 +231,30 @@ msgstr "設為桌面投影秀"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "製作投影秀"
+
+#~ msgid "Custom Command:"
+#~ msgstr "自訂指令："
+
+#~ msgid "Icon Size:"
+#~ msgstr "圖示大小："
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "執行自訂指令"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "最小化目前的視窗"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "最大化目前的視窗"
+
+#~ msgid "Do Nothing"
+#~ msgstr "什麼也不做"
+
+#~ msgid "Window Overview"
+#~ msgstr "視窗概覽"
+
+#~ msgid "Show All Windows"
+#~ msgstr "顯示所有視窗"
+
+#~ msgid "Primary Display:"
+#~ msgstr "主要顯示器："

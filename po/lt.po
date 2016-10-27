@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2016-09-14 19:49+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +11,90 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-09-16 07:45+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Darbalaukis"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Konfigūruoti skydelį, karštuosius kampus ir keisti darbalaukio foną"
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "Darbalaukio fonas"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "Skydelis"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Kai žymeklis pasiekia ekrano kampą:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "Karštieji kampai"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr "Rodyti daugiaprogramį apdorojimą"
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "Rodyti programų meniu"
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr "Slėpimo veiksena"
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr "Piktogramų dydis"
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr "Ekranas"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr "Nustatyti kaip _darbalaukio foną"
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr "Nustatyti pasirinktą paveikslą naujuoju darbalaukio fonu"
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -58,14 +140,6 @@ msgstr "Atsisakyti"
 msgid "Open"
 msgstr "Atverti"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Nustatyti kaip _darbalaukio foną"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "Nustatyti pasirinktą paveikslą naujuoju darbalaukio fonu"
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "Normalus"
@@ -95,16 +169,16 @@ msgid "Not being used"
 msgstr "Nenaudojamas"
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
-msgstr "Pirminis ekranas:"
+msgid "Primary display:"
+msgstr ""
 
 #: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "Ekranas:"
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "Piktogramų dydis:"
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -121,87 +195,6 @@ msgstr "Vaizduoklis %d"
 #: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "Ekranas %d"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Darbalaukis"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Konfigūruoti skydelį, karštuosius kampus ir keisti darbalaukio foną"
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Darbalaukio fonas"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Skydelis"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Kai žymeklis pasiekia ekrano kampą:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Tinkinta komanda:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Karštieji kampai"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "Nieko nedaryti"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "Rodyti daugiaprogramį apdorojimą"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Išskleisti esamą langą"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Suskleisti esamą langą"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Rodyti programų meniu"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Langų apžvalga"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Rodyti visus langus"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Vykdyti tinkintą komandą"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr "Slėpimo veiksena"
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr "Piktogramų dydis"
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr "Ekranas"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
@@ -239,3 +232,30 @@ msgstr "Nustatyti kaip darbalaukio skaidrių rodymą"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Kurti skaidrių rodymą"
+
+#~ msgid "Icon Size:"
+#~ msgstr "Piktogramų dydis:"
+
+#~ msgid "Window Overview"
+#~ msgstr "Langų apžvalga"
+
+#~ msgid "Show All Windows"
+#~ msgstr "Rodyti visus langus"
+
+#~ msgid "Custom Command:"
+#~ msgstr "Tinkinta komanda:"
+
+#~ msgid "Do Nothing"
+#~ msgstr "Nieko nedaryti"
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "Vykdyti tinkintą komandą"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "Suskleisti esamą langą"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "Išskleisti esamą langą"
+
+#~ msgid "Primary Display:"
+#~ msgstr "Pirminis ekranas:"

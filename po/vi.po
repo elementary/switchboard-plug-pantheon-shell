@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2013-01-27 06:42+0000\n"
 "Last-Translator: Trung Ngô <ndtrung4419@gmail.com>\n"
 "Language-Team: Vietnamese <vi@li.org>\n"
@@ -15,8 +15,90 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-09-16 07:46+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Màn hình nền"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "Hình nền"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "Dock"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Khi con trỏ di chuyển tới góc màn hình:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "Góc nóng"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr ""
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr ""
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr ""
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr ""
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr ""
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr ""
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr ""
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr ""
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -62,14 +144,6 @@ msgstr ""
 msgid "Open"
 msgstr ""
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr ""
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr ""
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr ""
@@ -99,7 +173,7 @@ msgid "Not being used"
 msgstr ""
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
+msgid "Primary display:"
 msgstr ""
 
 #: ../src/Dock.vala:106
@@ -107,8 +181,8 @@ msgid "Display:"
 msgstr ""
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "Kích thước icon:"
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -124,87 +198,6 @@ msgstr ""
 
 #: ../src/Dock.vala:187
 msgid "Display %d"
-msgstr ""
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Màn hình nền"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Hình nền"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Dock"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Khi con trỏ di chuyển tới góc màn hình:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Lệnh tự chọn:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Góc nóng"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "Không làm gì"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr ""
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Phóng to cửa sổ hiện tại"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Ẩn cửa sổ hiện tại vào thanh trình đơn"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr ""
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Hiển thị các sửa sổ đang mở"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Hiển thị tất cả cửa sổ đang mở"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Chạy lệnh tự chọn"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr ""
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr ""
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr ""
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
 msgstr ""
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
@@ -240,3 +233,27 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
+
+#~ msgid "Icon Size:"
+#~ msgstr "Kích thước icon:"
+
+#~ msgid "Custom Command:"
+#~ msgstr "Lệnh tự chọn:"
+
+#~ msgid "Window Overview"
+#~ msgstr "Hiển thị các sửa sổ đang mở"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "Ẩn cửa sổ hiện tại vào thanh trình đơn"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "Phóng to cửa sổ hiện tại"
+
+#~ msgid "Do Nothing"
+#~ msgstr "Không làm gì"
+
+#~ msgid "Show All Windows"
+#~ msgstr "Hiển thị tất cả cửa sổ đang mở"
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "Chạy lệnh tự chọn"

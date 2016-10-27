@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2016-08-13 07:57+0000\n"
 "Last-Translator: Jan S Borlaug <janborlaug@gmail.com>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
@@ -15,9 +15,91 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-09-16 07:46+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
 "Language: nb\n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Skrivebord"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Konfigurer dokken, aktive hjørner og endre bakgrunnsbilde"
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "Bakgrunnsbilde"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "Dokk"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Når markøren kommer inn i hjørnet av skjermen:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "Aktive hjørner"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr "Vis arbeidsområder"
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "Vis applikasjonsmeny"
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr "Skjulemodus"
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr "Ikonstørrelse"
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr "Skjerm"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr "Bruk som _skrivebordsbakgrunn"
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr "Bruk det valgte bildet som ny skrivebordsbakgrunn"
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -63,14 +145,6 @@ msgstr "Avbryt"
 msgid "Open"
 msgstr "Åpne"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Bruk som _skrivebordsbakgrunn"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "Bruk det valgte bildet som ny skrivebordsbakgrunn"
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "Normal"
@@ -100,16 +174,16 @@ msgid "Not being used"
 msgstr "Ikke brukes"
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
-msgstr "Primærskjerm:"
+msgid "Primary display:"
+msgstr ""
 
 #: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "Skjerm:"
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "Ikonstørrelse:"
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -126,87 +200,6 @@ msgstr "Skjerm %d"
 #: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "Skjerm %d"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Skrivebord"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Konfigurer dokken, aktive hjørner og endre bakgrunnsbilde"
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Bakgrunnsbilde"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Dokk"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Når markøren kommer inn i hjørnet av skjermen:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Egendefinert kommando:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Aktive hjørner"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "Ikke gjør noe"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "Vis arbeidsområder"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Maksimer gjeldende vindu"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Minimer gjeldende vindu"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Vis applikasjonsmeny"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Vindusoversikt"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Vis alle vinduer"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Utfør egendefinert kommando"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr "Tema"
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr "Skjulemodus"
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr "Ikonstørrelse"
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr "Skjerm"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
@@ -241,3 +234,30 @@ msgstr "Sett som skrivebord-lysbildeserie"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Lag lysbildeserie"
+
+#~ msgid "Icon Size:"
+#~ msgstr "Ikonstørrelse:"
+
+#~ msgid "Custom Command:"
+#~ msgstr "Egendefinert kommando:"
+
+#~ msgid "Do Nothing"
+#~ msgstr "Ikke gjør noe"
+
+#~ msgid "Primary Display:"
+#~ msgstr "Primærskjerm:"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "Minimer gjeldende vindu"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "Maksimer gjeldende vindu"
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "Utfør egendefinert kommando"
+
+#~ msgid "Window Overview"
+#~ msgstr "Vindusoversikt"
+
+#~ msgid "Show All Windows"
+#~ msgstr "Vis alle vinduer"

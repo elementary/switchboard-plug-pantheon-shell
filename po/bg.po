@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2016-09-29 12:22+0000\n"
 "Last-Translator: Адмирал АнимЕ <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -15,9 +15,91 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-09-30 06:09+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
 "Language: bg\n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Работен плот"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Настройка на лентата, горещите ъгли и фона"
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "Фон"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "Лента"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Когато курсора докосне ъгъла на екрана:"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "Горещи ъгли"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr "Многозадачен изглед"
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "Показване на меню с приложения"
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr "Тема"
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr "Режим на скриване"
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr "Размер на иконите"
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr "Екран"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr "Задаване като фон на работния плот"
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr "Задава избраното изображение като фон на работния плот"
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -63,14 +145,6 @@ msgstr "Отказ"
 msgid "Open"
 msgstr "Отваряне"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Задаване като фон на работния плот"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "Задава избраното изображение като фон на работния плот"
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "Обикновен"
@@ -100,16 +174,16 @@ msgid "Not being used"
 msgstr "не се използва"
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
-msgstr "Основен екран:"
+msgid "Primary display:"
+msgstr ""
 
 #: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "Екран:"
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "Размер на иконите:"
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -126,87 +200,6 @@ msgstr "Монитор %d"
 #: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "Екран %d"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Работен плот"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Настройка на лентата, горещите ъгли и фона"
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Фон"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Лента"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Когато курсора докосне ъгъла на екрана:"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Команда по избор:"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Горещи ъгли"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "Да не се прави нищо"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "Многозадачен изглед"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Текущ прозорец на цял екран"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Минимизиране на текущ прозорец"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Показване на меню с приложения"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Преглед на прозорци"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Показване на всички прозорци"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Изпълняване на команда по избор"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr "Тема"
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr "Режим на скриване"
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr "Размер на иконите"
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr "Екран"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
@@ -241,3 +234,30 @@ msgstr "Задаване като изреждане на работния пл�
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Създаване на изреждане"
+
+#~ msgid "Custom Command:"
+#~ msgstr "Команда по избор:"
+
+#~ msgid "Icon Size:"
+#~ msgstr "Размер на иконите:"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "Минимизиране на текущ прозорец"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "Текущ прозорец на цял екран"
+
+#~ msgid "Do Nothing"
+#~ msgstr "Да не се прави нищо"
+
+#~ msgid "Window Overview"
+#~ msgstr "Преглед на прозорци"
+
+#~ msgid "Show All Windows"
+#~ msgstr "Показване на всички прозорци"
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "Изпълняване на команда по избор"
+
+#~ msgid "Primary Display:"
+#~ msgstr "Основен екран:"

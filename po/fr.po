@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 21:09-0500\n"
+"POT-Creation-Date: 2016-10-26 14:49-0700\n"
 "PO-Revision-Date: 2016-06-17 12:07+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -15,9 +15,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2016-09-16 07:45+0000\n"
-"X-Generator: Launchpad (build 18186)\n"
+"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
 "Language: fr\n"
+
+#: ../src/desktop-plug.vala:25
+msgid "Desktop"
+msgstr "Bureau"
+
+#: ../src/desktop-plug.vala:26
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
+"Configurer le dock, les coins intelligents et changer le fond d'écran"
+
+#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+msgid "Wallpaper"
+msgstr "Fond d'écran"
+
+#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
+#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+msgid "Dock"
+msgstr "Dock"
+
+#: ../src/desktop-plug.vala:67
+msgid "When the cursor enters the corner of the display:"
+msgstr "Quand le curseur entre dans les coins de l'écran :"
+
+#: ../src/desktop-plug.vala:96
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+msgid "Hot Corners"
+msgstr "Coins intelligents"
+
+#: ../src/desktop-plug.vala:119
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/desktop-plug.vala:120
+msgid "Multitasking View"
+msgstr "Vue multitâche"
+
+#: ../src/desktop-plug.vala:121
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:122
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/desktop-plug.vala:123
+msgid "Show Applications Menu"
+msgstr "Afficher le menu Applications"
+
+#: ../src/desktop-plug.vala:124
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/desktop-plug.vala:125
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/desktop-plug.vala:157
+msgid "Theme"
+msgstr "Thème"
+
+#: ../src/desktop-plug.vala:158
+msgid "Hide Mode"
+msgstr "Mode Masqué"
+
+#: ../src/desktop-plug.vala:159
+msgid "Icon Size"
+msgstr "Taille de l'icône"
+
+#: ../src/desktop-plug.vala:160
+msgid "Display"
+msgstr "Affichage"
+
+#: ../src/Translations.vala:1
+msgid "Set as _Desktop Background"
+msgstr "Définir comme fond d'_écran"
+
+#: ../src/Translations.vala:2
+msgid "Set selected image to be the new desktop background"
+msgstr "Définit l'image sélectionnée comme le nouveau fond d'écran"
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -63,14 +146,6 @@ msgstr "Annuler"
 msgid "Open"
 msgstr "Ouvrir"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Définir comme fond d'_écran"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "Définit l'image sélectionnée comme le nouveau fond d'écran"
-
 #: ../src/Dock.vala:35
 msgid "Normal"
 msgstr "Normal"
@@ -100,16 +175,16 @@ msgid "Not being used"
 msgstr "Inutilisé"
 
 #: ../src/Dock.vala:102
-msgid "Primary Display:"
-msgstr "Affichage principal"
+msgid "Primary display:"
+msgstr ""
 
 #: ../src/Dock.vala:106
 msgid "Display:"
 msgstr "Affichage :"
 
 #: ../src/Dock.vala:137
-msgid "Icon Size:"
-msgstr "Taille d'icône :"
+msgid "Icon size:"
+msgstr ""
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -126,88 +201,6 @@ msgstr "Écran %d"
 #: ../src/Dock.vala:187
 msgid "Display %d"
 msgstr "Affichage %d"
-
-#: ../src/desktop-plug.vala:25
-msgid "Desktop"
-msgstr "Bureau"
-
-#: ../src/desktop-plug.vala:26
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-"Configurer le dock, les coins intelligents et changer le fond d'écran"
-
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:157
-#: ../src/desktop-plug.vala:158
-msgid "Wallpaper"
-msgstr "Fond d'écran"
-
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:160
-#: ../src/desktop-plug.vala:162 ../src/desktop-plug.vala:164
-#: ../src/desktop-plug.vala:166 ../src/desktop-plug.vala:168
-#: ../src/desktop-plug.vala:170
-msgid "Dock"
-msgstr "Dock"
-
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "Quand le curseur entre dans les coins de l'écran :"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom Command:"
-msgstr "Commande personnalisée :"
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:171
-#: ../src/desktop-plug.vala:172
-msgid "Hot Corners"
-msgstr "Coins intelligents"
-
-#: ../src/desktop-plug.vala:119
-msgid "Do Nothing"
-msgstr "Ne rien faire"
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "Vue multitâche"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize Current Window"
-msgstr "Maximiser la fenêtre"
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize Current Window"
-msgstr "Minimiser la fenêtre"
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Afficher le menu Applications"
-
-#: ../src/desktop-plug.vala:124
-msgid "Window Overview"
-msgstr "Aperçu des fenêtres"
-
-#: ../src/desktop-plug.vala:125
-msgid "Show All Windows"
-msgstr "Afficher toutes les fenêtres"
-
-#: ../src/desktop-plug.vala:126
-msgid "Execute Custom Command"
-msgstr "Exécuter une commande personnalisée"
-
-#: ../src/desktop-plug.vala:163 ../src/desktop-plug.vala:164
-msgid "Theme"
-msgstr "Thème"
-
-#: ../src/desktop-plug.vala:165 ../src/desktop-plug.vala:166
-msgid "Hide Mode"
-msgstr "Mode Masqué"
-
-#: ../src/desktop-plug.vala:167 ../src/desktop-plug.vala:168
-msgid "Icon Size"
-msgstr "Taille de l'icône"
-
-#: ../src/desktop-plug.vala:169 ../src/desktop-plug.vala:170
-msgid "Display"
-msgstr "Affichage"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
@@ -242,3 +235,30 @@ msgstr "Définir comme fond d'écran animé"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Créer un fond d'écran animé"
+
+#~ msgid "Custom Command:"
+#~ msgstr "Commande personnalisée :"
+
+#~ msgid "Execute Custom Command"
+#~ msgstr "Exécuter une commande personnalisée"
+
+#~ msgid "Do Nothing"
+#~ msgstr "Ne rien faire"
+
+#~ msgid "Maximize Current Window"
+#~ msgstr "Maximiser la fenêtre"
+
+#~ msgid "Minimize Current Window"
+#~ msgstr "Minimiser la fenêtre"
+
+#~ msgid "Icon Size:"
+#~ msgstr "Taille d'icône :"
+
+#~ msgid "Show All Windows"
+#~ msgstr "Afficher toutes les fenêtres"
+
+#~ msgid "Window Overview"
+#~ msgstr "Aperçu des fenêtres"
+
+#~ msgid "Primary Display:"
+#~ msgstr "Affichage principal"
