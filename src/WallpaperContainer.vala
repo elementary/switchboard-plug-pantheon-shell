@@ -116,7 +116,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         Gdk.cairo_set_source_pixbuf (cr, thumb, thumb_margin, thumb_margin);
         cr.paint ();
 
-        if ((get_state_flags () & Gtk.StateFlags.CHECKED) == Gtk.StateFlags.CHECKED) {
+        if ((get_state_flags () & Gtk.StateFlags.CHECKED) == Gtk.StateFlags.CHECKED && checked_icon != null) {
 
             int x = width/2 - checked_icon.get_width()/2;
             int y = height/2 - checked_icon.get_height()/2;
