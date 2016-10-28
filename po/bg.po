@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:49-0700\n"
-"PO-Revision-Date: 2016-09-29 12:22+0000\n"
+"PO-Revision-Date: 2016-10-27 12:50+0000\n"
 "Last-Translator: Адмирал АнимЕ <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
+"X-Launchpad-Export-Date: 2016-10-28 05:46+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 "Language: bg\n"
 
@@ -43,7 +43,7 @@ msgstr "Когато курсора докосне ъгъла на екрана:
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom command:"
-msgstr ""
+msgstr "Команда по избор:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
 msgid "Hot Corners"
@@ -51,7 +51,7 @@ msgstr "Горещи ъгли"
 
 #: ../src/desktop-plug.vala:119
 msgid "Do nothing"
-msgstr ""
+msgstr "Да не се прави нищо"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
@@ -59,11 +59,11 @@ msgstr "Многозадачен изглед"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize current window"
-msgstr ""
+msgstr "Увеличаване на текущия прозорец"
 
 #: ../src/desktop-plug.vala:122
 msgid "Minimize current window"
-msgstr ""
+msgstr "Смаляване на текущия прозорец"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
@@ -71,11 +71,11 @@ msgstr "Показване на меню с приложения"
 
 #: ../src/desktop-plug.vala:124
 msgid "Show all windows"
-msgstr ""
+msgstr "Показване на всички прозорци"
 
 #: ../src/desktop-plug.vala:125
 msgid "Execute custom command"
-msgstr ""
+msgstr "Изпълняване на команда по избор"
 
 #: ../src/desktop-plug.vala:157
 msgid "Theme"
@@ -175,7 +175,7 @@ msgstr "не се използва"
 
 #: ../src/Dock.vala:102
 msgid "Primary display:"
-msgstr ""
+msgstr "Основен екран:"
 
 #: ../src/Dock.vala:106
 msgid "Display:"
@@ -183,7 +183,7 @@ msgstr "Екран:"
 
 #: ../src/Dock.vala:137
 msgid "Icon size:"
-msgstr ""
+msgstr "Размер на иконките:"
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -234,30 +234,3 @@ msgstr "Задаване като изреждане на работния пл�
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Създаване на изреждане"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Команда по избор:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Размер на иконите:"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Минимизиране на текущ прозорец"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Текущ прозорец на цял екран"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Да не се прави нищо"
-
-#~ msgid "Window Overview"
-#~ msgstr "Преглед на прозорци"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Показване на всички прозорци"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Изпълняване на команда по избор"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Основен екран:"
