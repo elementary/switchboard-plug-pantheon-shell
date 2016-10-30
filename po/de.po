@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:49-0700\n"
-"PO-Revision-Date: 2016-10-12 17:02+0000\n"
+"PO-Revision-Date: 2016-10-29 19:55+0000\n"
 "Last-Translator: UweS <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
+"X-Launchpad-Export-Date: 2016-10-30 06:04+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 "Language: de\n"
 
@@ -43,7 +43,7 @@ msgstr "Beim Berühren der Bildschirmecken mit dem Mauszeiger:"
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom command:"
-msgstr ""
+msgstr "Benutzerdefinierter Befehl:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
 msgid "Hot Corners"
@@ -51,7 +51,7 @@ msgstr "Aktive Ecken"
 
 #: ../src/desktop-plug.vala:119
 msgid "Do nothing"
-msgstr ""
+msgstr "Nichts tun"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
@@ -59,11 +59,11 @@ msgstr "Arbeitsflächenübersicht"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize current window"
-msgstr ""
+msgstr "Aktuelles Fenster maximieren"
 
 #: ../src/desktop-plug.vala:122
 msgid "Minimize current window"
-msgstr ""
+msgstr "Aktuelles Fenster minimieren"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
@@ -71,11 +71,11 @@ msgstr "Anwendungsmenü anzeigen"
 
 #: ../src/desktop-plug.vala:124
 msgid "Show all windows"
-msgstr ""
+msgstr "Alle Fenster anzeigen"
 
 #: ../src/desktop-plug.vala:125
 msgid "Execute custom command"
-msgstr ""
+msgstr "Benutzerdefinierten Befehl ausführen"
 
 #: ../src/desktop-plug.vala:157
 msgid "Theme"
@@ -175,7 +175,7 @@ msgstr "Nicht verwendet"
 
 #: ../src/Dock.vala:102
 msgid "Primary display:"
-msgstr ""
+msgstr "Primärer Bildschirm:"
 
 #: ../src/Dock.vala:106
 msgid "Display:"
@@ -183,7 +183,7 @@ msgstr "Bildschirm:"
 
 #: ../src/Dock.vala:137
 msgid "Icon size:"
-msgstr ""
+msgstr "Symbolgröße:"
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -234,30 +234,3 @@ msgstr "Als Schreibtisch-Diaschau festlegen"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Diaschau erstellen"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Symbolgröße:"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Nichts tun"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Benutzerdefinierter Befehl:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Benutzerdefinierten Befehl ausführen"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Aktives Fenster vergrößern"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Aktives Fenster verkleinern"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Primärer Bildschirm:"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Übersicht aller Fenster aller Arbeitsflächen"
-
-#~ msgid "Window Overview"
-#~ msgstr "Übersicht aller Fenster der aktiven Arbeitsfläche"
