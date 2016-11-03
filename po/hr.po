@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:49-0700\n"
-"PO-Revision-Date: 2016-09-23 23:16+0000\n"
+"PO-Revision-Date: 2016-11-02 16:56+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
+"X-Launchpad-Export-Date: 2016-11-03 06:05+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
 #: ../src/desktop-plug.vala:25
@@ -38,7 +38,7 @@ msgstr "Kada pokazivač dođe u kut zaslona:"
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom command:"
-msgstr ""
+msgstr "Prilagođena naredba:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
 msgid "Hot Corners"
@@ -46,7 +46,7 @@ msgstr "Kutovi zaslona"
 
 #: ../src/desktop-plug.vala:119
 msgid "Do nothing"
-msgstr ""
+msgstr "Ne čini ništa"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
@@ -54,11 +54,11 @@ msgstr "Višeradni pogled"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize current window"
-msgstr ""
+msgstr "Uvećaj trenutni prozor"
 
 #: ../src/desktop-plug.vala:122
 msgid "Minimize current window"
-msgstr ""
+msgstr "Smanji trenutni prozor"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
@@ -66,11 +66,11 @@ msgstr "Prikaži izbornik aplikacija"
 
 #: ../src/desktop-plug.vala:124
 msgid "Show all windows"
-msgstr ""
+msgstr "Prikaži sve prozore"
 
 #: ../src/desktop-plug.vala:125
 msgid "Execute custom command"
-msgstr ""
+msgstr "Pokreni prilagođenu naredbu"
 
 #: ../src/desktop-plug.vala:157
 msgid "Theme"
@@ -170,7 +170,7 @@ msgstr "Se ne koristi"
 
 #: ../src/Dock.vala:102
 msgid "Primary display:"
-msgstr ""
+msgstr "Glavni zaslon:"
 
 #: ../src/Dock.vala:106
 msgid "Display:"
@@ -178,7 +178,7 @@ msgstr "Prikaz:"
 
 #: ../src/Dock.vala:137
 msgid "Icon size:"
-msgstr ""
+msgstr "Veličina ikone:"
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -232,30 +232,3 @@ msgstr "Postavi kao mijenjanje pozadine radne površine"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Stvori mijenjanje pozadine"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Veličina ikone:"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Prilagođena naredba:"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Uvećaj trenutni prozor"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Ne čini ništa"
-
-#~ msgid "Window Overview"
-#~ msgstr "Pregled prozora"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Prikaži sve prozore"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Pokreni prilagođenu naredbu"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Smanji trenutni prozor"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Glavni zaslon:"
