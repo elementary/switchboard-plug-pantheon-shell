@@ -206,7 +206,7 @@ class Wallpaper : EventBox {
             string uri = file.get_uri ();
             string path = file.get_path ();
 
-            if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH)) {
+            if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
                 var localfile = copy_for_library (file);
                 if (localfile != null) {
                     uri = localfile.get_uri ();
