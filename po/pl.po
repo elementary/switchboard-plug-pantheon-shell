@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:49-0700\n"
-"PO-Revision-Date: 2016-09-22 15:19+0000\n"
-"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2016-11-13 17:43+0000\n"
+"Last-Translator: Damian Woźniak <fiszet@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-14 06:05+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 "Language: pl\n"
 
 #: ../src/desktop-plug.vala:25
@@ -44,7 +44,7 @@ msgstr "Gdy kursor dotknie rogu ekranu:"
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom command:"
-msgstr ""
+msgstr "Własne polecenie:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
 msgid "Hot Corners"
@@ -52,7 +52,7 @@ msgstr "Aktywne narożniki"
 
 #: ../src/desktop-plug.vala:119
 msgid "Do nothing"
-msgstr ""
+msgstr "Nic nie rób"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
@@ -60,11 +60,11 @@ msgstr "Widok wielozadaniowy"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize current window"
-msgstr ""
+msgstr "Maksymalizuj bieżące okno"
 
 #: ../src/desktop-plug.vala:122
 msgid "Minimize current window"
-msgstr ""
+msgstr "Minimalizuj bieżące okno"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
@@ -72,11 +72,11 @@ msgstr "Pokazuj menu z aplikacjami"
 
 #: ../src/desktop-plug.vala:124
 msgid "Show all windows"
-msgstr ""
+msgstr "Pokaż wszystkie okna"
 
 #: ../src/desktop-plug.vala:125
 msgid "Execute custom command"
-msgstr ""
+msgstr "Wykonaj własne polecenie"
 
 #: ../src/desktop-plug.vala:157
 msgid "Theme"
@@ -176,7 +176,7 @@ msgstr "Nieużywane"
 
 #: ../src/Dock.vala:102
 msgid "Primary display:"
-msgstr ""
+msgstr "Główny ekran:"
 
 #: ../src/Dock.vala:106
 msgid "Display:"
@@ -184,7 +184,7 @@ msgstr "Ekran:"
 
 #: ../src/Dock.vala:137
 msgid "Icon size:"
-msgstr ""
+msgstr "Rozmiar ikon:"
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -238,30 +238,3 @@ msgstr "Ustaw jako pokaz slajdów na pulpicie"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Utwórz pokaz slajdów"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Rozmiar ikon:"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Własne polecenie:"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimalizuj aktywne okno"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maksymalizuj aktywne okno"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Prezentuj wszystkie okna"
-
-#~ msgid "Window Overview"
-#~ msgstr "Prezentuj okna obszaru roboczego"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Wykonaj własne polecenie"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Brak czynnności"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Główny ekran:"
