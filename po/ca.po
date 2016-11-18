@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:49-0700\n"
-"PO-Revision-Date: 2014-05-15 20:58+0000\n"
-"Last-Translator: Alfredo Hernández <Unknown>\n"
+"PO-Revision-Date: 2016-11-16 18:21+0000\n"
+"Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-18 06:08+0000\n"
+"X-Generator: Launchpad (build 18269)\n"
 "Language: ca\n"
 
 #: ../src/desktop-plug.vala:25
@@ -26,6 +26,8 @@ msgstr "Escriptori"
 #: ../src/desktop-plug.vala:26
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
+"Configureu l'acoblador, les cantonades actives i canvieu el fons de "
+"l'escriptori"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
 msgid "Wallpaper"
@@ -43,7 +45,7 @@ msgstr "Quan el cursor toqui una cantonada de la pantalla:"
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom command:"
-msgstr ""
+msgstr "Ordre personalitzada:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
 msgid "Hot Corners"
@@ -51,19 +53,19 @@ msgstr "Cantonades actives"
 
 #: ../src/desktop-plug.vala:119
 msgid "Do nothing"
-msgstr ""
+msgstr "No facis res"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
-msgstr ""
+msgstr "Vista de multitasca"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize current window"
-msgstr ""
+msgstr "Maximitza la finestra actual"
 
 #: ../src/desktop-plug.vala:122
 msgid "Minimize current window"
-msgstr ""
+msgstr "Minimitza la finestra actual"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
@@ -71,35 +73,35 @@ msgstr "Mostra el menú d'aplicacions"
 
 #: ../src/desktop-plug.vala:124
 msgid "Show all windows"
-msgstr ""
+msgstr "Mostra totes les finestres"
 
 #: ../src/desktop-plug.vala:125
 msgid "Execute custom command"
-msgstr ""
+msgstr "Executa una ordre personalitzada"
 
 #: ../src/desktop-plug.vala:157
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../src/desktop-plug.vala:158
 msgid "Hide Mode"
-msgstr ""
+msgstr "Mode ocult"
 
 #: ../src/desktop-plug.vala:159
 msgid "Icon Size"
-msgstr ""
+msgstr "Mida de les icones"
 
 #: ../src/desktop-plug.vala:160
 msgid "Display"
-msgstr ""
+msgstr "Pantalla"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Estableix com a fons _d'escriptori"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Estableix la imatge seleccionada com a nou fons de l'escriptori"
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -107,7 +109,7 @@ msgstr "Imatges"
 
 #: ../src/Wallpaper.vala:141
 msgid "Backgrounds"
-msgstr "Fons de pantalla"
+msgstr "Fons d'escriptori"
 
 #: ../src/Wallpaper.vala:142
 msgid "Custom…"
@@ -135,7 +137,7 @@ msgstr "Distribuït"
 
 #: ../src/Wallpaper.vala:321
 msgid "Select a folder"
-msgstr "Seleccioneu una carpeta"
+msgstr "Seleccioneu un directori"
 
 #: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
 msgid "Cancel"
@@ -147,7 +149,7 @@ msgstr "Obre"
 
 #: ../src/Dock.vala:35
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: ../src/Dock.vala:36
 msgid "Large"
@@ -155,106 +157,82 @@ msgstr "Gran"
 
 #: ../src/Dock.vala:48
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Personalitzat (%dpx)"
 
 #: ../src/Dock.vala:63
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "Es maximitza la finestra focalitzada"
 
 #: ../src/Dock.vala:64
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "La finestra focalitzada tapa l'acoblador"
 
 #: ../src/Dock.vala:65
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Qualsevol finestra tapa l'acoblador"
 
 #: ../src/Dock.vala:66
 msgid "Not being used"
-msgstr ""
+msgstr "No s'usa"
 
 #: ../src/Dock.vala:102
 msgid "Primary display:"
-msgstr ""
+msgstr "Pantalla primària:"
 
 #: ../src/Dock.vala:106
 msgid "Display:"
-msgstr ""
+msgstr "Pantalla:"
 
 #: ../src/Dock.vala:137
 msgid "Icon size:"
-msgstr ""
+msgstr "Mida d'icona:"
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
-msgstr ""
+msgstr "Amaga quan...:"
 
 #: ../src/Dock.vala:143
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "El que la pressió revela:"
 
 #: ../src/Dock.vala:182
 msgid "Monitor %d"
-msgstr ""
+msgstr "Monitor %d"
 
 #: ../src/Dock.vala:187
 msgid "Display %d"
-msgstr ""
+msgstr "Pantalla %d"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d segon"
+msgstr[1] "%d segons"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d minut"
+msgstr[1] "%d minuts"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d hora"
+msgstr[1] "%d hores"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:81
 msgid "1 day"
-msgstr ""
+msgstr "1 dia"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr ""
+msgstr "Mostra cada fotografia durant..."
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Estableix com a presentació de diapositives"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
-
-#~ msgid "Custom Command:"
-#~ msgstr "Ordre personalitzada:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Mida de les icones:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Executa una ordre personalitzada"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimitza la finestra actual"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximitza la finestra actual"
-
-#~ msgid "Do Nothing"
-#~ msgstr "No facis res"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Mostra totes les finestres"
-
-#~ msgid "Window Overview"
-#~ msgstr "Visualitza les finestres"
+msgstr "Crea una presentació de diapositives"
