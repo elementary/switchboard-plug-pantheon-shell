@@ -18,7 +18,7 @@ set (PLUGICON "preferences-desktop-wallpaper")
 # Set the version for the plug
 set (VERSION "0.2.2.1")
 
-project (${PLUGNAME})
+project (${PLUGNAME} C)
 
 #########################################################
 # Only alter stuff below if you know what you are doing #
