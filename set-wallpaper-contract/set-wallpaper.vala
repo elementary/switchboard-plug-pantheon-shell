@@ -163,7 +163,7 @@ namespace SetWallpaperContractor {
 
                 string path = file.get_path ();
                 File append_file = file;
-                if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH)) {
+                if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
                     var local_file = copy_for_library (file);
                     if (local_file != null) {
                         append_file = local_file;
