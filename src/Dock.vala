@@ -29,6 +29,7 @@ public class Dock : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 6;
         margin = 24;
+        margin_top = 64;
         column_homogeneous = true;
 
         var icon_size = new Gtk.ComboBoxText ();
