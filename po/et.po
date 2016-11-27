@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -233,30 +233,3 @@ msgstr "Määra töölaua taustapiltide esitlusena"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Taustapiltide esitlus"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Ikooni suurus:"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Kohandatud käsk:"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Ei tehta midagi"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Aken minimeeritakse"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Aken maksimeeritakse"
-
-#~ msgid "Window Overview"
-#~ msgstr "Tööala akende ülevaade"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Kõikide akende ülevaade"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Põhiline ekraan:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Kohandatud käsu käivitamine"

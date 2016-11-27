@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: fa\n"
 
 #: ../src/desktop-plug.vala:25
@@ -234,27 +234,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Icon Size:"
-#~ msgstr "اندازه شمایل:"
-
-#~ msgid "Custom Command:"
-#~ msgstr "فرمان سفارشی:"
-
-#~ msgid "Do Nothing"
-#~ msgstr "هیچ کاری انجام نشود"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "بیشینه کردن پنجره کنونی"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "کمینه کردن پنجره کنونی"
-
-#~ msgid "Window Overview"
-#~ msgstr "پیش‌نمایش پنجره"
-
-#~ msgid "Show All Windows"
-#~ msgstr "نمایش همه پنجره‌ها"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "اجراء فرمان سفارشی"

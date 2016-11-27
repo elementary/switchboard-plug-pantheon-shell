@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: cs\n"
 
 #: ../src/desktop-plug.vala:25
@@ -237,30 +237,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Icon Size:"
-#~ msgstr "Velikost ikon:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Provést vlastní příkaz"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimalizovat aktuální okno"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximalizovat aktuální okno"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Nedělat nic"
-
-#~ msgid "Window Overview"
-#~ msgstr "Přehled oken"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Vlastní příkaz:"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Přehled oken ze všech ploch"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Hlavní displej:"

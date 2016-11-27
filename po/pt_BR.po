@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: pt_BR\n"
 
 #: ../src/desktop-plug.vala:25
@@ -236,30 +236,3 @@ msgstr "Definir como apresentação de slides na área de trabalho"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Criar apresentação de slides"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Tamanho do ícone:"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Comando personalizado:"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Fazer nada"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Executar comando personalizado"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimizar a janela atual"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximizar a janela atual"
-
-#~ msgid "Window Overview"
-#~ msgstr "Visão geral das janelas"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Mostrar todas as janelas"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Tela primária:"

@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: sv\n"
 
 #: ../src/desktop-plug.vala:25
@@ -234,30 +234,3 @@ msgstr "Använd som bakgrundsbildspel"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Skapa bildspel"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Anpassat kommando:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Ikonstorlek:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Utför anpassat kommando"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimera nuvarande fönster"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximera nuvarande fönster"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Visa alla fönster"
-
-#~ msgid "Window Overview"
-#~ msgstr "Överblicka fönster"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Gör ingenting"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Primär bildskärm:"

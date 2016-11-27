@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: fr\n"
 
 #: ../src/desktop-plug.vala:25
@@ -235,30 +235,3 @@ msgstr "Définir comme fond d'écran animé"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Créer un fond d'écran animé"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Commande personnalisée :"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Exécuter une commande personnalisée"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Ne rien faire"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximiser la fenêtre"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimiser la fenêtre"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Taille d'icône :"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Afficher toutes les fenêtres"
-
-#~ msgid "Window Overview"
-#~ msgstr "Aperçu des fenêtres"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Affichage principal"

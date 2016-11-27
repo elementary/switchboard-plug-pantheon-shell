@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: \n"
 
 #: ../src/desktop-plug.vala:25
@@ -234,30 +234,3 @@ msgstr "Set As Desktop Slideshow"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Create slideshow"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Custom Command:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Icon Size:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Execute Custom Command"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimise Current Window"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximise Current Window"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Do Nothing"
-
-#~ msgid "Window Overview"
-#~ msgstr "Window Overview"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Show All Windows"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Primary Display:"

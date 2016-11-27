@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: tr\n"
 
 #: ../src/desktop-plug.vala:25
@@ -234,30 +234,3 @@ msgstr "Masaüstü Slayt Gösterisi Olarak Ayarla"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Slayt gösterisi oluştur"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Özel Komut:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Özel Komut Çalıştır"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Geçerli Pencereyi Küçült"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Geçerli Pencere Ekranı Kaplasın"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Hiçbir Şey Yapma"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Simge Boyutu:"
-
-#~ msgid "Window Overview"
-#~ msgstr "Pencere Görünümü"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Tüm Pencereleri Göster"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Ana Görünüm"

@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: id\n"
 
 #: ../src/desktop-plug.vala:25
@@ -234,27 +234,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Custom Command:"
-#~ msgstr "Perintah Custom:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Ukuran Ikon:"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Jangan Lakukan Apapun"
-
-#~ msgid "Window Overview"
-#~ msgstr "Pementasan Jendela"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimalkan Jendela Terbuka"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maksimalkan Jendela Terbuka"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Tampilkan Semua Jendela"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Jalankan Perintah Custom"

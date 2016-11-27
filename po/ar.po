@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -234,21 +234,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Custom Command:"
-#~ msgstr "أمر مخصص:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "حجم الأيقونات:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "تنفيذ أمر مخصص"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "تصغير النافذة الحالية"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "تكبير النافذة الحالية"
-
-#~ msgid "Do Nothing"
-#~ msgstr "لا تفعل شيئاً"

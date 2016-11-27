@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: \n"
 
 #: ../src/desktop-plug.vala:25
@@ -231,30 +231,3 @@ msgstr "設為桌面投影秀"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "製作投影秀"
-
-#~ msgid "Custom Command:"
-#~ msgstr "自訂指令："
-
-#~ msgid "Icon Size:"
-#~ msgstr "圖示大小："
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "執行自訂指令"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "最小化目前的視窗"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "最大化目前的視窗"
-
-#~ msgid "Do Nothing"
-#~ msgstr "什麼也不做"
-
-#~ msgid "Window Overview"
-#~ msgstr "視窗概覽"
-
-#~ msgid "Show All Windows"
-#~ msgstr "顯示所有視窗"
-
-#~ msgid "Primary Display:"
-#~ msgstr "主要顯示器："

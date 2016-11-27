@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -234,21 +234,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Custom Command:"
-#~ msgstr "Особа команда"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Розмір іконки:"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Звернути сись оболок"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Розвернути сись оболок"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Нич неробити"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Виконати особу команду"

@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -228,27 +228,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Primary Display:"
-#~ msgstr "Ekrani kryesor:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Madhësia e ikonave:"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Asnjë veprim"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Shfaqi të gjitha dritaret"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimizo dritaren aktuale"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maksimizo dritaren aktuale"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Ekzekuto komandë të personalizuar"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Komanda e personalizuar:"

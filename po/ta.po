@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -233,27 +233,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Icon Size:"
-#~ msgstr "ஐகான் அளவு:"
-
-#~ msgid "Custom Command:"
-#~ msgstr "தனிப்பயன் கட்டளை:"
-
-#~ msgid "Do Nothing"
-#~ msgstr "ஒன்றும் செய்யாதே"
-
-#~ msgid "Window Overview"
-#~ msgstr "விண்டோ கண்ணோட்டம்"
-
-#~ msgid "Show All Windows"
-#~ msgstr "அனைத்து சாளரங்களை காட்டு"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "தனிபயன் கட்டளையை இயக்கவும்"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "தற்போதைய சாளரத்தில் குறை"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "தற்போதைய சாளரத்தை பெரிதாக்கு"

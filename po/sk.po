@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: sk\n"
 
 #: ../src/desktop-plug.vala:25
@@ -234,30 +234,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Custom Command:"
-#~ msgstr "Vlastný príkaz:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Veľkosť ikôn:"
-
-#~ msgid "Window Overview"
-#~ msgstr "Náhľad okna"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Zobraziť všetky okná"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Vykonať vlastný príkaz"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimalizovať aktuálne okno"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximalizovať aktuálne okno"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Neurobiť nič"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Primárna obrazovka"

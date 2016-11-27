@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:16+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: bs\n"
 
 #: ../src/desktop-plug.vala:25
@@ -235,30 +235,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Primary Display:"
-#~ msgstr "Primarni monitor:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Veličina ikone:"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Korisnički definisana komanda:"
-
-#~ msgid "Window Overview"
-#~ msgstr "Pregled prozora"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Prikaži sve prozore"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimiziraj trenutni prozor"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Ne radi ništa"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Izvrši korisnički definisanu komandu"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Povećaj trenutni prozor"

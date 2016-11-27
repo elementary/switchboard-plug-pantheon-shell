@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -228,30 +228,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Icon Size:"
-#~ msgstr "ხატულების ზომა:"
-
-#~ msgid "Primary Display:"
-#~ msgstr "მთავარი დისპლეი:"
-
-#~ msgid "Custom Command:"
-#~ msgstr "ბრძანების მითითება"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "მიმდინარე ფანჯრის ჩაკეცვა"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "მიმდინარე ფანჯრის გაშლა"
-
-#~ msgid "Do Nothing"
-#~ msgstr "არაფერი"
-
-#~ msgid "Window Overview"
-#~ msgstr "ფანჯრის ზოგადი მიმოხილვა"
-
-#~ msgid "Show All Windows"
-#~ msgstr "ყველა ფანჯრის ჩვენება"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "მითითებული ბრძანების გაშვება"

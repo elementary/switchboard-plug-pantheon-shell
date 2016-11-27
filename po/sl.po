@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -240,30 +240,3 @@ msgstr "Nastavi kot projekcijo na namizju"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Ustvari projekcijo"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Ukaz po meri:"
-
-#~ msgid "Icon Size:"
-#~ msgstr "Velikost ikon:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Izvrši ukaz po meri"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Skrči trenutno okno"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Razpni trenutno okno"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Ne naredi ničesar"
-
-#~ msgid "Window Overview"
-#~ msgstr "Pregled oken"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Pokaži vsa okna"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Primarni zaslon:"

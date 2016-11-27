@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 ? 0: (((n % 100 > 19) || ((n % 100 "
 "== 0) && (n != 0))) ? 2: 1));\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 "Language: ro\n"
 
 #: ../src/desktop-plug.vala:25
@@ -235,30 +235,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Icon Size:"
-#~ msgstr "Dimensiune pictograma"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Comanda personalizata"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Executa comanda personalizata"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimizeaza fereastra curenta"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximizeaza fereastra curenta"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Nicio acţiune"
-
-#~ msgid "Window Overview"
-#~ msgstr "Vedere de ansamblu a ferestrelor"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Arată toate ferestrele"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Ecran Principal:"

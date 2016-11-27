@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:17+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -233,30 +233,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Icon Size:"
-#~ msgstr "Tamaño da ícona:"
-
-#~ msgid "Execute Custom Command"
-#~ msgstr "Executar a orde personalizada"
-
-#~ msgid "Minimize Current Window"
-#~ msgstr "Minimizar a xanela actual"
-
-#~ msgid "Maximize Current Window"
-#~ msgstr "Maximizar a xanela actual"
-
-#~ msgid "Do Nothing"
-#~ msgstr "Non facer nada"
-
-#~ msgid "Window Overview"
-#~ msgstr "Vista xeral da xanela"
-
-#~ msgid "Show All Windows"
-#~ msgstr "Amosar todas as xanelas"
-
-#~ msgid "Custom Command:"
-#~ msgstr "Orde personalizada:"
-
-#~ msgid "Primary Display:"
-#~ msgstr "Pantalla principal"
