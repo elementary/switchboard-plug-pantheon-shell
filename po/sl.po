@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-26 14:49-0700\n"
-"PO-Revision-Date: 2016-07-25 18:10+0000\n"
+"PO-Revision-Date: 2016-12-10 08:25+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"X-Launchpad-Export-Date: 2016-12-11 05:17+0000\n"
+"X-Generator: Launchpad (build 18292)\n"
 
 #: ../src/desktop-plug.vala:25
 msgid "Desktop"
@@ -43,7 +43,7 @@ msgstr "Ko miškin kazalec vstopi v kot zaslona:"
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom command:"
-msgstr ""
+msgstr "Ukaz:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
 msgid "Hot Corners"
@@ -51,7 +51,7 @@ msgstr "Bližnjice v kotih zaslona"
 
 #: ../src/desktop-plug.vala:119
 msgid "Do nothing"
-msgstr ""
+msgstr "Ne naredi ničesar"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
@@ -59,11 +59,11 @@ msgstr "Pokaži vsa okna"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize current window"
-msgstr ""
+msgstr "Maksimiraj trenutno okno"
 
 #: ../src/desktop-plug.vala:122
 msgid "Minimize current window"
-msgstr ""
+msgstr "Minimiraj trenutno okno"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
@@ -71,11 +71,11 @@ msgstr "Prikaži aplikacijski meni"
 
 #: ../src/desktop-plug.vala:124
 msgid "Show all windows"
-msgstr ""
+msgstr "Pokaži vsa okna"
 
 #: ../src/desktop-plug.vala:125
 msgid "Execute custom command"
-msgstr ""
+msgstr "Poženi ukaz"
 
 #: ../src/desktop-plug.vala:157
 msgid "Theme"
@@ -175,7 +175,7 @@ msgstr "Ni v uporabi"
 
 #: ../src/Dock.vala:102
 msgid "Primary display:"
-msgstr ""
+msgstr "Primarni zaslon:"
 
 #: ../src/Dock.vala:106
 msgid "Display:"
@@ -183,7 +183,7 @@ msgstr "Zaslon:"
 
 #: ../src/Dock.vala:137
 msgid "Icon size:"
-msgstr ""
+msgstr "Velikost ikon:"
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
@@ -191,7 +191,7 @@ msgstr "Skrij ko:"
 
 #: ../src/Dock.vala:143
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Prikaži ob pritisku:"
 
 #: ../src/Dock.vala:182
 msgid "Monitor %d"
