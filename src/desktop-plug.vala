@@ -20,11 +20,17 @@ public class GalaPlug : Switchboard.Plug {
     Gtk.Grid main_grid;
 
     public GalaPlug () {
+        var settings = new Gee.TreeMap<string, string?> (null, null);
+        settings.set ("desktop", null);
+        settings.set ("desktop/wallpaper", "wallpaper");
+        settings.set ("desktop/dock", "dock");
+        settings.set ("desktop/hot-corners", "hotc");
         Object (category: Category.PERSONAL,
                 code_name: "pantheon-desktop",
                 display_name: _("Desktop"),
                 description: _("Configure the dock, hot corners, and change wallpaper"),
-                icon: "preferences-desktop-wallpaper");
+                icon: "preferences-desktop-wallpaper",
+                supported_settings: settings);
     }
 
     public override Gtk.Widget get_widget () {
