@@ -1,30 +1,40 @@
-using Gtk;
+/*-
+ * Copyright (c) 2015-2016 elementary LLC.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
 
-/*
-stolen from old wallpaper plug
-*/
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
 
 // Helper class for the file IO functions we'll need
 // Not needed at all, but helpful for organization
 public class IOHelper : GLib.Object {
+    private const string[] ACCEPTED_TYPES = {
+        "image/jpeg",
+        "image/png",
+        "image/tiff",
+        "image/svg+xml",
+        "image/gif"
+    };
+
     // Check if the filename has a picture file extension.
     public static bool is_valid_file_type (GLib.FileInfo file_info) {
-
         // Check for correct file type, don't try to load directories and such
         if (file_info.get_file_type () != GLib.FileType.REGULAR) {
             return false;
         }
 
-        // Now check if it is an accepted content type
-        string[] accepted_types = {
-            "image/jpeg",
-            "image/png",
-            "image/tiff",
-            "image/svg+xml",
-            "image/gif"
-        };
-
-        foreach (var type in accepted_types) {
+        foreach (var type in ACCEPTED_TYPES) {
             if (GLib.ContentType.equals (file_info.get_content_type (), type)) {
                 return true;
             }
@@ -40,10 +50,9 @@ public class IOHelper : GLib.Object {
 
         try {
             // Get an enumerator for all of the plain old files in the wallpaper folder.
-            var enumerator = wallpaper_folder.enumerate_children(FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
-            // While there's still files left to count
+            var enumerator = wallpaper_folder.enumerate_children (FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
+
             while ((file_info = enumerator.next_file ()) != null) {
-                // If it's a picture file
                 if (is_valid_file_type(file_info)) {
                     count++;
                 }
@@ -53,6 +62,7 @@ public class IOHelper : GLib.Object {
                 warning ("Could not pre-scan wallpaper folder. Progress percentage may be off: %s", err.message);
             }
         }
+
         return count;
     }
 }
@@ -67,41 +77,37 @@ interface AccountsServiceUser : Object {
     public abstract void set_background_file (string filename) throws IOError;
 }
 
-class Wallpaper : EventBox {
-
-    GLib.Settings settings;
-
-    //Instance of the AccountsServices-Interface for this user
-    AccountsServiceUser accountsservice = null;
-
-    Gtk.FlowBox wallpaper_view;
-    WallpaperContainer active_wallpaper = null;
-    SolidColorContainer solid_color = null;
-
-    ComboBoxText combo;
-    ComboBoxText folder_combo;
-
-    ColorButton color_button;
-
-    string current_wallpaper_path;
-    Cancellable last_cancellable;
-
-    Switchboard.Plug plug;
-
-    // When restoring the combo state, don't trigger the update.
-    bool prevent_update_mode = false;
-
-    //shows that we got or wallpapers together
-    public bool finished;
-
-    //name of the default-wallpaper-link that we can prevent loading it again
-    //(assumes that the defaultwallpaper is also in the system wallpaper directory)
-    static string default_link = "file://%s/elementaryos-default".printf (SYSTEM_BACKGROUNDS_PATH);
-
+public class Wallpaper : Gtk.EventBox {
+    // name of the default-wallpaper-link that we can prevent loading it again
+    // (assumes that the defaultwallpaper is also in the system wallpaper directory)
+    static string DEFAULT_LINK = "file://%s/elementaryos-default".printf (SYSTEM_BACKGROUNDS_PATH);
     const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
 
+    public Switchboard.Plug plug { get; construct set; }
+    private GLib.Settings settings;
+
+    //Instance of the AccountsServices-Interface for this user
+    private AccountsServiceUser accountsservice = null;
+
+    private Gtk.FlowBox wallpaper_view;
+    private Gtk.ComboBoxText combo;
+    private Gtk.ComboBoxText folder_combo;
+    private Gtk.ColorButton color_button;
+
+    private WallpaperContainer active_wallpaper = null;
+    private SolidColorContainer solid_color = null;
+
+    private Cancellable last_cancellable;
+
+    private string current_wallpaper_path;
+    private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
+    public bool finished; //shows that we got or wallpapers together
+
     public Wallpaper (Switchboard.Plug _plug) {
-        plug = _plug;
+        Object (plug: _plug);
+    }
+
+    construct {
         settings = new GLib.Settings ("org.gnome.desktop.background");
 
         //DBus connection needed in update_wallpaper for
@@ -126,15 +132,15 @@ class Wallpaper : EventBox {
         var color = settings.get_string ("primary-color");
         create_solid_color_container (color);
 
-        TargetEntry e = {"text/uri-list", 0, 0};
+        Gtk.TargetEntry e = {"text/uri-list", 0, 0};
         wallpaper_view.drag_data_received.connect (on_drag_data_received);
-        drag_dest_set (wallpaper_view, DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
+        Gtk.drag_dest_set (wallpaper_view, Gtk.DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
 
-        var scrolled = new ScrolledWindow (null, null);
+        var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
         scrolled.add (wallpaper_view);
 
-        folder_combo = new ComboBoxText ();
+        folder_combo = new Gtk.ComboBoxText ();
         folder_combo.halign = Gtk.Align.START;
         folder_combo.margin = 6;
         folder_combo.append ("pic", _("Pictures"));
@@ -143,7 +149,7 @@ class Wallpaper : EventBox {
         folder_combo.changed.connect (update_wallpaper_folder);
         folder_combo.set_active (1);
 
-        combo = new ComboBoxText ();
+        combo = new Gtk.ComboBoxText ();
         combo.append ("centered", _("Centered"));
         combo.append ("scaled", _("Scaled"));
         combo.append ("stretched", _("Stretched"));
@@ -156,30 +162,30 @@ class Wallpaper : EventBox {
             rgba_color = { 1, 1, 1, 1 };
         }
 
-        color_button = new ColorButton ();
+        color_button = new Gtk.ColorButton ();
         color_button.rgba = rgba_color;
         color_button.color_set.connect (update_color);
 
         load_settings ();
 
-        var bbox = new ButtonBox (Orientation.HORIZONTAL);
+        var bbox = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
         bbox.halign = Gtk.Align.END;
         bbox.margin = 6;
         bbox.set_spacing (6);
-        bbox.set_layout (ButtonBoxStyle.END);
+        bbox.set_layout (Gtk.ButtonBoxStyle.END);
         bbox.add (combo);
         bbox.add (color_button);
 
         var grid = new Gtk.Grid ();
         grid.margin_top = 12;
         grid.attach (scrolled, 0, 0, 2, 1);
-        grid.attach (new Separator (Orientation.HORIZONTAL), 0, 1, 2, 1);
+        grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 1, 2, 1);
         grid.attach (folder_combo, 0, 2, 1, 1);
         grid.attach (bbox, 1, 2, 1, 1);
         add (grid);
     }
 
-    void load_settings () {
+    private void load_settings () {
         // TODO: need to store the previous state, before changing to none
         // when a solid color is selected, because the combobox doesn't know
         // about it anymore. The previous state should be loaded instead here.
@@ -194,13 +200,13 @@ class Wallpaper : EventBox {
         current_wallpaper_path = settings.get_string ("picture-uri");
     }
 
-    void update_accountsservice () {
-        /*
-         * We pass the path to accountsservices that the login-screen can
-         * see what background we selected. This is right now just a patched-in functionality of
-         * accountsservice, so we expect that it is maybe not there
-         * and do nothing if we encounter a unpatched accountsservices-backend.
-        */
+    /*
+     * We pass the path to accountsservices that the login-screen can
+     * see what background we selected. This is right now just a patched-in functionality of
+     * accountsservice, so we expect that it is maybe not there
+     * and do nothing if we encounter a unpatched accountsservices-backend.
+    */
+    private void update_accountsservice () {
         try {
             var file = File.new_for_uri (current_wallpaper_path);
             string uri = file.get_uri ();
@@ -225,7 +231,7 @@ class Wallpaper : EventBox {
         }
     }
 
-    void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
+    private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
         var children = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
 
         if (!(children is SolidColorContainer)) {
@@ -251,7 +257,7 @@ class Wallpaper : EventBox {
         active_wallpaper = children;
     }
 
-    void update_color () {
+    private void update_color () {
         if (finished) {
             set_combo_disabled_if_necessary ();
             create_solid_color_container (color_button.rgba.to_string ());
@@ -268,7 +274,7 @@ class Wallpaper : EventBox {
         }
     }
 
-    void update_mode () {
+    private void update_mode () {
         if (!prevent_update_mode) {
             settings.set_string ("picture-options", combo.get_active_id ());
 
@@ -292,14 +298,14 @@ class Wallpaper : EventBox {
         }
     }
 
-    void set_combo_disabled_if_necessary () {
+    private void set_combo_disabled_if_necessary () {
         if (active_wallpaper != solid_color) {
             combo.set_sensitive (false);
             settings.set_string ("picture-options", "none");
         }
     }
 
-    void update_wallpaper_folder () {
+    private void update_wallpaper_folder () {
         if (last_cancellable != null)
             last_cancellable.cancel ();
 
@@ -308,24 +314,24 @@ class Wallpaper : EventBox {
         if (folder_combo.get_active () == 0) {
             clean_wallpapers ();
             var picture_dir = GLib.File.new_for_path (GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES));
-            load_wallpapers (picture_dir.get_uri (), cancellable);
+            load_wallpapers.begin (picture_dir.get_uri (), cancellable);
         } else if (folder_combo.get_active () == 1) {
             clean_wallpapers ();
 
             var system_uri = "file://" + SYSTEM_BACKGROUNDS_PATH;
             var user_uri = GLib.File.new_for_path (get_local_bg_location ()).get_uri ();
 
-            load_wallpapers (system_uri, cancellable);
-            load_wallpapers (user_uri, cancellable);
+            load_wallpapers.begin (system_uri, cancellable);
+            load_wallpapers.begin (user_uri, cancellable);
         } else if (folder_combo.get_active () == 2) {
-            var dialog = new Gtk.FileChooserDialog (_("Select a folder"), null, FileChooserAction.SELECT_FOLDER);
-            dialog.add_button (_("Cancel"), ResponseType.CANCEL);
-            dialog.add_button (_("Open"), ResponseType.ACCEPT);
-            dialog.set_default_response (ResponseType.ACCEPT);
+            var dialog = new Gtk.FileChooserDialog (_("Select a folder"), null, Gtk.FileChooserAction.SELECT_FOLDER);
+            dialog.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
+            dialog.add_button (_("Open"), Gtk.ResponseType.ACCEPT);
+            dialog.set_default_response (Gtk.ResponseType.ACCEPT);
 
-            if (dialog.run () == ResponseType.ACCEPT) {
+            if (dialog.run () == Gtk.ResponseType.ACCEPT) {
                 clean_wallpapers ();
-                load_wallpapers (dialog.get_file ().get_uri (), cancellable);
+                load_wallpapers.begin (dialog.get_file ().get_uri (), cancellable);
                 dialog.destroy ();
             } else {
                 dialog.destroy ();
@@ -333,7 +339,7 @@ class Wallpaper : EventBox {
         }
     }
 
-    async void load_wallpapers (string basefolder, Cancellable cancellable) {
+    private async void load_wallpapers (string basefolder, Cancellable cancellable) {
         if (cancellable.is_cancelled () == true) {
             return;
         }
@@ -365,6 +371,7 @@ class Wallpaper : EventBox {
                 if (files == null) {
                     break;
                 }
+
                 // Loop through and add each wallpaper in the batch
                 foreach (var info in files) {
                     if (cancellable.is_cancelled () == true) {
@@ -375,7 +382,7 @@ class Wallpaper : EventBox {
 
                     if (info.get_file_type () == FileType.DIRECTORY) {
                         // Spawn off another loader for the subdirectory
-                        load_wallpapers (basefolder + "/" + info.get_name (), cancellable);
+                        load_wallpapers.begin (basefolder + "/" + info.get_name (), cancellable);
                         continue;
                     } else if (!IOHelper.is_valid_file_type (info)) {
                         // Skip non-picture files
@@ -387,30 +394,26 @@ class Wallpaper : EventBox {
 
                     // Skip the default_wallpaper as seen in the description of the
                     // default_link variable
-                    if (uri == default_link) {
+                    if (uri == DEFAULT_LINK) {
                         continue;
                     }
 
-                    try {
-                        var wallpaper = new WallpaperContainer (uri);
-                        wallpaper_view.add (wallpaper);
-                        wallpaper.show_all ();
+                    var wallpaper = new WallpaperContainer (uri);
+                    wallpaper_view.add (wallpaper);
+                    wallpaper.show_all ();
 
-                        // Select the wallpaper if it is the current wallpaper
-                        if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
-                            this.wallpaper_view.select_child (wallpaper);
-                            //set the widget activated without activating it
-                            wallpaper.checked = true;
-                            active_wallpaper = wallpaper;
-                        }
+                    // Select the wallpaper if it is the current wallpaper
+                    if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
+                        this.wallpaper_view.select_child (wallpaper);
+                        //set the widget activated without activating it
+                        wallpaper.checked = true;
+                        active_wallpaper = wallpaper;
+                    }
 
-                        // Have GTK update the UI even while we're busy
-                        // working on file IO.
-                        while(Gtk.events_pending ()) {
-                            Gtk.main_iteration();
-                        }
-                    } catch (Error e) {
-                        warning (e.message);
+                    // Have GTK update the UI even while we're busy
+                    // working on file IO.
+                    while(Gtk.events_pending ()) {
+                        Gtk.main_iteration();
                     }
                 }
             }
@@ -442,7 +445,7 @@ class Wallpaper : EventBox {
         }
     }
 
-    void create_solid_color_container (string color) {
+    private void create_solid_color_container (string color) {
         if (solid_color != null) {
             wallpaper_view.unselect_child (solid_color);
             wallpaper_view.remove (solid_color);
@@ -453,7 +456,7 @@ class Wallpaper : EventBox {
         solid_color.show_all ();
     }
 
-    void clean_wallpapers () {
+    private void clean_wallpapers () {
         foreach (var child in wallpaper_view.get_children ()) {
             child.destroy ();
         }
@@ -509,30 +512,36 @@ class Wallpaper : EventBox {
         return dest;
     }
 
-    void on_drag_data_received (Widget widget, Gdk.DragContext ctx, int x, int y, SelectionData sel, uint information, uint timestamp) {
+    private void on_drag_data_received (Gtk.Widget widget, Gdk.DragContext ctx, int x, int y, Gtk.SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
-            File file = File.new_for_uri (sel.get_uris ()[0]);
-            var info = file.query_info (FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
+            try {
+                File file = File.new_for_uri (sel.get_uris ()[0]);
+                var info = file.query_info (FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
 
-            if (!IOHelper.is_valid_file_type (info)) {
-                Gtk.drag_finish (ctx, false, false, timestamp);
-                return;
+                if (!IOHelper.is_valid_file_type (info)) {
+                    Gtk.drag_finish (ctx, false, false, timestamp);
+                    return;
+                }
+
+                string local_uri = file.get_uri ();
+                var dest = copy_for_library (file);
+                if (dest != null) {
+                    local_uri = dest.get_uri ();
+                }
+
+                // Add the wallpaper name and thumbnail to the IconView
+                var wallpaper = new WallpaperContainer (local_uri);
+                wallpaper_view.add (wallpaper);
+                wallpaper.show_all ();
+
+                Gtk.drag_finish (ctx, true, false, timestamp);
+            } catch (Error e) {
+                warning ("%s\n", e.message);
             }
 
-            string local_uri = file.get_uri ();
-            var dest = copy_for_library (file);
-            if (dest != null) {
-                local_uri = dest.get_uri ();
-            }
-
-            // Add the wallpaper name and thumbnail to the IconView
-            var wallpaper = new WallpaperContainer (local_uri);
-            wallpaper_view.add (wallpaper);
-            wallpaper.show_all ();
-
-            Gtk.drag_finish (ctx, true, false, timestamp);
             return;
         }
+
         Gtk.drag_finish (ctx, false, false, timestamp);
         return;
     }
