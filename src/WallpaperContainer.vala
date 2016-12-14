@@ -1,33 +1,76 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2015 Erasmo Marín
+ * Copyright (c) 2015-2016 elementary LLC.
  *
- * This software is licensed under the GNU General Public License
- * (version 3 or later). See the COPYING file in this distribution.
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
- * You should have received a copy of the GNU Library General Public
- * License along with this software; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Authored by: Erasmo Marín
  *
  */
 
 public class WallpaperContainer : Gtk.FlowBoxChild {
-    
+    private const int THUMB_MARGIN = 3;
+    private static Gdk.Pixbuf checked_icon = null;
+    private static string STYLE =
+        """GtkFlowBoxChild:selected {
+           background-color: @selected_bg_color;
+           color: @selected_fg_color;
+       }""";
+
+    private Gdk.RGBA selected_color;
+
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; construct; }
 
-    private int thumb_margin = 3;
-    private static Gdk.Pixbuf checked_icon = null;
-    private Gdk.RGBA selected_color;
+    public bool checked {
+        get {
+            return ((get_state_flags () & Gtk.StateFlags.CHECKED) == Gtk.StateFlags.CHECKED);
+        } set {
+            if (value) {
+               set_state_flags ( get_state_flags() | Gtk.StateFlags.CHECKED, false);
+            } else {
+               unset_state_flags (Gtk.StateFlags.CHECKED);
+            }
 
-    private static string style_str = """GtkFlowBoxChild:selected {
-                                               background-color: @selected_bg_color;
-                                               color: @selected_fg_color;
-                                           }""";
+            queue_draw ();
+        }
+    }
+
+    public bool selected {
+        get {
+            return ((get_state_flags () & Gtk.StateFlags.SELECTED) == Gtk.StateFlags.SELECTED);
+        } set {
+            if (value) {
+               set_state_flags (get_state_flags () | Gtk.StateFlags.SELECTED, false);
+            } else {
+               unset_state_flags (Gtk.StateFlags.SELECTED);
+            }
+
+            queue_draw ();
+        }
+    }
 
     public WallpaperContainer (string uri) {
         Object (uri: uri, thumb: null);
+    }
+
+    static construct {
+        try {
+            Gtk.IconTheme icon_theme = Gtk.IconTheme.get_default();
+            checked_icon = icon_theme.load_icon ("selection-checked", 32, Gtk.IconLookupFlags.FORCE_SIZE);
+        } catch (GLib.Error err) {
+            warning ("Getting selection-checked icon from theme failed");
+        }
     }
 
     construct {
@@ -48,7 +91,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         //style
         try {
             var item_style_provider = new Gtk.CssProvider ();
-            item_style_provider.load_from_data (style_str, -1);
+            item_style_provider.load_from_data (STYLE, -1);
             get_style_context ().add_provider (item_style_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
         } catch (GLib.Error err) {
             warning ("Loading style failed: %s", err.message);
@@ -57,53 +100,17 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         //load selected color
         selected_color = get_style_context ().get_background_color (Gtk.StateFlags.SELECTED);
 
-        this.height_request = thumb.get_height() + 2*thumb_margin;
-        this.width_request = thumb.get_width()+ 2*thumb_margin;
-
-        if (checked_icon == null) {
-            try {
-                Gtk.IconTheme icon_theme = Gtk.IconTheme.get_default();
-                checked_icon = icon_theme.load_icon ("selection-checked", 32, Gtk.IconLookupFlags.FORCE_SIZE);
-            } catch (GLib.Error err) {
-                warning ("Getting selection-checked icon from theme failed");
-            }
-        }
+        this.height_request = thumb.get_height () + 2 * THUMB_MARGIN;
+        this.width_request = thumb.get_width () + 2 * THUMB_MARGIN;
 
         activate.connect (() => {
-            set_checked (true);
+            checked = true;
         });
     }
 
-    public void set_selected (bool is_selected) {
-         if (is_selected) {
-            set_state_flags ( get_state_flags() | Gtk.StateFlags.SELECTED, false);
-         } else {
-            unset_state_flags (Gtk.StateFlags.SELECTED);
-         }
-         queue_draw ();
-    }
-
-    public void set_checked (bool is_checked) {
-         if (is_checked) {
-            set_state_flags ( get_state_flags() | Gtk.StateFlags.CHECKED, false);
-         } else {
-            unset_state_flags (Gtk.StateFlags.CHECKED);
-         }
-         queue_draw ();
-    }
-
-    public bool get_selected () {
-        return ((get_state_flags () & Gtk.StateFlags.SELECTED) == Gtk.StateFlags.SELECTED);
-    }
-
-    public bool get_checked () {
-        return ((get_state_flags () & Gtk.StateFlags.CHECKED) == Gtk.StateFlags.CHECKED );
-    }
-
     public override bool draw (Cairo.Context cr) {
-
-        int width = (int) (thumb.get_width() + 2*thumb_margin);
-        int height = (int) (thumb.get_height() + 2*thumb_margin);
+        int width = (int) (thumb.get_width () + 2 * THUMB_MARGIN);
+        int height = (int) (thumb.get_height () + 2 * THUMB_MARGIN);
 
         if ((get_state_flags () & Gtk.StateFlags.SELECTED) == Gtk.StateFlags.SELECTED) {
             //paint selection background
@@ -113,13 +120,12 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
 
         cr.save ();
-        Gdk.cairo_set_source_pixbuf (cr, thumb, thumb_margin, thumb_margin);
+        Gdk.cairo_set_source_pixbuf (cr, thumb, THUMB_MARGIN, THUMB_MARGIN);
         cr.paint ();
 
         if ((get_state_flags () & Gtk.StateFlags.CHECKED) == Gtk.StateFlags.CHECKED && checked_icon != null) {
-
-            int x = width/2 - checked_icon.get_width()/2;
-            int y = height/2 - checked_icon.get_height()/2;
+            int x = width / 2 - checked_icon.get_width () / 2;
+            int y = height / 2 - checked_icon.get_height () / 2;
 
             Gdk.cairo_set_source_pixbuf (cr, checked_icon, x, y);
             cr.paint ();
@@ -128,6 +134,4 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         cr.restore ();
         return true;
     }
-
 }
-
