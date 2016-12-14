@@ -155,7 +155,7 @@ class Wallpaper : EventBox {
         if (!rgba_color.parse (color)) {
             rgba_color = { 1, 1, 1, 1 };
         }
-        
+
         color_button = new ColorButton ();
         color_button.rgba = rgba_color;
         color_button.color_set.connect (update_color);
@@ -242,10 +242,10 @@ class Wallpaper : EventBox {
             settings.set_string ("primary-color", solid_color.color);
         }
 
-        children.set_checked (true);
+        children.checked = true;
 
         if (active_wallpaper != null) {
-            active_wallpaper.set_checked (false);
+            active_wallpaper.checked = false;
         }
 
         active_wallpaper = children;
@@ -259,11 +259,11 @@ class Wallpaper : EventBox {
             wallpaper_view.select_child (solid_color);
 
             if (active_wallpaper != null) {
-                active_wallpaper.set_checked (false);
+                active_wallpaper.checked = false;
             }
 
             active_wallpaper = solid_color;
-            active_wallpaper.set_checked (true);
+            active_wallpaper.checked = true;
             settings.set_string ("primary-color", solid_color.color);
         }
     }
@@ -275,12 +275,12 @@ class Wallpaper : EventBox {
             // Changing the mode, while a solid color is selected, change focus to the
             // wallpaper tile.
             if (active_wallpaper == solid_color) {
-                active_wallpaper.set_checked (false);
+                active_wallpaper.checked = false;
 
                 foreach (var child in wallpaper_view.get_children ()) {
                     var container = (WallpaperContainer) child;
                     if (container.uri == current_wallpaper_path) {
-                        container.set_checked (true);
+                        container.checked = true;
                         wallpaper_view.select_child (container);
                         active_wallpaper = container;
                         break;
@@ -400,7 +400,7 @@ class Wallpaper : EventBox {
                         if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
                             this.wallpaper_view.select_child (wallpaper);
                             //set the widget activated without activating it
-                            wallpaper.set_checked (true);
+                            wallpaper.checked = true;
                             active_wallpaper = wallpaper;
                         }
 
@@ -425,11 +425,11 @@ class Wallpaper : EventBox {
                 // add / remove the tile until it's settled.
                 wallpaper_view.remove (solid_color);
             }
-            
+
             wallpaper_view.add (solid_color);
             if (settings.get_string ("picture-options") == "none") {
                 wallpaper_view.select_child (solid_color);
-                solid_color.set_checked (true);
+                solid_color.checked = true;
                 active_wallpaper = solid_color;
             }
 
@@ -475,9 +475,9 @@ class Wallpaper : EventBox {
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
-        }   
+        }
 
-        return dest;    
+        return dest;
     }
 
     private File? copy_for_greeter (File source) {
