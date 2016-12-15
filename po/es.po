@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:49-0700\n"
-"PO-Revision-Date: 2015-08-12 18:17+0000\n"
-"Last-Translator: Gabriel_P <Unknown>\n"
+"PO-Revision-Date: 2016-12-14 14:33+0000\n"
+"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"X-Launchpad-Export-Date: 2016-12-15 04:52+0000\n"
+"X-Generator: Launchpad (build 18293)\n"
 "Language: es\n"
 
 #: ../src/desktop-plug.vala:25
@@ -25,7 +25,7 @@ msgstr "Escritorio"
 
 #: ../src/desktop-plug.vala:26
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Configurar el panel, atajos en las esquinas y el fondo de escritorio"
 
 #: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
 msgid "Wallpaper"
@@ -43,7 +43,7 @@ msgstr "Cuando el cursor entre a una esquina de la pantalla:"
 
 #: ../src/desktop-plug.vala:96
 msgid "Custom command:"
-msgstr ""
+msgstr "Comando personalizado:"
 
 #: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
 msgid "Hot Corners"
@@ -51,7 +51,7 @@ msgstr "Esquinas activas"
 
 #: ../src/desktop-plug.vala:119
 msgid "Do nothing"
-msgstr ""
+msgstr "No hacer nada"
 
 #: ../src/desktop-plug.vala:120
 msgid "Multitasking View"
@@ -59,11 +59,11 @@ msgstr "Vista de multitarea"
 
 #: ../src/desktop-plug.vala:121
 msgid "Maximize current window"
-msgstr ""
+msgstr "Maximizar ventana actual"
 
 #: ../src/desktop-plug.vala:122
 msgid "Minimize current window"
-msgstr ""
+msgstr "Minimizar ventana actual"
 
 #: ../src/desktop-plug.vala:123
 msgid "Show Applications Menu"
@@ -71,11 +71,11 @@ msgstr "Mostrar menú de aplicaciones"
 
 #: ../src/desktop-plug.vala:124
 msgid "Show all windows"
-msgstr ""
+msgstr "Mostrar todas las ventanas"
 
 #: ../src/desktop-plug.vala:125
 msgid "Execute custom command"
-msgstr ""
+msgstr "Ejecutar comando personalizado"
 
 #: ../src/desktop-plug.vala:157
 msgid "Theme"
@@ -95,11 +95,11 @@ msgstr "Pantalla"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Establecer como fondo _de escritorio"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Establecer la imagen seleccionada como el nuevo fondo de escritorio"
 
 #: ../src/Wallpaper.vala:140
 msgid "Pictures"
@@ -159,23 +159,23 @@ msgstr "Personalizado (%d px)"
 
 #: ../src/Dock.vala:63
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "La ventana enfocada está maximizada"
 
 #: ../src/Dock.vala:64
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "La ventana enfocada se superpone al panel"
 
 #: ../src/Dock.vala:65
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Cualquier ventana se superpone al panel"
 
 #: ../src/Dock.vala:66
 msgid "Not being used"
-msgstr ""
+msgstr "No está siendo usado"
 
 #: ../src/Dock.vala:102
 msgid "Primary display:"
-msgstr ""
+msgstr "Pantalla principal:"
 
 #: ../src/Dock.vala:106
 msgid "Display:"
@@ -183,15 +183,15 @@ msgstr "Pantalla:"
 
 #: ../src/Dock.vala:137
 msgid "Icon size:"
-msgstr ""
+msgstr "Tamaño de icono:"
 
 #: ../src/Dock.vala:139
 msgid "Hide when:"
-msgstr ""
+msgstr "Ocultar cuando:"
 
 #: ../src/Dock.vala:143
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Mostrar al presionar"
 
 #: ../src/Dock.vala:182
 msgid "Monitor %d"
@@ -204,33 +204,33 @@ msgstr "Pantalla %d"
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d segundo"
+msgstr[1] "%d segundos"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d minuto"
+msgstr[1] "%d minutos"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d hora"
+msgstr[1] "%d horas"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:81
 msgid "1 day"
-msgstr ""
+msgstr "1 día"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr ""
+msgstr "Mostrar cada imagen durante"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Establecer como fondo de pantalla de presentación"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
+msgstr "Crear presentación"
