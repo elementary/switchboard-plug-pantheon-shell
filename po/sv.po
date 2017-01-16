@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 14:49-0700\n"
+"POT-Creation-Date: 2017-01-15 13:47-0800\n"
 "PO-Revision-Date: 2016-07-20 14:20+0000\n"
 "Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -15,81 +15,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-11-27 05:59+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"X-Launchpad-Export-Date: 2017-01-16 05:42+0000\n"
+"X-Generator: Launchpad (build 18302)\n"
 "Language: sv\n"
 
-#: ../src/desktop-plug.vala:25
+#: ../src/desktop-plug.vala:34
 msgid "Desktop"
 msgstr "Skrivbord"
 
-#: ../src/desktop-plug.vala:26
+#: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Ställ in dockan, aktiva hörn och byt bakgrundsbild"
 
-#: ../src/desktop-plug.vala:42 ../src/desktop-plug.vala:155
+#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
 msgid "Wallpaper"
 msgstr "Bakgrundsbild"
 
-#: ../src/desktop-plug.vala:47 ../src/desktop-plug.vala:156
-#: ../src/desktop-plug.vala:157 ../src/desktop-plug.vala:158
-#: ../src/desktop-plug.vala:159 ../src/desktop-plug.vala:160
+#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
+#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
 msgid "Dock"
 msgstr "Docka"
 
-#: ../src/desktop-plug.vala:67
-msgid "When the cursor enters the corner of the display:"
-msgstr "När muspekaren når hörnet på skärmen"
-
-#: ../src/desktop-plug.vala:96
-msgid "Custom command:"
-msgstr ""
-
-#: ../src/desktop-plug.vala:114 ../src/desktop-plug.vala:161
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
 msgid "Hot Corners"
 msgstr "Aktiva hörn"
 
-#: ../src/desktop-plug.vala:119
-msgid "Do nothing"
-msgstr ""
-
-#: ../src/desktop-plug.vala:120
-msgid "Multitasking View"
-msgstr "Multitaskingvy"
-
-#: ../src/desktop-plug.vala:121
-msgid "Maximize current window"
-msgstr ""
-
-#: ../src/desktop-plug.vala:122
-msgid "Minimize current window"
-msgstr ""
-
-#: ../src/desktop-plug.vala:123
-msgid "Show Applications Menu"
-msgstr "Visa programmenyn"
-
-#: ../src/desktop-plug.vala:124
-msgid "Show all windows"
-msgstr ""
-
-#: ../src/desktop-plug.vala:125
-msgid "Execute custom command"
-msgstr ""
-
-#: ../src/desktop-plug.vala:157
+#: ../src/desktop-plug.vala:93
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/desktop-plug.vala:158
+#: ../src/desktop-plug.vala:94
 msgid "Hide Mode"
 msgstr "Dolt Läge"
 
-#: ../src/desktop-plug.vala:159
+#: ../src/desktop-plug.vala:95
 msgid "Icon Size"
 msgstr "Ikonstorlek"
 
-#: ../src/desktop-plug.vala:160
+#: ../src/desktop-plug.vala:96
 msgid "Display"
 msgstr "Bildskärm"
 
@@ -101,103 +65,139 @@ msgstr "Använd som skrivbords_bakgrund"
 msgid "Set selected image to be the new desktop background"
 msgstr "Använd bilden som ny bakgrundsbild"
 
-#: ../src/Wallpaper.vala:140
+#: ../src/HotCorners.vala:29
+msgid "When the cursor enters the corner of the display:"
+msgstr "När muspekaren når hörnet på skärmen"
+
+#: ../src/HotCorners.vala:62
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/HotCorners.vala:83
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/HotCorners.vala:84
+msgid "Multitasking View"
+msgstr "Multitaskingvy"
+
+#: ../src/HotCorners.vala:85
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/HotCorners.vala:86
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/HotCorners.vala:87
+msgid "Show Applications Menu"
+msgstr "Visa programmenyn"
+
+#: ../src/HotCorners.vala:88
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/HotCorners.vala:89
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/Wallpaper.vala:146
 msgid "Pictures"
 msgstr "Bilder"
 
-#: ../src/Wallpaper.vala:141
+#: ../src/Wallpaper.vala:147
 msgid "Backgrounds"
 msgstr "Bakgrundsbilder"
 
-#: ../src/Wallpaper.vala:142
+#: ../src/Wallpaper.vala:148
 msgid "Custom…"
 msgstr "Anpassad…"
 
-#: ../src/Wallpaper.vala:147
+#: ../src/Wallpaper.vala:153
 msgid "Centered"
 msgstr "Centrerad"
 
-#: ../src/Wallpaper.vala:148
+#: ../src/Wallpaper.vala:154
 msgid "Scaled"
 msgstr "Skalad"
 
-#: ../src/Wallpaper.vala:149
+#: ../src/Wallpaper.vala:155
 msgid "Stretched"
 msgstr "Sträckt för att passa skärmen"
 
-#: ../src/Wallpaper.vala:150
+#: ../src/Wallpaper.vala:156
 msgid "Zoom"
 msgstr "Zooma in"
 
-#: ../src/Wallpaper.vala:151
+#: ../src/Wallpaper.vala:157
 msgid "Spanned"
 msgstr "Sträckt för att passa bilden"
 
-#: ../src/Wallpaper.vala:321
+#: ../src/Wallpaper.vala:327
 msgid "Select a folder"
 msgstr "Välj en mapp"
 
-#: ../src/Wallpaper.vala:322 ../set-wallpaper-contract/set-wallpaper.vala:201
+#: ../src/Wallpaper.vala:328 ../set-wallpaper-contract/set-wallpaper.vala:201
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: ../src/Wallpaper.vala:323
+#: ../src/Wallpaper.vala:329
 msgid "Open"
 msgstr "Öppna"
 
-#: ../src/Dock.vala:35
+#: ../src/Dock.vala:36
 msgid "Normal"
 msgstr "Normal"
 
-#: ../src/Dock.vala:36
+#: ../src/Dock.vala:37
 msgid "Large"
 msgstr "Stor"
 
-#: ../src/Dock.vala:48
+#: ../src/Dock.vala:49
 msgid "Custom (%dpx)"
 msgstr "Anpassad (%dpx)"
 
-#: ../src/Dock.vala:63
+#: ../src/Dock.vala:64
 msgid "Focused window is maximized"
 msgstr "Fokuserat fönster är maximerat"
 
-#: ../src/Dock.vala:64
+#: ../src/Dock.vala:65
 msgid "Focused window overlaps the dock"
 msgstr "Fokuserat fönster överlappar dockan"
 
-#: ../src/Dock.vala:65
+#: ../src/Dock.vala:66
 msgid "Any window overlaps the dock"
 msgstr "Något fönster överlappar dockan"
 
-#: ../src/Dock.vala:66
+#: ../src/Dock.vala:67
 msgid "Not being used"
 msgstr "Inte används"
 
-#: ../src/Dock.vala:102
+#: ../src/Dock.vala:103
 msgid "Primary display:"
 msgstr ""
 
-#: ../src/Dock.vala:106
+#: ../src/Dock.vala:107
 msgid "Display:"
 msgstr "Bildskärm:"
 
-#: ../src/Dock.vala:137
+#: ../src/Dock.vala:138
 msgid "Icon size:"
 msgstr ""
 
-#: ../src/Dock.vala:139
+#: ../src/Dock.vala:140
 msgid "Hide when:"
 msgstr "Dölj när:"
 
-#: ../src/Dock.vala:143
+#: ../src/Dock.vala:144
 msgid "Pressure reveal:"
 msgstr ""
 
-#: ../src/Dock.vala:182
+#: ../src/Dock.vala:183
 msgid "Monitor %d"
 msgstr "Bildskärm %d"
 
-#: ../src/Dock.vala:187
+#: ../src/Dock.vala:188
 msgid "Display %d"
 msgstr "Bildskärm %d"
 
