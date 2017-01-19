@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-15 13:47-0800\n"
-"PO-Revision-Date: 2014-11-08 09:04+0000\n"
-"Last-Translator: Nathan Yiangsupapaanontr <zartre.y@gmail.com>\n"
+"PO-Revision-Date: 2017-01-18 12:45+0000\n"
+"Last-Translator: Panan <panan25444@gmail.com>\n"
 "Language-Team: Thai <th@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2017-01-16 05:42+0000\n"
+"X-Launchpad-Export-Date: 2017-01-19 05:55+0000\n"
 "X-Generator: Launchpad (build 18302)\n"
 "Language: th\n"
 
@@ -35,7 +35,7 @@ msgstr "ภาพพื้นหลัง"
 #: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
 #: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
 msgid "Dock"
-msgstr "ด็อค"
+msgstr "ด็อก"
 
 #: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
 msgid "Hot Corners"
@@ -43,27 +43,27 @@ msgstr "ฮอตคอร์เนอร์"
 
 #: ../src/desktop-plug.vala:93
 msgid "Theme"
-msgstr ""
+msgstr "รูปแบบธีม"
 
 #: ../src/desktop-plug.vala:94
 msgid "Hide Mode"
-msgstr ""
+msgstr "โหมดการซ่อน"
 
 #: ../src/desktop-plug.vala:95
 msgid "Icon Size"
-msgstr ""
+msgstr "ขนาดไอคอน"
 
 #: ../src/desktop-plug.vala:96
 msgid "Display"
-msgstr ""
+msgstr "การแสดงผล"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "ใช้เป็น_ภาพพื้นหลังเดสก์ท็อป"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "ตั้งรูปภาพที่เลือกเป็นภาพพื้นหลังของเดสก์ท็อป"
 
 #: ../src/HotCorners.vala:29
 msgid "When the cursor enters the corner of the display:"
@@ -75,11 +75,11 @@ msgstr ""
 
 #: ../src/HotCorners.vala:83
 msgid "Do nothing"
-msgstr ""
+msgstr "ไม่ต้องทำอะไร"
 
 #: ../src/HotCorners.vala:84
 msgid "Multitasking View"
-msgstr ""
+msgstr "มุมมองแบบมัลติทาสก์"
 
 #: ../src/HotCorners.vala:85
 msgid "Maximize current window"
@@ -91,11 +91,11 @@ msgstr ""
 
 #: ../src/HotCorners.vala:87
 msgid "Show Applications Menu"
-msgstr "แสดงเมนูแอพพลิเคชัน"
+msgstr "แสดงเมนูแอปพลิเคชัน"
 
 #: ../src/HotCorners.vala:88
 msgid "Show all windows"
-msgstr ""
+msgstr "แสดงหน้าต่างทั้งหมด"
 
 #: ../src/HotCorners.vala:89
 msgid "Execute custom command"
