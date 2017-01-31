@@ -75,6 +75,9 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
 
         var image = new Gtk.Image.from_pixbuf (thumb);
+        image.get_style_context ().add_class ("card");
+        image.halign = Gtk.Align.CENTER;
+        image.margin = 6;
 
         var check = new Gtk.Image.from_icon_name ("selection-checked", Gtk.IconSize.LARGE_TOOLBAR);
 
