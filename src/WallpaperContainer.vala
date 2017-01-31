@@ -19,7 +19,6 @@
  */
 
 public class WallpaperContainer : Gtk.FlowBoxChild {
-    private const int THUMB_MARGIN = 3;
     private Gtk.Revealer check_revealer;
 
     public string uri { get; construct; }
@@ -30,8 +29,8 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             return Gtk.StateFlags.CHECKED in get_state_flags ();
         } set {
             if (value) {
-                set_state_flags (Gtk.StateFlags.CHECKED, value);
-                check_revealer.reveal_child = value;
+                set_state_flags (Gtk.StateFlags.CHECKED, false);
+                check_revealer.reveal_child = true;
             } else {
                 unset_state_flags (Gtk.StateFlags.CHECKED);
                 check_revealer.reveal_child = false;
@@ -62,12 +61,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     construct {
          try {
             if (thumb == null && uri != null) {
-                if (Cache.is_cached (uri)) {
-                    this.thumb = Cache.get_cached_image (uri);
-                } else {
-                    this.thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false);
-                    Cache.cache_image_pixbuf (thumb, uri);
-                }
+                thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false);
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
@@ -75,9 +69,6 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
 
         var image = new Gtk.Image.from_pixbuf (thumb);
-        image.get_style_context ().add_class ("card");
-        image.halign = Gtk.Align.CENTER;
-        image.margin = 6;
 
         var check = new Gtk.Image.from_icon_name ("selection-checked", Gtk.IconSize.LARGE_TOOLBAR);
 
@@ -88,8 +79,12 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         overlay.add_overlay (image);
         overlay.add_overlay (check_revealer);
 
-        height_request = thumb.get_height () + 2 * THUMB_MARGIN;
-        width_request = thumb.get_width () + 2 * THUMB_MARGIN;
+        get_style_context ().add_class ("card");
+        halign = Gtk.Align.CENTER;
+        valign = Gtk.Align.CENTER;
+        height_request = thumb.get_height ();
+        width_request = thumb.get_width ();
+        margin = 6;
         add (overlay);
 
         activate.connect (() => {
