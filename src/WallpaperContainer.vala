@@ -61,7 +61,12 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     construct {
          try {
             if (thumb == null && uri != null) {
-                thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false);
+                if (Cache.is_cached (uri)) {
+                    thumb = Cache.get_cached_image (uri);
+                } else {
+                    thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 150, 100, false);
+                    Cache.cache_image_pixbuf (thumb, uri);
+                }
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
