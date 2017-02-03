@@ -78,7 +78,7 @@ namespace SetWallpaperContractor {
             text = ngettext ("%d hour", "%d hours", hours).printf (hours);
             delay_value = hours * (60 * 60);
         } else {
-            text = _ ("1 day");
+            text = _("1 day");
             delay_value = 60 * 60 * 24;
         }
 
@@ -201,17 +201,34 @@ namespace SetWallpaperContractor {
         dialog.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
         dialog.add_button (_("Create slideshow"), Gtk.ResponseType.OK);
 
-        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6);
+        var icon = new Gtk.Image.from_icon_name ("preferences-desktop-wallpaper", Gtk.IconSize.DIALOG);
+
+        var title = new Gtk.Label (_("Set As Desktop Slideshow"));
+        title.get_style_context ().add_class ("primary");
+        title.xalign = 0;
+
         var label = new Gtk.Label ("");
+        label.xalign = 0;
+
         var duration = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10);
         duration.draw_value = false;
+        duration.hexpand = true;
         duration.value_changed.connect (() => delay_value_changed (duration, label));
         duration.set_value (50);
-        box.margin = 12;
-        box.pack_start (label);
-        box.pack_start (duration);
+
+        var grid = new Gtk.Grid ();
+        grid.column_spacing = 12;
+        grid.row_spacing = 6;
+        grid.margin = 12;
+        grid.margin_top = 0;
+        grid.attach (icon, 0, 0, 1, 2);
+        grid.attach (title, 1, 0, 1, 1);
+        grid.attach (label, 1, 1, 1, 1);
+        grid.attach (duration, 1, 2, 1, 1);
+
         dialog.set_default_response (Gtk.ResponseType.OK);
-        dialog.get_content_area ().add (box);
+        dialog.get_content_area ().add (grid);
+        dialog.get_action_area ().margin = 4;
         dialog.show_all ();
 
         if (dialog.run () == Gtk.ResponseType.OK) {
