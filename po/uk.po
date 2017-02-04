@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-15 13:47-0800\n"
+"POT-Creation-Date: 2017-02-03 12:10-0800\n"
 "PO-Revision-Date: 2016-08-10 18:39+0000\n"
 "Last-Translator: Roman Sytnyk <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2017-01-16 05:42+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
+"X-Launchpad-Export-Date: 2017-02-04 05:50+0000\n"
+"X-Generator: Launchpad (build 18322)\n"
 "Language: uk\n"
 
 #: ../src/desktop-plug.vala:34
@@ -232,6 +232,7 @@ msgid "Show each photo for"
 msgstr "Показувати кожну фотографію"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
+#: ../set-wallpaper-contract/set-wallpaper.vala:206
 msgid "Set As Desktop Slideshow"
 msgstr "Зробити слайдшоу стільниці"
 

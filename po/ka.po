@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-15 13:47-0800\n"
+"POT-Creation-Date: 2017-02-03 12:10-0800\n"
 "PO-Revision-Date: 2015-11-14 22:27+0000\n"
 "Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2017-01-16 05:42+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
+"X-Launchpad-Export-Date: 2017-02-04 05:49+0000\n"
+"X-Generator: Launchpad (build 18322)\n"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -222,6 +222,7 @@ msgid "Show each photo for"
 msgstr ""
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
+#: ../set-wallpaper-contract/set-wallpaper.vala:206
 msgid "Set As Desktop Slideshow"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-15 13:47-0800\n"
+"POT-Creation-Date: 2017-02-03 12:10-0800\n"
 "PO-Revision-Date: 2015-10-07 23:56+0000\n"
 "Last-Translator: qezwan <Unknown>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2017-01-16 05:42+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
+"X-Launchpad-Export-Date: 2017-02-04 05:50+0000\n"
+"X-Generator: Launchpad (build 18322)\n"
 "Language: fa\n"
 
 #: ../src/desktop-plug.vala:34
@@ -228,6 +228,7 @@ msgid "Show each photo for"
 msgstr ""
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
+#: ../set-wallpaper-contract/set-wallpaper.vala:206
 msgid "Set As Desktop Slideshow"
 msgstr ""
 

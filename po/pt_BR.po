@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-15 13:47-0800\n"
+"POT-Creation-Date: 2017-02-03 12:10-0800\n"
 "PO-Revision-Date: 2016-12-16 10:49+0000\n"
 "Last-Translator: Marcelo Hosannah <mhosannah@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2017-01-16 05:42+0000\n"
-"X-Generator: Launchpad (build 18302)\n"
+"X-Launchpad-Export-Date: 2017-02-04 05:50+0000\n"
+"X-Generator: Launchpad (build 18322)\n"
 "Language: pt_BR\n"
 
 #: ../src/desktop-plug.vala:34
@@ -230,6 +230,7 @@ msgid "Show each photo for"
 msgstr "Mostrar cada foto para"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
+#: ../set-wallpaper-contract/set-wallpaper.vala:206
 msgid "Set As Desktop Slideshow"
 msgstr "Definir como apresentação de slides na área de trabalho"
 
