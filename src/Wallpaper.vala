@@ -151,9 +151,7 @@ public class Wallpaper : Gtk.EventBox {
 
         combo = new Gtk.ComboBoxText ();
         combo.append ("centered", _("Centered"));
-        combo.append ("scaled", _("Scaled"));
-        combo.append ("stretched", _("Stretched"));
-        combo.append ("zoom", _("Zoom"));
+        combo.append ("zoom", _("Scaled"));
         combo.append ("spanned", _("Spanned"));
         combo.changed.connect (update_mode);
 
@@ -192,7 +190,7 @@ public class Wallpaper : Gtk.EventBox {
         string picture_options = settings.get_string ("picture-options");
         if (picture_options == "none") {
             combo.set_sensitive (false);
-            picture_options = "stretched";
+            picture_options = "zoom";
         }
         prevent_update_mode = true;
         combo.set_active_id (picture_options);
