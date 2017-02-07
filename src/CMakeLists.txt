@@ -19,15 +19,15 @@ ensure_vala_version ("0.22.0" MINIMUM)
 include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
 vala_precompile (VALA_C ${PLUGNAME}
-    Dock.vala
-    HotCorners.vala
+    Cache.vala
     desktop-plug.vala
     GalaSettings.vala
-    Wallpaper.vala
-    SolidColorContainer.vala
     SlingshotSettings.vala
-    Cache.vala
-    WallpaperContainer.vala
+    Views/Dock.vala
+    Views/HotCorners.vala
+    Views/Wallpaper.vala
+    Widgets/SolidColorContainer.vala
+    Widgets/WallpaperContainer.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gnome-desktop-3.0
