@@ -151,7 +151,7 @@ public class Wallpaper : Gtk.EventBox {
 
         combo = new Gtk.ComboBoxText ();
         combo.append ("centered", _("Centered"));
-        combo.append ("zoom", _("Scaled"));
+        combo.append ("zoom", _("Zoom"));
         combo.append ("spanned", _("Spanned"));
         combo.changed.connect (update_mode);
 
