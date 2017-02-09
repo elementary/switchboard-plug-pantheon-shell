@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2017-02-03 12:10-0800\n"
-"PO-Revision-Date: 2017-01-27 11:41+0000\n"
+"PO-Revision-Date: 2017-02-08 20:56+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2017-02-04 05:49+0000\n"
-"X-Generator: Launchpad (build 18322)\n"
+"X-Launchpad-Export-Date: 2017-02-09 05:45+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -58,7 +58,7 @@ msgstr "Nîşandan"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Bike wêneya rûerdê sermaseyê"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../src/HotCorners.vala:83
 msgid "Do nothing"
-msgstr ""
+msgstr "Tiştek neke"
 
 #: ../src/HotCorners.vala:84
 msgid "Multitasking View"
@@ -102,7 +102,7 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:146
 msgid "Pictures"
-msgstr ""
+msgstr "Wêne"
 
 #: ../src/Wallpaper.vala:147
 msgid "Backgrounds"
@@ -114,11 +114,11 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:153
 msgid "Centered"
-msgstr ""
+msgstr "Navendî"
 
 #: ../src/Wallpaper.vala:154
 msgid "Scaled"
-msgstr ""
+msgstr "Pîvankirî"
 
 #: ../src/Wallpaper.vala:155
 msgid "Stretched"
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:156
 msgid "Zoom"
-msgstr ""
+msgstr "Mezinkirin"
 
 #: ../src/Wallpaper.vala:157
 msgid "Spanned"
@@ -134,23 +134,23 @@ msgstr ""
 
 #: ../src/Wallpaper.vala:327
 msgid "Select a folder"
-msgstr ""
+msgstr "Peldanekê hilbijêre"
 
 #: ../src/Wallpaper.vala:328 ../set-wallpaper-contract/set-wallpaper.vala:201
 msgid "Cancel"
-msgstr ""
+msgstr "Betal bike"
 
 #: ../src/Wallpaper.vala:329
 msgid "Open"
-msgstr ""
+msgstr "Veke"
 
 #: ../src/Dock.vala:36
 msgid "Normal"
-msgstr ""
+msgstr "Asayî"
 
 #: ../src/Dock.vala:37
 msgid "Large"
-msgstr ""
+msgstr "Fireh"
 
 #: ../src/Dock.vala:49
 msgid "Custom (%dpx)"
@@ -178,11 +178,11 @@ msgstr ""
 
 #: ../src/Dock.vala:107
 msgid "Display:"
-msgstr ""
+msgstr "Dîmen:"
 
 #: ../src/Dock.vala:138
 msgid "Icon size:"
-msgstr ""
+msgstr "Bejna hêmanan:"
 
 #: ../src/Dock.vala:140
 msgid "Hide when:"
@@ -203,24 +203,24 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:71
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d çirke"
+msgstr[1] "%d çirke"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d deq"
+msgstr[1] "%deqe"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d saet"
+msgstr[1] "%d saet"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:81
 msgid "1 day"
-msgstr ""
+msgstr "1 roj"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
