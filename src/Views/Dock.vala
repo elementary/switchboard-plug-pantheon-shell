@@ -27,14 +27,15 @@ public class Dock : Gtk.Grid {
 
     public Dock () {
         column_spacing = 12;
+        halign = Gtk.Align.CENTER;
         row_spacing = 6;
         margin = 24;
         margin_top = 64;
-        column_homogeneous = true;
 
-        var icon_size = new Gtk.ComboBoxText ();
-        icon_size.append ("48", _("Normal"));
-        icon_size.append ("64", _("Large"));
+        var icon_size = new Granite.Widgets.ModeButton ();
+        icon_size.append_text (_("Small"));
+        icon_size.append_text (_("Normal"));
+        icon_size.append_text (_("Large"));
 
 #if HAVE_PLANK_0_11
         Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
@@ -45,13 +46,37 @@ public class Dock : Gtk.Grid {
 #endif
         var current = dock_preferences.IconSize;
 
-        if (current != 48 && current != 64) {
-            icon_size.append (current.to_string (), _("Custom (%dpx)").printf (current));
+        switch (current) {
+            case 32:
+                icon_size.selected = 0;
+                break;
+            case 48:
+                icon_size.selected = 1;
+                break;
+            case 64:
+                icon_size.selected = 2;
+                break;
+            default:
+                icon_size.append_text (_("Custom (%dpx)").printf (current));
+                icon_size.selected = 3;
+                break;
         }
 
-        icon_size.active_id = current.to_string ();
-        icon_size.changed.connect (() => {
-            dock_preferences.IconSize = int.parse (icon_size.active_id);
+        icon_size.mode_changed.connect (() => {
+            switch (icon_size.selected) {
+                case 0:
+                    dock_preferences.IconSize = 32;
+                    break;
+                case 1:
+                    dock_preferences.IconSize = 48;
+                    break;
+                case 2:
+                    dock_preferences.IconSize = 64;
+                    break;
+                case 3:
+                    dock_preferences.IconSize = current;
+                    break;
+            }
         });
 
         var pressure_switch = new Gtk.Switch ();

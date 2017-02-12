@@ -21,15 +21,15 @@
 
 public class HotCorners : Gtk.Grid {
     construct {
-        expand = true;
         column_spacing = 12;
+        row_spacing = 24;
         margin = 32;
-        margin_top = 48;
+        halign = Gtk.Align.CENTER;
+        valign = Gtk.Align.CENTER;
 
         var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
+        expl.get_style_context ().add_class ("h4");
         expl.halign = Gtk.Align.START;
-        expl.hexpand = true;
-        expl.margin_bottom = 10;
 
         var topleft = create_hotcorner ();
         topleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topleft").to_string ();
@@ -53,21 +53,17 @@ public class HotCorners : Gtk.Grid {
 
         var icon = new Gtk.Image.from_file (Constants.PKGDATADIR + "/hotcornerdisplay.svg");
         icon.get_style_context ().add_class ("hotcorner-display");
-        icon.expand = true;
 
         var custom_command = new Gtk.Entry ();
+        custom_command.hexpand = true;
+        custom_command.margin_top = 24;
+        custom_command.primary_icon_name = "utilities-terminal-symbolic";
         custom_command.text = BehaviorSettings.get_default ().hotcorner_custom_command;
         custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
         
         var cc_label = new Gtk.Label (_("Custom command:"));
-        cc_label.set_halign (Gtk.Align.START);
-        
-        var cc_grid = new Gtk.Grid ();
-        cc_grid.column_spacing = 12;
-        cc_grid.expand = true;
-        cc_grid.margin_top = 48;
-        cc_grid.attach (cc_label, 0, 0, 1, 1);
-        cc_grid.attach (custom_command, 1, 0, 1, 1);
+        cc_label.halign = Gtk.Align.END;
+        cc_label.margin_top = 24;
 
         attach (expl, 0, 0, 3, 1);
         attach (icon, 1, 1, 1, 3);
@@ -75,7 +71,8 @@ public class HotCorners : Gtk.Grid {
         attach (topright, 2, 1, 1, 1);
         attach (bottomleft, 0, 3, 1, 1);
         attach (bottomright, 2, 3, 1, 1);
-        attach (cc_grid, 0, 4, 2, 1);
+        attach (cc_label, 0, 4, 1, 1);
+        attach (custom_command, 1, 4, 1, 1);
     }
 
     private Gtk.ComboBoxText create_hotcorner () {
