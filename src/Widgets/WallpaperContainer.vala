@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2016 elementary LLC.
+ * Copyright (c) 2015-2017 elementary LLC. (https://bugs.launchpad.net/switchboard-plug-pantheon-shell)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,19 +20,38 @@
 
 public class WallpaperContainer : Gtk.FlowBoxChild {
     private Gtk.Revealer check_revealer;
+    private Gtk.Image image;
 
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; construct; }
+
+    const string CARD_STYLE_CSS = """
+        flowboxchild,
+        GtkFlowBox .grid-child {
+            background-color: transparent;
+        }
+
+        flowboxchild:focus .card,
+        GtkFlowBox .grid-child:focus .card {
+            border: 3px solid alpha (#000, 0.2);
+            border-radius: 3px;
+        }
+
+        flowboxchild:focus .card:checked,
+        GtkFlowBox .grid-child:focus .card:checked {
+            border-color: @selected_bg_color;
+        }
+    """;
 
     public bool checked {
         get {
             return Gtk.StateFlags.CHECKED in get_state_flags ();
         } set {
             if (value) {
-                set_state_flags (Gtk.StateFlags.CHECKED, false);
+                image.set_state_flags (Gtk.StateFlags.CHECKED, false);
                 check_revealer.reveal_child = true;
             } else {
-                unset_state_flags (Gtk.StateFlags.CHECKED);
+                image.unset_state_flags (Gtk.StateFlags.CHECKED);
                 check_revealer.reveal_child = false;
             }
 
@@ -59,6 +78,14 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     construct {
+        var provider = new Gtk.CssProvider ();
+        try {
+            provider.load_from_data (CARD_STYLE_CSS, CARD_STYLE_CSS.length);
+            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        } catch (Error e) {
+            critical (e.message);
+        }
+
          try {
             if (thumb == null && uri != null) {
                 if (Cache.is_cached (uri)) {
@@ -73,22 +100,28 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             return;
         }
 
-        var image = new Gtk.Image.from_pixbuf (thumb);
+        image = new Gtk.Image.from_pixbuf (thumb);
+        image.halign = Gtk.Align.CENTER;
+        image.valign = Gtk.Align.CENTER;
+        image.margin = 9;
+        image.get_style_context ().add_class ("card");
 
         var check = new Gtk.Image.from_icon_name ("selection-checked", Gtk.IconSize.LARGE_TOOLBAR);
+        check.halign = Gtk.Align.START;
+        check.valign = Gtk.Align.START;
 
         check_revealer = new Gtk.Revealer ();
+        check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
         check_revealer.add (check);
 
         var overlay = new Gtk.Overlay ();
         overlay.add_overlay (image);
         overlay.add_overlay (check_revealer);
 
-        get_style_context ().add_class ("card");
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
-        height_request = thumb.get_height ();
-        width_request = thumb.get_width ();
+        height_request = thumb.get_height () + 18;
+        width_request = thumb.get_width () + 18;
         margin = 6;
         add (overlay);
 
