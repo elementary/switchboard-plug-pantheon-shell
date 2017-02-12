@@ -36,6 +36,11 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             border: 3px solid alpha (#000, 0.2);
             border-radius: 3px;
         }
+
+        flowboxchild:focus .card:checked,
+        GtkFlowBox .grid-child:focus .card:checked {
+            border-color: @selected_bg_color;
+        }
     """;
 
     public bool checked {
