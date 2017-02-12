@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-03 12:10-0800\n"
+"POT-Creation-Date: 2017-02-11 15:31-0800\n"
 "PO-Revision-Date: 2016-05-01 01:52+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,8 +10,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2017-02-04 05:49+0000\n"
-"X-Generator: Launchpad (build 18322)\n"
+"X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -59,139 +59,136 @@ msgstr ""
 msgid "Set selected image to be the new desktop background"
 msgstr ""
 
-#: ../src/HotCorners.vala:29
+#: ../src/Views/HotCorners.vala:30
 msgid "When the cursor enters the corner of the display:"
 msgstr "Kur kursori kalon mbi këndin e ekranit:"
 
-#: ../src/HotCorners.vala:62
+#: ../src/Views/HotCorners.vala:64
 msgid "Custom command:"
 msgstr ""
 
-#: ../src/HotCorners.vala:83
+#: ../src/Views/HotCorners.vala:80
 msgid "Do nothing"
 msgstr ""
 
-#: ../src/HotCorners.vala:84
+#: ../src/Views/HotCorners.vala:81
 msgid "Multitasking View"
 msgstr ""
 
-#: ../src/HotCorners.vala:85
+#: ../src/Views/HotCorners.vala:82
 msgid "Maximize current window"
 msgstr ""
 
-#: ../src/HotCorners.vala:86
+#: ../src/Views/HotCorners.vala:83
 msgid "Minimize current window"
 msgstr ""
 
-#: ../src/HotCorners.vala:87
+#: ../src/Views/HotCorners.vala:84
 msgid "Show Applications Menu"
 msgstr ""
 
-#: ../src/HotCorners.vala:88
+#: ../src/Views/HotCorners.vala:85
 msgid "Show all windows"
 msgstr ""
 
-#: ../src/HotCorners.vala:89
+#: ../src/Views/HotCorners.vala:86
 msgid "Execute custom command"
 msgstr ""
 
-#: ../src/Wallpaper.vala:146
+#: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
 msgstr "Imazhet"
 
-#: ../src/Wallpaper.vala:147
+#: ../src/Views/Wallpaper.vala:147
 msgid "Backgrounds"
 msgstr "Sfondet"
 
-#: ../src/Wallpaper.vala:148
+#: ../src/Views/Wallpaper.vala:148
 msgid "Custom…"
 msgstr "Të personalizuar..."
 
-#: ../src/Wallpaper.vala:153
+#: ../src/Views/Wallpaper.vala:153
 msgid "Centered"
 msgstr "Të qendërzuar"
 
-#: ../src/Wallpaper.vala:154
-msgid "Scaled"
-msgstr "Të shkallëzuar"
-
-#: ../src/Wallpaper.vala:155
-msgid "Stretched"
-msgstr "Të zgjeruar"
-
-#: ../src/Wallpaper.vala:156
+#: ../src/Views/Wallpaper.vala:154
 msgid "Zoom"
 msgstr "Të zmadhuar"
 
-#: ../src/Wallpaper.vala:157
+#: ../src/Views/Wallpaper.vala:155
 msgid "Spanned"
 msgstr ""
 
-#: ../src/Wallpaper.vala:327
+#: ../src/Views/Wallpaper.vala:325
 msgid "Select a folder"
 msgstr "Përzgjidh një dosje"
 
-#: ../src/Wallpaper.vala:328 ../set-wallpaper-contract/set-wallpaper.vala:201
+#: ../src/Views/Wallpaper.vala:326
+#: ../set-wallpaper-contract/set-wallpaper.vala:201
 msgid "Cancel"
 msgstr "Anulo"
 
-#: ../src/Wallpaper.vala:329
+#: ../src/Views/Wallpaper.vala:327
 msgid "Open"
 msgstr "Hap"
 
-#: ../src/Dock.vala:36
+#: ../src/Views/Dock.vala:36
+msgid "Small"
+msgstr ""
+
+#: ../src/Views/Dock.vala:37
 msgid "Normal"
 msgstr "Normale"
 
-#: ../src/Dock.vala:37
+#: ../src/Views/Dock.vala:38
 msgid "Large"
 msgstr "Të mëdha"
 
-#: ../src/Dock.vala:49
+#: ../src/Views/Dock.vala:60
 msgid "Custom (%dpx)"
 msgstr ""
 
-#: ../src/Dock.vala:64
+#: ../src/Views/Dock.vala:89
 msgid "Focused window is maximized"
 msgstr ""
 
-#: ../src/Dock.vala:65
+#: ../src/Views/Dock.vala:90
 msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:66
+#: ../src/Views/Dock.vala:91
 msgid "Any window overlaps the dock"
 msgstr ""
 
-#: ../src/Dock.vala:67
+#: ../src/Views/Dock.vala:92
 msgid "Not being used"
 msgstr ""
 
-#: ../src/Dock.vala:103
+#: ../src/Views/Dock.vala:128
 msgid "Primary display:"
 msgstr ""
 
-#: ../src/Dock.vala:107
+#: ../src/Views/Dock.vala:132
 msgid "Display:"
 msgstr ""
 
-#: ../src/Dock.vala:138
+#: ../src/Views/Dock.vala:163
 msgid "Icon size:"
 msgstr ""
 
-#: ../src/Dock.vala:140
+#: ../src/Views/Dock.vala:165
 msgid "Hide when:"
 msgstr "Fshih kur:"
 
-#: ../src/Dock.vala:144
+#: ../src/Views/Dock.vala:169
 msgid "Pressure reveal:"
 msgstr ""
 
-#: ../src/Dock.vala:183
+#: ../src/Views/Dock.vala:208
 msgid "Monitor %d"
 msgstr "Monitori %d"
 
-#: ../src/Dock.vala:188
+#: ../src/Views/Dock.vala:213
 msgid "Display %d"
 msgstr "Ekrani %d"
 
@@ -229,3 +226,9 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
+
+#~ msgid "Scaled"
+#~ msgstr "Të shkallëzuar"
+
+#~ msgid "Stretched"
+#~ msgstr "Të zgjeruar"
