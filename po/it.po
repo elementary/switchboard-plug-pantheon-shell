@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-02-03 19:22+0000\n"
+"PO-Revision-Date: 2017-02-12 12:42+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
+"X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: it\n"
 
@@ -141,7 +141,7 @@ msgstr "Apri"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "Piccola"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -233,9 +233,3 @@ msgstr "Imposta come presentazione del desktop"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Crea presentazione"
-
-#~ msgid "Scaled"
-#~ msgstr "In scala"
-
-#~ msgid "Stretched"
-#~ msgstr "Stirato"

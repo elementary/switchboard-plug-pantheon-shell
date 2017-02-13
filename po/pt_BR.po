@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2016-12-16 10:49+0000\n"
-"Last-Translator: Marcelo Hosannah <mhosannah@gmail.com>\n"
+"PO-Revision-Date: 2017-02-12 17:00+0000\n"
+"Last-Translator: Leonardo Lemos <Unknown>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
+"X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: pt_BR\n"
 
@@ -73,11 +73,11 @@ msgstr "Quando o cursor toca o canto da tela:"
 
 #: ../src/Views/HotCorners.vala:64
 msgid "Custom command:"
-msgstr ""
+msgstr "Comando personalizado:"
 
 #: ../src/Views/HotCorners.vala:80
 msgid "Do nothing"
-msgstr ""
+msgstr "Fazer nada"
 
 #: ../src/Views/HotCorners.vala:81
 msgid "Multitasking View"
@@ -97,7 +97,7 @@ msgstr "Mostrar menu de aplicativos"
 
 #: ../src/Views/HotCorners.vala:85
 msgid "Show all windows"
-msgstr ""
+msgstr "Mostrar todas as janelas"
 
 #: ../src/Views/HotCorners.vala:86
 msgid "Execute custom command"
@@ -142,7 +142,7 @@ msgstr "Abrir"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "Pequeno"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -182,7 +182,7 @@ msgstr "Tela:"
 
 #: ../src/Views/Dock.vala:163
 msgid "Icon size:"
-msgstr ""
+msgstr "Tamanho dos ícones:"
 
 #: ../src/Views/Dock.vala:165
 msgid "Hide when:"
@@ -234,9 +234,3 @@ msgstr "Definir como apresentação de slides na área de trabalho"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Criar apresentação de slides"
-
-#~ msgid "Scaled"
-#~ msgstr "Dimensionado"
-
-#~ msgid "Stretched"
-#~ msgstr "Esticado"
