@@ -141,8 +141,7 @@ public class Wallpaper : Gtk.EventBox {
         scrolled.add (wallpaper_view);
 
         folder_combo = new Gtk.ComboBoxText ();
-        folder_combo.halign = Gtk.Align.START;
-        folder_combo.margin = 6;
+        folder_combo.margin = 12;
         folder_combo.append ("pic", _("Pictures"));
         folder_combo.append ("sys", _("Backgrounds"));
         folder_combo.append ("cus", _("Custom…"));
@@ -150,6 +149,7 @@ public class Wallpaper : Gtk.EventBox {
         folder_combo.set_active (1);
 
         combo = new Gtk.ComboBoxText ();
+        combo.valign = Gtk.Align.CENTER;
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
         combo.append ("spanned", _("Spanned"));
@@ -161,25 +161,28 @@ public class Wallpaper : Gtk.EventBox {
         }
 
         color_button = new Gtk.ColorButton ();
+        color_button.margin = 12;
+        color_button.margin_left = 0;
         color_button.rgba = rgba_color;
         color_button.color_set.connect (update_color);
 
+        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        size_group.add_widget (combo);
+        size_group.add_widget (color_button);
+        size_group.add_widget (folder_combo);
+
         load_settings ();
 
-        var bbox = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        bbox.halign = Gtk.Align.END;
-        bbox.margin = 6;
-        bbox.set_spacing (6);
-        bbox.set_layout (Gtk.ButtonBoxStyle.END);
-        bbox.add (combo);
-        bbox.add (color_button);
+        var actionbar = new Gtk.ActionBar ();
+        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.add (folder_combo);
+        actionbar.pack_end (color_button);
+        actionbar.pack_end (combo);
 
         var grid = new Gtk.Grid ();
-        grid.margin_top = 12;
-        grid.attach (scrolled, 0, 0, 2, 1);
-        grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 1, 2, 1);
-        grid.attach (folder_combo, 0, 2, 1, 1);
-        grid.attach (bbox, 1, 2, 1, 1);
+        grid.margin_top = 24;
+        grid.attach (scrolled, 0, 0, 1, 1);
+        grid.attach (actionbar, 0, 1, 1, 1);
         add (grid);
     }
 
