@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-02-11 20:48+0000\n"
+"PO-Revision-Date: 2017-02-14 21:28+0000\n"
 "Last-Translator: Rokar <Unknown>\n"
 "Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
+"X-Launchpad-Export-Date: 2017-02-15 06:30+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/desktop-plug.vala:34
@@ -139,7 +139,7 @@ msgstr "Veke"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "Biçûk"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -231,6 +231,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Scaled"
-#~ msgstr "Pîvankirî"
