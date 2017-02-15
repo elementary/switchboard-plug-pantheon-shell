@@ -23,9 +23,7 @@ public class HotCorners : Gtk.Grid {
     construct {
         column_spacing = 12;
         row_spacing = 24;
-        margin = 32;
         halign = Gtk.Align.CENTER;
-        valign = Gtk.Align.CENTER;
 
         var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
         expl.get_style_context ().add_class ("h4");
