@@ -77,7 +77,7 @@ interface AccountsServiceUser : Object {
     public abstract void set_background_file (string filename) throws IOError;
 }
 
-public class Wallpaper : Gtk.EventBox {
+public class Wallpaper : Gtk.Grid {
     // name of the default-wallpaper-link that we can prevent loading it again
     // (assumes that the defaultwallpaper is also in the system wallpaper directory)
     static string DEFAULT_LINK = "file://%s/elementaryos-default".printf (SYSTEM_BACKGROUNDS_PATH);
@@ -121,10 +121,12 @@ public class Wallpaper : Gtk.EventBox {
             warning (e.message);
         }
 
+        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
+
         wallpaper_view = new Gtk.FlowBox ();
         wallpaper_view.activate_on_single_click = true;
         wallpaper_view.column_spacing = wallpaper_view.row_spacing = 6;
-        wallpaper_view.margin = 12;
+        wallpaper_view.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
@@ -179,11 +181,9 @@ public class Wallpaper : Gtk.EventBox {
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
 
-        var grid = new Gtk.Grid ();
-        grid.margin_top = 24;
-        grid.attach (scrolled, 0, 0, 1, 1);
-        grid.attach (actionbar, 0, 1, 1, 1);
-        add (grid);
+        attach (separator, 0, 0, 1, 1);
+        attach (scrolled, 0, 1, 1, 1);
+        attach (actionbar, 0, 2, 1, 1);
     }
 
     private void load_settings () {
