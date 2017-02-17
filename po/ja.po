@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2016-12-02 16:46+0000\n"
+"PO-Revision-Date: 2017-02-16 12:43+0000\n"
 "Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
+"X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/desktop-plug.vala:34
@@ -134,7 +134,7 @@ msgstr "開く"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "小さい"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -223,9 +223,3 @@ msgstr "デスクトップスライドショーを設定"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "スライドショーの作成"
-
-#~ msgid "Scaled"
-#~ msgstr "スケール"
-
-#~ msgid "Stretched"
-#~ msgstr "伸長"
