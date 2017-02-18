@@ -25,7 +25,7 @@ public class Cache {
      */
     public async static void init () {
         if (cache_folder == null)
-            cache_folder = Environment.get_user_cache_dir () + "/wallpapers-plug-thumbs/";
+            cache_folder = Environment.get_user_cache_dir () + "/io.elementary.switchboard.plug.pantheon-shell/";
         if (images == null) {
             images = new Gee.HashMap<string, Gdk.Pixbuf>();
         }
