@@ -2,6 +2,7 @@
 /*-
  * Copyright (c) 2013-2014 Foto Developers (http://launchpad.net/foto)
  * Copyright (c) 2015 Erasmo Marín
+ *               2017 elementary LLC. (http://launchpad.net/switchboard-plug-pantheon-shell)
  *
  * This software is licensed under the GNU General Public License
  * (version 3 or later). See the COPYING file in this distribution.
@@ -137,9 +138,15 @@ public class Cache {
      */
     private static string compute_key_mod (string uri) {
         GLib.File file = GLib.File.new_for_uri (uri);
-        FileInfo info = file.query_info (GLib.FileAttribute.TIME_MODIFIED, 0);
-        string key_mod = GLib.Checksum.compute_for_string (GLib.ChecksumType.MD5, 
-                                                      info.get_modification_time().tv_sec.to_string());
+        string key_mod = "";
+
+        try {
+            FileInfo info = file.query_info (GLib.FileAttribute.TIME_MODIFIED, 0);
+            key_mod = GLib.Checksum.compute_for_string (GLib.ChecksumType.MD5, info.get_modification_time ().tv_sec.to_string ());
+        } catch (Error e) {
+            critical ("Failed to get modification date: %s", e.message);
+        }
+
         return key_mod;
     }
 
