@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-01-22 15:57+0000\n"
+"PO-Revision-Date: 2017-02-17 16:54+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
+"X-Launchpad-Export-Date: 2017-02-18 05:47+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: el\n"
 
@@ -43,7 +43,7 @@ msgstr "Ενεργές γωνίες"
 
 #: ../src/desktop-plug.vala:93
 msgid "Theme"
-msgstr ""
+msgstr "Θέμα"
 
 #: ../src/desktop-plug.vala:94
 msgid "Hide Mode"
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../src/Views/HotCorners.vala:80
 msgid "Do nothing"
-msgstr ""
+msgstr "Καμία ενέργεια"
 
 #: ../src/Views/HotCorners.vala:81
 msgid "Multitasking View"
@@ -140,7 +140,7 @@ msgstr "Άνοιγμα"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "Μικρό"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -222,7 +222,7 @@ msgstr "1 ημέρα"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr ""
+msgstr "Εμφάνιση κάθε φωτογραφίας για"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 #: ../set-wallpaper-contract/set-wallpaper.vala:206
@@ -232,9 +232,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Stretched"
-#~ msgstr "Τεντωμένο"
-
-#~ msgid "Scaled"
-#~ msgstr "Σε κλίμακα"
