@@ -115,7 +115,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         check_revealer.add (check);
 
         var overlay = new Gtk.Overlay ();
-        overlay.add_overlay (image);
+        overlay.add (image);
         overlay.add_overlay (check_revealer);
 
         halign = Gtk.Align.CENTER;
