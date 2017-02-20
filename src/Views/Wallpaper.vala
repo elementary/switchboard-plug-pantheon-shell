@@ -125,7 +125,6 @@ public class Wallpaper : Gtk.Grid {
 
         wallpaper_view = new Gtk.FlowBox ();
         wallpaper_view.activate_on_single_click = true;
-        wallpaper_view.column_spacing = wallpaper_view.row_spacing = 6;
         wallpaper_view.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
