@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2016-08-10 18:39+0000\n"
-"Last-Translator: Roman Sytnyk <Unknown>\n"
+"PO-Revision-Date: 2017-02-19 14:20+0000\n"
+"Last-Translator: neiron13 <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
+"X-Launchpad-Export-Date: 2017-02-20 05:46+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: uk\n"
 
@@ -72,15 +72,15 @@ msgstr "Коли курсор потрапляє в куток екрану:"
 
 #: ../src/Views/HotCorners.vala:64
 msgid "Custom command:"
-msgstr ""
+msgstr "Доступні команди:"
 
 #: ../src/Views/HotCorners.vala:80
 msgid "Do nothing"
-msgstr ""
+msgstr "Нічого не робити"
 
 #: ../src/Views/HotCorners.vala:81
 msgid "Multitasking View"
-msgstr "Багатозадачний вид"
+msgstr "Багатозадачний вигляд"
 
 #: ../src/Views/HotCorners.vala:82
 msgid "Maximize current window"
@@ -96,11 +96,11 @@ msgstr "Показати меню програм"
 
 #: ../src/Views/HotCorners.vala:85
 msgid "Show all windows"
-msgstr ""
+msgstr "Показати усі вікна"
 
 #: ../src/Views/HotCorners.vala:86
 msgid "Execute custom command"
-msgstr ""
+msgstr "Виконати призначену команду"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -141,7 +141,7 @@ msgstr "Відкрити"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "Малий"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -173,7 +173,7 @@ msgstr "Не використовується"
 
 #: ../src/Views/Dock.vala:128
 msgid "Primary display:"
-msgstr ""
+msgstr "Основний дисплей:"
 
 #: ../src/Views/Dock.vala:132
 msgid "Display:"
@@ -181,7 +181,7 @@ msgstr "Екран:"
 
 #: ../src/Views/Dock.vala:163
 msgid "Icon size:"
-msgstr ""
+msgstr "Розмір пікторами:"
 
 #: ../src/Views/Dock.vala:165
 msgid "Hide when:"
@@ -189,7 +189,7 @@ msgstr "Приховати коли:"
 
 #: ../src/Views/Dock.vala:169
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Показувати натиск:"
 
 #: ../src/Views/Dock.vala:208
 msgid "Monitor %d"
@@ -236,9 +236,3 @@ msgstr "Зробити слайдшоу стільниці"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Створити слайдшоу"
-
-#~ msgid "Scaled"
-#~ msgstr "Масштабувати"
-
-#~ msgid "Stretched"
-#~ msgstr "Розтягнути"
