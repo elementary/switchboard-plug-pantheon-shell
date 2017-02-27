@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2016-08-07 17:46+0000\n"
-"Last-Translator: Marek Suchánek <suchm@seznam.cz>\n"
+"PO-Revision-Date: 2017-02-26 16:55+0000\n"
+"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
+"X-Launchpad-Export-Date: 2017-02-27 05:45+0000\n"
+"X-Generator: Launchpad (build 18328)\n"
 "Language: cs\n"
 
 #: ../src/desktop-plug.vala:34
@@ -59,11 +59,11 @@ msgstr "Displej"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Nastavit jako _pozadí plochy"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Použít vybraný obrázek jako nové pozadí plochy"
 
 #: ../src/Views/HotCorners.vala:30
 msgid "When the cursor enters the corner of the display:"
@@ -71,11 +71,11 @@ msgstr "Když se kurzor dotkne rohu obrazovky:"
 
 #: ../src/Views/HotCorners.vala:64
 msgid "Custom command:"
-msgstr ""
+msgstr "Vlastní příkaz:"
 
 #: ../src/Views/HotCorners.vala:80
 msgid "Do nothing"
-msgstr ""
+msgstr "Nedělat nic"
 
 #: ../src/Views/HotCorners.vala:81
 msgid "Multitasking View"
@@ -83,11 +83,11 @@ msgstr "Zobrazení multitaskingu"
 
 #: ../src/Views/HotCorners.vala:82
 msgid "Maximize current window"
-msgstr ""
+msgstr "Maximalizovat aktuální okno"
 
 #: ../src/Views/HotCorners.vala:83
 msgid "Minimize current window"
-msgstr ""
+msgstr "Minimalizovat aktuální okno"
 
 #: ../src/Views/HotCorners.vala:84
 msgid "Show Applications Menu"
@@ -95,11 +95,11 @@ msgstr "Zobrazit Nabídku aplikací"
 
 #: ../src/Views/HotCorners.vala:85
 msgid "Show all windows"
-msgstr ""
+msgstr "Zobrazit všechna okna"
 
 #: ../src/Views/HotCorners.vala:86
 msgid "Execute custom command"
-msgstr ""
+msgstr "Provést vlastní příkaz"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -180,7 +180,7 @@ msgstr "Displej:"
 
 #: ../src/Views/Dock.vala:163
 msgid "Icon size:"
-msgstr ""
+msgstr "Velikost ikon:"
 
 #: ../src/Views/Dock.vala:165
 msgid "Hide when:"
@@ -235,9 +235,3 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr ""
-
-#~ msgid "Scaled"
-#~ msgstr "Přizpůsobit"
-
-#~ msgid "Stretched"
-#~ msgstr "Roztáhnout"
