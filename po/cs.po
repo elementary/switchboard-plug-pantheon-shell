@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-02-26 16:55+0000\n"
+"PO-Revision-Date: 2017-03-08 01:47+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2017-02-27 05:45+0000\n"
-"X-Generator: Launchpad (build 18328)\n"
+"X-Launchpad-Export-Date: 2017-03-09 05:49+0000\n"
+"X-Generator: Launchpad (build 18330)\n"
 "Language: cs\n"
 
 #: ../src/desktop-plug.vala:34
@@ -140,7 +140,7 @@ msgstr "Otevřít"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "Malé"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -172,7 +172,7 @@ msgstr "Nepoužíváno"
 
 #: ../src/Views/Dock.vala:128
 msgid "Primary display:"
-msgstr ""
+msgstr "Hlavní displej:"
 
 #: ../src/Views/Dock.vala:132
 msgid "Display:"
@@ -188,7 +188,7 @@ msgstr "Skrýt když:"
 
 #: ../src/Views/Dock.vala:169
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Vysunutí tlakem:"
 
 #: ../src/Views/Dock.vala:208
 msgid "Monitor %d"
@@ -230,8 +230,8 @@ msgstr ""
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 #: ../set-wallpaper-contract/set-wallpaper.vala:206
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Nastavit jako posloupnost pozadí plochy"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
+msgstr "Vytvořit posloupnost pozadí"
