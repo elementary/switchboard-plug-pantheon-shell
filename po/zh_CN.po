@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2016-11-03 05:47+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2017-03-13 08:46+0000\n"
+"Last-Translator: wushanjun <sjwuny@126.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
+"X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
+"X-Generator: Launchpad (build 18331)\n"
 "Language: \n"
 
 #: ../src/desktop-plug.vala:34
@@ -25,7 +25,7 @@ msgstr "桌面"
 
 #: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "配置 Dock 和热角，更换壁纸"
+msgstr "配置 Dock 和热角、更换壁纸"
 
 #: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
 msgid "Wallpaper"
@@ -87,7 +87,7 @@ msgstr "最大化当前窗口"
 
 #: ../src/Views/HotCorners.vala:83
 msgid "Minimize current window"
-msgstr "最大化当前窗口"
+msgstr "最小化当前窗口"
 
 #: ../src/Views/HotCorners.vala:84
 msgid "Show Applications Menu"
@@ -140,7 +140,7 @@ msgstr "打开"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "较小"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -148,7 +148,7 @@ msgstr "普通"
 
 #: ../src/Views/Dock.vala:38
 msgid "Large"
-msgstr "大"
+msgstr "较大"
 
 #: ../src/Views/Dock.vala:60
 msgid "Custom (%dpx)"
@@ -156,15 +156,15 @@ msgstr "自定义（%dpx）"
 
 #: ../src/Views/Dock.vala:89
 msgid "Focused window is maximized"
-msgstr "活动窗口最大化时"
+msgstr "焦点窗口最大化时"
 
 #: ../src/Views/Dock.vala:90
 msgid "Focused window overlaps the dock"
-msgstr "活动窗口与Dock重叠时"
+msgstr "焦点窗口与 Dock 重叠时"
 
 #: ../src/Views/Dock.vala:91
 msgid "Any window overlaps the dock"
-msgstr "任何窗口与Dock重叠时"
+msgstr "任何窗口与 Dock 重叠时"
 
 #: ../src/Views/Dock.vala:92
 msgid "Not being used"
@@ -206,7 +206,7 @@ msgstr[0] "%d 秒"
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] "%d 分"
+msgstr[0] "%d 分钟"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:78
 msgid "%d hour"
@@ -229,9 +229,3 @@ msgstr "设为桌面幻灯片"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "创建幻灯片"
-
-#~ msgid "Stretched"
-#~ msgstr "拉伸"
-
-#~ msgid "Scaled"
-#~ msgstr "比例"

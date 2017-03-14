@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2016-12-14 14:33+0000\n"
-"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
+"PO-Revision-Date: 2017-03-13 17:53+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
+"X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
+"X-Generator: Launchpad (build 18331)\n"
 "Language: es\n"
 
 #: ../src/desktop-plug.vala:34
@@ -25,7 +25,7 @@ msgstr "Escritorio"
 
 #: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configurar el panel, atajos en las esquinas y el fondo de escritorio"
+msgstr "Configurar el dock, esquinas activas y fondo de escritorio"
 
 #: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
 msgid "Wallpaper"
@@ -232,9 +232,3 @@ msgstr "Establecer como fondo de pantalla de presentación"
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
 msgstr "Crear presentación"
-
-#~ msgid "Stretched"
-#~ msgstr "Estirado"
-
-#~ msgid "Scaled"
-#~ msgstr "Escalado"
