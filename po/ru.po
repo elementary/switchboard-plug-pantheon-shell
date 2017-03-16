@@ -1,24 +1,20 @@
-# Russian translation for maya
-# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the maya package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: maya\n"
+"Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-02-24 21:52+0000\n"
-"Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"POT-Creation-Date: 2017-03-15 19:00+0000\n"
+"PO-Revision-Date: 2017-03-16 04:47+0000\n"
+"Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
+"Language-Team: Russian <http://weblate.elementary.io/projects/desktop"
+"/switchboard-plug-pantheon-shell/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.12\n"
 "X-Launchpad-Export-Date: 2017-02-25 05:57+0000\n"
-"X-Generator: Launchpad (build 18328)\n"
-"Language: ru\n"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -26,7 +22,7 @@ msgstr "Рабочий стол"
 
 #: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Настройка дока, активных углов и смена обоев"
+msgstr "Настроить док-панель, активные углы и сменить обои"
 
 #: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
 msgid "Wallpaper"
@@ -64,7 +60,7 @@ msgstr "Установить как фон рабочего _стола"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
-msgstr "Сделать выбранное изображение фоном рабочего стола"
+msgstr "Назначить выбранное изображение новым фоном рабочего стола"
 
 #: ../src/Views/HotCorners.vala:30
 msgid "When the cursor enters the corner of the display:"
@@ -181,7 +177,7 @@ msgstr "Экран:"
 
 #: ../src/Views/Dock.vala:163
 msgid "Icon size:"
-msgstr "Размер иконок:"
+msgstr "Размер значков:"
 
 #: ../src/Views/Dock.vala:165
 msgid "Hide when:"
