@@ -22,7 +22,6 @@ vala_precompile (VALA_C ${PLUGNAME}
     Cache.vala
     desktop-plug.vala
     GalaSettings.vala
-    SlingshotSettings.vala
     Views/Dock.vala
     Views/HotCorners.vala
     Views/Wallpaper.vala
