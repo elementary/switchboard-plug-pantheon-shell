@@ -8,16 +8,18 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-02-12 17:00+0000\n"
-"Last-Translator: Leonardo Lemos <Unknown>\n"
-"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"PO-Revision-Date: 2017-03-16 23:41+0000\n"
+"Last-Translator: Leonardo <leonardo@elementary.io>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.elementary.io/projects/desktop/switchboard-plug-pantheon-"
+"shell/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.12\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
-"Language: pt_BR\n"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -39,7 +41,7 @@ msgstr "Dock"
 
 #: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
 msgid "Hot Corners"
-msgstr "Hot Corners"
+msgstr "Cantos de acesso rápido"
 
 #: ../src/desktop-plug.vala:93
 msgid "Theme"
@@ -55,7 +57,7 @@ msgstr "Tamanho dos ícones"
 
 #: ../src/desktop-plug.vala:96
 msgid "Display"
-msgstr "Exibir"
+msgstr "Tela"
 
 #: ../src/Translations.vala:1
 msgid "Set as _Desktop Background"
@@ -113,7 +115,7 @@ msgstr "Planos de fundo"
 
 #: ../src/Views/Wallpaper.vala:148
 msgid "Custom…"
-msgstr "Personalizado..."
+msgstr "Personalizado…"
 
 #: ../src/Views/Wallpaper.vala:153
 msgid "Centered"
@@ -121,7 +123,7 @@ msgstr "Centralizado"
 
 #: ../src/Views/Wallpaper.vala:154
 msgid "Zoom"
-msgstr "Ampliado"
+msgstr "Ampliação"
 
 #: ../src/Views/Wallpaper.vala:155
 msgid "Spanned"
