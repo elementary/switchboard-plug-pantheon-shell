@@ -22,7 +22,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     private Gtk.Revealer check_revealer;
     private Gtk.Image image;
 
-    public string uri { get; construct; }
+    public string uri { get; construct set; }
     public Gdk.Pixbuf thumb { get; construct; }
 
     const string CARD_STYLE_CSS = """
@@ -124,9 +124,5 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         width_request = thumb.get_width () + 18;
         margin = 6;
         add (overlay);
-
-        activate.connect (() => {
-            checked = true;
-        });
     }
 }
