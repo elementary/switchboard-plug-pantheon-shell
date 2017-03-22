@@ -474,6 +474,17 @@ public class Wallpaper : Gtk.Grid {
         File? dest = null;
 
         try {
+            File folder = File.new_for_path (get_local_bg_location ());
+            folder.make_directory_with_parents ();
+        } catch (Error e) {
+            if (e is GLib.IOError.EXISTS) {
+                debug ("Local background directory already exists");
+            } else {
+                warning (e.message);
+            }
+        }
+
+        try {
             dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
