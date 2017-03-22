@@ -7,7 +7,7 @@ cmake_policy (VERSION 2.8)
 # Set the Properties of your Plug
 
 # Set the Name of the plug, should be an executable command, lowercase, no spaces 
-set (PLUGNAME "pantheon-desktop")
+set (PLUGNAME pantheon-desktop)
 # Set the Category of the Plug, one of:
 # personal, hardware, network, system
 set (PLUGCATEGORY "personal")
@@ -28,7 +28,7 @@ include (GNUInstallDirs)
 set (DATADIR "${CMAKE_INSTALL_FULL_LIBDIR}/switchboard")
 set (PLANKDATADIR "${CMAKE_INSTALL_FULL_DATADIR}/plank")
 set (PKGDATADIR "${DATADIR}/${PLUGCATEGORY}/${PLUGNAME}")
-set (GETTEXT_PACKAGE "${PLUGNAME}-plug")
+set (GETTEXT_PACKAGE ${PLUGNAME}-plug)
 
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
