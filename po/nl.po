@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-04-08 10:32+0000\n"
-"Last-Translator: Jonathan Moerman <jonathanmoerman@gmail.com>\n"
+"PO-Revision-Date: 2017-04-09 17:47+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop"
 "/switchboard-plug-pantheon-shell/nl/>\n"
 "Language: nl\n"
@@ -25,7 +25,6 @@ msgid "Desktop"
 msgstr "Bureaublad"
 
 #: ../src/desktop-plug.vala:35
-#, fuzzy
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Configureer de dock, actieve hoeken, en pas de achtergrond aan"
 
@@ -60,9 +59,8 @@ msgid "Display"
 msgstr "Beeldscherm"
 
 #: ../src/Translations.vala:1
-#, fuzzy
 msgid "Set as _Desktop Background"
-msgstr "Stel in als _bureaublad achtergrond"
+msgstr "Stel in als _bureaubladachtergrond"
 
 #: ../src/Translations.vala:2
 msgid "Set selected image to be the new desktop background"
@@ -94,7 +92,7 @@ msgstr "Minimaliseer het huidige venster"
 
 #: ../src/Views/HotCorners.vala:84
 msgid "Show Applications Menu"
-msgstr "Toon toepassingen-menu"
+msgstr "Toon toepassingsmenu"
 
 #: ../src/Views/HotCorners.vala:85
 msgid "Show all windows"
@@ -102,7 +100,7 @@ msgstr "Toon alle vensters"
 
 #: ../src/Views/HotCorners.vala:86
 msgid "Execute custom command"
-msgstr "Voor aangepast commando uit"
+msgstr "Voer aangepast commando uit"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -158,21 +156,20 @@ msgid "Custom (%dpx)"
 msgstr "Aangepast (%dpx)"
 
 #: ../src/Views/Dock.vala:89
-#, fuzzy
 msgid "Focused window is maximized"
 msgstr "Actief venster is gemaximaliseerd"
 
 #: ../src/Views/Dock.vala:90
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "Actief venster overlapt de dock"
 
 #: ../src/Views/Dock.vala:91
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Eender welk venster overlapt de dock"
 
 #: ../src/Views/Dock.vala:92
 msgid "Not being used"
-msgstr ""
+msgstr "Niet gebruikt"
 
 #: ../src/Views/Dock.vala:128
 msgid "Primary display:"
@@ -183,9 +180,8 @@ msgid "Display:"
 msgstr "Beeldscherm:"
 
 #: ../src/Views/Dock.vala:163
-#, fuzzy
 msgid "Icon size:"
-msgstr "Icoon grootte:"
+msgstr "Pictogramgrootte:"
 
 #: ../src/Views/Dock.vala:165
 msgid "Hide when:"
@@ -193,7 +189,7 @@ msgstr "Verberg wanneer:"
 
 #: ../src/Views/Dock.vala:169
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Onthul bij druk:"
 
 #: ../src/Views/Dock.vala:208
 msgid "Monitor %d"
@@ -207,7 +203,7 @@ msgstr "Beeldscherm %d"
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d seconde"
-msgstr[1] "%d secondes"
+msgstr[1] "%d seconden"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:74
 msgid "%d minute"
@@ -232,11 +228,11 @@ msgstr "Geef elke foto weer voor"
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 #: ../set-wallpaper-contract/set-wallpaper.vala:206
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Instellen als diavoorstelling"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:202
 msgid "Create slideshow"
-msgstr ""
+msgstr "Maak diavoorstelling"
 
 #~ msgid "Scaled"
 #~ msgstr "Geschaald"
