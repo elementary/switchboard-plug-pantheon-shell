@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-03-13 17:53+0000\n"
-"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
-"Language-Team: Spanish <es@li.org>\n"
+"PO-Revision-Date: 2017-04-10 02:05+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: Spanish <http://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
-"X-Generator: Launchpad (build 18331)\n"
-"Language: es\n"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -140,7 +141,7 @@ msgstr "Abrir"
 
 #: ../src/Views/Dock.vala:36
 msgid "Small"
-msgstr ""
+msgstr "Pequeño"
 
 #: ../src/Views/Dock.vala:37
 msgid "Normal"
@@ -188,7 +189,7 @@ msgstr "Ocultar cuando:"
 
 #: ../src/Views/Dock.vala:169
 msgid "Pressure reveal:"
-msgstr "Mostrar al presionar"
+msgstr "Mostrar al presionar:"
 
 #: ../src/Views/Dock.vala:208
 msgid "Monitor %d"
