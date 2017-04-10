@@ -41,7 +41,7 @@ public class GalaPlug : Switchboard.Plug {
         if (main_grid == null) {
             main_grid = new Gtk.Grid ();
 
-            var wallpaper = new Wallpaper (this);
+            var wallpaper = new Wallpaper ();
             var dock = new Dock ();
             var hotcorners = new HotCorners ();
 

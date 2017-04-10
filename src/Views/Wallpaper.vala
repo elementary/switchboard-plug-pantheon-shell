@@ -46,7 +46,7 @@ public class Wallpaper : Gtk.Grid {
     }
 
     construct {
-        bg_settings = new BackgroundSettings ();
+        bg_settings = BackgroundSettings.get_default ();
 
         //DBus connection needed in update_wallpaper for
         //passing the wallpaper-information to accountsservice.
