@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-04-11 12:13+0000\n"
+"PO-Revision-Date: 2017-04-11 12:15+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/cs/>\n"
@@ -226,7 +226,7 @@ msgstr "1 den"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:85
 msgid "Show each photo for"
-msgstr "Zobrazit každou fotku pro"
+msgstr "Zobrazit každou fotku po dobu"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:198
 #: ../set-wallpaper-contract/set-wallpaper.vala:206
