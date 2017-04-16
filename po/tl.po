@@ -6,17 +6,43 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2017-02-11 15:31-0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-17 01:42+0200\n"
 "PO-Revision-Date: 2016-06-30 20:35+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
+"Language: tl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
+
+#. //github.com/elementary/switchboard-plug-pantheon-shell)
+#. *
+#. * This program is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This program is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
+#.
+#: ../src/Translations.vala:20
+msgid "Set as _Desktop Background"
+msgstr "Italaga bilang _Desktop Background"
+
+#: ../src/Translations.vala:21
+msgid "Set selected image to be the new desktop background"
+msgstr "Italaga bilang _Desktop Background ang nakaselect na imahe"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -56,50 +82,6 @@ msgstr "Sukat ng Icon"
 msgid "Display"
 msgstr "Display"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Italaga bilang _Desktop Background"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "Italaga bilang _Desktop Background ang nakaselect na imahe"
-
-#: ../src/Views/HotCorners.vala:30
-msgid "When the cursor enters the corner of the display:"
-msgstr ""
-
-#: ../src/Views/HotCorners.vala:64
-msgid "Custom command:"
-msgstr ""
-
-#: ../src/Views/HotCorners.vala:80
-msgid "Do nothing"
-msgstr ""
-
-#: ../src/Views/HotCorners.vala:81
-msgid "Multitasking View"
-msgstr "View na Pang-multitasking"
-
-#: ../src/Views/HotCorners.vala:82
-msgid "Maximize current window"
-msgstr ""
-
-#: ../src/Views/HotCorners.vala:83
-msgid "Minimize current window"
-msgstr ""
-
-#: ../src/Views/HotCorners.vala:84
-msgid "Show Applications Menu"
-msgstr ""
-
-#: ../src/Views/HotCorners.vala:85
-msgid "Show all windows"
-msgstr ""
-
-#: ../src/Views/HotCorners.vala:86
-msgid "Execute custom command"
-msgstr ""
-
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
 msgstr "Mga Litrato"
@@ -112,122 +94,158 @@ msgstr "Mga Background"
 msgid "Custom…"
 msgstr ""
 
-#: ../src/Views/Wallpaper.vala:153
+#: ../src/Views/Wallpaper.vala:154
 msgid "Centered"
 msgstr "Pinagitna"
 
-#: ../src/Views/Wallpaper.vala:154
+#: ../src/Views/Wallpaper.vala:155
 msgid "Zoom"
 msgstr ""
 
-#: ../src/Views/Wallpaper.vala:155
+#: ../src/Views/Wallpaper.vala:156
 msgid "Spanned"
 msgstr ""
 
-#: ../src/Views/Wallpaper.vala:325
+#: ../src/Views/Wallpaper.vala:327
 msgid "Select a folder"
 msgstr "Pumili ng Folder"
 
-#: ../src/Views/Wallpaper.vala:326
-#: ../set-wallpaper-contract/set-wallpaper.vala:201
+#: ../src/Views/Wallpaper.vala:328
+#: ../set-wallpaper-contract/set-wallpaper.vala:220
 msgid "Cancel"
 msgstr "Ikansela"
 
-#: ../src/Views/Wallpaper.vala:327
+#: ../src/Views/Wallpaper.vala:329
 msgid "Open"
 msgstr "Magbukas"
 
-#: ../src/Views/Dock.vala:36
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "View na Pang-multitasking"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr ""
+
+#: ../src/Views/Dock.vala:33
 msgid "Small"
 msgstr ""
 
-#: ../src/Views/Dock.vala:37
+#: ../src/Views/Dock.vala:34
 msgid "Normal"
 msgstr "Normal"
 
-#: ../src/Views/Dock.vala:38
+#: ../src/Views/Dock.vala:35
 msgid "Large"
 msgstr "Malaki"
 
-#: ../src/Views/Dock.vala:60
+#: ../src/Views/Dock.vala:57
 msgid "Custom (%dpx)"
 msgstr ""
 
-#: ../src/Views/Dock.vala:89
+#: ../src/Views/Dock.vala:86
 msgid "Focused window is maximized"
 msgstr "Naka-maximize ang nakapokus na window"
 
-#: ../src/Views/Dock.vala:90
+#: ../src/Views/Dock.vala:87
 msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: ../src/Views/Dock.vala:91
+#: ../src/Views/Dock.vala:88
 msgid "Any window overlaps the dock"
 msgstr ""
 
-#: ../src/Views/Dock.vala:92
+#: ../src/Views/Dock.vala:89
 msgid "Not being used"
 msgstr "Hindi kasalukuyang ginagamit"
 
-#: ../src/Views/Dock.vala:128
+#: ../src/Views/Dock.vala:125
 msgid "Primary display:"
 msgstr ""
 
-#: ../src/Views/Dock.vala:132
+#: ../src/Views/Dock.vala:129
 msgid "Display:"
 msgstr "Display:"
 
-#: ../src/Views/Dock.vala:163
+#: ../src/Views/Dock.vala:160
 msgid "Icon size:"
 msgstr ""
 
-#: ../src/Views/Dock.vala:165
+#: ../src/Views/Dock.vala:162
 msgid "Hide when:"
 msgstr "Itago kapag:"
 
-#: ../src/Views/Dock.vala:169
+#: ../src/Views/Dock.vala:166
 msgid "Pressure reveal:"
 msgstr ""
 
-#: ../src/Views/Dock.vala:208
+#: ../src/Views/Dock.vala:205
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: ../src/Views/Dock.vala:213
+#: ../src/Views/Dock.vala:210
 msgid "Display %d"
 msgstr "Display %d"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:71
+#: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d segundo"
 msgstr[1] "%d mga segundo"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:74
+#: ../set-wallpaper-contract/set-wallpaper.vala:93
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuto"
 msgstr[1] "%d mga minuto"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:78
+#: ../set-wallpaper-contract/set-wallpaper.vala:97
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d oras"
 msgstr[1] "%d mga oras"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:81
+#: ../set-wallpaper-contract/set-wallpaper.vala:100
 msgid "1 day"
 msgstr "1 araw"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:85
+#: ../set-wallpaper-contract/set-wallpaper.vala:104
 msgid "Show each photo for"
 msgstr "Ipakita ang bawat litrato kada"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:198
-#: ../set-wallpaper-contract/set-wallpaper.vala:206
+#: ../set-wallpaper-contract/set-wallpaper.vala:217
+#: ../set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Set As Desktop Slideshow"
 msgstr "Italaga bilang Desktop Slideshow"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:202
+#: ../set-wallpaper-contract/set-wallpaper.vala:221
 msgid "Create slideshow"
 msgstr "Gumawa ng slideshow"
