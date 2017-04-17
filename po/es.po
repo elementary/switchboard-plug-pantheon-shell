@@ -7,17 +7,42 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-11 15:31-0800\n"
+"POT-Creation-Date: 2017-04-17 01:42+0200\n"
 "PO-Revision-Date: 2017-03-13 17:53+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
 "X-Generator: Launchpad (build 18331)\n"
-"Language: es\n"
+
+#. //github.com/elementary/switchboard-plug-pantheon-shell)
+#. *
+#. * This program is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This program is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
+#.
+#: ../src/Translations.vala:20
+msgid "Set as _Desktop Background"
+msgstr "Establecer como fondo _de escritorio"
+
+#: ../src/Translations.vala:21
+msgid "Set selected image to be the new desktop background"
+msgstr "Establecer la imagen seleccionada como el nuevo fondo de escritorio"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -57,50 +82,6 @@ msgstr "Tamaño de los iconos"
 msgid "Display"
 msgstr "Pantalla"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Establecer como fondo _de escritorio"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "Establecer la imagen seleccionada como el nuevo fondo de escritorio"
-
-#: ../src/Views/HotCorners.vala:30
-msgid "When the cursor enters the corner of the display:"
-msgstr "Cuando el cursor entre a una esquina de la pantalla:"
-
-#: ../src/Views/HotCorners.vala:64
-msgid "Custom command:"
-msgstr "Comando personalizado:"
-
-#: ../src/Views/HotCorners.vala:80
-msgid "Do nothing"
-msgstr "No hacer nada"
-
-#: ../src/Views/HotCorners.vala:81
-msgid "Multitasking View"
-msgstr "Vista de multitarea"
-
-#: ../src/Views/HotCorners.vala:82
-msgid "Maximize current window"
-msgstr "Maximizar ventana actual"
-
-#: ../src/Views/HotCorners.vala:83
-msgid "Minimize current window"
-msgstr "Minimizar ventana actual"
-
-#: ../src/Views/HotCorners.vala:84
-msgid "Show Applications Menu"
-msgstr "Mostrar menú de aplicaciones"
-
-#: ../src/Views/HotCorners.vala:85
-msgid "Show all windows"
-msgstr "Mostrar todas las ventanas"
-
-#: ../src/Views/HotCorners.vala:86
-msgid "Execute custom command"
-msgstr "Ejecutar comando personalizado"
-
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
 msgstr "Imágenes"
@@ -113,122 +94,158 @@ msgstr "Fondos de pantalla"
 msgid "Custom…"
 msgstr "Personalizado…"
 
-#: ../src/Views/Wallpaper.vala:153
+#: ../src/Views/Wallpaper.vala:154
 msgid "Centered"
 msgstr "Centrado"
 
-#: ../src/Views/Wallpaper.vala:154
+#: ../src/Views/Wallpaper.vala:155
 msgid "Zoom"
 msgstr "Ampliado"
 
-#: ../src/Views/Wallpaper.vala:155
+#: ../src/Views/Wallpaper.vala:156
 msgid "Spanned"
 msgstr "Distribuido"
 
-#: ../src/Views/Wallpaper.vala:325
+#: ../src/Views/Wallpaper.vala:327
 msgid "Select a folder"
 msgstr "Seleccione una carpeta"
 
-#: ../src/Views/Wallpaper.vala:326
-#: ../set-wallpaper-contract/set-wallpaper.vala:201
+#: ../src/Views/Wallpaper.vala:328
+#: ../set-wallpaper-contract/set-wallpaper.vala:220
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../src/Views/Wallpaper.vala:327
+#: ../src/Views/Wallpaper.vala:329
 msgid "Open"
 msgstr "Abrir"
 
-#: ../src/Views/Dock.vala:36
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "Cuando el cursor entre a una esquina de la pantalla:"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr "Comando personalizado:"
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr "No hacer nada"
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "Vista de multitarea"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr "Maximizar ventana actual"
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr "Minimizar ventana actual"
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "Mostrar menú de aplicaciones"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr "Mostrar todas las ventanas"
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr "Ejecutar comando personalizado"
+
+#: ../src/Views/Dock.vala:33
 msgid "Small"
 msgstr ""
 
-#: ../src/Views/Dock.vala:37
+#: ../src/Views/Dock.vala:34
 msgid "Normal"
 msgstr "Normal"
 
-#: ../src/Views/Dock.vala:38
+#: ../src/Views/Dock.vala:35
 msgid "Large"
 msgstr "Grande"
 
-#: ../src/Views/Dock.vala:60
+#: ../src/Views/Dock.vala:57
 msgid "Custom (%dpx)"
 msgstr "Personalizado (%d px)"
 
-#: ../src/Views/Dock.vala:89
+#: ../src/Views/Dock.vala:86
 msgid "Focused window is maximized"
 msgstr "La ventana enfocada está maximizada"
 
-#: ../src/Views/Dock.vala:90
+#: ../src/Views/Dock.vala:87
 msgid "Focused window overlaps the dock"
 msgstr "La ventana enfocada se superpone al panel"
 
-#: ../src/Views/Dock.vala:91
+#: ../src/Views/Dock.vala:88
 msgid "Any window overlaps the dock"
 msgstr "Cualquier ventana se superpone al panel"
 
-#: ../src/Views/Dock.vala:92
+#: ../src/Views/Dock.vala:89
 msgid "Not being used"
 msgstr "No está siendo usado"
 
-#: ../src/Views/Dock.vala:128
+#: ../src/Views/Dock.vala:125
 msgid "Primary display:"
 msgstr "Pantalla principal:"
 
-#: ../src/Views/Dock.vala:132
+#: ../src/Views/Dock.vala:129
 msgid "Display:"
 msgstr "Pantalla:"
 
-#: ../src/Views/Dock.vala:163
+#: ../src/Views/Dock.vala:160
 msgid "Icon size:"
 msgstr "Tamaño de icono:"
 
-#: ../src/Views/Dock.vala:165
+#: ../src/Views/Dock.vala:162
 msgid "Hide when:"
 msgstr "Ocultar cuando:"
 
-#: ../src/Views/Dock.vala:169
+#: ../src/Views/Dock.vala:166
 msgid "Pressure reveal:"
 msgstr "Mostrar al presionar"
 
-#: ../src/Views/Dock.vala:208
+#: ../src/Views/Dock.vala:205
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: ../src/Views/Dock.vala:213
+#: ../src/Views/Dock.vala:210
 msgid "Display %d"
 msgstr "Pantalla %d"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:71
+#: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d segundo"
 msgstr[1] "%d segundos"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:74
+#: ../set-wallpaper-contract/set-wallpaper.vala:93
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuto"
 msgstr[1] "%d minutos"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:78
+#: ../set-wallpaper-contract/set-wallpaper.vala:97
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d hora"
 msgstr[1] "%d horas"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:81
+#: ../set-wallpaper-contract/set-wallpaper.vala:100
 msgid "1 day"
 msgstr "1 día"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:85
+#: ../set-wallpaper-contract/set-wallpaper.vala:104
 msgid "Show each photo for"
 msgstr "Mostrar cada imagen durante"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:198
-#: ../set-wallpaper-contract/set-wallpaper.vala:206
+#: ../set-wallpaper-contract/set-wallpaper.vala:217
+#: ../set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Set As Desktop Slideshow"
 msgstr "Establecer como fondo de pantalla de presentación"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:202
+#: ../set-wallpaper-contract/set-wallpaper.vala:221
 msgid "Create slideshow"
 msgstr "Crear presentación"
