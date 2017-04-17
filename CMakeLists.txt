@@ -16,7 +16,7 @@ set (PLUGTITLE "Desktop")
 # The symbolic name of the Icon to use for the plug
 set (PLUGICON "preferences-desktop-wallpaper")
 # Set the version for the plug
-set (VERSION "0.2.4")
+set (VERSION "0.2.5")
 
 project (${PLUGNAME} C)
 
@@ -25,10 +25,10 @@ project (${PLUGNAME} C)
 #########################################################
 
 include (GNUInstallDirs)
-set (DATADIR "${CMAKE_INSTALL_FULL_LIBDIR}/switchboard")
-set (PLANKDATADIR "${CMAKE_INSTALL_FULL_DATADIR}/plank")
-set (PKGDATADIR "${DATADIR}/${PLUGCATEGORY}/${PLUGNAME}")
-set (GETTEXT_PACKAGE "${PLUGNAME}-plug")
+set (DATADIR ${CMAKE_INSTALL_FULL_LIBDIR}/switchboard)
+set (PLANKDATADIR ${CMAKE_INSTALL_FULL_DATADIR}/plank)
+set (PKGDATADIR ${DATADIR}/${PLUGCATEGORY}/${PLUGNAME})
+set (GETTEXT_PACKAGE ${PLUGNAME}-plug)
 
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
@@ -49,7 +49,7 @@ include (CPack)
 add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 
 # Files
-file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*.svg")
+file (GLOB resources ${CMAKE_CURRENT_SOURCE_DIR}/data/*.svg)
 
 # Traslation stuff
 add_subdirectory (po)

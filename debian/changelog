@@ -1,3 +1,9 @@
+switchboard-plug-pantheon-shell (0.2.5) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Mon, 10 Apr 2017 00:07:38 -0500
+
 switchboard-plug-pantheon-shell (0.2.4) xenial; urgency=medium
 
   * New upstream release.
