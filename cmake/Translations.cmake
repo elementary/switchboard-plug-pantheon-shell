@@ -111,7 +111,7 @@ macro (add_translations_catalog NLS_PACKAGE)
     add_custom_target (pot COMMENT “Building translation catalog.”)
     find_program (XGETTEXT_EXECUTABLE xgettext)
     find_program (INTLTOOL_EXTRACT_EXECUTABLE intltool-extract)
-    find_program (MSG_MERGE intltool-extract)
+    find_program (MSG_MERGE msgmerge)
 
     set(EXTRA_PO_DIR ${CMAKE_CURRENT_SOURCE_DIR}/extra)
 
@@ -179,7 +179,7 @@ macro (add_translations_catalog NLS_PACKAGE)
     file (GLOB PO_FILES ${CMAKE_CURRENT_SOURCE_DIR}/*.po)
     foreach (PO_INPUT ${PO_FILES})
         get_filename_component (PO_INPUT_BASE ${PO_INPUT} NAME)
-        add_custom_command (TARGET po COMMAND WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} ${MSG_MERGE} --update ${PO_INPUT_BASE} ${TEMPLATE})
+        add_custom_command (TARGET po WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} COMMAND ${MSG_MERGE} --update ${PO_INPUT_BASE} ${TEMPLATE} --force-po)
     endforeach (PO_INPUT ${PO_FILES})
     
 
