@@ -3,27 +3,29 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2014-12-16 09:22+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-04-19 19:43+0000\n"
+"Last-Translator: Benjamin CARADEUC <bencrdc@gmail.com>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/fr_CA/>\n"
+"Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
-msgstr ""
+msgstr "Bureau"
 
 #: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Configurer le dock, les coins intelligents, et changer de fond d'écran"
 
 #: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
 msgid "Wallpaper"
-msgstr ""
+msgstr "Fond d'écran"
 
 #: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
 #: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
