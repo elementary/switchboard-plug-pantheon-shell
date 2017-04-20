@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-04-20 12:21+0000\n"
+"PO-Revision-Date: 2017-04-20 12:22+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: nn (generated) "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-pantheon-"
@@ -27,7 +27,7 @@ msgstr "Skrivebord"
 
 #: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Konfigurer dokken, \"hot corners\" og bytt skrivebordsbakgrunn"
+msgstr "Konfigurer dokken, varme hjørner og bytt skrivebordsbakgrunn"
 
 #: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
 msgid "Wallpaper"
@@ -37,11 +37,11 @@ msgstr "Bakgrunnsbilete"
 #: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
 #: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
 msgid "Dock"
-msgstr "Dock"
+msgstr "Dokk"
 
 #: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
 msgid "Hot Corners"
-msgstr "Hot Corners"
+msgstr "Varme hjørner"
 
 #: ../src/desktop-plug.vala:93
 msgid "Theme"
@@ -113,7 +113,7 @@ msgstr "Bakgrunnar"
 
 #: ../src/Views/Wallpaper.vala:148
 msgid "Custom…"
-msgstr "Tilpassa"
+msgstr "Sjølvvald…"
 
 #: ../src/Views/Wallpaper.vala:153
 msgid "Centered"
