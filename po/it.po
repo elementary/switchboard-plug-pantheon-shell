@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-04-09 11:56+0000\n"
+"PO-Revision-Date: 2017-05-04 20:31+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <http://weblate.elementary.io/projects/desktop"
+"Language-Team: Italian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -121,7 +121,7 @@ msgstr "Centrato"
 
 #: ../src/Views/Wallpaper.vala:154
 msgid "Zoom"
-msgstr "Ingradimento"
+msgstr "Ingrandimento"
 
 #: ../src/Views/Wallpaper.vala:155
 msgid "Spanned"
