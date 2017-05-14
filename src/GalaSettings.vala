@@ -26,10 +26,10 @@ public class BehaviorSettings : Granite.Services.Settings {
     public string panel_main_menu_action { get; set; }
     public string toggle_recording_action { get; set; }
 
-    public int hotcorner_topleft { get; set; }
-    public int hotcorner_topright { get; set; }
-    public int hotcorner_bottomleft { get; set; }
-    public int hotcorner_bottomright { get; set; }
+    public string hotcorner_topleft { get; set; }
+    public string hotcorner_topright { get; set; }
+    public string hotcorner_bottomleft { get; set; }
+    public string hotcorner_bottomright { get; set; }
 
     public string hotcorner_custom_command { get; set; }
 
