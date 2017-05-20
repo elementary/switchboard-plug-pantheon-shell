@@ -58,50 +58,6 @@ msgstr "Величина иконице"
 msgid "Display"
 msgstr "Екран"
 
-#: ../src/Translations.vala:1
-msgid "Set as _Desktop Background"
-msgstr "Постави за _позадину радне површи"
-
-#: ../src/Translations.vala:2
-msgid "Set selected image to be the new desktop background"
-msgstr "Поставите изабрану фотографију за нову позадину радне површи"
-
-#: ../src/Views/HotCorners.vala:30
-msgid "When the cursor enters the corner of the display:"
-msgstr "Када курзор уђе у угао екрана:"
-
-#: ../src/Views/HotCorners.vala:64
-msgid "Custom command:"
-msgstr "Произвољна наредба:"
-
-#: ../src/Views/HotCorners.vala:80
-msgid "Do nothing"
-msgstr "Не ради ништа"
-
-#: ../src/Views/HotCorners.vala:81
-msgid "Multitasking View"
-msgstr "Преглед са више задатака"
-
-#: ../src/Views/HotCorners.vala:82
-msgid "Maximize current window"
-msgstr "Увећај текући прозор"
-
-#: ../src/Views/HotCorners.vala:83
-msgid "Minimize current window"
-msgstr "Умањи текући прозор"
-
-#: ../src/Views/HotCorners.vala:84
-msgid "Show Applications Menu"
-msgstr "Прикажи изборник програма"
-
-#: ../src/Views/HotCorners.vala:85
-msgid "Show all windows"
-msgstr "Прикажи све прозоре"
-
-#: ../src/Views/HotCorners.vala:86
-msgid "Execute custom command"
-msgstr "Изврши произвољну наредбу"
-
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
 msgstr "Слике"
@@ -114,126 +70,162 @@ msgstr "Позадине"
 msgid "Custom…"
 msgstr "Произвољно…"
 
-#: ../src/Views/Wallpaper.vala:153
+#: ../src/Views/Wallpaper.vala:154
 msgid "Centered"
 msgstr "По средини"
 
-#: ../src/Views/Wallpaper.vala:154
+#: ../src/Views/Wallpaper.vala:155
 msgid "Zoom"
 msgstr "Увеличај"
 
-#: ../src/Views/Wallpaper.vala:155
+#: ../src/Views/Wallpaper.vala:156
 msgid "Spanned"
 msgstr "Распрострто"
 
-#: ../src/Views/Wallpaper.vala:325
+#: ../src/Views/Wallpaper.vala:327
 msgid "Select a folder"
 msgstr "Изаберите фасциклу"
 
-#: ../src/Views/Wallpaper.vala:326
-#: ../set-wallpaper-contract/set-wallpaper.vala:201
+#: ../src/Views/Wallpaper.vala:328
+#: ../set-wallpaper-contract/set-wallpaper.vala:220
 msgid "Cancel"
 msgstr "Откажи"
 
-#: ../src/Views/Wallpaper.vala:327
+#: ../src/Views/Wallpaper.vala:329
 msgid "Open"
 msgstr "Отвори"
 
-#: ../src/Views/Dock.vala:36
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "Када курзор уђе у угао екрана:"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr "Произвољна наредба:"
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr "Не ради ништа"
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "Преглед са више задатака"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr "Увећај текући прозор"
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr "Умањи текући прозор"
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "Прикажи изборник програма"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr "Прикажи све прозоре"
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr "Изврши произвољну наредбу"
+
+#: ../src/Views/Dock.vala:33
 msgid "Small"
 msgstr "Мало"
 
-#: ../src/Views/Dock.vala:37
+#: ../src/Views/Dock.vala:34
 msgid "Normal"
 msgstr "Обично"
 
-#: ../src/Views/Dock.vala:38
+#: ../src/Views/Dock.vala:35
 msgid "Large"
 msgstr "Велико"
 
-#: ../src/Views/Dock.vala:60
+#: ../src/Views/Dock.vala:57
 msgid "Custom (%dpx)"
 msgstr "Произвољно (%d px)"
 
-#: ../src/Views/Dock.vala:89
+#: ../src/Views/Dock.vala:86
 msgid "Focused window is maximized"
 msgstr "Прозор у жижи је увећан"
 
-#: ../src/Views/Dock.vala:90
+#: ../src/Views/Dock.vala:87
 msgid "Focused window overlaps the dock"
 msgstr "Прозор у жижи преклапа луку"
 
-#: ../src/Views/Dock.vala:91
+#: ../src/Views/Dock.vala:88
 msgid "Any window overlaps the dock"
 msgstr "Било који прозор преклапа луку"
 
-#: ../src/Views/Dock.vala:92
+#: ../src/Views/Dock.vala:89
 msgid "Not being used"
 msgstr "Који се не користи"
 
-#: ../src/Views/Dock.vala:128
+#: ../src/Views/Dock.vala:125
 msgid "Primary display:"
 msgstr "Основни екран:"
 
-#: ../src/Views/Dock.vala:132
+#: ../src/Views/Dock.vala:129
 msgid "Display:"
 msgstr "Екран:"
 
-#: ../src/Views/Dock.vala:163
+#: ../src/Views/Dock.vala:160
 msgid "Icon size:"
 msgstr "Величина иконице:"
 
-#: ../src/Views/Dock.vala:165
+#: ../src/Views/Dock.vala:162
 msgid "Hide when:"
 msgstr "Сакриј када:"
 
-#: ../src/Views/Dock.vala:169
+#: ../src/Views/Dock.vala:166
 msgid "Pressure reveal:"
 msgstr "Осећај притиска:"
 
-#: ../src/Views/Dock.vala:208
+#: ../src/Views/Dock.vala:205
 msgid "Monitor %d"
 msgstr "Монитор бр. %d"
 
-#: ../src/Views/Dock.vala:213
+#: ../src/Views/Dock.vala:210
 msgid "Display %d"
 msgstr "Екран бр. %d"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:71
+#: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d секунда"
 msgstr[1] "%d секунде"
 msgstr[2] "%d секунди"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:74
+#: ../set-wallpaper-contract/set-wallpaper.vala:93
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d минут"
 msgstr[1] "%d минута"
 msgstr[2] "%d минута"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:78
+#: ../set-wallpaper-contract/set-wallpaper.vala:97
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d сат"
 msgstr[1] "%d сата"
 msgstr[2] "%d сати"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:81
+#: ../set-wallpaper-contract/set-wallpaper.vala:100
 msgid "1 day"
 msgstr "1 дан"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:85
+#: ../set-wallpaper-contract/set-wallpaper.vala:104
 msgid "Show each photo for"
 msgstr "Прикажи сваку фотографију"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:198
-#: ../set-wallpaper-contract/set-wallpaper.vala:206
+#: ../set-wallpaper-contract/set-wallpaper.vala:217
+#: ../set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Set As Desktop Slideshow"
 msgstr "Постави као смењиву позадину радне површи"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:202
+#: ../set-wallpaper-contract/set-wallpaper.vala:221
 msgid "Create slideshow"
 msgstr "Направи покретни приказ"
 

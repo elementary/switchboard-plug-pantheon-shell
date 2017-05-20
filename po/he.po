@@ -67,39 +67,39 @@ msgstr "הגדרה כ_רקע לשולחן העבודה"
 msgid "Set selected image to be the new desktop background"
 msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשולחן העבודה"
 
-#: ../src/Views/HotCorners.vala:30
+#: ../src/Views/HotCorners.vala:28
 msgid "When the cursor enters the corner of the display:"
 msgstr "כאשר הסמן מגיע לקצה של המסך:"
 
-#: ../src/Views/HotCorners.vala:64
+#: ../src/Views/HotCorners.vala:62
 msgid "Custom command:"
 msgstr "פקודה בהתאמה אישית:"
 
-#: ../src/Views/HotCorners.vala:80
+#: ../src/Views/HotCorners.vala:78
 msgid "Do nothing"
 msgstr "לא לעשות כלום"
 
-#: ../src/Views/HotCorners.vala:81
+#: ../src/Views/HotCorners.vala:79
 msgid "Multitasking View"
 msgstr "תצוגת ריבוי משימות"
 
-#: ../src/Views/HotCorners.vala:82
+#: ../src/Views/HotCorners.vala:80
 msgid "Maximize current window"
 msgstr "הגדלת החלון הנוכחי"
 
-#: ../src/Views/HotCorners.vala:83
+#: ../src/Views/HotCorners.vala:81
 msgid "Minimize current window"
 msgstr "מזעור החלון הנוכחי"
 
-#: ../src/Views/HotCorners.vala:84
+#: ../src/Views/HotCorners.vala:82
 msgid "Show Applications Menu"
 msgstr "הראה תפריט תוכנות"
 
-#: ../src/Views/HotCorners.vala:85
+#: ../src/Views/HotCorners.vala:83
 msgid "Show all windows"
 msgstr "הצגת כל החלונות"
 
-#: ../src/Views/HotCorners.vala:86
+#: ../src/Views/HotCorners.vala:84
 msgid "Execute custom command"
 msgstr "הפעלת פקודה בהתאמה אישית"
 
@@ -144,94 +144,94 @@ msgstr "פתיחה"
 msgid "Small"
 msgstr "קטן"
 
-#: ../src/Views/Dock.vala:37
+#: ../src/Views/Dock.vala:34
 msgid "Normal"
 msgstr "רגיל"
 
-#: ../src/Views/Dock.vala:38
+#: ../src/Views/Dock.vala:35
 msgid "Large"
 msgstr "גדול"
 
-#: ../src/Views/Dock.vala:60
+#: ../src/Views/Dock.vala:57
 msgid "Custom (%dpx)"
 msgstr "בהתאמה אישית (%d פיקסלים)"
 
-#: ../src/Views/Dock.vala:89
+#: ../src/Views/Dock.vala:86
 msgid "Focused window is maximized"
 msgstr "החלון שבמיקוד מוגדל"
 
-#: ../src/Views/Dock.vala:90
+#: ../src/Views/Dock.vala:87
 msgid "Focused window overlaps the dock"
 msgstr "החלון שבמיקוד חופף מעל המעגן"
 
-#: ../src/Views/Dock.vala:91
+#: ../src/Views/Dock.vala:88
 msgid "Any window overlaps the dock"
 msgstr "חלון כלשהו חופף מעל המעגן"
 
-#: ../src/Views/Dock.vala:92
+#: ../src/Views/Dock.vala:89
 msgid "Not being used"
 msgstr "לא בשימוש"
 
-#: ../src/Views/Dock.vala:128
+#: ../src/Views/Dock.vala:125
 msgid "Primary display:"
 msgstr "תצוגה עיקרית:"
 
-#: ../src/Views/Dock.vala:132
+#: ../src/Views/Dock.vala:129
 msgid "Display:"
 msgstr "תצוגה:"
 
-#: ../src/Views/Dock.vala:163
+#: ../src/Views/Dock.vala:160
 msgid "Icon size:"
 msgstr "גודל הסמלים:"
 
-#: ../src/Views/Dock.vala:165
+#: ../src/Views/Dock.vala:162
 msgid "Hide when:"
 msgstr "להסתיר כאשר:"
 
-#: ../src/Views/Dock.vala:169
+#: ../src/Views/Dock.vala:166
 msgid "Pressure reveal:"
 msgstr "לחץ לגילוי:"
 
-#: ../src/Views/Dock.vala:208
+#: ../src/Views/Dock.vala:205
 msgid "Monitor %d"
 msgstr "צג %d"
 
-#: ../src/Views/Dock.vala:213
+#: ../src/Views/Dock.vala:210
 msgid "Display %d"
 msgstr "תצוגה %d"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:71
+#: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "שנייה אחת"
 msgstr[1] "%d שניות"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:74
+#: ../set-wallpaper-contract/set-wallpaper.vala:93
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "דקה אחת"
 msgstr[1] "%d דקות"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:78
+#: ../set-wallpaper-contract/set-wallpaper.vala:97
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "שעה אחת"
 msgstr[1] "%d שעות"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:81
+#: ../set-wallpaper-contract/set-wallpaper.vala:100
 msgid "1 day"
 msgstr "יום אחד"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:85
+#: ../set-wallpaper-contract/set-wallpaper.vala:104
 msgid "Show each photo for"
 msgstr "הצגת כל תמונה למשך"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:198
-#: ../set-wallpaper-contract/set-wallpaper.vala:206
+#: ../set-wallpaper-contract/set-wallpaper.vala:217
+#: ../set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Set As Desktop Slideshow"
 msgstr "הגדרה כמצגת שולחן העבודה"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:202
+#: ../set-wallpaper-contract/set-wallpaper.vala:221
 msgid "Create slideshow"
 msgstr "יצירת מצגת"
 
