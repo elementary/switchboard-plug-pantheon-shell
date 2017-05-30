@@ -28,6 +28,7 @@ public class Dock : Gtk.Grid {
         column_spacing = 12;
         halign = Gtk.Align.CENTER;
         row_spacing = 6;
+        margin_start = margin_end = 6;
 
         var icon_size = new Granite.Widgets.ModeButton ();
         icon_size.append_text (_("Small"));
