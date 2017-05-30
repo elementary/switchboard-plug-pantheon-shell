@@ -74,10 +74,11 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     public WallpaperContainer (string uri) {
-        Object (uri: uri, thumb: null);
+        Object (uri: uri);
     }
 
     construct {
+        var scale = get_style_context ().get_scale ();
         var provider = new Gtk.CssProvider ();
         try {
             provider.load_from_data (CARD_STYLE_CSS, CARD_STYLE_CSS.length);
@@ -87,24 +88,31 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
 
          try {
-            if (thumb == null && uri != null) {
-                if (Cache.is_cached (uri)) {
-                    thumb = Cache.get_cached_image (uri);
+            if (uri != null) {
+                if (Cache.is_cached (uri, scale)) {
+                    thumb = Cache.get_cached_image (uri, scale);
                 } else {
-                    thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 162, 100, false);
-                    Cache.cache_image_pixbuf (thumb, uri);
+                    thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 162 * scale, 100 * scale, false);
+                    Cache.cache_image_pixbuf (thumb, uri, scale);
                 }
+            } else {
+                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, 162 * scale, 100 * scale);
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
             return;
         }
 
-        image = new Gtk.Image.from_pixbuf (thumb);
+        image = new Gtk.Image ();
+        image.gicon = thumb;
         image.halign = Gtk.Align.CENTER;
         image.valign = Gtk.Align.CENTER;
-        image.margin = 9;
-        image.get_style_context ().add_class ("card");
+        image.get_style_context ().set_scale (1);
+        // We need an extra grid to not apply a scale == 1 to the "card" style.
+        var card_box = new Gtk.Grid ();
+        card_box.get_style_context ().add_class ("card");
+        card_box.add (image);
+        card_box.margin = 9;
 
         var check = new Gtk.Image.from_icon_name ("selection-checked", Gtk.IconSize.LARGE_TOOLBAR);
         check.halign = Gtk.Align.START;
@@ -115,13 +123,13 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         check_revealer.add (check);
 
         var overlay = new Gtk.Overlay ();
-        overlay.add (image);
+        overlay.add (card_box);
         overlay.add_overlay (check_revealer);
 
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
-        height_request = thumb.get_height () + 18;
-        width_request = thumb.get_width () + 18;
+        height_request = thumb.get_height () / scale + 18;
+        width_request = thumb.get_width () / scale + 18;
         margin = 6;
         add (overlay);
 
