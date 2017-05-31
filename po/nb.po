@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-04-15 02:36+0000\n"
+"PO-Revision-Date: 2017-05-31 06:10+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-pantheon-"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: ../src/desktop-plug.vala:34
@@ -73,11 +73,11 @@ msgstr "Når markøren kommer inn i hjørnet av skjermen:"
 
 #: ../src/Views/HotCorners.vala:64
 msgid "Custom command:"
-msgstr "Egendefinert kommando:"
+msgstr "Egendefinert komamndo:"
 
 #: ../src/Views/HotCorners.vala:80
 msgid "Do nothing"
-msgstr "Gjør ingenting"
+msgstr "Ikke gjør noe"
 
 #: ../src/Views/HotCorners.vala:81
 msgid "Multitasking View"
@@ -101,7 +101,7 @@ msgstr "Vis alle vinduer"
 
 #: ../src/Views/HotCorners.vala:86
 msgid "Execute custom command"
-msgstr "Kjør egendefinert kommando"
+msgstr "Utfør egendefinert kommando"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
