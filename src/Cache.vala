@@ -150,7 +150,7 @@ public class Cache {
     }
 
     private static string get_cache_path (int scale) {
-        var cache_scale_folder = Path.build_path (Path.DIR_SEPARATOR_S, scale.to_string ());
+        var cache_scale_folder = Path.build_path (Path.DIR_SEPARATOR_S, cache_folder, scale.to_string ());
         create_cache_path (cache_scale_folder);
         return cache_scale_folder;
     }
