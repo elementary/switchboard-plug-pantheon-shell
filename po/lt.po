@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 15:31-0800\n"
-"PO-Revision-Date: 2017-04-10 21:33+0000\n"
+"PO-Revision-Date: 2017-06-09 22:13+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/lt/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-14 05:46+0000\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
@@ -47,7 +47,8 @@ msgstr "Darbalaukis"
 
 #: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Konfigūruoti skydelį, karštuosius kampus ir keisti darbalaukio foną"
+msgstr ""
+"Konfigūruoti apatinį skydelį, karštuosius kampus ir keisti darbalaukio foną"
 
 #: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
 msgid "Wallpaper"
@@ -57,7 +58,7 @@ msgstr "Darbalaukio fonas"
 #: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
 #: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
 msgid "Dock"
-msgstr "Skydelis"
+msgstr "Apatinis skydelis"
 
 #: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
 msgid "Hot Corners"
@@ -174,11 +175,11 @@ msgstr "Fokusuotas langas išskleidžiamas"
 
 #: ../src/Views/Dock.vala:87
 msgid "Focused window overlaps the dock"
-msgstr "Fokusuotas langas užkloja skydelį"
+msgstr "Fokusuotas langas užkloja apatinį skydelį"
 
 #: ../src/Views/Dock.vala:88
 msgid "Any window overlaps the dock"
-msgstr "Bet kuris langas užkloja skydelį"
+msgstr "Bet kuris langas užkloja apatinį skydelį"
 
 #: ../src/Views/Dock.vala:89
 msgid "Not being used"
