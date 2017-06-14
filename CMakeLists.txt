@@ -16,7 +16,7 @@ set (PLUGTITLE "Desktop")
 # The symbolic name of the Icon to use for the plug
 set (PLUGICON "preferences-desktop-wallpaper")
 # Set the version for the plug
-set (VERSION "0.2.5")
+set (VERSION "0.2.6")
 
 project (${PLUGNAME} C)
 
