@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-17 01:42+0200\n"
-"PO-Revision-Date: 2015-12-08 11:52+0000\n"
-"Last-Translator: Jimmy Merrild Krag <jimmy@kragenet.dk>\n"
-"Language-Team: Danish <da@li.org>\n"
+"PO-Revision-Date: 2017-07-01 22:11+0000\n"
+"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
+"Language-Team: Danish <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -113,7 +114,7 @@ msgstr "Vælg en mappe"
 #: ../src/Views/Wallpaper.vala:328
 #: ../set-wallpaper-contract/set-wallpaper.vala:220
 msgid "Cancel"
-msgstr "Annullér"
+msgstr "Annuller"
 
 #: ../src/Views/Wallpaper.vala:329
 msgid "Open"
