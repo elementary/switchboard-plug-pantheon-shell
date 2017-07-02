@@ -30,7 +30,7 @@ public class SolidColorContainer : WallpaperContainer {
     }
 
     public SolidColorContainer (string color_value) {
-        Object (color: color_value, thumb: new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, 162, 100));
+        Object (color: color_value);
     }
 
     construct {

@@ -21,36 +21,32 @@
 
 public class Cache {
 
-    static string cache_folder = null;
-    static Gee.HashMap<string, Gdk.Pixbuf> images = null;
-    static bool cache_folder_exists = false;
+    static string cache_folder;
+    static Gee.HashMap<string, Gdk.Pixbuf> images;
 
     /*
      * Static init of parameters
      */
-    public async static void init () {
-        if (cache_folder == null)
-            cache_folder = Environment.get_user_cache_dir () + "/io.elementary.switchboard.plug.pantheon-shell/";
-        if (images == null) {
-            images = new Gee.HashMap<string, Gdk.Pixbuf>();
-        }
-        if(!cache_folder_exists) {
-            create_cache_path (cache_folder);
-        }
+    public static void init () {
+        images = new Gee.HashMap<string, Gdk.Pixbuf> ();
+
+        cache_folder = Path.build_path (Path.DIR_SEPARATOR_S, Environment.get_user_cache_dir (), "io.elementary.switchboard.plug.pantheon-shell");
+        create_cache_path (cache_folder);
     }
 
     /*
      *create a new cache file for the original image path
      */
-    public static bool cache_image (string uri, int width, int height) {
+    public static bool cache_image (string uri, int width, int height, int scale) {
         try {
-            Cache.init.begin();
             var pixbuf = new Gdk.Pixbuf.from_file_at_scale (uri, width, height, true);
-            debug ("Image cached: " + get_cache_path () + compute_key (uri));
-            pixbuf.save (get_cache_path () + compute_key (uri) , "png");
-            images.set(compute_key (uri), pixbuf);
+            string key = compute_key (uri, scale);
+            string path = Path.build_filename (get_cache_path (scale), key);
+            debug ("Image cached: %s", path);
+            pixbuf.save (path, "png");
+            images.set (key, pixbuf);
         } catch (GLib.Error err) {
- 	        warning("cache_image failed");
+            warning("cache_image failed");
             return false;
         }
         return true;
@@ -59,14 +55,14 @@ public class Cache {
     /*
      *create a new cache file for the image pixbuf at the same size
      */
-    public static bool cache_image_pixbuf (Gdk.Pixbuf pixbuf, string uri) {
+    public static bool cache_image_pixbuf (Gdk.Pixbuf pixbuf, string uri, int scale) {
         try {
-            Cache.init.begin();
-            pixbuf.save (get_cache_path () + compute_key (uri) , "png");
-            images.set(compute_key (uri), pixbuf);
+            string key = compute_key (uri, scale);
+            pixbuf.save (Path.build_filename (get_cache_path (scale), key), "png");
+            images.set (key, pixbuf);
         } catch (GLib.Error err) {
             print(err.message);
- 	        warning("cache_image_pixbuf failed");
+            warning("cache_image_pixbuf failed");
             return false;
         }
         return true;
@@ -76,9 +72,8 @@ public class Cache {
     /*
      *Determine if a image is cached
      */
-    public static bool is_cached (string uri) {
-        Cache.init.begin();
-        File file = File.new_for_path (get_cache_path () + compute_key (uri));
+    public static bool is_cached (string uri, int scale) {
+        File file = File.new_for_path (Path.build_filename (get_cache_path (scale), compute_key (uri, scale)));
         if (!file.query_exists ())
             return false;
         return true;
@@ -87,17 +82,16 @@ public class Cache {
     /*
      *returns the cached thumbnail
      */
-    public static Gdk.Pixbuf? get_cached_image (string uri) {
-        Cache.init.begin();
-        string computed_key = compute_key (uri);
+    public static Gdk.Pixbuf? get_cached_image (string uri, int scale) {
+        string computed_key = compute_key (uri, scale);
         if (images.has_key(computed_key))
             return images.get(computed_key);
 
         Gdk.Pixbuf pixbuf = null;
         try {
-            pixbuf = new Gdk.Pixbuf.from_file (get_cache_path () + computed_key);
+            pixbuf = new Gdk.Pixbuf.from_file (Path.build_filename (get_cache_path (scale), computed_key));
         } catch (GLib.Error err) {
- 	        warning("get_cached_image failed");
+            warning("get_cached_image failed");
             return null;
         }
         images.set(computed_key, pixbuf);
@@ -105,7 +99,7 @@ public class Cache {
     }
 
     public static void clear () {
-        images.clear();
+        images.clear ();
     }
 
     private static void create_cache_path (string cache_path) {
@@ -125,8 +119,8 @@ public class Cache {
      * Compute the key from the uri and the modification date in this format:
      * [uri key]_[mod_key]
      */
-    private static string compute_key (string uri) {
-        string key = compute_key_uri (uri) + "_" + compute_key_mod (uri);
+    private static string compute_key (string uri, int scale) {
+        string key = compute_key_uri (uri) + "_" + compute_key_mod (uri) + scale.to_string ();
         return key;
     }
 
@@ -155,8 +149,9 @@ public class Cache {
         return key_mod;
     }
 
-    private static string get_cache_path () {
-        Cache.init.begin ();
-        return cache_folder;
+    private static string get_cache_path (int scale) {
+        var cache_scale_folder = Path.build_path (Path.DIR_SEPARATOR_S, cache_folder, scale.to_string ());
+        create_cache_path (cache_scale_folder);
+        return cache_scale_folder;
     }
 }
