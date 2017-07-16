@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
+"POT-Creation-Date: 2017-07-17 01:54+0200\n"
 "PO-Revision-Date: 2017-03-16 23:41+0000\n"
 "Last-Translator: Leonardo <leonardo@elementary.io>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.elementary.io/projects/"
@@ -47,43 +47,101 @@ msgstr ""
 "Definir a imagem selecionada como um novo plano de fundo para a área de "
 "trabalho"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "Área de trabalho"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr "Pequeno"
 
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configure o dock, os cantos, e mude o fundo de tela"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "Normal"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "Papel de parede"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Grande"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "Dock"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "Personalizado (%dpx)"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "Cantos de acesso rápido"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "Janela em foco já está maximizada"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "Tema"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "Janela ativa sobrepõe o dock"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "Modo de ocultação"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "Qualquer janela sobrepõe o dock"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "Tamanho dos ícones"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "Não está em uso"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "Tela"
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr "Tela principal:"
+
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "Tela:"
+
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr "Tamanho dos ícones:"
+
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "Esconder quando:"
+
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr "Mostrar pressão:"
+
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "Tela %d"
+
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "Quando o cursor toca o canto da tela:"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr "Comando personalizado:"
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr "Fazer nada"
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "Visualização de multitarefa"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr "Maximizar janela atual"
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr "Minimizar janela atual"
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "Mostrar menu de aplicativos"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr "Mostrar todas as janelas"
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr "Executar comando personalizado"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -122,101 +180,43 @@ msgstr "Cancelar"
 msgid "Open"
 msgstr "Abrir"
 
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "Quando o cursor toca o canto da tela:"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "Área de trabalho"
 
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
-msgstr "Comando personalizado:"
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Configure o dock, os cantos, e mude o fundo de tela"
 
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr "Fazer nada"
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "Papel de parede"
 
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "Visualização de multitarefa"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "Dock"
 
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr "Maximizar janela atual"
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "Cantos de acesso rápido"
 
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr "Minimizar janela atual"
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "Tema"
 
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "Mostrar menu de aplicativos"
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "Modo de ocultação"
 
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr "Mostrar todas as janelas"
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "Tamanho dos ícones"
 
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr "Executar comando personalizado"
-
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr "Pequeno"
-
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "Normal"
-
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "Grande"
-
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "Personalizado (%dpx)"
-
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "Janela em foco já está maximizada"
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "Janela ativa sobrepõe o dock"
-
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "Qualquer janela sobrepõe o dock"
-
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "Não está em uso"
-
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr "Tela principal:"
-
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "Tela:"
-
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr "Tamanho dos ícones:"
-
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "Esconder quando:"
-
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr "Mostrar pressão:"
-
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "Tela %d"
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "Tela"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"

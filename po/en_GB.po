@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
+"POT-Creation-Date: 2017-07-17 01:53+0200\n"
 "PO-Revision-Date: 2016-06-14 14:51+0000\n"
 "Last-Translator: Andi Chandler <Unknown>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
@@ -44,43 +44,101 @@ msgstr "Set as _Desktop Background"
 msgid "Set selected image to be the new desktop background"
 msgstr "Set selected image to be the new desktop background"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "Desktop"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr ""
 
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configure the dock, hot corners, and change wallpaper"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "Normal"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "Wallpaper"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Large"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "Dock"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "Custom (%dpx)"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "Hot Corners"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "Focused window is maximised"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "Theme"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "Focused window overlaps the dock"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "Hide Mode"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "Any window overlaps the dock"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "Icon Size"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "Not being used"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "Display"
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "Display:"
+
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "Hide when:"
+
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "Display %d"
+
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "When the cursor enters the corner of the display:"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "Multitasking View"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "Show Applications Menu"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr ""
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -119,101 +177,43 @@ msgstr "Cancel"
 msgid "Open"
 msgstr "Open"
 
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "When the cursor enters the corner of the display:"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "Desktop"
 
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
-msgstr ""
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Configure the dock, hot corners, and change wallpaper"
 
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr ""
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "Wallpaper"
 
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "Multitasking View"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "Dock"
 
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "Hot Corners"
 
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "Theme"
 
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "Show Applications Menu"
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "Hide Mode"
 
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr ""
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "Icon Size"
 
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr ""
-
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr ""
-
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "Normal"
-
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "Large"
-
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "Custom (%dpx)"
-
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "Focused window is maximised"
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "Focused window overlaps the dock"
-
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "Any window overlaps the dock"
-
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "Not being used"
-
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "Display:"
-
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "Hide when:"
-
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "Display %d"
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "Display"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
