@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
+"POT-Creation-Date: 2017-07-17 01:55+0200\n"
 "PO-Revision-Date: 2016-10-14 15:25+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
@@ -44,43 +44,101 @@ msgstr "設為桌面背景(_D)"
 msgid "Set selected image to be the new desktop background"
 msgstr "將所選的影像設為新的桌面背景"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "桌面"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr ""
 
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "調整 Dock、熱角、和更改桌布"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "一般"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "桌布"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "大"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "Dock"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "自訂 (%dpx)"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "熱角"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "焦點下的視窗最大化時"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "主題"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "焦點下的視窗覆蓋到 Dock 時"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "隱藏模式"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "任何視窗覆蓋到 Dock 時"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "圖示大小"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "不使用"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "顯示"
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "顯示器："
+
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "隱藏條件："
+
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr "壓感揭示："
+
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "螢幕 %d"
+
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "顯示器 %d"
+
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "當游標進入顯示器的角落時："
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "多工作業檢視"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "顯示應用程式選單"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr ""
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -119,101 +177,43 @@ msgstr "取消"
 msgid "Open"
 msgstr "開啟"
 
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "當游標進入顯示器的角落時："
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "桌面"
 
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
-msgstr ""
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "調整 Dock、熱角、和更改桌布"
 
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr ""
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "桌布"
 
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "多工作業檢視"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "Dock"
 
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "熱角"
 
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "主題"
 
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "顯示應用程式選單"
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "隱藏模式"
 
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr ""
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "圖示大小"
 
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr ""
-
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr ""
-
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "一般"
-
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "大"
-
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "自訂 (%dpx)"
-
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "焦點下的視窗最大化時"
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "焦點下的視窗覆蓋到 Dock 時"
-
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "任何視窗覆蓋到 Dock 時"
-
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "不使用"
-
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "顯示器："
-
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "隱藏條件："
-
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr "壓感揭示："
-
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "螢幕 %d"
-
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "顯示器 %d"
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "顯示"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
