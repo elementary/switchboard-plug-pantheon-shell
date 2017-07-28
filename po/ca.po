@@ -7,17 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
-"PO-Revision-Date: 2017-02-22 09:36+0000\n"
-"Last-Translator: Davidmp <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <ca@li.org>\n"
+"POT-Creation-Date: 2017-07-17 01:53+0200\n"
+"PO-Revision-Date: 2017-05-04 15:05+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-23 06:30+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -37,51 +38,109 @@ msgstr ""
 #. * Boston, MA 02110-1301 USA
 #.
 #: ../src/Translations.vala:20
+#, fuzzy
 msgid "Set as _Desktop Background"
-msgstr "Estableix com a fons _d'escriptori"
+msgstr "Estableix com a presentació de diapositives"
 
 #: ../src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr "Estableix la imatge seleccionada com a nou fons de l'escriptori"
-
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "Escriptori"
-
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
-"Configureu l'acoblador, els cantons actius i canvieu el fons de l'escriptori"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "Fons d'escriptori"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr "De mida petita"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "Acoblador"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "De mida normal"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "Cantons actius"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "De mida grossa"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "Tema"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "De mida personalitzada (%dpx)"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "Mode d'ocultació"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "Es maximitza la finestra focalitzada"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "Mida de les icones"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "La finestra focalitzada tapa l'acoblador"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "Pantalla"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "Qualsevol finestra tapa l'acoblador"
+
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "No s'usa"
+
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr "Pantalla primària:"
+
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "Pantalla:"
+
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr "Mida de les icones:"
+
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "S'amaga quan..."
+
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr "Mostra en fer pressió:"
+
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "Pantalla %d"
+
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "Quan el cursor toqui un cantó de la pantalla:"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr "Ordre personalitzada:"
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr "No facis res"
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "Vista de multitasca"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr "Maximitza la finestra actual"
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr "Minimitza la finestra actual"
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "Mostra el menú d'aplicacions"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr "Mostra totes les finestres"
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr "Executa una ordre personalitzada"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -120,101 +179,44 @@ msgstr "Cancel·la"
 msgid "Open"
 msgstr "Obre"
 
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "Quan el cursor toqui un cantó de la pantalla:"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "Escriptori"
 
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
-msgstr "Ordre personalitzada:"
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr ""
+"Configureu l'acoblador, els cantons actius i canvieu el fons de l'escriptori"
 
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr "No facis res"
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "Fons d'escriptori"
 
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "Vista de multitasca"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "Acoblador"
 
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr "Maximitza la finestra actual"
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "Cantons actius"
 
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr "Minimitza la finestra actual"
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "Tema"
 
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "Mostra el menú d'aplicacions"
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "Mode d'ocultació"
 
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr "Mostra totes les finestres"
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "Mida de les icones"
 
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr "Executa una ordre personalitzada"
-
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr "De mida petita"
-
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "De mida normal"
-
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "De mida grossa"
-
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "De mida personalitzada (%dpx)"
-
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "Es maximitza la finestra focalitzada"
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "La finestra focalitzada tapa l'acoblador"
-
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "Qualsevol finestra tapa l'acoblador"
-
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "No s'usa"
-
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr "Pantalla primària:"
-
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "Pantalla:"
-
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr "Mida de les icones:"
-
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "S'amaga quan..."
-
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr "Mostra en fer pressió:"
-
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "Pantalla %d"
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "Pantalla"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
@@ -240,7 +242,7 @@ msgstr "1 dia"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:104
 msgid "Show each photo for"
-msgstr "Mostra cada fotografia durant..."
+msgstr "Mostra cada fotografia durant"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:217
 #: ../set-wallpaper-contract/set-wallpaper.vala:225

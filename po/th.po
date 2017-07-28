@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
+"POT-Creation-Date: 2017-07-17 01:54+0200\n"
 "PO-Revision-Date: 2017-01-18 12:45+0000\n"
 "Last-Translator: Panan <panan25444@gmail.com>\n"
 "Language-Team: Thai <th@li.org>\n"
@@ -44,43 +44,101 @@ msgstr "ใช้เป็น_ภาพพื้นหลังเดสก์�
 msgid "Set selected image to be the new desktop background"
 msgstr "ตั้งรูปภาพที่เลือกเป็นภาพพื้นหลังของเดสก์ท็อป"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "เดสก์ท็อป"
-
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
 msgstr ""
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "ภาพพื้นหลัง"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "ปกติ"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "ด็อก"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "ขนาดใหญ่"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "ฮอตคอร์เนอร์"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "กำหนดเอง  (%dpx)"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "รูปแบบธีม"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr ""
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "โหมดการซ่อน"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr ""
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "ขนาดไอคอน"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr ""
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "การแสดงผล"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr ""
+
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "จอแสดงผล:"
+
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr ""
+
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr ""
+
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "เมื่อเลื่อนเคอร์เซอร์ไปยังมุมจอ"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr "ไม่ต้องทำอะไร"
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "มุมมองแบบมัลติทาสก์"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr ""
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "แสดงเมนูแอปพลิเคชัน"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr "แสดงหน้าต่างทั้งหมด"
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr ""
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -119,101 +177,43 @@ msgstr "ยกเลิก"
 msgid "Open"
 msgstr "เปิด"
 
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "เมื่อเลื่อนเคอร์เซอร์ไปยังมุมจอ"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "เดสก์ท็อป"
 
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr "ไม่ต้องทำอะไร"
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "ภาพพื้นหลัง"
 
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "มุมมองแบบมัลติทาสก์"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "ด็อก"
 
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "ฮอตคอร์เนอร์"
 
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "รูปแบบธีม"
 
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "แสดงเมนูแอปพลิเคชัน"
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "โหมดการซ่อน"
 
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr "แสดงหน้าต่างทั้งหมด"
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "ขนาดไอคอน"
 
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr ""
-
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr ""
-
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "ปกติ"
-
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "ขนาดใหญ่"
-
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "กำหนดเอง  (%dpx)"
-
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr ""
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr ""
-
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr ""
-
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr ""
-
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "จอแสดงผล:"
-
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr ""
-
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr ""
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "การแสดงผล"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"

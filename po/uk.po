@@ -7,18 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
-"PO-Revision-Date: 2017-02-19 14:20+0000\n"
-"Last-Translator: neiron13 <Unknown>\n"
-"Language-Team: Ukrainian <uk@li.org>\n"
+"POT-Creation-Date: 2017-07-17 01:55+0200\n"
+"PO-Revision-Date: 2017-04-10 19:12+0000\n"
+"Last-Translator: Oleh Astappiev <astappev@gmail.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-20 05:46+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -45,43 +46,101 @@ msgstr "Зробити _тлом стільниці"
 msgid "Set selected image to be the new desktop background"
 msgstr "Зробити позначене зображення новим зображенням тла стільниці"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "Стільниця"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr "Малий"
 
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Налаштування доку, активних кутів, та зміна шпалер"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "Звичайний"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "Шпалери"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Великий"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "Док"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "Власний (%dpx)"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "Гарячі кути"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "Вікно у фокусі на весь екран"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "Тема"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "ВІкно у фокусі перекриває док"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "Режим ховання"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "Будь-яке відкно перекрива док"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "Розмір піктограм"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "Не використовується"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "Екран"
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr "Основний дисплей:"
+
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "Екран:"
+
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr "Розмір пікторами:"
+
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "Приховати коли:"
+
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr "Показувати натиск:"
+
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "Монітор %d"
+
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "Екран %d"
+
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "Коли курсор потрапляє в куток екрану:"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr "Доступні команди:"
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr "Нічого не робити"
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "Багатозадачний вигляд"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr "Максимізувати поточне вікно"
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr "Згорнути поточне вікно"
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "Показати меню програм"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr "Показати усі вікна"
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr "Виконати призначену команду"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -120,101 +179,43 @@ msgstr "Скасувати"
 msgid "Open"
 msgstr "Відкрити"
 
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "Коли курсор потрапляє в куток екрану:"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "Стільниця"
 
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
-msgstr "Доступні команди:"
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Налаштування доку, активних кутів, та зміна шпалер"
 
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr "Нічого не робити"
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "Шпалери"
 
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "Багатозадачний вигляд"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "Док"
 
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "Гарячі кути"
 
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "Тема"
 
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "Показати меню програм"
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "Режим ховання"
 
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr "Показати усі вікна"
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "Розмір піктограм"
 
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr "Виконати призначену команду"
-
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr "Малий"
-
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "Звичайний"
-
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "Великий"
-
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "Власний (%dpx)"
-
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "Вікно у фокусі на весь екран"
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "ВІкно у фокусі перекриває док"
-
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "Будь-яке відкно перекрива док"
-
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "Не використовується"
-
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr "Основний дисплей:"
-
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "Екран:"
-
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr "Розмір пікторами:"
-
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "Приховати коли:"
-
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr "Показувати натиск:"
-
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "Монітор %d"
-
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "Екран %d"
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "Екран"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"

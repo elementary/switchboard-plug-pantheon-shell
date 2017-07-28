@@ -2,17 +2,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
-"PO-Revision-Date: 2017-02-16 12:43+0000\n"
-"Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2017-07-17 01:53+0200\n"
+"PO-Revision-Date: 2017-04-06 12:26+0000\n"
+"Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
+"Language-Team: Japanese <http://weblate.elementary.io/projects/desktop/"
+"switchboard-plug-pantheon-shell/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -39,80 +40,65 @@ msgstr "デスクトップの背景に設定 (_D)"
 msgid "Set selected image to be the new desktop background"
 msgstr "選択した画像をデスクトップの壁紙として設定します"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "デスクトップ"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr "小さい"
 
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "ドック、ホットコーナー、壁紙を設定します"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "標準"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "壁紙"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "大きい"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "ドック"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "カスタム (%dpx)"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "ホットコーナー"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "ウィンドウが最大化されたとき"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "テーマ"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "フォーカスされたウィンドウが重なったとき"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "隠すモード"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "いずれかのウィンドウが重なったとき"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "アイコンサイズ"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "使われていないとき"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "ディスプレイ"
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr "プライマリーディスプレイ:"
 
-#: ../src/Views/Wallpaper.vala:146
-msgid "Pictures"
-msgstr "画像"
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "ディスプレイ:"
 
-#: ../src/Views/Wallpaper.vala:147
-msgid "Backgrounds"
-msgstr "背景"
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr "アイコンサイズ:"
 
-#: ../src/Views/Wallpaper.vala:148
-msgid "Custom…"
-msgstr "カスタム..."
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "隠す場合:"
 
-#: ../src/Views/Wallpaper.vala:154
-msgid "Centered"
-msgstr "中央に表示"
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr "押し込んで表示:"
 
-#: ../src/Views/Wallpaper.vala:155
-msgid "Zoom"
-msgstr "ズーム"
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "モニター %d"
 
-#: ../src/Views/Wallpaper.vala:156
-msgid "Spanned"
-msgstr "敷き詰め"
-
-#: ../src/Views/Wallpaper.vala:327
-msgid "Select a folder"
-msgstr "フォルダを選択"
-
-#: ../src/Views/Wallpaper.vala:328
-#: ../set-wallpaper-contract/set-wallpaper.vala:220
-msgid "Cancel"
-msgstr "キャンセル"
-
-#: ../src/Views/Wallpaper.vala:329
-msgid "Open"
-msgstr "開く"
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "ディスプレイ %d"
 
 #: ../src/Views/HotCorners.vala:28
 msgid "When the cursor enters the corner of the display:"
@@ -150,65 +136,80 @@ msgstr "すべてのウィンドウを表示"
 msgid "Execute custom command"
 msgstr "カスタムコマンドの実行"
 
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr "小さい"
+#: ../src/Views/Wallpaper.vala:146
+msgid "Pictures"
+msgstr "画像"
 
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "標準"
+#: ../src/Views/Wallpaper.vala:147
+msgid "Backgrounds"
+msgstr "背景"
 
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "大きい"
+#: ../src/Views/Wallpaper.vala:148
+msgid "Custom…"
+msgstr "カスタム…"
 
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "カスタム (%dpx)"
+#: ../src/Views/Wallpaper.vala:154
+msgid "Centered"
+msgstr "中央に表示"
 
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "ウィンドウが最大化されたとき"
+#: ../src/Views/Wallpaper.vala:155
+msgid "Zoom"
+msgstr "ズーム"
 
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "フォーカスされたウィンドウが重なったとき"
+#: ../src/Views/Wallpaper.vala:156
+msgid "Spanned"
+msgstr "敷き詰め"
 
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "いずれかのウィンドウが重なったとき"
+#: ../src/Views/Wallpaper.vala:327
+msgid "Select a folder"
+msgstr "フォルダを選択"
 
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "使われていないとき"
+#: ../src/Views/Wallpaper.vala:328
+#: ../set-wallpaper-contract/set-wallpaper.vala:220
+msgid "Cancel"
+msgstr "キャンセル"
 
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr "プライマリーディスプレイ:"
+#: ../src/Views/Wallpaper.vala:329
+msgid "Open"
+msgstr "開く"
 
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "ディスプレイ:"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "デスクトップ"
 
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr "アイコンサイズ:"
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "ドック、ホットコーナー、壁紙を設定します"
 
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "隠す場合:"
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "壁紙"
 
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr "押し込んで表示:"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "ドック"
 
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "モニター %d"
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "ホットコーナー"
 
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "ディスプレイ %d"
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "テーマ"
+
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "隠すモード"
+
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "アイコンサイズ"
+
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "ディスプレイ"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"

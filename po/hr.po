@@ -2,18 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
-"PO-Revision-Date: 2017-03-01 16:20+0000\n"
-"Last-Translator: gogo <trebelnik2@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2017-07-17 01:53+0200\n"
+"PO-Revision-Date: 2017-04-17 14:12+0000\n"
+"Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:49+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -40,80 +41,65 @@ msgstr "Podesi kao pozadinu _radne površine"
 msgid "Set selected image to be the new desktop background"
 msgstr "Postavi odabranu sliku kao pozadinu radne površine"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "Radna površina"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr "Mala"
 
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Prilagodite dok, kuteve prečaca i promijenite pozadinu"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "Uobičajena"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "Slika pozadine"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Velika"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "Dok"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "Prilagođeno (%dpx)"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "Kutovi zaslona"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "Fokusirani prozor je uvećan"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "Tema"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "Fokusirani prozor preklapa dok"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "Način skrivanja"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "Bilo koji prozor preklapa dok"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "Veličina ikone"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "Se ne koristi"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "Zaslon"
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr "Glavni zaslon:"
 
-#: ../src/Views/Wallpaper.vala:146
-msgid "Pictures"
-msgstr "Slike"
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "Prikaz:"
 
-#: ../src/Views/Wallpaper.vala:147
-msgid "Backgrounds"
-msgstr "Pozadine"
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr "Veličina ikone:"
 
-#: ../src/Views/Wallpaper.vala:148
-msgid "Custom…"
-msgstr "Prilagođeno..."
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "Sakrij kada:"
 
-#: ../src/Views/Wallpaper.vala:154
-msgid "Centered"
-msgstr "Sredina"
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr "Razina pritiska:"
 
-#: ../src/Views/Wallpaper.vala:155
-msgid "Zoom"
-msgstr "Uvećano"
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "Zaslon %d"
 
-#: ../src/Views/Wallpaper.vala:156
-msgid "Spanned"
-msgstr "Razmknuto"
-
-#: ../src/Views/Wallpaper.vala:327
-msgid "Select a folder"
-msgstr "Odaberi mapu"
-
-#: ../src/Views/Wallpaper.vala:328
-#: ../set-wallpaper-contract/set-wallpaper.vala:220
-msgid "Cancel"
-msgstr "Odustani"
-
-#: ../src/Views/Wallpaper.vala:329
-msgid "Open"
-msgstr "Otvori"
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "Zaslon %d"
 
 #: ../src/Views/HotCorners.vala:28
 msgid "When the cursor enters the corner of the display:"
@@ -151,65 +137,80 @@ msgstr "Prikaži sve prozore"
 msgid "Execute custom command"
 msgstr "Pokreni prilagođenu naredbu"
 
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr "Mala"
+#: ../src/Views/Wallpaper.vala:146
+msgid "Pictures"
+msgstr "Slike"
 
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "Uobičajena"
+#: ../src/Views/Wallpaper.vala:147
+msgid "Backgrounds"
+msgstr "Pozadine"
 
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "Velika"
+#: ../src/Views/Wallpaper.vala:148
+msgid "Custom…"
+msgstr "Prilagođeno…"
 
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "Prilagođeno (%dpx)"
+#: ../src/Views/Wallpaper.vala:154
+msgid "Centered"
+msgstr "Sredina"
 
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "Fokusirani prozor je uvećan"
+#: ../src/Views/Wallpaper.vala:155
+msgid "Zoom"
+msgstr "Uvećano"
 
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "Fokusirani prozor preklapa dok"
+#: ../src/Views/Wallpaper.vala:156
+msgid "Spanned"
+msgstr "Razmknuto"
 
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "Bilo koji prozor preklapa dok"
+#: ../src/Views/Wallpaper.vala:327
+msgid "Select a folder"
+msgstr "Odaberi mapu"
 
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "Se ne koristi"
+#: ../src/Views/Wallpaper.vala:328
+#: ../set-wallpaper-contract/set-wallpaper.vala:220
+msgid "Cancel"
+msgstr "Odustani"
 
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr "Glavni zaslon:"
+#: ../src/Views/Wallpaper.vala:329
+msgid "Open"
+msgstr "Otvori"
 
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "Prikaz:"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "Radna površina"
 
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr "Veličina ikone:"
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Prilagodite dok, kuteve prečaca i promijenite pozadinu"
 
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "Sakrij kada:"
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "Slika pozadine"
 
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr "Razina pritiska:"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "Dok"
 
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "Zaslon %d"
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "Kutovi zaslona"
 
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "Zaslon %d"
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "Tema"
+
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "Način skrivanja"
+
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "Veličina ikone"
+
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "Zaslon"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"

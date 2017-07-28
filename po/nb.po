@@ -7,17 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
-"PO-Revision-Date: 2016-08-13 07:57+0000\n"
-"Last-Translator: Jan S Borlaug <janborlaug@gmail.com>\n"
-"Language-Team: Norwegian Bokmal <nb@li.org>\n"
+"POT-Creation-Date: 2017-07-17 01:54+0200\n"
+"PO-Revision-Date: 2017-05-31 06:10+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
+"switchboard/switchboard-plug-pantheon-shell/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -44,43 +45,102 @@ msgstr "Bruk som _skrivebordsbakgrunn"
 msgid "Set selected image to be the new desktop background"
 msgstr "Bruk det valgte bildet som ny skrivebordsbakgrunn"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "Skrivebord"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr "Lite"
 
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Konfigurer dokken, aktive hjørner og endre bakgrunnsbilde"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "Normal"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "Bakgrunnsbilde"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Stor"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "Dokk"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "Egendefinert (%dpx)"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "Aktive hjørner"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "Fokusert vindu er maksimert"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "Tema"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "Fokusert vindu overlapper dokken"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "Skjulemodus"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "Hvilket som helst vindu overlapper dokken"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "Ikonstørrelse"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "Ikke brukes"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "Skjerm"
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr "Hovedskjerm:"
+
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "Skjerm:"
+
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr "Ikonstørrelse:"
+
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "Skjul når:"
+
+#: ../src/Views/Dock.vala:167
+#, fuzzy
+msgid "Pressure reveal:"
+msgstr "Trykkavdekking:"
+
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "Skjerm %d"
+
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "Skjerm %d"
+
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "Når markøren kommer inn i hjørnet av skjermen:"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr "Egendefinert komamndo:"
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr "Ikke gjør noe"
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "Vis arbeidsområder"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr "Maksimer gjeldende vindu"
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr "Minimer gjeldende vindu"
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "Vis applikasjonsmeny"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr "Vis alle vinduer"
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr "Utfør egendefinert kommando"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -119,101 +179,43 @@ msgstr "Avbryt"
 msgid "Open"
 msgstr "Åpne"
 
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "Når markøren kommer inn i hjørnet av skjermen:"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "Skrivebord"
 
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
-msgstr ""
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Konfigurer dokken, aktive hjørner og endre bakgrunnsbilde"
 
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr ""
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "Bakgrunnsbilde"
 
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "Vis arbeidsområder"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "Dokk"
 
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "Aktive hjørner"
 
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr ""
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "Tema"
 
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "Vis applikasjonsmeny"
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "Skjulemodus"
 
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr ""
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "Ikonstørrelse"
 
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr ""
-
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr ""
-
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "Normal"
-
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "Stor"
-
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "Egendefinert (%dpx)"
-
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "Fokusert vindu er maksimert"
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "Fokusert vindu overlapper dokken"
-
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "Hvilket som helst vindu overlapper dokken"
-
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "Ikke brukes"
-
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "Skjerm:"
-
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "Skjul når:"
-
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr ""
-
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "Skjerm %d"
-
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "Skjerm %d"
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "Skjerm"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"

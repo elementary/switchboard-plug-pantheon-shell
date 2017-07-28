@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-17 01:42+0200\n"
+"POT-Creation-Date: 2017-07-17 01:53+0200\n"
 "PO-Revision-Date: 2017-02-16 07:24+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -44,43 +44,101 @@ msgstr "Aseta _työpöydän taustakuvaksi"
 msgid "Set selected image to be the new desktop background"
 msgstr "Aseta valittu kuva työpöydän uudeksi taustakuvaksi"
 
-#: ../src/desktop-plug.vala:34
-msgid "Desktop"
-msgstr "Työpöytä"
+#: ../src/Views/Dock.vala:34
+msgid "Small"
+msgstr "Pieni"
 
-#: ../src/desktop-plug.vala:35
-msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Hallitse telakkaa, toimintokulmia ja vaihda taustakuvia"
+#: ../src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "Tavallinen"
 
-#: ../src/desktop-plug.vala:49 ../src/desktop-plug.vala:91
-msgid "Wallpaper"
-msgstr "Taustakuva"
+#: ../src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Suuri"
 
-#: ../src/desktop-plug.vala:50 ../src/desktop-plug.vala:92
-#: ../src/desktop-plug.vala:93 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-msgid "Dock"
-msgstr "Telakka"
+#: ../src/Views/Dock.vala:58
+msgid "Custom (%dpx)"
+msgstr "Omavalintainen (%d px)"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:97
-msgid "Hot Corners"
-msgstr "Toimintokulmat"
+#: ../src/Views/Dock.vala:87
+msgid "Focused window is maximized"
+msgstr "Kohdistettu ikkuna on suurennettu"
 
-#: ../src/desktop-plug.vala:93
-msgid "Theme"
-msgstr "Teema"
+#: ../src/Views/Dock.vala:88
+msgid "Focused window overlaps the dock"
+msgstr "Kohdistettu ikkuna on päällekkäin telakan kanssa"
 
-#: ../src/desktop-plug.vala:94
-msgid "Hide Mode"
-msgstr "Piilotustila"
+#: ../src/Views/Dock.vala:89
+msgid "Any window overlaps the dock"
+msgstr "Mikä tahansa ikkuna on päällekkäin telakan kanssa"
 
-#: ../src/desktop-plug.vala:95
-msgid "Icon Size"
-msgstr "Kuvakekoko"
+#: ../src/Views/Dock.vala:90
+msgid "Not being used"
+msgstr "Ei käytössä"
 
-#: ../src/desktop-plug.vala:96
-msgid "Display"
-msgstr "Näyttö"
+#: ../src/Views/Dock.vala:126
+msgid "Primary display:"
+msgstr "Ensisijainen näyttö:"
+
+#: ../src/Views/Dock.vala:130
+msgid "Display:"
+msgstr "Näyttö:"
+
+#: ../src/Views/Dock.vala:161
+msgid "Icon size:"
+msgstr "Kuvakekoko:"
+
+#: ../src/Views/Dock.vala:163
+msgid "Hide when:"
+msgstr "Piilota kun:"
+
+#: ../src/Views/Dock.vala:167
+msgid "Pressure reveal:"
+msgstr "Esiintuomisen paine:"
+
+#: ../src/Views/Dock.vala:206
+msgid "Monitor %d"
+msgstr "Näyttö %d"
+
+#: ../src/Views/Dock.vala:211
+msgid "Display %d"
+msgstr "Näyttö %d"
+
+#: ../src/Views/HotCorners.vala:28
+msgid "When the cursor enters the corner of the display:"
+msgstr "Kun hiiren osoitin kohdistetaan näytön reunaan:"
+
+#: ../src/Views/HotCorners.vala:62
+msgid "Custom command:"
+msgstr "Omavalintainen komento:"
+
+#: ../src/Views/HotCorners.vala:78
+msgid "Do nothing"
+msgstr "Älä tee mitään"
+
+#: ../src/Views/HotCorners.vala:79
+msgid "Multitasking View"
+msgstr "Moniajonäkymä"
+
+#: ../src/Views/HotCorners.vala:80
+msgid "Maximize current window"
+msgstr "Suurenna nykyinen ikkuna"
+
+#: ../src/Views/HotCorners.vala:81
+msgid "Minimize current window"
+msgstr "Pienennä nykyinen ikkuna"
+
+#: ../src/Views/HotCorners.vala:82
+msgid "Show Applications Menu"
+msgstr "Näytä Sovellukset-valikko"
+
+#: ../src/Views/HotCorners.vala:83
+msgid "Show all windows"
+msgstr "Näytä kaikki ikkunat"
+
+#: ../src/Views/HotCorners.vala:84
+msgid "Execute custom command"
+msgstr "Suorita omavalintainen komento"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -119,101 +177,43 @@ msgstr "Peru"
 msgid "Open"
 msgstr "Avaa"
 
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "Kun hiiren osoitin kohdistetaan näytön reunaan:"
+#: ../src/desktop-plug.vala:34
+msgid "Desktop"
+msgstr "Työpöytä"
 
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
-msgstr "Omavalintainen komento:"
+#: ../src/desktop-plug.vala:35
+msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Hallitse telakkaa, toimintokulmia ja vaihda taustakuvia"
 
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr "Älä tee mitään"
+#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+msgid "Wallpaper"
+msgstr "Taustakuva"
 
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "Moniajonäkymä"
+#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
+#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
+#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+msgid "Dock"
+msgstr "Telakka"
 
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr "Suurenna nykyinen ikkuna"
+#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+msgid "Hot Corners"
+msgstr "Toimintokulmat"
 
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr "Pienennä nykyinen ikkuna"
+#: ../src/desktop-plug.vala:95
+msgid "Theme"
+msgstr "Teema"
 
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "Näytä Sovellukset-valikko"
+#: ../src/desktop-plug.vala:96
+msgid "Hide Mode"
+msgstr "Piilotustila"
 
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr "Näytä kaikki ikkunat"
+#: ../src/desktop-plug.vala:97
+msgid "Icon Size"
+msgstr "Kuvakekoko"
 
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr "Suorita omavalintainen komento"
-
-#: ../src/Views/Dock.vala:33
-msgid "Small"
-msgstr "Pieni"
-
-#: ../src/Views/Dock.vala:34
-msgid "Normal"
-msgstr "Tavallinen"
-
-#: ../src/Views/Dock.vala:35
-msgid "Large"
-msgstr "Suuri"
-
-#: ../src/Views/Dock.vala:57
-msgid "Custom (%dpx)"
-msgstr "Omavalintainen (%d px)"
-
-#: ../src/Views/Dock.vala:86
-msgid "Focused window is maximized"
-msgstr "Kohdistettu ikkuna on suurennettu"
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window overlaps the dock"
-msgstr "Kohdistettu ikkuna on päällekkäin telakan kanssa"
-
-#: ../src/Views/Dock.vala:88
-msgid "Any window overlaps the dock"
-msgstr "Mikä tahansa ikkuna on päällekkäin telakan kanssa"
-
-#: ../src/Views/Dock.vala:89
-msgid "Not being used"
-msgstr "Ei käytössä"
-
-#: ../src/Views/Dock.vala:125
-msgid "Primary display:"
-msgstr "Ensisijainen näyttö:"
-
-#: ../src/Views/Dock.vala:129
-msgid "Display:"
-msgstr "Näyttö:"
-
-#: ../src/Views/Dock.vala:160
-msgid "Icon size:"
-msgstr "Kuvakekoko:"
-
-#: ../src/Views/Dock.vala:162
-msgid "Hide when:"
-msgstr "Piilota kun:"
-
-#: ../src/Views/Dock.vala:166
-msgid "Pressure reveal:"
-msgstr "Esiintuomisen paine:"
-
-#: ../src/Views/Dock.vala:205
-msgid "Monitor %d"
-msgstr "Näyttö %d"
-
-#: ../src/Views/Dock.vala:210
-msgid "Display %d"
-msgstr "Näyttö %d"
+#: ../src/desktop-plug.vala:98
+msgid "Display"
+msgstr "Näyttö"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
