@@ -2,22 +2,21 @@
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
 # This file is distributed under the same license as the maya package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-17 01:53+0200\n"
-"PO-Revision-Date: 2014-12-17 04:51+0000\n"
-"Last-Translator: Viko Adi Rahmawan <Unknown>\n"
+"PO-Revision-Date: 2017-07-31 15:15+0700\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -38,71 +37,71 @@ msgstr ""
 #.
 #: ../src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Atur sebagai Latar Belakang _Destop"
 
 #: ../src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Tetapkan gambar yang dipilih menjadi latar belakang destop yang baru"
 
 #: ../src/Views/Dock.vala:34
 msgid "Small"
-msgstr ""
+msgstr "Kecil"
 
 #: ../src/Views/Dock.vala:35
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #: ../src/Views/Dock.vala:36
 msgid "Large"
-msgstr ""
+msgstr "Besar"
 
 #: ../src/Views/Dock.vala:58
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "Tersuai (%dpx)"
 
 #: ../src/Views/Dock.vala:87
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "Jendela fokus dimaksimalkan"
 
 #: ../src/Views/Dock.vala:88
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "Jendela fokus tumpang tindih dok"
 
 #: ../src/Views/Dock.vala:89
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Setiap jendela tumpang tindih dok"
 
 #: ../src/Views/Dock.vala:90
 msgid "Not being used"
-msgstr ""
+msgstr "Tidak digunakan"
 
 #: ../src/Views/Dock.vala:126
 msgid "Primary display:"
-msgstr ""
+msgstr "Tampilan utama:"
 
 #: ../src/Views/Dock.vala:130
 msgid "Display:"
-msgstr ""
+msgstr "Tampilan:"
 
 #: ../src/Views/Dock.vala:161
 msgid "Icon size:"
-msgstr ""
+msgstr "Ukuran ikon:"
 
 #: ../src/Views/Dock.vala:163
 msgid "Hide when:"
-msgstr ""
+msgstr "Sembunyikan ketika:"
 
 #: ../src/Views/Dock.vala:167
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Ungkapkan tekanan:"
 
 #: ../src/Views/Dock.vala:206
 msgid "Monitor %d"
-msgstr ""
+msgstr "Monitor %d"
 
 #: ../src/Views/Dock.vala:211
 msgid "Display %d"
-msgstr ""
+msgstr "Tampilan %d"
 
 #: ../src/Views/HotCorners.vala:28
 msgid "When the cursor enters the corner of the display:"
@@ -110,43 +109,43 @@ msgstr "Saat kursor di pojok layar:"
 
 #: ../src/Views/HotCorners.vala:62
 msgid "Custom command:"
-msgstr ""
+msgstr "Perintah tersuai:"
 
 #: ../src/Views/HotCorners.vala:78
 msgid "Do nothing"
-msgstr ""
+msgstr "Jangan lakukan apa pun"
 
 #: ../src/Views/HotCorners.vala:79
 msgid "Multitasking View"
-msgstr ""
+msgstr "Tampilan Multitasking"
 
 #: ../src/Views/HotCorners.vala:80
 msgid "Maximize current window"
-msgstr ""
+msgstr "Maksimalkan jendela saat ini"
 
 #: ../src/Views/HotCorners.vala:81
 msgid "Minimize current window"
-msgstr ""
+msgstr "Minimalkan jendela saat ini"
 
 #: ../src/Views/HotCorners.vala:82
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "Tampilkan Menu Aplikasi"
 
 #: ../src/Views/HotCorners.vala:83
 msgid "Show all windows"
-msgstr ""
+msgstr "Tampilkan semua jendela"
 
 #: ../src/Views/HotCorners.vala:84
 msgid "Execute custom command"
-msgstr ""
+msgstr "Jalankan perintah tersuai"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
-msgstr ""
+msgstr "Gambar"
 
 #: ../src/Views/Wallpaper.vala:147
 msgid "Backgrounds"
-msgstr ""
+msgstr "Latar Belakang"
 
 #: ../src/Views/Wallpaper.vala:148
 msgid "Custom…"
@@ -171,11 +170,11 @@ msgstr "Pilih folder"
 #: ../src/Views/Wallpaper.vala:328
 #: ../set-wallpaper-contract/set-wallpaper.vala:220
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 #: ../src/Views/Wallpaper.vala:329
 msgid "Open"
-msgstr ""
+msgstr "Buka"
 
 #: ../src/desktop-plug.vala:34
 msgid "Desktop"
@@ -183,7 +182,7 @@ msgstr "Desktop"
 
 #: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Konfigurasikan dok, pojok panas, dan ganti gambar latar"
 
 #: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
 msgid "Wallpaper"
@@ -201,54 +200,51 @@ msgstr "Pojok Interaktif"
 
 #: ../src/desktop-plug.vala:95
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../src/desktop-plug.vala:96
 msgid "Hide Mode"
-msgstr ""
+msgstr "Mode Sembunyi"
 
 #: ../src/desktop-plug.vala:97
 msgid "Icon Size"
-msgstr ""
+msgstr "Ukuran Ikon"
 
 #: ../src/desktop-plug.vala:98
 msgid "Display"
-msgstr ""
+msgstr "Tampilan"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d detik"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:93
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d menit"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:97
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d jam"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:100
 msgid "1 day"
-msgstr ""
+msgstr "1 hari"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:104
 msgid "Show each photo for"
-msgstr ""
+msgstr "Tampilkan tiap foto untuk"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:217
 #: ../set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Atur sebagai Pertunjukan Salindia Destop"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:221
 msgid "Create slideshow"
-msgstr ""
+msgstr "Buat pertunjukansalindia"
 
 #~ msgid "Scaled"
 #~ msgstr "Terskala"
