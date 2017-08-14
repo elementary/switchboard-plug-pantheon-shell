@@ -55,6 +55,7 @@ public class GalaPlug : Switchboard.Plug {
             var stack_switcher = new Gtk.StackSwitcher ();
             stack_switcher.stack = stack;
             stack_switcher.halign = Gtk.Align.CENTER;
+            stack_switcher.homogeneous = true;
             stack_switcher.margin = 24;
 
             main_grid.attach (stack_switcher, 0, 0, 1, 1);
