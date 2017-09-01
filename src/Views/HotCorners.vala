@@ -20,33 +20,39 @@
 */
 
 public class HotCorners : Gtk.Grid {
+    private Gtk.Revealer custom_command_revealer;
+    private Gee.HashSet<string> keys_using_custom_command = new Gee.HashSet<string> ();
+    private const string CUSTOM_COMMAND_ID = "5";
+
     construct {
         column_spacing = 12;
         row_spacing = 24;
         halign = Gtk.Align.CENTER;
+
+        custom_command_revealer = new Gtk.Revealer ();
 
         var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
         expl.get_style_context ().add_class ("h4");
         expl.halign = Gtk.Align.START;
 
         var topleft = create_hotcorner ();
+        topleft.changed.connect (() => hotcorner_changed ("hotcorner-topleft", topleft));
         topleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topleft").to_string ();
-        topleft.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-topleft", int.parse (topleft.active_id)));
         topleft.valign = Gtk.Align.START;
 
         var topright = create_hotcorner ();
+        topright.changed.connect (() => hotcorner_changed ("hotcorner-topright", topright));
         topright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topright").to_string ();
-        topright.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-topright", int.parse (topright.active_id)));
         topright.valign = Gtk.Align.START;
 
         var bottomleft = create_hotcorner ();
+        bottomleft.changed.connect (() => hotcorner_changed ("hotcorner-bottomleft", bottomleft));
         bottomleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomleft").to_string ();
-        bottomleft.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-bottomleft", int.parse (bottomleft.active_id)));
         bottomleft.valign = Gtk.Align.END;
 
         var bottomright = create_hotcorner ();
+        bottomright.changed.connect (() => hotcorner_changed ("hotcorner-bottomright", bottomright));
         bottomright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomright").to_string ();
-        bottomright.changed.connect (() => BehaviorSettings.get_default ().schema.set_enum ("hotcorner-bottomright", int.parse (bottomright.active_id)));
         bottomright.valign = Gtk.Align.END;
 
         var icon = new Gtk.Image.from_file (Constants.PKGDATADIR + "/hotcornerdisplay.svg");
@@ -70,13 +76,26 @@ public class HotCorners : Gtk.Grid {
         cc_sizegroup.add_widget (icon);
         cc_sizegroup.add_widget (custom_command);
 
+        custom_command_revealer.add (cc_grid);
+
         attach (expl, 0, 0, 3, 1);
         attach (icon, 1, 1, 1, 3);
         attach (topleft, 0, 1, 1, 1);
         attach (topright, 2, 1, 1, 1);
         attach (bottomleft, 0, 3, 1, 1);
         attach (bottomright, 2, 3, 1, 1);
-        attach (cc_grid, 0, 4, 2, 1);
+        attach (custom_command_revealer, 0, 4, 2, 1);
+    }
+
+    private void hotcorner_changed (string settings_key, Gtk.ComboBoxText combo) {
+        BehaviorSettings.get_default ().schema.set_enum (settings_key, int.parse (combo.active_id));
+        if (combo.active_id == CUSTOM_COMMAND_ID) {
+            keys_using_custom_command.add (settings_key);
+        } else {
+            keys_using_custom_command.remove (settings_key);
+        }
+
+        custom_command_revealer.reveal_child = keys_using_custom_command.size > 0;
     }
 
     private Gtk.ComboBoxText create_hotcorner () {
@@ -87,7 +106,7 @@ public class HotCorners : Gtk.Grid {
         box.append ("3", _("Minimize current window")); // minimize-current
         box.append ("4", _("Show Applications Menu"));  // open-launcher
         box.append ("7", _("Show all windows"));        // window-overview-all
-        box.append ("5", _("Execute custom command"));  // custom-command
+        box.append (CUSTOM_COMMAND_ID, _("Execute custom command"));  // custom-command
 
         return box;
     }
