@@ -48,6 +48,9 @@ set (CPACK_SOURCE_IGNORE_FILES "/build/;/.bzr/;/.bzrignore;~$;${CPACK_SOURCE_IGN
 include (CPack)
 add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 
+include(GSettings)
+add_schema("data/io.elementary.switchboard.plug.desktop.gschema.xml")
+
 # Files
 file (GLOB resources ${CMAKE_CURRENT_SOURCE_DIR}/data/*.svg)
 
