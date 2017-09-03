@@ -173,7 +173,9 @@ public class Wallpaper : Gtk.Grid {
         }
 
         var custom_folder_open = new Gtk.Button.from_icon_name ("document-open");
+        custom_folder_open.valign = Gtk.Align.CENTER;
         custom_folder_open.clicked.connect (() => show_custom_dir_chooser ());
+        custom_folder_button_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
         custom_folder_button_revealer.add (custom_folder_open);
 
         folder_combo.active_id = saved_id;
