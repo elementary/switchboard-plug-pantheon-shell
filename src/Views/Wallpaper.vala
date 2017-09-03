@@ -348,9 +348,6 @@ public class Wallpaper : Gtk.Grid {
 
         var directory = File.new_for_uri (basefolder);
 
-        // The number of wallpapers we've added so far
-        double done = 0.0;
-
         try {
             // Count the # of wallpapers
             int count = IOHelper.count_wallpapers(directory);
@@ -377,8 +374,6 @@ public class Wallpaper : Gtk.Grid {
                     if (cancellable.is_cancelled () == true) {
                         return;
                     }
-                    // We're going to add another wallpaper
-                    done++;
 
                     if (info.get_file_type () == FileType.DIRECTORY) {
                         // Spawn off another loader for the subdirectory
@@ -404,7 +399,7 @@ public class Wallpaper : Gtk.Grid {
 
                     // Select the wallpaper if it is the current wallpaper
                     if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
-                        this.wallpaper_view.select_child (wallpaper);
+                        wallpaper_view.select_child (wallpaper);
                         //set the widget activated without activating it
                         wallpaper.checked = true;
                         active_wallpaper = wallpaper;
@@ -437,6 +432,10 @@ public class Wallpaper : Gtk.Grid {
             }
 
             folder_combo.set_sensitive (true);
+
+            if (active_wallpaper != null) {
+                active_wallpaper.grab_focus ();
+            }
 
         } catch (Error err) {
             if (!(err is IOError.NOT_FOUND)) {
