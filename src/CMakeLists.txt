@@ -25,6 +25,7 @@ vala_precompile (VALA_C ${PLUGNAME}
     Views/Dock.vala
     Views/HotCorners.vala
     Views/Wallpaper.vala
+    Utils.vala
     Widgets/SolidColorContainer.vala
     Widgets/WallpaperContainer.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
