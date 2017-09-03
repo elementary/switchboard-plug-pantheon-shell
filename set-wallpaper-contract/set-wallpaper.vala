@@ -72,6 +72,8 @@ namespace SetWallpaperContractor {
     private void set_settings_key (string uri) {
         var settings = new Settings ("org.gnome.desktop.background");
         settings.set_string ("picture-uri", uri);
+        // We don't do gradient backgrounds, reset the key that might interfere
+        settings.reset ("color-shading-type");
         settings.apply ();
         Settings.sync ();
     }
