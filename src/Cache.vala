@@ -34,8 +34,15 @@ public class Cache {
     private const string THUMBNAILER_DBUS_ID = "org.freedesktop.thumbnails.Thumbnailer1";
     private const string THUMBNAILER_DBUS_PATH = "/org/freedesktop/thumbnails/Thumbnailer1";
 
+    public delegate void ThumbnailReady (string thumb_uri);
+    public class ThumbnailReadyWrapper {
+        public string size;
+        public ThumbnailReady cb;
+    }
+
     private static Cache? instance = null;
     private Thumbnailer? thumbnailer = null;
+    private Gee.HashMap<string, ThumbnailReadyWrapper> queued_delegates = new Gee.HashMap<string, ThumbnailReadyWrapper> ();
 
     public static Cache get_default () {
         if (instance == null) {
@@ -48,35 +55,39 @@ public class Cache {
     public Cache () {
         try {
             thumbnailer = Bus.get_proxy_sync (BusType.SESSION, THUMBNAILER_DBUS_ID, THUMBNAILER_DBUS_PATH);
+            thumbnailer.ready.connect ((handle, uris) => {
+                foreach (var uri in uris) {
+                    if (queued_delegates.has_key (uri)) {
+                        var wrapper = queued_delegates [uri];
+                        wrapper.cb (try_get_thumbnail (uri, wrapper.size));
+                    }
+                }
+            });
         } catch (Error e) {
             warning ("Unable to connect to system thumbnailer: %s", e.message);
         }
     }
 
-    public string? get_thumbnail (string uri, uint? size = null) {
-        string[] sizes;
-        if (size == null) {
-            sizes = { "large", "normal" };
-        } else if (size >= 0 && size <= 128) {
-            sizes = { "normal" };
-        } else if (size > 128) {
-            sizes = { "large" };
-        } else {
-            sizes = { "large", "normal" };
+    public void get_thumbnail (string uri, uint size, ThumbnailReady callback) {
+        string thumb_size = "normal";
+
+        if (size > 128) {
+            thumb_size = "large";
         }
 
-        foreach (var thumb_size in sizes) {
-            var thumb = try_get_thumbnail (uri, thumb_size);
-            if (thumb != null) {
-                return thumb;
-            }
-
-            if (thumbnailer != null) {
-                thumbnailer.queue ({ uri }, { get_mime_type (uri) }, "large", "default", 0);
-            }
+        var thumb = try_get_thumbnail (uri, thumb_size);
+        if (thumb != null) {
+            callback (thumb);
         }
 
-        return null;
+        if (thumbnailer != null) {
+            var wrapper = new ThumbnailReadyWrapper ();
+            wrapper.cb = callback;
+            wrapper.size = thumb_size;
+
+            thumbnailer.queue ({ uri }, { get_mime_type (uri) }, thumb_size, "default", 0);
+            queued_delegates.@set (uri, wrapper);
+        }
     }
 
     private string get_mime_type (string uri) {

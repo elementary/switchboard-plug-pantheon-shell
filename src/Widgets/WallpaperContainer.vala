@@ -23,7 +23,9 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     private Gtk.Image image;
 
     public string uri { get; construct; }
-    public Gdk.Pixbuf thumb { get; construct; }
+    public Gdk.Pixbuf thumb { get; set; }
+
+    private int scale;
 
     const string CARD_STYLE_CSS = """
         flowboxchild,
@@ -78,7 +80,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     construct {
-        var scale = get_style_context ().get_scale ();
+        scale = get_style_context ().get_scale ();
         var provider = new Gtk.CssProvider ();
         try {
             provider.load_from_data (CARD_STYLE_CSS, CARD_STYLE_CSS.length);
@@ -87,24 +89,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             critical (e.message);
         }
 
-         try {
-            if (uri != null) {
-                var thumb_uri = Cache.get_default ().get_thumbnail (uri, 128 * scale);
-                if (thumb_uri != null) {
-                    thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (thumb_uri), 128 * scale, 72 * scale, false);
-                } else {
-                    return;
-                }
-            } else {
-                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, 128 * scale, 72 * scale);
-            }
-        } catch (Error e) {
-            critical ("Failed to load wallpaper thumbnail: %s", e.message);
-            return;
-        }
-
         image = new Gtk.Image ();
-        image.gicon = thumb;
         image.halign = Gtk.Align.CENTER;
         image.valign = Gtk.Align.CENTER;
         image.get_style_context ().set_scale (1);
@@ -128,13 +113,36 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
 
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
-        height_request = thumb.get_height () / scale + 18;
-        width_request = thumb.get_width () / scale + 18;
+
         margin = 6;
         add (overlay);
 
         activate.connect (() => {
             checked = true;
         });
+
+        try {
+            if (uri != null) {
+                Cache.get_default ().get_thumbnail (uri, 128 * scale, (thumb_uri) => {
+                    if (thumb_uri != null) {
+                        thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (thumb_uri), 128 * scale, 72 * scale, false);
+                        thumb_ready ();
+                    }
+                });
+            } else {
+                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, 128 * scale, 72 * scale);
+                thumb_ready ();
+            }
+        } catch (Error e) {
+            critical ("Failed to load wallpaper thumbnail: %s", e.message);
+            return;
+        }
+    }
+
+    private void thumb_ready () {
+        height_request = thumb.get_height () / scale + 18;
+        width_request = thumb.get_width () / scale + 18;
+
+        image.gicon = thumb;
     }
 }
