@@ -106,6 +106,8 @@ public class Wallpaper : Gtk.Grid {
     private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
     public bool finished; //shows that we got or wallpapers together
 
+    private const string PICTURES_DIR_COMBO_ID = "pic";
+    private const string SYSTEM_DIR_COMBO_ID = "sys";
     private const string CUSTOM_DIR_COMBO_ID = "cus";
 
     public Wallpaper (Switchboard.Plug _plug) {
@@ -151,8 +153,8 @@ public class Wallpaper : Gtk.Grid {
 
         folder_combo = new Gtk.ComboBoxText ();
         folder_combo.margin = 12;
-        folder_combo.append ("pic", _("Pictures"));
-        folder_combo.append ("sys", _("Backgrounds"));
+        folder_combo.append (PICTURES_DIR_COMBO_ID, _("Pictures"));
+        folder_combo.append (SYSTEM_DIR_COMBO_ID, _("Backgrounds"));
         folder_combo.append (CUSTOM_DIR_COMBO_ID, _("Custom…"));
         folder_combo.changed.connect (update_wallpaper_folder);
 
@@ -343,17 +345,18 @@ public class Wallpaper : Gtk.Grid {
     private void update_wallpaper_folder () {
         plug_settings.set_string ("current-wallpaper-source", folder_combo.active_id);
 
-        if (last_cancellable != null)
+        if (last_cancellable != null) {
             last_cancellable.cancel ();
+        }
 
         var cancellable = new Cancellable ();
         last_cancellable = cancellable;
-        if (folder_combo.get_active () == 0) {
+        if (folder_combo.active_id == PICTURES_DIR_COMBO_ID) {
             custom_folder_button_revealer.reveal_child = false;
             clean_wallpapers ();
             var picture_dir = GLib.File.new_for_path (GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES));
             load_wallpapers.begin (picture_dir.get_uri (), cancellable);
-        } else if (folder_combo.get_active () == 1) {
+        } else if (folder_combo.active_id == SYSTEM_DIR_COMBO_ID) {
             custom_folder_button_revealer.reveal_child = false;
             clean_wallpapers ();
 
@@ -362,7 +365,7 @@ public class Wallpaper : Gtk.Grid {
 
             load_wallpapers.begin (system_uri, cancellable);
             load_wallpapers.begin (user_uri, cancellable);
-        } else if (folder_combo.get_active () == 2) {
+        } else if (folder_combo.active_id == CUSTOM_DIR_COMBO_ID) {
             custom_folder_button_revealer.reveal_child = true;
             if (current_custom_directory_path != null) {
                 clean_wallpapers ();
