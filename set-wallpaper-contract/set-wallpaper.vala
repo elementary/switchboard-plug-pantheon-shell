@@ -72,6 +72,9 @@ namespace SetWallpaperContractor {
     private void set_settings_key (string uri) {
         var settings = new Settings ("org.gnome.desktop.background");
         settings.set_string ("picture-uri", uri);
+        if (settings.get_string ("picture-options") == "none") {
+            settings.reset ("picture-options");
+        }
         settings.apply ();
         Settings.sync ();
     }
