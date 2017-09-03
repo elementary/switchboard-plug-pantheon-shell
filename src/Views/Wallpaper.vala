@@ -280,6 +280,9 @@ public class Wallpaper : Gtk.Grid {
             settings.set_string ("primary-color", solid_color.color);
         }
 
+        // We don't do gradient backgrounds, reset the key that might interfere
+        settings.reset ("color-shading-type");
+
         children.checked = true;
 
         if (active_wallpaper != null) {
