@@ -85,13 +85,22 @@ public class Cache {
             wrapper.cb = callback;
             wrapper.size = thumb_size;
 
-            thumbnailer.queue ({ uri }, { get_mime_type (uri) }, thumb_size, "default", 0);
-            queued_delegates.@set (uri, wrapper);
+            try {
+                thumbnailer.queue ({ uri }, { get_mime_type (uri) }, thumb_size, "default", 0);
+                queued_delegates.@set (uri, wrapper);
+            } catch (IOError e) {
+                warning ("Unable to queue thumbnail generation for '%s': %s", uri, e.message);
+            }
         }
     }
 
     private string get_mime_type (string uri) {
-        return ContentType.guess (Filename.from_uri (uri), null, null);
+        try {
+            return ContentType.guess (Filename.from_uri (uri), null, null);
+        } catch (ConvertError e) {
+            warning ("Error converting filename '%s' while guessing mime type: %s", uri, e.message);
+            return "";
+        }
     }
 
     private string? try_get_thumbnail (string uri, string size) {

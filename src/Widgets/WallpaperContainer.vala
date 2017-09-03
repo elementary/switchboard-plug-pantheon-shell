@@ -125,8 +125,12 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             if (uri != null) {
                 Cache.get_default ().get_thumbnail (uri, 128 * scale, (thumb_uri) => {
                     if (thumb_uri != null) {
-                        thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (thumb_uri), 128 * scale, 72 * scale, false);
-                        thumb_ready ();
+                        try {
+                            thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (thumb_uri), 128 * scale, 72 * scale, false);
+                            thumb_ready ();
+                        } catch (Error e) {
+                            warning ("Error loading thumbnail '%s': %s", thumb_uri, e.message);
+                        }
                     }
                 });
             } else {
