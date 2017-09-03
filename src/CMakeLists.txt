@@ -19,7 +19,7 @@ ensure_vala_version ("0.22.0" MINIMUM)
 include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
 vala_precompile (VALA_C ${PLUGNAME}
-    Cache.vala
+    ThumbnailCache.vala
     PngReader.vala
     desktop-plug.vala
     GalaSettings.vala
