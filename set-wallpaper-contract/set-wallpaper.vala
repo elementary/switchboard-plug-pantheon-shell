@@ -74,6 +74,9 @@ namespace SetWallpaperContractor {
         settings.set_string ("picture-uri", uri);
         // We don't do gradient backgrounds, reset the key that might interfere
         settings.reset ("color-shading-type");
+        if (settings.get_string ("picture-options") == "none") {
+            settings.reset ("picture-options");
+        }
         settings.apply ();
         Settings.sync ();
     }
