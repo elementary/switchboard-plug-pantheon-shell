@@ -8,6 +8,7 @@ Build-Depends: cmake (>= 2.8),
                libgranite-dev,
                libgtk-3-dev (>= 3.14),
                libplank-dev,
+               libpng12-dev,
                libswitchboard-2.0-dev,
                valac (>= 0.26)
 Standards-Version: 3.9.6
