@@ -89,14 +89,14 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
 
          try {
             if (uri != null) {
-                if (Cache.is_cached (uri, scale)) {
-                    thumb = Cache.get_cached_image (uri, scale);
+                var thumb_uri = Cache.get_thumbnail (uri, 128 * scale);
+                if (thumb_uri != null) {
+                    thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (thumb_uri), 128 * scale, 72 * scale, false);
                 } else {
-                    thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 162 * scale, 100 * scale, false);
-                    Cache.cache_image_pixbuf (thumb, uri, scale);
+                    return;
                 }
             } else {
-                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, 162 * scale, 100 * scale);
+                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, 128 * scale, 72 * scale);
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);

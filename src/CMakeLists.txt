@@ -1,7 +1,7 @@
 find_package (PkgConfig)
 
 # Add all your dependencies to the list below
-pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite gtk+-3.0>=3.14 gnome-desktop-3.0 plank>=0.7.1.1137)
+pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite gtk+-3.0>=3.14 gnome-desktop-3.0 plank>=0.7.1.1137 png)
 
 pkg_check_modules(PLANK011 QUIET plank>=0.10.9)
 if (PLANK011_FOUND)
@@ -20,6 +20,7 @@ include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
 vala_precompile (VALA_C ${PLUGNAME}
     Cache.vala
+    PngReader.vala
     desktop-plug.vala
     GalaSettings.vala
     Views/Dock.vala
@@ -34,6 +35,7 @@ PACKAGES
     granite
     posix
     plank
+    png
 OPTIONS
     --thread
     --vapidir=${CMAKE_SOURCE_DIR}/vapi

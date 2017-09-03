@@ -462,8 +462,6 @@ public class Wallpaper : Gtk.Grid {
         }
 
         solid_color = null;
-        //reduce memory usage and prevent to load old thumbnail
-        Cache.clear ();
     }
 
     private string get_local_bg_location () {
