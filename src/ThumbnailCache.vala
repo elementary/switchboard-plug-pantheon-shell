@@ -15,9 +15,9 @@
 * License along with this program; if not, write to the
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
- *
- * Authored by: David Hewitt <davidmhewitt@gmail.com>
- */
+*
+* Authored by: David Hewitt <davidmhewitt@gmail.com>
+*/
 
 [DBus (name = "org.freedesktop.thumbnails.Thumbnailer1")]
 interface Thumbnailer : Object {
