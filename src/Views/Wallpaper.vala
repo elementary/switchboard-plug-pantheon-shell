@@ -635,4 +635,10 @@ public class Wallpaper : Gtk.Grid {
         Gtk.drag_finish (ctx, false, false, timestamp);
         return;
     }
+
+    public void cancel_thumbnail_generation () {
+        if (last_cancellable != null) {
+            last_cancellable.cancel ();
+        }
+    }
 }
