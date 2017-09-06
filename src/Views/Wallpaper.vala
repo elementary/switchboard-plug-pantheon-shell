@@ -162,13 +162,7 @@ public class Wallpaper : Gtk.Grid {
         current_custom_directory_path = plug_settings.get_string ("current-custom-path");
 
         if (saved_id == CUSTOM_DIR_COMBO_ID) {
-            if (current_custom_directory_path != null && current_custom_directory_path != "") {
-                var custom_folder_file = File.new_for_uri (current_custom_directory_path);
-                if (!custom_folder_file.query_exists ()) {
-                    saved_id = plug_settings.get_default_value ("current-wallpaper-source").get_string ();
-                    current_custom_directory_path = null;
-                }
-            } else {
+            if (!check_custom_dir_valid (current_custom_directory_path)) {
                 saved_id = plug_settings.get_default_value ("current-wallpaper-source").get_string ();
                 current_custom_directory_path = null;
             }
@@ -367,7 +361,7 @@ public class Wallpaper : Gtk.Grid {
             load_wallpapers.begin (user_uri, cancellable);
         } else if (folder_combo.active_id == CUSTOM_DIR_COMBO_ID) {
             custom_folder_button_revealer.reveal_child = true;
-            if (current_custom_directory_path != null) {
+            if (check_custom_dir_valid (current_custom_directory_path)) {
                 clean_wallpapers ();
                 load_wallpapers.begin (current_custom_directory_path, cancellable);
             } else {
@@ -376,11 +370,32 @@ public class Wallpaper : Gtk.Grid {
         }
     }
 
+    private bool check_custom_dir_valid (string? uri) {
+        if (uri == null || uri == "") {
+            return false;
+        }
+
+        var custom_folder_file = File.new_for_uri (uri);
+        if (!custom_folder_file.query_exists ()) {
+            return false;
+        }
+
+        if (custom_folder_file.query_file_type (FileQueryInfoFlags.NONE) != FileType.DIRECTORY) {
+            return false;
+        }
+
+        return true;
+    }
+
     private void show_custom_dir_chooser () {
         var dialog = new Gtk.FileChooserDialog (_("Select a folder"), null, Gtk.FileChooserAction.SELECT_FOLDER);
         dialog.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
         dialog.add_button (_("Open"), Gtk.ResponseType.ACCEPT);
         dialog.set_default_response (Gtk.ResponseType.ACCEPT);
+
+        if (check_custom_dir_valid (current_custom_directory_path)) {
+            dialog.set_current_folder_uri (current_custom_directory_path);
+        }
 
         if (dialog.run () == Gtk.ResponseType.ACCEPT) {
             if (last_cancellable != null) {
