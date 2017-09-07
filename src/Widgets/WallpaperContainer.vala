@@ -22,6 +22,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     private Gtk.Revealer check_revealer;
     private Gtk.Image image;
 
+    public FileInfo file_info { get; construct; }
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; set; }
 
@@ -75,8 +76,8 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
     }
 
-    public WallpaperContainer (string uri) {
-        Object (uri: uri);
+    public WallpaperContainer (string uri, FileInfo info) {
+        Object (uri: uri, file_info: info);
     }
 
     construct {
@@ -122,17 +123,23 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         });
 
         try {
-            if (uri != null) {
-                Cache.get_default ().get_thumbnail (uri, 128 * scale, (thumb_uri) => {
-                    if (thumb_uri != null) {
+            if (file_info != null && uri != null) {
+                var thumb_path = file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+                if (thumb_path != null) {
+                    var thumb_valid = file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
+                    if (thumb_valid) {
                         try {
-                            thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (thumb_uri), 128 * scale, 72 * scale, false);
+                            thumb = new Gdk.Pixbuf.from_file_at_scale (thumb_path, 128 * scale, 72 * scale, false);
                             thumb_ready ();
                         } catch (Error e) {
-                            warning ("Error loading thumbnail '%s': %s", thumb_uri, e.message);
+                            warning ("Error loading thumbnail '%s': %s", thumb_path, e.message);
                         }
+                    } else {
+                        generate_and_load_thumb ();
                     }
-                });
+                } else {
+                    generate_and_load_thumb ();
+                }
             } else {
                 thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, 128 * scale, 72 * scale);
                 thumb_ready ();
@@ -141,6 +148,22 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
             return;
         }
+    }
+
+    private void generate_and_load_thumb () {
+        ThumbnailGenerator.get_default ().get_thumbnail (uri, 128 * scale, () => {
+            try {
+                var file = File.new_for_uri (uri);
+                var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);
+                var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+                if (thumb_path != null) {
+                    thumb = new Gdk.Pixbuf.from_file_at_scale (thumb_path, 128 * scale, 72 * scale, false);
+                    thumb_ready ();
+                }
+            } catch (Error e) {
+                warning ("Error loading thumbnail for '%s': %s", uri, e.message);
+            }
+        });
     }
 
     private void thumb_ready () {

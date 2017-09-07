@@ -78,6 +78,14 @@ interface AccountsServiceUser : Object {
 }
 
 public class Wallpaper : Gtk.Grid {
+    private const string [] required_file_attrs = {
+        FileAttribute.STANDARD_NAME,
+        FileAttribute.STANDARD_TYPE,
+        FileAttribute.STANDARD_CONTENT_TYPE,
+        FileAttribute.THUMBNAIL_PATH,
+        FileAttribute.THUMBNAIL_IS_VALID
+    };
+
     // name of the default-wallpaper-link that we can prevent loading it again
     // (assumes that the defaultwallpaper is also in the system wallpaper directory)
     static string DEFAULT_LINK = "file://%s/elementaryos-default".printf (SYSTEM_BACKGROUNDS_PATH);
@@ -362,7 +370,7 @@ public class Wallpaper : Gtk.Grid {
             }
 
             // Enumerator object that will let us read through the wallpapers asynchronously
-            var e = yield directory.enumerate_children_async (FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0, Priority.DEFAULT);
+            var e = yield directory.enumerate_children_async (string.joinv (",", required_file_attrs), 0, Priority.DEFAULT);
 
             while (true) {
                 if (cancellable.is_cancelled () == true) {
@@ -401,7 +409,7 @@ public class Wallpaper : Gtk.Grid {
                         continue;
                     }
 
-                    var wallpaper = new WallpaperContainer (uri);
+                    var wallpaper = new WallpaperContainer (uri, info);
                     wallpaper_view.add (wallpaper);
                     wallpaper.show_all ();
 
@@ -528,7 +536,7 @@ public class Wallpaper : Gtk.Grid {
         if (sel.get_length () > 0) {
             try {
                 File file = File.new_for_uri (sel.get_uris ()[0]);
-                var info = file.query_info (FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
+                var info = file.query_info (string.joinv (",", required_file_attrs), 0);
 
                 if (!IOHelper.is_valid_file_type (info)) {
                     Gtk.drag_finish (ctx, false, false, timestamp);
@@ -542,7 +550,7 @@ public class Wallpaper : Gtk.Grid {
                 }
 
                 // Add the wallpaper name and thumbnail to the IconView
-                var wallpaper = new WallpaperContainer (local_uri);
+                var wallpaper = new WallpaperContainer (local_uri, info);
                 wallpaper_view.add (wallpaper);
                 wallpaper.show_all ();
 
