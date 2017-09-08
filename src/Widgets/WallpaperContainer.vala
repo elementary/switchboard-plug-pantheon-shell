@@ -22,7 +22,8 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     private Gtk.Revealer check_revealer;
     private Gtk.Image image;
 
-    public FileInfo file_info { get; construct; }
+    public string? thumb_path { get; construct; }
+    public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; set; }
 
@@ -76,8 +77,8 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
     }
 
-    public WallpaperContainer (string uri, FileInfo info) {
-        Object (uri: uri, file_info: info);
+    public WallpaperContainer (string uri, string? thumb_path, bool thumb_valid) {
+        Object (uri: uri, thumb_path: thumb_path, thumb_valid: thumb_valid);
     }
 
     construct {
@@ -123,19 +124,13 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         });
 
         try {
-            if (file_info != null && uri != null) {
-                var thumb_path = file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                if (thumb_path != null) {
-                    var thumb_valid = file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
-                    if (thumb_valid) {
-                        try {
-                            thumb = new Gdk.Pixbuf.from_file_at_scale (thumb_path, 128 * scale, 72 * scale, false);
-                            thumb_ready ();
-                        } catch (Error e) {
-                            warning ("Error loading thumbnail '%s': %s", thumb_path, e.message);
-                        }
-                    } else {
-                        generate_and_load_thumb ();
+            if (uri != null) {
+                if (thumb_path != null && thumb_valid) {
+                    try {
+                        thumb = new Gdk.Pixbuf.from_file_at_scale (thumb_path, 128 * scale, 72 * scale, false);
+                        thumb_ready ();
+                    } catch (Error e) {
+                        warning ("Error loading thumbnail '%s': %s", thumb_path, e.message);
                     }
                 } else {
                     generate_and_load_thumb ();

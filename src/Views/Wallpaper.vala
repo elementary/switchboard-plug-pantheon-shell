@@ -42,29 +42,6 @@ public class IOHelper : GLib.Object {
 
         return false;
     }
-
-    // Quickly count up all of the valid wallpapers in the wallpaper folder.
-    public static int count_wallpapers (GLib.File wallpaper_folder) {
-        GLib.FileInfo file_info = null;
-        int count = 0;
-
-        try {
-            // Get an enumerator for all of the plain old files in the wallpaper folder.
-            var enumerator = wallpaper_folder.enumerate_children (FileAttribute.STANDARD_NAME + "," + FileAttribute.STANDARD_TYPE + "," + FileAttribute.STANDARD_CONTENT_TYPE, 0);
-
-            while ((file_info = enumerator.next_file ()) != null) {
-                if (is_valid_file_type(file_info)) {
-                    count++;
-                }
-            }
-        } catch(GLib.Error err) {
-            if (!(err is IOError.NOT_FOUND)) {
-                warning ("Could not pre-scan wallpaper folder. Progress percentage may be off: %s", err.message);
-            }
-        }
-
-        return count;
-    }
 }
 
 public enum ColumnType {
@@ -82,6 +59,8 @@ public class Wallpaper : Gtk.Grid {
         FileAttribute.STANDARD_NAME,
         FileAttribute.STANDARD_TYPE,
         FileAttribute.STANDARD_CONTENT_TYPE,
+        FileAttribute.STANDARD_IS_HIDDEN,
+        FileAttribute.STANDARD_IS_BACKUP,
         FileAttribute.THUMBNAIL_PATH,
         FileAttribute.THUMBNAIL_IS_VALID
     };
@@ -359,73 +338,55 @@ public class Wallpaper : Gtk.Grid {
 
         var directory = File.new_for_uri (basefolder);
 
-        // The number of wallpapers we've added so far
-        double done = 0.0;
-
         try {
-            // Count the # of wallpapers
-            int count = IOHelper.count_wallpapers(directory);
-            if (count == 0) {
-                folder_combo.set_sensitive (true);
-            }
-
             // Enumerator object that will let us read through the wallpapers asynchronously
             var e = yield directory.enumerate_children_async (string.joinv (",", required_file_attrs), 0, Priority.DEFAULT);
+            FileInfo file_info;
 
-            while (true) {
+            // Loop through and add each wallpaper in the batch
+            while ((file_info = e.next_file ()) != null) {
                 if (cancellable.is_cancelled () == true) {
                     return;
                 }
-                // Grab a batch of 10 wallpapers
-                var files = yield e.next_files_async (10, Priority.DEFAULT);
-                // Stop the loop if we've run out of wallpapers
-                if (files == null) {
-                    break;
+
+                if (file_info.get_is_hidden () || file_info.get_is_backup ()) {
+                    continue;
                 }
 
-                // Loop through and add each wallpaper in the batch
-                foreach (var info in files) {
-                    if (cancellable.is_cancelled () == true) {
-                        return;
-                    }
-                    // We're going to add another wallpaper
-                    done++;
+                if (file_info.get_file_type () == FileType.DIRECTORY) {
+                    // Spawn off another loader for the subdirectory
+                    yield load_wallpapers (basefolder + "/" + file_info.get_name (), cancellable);
+                    continue;
+                } else if (!IOHelper.is_valid_file_type (file_info)) {
+                    // Skip non-picture files
+                    continue;
+                }
 
-                    if (info.get_file_type () == FileType.DIRECTORY) {
-                        // Spawn off another loader for the subdirectory
-                        load_wallpapers.begin (basefolder + "/" + info.get_name (), cancellable);
-                        continue;
-                    } else if (!IOHelper.is_valid_file_type (info)) {
-                        // Skip non-picture files
-                        continue;
-                    }
+                var file = File.new_for_uri (basefolder + "/" + file_info.get_name ());
+                string uri = file.get_uri ();
 
-                    var file = File.new_for_uri (basefolder + "/" + info.get_name ());
-                    string uri = file.get_uri ();
+                // Skip the default_wallpaper as seen in the description of the
+                // default_link variable
+                if (uri == DEFAULT_LINK) {
+                    continue;
+                }
 
-                    // Skip the default_wallpaper as seen in the description of the
-                    // default_link variable
-                    if (uri == DEFAULT_LINK) {
-                        continue;
-                    }
+                var wallpaper = new WallpaperContainer (uri, file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH), file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID));
+                wallpaper_view.add (wallpaper);
+                wallpaper.show_all ();
 
-                    var wallpaper = new WallpaperContainer (uri, info);
-                    wallpaper_view.add (wallpaper);
-                    wallpaper.show_all ();
+                // Select the wallpaper if it is the current wallpaper
+                if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
+                    this.wallpaper_view.select_child (wallpaper);
+                    //set the widget activated without activating it
+                    wallpaper.checked = true;
+                    active_wallpaper = wallpaper;
+                }
 
-                    // Select the wallpaper if it is the current wallpaper
-                    if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
-                        this.wallpaper_view.select_child (wallpaper);
-                        //set the widget activated without activating it
-                        wallpaper.checked = true;
-                        active_wallpaper = wallpaper;
-                    }
-
-                    // Have GTK update the UI even while we're busy
-                    // working on file IO.
-                    while(Gtk.events_pending ()) {
-                        Gtk.main_iteration();
-                    }
+                // Have GTK update the UI even while we're busy
+                // working on file IO.
+                while(Gtk.events_pending ()) {
+                    Gtk.main_iteration();
                 }
             }
 
@@ -550,7 +511,7 @@ public class Wallpaper : Gtk.Grid {
                 }
 
                 // Add the wallpaper name and thumbnail to the IconView
-                var wallpaper = new WallpaperContainer (local_uri, info);
+                var wallpaper = new WallpaperContainer (local_uri, info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH), info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID));
                 wallpaper_view.add (wallpaper);
                 wallpaper.show_all ();
 
