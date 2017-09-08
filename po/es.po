@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-17 01:53+0200\n"
-"PO-Revision-Date: 2017-07-20 21:12+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
+"PO-Revision-Date: 2017-09-08 07:27+0000\n"
+"Last-Translator: Julio García <yllelder@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
@@ -38,13 +38,12 @@ msgstr ""
 #. * Boston, MA 02110-1301 USA
 #.
 #: ../src/Translations.vala:20
-#, fuzzy
 msgid "Set as _Desktop Background"
-msgstr "Establecer como fondo de pantalla de presentación"
+msgstr "Establecer como _fondo de escritorio"
 
 #: ../src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Configurar la imagen seleccionada como fondo de escritorio"
 
 #: ../src/Views/Dock.vala:34
 msgid "Small"
@@ -194,7 +193,6 @@ msgstr "Fondo de pantalla"
 #: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
 #: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
 #: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
-#, fuzzy
 msgid "Dock"
 msgstr "Dock"
 
