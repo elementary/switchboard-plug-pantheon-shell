@@ -23,6 +23,8 @@ public class GalaPlug : Switchboard.Plug {
     Gtk.Stack stack;
     Gtk.Grid main_grid;
 
+    private Wallpaper wallpaper_view;
+
     public GalaPlug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("desktop", null);
@@ -41,12 +43,12 @@ public class GalaPlug : Switchboard.Plug {
         if (main_grid == null) {
             main_grid = new Gtk.Grid ();
 
-            var wallpaper = new Wallpaper (this);
+            wallpaper_view = new Wallpaper (this);
             var dock = new Dock ();
             var hotcorners = new HotCorners ();
 
             stack = new Gtk.Stack ();
-            stack.add_titled (wallpaper, "wallpaper", _("Wallpaper"));
+            stack.add_titled (wallpaper_view, "wallpaper", _("Wallpaper"));
             stack.add_titled (dock, "dock", _("Dock"));
             stack.add_titled (hotcorners, "hotc", _("Hot Corners"));
 
@@ -69,7 +71,7 @@ public class GalaPlug : Switchboard.Plug {
     }
 
     public override void hidden () {
-        
+        wallpaper_view.cancel_thumbnail_generation ();
     }
 
     public override void search_callback (string location) {
