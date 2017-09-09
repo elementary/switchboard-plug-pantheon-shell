@@ -413,8 +413,6 @@ public class Wallpaper : Gtk.Grid {
             return;
         }
 
-        folder_combo.set_sensitive (false);
-
         var directory = File.new_for_uri (basefolder);
 
         try {
@@ -479,8 +477,6 @@ public class Wallpaper : Gtk.Grid {
                     solid_color.checked = true;
                     active_wallpaper = solid_color;
                 }
-
-                folder_combo.set_sensitive (true);
             }
         } catch (Error err) {
             if (!(err is IOError.NOT_FOUND)) {
