@@ -329,7 +329,7 @@ public class Wallpaper : Gtk.Grid {
         }
     }
 
-    private async void load_wallpapers (string basefolder, Cancellable cancellable) {
+    private async void load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
         if (cancellable.is_cancelled () == true) {
             return;
         }
@@ -355,7 +355,7 @@ public class Wallpaper : Gtk.Grid {
 
                 if (file_info.get_file_type () == FileType.DIRECTORY) {
                     // Spawn off another loader for the subdirectory
-                    yield load_wallpapers (basefolder + "/" + file_info.get_name (), cancellable);
+                    yield load_wallpapers (basefolder + "/" + file_info.get_name (), cancellable, false);
                     continue;
                 } else if (!IOHelper.is_valid_file_type (file_info)) {
                     // Skip non-picture files
@@ -390,26 +390,19 @@ public class Wallpaper : Gtk.Grid {
                 }
             }
 
-            finished = true;
-
-            if (solid_color == null) {
+            if (toplevel_folder) {
                 create_solid_color_container (color_button.rgba.to_string ());
-            } else {
-                // Ugly workaround to keep the solid color last, because currently
-                // load_wallpapers is running async, recursively. Just let each of them
-                // add / remove the tile until it's settled.
-                wallpaper_view.remove (solid_color);
+                wallpaper_view.add (solid_color);
+                finished = true;
+
+                if (settings.get_string ("picture-options") == "none") {
+                    wallpaper_view.select_child (solid_color);
+                    solid_color.checked = true;
+                    active_wallpaper = solid_color;
+                }
+
+                folder_combo.set_sensitive (true);
             }
-
-            wallpaper_view.add (solid_color);
-            if (settings.get_string ("picture-options") == "none") {
-                wallpaper_view.select_child (solid_color);
-                solid_color.checked = true;
-                active_wallpaper = solid_color;
-            }
-
-            folder_combo.set_sensitive (true);
-
         } catch (Error err) {
             if (!(err is IOError.NOT_FOUND)) {
                 warning (err.message);
