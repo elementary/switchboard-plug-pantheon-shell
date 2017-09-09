@@ -423,6 +423,7 @@ public class Wallpaper : Gtk.Grid {
             // Loop through and add each wallpaper in the batch
             while ((file_info = e.next_file ()) != null) {
                 if (cancellable.is_cancelled () == true) {
+                    ThumbnailGenerator.get_default ().dequeue_all ();
                     return;
                 }
 
