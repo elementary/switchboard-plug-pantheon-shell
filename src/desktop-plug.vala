@@ -67,7 +67,7 @@ public class GalaPlug : Switchboard.Plug {
     }
 
     public override void shown () {
-        
+        wallpaper_view.update_wallpaper_folder ();
     }
 
     public override void hidden () {

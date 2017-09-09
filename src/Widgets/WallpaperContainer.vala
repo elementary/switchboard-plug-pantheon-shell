@@ -153,7 +153,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     private void generate_and_load_thumb () {
-        ThumbnailGenerator.get_default ().get_thumbnail (uri, 128 * scale, () => {
+        ThumbnailGenerator.get_default ().get_thumbnail (uri, THUMB_WIDTH * scale, () => {
             try {
                 var file = File.new_for_uri (uri);
                 var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);

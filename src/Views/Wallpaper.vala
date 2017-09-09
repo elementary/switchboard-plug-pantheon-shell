@@ -143,10 +143,11 @@ public class Wallpaper : Gtk.Grid {
         folder_combo.append (PICTURES_DIR_COMBO_ID, _("Pictures"));
         folder_combo.append (SYSTEM_DIR_COMBO_ID, _("Backgrounds"));
         folder_combo.append (CUSTOM_DIR_COMBO_ID, _("Custom…"));
-        folder_combo.changed.connect (update_wallpaper_folder);
 
         var saved_id = plug_settings.get_string ("current-wallpaper-source");
         current_custom_directory_path = plug_settings.get_string ("current-custom-path");
+
+        folder_combo.changed.connect (update_wallpaper_folder);
 
         if (saved_id == CUSTOM_DIR_COMBO_ID) {
             if (!check_custom_dir_valid (current_custom_directory_path)) {
@@ -247,6 +248,11 @@ public class Wallpaper : Gtk.Grid {
     }
 
     private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
+        plug_settings.set_string ("current-wallpaper-source", folder_combo.active_id);
+        if (folder_combo.active_id == CUSTOM_DIR_COMBO_ID && current_custom_directory_path != null) {
+            plug_settings.set_string ("current-custom-path", current_custom_directory_path);
+        }
+
         var children = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
 
         if (!(children is SolidColorContainer)) {
@@ -323,9 +329,7 @@ public class Wallpaper : Gtk.Grid {
         }
     }
 
-    private void update_wallpaper_folder () {
-        plug_settings.set_string ("current-wallpaper-source", folder_combo.active_id);
-
+    public void update_wallpaper_folder () {
         if (last_cancellable != null) {
             last_cancellable.cancel ();
         }
@@ -392,7 +396,6 @@ public class Wallpaper : Gtk.Grid {
             var cancellable = new Cancellable ();
             last_cancellable = cancellable;
             var uri = dialog.get_file ().get_uri ();
-            plug_settings.set_string ("current-custom-path", uri);
             current_custom_directory_path = uri;
             clean_wallpapers ();
             load_wallpapers.begin (uri, cancellable);
