@@ -417,7 +417,8 @@ public class Wallpaper : Gtk.Grid {
 
         try {
             // Enumerator object that will let us read through the wallpapers asynchronously
-            var e = yield directory.enumerate_children_async (string.joinv (",", required_file_attrs), 0, Priority.DEFAULT);
+            var attrs = string.joinv (",", required_file_attrs);
+            var e = yield directory.enumerate_children_async (attrs, 0, Priority.DEFAULT);
             FileInfo file_info;
 
             // Loop through and add each wallpaper in the batch
@@ -449,7 +450,9 @@ public class Wallpaper : Gtk.Grid {
                     continue;
                 }
 
-                var wallpaper = new WallpaperContainer (uri, file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH), file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID));
+                var thumb_path = file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+                var thumb_valid = file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
+                var wallpaper = new WallpaperContainer (uri, thumb_path, thumb_valid);
                 wallpaper_view.add (wallpaper);
                 wallpaper.show_all ();
 
@@ -580,7 +583,9 @@ public class Wallpaper : Gtk.Grid {
                 }
 
                 // Add the wallpaper name and thumbnail to the IconView
-                var wallpaper = new WallpaperContainer (local_uri, info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH), info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID));
+                var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+                var thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
+                var wallpaper = new WallpaperContainer (local_uri, thumb_path, thumb_valid);
                 wallpaper_view.add (wallpaper);
                 wallpaper.show_all ();
 
