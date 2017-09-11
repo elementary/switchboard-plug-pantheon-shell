@@ -22,6 +22,7 @@
 [DBus (name = "org.freedesktop.thumbnails.Thumbnailer1")]
 interface Thumbnailer : Object {
     public signal void ready (uint32 handle, string[] uris);
+    public signal void finished (uint32 handle);
     public abstract uint32 queue (string[] uris, string [] mime_types, string flavor, string scheduler, uint32 dequeue) throws IOError;
     public abstract void dequeue (uint32 handle) throws IOError;
 }
@@ -37,7 +38,7 @@ public class ThumbnailGenerator {
 
     private static ThumbnailGenerator? instance = null;
     private Thumbnailer? thumbnailer = null;
-    private Gee.HashMap<string, ThumbnailReadyWrapper> queued_delegates = new Gee.HashMap<string, ThumbnailReadyWrapper> ();
+    private Gee.HashMap<uint32, ThumbnailReadyWrapper> queued_delegates = new Gee.HashMap<uint32, ThumbnailReadyWrapper> ();
     private Gee.ArrayList<uint32> handles = new Gee.ArrayList<uint32> ();
 
     public static ThumbnailGenerator get_default () {
@@ -50,21 +51,16 @@ public class ThumbnailGenerator {
 
     public ThumbnailGenerator () {
         try {
-            var to_remove = new Gee.ArrayList<string> ();
             thumbnailer = Bus.get_proxy_sync (BusType.SESSION, THUMBNAILER_DBUS_ID, THUMBNAILER_DBUS_PATH);
             thumbnailer.ready.connect ((handle, uris) => {
-                foreach (var uri in uris) {
-                    if (queued_delegates.has_key (uri)) {
-                        var wrapper = queued_delegates [uri];
-                        wrapper.cb ();
-                        to_remove.add (uri);
-                        handles.remove (handle);
-                    }
+                if (queued_delegates.has_key (handle)) {
+                    queued_delegates [handle].cb ();
                 }
+            });
 
-                foreach (var key in to_remove) {
-                    queued_delegates.unset (key);
-                }
+            thumbnailer.finished.connect ((handle) => {
+                queued_delegates.unset (handle);
+                handles.remove (handle);
             });
         } catch (Error e) {
             warning ("Unable to connect to system thumbnailer: %s", e.message);
@@ -95,7 +91,7 @@ public class ThumbnailGenerator {
             try {
                 var handle = thumbnailer.queue ({ uri }, { get_mime_type (uri) }, thumb_size, "default", 0);
                 handles.add (handle);
-                queued_delegates.@set (uri, wrapper);
+                queued_delegates.@set (handle, wrapper);
             } catch (IOError e) {
                 warning ("Unable to queue thumbnail generation for '%s': %s", uri, e.message);
             }
