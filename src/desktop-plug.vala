@@ -41,8 +41,6 @@ public class GalaPlug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (main_grid == null) {
-            Cache.init ();
-            
             main_grid = new Gtk.Grid ();
 
             wallpaper_view = new Wallpaper (this);
@@ -69,7 +67,7 @@ public class GalaPlug : Switchboard.Plug {
     }
 
     public override void shown () {
-        
+        wallpaper_view.update_wallpaper_folder ();
     }
 
     public override void hidden () {
