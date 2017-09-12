@@ -19,11 +19,18 @@
  */
 
 public class WallpaperContainer : Gtk.FlowBoxChild {
+    private const int THUMB_WIDTH = 128;
+    private const int THUMB_HEIGHT = 72;
+
     private Gtk.Revealer check_revealer;
     private Gtk.Image image;
 
+    public string? thumb_path { get; construct; }
+    public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
-    public Gdk.Pixbuf thumb { get; construct; }
+    public Gdk.Pixbuf thumb { get; set; }
+
+    private int scale;
 
     const string CARD_STYLE_CSS = """
         flowboxchild,
@@ -73,12 +80,16 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
     }
 
-    public WallpaperContainer (string uri) {
-        Object (uri: uri);
+    public WallpaperContainer (string uri, string? thumb_path, bool thumb_valid) {
+        Object (uri: uri, thumb_path: thumb_path, thumb_valid: thumb_valid);
     }
 
     construct {
-        var scale = get_style_context ().get_scale ();
+        scale = get_style_context ().get_scale ();
+
+        height_request = THUMB_HEIGHT + 18;
+        width_request = THUMB_WIDTH + 18;
+
         var provider = new Gtk.CssProvider ();
         try {
             provider.load_from_data (CARD_STYLE_CSS, CARD_STYLE_CSS.length);
@@ -87,24 +98,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             critical (e.message);
         }
 
-         try {
-            if (uri != null) {
-                if (Cache.is_cached (uri, scale)) {
-                    thumb = Cache.get_cached_image (uri, scale);
-                } else {
-                    thumb = new Gdk.Pixbuf.from_file_at_scale (GLib.Filename.from_uri (uri), 162 * scale, 100 * scale, false);
-                    Cache.cache_image_pixbuf (thumb, uri, scale);
-                }
-            } else {
-                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, 162 * scale, 100 * scale);
-            }
-        } catch (Error e) {
-            critical ("Failed to load wallpaper thumbnail: %s", e.message);
-            return;
-        }
-
         image = new Gtk.Image ();
-        image.gicon = thumb;
         image.halign = Gtk.Align.CENTER;
         image.valign = Gtk.Align.CENTER;
         image.get_style_context ().set_scale (1);
@@ -128,13 +122,53 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
 
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
-        height_request = thumb.get_height () / scale + 18;
-        width_request = thumb.get_width () / scale + 18;
+
         margin = 6;
         add (overlay);
 
         activate.connect (() => {
             checked = true;
         });
+
+        try {
+            if (uri != null) {
+                if (thumb_path != null && thumb_valid) {
+                    try {
+                        thumb = new Gdk.Pixbuf.from_file_at_scale (thumb_path, THUMB_WIDTH * scale, THUMB_HEIGHT * scale, false);
+                        thumb_ready ();
+                    } catch (Error e) {
+                        warning ("Error loading thumbnail '%s': %s", thumb_path, e.message);
+                    }
+                } else {
+                    generate_and_load_thumb ();
+                }
+            } else {
+                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale);
+                thumb_ready ();
+            }
+        } catch (Error e) {
+            critical ("Failed to load wallpaper thumbnail: %s", e.message);
+            return;
+        }
+    }
+
+    private void generate_and_load_thumb () {
+        ThumbnailGenerator.get_default ().get_thumbnail (uri, THUMB_WIDTH * scale, () => {
+            try {
+                var file = File.new_for_uri (uri);
+                var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);
+                var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+                if (thumb_path != null) {
+                    thumb = new Gdk.Pixbuf.from_file_at_scale (thumb_path, THUMB_WIDTH * scale, THUMB_HEIGHT * scale, false);
+                    thumb_ready ();
+                }
+            } catch (Error e) {
+                warning ("Error loading thumbnail for '%s': %s", uri, e.message);
+            }
+        });
+    }
+
+    private void thumb_ready () {
+        image.gicon = thumb;
     }
 }
