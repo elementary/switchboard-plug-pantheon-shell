@@ -274,7 +274,7 @@ public class Wallpaper : Gtk.Grid {
 
         children.checked = true;
 
-        if (active_wallpaper != null) {
+        if (active_wallpaper != null && active_wallpaper != children) {
             active_wallpaper.checked = false;
         }
 
