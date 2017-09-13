@@ -12,7 +12,6 @@ add_definitions (${DEPS_CFLAGS})
 link_libraries (${DEPS_LIBRARIES})
 link_directories (${DEPS_LIBRARY_DIRS})
 
-find_package (Vala REQUIRED)
 include (ValaVersion)
 ensure_vala_version ("0.22.0" MINIMUM)
 

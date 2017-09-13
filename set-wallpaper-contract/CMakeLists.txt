@@ -5,7 +5,6 @@ set (DEPENDENCIES granite)
 
 configure_file (set-wallpaper.contract.in ${CMAKE_CURRENT_BINARY_DIR}/set-wallpaper.contract)
 
-find_package (PkgConfig)
 pkg_check_modules (DEPS REQUIRED ${DEPENDENCIES})
 
 vala_precompile (WALLPAPER_CONTRACT_VALA_C ${EXEC_NAME} ${SOURCES} PACKAGES ${DEPENDENCIES} posix)
