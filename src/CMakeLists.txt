@@ -1,5 +1,3 @@
-find_package (PkgConfig)
-
 # Add all your dependencies to the list below
 pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite gtk+-3.0>=3.14 gnome-desktop-3.0 plank>=0.7.1.1137)
 
@@ -12,6 +10,7 @@ add_definitions (${DEPS_CFLAGS})
 link_libraries (${DEPS_LIBRARIES})
 link_directories (${DEPS_LIBRARY_DIRS})
 
+find_package (Vala REQUIRED)
 include (ValaVersion)
 ensure_vala_version ("0.22.0" MINIMUM)
 
