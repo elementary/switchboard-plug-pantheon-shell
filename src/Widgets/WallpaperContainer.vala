@@ -168,7 +168,30 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         });
     }
 
+    private void load_artist_tooltip () {
+        if (uri != null) {
+            string path = "";
+            GExiv2.Metadata metadata;
+            try {
+                path = Filename.from_uri (uri);
+                metadata = new GExiv2.Metadata ();
+                metadata.open_path (path);
+            } catch (Error e) {
+                warning ("Error parsing exif metadata of \"%s\": %s", path, e.message);
+                return;
+            }
+
+            if (metadata.has_exif ()) {
+                var artist_name = metadata.get_tag_string ("Exif.Image.Artist");
+                if (artist_name != null) {
+                    set_tooltip_text (_("Artist: %s").printf (artist_name));
+                }
+            }
+        }
+    }
+
     private void thumb_ready () {
         image.gicon = thumb;
+        load_artist_tooltip ();
     }
 }
