@@ -9,6 +9,7 @@ Build-Depends: cmake (>= 2.8),
                libgtk-3-dev (>= 3.14),
                libplank-dev,
                libswitchboard-2.0-dev,
+               libgexiv2-dev,
                valac (>= 0.26)
 Standards-Version: 3.9.6
 Homepage: https://launchpad.net/switchboard-plug-pantheon-shell
