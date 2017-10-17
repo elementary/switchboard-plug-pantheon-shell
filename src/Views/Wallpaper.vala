@@ -77,6 +77,7 @@ public class Wallpaper : Gtk.Grid {
     //Instance of the AccountsServices-Interface for this user
     private AccountsServiceUser accountsservice = null;
 
+    private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
     private Gtk.ComboBoxText combo;
     private Gtk.ComboBoxText folder_combo;
@@ -134,9 +135,9 @@ public class Wallpaper : Gtk.Grid {
         wallpaper_view.drag_data_received.connect (on_drag_data_received);
         Gtk.drag_dest_set (wallpaper_view, Gtk.DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.add (wallpaper_view);
+        wallpaper_scrolled_window = new Gtk.ScrolledWindow (null, null);
+        wallpaper_scrolled_window.expand = true;
+        wallpaper_scrolled_window.add (wallpaper_view);
 
         folder_combo = new Gtk.ComboBoxText ();
         folder_combo.margin = 12;
@@ -197,7 +198,7 @@ public class Wallpaper : Gtk.Grid {
         actionbar.pack_end (combo);
 
         attach (separator, 0, 0, 1, 1);
-        attach (scrolled, 0, 1, 1, 1);
+        attach (wallpaper_scrolled_window, 0, 1, 1, 1);
         attach (actionbar, 0, 2, 1, 1);
     }
 
@@ -453,7 +454,7 @@ public class Wallpaper : Gtk.Grid {
                 var thumb_path = file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
                 var thumb_valid = file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
                 var wallpaper = new WallpaperContainer (uri, thumb_path, thumb_valid);
-                wallpaper_view.add (wallpaper);
+                wallpaper_view.insert (wallpaper, -1);
                 wallpaper.show_all ();
 
                 // Select the wallpaper if it is the current wallpaper
@@ -480,6 +481,12 @@ public class Wallpaper : Gtk.Grid {
                     wallpaper_view.select_child (solid_color);
                     solid_color.checked = true;
                     active_wallpaper = solid_color;
+                }
+
+                if (active_wallpaper != null) {
+                    Gtk.Allocation alloc;
+                    active_wallpaper.get_allocation (out alloc);
+                    wallpaper_scrolled_window.get_vadjustment ().value = alloc.y;
                 }
             }
         } catch (Error err) {
