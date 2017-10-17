@@ -19,8 +19,8 @@
  */
 
 public class WallpaperContainer : Gtk.FlowBoxChild {
-    private const int THUMB_WIDTH = 128;
-    private const int THUMB_HEIGHT = 72;
+    private const int THUMB_WIDTH = 162;
+    private const int THUMB_HEIGHT = 100;
 
     private Gtk.Revealer check_revealer;
     private Gtk.Image image;
