@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-17 01:53+0200\n"
 "PO-Revision-Date: 2017-11-04 20:06+0000\n"
-"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/it/>\n"
 "Language: it\n"
@@ -43,7 +43,7 @@ msgstr "Imposta come sfondo del _desktop"
 
 #: ../src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Imposta l'immagine selezionata come nuovo sfondo del desktop"
 
 #: ../src/Views/Dock.vala:34
 msgid "Small"
