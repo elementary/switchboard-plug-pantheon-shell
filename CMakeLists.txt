@@ -42,14 +42,6 @@ find_package (PkgConfig)
 configure_file (${CMAKE_SOURCE_DIR}/config.vala.cmake ${CMAKE_BINARY_DIR}/src/config.vala)
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 
-# Add 'make dist' command for creating release tarball
-set (CPACK_PACKAGE_VERSION ${VERSION})
-set (CPACK_SOURCE_GENERATOR "TGZ")
-set (CPACK_SOURCE_PACKAGE_FILE_NAME "${CMAKE_PROJECT_NAME}-${CPACK_PACKAGE_VERSION}")
-set (CPACK_SOURCE_IGNORE_FILES "/build/;/.bzr/;/.bzrignore;~$;${CPACK_SOURCE_IGNORE_FILES}")
-include (CPack)
-add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
-
 include(GSettings)
 add_schema("data/io.elementary.switchboard.plug.desktop.gschema.xml")
 
