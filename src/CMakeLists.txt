@@ -1,5 +1,5 @@
 # Add all your dependencies to the list below
-pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite gtk+-3.0>=3.14 gexiv2 gnome-desktop-3.0 plank>=0.7.1.1137)
+pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite>=0.5 gtk+-3.0>=3.14 gexiv2 gnome-desktop-3.0 plank>=0.7.1.1137)
 
 pkg_check_modules(PLANK011 QUIET plank>=0.10.9)
 if (PLANK011_FOUND)
