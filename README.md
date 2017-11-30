@@ -2,6 +2,18 @@
 
 ## Building and Installation
 
+You'll need the following dependencies:
+
+* cmake
+* gnome-settings-daemon-dev
+* libswitchboard-2.0-dev
+* libgnome-desktop-3-dev
+* libgee-0.8-dev
+* libgexiv2-dev
+* libplank-dev
+* libgranite-dev
+* valac
+
 It's recommended to create a clean build environment
 
     mkdir build
