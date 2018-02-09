@@ -188,7 +188,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         }
 
         try {
-            yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH * scale, THUMB_HEIGHT * scale, false);
+            yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
         } catch (Error e) {
             warning (e.message);
         }
