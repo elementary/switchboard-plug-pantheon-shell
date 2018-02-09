@@ -16,46 +16,18 @@
  *
  */
 
-// Helper class for the file IO functions we'll need
-// Not needed at all, but helpful for organization
-public class IOHelper : GLib.Object {
-    private const string[] ACCEPTED_TYPES = {
-        "image/jpeg",
-        "image/png",
-        "image/tiff",
-        "image/svg+xml",
-        "image/gif"
-    };
-
-    // Check if the filename has a picture file extension.
-    public static bool is_valid_file_type (GLib.FileInfo file_info) {
-        // Check for correct file type, don't try to load directories and such
-        if (file_info.get_file_type () != GLib.FileType.REGULAR) {
-            return false;
-        }
-
-        foreach (var type in ACCEPTED_TYPES) {
-            if (GLib.ContentType.equals (file_info.get_content_type (), type)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-}
-
-public enum ColumnType {
-    ICON,
-    NAME
-}
-
 [DBus (name = "org.freedesktop.Accounts.User")]
 interface AccountsServiceUser : Object {
     public abstract void set_background_file (string filename) throws IOError;
 }
 
 public class Wallpaper : Gtk.Grid {
-    private const string [] required_file_attrs = {
+    public enum ColumnType {
+        ICON,
+        NAME
+    }
+
+    private const string [] REQUIRED_FILE_ATTRS = {
         FileAttribute.STANDARD_NAME,
         FileAttribute.STANDARD_TYPE,
         FileAttribute.STANDARD_CONTENT_TYPE,
@@ -75,7 +47,7 @@ public class Wallpaper : Gtk.Grid {
     private GLib.Settings plug_settings;
 
     //Instance of the AccountsServices-Interface for this user
-    private AccountsServiceUser accountsservice = null;
+    private AccountsServiceUser? accountsservice = null;
 
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
@@ -92,7 +64,7 @@ public class Wallpaper : Gtk.Grid {
     private string current_wallpaper_path;
     private string? current_custom_directory_path = null;
     private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
-    public bool finished; //shows that we got or wallpapers together
+    private bool finished; // Shows that we got or wallpapers together
 
     private const string PICTURES_DIR_COMBO_ID = "pic";
     private const string SYSTEM_DIR_COMBO_ID = "sys";
@@ -108,13 +80,13 @@ public class Wallpaper : Gtk.Grid {
 
         custom_folder_button_revealer = new Gtk.Revealer ();
 
-        //DBus connection needed in update_wallpaper for
-        //passing the wallpaper-information to accountsservice.
+        // DBus connection needed in update_wallpaper for
+        // passing the wallpaper-information to accountsservice.
          try {
-            string uid = "%d".printf ((int) Posix.getuid ());
+            int uid = (int)Posix.getuid ();
             accountsservice = Bus.get_proxy_sync (BusType.SYSTEM,
                     "org.freedesktop.Accounts",
-                    "/org/freedesktop/Accounts/User" + uid);
+                    "/org/freedesktop/Accounts/User%i".printf (uid));
         } catch (Error e) {
             warning (e.message);
         }
@@ -211,6 +183,7 @@ public class Wallpaper : Gtk.Grid {
             combo.set_sensitive (false);
             picture_options = "zoom";
         }
+
         prevent_update_mode = true;
         combo.set_active_id (picture_options);
 
@@ -230,9 +203,9 @@ public class Wallpaper : Gtk.Grid {
             string path = file.get_path ();
 
             if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
-                var localfile = copy_for_library (file);
-                if (localfile != null) {
-                    uri = localfile.get_uri ();
+                var local_file = copy_for_library (file);
+                if (local_file != null) {
+                    uri = local_file.get_uri ();
                 }
             }
 
@@ -362,7 +335,7 @@ public class Wallpaper : Gtk.Grid {
         }
     }
 
-    private bool check_custom_dir_valid (string? uri) {
+    private static bool check_custom_dir_valid (string? uri) {
         if (uri == null || uri == "") {
             return false;
         }
@@ -394,12 +367,12 @@ public class Wallpaper : Gtk.Grid {
                 last_cancellable.cancel ();
             }
 
-            var cancellable = new Cancellable ();
-            last_cancellable = cancellable;
+            last_cancellable = new Cancellable ();
+
             var uri = dialog.get_file ().get_uri ();
             current_custom_directory_path = uri;
             clean_wallpapers ();
-            load_wallpapers.begin (uri, cancellable);
+            load_wallpapers.begin (uri, last_cancellable);
             dialog.destroy ();
         } else {
             dialog.destroy ();
@@ -410,7 +383,7 @@ public class Wallpaper : Gtk.Grid {
     }
 
     private async void load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
-        if (cancellable.is_cancelled () == true) {
+        if (cancellable.is_cancelled ()) {
             return;
         }
 
@@ -418,13 +391,13 @@ public class Wallpaper : Gtk.Grid {
 
         try {
             // Enumerator object that will let us read through the wallpapers asynchronously
-            var attrs = string.joinv (",", required_file_attrs);
+            var attrs = string.joinv (",", REQUIRED_FILE_ATTRS);
             var e = yield directory.enumerate_children_async (attrs, 0, Priority.DEFAULT);
             FileInfo file_info;
 
             // Loop through and add each wallpaper in the batch
             while ((file_info = e.next_file ()) != null) {
-                if (cancellable.is_cancelled () == true) {
+                if (cancellable.is_cancelled ()) {
                     ThumbnailGenerator.get_default ().dequeue_all ();
                     return;
                 }
@@ -435,14 +408,15 @@ public class Wallpaper : Gtk.Grid {
 
                 if (file_info.get_file_type () == FileType.DIRECTORY) {
                     // Spawn off another loader for the subdirectory
-                    yield load_wallpapers (basefolder + "/" + file_info.get_name (), cancellable, false);
+                    var subdir = directory.resolve_relative_path (file_info.get_name ());
+                    yield load_wallpapers (subdir.get_path (), cancellable, false);
                     continue;
                 } else if (!IOHelper.is_valid_file_type (file_info)) {
                     // Skip non-picture files
                     continue;
                 }
 
-                var file = File.new_for_uri (basefolder + "/" + file_info.get_name ());
+                var file = directory.resolve_relative_path (file_info.get_name ());
                 string uri = file.get_uri ();
 
                 // Skip the default_wallpaper as seen in the description of the
@@ -460,15 +434,9 @@ public class Wallpaper : Gtk.Grid {
                 // Select the wallpaper if it is the current wallpaper
                 if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
                     this.wallpaper_view.select_child (wallpaper);
-                    //set the widget activated without activating it
+                    // Set the widget activated without activating it
                     wallpaper.checked = true;
                     active_wallpaper = wallpaper;
-                }
-
-                // Have GTK update the UI even while we're busy
-                // working on file IO.
-                while(Gtk.events_pending ()) {
-                    Gtk.main_iteration();
                 }
             }
 
@@ -515,15 +483,16 @@ public class Wallpaper : Gtk.Grid {
         solid_color = null;
     }
 
-    private string get_local_bg_location () {
+    private static string get_local_bg_location () {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
-    private File? copy_for_library (File source) {
+    private static File? copy_for_library (File source) {
         File? dest = null;
 
+        string local_bg_location = get_local_bg_location ();
         try {
-            File folder = File.new_for_path (get_local_bg_location ());
+            File folder = File.new_for_path (local_bg_location);
             folder.make_directory_with_parents ();
         } catch (Error e) {
             if (e is GLib.IOError.EXISTS) {
@@ -534,16 +503,17 @@ public class Wallpaper : Gtk.Grid {
         }
 
         try {
-            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            string path = Path.build_filename (local_bg_location, source.get_basename ());
+            dest = File.new_for_path (path);
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
-            warning ("%s\n", e.message);
+            warning (e.message);
         }
 
         return dest;
     }
 
-    private File? copy_for_greeter (File source) {
+    private static File? copy_for_greeter (File source) {
         File? dest = null;
         try {
             string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
@@ -565,7 +535,7 @@ public class Wallpaper : Gtk.Grid {
             dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
-            warning ("%s\n", e.message);
+            warning (e.message);
             return null;
         }
 
@@ -576,7 +546,7 @@ public class Wallpaper : Gtk.Grid {
         if (sel.get_length () > 0) {
             try {
                 File file = File.new_for_uri (sel.get_uris ()[0]);
-                var info = file.query_info (string.joinv (",", required_file_attrs), 0);
+                var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
 
                 if (!IOHelper.is_valid_file_type (info)) {
                     Gtk.drag_finish (ctx, false, false, timestamp);
@@ -598,10 +568,8 @@ public class Wallpaper : Gtk.Grid {
 
                 Gtk.drag_finish (ctx, true, false, timestamp);
             } catch (Error e) {
-                warning ("%s\n", e.message);
+                warning (e.message);
             }
-
-            return;
         }
 
         Gtk.drag_finish (ctx, false, false, timestamp);
