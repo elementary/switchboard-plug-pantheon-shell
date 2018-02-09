@@ -20,6 +20,7 @@ vala_precompile (VALA_C ${PLUGNAME}
     ThumbnailGenerator.vala
     desktop-plug.vala
     GalaSettings.vala
+    IOHelper.vala
     Views/Dock.vala
     Views/HotCorners.vala
     Views/Wallpaper.vala
