@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-17 01:53+0200\n"
-"PO-Revision-Date: 2017-02-14 21:28+0000\n"
-"Last-Translator: Rokar <Unknown>\n"
-"Language-Team: Kurdish <ku@li.org>\n"
+"PO-Revision-Date: 2018-02-11 00:08+0000\n"
+"Last-Translator: Rokar <mail@rokar.de>\n"
+"Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/ku/>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-15 06:30+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -150,7 +151,7 @@ msgstr "Paşxane"
 
 #: ../src/Views/Wallpaper.vala:148
 msgid "Custom…"
-msgstr "Texlîd..."
+msgstr "Texlîd …"
 
 #: ../src/Views/Wallpaper.vala:154
 msgid "Centered"
@@ -218,7 +219,7 @@ msgstr "Nîşandan"
 #: ../set-wallpaper-contract/set-wallpaper.vala:90
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] "%d çirke"
+msgstr[0] "%d çirk"
 msgstr[1] "%d çirke"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:93
@@ -231,7 +232,7 @@ msgstr[1] "%deqe"
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d saet"
-msgstr[1] "%d saet"
+msgstr[1] "%d saete"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:100
 msgid "1 day"
