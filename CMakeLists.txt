@@ -45,13 +45,8 @@ add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 include(GSettings)
 add_schema("data/io.elementary.switchboard.plug.desktop.gschema.xml")
 
-# Files
-file (GLOB resources ${CMAKE_CURRENT_SOURCE_DIR}/data/*.svg)
-
 # Traslation stuff
 add_subdirectory (po)
-# Info-plug
-install (FILES ${resources} DESTINATION ${PKGDATADIR})
 
 add_subdirectory(src)
 add_subdirectory(set-wallpaper-contract)
