@@ -40,7 +40,10 @@ OPTIONS
     ${PLANK_OPTIONS}
 )
 
-add_library (${PLUGNAME} MODULE ${VALA_C})
+include (GResource)
+glib_compile_resources (GLIB_RESOURCES_IMAGES SOURCE ../data/icons.gresource.xml)
+
+add_library (${PLUGNAME} MODULE ${VALA_C} ${GLIB_RESOURCES_IMAGES})
 target_link_libraries(${PLUGNAME} m)
 
 # Installation

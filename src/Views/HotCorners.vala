@@ -55,7 +55,7 @@ public class HotCorners : Gtk.Grid {
         bottomright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomright").to_string ();
         bottomright.valign = Gtk.Align.END;
 
-        var icon = new Gtk.Image.from_file (Constants.PKGDATADIR + "/hotcornerdisplay.svg");
+        var icon = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/hotcornerdisplay.svg");
         icon.get_style_context ().add_class ("hotcorner-display");
 
         var custom_command = new Gtk.Entry ();
