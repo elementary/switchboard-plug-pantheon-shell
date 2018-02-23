@@ -22,22 +22,6 @@ gobject_dep = dependency('gobject-2.0')
 gtk_dep = dependency('gtk+-3.0')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 
-vala_args = []
-if (plank_dep.version().version_compare('>=0.10.9'))
-  vala_args += '--define=HAVE_PLANK_0_11'
-endif
-
-plank_datadir = plank_dep.get_pkgconfig_variable('pkgdatadir')
-
-configuration = configuration_data()
-configuration.set('PLANKDATADIR', plank_datadir)
-
-config_file = configure_file(
-    input: 'config.vala.cmake',
-    output: '@BASENAME@',
-    configuration: configuration
-)
-
 plug_resources = gnome.compile_resources(
     'plug_resources',
     'data/icons.gresource.xml',
