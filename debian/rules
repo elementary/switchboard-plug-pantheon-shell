@@ -13,7 +13,7 @@
 	dh $@ 
 
 override_dh_strip:
-	dh_strip --dbg-package=switchboard-plug-pantheon-shell-dbg
+	dh_strip --dbgsym-migration='switchboard-plug-pantheon-shell-dbg (<< 0.2.6)'
 
-override_dh_install:
-	dh_install --fail-missing
+override_dh_missing:
+	dh_missing --fail-missing
