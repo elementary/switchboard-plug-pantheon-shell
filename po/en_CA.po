@@ -8,16 +8,18 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-17 01:53+0200\n"
-"PO-Revision-Date: 2016-11-03 19:47+0000\n"
-"Last-Translator: wec <tungsten314@gmail.com>\n"
-"Language-Team: English (Canada) <en_CA@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-02-23 18:41+0000\n"
+"Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
+"Language-Team: English (Canada) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"pantheon-shell/en_CA/>\n"
+"Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #. //github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -46,7 +48,7 @@ msgstr "Set selected image to be the new desktop background"
 
 #: ../src/Views/Dock.vala:34
 msgid "Small"
-msgstr ""
+msgstr "Small"
 
 #: ../src/Views/Dock.vala:35
 msgid "Normal"
@@ -78,7 +80,7 @@ msgstr "Not being used"
 
 #: ../src/Views/Dock.vala:126
 msgid "Primary display:"
-msgstr ""
+msgstr "Primary display:"
 
 #: ../src/Views/Dock.vala:130
 msgid "Display:"
@@ -94,7 +96,7 @@ msgstr "Hide when:"
 
 #: ../src/Views/Dock.vala:167
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Pressure reveal:"
 
 #: ../src/Views/Dock.vala:206
 msgid "Monitor %d"
@@ -110,7 +112,7 @@ msgstr "When the cursor enters the corner of the display:"
 
 #: ../src/Views/HotCorners.vala:62
 msgid "Custom command:"
-msgstr ""
+msgstr "Custom command:"
 
 #: ../src/Views/HotCorners.vala:78
 msgid "Do nothing"
@@ -122,11 +124,11 @@ msgstr "Multitasking View"
 
 #: ../src/Views/HotCorners.vala:80
 msgid "Maximize current window"
-msgstr ""
+msgstr "Maximize current window"
 
 #: ../src/Views/HotCorners.vala:81
 msgid "Minimize current window"
-msgstr ""
+msgstr "Minimize current window"
 
 #: ../src/Views/HotCorners.vala:82
 msgid "Show Applications Menu"
@@ -138,7 +140,7 @@ msgstr "Show all windows"
 
 #: ../src/Views/HotCorners.vala:84
 msgid "Execute custom command"
-msgstr ""
+msgstr "Execute custom command"
 
 #: ../src/Views/Wallpaper.vala:146
 msgid "Pictures"
@@ -239,12 +241,12 @@ msgstr "1 day"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:104
 msgid "Show each photo for"
-msgstr ""
+msgstr "Show each photo for"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:217
 #: ../set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Set As Desktop Slideshow"
 
 #: ../set-wallpaper-contract/set-wallpaper.vala:221
 msgid "Create slideshow"
