@@ -31,7 +31,6 @@ public class UnsplashRepository : GLib.Object, IRepository {
             case Json.NodeType.NULL:
                 return null;
         }
-        // return { new RemoteWallpaperContainer (url, thumb_url) };
         return wallpapers;
     }
 
@@ -59,7 +58,11 @@ public class UnsplashRepository : GLib.Object, IRepository {
             "client_id", APP_ID
         );
 
-        call.run ();
+        try {
+            call.run ();
+        } catch (Error e) {
+            warning (e.message);
+        }
         var payload = call.get_payload ();
         print (payload+"\n");
 
@@ -77,7 +80,11 @@ public class UnsplashRepository : GLib.Object, IRepository {
             "client_id", APP_ID
         );
 
-        call.run ();
+        try {
+            call.run ();
+        } catch (Error e) {
+            warning (e.message);
+        }
         var payload = call.get_payload ();
         return parse_json (payload);
     }
