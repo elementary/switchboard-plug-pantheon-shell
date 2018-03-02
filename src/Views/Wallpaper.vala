@@ -22,24 +22,6 @@ interface AccountsServiceUser : Object {
 }
 
 public class Wallpaper : Gtk.Grid {
-    public enum ColumnType {
-        ICON,
-        NAME
-    }
-
-    private const string [] REQUIRED_FILE_ATTRS = {
-        FileAttribute.STANDARD_NAME,
-        FileAttribute.STANDARD_TYPE,
-        FileAttribute.STANDARD_CONTENT_TYPE,
-        FileAttribute.STANDARD_IS_HIDDEN,
-        FileAttribute.STANDARD_IS_BACKUP,
-        FileAttribute.THUMBNAIL_PATH,
-        FileAttribute.THUMBNAIL_IS_VALID
-    };
-
-    // name of the default-wallpaper-link that we can prevent loading it again
-    // (assumes that the defaultwallpaper is also in the system wallpaper directory)
-    static string DEFAULT_LINK = "file://%s/elementaryos-default".printf (SYSTEM_BACKGROUNDS_PATH);
     const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
 
     public Switchboard.Plug plug { get; construct set; }
@@ -51,24 +33,18 @@ public class Wallpaper : Gtk.Grid {
 
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
-    private Gtk.ComboBoxText combo;
+    private Gtk.ComboBoxText aspectfit_combo;
     private Gtk.ComboBoxText folder_combo;
     private Gtk.ColorButton color_button;
-    private Gtk.Revealer custom_folder_button_revealer;
 
-    private WallpaperContainer active_wallpaper = null;
+    private IWallpaperContainer active_wallpaper = null;
     private SolidColorContainer solid_color = null;
 
-    private Cancellable last_cancellable;
-
     private string current_wallpaper_path;
-    private string? current_custom_directory_path = null;
     private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
     private bool finished; // Shows that we got or wallpapers together
 
-    private const string PICTURES_DIR_COMBO_ID = "pic";
-    private const string SYSTEM_DIR_COMBO_ID = "sys";
-    private const string CUSTOM_DIR_COMBO_ID = "cus";
+    private GLib.HashTable<string,IRepository> repositories;
 
     public Wallpaper (Switchboard.Plug _plug) {
         Object (plug: _plug);
@@ -77,8 +53,6 @@ public class Wallpaper : Gtk.Grid {
     construct {
         settings = new GLib.Settings ("org.gnome.desktop.background");
         plug_settings = new GLib.Settings ("io.elementary.switchboard.plug.desktop");
-
-        custom_folder_button_revealer = new Gtk.Revealer ();
 
         // DBus connection needed in update_wallpaper for
         // passing the wallpaper-information to accountsservice.
@@ -111,52 +85,64 @@ public class Wallpaper : Gtk.Grid {
         wallpaper_scrolled_window.expand = true;
         wallpaper_scrolled_window.add (wallpaper_view);
 
+        repositories = new GLib.HashTable<string, IRepository> (GLib.str_hash, GLib.str_equal);
+        var picture_uri = GLib.File.new_for_path (GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)).get_uri ();
+        repositories.insert ("pic", new DirectoryRepository ({picture_uri}));
+
+        var system_uri = "file://" + SYSTEM_BACKGROUNDS_PATH;
+        var user_uri = GLib.File.new_for_path (Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/").get_uri ();
+        repositories.insert ("sys", new DirectoryRepository ({system_uri, user_uri}));
+
+        var unsplash_provider = new UnsplashRepository ();
+        repositories.insert ("unsplash", unsplash_provider);
+
         folder_combo = new Gtk.ComboBoxText ();
         folder_combo.margin = 12;
-        folder_combo.append (PICTURES_DIR_COMBO_ID, _("Pictures"));
-        folder_combo.append (SYSTEM_DIR_COMBO_ID, _("Backgrounds"));
-        folder_combo.append (CUSTOM_DIR_COMBO_ID, _("Custom…"));
+        folder_combo.append ("pic", _("Pictures"));
+        folder_combo.append ("sys", _("Backgrounds"));
+        folder_combo.append ("unsplash", _("Unsplash"));
+        folder_combo.append ("cus", _("Custom…"));
+        folder_combo.changed.connect (populate_wallpaper_view);
 
         var saved_id = plug_settings.get_string ("current-wallpaper-source");
-        current_custom_directory_path = plug_settings.get_string ("current-custom-path");
+        // current_custom_directory_path = plug_settings.get_string ("current-custom-path");
+        //
+        //
+        // if (saved_id == CUSTOM_DIR_COMBO_ID) {
+        //     if (!check_custom_dir_valid (current_custom_directory_path)) {
+        //         saved_id = plug_settings.get_default_value ("current-wallpaper-source").get_string ();
+        //         current_custom_directory_path = null;
+        //     }
+        // }
 
-        folder_combo.changed.connect (update_wallpaper_folder);
-
-        if (saved_id == CUSTOM_DIR_COMBO_ID) {
-            if (!check_custom_dir_valid (current_custom_directory_path)) {
-                saved_id = plug_settings.get_default_value ("current-wallpaper-source").get_string ();
-                current_custom_directory_path = null;
-            }
-        }
-
-        var custom_folder_open = new Gtk.Button.from_icon_name ("document-open");
-        custom_folder_open.valign = Gtk.Align.CENTER;
-        custom_folder_open.clicked.connect (() => show_custom_dir_chooser ());
-        custom_folder_button_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
-        custom_folder_button_revealer.add (custom_folder_open);
+        // var custom_folder_open = new Gtk.Button.from_icon_name ("document-open");
+        // custom_folder_open.valign = Gtk.Align.CENTER;
+        // custom_folder_open.clicked.connect (() => show_custom_dir_chooser ());
+        // custom_folder_button_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
+        // custom_folder_button_revealer.add (custom_folder_open);
 
         folder_combo.active_id = saved_id;
 
-        combo = new Gtk.ComboBoxText ();
-        combo.valign = Gtk.Align.CENTER;
-        combo.append ("centered", _("Centered"));
-        combo.append ("zoom", _("Zoom"));
-        combo.append ("spanned", _("Spanned"));
-        combo.changed.connect (update_mode);
-
+        aspectfit_combo = new Gtk.ComboBoxText ();
+        aspectfit_combo.valign = Gtk.Align.CENTER;
+        aspectfit_combo.append ("centered", _("Centered"));
+        aspectfit_combo.append ("zoom", _("Zoom"));
+        aspectfit_combo.append ("spanned", _("Spanned"));
+        aspectfit_combo.changed.connect (update_mode);
+        //
         Gdk.RGBA rgba_color = {};
         if (!rgba_color.parse (color)) {
             rgba_color = { 1, 1, 1, 1 };
         }
 
-        color_button = new Gtk.ColorButton ();
+        var color_button = new Gtk.ColorButton ();
         color_button.margin = 12;
         color_button.margin_left = 0;
         color_button.rgba = rgba_color;
         color_button.color_set.connect (update_color);
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-        size_group.add_widget (combo);
+        size_group.add_widget (aspectfit_combo);
         size_group.add_widget (color_button);
         size_group.add_widget (folder_combo);
 
@@ -165,9 +151,9 @@ public class Wallpaper : Gtk.Grid {
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         actionbar.add (folder_combo);
-        actionbar.add (custom_folder_button_revealer);
+        // actionbar.add (custom_folder_button_revealer);
         actionbar.pack_end (color_button);
-        actionbar.pack_end (combo);
+        actionbar.pack_end (aspectfit_combo);
 
         attach (separator, 0, 0, 1, 1);
         attach (wallpaper_scrolled_window, 0, 1, 1, 1);
@@ -180,12 +166,12 @@ public class Wallpaper : Gtk.Grid {
         // about it anymore. The previous state should be loaded instead here.
         string picture_options = settings.get_string ("picture-options");
         if (picture_options == "none") {
-            combo.set_sensitive (false);
+            aspectfit_combo.set_sensitive (false);
             picture_options = "zoom";
         }
 
         prevent_update_mode = true;
-        combo.set_active_id (picture_options);
+        aspectfit_combo.set_active_id (picture_options);
 
         current_wallpaper_path = settings.get_string ("picture-uri");
     }
@@ -221,43 +207,51 @@ public class Wallpaper : Gtk.Grid {
         }
     }
 
+    // Fix: Handle multiple container types
     private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
         plug_settings.set_string ("current-wallpaper-source", folder_combo.active_id);
-        if (folder_combo.active_id == CUSTOM_DIR_COMBO_ID && current_custom_directory_path != null) {
-            plug_settings.set_string ("current-custom-path", current_custom_directory_path);
+        // if (folder_combo.active_id == CUSTOM_DIR_COMBO_ID && current_custom_directory_path != null) {
+        //     plug_settings.set_string ("current-custom-path", current_custom_directory_path);
+        // }
+
+        // var children = (IWallpaperContainer) wallpaper_view.get_selected_children ().data;
+        var bg = child as IWallpaperContainer;
+        if (bg == null) {
+            return;
         }
 
-        var children = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
+        set_wallpaper (bg.uri);
 
-        if (!(children is SolidColorContainer)) {
-            current_wallpaper_path = children.uri;
-            update_accountsservice ();
+        // if (active_wallpaper == solid_color && bg != solid_color) {
+        //     combo.set_sensitive (true);
+        // }
+        // FIX: O combo/aspect fit deve ser desativado caso a imagem seja solida
+        settings.set_string ("picture-options", aspectfit_combo.get_active_id ());
 
-            if (active_wallpaper == solid_color) {
-                combo.set_sensitive (true);
-                settings.set_string ("picture-options", combo.get_active_id ());
-            }
-
-        } else {
-            set_combo_disabled_if_necessary ();
-            settings.set_string ("primary-color", solid_color.color);
+        if (active_wallpaper != null && active_wallpaper != children) {
+            active_wallpaper.checked = false;
         }
 
         // We don't do gradient backgrounds, reset the key that might interfere
         settings.reset ("color-shading-type");
 
         children.checked = true;
-
-        if (active_wallpaper != null && active_wallpaper != children) {
-            active_wallpaper.checked = false;
-        }
-
         active_wallpaper = children;
+    }
+
+    private bool set_wallpaper (string uri) {
+        if (uri != null) {
+            current_wallpaper_path = uri;
+            update_accountsservice ();
+        } else {
+            set_aspectfit_combo_disabled_if_necessary ();
+            settings.set_string ("primary-color", solid_color.color);
+        }
     }
 
     private void update_color () {
         if (finished) {
-            set_combo_disabled_if_necessary ();
+            set_aspectfit_combo_disabled_if_necessary ();
             create_solid_color_container (color_button.rgba.to_string ());
             wallpaper_view.add (solid_color);
             wallpaper_view.select_child (solid_color);
@@ -274,7 +268,7 @@ public class Wallpaper : Gtk.Grid {
 
     private void update_mode () {
         if (!prevent_update_mode) {
-            settings.set_string ("picture-options", combo.get_active_id ());
+            settings.set_string ("picture-options", aspectfit_combo.get_active_id ());
 
             // Changing the mode, while a solid color is selected, change focus to the
             // wallpaper tile.
@@ -296,171 +290,10 @@ public class Wallpaper : Gtk.Grid {
         }
     }
 
-    private void set_combo_disabled_if_necessary () {
+    private void set_aspectfit_combo_disabled_if_necessary () {
         if (active_wallpaper != solid_color) {
-            combo.set_sensitive (false);
+            aspectfit_combo.set_sensitive (false);
             settings.set_string ("picture-options", "none");
-        }
-    }
-
-    public void update_wallpaper_folder () {
-        if (last_cancellable != null) {
-            last_cancellable.cancel ();
-        }
-
-        var cancellable = new Cancellable ();
-        last_cancellable = cancellable;
-        if (folder_combo.active_id == PICTURES_DIR_COMBO_ID) {
-            custom_folder_button_revealer.reveal_child = false;
-            clean_wallpapers ();
-            var picture_dir = GLib.File.new_for_path (GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES));
-            load_wallpapers.begin (picture_dir.get_uri (), cancellable);
-        } else if (folder_combo.active_id == SYSTEM_DIR_COMBO_ID) {
-            custom_folder_button_revealer.reveal_child = false;
-            clean_wallpapers ();
-
-            var system_uri = "file://" + SYSTEM_BACKGROUNDS_PATH;
-            var user_uri = GLib.File.new_for_path (get_local_bg_location ()).get_uri ();
-
-            load_wallpapers.begin (system_uri, cancellable);
-            load_wallpapers.begin (user_uri, cancellable);
-        } else if (folder_combo.active_id == CUSTOM_DIR_COMBO_ID) {
-            custom_folder_button_revealer.reveal_child = true;
-            if (check_custom_dir_valid (current_custom_directory_path)) {
-                clean_wallpapers ();
-                load_wallpapers.begin (current_custom_directory_path, cancellable);
-            } else {
-                show_custom_dir_chooser ();
-            }
-        }
-    }
-
-    private static bool check_custom_dir_valid (string? uri) {
-        if (uri == null || uri == "") {
-            return false;
-        }
-
-        var custom_folder_file = File.new_for_uri (uri);
-        if (!custom_folder_file.query_exists ()) {
-            return false;
-        }
-
-        if (custom_folder_file.query_file_type (FileQueryInfoFlags.NONE) != FileType.DIRECTORY) {
-            return false;
-        }
-
-        return true;
-    }
-
-    private void show_custom_dir_chooser () {
-        var dialog = new Gtk.FileChooserDialog (_("Select a folder"), null, Gtk.FileChooserAction.SELECT_FOLDER);
-        dialog.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
-        dialog.add_button (_("Open"), Gtk.ResponseType.ACCEPT);
-        dialog.set_default_response (Gtk.ResponseType.ACCEPT);
-
-        if (check_custom_dir_valid (current_custom_directory_path)) {
-            dialog.set_current_folder_uri (current_custom_directory_path);
-        }
-
-        if (dialog.run () == Gtk.ResponseType.ACCEPT) {
-            if (last_cancellable != null) {
-                last_cancellable.cancel ();
-            }
-
-            last_cancellable = new Cancellable ();
-
-            var uri = dialog.get_file ().get_uri ();
-            current_custom_directory_path = uri;
-            clean_wallpapers ();
-            load_wallpapers.begin (uri, last_cancellable);
-            dialog.destroy ();
-        } else {
-            dialog.destroy ();
-            if (current_custom_directory_path == null) {
-                folder_combo.active_id = plug_settings.get_default_value ("current-wallpaper-source").get_string ();
-            }
-        }
-    }
-
-    private async void load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
-        if (cancellable.is_cancelled ()) {
-            return;
-        }
-
-        var directory = File.new_for_uri (basefolder);
-
-        try {
-            // Enumerator object that will let us read through the wallpapers asynchronously
-            var attrs = string.joinv (",", REQUIRED_FILE_ATTRS);
-            var e = yield directory.enumerate_children_async (attrs, 0, Priority.DEFAULT);
-            FileInfo file_info;
-
-            // Loop through and add each wallpaper in the batch
-            while ((file_info = e.next_file ()) != null) {
-                if (cancellable.is_cancelled ()) {
-                    ThumbnailGenerator.get_default ().dequeue_all ();
-                    return;
-                }
-
-                if (file_info.get_is_hidden () || file_info.get_is_backup ()) {
-                    continue;
-                }
-
-                if (file_info.get_file_type () == FileType.DIRECTORY) {
-                    // Spawn off another loader for the subdirectory
-                    var subdir = directory.resolve_relative_path (file_info.get_name ());
-                    yield load_wallpapers (subdir.get_path (), cancellable, false);
-                    continue;
-                } else if (!IOHelper.is_valid_file_type (file_info)) {
-                    // Skip non-picture files
-                    continue;
-                }
-
-                var file = directory.resolve_relative_path (file_info.get_name ());
-                string uri = file.get_uri ();
-
-                // Skip the default_wallpaper as seen in the description of the
-                // default_link variable
-                if (uri == DEFAULT_LINK) {
-                    continue;
-                }
-
-                var thumb_path = file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                var thumb_valid = file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
-                var wallpaper = new WallpaperContainer (uri, thumb_path, thumb_valid);
-                wallpaper_view.insert (wallpaper, -1);
-                wallpaper.show_all ();
-
-                // Select the wallpaper if it is the current wallpaper
-                if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
-                    this.wallpaper_view.select_child (wallpaper);
-                    // Set the widget activated without activating it
-                    wallpaper.checked = true;
-                    active_wallpaper = wallpaper;
-                }
-            }
-
-            if (toplevel_folder) {
-                create_solid_color_container (color_button.rgba.to_string ());
-                wallpaper_view.add (solid_color);
-                finished = true;
-
-                if (settings.get_string ("picture-options") == "none") {
-                    wallpaper_view.select_child (solid_color);
-                    solid_color.checked = true;
-                    active_wallpaper = solid_color;
-                }
-
-                if (active_wallpaper != null) {
-                    Gtk.Allocation alloc;
-                    active_wallpaper.get_allocation (out alloc);
-                    wallpaper_scrolled_window.get_vadjustment ().value = alloc.y;
-                }
-            }
-        } catch (Error err) {
-            if (!(err is IOError.NOT_FOUND)) {
-                warning (err.message);
-            }
         }
     }
 
@@ -473,14 +306,6 @@ public class Wallpaper : Gtk.Grid {
 
         solid_color = new SolidColorContainer (color);
         solid_color.show_all ();
-    }
-
-    private void clean_wallpapers () {
-        foreach (var child in wallpaper_view.get_children ()) {
-            child.destroy ();
-        }
-
-        solid_color = null;
     }
 
     private static string get_local_bg_location () {
@@ -542,11 +367,26 @@ public class Wallpaper : Gtk.Grid {
         return dest;
     }
 
+    private async void populate_wallpaper_view () {
+        unowned IRepository repository = repositories.get (folder_combo.active_id);
+        if (repository == null) {
+            return;
+        }
+
+        wallpaper_view.forall ((element) => wallpaper_view.remove (element));
+        var pics = yield repository.get_images ();
+
+        foreach (var pic in pics) {
+            wallpaper_view.insert (pic, -1);
+            pic.show_all ();
+        }
+    }
+
     private void on_drag_data_received (Gtk.Widget widget, Gdk.DragContext ctx, int x, int y, Gtk.SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
             try {
                 File file = File.new_for_uri (sel.get_uris ()[0]);
-                var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
+                var info = file.query_info (string.joinv (",", IOHelper.REQUIRED_FILE_ATTRS), 0);
 
                 if (!IOHelper.is_valid_file_type (info)) {
                     Gtk.drag_finish (ctx, false, false, timestamp);
@@ -574,11 +414,5 @@ public class Wallpaper : Gtk.Grid {
 
         Gtk.drag_finish (ctx, false, false, timestamp);
         return;
-    }
-
-    public void cancel_thumbnail_generation () {
-        if (last_cancellable != null) {
-            last_cancellable.cancel ();
-        }
     }
 }
