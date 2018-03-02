@@ -1,5 +1,5 @@
 # Add all your dependencies to the list below
-pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite>=0.5 gtk+-3.0>=3.14 gexiv2 gnome-desktop-3.0 plank>=0.7.1.1137)
+pkg_check_modules (DEPS REQUIRED glib-2.0 switchboard-2.0 granite>=0.5 gtk+-3.0>=3.14 gexiv2 gnome-desktop-3.0 plank>=0.7.1.1137 rest-0.7 json-glib-1.0)
 
 pkg_check_modules(PLANK011 QUIET plank>=0.10.9)
 if (PLANK011_FOUND)
@@ -21,16 +21,23 @@ vala_precompile (VALA_C ${PLUGNAME}
     desktop-plug.vala
     GalaSettings.vala
     IOHelper.vala
+    Interfaces/IRepository.vala
+    Interfaces/IWallpaperContainer.vala
     Views/Dock.vala
     Views/HotCorners.vala
     Views/Wallpaper.vala
+    Repositories/DirectoryRepository.vala
+    Repositories/UnsplashRepository.vala
     Widgets/SolidColorContainer.vala
     Widgets/WallpaperContainer.vala
+    Widgets/RemoteWallpaperContainer.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gnome-desktop-3.0
     switchboard-2.0
     granite
+    rest-0.7
+    json-glib-1.0
     gexiv2
     posix
     plank
