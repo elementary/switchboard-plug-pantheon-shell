@@ -18,7 +18,7 @@
  *
  */
 
-public class WallpaperContainer : Gtk.FlowBoxChild {
+public class WallpaperContainer : Gtk.FlowBoxChild, IWallpaperContainer {
     private const int THUMB_WIDTH = 162;
     private const int THUMB_HEIGHT = 100;
 
@@ -27,7 +27,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
 
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
-    public string uri { get; construct; }
+    public string? uri { get; construct; }
     public Gdk.Pixbuf thumb { get; set; }
 
     private int scale;

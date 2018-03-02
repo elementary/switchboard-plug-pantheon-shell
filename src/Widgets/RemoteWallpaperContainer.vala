@@ -14,18 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
- * Authored by: Erasmo Marín
+ * Authored by: Fernando da Silva Sousa
  *
  */
 
-public class RemoteWallpaperContainer : Gtk.FlowBoxChild {
+public class RemoteWallpaperContainer : Gtk.FlowBoxChild, IWallpaperContainer {
     private const int THUMB_WIDTH = 162;
     private const int THUMB_HEIGHT = 100;
 
     private Gtk.Revealer check_revealer;
+    private Gtk.Revealer download_revealer;
     private Granite.AsyncImage image;
 
-    public string? uri { get; construct; }
+    private string _uri;
+    public string? uri {
+        get {
+            return _uri;
+        }
+        construct {
+            _uri = value;
+        }
+    }
     public string? thumb_path { get; construct set; }
     public Gdk.Pixbuf thumb { get; set; }
     public string? artist_name {get;construct set;}
@@ -80,6 +89,12 @@ public class RemoteWallpaperContainer : Gtk.FlowBoxChild {
         }
     }
 
+    // public bool downloading {
+    //     get {
+    //         return
+    //     }
+    // }
+
     public RemoteWallpaperContainer (string uri, string? thumb_path, string? artist_name) {
         Object (uri: uri, thumb_path: thumb_path, artist_name: artist_name);
     }
@@ -116,9 +131,14 @@ public class RemoteWallpaperContainer : Gtk.FlowBoxChild {
         check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
         check_revealer.add (check);
 
+        download_revealer = new Gtk.Revealer ();
+        download_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+        download_revealer.add (new Gtk.Spinner ());
+
         var overlay = new Gtk.Overlay ();
         overlay.add (card_box);
-        // overlay.add_overlay (check_revealer);
+        overlay.add_overlay (check_revealer);
+        overlay.add_overlay (download_revealer);
 
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
@@ -126,23 +146,11 @@ public class RemoteWallpaperContainer : Gtk.FlowBoxChild {
         margin = 6;
         add (overlay);
 
-        // activate.connect (() => {
-        //     checked = true;
-        // });
+        activate.connect (() => {
+            checked = true;
+        });
 
-        try {
-            if (uri != null) {
-                if (thumb_path != null) {
-                    update_thumb ();
-                }
-            } else {
-                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale);
-                image.gicon = thumb;
-            }
-        } catch (Error e) {
-            critical ("Failed to load wallpaper thumbnail: %s", e.message);
-            return;
-        }
+        load_thumb ();
     }
 
     private void load_artist_tooltip () {
@@ -152,7 +160,7 @@ public class RemoteWallpaperContainer : Gtk.FlowBoxChild {
         return;
     }
 
-    private async void update_thumb () {
+    private async void load_thumb () {
         if (thumb_path == null) {
             return;
         }
