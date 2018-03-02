@@ -16,6 +16,16 @@
  *
  */
 public class IOHelper : GLib.Object {
+    public const string [] REQUIRED_FILE_ATTRS = {
+        FileAttribute.STANDARD_NAME,
+        FileAttribute.STANDARD_TYPE,
+        FileAttribute.STANDARD_CONTENT_TYPE,
+        FileAttribute.STANDARD_IS_HIDDEN,
+        FileAttribute.STANDARD_IS_BACKUP,
+        FileAttribute.THUMBNAIL_PATH,
+        FileAttribute.THUMBNAIL_IS_VALID
+    };
+
     private const string[] ACCEPTED_TYPES = {
         "image/jpeg",
         "image/png",
