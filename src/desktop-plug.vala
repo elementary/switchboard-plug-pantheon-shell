@@ -30,11 +30,12 @@ public class GalaPlug : Switchboard.Plug {
         settings.set ("desktop", null);
         settings.set ("desktop/wallpaper", "wallpaper");
         settings.set ("desktop/dock", "dock");
+        settings.set ("desktop/panel", "panel");
         settings.set ("desktop/hot-corners", "hotc");
         Object (category: Category.PERSONAL,
                 code_name: "pantheon-desktop",
                 display_name: _("Desktop"),
-                description: _("Configure the dock, hot corners, and change wallpaper"),
+                description: _("Configure the dock, panel, hot corners, and change wallpaper"),
                 icon: "preferences-desktop-wallpaper",
                 supported_settings: settings);
     }
@@ -45,11 +46,13 @@ public class GalaPlug : Switchboard.Plug {
 
             wallpaper_view = new Wallpaper (this);
             var dock = new Dock ();
+            var panel = new Panel ();
             var hotcorners = new HotCorners ();
 
             stack = new Gtk.Stack ();
             stack.add_titled (wallpaper_view, "wallpaper", _("Wallpaper"));
             stack.add_titled (dock, "dock", _("Dock"));
+            stack.add_titled (panel, "panel", _("Panel"));
             stack.add_titled (hotcorners, "hotc", _("Hot Corners"));
 
             var stack_switcher = new Gtk.StackSwitcher ();
@@ -82,6 +85,9 @@ public class GalaPlug : Switchboard.Plug {
             case "dock":
                 stack.set_visible_child_name ("dock");
                 break;
+            case "panel":
+                stack.set_visible_child_name ("panel");
+                break;
             case "hotc":
                 stack.set_visible_child_name ("hotc");
                 break;
@@ -93,6 +99,7 @@ public class GalaPlug : Switchboard.Plug {
         var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
         search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
         search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
+        search_results.set ("%s → %s".printf (display_name, _("Panel")), "panel");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Theme")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Icon Size")), "dock");

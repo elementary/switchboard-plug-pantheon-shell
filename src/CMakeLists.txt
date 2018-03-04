@@ -23,6 +23,7 @@ vala_precompile (VALA_C ${PLUGNAME}
     IOHelper.vala
     Views/Dock.vala
     Views/HotCorners.vala
+    Views/Panel.vala
     Views/Wallpaper.vala
     Widgets/SolidColorContainer.vala
     Widgets/WallpaperContainer.vala
