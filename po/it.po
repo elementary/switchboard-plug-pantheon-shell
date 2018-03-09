@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-17 01:53+0200\n"
-"PO-Revision-Date: 2018-03-03 00:02+0000\n"
+"PO-Revision-Date: 2018-03-10 00:04+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/it/>\n"
@@ -119,7 +119,7 @@ msgstr "Nessuna azione"
 
 #: ../src/Views/HotCorners.vala:79
 msgid "Multitasking View"
-msgstr "Vista multitasking"
+msgstr "Panoramica degli spazi di lavoro"
 
 #: ../src/Views/HotCorners.vala:80
 msgid "Maximize current window"
