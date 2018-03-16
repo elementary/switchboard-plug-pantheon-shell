@@ -2,14 +2,34 @@
 /**
 *
 */
-public class SelectableDirectoryRepository : IRepository {
+public class CustomDirectoryProvider : DirectoryRepository {
 
+    // private GLib.Settings plug_settings;
     /**
     *
     */
-    public SelectableDirectoryRepository() {
-
+    public SelectableDirectoryProvider () {
+        // var plug_settings = new GLib.Settings ("io.elementary.switchboard.plug.desktop");
+        base ({ null });
     }
+
+    // current_custom_directory_path = plug_settings.get_string ("current-custom-path");
+    //
+    // if (saved_id == CUSTOM_DIR_COMBO_ID) {
+    //     if (!check_custom_dir_valid (current_custom_directory_path)) {
+    //         saved_id = plug_settings.get_default_value ("current-wallpaper-source").get_string ();
+    //         current_custom_directory_path = null;
+    //     }
+    // }
+
+    // var custom_folder_open = new Gtk.Button.from_icon_name ("document-open");
+    // custom_folder_open.valign = Gtk.Align.CENTER;
+    // custom_folder_open.clicked.connect (() => show_custom_dir_chooser ());
+    // custom_folder_button_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
+    // custom_folder_button_revealer.add (custom_folder_open);
+
+
+    //     plug_settings.set_string ("current-custom-path", current_custom_directory_path);
 
     private static bool check_custom_dir_valid (string? uri) {
         if (uri == null || uri == "") {
@@ -59,4 +79,4 @@ public class SelectableDirectoryRepository : IRepository {
         }
 
 
-    }
+}

@@ -2,15 +2,15 @@
 /**
  *
  */
-public class DirectoryRepository : GLib.Object, IRepository {
+public class DirectoryProvider : GLib.Object, IProvider {
     string[] dirs;
     public Cancellable cancellable {get;set;}
 
-    public DirectoryRepository(string[] _dirs) {
+    public DirectoryProvider (string[] _dirs) {
         dirs = _dirs;
     }
 
-    public async WallpaperContainer[]? get_images () {
+    public async WallpaperContainer[]? get_containers () {
         WallpaperContainer[] images = null;
         foreach (var dir in dirs) {
             var img = yield load_wallpapers (dir, cancellable, false);
@@ -19,7 +19,6 @@ public class DirectoryRepository : GLib.Object, IRepository {
             }
         }
         return images;
-        //     var container = new WallpaperContainer (pic.uri, pic.thumb_path, pic.thumb_valid);
     }
 
     private async WallpaperContainer[]? load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
@@ -73,36 +72,7 @@ public class DirectoryRepository : GLib.Object, IRepository {
                 var thumb_path = file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
                 var thumb_valid = file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
                 images += new WallpaperContainer (uri, thumb_path, thumb_valid);
-                // var wallpaper = new WallpaperContainer (uri, thumb_path, thumb_valid);
-                // wallpaper_view.insert (wallpaper, -1);
-                // wallpaper.show_all ();
-
-                // Select the wallpaper if it is the3 current wallpaper
-                // if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
-                    // this.wallpaper_view.select_child (wallpaper);
-                    // Set the widget activated without activating it
-                    // wallpaper.checked = true;
-                    // active_wallpaper = wallpaper;
-                // }
             }
-
-            // if (toplevel_folder) {
-            //     create_solid_color_container (color_button.rgba.to_string ());
-            //     wallpaper_view.add (solid_color);
-            //     finished = true;
-            //
-            //     if (settings.get_string ("picture-options") == "none") {
-            //         wallpaper_view.select_child (solid_color);
-            //         solid_color.checked = true;
-            //         active_wallpaper = solid_color;
-            //     }
-            //
-            //     if (active_wallpaper != null) {
-            //         Gtk.Allocation alloc;
-            //         active_wallpaper.get_allocation (out alloc);
-            //         wallpaper_scrolled_window.get_vadjustment ().value = alloc.y;
-            //     }
-            // }
         } catch (Error err) {
             if (!(err is IOError.NOT_FOUND)) {
                 warning (err.message);

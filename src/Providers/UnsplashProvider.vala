@@ -1,5 +1,5 @@
 
-public class UnsplashRepository : GLib.Object, IRepository {
+public class UnsplashProvider : GLib.Object, IProvider {
     public Cancellable cancellable {get;set;}
     // TO DO : Insert elementary APP_ID
     const string APP_ID = "0386718809470cb13e17b21c5f5c37ad4bedfe6ea76548e4ea22095a8fc1129b";
@@ -14,7 +14,8 @@ public class UnsplashRepository : GLib.Object, IRepository {
         POPULAR
     }
 
-    public async RemoteWallpaperContainer[]? get_images () {
+    public async RemoteWallpaperContainer[]? get_containers () {
+        debug ("Getting images");
         RemoteWallpaperContainer[] wallpapers = null;
         // var json = get_random_photo ();
         var json = list_photos (OrderBy.LASTEST, 20);
