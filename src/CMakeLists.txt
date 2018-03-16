@@ -21,16 +21,17 @@ vala_precompile (VALA_C ${PLUGNAME}
     desktop-plug.vala
     GalaSettings.vala
     IOHelper.vala
-    Interfaces/IRepository.vala
-    Interfaces/IWallpaperContainer.vala
     Views/Dock.vala
     Views/HotCorners.vala
     Views/Wallpaper.vala
-    Repositories/DirectoryRepository.vala
-    Repositories/UnsplashRepository.vala
+    Providers/IProvider.vala
+    Providers/DirectoryProvider.vala
+    # Providers/SelectableDirectoryProvider.vala
+    Providers/UnsplashProvider.vala
+    Widgets/AbstractWallpaperContainer.vala
+    Widgets/RemoteWallpaperContainer.vala
     Widgets/SolidColorContainer.vala
     Widgets/WallpaperContainer.vala
-    Widgets/RemoteWallpaperContainer.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gnome-desktop-3.0

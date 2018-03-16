@@ -67,11 +67,12 @@ public class GalaPlug : Switchboard.Plug {
     }
 
     public override void shown () {
-        wallpaper_view.update_wallpaper_folder ();
+        return;
     }
 
     public override void hidden () {
-        wallpaper_view.cancel_thumbnail_generation ();
+        return;
+        // wallpaper_view.cancel_thumbnail_generation ();
     }
 
     public override void search_callback (string location) {
