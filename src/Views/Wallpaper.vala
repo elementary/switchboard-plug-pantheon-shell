@@ -37,14 +37,14 @@ public class Wallpaper : Gtk.Grid {
     private Gtk.ComboBoxText folder_combo;
     private Gtk.ColorButton color_button;
 
-    private IWallpaperContainer active_wallpaper = null;
+    private AbstractWallpaperContainer active_wallpaper = null;
     private SolidColorContainer solid_color = null;
 
     private string current_wallpaper_path;
     private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
     private bool finished; // Shows that we got or wallpapers together
 
-    private GLib.HashTable<string,IRepository> repositories;
+    private GLib.HashTable<string,IProvider> providers;
 
     public Wallpaper (Switchboard.Plug _plug) {
         Object (plug: _plug);
@@ -85,16 +85,20 @@ public class Wallpaper : Gtk.Grid {
         wallpaper_scrolled_window.expand = true;
         wallpaper_scrolled_window.add (wallpaper_view);
 
-        repositories = new GLib.HashTable<string, IRepository> (GLib.str_hash, GLib.str_equal);
+        // TODO: Implement a factory method
+        providers = new GLib.HashTable<string, IProvider> (GLib.str_hash, GLib.str_equal);
         var picture_uri = GLib.File.new_for_path (GLib.Environment.get_user_special_dir (GLib.UserDirectory.PICTURES)).get_uri ();
-        repositories.insert ("pic", new DirectoryRepository ({picture_uri}));
+        providers.insert ("pic", new DirectoryProvider ({picture_uri}));
 
         var system_uri = "file://" + SYSTEM_BACKGROUNDS_PATH;
         var user_uri = GLib.File.new_for_path (Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/").get_uri ();
-        repositories.insert ("sys", new DirectoryRepository ({system_uri, user_uri}));
+        providers.insert ("sys", new DirectoryProvider ({system_uri, user_uri}));
 
-        var unsplash_provider = new UnsplashRepository ();
-        repositories.insert ("unsplash", unsplash_provider);
+        var unsplash_provider = new UnsplashProvider ();
+        providers.insert ("unsplash", unsplash_provider);
+
+        // var custom_folder = new CustomDirectoryProvider ();
+        // providers.insert ("cus", custom_folder);
 
         folder_combo = new Gtk.ComboBoxText ();
         folder_combo.margin = 12;
@@ -105,22 +109,6 @@ public class Wallpaper : Gtk.Grid {
         folder_combo.changed.connect (populate_wallpaper_view);
 
         var saved_id = plug_settings.get_string ("current-wallpaper-source");
-        // current_custom_directory_path = plug_settings.get_string ("current-custom-path");
-        //
-        //
-        // if (saved_id == CUSTOM_DIR_COMBO_ID) {
-        //     if (!check_custom_dir_valid (current_custom_directory_path)) {
-        //         saved_id = plug_settings.get_default_value ("current-wallpaper-source").get_string ();
-        //         current_custom_directory_path = null;
-        //     }
-        // }
-
-        // var custom_folder_open = new Gtk.Button.from_icon_name ("document-open");
-        // custom_folder_open.valign = Gtk.Align.CENTER;
-        // custom_folder_open.clicked.connect (() => show_custom_dir_chooser ());
-        // custom_folder_button_revealer.transition_type = Gtk.RevealerTransitionType.SLIDE_RIGHT;
-        // custom_folder_button_revealer.add (custom_folder_open);
-
         folder_combo.active_id = saved_id;
 
         aspectfit_combo = new Gtk.ComboBoxText ();
@@ -129,7 +117,7 @@ public class Wallpaper : Gtk.Grid {
         aspectfit_combo.append ("zoom", _("Zoom"));
         aspectfit_combo.append ("spanned", _("Spanned"));
         aspectfit_combo.changed.connect (update_mode);
-        //
+
         Gdk.RGBA rgba_color = {};
         if (!rgba_color.parse (color)) {
             rgba_color = { 1, 1, 1, 1 };
@@ -207,25 +195,19 @@ public class Wallpaper : Gtk.Grid {
         }
     }
 
-    // Fix: Handle multiple container types
     private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
         plug_settings.set_string ("current-wallpaper-source", folder_combo.active_id);
-        // if (folder_combo.active_id == CUSTOM_DIR_COMBO_ID && current_custom_directory_path != null) {
-        //     plug_settings.set_string ("current-custom-path", current_custom_directory_path);
-        // }
-
-        // var children = (IWallpaperContainer) wallpaper_view.get_selected_children ().data;
-        var bg = child as IWallpaperContainer;
+        var children = child as AbstractWallpaperContainer;
         if (bg == null) {
             return;
         }
 
         set_wallpaper (bg.uri);
 
+        // TODO enable combo sensitiveness
         // if (active_wallpaper == solid_color && bg != solid_color) {
         //     combo.set_sensitive (true);
         // }
-        // FIX: O combo/aspect fit deve ser desativado caso a imagem seja solida
         settings.set_string ("picture-options", aspectfit_combo.get_active_id ());
 
         if (active_wallpaper != null && active_wallpaper != children) {
@@ -239,7 +221,7 @@ public class Wallpaper : Gtk.Grid {
         active_wallpaper = children;
     }
 
-    private bool set_wallpaper (string uri) {
+    private void set_wallpaper (string uri) {
         if (uri != null) {
             current_wallpaper_path = uri;
             update_accountsservice ();
@@ -368,13 +350,13 @@ public class Wallpaper : Gtk.Grid {
     }
 
     private async void populate_wallpaper_view () {
-        unowned IRepository repository = repositories.get (folder_combo.active_id);
-        if (repository == null) {
+        unowned IProvider provider = providers.get (folder_combo.active_id);
+        if (provider == null) {
             return;
         }
 
         wallpaper_view.forall ((element) => wallpaper_view.remove (element));
-        var pics = yield repository.get_images ();
+        var pics = yield provider.get_containers ();
 
         foreach (var pic in pics) {
             wallpaper_view.insert (pic, -1);
