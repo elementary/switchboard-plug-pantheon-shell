@@ -78,6 +78,7 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
         var loop = new MainLoop();
 
         if (!local_file.query_exists ()) {
+            status = DownloadStatus.IN_PROGRESS;
             remote_file.copy_async.begin (local_file, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA, 1, null, (current, total) => {
                 update_download_status ((float) current/(total+1)*100);
                 debug ("Downloading "+current.to_string ()+" of "+total.to_string ());
