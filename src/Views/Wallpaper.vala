@@ -198,11 +198,11 @@ public class Wallpaper : Gtk.Grid {
     private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
         plug_settings.set_string ("current-wallpaper-source", folder_combo.active_id);
         var children = child as AbstractWallpaperContainer;
-        if (bg == null) {
+        if (children == null) {
             return;
         }
 
-        set_wallpaper (bg.uri);
+        set_wallpaper (children.uri);
 
         // TODO enable combo sensitiveness
         // if (active_wallpaper == solid_color && bg != solid_color) {
