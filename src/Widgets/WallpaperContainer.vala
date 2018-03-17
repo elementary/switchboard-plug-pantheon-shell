@@ -23,7 +23,7 @@ public class WallpaperContainer : AbstractWallpaperContainer {
     public override string? uri { get; construct; }
 
     public WallpaperContainer (string uri, string? thumb_path, bool thumb_valid) {
-        Object (thumb_path: thumb_path, thumb_valid: thumb_valid);
+        Object (uri: uri, thumb_path: thumb_path, thumb_valid: thumb_valid);
     }
 
     construct {
