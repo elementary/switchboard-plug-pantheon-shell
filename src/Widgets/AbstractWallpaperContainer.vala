@@ -3,8 +3,10 @@ public abstract class AbstractWallpaperContainer : Gtk.FlowBoxChild {
     protected const int THUMB_WIDTH = 162;
     protected const int THUMB_HEIGHT = 100;
 
-    private Gtk.Revealer check_revealer;
     protected Granite.AsyncImage image;
+    protected Gtk.Overlay overlay;
+
+    private Gtk.Revealer check_revealer;
 
     public abstract string? uri { get; construct; }
 
@@ -61,10 +63,6 @@ public abstract class AbstractWallpaperContainer : Gtk.FlowBoxChild {
         }
     }
 
-    public AbstractWallpaperContainer (string uri, string? thumb_path, bool thumb_valid) {
-        Object (thumb_path: thumb_path);
-    }
-
     construct {
         scale = get_style_context ().get_scale ();
 
@@ -97,7 +95,7 @@ public abstract class AbstractWallpaperContainer : Gtk.FlowBoxChild {
         check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
         check_revealer.add (check);
 
-        var overlay = new Gtk.Overlay ();
+        overlay = new Gtk.Overlay ();
         overlay.add (card_box);
         overlay.add_overlay (check_revealer);
 
