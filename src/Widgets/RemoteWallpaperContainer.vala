@@ -20,17 +20,32 @@
 
 public class RemoteWallpaperContainer : AbstractWallpaperContainer {
     private Gtk.Label download_label;
-    private Gtk.Revealer download_revealer;
-    private DownloadStatus status;
+    private Gtk.Stack stack;
+    private Gtk.Widget ready;
+    private Gtk.Spinner in_progress;
+    private Gtk.Revealer revealer;
+
     private string remote_uri;
-    private string _uri;
     private File remote_file;
     private File local_file;
 
-    enum DownloadStatus {
+    private string _uri;
+    private DownloadStatus _status;
+
+    private enum DownloadStatus {
         READY,
         IN_PROGRESS,
         DONE,
+    }
+
+    private DownloadStatus status {
+        get {
+            return _status;
+        }
+        set {
+            _status = value;
+            update ();
+        }
     }
 
     public override string? uri {
@@ -52,22 +67,24 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
     }
 
     construct {
-        // TODO: Change icon
-        // var download = new Gtk.Image.from_icon_name ("folder-remote", Gtk.IconSize.LARGE_TOOLBAR);
-        download_label = new Gtk.Label ("0%");
-        download_label.halign = Gtk.Align.END;
-        download_label.valign = Gtk.Align.START;
+        ready = new Gtk.Image.from_icon_name ("go-bottom", Gtk.IconSize.LARGE_TOOLBAR);
+        ready.halign = Gtk.Align.END;
+        ready.valign = Gtk.Align.START;
 
-        download_revealer = new Gtk.Revealer ();
-        download_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-        download_revealer.add (download_label);
-        download_revealer.reveal_child = true;
+        in_progress = new Gtk.Spinner ();
+        in_progress.active = true;
 
-        overlay.add_overlay (download_revealer);
+        stack = new Gtk.Stack ();
+        stack.add_named (ready, DownloadStatus.READY.to_string ());
+        stack.add_named (in_progress, DownloadStatus.IN_PROGRESS.to_string ());
+
+        revealer = new Gtk.Revealer ();
+        revealer.add (stack);
+
+        overlay.add_overlay (revealer);
 
         remote_file = File.new_for_uri (remote_uri);
         local_file = File.new_for_path (Environment.get_tmp_dir ()+"/"+remote_file.get_basename ());
-
         status = local_file.query_exists () ? DownloadStatus.DONE : DownloadStatus.READY;
 
         load_thumb ();
@@ -80,7 +97,6 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
         if (!local_file.query_exists ()) {
             status = DownloadStatus.IN_PROGRESS;
             remote_file.copy_async.begin (local_file, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA, 1, null, (current, total) => {
-                update_download_status ((float) current/(total+1)*100);
                 debug ("Downloading "+current.to_string ()+" of "+total.to_string ());
             }, (obj, res) => {
                 try {
@@ -97,8 +113,12 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
         return local_file;
     }
 
-    void update_download_status (float percentage) {
-        download_label.label = percentage.to_string ()+"%";
+    void update () {
+        revealer.reveal_child = !(status == DownloadStatus.DONE);
+
+        if (status != DownloadStatus.DONE) {
+            stack.visible_child_name = status.to_string ();
+        }
     }
 
     private void load_artist_tooltip () {
@@ -108,12 +128,13 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
     }
 
     private async void load_thumb () {
-        if (thumb_path == null) {
+        if (thumb_path == null && remote_file == null) {
             return;
         }
 
         try {
-            yield image.set_from_file_async (File.new_for_uri (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
+            var file = status == DownloadStatus.DONE ? local_file : File.new_for_uri (thumb_path);
+            yield image.set_from_file_async (file, THUMB_WIDTH, THUMB_HEIGHT, false);
         } catch (Error e) {
             warning (e.message);
         }
