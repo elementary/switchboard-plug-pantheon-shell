@@ -21,13 +21,21 @@
 public class RemoteWallpaperContainer : AbstractWallpaperContainer {
     private Gtk.Label download_label;
     private Gtk.Revealer download_revealer;
-
+    private DownloadStatus status;
     private string remote_uri;
-    string _uri;
+    private string _uri;
+    private File remote_file;
+    private File local_file;
+
+    enum DownloadStatus {
+        READY,
+        IN_PROGRESS,
+        DONE,
+    }
+
     public override string? uri {
         get {
             if (_uri == null) {
-                _uri = "";
                 _uri = download_file ().get_uri ();
             }
             return _uri;
@@ -55,30 +63,40 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
         download_revealer.add (download_label);
         download_revealer.reveal_child = true;
 
+        overlay.add_overlay (download_revealer);
+
+        remote_file = File.new_for_uri (remote_uri);
+        local_file = File.new_for_path (Environment.get_tmp_dir ()+"/"+remote_file.get_basename ());
+
+        status = local_file.query_exists () ? DownloadStatus.DONE : DownloadStatus.READY;
+
         load_thumb ();
+        load_artist_tooltip ();
     }
 
     File download_file () {
-        var file = File.new_for_uri (remote_uri);
         var loop = new MainLoop();
 
-        var dest = File.new_for_path (Environment.get_tmp_dir ()+"/"+file.get_basename ());
-        debug ((dest.hash() == file.hash()).to_string ());
-        if (!dest.query_exists ()) {
-            file.copy_async.begin (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA, 1, null, (current, total) => {
+        if (!local_file.query_exists ()) {
+            remote_file.copy_async.begin (local_file, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA, 1, null, (current, total) => {
                 update_download_status ((float) current/(total+1)*100);
-                print (current.to_string ()+" de "+total.to_string ()+"\n");
+                debug ("Downloading "+current.to_string ()+" of "+total.to_string ());
             }, (obj, res) => {
+                try {
+                    status = remote_file.copy_async.end (res) ? DownloadStatus.DONE : DownloadStatus.READY;
+                } catch (Error e) {
+                    warning ("Error: "+e.message);
+                }
+
                 loop.quit ();
             });
             loop.run();
         }
 
-        return dest;
+        return local_file;
     }
 
     void update_download_status (float percentage) {
-        print (percentage.to_string ()+"\n");
         download_label.label = percentage.to_string ()+"%";
     }
 
@@ -86,7 +104,6 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
         if (artist_name != null) {
             set_tooltip_text (_("Artist: %s").printf (artist_name));
         }
-        return;
     }
 
     private async void load_thumb () {
@@ -99,7 +116,5 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
         } catch (Error e) {
             warning (e.message);
         }
-
-        load_artist_tooltip ();
     }
 }
