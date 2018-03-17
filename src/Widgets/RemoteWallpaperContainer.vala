@@ -22,7 +22,7 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
     private Gtk.Label download_label;
     private Gtk.Stack stack;
     private Gtk.Widget ready;
-    private Gtk.Spinner in_progress;
+    private Gtk.Box in_progress;
     private Gtk.Revealer revealer;
 
     private string remote_uri;
@@ -71,8 +71,18 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
         ready.halign = Gtk.Align.END;
         ready.valign = Gtk.Align.START;
 
-        in_progress = new Gtk.Spinner ();
-        in_progress.active = true;
+        var spinner = new Gtk.Spinner ();
+        spinner.start ();
+
+        var layout = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        layout.expand = layout.vexpand = true;
+        layout.halign = layout.valign = Gtk.Align.CENTER;
+        layout.add (spinner);
+
+        in_progress = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        in_progress.get_style_context ().add_class ("background");
+        in_progress.opacity = 0.7;
+        in_progress.add (layout);
 
         stack = new Gtk.Stack ();
         stack.add_named (ready, DownloadStatus.READY.to_string ());
