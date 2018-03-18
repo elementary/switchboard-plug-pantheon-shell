@@ -6,7 +6,11 @@ public class DirectoryProvider : GLib.Object, IProvider {
     string[] dirs;
     public Cancellable cancellable {get;set;}
 
-    public DirectoryProvider (string[] _dirs) {
+    public DirectoryProvider (string dir) {
+        dirs += dir;
+    }
+
+    public DirectoryProvider.multiple (string[] _dirs) {
         dirs = _dirs;
     }
 
@@ -80,5 +84,9 @@ public class DirectoryProvider : GLib.Object, IProvider {
         }
 
         return images;
+    }
+
+    public void set_directory (string path) {
+        dirs = {path};
     }
 }
