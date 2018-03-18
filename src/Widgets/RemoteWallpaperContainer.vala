@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2017 elementary LLC. (https://bugs.launchpad.net/switchboard-plug-pantheon-shell)
+ * Copyright (c) 2011-2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell/)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
