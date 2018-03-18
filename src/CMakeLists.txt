@@ -26,7 +26,7 @@ vala_precompile (VALA_C ${PLUGNAME}
     Views/Wallpaper.vala
     Providers/IProvider.vala
     Providers/DirectoryProvider.vala
-    # Providers/SelectableDirectoryProvider.vala
+    # Providers/CustomDirectoryProvider.vala
     Providers/UnsplashProvider.vala
     Widgets/AbstractWallpaperContainer.vala
     Widgets/RemoteWallpaperContainer.vala
