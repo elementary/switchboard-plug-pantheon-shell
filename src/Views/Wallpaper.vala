@@ -329,8 +329,6 @@ public class Wallpaper : Gtk.Grid {
 
             var uri = dialog.get_file ().get_uri ();
             current_custom_directory_path = uri;
-            // clean_wallpapers ();
-            // load_wallpapers.begin (uri, last_cancellable);
             dialog.destroy ();
         } else {
             dialog.destroy ();
