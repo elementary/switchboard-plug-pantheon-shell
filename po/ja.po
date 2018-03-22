@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-17 01:53+0200\n"
-"PO-Revision-Date: 2018-03-20 00:11+0000\n"
+"PO-Revision-Date: 2018-03-23 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/ja/>\n"
@@ -179,7 +179,7 @@ msgstr "デスクトップ"
 
 #: ../src/desktop-plug.vala:35
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "ドック、ホットコーナー、壁紙を設定します"
+msgstr "ドック、ホットコーナーを設定し、壁紙を変更します"
 
 #: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
 msgid "Wallpaper"
@@ -189,7 +189,7 @@ msgstr "壁紙"
 #: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
 #: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
 msgid "Dock"
-msgstr "ドック"
+msgstr "Dock"
 
 #: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
 msgid "Hot Corners"
