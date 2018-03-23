@@ -338,7 +338,7 @@ public class Wallpaper : Gtk.Grid {
         }
 
         custom_provider.set_directory (current_custom_directory_path);
-        populate_wallpaper_view ();
+        populate_wallpaper_view.begin ();
     }
 
     private void create_solid_color_container (string color) {
