@@ -37,7 +37,7 @@ public class UnsplashProvider : GLib.Object, IProvider {
         debug ("Getting images");
         RemoteWallpaperContainer[] wallpapers = null;
         // var json = get_random_photo ();
-        var json = list_photos (OrderBy.LASTEST, 20);
+        var json = yield list_photos (OrderBy.LASTEST, 20);
 
         switch (json.get_node_type ()) {
             case Json.NodeType.OBJECT:
@@ -61,7 +61,7 @@ public class UnsplashProvider : GLib.Object, IProvider {
         return new RemoteWallpaperContainer (url.get_string_member ("full"), url.get_string_member ("thumb"),user.get_string_member ("name"));
     }
 
-    Json.Node parse_json (string data) {
+    private Json.Node parse_json (string data) {
         var parser = new Json.Parser ();
         try {
             parser.load_from_data (data);
@@ -71,26 +71,38 @@ public class UnsplashProvider : GLib.Object, IProvider {
         return parser.get_root ();
     }
 
-    Json.Node get_random_photo () {
-        Rest.Proxy proxy = new Rest.Proxy (BASE_URL+"/photos/random", false);
-        Rest.ProxyCall call = proxy.new_call ();
-        call.add_params (
-            "client_id", APP_ID
-        );
+    async Json.Node make_call (Rest.ProxyCall call) {
+        string payload = "";
 
         try {
-            call.run ();
+            var loop = new MainLoop ();
+            call.run_async (() => {
+                payload = call.get_payload ();
+                loop.quit ();
+            });
+
+            loop.run ();
         } catch (Error e) {
             warning (e.message);
         }
-        var payload = call.get_payload ();
         print (payload+"\n");
 
         return parse_json (payload);
     }
 
+    async Json.Node get_random_photo () {
+        Rest.Proxy proxy = new Rest.Proxy (BASE_URL+"/photos/random", false);
+        Rest.ProxyCall call = proxy.new_call ();
+
+        call.add_params (
+            "client_id", APP_ID
+        );
+
+        return yield make_call (call);
+    }
+
     // TODO enable order_by
-    Json.Node list_photos (OrderBy order_by, int max_itens = 10, int page = 1, string url = BASE_URL+"/photos") {
+    async Json.Node list_photos (OrderBy order_by, int max_itens = 10, int page = 1, string url = BASE_URL+"/photos") {
         Rest.Proxy proxy = new Rest.Proxy (url, false);
         Rest.ProxyCall call = proxy.new_call ();
         call.add_params (
@@ -100,16 +112,10 @@ public class UnsplashProvider : GLib.Object, IProvider {
             "client_id", APP_ID
         );
 
-        try {
-            call.run ();
-        } catch (Error e) {
-            warning (e.message);
-        }
-        var payload = call.get_payload ();
-        return parse_json (payload);
+        return yield make_call (call);
     }
 
-    Json.Node list_curated_photos (OrderBy order_by, int max_itens = 10, int page = 1) {
-        return list_photos (order_by, max_itens, page, BASE_URL+"/photos/curated");
+    async Json.Node list_curated_photos (OrderBy order_by, int max_itens = 10, int page = 1) {
+        return yield list_photos (order_by, max_itens, page, BASE_URL+"/photos/curated");
     }
 }
