@@ -431,9 +431,13 @@ public class Wallpaper : Gtk.Grid {
                 wallpaper_view.insert (wallpaper, -1);
                 wallpaper.show_all ();
 
-                wallpaper.trash.connect ((uri) => {
-                    trash (uri);
-                    wallpaper_view.remove (wallpaper);
+                wallpaper.trash.connect (() => {
+                    try {
+                        file.trash ();
+                        wallpaper_view.remove (wallpaper);
+                    } catch (Error e) {
+                        critical (e.message);
+                    }
                 });
 
                 // Select the wallpaper if it is the current wallpaper
@@ -584,15 +588,6 @@ public class Wallpaper : Gtk.Grid {
     public void cancel_thumbnail_generation () {
         if (last_cancellable != null) {
             last_cancellable.cancel ();
-        }
-    }
-
-    private void trash (string uri) {
-        var file = File.new_for_uri (uri);
-        try {
-            file.trash ();
-        } catch (Error e) {
-            critical (e.message);
         }
     }
 }
