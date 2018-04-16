@@ -22,6 +22,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     private const int THUMB_WIDTH = 162;
     private const int THUMB_HEIGHT = 100;
 
+    private Gtk.Menu context_menu;
     private Gtk.Revealer check_revealer;
     private Granite.AsyncImage image;
 
@@ -102,6 +103,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         image.halign = Gtk.Align.CENTER;
         image.valign = Gtk.Align.CENTER;
         image.get_style_context ().set_scale (1);
+
         // We need an extra grid to not apply a scale == 1 to the "card" style.
         var card_box = new Gtk.Grid ();
         card_box.get_style_context ().add_class ("card");
@@ -120,15 +122,26 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         overlay.add (card_box);
         overlay.add_overlay (check_revealer);
 
+        var event_box = new Gtk.EventBox ();
+        event_box.add (overlay);
+
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
-
         margin = 6;
-        add (overlay);
+        add (event_box);
+
+        var move_to_trash = new Gtk.MenuItem.with_label (_("Move to Trash"));
+        move_to_trash.activate.connect (trash);
+
+        context_menu = new Gtk.Menu ();
+        context_menu.append (move_to_trash);
+        context_menu.show_all ();
 
         activate.connect (() => {
             checked = true;
         });
+
+        event_box.button_press_event.connect (show_context_menu);
 
         try {
             if (uri != null) {
@@ -179,6 +192,23 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
                     set_tooltip_text (_("Artist: %s").printf (artist_name));
                 }
             }
+        }
+    }
+
+    private bool show_context_menu (Gtk.Widget sender, Gdk.EventButton evt) {
+        if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3) {
+            context_menu.popup (null, null, null, evt.button, evt.time);
+            return true;
+        }
+        return false;
+    }
+
+    private void trash () {
+        var file = File.new_for_uri (uri);
+        try {
+            file.trash ();
+        } catch (Error e) {
+            critical (e.message);
         }
     }
 
