@@ -64,9 +64,9 @@ public class HotCorners : Gtk.Grid {
         custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
         
         var cc_label = new Gtk.Label (_("Custom command:"));
-        cc_label.margin_right = column_spacing;
 
         var cc_grid = new Gtk.Grid ();
+        cc_grid.column_spacing = column_spacing;
         cc_grid.halign = Gtk.Align.END;
         cc_grid.margin_top = 24;
         cc_grid.add (cc_label);
