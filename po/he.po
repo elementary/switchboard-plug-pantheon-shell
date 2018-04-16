@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-16 11:01-0700\n"
-"PO-Revision-Date: 2018-04-16 19:54+0000\n"
+"PO-Revision-Date: 2018-04-17 00:08+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/he/>\n"
@@ -39,7 +39,7 @@ msgstr "רציף"
 
 #: src/desktop-plug.vala:53 src/desktop-plug.vala:100
 msgid "Hot Corners"
-msgstr "קצות חמות"
+msgstr "קצוות חמים"
 
 #: src/desktop-plug.vala:96
 msgid "Theme"
