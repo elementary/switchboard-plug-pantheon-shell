@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-23 20:58-0700\n"
-"PO-Revision-Date: 2018-04-19 14:20+0000\n"
+"PO-Revision-Date: 2018-04-24 11:36+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-pantheon-shell/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,7 +60,7 @@ msgstr "תצוגה"
 
 #: src/Widgets/WallpaperContainer.vala:136
 msgid "Remove"
-msgstr ""
+msgstr "הסרה"
 
 #: src/Widgets/WallpaperContainer.vala:206
 #, c-format
