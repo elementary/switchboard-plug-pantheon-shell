@@ -19,6 +19,8 @@
  */
 
 public class WallpaperContainer : Gtk.FlowBoxChild {
+    public signal void trash (string uri);
+
     private const int THUMB_WIDTH = 162;
     private const int THUMB_HEIGHT = 100;
 
@@ -131,7 +133,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         add (event_box);
 
         var move_to_trash = new Gtk.MenuItem.with_label (_("Move to Trash"));
-        move_to_trash.activate.connect (trash);
+        move_to_trash.activate.connect (() => trash (uri));
 
         context_menu = new Gtk.Menu ();
         context_menu.append (move_to_trash);
@@ -201,15 +203,6 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             return true;
         }
         return false;
-    }
-
-    private void trash () {
-        var file = File.new_for_uri (uri);
-        try {
-            file.trash ();
-        } catch (Error e) {
-            critical (e.message);
-        }
     }
 
     private async void update_thumb () {
