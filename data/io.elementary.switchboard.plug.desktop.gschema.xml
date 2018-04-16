@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-	<schema path="/io/elementary/switchboard/plug/desktop/" id="io.elementary.switchboard.plug.desktop" gettext-domain="switchboard">
+	<schema path="/io/elementary/switchboard/plug/desktop/" id="io.elementary.switchboard.plug.desktop">
 		<key name="current-wallpaper-source" type="s">
 			<default>'sys'</default>
 			<summary>Currently selected wallpaper source.</summary>
