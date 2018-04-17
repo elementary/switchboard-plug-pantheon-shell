@@ -23,8 +23,8 @@
 interface Thumbnailer : Object {
     public signal void ready (uint32 handle, string[] uris);
     public signal void finished (uint32 handle);
-    public abstract uint32 queue (string[] uris, string [] mime_types, string flavor, string scheduler, uint32 dequeue) throws IOError;
-    public abstract void dequeue (uint32 handle) throws IOError;
+    public abstract uint32 queue (string[] uris, string [] mime_types, string flavor, string scheduler, uint32 dequeue) throws GLib.Error;
+    public abstract void dequeue (uint32 handle) throws GLib.Error;
 }
 
 public class ThumbnailGenerator {
@@ -71,7 +71,7 @@ public class ThumbnailGenerator {
         foreach (var handle in handles) {
             try {
                 thumbnailer.dequeue (handle);
-            } catch (IOError e) {
+            } catch (GLib.Error e) {
                 warning ("Unable to tell thumbnailer to stop creating thumbnails: %s", e.message);
             }
         }
@@ -92,7 +92,7 @@ public class ThumbnailGenerator {
                 var handle = thumbnailer.queue ({ uri }, { get_mime_type (uri) }, thumb_size, "default", 0);
                 handles.add (handle);
                 queued_delegates.@set (handle, wrapper);
-            } catch (IOError e) {
+            } catch (GLib.Error e) {
                 warning ("Unable to queue thumbnail generation for '%s': %s", uri, e.message);
             }
         }

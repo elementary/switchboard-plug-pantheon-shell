@@ -44,7 +44,7 @@ namespace SetWallpaperContractor {
 
     [DBus (name = "org.freedesktop.Accounts.User")]
     interface AccountsServiceUser : Object {
-        public abstract void set_background_file (string filename) throws IOError;
+        public abstract void set_background_file (string filename) throws GLib.Error;
     }
 
     private void update_slideshow (string path, List<File> files, int duration) {
