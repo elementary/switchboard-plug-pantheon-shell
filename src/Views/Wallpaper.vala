@@ -151,7 +151,7 @@ public class Wallpaper : Gtk.Grid {
 
         color_button = new Gtk.ColorButton ();
         color_button.margin = 12;
-        color_button.margin_left = 0;
+        color_button.margin_start = 0;
         color_button.rgba = rgba_color;
         color_button.color_set.connect (update_color);
 
