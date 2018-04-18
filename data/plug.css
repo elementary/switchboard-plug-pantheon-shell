@@ -21,6 +21,10 @@
     background-color: transparent;
 }
 
+.wallpaper-container .card {
+    border: none;
+}
+
 .wallpaper-container:focus .card {
     border-radius: 1px;
     box-shadow:

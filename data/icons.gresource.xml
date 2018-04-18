@@ -2,6 +2,6 @@
 <gresources>
   <gresource prefix="/io/elementary/switchboard/plug/pantheon-shell">
     <file alias="hotcornerdisplay.svg" compressed="true">hotcornerdisplay.svg</file>
-    <file alias="plug.css">plug.css</file>
+    <file alias="plug.css" compressed="true">plug.css</file>
   </gresource>
 </gresources>

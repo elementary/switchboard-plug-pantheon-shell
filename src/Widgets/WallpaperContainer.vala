@@ -74,7 +74,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         width_request = THUMB_WIDTH + 18;
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("io/elementary/switchboard/plug/pantheon-shell/plug.css");
+        provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
 
         var style_context = get_style_context ();
         style_context.add_class ("wallpaper-container");
