@@ -432,12 +432,8 @@ public class Wallpaper : Gtk.Grid {
                 wallpaper.show_all ();
 
                 wallpaper.trash.connect (() => {
-                    try {
-                        file.trash_async ();
-                        wallpaper_view.remove (wallpaper);
-                    } catch (Error e) {
-                        critical (e.message);
-                    }
+                    file.trash_async.begin ();
+                    wallpaper_view.remove (wallpaper);
                 });
 
                 // Select the wallpaper if it is the current wallpaper

@@ -147,8 +147,6 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
                 }
             });
 
-
-
             context_menu = new Gtk.Menu ();
             context_menu.append (move_to_trash);
             context_menu.show_all ();
@@ -215,9 +213,9 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     private bool show_context_menu (Gtk.Widget sender, Gdk.EventButton evt) {
         if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3) {
             context_menu.popup (null, null, null, evt.button, evt.time);
-            return true;
+            return Gdk.EVENT_STOP;
         }
-        return false;
+        return Gdk.EVENT_PROPAGATE;
     }
 
     private async void update_thumb () {
