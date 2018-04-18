@@ -138,12 +138,16 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             var move_to_trash = new Gtk.MenuItem.with_label (_("Move to Trash"));
             move_to_trash.activate.connect (() => trash ());
 
-            try {
-                var info = file.query_info (GLib.FileAttribute.ACCESS_CAN_TRASH, 0);
-                move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_TRASH);
-            } catch (Error e) {
-                critical (e.message);
-            }
+            file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_TRASH, 0, Priority.DEFAULT, null, (obj, res) => {
+                try {
+                    var info = file.query_info_async.end (res);
+                    move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_TRASH);
+                } catch (Error e) {
+                    critical (e.message);
+                }
+            });
+
+
 
             context_menu = new Gtk.Menu ();
             context_menu.append (move_to_trash);
