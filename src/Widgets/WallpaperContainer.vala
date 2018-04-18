@@ -133,11 +133,10 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         add (event_box);
 
         if (uri != null) {
-            var file = File.new_for_uri (uri);
-
             var move_to_trash = new Gtk.MenuItem.with_label (_("Move to Trash"));
             move_to_trash.activate.connect (() => trash ());
 
+            var file = File.new_for_uri (uri);
             file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_TRASH, 0, Priority.DEFAULT, null, (obj, res) => {
                 try {
                     var info = file.query_info_async.end (res);
