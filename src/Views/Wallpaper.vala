@@ -431,6 +431,11 @@ public class Wallpaper : Gtk.Grid {
                 wallpaper_view.insert (wallpaper, -1);
                 wallpaper.show_all ();
 
+                wallpaper.trash.connect (() => {
+                    file.trash_async.begin ();
+                    wallpaper_view.remove (wallpaper);
+                });
+
                 // Select the wallpaper if it is the current wallpaper
                 if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
                     this.wallpaper_view.select_child (wallpaper);
