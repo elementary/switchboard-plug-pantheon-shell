@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 11:01-0700\n"
+"POT-Creation-Date: 2018-04-18 14:19-0700\n"
 "PO-Revision-Date: 2017-04-17 14:12+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -53,7 +53,11 @@ msgstr "Veličina ikone"
 msgid "Display"
 msgstr "Zaslon"
 
-#: src/Widgets/WallpaperContainer.vala:179
+#: src/Widgets/WallpaperContainer.vala:136
+msgid "Move to Trash"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr ""

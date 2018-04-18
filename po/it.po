@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 11:01-0700\n"
+"POT-Creation-Date: 2018-04-18 14:19-0700\n"
 "PO-Revision-Date: 2018-03-10 00:04+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
@@ -57,7 +57,11 @@ msgstr "Dimensione delle icone"
 msgid "Display"
 msgstr "Monitor"
 
-#: src/Widgets/WallpaperContainer.vala:179
+#: src/Widgets/WallpaperContainer.vala:136
+msgid "Move to Trash"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr ""

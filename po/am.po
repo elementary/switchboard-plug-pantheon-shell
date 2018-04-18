@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 11:01-0700\n"
+"POT-Creation-Date: 2018-04-18 14:19-0700\n"
 "PO-Revision-Date: 2014-04-14 23:56+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
@@ -56,7 +56,11 @@ msgstr ""
 msgid "Display"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:179
+#: src/Widgets/WallpaperContainer.vala:136
+msgid "Move to Trash"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr ""

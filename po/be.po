@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 11:01-0700\n"
+"POT-Creation-Date: 2018-04-18 14:19-0700\n"
 "PO-Revision-Date: 2015-05-25 16:45+0000\n"
 "Last-Translator: Viktuk <register885@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,11 @@ msgstr ""
 msgid "Display"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:179
+#: src/Widgets/WallpaperContainer.vala:136
+msgid "Move to Trash"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr ""
