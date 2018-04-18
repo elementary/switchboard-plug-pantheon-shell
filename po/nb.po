@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 11:01-0700\n"
+"POT-Creation-Date: 2018-04-18 14:19-0700\n"
 "PO-Revision-Date: 2017-05-31 06:10+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -57,7 +57,11 @@ msgstr "Ikonstørrelse"
 msgid "Display"
 msgstr "Skjerm"
 
-#: src/Widgets/WallpaperContainer.vala:179
+#: src/Widgets/WallpaperContainer.vala:136
+msgid "Move to Trash"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr ""
