@@ -68,7 +68,10 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     construct {
-        scale = get_style_context ().get_scale ();
+        var style_context = get_style_context ();
+        style_context.add_class ("wallpaper-container");
+
+        scale = style_context.get_scale ();
 
         height_request = THUMB_HEIGHT + 18;
         width_request = THUMB_WIDTH + 18;
@@ -76,9 +79,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
 
-        var style_context = get_style_context ();
-        style_context.add_class ("wallpaper-container");
-        style_context.add_provider (provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         image = new Granite.AsyncImage ();
         image.halign = Gtk.Align.CENTER;

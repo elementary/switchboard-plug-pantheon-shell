@@ -22,20 +22,20 @@
 }
 
 .wallpaper-container .card {
+    border-radius: 1px;
     border: none;
 }
 
-.wallpaper-container:focus .card {
-    border-radius: 1px;
+.wallpaper-container .card:checked {
     box-shadow:
-        0 0 0 3px alpha (@text_color, 0.2),
+        0 0 0 4px alpha (@text_color, 0.2),
         0 0 0 1px alpha (#000, 0.05),
         0 3px 3px alpha (#000, 0.22);
 }
 
-.wallpaper-container:focus .card:checked {
+.wallpaper-container:focus .card {
     box-shadow:
-        0 0 0 3px @colorAccent,
+        0 0 0 4px @colorAccent,
         0 0 0 1px alpha (#000, 0.05),
         0 3px 3px alpha (#000, 0.22);
 }
