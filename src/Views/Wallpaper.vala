@@ -433,7 +433,7 @@ public class Wallpaper : Gtk.Grid {
 
                 wallpaper.trash.connect (() => {
                     try {
-                        file.trash ();
+                        file.trash_async ();
                         wallpaper_view.remove (wallpaper);
                     } catch (Error e) {
                         critical (e.message);
