@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 11:01-0700\n"
-"PO-Revision-Date: 2018-04-17 00:08+0000\n"
+"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"PO-Revision-Date: 2018-04-18 21:23+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/pl/>\n"
@@ -58,7 +58,11 @@ msgstr "Rozmiar ikon"
 msgid "Display"
 msgstr "Ekran"
 
-#: src/Widgets/WallpaperContainer.vala:179
+#: src/Widgets/WallpaperContainer.vala:136
+msgid "Move to Trash"
+msgstr "Przenieś do kosza"
+
+#: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr "Artysta: %s"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 11:01-0700\n"
-"PO-Revision-Date: 2018-04-17 07:22+0000\n"
+"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"PO-Revision-Date: 2018-04-18 21:28+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/lt/>\n"
@@ -54,7 +54,11 @@ msgstr "Piktogramų dydis"
 msgid "Display"
 msgstr "Ekranas"
 
-#: src/Widgets/WallpaperContainer.vala:179
+#: src/Widgets/WallpaperContainer.vala:136
+msgid "Move to Trash"
+msgstr "Perkelti į šiukšlinę"
+
+#: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr "Dailininkas: %s"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-16 11:01-0700\n"
+"POT-Creation-Date: 2018-04-18 14:19-0700\n"
 "PO-Revision-Date: 2015-01-29 16:55+0000\n"
 "Last-Translator: Haris Karić <haris.karic.96@gmail.com>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -57,7 +57,11 @@ msgstr "Veličina ikone"
 msgid "Display"
 msgstr "Displej"
 
-#: src/Widgets/WallpaperContainer.vala:179
+#: src/Widgets/WallpaperContainer.vala:136
+msgid "Move to Trash"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr ""
