@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-18 14:19-0700\n"
-"PO-Revision-Date: 2018-04-19 16:19+0000\n"
+"PO-Revision-Date: 2018-04-20 00:12+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/ca/>\n"
@@ -60,7 +60,7 @@ msgstr "Pantalla"
 
 #: src/Widgets/WallpaperContainer.vala:136
 msgid "Move to Trash"
-msgstr "Mou a la paperera"
+msgstr "Desplaça a la paperera"
 
 #: src/Widgets/WallpaperContainer.vala:206
 #, c-format
