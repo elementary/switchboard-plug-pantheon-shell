@@ -105,6 +105,7 @@ public class HotCorners : Gtk.Grid {
         box.append ("2", _("Maximize current window")); // maximize-current
         box.append ("4", _("Show Applications Menu"));  // open-launcher
         box.append ("7", _("Show all windows"));        // window-overview-all
+        box.append ("8", _("Switch to new workspace")); // switch-new-workspace
         box.append (CUSTOM_COMMAND_ID, _("Execute custom command"));  // custom-command
 
         return box;
