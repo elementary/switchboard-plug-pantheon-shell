@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-18 14:19-0700\n"
-"PO-Revision-Date: 2018-04-19 11:00+0000\n"
+"PO-Revision-Date: 2018-04-20 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/ja/>\n"
@@ -220,12 +220,12 @@ msgstr "1 日"
 
 #: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
-msgstr "写真を表示する時間"
+msgstr "それぞれの写真を表示する時間"
 
 #: set-wallpaper-contract/set-wallpaper.vala:222
 #: set-wallpaper-contract/set-wallpaper.vala:230
 msgid "Set As Desktop Slideshow"
-msgstr "デスクトップスライドショーを設定"
+msgstr "デスクトップスライドショーとして設定"
 
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
@@ -233,8 +233,8 @@ msgstr "スライドショーの作成"
 
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr "デスクトップの背景に設定 (_D)"
+msgstr "デスクトップの背景として設定 (_D)"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr "選択した画像をデスクトップの壁紙として設定します"
+msgstr "選択した画像をデスクトップの背景として設定します"
