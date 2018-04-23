@@ -160,7 +160,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         try {
             if (uri != null) {
                 if (thumb_path != null && thumb_valid) {
-                    update_thumb ();
+                    update_thumb.begin ();
                 } else {
                     generate_and_load_thumb ();
                 }
@@ -180,7 +180,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
                 var file = File.new_for_uri (uri);
                 var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);
                 thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                update_thumb ();
+                update_thumb.begin ();
             } catch (Error e) {
                 warning ("Error loading thumbnail for '%s': %s", uri, e.message);
             }
