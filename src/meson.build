@@ -12,11 +12,6 @@ plug_files = files(
 
 switchboard_dep = dependency('switchboard-2.0')
 
-vala_args = []
-if (plank_dep.version().version_compare('>=0.10.9'))
-  vala_args += '--define=HAVE_PLANK_0_11'
-endif
-
 plank_datadir = plank_dep.get_pkgconfig_variable('pkgdatadir')
 
 configuration = configuration_data()
@@ -33,7 +28,6 @@ shared_module(
     plug_files,
     config_file,
     plug_resources,
-    vala_args: vala_args,
     dependencies: [
         glib_dep,
         gio_dep,

@@ -15,7 +15,7 @@ add_project_arguments(
     language: 'vala'
 )
 
-plank_dep = dependency('plank', version: '>=0.7.1.1137')
+plank_dep = dependency('plank', version: '>=0.10.9')
 glib_dep = dependency('glib-2.0')
 gio_dep = dependency('gio-2.0')
 gobject_dep = dependency('gobject-2.0')

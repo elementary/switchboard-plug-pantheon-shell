@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-18 14:19-0700\n"
-"PO-Revision-Date: 2018-04-18 17:57+0000\n"
+"PO-Revision-Date: 2018-04-20 22:38+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
-"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-pantheon-shell/da/>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,7 +59,7 @@ msgstr "Skærm"
 
 #: src/Widgets/WallpaperContainer.vala:136
 msgid "Move to Trash"
-msgstr ""
+msgstr "Flyt til Papirkurv"
 
 #: src/Widgets/WallpaperContainer.vala:206
 #, c-format
