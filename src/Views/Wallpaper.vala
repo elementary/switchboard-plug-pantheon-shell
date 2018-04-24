@@ -327,7 +327,7 @@ public class Wallpaper : Gtk.Grid {
                 wallpaper.show_all ();
 
                 wallpaper.trash.connect (() => {
-                    file.trash_async.begin ();
+                    file.delete_async.begin ();
                     wallpaper_view.remove (wallpaper);
                 });
 
