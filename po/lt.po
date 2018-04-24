@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"POT-Creation-Date: 2018-04-23 20:58-0700\n"
 "PO-Revision-Date: 2018-04-18 21:28+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-pantheon-shell/lt/>\n"
+"Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-pantheon-shell/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
-"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-14 05:46+0000\n"
 
@@ -25,79 +25,56 @@ msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 "Konfigūruoti apatinį skydelį, karštuosius kampus ir keisti darbalaukio foną"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "Darbalaukio fonas"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr "Apatinis skydelis"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "Karštieji kampai"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "Tema"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Slėpimo veiksena"
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "Piktogramų dydis"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "Ekranas"
 
 #: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
-msgstr "Perkelti į šiukšlinę"
+msgid "Remove"
+msgstr ""
 
 #: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr "Dailininkas: %s"
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "Paveikslai"
-
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "Fonai"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "Tinkintas…"
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:107
 msgid "Centered"
 msgstr "Centruotas"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:108
 msgid "Zoom"
 msgstr "Padidintas"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:109
 msgid "Spanned"
 msgstr "Per kelis ekranus"
-
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "Pasirinkite aplanką"
-
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "Atsisakyti"
-
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "Atverti"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -120,18 +97,14 @@ msgid "Maximize current window"
 msgstr "Išskleisti esamą langą"
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr "Suskleisti esamą langą"
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr "Rodyti programų meniu"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "Rodyti visus langus"
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
 msgstr "Vykdyti tinkintą komandą"
 
@@ -147,53 +120,53 @@ msgstr "Normalus"
 msgid "Large"
 msgstr "Didelis"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "Tinkintas (%dpx)"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
 msgstr "Fokusuotas langas išskleidžiamas"
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
 msgstr "Fokusuotas langas užkloja apatinį skydelį"
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
 msgstr "Bet kuris langas užkloja apatinį skydelį"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
 msgstr "Nenaudojamas"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr "Pirminis ekranas:"
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr "Ekranas:"
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr "Piktogramų dydis:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr "Slėpti kai:"
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr "Parodyti po spaudimo:"
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "Vaizduoklis %d"
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr "Ekranas %d"
@@ -235,6 +208,10 @@ msgstr "Rodyti kiekvieną nuotrauką"
 msgid "Set As Desktop Slideshow"
 msgstr "Nustatyti kaip darbalaukio skaidrių rodymą"
 
+#: set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "Atsisakyti"
+
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
 msgstr "Kurti skaidrių rodymą"
@@ -246,3 +223,24 @@ msgstr "Nustatyti kaip _darbalaukio foną"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Nustatyti pasirinktą paveikslą naujuoju darbalaukio fonu"
+
+#~ msgid "Move to Trash"
+#~ msgstr "Perkelti į šiukšlinę"
+
+#~ msgid "Pictures"
+#~ msgstr "Paveikslai"
+
+#~ msgid "Backgrounds"
+#~ msgstr "Fonai"
+
+#~ msgid "Custom…"
+#~ msgstr "Tinkintas…"
+
+#~ msgid "Select a folder"
+#~ msgstr "Pasirinkite aplanką"
+
+#~ msgid "Open"
+#~ msgstr "Atverti"
+
+#~ msgid "Minimize current window"
+#~ msgstr "Suskleisti esamą langą"

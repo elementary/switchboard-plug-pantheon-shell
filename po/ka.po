@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"POT-Creation-Date: 2018-04-23 20:58-0700\n"
 "PO-Revision-Date: 2015-11-14 22:27+0000\n"
 "Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,37 +22,38 @@ msgstr "სამუშაო მაგიდა"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "ფონური გამოსახულება"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr "დოკი"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "ცხელი კუთხეები"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "თემა"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "დამალვის რეჟიმი"
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "ხატულას ზომა"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "დისპლეი"
 
 #: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
+msgid "Remove"
 msgstr ""
 
 #: src/Widgets/WallpaperContainer.vala:206
@@ -60,41 +61,17 @@ msgstr ""
 msgid "Artist: %s"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "სურათები"
-
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "ფონები"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "საკუთარი..."
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:107
 msgid "Centered"
 msgstr "ცენტრირებული"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:108
 msgid "Zoom"
 msgstr "გადიდება"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:109
 msgid "Spanned"
 msgstr "მოცვა"
-
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "საქაღალდის შერჩევა"
-
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "გაუქმება"
-
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "გახსნა"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -117,18 +94,14 @@ msgid "Maximize current window"
 msgstr ""
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr ""
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr "პროგრამების მენიუს ჩვენება"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr ""
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
 msgstr ""
 
@@ -144,53 +117,53 @@ msgstr "ჩვეულებრივი"
 msgid "Large"
 msgstr "დიდი"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "ხელით (%dpx)"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
 msgstr "ფოლუსირებული ფანჯარა გაშლილია"
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
 msgstr "ფოკუსირებული ფანჯარა გადაფარავს დოკს"
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
 msgstr "ნებისმიერი ფანჯარა გადაფარავს დოკს"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
 msgstr "არ გამოიყენება"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr ""
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr "დისპლეი:"
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr ""
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr "დამალვა, როცა:"
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr ""
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "მონიტორი %d"
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr "დისპლეი %d"
@@ -229,6 +202,10 @@ msgstr ""
 msgid "Set As Desktop Slideshow"
 msgstr ""
 
+#: set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "გაუქმება"
+
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
 msgstr ""
@@ -240,6 +217,21 @@ msgstr ""
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+
+#~ msgid "Pictures"
+#~ msgstr "სურათები"
+
+#~ msgid "Backgrounds"
+#~ msgstr "ფონები"
+
+#~ msgid "Custom…"
+#~ msgstr "საკუთარი..."
+
+#~ msgid "Select a folder"
+#~ msgstr "საქაღალდის შერჩევა"
+
+#~ msgid "Open"
+#~ msgstr "გახსნა"
 
 #~ msgid "Scaled"
 #~ msgstr "სკალა"

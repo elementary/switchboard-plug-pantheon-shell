@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"POT-Creation-Date: 2018-04-23 20:58-0700\n"
 "PO-Revision-Date: 2017-05-06 07:26+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,37 +28,38 @@ msgstr "Радна површ"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Подесите луку, вруће углове и промените позадину"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "Позадина"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr "Лука"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "Врући углови"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "Тема"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Режим скривања"
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "Величина иконице"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "Екран"
 
 #: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
+msgid "Remove"
 msgstr ""
 
 #: src/Widgets/WallpaperContainer.vala:206
@@ -66,41 +67,17 @@ msgstr ""
 msgid "Artist: %s"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "Слике"
-
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "Позадине"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "Произвољно…"
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:107
 msgid "Centered"
 msgstr "По средини"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:108
 msgid "Zoom"
 msgstr "Увеличај"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:109
 msgid "Spanned"
 msgstr "Распрострто"
-
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "Изаберите фасциклу"
-
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "Откажи"
-
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "Отвори"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -123,18 +100,14 @@ msgid "Maximize current window"
 msgstr "Увећај текући прозор"
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr "Умањи текући прозор"
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr "Прикажи изборник програма"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "Прикажи све прозоре"
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
 msgstr "Изврши произвољну наредбу"
 
@@ -150,53 +123,53 @@ msgstr "Обично"
 msgid "Large"
 msgstr "Велико"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "Произвољно (%d px)"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
 msgstr "Прозор у жижи је увећан"
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
 msgstr "Прозор у жижи преклапа луку"
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
 msgstr "Било који прозор преклапа луку"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
 msgstr "Који се не користи"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr "Основни екран:"
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr "Екран:"
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr "Величина иконице:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr "Сакриј када:"
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr "Осећај притиска:"
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "Монитор бр. %d"
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr "Екран бр. %d"
@@ -238,6 +211,10 @@ msgstr "Прикажи сваку фотографију"
 msgid "Set As Desktop Slideshow"
 msgstr "Постави као смењиву позадину радне површи"
 
+#: set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "Откажи"
+
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
 msgstr "Направи покретни приказ"
@@ -250,6 +227,24 @@ msgstr "Постави као смењиву позадину радне пов�
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+
+#~ msgid "Pictures"
+#~ msgstr "Слике"
+
+#~ msgid "Backgrounds"
+#~ msgstr "Позадине"
+
+#~ msgid "Custom…"
+#~ msgstr "Произвољно…"
+
+#~ msgid "Select a folder"
+#~ msgstr "Изаберите фасциклу"
+
+#~ msgid "Open"
+#~ msgstr "Отвори"
+
+#~ msgid "Minimize current window"
+#~ msgstr "Умањи текући прозор"
 
 #~ msgid "Stretched"
 #~ msgstr "Развучено"
