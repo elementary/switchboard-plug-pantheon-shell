@@ -115,14 +115,14 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         add (event_box);
 
         if (uri != null) {
-            var move_to_trash = new Gtk.MenuItem.with_label (_("Move to Trash"));
+            var move_to_trash = new Gtk.MenuItem.with_label (_("Remove"));
             move_to_trash.activate.connect (() => trash ());
 
             var file = File.new_for_uri (uri);
-            file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_TRASH, 0, Priority.DEFAULT, null, (obj, res) => {
+            file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_DELETE, 0, Priority.DEFAULT, null, (obj, res) => {
                 try {
                     var info = file.query_info_async.end (res);
-                    move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_TRASH);
+                    move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
                 } catch (Error e) {
                     critical (e.message);
                 }
