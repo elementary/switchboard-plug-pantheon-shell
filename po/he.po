@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"POT-Creation-Date: 2018-04-23 20:58-0700\n"
 "PO-Revision-Date: 2018-04-19 14:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-pantheon-shell/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,79 +28,56 @@ msgstr "שולחן העבודה"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "הגדרת המעגן, הפינות החמות והחלפת רקע שולחן העבודה"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "תמונת רקע"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr "רציף"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "קצוות חמים"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "ערכת עיצוב"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "מצב הסתרה"
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "גודל הסמלים"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "תצוגה"
 
 #: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
-msgstr "העברה לאשפה"
+msgid "Remove"
+msgstr ""
 
 #: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
 msgstr "אמן: %s"
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "תמונות"
-
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "רקעים"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "התאמה אישית…"
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:107
 msgid "Centered"
 msgstr "ממורכז"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:108
 msgid "Zoom"
 msgstr "תקריב"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:109
 msgid "Spanned"
 msgstr "מגושר"
-
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "בחר תיקייה"
-
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "ביטול"
-
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "פתיחה"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -123,18 +100,14 @@ msgid "Maximize current window"
 msgstr "הגדלת החלון הנוכחי"
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr "מזעור החלון הנוכחי"
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr "הראה תפריט תוכנות"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "הצגת כל החלונות"
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
 msgstr "הפעלת פקודה בהתאמה אישית"
 
@@ -150,53 +123,53 @@ msgstr "רגיל"
 msgid "Large"
 msgstr "גדול"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "בהתאמה אישית (%d פיקסלים)"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
 msgstr "החלון שבמיקוד מוגדל"
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
 msgstr "החלון שבמיקוד חופף מעל המעגן"
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
 msgstr "חלון כלשהו חופף מעל המעגן"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
 msgstr "לא בשימוש"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr "תצוגה עיקרית:"
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr "תצוגה:"
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr "גודל הסמלים:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr "להסתיר כאשר:"
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr "לחץ לגילוי:"
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "צג %d"
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr "תצוגה %d"
@@ -235,6 +208,10 @@ msgstr "הצגת כל תמונה למשך"
 msgid "Set As Desktop Slideshow"
 msgstr "הגדרה כמצגת שולחן העבודה"
 
+#: set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "ביטול"
+
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
 msgstr "יצירת מצגת"
@@ -246,6 +223,27 @@ msgstr "הגדרה כ_רקע לשולחן העבודה"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשולחן העבודה"
+
+#~ msgid "Move to Trash"
+#~ msgstr "העברה לאשפה"
+
+#~ msgid "Pictures"
+#~ msgstr "תמונות"
+
+#~ msgid "Backgrounds"
+#~ msgstr "רקעים"
+
+#~ msgid "Custom…"
+#~ msgstr "התאמה אישית…"
+
+#~ msgid "Select a folder"
+#~ msgstr "בחר תיקייה"
+
+#~ msgid "Open"
+#~ msgstr "פתיחה"
+
+#~ msgid "Minimize current window"
+#~ msgstr "מזעור החלון הנוכחי"
 
 #~ msgid "Scaled"
 #~ msgstr "בגודל מותאם"

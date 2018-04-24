@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"POT-Creation-Date: 2018-04-23 20:58-0700\n"
 "PO-Revision-Date: 2018-01-04 09:15+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
@@ -28,37 +28,38 @@ msgstr "桌面"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "配置 Dock 和热角、更换壁纸"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "壁纸"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr "DOCK"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "热区"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "主题"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "隐藏模式"
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "图标大小"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "显示"
 
 #: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
+msgid "Remove"
 msgstr ""
 
 #: src/Widgets/WallpaperContainer.vala:206
@@ -66,41 +67,17 @@ msgstr ""
 msgid "Artist: %s"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "图片"
-
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "背景"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "自定义…"
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:107
 msgid "Centered"
 msgstr "居中"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:108
 msgid "Zoom"
 msgstr "缩放"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:109
 msgid "Spanned"
 msgstr "平铺"
-
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "选择文件夹"
-
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "取消"
-
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "打开"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -123,18 +100,14 @@ msgid "Maximize current window"
 msgstr "最大化当前窗口"
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr "最小化当前窗口"
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr "显示应用菜单"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "显示全部窗口"
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
 msgstr "执行自定义命令"
 
@@ -150,53 +123,53 @@ msgstr "普通"
 msgid "Large"
 msgstr "较大"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "自定义（%dpx）"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
 msgstr "焦点窗口最大化时"
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
 msgstr "焦点窗口与 Dock 重叠时"
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
 msgstr "任何窗口与 Dock 重叠时"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
 msgstr "不使用时"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr "主显示器："
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr "显示："
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr "图标大小："
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr "隐藏条件："
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr "压力显示："
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "显示器 %d"
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr "显示：%d"
@@ -232,6 +205,10 @@ msgstr "每张照片时长"
 msgid "Set As Desktop Slideshow"
 msgstr "设为桌面幻灯片"
 
+#: set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "取消"
+
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
 msgstr "创建幻灯片"
@@ -243,3 +220,21 @@ msgstr "设为桌面背景"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "将所选图片设置为新的桌面背景"
+
+#~ msgid "Pictures"
+#~ msgstr "图片"
+
+#~ msgid "Backgrounds"
+#~ msgstr "背景"
+
+#~ msgid "Custom…"
+#~ msgstr "自定义…"
+
+#~ msgid "Select a folder"
+#~ msgstr "选择文件夹"
+
+#~ msgid "Open"
+#~ msgstr "打开"
+
+#~ msgid "Minimize current window"
+#~ msgstr "最小化当前窗口"

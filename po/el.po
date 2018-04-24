@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"POT-Creation-Date: 2018-04-23 20:58-0700\n"
 "PO-Revision-Date: 2017-02-26 19:19+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -27,37 +27,38 @@ msgstr "Επιφάνεια εργασίας"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Ρύθμιση του dock, ενεργών γωνιών και αλλαγή ταπετσαρίας"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "Ταπετσαρία"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr "Μπάρα εφαρμογών"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "Ενεργές γωνίες"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "Θέμα"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "Μέγεθος εικονιδίων"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "Προβολή"
 
 #: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
+msgid "Remove"
 msgstr ""
 
 #: src/Widgets/WallpaperContainer.vala:206
@@ -65,41 +66,17 @@ msgstr ""
 msgid "Artist: %s"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "Εικόνες"
-
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "Παρασκήνια"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "Προσαρμοσμένο..."
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:107
 msgid "Centered"
 msgstr "Στο κέντρο"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:108
 msgid "Zoom"
 msgstr "Μεγέθυνση"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:109
 msgid "Spanned"
 msgstr "Εκτεταμένο"
-
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "Επιλέξτε ένα φάκελο"
-
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "Ακύρωση"
-
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "Άνοιγμα"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -122,18 +99,14 @@ msgid "Maximize current window"
 msgstr "Μεγιστοποίηση τρέχοντος παραθύρου"
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr "Ελαχιστοποίηση τρέχοντος παραθύρου"
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr "Εμφάνιση μενού εφαρμογών"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "Προβολή όλων των παραθύρων"
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
 msgstr "Εκτέλεση προσαρμοσμένης εντολής"
 
@@ -149,53 +122,53 @@ msgstr "Κανονικό"
 msgid "Large"
 msgstr "Μεγάλο"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "Προσαρμοσμένο (%dpx)"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
 msgstr ""
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
 msgstr "Οποιοδήποτε παράθυρο επικαλύπτει το dock"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
 msgstr "Δε βρίσκεται σε χρήση"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr "Αρχική οθόνη:"
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr "Οθόνη:"
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr "Μέγεθος εικονιδίου:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr "Απόκρυψη όταν:"
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr ""
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "Οθόνη %d"
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr "Εμφάνιση %d"
@@ -234,6 +207,10 @@ msgstr "Εμφάνιση κάθε φωτογραφίας για"
 msgid "Set As Desktop Slideshow"
 msgstr "Ορισμός ως slideshow επιφάνειας εργασίας"
 
+#: set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "Ακύρωση"
+
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
 msgstr "Δημιουργία slideshow"
@@ -246,3 +223,21 @@ msgstr "Ορισμός ως _ταπετσαρίας επιφάνειας εργ�
 msgid "Set selected image to be the new desktop background"
 msgstr ""
 "Ορισμός της επιλεγμένης φωτογραφίας ως νέας ταπετσαρίας επιφάνειας εργασίας"
+
+#~ msgid "Pictures"
+#~ msgstr "Εικόνες"
+
+#~ msgid "Backgrounds"
+#~ msgstr "Παρασκήνια"
+
+#~ msgid "Custom…"
+#~ msgstr "Προσαρμοσμένο..."
+
+#~ msgid "Select a folder"
+#~ msgstr "Επιλέξτε ένα φάκελο"
+
+#~ msgid "Open"
+#~ msgstr "Άνοιγμα"
+
+#~ msgid "Minimize current window"
+#~ msgstr "Ελαχιστοποίηση τρέχοντος παραθύρου"
