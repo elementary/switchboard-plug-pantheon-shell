@@ -28,11 +28,6 @@ plug_resources = gnome.compile_resources(
     source_dir: 'data'
 )
 
-install_data(
-    'data/io.elementary.switchboard.plug.desktop.gschema.xml',
-    install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'glib-2.0', 'schemas')
-)
-
 subdir('src')
 subdir('set-wallpaper-contract')
 subdir('po')
