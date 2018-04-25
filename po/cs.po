@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-23 20:58-0700\n"
-"PO-Revision-Date: 2017-04-11 12:15+0000\n"
+"PO-Revision-Date: 2018-04-25 08:44+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-pantheon-shell/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-09 05:49+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -60,12 +60,12 @@ msgstr "Displej"
 
 #: src/Widgets/WallpaperContainer.vala:136
 msgid "Remove"
-msgstr ""
+msgstr "Odebrat"
 
 #: src/Widgets/WallpaperContainer.vala:206
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Umělec: %s"
 
 #: src/Views/Wallpaper.vala:107
 msgid "Centered"
@@ -220,13 +220,12 @@ msgid "Create slideshow"
 msgstr "Vytvořit posloupnost pozadí"
 
 #: src/Translations.vala:20
-#, fuzzy
 msgid "Set as _Desktop Background"
-msgstr "Nastavit jako posloupnost pozadí plochy"
+msgstr "Nastavit jako _pozadí plochy"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Nastavit vybraný obrázek jako nové pozadí plochy"
 
 #~ msgid "Pictures"
 #~ msgstr "Obrázky"
