@@ -44,7 +44,6 @@ public class Wallpaper : Gtk.Grid {
 
     public Switchboard.Plug plug { get; construct set; }
     private GLib.Settings settings;
-    private GLib.Settings plug_settings;
 
     //Instance of the AccountsServices-Interface for this user
     private AccountsServiceUser? accountsservice = null;
@@ -69,7 +68,6 @@ public class Wallpaper : Gtk.Grid {
 
     construct {
         settings = new GLib.Settings ("org.gnome.desktop.background");
-        plug_settings = new GLib.Settings ("io.elementary.switchboard.plug.desktop");
 
         // DBus connection needed in update_wallpaper for
         // passing the wallpaper-information to accountsservice.
