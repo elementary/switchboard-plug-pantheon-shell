@@ -318,24 +318,7 @@ public class Wallpaper : Gtk.Grid {
                     continue;
                 }
 
-                var thumb_path = file_info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                var thumb_valid = file_info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
-                var wallpaper = new WallpaperContainer (uri, thumb_path, thumb_valid);
-                wallpaper_view.insert (wallpaper, -1);
-                wallpaper.show_all ();
-
-                wallpaper.trash.connect (() => {
-                    file.delete_async.begin ();
-                    wallpaper_view.remove (wallpaper);
-                });
-
-                // Select the wallpaper if it is the current wallpaper
-                if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
-                    this.wallpaper_view.select_child (wallpaper);
-                    // Set the widget activated without activating it
-                    wallpaper.checked = true;
-                    active_wallpaper = wallpaper;
-                }
+                add_wallpaper_from_file (file, uri);
             }
 
             if (toplevel_folder) {
@@ -443,7 +426,7 @@ public class Wallpaper : Gtk.Grid {
     private void on_drag_data_received (Gtk.Widget widget, Gdk.DragContext ctx, int x, int y, Gtk.SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
             try {
-                File file = File.new_for_uri (sel.get_uris ()[0]);
+                var file = File.new_for_uri (sel.get_uris ()[0]);
                 var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
 
                 if (!IOHelper.is_valid_file_type (info)) {
@@ -457,12 +440,7 @@ public class Wallpaper : Gtk.Grid {
                     local_uri = dest.get_uri ();
                 }
 
-                // Add the wallpaper name and thumbnail to the IconView
-                var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                var thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
-                var wallpaper = new WallpaperContainer (local_uri, thumb_path, thumb_valid);
-                wallpaper_view.add (wallpaper);
-                wallpaper.show_all ();
+                add_wallpaper_from_file (file, local_uri);
 
                 Gtk.drag_finish (ctx, true, false, timestamp);
             } catch (Error e) {
@@ -472,6 +450,34 @@ public class Wallpaper : Gtk.Grid {
 
         Gtk.drag_finish (ctx, false, false, timestamp);
         return;
+    }
+
+    private void add_wallpaper_from_file (GLib.File file, string uri) {
+        try {
+            var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
+            var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+            var thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
+            var wallpaper = new WallpaperContainer (uri, thumb_path, thumb_valid);
+            wallpaper_view.add (wallpaper);
+
+            wallpaper.show_all ();
+
+            wallpaper.trash.connect (() => {
+                var new_file = File.new_for_uri (uri);
+                new_file.delete_async.begin ();
+                wallpaper_view.remove (wallpaper);
+            });
+
+            // Select the wallpaper if it is the current wallpaper
+            if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
+                this.wallpaper_view.select_child (wallpaper);
+                // Set the widget activated without activating it
+                wallpaper.checked = true;
+                active_wallpaper = wallpaper;
+            }
+        } catch (Error e) {
+            critical ("Unable to add wallpaper: %s", e.message);
+        }
     }
 
     public void cancel_thumbnail_generation () {
