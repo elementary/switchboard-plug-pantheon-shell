@@ -182,17 +182,7 @@ public class Wallpaper : Gtk.Grid {
                     local_uri = dest.get_uri ();
                 }
 
-                try {
-                    var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
-
-                    var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                    var thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
-                    var wallpaper = new WallpaperContainer (local_uri, thumb_path, thumb_valid);
-                    wallpaper_view.add (wallpaper);
-                    wallpaper.show_all ();
-                } catch (Error e) {
-                    critical ("Unable to import: %s", e.message);
-                }
+                add_wallpaper_from_file (file, local_uri);
             }
         }
 
