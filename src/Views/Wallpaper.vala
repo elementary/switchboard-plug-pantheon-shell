@@ -100,6 +100,9 @@ public class Wallpaper : Gtk.Grid {
         wallpaper_scrolled_window.expand = true;
         wallpaper_scrolled_window.add (wallpaper_view);
 
+        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
+        add_wallpaper_button.margin = 12;
+
         combo = new Gtk.ComboBoxText ();
         combo.valign = Gtk.Align.CENTER;
         combo.append ("centered", _("Centered"));
@@ -119,6 +122,7 @@ public class Wallpaper : Gtk.Grid {
         color_button.color_set.connect (update_color);
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        size_group.add_widget (add_wallpaper_button);
         size_group.add_widget (combo);
         size_group.add_widget (color_button);
 
@@ -126,12 +130,62 @@ public class Wallpaper : Gtk.Grid {
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.pack_start (add_wallpaper_button);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
 
         attach (separator, 0, 0, 1, 1);
         attach (wallpaper_scrolled_window, 0, 1, 1, 1);
         attach (actionbar, 0, 2, 1, 1);
+
+        add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
+    }
+
+    private void show_wallpaper_chooser () {
+        var filter = new Gtk.FileFilter ();
+        filter.add_mime_type ("image/*");
+
+        var preview_area = new Granite.AsyncImage (false);
+        preview_area.pixel_size = 256;
+        preview_area.margin_right = 12;
+
+        var chooser = new Gtk.FileChooserDialog (
+            _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
+            _("Cancel"), Gtk.ResponseType.CANCEL,
+            _("Import"), Gtk.ResponseType.ACCEPT
+        );
+
+        chooser.select_multiple = true;
+        chooser.set_filter (filter);
+        chooser.set_preview_widget (preview_area);
+
+        chooser.update_preview.connect (() => {
+            string uri = chooser.get_preview_uri ();
+
+            if (uri != null && uri.has_prefix ("file://") == true) {
+                var file = GLib.File.new_for_uri (uri);
+                preview_area.set_from_gicon_async (new FileIcon (file), 256);
+                preview_area.show ();
+            } else {
+                preview_area.hide ();
+            }
+        });
+
+        if (chooser.run () == Gtk.ResponseType.ACCEPT) {
+            SList<string> uris = chooser.get_uris ();
+            foreach (unowned string uri in uris) {
+                var file = GLib.File.new_for_uri (uri);
+                string local_uri = uri;
+                var dest = copy_for_library (file);
+                if (dest != null) {
+                    local_uri = dest.get_uri ();
+                }
+
+                add_wallpaper_from_file (file, local_uri);
+            }
+        }
+
+        chooser.close ();
     }
 
     private void load_settings () {
