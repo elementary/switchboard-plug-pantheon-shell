@@ -138,10 +138,10 @@ public class Wallpaper : Gtk.Grid {
         attach (wallpaper_scrolled_window, 0, 1, 1, 1);
         attach (actionbar, 0, 2, 1, 1);
 
-        add_wallpaper_button.clicked.connect (import_wallpaper);
+        add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
     }
 
-    private void import_wallpaper () {
+    private void show_wallpaper_chooser () {
         var filter = new Gtk.FileFilter ();
         filter.add_mime_type ("image/*");
 
