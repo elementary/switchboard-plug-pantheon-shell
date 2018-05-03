@@ -7,12 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-23 20:58-0700\n"
+"POT-Creation-Date: 2018-05-03 14:24-0700\n"
 "PO-Revision-Date: 2018-04-30 03:52+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
-"pantheon-shell/zh_TW/>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-pantheon-shell/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,26 +58,42 @@ msgstr "圖示大小"
 msgid "Display"
 msgstr "顯示"
 
-#: src/Widgets/WallpaperContainer.vala:136
+#: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
 msgstr "移除"
 
-#: src/Widgets/WallpaperContainer.vala:206
+#: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
 msgstr "演出者：%s"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:103
+msgid "Import Photo…"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:108
 msgid "Centered"
 msgstr "置中"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:109
 msgid "Zoom"
 msgstr "遠近"
 
-#: src/Views/Wallpaper.vala:109
+#: src/Views/Wallpaper.vala:110
 msgid "Spanned"
 msgstr "橫跨"
+
+#: src/Views/Wallpaper.vala:153
+msgid "Import Photo"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "取消"
+
+#: src/Views/Wallpaper.vala:155
+msgid "Import"
+msgstr ""
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -205,10 +220,6 @@ msgstr "顯示每張相片"
 #: set-wallpaper-contract/set-wallpaper.vala:230
 msgid "Set As Desktop Slideshow"
 msgstr "設為桌面投影秀"
-
-#: set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "取消"
 
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
