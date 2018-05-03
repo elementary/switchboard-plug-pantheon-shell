@@ -173,7 +173,6 @@ public class Wallpaper : Gtk.Grid {
 
         if (chooser.run () == Gtk.ResponseType.ACCEPT) {
             SList<string> uris = chooser.get_uris ();
-            stdout.printf ("Selection:\n");
             foreach (unowned string uri in uris) {
                 var file = GLib.File.new_for_uri (uri);
                 string local_uri = uri;
