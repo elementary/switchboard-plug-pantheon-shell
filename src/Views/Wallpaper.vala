@@ -145,7 +145,7 @@ public class Wallpaper : Gtk.Grid {
         var filter = new Gtk.FileFilter ();
         filter.add_mime_type ("image/*");
 
-        var preview_area = new Gtk.Image ();
+        var preview_area = new Granite.AsyncImage (false);
         preview_area.pixel_size = 256;
         preview_area.margin_right = 12;
 
@@ -164,7 +164,7 @@ public class Wallpaper : Gtk.Grid {
 
             if (uri != null && uri.has_prefix ("file://") == true) {
                 var file = GLib.File.new_for_uri (uri);
-                preview_area.gicon = new FileIcon (file);
+                preview_area.set_from_gicon_async (new FileIcon (file), 256);
                 preview_area.show ();
             } else {
                 preview_area.hide ();
