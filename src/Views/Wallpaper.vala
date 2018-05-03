@@ -138,63 +138,65 @@ public class Wallpaper : Gtk.Grid {
         attach (wallpaper_scrolled_window, 0, 1, 1, 1);
         attach (actionbar, 0, 2, 1, 1);
 
-        add_wallpaper_button.clicked.connect (() => {
-            var filter = new Gtk.FileFilter ();
-            filter.add_mime_type ("image/*");
+        add_wallpaper_button.clicked.connect (import_wallpaper);
+    }
 
-            var preview_area = new Gtk.Image ();
-            preview_area.pixel_size = 256;
-            preview_area.margin_right = 12;
+    private void import_wallpaper () {
+        var filter = new Gtk.FileFilter ();
+        filter.add_mime_type ("image/*");
 
-            var chooser = new Gtk.FileChooserDialog (
-                _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
-                _("Cancel"), Gtk.ResponseType.CANCEL,
-                _("Import"), Gtk.ResponseType.ACCEPT
-            );
+        var preview_area = new Gtk.Image ();
+        preview_area.pixel_size = 256;
+        preview_area.margin_right = 12;
 
-            chooser.select_multiple = true;
-            chooser.set_filter (filter);
-            chooser.set_preview_widget (preview_area);
+        var chooser = new Gtk.FileChooserDialog (
+            _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
+            _("Cancel"), Gtk.ResponseType.CANCEL,
+            _("Import"), Gtk.ResponseType.ACCEPT
+        );
 
-            chooser.update_preview.connect (() => {
-                string uri = chooser.get_preview_uri ();
+        chooser.select_multiple = true;
+        chooser.set_filter (filter);
+        chooser.set_preview_widget (preview_area);
 
-                if (uri != null && uri.has_prefix ("file://") == true) {
-                    var file = GLib.File.new_for_uri (uri);
-                    preview_area.gicon = new FileIcon (file);
-                    preview_area.show ();
-                } else {
-                    preview_area.hide ();
+        chooser.update_preview.connect (() => {
+            string uri = chooser.get_preview_uri ();
+
+            if (uri != null && uri.has_prefix ("file://") == true) {
+                var file = GLib.File.new_for_uri (uri);
+                preview_area.gicon = new FileIcon (file);
+                preview_area.show ();
+            } else {
+                preview_area.hide ();
+            }
+        });
+
+        if (chooser.run () == Gtk.ResponseType.ACCEPT) {
+            SList<string> uris = chooser.get_uris ();
+            stdout.printf ("Selection:\n");
+            foreach (unowned string uri in uris) {
+                var file = GLib.File.new_for_uri (uri);
+                string local_uri = uri;
+                var dest = copy_for_library (file);
+                if (dest != null) {
+                    local_uri = dest.get_uri ();
                 }
-            });
 
-            if (chooser.run () == Gtk.ResponseType.ACCEPT) {
-                SList<string> uris = chooser.get_uris ();
-                stdout.printf ("Selection:\n");
-                foreach (unowned string uri in uris) {
-                    var file = GLib.File.new_for_uri (uri);
-                    string local_uri = uri;
-                    var dest = copy_for_library (file);
-                    if (dest != null) {
-                        local_uri = dest.get_uri ();
-                    }
+                try {
+                    var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
 
-                    try {
-                        var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
-
-                        var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                        var thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
-                        var wallpaper = new WallpaperContainer (local_uri, thumb_path, thumb_valid);
-                        wallpaper_view.add (wallpaper);
-                        wallpaper.show_all ();
-                    } catch (Error e) {
-                        critical ("Unable to import: %s", e.message);
-                    }
+                    var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+                    var thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
+                    var wallpaper = new WallpaperContainer (local_uri, thumb_path, thumb_valid);
+                    wallpaper_view.add (wallpaper);
+                    wallpaper.show_all ();
+                } catch (Error e) {
+                    critical ("Unable to import: %s", e.message);
                 }
             }
+        }
 
-            chooser.close ();
-        });
+        chooser.close ();
     }
 
     private void load_settings () {
