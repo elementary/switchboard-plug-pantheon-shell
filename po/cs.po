@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 14:24-0700\n"
-"PO-Revision-Date: 2018-04-25 08:44+0000\n"
+"PO-Revision-Date: 2018-05-10 17:21+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-pantheon-shell/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr "Pracovní plocha"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Nastavujte dok, aktivní rohy a měňte tapetu plochy"
+msgstr "Nastavujte dock, aktivní rohy a měňte tapetu plochy"
 
 #: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
@@ -36,7 +36,7 @@ msgstr "Tapeta"
 #: src/desktop-plug.vala:102 src/desktop-plug.vala:103
 #: src/desktop-plug.vala:104
 msgid "Dock"
-msgstr "Lišta aplikací"
+msgstr "Dock"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
@@ -69,7 +69,7 @@ msgstr "Umělec: %s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr ""
+msgstr "Importovat fotku…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
@@ -85,7 +85,7 @@ msgstr "Vyplnit"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
-msgstr ""
+msgstr "Importovat fotku"
 
 #: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
@@ -93,7 +93,7 @@ msgstr "Zrušit"
 
 #: src/Views/Wallpaper.vala:155
 msgid "Import"
-msgstr ""
+msgstr "Importovat"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -117,7 +117,7 @@ msgstr "Maximalizovat aktuální okno"
 
 #: src/Views/HotCorners.vala:106
 msgid "Show Applications Menu"
-msgstr "Zobrazit Nabídku aplikací"
+msgstr "Zobrazit nabídku aplikací"
 
 #: src/Views/HotCorners.vala:107
 msgid "Show all windows"
@@ -150,15 +150,15 @@ msgstr "Aktivní okno je maximalizováno"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr "Aktivní okno překrývá dok"
+msgstr "Aktivní okno překrývá dock"
 
 #: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr "Jakékoliv okno překrývá dok"
+msgstr "Jakékoliv okno překrývá dock"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
-msgstr "Nepoužíváno"
+msgstr "Se nepoužívá"
 
 #: src/Views/Dock.vala:122
 msgid "Primary display:"
