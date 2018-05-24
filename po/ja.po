@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 14:24-0700\n"
-"PO-Revision-Date: 2018-05-04 02:22+0000\n"
+"PO-Revision-Date: 2018-05-25 00:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/ja/>\n"
@@ -43,7 +43,7 @@ msgstr "テーマ"
 
 #: src/desktop-plug.vala:102
 msgid "Hide Mode"
-msgstr "隠すモード"
+msgstr "隠す方法"
 
 #: src/desktop-plug.vala:103
 msgid "Icon Size"
@@ -120,7 +120,7 @@ msgstr "すべてのウィンドウを表示"
 
 #: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
-msgstr "カスタムコマンドの実行"
+msgstr "カスタムコマンドを実行"
 
 #: src/Views/Dock.vala:34
 msgid "Small"
@@ -141,7 +141,7 @@ msgstr "カスタム (%dpx)"
 
 #: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
-msgstr "ウィンドウが最大化されたとき"
+msgstr "フォーカスされたウィンドウが最大化されたとき"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
