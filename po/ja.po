@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 14:24-0700\n"
-"PO-Revision-Date: 2018-06-06 00:09+0000\n"
+"PO-Revision-Date: 2018-06-10 00:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/ja/>\n"
@@ -31,7 +31,7 @@ msgstr "壁紙"
 #: src/desktop-plug.vala:102 src/desktop-plug.vala:103
 #: src/desktop-plug.vala:104
 msgid "Dock"
-msgstr "Dock"
+msgstr "ドック"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
