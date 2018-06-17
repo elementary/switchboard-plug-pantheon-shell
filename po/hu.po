@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 14:24-0700\n"
-"PO-Revision-Date: 2018-06-15 00:10+0000\n"
+"PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/hu/>\n"
@@ -26,9 +26,7 @@ msgstr "Asztali környezet"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-"Állítsa be a dokkot és az érzékeny sarkokat, vagy változtassa meg a "
-"háttérképet"
+msgstr "A dokk, az érzékeny sarkok és a háttérkép beállítása"
 
 #: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
