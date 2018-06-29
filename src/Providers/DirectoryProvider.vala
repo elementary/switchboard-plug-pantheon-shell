@@ -42,7 +42,7 @@ public class DirectoryProvider : GLib.Object, IProvider {
     }
 
     private async WallpaperContainer[]? load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
-        WallpaperContainer[] images = null;
+        WallpaperContainer[] images = {};
 
         if (cancellable.is_cancelled ()) {
             return null;
@@ -52,6 +52,7 @@ public class DirectoryProvider : GLib.Object, IProvider {
 
         try {
             // Enumerator object that will let us read through the wallpapers asynchronously
+            // TODO : https://github.com/elementary/switchboard-plug-pantheon-shell/pull/102/files/33a52bc4afcb07ac44c7c47a7d9c19e0d8624d79#diff-a07bbe16937d1555c5a5f09ccc4dc189
             var attrs = string.joinv (",", IOHelper.REQUIRED_FILE_ATTRS);
             var e = yield directory.enumerate_children_async (attrs, 0, Priority.DEFAULT);
             FileInfo file_info;

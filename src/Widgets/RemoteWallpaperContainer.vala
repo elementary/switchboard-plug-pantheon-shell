@@ -101,13 +101,14 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
         load_artist_tooltip ();
     }
 
+    // TODO: Make download_file async
     File download_file () {
         var loop = new MainLoop();
 
         if (!local_file.query_exists ()) {
             status = DownloadStatus.IN_PROGRESS;
             remote_file.copy_async.begin (local_file, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA, 1, null, (current, total) => {
-                debug ("Downloading "+current.to_string ()+" of "+total.to_string ());
+                debug (@"Downloading $(current.to_string ()) of $(total.to_string ())");
             }, (obj, res) => {
                 try {
                     status = remote_file.copy_async.end (res) ? DownloadStatus.DONE : DownloadStatus.READY;
@@ -124,7 +125,7 @@ public class RemoteWallpaperContainer : AbstractWallpaperContainer {
     }
 
     void update () {
-        revealer.reveal_child = !(status == DownloadStatus.DONE);
+        revealer.reveal_child = !status == DownloadStatus.DONE;
 
         if (status != DownloadStatus.DONE) {
             stack.visible_child_name = status.to_string ();

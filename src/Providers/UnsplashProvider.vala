@@ -19,13 +19,15 @@
  */
 
 public class UnsplashProvider : GLib.Object, IProvider {
-    public Cancellable cancellable {get;set;}
+    public Cancellable cancellable { get;set; }
     // TO DO : Insert elementary APP_ID
     const string APP_ID = "0386718809470cb13e17b21c5f5c37ad4bedfe6ea76548e4ea22095a8fc1129b";
 
     const string BASE_URL = "https://api.unsplash.com";
+    const string DEFAULT_URL = BASE_URL+"/photos";
     const string RANDOM_PHOTO = BASE_URL+"/photos/random";
     const string LIST_PHOTOS = BASE_URL+"/photos/random";
+    const string CURATED_URL = BASE_URL+"/photos/curated";
 
     enum OrderBy {
         LASTEST,
@@ -35,7 +37,7 @@ public class UnsplashProvider : GLib.Object, IProvider {
 
     public async RemoteWallpaperContainer[]? get_containers () {
         debug ("Getting images");
-        RemoteWallpaperContainer[] wallpapers = null;
+        RemoteWallpaperContainer[] wallpapers = {};
         // var json = get_random_photo ();
         var json = yield list_photos (OrderBy.LASTEST, 20);
 
@@ -61,12 +63,12 @@ public class UnsplashProvider : GLib.Object, IProvider {
         return new RemoteWallpaperContainer (url.get_string_member ("full"), url.get_string_member ("thumb"),user.get_string_member ("name"));
     }
 
-    private Json.Node parse_json (string data) {
+    private static Json.Node parse_json (string data) {
         var parser = new Json.Parser ();
         try {
             parser.load_from_data (data);
         } catch (Error e) {
-            print (_("Unable to parse the string: ")+e.message+"\n");
+            critical ("Unable to parse the string: %s", e.message);
         }
         return parser.get_root ();
     }
@@ -75,36 +77,33 @@ public class UnsplashProvider : GLib.Object, IProvider {
         string payload = "";
 
         try {
-            var loop = new MainLoop ();
             call.run_async (() => {
                 payload = call.get_payload ();
-                loop.quit ();
+                Idle.add (make_call.callback);
             });
-
-            loop.run ();
         } catch (Error e) {
-            warning (e.message);
+            critical (e.message);
         }
-        print (payload+"\n");
+        debug (payload);
+
+        // wait for the result to be finished and idle to be called
+        yield;
 
         return parse_json (payload);
     }
 
     async Json.Node get_random_photo () {
-        Rest.Proxy proxy = new Rest.Proxy (BASE_URL+"/photos/random", false);
-        Rest.ProxyCall call = proxy.new_call ();
-
-        call.add_params (
-            "client_id", APP_ID
-        );
+        var proxy = new Rest.Proxy (RANDOM_PHOTO, false);
+        var call = proxy.new_call ();
+        call.add_params ("client_id", APP_ID);
 
         return yield make_call (call);
     }
 
     // TODO enable order_by
-    async Json.Node list_photos (OrderBy order_by, int max_itens = 10, int page = 1, string url = BASE_URL+"/photos") {
-        Rest.Proxy proxy = new Rest.Proxy (url, false);
-        Rest.ProxyCall call = proxy.new_call ();
+    async Json.Node list_photos (OrderBy order_by, int max_itens = 10, int page = 1, string url = DEFAULT_URL) {
+        var proxy = new Rest.Proxy (url, false);
+        var call = proxy.new_call ();
         call.add_params (
             // "order_by", order_by,
             "page", page.to_string (),
@@ -116,6 +115,6 @@ public class UnsplashProvider : GLib.Object, IProvider {
     }
 
     async Json.Node list_curated_photos (OrderBy order_by, int max_itens = 10, int page = 1) {
-        return yield list_photos (order_by, max_itens, page, BASE_URL+"/photos/curated");
+        return yield list_photos (order_by, max_itens, page, CURATED_URL);
     }
 }
