@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-17 01:53+0200\n"
-"PO-Revision-Date: 2017-07-31 08:21+0000\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"PO-Revision-Date: 2018-06-12 07:32+0000\n"
+"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/id/>\n"
 "Language: id\n"
@@ -16,236 +16,239 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
-#. //github.com/elementary/switchboard-plug-pantheon-shell)
-#. *
-#. * This program is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This program is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU General Public
-#. * License along with this program; if not, write to the
-#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#. * Boston, MA 02110-1301 USA
-#.
-#: ../src/Translations.vala:20
-msgid "Set as _Desktop Background"
-msgstr "Atur sebagai Latar Belakang _Destop"
-
-#: ../src/Translations.vala:21
-msgid "Set selected image to be the new desktop background"
-msgstr "Tetapkan gambar yang dipilih menjadi latar belakang destop yang baru"
-
-#: ../src/Views/Dock.vala:34
-msgid "Small"
-msgstr "Kecil"
-
-#: ../src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Normal"
-
-#: ../src/Views/Dock.vala:36
-msgid "Large"
-msgstr "Besar"
-
-#: ../src/Views/Dock.vala:58
-msgid "Custom (%dpx)"
-msgstr "Tersuai (%dpx)"
-
-#: ../src/Views/Dock.vala:87
-msgid "Focused window is maximized"
-msgstr "Jendela fokus dimaksimalkan"
-
-#: ../src/Views/Dock.vala:88
-msgid "Focused window overlaps the dock"
-msgstr "Jendela fokus tumpang tindih dok"
-
-#: ../src/Views/Dock.vala:89
-msgid "Any window overlaps the dock"
-msgstr "Setiap jendela tumpang tindih dok"
-
-#: ../src/Views/Dock.vala:90
-msgid "Not being used"
-msgstr "Tidak digunakan"
-
-#: ../src/Views/Dock.vala:126
-msgid "Primary display:"
-msgstr "Tampilan utama:"
-
-#: ../src/Views/Dock.vala:130
-msgid "Display:"
-msgstr "Tampilan:"
-
-#: ../src/Views/Dock.vala:161
-msgid "Icon size:"
-msgstr "Ukuran ikon:"
-
-#: ../src/Views/Dock.vala:163
-msgid "Hide when:"
-msgstr "Sembunyikan ketika:"
-
-#: ../src/Views/Dock.vala:167
-msgid "Pressure reveal:"
-msgstr "Ungkapkan tekanan:"
-
-#: ../src/Views/Dock.vala:206
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: ../src/Views/Dock.vala:211
-msgid "Display %d"
-msgstr "Tampilan %d"
-
-#: ../src/Views/HotCorners.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "Saat kursor di pojok layar:"
-
-#: ../src/Views/HotCorners.vala:62
-msgid "Custom command:"
-msgstr "Perintah tersuai:"
-
-#: ../src/Views/HotCorners.vala:78
-msgid "Do nothing"
-msgstr "Jangan lakukan apa pun"
-
-#: ../src/Views/HotCorners.vala:79
-msgid "Multitasking View"
-msgstr "Tampilan Multitasking"
-
-#: ../src/Views/HotCorners.vala:80
-msgid "Maximize current window"
-msgstr "Maksimalkan jendela saat ini"
-
-#: ../src/Views/HotCorners.vala:81
-msgid "Minimize current window"
-msgstr "Minimalkan jendela saat ini"
-
-#: ../src/Views/HotCorners.vala:82
-msgid "Show Applications Menu"
-msgstr "Tampilkan Menu Aplikasi"
-
-#: ../src/Views/HotCorners.vala:83
-msgid "Show all windows"
-msgstr "Tampilkan semua jendela"
-
-#: ../src/Views/HotCorners.vala:84
-msgid "Execute custom command"
-msgstr "Jalankan perintah tersuai"
-
-#: ../src/Views/Wallpaper.vala:146
-msgid "Pictures"
-msgstr "Gambar"
-
-#: ../src/Views/Wallpaper.vala:147
-msgid "Backgrounds"
-msgstr "Latar Belakang"
-
-#: ../src/Views/Wallpaper.vala:148
-msgid "Custom…"
-msgstr "Ubahan…"
-
-#: ../src/Views/Wallpaper.vala:154
-msgid "Centered"
-msgstr "Di Tengah"
-
-#: ../src/Views/Wallpaper.vala:155
-msgid "Zoom"
-msgstr "Perbesar"
-
-#: ../src/Views/Wallpaper.vala:156
-msgid "Spanned"
-msgstr "Dibentangkan"
-
-#: ../src/Views/Wallpaper.vala:327
-msgid "Select a folder"
-msgstr "Pilih folder"
-
-#: ../src/Views/Wallpaper.vala:328
-#: ../set-wallpaper-contract/set-wallpaper.vala:220
-msgid "Cancel"
-msgstr "Batal"
-
-#: ../src/Views/Wallpaper.vala:329
-msgid "Open"
-msgstr "Buka"
-
-#: ../src/desktop-plug.vala:34
+#: src/desktop-plug.vala:36
 msgid "Desktop"
 msgstr "Destop"
 
-#: ../src/desktop-plug.vala:35
+#: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Konfigurasikan dok, pojok panas, dan ganti gambar latar"
 
-#: ../src/desktop-plug.vala:51 ../src/desktop-plug.vala:93
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "Gambar Latar"
 
-#: ../src/desktop-plug.vala:52 ../src/desktop-plug.vala:94
-#: ../src/desktop-plug.vala:95 ../src/desktop-plug.vala:96
-#: ../src/desktop-plug.vala:97 ../src/desktop-plug.vala:98
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr "Dok"
 
-#: ../src/desktop-plug.vala:53 ../src/desktop-plug.vala:99
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "Pojok Interaktif"
 
-#: ../src/desktop-plug.vala:95
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "Tema"
 
-#: ../src/desktop-plug.vala:96
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Mode Sembunyi"
 
-#: ../src/desktop-plug.vala:97
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "Ukuran Ikon"
 
-#: ../src/desktop-plug.vala:98
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "Tampilan"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:90
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "Hapus"
+
+#: src/Widgets/WallpaperContainer.vala:188
+#, c-format
+msgid "Artist: %s"
+msgstr "Artis: %s"
+
+#: src/Views/Wallpaper.vala:103
+msgid "Import Photo…"
+msgstr "Impor Foto…"
+
+#: src/Views/Wallpaper.vala:108
+msgid "Centered"
+msgstr "Di Tengah"
+
+#: src/Views/Wallpaper.vala:109
+msgid "Zoom"
+msgstr "Perbesar"
+
+#: src/Views/Wallpaper.vala:110
+msgid "Spanned"
+msgstr "Dibentangkan"
+
+#: src/Views/Wallpaper.vala:153
+msgid "Import Photo"
+msgstr "Impor Foto"
+
+#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "Batal"
+
+#: src/Views/Wallpaper.vala:155
+msgid "Import"
+msgstr "Impor"
+
+#: src/Views/HotCorners.vala:34
+msgid "When the cursor enters the corner of the display:"
+msgstr "Saat kursor di pojok layar:"
+
+#: src/Views/HotCorners.vala:66
+msgid "Custom command:"
+msgstr "Perintah tersuai:"
+
+#: src/Views/HotCorners.vala:103
+msgid "Do nothing"
+msgstr "Jangan lakukan apa pun"
+
+#: src/Views/HotCorners.vala:104
+msgid "Multitasking View"
+msgstr "Tampilan Multitasking"
+
+#: src/Views/HotCorners.vala:105
+msgid "Maximize current window"
+msgstr "Maksimalkan jendela saat ini"
+
+#: src/Views/HotCorners.vala:106
+msgid "Show Applications Menu"
+msgstr "Tampilkan Menu Aplikasi"
+
+#: src/Views/HotCorners.vala:107
+msgid "Show all windows"
+msgstr "Tampilkan semua jendela"
+
+#: src/Views/HotCorners.vala:108
+msgid "Execute custom command"
+msgstr "Jalankan perintah tersuai"
+
+#: src/Views/Dock.vala:34
+msgid "Small"
+msgstr "Kecil"
+
+#: src/Views/Dock.vala:35
+msgid "Normal"
+msgstr "Normal"
+
+#: src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Besar"
+
+#: src/Views/Dock.vala:54
+#, c-format
+msgid "Custom (%dpx)"
+msgstr "Tersuai (%dpx)"
+
+#: src/Views/Dock.vala:83
+msgid "Focused window is maximized"
+msgstr "Jendela fokus dimaksimalkan"
+
+#: src/Views/Dock.vala:84
+msgid "Focused window overlaps the dock"
+msgstr "Jendela fokus tumpang tindih dok"
+
+#: src/Views/Dock.vala:85
+msgid "Any window overlaps the dock"
+msgstr "Setiap jendela tumpang tindih dok"
+
+#: src/Views/Dock.vala:86
+msgid "Not being used"
+msgstr "Tidak digunakan"
+
+#: src/Views/Dock.vala:122
+msgid "Primary display:"
+msgstr "Tampilan utama:"
+
+#: src/Views/Dock.vala:126
+msgid "Display:"
+msgstr "Tampilan:"
+
+#: src/Views/Dock.vala:157
+msgid "Icon size:"
+msgstr "Ukuran ikon:"
+
+#: src/Views/Dock.vala:159
+msgid "Hide when:"
+msgstr "Sembunyikan ketika:"
+
+#: src/Views/Dock.vala:163
+msgid "Pressure reveal:"
+msgstr "Ungkapkan tekanan:"
+
+#: src/Views/Dock.vala:202
+#, c-format
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: src/Views/Dock.vala:207
+#, c-format
+msgid "Display %d"
+msgstr "Tampilan %d"
+
+#: set-wallpaper-contract/set-wallpaper.vala:95
+#, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d detik"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:93
+#: set-wallpaper-contract/set-wallpaper.vala:98
+#, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d menit"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:97
+#: set-wallpaper-contract/set-wallpaper.vala:102
+#, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d jam"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:100
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "1 hari"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:104
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "Tampilkan tiap foto untuk"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:217
-#: ../set-wallpaper-contract/set-wallpaper.vala:225
+#: set-wallpaper-contract/set-wallpaper.vala:222
+#: set-wallpaper-contract/set-wallpaper.vala:230
 msgid "Set As Desktop Slideshow"
 msgstr "Atur sebagai Pertunjukan Salindia Destop"
 
-#: ../set-wallpaper-contract/set-wallpaper.vala:221
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
 msgstr "Buat pertunjukansalindia"
+
+#: src/Translations.vala:20
+msgid "Set as _Desktop Background"
+msgstr "Atur sebagai Latar Belakang _Destop"
+
+#: src/Translations.vala:21
+msgid "Set selected image to be the new desktop background"
+msgstr "Tetapkan gambar yang dipilih menjadi latar belakang destop yang baru"
+
+#~ msgid "Pictures"
+#~ msgstr "Gambar"
+
+#~ msgid "Backgrounds"
+#~ msgstr "Latar Belakang"
+
+#~ msgid "Custom…"
+#~ msgstr "Ubahan…"
+
+#~ msgid "Select a folder"
+#~ msgstr "Pilih folder"
+
+#~ msgid "Open"
+#~ msgstr "Buka"
+
+#~ msgid "Minimize current window"
+#~ msgstr "Minimalkan jendela saat ini"
 
 #~ msgid "Scaled"
 #~ msgstr "Terskala"

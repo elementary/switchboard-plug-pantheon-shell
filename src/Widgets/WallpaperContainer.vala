@@ -18,19 +18,131 @@
  *
  */
 
-public class WallpaperContainer : AbstractWallpaperContainer {
+public class WallpaperContainer : Gtk.FlowBoxChild {
+    public signal void trash ();
+
+    private const int THUMB_WIDTH = 162;
+    private const int THUMB_HEIGHT = 100;
+
+    private Gtk.Grid card_box;
+    private Gtk.Menu context_menu;
+    private Gtk.Revealer check_revealer;
+    private Granite.AsyncImage image;
+
+    public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
-    public override string? uri { get; construct; }
+    public string uri { get; construct; }
+    public Gdk.Pixbuf thumb { get; set; }
+
+    private int scale;
+
+    public bool checked {
+        get {
+            return Gtk.StateFlags.CHECKED in get_state_flags ();
+        } set {
+            if (value) {
+                card_box.set_state_flags (Gtk.StateFlags.CHECKED, false);
+                check_revealer.reveal_child = true;
+            } else {
+                card_box.unset_state_flags (Gtk.StateFlags.CHECKED);
+                check_revealer.reveal_child = false;
+            }
+
+            queue_draw ();
+        }
+    }
+
+    public bool selected {
+        get {
+            return Gtk.StateFlags.SELECTED in get_state_flags ();
+        } set {
+            if (value) {
+                set_state_flags (Gtk.StateFlags.SELECTED, false);
+            } else {
+                unset_state_flags (Gtk.StateFlags.SELECTED);
+            }
+
+            queue_draw ();
+        }
+    }
 
     public WallpaperContainer (string uri, string? thumb_path, bool thumb_valid) {
         Object (uri: uri, thumb_path: thumb_path, thumb_valid: thumb_valid);
     }
 
     construct {
+        var style_context = get_style_context ();
+        style_context.add_class ("wallpaper-container");
+
+        scale = style_context.get_scale ();
+
+        height_request = THUMB_HEIGHT + 18;
+        width_request = THUMB_WIDTH + 18;
+
+        var provider = new Gtk.CssProvider ();
+        provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
+        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+
+        image = new Granite.AsyncImage ();
+        image.halign = Gtk.Align.CENTER;
+        image.valign = Gtk.Align.CENTER;
+        image.get_style_context ().set_scale (1);
+
+        // We need an extra grid to not apply a scale == 1 to the "card" style.
+        card_box = new Gtk.Grid ();
+        card_box.get_style_context ().add_class ("card");
+        card_box.add (image);
+        card_box.margin = 9;
+
+        var check = new Gtk.Image.from_icon_name ("selection-checked", Gtk.IconSize.LARGE_TOOLBAR);
+        check.halign = Gtk.Align.START;
+        check.valign = Gtk.Align.START;
+
+        check_revealer = new Gtk.Revealer ();
+        check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+        check_revealer.add (check);
+
+        var overlay = new Gtk.Overlay ();
+        overlay.add (card_box);
+        overlay.add_overlay (check_revealer);
+
+        var event_box = new Gtk.EventBox ();
+        event_box.add (overlay);
+
+        halign = Gtk.Align.CENTER;
+        valign = Gtk.Align.CENTER;
+        margin = 6;
+        add (event_box);
+
+        if (uri != null) {
+            var move_to_trash = new Gtk.MenuItem.with_label (_("Remove"));
+            move_to_trash.activate.connect (() => trash ());
+
+            var file = File.new_for_uri (uri);
+            file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_DELETE, 0, Priority.DEFAULT, null, (obj, res) => {
+                try {
+                    var info = file.query_info_async.end (res);
+                    move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
+                } catch (Error e) {
+                    critical (e.message);
+                }
+            });
+
+            context_menu = new Gtk.Menu ();
+            context_menu.append (move_to_trash);
+            context_menu.show_all ();
+        }
+
+        activate.connect (() => {
+            checked = true;
+        });
+
+        event_box.button_press_event.connect (show_context_menu);
+
         try {
             if (uri != null) {
                 if (thumb_path != null && thumb_valid) {
-                    update_thumb ();
+                    update_thumb.begin ();
                 } else {
                     generate_and_load_thumb ();
                 }
@@ -50,7 +162,7 @@ public class WallpaperContainer : AbstractWallpaperContainer {
                 var file = File.new_for_uri (uri);
                 var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);
                 thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                update_thumb ();
+                update_thumb.begin ();
             } catch (Error e) {
                 warning ("Error loading thumbnail for '%s': %s", uri, e.message);
             }
@@ -77,6 +189,14 @@ public class WallpaperContainer : AbstractWallpaperContainer {
                 }
             }
         }
+    }
+
+    private bool show_context_menu (Gtk.Widget sender, Gdk.EventButton evt) {
+        if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3) {
+            context_menu.popup (null, null, null, evt.button, evt.time);
+            return Gdk.EVENT_STOP;
+        }
+        return Gdk.EVENT_PROPAGATE;
     }
 
     private async void update_thumb () {

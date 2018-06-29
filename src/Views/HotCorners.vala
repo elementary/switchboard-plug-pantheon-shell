@@ -64,9 +64,9 @@ public class HotCorners : Gtk.Grid {
         custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
         
         var cc_label = new Gtk.Label (_("Custom command:"));
-        cc_label.margin_right = column_spacing;
 
         var cc_grid = new Gtk.Grid ();
+        cc_grid.column_spacing = column_spacing;
         cc_grid.halign = Gtk.Align.END;
         cc_grid.margin_top = 24;
         cc_grid.add (cc_label);
@@ -103,7 +103,6 @@ public class HotCorners : Gtk.Grid {
         box.append ("0", _("Do nothing"));              // none
         box.append ("1", _("Multitasking View"));       // show-workspace-view
         box.append ("2", _("Maximize current window")); // maximize-current
-        box.append ("3", _("Minimize current window")); // minimize-current
         box.append ("4", _("Show Applications Menu"));  // open-launcher
         box.append ("7", _("Show all windows"));        // window-overview-all
         box.append (CUSTOM_COMMAND_ID, _("Execute custom command"));  // custom-command
