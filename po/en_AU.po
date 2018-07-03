@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
+"POT-Creation-Date: 2018-05-03 14:24-0700\n"
 "PO-Revision-Date: 2012-10-26 19:34+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: English (Australia) <en_AU@li.org>\n"
@@ -27,78 +27,71 @@ msgstr ""
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr ""
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr ""
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr ""
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr ""
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr ""
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:206
+#: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
+#: src/Views/Wallpaper.vala:103
+msgid "Import Photo…"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:108
 msgid "Centered"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:109
 msgid "Zoom"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:110
 msgid "Spanned"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
+#: src/Views/Wallpaper.vala:153
+msgid "Import Photo"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
+#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
+#: src/Views/Wallpaper.vala:155
+msgid "Import"
 msgstr ""
 
 #: src/Views/HotCorners.vala:34
@@ -122,18 +115,14 @@ msgid "Maximize current window"
 msgstr ""
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr ""
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr ""
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr ""
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
 msgstr ""
 
@@ -149,53 +138,53 @@ msgstr ""
 msgid "Large"
 msgstr ""
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr ""
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
 msgstr ""
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
 msgstr ""
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
 msgstr ""
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr ""
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr ""
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr ""
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr ""
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr ""
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr ""
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr ""

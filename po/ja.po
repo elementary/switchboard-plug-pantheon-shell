@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
-"PO-Revision-Date: 2018-04-20 00:12+0000\n"
+"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"PO-Revision-Date: 2018-06-10 00:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/ja/>\n"
@@ -23,79 +23,72 @@ msgstr "デスクトップ"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "ドック、ホットコーナーを設定し、壁紙を変更します"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "壁紙"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
-msgstr "Dock"
+msgstr "ドック"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "テーマ"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
-msgstr "隠すモード"
+msgstr "隠す方法"
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "アイコンサイズ"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
-msgstr "ゴミ箱に移動"
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "削除"
 
-#: src/Widgets/WallpaperContainer.vala:206
+#: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
 msgstr "アーティスト: %s"
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "画像"
+#: src/Views/Wallpaper.vala:103
+msgid "Import Photo…"
+msgstr "写真をインポート…"
 
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "背景"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "カスタム…"
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:108
 msgid "Centered"
 msgstr "中央に表示"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:109
 msgid "Zoom"
 msgstr "ズーム"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:110
 msgid "Spanned"
 msgstr "敷き詰め"
 
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "フォルダを選択"
+#: src/Views/Wallpaper.vala:153
+msgid "Import Photo"
+msgstr "写真をインポート"
 
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
+#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "開く"
+#: src/Views/Wallpaper.vala:155
+msgid "Import"
+msgstr "インポート"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -118,20 +111,16 @@ msgid "Maximize current window"
 msgstr "現在のウィンドウを最大化"
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr "現在のウィンドウを最小化"
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr "アプリケーションメニューを表示"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "すべてのウィンドウを表示"
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
-msgstr "カスタムコマンドの実行"
+msgstr "カスタムコマンドを実行"
 
 #: src/Views/Dock.vala:34
 msgid "Small"
@@ -145,53 +134,53 @@ msgstr "標準"
 msgid "Large"
 msgstr "大きい"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "カスタム (%dpx)"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
-msgstr "ウィンドウが最大化されたとき"
+msgstr "フォーカスされたウィンドウが最大化されたとき"
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
 msgstr "フォーカスされたウィンドウが重なったとき"
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
 msgstr "いずれかのウィンドウが重なったとき"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
 msgstr "使われていないとき"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr "プライマリーディスプレイ:"
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr "ディスプレイ:"
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr "アイコンサイズ:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr "隠す場合:"
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr "押し込んで表示:"
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "モニター %d"
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr "ディスプレイ %d"
@@ -233,8 +222,29 @@ msgstr "スライドショーの作成"
 
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr "デスクトップの背景として設定 (_D)"
+msgstr "デスクトップの背景として設定(_D)"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "選択した画像をデスクトップの背景として設定します"
+
+#~ msgid "Move to Trash"
+#~ msgstr "ゴミ箱に移動"
+
+#~ msgid "Pictures"
+#~ msgstr "画像"
+
+#~ msgid "Backgrounds"
+#~ msgstr "背景"
+
+#~ msgid "Custom…"
+#~ msgstr "カスタム…"
+
+#~ msgid "Select a folder"
+#~ msgstr "フォルダを選択"
+
+#~ msgid "Open"
+#~ msgstr "開く"
+
+#~ msgid "Minimize current window"
+#~ msgstr "現在のウィンドウを最小化"

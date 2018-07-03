@@ -1,8 +1,8 @@
-switchboard-plug-pantheon-shell (0.2.7) UNRELEASED; urgency=medium
+switchboard-plug-pantheon-shell (0.2.7) bionic; urgency=medium
 
-  * Pre-release version bump.
+  * New upstream release.
 
- -- Daniel Foré <daniel@elementary.io>  Mon, 16 Apr 2018 10:51:22 -0700
+ -- Cody Garver <cody@elementary.io>  Fri, 08 Jun 2018 11:47:25 -0500
 
 switchboard-plug-pantheon-shell (0.2.6) xenial; urgency=medium
 

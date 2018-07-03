@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
-"PO-Revision-Date: 2017-04-11 12:15+0000\n"
+"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"PO-Revision-Date: 2018-05-10 17:21+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-pantheon-shell/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-09 05:49+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -26,81 +26,74 @@ msgstr "Pracovní plocha"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Nastavujte dok, aktivní rohy a měňte tapetu plochy"
+msgstr "Nastavujte dock, aktivní rohy a měňte tapetu plochy"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "Tapeta"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
-msgstr "Lišta aplikací"
+msgstr "Dock"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
 msgstr "Aktivní rohy"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "Motiv"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Režim skrývání"
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "Velikost ikon"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "Displej"
 
-#: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
-msgstr ""
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "Odebrat"
 
-#: src/Widgets/WallpaperContainer.vala:206
+#: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Umělec: %s"
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "Obrázky"
+#: src/Views/Wallpaper.vala:103
+msgid "Import Photo…"
+msgstr "Importovat fotku…"
 
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "Pozadí"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "Vlastní…"
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:108
 msgid "Centered"
 msgstr "Vystředit"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:109
 msgid "Zoom"
 msgstr "Přiblížit"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:110
 msgid "Spanned"
 msgstr "Vyplnit"
 
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "Vyberte složku"
+#: src/Views/Wallpaper.vala:153
+msgid "Import Photo"
+msgstr "Importovat fotku"
 
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
+#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "Otevřít"
+#: src/Views/Wallpaper.vala:155
+msgid "Import"
+msgstr "Importovat"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -123,18 +116,14 @@ msgid "Maximize current window"
 msgstr "Maximalizovat aktuální okno"
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr "Minimalizovat aktuální okno"
+msgid "Show Applications Menu"
+msgstr "Zobrazit nabídku aplikací"
 
 #: src/Views/HotCorners.vala:107
-msgid "Show Applications Menu"
-msgstr "Zobrazit Nabídku aplikací"
-
-#: src/Views/HotCorners.vala:108
 msgid "Show all windows"
 msgstr "Zobrazit všechna okna"
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
 msgstr "Provést vlastní příkaz"
 
@@ -150,53 +139,53 @@ msgstr "Normální"
 msgid "Large"
 msgstr "Velké"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "Vlastní (%dpx)"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
 msgstr "Aktivní okno je maximalizováno"
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr "Aktivní okno překrývá dok"
+msgstr "Aktivní okno překrývá dock"
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr "Jakékoliv okno překrývá dok"
+msgstr "Jakékoliv okno překrývá dock"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
-msgstr "Nepoužíváno"
+msgstr "Se nepoužívá"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:122
 msgid "Primary display:"
 msgstr "Hlavní displej:"
 
-#: src/Views/Dock.vala:130
+#: src/Views/Dock.vala:126
 msgid "Display:"
 msgstr "Displej:"
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
 msgstr "Velikost ikon:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:159
 msgid "Hide when:"
 msgstr "Skrýt když:"
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
 msgstr "Vysunutí tlakem:"
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:211
+#: src/Views/Dock.vala:207
 #, c-format
 msgid "Display %d"
 msgstr "Displej %d"
@@ -243,10 +232,27 @@ msgid "Create slideshow"
 msgstr "Vytvořit posloupnost pozadí"
 
 #: src/Translations.vala:20
-#, fuzzy
 msgid "Set as _Desktop Background"
-msgstr "Nastavit jako posloupnost pozadí plochy"
+msgstr "Nastavit jako _pozadí plochy"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Nastavit vybraný obrázek jako nové pozadí plochy"
+
+#~ msgid "Pictures"
+#~ msgstr "Obrázky"
+
+#~ msgid "Backgrounds"
+#~ msgstr "Pozadí"
+
+#~ msgid "Custom…"
+#~ msgstr "Vlastní…"
+
+#~ msgid "Select a folder"
+#~ msgstr "Vyberte složku"
+
+#~ msgid "Open"
+#~ msgstr "Otevřít"
+
+#~ msgid "Minimize current window"
+#~ msgstr "Minimalizovat aktuální okno"

@@ -7,17 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-18 14:19-0700\n"
-"PO-Revision-Date: 2015-08-19 17:42+0000\n"
-"Last-Translator: Papp Ferenc <Unknown>\n"
-"Language-Team: Hungarian <hu@li.org>\n"
+"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"PO-Revision-Date: 2018-06-18 00:05+0000\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-pantheon-shell/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/desktop-plug.vala:36
 msgid "Desktop"
@@ -25,81 +26,74 @@ msgstr "Asztali környezet"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "A dokk, az érzékeny sarkok és a háttérkép beállítása"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:94
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
 msgstr "Háttérkép"
 
-#: src/desktop-plug.vala:52 src/desktop-plug.vala:95 src/desktop-plug.vala:96
-#: src/desktop-plug.vala:97 src/desktop-plug.vala:98 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
+#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
+#: src/desktop-plug.vala:104
 msgid "Dock"
 msgstr "Dokk"
 
-#: src/desktop-plug.vala:53 src/desktop-plug.vala:100
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
-msgstr "Forró sarkok"
+msgstr "Érzékeny sarkok"
 
-#: src/desktop-plug.vala:96
+#: src/desktop-plug.vala:101
 msgid "Theme"
 msgstr "Téma"
 
-#: src/desktop-plug.vala:97
+#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Elrejtési mód"
 
-#: src/desktop-plug.vala:98
+#: src/desktop-plug.vala:103
 msgid "Icon Size"
 msgstr "Ikonméret"
 
-#: src/desktop-plug.vala:99
+#: src/desktop-plug.vala:104
 msgid "Display"
 msgstr "Kijelző"
 
-#: src/Widgets/WallpaperContainer.vala:136
-msgid "Move to Trash"
-msgstr ""
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "Eltávolítás"
 
-#: src/Widgets/WallpaperContainer.vala:206
+#: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Művész: %s"
 
-#: src/Views/Wallpaper.vala:116
-msgid "Pictures"
-msgstr "Képek"
+#: src/Views/Wallpaper.vala:103
+msgid "Import Photo…"
+msgstr "Fotó importálása…"
 
-#: src/Views/Wallpaper.vala:117
-msgid "Backgrounds"
-msgstr "Háttérképek"
-
-#: src/Views/Wallpaper.vala:118
-msgid "Custom…"
-msgstr "Egyéni…"
-
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:108
 msgid "Centered"
 msgstr "Középre"
 
-#: src/Views/Wallpaper.vala:143
+#: src/Views/Wallpaper.vala:109
 msgid "Zoom"
 msgstr "Nagyítás"
 
-#: src/Views/Wallpaper.vala:144
+#: src/Views/Wallpaper.vala:110
 msgid "Spanned"
 msgstr "Kiterjesztett"
 
-#: src/Views/Wallpaper.vala:356
-msgid "Select a folder"
-msgstr "Mappa kiválasztása"
+#: src/Views/Wallpaper.vala:153
+msgid "Import Photo"
+msgstr "Fotó importálása"
 
-#: src/Views/Wallpaper.vala:357 set-wallpaper-contract/set-wallpaper.vala:225
+#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
-msgstr "Mégse"
+msgstr "Mégsem"
 
-#: src/Views/Wallpaper.vala:358
-msgid "Open"
-msgstr "Megnyitás"
+#: src/Views/Wallpaper.vala:155
+msgid "Import"
+msgstr "Importálás"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -107,11 +101,11 @@ msgstr "Ha a kurzor eléri a képernyő szélét:"
 
 #: src/Views/HotCorners.vala:66
 msgid "Custom command:"
-msgstr ""
+msgstr "Egyedi parancs:"
 
 #: src/Views/HotCorners.vala:103
 msgid "Do nothing"
-msgstr ""
+msgstr "Ne tegyen semmit"
 
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
@@ -119,27 +113,23 @@ msgstr "Többfeladatos nézet"
 
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
-msgstr ""
+msgstr "Az aktuális ablak maximalizálása"
 
 #: src/Views/HotCorners.vala:106
-msgid "Minimize current window"
-msgstr ""
-
-#: src/Views/HotCorners.vala:107
 msgid "Show Applications Menu"
 msgstr "Alkalmazás menü megjelenítése"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:107
 msgid "Show all windows"
-msgstr ""
+msgstr "Az összes ablak megjelenítése"
 
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:108
 msgid "Execute custom command"
-msgstr ""
+msgstr "Egyedi parancs végrehajtása"
 
 #: src/Views/Dock.vala:34
 msgid "Small"
-msgstr ""
+msgstr "Kicsi"
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
@@ -149,102 +139,117 @@ msgstr "Normál"
 msgid "Large"
 msgstr "Nagy"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
 msgstr "Egyedi (%dpx)"
 
-#: src/Views/Dock.vala:87
+#: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "A fókuszban lévő ablak teljes képernyős"
 
-#: src/Views/Dock.vala:88
+#: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "A fókuszban lévő ablak lefedi a dokkot"
 
-#: src/Views/Dock.vala:89
+#: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "Bármilyen ablak lefedi a dokkot"
 
-#: src/Views/Dock.vala:90
+#: src/Views/Dock.vala:86
 msgid "Not being used"
-msgstr ""
+msgstr "Nincs használatban"
+
+#: src/Views/Dock.vala:122
+msgid "Primary display:"
+msgstr "Elsődleges kijelző:"
 
 #: src/Views/Dock.vala:126
-msgid "Primary display:"
-msgstr ""
-
-#: src/Views/Dock.vala:130
 msgid "Display:"
-msgstr "Képernyő:"
+msgstr "Kijelző:"
 
-#: src/Views/Dock.vala:161
+#: src/Views/Dock.vala:157
 msgid "Icon size:"
-msgstr ""
+msgstr "Ikonméret:"
+
+#: src/Views/Dock.vala:159
+msgid "Hide when:"
+msgstr "Elrejtés ha:"
 
 #: src/Views/Dock.vala:163
-msgid "Hide when:"
-msgstr ""
-
-#: src/Views/Dock.vala:167
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Felfedés csak nyomásra:"
 
-#: src/Views/Dock.vala:206
+#: src/Views/Dock.vala:202
 #, c-format
 msgid "Monitor %d"
 msgstr "%d monitor"
 
-#: src/Views/Dock.vala:211
-#, fuzzy, c-format
+#: src/Views/Dock.vala:207
+#, c-format
 msgid "Display %d"
-msgstr "%s kijelző"
+msgstr "%d kijelző"
 
 #: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d másodperc"
+msgstr[1] "%d másodperc"
 
 #: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d perc"
+msgstr[1] "%d perc"
 
 #: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d óra"
+msgstr[1] "%d óra"
 
 #: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
-msgstr ""
+msgstr "1 nap"
 
 #: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
-msgstr ""
+msgstr "Minden fotó megjelenítése ehhez"
 
 #: set-wallpaper-contract/set-wallpaper.vala:222
 #: set-wallpaper-contract/set-wallpaper.vala:230
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Beállítás asztali diavetítésként"
 
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
-msgstr ""
+msgstr "Diavetítés létrehozása"
 
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "Beállítás _asztali háttérképként"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "Kiválasztott kép beállítása új asztali háttérképként"
+
+#~ msgid "Pictures"
+#~ msgstr "Képek"
+
+#~ msgid "Backgrounds"
+#~ msgstr "Háttérképek"
+
+#~ msgid "Custom…"
+#~ msgstr "Egyéni…"
+
+#~ msgid "Select a folder"
+#~ msgstr "Mappa kiválasztása"
+
+#~ msgid "Open"
+#~ msgstr "Megnyitás"
 
 #~ msgid "Scaled"
 #~ msgstr "Méretezés"

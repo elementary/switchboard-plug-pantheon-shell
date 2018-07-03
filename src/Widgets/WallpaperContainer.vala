@@ -24,6 +24,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     private const int THUMB_WIDTH = 162;
     private const int THUMB_HEIGHT = 100;
 
+    private Gtk.Grid card_box;
     private Gtk.Menu context_menu;
     private Gtk.Revealer check_revealer;
     private Granite.AsyncImage image;
@@ -35,33 +36,15 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
 
     private int scale;
 
-    const string CARD_STYLE_CSS = """
-        flowboxchild,
-        GtkFlowBox .grid-child {
-            background-color: transparent;
-        }
-
-        flowboxchild:focus .card,
-        GtkFlowBox .grid-child:focus .card {
-            border: 3px solid alpha (#000, 0.2);
-            border-radius: 3px;
-        }
-
-        flowboxchild:focus .card:checked,
-        GtkFlowBox .grid-child:focus .card:checked {
-            border-color: @selected_bg_color;
-        }
-    """;
-
     public bool checked {
         get {
             return Gtk.StateFlags.CHECKED in get_state_flags ();
         } set {
             if (value) {
-                image.set_state_flags (Gtk.StateFlags.CHECKED, false);
+                card_box.set_state_flags (Gtk.StateFlags.CHECKED, false);
                 check_revealer.reveal_child = true;
             } else {
-                image.unset_state_flags (Gtk.StateFlags.CHECKED);
+                card_box.unset_state_flags (Gtk.StateFlags.CHECKED);
                 check_revealer.reveal_child = false;
             }
 
@@ -88,18 +71,17 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     construct {
-        scale = get_style_context ().get_scale ();
+        var style_context = get_style_context ();
+        style_context.add_class ("wallpaper-container");
+
+        scale = style_context.get_scale ();
 
         height_request = THUMB_HEIGHT + 18;
         width_request = THUMB_WIDTH + 18;
 
         var provider = new Gtk.CssProvider ();
-        try {
-            provider.load_from_data (CARD_STYLE_CSS, CARD_STYLE_CSS.length);
-            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-        } catch (Error e) {
-            critical (e.message);
-        }
+        provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
+        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         image = new Granite.AsyncImage ();
         image.halign = Gtk.Align.CENTER;
@@ -107,7 +89,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         image.get_style_context ().set_scale (1);
 
         // We need an extra grid to not apply a scale == 1 to the "card" style.
-        var card_box = new Gtk.Grid ();
+        card_box = new Gtk.Grid ();
         card_box.get_style_context ().add_class ("card");
         card_box.add (image);
         card_box.margin = 9;
@@ -133,14 +115,14 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         add (event_box);
 
         if (uri != null) {
-            var move_to_trash = new Gtk.MenuItem.with_label (_("Move to Trash"));
+            var move_to_trash = new Gtk.MenuItem.with_label (_("Remove"));
             move_to_trash.activate.connect (() => trash ());
 
             var file = File.new_for_uri (uri);
-            file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_TRASH, 0, Priority.DEFAULT, null, (obj, res) => {
+            file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_DELETE, 0, Priority.DEFAULT, null, (obj, res) => {
                 try {
                     var info = file.query_info_async.end (res);
-                    move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_TRASH);
+                    move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
                 } catch (Error e) {
                     critical (e.message);
                 }
@@ -160,7 +142,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
         try {
             if (uri != null) {
                 if (thumb_path != null && thumb_valid) {
-                    update_thumb ();
+                    update_thumb.begin ();
                 } else {
                     generate_and_load_thumb ();
                 }
@@ -180,7 +162,7 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
                 var file = File.new_for_uri (uri);
                 var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);
                 thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
-                update_thumb ();
+                update_thumb.begin ();
             } catch (Error e) {
                 warning ("Error loading thumbnail for '%s': %s", uri, e.message);
             }

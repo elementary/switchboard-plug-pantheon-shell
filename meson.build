@@ -1,5 +1,8 @@
-project('pantheon-desktop', 'vala', 'c')
-
+project(
+    'pantheon-desktop',
+    'vala', 'c',
+    version: '0.2.7'
+)
 gettext_name = meson.project_name() + '-plug'
 gnome = import('gnome')
 i18n = import('i18n')
@@ -28,11 +31,7 @@ plug_resources = gnome.compile_resources(
     source_dir: 'data'
 )
 
-install_data(
-    'data/io.elementary.switchboard.plug.desktop.gschema.xml',
-    install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'glib-2.0', 'schemas')
-)
-
+subdir('data')
 subdir('src')
 subdir('set-wallpaper-contract')
 subdir('po')
