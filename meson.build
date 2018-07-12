@@ -22,7 +22,7 @@ plank_dep = dependency('plank', version: '>=0.10.9')
 glib_dep = dependency('glib-2.0')
 gio_dep = dependency('gio-2.0')
 gobject_dep = dependency('gobject-2.0')
-gtk_dep = dependency('gtk+-3.0')
+gtk_dep = dependency('gtk+-3.0', version: '>= 3.22')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 
 plug_resources = gnome.compile_resources(
