@@ -135,7 +135,7 @@ public class Dock : Gtk.Grid {
                 monitor_label.sensitive = false;
                 monitor.sensitive = false;
             } else {
-                var plug_names = get_monitor_plug_names (get_screen ());
+                var plug_names = get_monitor_plug_names (get_display ());
                 if (plug_names.length > monitor.active)
                     dock_preferences.Monitor = plug_names[monitor.active];
                 monitor_label.sensitive = true;
@@ -146,7 +146,7 @@ public class Dock : Gtk.Grid {
 
         monitor.notify["active"].connect (() => {
             if (monitor.active >= 0 && primary_monitor.active == false) {
-                var plug_names = get_monitor_plug_names (get_screen ());
+                var plug_names = get_monitor_plug_names (get_display ());
                 if (plug_names.length > monitor.active)
                     dock_preferences.Monitor = plug_names[monitor.active];
             }
@@ -228,12 +228,13 @@ public class Dock : Gtk.Grid {
         }
     }
 
-    static string[] get_monitor_plug_names (Gdk.Screen screen) {
-        int n_monitors = screen.get_n_monitors ();
+    static string[] get_monitor_plug_names (Gdk.Display display) {
+        int n_monitors = display.get_n_monitors ();
         var result = new string[n_monitors];
 
-        for (int i = 0; i < n_monitors; i++)
-            result[i] = screen.get_monitor_plug_name (i);
+        for (int i = 0; i < n_monitors; i++) {
+            result[i] = display.get_monitor (i).model;
+        }
 
         return result;
     }
