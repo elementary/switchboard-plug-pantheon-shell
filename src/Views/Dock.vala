@@ -181,12 +181,13 @@ public class Dock : Gtk.Grid {
     private void check_for_screens () {
         int i = 0;
         int primary_screen = 0;
+        var default_display = get_display ();
         var default_screen = get_screen ();
         monitor.remove_all ();
         try {
             var screen = new Gnome.RRScreen (default_screen);
-            for (i = 0; i < default_screen.get_n_monitors () ; i++) {
-                var monitor_plug_name = default_screen.get_monitor_plug_name (i);
+            for (i = 0; i < default_display.get_n_monitors () ; i++) {
+                var monitor_plug_name = default_display.get_monitor (i).model;
 
                 if (monitor_plug_name != null) {
                     unowned Gnome.RROutput output = screen.get_output_by_name (monitor_plug_name);
@@ -203,7 +204,7 @@ public class Dock : Gtk.Grid {
             }
         } catch (Error e) {
             critical (e.message);
-            for (i = 0; i < default_screen.get_n_monitors () ; i ++) {
+            for (i = 0; i < default_display.get_n_monitors () ; i ++) {
                 monitor.append_text (_("Display %d").printf (i+1) );
             }
         }
