@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 14:24-0700\n"
-"PO-Revision-Date: 2018-06-06 00:09+0000\n"
+"PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-pantheon-shell/hu/>\n"
@@ -26,8 +26,7 @@ msgstr "Asztali környezet"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
-"Állítsa be a dokkolót és a forró sarkokat vagy változtassa meg a háttérképet"
+msgstr "A dokk, az érzékeny sarkok és a háttérkép beállítása"
 
 #: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
@@ -41,7 +40,7 @@ msgstr "Dokk"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
-msgstr "Forró sarkok"
+msgstr "Érzékeny sarkok"
 
 #: src/desktop-plug.vala:101
 msgid "Theme"
@@ -147,15 +146,15 @@ msgstr "Egyedi (%dpx)"
 
 #: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
-msgstr "Az aktív ablak maximalizálódik"
+msgstr "A fókuszban lévő ablak teljes képernyős"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr "Az aktív ablak átfedi a dokkolóegységet"
+msgstr "A fókuszban lévő ablak lefedi a dokkot"
 
 #: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr "Bármelyik ablak átfedi a dokkolóegységet"
+msgstr "Bármilyen ablak lefedi a dokkot"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
@@ -179,7 +178,7 @@ msgstr "Elrejtés ha:"
 
 #: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
-msgstr "Felfedés nyomásra:"
+msgstr "Felfedés csak nyomásra:"
 
 #: src/Views/Dock.vala:202
 #, c-format
