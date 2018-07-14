@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>io.elementary.switchboard-plug-pantheon-shell</id>
+  <id>io.elementary.switchboard.pantheon-shell</id>
   <extends>io.elementary.switchboard</extends>
   <name>Desktop</name>
   <summary>Configure the dock, hot corners, and change wallpaper</summary>
