@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-07-16 21:39+0000\n"
+"PO-Revision-Date: 2018-07-17 00:03+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/da/>\n"
@@ -109,7 +109,7 @@ msgstr "Gør intet"
 
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
-msgstr "Multitasking synsvinkel"
+msgstr "Multitasking"
 
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
