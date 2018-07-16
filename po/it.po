@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
 "PO-Revision-Date: 2018-03-10 00:04+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
@@ -124,6 +124,10 @@ msgid "Show all windows"
 msgstr "Mostra tutte le finestre"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr ""
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Esegui comando personalizzato"
 
@@ -180,12 +184,12 @@ msgstr "Nascondi quando:"
 msgid "Pressure reveal:"
 msgstr "Rivela passando con il mouse:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "Schermo %d"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "Schermo %d"

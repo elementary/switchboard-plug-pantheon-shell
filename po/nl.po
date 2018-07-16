@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
 "PO-Revision-Date: 2017-04-09 17:47+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop/"
@@ -124,6 +124,10 @@ msgid "Show all windows"
 msgstr "Toon alle vensters"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr ""
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Voer aangepast commando uit"
 
@@ -180,12 +184,12 @@ msgstr "Verberg wanneer:"
 msgid "Pressure reveal:"
 msgstr "Onthul bij druk:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "Beeldscherm %d"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "Beeldscherm %d"

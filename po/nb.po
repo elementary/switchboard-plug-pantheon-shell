@@ -7,12 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
 "PO-Revision-Date: 2018-06-02 00:06+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål "
-"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
-"pantheon-shell/nb/>\n"
+"Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-pantheon-shell/nb/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -125,6 +124,10 @@ msgid "Show all windows"
 msgstr "Vis alle vinduer"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr ""
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Utfør egendefinert kommando"
 
@@ -182,12 +185,12 @@ msgstr "Skjul når:"
 msgid "Pressure reveal:"
 msgstr "Trykkavdekking:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "Skjerm %d"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "Skjerm %d"

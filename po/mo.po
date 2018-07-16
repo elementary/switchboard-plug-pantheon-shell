@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
 "PO-Revision-Date: 2018-05-27 17:18+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
-"Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-pantheon-shell/mo/>\n"
+"Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/mo/>\n"
 "Language: mo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,8 @@ msgstr "Spațiul de lucru"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configurați docul, colțurile fierbinți și modificați imaginea de fundal"
+msgstr ""
+"Configurați docul, colțurile fierbinți și modificați imaginea de fundal"
 
 #: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
@@ -117,6 +118,10 @@ msgid "Show all windows"
 msgstr "Afișați toate ferestrele"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr ""
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Executați comanda personalizată"
 
@@ -173,12 +178,12 @@ msgstr "Ascundeți când:"
 msgid "Pressure reveal:"
 msgstr "Difuzează previzualizarea:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d 1"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "Afișaj %d 1"

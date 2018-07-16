@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-pantheon-shell/hu/>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -124,6 +124,10 @@ msgid "Show all windows"
 msgstr "Az összes ablak megjelenítése"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr ""
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Egyedi parancs végrehajtása"
 
@@ -180,12 +184,12 @@ msgstr "Elrejtés ha:"
 msgid "Pressure reveal:"
 msgstr "Felfedés csak nyomásra:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "%d monitor"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "%d kijelző"
