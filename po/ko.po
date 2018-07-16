@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-06-03 07:00+0000\n"
+"PO-Revision-Date: 2018-07-16 18:45+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -125,7 +125,7 @@ msgstr "모든 창 보기"
 
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "새 작업공간으로 전환"
 
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
