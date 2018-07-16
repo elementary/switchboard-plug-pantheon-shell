@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-06-10 00:11+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"PO-Revision-Date: 2018-07-16 15:35+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
 "Language: ja\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -120,7 +120,7 @@ msgstr "すべてのウィンドウを表示"
 
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "新しいワークスペースに切り替え"
 
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
