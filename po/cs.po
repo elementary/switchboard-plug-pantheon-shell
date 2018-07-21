@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-05-10 17:21+0000\n"
+"PO-Revision-Date: 2018-07-21 12:26+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/cs/>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-09 05:49+0000\n"
 
 #: src/desktop-plug.vala:36
 msgid "Desktop"
-msgstr "Pracovní plocha"
+msgstr "Plocha"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -60,7 +60,7 @@ msgstr "Displej"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr "Odebrat"
+msgstr "Odstranit"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
@@ -125,7 +125,7 @@ msgstr "Zobrazit všechna okna"
 
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "Přepnout na novou pracovní plochu"
 
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
