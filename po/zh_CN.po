@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-01-04 09:15+0000\n"
+"PO-Revision-Date: 2018-08-12 13:36+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-pantheon-shell/zh_CN/>\n"
+"switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -60,16 +60,16 @@ msgstr "显示"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "删除"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "艺术家：%s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr ""
+msgstr "导入照片…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
@@ -85,7 +85,7 @@ msgstr "平铺"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
-msgstr ""
+msgstr "导入照片"
 
 #: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
@@ -93,7 +93,7 @@ msgstr "取消"
 
 #: src/Views/Wallpaper.vala:155
 msgid "Import"
-msgstr ""
+msgstr "导入"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -125,7 +125,7 @@ msgstr "显示全部窗口"
 
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "切换至新工作区"
 
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
