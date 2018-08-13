@@ -17,6 +17,22 @@
  */
 
 public class Appearance : Gtk.Grid {
+    private const string CSS = """
+        .blueberry {
+            background-color: @BLUEBERRY_300;
+            color: transparent;
+        }
+
+        .slate {
+            background-color: @SLATE_300;
+            color: transparent;
+        }
+
+        .circular:not(:checked) {
+            opacity: 0.75;
+        }
+    """;
+
     construct {
         column_spacing = 12;
         halign = Gtk.Align.CENTER;
@@ -29,34 +45,20 @@ public class Appearance : Gtk.Grid {
         var accent_grid = new Gtk.Grid ();
         accent_grid.column_spacing = 6;
 
-        var blueberry_button = new Gtk.Button ();
+        var blueberry_button = new Gtk.ToggleButton ();
+        blueberry_button.tooltip_text = _("Blueberry");
         blueberry_button.width_request = blueberry_button.height_request = 24;
         blueberry_button.get_style_context ().add_class ("circular");
+        blueberry_button.get_style_context ().add_class ("blueberry");
 
-        var slate_button = new Gtk.Button ();
+        var slate_button = new Gtk.ToggleButton ();
+        slate_button.tooltip_text = _("Slate");
         slate_button.width_request = slate_button.height_request = 24;
         slate_button.get_style_context ().add_class ("circular");
+        slate_button.get_style_context ().add_class ("slate");
 
         accent_grid.attach (blueberry_button, 0, 0);
         accent_grid.attach (slate_button,     1, 0);
-
-        // var text_size_label = new Gtk.Label (_("Text size:"));
-        // text_size_label.halign = Gtk.Align.END;
-
-        // var text_size_combo = new Gtk.ComboBox ();
-
-        // var text_size_list = new Gtk.ListStore (1, typeof (string));
-        // Gtk.TreeIter iter;
-
-        // text_size_list.append (out iter);
-        // text_size_list.set (iter, 0, _("Normal"));
-        // text_size_list.append (out iter);
-        // text_size_list.set (iter, 0, _("Large"));
-        // text_size_list.append (out iter);
-        // text_size_list.set (iter, 0, _("Larger"));
-
-        // text_size_combo.set_model (text_size_list);
-        // // text_size_combo.set_active (deskop_interface_settings.get_text_scale ());
 
         var transparency_label = new Gtk.Label (_("Transparency:"));
         transparency_label.halign = Gtk.Align.END;
@@ -73,14 +75,24 @@ public class Appearance : Gtk.Grid {
         attach (accent_label, 0, 0);
         attach (accent_grid,  1, 0);
 
-        // attach (text_size_label, 0, 1);
-        // attach (text_size_combo, 1, 1);
-
         attach (transparency_label,  0, 2);
         attach (transparency_switch, 1, 2);
 
         attach (animations_label,  0, 3);
         attach (animations_switch, 1, 3);
+
+        var provider = new Gtk.CssProvider ();
+        try {
+            provider.load_from_data (CSS, CSS.length);
+
+            Gtk.StyleContext.add_provider_for_screen (
+                Gdk.Screen.get_default (),
+                provider,
+                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+            );
+        } catch (GLib.Error e) {
+            return;
+        }
     }
 }
 
