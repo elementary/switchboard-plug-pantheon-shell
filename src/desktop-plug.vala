@@ -29,6 +29,7 @@ public class GalaPlug : Switchboard.Plug {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("desktop", null);
         settings.set ("desktop/wallpaper", "wallpaper");
+        settings.set ("desktop/appearance", "appearance");
         settings.set ("desktop/dock", "dock");
         settings.set ("desktop/hot-corners", "hotc");
         Object (category: Category.PERSONAL,
@@ -49,6 +50,9 @@ public class GalaPlug : Switchboard.Plug {
 
             stack = new Gtk.Stack ();
             stack.add_titled (wallpaper_view, "wallpaper", _("Wallpaper"));
+
+            var appearance = new Appearance ();
+            stack.add_titled (appearance, "appearance", _("Appearance"));
 
             if (GLib.Environment.find_program_in_path ("plank") != null) {
                 var dock = new Dock ();
@@ -84,6 +88,9 @@ public class GalaPlug : Switchboard.Plug {
             case "wallpaper":
                 stack.set_visible_child_name ("wallpaper");
                 break;
+            case "appearance":
+                stack.set_visible_child_name ("appearance");
+                break;
             case "dock":
                 stack.set_visible_child_name ("dock");
                 break;
@@ -102,6 +109,7 @@ public class GalaPlug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Icon Size")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
+        search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
         search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
         return search_results;
     }
@@ -112,3 +120,4 @@ public Switchboard.Plug get_plug (Module module) {
     var plug = new GalaPlug ();
     return plug;
 }
+
