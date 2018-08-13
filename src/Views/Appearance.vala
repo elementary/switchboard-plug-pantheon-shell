@@ -86,23 +86,33 @@ public class Appearance : Gtk.Grid {
         var interface_schema = schema_source.lookup (INTERFACE_SCHEMA, false);
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
+        var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
+
+        if (current_stylesheet == "elementary") {
+            blueberry_button.active = true;
+        } else if (current_stylesheet == "elementary-slate") {
+            slate_button.active = true;
+        }
+
         blueberry_button.clicked.connect (() => {
             if (blueberry_button.active) {
-                interface_settings.set_string (STYLESHEET_KEY, "elementary");
-
                 slate_button.active = false;
+
                 blueberry_button.sensitive = false;
                 slate_button.sensitive = true;
+
+                interface_settings.set_string (STYLESHEET_KEY, "elementary");
             }
         });
 
         slate_button.clicked.connect (() => {
             if (slate_button.active) {
                 blueberry_button.active = false;
-                interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
 
                 slate_button.sensitive = false;
                 blueberry_button.sensitive = true;
+
+                interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
             }
         });
     }
