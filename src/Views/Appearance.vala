@@ -20,16 +20,18 @@ public class Appearance : Gtk.Grid {
     private const string CSS = """
         .blueberry {
             background-color: @BLUEBERRY_300;
+            border-color: @BLUEBERRY_500;
             color: transparent;
         }
 
         .slate {
             background-color: @SLATE_300;
+            border-color: @SLATE_500;
             color: transparent;
         }
 
-        .circular:not(:checked) {
-            opacity: 0.75;
+        .circular:checked {
+            border-width: 4px;
         }
     """;
 
