@@ -36,6 +36,8 @@ public class Appearance : Gtk.Grid {
             border-width: 4px;
         }
     """;
+    private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
+    private const string STYLESHEET_KEY = "gtk-theme";
 
     construct {
         column_spacing = 12;
@@ -80,10 +82,15 @@ public class Appearance : Gtk.Grid {
             return;
         }
 
+        var schema_source = SettingsSchemaSource.get_default ();
+        var interface_schema = schema_source.lookup (INTERFACE_SCHEMA, false);
+        var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
+
         blueberry_button.clicked.connect (() => {
             if (blueberry_button.active) {
-                slate_button.active = false;
+                interface_settings.set_string (STYLESHEET_KEY, "elementary");
 
+                slate_button.active = false;
                 blueberry_button.sensitive = false;
                 slate_button.sensitive = true;
             }
@@ -92,6 +99,7 @@ public class Appearance : Gtk.Grid {
         slate_button.clicked.connect (() => {
             if (slate_button.active) {
                 blueberry_button.active = false;
+                interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
 
                 slate_button.sensitive = false;
                 blueberry_button.sensitive = true;
