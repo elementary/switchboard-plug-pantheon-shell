@@ -34,6 +34,8 @@ public class Appearance : Gtk.Grid {
             border-width: 4px;
         }
     """;
+    // private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
+    // private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
 
     construct {
         column_spacing = 12;
@@ -62,26 +64,26 @@ public class Appearance : Gtk.Grid {
         accent_grid.attach (blueberry_button, 0, 0);
         accent_grid.attach (slate_button,     1, 0);
 
-        var transparency_label = new Gtk.Label (_("Transparency:"));
-        transparency_label.halign = Gtk.Align.END;
+        // var transparency_label = new Gtk.Label (_("Transparency:"));
+        // transparency_label.halign = Gtk.Align.END;
 
-        var transparency_switch = new Gtk.Switch ();
-        transparency_switch.halign = Gtk.Align.START;
+        // var transparency_switch = new Gtk.Switch ();
+        // transparency_switch.halign = Gtk.Align.START;
 
-        var animations_label = new Gtk.Label (_("Animations:"));
-        animations_label.halign = Gtk.Align.END;
+        // var animations_label = new Gtk.Label (_("Animations:"));
+        // animations_label.halign = Gtk.Align.END;
 
-        var animations_switch = new Gtk.Switch ();
-        animations_switch.halign = Gtk.Align.START;
+        // var animations_switch = new Gtk.Switch ();
+        // animations_switch.halign = Gtk.Align.START;
 
         attach (accent_label, 0, 0);
         attach (accent_grid,  1, 0);
 
-        attach (transparency_label,  0, 2);
-        attach (transparency_switch, 1, 2);
+        // attach (transparency_label,  0, 2);
+        // attach (transparency_switch, 1, 2);
 
-        attach (animations_label,  0, 3);
-        attach (animations_switch, 1, 3);
+        // attach (animations_label,  0, 3);
+        // attach (animations_switch, 1, 3);
 
         var provider = new Gtk.CssProvider ();
         try {
@@ -95,6 +97,44 @@ public class Appearance : Gtk.Grid {
         } catch (GLib.Error e) {
             return;
         }
+
+        // var schema_source = SettingsSchemaSource.get_default ();
+
+        // var panel_schema = schema_source.lookup (PANEL_SCHEMA, false);
+        // if (panel_schema == null) {
+        //     transparency_label.no_show_all = true;
+        //     transparency_switch.no_show_all = true;
+        // } else {
+        //     var panel_settings = new GLib.Settings (PANEL_SCHEMA);
+        //     panel_settings.bind ("use-transparency", transparency_switch, "active", SettingsBindFlags.DEFAULT);
+        // }
+
+        // var interface_schema = schema_source.lookup (INTERFACE_SCHEMA, false);
+        // if (interface_schema == null) {
+        //     animations_label.no_show_all = true;
+        //     animations_switch.no_show_all = true;
+        // } else {
+        //     var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
+        //     interface_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.DEFAULT);
+        // }
+
+        blueberry_button.clicked.connect (() => {
+            if (blueberry_button.active) {
+                slate_button.active = false;
+
+                blueberry_button.sensitive = false;
+                slate_button.sensitive = true;
+            }
+        });
+
+        slate_button.clicked.connect (() => {
+            if (slate_button.active) {
+                blueberry_button.active = false;
+
+                slate_button.sensitive = false;
+                blueberry_button.sensitive = true;
+            }
+        });
     }
 }
 
