@@ -37,7 +37,12 @@ public class Appearance : Gtk.Grid {
         }
     """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
+    private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string STYLESHEET_KEY = "gtk-theme";
+
+    private Gtk.Grid accent_grid;
+    private Gtk.ToggleButton blueberry_button;
+    private Gtk.ToggleButton slate_button;
 
     construct {
         column_spacing = 12;
@@ -48,16 +53,16 @@ public class Appearance : Gtk.Grid {
         var accent_label = new Gtk.Label (_("Accent color:"));
         accent_label.halign = Gtk.Align.END;
 
-        var accent_grid = new Gtk.Grid ();
+        accent_grid = new Gtk.Grid ();
         accent_grid.column_spacing = 6;
 
-        var blueberry_button = new Gtk.ToggleButton ();
+        blueberry_button = new Gtk.ToggleButton ();
         blueberry_button.tooltip_text = _("Blueberry");
         blueberry_button.width_request = blueberry_button.height_request = 24;
         blueberry_button.get_style_context ().add_class ("circular");
         blueberry_button.get_style_context ().add_class ("blueberry");
 
-        var slate_button = new Gtk.ToggleButton ();
+        slate_button = new Gtk.ToggleButton ();
         slate_button.tooltip_text = _("Slate");
         slate_button.width_request = slate_button.height_request = 24;
         slate_button.get_style_context ().add_class ("circular");
@@ -66,8 +71,13 @@ public class Appearance : Gtk.Grid {
         accent_grid.attach (blueberry_button, 0, 0);
         accent_grid.attach (slate_button,     1, 0);
 
-        attach (accent_label, 0, 0);
-        attach (accent_grid,  1, 0);
+        var contrast_label = new Gtk.Label (_("High contrast theme:"));
+        var contrast_switch = new Gtk.Switch ();
+
+        attach (accent_label,    0, 0);
+        attach (accent_grid,     1, 0);
+        attach (contrast_label,  0, 1);
+        attach (contrast_switch, 1, 1);
 
         var provider = new Gtk.CssProvider ();
         try {
@@ -82,16 +92,28 @@ public class Appearance : Gtk.Grid {
             return;
         }
 
-        var schema_source = SettingsSchemaSource.get_default ();
-        var interface_schema = schema_source.lookup (INTERFACE_SCHEMA, false);
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
         var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
-
         if (current_stylesheet == "elementary") {
             blueberry_button.active = true;
         } else if (current_stylesheet == "elementary-slate") {
             slate_button.active = true;
+        } else if (current_stylesheet == "HighContrast") {
+            contrast_switch.active = true;
+            accent_grid.sensitive = false;
+        }
+
+        var panel_schema = SettingsSchemaSource.get_default ().lookup (PANEL_SCHEMA, false);
+        if (panel_schema != null) {
+            var transparent_label = new Gtk.Label (_("Panel transparency:"));
+            var transparent_switch = new Gtk.Switch ();
+            
+            attach (transparent_label, 0, 2);
+            attach (transparent_switch, 1, 2);
+
+            var panel_settings = new Settings (PANEL_SCHEMA);
+            panel_settings.bind ("use-transparency", transparent_switch, "active", SettingsBindFlags.DEFAULT);
         }
 
         blueberry_button.clicked.connect (() => {
@@ -115,6 +137,21 @@ public class Appearance : Gtk.Grid {
                 interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
             }
         });
+
+        contrast_switch.notify["active"].connect (() => {
+            if (contrast_switch.active) {
+                interface_settings.set_string (STYLESHEET_KEY, "HighContrast");
+                accent_grid.sensitive = false;
+            } else {
+                interface_settings.set_string (STYLESHEET_KEY, get_selected_accent_theme ());
+                accent_grid.sensitive = true;
+            }
+        });
+    }
+
+    private string get_selected_accent_theme () {
+        if (slate_button.active) return "elementary-slate";
+        return "elementary";
     }
 }
 
