@@ -20,20 +20,16 @@
 
 public class Appearance : Gtk.Grid {
     private const string CSS = """
-        .blueberry {
-            background-color: @BLUEBERRY_300;
+        .variant:dir(rtl) image {
+            -gtk-icon-transform: scaleX(-1);
+        }
+
+        .blueberry:checked {
             border-color: @BLUEBERRY_500;
-            color: transparent;
         }
 
-        .slate {
-            background-color: @SLATE_300;
+        .slate:checked {
             border-color: @SLATE_500;
-            color: transparent;
-        }
-
-        .circular:checked {
-            border-width: 4px;
         }
     """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
@@ -45,29 +41,31 @@ public class Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
-        var accent_label = new Gtk.Label (_("Accent color:"));
-        accent_label.halign = Gtk.Align.END;
-
         var accent_grid = new Gtk.Grid ();
         accent_grid.column_spacing = 6;
 
+        var blueberry_icon = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/accent-example-default.svg");
+
         var blueberry_button = new Gtk.ToggleButton ();
+        blueberry_button.image = blueberry_icon;
         blueberry_button.tooltip_text = _("Blueberry");
-        blueberry_button.width_request = blueberry_button.height_request = 24;
-        blueberry_button.get_style_context ().add_class ("circular");
+        blueberry_button.get_style_context ().add_class ("variant");
+        blueberry_button.get_style_context ().add_class ("flat");
         blueberry_button.get_style_context ().add_class ("blueberry");
 
+        var slate_icon = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/accent-example-slate.svg");
+
         var slate_button = new Gtk.ToggleButton ();
+        slate_button.image = slate_icon;
         slate_button.tooltip_text = _("Slate");
-        slate_button.width_request = slate_button.height_request = 24;
-        slate_button.get_style_context ().add_class ("circular");
+        slate_button.get_style_context ().add_class ("variant");
+        slate_button.get_style_context ().add_class ("flat");
         slate_button.get_style_context ().add_class ("slate");
 
         accent_grid.attach (blueberry_button, 0, 0);
         accent_grid.attach (slate_button,     1, 0);
 
-        attach (accent_label, 0, 0);
-        attach (accent_grid,  1, 0);
+        attach (accent_grid, 0, 0);
 
         var provider = new Gtk.CssProvider ();
         try {
@@ -95,24 +93,22 @@ public class Appearance : Gtk.Grid {
         }
 
         blueberry_button.clicked.connect (() => {
-            if (blueberry_button.active) {
+            if (slate_button.active) {
                 slate_button.active = false;
 
-                blueberry_button.sensitive = false;
-                slate_button.sensitive = true;
-
                 interface_settings.set_string (STYLESHEET_KEY, "elementary");
+            } else {
+                blueberry_button.active = true;
             }
         });
 
         slate_button.clicked.connect (() => {
-            if (slate_button.active) {
+            if (blueberry_button.active) {
                 blueberry_button.active = false;
 
-                slate_button.sensitive = false;
-                blueberry_button.sensitive = true;
-
                 interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
+            } else {
+                slate_button.active = true;
             }
         });
     }
