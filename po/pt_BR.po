@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-08-30 00:07+0000\n"
+"PO-Revision-Date: 2018-09-01 00:08+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/pt_BR/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/desktop-plug.vala:36
 msgid "Desktop"
-msgstr "Área de trabalho"
+msgstr "Área de Trabalho"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
