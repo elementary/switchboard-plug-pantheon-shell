@@ -129,7 +129,7 @@ public class Wallpaper : Gtk.Grid {
 
         var preview_area = new Granite.AsyncImage (false);
         preview_area.pixel_size = 256;
-        preview_area.margin_right = 12;
+        preview_area.margin_end = 12;
 
         var chooser = new Gtk.FileChooserDialog (
             _("Import Photo"), null, Gtk.FileChooserAction.OPEN,

@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
-"PO-Revision-Date: 2018-03-10 00:04+0000\n"
-"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"PO-Revision-Date: 2018-09-08 00:08+0000\n"
+"Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -26,7 +26,7 @@ msgstr "Scrivania"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configura la dock, gli angoli attivi e cambia lo sfondo"
+msgstr "Configura il Dock, gli angoli attivi e cambia lo sfondo"
 
 #: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
@@ -60,16 +60,16 @@ msgstr "Monitor"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Eliminare"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Artista: %s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr ""
+msgstr "Importare foto…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
@@ -85,7 +85,7 @@ msgstr "Adattato"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
-msgstr ""
+msgstr "Importare foto"
 
 #: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
@@ -93,7 +93,7 @@ msgstr "Annulla"
 
 #: src/Views/Wallpaper.vala:155
 msgid "Import"
-msgstr ""
+msgstr "Importare"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -124,6 +124,10 @@ msgid "Show all windows"
 msgstr "Mostra tutte le finestre"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr "Passare ad un nuovo spazio di lavoro"
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Esegui comando personalizzato"
 
@@ -150,11 +154,11 @@ msgstr "La finestra corrente è massimizzata"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr "La finestra corrente si sovrappone alla dock"
+msgstr "La finestra corrente si sovrappone al Dock"
 
 #: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr "Qualsiasi finestra si sovrappone alla dock"
+msgstr "Qualsiasi finestra si sovrappone al Dock"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
@@ -180,12 +184,12 @@ msgstr "Nascondi quando:"
 msgid "Pressure reveal:"
 msgstr "Rivela passando con il mouse:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "Schermo %d"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "Schermo %d"

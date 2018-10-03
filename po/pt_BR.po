@@ -7,22 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
-"PO-Revision-Date: 2017-03-16 23:41+0000\n"
-"Last-Translator: Leonardo <leonardo@elementary.io>\n"
-"Language-Team: Portuguese (Brazil) <http://weblate.elementary.io/projects/"
-"desktop/switchboard-plug-pantheon-shell/pt_BR/>\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"PO-Revision-Date: 2018-09-01 00:08+0000\n"
+"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-pantheon-shell/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.12\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
 #: src/desktop-plug.vala:36
 msgid "Desktop"
-msgstr "Área de trabalho"
+msgstr "Área de Trabalho"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -60,16 +60,16 @@ msgstr "Tela"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Artista: %s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr ""
+msgstr "Importar Foto…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
@@ -85,7 +85,7 @@ msgstr "Expandido"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
-msgstr ""
+msgstr "Importar Foto"
 
 #: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
@@ -93,7 +93,7 @@ msgstr "Cancelar"
 
 #: src/Views/Wallpaper.vala:155
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -109,7 +109,7 @@ msgstr "Fazer nada"
 
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
-msgstr "Visualização de multitarefa"
+msgstr "Visão Multitarefa"
 
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
@@ -124,6 +124,10 @@ msgid "Show all windows"
 msgstr "Mostrar todas as janelas"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr "Alternar para o novo espaço de trabalho"
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Executar comando personalizado"
 
@@ -180,29 +184,29 @@ msgstr "Esconder quando:"
 msgid "Pressure reveal:"
 msgstr "Mostrar pressão:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "Tela %d"
 
 #: set-wallpaper-contract/set-wallpaper.vala:95
-#, fuzzy, c-format
+#, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "% segundo"
 msgstr[1] "% segundos"
 
 #: set-wallpaper-contract/set-wallpaper.vala:98
-#, fuzzy, c-format
+#, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] "% minuto"
-msgstr[1] "% minutos"
+msgstr[0] "%d minuto"
+msgstr[1] "%d minutos"
 
 #: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format

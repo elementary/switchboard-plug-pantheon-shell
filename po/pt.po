@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
-"PO-Revision-Date: 2018-05-11 03:46+0000\n"
-"Last-Translator: Pedro Ferreira <pmaf.ferreira@gmail.com>\n"
-"Language-Team: Portuguese <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-pantheon-shell/pt/>\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"PO-Revision-Date: 2018-09-18 10:10+0000\n"
+"Last-Translator: Nuno Alexandre MS ribeiro <nuno.anarresti@gmail.com>\n"
+"Language-Team: Portuguese <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-pantheon-shell/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -124,6 +124,10 @@ msgid "Show all windows"
 msgstr "Mostar todas as janelas"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr "Alternar para novo espaço de trabalho"
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Executar comando personalizado"
 
@@ -180,12 +184,12 @@ msgstr "Esconder quando:"
 msgid "Pressure reveal:"
 msgstr "Revelar com pressão:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "Ecrã %d"

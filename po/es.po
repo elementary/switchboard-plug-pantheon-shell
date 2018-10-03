@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 14:24-0700\n"
+"POT-Creation-Date: 2018-07-16 08:32-0700\n"
 "PO-Revision-Date: 2018-05-04 20:22+0000\n"
 "Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
-"Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-pantheon-shell/es/>\n"
+"Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -124,6 +124,10 @@ msgid "Show all windows"
 msgstr "Mostrar todas las ventanas"
 
 #: src/Views/HotCorners.vala:108
+msgid "Switch to new workspace"
+msgstr ""
+
+#: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Ejecutar comando personalizado"
 
@@ -180,12 +184,12 @@ msgstr "Ocultar cuando:"
 msgid "Pressure reveal:"
 msgstr "Mostrar al presionar:"
 
-#: src/Views/Dock.vala:202
+#: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:207
+#: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
 msgstr "Pantalla %d"
