@@ -103,6 +103,17 @@ public class Wallpaper : Gtk.Grid {
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
         add_wallpaper_button.margin = 12;
 
+        var online_label = new Gtk.Label (_("Online wallpapers:"));
+
+        var online_switch = new Gtk.Switch ();
+        online_switch.margin = 6;
+        online_switch.valign = Gtk.Align.CENTER;
+
+        var online_info = new Gtk.Image.from_icon_name ("help-info-symbolic", Gtk.IconSize.BUTTON);
+        online_info.halign = Gtk.Align.START;
+        online_info.hexpand = true;
+        online_info.tooltip_text = _("Show wallpapers from Unsplash.com");
+
         combo = new Gtk.ComboBoxText ();
         combo.valign = Gtk.Align.CENTER;
         combo.append ("centered", _("Centered"));
@@ -122,7 +133,6 @@ public class Wallpaper : Gtk.Grid {
         color_button.color_set.connect (update_color);
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-        size_group.add_widget (add_wallpaper_button);
         size_group.add_widget (combo);
         size_group.add_widget (color_button);
 
@@ -131,6 +141,9 @@ public class Wallpaper : Gtk.Grid {
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         actionbar.pack_start (add_wallpaper_button);
+        actionbar.pack_start (online_label);
+        actionbar.pack_start (online_switch);
+        actionbar.pack_start (online_info);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
 
