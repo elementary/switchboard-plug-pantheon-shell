@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-09-01 00:08+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"PO-Revision-Date: 2018-10-06 03:45+0000\n"
+"Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -36,7 +36,7 @@ msgstr "Papel de parede"
 #: src/desktop-plug.vala:102 src/desktop-plug.vala:103
 #: src/desktop-plug.vala:104
 msgid "Dock"
-msgstr "Dock"
+msgstr "Barra de aplicativos"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:105
 msgid "Hot Corners"
