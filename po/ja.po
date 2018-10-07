@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-07-16 15:35+0000\n"
+"PO-Revision-Date: 2018-10-08 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -230,7 +230,7 @@ msgstr "デスクトップの背景として設定(_D)"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr "選択した画像をデスクトップの背景として設定します"
+msgstr "選択された画像をデスクトップの背景として設定します"
 
 #~ msgid "Move to Trash"
 #~ msgstr "ゴミ箱に移動"
