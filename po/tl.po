@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2016-06-30 20:35+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
@@ -42,16 +42,16 @@ msgid "Hot Corners"
 msgstr ""
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Tema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Sukat ng Icon"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr ""
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -238,6 +238,9 @@ msgstr "Italaga bilang _Desktop Background"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Italaga bilang _Desktop Background ang nakaselect na imahe"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
 
 #~ msgid "Pictures"
 #~ msgstr "Mga Litrato"

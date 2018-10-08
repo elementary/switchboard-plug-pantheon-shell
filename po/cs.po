@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-07-21 12:26+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "Aktivní rohy"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Motiv"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Režim skrývání"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Velikost ikon"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Vysunutí tlakem:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -242,6 +243,9 @@ msgstr "Nastavit jako _pozadí plochy"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Nastavit vybraný obrázek jako nové pozadí plochy"
+
+#~ msgid "Theme"
+#~ msgstr "Motiv"
 
 #~ msgid "Pictures"
 #~ msgstr "Obrázky"

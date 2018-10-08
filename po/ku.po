@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-02-11 00:08+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard/"
@@ -43,16 +43,16 @@ msgid "Hot Corners"
 msgstr ""
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Rûdank"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Mezinahiya Îkonan"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr ""
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -239,6 +239,9 @@ msgstr "Bike wêneya rûerdê sermaseyê"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+
+#~ msgid "Theme"
+#~ msgstr "Rûdank"
 
 #~ msgid "Pictures"
 #~ msgstr "Wêne"

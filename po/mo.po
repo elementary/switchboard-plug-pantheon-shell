@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-05-27 17:18+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -37,16 +37,17 @@ msgid "Hot Corners"
 msgstr "Colțuri calde"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Temă"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Ascundeți modul"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Dimensiune pictogramă"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Difuzează previzualizarea:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -233,3 +234,6 @@ msgstr "Setează ca imagine de fundal"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Setați imaginea selectată ca fiind noul fundal pentru desktop"
+
+#~ msgid "Theme"
+#~ msgstr "Temă"

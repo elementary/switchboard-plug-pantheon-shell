@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "Érzékeny sarkok"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Téma"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Elrejtési mód"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Ikonméret"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Felfedés csak nyomásra:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -239,6 +240,9 @@ msgstr "Beállítás _asztali háttérképként"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Kiválasztott kép beállítása új asztali háttérképként"
+
+#~ msgid "Theme"
+#~ msgstr "Téma"
 
 #~ msgid "Pictures"
 #~ msgstr "Képek"

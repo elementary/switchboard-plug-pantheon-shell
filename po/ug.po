@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2016-12-30 14:48+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "قىزىق بۇلۇڭلار"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "ئۇسلۇب"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "يوشۇرۇش ئەندىزىسى"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "سىنبەلگە چوڭلۇقى"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "بىسىم كۆرسىتىش:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -236,6 +237,9 @@ msgstr "ئۈستەليۈزى تەگ رەسىمى قىلىپ تەڭشەش"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "تاللانغان رەسىمنى يىڭى ئۈستەليۈزى تەگ رەسىمى قىلىپ تەڭشەش"
+
+#~ msgid "Theme"
+#~ msgstr "ئۇسلۇب"
 
 #~ msgid "Pictures"
 #~ msgstr "رەسىملەر"

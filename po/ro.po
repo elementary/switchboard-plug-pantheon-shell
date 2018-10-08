@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2015-01-31 18:44+0000\n"
 "Last-Translator: Dobrescu Cristian <Unknown>\n"
 "Language-Team: Romanian <ro@li.org>\n"
@@ -43,16 +43,16 @@ msgid "Hot Corners"
 msgstr "Colțuri sensibile"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Temă"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Mod ascundere"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Dimensiune Pictogramă"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr ""
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -239,6 +239,9 @@ msgstr ""
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+
+#~ msgid "Theme"
+#~ msgstr "Temă"
 
 #~ msgid "Pictures"
 #~ msgstr "Imagini"

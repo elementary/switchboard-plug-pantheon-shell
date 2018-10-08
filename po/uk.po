@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2017-04-10 19:12+0000\n"
 "Last-Translator: Oleh Astappiev <astappev@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -44,16 +44,17 @@ msgid "Hot Corners"
 msgstr "Гарячі кути"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Тема"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Режим ховання"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Розмір піктограм"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Показувати натиск:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -243,6 +244,9 @@ msgstr "Зробити _тлом стільниці"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Зробити позначене зображення новим зображенням тла стільниці"
+
+#~ msgid "Theme"
+#~ msgstr "Тема"
 
 #~ msgid "Pictures"
 #~ msgstr "Зображення"

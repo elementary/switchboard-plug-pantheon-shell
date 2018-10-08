@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-05-04 17:36+0000\n"
 "Last-Translator: Ciaran Ainsworth <cda@whistlingkappa.com>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "Hot Corners"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Theme"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Hide Mode"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Icon Size"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Pressure reveal:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -239,6 +240,9 @@ msgstr "Set as _Desktop Background"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Set selected image to be the new desktop background"
+
+#~ msgid "Theme"
+#~ msgstr "Theme"
 
 #~ msgid "Pictures"
 #~ msgstr "Pictures"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-10-08 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
@@ -38,16 +38,17 @@ msgid "Hot Corners"
 msgstr "ホットコーナー"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "テーマ"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "隠す方法"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "アイコンサイズ"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "押し込んで表示:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -231,6 +232,9 @@ msgstr "デスクトップの背景として設定(_D)"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "選択された画像をデスクトップの背景として設定します"
+
+#~ msgid "Theme"
+#~ msgstr "テーマ"
 
 #~ msgid "Move to Trash"
 #~ msgstr "ゴミ箱に移動"

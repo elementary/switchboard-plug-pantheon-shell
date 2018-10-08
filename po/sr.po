@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2017-05-06 07:26+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "Врући углови"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Тема"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Режим скривања"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Величина иконице"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Осећај притиска:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -243,6 +244,9 @@ msgstr "Постави као смењиву позадину радне пов�
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+
+#~ msgid "Theme"
+#~ msgstr "Тема"
 
 #~ msgid "Pictures"
 #~ msgstr "Слике"

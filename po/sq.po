@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2016-05-01 01:52+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,16 +37,16 @@ msgid "Hot Corners"
 msgstr ""
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Tema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Mënyra e fshehjes"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Madhësia e ikonave"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr ""
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -233,6 +233,9 @@ msgstr ""
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
 
 #~ msgid "Pictures"
 #~ msgstr "Imazhet"

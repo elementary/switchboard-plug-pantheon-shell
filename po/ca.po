@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-07-16 19:06+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
@@ -44,16 +44,17 @@ msgid "Hot Corners"
 msgstr "Cantons actius"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Tema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Mode d'ocultació"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Mida de les icones"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Mostra en fer pressió:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -240,6 +241,9 @@ msgstr "Estableix com a fons _d'escriptori"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Estableix la imatge seleccionada com a fons d'escriptori nou"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
 
 #~ msgid "Move to Trash"
 #~ msgstr "Desplaça a la paperera"

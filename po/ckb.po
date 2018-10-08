@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2015-10-07 23:56+0000\n"
 "Last-Translator: qezwan <Unknown>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -42,16 +42,16 @@ msgid "Hot Corners"
 msgstr "کۆشەکانی داخ"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "ڕووکار"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "شاردنەوەی مۆد"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "ئەندازەی وێنۆچکە"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr ""
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -238,6 +238,9 @@ msgstr ""
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr ""
+
+#~ msgid "Theme"
+#~ msgstr "ڕووکار"
 
 #~ msgid "Pictures"
 #~ msgstr "وێنەکان"

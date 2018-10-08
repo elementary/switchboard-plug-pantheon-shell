@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-07-20 14:34+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "Toimintokulmat"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Teema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Piilotustila"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Kuvakekoko"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Esiintuomisen paine:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -239,6 +240,9 @@ msgstr "Aseta _työpöydän taustakuvaksi"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Aseta valittu kuva työpöydän uudeksi taustakuvaksi"
+
+#~ msgid "Theme"
+#~ msgstr "Teema"
 
 #~ msgid "Pictures"
 #~ msgstr "Kuvat"

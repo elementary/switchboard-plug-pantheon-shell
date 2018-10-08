@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2017-04-17 14:12+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -39,16 +39,17 @@ msgid "Hot Corners"
 msgstr "Kutovi zaslona"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Tema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Način skrivanja"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Veličina ikone"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Razina pritiska:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -238,6 +239,9 @@ msgstr "Podesi kao pozadinu _radne površine"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Postavi odabranu sliku kao pozadinu radne površine"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
 
 #~ msgid "Pictures"
 #~ msgstr "Slike"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2017-04-20 12:22+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: nn (generated) <https://l10n.elementary.io/projects/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "Varme hjørner"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Tema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Gøym modus"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Ikonstorleik"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Vis når den blir trykt på:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -239,6 +240,9 @@ msgstr "Bruk som _Skrivebordsbakgrunn"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Bruk det valde biletet som den nye skrivebordsbakgrunnen"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
 
 #~ msgid "Pictures"
 #~ msgstr "Bilete"

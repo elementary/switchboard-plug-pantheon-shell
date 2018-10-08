@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-07-16 18:29+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
@@ -44,16 +44,17 @@ msgid "Hot Corners"
 msgstr "Aktywne narożniki"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Motyw"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Tryb ukrywania"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Rozmiar ikon"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Odsłona nacisku:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -243,6 +244,9 @@ msgstr "Ustaw jako _tło pulpitu"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Ustawia wybrany obraz jako nowe tło pulpitu"
+
+#~ msgid "Theme"
+#~ msgstr "Motyw"
 
 #~ msgid "Move to Trash"
 #~ msgstr "Przenieś do kosza"

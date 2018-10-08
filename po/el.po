@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2017-02-26 19:19+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -42,16 +42,16 @@ msgid "Hot Corners"
 msgstr "Ενεργές γωνίες"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Θέμα"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Μέγεθος εικονιδίων"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr ""
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -239,6 +239,9 @@ msgstr "Ορισμός ως _ταπετσαρίας επιφάνειας εργ�
 msgid "Set selected image to be the new desktop background"
 msgstr ""
 "Ορισμός της επιλεγμένης φωτογραφίας ως νέας ταπετσαρίας επιφάνειας εργασίας"
+
+#~ msgid "Theme"
+#~ msgstr "Θέμα"
 
 #~ msgid "Pictures"
 #~ msgstr "Εικόνες"

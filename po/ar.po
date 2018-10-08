@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2012-10-21 12:00+0000\n"
 "Last-Translator: Mohamed-Touhami MAHDI <dragnucs@legtux.org>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -43,15 +43,15 @@ msgid "Hot Corners"
 msgstr "ركن ساخن"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr ""
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
+msgstr ""
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
 msgstr ""
 
 #: src/desktop-plug.vala:104

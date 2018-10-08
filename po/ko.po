@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-07-16 18:45+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "핫 코너"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "테마"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "숨김 모드"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "아이콘 크기"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "압력 표시:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -236,6 +237,9 @@ msgstr "바탕 화면 배경으로 설정(_D)"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "선택한 이미지를 새 바탕화면 배경으로 설정합니다"
+
+#~ msgid "Theme"
+#~ msgstr "테마"
 
 #~ msgid "Pictures"
 #~ msgstr "사진"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2018-06-12 07:32+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
@@ -42,16 +42,17 @@ msgid "Hot Corners"
 msgstr "Pojok Interaktif"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Tema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Mode Sembunyi"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Ukuran Ikon"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Ungkapkan tekanan:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -235,6 +236,9 @@ msgstr "Atur sebagai Latar Belakang _Destop"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Tetapkan gambar yang dipilih menjadi latar belakang destop yang baru"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
 
 #~ msgid "Pictures"
 #~ msgstr "Gambar"

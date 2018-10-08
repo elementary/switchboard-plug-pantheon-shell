@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-08 12:59-0700\n"
 "PO-Revision-Date: 2013-06-19 21:36+0000\n"
 "Last-Translator: Ibai Oihanguren Sala <Unknown>\n"
 "Language-Team: Basque <eu@li.org>\n"
@@ -42,15 +42,15 @@ msgid "Hot Corners"
 msgstr "Izkina beroak"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr ""
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
+msgstr ""
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
 msgstr ""
 
 #: src/desktop-plug.vala:104
