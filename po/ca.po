@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-08 12:59-0700\n"
-"PO-Revision-Date: 2018-10-09 13:41+0000\n"
+"PO-Revision-Date: 2018-10-09 16:42+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ca/>\n"
@@ -183,7 +183,7 @@ msgstr "S'amaga quan..."
 
 #: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
-msgstr "Mostra en fer pressió:"
+msgstr "La pressió revela..."
 
 #: src/Views/Dock.vala:203
 #, c-format
