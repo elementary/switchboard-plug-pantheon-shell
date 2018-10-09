@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-08 12:59-0700\n"
-"PO-Revision-Date: 2018-10-09 00:01+0000\n"
+"PO-Revision-Date: 2018-10-09 16:42+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -69,7 +69,7 @@ msgstr "Interpret: %s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr "Foto importieren.…"
+msgstr "Foto importieren…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
