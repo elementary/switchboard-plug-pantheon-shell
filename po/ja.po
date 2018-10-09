@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-08 12:59-0700\n"
-"PO-Revision-Date: 2018-10-08 00:05+0000\n"
+"PO-Revision-Date: 2018-10-09 01:53+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -46,9 +46,8 @@ msgid "Icon Size"
 msgstr "アイコンサイズ"
 
 #: src/desktop-plug.vala:103
-#, fuzzy
 msgid "Pressure reveal"
-msgstr "押し込んで表示:"
+msgstr "押し込んで表示"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
