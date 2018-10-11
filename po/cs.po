@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-08 12:59-0700\n"
-"PO-Revision-Date: 2018-07-21 12:26+0000\n"
+"PO-Revision-Date: 2018-10-11 17:37+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/cs/>\n"
@@ -51,9 +51,8 @@ msgid "Icon Size"
 msgstr "Velikost ikon"
 
 #: src/desktop-plug.vala:103
-#, fuzzy
 msgid "Pressure reveal"
-msgstr "Vysunutí tlakem:"
+msgstr "Vysunutí tlakem"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
