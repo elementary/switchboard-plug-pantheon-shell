@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-13 15:36-0700\n"
 "PO-Revision-Date: 2017-04-09 17:47+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "Actieve hoeken"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Thema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Verbergmodus"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Pictogramgrootte"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Onthul bij druk:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -107,26 +108,32 @@ msgstr "Aangepast commando:"
 msgid "Do nothing"
 msgstr "Niets doen"
 
+#. none
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
 msgstr "Multitasking weergave"
 
+#. show-workspace-view
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
 msgstr "Maximaliseer het huidige venster"
 
+#. maximize-current
 #: src/Views/HotCorners.vala:106
 msgid "Show Applications Menu"
 msgstr "Toon toepassingsmenu"
 
+#. open-launcher
 #: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "Toon alle vensters"
 
+#. window-overview-all
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
 msgstr ""
 
+#. switch-new-workspace
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Voer aangepast commando uit"
@@ -232,6 +239,24 @@ msgstr "Instellen als diavoorstelling"
 msgid "Create slideshow"
 msgstr "Maak diavoorstelling"
 
+#.
+#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
+#. *
+#. * This program is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This program is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
+#.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
 msgstr "Stel in als _bureaubladachtergrond"
@@ -239,6 +264,9 @@ msgstr "Stel in als _bureaubladachtergrond"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Gebruik de geselecteerde afbeelding als nieuwe bureaubladachtergrond"
+
+#~ msgid "Theme"
+#~ msgstr "Thema"
 
 #~ msgid "Pictures"
 #~ msgstr "Afbeeldingen"
