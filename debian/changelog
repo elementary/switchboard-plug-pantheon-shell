@@ -1,3 +1,9 @@
+switchboard-plug-pantheon-shell (2.7.1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Mon, 15 Oct 2018 19:20:01 -0500
+
 switchboard-plug-pantheon-shell (0.2.7) bionic; urgency=medium
 
   * New upstream release.
