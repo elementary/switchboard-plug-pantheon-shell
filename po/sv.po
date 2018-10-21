@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2016-07-20 14:20+0000\n"
-"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
-"Language-Team: Swedish <sv@li.org>\n"
+"PO-Revision-Date: 2018-10-21 16:00+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
+"Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/desktop-plug.vala:36
 msgid "Desktop"
@@ -43,7 +44,7 @@ msgstr "Aktiva hörn"
 
 #: src/desktop-plug.vala:101
 msgid "Hide Mode"
-msgstr "Dolt Läge"
+msgstr "Dolt läge"
 
 #: src/desktop-plug.vala:102
 msgid "Icon Size"
@@ -51,7 +52,7 @@ msgstr "Ikonstorlek"
 
 #: src/desktop-plug.vala:103
 msgid "Pressure reveal"
-msgstr ""
+msgstr "Visa vid tryck"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -59,16 +60,16 @@ msgstr "Bildskärm"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Ta bort"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Artist: %s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr ""
+msgstr "Importera bild…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
@@ -84,7 +85,7 @@ msgstr "Sträckt för att passa bilden"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
-msgstr ""
+msgstr "Importera bild"
 
 #: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
@@ -92,19 +93,19 @@ msgstr "Avbryt"
 
 #: src/Views/Wallpaper.vala:155
 msgid "Import"
-msgstr ""
+msgstr "Importera"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
-msgstr "När muspekaren når hörnet på skärmen"
+msgstr "När muspekaren når hörnet på skärmen:"
 
 #: src/Views/HotCorners.vala:66
 msgid "Custom command:"
-msgstr ""
+msgstr "Egendefinierat kommando:"
 
 #: src/Views/HotCorners.vala:103
 msgid "Do nothing"
-msgstr ""
+msgstr "Gör ingenting"
 
 #. none
 #: src/Views/HotCorners.vala:104
@@ -114,7 +115,7 @@ msgstr "Multitaskingvy"
 #. show-workspace-view
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
-msgstr ""
+msgstr "Maximera nuvarande fönster"
 
 #. maximize-current
 #: src/Views/HotCorners.vala:106
@@ -124,21 +125,21 @@ msgstr "Visa programmenyn"
 #. open-launcher
 #: src/Views/HotCorners.vala:107
 msgid "Show all windows"
-msgstr ""
+msgstr "Visa alla fönster"
 
 #. window-overview-all
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "Skifta till ny arbetsyta"
 
 #. switch-new-workspace
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
-msgstr ""
+msgstr "Utför egendefinierat kommando"
 
 #: src/Views/Dock.vala:34
 msgid "Small"
-msgstr ""
+msgstr "Liten"
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
@@ -151,7 +152,7 @@ msgstr "Stor"
 #: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
-msgstr "Anpassad (%dpx)"
+msgstr "Egendefinierat (%dpx)"
 
 #: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
@@ -167,11 +168,11 @@ msgstr "Något fönster överlappar dockan"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
-msgstr "Inte används"
+msgstr "Används inte"
 
 #: src/Views/Dock.vala:122
 msgid "Primary display:"
-msgstr ""
+msgstr "Primär skärm:"
 
 #: src/Views/Dock.vala:126
 msgid "Display:"
@@ -179,7 +180,7 @@ msgstr "Bildskärm:"
 
 #: src/Views/Dock.vala:157
 msgid "Icon size:"
-msgstr ""
+msgstr "Ikonstorlek:"
 
 #: src/Views/Dock.vala:159
 msgid "Hide when:"
@@ -187,7 +188,7 @@ msgstr "Dölj när:"
 
 #: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "Visa vid tryck:"
 
 #: src/Views/Dock.vala:203
 #, c-format
