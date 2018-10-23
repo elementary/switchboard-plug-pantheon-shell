@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-13 15:36-0700\n"
 "PO-Revision-Date: 2018-07-16 20:46+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "Coins intelligents"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Thème"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Mode Masqué"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Taille de l'icône"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "Apparaître avec la pression de la souris :"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -107,26 +108,32 @@ msgstr "Commande personnalisée :"
 msgid "Do nothing"
 msgstr "Ne rien faire"
 
+#. none
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
 msgstr "Vue multitâche"
 
+#. show-workspace-view
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
 msgstr "Maximiser la fenêtre actuelle"
 
+#. maximize-current
 #: src/Views/HotCorners.vala:106
 msgid "Show Applications Menu"
 msgstr "Afficher le menu Applications"
 
+#. open-launcher
 #: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "Afficher toutes les fenêtres"
 
+#. window-overview-all
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
 msgstr "Basculer vers un nouvel espace de travail"
 
+#. switch-new-workspace
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Exécuter une commande personnalisée"
@@ -232,6 +239,24 @@ msgstr "Définir comme fond d'écran animé"
 msgid "Create slideshow"
 msgstr "Créer un fond d'écran animé"
 
+#.
+#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
+#. *
+#. * This program is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This program is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
+#.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
 msgstr "Définir comme fond d'_écran"
@@ -239,6 +264,9 @@ msgstr "Définir comme fond d'_écran"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Définit l'image sélectionnée comme le nouveau fond d'écran"
+
+#~ msgid "Theme"
+#~ msgstr "Thème"
 
 #~ msgid "Move to Trash"
 #~ msgstr "Déplacer dans la corbeille"

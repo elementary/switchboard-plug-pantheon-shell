@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-07-16 19:06+0000\n"
+"POT-Creation-Date: 2018-10-13 15:36-0700\n"
+"PO-Revision-Date: 2018-10-10 00:02+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ca/>\n"
@@ -44,16 +44,16 @@ msgid "Hot Corners"
 msgstr "Cantons actius"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Tema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Mode d'ocultació"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Mida de les icones"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr "Revelació per pressió"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -108,26 +108,32 @@ msgstr "Ordre personalitzada:"
 msgid "Do nothing"
 msgstr "No facis res"
 
+#. none
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
 msgstr "Vista de multitasca"
 
+#. show-workspace-view
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
 msgstr "Maximitza la finestra actual"
 
+#. maximize-current
 #: src/Views/HotCorners.vala:106
 msgid "Show Applications Menu"
 msgstr "Mostra el menú d'aplicacions"
 
+#. open-launcher
 #: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "Mostra totes les finestres"
 
+#. window-overview-all
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
 msgstr "Canvia a un espai de treball nou"
 
+#. switch-new-workspace
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Executa una ordre personalitzada"
@@ -183,7 +189,7 @@ msgstr "S'amaga quan..."
 
 #: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
-msgstr "Mostra en fer pressió:"
+msgstr "Revelació per pressió:"
 
 #: src/Views/Dock.vala:203
 #, c-format
@@ -233,6 +239,24 @@ msgstr "Estableix com a presentació de diapositives"
 msgid "Create slideshow"
 msgstr "Crea una presentació de diapositives"
 
+#.
+#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
+#. *
+#. * This program is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This program is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
+#.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
 msgstr "Estableix com a fons _d'escriptori"
@@ -240,6 +264,9 @@ msgstr "Estableix com a fons _d'escriptori"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Estableix la imatge seleccionada com a fons d'escriptori nou"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
 
 #~ msgid "Move to Trash"
 #~ msgstr "Desplaça a la paperera"

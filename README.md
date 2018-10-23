@@ -1,6 +1,8 @@
 # Switchboard Desktop Plug
 [![l10n](https://l10n.elementary.io/widgets/switchboard/switchboard-plug-pantheon-desktop/svg-badge.svg)](https://l10n.elementary.io/projects/switchboard/switchboard-plug-pantheon-desktop)
 
+![screenshot](data/screenshot.png?raw=true)
+
 ## Building and Installation
 
 You'll need the following dependencies:

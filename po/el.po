@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-13 15:36-0700\n"
 "PO-Revision-Date: 2017-02-26 19:19+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -42,16 +42,16 @@ msgid "Hot Corners"
 msgstr "Ενεργές γωνίες"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Θέμα"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Μέγεθος εικονιδίων"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr ""
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -106,26 +106,32 @@ msgstr "Προσαρμοσμένη εντολή:"
 msgid "Do nothing"
 msgstr "Καμία ενέργεια"
 
+#. none
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
 msgstr "Θέαση πολυδιεργασίας"
 
+#. show-workspace-view
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
 msgstr "Μεγιστοποίηση τρέχοντος παραθύρου"
 
+#. maximize-current
 #: src/Views/HotCorners.vala:106
 msgid "Show Applications Menu"
 msgstr "Εμφάνιση μενού εφαρμογών"
 
+#. open-launcher
 #: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "Προβολή όλων των παραθύρων"
 
+#. window-overview-all
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
 msgstr ""
 
+#. switch-new-workspace
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Εκτέλεση προσαρμοσμένης εντολής"
@@ -231,6 +237,24 @@ msgstr "Ορισμός ως slideshow επιφάνειας εργασίας"
 msgid "Create slideshow"
 msgstr "Δημιουργία slideshow"
 
+#.
+#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
+#. *
+#. * This program is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This program is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
+#.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
 msgstr "Ορισμός ως _ταπετσαρίας επιφάνειας εργασίας"
@@ -239,6 +263,9 @@ msgstr "Ορισμός ως _ταπετσαρίας επιφάνειας εργ�
 msgid "Set selected image to be the new desktop background"
 msgstr ""
 "Ορισμός της επιλεγμένης φωτογραφίας ως νέας ταπετσαρίας επιφάνειας εργασίας"
+
+#~ msgid "Theme"
+#~ msgstr "Θέμα"
 
 #~ msgid "Pictures"
 #~ msgstr "Εικόνες"
