@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
 "PO-Revision-Date: 2018-10-27 23:22+0000\n"
-"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
+"Last-Translator: Ümit Seyhan <btc.umit@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
 "Language: tr\n"
@@ -130,7 +130,7 @@ msgstr "Tüm pencereleri göster"
 #. window-overview-all
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "Yeni bir çalışma alanına geç"
 
 #. switch-new-workspace
 #: src/Views/HotCorners.vala:109
