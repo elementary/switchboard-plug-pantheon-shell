@@ -21,6 +21,7 @@
 public class Appearance : Gtk.Grid {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
+    private const string TEXT_SIZE_KEY = "text-scaling-factor";
 
     construct {
         column_spacing = 12;
@@ -48,7 +49,10 @@ public class Appearance : Gtk.Grid {
         text_size_scale.width_request = 128;
         text_size_scale.draw_value = false;
 
-        text_size_scale.add_mark (1, Gtk.PositionType.BOTTOM, null);
+        text_size_scale.add_mark (0.75, Gtk.PositionType.BOTTOM, null);
+        text_size_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Default"));
+        text_size_scale.add_mark (1.25, Gtk.PositionType.BOTTOM, null);
+        text_size_scale.add_mark (1.75, Gtk.PositionType.BOTTOM, null);
 
         var small_icon = new Gtk.Image.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU);
         small_icon.valign = Gtk.Align.START;
@@ -68,6 +72,9 @@ public class Appearance : Gtk.Grid {
         attach (translucency_switch, 1, 1);
         attach (text_size_label, 0, 2);
         attach (text_size_grid, 1, 2);
+
+        var interface_settings = new Settings (INTERFACE_SCHEMA);
+        interface_settings.bind (TEXT_SIZE_KEY, text_size_scale.adjustment, "value", SettingsBindFlags.DEFAULT);
     }
 }
 
