@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
+"POT-Creation-Date: 2018-10-13 15:36-0700\n"
 "PO-Revision-Date: 2016-12-30 14:48+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -43,16 +43,17 @@ msgid "Hot Corners"
 msgstr "قىزىق بۇلۇڭلار"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "ئۇسلۇب"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "يوشۇرۇش ئەندىزىسى"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "سىنبەلگە چوڭلۇقى"
+
+#: src/desktop-plug.vala:103
+#, fuzzy
+msgid "Pressure reveal"
+msgstr "بىسىم كۆرسىتىش:"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -107,26 +108,32 @@ msgstr "ئۆزگىچىلەشتۈرۈلگەن كوماندا:"
 msgid "Do nothing"
 msgstr "ھېچنىمە قىلماسلىق"
 
+#. none
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
 msgstr "كۆپ ۋەزىپىلىك كۆرۈنۈش"
 
+#. show-workspace-view
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
 msgstr "ھازىرقى كۆزنەكنى ئەڭ چوڭ ھالەتكە كەلتۈرۈش"
 
+#. maximize-current
 #: src/Views/HotCorners.vala:106
 msgid "Show Applications Menu"
 msgstr "ئەپلەر تىزىملىكىنى كۆرسىتىش"
 
+#. open-launcher
 #: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "ھەممە كۆزنەكلەرنى كۆرسىتىش"
 
+#. window-overview-all
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
 msgstr ""
 
+#. switch-new-workspace
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "ئۆزگىچىلەشتۈرۈلگەن كوماندىنى ئىجرا قىلىش"
@@ -229,6 +236,24 @@ msgstr "ئۈستەليۈزى پرويېكسىيە پليونكىسى قىلىپ 
 msgid "Create slideshow"
 msgstr "پرويېكسىيە پليونكىسى قۇرۇش"
 
+#.
+#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
+#. *
+#. * This program is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This program is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
+#.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
 msgstr "ئۈستەليۈزى تەگ رەسىمى قىلىپ تەڭشەش"
@@ -236,6 +261,9 @@ msgstr "ئۈستەليۈزى تەگ رەسىمى قىلىپ تەڭشەش"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "تاللانغان رەسىمنى يىڭى ئۈستەليۈزى تەگ رەسىمى قىلىپ تەڭشەش"
+
+#~ msgid "Theme"
+#~ msgstr "ئۇسلۇب"
 
 #~ msgid "Pictures"
 #~ msgstr "رەسىملەر"
