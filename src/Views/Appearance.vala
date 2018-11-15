@@ -42,24 +42,35 @@ public class Appearance : Gtk.Grid {
 
         var text_size_label = new Gtk.Label (_("Text size:"));
         text_size_label.halign = Gtk.Align.END;
+        text_size_label.valign = Gtk.Align.START;
 
-        // var text_size_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 2, 1);
-        // text_size_scale.width_request = 128;
-        // text_size_scale.draw_value = false;
+        var text_size_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0.75, 1.75, 0.05);
+        text_size_scale.width_request = 200;
+        text_size_scale.draw_value = false;
 
-        var text_size_mode = new Granite.Widgets.ModeButton ();
-        text_size_mode.append_text (_("Normal"));
-        text_size_mode.append_text (_("Large"));
-        text_size_mode.append_text (_("Larger"));
-        text_size_mode.get_style_context ().add_class ("text-size");
+        text_size_scale.add_mark (0.75, Gtk.PositionType.BOTTOM, null);
+        text_size_scale.add_mark (1, Gtk.PositionType.BOTTOM, "Default");
+        text_size_scale.add_mark (1.25, Gtk.PositionType.BOTTOM, null);
+        text_size_scale.add_mark (1.75, Gtk.PositionType.BOTTOM, null);
+
+        var small_icon = new Gtk.Image.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU);
+        small_icon.valign = Gtk.Align.START;
+
+        var large_icon = new Gtk.Image.from_icon_name ("zoom-in-symbolic", Gtk.IconSize.MENU);
+        large_icon.valign = Gtk.Align.START;
+
+        var text_size_grid = new Gtk.Grid ();
+        text_size_grid.column_spacing = 6;
+        text_size_grid.add (small_icon);
+        text_size_grid.add (text_size_scale);
+        text_size_grid.add (large_icon);
 
         attach (animations_label, 0, 0);
         attach (animations_switch, 1, 0);
         attach (translucency_label, 0, 1);
         attach (translucency_switch, 1, 1);
         attach (text_size_label, 0, 2);
-        // attach (text_size_scale, 1, 2);
-        attach (text_size_mode, 1, 2);
+        attach (text_size_grid, 1, 2);
     }
 }
 
