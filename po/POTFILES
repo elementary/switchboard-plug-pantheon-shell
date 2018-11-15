@@ -4,6 +4,7 @@ src/GalaSettings.vala
 src/desktop-plug.vala
 src/Widgets/WallpaperContainer.vala
 src/Widgets/SolidColorContainer.vala
+src/Views/Appearance.vala
 src/Views/Wallpaper.vala
 src/Views/HotCorners.vala
 src/Views/Dock.vala
