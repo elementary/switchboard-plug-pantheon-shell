@@ -20,8 +20,13 @@
 
 public class Appearance : Gtk.Grid {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
-    private const string STYLESHEET_KEY = "gtk-theme";
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
+
+    private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
+    private const string TRANSLUCENCY_KEY = "use-transparency";
+
+    private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
+    private const string ANIMATIONS_KEY = "enable-animations";
 
     construct {
         column_spacing = 12;
@@ -69,6 +74,12 @@ public class Appearance : Gtk.Grid {
         attach (translucency_switch, 1, 1);
         attach (text_size_label, 0, 2);
         attach (text_size_grid, 1, 2);
+
+        var animations_settings = new Settings (ANIMATIONS_SCHEMA);
+        animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
+
+        var panel_settings = new Settings (PANEL_SCHEMA);
+        panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
 
         var interface_settings = new Settings (INTERFACE_SCHEMA);
         interface_settings.bind (TEXT_SIZE_KEY, text_size_scale.adjustment, "value", SettingsBindFlags.DEFAULT);
