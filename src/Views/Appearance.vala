@@ -49,10 +49,7 @@ public class Appearance : Gtk.Grid {
         text_size_scale.width_request = 128;
         text_size_scale.draw_value = false;
 
-        text_size_scale.add_mark (0.75, Gtk.PositionType.BOTTOM, null);
-        text_size_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Default"));
-        text_size_scale.add_mark (1.25, Gtk.PositionType.BOTTOM, null);
-        text_size_scale.add_mark (1.75, Gtk.PositionType.BOTTOM, null);
+        text_size_scale.add_mark (1, Gtk.PositionType.BOTTOM, null);
 
         var small_icon = new Gtk.Image.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU);
         small_icon.valign = Gtk.Align.START;
