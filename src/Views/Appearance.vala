@@ -19,23 +19,6 @@
 */
 
 public class Appearance : Gtk.Grid {
-    private const string CSS = """
-        .blueberry {
-            background-color: @BLUEBERRY_300;
-            border-color: @BLUEBERRY_500;
-            color: transparent;
-        }
-
-        .slate {
-            background-color: @SLATE_300;
-            border-color: @SLATE_500;
-            color: transparent;
-        }
-
-        .circular:checked {
-            border-width: 4px;
-        }
-    """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
 
@@ -45,76 +28,38 @@ public class Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
-        var accent_label = new Gtk.Label (_("Accent color:"));
-        accent_label.halign = Gtk.Align.END;
+        var animations_label = new Gtk.Label (_("Window animations:"));
+        animations_label.halign = Gtk.Align.END;
 
-        var accent_grid = new Gtk.Grid ();
-        accent_grid.column_spacing = 6;
+        var animations_switch = new Gtk.Switch ();
+        animations_switch.halign = Gtk.Align.START;
 
-        var blueberry_button = new Gtk.ToggleButton ();
-        blueberry_button.tooltip_text = _("Blueberry");
-        blueberry_button.width_request = blueberry_button.height_request = 24;
-        blueberry_button.get_style_context ().add_class ("circular");
-        blueberry_button.get_style_context ().add_class ("blueberry");
+        var translucency_label = new Gtk.Label (_("Panel translucency:"));
+        translucency_label.halign = Gtk.Align.END;
 
-        var slate_button = new Gtk.ToggleButton ();
-        slate_button.tooltip_text = _("Slate");
-        slate_button.width_request = slate_button.height_request = 24;
-        slate_button.get_style_context ().add_class ("circular");
-        slate_button.get_style_context ().add_class ("slate");
+        var translucency_switch = new Gtk.Switch ();
+        translucency_switch.halign = Gtk.Align.START;
 
-        accent_grid.attach (blueberry_button, 0, 0);
-        accent_grid.attach (slate_button,     1, 0);
+        var text_size_label = new Gtk.Label (_("Text size:"));
+        text_size_label.halign = Gtk.Align.END;
 
-        attach (accent_label, 0, 0);
-        attach (accent_grid,  1, 0);
+        // var text_size_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 2, 1);
+        // text_size_scale.width_request = 128;
+        // text_size_scale.draw_value = false;
 
-        var provider = new Gtk.CssProvider ();
-        try {
-            provider.load_from_data (CSS, CSS.length);
+        var text_size_mode = new Granite.Widgets.ModeButton ();
+        text_size_mode.append_text (_("Normal"));
+        text_size_mode.append_text (_("Large"));
+        text_size_mode.append_text (_("Larger"));
+        text_size_mode.get_style_context ().add_class ("text-size");
 
-            Gtk.StyleContext.add_provider_for_screen (
-                Gdk.Screen.get_default (),
-                provider,
-                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-            );
-        } catch (GLib.Error e) {
-            return;
-        }
-
-        var schema_source = SettingsSchemaSource.get_default ();
-        var interface_schema = schema_source.lookup (INTERFACE_SCHEMA, false);
-        var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
-
-        var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
-
-        if (current_stylesheet == "elementary") {
-            blueberry_button.active = true;
-        } else if (current_stylesheet == "elementary-slate") {
-            slate_button.active = true;
-        }
-
-        blueberry_button.clicked.connect (() => {
-            if (blueberry_button.active) {
-                slate_button.active = false;
-
-                blueberry_button.sensitive = false;
-                slate_button.sensitive = true;
-
-                interface_settings.set_string (STYLESHEET_KEY, "elementary");
-            }
-        });
-
-        slate_button.clicked.connect (() => {
-            if (slate_button.active) {
-                blueberry_button.active = false;
-
-                slate_button.sensitive = false;
-                blueberry_button.sensitive = true;
-
-                interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
-            }
-        });
+        attach (animations_label, 0, 0);
+        attach (animations_switch, 1, 0);
+        attach (translucency_label, 0, 1);
+        attach (translucency_switch, 1, 1);
+        attach (text_size_label, 0, 2);
+        // attach (text_size_scale, 1, 2);
+        attach (text_size_mode, 1, 2);
     }
 }
 
