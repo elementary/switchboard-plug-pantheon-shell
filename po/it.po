@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-16 08:32-0700\n"
-"PO-Revision-Date: 2018-03-10 00:04+0000\n"
-"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"POT-Creation-Date: 2018-10-13 15:36-0700\n"
+"PO-Revision-Date: 2018-10-09 02:04+0000\n"
+"Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -26,7 +26,7 @@ msgstr "Scrivania"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configura la dock, gli angoli attivi e cambia lo sfondo"
+msgstr "Configura il Dock, gli angoli attivi e cambia lo sfondo"
 
 #: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
@@ -43,16 +43,16 @@ msgid "Hot Corners"
 msgstr "Angoli attivi"
 
 #: src/desktop-plug.vala:101
-msgid "Theme"
-msgstr "Tema"
-
-#: src/desktop-plug.vala:102
 msgid "Hide Mode"
 msgstr "Modalità di nascondimento"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:102
 msgid "Icon Size"
 msgstr "Dimensione delle icone"
+
+#: src/desktop-plug.vala:103
+msgid "Pressure reveal"
+msgstr "Appare al fare pressione con il mouse"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -60,16 +60,16 @@ msgstr "Monitor"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Eliminare"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Artista: %s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr ""
+msgstr "Importare foto…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
@@ -85,7 +85,7 @@ msgstr "Adattato"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
-msgstr ""
+msgstr "Importare foto"
 
 #: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
@@ -93,7 +93,7 @@ msgstr "Annulla"
 
 #: src/Views/Wallpaper.vala:155
 msgid "Import"
-msgstr ""
+msgstr "Importare"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -107,26 +107,32 @@ msgstr "Comando personalizzato:"
 msgid "Do nothing"
 msgstr "Nessuna azione"
 
+#. none
 #: src/Views/HotCorners.vala:104
 msgid "Multitasking View"
 msgstr "Panoramica degli spazi di lavoro"
 
+#. show-workspace-view
 #: src/Views/HotCorners.vala:105
 msgid "Maximize current window"
 msgstr "Massimizza la finestra corrente"
 
+#. maximize-current
 #: src/Views/HotCorners.vala:106
 msgid "Show Applications Menu"
 msgstr "Mostra il menu applicazioni"
 
+#. open-launcher
 #: src/Views/HotCorners.vala:107
 msgid "Show all windows"
 msgstr "Mostra tutte le finestre"
 
+#. window-overview-all
 #: src/Views/HotCorners.vala:108
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "Passare ad un nuovo spazio di lavoro"
 
+#. switch-new-workspace
 #: src/Views/HotCorners.vala:109
 msgid "Execute custom command"
 msgstr "Esegui comando personalizzato"
@@ -154,11 +160,11 @@ msgstr "La finestra corrente è massimizzata"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr "La finestra corrente si sovrappone alla dock"
+msgstr "La finestra corrente si sovrappone al Dock"
 
 #: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr "Qualsiasi finestra si sovrappone alla dock"
+msgstr "Qualsiasi finestra si sovrappone al Dock"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
@@ -232,6 +238,24 @@ msgstr "Imposta come presentazione del desktop"
 msgid "Create slideshow"
 msgstr "Crea presentazione"
 
+#.
+#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
+#. *
+#. * This program is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This program is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
+#.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
 msgstr "Imposta come sfondo del _desktop"
@@ -239,6 +263,9 @@ msgstr "Imposta come sfondo del _desktop"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Imposta l'immagine selezionata come nuovo sfondo del desktop"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
 
 #~ msgid "Pictures"
 #~ msgstr "Immagini"

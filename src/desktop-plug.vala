@@ -104,9 +104,9 @@ public class GalaPlug : Switchboard.Plug {
         var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
         search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
         search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Theme")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Icon Size")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Pressure reveal")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
         search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
