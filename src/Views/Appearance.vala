@@ -96,8 +96,11 @@ public class Appearance : Gtk.Grid {
         attach (text_size_label, 0, 4);
         attach (text_size_grid, 1, 4);
 
+        var gtk_settings = Gtk.Settings.get_default ();
+
         var desktop_settings = new Settings (DESKTOP_SCHEMA);
         desktop_settings.bind (DARK_KEY, dark_switch, "active", SettingsBindFlags.DEFAULT);
+        dark_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
 
         var animations_settings = new Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
