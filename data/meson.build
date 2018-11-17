@@ -5,3 +5,10 @@ i18n.merge_file(
     install_dir: join_paths(get_option('datadir'), 'metainfo'),
     install: true
 )
+
+install_data (
+    'gschema.xml',
+    install_dir: join_paths (get_option ('datadir'), 'glib-2.0', 'schemas'),
+    rename: 'io.elementary.desktop.interface.gschema.xml'
+)
+

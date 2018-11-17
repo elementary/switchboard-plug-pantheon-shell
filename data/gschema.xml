@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/io/elementary/desktop/" id="io.elementary.desktop">
+    <key name="prefer-dark" type="b">
+      <default>false</default>
+      <summary>Prefer dark style</summary>
+      <description>Ask apps to use a dark visual style. Not all apps support this, and it is up to each app to implement. Does not affect notifications or non-native apps. If the app has a built-in style switcher it will likely ignore this setting.</description>
+    </key>
+  </schema>
+</schemalist>
+

@@ -19,6 +19,9 @@
 */
 
 public class Appearance : Gtk.Grid {
+    private const string DESKTOP_SCHEMA = "io.elementary.desktop";
+    private const string DARK_KEY = "prefer-dark";
+
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
 
@@ -33,6 +36,21 @@ public class Appearance : Gtk.Grid {
         halign = Gtk.Align.CENTER;
         row_spacing = 6;
         margin_start = margin_end = 6;
+
+        var dark_label = new Gtk.Label (_("Prefer dark style:"));
+        dark_label.halign = Gtk.Align.END;
+
+        var dark_switch = new Gtk.Switch ();
+        dark_switch.halign = Gtk.Align.START;
+
+        var dark_info = new Gtk.Label (_("Ask apps to use a dark visual style. Not all apps support this, and it is up to each app to implement. Does not affect notifications or non-native apps. If the app has a built-in style switcher it will likely ignore this setting."));
+        dark_info.max_width_chars = 60;
+        dark_info.margin_bottom = 18;
+        dark_info.wrap = true;
+        dark_info.xalign = 0;
+        dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        var test_button = new Gtk.ToggleButton.with_label (_("Test Speakers…"));
 
         var animations_label = new Gtk.Label (_("Window animations:"));
         animations_label.halign = Gtk.Align.END;
@@ -68,12 +86,18 @@ public class Appearance : Gtk.Grid {
         text_size_grid.add (text_size_scale);
         text_size_grid.add (large_icon);
 
-        attach (animations_label, 0, 0);
-        attach (animations_switch, 1, 0);
-        attach (translucency_label, 0, 1);
-        attach (translucency_switch, 1, 1);
-        attach (text_size_label, 0, 2);
-        attach (text_size_grid, 1, 2);
+        attach (dark_label, 0, 0);
+        attach (dark_switch, 1, 0);
+        attach (dark_info, 1, 1);
+        attach (animations_label, 0, 2);
+        attach (animations_switch, 1, 2);
+        attach (translucency_label, 0, 3);
+        attach (translucency_switch, 1, 3);
+        attach (text_size_label, 0, 4);
+        attach (text_size_grid, 1, 4);
+
+        var desktop_settings = new Settings (DESKTOP_SCHEMA);
+        desktop_settings.bind (DARK_KEY, dark_switch, "active", SettingsBindFlags.DEFAULT);
 
         var animations_settings = new Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
