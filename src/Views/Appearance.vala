@@ -100,7 +100,7 @@ public class Appearance : Gtk.Grid {
 
         var desktop_settings = new Settings (DESKTOP_SCHEMA);
         desktop_settings.bind (DARK_KEY, dark_switch, "active", SettingsBindFlags.DEFAULT);
-        dark_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
+        desktop_settings.bind (DARK_KEY, gtk_settings, "gtk_application_prefer_dark_theme", SettingsBindFlags.DEFAULT);
 
         var animations_settings = new Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
