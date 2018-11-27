@@ -93,9 +93,9 @@ public class Appearance : Gtk.Grid {
                 GLib.Source.remove (debounce);
             }
 
-            // A quarter second seems sufficient for moving the mouse or holding
+            // A half second seems sufficient for moving the mouse or holding
             // the keyboard without feeling too unresponsive
-            debounce = Timeout.add (250, () => {
+            debounce = Timeout.add (500, () => {
                 interface_settings.set_double (TEXT_SIZE_KEY, text_size_scale.adjustment.value);
             });
         });
