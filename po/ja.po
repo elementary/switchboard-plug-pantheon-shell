@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-11-08 13:03+0000\n"
+"PO-Revision-Date: 2018-11-24 13:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -60,7 +60,7 @@ msgstr "削除"
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr "アーティスト: %s"
+msgstr "アーティスト：%s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
@@ -92,11 +92,11 @@ msgstr "インポート"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
-msgstr "カーソルがディスプレイのコーナーに入った時:"
+msgstr "カーソルがディスプレイのコーナーに入った時："
 
 #: src/Views/HotCorners.vala:66
 msgid "Custom command:"
-msgstr "カスタムコマンド:"
+msgstr "カスタムコマンド："
 
 #: src/Views/HotCorners.vala:103
 msgid "Do nothing"
@@ -167,23 +167,23 @@ msgstr "使われていないとき"
 
 #: src/Views/Dock.vala:122
 msgid "Primary display:"
-msgstr "プライマリーディスプレイ:"
+msgstr "プライマリーディスプレイ："
 
 #: src/Views/Dock.vala:126
 msgid "Display:"
-msgstr "ディスプレイ:"
+msgstr "ディスプレイ："
 
 #: src/Views/Dock.vala:157
 msgid "Icon size:"
-msgstr "アイコンサイズ:"
+msgstr "アイコンサイズ："
 
 #: src/Views/Dock.vala:159
 msgid "Hide when:"
-msgstr "隠す場合:"
+msgstr "隠す場合："
 
 #: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
-msgstr "押し込んで表示:"
+msgstr "押し込んで表示："
 
 #: src/Views/Dock.vala:203
 #, c-format
