@@ -83,6 +83,8 @@ public class Appearance : Gtk.Grid {
         var panel_settings = new Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
 
+        // Only get value from the binding so we can debounce the value setting
+        // (so it doesn't spaz out under the cursor)
         var interface_settings = new Settings (INTERFACE_SCHEMA);
         interface_settings.bind (TEXT_SIZE_KEY, text_size_scale.adjustment, "value", SettingsBindFlags.GET);
 
@@ -91,6 +93,8 @@ public class Appearance : Gtk.Grid {
                 GLib.Source.remove (debounce);
             }
 
+            // A quarter second seems sufficient for moving the mouse or holding
+            // the keyboard without feeling too unresponsive
             debounce = Timeout.add (250, () => {
                 interface_settings.set_double (TEXT_SIZE_KEY, text_size_scale.adjustment.value);
             });
