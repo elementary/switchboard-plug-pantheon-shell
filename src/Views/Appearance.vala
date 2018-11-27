@@ -28,6 +28,8 @@ public class Appearance : Gtk.Grid {
     private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
     private const string ANIMATIONS_KEY = "enable-animations";
 
+    private uint debounce;
+
     construct {
         column_spacing = 12;
         halign = Gtk.Align.CENTER;
@@ -82,7 +84,17 @@ public class Appearance : Gtk.Grid {
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
 
         var interface_settings = new Settings (INTERFACE_SCHEMA);
-        interface_settings.bind (TEXT_SIZE_KEY, text_size_scale.adjustment, "value", SettingsBindFlags.DEFAULT);
+        interface_settings.bind (TEXT_SIZE_KEY, text_size_scale.adjustment, "value", SettingsBindFlags.GET);
+
+        text_size_scale.value_changed.connect (() => {
+            if (debounce != 0) {
+                GLib.Source.remove (debounce);
+            }
+
+            debounce = Timeout.add (250, () => {
+                interface_settings.set_double (TEXT_SIZE_KEY, text_size_scale.adjustment.value);
+            });
+        });
     }
 }
 
