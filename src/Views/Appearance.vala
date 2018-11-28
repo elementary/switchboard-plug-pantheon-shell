@@ -76,7 +76,7 @@ public class Appearance : Gtk.Grid {
 
         update_text_size_modebutton (interface_settings);
 
-        interface_settings.notify[TEXT_SIZE_KEY].connect (() => {
+        interface_settings.changed.connect (() => {
             update_text_size_modebutton (interface_settings);
         });
 
