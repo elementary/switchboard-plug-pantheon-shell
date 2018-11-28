@@ -6,6 +6,7 @@ plug_files = files(
     'Widgets/WallpaperContainer.vala',
     'Widgets/SolidColorContainer.vala',
     'Views/Wallpaper.vala',
+    'Views/Appearance.vala',
     'Views/HotCorners.vala',
     'Views/Dock.vala',
 )
