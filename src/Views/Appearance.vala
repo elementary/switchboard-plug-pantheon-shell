@@ -28,7 +28,9 @@ public class Appearance : Gtk.Grid {
     private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
     private const string ANIMATIONS_KEY = "enable-animations";
 
-    private uint debounce;
+    private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
+
+    private Granite.Widgets.ModeButton text_size_modebutton;
 
     construct {
         column_spacing = 12;
@@ -50,32 +52,19 @@ public class Appearance : Gtk.Grid {
 
         var text_size_label = new Gtk.Label (_("Text size:"));
         text_size_label.halign = Gtk.Align.END;
-        text_size_label.valign = Gtk.Align.START;
 
-        var text_size_scale = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0.75, 1.75, 0.05);
-        text_size_scale.width_request = 128;
-        text_size_scale.draw_value = false;
-
-        text_size_scale.add_mark (1, Gtk.PositionType.BOTTOM, null);
-
-        var small_icon = new Gtk.Image.from_icon_name ("zoom-out-symbolic", Gtk.IconSize.MENU);
-        small_icon.valign = Gtk.Align.START;
-
-        var large_icon = new Gtk.Image.from_icon_name ("zoom-in-symbolic", Gtk.IconSize.MENU);
-        large_icon.valign = Gtk.Align.START;
-
-        var text_size_grid = new Gtk.Grid ();
-        text_size_grid.column_spacing = 6;
-        text_size_grid.add (small_icon);
-        text_size_grid.add (text_size_scale);
-        text_size_grid.add (large_icon);
+        text_size_modebutton = new Granite.Widgets.ModeButton ();
+        text_size_modebutton.append_text (_("Small"));
+        text_size_modebutton.append_text (_("Default"));
+        text_size_modebutton.append_text (_("Large"));
+        text_size_modebutton.append_text (_("Larger"));
 
         attach (animations_label, 0, 0);
         attach (animations_switch, 1, 0);
         attach (translucency_label, 0, 1);
         attach (translucency_switch, 1, 1);
         attach (text_size_label, 0, 2);
-        attach (text_size_grid, 1, 2);
+        attach (text_size_modebutton, 1, 2);
 
         var animations_settings = new Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -83,22 +72,39 @@ public class Appearance : Gtk.Grid {
         var panel_settings = new Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
 
-        // Only get value from the binding so we can debounce the value setting
-        // (so it doesn't spaz out under the cursor)
         var interface_settings = new Settings (INTERFACE_SCHEMA);
-        interface_settings.bind (TEXT_SIZE_KEY, text_size_scale.adjustment, "value", SettingsBindFlags.GET);
 
-        text_size_scale.value_changed.connect (() => {
-            if (debounce != 0) {
-                GLib.Source.remove (debounce);
-            }
+        update_text_size_modebutton (interface_settings);
 
-            // A half second seems sufficient for moving the mouse or holding
-            // the keyboard without feeling too unresponsive
-            debounce = Timeout.add (500, () => {
-                interface_settings.set_double (TEXT_SIZE_KEY, text_size_scale.adjustment.value);
-            });
+        interface_settings.changed.connect (() => {
+            update_text_size_modebutton (interface_settings);
         });
+
+        text_size_modebutton.mode_changed.connect (() => {
+            set_text_scale (interface_settings, text_size_modebutton.selected);
+        });
+    }
+
+    private int get_text_scale (GLib.Settings interface_settings) {
+        double text_scaling_factor = interface_settings.get_double (TEXT_SIZE_KEY);
+
+        if (text_scaling_factor <= TEXT_SCALE[0]) {
+            return 0;
+        } else if (text_scaling_factor <= TEXT_SCALE[1]) {
+            return 1;
+        } else if (text_scaling_factor <= TEXT_SCALE[2]) {
+            return 2;
+        } else {
+            return 3;
+        }
+    }
+
+    private void set_text_scale (GLib.Settings interface_settings, int option) {
+        interface_settings.set_double (TEXT_SIZE_KEY, TEXT_SCALE[option]);
+    }
+
+    private void update_text_size_modebutton (GLib.Settings interface_settings) {
+        text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
 }
 
