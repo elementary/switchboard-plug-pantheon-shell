@@ -322,11 +322,8 @@ public class Wallpaper : Gtk.Grid {
 
         clean_wallpapers ();
 
-        var system_uri = "file://" + SYSTEM_BACKGROUNDS_PATH;
-        var user_uri = GLib.File.new_for_path (get_local_bg_location ()).get_uri ();
-
-        load_wallpapers.begin (system_uri, cancellable);
-        load_wallpapers.begin (user_uri, cancellable);
+        load_wallpapers.begin (SYSTEM_BACKGROUNDS_PATH, cancellable);
+        load_wallpapers.begin (get_local_bg_location (), cancellable);
     }
 
     private async void load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
@@ -334,7 +331,7 @@ public class Wallpaper : Gtk.Grid {
             return;
         }
 
-        var directory = File.new_for_uri (basefolder);
+        var directory = File.new_for_path (basefolder);
 
         try {
             // Enumerator object that will let us read through the wallpapers asynchronously
