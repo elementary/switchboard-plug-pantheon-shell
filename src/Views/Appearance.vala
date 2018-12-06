@@ -59,9 +59,6 @@ public class Appearance : Gtk.Grid {
         var accent_label = new Gtk.Label (_("Accent color:"));
         accent_label.halign = Gtk.Align.END;
 
-        var accent_grid = new Gtk.Grid ();
-        accent_grid.column_spacing = 6;
-
         var blueberry_button = new Gtk.ToggleButton ();
         blueberry_button.tooltip_text = _("Blueberry");
         blueberry_button.width_request = blueberry_button.height_request = 24;
@@ -74,8 +71,10 @@ public class Appearance : Gtk.Grid {
         slate_button.get_style_context ().add_class ("circular");
         slate_button.get_style_context ().add_class ("slate");
 
+        var accent_grid = new Gtk.Grid ();
+        accent_grid.column_spacing = 6;
         accent_grid.attach (blueberry_button, 0, 0);
-        accent_grid.attach (slate_button,     1, 0);
+        accent_grid.attach (slate_button, 1, 0);
 
         var animations_label = new Gtk.Label (_("Window animations:"));
         animations_label.halign = Gtk.Align.END;
