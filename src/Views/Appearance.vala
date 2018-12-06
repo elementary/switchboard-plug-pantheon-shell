@@ -20,20 +20,24 @@
 
 public class Appearance : Gtk.Grid {
     private const string CSS = """
-        .blueberry {
-            background-color: @BLUEBERRY_300;
-            border-color: @BLUEBERRY_500;
-            color: transparent;
+        .color-button radio,
+        .color-button radio:checked {
+            border-color: alpha (#000, 0.3);
+            box-shadow:
+                inset 0 1px 0 0 alpha (@inset_dark_color, 0.7),
+                inset 0 0 0 1px alpha (@inset_dark_color, 0.3),
+                0 1px 0 0 alpha (@bg_highlight_color, 0.3);
+            color: #fff;
+            padding: 3px;
+            -gtk-icon-shadow: none;
         }
 
-        .slate {
-            background-color: @SLATE_300;
-            border-color: @SLATE_500;
-            color: transparent;
+        .color-button.blueberry radio {
+            background: @BLUEBERRY_500;
         }
 
-        .circular:checked {
-            border-width: 4px;
+        .color-button.slate radio {
+            background: @SLATE_300;
         }
     """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
@@ -59,17 +63,21 @@ public class Appearance : Gtk.Grid {
         var accent_label = new Gtk.Label (_("Accent color:"));
         accent_label.halign = Gtk.Align.END;
 
-        var blueberry_button = new Gtk.ToggleButton ();
+        var blueberry_button = new Gtk.RadioButton (null);
         blueberry_button.tooltip_text = _("Blueberry");
         blueberry_button.width_request = blueberry_button.height_request = 24;
-        blueberry_button.get_style_context ().add_class ("circular");
-        blueberry_button.get_style_context ().add_class ("blueberry");
 
-        var slate_button = new Gtk.ToggleButton ();
+        var blueberry_button_context = blueberry_button.get_style_context ();
+        blueberry_button_context.add_class ("color-button");
+        blueberry_button_context.add_class ("blueberry");
+
+        var slate_button = new Gtk.RadioButton.from_widget (blueberry_button);
         slate_button.tooltip_text = _("Slate");
         slate_button.width_request = slate_button.height_request = 24;
-        slate_button.get_style_context ().add_class ("circular");
-        slate_button.get_style_context ().add_class ("slate");
+
+        var slate_button_context = slate_button.get_style_context ();
+        slate_button_context.add_class ("color-button");
+        slate_button_context.add_class ("slate");
 
         var accent_grid = new Gtk.Grid ();
         accent_grid.column_spacing = 6;
@@ -146,25 +154,11 @@ public class Appearance : Gtk.Grid {
         }
 
         blueberry_button.clicked.connect (() => {
-            if (blueberry_button.active) {
-                slate_button.active = false;
-
-                blueberry_button.sensitive = false;
-                slate_button.sensitive = true;
-
-                interface_settings.set_string (STYLESHEET_KEY, "elementary");
-            }
+            interface_settings.set_string (STYLESHEET_KEY, "elementary");
         });
 
         slate_button.clicked.connect (() => {
-            if (slate_button.active) {
-                blueberry_button.active = false;
-
-                slate_button.sensitive = false;
-                blueberry_button.sensitive = true;
-
-                interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
-            }
+            interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
         });
     }
 
