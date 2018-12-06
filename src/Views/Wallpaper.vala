@@ -33,13 +33,11 @@ public class Wallpaper : Gtk.Grid {
         FileAttribute.STANDARD_CONTENT_TYPE,
         FileAttribute.STANDARD_IS_HIDDEN,
         FileAttribute.STANDARD_IS_BACKUP,
+        FileAttribute.STANDARD_IS_SYMLINK,
         FileAttribute.THUMBNAIL_PATH,
         FileAttribute.THUMBNAIL_IS_VALID
     };
 
-    // name of the default-wallpaper-link that we can prevent loading it again
-    // (assumes that the defaultwallpaper is also in the system wallpaper directory)
-    static string DEFAULT_LINK = "file://%s/elementaryos-default".printf (SYSTEM_BACKGROUNDS_PATH);
     const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
 
     public Switchboard.Plug plug { get; construct set; }
@@ -322,11 +320,8 @@ public class Wallpaper : Gtk.Grid {
 
         clean_wallpapers ();
 
-        var system_uri = "file://" + SYSTEM_BACKGROUNDS_PATH;
-        var user_uri = GLib.File.new_for_path (get_local_bg_location ()).get_uri ();
-
-        load_wallpapers.begin (system_uri, cancellable);
-        load_wallpapers.begin (user_uri, cancellable);
+        load_wallpapers.begin (SYSTEM_BACKGROUNDS_PATH, cancellable);
+        load_wallpapers.begin (get_local_bg_location (), cancellable);
     }
 
     private async void load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
@@ -334,7 +329,7 @@ public class Wallpaper : Gtk.Grid {
             return;
         }
 
-        var directory = File.new_for_uri (basefolder);
+        var directory = File.new_for_path (basefolder);
 
         try {
             // Enumerator object that will let us read through the wallpapers asynchronously
@@ -349,7 +344,7 @@ public class Wallpaper : Gtk.Grid {
                     return;
                 }
 
-                if (file_info.get_is_hidden () || file_info.get_is_backup ()) {
+                if (file_info.get_is_hidden () || file_info.get_is_backup () || file_info.get_is_symlink ()) {
                     continue;
                 }
 
@@ -365,12 +360,6 @@ public class Wallpaper : Gtk.Grid {
 
                 var file = directory.resolve_relative_path (file_info.get_name ());
                 string uri = file.get_uri ();
-
-                // Skip the default_wallpaper as seen in the description of the
-                // default_link variable
-                if (uri == DEFAULT_LINK) {
-                    continue;
-                }
 
                 add_wallpaper_from_file (file, uri);
             }

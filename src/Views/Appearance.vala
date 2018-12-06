@@ -38,6 +38,17 @@ public class Appearance : Gtk.Grid {
     """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
+    private const string TEXT_SIZE_KEY = "text-scaling-factor";
+
+    private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
+    private const string TRANSLUCENCY_KEY = "use-transparency";
+
+    private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
+    private const string ANIMATIONS_KEY = "enable-animations";
+
+    private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
+
+    private Granite.Widgets.ModeButton text_size_modebutton;
 
     construct {
         column_spacing = 12;
@@ -66,8 +77,53 @@ public class Appearance : Gtk.Grid {
         accent_grid.attach (blueberry_button, 0, 0);
         accent_grid.attach (slate_button,     1, 0);
 
+        var animations_label = new Gtk.Label (_("Window animations:"));
+        animations_label.halign = Gtk.Align.END;
+
+        var animations_switch = new Gtk.Switch ();
+        animations_switch.halign = Gtk.Align.START;
+
+        var translucency_label = new Gtk.Label (_("Panel translucency:"));
+        translucency_label.halign = Gtk.Align.END;
+
+        var translucency_switch = new Gtk.Switch ();
+        translucency_switch.halign = Gtk.Align.START;
+
+        var text_size_label = new Gtk.Label (_("Text size:"));
+        text_size_label.halign = Gtk.Align.END;
+
+        text_size_modebutton = new Granite.Widgets.ModeButton ();
+        text_size_modebutton.append_text (_("Small"));
+        text_size_modebutton.append_text (_("Default"));
+        text_size_modebutton.append_text (_("Large"));
+        text_size_modebutton.append_text (_("Larger"));
+
         attach (accent_label, 0, 0);
         attach (accent_grid,  1, 0);
+        attach (animations_label, 0, 1);
+        attach (animations_switch, 1, 1);
+        attach (translucency_label, 0, 2);
+        attach (translucency_switch, 1, 2);
+        attach (text_size_label, 0, 3);
+        attach (text_size_modebutton, 1, 3);
+
+        var animations_settings = new Settings (ANIMATIONS_SCHEMA);
+        animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
+
+        var panel_settings = new Settings (PANEL_SCHEMA);
+        panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
+
+        var interface_settings = new Settings (INTERFACE_SCHEMA);
+
+        update_text_size_modebutton (interface_settings);
+
+        interface_settings.changed.connect (() => {
+            update_text_size_modebutton (interface_settings);
+        });
+
+        text_size_modebutton.mode_changed.connect (() => {
+            set_text_scale (interface_settings, text_size_modebutton.selected);
+        });
 
         var provider = new Gtk.CssProvider ();
         try {
@@ -81,10 +137,6 @@ public class Appearance : Gtk.Grid {
         } catch (GLib.Error e) {
             return;
         }
-
-        var schema_source = SettingsSchemaSource.get_default ();
-        var interface_schema = schema_source.lookup (INTERFACE_SCHEMA, false);
-        var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
         var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
 
@@ -115,6 +167,28 @@ public class Appearance : Gtk.Grid {
                 interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
             }
         });
+    }
+
+    private int get_text_scale (GLib.Settings interface_settings) {
+        double text_scaling_factor = interface_settings.get_double (TEXT_SIZE_KEY);
+
+        if (text_scaling_factor <= TEXT_SCALE[0]) {
+            return 0;
+        } else if (text_scaling_factor <= TEXT_SCALE[1]) {
+            return 1;
+        } else if (text_scaling_factor <= TEXT_SCALE[2]) {
+            return 2;
+        } else {
+            return 3;
+        }
+    }
+
+    private void set_text_scale (GLib.Settings interface_settings, int option) {
+        interface_settings.set_double (TEXT_SIZE_KEY, TEXT_SCALE[option]);
+    }
+
+    private void update_text_size_modebutton (GLib.Settings interface_settings) {
+        text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
 }
 
