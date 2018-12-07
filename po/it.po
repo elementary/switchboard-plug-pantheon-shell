@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-10-09 02:04+0000\n"
-"Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
+"PO-Revision-Date: 2018-12-11 16:05+0000\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/it/>\n"
 "Language: it\n"
@@ -26,7 +26,7 @@ msgstr "Scrivania"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configura il Dock, gli angoli attivi e cambia lo sfondo"
+msgstr "Configura la dock, gli angoli attivi e cambia lo sfondo"
 
 #: src/desktop-plug.vala:51 src/desktop-plug.vala:99
 msgid "Wallpaper"
@@ -52,7 +52,7 @@ msgstr "Dimensione delle icone"
 
 #: src/desktop-plug.vala:103
 msgid "Pressure reveal"
-msgstr "Appare al fare pressione con il mouse"
+msgstr "Mostra al passaggio del puntatore"
 
 #: src/desktop-plug.vala:104
 msgid "Display"
@@ -60,7 +60,7 @@ msgstr "Monitor"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr "Eliminare"
+msgstr "Elimina"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
@@ -69,7 +69,7 @@ msgstr "Artista: %s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr "Importare foto…"
+msgstr "Importa foto…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
@@ -85,7 +85,7 @@ msgstr "Adattato"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
-msgstr "Importare foto"
+msgstr "Importa foto"
 
 #: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
@@ -93,7 +93,7 @@ msgstr "Annulla"
 
 #: src/Views/Wallpaper.vala:155
 msgid "Import"
-msgstr "Importare"
+msgstr "Importa"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
@@ -160,11 +160,11 @@ msgstr "La finestra corrente è massimizzata"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr "La finestra corrente si sovrappone al Dock"
+msgstr "La finestra corrente si sovrappone alla dock"
 
 #: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr "Qualsiasi finestra si sovrappone al Dock"
+msgstr "Qualsiasi finestra si sovrappone alla dock"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
