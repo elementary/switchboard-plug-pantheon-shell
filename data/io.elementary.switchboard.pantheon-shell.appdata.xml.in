@@ -8,6 +8,9 @@
       <screenshot type="default">
           <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot.png</image>
       </screenshot>
+      <screenshot>
+          <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-hotcorners.png</image>
+      </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-pantheon-shell/issues</url>

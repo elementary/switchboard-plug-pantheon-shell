@@ -55,14 +55,16 @@ public class HotCorners : Gtk.Grid {
         bottomright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomright").to_string ();
         bottomright.valign = Gtk.Align.END;
 
-        var icon = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/hotcornerdisplay.svg");
+        var icon = new Gtk.Grid ();
+        icon.height_request = 198;
+        icon.width_request = 292;
         icon.get_style_context ().add_class ("hotcorner-display");
 
         var custom_command = new Gtk.Entry ();
         custom_command.primary_icon_name = "utilities-terminal-symbolic";
         custom_command.text = BehaviorSettings.get_default ().hotcorner_custom_command;
         custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
-        
+
         var cc_label = new Gtk.Label (_("Custom command:"));
 
         var cc_grid = new Gtk.Grid ();
