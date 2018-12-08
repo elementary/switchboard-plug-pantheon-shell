@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-11-08 13:03+0000\n"
+"PO-Revision-Date: 2018-12-03 20:59+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -92,7 +92,7 @@ msgstr "インポート"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
-msgstr "カーソルがディスプレイのコーナーに入った時:"
+msgstr "カーソルがディスプレイのコーナーに入ったとき:"
 
 #: src/Views/HotCorners.vala:66
 msgid "Custom command:"
