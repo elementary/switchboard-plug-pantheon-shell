@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-12-10 20:00+0000\n"
+"PO-Revision-Date: 2018-12-14 21:08+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mr/>\n"
@@ -64,7 +64,7 @@ msgstr "कलाकारः %s"
 
 #: src/Views/Wallpaper.vala:103
 msgid "Import Photo…"
-msgstr "फोटो आयात करा ..."
+msgstr "फोटो आयात करा…"
 
 #: src/Views/Wallpaper.vala:108
 msgid "Centered"
@@ -96,7 +96,7 @@ msgstr "जेव्हा कर्सर प्रदर्शनाच्य�
 
 #: src/Views/HotCorners.vala:66
 msgid "Custom command:"
-msgstr "सानुकूल आज्ञाः"
+msgstr "सानुकूल आज्ञा :"
 
 #: src/Views/HotCorners.vala:103
 msgid "Do nothing"
@@ -167,7 +167,7 @@ msgstr "वापरात नाही"
 
 #: src/Views/Dock.vala:122
 msgid "Primary display:"
-msgstr "प्राथमिक प्रदर्शनः"
+msgstr "प्राथमिक प्रदर्शन :"
 
 #: src/Views/Dock.vala:126
 msgid "Display:"
