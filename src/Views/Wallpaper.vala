@@ -18,7 +18,7 @@
 
 [DBus (name = "org.freedesktop.Accounts.User")]
 interface AccountsServiceUser : Object {
-    public abstract void set_background_file (string filename) throws IOError;
+    public abstract void set_background_file (string filename) throws GLib.Error;
 }
 
 public class Wallpaper : Gtk.Grid {
@@ -162,7 +162,7 @@ public class Wallpaper : Gtk.Grid {
 
             if (uri != null && uri.has_prefix ("file://") == true) {
                 var file = GLib.File.new_for_uri (uri);
-                preview_area.set_from_gicon_async (new FileIcon (file), 256);
+                preview_area.set_from_gicon_async.begin (new FileIcon (file), 256);
                 preview_area.show ();
             } else {
                 preview_area.hide ();

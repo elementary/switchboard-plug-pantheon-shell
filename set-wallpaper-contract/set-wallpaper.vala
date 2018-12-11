@@ -252,7 +252,7 @@ namespace SetWallpaperContractor {
 
         dialog.set_default_response (Gtk.ResponseType.OK);
         dialog.get_content_area ().add (grid);
-        dialog.get_action_area ().margin = 4;
+        dialog.get_content_area ().margin = 4;
         dialog.show_all ();
 
         if (dialog.run () == Gtk.ResponseType.OK) {
