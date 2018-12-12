@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:36-0700\n"
+"POT-Creation-Date: 2018-12-12 14:54-0600\n"
 "PO-Revision-Date: 2016-06-13 17:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -27,33 +27,37 @@ msgstr "Töölaud"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Doki ja kiirnurkade konfigureerimine ning taustapildi muutmine"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:105
 msgid "Wallpaper"
 msgstr "Taustapilt"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
-#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
-#: src/desktop-plug.vala:104
+#: src/desktop-plug.vala:54 src/desktop-plug.vala:111
+msgid "Appearance"
+msgstr ""
+
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
+#: src/desktop-plug.vala:108 src/desktop-plug.vala:109
+#: src/desktop-plug.vala:110
 msgid "Dock"
 msgstr "Dokk"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
+#: src/desktop-plug.vala:61 src/desktop-plug.vala:112
 msgid "Hot Corners"
 msgstr "Abistavad nurgad"
 
-#: src/desktop-plug.vala:101
+#: src/desktop-plug.vala:107
 msgid "Hide Mode"
 msgstr "Peitmise režiim"
 
-#: src/desktop-plug.vala:102
+#: src/desktop-plug.vala:108
 msgid "Icon Size"
 msgstr "Ikooni suurus"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:109
 msgid "Pressure reveal"
 msgstr ""
 
-#: src/desktop-plug.vala:104
+#: src/desktop-plug.vala:110
 msgid "Display"
 msgstr "Kuvamine"
 
@@ -66,31 +70,60 @@ msgstr ""
 msgid "Artist: %s"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Appearance.vala:41
+msgid "Window animations:"
+msgstr ""
+
+#: src/Views/Appearance.vala:47
+msgid "Panel translucency:"
+msgstr ""
+
+#: src/Views/Appearance.vala:53
+msgid "Text size:"
+msgstr ""
+
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+msgid "Small"
+msgstr ""
+
+#: src/Views/Appearance.vala:58
+msgid "Default"
+msgstr ""
+
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Suur"
+
+#: src/Views/Appearance.vala:60
+#, fuzzy
+msgid "Larger"
+msgstr "Suur"
+
+#: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:106
 msgid "Centered"
 msgstr "Täidetud"
 
-#: src/Views/Wallpaper.vala:109
+#: src/Views/Wallpaper.vala:107
 msgid "Zoom"
 msgstr "Suurendatud"
 
-#: src/Views/Wallpaper.vala:110
+#: src/Views/Wallpaper.vala:108
 msgid "Spanned"
 msgstr "Kogu pilt"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:151
 msgid "Import Photo"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
 msgstr "Loobu"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr ""
 
@@ -98,55 +131,47 @@ msgstr ""
 msgid "When the cursor enters the corner of the display:"
 msgstr "Kursori liigutamisel ekraani nurka:"
 
-#: src/Views/HotCorners.vala:66
+#: src/Views/HotCorners.vala:68
 msgid "Custom command:"
 msgstr ""
 
-#: src/Views/HotCorners.vala:103
+#: src/Views/HotCorners.vala:105
 msgid "Do nothing"
 msgstr ""
 
 #. none
-#: src/Views/HotCorners.vala:104
+#: src/Views/HotCorners.vala:106
 msgid "Multitasking View"
 msgstr "Tööalade ülevaade"
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:105
+#: src/Views/HotCorners.vala:107
 msgid "Maximize current window"
 msgstr ""
 
 #. maximize-current
-#: src/Views/HotCorners.vala:106
+#: src/Views/HotCorners.vala:108
 msgid "Show Applications Menu"
 msgstr "Näita rakenduste menüüd"
 
 #. open-launcher
-#: src/Views/HotCorners.vala:107
+#: src/Views/HotCorners.vala:109
 msgid "Show all windows"
 msgstr ""
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:110
 msgid "Switch to new workspace"
 msgstr ""
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:111
 msgid "Execute custom command"
-msgstr ""
-
-#: src/Views/Dock.vala:34
-msgid "Small"
 msgstr ""
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
 msgstr "Tavaline"
-
-#: src/Views/Dock.vala:36
-msgid "Large"
-msgstr "Suur"
 
 #: src/Views/Dock.vala:54
 #, c-format
