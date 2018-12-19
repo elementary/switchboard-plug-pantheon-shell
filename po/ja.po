@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2018-12-03 20:59+0000\n"
+"PO-Revision-Date: 2018-12-15 00:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -29,7 +29,7 @@ msgstr "壁紙"
 
 #: src/desktop-plug.vala:54 src/desktop-plug.vala:111
 msgid "Appearance"
-msgstr ""
+msgstr "外観"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
 #: src/desktop-plug.vala:108 src/desktop-plug.vala:109
@@ -68,33 +68,31 @@ msgstr "アーティスト: %s"
 
 #: src/Views/Appearance.vala:41
 msgid "Window animations:"
-msgstr ""
+msgstr "ウィンドウアニメーション:"
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
-msgstr ""
+msgstr "パネルを透過:"
 
 #: src/Views/Appearance.vala:53
-#, fuzzy
 msgid "Text size:"
-msgstr "アイコンサイズ:"
+msgstr "テキストサイズ:"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
-msgstr "小さい"
+msgstr "小"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr ""
+msgstr "デフォルト"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
-msgstr "大きい"
+msgstr "大"
 
 #: src/Views/Appearance.vala:60
-#, fuzzy
 msgid "Larger"
-msgstr "大きい"
+msgstr "最大"
 
 #: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
