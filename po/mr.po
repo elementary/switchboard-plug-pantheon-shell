@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-12-14 21:08+0000\n"
+"PO-Revision-Date: 2018-12-23 18:13+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mr/>\n"
@@ -29,7 +29,7 @@ msgstr "वॉलपेपर"
 
 #: src/desktop-plug.vala:54 src/desktop-plug.vala:111
 msgid "Appearance"
-msgstr ""
+msgstr "दर्शन"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
 #: src/desktop-plug.vala:108 src/desktop-plug.vala:109
@@ -68,16 +68,15 @@ msgstr "कलाकारः %s"
 
 #: src/Views/Appearance.vala:41
 msgid "Window animations:"
-msgstr ""
+msgstr "विंडो अॅनिमेशन:"
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
-msgstr ""
+msgstr "पॅनेल पारंपारिकता:"
 
 #: src/Views/Appearance.vala:53
-#, fuzzy
 msgid "Text size:"
-msgstr "आयकॉन आकार :"
+msgstr "टेक्स्ट आकार :"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
@@ -85,16 +84,15 @@ msgstr "लहान"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr ""
+msgstr "डिफॉल्ट"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
 msgstr "मोठा"
 
 #: src/Views/Appearance.vala:60
-#, fuzzy
 msgid "Larger"
-msgstr "मोठा"
+msgstr "आणखी मोठा"
 
 #: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
