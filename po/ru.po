@@ -30,7 +30,7 @@ msgstr "Фон рабочего стола"
 
 #: src/desktop-plug.vala:54 src/desktop-plug.vala:111
 msgid "Appearance"
-msgstr ""
+msgstr "Внешний вид"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
 #: src/desktop-plug.vala:108 src/desktop-plug.vala:109
@@ -69,16 +69,16 @@ msgstr "Автор: %s"
 
 #: src/Views/Appearance.vala:41
 msgid "Window animations:"
-msgstr ""
+msgstr "Анимация окон"
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
-msgstr ""
+msgstr "Прозрачность панели"
 
 #: src/Views/Appearance.vala:53
 #, fuzzy
 msgid "Text size:"
-msgstr "Размер значков:"
+msgstr "Размер текста:"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
@@ -86,7 +86,7 @@ msgstr "Маленький"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr ""
+msgstr "По умолчанию"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
@@ -95,7 +95,7 @@ msgstr "Большой"
 #: src/Views/Appearance.vala:60
 #, fuzzy
 msgid "Larger"
-msgstr "Большой"
+msgstr "Больше"
 
 #: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
