@@ -217,7 +217,7 @@ public class Dock : Gtk.Grid {
             monitor.hide ();
         } else {
             if (dock_preferences.Monitor != "") {
-                monitor.active = find_monitor_number (get_screen (), dock_preferences.Monitor);
+                monitor.active = find_monitor_number (get_display (), dock_preferences.Monitor);
             } else {
                 monitor.active = primary_screen;
             }
@@ -240,15 +240,17 @@ public class Dock : Gtk.Grid {
         return result;
     }
 
-    static int find_monitor_number (Gdk.Screen screen, string plug_name) {
-        int n_monitors = screen.get_n_monitors ();
+    static int find_monitor_number (Gdk.Display display, string plug_name) {
+        int n_monitors = display.get_n_monitors ();
 
         for (int i = 0; i < n_monitors; i++) {
-            var name = screen.get_monitor_plug_name (i);
+            var monitor = display.get_monitor (i);
+            var name = monitor.get_model ();
             if (plug_name == name)
                 return i;
         }
 
-        return screen.get_primary_monitor ();
+        return display.get_n_monitors();
     }
+
 }

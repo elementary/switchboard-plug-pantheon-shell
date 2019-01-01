@@ -8,7 +8,7 @@ namespace Gnome {
 		[CCode (cheader_filename = "libgnome-desktop/gnome-desktop-thumbnail.h")]
 		public static bool is_valid (Gdk.Pixbuf pixbuf, string uri, long mtime);
 		[CCode (cheader_filename = "libgnome-desktop/gnome-desktop-thumbnail.h")]
-		[Deprecated (since = "2.22")]
+		[Version (deprecated = true, since = "2.22")]
 		public static string md5 (string uri);
 		[CCode (cheader_filename = "libgnome-desktop/gnome-desktop-thumbnail.h")]
 		public static string path_for_uri (string uri, Gnome.DesktopThumbnailSize size);
