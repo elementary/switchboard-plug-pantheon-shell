@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2019-01-02 19:35+0000\n"
+"PO-Revision-Date: 2019-01-04 00:08+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/desktop-plug.vala:36
 msgid "Desktop"
-msgstr "Schreibtisch"
+msgstr "Arbeitsfläche"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -129,7 +129,7 @@ msgstr "Importieren"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
-msgstr "Beim Berühren der Bildschirmecken mit dem Mauszeiger:"
+msgstr "Beim Berühren der Bildschirmecken mit dem Zeiger:"
 
 #: src/Views/HotCorners.vala:68
 msgid "Custom command:"
@@ -152,7 +152,7 @@ msgstr "Aktuelles Fenster maximieren"
 #. maximize-current
 #: src/Views/HotCorners.vala:108
 msgid "Show Applications Menu"
-msgstr "Anwendungsmenü anzeigen"
+msgstr "App-Menü anzeigen"
 
 #. open-launcher
 #: src/Views/HotCorners.vala:109
