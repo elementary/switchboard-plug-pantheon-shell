@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2019-01-06 17:07+0000\n"
+"PO-Revision-Date: 2019-01-07 00:03+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/nn/>\n"
@@ -167,7 +167,7 @@ msgstr "Byt til nytt arbeidsområde"
 #. switch-new-workspace
 #: src/Views/HotCorners.vala:111
 msgid "Execute custom command"
-msgstr "Utfør den sjølvvalde kommandoen"
+msgstr "Utfør den eigendefinerte kommandoen"
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
@@ -176,7 +176,7 @@ msgstr "Normal"
 #: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
-msgstr "Sjølvvald (%dpx)"
+msgstr "Eigendefinert (%dpx)"
 
 #: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
@@ -229,14 +229,14 @@ msgstr "Skjerm %d"
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d sekund"
-msgstr[1] "%d sekunder"
+msgstr[1] "%d sekund"
 
 #: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minutt"
-msgstr[1] "%d minutter"
+msgstr[1] "%d minutt"
 
 #: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
@@ -251,16 +251,16 @@ msgstr "1 dag"
 
 #: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
-msgstr "Vis kvart bilete for"
+msgstr "Vis kvart bilete i"
 
 #: set-wallpaper-contract/set-wallpaper.vala:222
 #: set-wallpaper-contract/set-wallpaper.vala:230
 msgid "Set As Desktop Slideshow"
-msgstr "Bruk som lysbileteframvisning på skrivebordet"
+msgstr "Bruk som lysbiletframvising på skrivebordet"
 
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
-msgstr "Lag lysbileteframvisning"
+msgstr "Lag lysbiletframvising"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -282,11 +282,11 @@ msgstr "Lag lysbileteframvisning"
 #.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr "Bruk som _Skrivebordsbakgrunn"
+msgstr "Bruk som _skrivebordsbakgrunn"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr "Bruk det valde biletet som den nye skrivebordsbakgrunnen"
+msgstr "Bruk valt bilete som ny skrivebordsbakgrunn"
 
 #~ msgid "Theme"
 #~ msgstr "Tema"
