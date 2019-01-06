@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2017-04-20 12:22+0000\n"
-"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
-"Language-Team: nn (generated) <https://l10n.elementary.io/projects/"
+"PO-Revision-Date: 2019-01-06 17:07+0000\n"
+"Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
+"Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/nn/>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -26,7 +26,7 @@ msgstr "Skrivebord"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Konfigurer dokken, varme hjørner og bytt skrivebordsbakgrunn"
+msgstr "Sett opp dokken, aktive hjørne og endre bakgrunnsbilete"
 
 #: src/desktop-plug.vala:51 src/desktop-plug.vala:105
 msgid "Wallpaper"
@@ -34,7 +34,7 @@ msgstr "Bakgrunnsbilete"
 
 #: src/desktop-plug.vala:54 src/desktop-plug.vala:111
 msgid "Appearance"
-msgstr ""
+msgstr "Utsjånad"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
 #: src/desktop-plug.vala:108 src/desktop-plug.vala:109
@@ -44,20 +44,19 @@ msgstr "Dokk"
 
 #: src/desktop-plug.vala:61 src/desktop-plug.vala:112
 msgid "Hot Corners"
-msgstr "Varme hjørner"
+msgstr "Aktive hjørne"
 
 #: src/desktop-plug.vala:107
 msgid "Hide Mode"
-msgstr "Gøym modus"
+msgstr "Skjulemodus"
 
 #: src/desktop-plug.vala:108
 msgid "Icon Size"
 msgstr "Ikonstorleik"
 
 #: src/desktop-plug.vala:109
-#, fuzzy
 msgid "Pressure reveal"
-msgstr "Vis når den blir trykt på:"
+msgstr "Vis når den blir trykt på"
 
 #: src/desktop-plug.vala:110
 msgid "Display"
@@ -65,46 +64,44 @@ msgstr "Skjerm"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Fjern"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Artist: %s"
 
 #: src/Views/Appearance.vala:41
 msgid "Window animations:"
-msgstr ""
+msgstr "Vindaugeanimasjonar"
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
-msgstr ""
+msgstr "Panelgjennomsiktigheit:"
 
 #: src/Views/Appearance.vala:53
-#, fuzzy
 msgid "Text size:"
-msgstr "Ikonstorleik:"
+msgstr "Tekststorleik:"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
-msgstr "Liten"
+msgstr "Lita"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
 msgstr "Stor"
 
 #: src/Views/Appearance.vala:60
-#, fuzzy
 msgid "Larger"
-msgstr "Stor"
+msgstr "Større"
 
 #: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
-msgstr ""
+msgstr "Importer bilete…"
 
 #: src/Views/Wallpaper.vala:106
 msgid "Centered"
@@ -120,7 +117,7 @@ msgstr "Strekt ut"
 
 #: src/Views/Wallpaper.vala:151
 msgid "Import Photo"
-msgstr ""
+msgstr "Importer bilete"
 
 #: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
@@ -128,15 +125,15 @@ msgstr "Avbryt"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import"
-msgstr ""
+msgstr "Importer"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
-msgstr "Når pila nærmar seg hjørna på skjermen:"
+msgstr "Når pila nærmar kjem inn i hjørnet av skjermen:"
 
 #: src/Views/HotCorners.vala:68
 msgid "Custom command:"
-msgstr "Sjølvvald kommando:"
+msgstr "Eigendefinert kommando:"
 
 #: src/Views/HotCorners.vala:105
 msgid "Do nothing"
@@ -145,17 +142,17 @@ msgstr "Ikkje gjer noko"
 #. none
 #: src/Views/HotCorners.vala:106
 msgid "Multitasking View"
-msgstr "Fleiroppgåve-visning"
+msgstr "Vis arbeidsområde"
 
 #. show-workspace-view
 #: src/Views/HotCorners.vala:107
 msgid "Maximize current window"
-msgstr "Maksimer dette vindauget"
+msgstr "Maksimer det aktive vindauget"
 
 #. maximize-current
 #: src/Views/HotCorners.vala:108
 msgid "Show Applications Menu"
-msgstr "Syn applikasjons meny"
+msgstr "Vis applikasjonsmeny"
 
 #. open-launcher
 #: src/Views/HotCorners.vala:109
@@ -165,7 +162,7 @@ msgstr "Vis alle vindauge"
 #. window-overview-all
 #: src/Views/HotCorners.vala:110
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "Byt til nytt arbeidsområde"
 
 #. switch-new-workspace
 #: src/Views/HotCorners.vala:111
