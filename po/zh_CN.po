@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2019-01-14 13:05+0000\n"
+"PO-Revision-Date: 2019-01-15 00:05+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -56,7 +56,7 @@ msgstr "图标大小"
 
 #: src/desktop-plug.vala:109
 msgid "Pressure reveal"
-msgstr "压力显示："
+msgstr "压力显示"
 
 #: src/desktop-plug.vala:110
 msgid "Display"
