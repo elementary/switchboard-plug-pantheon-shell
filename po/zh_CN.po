@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2018-08-12 13:36+0000\n"
+"PO-Revision-Date: 2019-01-14 13:05+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -34,7 +34,7 @@ msgstr "壁纸"
 
 #: src/desktop-plug.vala:54 src/desktop-plug.vala:111
 msgid "Appearance"
-msgstr ""
+msgstr "外观"
 
 #: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
 #: src/desktop-plug.vala:108 src/desktop-plug.vala:109
@@ -55,7 +55,6 @@ msgid "Icon Size"
 msgstr "图标大小"
 
 #: src/desktop-plug.vala:109
-#, fuzzy
 msgid "Pressure reveal"
 msgstr "压力显示："
 
@@ -74,16 +73,15 @@ msgstr "艺术家：%s"
 
 #: src/Views/Appearance.vala:41
 msgid "Window animations:"
-msgstr ""
+msgstr "窗口动画："
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
-msgstr ""
+msgstr "面板透明度："
 
 #: src/Views/Appearance.vala:53
-#, fuzzy
 msgid "Text size:"
-msgstr "图标大小："
+msgstr "文本大小："
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
@@ -91,14 +89,13 @@ msgstr "较小"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
 msgstr "较大"
 
 #: src/Views/Appearance.vala:60
-#, fuzzy
 msgid "Larger"
 msgstr "较大"
 
