@@ -38,7 +38,7 @@ namespace SetWallpaperContractor {
         </transition>
     """;
 
-    string SYSTEM_BACKGROUNDS_PATH = Path.build_path (Constants.DATADIR, "backgrounds");
+    const string SYSTEM_BACKGROUNDS_PATH = Constants.DATADIR + "/" + "backgrounds";
 
     private int delay_value = 60;
 
