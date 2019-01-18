@@ -16,6 +16,7 @@ switchboard_dep = dependency('switchboard-2.0')
 plank_datadir = plank_dep.get_pkgconfig_variable('pkgdatadir')
 
 configuration = configuration_data()
+configuration.set('DATADIR', join_paths (get_option('prefix'), get_option('datadir')))
 configuration.set('PLANKDATADIR', plank_datadir)
 
 config_file = configure_file(
