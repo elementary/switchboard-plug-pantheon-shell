@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2019-01-26 15:34+0000\n"
+"PO-Revision-Date: 2019-01-26 15:35+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/it/>\n"
@@ -77,12 +77,11 @@ msgstr "Animazioni delle finestre:"
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
-msgstr "Trasparenza pannello"
+msgstr "Trasparenza pannello:"
 
 #: src/Views/Appearance.vala:53
-#, fuzzy
 msgid "Text size:"
-msgstr "Dimensione icone:"
+msgstr "Dimensione del testo:"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
@@ -90,14 +89,13 @@ msgstr "Piccole"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr ""
+msgstr "Predefinita"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
 msgstr "Grandi"
 
 #: src/Views/Appearance.vala:60
-#, fuzzy
 msgid "Larger"
 msgstr "Grandi"
 
