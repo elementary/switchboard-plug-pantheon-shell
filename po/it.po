@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
 "PO-Revision-Date: 2019-01-26 15:34+0000\n"
-"Last-Translator: Marco Devoti <ilbuzio@yahoo.it>\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/it/>\n"
 "Language: it\n"
@@ -73,7 +73,7 @@ msgstr "Artista: %s"
 
 #: src/Views/Appearance.vala:41
 msgid "Window animations:"
-msgstr ""
+msgstr "Animazioni delle finestre:"
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
