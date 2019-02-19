@@ -38,7 +38,7 @@ public class Wallpaper : Gtk.Grid {
         FileAttribute.THUMBNAIL_IS_VALID
     };
 
-    string SYSTEM_BACKGROUNDS_PATH = Path.build_path (Constants.DATADIR, "backgrounds");
+    const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
 
     public Switchboard.Plug plug { get; construct set; }
     private GLib.Settings settings;
