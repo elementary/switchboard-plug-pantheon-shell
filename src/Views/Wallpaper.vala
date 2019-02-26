@@ -147,14 +147,13 @@ public class Wallpaper : Gtk.Grid {
         preview_area.pixel_size = 256;
         preview_area.margin_end = 12;
 
-        var chooser = new Gtk.FileChooserDialog (
+        var chooser = new Gtk.FileChooserNative (
             _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
-            _("Cancel"), Gtk.ResponseType.CANCEL,
-            _("Import"), Gtk.ResponseType.ACCEPT
+            _("Import"),
+            _("Cancel")
         );
-
+        chooser.filter = filter;
         chooser.select_multiple = true;
-        chooser.set_filter (filter);
         chooser.set_preview_widget (preview_area);
 
         chooser.update_preview.connect (() => {
@@ -183,7 +182,7 @@ public class Wallpaper : Gtk.Grid {
             }
         }
 
-        chooser.close ();
+        chooser.destroy ();
     }
 
     private void load_settings () {
