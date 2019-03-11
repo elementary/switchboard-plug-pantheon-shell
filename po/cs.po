@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-10-11 17:37+0000\n"
+"POT-Creation-Date: 2018-12-12 14:54-0600\n"
+"PO-Revision-Date: 2019-02-06 17:49+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/cs/>\n"
@@ -28,33 +28,37 @@ msgstr "Plocha"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Nastavujte dock, aktivní rohy a měňte tapetu plochy"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:105
 msgid "Wallpaper"
 msgstr "Tapeta"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
-#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
-#: src/desktop-plug.vala:104
+#: src/desktop-plug.vala:54 src/desktop-plug.vala:111
+msgid "Appearance"
+msgstr "Vzhled"
+
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
+#: src/desktop-plug.vala:108 src/desktop-plug.vala:109
+#: src/desktop-plug.vala:110
 msgid "Dock"
 msgstr "Dock"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
+#: src/desktop-plug.vala:61 src/desktop-plug.vala:112
 msgid "Hot Corners"
 msgstr "Aktivní rohy"
 
-#: src/desktop-plug.vala:101
+#: src/desktop-plug.vala:107
 msgid "Hide Mode"
 msgstr "Režim skrývání"
 
-#: src/desktop-plug.vala:102
+#: src/desktop-plug.vala:108
 msgid "Icon Size"
 msgstr "Velikost ikon"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:109
 msgid "Pressure reveal"
 msgstr "Vysunutí tlakem"
 
-#: src/desktop-plug.vala:104
+#: src/desktop-plug.vala:110
 msgid "Display"
 msgstr "Displej"
 
@@ -67,31 +71,59 @@ msgstr "Odstranit"
 msgid "Artist: %s"
 msgstr "Umělec: %s"
 
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Appearance.vala:41
+msgid "Window animations:"
+msgstr "Animace oken:"
+
+#: src/Views/Appearance.vala:47
+msgid "Panel translucency:"
+msgstr "Průsvitnost panelu:"
+
+#: src/Views/Appearance.vala:53
+msgid "Text size:"
+msgstr "Velikost textu:"
+
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+msgid "Small"
+msgstr "Malé"
+
+#: src/Views/Appearance.vala:58
+msgid "Default"
+msgstr "Výchozí"
+
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Velké"
+
+#: src/Views/Appearance.vala:60
+msgid "Larger"
+msgstr "Větší"
+
+#: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
 msgstr "Importovat fotku…"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:106
 msgid "Centered"
 msgstr "Vystředit"
 
-#: src/Views/Wallpaper.vala:109
+#: src/Views/Wallpaper.vala:107
 msgid "Zoom"
 msgstr "Přiblížit"
 
-#: src/Views/Wallpaper.vala:110
+#: src/Views/Wallpaper.vala:108
 msgid "Spanned"
 msgstr "Vyplnit"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:151
 msgid "Import Photo"
 msgstr "Importovat fotku"
 
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "Importovat"
 
@@ -99,55 +131,47 @@ msgstr "Importovat"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Když se kurzor dotkne rohu obrazovky:"
 
-#: src/Views/HotCorners.vala:66
+#: src/Views/HotCorners.vala:68
 msgid "Custom command:"
 msgstr "Vlastní příkaz:"
 
-#: src/Views/HotCorners.vala:103
+#: src/Views/HotCorners.vala:105
 msgid "Do nothing"
 msgstr "Nedělat nic"
 
 #. none
-#: src/Views/HotCorners.vala:104
+#: src/Views/HotCorners.vala:106
 msgid "Multitasking View"
 msgstr "Zobrazení multitaskingu"
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:105
+#: src/Views/HotCorners.vala:107
 msgid "Maximize current window"
 msgstr "Maximalizovat aktuální okno"
 
 #. maximize-current
-#: src/Views/HotCorners.vala:106
+#: src/Views/HotCorners.vala:108
 msgid "Show Applications Menu"
 msgstr "Zobrazit nabídku aplikací"
 
 #. open-launcher
-#: src/Views/HotCorners.vala:107
+#: src/Views/HotCorners.vala:109
 msgid "Show all windows"
 msgstr "Zobrazit všechna okna"
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:110
 msgid "Switch to new workspace"
 msgstr "Přepnout na novou pracovní plochu"
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:111
 msgid "Execute custom command"
 msgstr "Provést vlastní příkaz"
-
-#: src/Views/Dock.vala:34
-msgid "Small"
-msgstr "Malé"
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
 msgstr "Normální"
-
-#: src/Views/Dock.vala:36
-msgid "Large"
-msgstr "Velké"
 
 #: src/Views/Dock.vala:54
 #, c-format

@@ -33,7 +33,7 @@ public class ThumbnailGenerator {
 
     public delegate void ThumbnailReady ();
     public class ThumbnailReadyWrapper {
-        public ThumbnailReady cb;
+        public unowned ThumbnailReady cb { get; set; }
     }
 
     private static ThumbnailGenerator? instance = null;

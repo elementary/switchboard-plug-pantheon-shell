@@ -3,234 +3,259 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2014-12-16 09:22+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-12-23 18:13+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/mr/>\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/desktop-plug.vala:36
 msgid "Desktop"
-msgstr ""
+msgstr "डेस्कटॉप"
 
 #: src/desktop-plug.vala:37
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "डॉक, हॉट कॉर्नर कॉन्फिगर करा आणि वॉलपेपर बदला"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:51 src/desktop-plug.vala:105
 msgid "Wallpaper"
-msgstr ""
+msgstr "वॉलपेपर"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
-#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
-#: src/desktop-plug.vala:104
+#: src/desktop-plug.vala:54 src/desktop-plug.vala:111
+msgid "Appearance"
+msgstr "दर्शन"
+
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
+#: src/desktop-plug.vala:108 src/desktop-plug.vala:109
+#: src/desktop-plug.vala:110
 msgid "Dock"
-msgstr ""
+msgstr "डॉक"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
+#: src/desktop-plug.vala:61 src/desktop-plug.vala:112
 msgid "Hot Corners"
-msgstr ""
+msgstr "हॉट कॉर्नर"
 
-#: src/desktop-plug.vala:101
+#: src/desktop-plug.vala:107
 msgid "Hide Mode"
-msgstr ""
+msgstr "लपवा मोड"
 
-#: src/desktop-plug.vala:102
+#: src/desktop-plug.vala:108
 msgid "Icon Size"
-msgstr ""
+msgstr "आयकॉन आकार"
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:109
 msgid "Pressure reveal"
-msgstr ""
+msgstr "दबावाने प्रकट करा"
 
-#: src/desktop-plug.vala:104
+#: src/desktop-plug.vala:110
 msgid "Display"
-msgstr ""
+msgstr "प्रदर्शन"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "काढा"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "कलाकारः %s"
 
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Appearance.vala:41
+msgid "Window animations:"
+msgstr "विंडो अॅनिमेशन:"
+
+#: src/Views/Appearance.vala:47
+msgid "Panel translucency:"
+msgstr "पॅनेल पारंपारिकता:"
+
+#: src/Views/Appearance.vala:53
+msgid "Text size:"
+msgstr "टेक्स्ट आकार :"
+
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+msgid "Small"
+msgstr "लहान"
+
+#: src/Views/Appearance.vala:58
+msgid "Default"
+msgstr "डिफॉल्ट"
+
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+msgid "Large"
+msgstr "मोठा"
+
+#: src/Views/Appearance.vala:60
+msgid "Larger"
+msgstr "आणखी मोठा"
+
+#: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
-msgstr ""
+msgstr "फोटो आयात करा…"
+
+#: src/Views/Wallpaper.vala:106
+msgid "Centered"
+msgstr "केंद्रित"
+
+#: src/Views/Wallpaper.vala:107
+msgid "Zoom"
+msgstr "झूम करा"
 
 #: src/Views/Wallpaper.vala:108
-msgid "Centered"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:109
-msgid "Zoom"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:110
 msgid "Spanned"
-msgstr ""
+msgstr "स्पॅन केलेले"
+
+#: src/Views/Wallpaper.vala:151
+msgid "Import Photo"
+msgstr "फोटो आयात करा"
+
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "रद्द करा"
 
 #: src/Views/Wallpaper.vala:153
-msgid "Import Photo"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:155
 msgid "Import"
-msgstr ""
+msgstr "आयात करा"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
-msgstr ""
+msgstr "जेव्हा कर्सर प्रदर्शनाच्या कोप-यात प्रवेश करतो:"
 
-#: src/Views/HotCorners.vala:66
+#: src/Views/HotCorners.vala:68
 msgid "Custom command:"
-msgstr ""
+msgstr "सानुकूल आज्ञा :"
 
-#: src/Views/HotCorners.vala:103
+#: src/Views/HotCorners.vala:105
 msgid "Do nothing"
-msgstr ""
+msgstr "काही करू नका"
 
 #. none
-#: src/Views/HotCorners.vala:104
+#: src/Views/HotCorners.vala:106
 msgid "Multitasking View"
-msgstr ""
+msgstr "मल्टीटास्किंग प्रदर्शन"
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:105
+#: src/Views/HotCorners.vala:107
 msgid "Maximize current window"
-msgstr ""
+msgstr "वर्तमान विंडो मोठ्यात मोठी करा"
 
 #. maximize-current
-#: src/Views/HotCorners.vala:106
+#: src/Views/HotCorners.vala:108
 msgid "Show Applications Menu"
-msgstr ""
+msgstr "अप्लिकेशन मेनू दर्शवा"
 
 #. open-launcher
-#: src/Views/HotCorners.vala:107
+#: src/Views/HotCorners.vala:109
 msgid "Show all windows"
-msgstr ""
+msgstr "सर्व विंडोज दाखवा"
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:110
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "नवीन कार्यक्षेत्रावर स्विच करा"
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:111
 msgid "Execute custom command"
-msgstr ""
-
-#: src/Views/Dock.vala:34
-msgid "Small"
-msgstr ""
+msgstr "सानुकूल आज्ञा चालवा"
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
-msgstr ""
-
-#: src/Views/Dock.vala:36
-msgid "Large"
-msgstr ""
+msgstr "साधारण"
 
 #: src/Views/Dock.vala:54
 #, c-format
 msgid "Custom (%dpx)"
-msgstr ""
+msgstr "सानुकूल  (%dpx)"
 
 #: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
-msgstr ""
+msgstr "फोकस केलेली विंडो मोठी केली आहे"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr ""
+msgstr "फोकस केलेली विंडो डॉकला आच्छादित करते"
 
 #: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr ""
+msgstr "कोणतीही विंडो जी डॉक आच्छादित करते"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
-msgstr ""
+msgstr "वापरात नाही"
 
 #: src/Views/Dock.vala:122
 msgid "Primary display:"
-msgstr ""
+msgstr "प्राथमिक प्रदर्शन :"
 
 #: src/Views/Dock.vala:126
 msgid "Display:"
-msgstr ""
+msgstr "प्रदर्शन :"
 
 #: src/Views/Dock.vala:157
 msgid "Icon size:"
-msgstr ""
+msgstr "आयकॉन आकार :"
 
 #: src/Views/Dock.vala:159
 msgid "Hide when:"
-msgstr ""
+msgstr "लपवा जेंव्हा:"
 
 #: src/Views/Dock.vala:163
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "दबावाने प्रकट करा :"
 
 #: src/Views/Dock.vala:203
 #, c-format
 msgid "Monitor %d"
-msgstr ""
+msgstr "मॉनिटर %d"
 
 #: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
-msgstr ""
+msgstr "प्रदर्शन  %d"
 
 #: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d सेकंद"
+msgstr[1] "%d सेकंद"
 
 #: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "मिनीट"
+msgstr[1] "मिनीटे"
 
 #: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d तास"
+msgstr[1] "%d तास"
 
 #: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
-msgstr ""
+msgstr "1 दिवस"
 
 #: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
-msgstr ""
+msgstr "साठी प्रत्येक फोटो दर्शवा"
 
 #: set-wallpaper-contract/set-wallpaper.vala:222
 #: set-wallpaper-contract/set-wallpaper.vala:230
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "डेस्कटॉप स्लाइडशो म्हणून सेट करा"
 
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Create slideshow"
-msgstr ""
+msgstr "स्लाइडशो तयार करा"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -252,8 +277,8 @@ msgstr ""
 #.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "डेस्कटॉप पार्श्वभूमी म्हणून सेट करा"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "नवीन डेस्कटॉप पार्श्वभूमी म्हणून निवडलेली प्रतिमा सेट करा"

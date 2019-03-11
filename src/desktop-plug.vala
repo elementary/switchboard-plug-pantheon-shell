@@ -101,7 +101,7 @@ public class GalaPlug : Switchboard.Plug {
 
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
-        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        var search_results = new Gee.TreeMap<string, string> ();
         search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
         search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
