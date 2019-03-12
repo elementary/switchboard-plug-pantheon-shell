@@ -47,7 +47,7 @@ public class Appearance : Gtk.Grid {
         var dark_switch = new Gtk.Switch ();
         dark_switch.halign = Gtk.Align.START;
 
-        var dark_info = new Gtk.Label (_("Ask apps to use a dark visual style. Not all apps support this, and it is up to each app to implement. Does not affect notifications or non-native apps. If the app has a built-in style switcher it will likely ignore this setting."));
+        var dark_info = new Gtk.Label (_("Use a dark visual style for system components like the Panel indicators."));
         dark_info.max_width_chars = 60;
         dark_info.margin_bottom = 18;
         dark_info.wrap = true;
