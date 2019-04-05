@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2019-04-05 21:52+0000\n"
+"PO-Revision-Date: 2019-04-06 22:03+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
@@ -180,15 +180,15 @@ msgstr "Özel (%dpx)"
 
 #: src/Views/Dock.vala:83
 msgid "Focused window is maximized"
-msgstr "Odaktaki pencere büyütüldüğünde"
+msgstr "Odaktaki pencere ekranı kapladığında"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr "Odaktaki pencere rıhtım ile çakıştığında"
+msgstr "Odaktaki pencere rıhtımın üstüne geldiğinde"
 
 #: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr "Herhangi bir pencere rıhtım ile çakıştığında"
+msgstr "Herhangi bir pencere rıhtımın üstüne geldiğinde"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
