@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-12-23 18:13+0000\n"
+"PO-Revision-Date: 2019-04-16 09:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/desktop-plug.vala:36
@@ -224,7 +224,7 @@ msgstr "प्रदर्शन  %d"
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d सेकंद"
-msgstr[1] "%d सेकंद"
+msgstr[1] "%d  सेकंद"
 
 #: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
@@ -238,7 +238,7 @@ msgstr[1] "मिनीटे"
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d तास"
-msgstr[1] "%d तास"
+msgstr[1] "%d  तास"
 
 #: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
