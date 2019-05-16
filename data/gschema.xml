@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/io/elementary/desktop/" id="io.elementary.desktop">
-    <key name="prefer-dark" type="b">
-      <default>false</default>
-      <summary>Prefer dark style</summary>
-      <description>Use a dark visual style for system components like the Panel indicators.</description>
+  <enum id="color-schemes">
+    <value nick="no-preference" value="0" />
+    <value nick="dark" value="1" />
+  </enum>
+  <schema path="/org/freedesktop/" id="org.freedesktop">
+    <key name="prefers-color-scheme" enum="color-schemes">
+      <default>"no-preference"</default>
+      <summary>Prefers color scheme</summary>
+      <description>Preferred visual style for system components like the Panel indicators. Possible values are “no-preference” and “dark”. Future values might include “light”.</description>
     </key>
   </schema>
 </schemalist>

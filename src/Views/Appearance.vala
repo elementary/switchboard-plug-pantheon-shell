@@ -19,8 +19,8 @@
 */
 
 public class Appearance : Gtk.Grid {
-    private const string DESKTOP_SCHEMA = "io.elementary.desktop";
-    private const string DARK_KEY = "prefer-dark";
+    private const string DESKTOP_SCHEMA = "org.freedesktop";
+    private const string PREFERS_KEY = "prefers-color-scheme";
 
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
@@ -86,7 +86,21 @@ public class Appearance : Gtk.Grid {
         attach (text_size_modebutton, 1, 4);
 
         var desktop_settings = new Settings (DESKTOP_SCHEMA);
-        desktop_settings.bind (DARK_KEY, dark_switch, "active", SettingsBindFlags.DEFAULT);
+        desktop_settings.bind_with_mapping (
+            PREFERS_KEY,
+            dark_switch,
+            "active",
+            SettingsBindFlags.DEFAULT,
+            (value, variant) => {
+                value.set_boolean (variant.get_string () == "dark");
+                return true;
+            },
+            (value, expected_type) => {
+                return new Variant.string(value.get_boolean() ? "dark" : "no-preference");
+            },
+            null,
+            null
+        );
 
         var animations_settings = new Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
