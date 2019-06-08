@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
 "PO-Revision-Date: 2019-06-08 09:56+0000\n"
-"Last-Translator: RomanDesigner <romashkarus08@gmail.com>\n"
+"Last-Translator: Stas <SedovSG@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -76,9 +76,8 @@ msgid "Panel translucency:"
 msgstr "Прозрачность док-панели:"
 
 #: src/Views/Appearance.vala:53
-#, fuzzy
 msgid "Text size:"
-msgstr "Размер значков:"
+msgstr "Размер текста:"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
@@ -93,9 +92,8 @@ msgid "Large"
 msgstr "Большой"
 
 #: src/Views/Appearance.vala:60
-#, fuzzy
 msgid "Larger"
-msgstr "Большой"
+msgstr "Больше"
 
 #: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
@@ -226,7 +224,7 @@ msgstr "Экран %d"
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] "%d секунды"
+msgstr[0] "%d секунда"
 msgstr[1] "%d секунд"
 msgstr[2] "%d секунд"
 
@@ -234,7 +232,7 @@ msgstr[2] "%d секунд"
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] "%d минуты"
+msgstr[0] "%d минута"
 msgstr[1] "%d минут"
 msgstr[2] "%d минут"
 
@@ -242,7 +240,7 @@ msgstr[2] "%d минут"
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] "%d часа"
+msgstr[0] "%d час"
 msgstr[1] "%d часов"
 msgstr[2] "%d часов"
 
