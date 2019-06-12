@@ -80,6 +80,7 @@ public class Wallpaper : Gtk.Grid {
         var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
 
         wallpaper_view = new Gtk.FlowBox ();
+        wallpaper_view.valign = Gtk.Align.START;
         wallpaper_view.activate_on_single_click = true;
         wallpaper_view.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         wallpaper_view.homogeneous = true;
