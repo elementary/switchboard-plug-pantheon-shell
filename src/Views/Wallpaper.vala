@@ -326,24 +326,32 @@ public class Wallpaper : Gtk.Grid {
         }
 
         var directory = File.new_for_path (basefolder);
+        FileEnumerator e;
+        string attrs;
 
         try {
             // Enumerator object that will let us read through the wallpapers asynchronously
-            var attrs = string.joinv (",", REQUIRED_FILE_ATTRS);
-            var e = yield directory.enumerate_children_async (attrs, 0, Priority.DEFAULT);
+            attrs = string.joinv (",", REQUIRED_FILE_ATTRS);
+            e = yield directory.enumerate_children_async (attrs, 0, Priority.DEFAULT);
+        } catch (Error err) {
+            if (!(err is IOError.NOT_FOUND)) {
+                warning (err.message);
+            }
+            return;
+        }
 
-            // Loop through and add each wallpaper in the batch
-            // return true when the loop should continue, return false when it's done
-            Idle.add(() => {
-              FileInfo file_info;
+        // Loop through and add each wallpaper in the batch
+        // return true when the loop should continue, return false when it's done
+        Idle.add(() => {
+            FileInfo file_info;
 
-              try {
+            try {
                 file_info = e.next_file();
-              } catch (Error err) {
+            } catch (Error err) {
                 return false;
-              }
+            }
 
-              if (file_info != null) {
+            if (file_info != null) {
                 if (cancellable.is_cancelled ()) {
                     ThumbnailGenerator.get_default ().dequeue_all ();
                     return false;
@@ -368,7 +376,7 @@ public class Wallpaper : Gtk.Grid {
 
                 add_wallpaper_from_file (file, uri);
                 return true;
-              } else if (toplevel_folder) {
+            } else if (toplevel_folder) {
                 create_solid_color_container (color_button.rgba.to_string ());
                 wallpaper_view.add (solid_color);
 
@@ -377,15 +385,10 @@ public class Wallpaper : Gtk.Grid {
                     solid_color.checked = true;
                     active_wallpaper = solid_color;
                 }
-              }
-              return false;
-            });
-
-        } catch (Error err) {
-            if (!(err is IOError.NOT_FOUND)) {
-                warning (err.message);
             }
-        }
+            return false;
+        });
+
     }
 
     private void create_solid_color_container (string color) {
