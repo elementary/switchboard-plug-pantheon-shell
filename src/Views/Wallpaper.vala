@@ -37,7 +37,7 @@ public class Wallpaper : Gtk.Grid {
         FileAttribute.THUMBNAIL_PATH,
         FileAttribute.THUMBNAIL_IS_VALID
     };
-
+    private string REQUIRED_FILE_ATTRS_S;
     const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
 
     public Switchboard.Plug plug { get; construct set; }
@@ -64,6 +64,7 @@ public class Wallpaper : Gtk.Grid {
     }
 
     construct {
+        REQUIRED_FILE_ATTRS_S = string.joinv (",", REQUIRED_FILE_ATTRS);
         settings = new GLib.Settings ("org.gnome.desktop.background");
 
         // DBus connection needed in update_wallpaper for
@@ -344,6 +345,11 @@ public class Wallpaper : Gtk.Grid {
         // Loop through and add each wallpaper in the batch
         // return true when the loop should continue, return false when it's done
         Idle.add(() => {
+            if (cancellable.is_cancelled ()) {
+                ThumbnailGenerator.get_default ().dequeue_all ();
+                return false;
+            }
+
             FileInfo file_info;
 
             try {
@@ -353,10 +359,6 @@ public class Wallpaper : Gtk.Grid {
             }
 
             if (file_info != null) {
-                if (cancellable.is_cancelled ()) {
-                    ThumbnailGenerator.get_default ().dequeue_all ();
-                    return false;
-                }
 
                 if (file_info.get_is_hidden () || file_info.get_is_backup () || file_info.get_is_symlink ()) {
                     return true;
@@ -501,7 +503,7 @@ public class Wallpaper : Gtk.Grid {
 
     private void add_wallpaper_from_file (GLib.File file, string uri) {
         try {
-            var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
+            var info = file.query_info (REQUIRED_FILE_ATTRS_S, 0);
             var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
             var thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
             var wallpaper = new WallpaperContainer (uri, thumb_path, thumb_valid);
