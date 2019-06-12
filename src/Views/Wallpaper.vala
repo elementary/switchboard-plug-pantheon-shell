@@ -58,7 +58,6 @@ public class Wallpaper : Gtk.Grid {
 
     private string current_wallpaper_path;
     private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
-    private bool finished; // Shows that we got or wallpapers together
 
     public Wallpaper (Switchboard.Plug _plug) {
         Object (plug: _plug);
@@ -262,20 +261,18 @@ public class Wallpaper : Gtk.Grid {
     }
 
     private void update_color () {
-        if (finished) {
-            set_combo_disabled_if_necessary ();
-            create_solid_color_container (color_button.rgba.to_string ());
-            wallpaper_view.add (solid_color);
-            wallpaper_view.select_child (solid_color);
+          set_combo_disabled_if_necessary ();
+          create_solid_color_container (color_button.rgba.to_string ());
+          wallpaper_view.add (solid_color);
+          wallpaper_view.select_child (solid_color);
 
-            if (active_wallpaper != null) {
-                active_wallpaper.checked = false;
-            }
+          if (active_wallpaper != null) {
+              active_wallpaper.checked = false;
+          }
 
-            active_wallpaper = solid_color;
-            active_wallpaper.checked = true;
-            settings.set_string ("primary-color", solid_color.color);
-        }
+          active_wallpaper = solid_color;
+          active_wallpaper.checked = true;
+          settings.set_string ("primary-color", solid_color.color);
     }
 
     private void update_mode () {
@@ -334,39 +331,46 @@ public class Wallpaper : Gtk.Grid {
             // Enumerator object that will let us read through the wallpapers asynchronously
             var attrs = string.joinv (",", REQUIRED_FILE_ATTRS);
             var e = yield directory.enumerate_children_async (attrs, 0, Priority.DEFAULT);
-            FileInfo file_info;
 
             // Loop through and add each wallpaper in the batch
-            while ((file_info = e.next_file ()) != null) {
+            // return true when the loop should continue, return false when it's done
+            Idle.add(() => {
+              FileInfo file_info;
+
+              try {
+                file_info = e.next_file();
+              } catch (Error err) {
+                return false;
+              }
+
+              if (file_info != null) {
                 if (cancellable.is_cancelled ()) {
                     ThumbnailGenerator.get_default ().dequeue_all ();
-                    return;
+                    return false;
                 }
 
                 if (file_info.get_is_hidden () || file_info.get_is_backup () || file_info.get_is_symlink ()) {
-                    continue;
+                    return true;
                 }
 
                 if (file_info.get_file_type () == FileType.DIRECTORY) {
                     // Spawn off another loader for the subdirectory
                     var subdir = directory.resolve_relative_path (file_info.get_name ());
-                    yield load_wallpapers (subdir.get_path (), cancellable, false);
-                    continue;
+                    load_wallpapers.begin (subdir.get_path (), cancellable, false);
+                    return true;
                 } else if (!IOHelper.is_valid_file_type (file_info)) {
                     // Skip non-picture files
-                    continue;
+                    return true;
                 }
 
                 var file = directory.resolve_relative_path (file_info.get_name ());
                 string uri = file.get_uri ();
 
                 add_wallpaper_from_file (file, uri);
-            }
-
-            if (toplevel_folder) {
+                return true;
+              } else if (toplevel_folder) {
                 create_solid_color_container (color_button.rgba.to_string ());
                 wallpaper_view.add (solid_color);
-                finished = true;
 
                 if (settings.get_string ("picture-options") == "none") {
                     wallpaper_view.select_child (solid_color);
@@ -380,6 +384,9 @@ public class Wallpaper : Gtk.Grid {
                     wallpaper_scrolled_window.get_vadjustment ().value = alloc.y;
                 }
             }
+              return false;
+            });
+
         } catch (Error err) {
             if (!(err is IOError.NOT_FOUND)) {
                 warning (err.message);
