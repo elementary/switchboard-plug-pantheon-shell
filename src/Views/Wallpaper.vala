@@ -377,13 +377,7 @@ public class Wallpaper : Gtk.Grid {
                     solid_color.checked = true;
                     active_wallpaper = solid_color;
                 }
-
-                if (active_wallpaper != null) {
-                    Gtk.Allocation alloc;
-                    active_wallpaper.get_allocation (out alloc);
-                    wallpaper_scrolled_window.get_vadjustment ().value = alloc.y;
-                }
-            }
+              }
               return false;
             });
 
