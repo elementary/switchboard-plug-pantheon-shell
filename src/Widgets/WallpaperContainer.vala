@@ -210,6 +210,9 @@ public class WallpaperContainer : Gtk.FlowBoxChild {
             warning (e.message);
         }
 
-        load_artist_tooltip ();
+        Idle.add(() => {
+          load_artist_tooltip ();
+          return false;
+        }, Priority.LOW);
     }
 }
