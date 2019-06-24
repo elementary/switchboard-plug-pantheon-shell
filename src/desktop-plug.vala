@@ -27,10 +27,14 @@ public class GalaPlug : Switchboard.Plug {
     public GalaPlug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("desktop", null);
-        settings.set ("desktop/wallpaper", "wallpaper");
+        settings.set ("desktop/appearance/wallpaper", "wallpaper");
         settings.set ("desktop/appearance", "appearance");
         settings.set ("desktop/dock", "dock");
         settings.set ("desktop/hot-corners", "hotc");
+
+        // DEPRECATED
+        settings.set ("desktop/wallpaper", "wallpaper");
+        
         Object (category: Category.PERSONAL,
                 code_name: "pantheon-desktop",
                 display_name: _("Desktop"),
