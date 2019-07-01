@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2012-10-26 19:34+0000\n"
-"Last-Translator: Michael Moroni <michael.moroni@openmailbox.org>\n"
-"Language-Team: Esperanto <eo@li.org>\n"
+"PO-Revision-Date: 2019-07-02 12:28+0000\n"
+"Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
+"Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/desktop-plug.vala:36
 msgid "Desktop"
@@ -120,11 +121,11 @@ msgstr ""
 
 #: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
-msgstr ""
+msgstr "Rezigni"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import"
-msgstr ""
+msgstr "Importi"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
