@@ -16,9 +16,10 @@
  *
  */
 
-[DBus (name = "org.freedesktop.Accounts.User")]
+[DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
 interface AccountsServiceUser : Object {
-    public abstract void set_background_file (string filename) throws GLib.Error;
+    [DBus (name = "BackgroundFile")]
+    public abstract string background_file { owned get; set; }
 }
 
 public class Wallpaper : Gtk.Grid {
@@ -202,34 +203,27 @@ public class Wallpaper : Gtk.Grid {
     }
 
     /*
-     * We pass the path to accountsservices that the login-screen can
-     * see what background we selected. This is right now just a patched-in functionality of
-     * accountsservice, so we expect that it is maybe not there
-     * and do nothing if we encounter a unpatched accountsservices-backend.
-    */
+     * This integrates with LightDM
+     */
     private void update_accountsservice () {
-        try {
-            var file = File.new_for_uri (current_wallpaper_path);
-            string uri = file.get_uri ();
-            string path = file.get_path ();
+        var file = File.new_for_uri (current_wallpaper_path);
+        string uri = file.get_uri ();
+        string path = file.get_path ();
 
-            if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
-                var local_file = copy_for_library (file);
-                if (local_file != null) {
-                    uri = local_file.get_uri ();
-                }
+        if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
+            var local_file = copy_for_library (file);
+            if (local_file != null) {
+                uri = local_file.get_uri ();
             }
-
-            var greeter_file = copy_for_greeter (file);
-            if (greeter_file != null) {
-                path = greeter_file.get_path ();
-            }
-
-            settings.set_string ("picture-uri", uri);
-            accountsservice.set_background_file (path);
-        } catch (Error e) {
-            warning (e.message);
         }
+
+        var greeter_file = copy_for_greeter (file);
+        if (greeter_file != null) {
+            path = greeter_file.get_path ();
+        }
+
+        settings.set_string ("picture-uri", uri);
+        accountsservice.background_file = path;
     }
 
     private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
