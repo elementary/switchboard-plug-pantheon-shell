@@ -42,9 +42,10 @@ namespace SetWallpaperContractor {
 
     private int delay_value = 60;
 
-    [DBus (name = "org.freedesktop.Accounts.User")]
+    [DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
     interface AccountsServiceUser : Object {
-        public abstract void set_background_file (string filename) throws GLib.Error;
+        [DBus (name = "BackgroundFile")]
+        public abstract string background_file { owned get; set; }
     }
 
     private void update_slideshow (string path, List<File> files, int duration) {
@@ -201,11 +202,7 @@ namespace SetWallpaperContractor {
                     path = greeter_file.get_path ();
                 }
 
-                try {
-                    accounts_service.set_background_file (path);
-                } catch (Error e) {
-                    warning ("%s\n", e.message);
-                }        
+                accounts_service.background_file = path;
             }
         }
 

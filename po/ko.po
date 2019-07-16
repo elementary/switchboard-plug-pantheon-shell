@@ -7,58 +7,58 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-12 14:54-0600\n"
-"PO-Revision-Date: 2018-12-15 00:12+0000\n"
+"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"PO-Revision-Date: 2019-05-28 14:29+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
-"Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
-#: src/desktop-plug.vala:36
+#: src/desktop-plug.vala:40
 msgid "Desktop"
 msgstr "바탕화면"
 
-#: src/desktop-plug.vala:37
+#: src/desktop-plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "플랭크, 핫코너 및 배경화면 변경 설정하기"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:105
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:109
 msgid "Wallpaper"
 msgstr "배경화면"
 
-#: src/desktop-plug.vala:54 src/desktop-plug.vala:111
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:115
 msgid "Appearance"
 msgstr "꾸미기"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:106 src/desktop-plug.vala:107
-#: src/desktop-plug.vala:108 src/desktop-plug.vala:109
-#: src/desktop-plug.vala:110
+#: src/desktop-plug.vala:62 src/desktop-plug.vala:110 src/desktop-plug.vala:111
+#: src/desktop-plug.vala:112 src/desktop-plug.vala:113
+#: src/desktop-plug.vala:114
 msgid "Dock"
 msgstr "플랭크"
 
-#: src/desktop-plug.vala:61 src/desktop-plug.vala:112
+#: src/desktop-plug.vala:65 src/desktop-plug.vala:116
 msgid "Hot Corners"
 msgstr "핫 코너"
 
-#: src/desktop-plug.vala:107
+#: src/desktop-plug.vala:111
 msgid "Hide Mode"
 msgstr "숨김 모드"
 
-#: src/desktop-plug.vala:108
+#: src/desktop-plug.vala:112
 msgid "Icon Size"
 msgstr "아이콘 크기"
 
-#: src/desktop-plug.vala:109
+#: src/desktop-plug.vala:113
 msgid "Pressure reveal"
 msgstr "압력 표시"
 
-#: src/desktop-plug.vala:110
+#: src/desktop-plug.vala:114
 msgid "Display"
 msgstr "화면"
 
@@ -97,7 +97,7 @@ msgstr "크게"
 
 #: src/Views/Appearance.vala:60
 msgid "Larger"
-msgstr "크게"
+msgstr "더 크게"
 
 #: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
@@ -119,13 +119,13 @@ msgstr "지연됨"
 msgid "Import Photo"
 msgstr "사진 가져오기"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "취소"
-
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:152
 msgid "Import"
 msgstr "가져오기"
+
+#: src/Views/Wallpaper.vala:153 set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "취소"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
