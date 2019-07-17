@@ -119,23 +119,13 @@ msgstr "Etendita"
 msgid "Import Photo"
 msgstr "Importi Foton"
 
-<<<<<<< HEAD
 #: src/Views/Wallpaper.vala:152
 msgid "Import"
-msgstr ""
+msgstr "Importi"
 
 #: src/Views/Wallpaper.vala:153 set-wallpaper-contract/set-wallpaper.vala:225
 msgid "Cancel"
-msgstr ""
-=======
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
 msgstr "Rezigni"
-
-#: src/Views/Wallpaper.vala:153
-msgid "Import"
-msgstr "Importi"
->>>>>>> weblate/master
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
