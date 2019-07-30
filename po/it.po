@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
-"PO-Revision-Date: 2019-01-26 15:35+0000\n"
+"POT-Creation-Date: 2018-12-12 14:54-0600\n"
+"PO-Revision-Date: 2019-07-02 12:28+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
 #: src/desktop-plug.vala:40
@@ -85,19 +85,19 @@ msgstr "Dimensione del testo:"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
-msgstr "Piccole"
+msgstr "Piccolo"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr "Predefinita"
+msgstr "Predefinito"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
-msgstr "Grandi"
+msgstr "Grande"
 
 #: src/Views/Appearance.vala:60
 msgid "Larger"
-msgstr "Grandi"
+msgstr "Molto grande"
 
 #: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
