@@ -36,7 +36,7 @@ public class GalaPlug : Switchboard.Plug {
         settings.set ("desktop/wallpaper", "wallpaper");
         
         Object (category: Category.PERSONAL,
-                code_name: "pantheon-desktop",
+                code_name: "io.elementary.switchboard.pantheon-shell",
                 display_name: _("Desktop"),
                 description: _("Configure the dock, hot corners, and change wallpaper"),
                 icon: "preferences-desktop-wallpaper",
