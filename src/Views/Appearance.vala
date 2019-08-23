@@ -18,6 +18,11 @@
 *
 */
 
+[DBus (name = "org.pantheon.gala")]
+public interface IGala : Object {
+    public abstract void global_transition_from_snapshot () throws Error;
+}
+
 public class Appearance : Gtk.Grid {
     private const string DESKTOP_SCHEMA = "org.freedesktop";
     private const string PREFERS_KEY = "prefers-color-scheme";
@@ -34,6 +39,8 @@ public class Appearance : Gtk.Grid {
     private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
 
     private Granite.Widgets.ModeButton text_size_modebutton;
+
+    static IGala? gala;
 
     construct {
         column_spacing = 12;
@@ -85,6 +92,7 @@ public class Appearance : Gtk.Grid {
         attach (text_size_label, 0, 4);
         attach (text_size_modebutton, 1, 4);
 
+        gala = Bus.get_proxy_sync<IGala> (BusType.SESSION, "org.pantheon.gala", "/org/pantheon/gala");
         var desktop_settings = new Settings (DESKTOP_SCHEMA);
         desktop_settings.bind_with_mapping (
             PREFERS_KEY,
@@ -96,6 +104,7 @@ public class Appearance : Gtk.Grid {
                 return true;
             },
             (value, expected_type) => {
+                gala.global_transition_from_snapshot ();
                 return new Variant.string(value.get_boolean() ? "dark" : "no-preference");
             },
             null,
