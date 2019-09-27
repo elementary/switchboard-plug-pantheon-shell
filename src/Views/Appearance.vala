@@ -60,7 +60,7 @@ public class Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
-        var accent_label = new Gtk.Label (_("Default accent color:"));
+        var accent_label = new Gtk.Label (_("Accent color:"));
         accent_label.halign = Gtk.Align.END;
 
         var blueberry_button = new Gtk.RadioButton (null);
