@@ -42,9 +42,10 @@ namespace SetWallpaperContractor {
 
     private int delay_value = 60;
 
-    [DBus (name = "org.freedesktop.Accounts.User")]
+    [DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
     interface AccountsServiceUser : Object {
-        public abstract void set_background_file (string filename) throws GLib.Error;
+        [DBus (name = "BackgroundFile")]
+        public abstract string background_file { owned get; set; }
     }
 
     private void update_slideshow (string path, List<File> files, int duration) {
@@ -157,6 +158,8 @@ namespace SetWallpaperContractor {
 
             dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+            // Ensure wallpaper is readable by greeter user (owner rw, others r)
+            FileUtils.chmod (dest.get_path (), 0604);
         } catch (Error e) {
             warning ("%s\n", e.message);
             return null;
@@ -201,11 +204,7 @@ namespace SetWallpaperContractor {
                     path = greeter_file.get_path ();
                 }
 
-                try {
-                    accounts_service.set_background_file (path);
-                } catch (Error e) {
-                    warning ("%s\n", e.message);
-                }        
+                accounts_service.background_file = path;
             }
         }
 
@@ -252,7 +251,7 @@ namespace SetWallpaperContractor {
 
         dialog.set_default_response (Gtk.ResponseType.OK);
         dialog.get_content_area ().add (grid);
-        dialog.get_action_area ().margin = 4;
+        dialog.get_content_area ().margin = 4;
         dialog.show_all ();
 
         if (dialog.run () == Gtk.ResponseType.OK) {

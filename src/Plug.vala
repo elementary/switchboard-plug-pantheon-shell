@@ -27,12 +27,16 @@ public class GalaPlug : Switchboard.Plug {
     public GalaPlug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("desktop", null);
-        settings.set ("desktop/wallpaper", "wallpaper");
+        settings.set ("desktop/appearance/wallpaper", "wallpaper");
         settings.set ("desktop/appearance", "appearance");
         settings.set ("desktop/dock", "dock");
         settings.set ("desktop/hot-corners", "hotc");
+
+        // DEPRECATED
+        settings.set ("desktop/wallpaper", "wallpaper");
+        
         Object (category: Category.PERSONAL,
-                code_name: "pantheon-desktop",
+                code_name: "io.elementary.switchboard.pantheon-shell",
                 display_name: _("Desktop"),
                 description: _("Configure the dock, hot corners, and change wallpaper"),
                 icon: "preferences-desktop-wallpaper",
@@ -101,7 +105,7 @@ public class GalaPlug : Switchboard.Plug {
 
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
-        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        var search_results = new Gee.TreeMap<string, string> ();
         search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
         search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");

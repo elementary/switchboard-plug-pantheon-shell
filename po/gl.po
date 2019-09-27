@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:36-0700\n"
+"POT-Creation-Date: 2019-06-26 22:45+0200\n"
 "PO-Revision-Date: 2014-12-11 06:19+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
@@ -19,41 +19,45 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/desktop-plug.vala:36
+#: src/desktop-plug.vala:40
 msgid "Desktop"
 msgstr "Escritorio"
 
-#: src/desktop-plug.vala:37
+#: src/desktop-plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
+#: src/desktop-plug.vala:55 src/desktop-plug.vala:109
 msgid "Wallpaper"
 msgstr "Fondo de escritorio"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
-#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
-#: src/desktop-plug.vala:104
+#: src/desktop-plug.vala:58 src/desktop-plug.vala:115
+msgid "Appearance"
+msgstr ""
+
+#: src/desktop-plug.vala:62 src/desktop-plug.vala:110 src/desktop-plug.vala:111
+#: src/desktop-plug.vala:112 src/desktop-plug.vala:113
+#: src/desktop-plug.vala:114
 msgid "Dock"
 msgstr "Doca"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
+#: src/desktop-plug.vala:65 src/desktop-plug.vala:116
 msgid "Hot Corners"
 msgstr "Cantos activos"
 
-#: src/desktop-plug.vala:101
+#: src/desktop-plug.vala:111
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:102
+#: src/desktop-plug.vala:112
 msgid "Icon Size"
 msgstr ""
 
-#: src/desktop-plug.vala:103
+#: src/desktop-plug.vala:113
 msgid "Pressure reveal"
 msgstr ""
 
-#: src/desktop-plug.vala:104
+#: src/desktop-plug.vala:114
 msgid "Display"
 msgstr ""
 
@@ -66,87 +70,108 @@ msgstr ""
 msgid "Artist: %s"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Appearance.vala:41
+msgid "Window animations:"
+msgstr ""
+
+#: src/Views/Appearance.vala:47
+msgid "Panel translucency:"
+msgstr ""
+
+#: src/Views/Appearance.vala:53
+msgid "Text size:"
+msgstr ""
+
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+msgid "Small"
+msgstr ""
+
+#: src/Views/Appearance.vala:58
+msgid "Default"
+msgstr ""
+
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+msgid "Large"
+msgstr "Grande"
+
+#: src/Views/Appearance.vala:60
+#, fuzzy
+msgid "Larger"
+msgstr "Grande"
+
+#: src/Views/Wallpaper.vala:101
 msgid "Import Photo…"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:106
 msgid "Centered"
 msgstr "Centrado"
 
-#: src/Views/Wallpaper.vala:109
+#: src/Views/Wallpaper.vala:107
 msgid "Zoom"
 msgstr "Achegar"
 
-#: src/Views/Wallpaper.vala:110
+#: src/Views/Wallpaper.vala:108
 msgid "Spanned"
 msgstr "Expandido"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:151
 msgid "Import Photo"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:152
 msgid "Import"
 msgstr ""
+
+#: src/Views/Wallpaper.vala:153 set-wallpaper-contract/set-wallpaper.vala:225
+msgid "Cancel"
+msgstr "Cancelar"
 
 #: src/Views/HotCorners.vala:34
 msgid "When the cursor enters the corner of the display:"
 msgstr "Cando o cursor entra nun canto da pantalla:"
 
-#: src/Views/HotCorners.vala:66
+#: src/Views/HotCorners.vala:68
 msgid "Custom command:"
 msgstr ""
 
-#: src/Views/HotCorners.vala:103
+#: src/Views/HotCorners.vala:105
 msgid "Do nothing"
 msgstr ""
 
 #. none
-#: src/Views/HotCorners.vala:104
+#: src/Views/HotCorners.vala:106
 msgid "Multitasking View"
 msgstr "Vista multitarefa"
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:105
+#: src/Views/HotCorners.vala:107
 msgid "Maximize current window"
 msgstr ""
 
 #. maximize-current
-#: src/Views/HotCorners.vala:106
+#: src/Views/HotCorners.vala:108
 msgid "Show Applications Menu"
 msgstr "Amosar o menú de aplicativos"
 
 #. open-launcher
-#: src/Views/HotCorners.vala:107
+#: src/Views/HotCorners.vala:109
 msgid "Show all windows"
 msgstr ""
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:110
 msgid "Switch to new workspace"
 msgstr ""
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:111
 msgid "Execute custom command"
-msgstr ""
-
-#: src/Views/Dock.vala:34
-msgid "Small"
 msgstr ""
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
 msgstr "Normal"
-
-#: src/Views/Dock.vala:36
-msgid "Large"
-msgstr "Grande"
 
 #: src/Views/Dock.vala:54
 #, c-format

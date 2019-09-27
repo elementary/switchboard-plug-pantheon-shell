@@ -16,9 +16,10 @@
  *
  */
 
-[DBus (name = "org.freedesktop.Accounts.User")]
+[DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
 interface AccountsServiceUser : Object {
-    public abstract void set_background_file (string filename) throws IOError;
+    [DBus (name = "BackgroundFile")]
+    public abstract string background_file { owned get; set; }
 }
 
 public class Wallpaper : Gtk.Grid {
@@ -147,14 +148,13 @@ public class Wallpaper : Gtk.Grid {
         preview_area.pixel_size = 256;
         preview_area.margin_end = 12;
 
-        var chooser = new Gtk.FileChooserDialog (
+        var chooser = new Gtk.FileChooserNative (
             _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
-            _("Cancel"), Gtk.ResponseType.CANCEL,
-            _("Import"), Gtk.ResponseType.ACCEPT
+            _("Import"),
+            _("Cancel")
         );
-
+        chooser.filter = filter;
         chooser.select_multiple = true;
-        chooser.set_filter (filter);
         chooser.set_preview_widget (preview_area);
 
         chooser.update_preview.connect (() => {
@@ -162,7 +162,7 @@ public class Wallpaper : Gtk.Grid {
 
             if (uri != null && uri.has_prefix ("file://") == true) {
                 var file = GLib.File.new_for_uri (uri);
-                preview_area.set_from_gicon_async (new FileIcon (file), 256);
+                preview_area.set_from_gicon_async.begin (new FileIcon (file), 256);
                 preview_area.show ();
             } else {
                 preview_area.hide ();
@@ -183,7 +183,7 @@ public class Wallpaper : Gtk.Grid {
             }
         }
 
-        chooser.close ();
+        chooser.destroy ();
     }
 
     private void load_settings () {
@@ -203,34 +203,27 @@ public class Wallpaper : Gtk.Grid {
     }
 
     /*
-     * We pass the path to accountsservices that the login-screen can
-     * see what background we selected. This is right now just a patched-in functionality of
-     * accountsservice, so we expect that it is maybe not there
-     * and do nothing if we encounter a unpatched accountsservices-backend.
-    */
+     * This integrates with LightDM
+     */
     private void update_accountsservice () {
-        try {
-            var file = File.new_for_uri (current_wallpaper_path);
-            string uri = file.get_uri ();
-            string path = file.get_path ();
+        var file = File.new_for_uri (current_wallpaper_path);
+        string uri = file.get_uri ();
+        string path = file.get_path ();
 
-            if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
-                var local_file = copy_for_library (file);
-                if (local_file != null) {
-                    uri = local_file.get_uri ();
-                }
+        if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
+            var local_file = copy_for_library (file);
+            if (local_file != null) {
+                uri = local_file.get_uri ();
             }
-
-            var greeter_file = copy_for_greeter (file);
-            if (greeter_file != null) {
-                path = greeter_file.get_path ();
-            }
-
-            settings.set_string ("picture-uri", uri);
-            accountsservice.set_background_file (path);
-        } catch (Error e) {
-            warning (e.message);
         }
+
+        var greeter_file = copy_for_greeter (file);
+        if (greeter_file != null) {
+            path = greeter_file.get_path ();
+        }
+
+        settings.set_string ("picture-uri", uri);
+        accountsservice.background_file = path;
     }
 
     private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
@@ -458,6 +451,8 @@ public class Wallpaper : Gtk.Grid {
 
             dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+            // Ensure wallpaper is readable by greeter user (owner rw, others r)
+            FileUtils.chmod (dest.get_path (), 0604);
         } catch (Error e) {
             warning (e.message);
             return null;

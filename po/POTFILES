@@ -1,7 +1,7 @@
 src/ThumbnailGenerator.vala
 src/IOHelper.vala
 src/GalaSettings.vala
-src/desktop-plug.vala
+src/Plug.vala
 src/Widgets/WallpaperContainer.vala
 src/Widgets/SolidColorContainer.vala
 src/Views/Appearance.vala
