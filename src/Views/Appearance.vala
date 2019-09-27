@@ -28,12 +28,12 @@ public class Appearance : Gtk.Grid {
                 inset 0 0 0 1px alpha (@inset_dark_color, 0.3),
                 0 1px 0 0 alpha (@bg_highlight_color, 0.3);
             color: #fff;
-            padding: 3px;
+            padding: 6px;
             -gtk-icon-shadow: none;
         }
 
         .color-button.blueberry radio {
-            background: @BLUEBERRY_500;
+            background: shade(@BLUEBERRY_300, 0.85);
         }
 
         .color-button.slate radio {
@@ -60,7 +60,7 @@ public class Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
-        var accent_label = new Gtk.Label (_("Accent color:"));
+        var accent_label = new Gtk.Label (_("Default accent color:"));
         accent_label.halign = Gtk.Align.END;
 
         var blueberry_button = new Gtk.RadioButton (null);
@@ -83,6 +83,10 @@ public class Appearance : Gtk.Grid {
         accent_grid.column_spacing = 6;
         accent_grid.attach (blueberry_button, 0, 0);
         accent_grid.attach (slate_button, 1, 0);
+
+        var accent_help_label = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
+        accent_help_label.margin_bottom = 6;
+        accent_help_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var animations_label = new Gtk.Label (_("Window animations:"));
         animations_label.halign = Gtk.Align.END;
@@ -107,12 +111,13 @@ public class Appearance : Gtk.Grid {
 
         attach (accent_label, 0, 0);
         attach (accent_grid,  1, 0);
-        attach (animations_label, 0, 1);
-        attach (animations_switch, 1, 1);
-        attach (translucency_label, 0, 2);
-        attach (translucency_switch, 1, 2);
-        attach (text_size_label, 0, 3);
-        attach (text_size_modebutton, 1, 3);
+        attach (accent_help_label, 1, 1);
+        attach (animations_label, 0, 2);
+        attach (animations_switch, 1, 2);
+        attach (translucency_label, 0, 3);
+        attach (translucency_switch, 1, 3);
+        attach (text_size_label, 0, 4);
+        attach (text_size_modebutton, 1, 4);
 
         var animations_settings = new Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -184,4 +189,3 @@ public class Appearance : Gtk.Grid {
         text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
 }
-
