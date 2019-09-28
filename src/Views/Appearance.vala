@@ -39,6 +39,10 @@ public class Appearance : Gtk.Grid {
         .color-button.slate radio {
             background: @SLATE_300;
         }
+
+        .color-button.bubblegum radio {
+            background: #f4679d;
+        }
     """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
@@ -79,10 +83,19 @@ public class Appearance : Gtk.Grid {
         slate_button_context.add_class ("color-button");
         slate_button_context.add_class ("slate");
 
+        var bubblegum_button = new Gtk.RadioButton.from_widget (blueberry_button);
+        bubblegum_button.tooltip_text = _("Bubblegum");
+        bubblegum_button.width_request = slate_button.height_request = 24;
+
+        var bubblegum_button_context = bubblegum_button.get_style_context ();
+        bubblegum_button_context.add_class ("color-button");
+        bubblegum_button_context.add_class ("bubblegum");
+
         var accent_grid = new Gtk.Grid ();
         accent_grid.column_spacing = 6;
         accent_grid.attach (blueberry_button, 0, 0);
         accent_grid.attach (slate_button, 1, 0);
+        accent_grid.attach (bubblegum_button, 2, 0);
 
         var accent_help_label = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
         accent_help_label.margin_bottom = 6;
@@ -156,6 +169,8 @@ public class Appearance : Gtk.Grid {
             blueberry_button.active = true;
         } else if (current_stylesheet == "elementary-slate") {
             slate_button.active = true;
+        } else if (current_stylesheet == "elementary-bubblegum") {
+            bubblegum_button.active = true;
         }
 
         blueberry_button.clicked.connect (() => {
@@ -164,6 +179,10 @@ public class Appearance : Gtk.Grid {
 
         slate_button.clicked.connect (() => {
             interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
+        });
+
+        bubblegum_button.clicked.connect (() => {
+            interface_settings.set_string (STYLESHEET_KEY, "elementary-bubblegum");
         });
     }
 
