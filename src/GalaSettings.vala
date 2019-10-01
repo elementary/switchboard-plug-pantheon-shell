@@ -26,7 +26,7 @@ public class BehaviorSettings : Granite.Services.Settings {
     static BehaviorSettings? instance = null;
 
     private BehaviorSettings () {
-        base (SCHEMA+".behavior");
+        base (SCHEMA + ".behavior");
     }
 
     public static BehaviorSettings get_default () {

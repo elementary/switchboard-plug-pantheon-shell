@@ -135,9 +135,9 @@ namespace SetWallpaperContractor {
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
-        }   
+        }
 
-        return dest;    
+        return dest;
     }
 
     private File? copy_for_greeter (File source) {
@@ -178,7 +178,7 @@ namespace SetWallpaperContractor {
                     "org.freedesktop.Accounts",
                     "/org/freedesktop/Accounts/User" + uid);
         } catch (Error e) {
-            warning ("%s\n", e.message); 
+            warning (e.message);
         }
 
         var folder = ensure_local_bg_exists ();
