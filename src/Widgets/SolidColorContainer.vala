@@ -24,7 +24,7 @@ public class SolidColorContainer : WallpaperContainer {
         get {
             Gdk.RGBA rgba = {};
             rgba.parse (color);
-    
+
             return rgba;
         }
     }

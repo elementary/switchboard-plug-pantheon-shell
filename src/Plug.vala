@@ -19,8 +19,8 @@
 */
 
 public class GalaPlug : Switchboard.Plug {
-    Gtk.Stack stack;
-    Gtk.Grid main_grid;
+    private Gtk.Stack stack;
+    private Gtk.Grid main_grid;
 
     private Wallpaper wallpaper_view;
 
@@ -34,7 +34,7 @@ public class GalaPlug : Switchboard.Plug {
 
         // DEPRECATED
         settings.set ("desktop/wallpaper", "wallpaper");
-        
+
         Object (category: Category.PERSONAL,
                 code_name: "io.elementary.switchboard.pantheon-shell",
                 display_name: _("Desktop"),
@@ -123,4 +123,3 @@ public Switchboard.Plug get_plug (Module module) {
     var plug = new GalaPlug ();
     return plug;
 }
-

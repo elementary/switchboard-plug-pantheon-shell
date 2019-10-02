@@ -18,13 +18,13 @@
 */
 
 public class Dock : Gtk.Grid {
-    Gtk.Label primary_monitor_label;
-    Gtk.Switch primary_monitor;
-    Gtk.Label monitor_label;
-    Gtk.ComboBoxText monitor;
-    Plank.DockPreferences dock_preferences;
+    private Gtk.Label primary_monitor_label;
+    private Gtk.Switch primary_monitor;
+    private Gtk.Label monitor_label;
+    private Gtk.ComboBoxText monitor;
+    private Plank.DockPreferences dock_preferences;
 
-    public Dock () {
+    construct {
         column_spacing = 12;
         halign = Gtk.Align.CENTER;
         row_spacing = 6;
@@ -200,12 +200,12 @@ public class Dock : Gtk.Grid {
                     }
                 }
 
-                monitor.append_text (_("Monitor %d").printf (i+1) );
+                monitor.append_text (_("Monitor %d").printf (i + 1) );
             }
         } catch (Error e) {
             critical (e.message);
             for (i = 0; i < default_display.get_n_monitors () ; i ++) {
-                monitor.append_text (_("Display %d").printf (i+1) );
+                monitor.append_text (_("Display %d").printf (i + 1));
             }
         }
 
@@ -250,7 +250,7 @@ public class Dock : Gtk.Grid {
                 return i;
         }
 
-        return display.get_n_monitors();
+        return display.get_n_monitors ();
     }
 
 }
