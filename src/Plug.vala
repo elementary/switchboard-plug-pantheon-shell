@@ -24,7 +24,7 @@ public class GalaPlug : Switchboard.Plug {
 
     private Wallpaper wallpaper_view;
 
-    construct {
+    public GalaPlug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("desktop", null);
         settings.set ("desktop/appearance/wallpaper", "wallpaper");
