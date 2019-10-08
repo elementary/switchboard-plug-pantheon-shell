@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:45+0200\n"
-"PO-Revision-Date: 2019-10-08 16:44+0000\n"
+"PO-Revision-Date: 2019-10-09 17:23+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
@@ -162,7 +162,7 @@ msgstr "Mostrar todas las ventanas"
 #. window-overview-all
 #: src/Views/HotCorners.vala:110
 msgid "Switch to new workspace"
-msgstr "Cambiar a un espacio de trabajo nuevo"
+msgstr "Cambiar a un nuevo espacio de trabajo"
 
 #. switch-new-workspace
 #: src/Views/HotCorners.vala:111
