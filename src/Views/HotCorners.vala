@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2016 elementary LLC. (http://launchpad.net/switchboard-plug-pantheon-shell)
+* Copyright 2011-2019 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -20,6 +20,7 @@
 */
 
 public class HotCorners : Gtk.Grid {
+    private GLib.Settings behavior_settings;
     private Gtk.Revealer custom_command_revealer;
     private Gee.HashSet<string> keys_using_custom_command = new Gee.HashSet<string> ();
     private const string CUSTOM_COMMAND_ID = "5";
@@ -29,6 +30,8 @@ public class HotCorners : Gtk.Grid {
         row_spacing = 24;
         halign = Gtk.Align.CENTER;
 
+        behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
+
         custom_command_revealer = new Gtk.Revealer ();
 
         var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
@@ -37,22 +40,22 @@ public class HotCorners : Gtk.Grid {
 
         var topleft = create_hotcorner ();
         topleft.changed.connect (() => hotcorner_changed ("hotcorner-topleft", topleft));
-        topleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topleft").to_string ();
+        topleft.active_id = behavior_settings.get_enum ("hotcorner-topleft").to_string ();
         topleft.valign = Gtk.Align.START;
 
         var topright = create_hotcorner ();
         topright.changed.connect (() => hotcorner_changed ("hotcorner-topright", topright));
-        topright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-topright").to_string ();
+        topright.active_id = behavior_settings.get_enum ("hotcorner-topright").to_string ();
         topright.valign = Gtk.Align.START;
 
         var bottomleft = create_hotcorner ();
         bottomleft.changed.connect (() => hotcorner_changed ("hotcorner-bottomleft", bottomleft));
-        bottomleft.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomleft").to_string ();
+        bottomleft.active_id = behavior_settings.get_enum ("hotcorner-bottomleft").to_string ();
         bottomleft.valign = Gtk.Align.END;
 
         var bottomright = create_hotcorner ();
         bottomright.changed.connect (() => hotcorner_changed ("hotcorner-bottomright", bottomright));
-        bottomright.active_id = BehaviorSettings.get_default ().schema.get_enum ("hotcorner-bottomright").to_string ();
+        bottomright.active_id = behavior_settings.get_enum ("hotcorner-bottomright").to_string ();
         bottomright.valign = Gtk.Align.END;
 
         var icon = new Gtk.Grid ();
@@ -62,8 +65,6 @@ public class HotCorners : Gtk.Grid {
 
         var custom_command = new Gtk.Entry ();
         custom_command.primary_icon_name = "utilities-terminal-symbolic";
-        custom_command.text = BehaviorSettings.get_default ().hotcorner_custom_command;
-        custom_command.changed.connect (() => BehaviorSettings.get_default ().hotcorner_custom_command = custom_command.text );
 
         var cc_label = new Gtk.Label (_("Custom command:"));
 
@@ -87,10 +88,12 @@ public class HotCorners : Gtk.Grid {
         attach (bottomleft, 0, 3, 1, 1);
         attach (bottomright, 2, 3, 1, 1);
         attach (custom_command_revealer, 0, 4, 2, 1);
+
+        behavior_settings.bind ("hotcorner-custom-command", custom_command, "text", GLib.SettingsBindFlags.DEFAULT);
     }
 
     private void hotcorner_changed (string settings_key, Gtk.ComboBoxText combo) {
-        BehaviorSettings.get_default ().schema.set_enum (settings_key, int.parse (combo.active_id));
+        behavior_settings.set_enum (settings_key, int.parse (combo.active_id));
         if (combo.active_id == CUSTOM_COMMAND_ID) {
             keys_using_custom_command.add (settings_key);
         } else {
