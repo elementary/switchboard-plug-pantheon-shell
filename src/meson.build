@@ -1,7 +1,6 @@
 plug_files = files(
     'ThumbnailGenerator.vala',
     'IOHelper.vala',
-    'GalaSettings.vala',
     'Plug.vala',
     'Widgets/WallpaperContainer.vala',
     'Widgets/SolidColorContainer.vala',
