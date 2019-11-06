@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<gresources>
-  <gresource prefix="/io/elementary/switchboard/plug/pantheon-shell">
-    <file alias="plug.css" compressed="true">plug.css</file>
-  </gresource>
-</gresources>
