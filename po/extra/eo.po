@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 23:36+0000\n"
+"POT-Creation-Date: 2019-11-07 16:14+0000\n"
 "PO-Revision-Date: 2019-07-09 01:28+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -26,3 +26,11 @@ msgstr "Labortablo"
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Agordi la butonbreton, sensemajn angulojn, kaj fonon"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
+msgid "Fix issues with setting wallpapers on the Login and Lock screen"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
+msgid "Updated translations"
+msgstr ""
