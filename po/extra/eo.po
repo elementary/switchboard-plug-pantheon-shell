@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:14+0000\n"
-"PO-Revision-Date: 2019-07-09 01:28+0000\n"
+"PO-Revision-Date: 2019-11-09 15:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/eo/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop"
@@ -29,8 +29,8 @@ msgstr "Agordi la butonbreton, sensemajn angulojn, kaj fonon"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
-msgstr ""
+msgstr "Ripari problamojn pri ekranfonoj ĉe la ensaluta kaj ŝlosa ekrano"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
 msgid "Updated translations"
-msgstr ""
+msgstr "Ĝisdatigitaj tradukoj"
