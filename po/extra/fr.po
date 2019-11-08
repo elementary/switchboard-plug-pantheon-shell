@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:14+0000\n"
-"PO-Revision-Date: 2019-05-30 10:29+0000\n"
+"PO-Revision-Date: 2019-11-09 15:25+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop"
@@ -30,7 +30,9 @@ msgstr "Configurer le dock, les coins intelligents et changer le fond d'écran"
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
+"Correction d'un problème lors empêchant le fond d'écran d'être appliqué sur "
+"les écrans de connexion et de verrouillage"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
 msgid "Updated translations"
-msgstr ""
+msgstr "Mise à jour des traductions"
