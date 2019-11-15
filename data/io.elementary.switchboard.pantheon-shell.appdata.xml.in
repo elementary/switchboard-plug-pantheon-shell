@@ -5,7 +5,7 @@
   <name>Desktop</name>
   <summary>Configure the dock, hot corners, and change wallpaper</summary>
   <releases>
-    <release version="2.8.2" date="2019-11-05" urgency="medium">
+    <release version="2.8.2" date="2019-11-15" urgency="medium">
       <description>
         <p>Fix issues with setting wallpapers on the Login and Lock screen</p>
         <p>Updated translations</p>
