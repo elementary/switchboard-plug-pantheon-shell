@@ -1,3 +1,138 @@
+switchboard-plug-pantheon-shell (2.8.2) bionic; urgency=medium
+
+  * Release 2.8.2 (#192)
+  * Update translation template
+  * AppData: Add 2.8.2 release info
+  * Update translation template
+  * Update POTFILES
+  * Add Gettext Updates to Actions
+  * Split deb packaging into its own branch
+  * Add Release to Actions
+  * Granite.Services.Settings → GLib.Settings (#191)
+  * run installation in CI (#189)
+  * Add Lint to CI (#187)
+  * Fix code style errors (#188)
+  * Build with GitHub CI (#186)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * Chmod 0604 copy of wallpaper for greeter (#182)
+  * build: fix install path for switchboard plug (#180)
+  * Rename desktop-plug.vala to Plug.vala (#179)
+  * Plug: Change code name to RDNN
+  * Fix translations
+  * Use the interfaces provided by LightDM (#177)
+  * Add Silesian and update translation template
+  * Update for wallpaper settings deprecation (#175)
+  * Create FUNDING.yml
+  * Release 2.8.1
+  * Wallpaper: Use FileChooserNative (#169)
+  * Partially revert commits unintentionally pushed 7dc4a4 and 4a46d6
+  * Don't be fancy
+  * WIP: Build system backgrounds dir from DATADIR
+  * Fix various compilation warnings (#164)
+  * Release 2.8.0
+  * Update translation template
+  * HotCorners: Use CSS for the hotcorner image (#163)
+  * Wallpapers: ignore all symlinks (#162)
+  * Add Appearance Tab (#155)
+  * Release 2.7.2
+  * Use file paths instead of URIs for wallpaper folders (#161)
+  * Release 2.7.1
+  * Meson.build: Use GLib preset for l10n
+  * Added screenshot (#150)
+  * Update translation files
+  * Plug search improvements (#147)
+  * Add hotcorner CSS from system stylesheet (#130)
+  * Update translation files
+  * Add a new option for switchting to a new workspace for hotcorners
+    (#115)
+  * Make RDNN scheme match wingpanel (#124)
+  * Dock.vala: Fix deprecations in check_for_screens
+  * WallpaperContainer.vala: replace deprecated menu.popup
+  * Dock.vala: fix deprecations in get_monitor_plug_names
+  * Wallpaper.vala: margin_right is deprecated
+  * Bump required Gtk to 3.22
+  * Release 0.2.7
+  * Appdata: remove zero-width space
+  * Add appdata file (#122)
+  * Merge remote-tracking branch 'origin/master'
+  * Add editorconfig file
+  * Update translation files
+  * Add an import function (#118)
+  * Dry add wallpaper (#121)
+  * Remove non-existant setting (#120)
+  * Fix wallpaper container css (#108)
+  * Update translation files
+  * Remove custom folder and pictures (#117)
+  * WallpaperContainer.vala: fix warnings with implicit begin (#110)
+  * Drop support for Plank < 0.10.9  (#113)
+  * Don't create dock page if no plank (#114)
+  * Remove Minimize current window hotcorner (#97) (#101)
+  * Update translation files
+  * Trash wallpapers (#106)
+  * Remove unused Gala settings (#107)
+  * Fix warnings about IOError (#104)
+  * Fix deprecated margins (#105)
+  * Update translation files
+  * meson: use Meson build system (#93)
+  * hotcorners: use GResource to get the hotcorner image (#92)
+  * Fix incorrect use of width and height parameters of the
+    set_from_file_async call (#91)
+  * Refactor the Wallpaper class (#89)
+  * Merge remote-tracking branch 'origin/master'
+  * Update README.md (#87)
+  * Merge remote-tracking branch 'origin/master'
+  * Require Granite >= 0.5
+  * Merge remote-tracking branch 'origin/master'
+  * Load wallpapers using Granite.AsyncImage (#86)
+  * Merge remote-tracking branch 'origin/master'
+  * Remove unused make dist (#85)
+  * Merge remote-tracking branch 'origin/master'
+  * Scroll to selected wallpaper after loading (#74)
+  * Merge remote-tracking branch 'origin/master'
+  * Revert size to 162x100 (#84)
+  * Merge remote-tracking branch 'origin/master'
+  * Display wallpaper artist Exif data in tooltip (#82)
+  * Merge remote-tracking branch 'origin/master'
+  * build: Don't check for pkg-config twice which seems to be fatal
+    (FIX) (#80)
+  * Merge remote-tracking branch 'origin/master'
+  * build: Don't check for pkg-config twice which seems to be fatal
+    (#79)
+  * Merge remote-tracking branch 'origin/master'
+  * Prevent the currently selected wallpaper being unchecked when
+    selecting again (#77)
+  * Merge remote-tracking branch 'origin/master'
+  * Use freedesktop Thumbnailer (Tumbler) to get wallpaper thumbnails
+    (#75)
+  * Merge remote-tracking branch 'origin/master'
+  * Save wallpaper source state (#72)
+  * Reset color shading type on wallpaper change (#73)
+  * Custom command revealer (#71)
+  * Reset picture options if a solid color has been set (#70)
+  * Merge remote-tracking branch 'origin/master'
+  * Make stack switcher homogeneous (#69)
+  * Fixed translations (#66)
+  * Merge remote-tracking branch 'origin/master'
+  * Create .gitignore (#65)
+  * Merge remote-tracking branch 'origin/master'
+  * Create CODE_OF_CONDUCT.md (#64)
+  * Merge remote-tracking branch 'origin/master'
+  * Release 0.2.6
+  * Merge remote-tracking branch 'origin/master'
+  * Fixed missing directory parameter (#63)
+  * Merge remote-tracking branch 'origin/master'
+  * Enable HiDPI on the wallpapers (#62)
+  * Merge remote-tracking branch 'refs/remotes/origin/master'
+  * Fix gee_abstract_map_clear warnings; improve performance (#59)
+  * Fix get int32 warnings (#60)
+  * Fix build with cmake 3.8 (#58)
+  * set-wallpaper-contract/CMakeLists.txt: fix posix dependency (#56)
+  * Update translation template (#57)
+  * Merge remote-tracking branch 'origin/master'
+
+ -- elementary OS Team <builds@elementary.io>  Fri, 15 Nov 2019 22:20:30 +0000
+
 switchboard-plug-pantheon-shell (2.8.1) bionic; urgency=medium
 
   * New upstream release.
