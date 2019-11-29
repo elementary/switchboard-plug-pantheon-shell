@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:14+0000\n"
-"PO-Revision-Date: 2018-05-09 16:23-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-11-30 08:25+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
+"switchboard/desktop-plug-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop"
@@ -22,7 +25,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "配置 Dock 和热区、更换壁纸"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
