@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:14+0000\n"
-"PO-Revision-Date: 2018-05-22 17:24+0000\n"
+"PO-Revision-Date: 2019-12-19 21:07+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
-"Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.18\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:40
@@ -35,7 +35,7 @@ msgstr "Ozadje"
 
 #: src/Plug.vala:58 src/Plug.vala:115
 msgid "Appearance"
-msgstr ""
+msgstr "Izgled"
 
 #: src/Plug.vala:62 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
 #: src/Plug.vala:113 src/Plug.vala:114
@@ -55,9 +55,8 @@ msgid "Icon Size"
 msgstr "Velikost ikon"
 
 #: src/Plug.vala:113
-#, fuzzy
 msgid "Pressure reveal"
-msgstr "Prikaži ob pritisku:"
+msgstr "Prikaži ob pritisku"
 
 #: src/Plug.vala:114
 msgid "Display"
@@ -91,16 +90,15 @@ msgstr "Nastavi izbrano sliko za novo ozadje namizja"
 
 #: src/Views/Appearance.vala:41
 msgid "Window animations:"
-msgstr ""
+msgstr "Animacije oken:"
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
 msgstr ""
 
 #: src/Views/Appearance.vala:53
-#, fuzzy
 msgid "Text size:"
-msgstr "Velikost ikon:"
+msgstr "Velikost besedila:"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
@@ -108,16 +106,15 @@ msgstr "Majhna"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr ""
+msgstr "Privzeta"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
 msgstr "Velika"
 
 #: src/Views/Appearance.vala:60
-#, fuzzy
 msgid "Larger"
-msgstr "Velika"
+msgstr "Večja"
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
@@ -209,7 +206,7 @@ msgstr "Pokaži vsa okna"
 #. window-overview-all
 #: src/Views/HotCorners.vala:113
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "Preklopi na nov delovni prostor"
 
 #. switch-new-workspace
 #: src/Views/HotCorners.vala:114
