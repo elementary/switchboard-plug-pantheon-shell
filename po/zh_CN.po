@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:14+0000\n"
-"PO-Revision-Date: 2019-01-15 00:05+0000\n"
+"PO-Revision-Date: 2019-12-20 16:09+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
 
 #: src/Plug.vala:40
@@ -168,11 +168,11 @@ msgstr "显示器 %d"
 #: src/Views/Dock.vala:208
 #, c-format
 msgid "Display %d"
-msgstr "显示：%d"
+msgstr "显示 %d"
 
 #: src/Views/HotCorners.vala:37
 msgid "When the cursor enters the corner of the display:"
-msgstr "鼠标接触屏幕角落时："
+msgstr "指针进入角落时："
 
 #: src/Views/HotCorners.vala:69
 msgid "Custom command:"
