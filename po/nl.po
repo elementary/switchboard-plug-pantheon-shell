@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:14+0000\n"
-"PO-Revision-Date: 2017-04-09 17:47+0000\n"
-"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <http://weblate.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2020-01-04 11:07+0000\n"
+"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:40
@@ -34,7 +34,7 @@ msgstr "Achtergrondafbeelding"
 
 #: src/Plug.vala:58 src/Plug.vala:115
 msgid "Appearance"
-msgstr ""
+msgstr "Uiterlijk"
 
 #: src/Plug.vala:62 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
 #: src/Plug.vala:113 src/Plug.vala:114
@@ -54,9 +54,8 @@ msgid "Icon Size"
 msgstr "Pictogramgrootte"
 
 #: src/Plug.vala:113
-#, fuzzy
 msgid "Pressure reveal"
-msgstr "Onthul bij druk:"
+msgstr "Onthul bij druk"
 
 #: src/Plug.vala:114
 msgid "Display"
@@ -90,16 +89,15 @@ msgstr "Gebruik de geselecteerde afbeelding als nieuwe bureaubladachtergrond"
 
 #: src/Views/Appearance.vala:41
 msgid "Window animations:"
-msgstr ""
+msgstr "Venster animaties:"
 
 #: src/Views/Appearance.vala:47
 msgid "Panel translucency:"
-msgstr ""
+msgstr "Paneel doorzichtigheid:"
 
 #: src/Views/Appearance.vala:53
-#, fuzzy
 msgid "Text size:"
-msgstr "Pictogramgrootte:"
+msgstr "Tekstgrootte:"
 
 #: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
 msgid "Small"
@@ -107,16 +105,15 @@ msgstr "Klein"
 
 #: src/Views/Appearance.vala:58
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
 msgid "Large"
 msgstr "Groot"
 
 #: src/Views/Appearance.vala:60
-#, fuzzy
 msgid "Larger"
-msgstr "Groot"
+msgstr "Groter"
 
 #: src/Views/Dock.vala:35
 msgid "Normal"
@@ -208,7 +205,7 @@ msgstr "Toon alle vensters"
 #. window-overview-all
 #: src/Views/HotCorners.vala:113
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "Wissel naar nieuw werkblad"
 
 #. switch-new-workspace
 #: src/Views/HotCorners.vala:114
@@ -217,7 +214,7 @@ msgstr "Voer aangepast commando uit"
 
 #: src/Views/Wallpaper.vala:102
 msgid "Import Photo…"
-msgstr ""
+msgstr "Importeer albeelding…"
 
 #: src/Views/Wallpaper.vala:107
 msgid "Centered"
@@ -233,11 +230,11 @@ msgstr "Omspannen"
 
 #: src/Views/Wallpaper.vala:152
 msgid "Import Photo"
-msgstr ""
+msgstr "Importeer afbeelding"
 
 #: src/Views/Wallpaper.vala:153
 msgid "Import"
-msgstr ""
+msgstr "Importeer"
 
 #: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:224
 msgid "Cancel"
@@ -245,12 +242,12 @@ msgstr "Annuleren"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Verwijder"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "Artiest: %s"
 
 #: set-wallpaper-contract/set-wallpaper.vala:96
 #, c-format
