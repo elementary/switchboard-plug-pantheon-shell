@@ -17,7 +17,7 @@ Homepage: https://github.com/elementary/switchboard-plug-pantheon-shell
 
 Package: switchboard-plug-pantheon-shell
 Architecture: any
-Depends: gala, slingshot-launcher, ${misc:Depends}, ${shlibs:Depends}
+Depends: gala, ${misc:Depends}, ${shlibs:Depends}
 Recommends: plank
 Enhances: switchboard
 Conflicts: switchboard-plug-wallpaper
