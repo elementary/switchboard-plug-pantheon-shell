@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:14+0000\n"
-"PO-Revision-Date: 2019-11-27 20:25+0000\n"
+"PO-Revision-Date: 2020-03-27 19:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop"
-msgstr ""
+msgstr "שולחן עבודה"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "הגדרת המעגן, הפינות החמות והחלפת רקע שולחן העבודה"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
-msgstr ""
+msgstr "תיקון תקלות עם הגדרת רקעים במסך הכניסה והנעילה"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
 msgid "Updated translations"
