@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 16:14+0000\n"
-"PO-Revision-Date: 2020-02-03 17:08+0000\n"
+"PO-Revision-Date: 2020-03-30 18:09+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -26,7 +26,7 @@ msgstr "Ambiente de trabalho"
 
 #: src/Plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configurar o papel de parede, a dock e os cantos ativos"
+msgstr "Configurar o papel de parede, a doca e os cantos ativos"
 
 #: src/Plug.vala:55 src/Plug.vala:109
 msgid "Wallpaper"
@@ -39,7 +39,7 @@ msgstr "Aparência"
 #: src/Plug.vala:62 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
 #: src/Plug.vala:113 src/Plug.vala:114
 msgid "Dock"
-msgstr "Dock"
+msgstr "Doca"
 
 #: src/Plug.vala:65 src/Plug.vala:116
 msgid "Hot Corners"
@@ -81,7 +81,7 @@ msgstr "Visualização"
 #.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr "_Definir como fundo da área de trabalho"
+msgstr "_Definir como fundo do ambiente de trabalho"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
@@ -130,11 +130,11 @@ msgstr "Janela focada está maximizada"
 
 #: src/Views/Dock.vala:84
 msgid "Focused window overlaps the dock"
-msgstr "Janela focada sobrepõe-se à dock"
+msgstr "Janela focada sobrepõe-se à doca"
 
 #: src/Views/Dock.vala:85
 msgid "Any window overlaps the dock"
-msgstr "Qualquer janela se sobrepõe à dock"
+msgstr "Qualquer janela se sobrepõe à doca"
 
 #: src/Views/Dock.vala:86
 msgid "Not being used"
@@ -185,7 +185,7 @@ msgstr "Não fazer nada"
 #. none
 #: src/Views/HotCorners.vala:109
 msgid "Multitasking View"
-msgstr "Vista Multitarefas"
+msgstr "Vista de Tarefas"
 
 #. show-workspace-view
 #: src/Views/HotCorners.vala:110
