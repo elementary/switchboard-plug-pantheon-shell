@@ -30,6 +30,11 @@ public class PantheonShell.Appearance : Gtk.Grid {
     private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
     private const string ANIMATIONS_KEY = "enable-animations";
 
+    private const string WM_PREFERENCE_SCHEMA = "org.gnome.desktop.wm.preferences";
+    private const string MOUSEFOCUS_KEY = "focus-mode";
+    private const string MOUSEFOCUS_CLICK = "click";
+    private const string MOUSEFOCUS_SLOPPY = "sloppy";
+
     private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
 
     private Granite.Widgets.ModeButton text_size_modebutton;
@@ -105,6 +110,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
         var translucency_switch = new Gtk.Switch ();
         translucency_switch.halign = Gtk.Align.START;
 
+        var mousefocus_label = new Gtk.Label (_("Autofocus window:"));
+        mousefocus_label.halign = Gtk.Align.END;
+
+        var mousefocus_switch = new Gtk.Switch ();
+        mousefocus_switch.halign = Gtk.Align.START;
+
         var text_size_label = new Gtk.Label (_("Text size:"));
         text_size_label.halign = Gtk.Align.END;
 
@@ -124,14 +135,32 @@ public class PantheonShell.Appearance : Gtk.Grid {
         attach (animations_switch, 1, 4);
         attach (translucency_label, 0, 5);
         attach (translucency_switch, 1, 5);
-        attach (text_size_label, 0, 6);
-        attach (text_size_modebutton, 1, 6, 2);
+        attach (mousefocus_label, 0, 6);
+        attach (mousefocus_switch, 1, 6);
+        attach (text_size_label, 0, 7);
+        attach (text_size_modebutton, 1, 7, 2);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
+
+        var wm_preference_settings = new Settings (WM_PREFERENCE_SCHEMA);
+        wm_preference_settings.bind_with_mapping (
+            MOUSEFOCUS_KEY,
+            mousefocus_switch,
+            "active",
+            SettingsBindFlags.DEFAULT,
+            get_mousefocus_mapping,
+            set_mousefocus_mapping,
+            null,
+            null
+        );
+
+        var interface_settings = new Settings (INTERFACE_SCHEMA);
+
+        update_text_size_modebutton (interface_settings);
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -185,7 +214,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
             });
         }
 
-        var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
         var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
 
         debug ("Current stylesheet: %s", current_stylesheet);
@@ -293,6 +321,19 @@ public class PantheonShell.Appearance : Gtk.Grid {
                     );
                 });
             });
+        }
+    }
+
+    private static bool get_mousefocus_mapping (Value value, Variant variant, void* data) {
+        value.set_boolean (variant.get_string () == MOUSEFOCUS_SLOPPY);
+        return true;
+    }
+
+    private static Variant set_mousefocus_mapping (Value value, VariantType type, void* data) {
+        if (value.get_boolean ()) {
+            return new Variant.string (MOUSEFOCUS_SLOPPY);
+        } else {
+            return new Variant.string (MOUSEFOCUS_CLICK);
         }
     }
 
