@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:14+0000\n"
+"POT-Creation-Date: 2020-04-08 20:20+0000\n"
 "PO-Revision-Date: 2019-04-13 15:53+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -212,31 +212,31 @@ msgstr "Yeni bir çalışma alanına geç"
 msgid "Execute custom command"
 msgstr "Özel komut çalıştır"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
 msgstr "Fotoğrafı İçe Aktar…"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:105
 msgid "Centered"
 msgstr "Ortala"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:106
 msgid "Zoom"
 msgstr "Yakınlaştır"
 
-#: src/Views/Wallpaper.vala:109
+#: src/Views/Wallpaper.vala:107
 msgid "Spanned"
 msgstr "Yayılmış"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:150
 msgid "Import Photo"
 msgstr "Fotoğrafı İçe Aktar"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:151
 msgid "Import"
 msgstr "İçe Aktar"
 
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:224
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
 msgid "Cancel"
 msgstr "Vazgeç"
 
@@ -249,41 +249,41 @@ msgstr "Kaldır"
 msgid "Artist: %s"
 msgstr "Sanatçı: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:96
+#: set-wallpaper-contract/set-wallpaper.vala:94
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d saniye"
 msgstr[1] "%d saniye"
 
-#: set-wallpaper-contract/set-wallpaper.vala:99
+#: set-wallpaper-contract/set-wallpaper.vala:97
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d dakika"
 msgstr[1] "%d dakika"
 
-#: set-wallpaper-contract/set-wallpaper.vala:103
+#: set-wallpaper-contract/set-wallpaper.vala:101
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d saat"
 msgstr[1] "%d saat"
 
-#: set-wallpaper-contract/set-wallpaper.vala:106
+#: set-wallpaper-contract/set-wallpaper.vala:104
 msgid "1 day"
 msgstr "1 gün"
 
-#: set-wallpaper-contract/set-wallpaper.vala:110
+#: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"
 msgstr "Her bir fotoğrafın gösterileceği süre:"
 
-#: set-wallpaper-contract/set-wallpaper.vala:221
-#: set-wallpaper-contract/set-wallpaper.vala:229
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
 msgid "Set As Desktop Slideshow"
 msgstr "Masaüstü Slayt Gösterisi Olarak Ayarla"
 
-#: set-wallpaper-contract/set-wallpaper.vala:225
+#: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Slayt gösterisi oluştur"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:14+0000\n"
+"POT-Creation-Date: 2020-04-08 20:20+0000\n"
 "PO-Revision-Date: 2018-05-27 17:18+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -209,31 +209,31 @@ msgstr ""
 msgid "Execute custom command"
 msgstr "Executați comanda personalizată"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
 msgstr "Importați fotografia …"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:105
 msgid "Centered"
 msgstr "Centrat"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:106
 msgid "Zoom"
 msgstr "Înfocare"
 
-#: src/Views/Wallpaper.vala:109
+#: src/Views/Wallpaper.vala:107
 msgid "Spanned"
 msgstr "Etalonează"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:150
 msgid "Import Photo"
 msgstr "Importați fotografia"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:151
 msgid "Import"
 msgstr "Importare"
 
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:224
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
 msgid "Cancel"
 msgstr "Anulare"
 
@@ -246,41 +246,41 @@ msgstr "Șterge"
 msgid "Artist: %s"
 msgstr "Artist: %s 1"
 
-#: set-wallpaper-contract/set-wallpaper.vala:96
+#: set-wallpaper-contract/set-wallpaper.vala:94
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d 1 secundă"
 msgstr[1] "%d 2 secunde"
 
-#: set-wallpaper-contract/set-wallpaper.vala:99
+#: set-wallpaper-contract/set-wallpaper.vala:97
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d 1 minut"
 msgstr[1] "%d 2 minute"
 
-#: set-wallpaper-contract/set-wallpaper.vala:103
+#: set-wallpaper-contract/set-wallpaper.vala:101
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d 1 oră"
 msgstr[1] "%d 2 ore"
 
-#: set-wallpaper-contract/set-wallpaper.vala:106
+#: set-wallpaper-contract/set-wallpaper.vala:104
 msgid "1 day"
 msgstr "1 zi"
 
-#: set-wallpaper-contract/set-wallpaper.vala:110
+#: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"
 msgstr "Afișați fiecare fotografie pentru"
 
-#: set-wallpaper-contract/set-wallpaper.vala:221
-#: set-wallpaper-contract/set-wallpaper.vala:229
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
 msgid "Set As Desktop Slideshow"
 msgstr "Setați ca Prezentare de Spațiul de lucru"
 
-#: set-wallpaper-contract/set-wallpaper.vala:225
+#: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Creează prezentare"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:14+0000\n"
+"POT-Creation-Date: 2020-04-08 20:20+0000\n"
 "PO-Revision-Date: 2018-10-20 21:05+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
@@ -213,31 +213,31 @@ msgstr "Pindah ke ruang kerja baru"
 msgid "Execute custom command"
 msgstr "Jalankan perintah tersuai"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
 msgstr "Impor Foto…"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:105
 msgid "Centered"
 msgstr "Di Tengah"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:106
 msgid "Zoom"
 msgstr "Perbesar"
 
-#: src/Views/Wallpaper.vala:109
+#: src/Views/Wallpaper.vala:107
 msgid "Spanned"
 msgstr "Dibentangkan"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:150
 msgid "Import Photo"
 msgstr "Impor Foto"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:151
 msgid "Import"
 msgstr "Impor"
 
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:224
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
 msgid "Cancel"
 msgstr "Batal"
 
@@ -250,38 +250,38 @@ msgstr "Hapus"
 msgid "Artist: %s"
 msgstr "Artis: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:96
+#: set-wallpaper-contract/set-wallpaper.vala:94
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d detik"
 
-#: set-wallpaper-contract/set-wallpaper.vala:99
+#: set-wallpaper-contract/set-wallpaper.vala:97
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d menit"
 
-#: set-wallpaper-contract/set-wallpaper.vala:103
+#: set-wallpaper-contract/set-wallpaper.vala:101
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d jam"
 
-#: set-wallpaper-contract/set-wallpaper.vala:106
+#: set-wallpaper-contract/set-wallpaper.vala:104
 msgid "1 day"
 msgstr "1 hari"
 
-#: set-wallpaper-contract/set-wallpaper.vala:110
+#: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"
 msgstr "Tampilkan tiap foto untuk"
 
-#: set-wallpaper-contract/set-wallpaper.vala:221
-#: set-wallpaper-contract/set-wallpaper.vala:229
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
 msgid "Set As Desktop Slideshow"
 msgstr "Atur sebagai Pertunjukan Salindia Destop"
 
-#: set-wallpaper-contract/set-wallpaper.vala:225
+#: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Buat pertunjukansalindia"
 
