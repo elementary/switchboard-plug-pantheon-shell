@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:14+0000\n"
+"POT-Creation-Date: 2020-04-08 20:20+0000\n"
 "PO-Revision-Date: 2019-11-14 16:24+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -28,11 +28,12 @@ msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Configurar el dock, esquinas activas y fondo de escritorio"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
+msgid "Updated translations"
+msgstr "Traducciones actualizadas"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
 "Corrección de problemas con la configuración de fondos de pantalla en la "
 "pantalla de inicio de sesión y bloqueo"
-
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
-msgid "Updated translations"
-msgstr "Traducciones actualizadas"

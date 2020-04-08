@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 16:14+0000\n"
+"POT-Creation-Date: 2020-04-08 20:20+0000\n"
 "PO-Revision-Date: 2019-11-09 15:24+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -29,11 +29,12 @@ msgstr ""
 "Configureu l'acoblador, els cantons actius i canvieu el fons de pantalla."
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
+msgid "Updated translations"
+msgstr "Traduccions actualitzades"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
 "Correcció d'errors amb l'establiment del fons a la pantalla d'entrada i a la "
 "de bloqueig."
-
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
-msgid "Updated translations"
-msgstr "Traduccions actualitzades"
