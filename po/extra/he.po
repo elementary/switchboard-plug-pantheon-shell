@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:20+0000\n"
+"POT-Creation-Date: 2020-04-14 23:00+0000\n"
 "PO-Revision-Date: 2020-03-27 19:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -28,10 +28,15 @@ msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "הגדרת המעגן, הפינות החמות והחלפת רקע שולחן העבודה"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
+msgid "Illustrate Dock icon sizes"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr "תיקון תקלות עם הגדרת רקעים במסך הכניסה והנעילה"
