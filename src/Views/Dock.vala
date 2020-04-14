@@ -49,6 +49,8 @@ public class Dock : Gtk.Grid {
         icon_size_64.image = image_64;
         icon_size_64.tooltip_text = _("Large");
 
+        var icon_size_unsupported = new Gtk.RadioButton.from_widget (icon_size_32);
+
         var icon_size_grid = new Gtk.Grid ();
         icon_size_grid.column_spacing = 24;
         icon_size_grid.add (icon_size_32);
@@ -163,6 +165,9 @@ public class Dock : Gtk.Grid {
         check_for_screens ();
 
         switch (dock_preferences.IconSize) {
+            case 32:
+                icon_size_32.active = true;
+                break;
             case 48:
                 icon_size_48.active = true;
                 break;
@@ -170,7 +175,8 @@ public class Dock : Gtk.Grid {
                 icon_size_64.active = true;
                 break;
             default:
-                icon_size_32.active = true;
+                icon_size_unsupported.active = true;
+                debug ("Unsupported dock icon size");
         }
 
         icon_size_32.toggled.connect (() => {
