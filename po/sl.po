@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:20+0000\n"
+"POT-Creation-Date: 2020-04-14 23:00+0000\n"
 "PO-Revision-Date: 2019-12-19 21:07+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -100,15 +100,15 @@ msgstr ""
 msgid "Text size:"
 msgstr "Velikost besedila:"
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Majhna"
 
-#: src/Views/Appearance.vala:58
+#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Privzeta"
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Velika"
 
@@ -116,57 +116,48 @@ msgstr "Velika"
 msgid "Larger"
 msgstr "Večja"
 
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Običajna"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "Po meri (%dpx)"
-
-#: src/Views/Dock.vala:83
+#: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
 msgstr "Je fokusirano okno maksimizirano"
 
-#: src/Views/Dock.vala:84
+#: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
 msgstr "Fokusirano okno prekriva sidrišče"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
 msgstr "Katerokoli okno prekriva sidrišče"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:73
 msgid "Not being used"
 msgstr "Ni v uporabi"
 
-#: src/Views/Dock.vala:122
+#: src/Views/Dock.vala:109
 msgid "Primary display:"
 msgstr "Primarni zaslon:"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:113
 msgid "Display:"
 msgstr "Zaslon:"
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:144
 msgid "Icon size:"
 msgstr "Velikost ikon:"
 
-#: src/Views/Dock.vala:159
+#: src/Views/Dock.vala:146
 msgid "Hide when:"
 msgstr "Skrij ko:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:150
 msgid "Pressure reveal:"
 msgstr "Prikaži ob pritisku:"
 
-#: src/Views/Dock.vala:203
+#: src/Views/Dock.vala:217
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:208
+#: src/Views/Dock.vala:222
 #, c-format
 msgid "Display %d"
 msgstr "Zaslon %d"
@@ -293,6 +284,12 @@ msgstr "Nastavi kot projekcijo na namizju"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Ustvari projekcijo"
+
+#~ msgid "Normal"
+#~ msgstr "Običajna"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "Po meri (%dpx)"
 
 #~ msgid "Theme"
 #~ msgstr "Tema"

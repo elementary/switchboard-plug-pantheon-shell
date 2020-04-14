@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:20+0000\n"
+"POT-Creation-Date: 2020-04-14 23:00+0000\n"
 "PO-Revision-Date: 2019-12-20 16:09+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -99,15 +99,15 @@ msgstr "面板透明度："
 msgid "Text size:"
 msgstr "文本大小："
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "较小"
 
-#: src/Views/Appearance.vala:58
+#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "默认"
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "较大"
 
@@ -115,57 +115,48 @@ msgstr "较大"
 msgid "Larger"
 msgstr "较大"
 
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "普通"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "自定义（%dpx）"
-
-#: src/Views/Dock.vala:83
+#: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
 msgstr "焦点窗口最大化时"
 
-#: src/Views/Dock.vala:84
+#: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
 msgstr "焦点窗口与 Dock 重叠时"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
 msgstr "任何窗口与 Dock 重叠时"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:73
 msgid "Not being used"
 msgstr "不使用时"
 
-#: src/Views/Dock.vala:122
+#: src/Views/Dock.vala:109
 msgid "Primary display:"
 msgstr "主显示器："
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:113
 msgid "Display:"
 msgstr "显示："
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:144
 msgid "Icon size:"
 msgstr "图标大小："
 
-#: src/Views/Dock.vala:159
+#: src/Views/Dock.vala:146
 msgid "Hide when:"
 msgstr "隐藏条件："
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:150
 msgid "Pressure reveal:"
 msgstr "压力显示："
 
-#: src/Views/Dock.vala:203
+#: src/Views/Dock.vala:217
 #, c-format
 msgid "Monitor %d"
 msgstr "显示器 %d"
 
-#: src/Views/Dock.vala:208
+#: src/Views/Dock.vala:222
 #, c-format
 msgid "Display %d"
 msgstr "显示 %d"
@@ -283,6 +274,12 @@ msgstr "设为桌面幻灯片"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "创建幻灯片"
+
+#~ msgid "Normal"
+#~ msgstr "普通"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "自定义（%dpx）"
 
 #~ msgid "Theme"
 #~ msgstr "主题"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:20+0000\n"
+"POT-Creation-Date: 2020-04-14 23:00+0000\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -101,15 +101,15 @@ msgstr ""
 msgid "Text size:"
 msgstr "Ikonméret:"
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Kicsi"
 
-#: src/Views/Appearance.vala:58
+#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
 msgid "Default"
 msgstr ""
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Nagy"
 
@@ -118,57 +118,48 @@ msgstr "Nagy"
 msgid "Larger"
 msgstr "Nagy"
 
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Normál"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "Egyedi (%dpx)"
-
-#: src/Views/Dock.vala:83
+#: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
 msgstr "A fókuszban lévő ablak teljes képernyős"
 
-#: src/Views/Dock.vala:84
+#: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
 msgstr "A fókuszban lévő ablak lefedi a dokkot"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
 msgstr "Bármilyen ablak lefedi a dokkot"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:73
 msgid "Not being used"
 msgstr "Nincs használatban"
 
-#: src/Views/Dock.vala:122
+#: src/Views/Dock.vala:109
 msgid "Primary display:"
 msgstr "Elsődleges kijelző:"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:113
 msgid "Display:"
 msgstr "Kijelző:"
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:144
 msgid "Icon size:"
 msgstr "Ikonméret:"
 
-#: src/Views/Dock.vala:159
+#: src/Views/Dock.vala:146
 msgid "Hide when:"
 msgstr "Elrejtés ha:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:150
 msgid "Pressure reveal:"
 msgstr "Felfedés csak nyomásra:"
 
-#: src/Views/Dock.vala:203
+#: src/Views/Dock.vala:217
 #, c-format
 msgid "Monitor %d"
 msgstr "%d monitor"
 
-#: src/Views/Dock.vala:208
+#: src/Views/Dock.vala:222
 #, c-format
 msgid "Display %d"
 msgstr "%d kijelző"
@@ -289,6 +280,12 @@ msgstr "Beállítás asztali diavetítésként"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Diavetítés létrehozása"
+
+#~ msgid "Normal"
+#~ msgstr "Normál"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "Egyedi (%dpx)"
 
 #~ msgid "Theme"
 #~ msgstr "Téma"

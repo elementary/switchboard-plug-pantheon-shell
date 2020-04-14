@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:20+0000\n"
+"POT-Creation-Date: 2020-04-14 23:00+0000\n"
 "PO-Revision-Date: 2020-01-04 11:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -99,15 +99,15 @@ msgstr "Paneel doorzichtigheid:"
 msgid "Text size:"
 msgstr "Tekstgrootte:"
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Klein"
 
-#: src/Views/Appearance.vala:58
+#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Standaard"
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Groot"
 
@@ -115,57 +115,48 @@ msgstr "Groot"
 msgid "Larger"
 msgstr "Groter"
 
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Standaard"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "Aangepast (%dpx)"
-
-#: src/Views/Dock.vala:83
+#: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
 msgstr "Actief venster is gemaximaliseerd"
 
-#: src/Views/Dock.vala:84
+#: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
 msgstr "Actief venster overlapt de dock"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
 msgstr "Eender welk venster overlapt de dock"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:73
 msgid "Not being used"
 msgstr "Niet gebruikt"
 
-#: src/Views/Dock.vala:122
+#: src/Views/Dock.vala:109
 msgid "Primary display:"
 msgstr "Primair beeldscherm:"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:113
 msgid "Display:"
 msgstr "Beeldscherm:"
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:144
 msgid "Icon size:"
 msgstr "Pictogramgrootte:"
 
-#: src/Views/Dock.vala:159
+#: src/Views/Dock.vala:146
 msgid "Hide when:"
 msgstr "Verberg wanneer:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:150
 msgid "Pressure reveal:"
 msgstr "Onthul bij druk:"
 
-#: src/Views/Dock.vala:203
+#: src/Views/Dock.vala:217
 #, c-format
 msgid "Monitor %d"
 msgstr "Beeldscherm %d"
 
-#: src/Views/Dock.vala:208
+#: src/Views/Dock.vala:222
 #, c-format
 msgid "Display %d"
 msgstr "Beeldscherm %d"
@@ -286,6 +277,12 @@ msgstr "Instellen als diavoorstelling"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Maak diavoorstelling"
+
+#~ msgid "Normal"
+#~ msgstr "Standaard"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "Aangepast (%dpx)"
 
 #~ msgid "Theme"
 #~ msgstr "Thema"

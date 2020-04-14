@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:20+0000\n"
+"POT-Creation-Date: 2020-04-14 23:00+0000\n"
 "PO-Revision-Date: 2017-04-10 19:12+0000\n"
 "Last-Translator: Oleh Astappiev <astappev@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -102,15 +102,15 @@ msgstr ""
 msgid "Text size:"
 msgstr "Розмір пікторами:"
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Малий"
 
-#: src/Views/Appearance.vala:58
+#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
 msgid "Default"
 msgstr ""
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Великий"
 
@@ -119,57 +119,48 @@ msgstr "Великий"
 msgid "Larger"
 msgstr "Великий"
 
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Звичайний"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "Власний (%dpx)"
-
-#: src/Views/Dock.vala:83
+#: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
 msgstr "Вікно у фокусі на весь екран"
 
-#: src/Views/Dock.vala:84
+#: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
 msgstr "ВІкно у фокусі перекриває док"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
 msgstr "Будь-яке відкно перекрива док"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:73
 msgid "Not being used"
 msgstr "Не використовується"
 
-#: src/Views/Dock.vala:122
+#: src/Views/Dock.vala:109
 msgid "Primary display:"
 msgstr "Основний дисплей:"
 
-#: src/Views/Dock.vala:126
+#: src/Views/Dock.vala:113
 msgid "Display:"
 msgstr "Екран:"
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:144
 msgid "Icon size:"
 msgstr "Розмір пікторами:"
 
-#: src/Views/Dock.vala:159
+#: src/Views/Dock.vala:146
 msgid "Hide when:"
 msgstr "Приховати коли:"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:150
 msgid "Pressure reveal:"
 msgstr "Показувати натиск:"
 
-#: src/Views/Dock.vala:203
+#: src/Views/Dock.vala:217
 #, c-format
 msgid "Monitor %d"
 msgstr "Монітор %d"
 
-#: src/Views/Dock.vala:208
+#: src/Views/Dock.vala:222
 #, c-format
 msgid "Display %d"
 msgstr "Екран %d"
@@ -293,6 +284,12 @@ msgstr "Зробити слайдшоу стільниці"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Створити слайдшоу"
+
+#~ msgid "Normal"
+#~ msgstr "Звичайний"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "Власний (%dpx)"
 
 #~ msgid "Theme"
 #~ msgstr "Тема"
