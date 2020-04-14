@@ -39,7 +39,7 @@ public class Dock : Gtk.Grid {
 
         var icon_size_48 = new Gtk.RadioButton.from_widget (icon_size_32);
         icon_size_48.image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic", Gtk.IconSize.DIALOG);
-        icon_size_48.tooltip_text = _("Medium");
+        icon_size_48.tooltip_text = _("Default");
 
         var image_64 = new Gtk.Image ();
         image_64.icon_name = "application-default-icon-symbolic";
