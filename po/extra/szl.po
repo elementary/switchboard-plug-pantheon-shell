@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2019-06-26 18:53+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -20,16 +20,16 @@ msgstr ""
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2020-04-15 17:45+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -27,17 +27,17 @@ msgstr "Bureau"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Configurer le dock, les coins intelligents et changer le fond d'écran"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
 msgstr "Illustration des tailles des icônes du Dock"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
 "Correction d'un problème lors empêchant le fond d'écran d'être appliqué sur "

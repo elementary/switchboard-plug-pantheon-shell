@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2019-11-25 10:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -27,16 +27,16 @@ msgstr "डेस्कटॉप"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "डॉक, हॉट कॉर्नर कॉन्फिगर करा आणि वॉलपेपर बदला"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr "लॉगिन आणि लॉक स्क्रीनवर वॉलपेपर सेट करण्याशी संबंधित समस्यांचे निराकरण करा"
