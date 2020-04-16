@@ -113,9 +113,9 @@ public class GalaPlug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Pressure reveal")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
-        search_results.set ("%s → %s".printf (display_name, _("Appearance"), _("Window animations")), "appearance");
-        search_results.set ("%s → %s".printf (display_name, _("Appearance"), _("Panel translucency")), "appearance");
-        search_results.set ("%s → %s".printf (display_name, _("Appearance"), _("Text size")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Window animations")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Panel translucency")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Text size")), "appearance");
         search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
         return search_results;
     }
