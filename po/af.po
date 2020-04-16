@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2014-08-15 09:17+0000\n"
 "Last-Translator: Jaycee Lock <jaycee.lock@gmail.com>\n"
 "Language-Team: Afrikaans <af@li.org>\n"
@@ -31,7 +31,8 @@ msgstr ""
 msgid "Wallpaper"
 msgstr "Agtergrond"
 
-#: src/Plug.vala:58 src/Plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr ""
 
@@ -40,7 +41,7 @@ msgstr ""
 msgid "Dock"
 msgstr "Dok"
 
-#: src/Plug.vala:65 src/Plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "Warm Hoeke"
 
@@ -58,6 +59,18 @@ msgstr ""
 
 #: src/Plug.vala:114
 msgid "Display"
+msgstr ""
+
+#: src/Plug.vala:116
+msgid "Window animations"
+msgstr ""
+
+#: src/Plug.vala:117
+msgid "Panel translucency"
+msgstr ""
+
+#: src/Plug.vala:118
+msgid "Text size"
 msgstr ""
 
 #.

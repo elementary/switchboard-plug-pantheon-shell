@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2019-04-16 09:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -27,7 +27,8 @@ msgstr "डॉक, हॉट कॉर्नर कॉन्फिगर कर�
 msgid "Wallpaper"
 msgstr "वॉलपेपर"
 
-#: src/Plug.vala:58 src/Plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr "दर्शन"
 
@@ -36,7 +37,7 @@ msgstr "दर्शन"
 msgid "Dock"
 msgstr "डॉक"
 
-#: src/Plug.vala:65 src/Plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "हॉट कॉर्नर"
 
@@ -55,6 +56,24 @@ msgstr "दबावाने प्रकट करा"
 #: src/Plug.vala:114
 msgid "Display"
 msgstr "प्रदर्शन"
+
+#: src/Plug.vala:116
+#, fuzzy
+#| msgid "Window animations:"
+msgid "Window animations"
+msgstr "विंडो अॅनिमेशन:"
+
+#: src/Plug.vala:117
+#, fuzzy
+#| msgid "Panel translucency:"
+msgid "Panel translucency"
+msgstr "पॅनेल पारंपारिकता:"
+
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Text size:"
+msgid "Text size"
+msgstr "टेक्स्ट आकार :"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)

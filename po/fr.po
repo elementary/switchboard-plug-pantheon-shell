@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2019-01-14 00:09+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
@@ -32,7 +32,8 @@ msgstr "Configurer le dock, les coins intelligents et changer le fond d'écran"
 msgid "Wallpaper"
 msgstr "Fond d'écran"
 
-#: src/Plug.vala:58 src/Plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr "Apparence"
 
@@ -41,7 +42,7 @@ msgstr "Apparence"
 msgid "Dock"
 msgstr "Dock"
 
-#: src/Plug.vala:65 src/Plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "Coins intelligents"
 
@@ -60,6 +61,24 @@ msgstr "Apparaître avec la pression de la souris"
 #: src/Plug.vala:114
 msgid "Display"
 msgstr "Affichage"
+
+#: src/Plug.vala:116
+#, fuzzy
+#| msgid "Window animations:"
+msgid "Window animations"
+msgstr "Animations des fenêtres :"
+
+#: src/Plug.vala:117
+#, fuzzy
+#| msgid "Panel translucency:"
+msgid "Panel translucency"
+msgstr "Transparence du panneau :"
+
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Text size:"
+msgid "Text size"
+msgstr "Taille du texte :"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)

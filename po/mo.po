@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2018-05-27 17:18+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -26,7 +26,8 @@ msgstr ""
 msgid "Wallpaper"
 msgstr "Tapet"
 
-#: src/Plug.vala:58 src/Plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr ""
 
@@ -35,7 +36,7 @@ msgstr ""
 msgid "Dock"
 msgstr "Doc"
 
-#: src/Plug.vala:65 src/Plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "Colțuri calde"
 
@@ -55,6 +56,19 @@ msgstr "Difuzează previzualizarea:"
 #: src/Plug.vala:114
 msgid "Display"
 msgstr "Afișează"
+
+#: src/Plug.vala:116
+msgid "Window animations"
+msgstr ""
+
+#: src/Plug.vala:117
+msgid "Panel translucency"
+msgstr ""
+
+#: src/Plug.vala:118
+#, fuzzy
+msgid "Text size"
+msgstr "Dimensiune pictograma:"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)

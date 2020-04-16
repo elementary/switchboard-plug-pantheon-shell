@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2016-06-13 17:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -31,7 +31,8 @@ msgstr "Doki ja kiirnurkade konfigureerimine ning taustapildi muutmine"
 msgid "Wallpaper"
 msgstr "Taustapilt"
 
-#: src/Plug.vala:58 src/Plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr ""
 
@@ -40,7 +41,7 @@ msgstr ""
 msgid "Dock"
 msgstr "Dokk"
 
-#: src/Plug.vala:65 src/Plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "Abistavad nurgad"
 
@@ -59,6 +60,18 @@ msgstr ""
 #: src/Plug.vala:114
 msgid "Display"
 msgstr "Kuvamine"
+
+#: src/Plug.vala:116
+msgid "Window animations"
+msgstr ""
+
+#: src/Plug.vala:117
+msgid "Panel translucency"
+msgstr ""
+
+#: src/Plug.vala:118
+msgid "Text size"
+msgstr ""
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)

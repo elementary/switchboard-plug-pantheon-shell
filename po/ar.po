@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2020-03-11 18:09+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -33,7 +33,8 @@ msgstr ""
 msgid "Wallpaper"
 msgstr "خلفية الشاشة"
 
-#: src/Plug.vala:58 src/Plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr ""
 
@@ -42,7 +43,7 @@ msgstr ""
 msgid "Dock"
 msgstr "مرسى"
 
-#: src/Plug.vala:65 src/Plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "ركن ساخن"
 
@@ -60,6 +61,18 @@ msgstr ""
 
 #: src/Plug.vala:114
 msgid "Display"
+msgstr ""
+
+#: src/Plug.vala:116
+msgid "Window animations"
+msgstr ""
+
+#: src/Plug.vala:117
+msgid "Panel translucency"
+msgstr ""
+
+#: src/Plug.vala:118
+msgid "Text size"
 msgstr ""
 
 #.

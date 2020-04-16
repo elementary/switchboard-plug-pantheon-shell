@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2019-03-17 17:27+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -27,7 +27,8 @@ msgstr "ドック、ホットコーナーを設定し、壁紙を変更します
 msgid "Wallpaper"
 msgstr "壁紙"
 
-#: src/Plug.vala:58 src/Plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr "外観"
 
@@ -36,7 +37,7 @@ msgstr "外観"
 msgid "Dock"
 msgstr "ドック"
 
-#: src/Plug.vala:65 src/Plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
@@ -55,6 +56,24 @@ msgstr "押し込んで表示"
 #: src/Plug.vala:114
 msgid "Display"
 msgstr "ディスプレイ"
+
+#: src/Plug.vala:116
+#, fuzzy
+#| msgid "Window animations:"
+msgid "Window animations"
+msgstr "ウィンドウアニメーション:"
+
+#: src/Plug.vala:117
+#, fuzzy
+#| msgid "Panel translucency:"
+msgid "Panel translucency"
+msgstr "パネルを透過:"
+
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Text size:"
+msgid "Text size"
+msgstr "テキストサイズ:"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)

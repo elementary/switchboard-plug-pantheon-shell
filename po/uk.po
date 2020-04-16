@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 23:00+0000\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2017-04-10 19:12+0000\n"
 "Last-Translator: Oleh Astappiev <astappev@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -33,7 +33,8 @@ msgstr "Налаштування доку, активних кутів, та з�
 msgid "Wallpaper"
 msgstr "Шпалери"
 
-#: src/Plug.vala:58 src/Plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr ""
 
@@ -42,7 +43,7 @@ msgstr ""
 msgid "Dock"
 msgstr "Док"
 
-#: src/Plug.vala:65 src/Plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "Гарячі кути"
 
@@ -62,6 +63,19 @@ msgstr "Показувати натиск:"
 #: src/Plug.vala:114
 msgid "Display"
 msgstr "Екран"
+
+#: src/Plug.vala:116
+msgid "Window animations"
+msgstr ""
+
+#: src/Plug.vala:117
+msgid "Panel translucency"
+msgstr ""
+
+#: src/Plug.vala:118
+#, fuzzy
+msgid "Text size"
+msgstr "Розмір пікторами:"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
