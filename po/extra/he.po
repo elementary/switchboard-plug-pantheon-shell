@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-14 23:00+0000\n"
-"PO-Revision-Date: 2020-03-27 19:09+0000\n"
+"PO-Revision-Date: 2020-04-16 18:23+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -29,7 +29,7 @@ msgstr "הגדרת המעגן, הפינות החמות והחלפת רקע שו�
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:10
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "הדמיית גדלי סמלי המעגן"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:11
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
