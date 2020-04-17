@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-16 18:25+0000\n"
-"PO-Revision-Date: 2018-12-18 00:01+0000\n"
+"PO-Revision-Date: 2020-04-18 09:10+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-23 06:30+0000\n"
 
 #: src/Plug.vala:40
@@ -64,22 +64,16 @@ msgid "Display"
 msgstr "Pantalla"
 
 #: src/Plug.vala:116
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "Animacions de finestres:"
+msgstr "Animacions de finestres"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "Translucidesa del plafó:"
+msgstr "Translucidesa del plafó"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Text size:"
 msgid "Text size"
-msgstr "Mida del text:"
+msgstr "Mida del text"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
