@@ -208,7 +208,15 @@ public class Wallpaper : Gtk.Grid {
         string uri = file.get_uri ();
         string path = file.get_path ();
 
-        if (!path.has_prefix (get_local_bg_directory ())) {
+        bool path_contains_bg_dir = false;
+        foreach (unowned string directory in get_bg_directories ()) {
+            if (path.contains (directory)) {
+                path_contains_bg_dir = true;
+                break;
+            }
+        }
+
+        if (!path_contains_bg_dir) {
             var local_file = copy_for_library (file);
             if (local_file != null) {
                 uri = local_file.get_uri ();
