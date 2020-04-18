@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-16 18:25+0000\n"
+"POT-Creation-Date: 2020-04-18 19:21+0000\n"
 "PO-Revision-Date: 2018-05-09 16:23-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -31,11 +31,19 @@ msgid "Illustrate Dock icon sizes"
 msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
+msgid "Fix system wallpapers being copied"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
+msgid "Update search results"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
