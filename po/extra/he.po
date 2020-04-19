@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-18 19:21+0000\n"
-"PO-Revision-Date: 2020-04-16 18:23+0000\n"
+"PO-Revision-Date: 2020-04-21 00:10+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -33,11 +33,11 @@ msgstr "הדמיית גדלי סמלי המעגן"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "תיקון מצב בו הטפטים של המערכת משוכפלים"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Update search results"
-msgstr ""
+msgstr "עדכון תוצאות חיפוש"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
