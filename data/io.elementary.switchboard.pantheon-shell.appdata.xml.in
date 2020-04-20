@@ -7,7 +7,7 @@
   <icon type="stock">preferences-desktop-wallpaper</icon>
   <translation type="gettext">pantheon-desktop-plug</translation>
   <releases>
-    <release version="2.8.4" date="2020-04-12" urgency="medium">
+    <release version="2.8.4" date="2020-04-20" urgency="medium">
       <description>
         <p>Illustrate Dock icon sizes</p>
         <p>Fix system wallpapers being copied</p>
