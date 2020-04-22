@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-18 19:21+0000\n"
-"PO-Revision-Date: 2019-11-09 15:25+0000\n"
+"PO-Revision-Date: 2020-04-21 00:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop"
@@ -29,15 +29,15 @@ msgstr "ドック、ホットコーナーを設定し、壁紙を変更します
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "ドックアイコンの大きさを視覚化"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "システムの壁紙がコピーされる問題を修正"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Update search results"
-msgstr ""
+msgstr "検索結果を更新"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
