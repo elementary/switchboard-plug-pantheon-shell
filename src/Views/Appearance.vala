@@ -143,4 +143,3 @@ public class Appearance : Gtk.Grid {
         text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
 }
-

@@ -19,8 +19,8 @@
 */
 
 public class GalaPlug : Switchboard.Plug {
-    Gtk.Stack stack;
-    Gtk.Grid main_grid;
+    private Gtk.Stack stack;
+    private Gtk.Grid main_grid;
 
     private Wallpaper wallpaper_view;
 
@@ -34,9 +34,9 @@ public class GalaPlug : Switchboard.Plug {
 
         // DEPRECATED
         settings.set ("desktop/wallpaper", "wallpaper");
-        
+
         Object (category: Category.PERSONAL,
-                code_name: "pantheon-desktop",
+                code_name: "io.elementary.switchboard.pantheon-shell",
                 display_name: _("Desktop"),
                 description: _("Configure the dock, hot corners, and change wallpaper"),
                 icon: "preferences-desktop-wallpaper",
@@ -113,6 +113,9 @@ public class GalaPlug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Pressure reveal")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Window animations")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Panel translucency")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Text size")), "appearance");
         search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
         return search_results;
     }
@@ -123,4 +126,3 @@ public Switchboard.Plug get_plug (Module module) {
     var plug = new GalaPlug ();
     return plug;
 }
-

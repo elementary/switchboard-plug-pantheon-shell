@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"POT-Creation-Date: 2020-04-16 18:25+0000\n"
 "PO-Revision-Date: 2018-05-27 17:18+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -13,251 +13,62 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
-#: src/desktop-plug.vala:40
+#: src/Plug.vala:40
 msgid "Desktop"
 msgstr "Spațiul de lucru"
 
-#: src/desktop-plug.vala:41
+#: src/Plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 "Configurați docul, colțurile fierbinți și modificați imaginea de fundal"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:109
+#: src/Plug.vala:55 src/Plug.vala:109
 msgid "Wallpaper"
 msgstr "Tapet"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr ""
 
-#: src/desktop-plug.vala:62 src/desktop-plug.vala:110 src/desktop-plug.vala:111
-#: src/desktop-plug.vala:112 src/desktop-plug.vala:113
-#: src/desktop-plug.vala:114
+#: src/Plug.vala:62 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:113 src/Plug.vala:114
 msgid "Dock"
 msgstr "Doc"
 
-#: src/desktop-plug.vala:65 src/desktop-plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr "Colțuri calde"
 
-#: src/desktop-plug.vala:111
+#: src/Plug.vala:111
 msgid "Hide Mode"
 msgstr "Ascundeți modul"
 
-#: src/desktop-plug.vala:112
+#: src/Plug.vala:112
 msgid "Icon Size"
 msgstr "Dimensiune pictogramă"
 
-#: src/desktop-plug.vala:113
+#: src/Plug.vala:113
 #, fuzzy
 msgid "Pressure reveal"
 msgstr "Difuzează previzualizarea:"
 
-#: src/desktop-plug.vala:114
+#: src/Plug.vala:114
 msgid "Display"
 msgstr "Afișează"
 
-#: src/Widgets/WallpaperContainer.vala:118
-msgid "Remove"
-msgstr "Șterge"
-
-#: src/Widgets/WallpaperContainer.vala:188
-#, c-format
-msgid "Artist: %s"
-msgstr "Artist: %s 1"
-
-#: src/Views/Appearance.vala:41
-msgid "Window animations:"
+#: src/Plug.vala:116
+msgid "Window animations"
 msgstr ""
 
-#: src/Views/Appearance.vala:47
-msgid "Panel translucency:"
+#: src/Plug.vala:117
+msgid "Panel translucency"
 msgstr ""
 
-#: src/Views/Appearance.vala:53
+#: src/Plug.vala:118
 #, fuzzy
-msgid "Text size:"
+msgid "Text size"
 msgstr "Dimensiune pictograma:"
-
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
-msgid "Small"
-msgstr "Mic"
-
-#: src/Views/Appearance.vala:58
-msgid "Default"
-msgstr ""
-
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
-msgid "Large"
-msgstr "Mare"
-
-#: src/Views/Appearance.vala:60
-#, fuzzy
-msgid "Larger"
-msgstr "Mare"
-
-#: src/Views/Wallpaper.vala:101
-msgid "Import Photo…"
-msgstr "Importați fotografia …"
-
-#: src/Views/Wallpaper.vala:106
-msgid "Centered"
-msgstr "Centrat"
-
-#: src/Views/Wallpaper.vala:107
-msgid "Zoom"
-msgstr "Înfocare"
-
-#: src/Views/Wallpaper.vala:108
-msgid "Spanned"
-msgstr "Etalonează"
-
-#: src/Views/Wallpaper.vala:151
-msgid "Import Photo"
-msgstr "Importați fotografia"
-
-#: src/Views/Wallpaper.vala:152
-msgid "Import"
-msgstr "Importare"
-
-#: src/Views/Wallpaper.vala:153 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "Anulare"
-
-#: src/Views/HotCorners.vala:34
-msgid "When the cursor enters the corner of the display:"
-msgstr "Când cursorul intră în colțul ecranului:"
-
-#: src/Views/HotCorners.vala:68
-msgid "Custom command:"
-msgstr "Comandă personalizată:"
-
-#: src/Views/HotCorners.vala:105
-msgid "Do nothing"
-msgstr "Nu face nimic"
-
-#. none
-#: src/Views/HotCorners.vala:106
-msgid "Multitasking View"
-msgstr "Vizualizare multitasking"
-
-#. show-workspace-view
-#: src/Views/HotCorners.vala:107
-msgid "Maximize current window"
-msgstr "Maximizați fereastra curentă"
-
-#. maximize-current
-#: src/Views/HotCorners.vala:108
-msgid "Show Applications Menu"
-msgstr "Afișați meniul Aplicații"
-
-#. open-launcher
-#: src/Views/HotCorners.vala:109
-msgid "Show all windows"
-msgstr "Afișați toate ferestrele"
-
-#. window-overview-all
-#: src/Views/HotCorners.vala:110
-msgid "Switch to new workspace"
-msgstr ""
-
-#. switch-new-workspace
-#: src/Views/HotCorners.vala:111
-msgid "Execute custom command"
-msgstr "Executați comanda personalizată"
-
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Normală"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "Personalizat (%d 1px)"
-
-#: src/Views/Dock.vala:83
-msgid "Focused window is maximized"
-msgstr "Fereastra focalizată este maximizată"
-
-#: src/Views/Dock.vala:84
-msgid "Focused window overlaps the dock"
-msgstr "Fereastra focalizată se suprapune pe doc"
-
-#: src/Views/Dock.vala:85
-msgid "Any window overlaps the dock"
-msgstr "Orice fereastră se suprapune pe doc"
-
-#: src/Views/Dock.vala:86
-msgid "Not being used"
-msgstr "Nu este folosit"
-
-#: src/Views/Dock.vala:122
-msgid "Primary display:"
-msgstr "Afișaj principal:"
-
-#: src/Views/Dock.vala:126
-msgid "Display:"
-msgstr "Afişaj:"
-
-#: src/Views/Dock.vala:157
-msgid "Icon size:"
-msgstr "Dimensiune pictograma:"
-
-#: src/Views/Dock.vala:159
-msgid "Hide when:"
-msgstr "Ascundeți când:"
-
-#: src/Views/Dock.vala:163
-msgid "Pressure reveal:"
-msgstr "Difuzează previzualizarea:"
-
-#: src/Views/Dock.vala:203
-#, c-format
-msgid "Monitor %d"
-msgstr "Monitor %d 1"
-
-#: src/Views/Dock.vala:208
-#, c-format
-msgid "Display %d"
-msgstr "Afișaj %d 1"
-
-#: set-wallpaper-contract/set-wallpaper.vala:95
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d 1 secundă"
-msgstr[1] "%d 2 secunde"
-
-#: set-wallpaper-contract/set-wallpaper.vala:98
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d 1 minut"
-msgstr[1] "%d 2 minute"
-
-#: set-wallpaper-contract/set-wallpaper.vala:102
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d 1 oră"
-msgstr[1] "%d 2 ore"
-
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "1 zi"
-
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "Afișați fiecare fotografie pentru"
-
-#: set-wallpaper-contract/set-wallpaper.vala:222
-#: set-wallpaper-contract/set-wallpaper.vala:230
-msgid "Set As Desktop Slideshow"
-msgstr "Setați ca Prezentare de Spațiul de lucru"
-
-#: set-wallpaper-contract/set-wallpaper.vala:226
-msgid "Create slideshow"
-msgstr "Creează prezentare"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -284,6 +95,205 @@ msgstr "Setează ca imagine de fundal"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Setați imaginea selectată ca fiind noul fundal pentru desktop"
+
+#: src/Views/Appearance.vala:41
+msgid "Window animations:"
+msgstr ""
+
+#: src/Views/Appearance.vala:47
+msgid "Panel translucency:"
+msgstr ""
+
+#: src/Views/Appearance.vala:53
+#, fuzzy
+msgid "Text size:"
+msgstr "Dimensiune pictograma:"
+
+#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "Mic"
+
+#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
+msgid "Default"
+msgstr ""
+
+#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
+msgid "Large"
+msgstr "Mare"
+
+#: src/Views/Appearance.vala:60
+#, fuzzy
+msgid "Larger"
+msgstr "Mare"
+
+#: src/Views/Dock.vala:70
+msgid "Focused window is maximized"
+msgstr "Fereastra focalizată este maximizată"
+
+#: src/Views/Dock.vala:71
+msgid "Focused window overlaps the dock"
+msgstr "Fereastra focalizată se suprapune pe doc"
+
+#: src/Views/Dock.vala:72
+msgid "Any window overlaps the dock"
+msgstr "Orice fereastră se suprapune pe doc"
+
+#: src/Views/Dock.vala:73
+msgid "Not being used"
+msgstr "Nu este folosit"
+
+#: src/Views/Dock.vala:109
+msgid "Primary display:"
+msgstr "Afișaj principal:"
+
+#: src/Views/Dock.vala:113
+msgid "Display:"
+msgstr "Afişaj:"
+
+#: src/Views/Dock.vala:144
+msgid "Icon size:"
+msgstr "Dimensiune pictograma:"
+
+#: src/Views/Dock.vala:146
+msgid "Hide when:"
+msgstr "Ascundeți când:"
+
+#: src/Views/Dock.vala:150
+msgid "Pressure reveal:"
+msgstr "Difuzează previzualizarea:"
+
+#: src/Views/Dock.vala:217
+#, c-format
+msgid "Monitor %d"
+msgstr "Monitor %d 1"
+
+#: src/Views/Dock.vala:222
+#, c-format
+msgid "Display %d"
+msgstr "Afișaj %d 1"
+
+#: src/Views/HotCorners.vala:37
+msgid "When the cursor enters the corner of the display:"
+msgstr "Când cursorul intră în colțul ecranului:"
+
+#: src/Views/HotCorners.vala:69
+msgid "Custom command:"
+msgstr "Comandă personalizată:"
+
+#: src/Views/HotCorners.vala:108
+msgid "Do nothing"
+msgstr "Nu face nimic"
+
+#. none
+#: src/Views/HotCorners.vala:109
+msgid "Multitasking View"
+msgstr "Vizualizare multitasking"
+
+#. show-workspace-view
+#: src/Views/HotCorners.vala:110
+msgid "Maximize current window"
+msgstr "Maximizați fereastra curentă"
+
+#. maximize-current
+#: src/Views/HotCorners.vala:111
+msgid "Show Applications Menu"
+msgstr "Afișați meniul Aplicații"
+
+#. open-launcher
+#: src/Views/HotCorners.vala:112
+msgid "Show all windows"
+msgstr "Afișați toate ferestrele"
+
+#. window-overview-all
+#: src/Views/HotCorners.vala:113
+msgid "Switch to new workspace"
+msgstr ""
+
+#. switch-new-workspace
+#: src/Views/HotCorners.vala:114
+msgid "Execute custom command"
+msgstr "Executați comanda personalizată"
+
+#: src/Views/Wallpaper.vala:100
+msgid "Import Photo…"
+msgstr "Importați fotografia …"
+
+#: src/Views/Wallpaper.vala:105
+msgid "Centered"
+msgstr "Centrat"
+
+#: src/Views/Wallpaper.vala:106
+msgid "Zoom"
+msgstr "Înfocare"
+
+#: src/Views/Wallpaper.vala:107
+msgid "Spanned"
+msgstr "Etalonează"
+
+#: src/Views/Wallpaper.vala:150
+msgid "Import Photo"
+msgstr "Importați fotografia"
+
+#: src/Views/Wallpaper.vala:151
+msgid "Import"
+msgstr "Importare"
+
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+msgid "Cancel"
+msgstr "Anulare"
+
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "Șterge"
+
+#: src/Widgets/WallpaperContainer.vala:188
+#, c-format
+msgid "Artist: %s"
+msgstr "Artist: %s 1"
+
+#: set-wallpaper-contract/set-wallpaper.vala:94
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d 1 secundă"
+msgstr[1] "%d 2 secunde"
+
+#: set-wallpaper-contract/set-wallpaper.vala:97
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d 1 minut"
+msgstr[1] "%d 2 minute"
+
+#: set-wallpaper-contract/set-wallpaper.vala:101
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d 1 oră"
+msgstr[1] "%d 2 ore"
+
+#: set-wallpaper-contract/set-wallpaper.vala:104
+msgid "1 day"
+msgstr "1 zi"
+
+#: set-wallpaper-contract/set-wallpaper.vala:108
+msgid "Show each photo for"
+msgstr "Afișați fiecare fotografie pentru"
+
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
+msgid "Set As Desktop Slideshow"
+msgstr "Setați ca Prezentare de Spațiul de lucru"
+
+#: set-wallpaper-contract/set-wallpaper.vala:223
+msgid "Create slideshow"
+msgstr "Creează prezentare"
+
+#~ msgid "Normal"
+#~ msgstr "Normală"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "Personalizat (%d 1px)"
 
 #~ msgid "Theme"
 #~ msgstr "Temă"

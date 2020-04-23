@@ -39,8 +39,6 @@ public class Wallpaper : Gtk.Grid {
         FileAttribute.THUMBNAIL_IS_VALID
     };
 
-    const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
-
     public Switchboard.Plug plug { get; construct set; }
     private GLib.Settings settings;
 
@@ -210,7 +208,15 @@ public class Wallpaper : Gtk.Grid {
         string uri = file.get_uri ();
         string path = file.get_path ();
 
-        if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
+        bool path_has_prefix_bg_dir = false;
+        foreach (unowned string directory in get_bg_directories ()) {
+            if (path.has_prefix (directory)) {
+                path_has_prefix_bg_dir = true;
+                break;
+            }
+        }
+
+        if (!path_has_prefix_bg_dir) {
             var local_file = copy_for_library (file);
             if (local_file != null) {
                 uri = local_file.get_uri ();
@@ -313,8 +319,9 @@ public class Wallpaper : Gtk.Grid {
 
         clean_wallpapers ();
 
-        load_wallpapers.begin (SYSTEM_BACKGROUNDS_PATH, cancellable);
-        load_wallpapers.begin (get_local_bg_location (), cancellable);
+        foreach (unowned string directory in get_bg_directories ()) {
+            load_wallpapers.begin (directory, cancellable);
+        }
     }
 
     private async void load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
@@ -400,16 +407,37 @@ public class Wallpaper : Gtk.Grid {
         solid_color = null;
     }
 
-    private static string get_local_bg_location () {
+    private static string get_local_bg_directory () {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
+    }
+
+    private string[] get_bg_directories () {
+        string[] background_directories = {};
+
+        // Add user background directory first
+        background_directories += get_local_bg_directory ();
+
+        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
+            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
+            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
+                debug ("Found system background directory: %s", system_background_dir);
+                background_directories += system_background_dir;
+            }
+        }
+
+        if (background_directories.length == 0) {
+            warning ("No background directories found");
+        }
+
+        return background_directories;
     }
 
     private static File? copy_for_library (File source) {
         File? dest = null;
 
-        string local_bg_location = get_local_bg_location ();
+        string local_bg_directory = get_local_bg_directory ();
         try {
-            File folder = File.new_for_path (local_bg_location);
+            File folder = File.new_for_path (local_bg_directory);
             folder.make_directory_with_parents ();
         } catch (Error e) {
             if (e is GLib.IOError.EXISTS) {
@@ -420,7 +448,7 @@ public class Wallpaper : Gtk.Grid {
         }
 
         try {
-            string path = Path.build_filename (local_bg_location, source.get_basename ());
+            string path = Path.build_filename (local_bg_directory, source.get_basename ());
             dest = File.new_for_path (path);
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
@@ -451,6 +479,8 @@ public class Wallpaper : Gtk.Grid {
 
             dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+            // Ensure wallpaper is readable by greeter user (owner rw, others r)
+            FileUtils.chmod (dest.get_path (), 0604);
         } catch (Error e) {
             warning (e.message);
             return null;
