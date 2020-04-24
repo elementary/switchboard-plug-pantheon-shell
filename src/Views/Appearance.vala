@@ -92,6 +92,53 @@ public class Appearance : Gtk.Grid {
 
         update_text_size_modebutton (interface_settings);
 
+        Pantheon.AccountsService? pantheon_act = null;
+        FDO.Accounts? accounts_service = null;
+        string? user_path = null;
+        try {
+            accounts_service = GLib.Bus.get_proxy_sync (
+                GLib.BusType.SYSTEM,
+               "org.freedesktop.Accounts",
+               "/org/freedesktop/Accounts"
+            );
+
+            user_path = accounts_service.find_user_by_name (GLib.Environment.get_user_name ());
+        } catch (Error e) {
+            critical (e.message);
+        }
+
+        try {
+            pantheon_act = GLib.Bus.get_proxy_sync (
+                GLib.BusType.SYSTEM,
+                "org.freedesktop.Accounts",
+                user_path,
+                GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES
+            );
+        } catch (Error e) {
+            warning ("Unable to get AccountsService proxy, color scheme preference may be incorrect");
+        }
+
+        critical (pantheon_act.prefers_color_scheme.to_string ());
+
+        // FIXME: This seems… not ideal. Can't we bind this?
+        switch (pantheon_act.prefers_color_scheme) {
+            case Granite.Settings.ColorScheme.DARK:
+                dark_switch.active = true;
+                break;
+            default:
+                dark_switch.active = false;
+                break;
+        }
+
+        // FIXME: and bind this
+        dark_switch.notify["active"].connect (() => {
+            if (dark_switch.active) {
+                pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
+            } else {
+                pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.NO_PREFERENCE;
+            }
+        });
+
         interface_settings.changed.connect (() => {
             update_text_size_modebutton (interface_settings);
         });

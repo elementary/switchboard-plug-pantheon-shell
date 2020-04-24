@@ -1,6 +1,7 @@
 plug_files = files(
     'ThumbnailGenerator.vala',
     'IOHelper.vala',
+    'PantheonAccountsServicePlugin.vala',
     'Plug.vala',
     'Widgets/WallpaperContainer.vala',
     'Widgets/SolidColorContainer.vala',
