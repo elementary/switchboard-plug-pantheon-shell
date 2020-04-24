@@ -119,7 +119,7 @@ public class Appearance : Gtk.Grid {
             }
         }
 
-        if (pantheon_act != null) {
+        if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
             attach (dark_label, 0, 0);
             attach (dark_switch, 1, 0);
             attach (dark_info, 1, 1);
