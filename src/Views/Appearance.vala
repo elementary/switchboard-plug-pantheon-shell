@@ -72,9 +72,8 @@ public class Appearance : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        attach (dark_label, 0, 0);
-        attach (dark_switch, 1, 0);
-        attach (dark_info, 1, 1);
+        // Row 0 and 1 are for the dark style UI that gets attached only if we
+        // can connect to the DBus API
         attach (animations_label, 0, 2);
         attach (animations_switch, 1, 2);
         attach (translucency_label, 0, 3);
@@ -121,6 +120,10 @@ public class Appearance : Gtk.Grid {
         }
 
         if (pantheon_act != null) {
+            attach (dark_label, 0, 0);
+            attach (dark_switch, 1, 0);
+            attach (dark_info, 1, 1);
+
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
                     dark_switch.active = true;
