@@ -118,8 +118,6 @@ public class Appearance : Gtk.Grid {
             warning ("Unable to get AccountsService proxy, color scheme preference may be incorrect");
         }
 
-        critical (pantheon_act.prefers_color_scheme.to_string ());
-
         // FIXME: This seems… not ideal. Can't we bind this?
         switch (pantheon_act.prefers_color_scheme) {
             case Granite.Settings.ColorScheme.DARK:
