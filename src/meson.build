@@ -1,6 +1,7 @@
 plug_files = files(
     'ThumbnailGenerator.vala',
     'IOHelper.vala',
+    'PantheonAccountsServicePlugin.vala',
     'Plug.vala',
     'Widgets/WallpaperContainer.vala',
     'Widgets/SolidColorContainer.vala',
@@ -33,8 +34,8 @@ shared_module(
         glib_dep,
         gio_dep,
         gobject_dep,
+        granite_dep,
         gtk_dep,
-        dependency('granite'),
         dependency('gexiv2'),
         dependency('gnome-desktop-3.0'),
         plank_dep,

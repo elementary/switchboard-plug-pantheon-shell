@@ -38,6 +38,19 @@ public class Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
+        var dark_label = new Gtk.Label (_("Prefer dark style:"));
+        dark_label.halign = Gtk.Align.END;
+
+        var dark_switch = new Gtk.Switch ();
+        dark_switch.halign = Gtk.Align.START;
+
+        var dark_info = new Gtk.Label (_("Use a dark visual style for system components like the Panel indicators."));
+        dark_info.max_width_chars = 60;
+        dark_info.margin_bottom = 18;
+        dark_info.wrap = true;
+        dark_info.xalign = 0;
+        dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
         var animations_label = new Gtk.Label (_("Window animations:"));
         animations_label.halign = Gtk.Align.END;
 
@@ -59,12 +72,14 @@ public class Appearance : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        attach (animations_label, 0, 0);
-        attach (animations_switch, 1, 0);
-        attach (translucency_label, 0, 1);
-        attach (translucency_switch, 1, 1);
-        attach (text_size_label, 0, 2);
-        attach (text_size_modebutton, 1, 2);
+        // Row 0 and 1 are for the dark style UI that gets attached only if we
+        // can connect to the DBus API
+        attach (animations_label, 0, 2);
+        attach (animations_switch, 1, 2);
+        attach (translucency_label, 0, 3);
+        attach (translucency_switch, 1, 3);
+        attach (text_size_label, 0, 4);
+        attach (text_size_modebutton, 1, 4);
 
         var animations_settings = new Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -75,6 +90,57 @@ public class Appearance : Gtk.Grid {
         var interface_settings = new Settings (INTERFACE_SCHEMA);
 
         update_text_size_modebutton (interface_settings);
+
+        Pantheon.AccountsService? pantheon_act = null;
+
+        string? user_path = null;
+        try {
+            FDO.Accounts? accounts_service = GLib.Bus.get_proxy_sync (
+                GLib.BusType.SYSTEM,
+               "org.freedesktop.Accounts",
+               "/org/freedesktop/Accounts"
+            );
+
+            user_path = accounts_service.find_user_by_name (GLib.Environment.get_user_name ());
+        } catch (Error e) {
+            critical (e.message);
+        }
+
+        if (user_path != null) {
+            try {
+                pantheon_act = GLib.Bus.get_proxy_sync (
+                    GLib.BusType.SYSTEM,
+                    "org.freedesktop.Accounts",
+                    user_path,
+                    GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES
+                );
+            } catch (Error e) {
+                warning ("Unable to get AccountsService proxy, color scheme preference may be incorrect");
+            }
+        }
+
+        if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
+            attach (dark_label, 0, 0);
+            attach (dark_switch, 1, 0);
+            attach (dark_info, 1, 1);
+
+            switch (pantheon_act.prefers_color_scheme) {
+                case Granite.Settings.ColorScheme.DARK:
+                    dark_switch.active = true;
+                    break;
+                default:
+                    dark_switch.active = false;
+                    break;
+            }
+
+            dark_switch.notify["active"].connect (() => {
+                if (dark_switch.active) {
+                    pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
+                } else {
+                    pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.NO_PREFERENCE;
+                }
+            });
+        }
 
         interface_settings.changed.connect (() => {
             update_text_size_modebutton (interface_settings);
