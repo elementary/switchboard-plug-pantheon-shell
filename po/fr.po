@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-27 00:12+0000\n"
-"PO-Revision-Date: 2020-04-17 08:26+0000\n"
+"PO-Revision-Date: 2020-04-28 00:41+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fr/>\n"
@@ -102,12 +102,14 @@ msgstr "Définit l'image sélectionnée comme le nouveau fond d'écran"
 
 #: src/Views/Appearance.vala:41
 msgid "Prefer dark style:"
-msgstr ""
+msgstr "Préférer le thème sombre :"
 
 #: src/Views/Appearance.vala:47
 msgid ""
 "Use a dark visual style for system components like the Panel indicators."
 msgstr ""
+"Utilise un thème visuel sombre pour les composants du systèmes tels que les "
+"indicateurs du panneau."
 
 #: src/Views/Appearance.vala:54
 msgid "Window animations:"
