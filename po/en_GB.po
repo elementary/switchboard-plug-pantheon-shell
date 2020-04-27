@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-16 18:25+0000\n"
+"POT-Creation-Date: 2020-04-27 00:12+0000\n"
 "PO-Revision-Date: 2018-12-17 10:48+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
@@ -107,30 +107,39 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Set selected image to be the new desktop background"
 
 #: src/Views/Appearance.vala:41
+msgid "Prefer dark style:"
+msgstr ""
+
+#: src/Views/Appearance.vala:47
+msgid ""
+"Use a dark visual style for system components like the Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:54
 msgid "Window animations:"
 msgstr "Window animations:"
 
-#: src/Views/Appearance.vala:47
+#: src/Views/Appearance.vala:60
 msgid "Panel translucency:"
 msgstr "Panel translucency:"
 
-#: src/Views/Appearance.vala:53
+#: src/Views/Appearance.vala:66
 msgid "Text size:"
 msgstr "Text size:"
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Small"
 
-#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Default"
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Large"
 
-#: src/Views/Appearance.vala:60
+#: src/Views/Appearance.vala:73
 msgid "Larger"
 msgstr "Larger"
 

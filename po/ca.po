@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-16 18:25+0000\n"
+"POT-Creation-Date: 2020-04-27 00:12+0000\n"
 "PO-Revision-Date: 2020-04-18 09:10+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -102,30 +102,39 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Estableix la imatge seleccionada com a fons d'escriptori nou"
 
 #: src/Views/Appearance.vala:41
+msgid "Prefer dark style:"
+msgstr ""
+
+#: src/Views/Appearance.vala:47
+msgid ""
+"Use a dark visual style for system components like the Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:54
 msgid "Window animations:"
 msgstr "Animacions de finestres:"
 
-#: src/Views/Appearance.vala:47
+#: src/Views/Appearance.vala:60
 msgid "Panel translucency:"
 msgstr "Translucidesa del plafó:"
 
-#: src/Views/Appearance.vala:53
+#: src/Views/Appearance.vala:66
 msgid "Text size:"
 msgstr "Mida del text:"
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Petita"
 
-#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Grossa"
 
-#: src/Views/Appearance.vala:60
+#: src/Views/Appearance.vala:73
 msgid "Larger"
 msgstr "Més grossa"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-16 18:25+0000\n"
+"POT-Creation-Date: 2020-04-27 00:12+0000\n"
 "PO-Revision-Date: 2015-05-25 16:45+0000\n"
 "Last-Translator: Viktuk <register885@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,30 +96,39 @@ msgid "Set selected image to be the new desktop background"
 msgstr ""
 
 #: src/Views/Appearance.vala:41
-msgid "Window animations:"
+msgid "Prefer dark style:"
 msgstr ""
 
 #: src/Views/Appearance.vala:47
+msgid ""
+"Use a dark visual style for system components like the Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:54
+msgid "Window animations:"
+msgstr ""
+
+#: src/Views/Appearance.vala:60
 msgid "Panel translucency:"
 msgstr ""
 
-#: src/Views/Appearance.vala:53
+#: src/Views/Appearance.vala:66
 msgid "Text size:"
 msgstr ""
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
 msgid "Small"
 msgstr ""
 
-#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
 msgid "Default"
 msgstr ""
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Вялікі"
 
-#: src/Views/Appearance.vala:60
+#: src/Views/Appearance.vala:73
 #, fuzzy
 msgid "Larger"
 msgstr "Вялікі"

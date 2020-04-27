@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-16 18:25+0000\n"
+"POT-Creation-Date: 2020-04-27 00:12+0000\n"
 "PO-Revision-Date: 2020-04-21 00:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -96,30 +96,39 @@ msgid "Set selected image to be the new desktop background"
 msgstr "選択された画像を新しいデスクトップの背景として設定します"
 
 #: src/Views/Appearance.vala:41
+msgid "Prefer dark style:"
+msgstr ""
+
+#: src/Views/Appearance.vala:47
+msgid ""
+"Use a dark visual style for system components like the Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:54
 msgid "Window animations:"
 msgstr "ウィンドウアニメーション:"
 
-#: src/Views/Appearance.vala:47
+#: src/Views/Appearance.vala:60
 msgid "Panel translucency:"
 msgstr "パネルを透過:"
 
-#: src/Views/Appearance.vala:53
+#: src/Views/Appearance.vala:66
 msgid "Text size:"
 msgstr "テキストサイズ:"
 
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "小"
 
-#: src/Views/Appearance.vala:58 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "大"
 
-#: src/Views/Appearance.vala:60
+#: src/Views/Appearance.vala:73
 msgid "Larger"
 msgstr "最大"
 
