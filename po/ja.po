@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-27 00:12+0000\n"
-"PO-Revision-Date: 2020-04-21 00:10+0000\n"
+"PO-Revision-Date: 2020-04-28 00:41+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -97,12 +97,12 @@ msgstr "選択された画像を新しいデスクトップの背景として設
 
 #: src/Views/Appearance.vala:41
 msgid "Prefer dark style:"
-msgstr ""
+msgstr "ダークスタイル:"
 
 #: src/Views/Appearance.vala:47
 msgid ""
 "Use a dark visual style for system components like the Panel indicators."
-msgstr ""
+msgstr "パネルインジケーターなどのシステムコンポーネントにダークスタイルを使用します。"
 
 #: src/Views/Appearance.vala:54
 msgid "Window animations:"
