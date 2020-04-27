@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-27 00:12+0000\n"
-"PO-Revision-Date: 2020-04-18 09:10+0000\n"
+"PO-Revision-Date: 2020-04-28 00:41+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ca/>\n"
@@ -103,12 +103,14 @@ msgstr "Estableix la imatge seleccionada com a fons d'escriptori nou"
 
 #: src/Views/Appearance.vala:41
 msgid "Prefer dark style:"
-msgstr ""
+msgstr "Prefereix l'estil fosc:"
 
 #: src/Views/Appearance.vala:47
 msgid ""
 "Use a dark visual style for system components like the Panel indicators."
 msgstr ""
+"S'usa un estil visual fosc per a components del sistema com ara els "
+"indicadors del plafó."
 
 #: src/Views/Appearance.vala:54
 msgid "Window animations:"
