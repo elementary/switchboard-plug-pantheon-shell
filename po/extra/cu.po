@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-18 19:21+0000\n"
+"POT-Creation-Date: 2020-04-28 22:19+0000\n"
 "PO-Revision-Date: 2018-05-09 16:23-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
-msgid "Desktop"
+msgid "Desktop Settings"
 msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6

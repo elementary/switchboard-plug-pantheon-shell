@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-18 19:21+0000\n"
+"POT-Creation-Date: 2020-04-28 22:19+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -20,7 +20,9 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
-msgid "Desktop"
+#, fuzzy
+#| msgid "Desktop"
+msgid "Desktop Settings"
 msgstr "桌面"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
