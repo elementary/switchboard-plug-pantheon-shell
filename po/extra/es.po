@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:19+0000\n"
-"PO-Revision-Date: 2019-11-14 16:24+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"PO-Revision-Date: 2020-04-30 04:10+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/es/>\n"
 "Language: es\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
-#, fuzzy
-#| msgid "Desktop"
 msgid "Desktop Settings"
-msgstr "Escritorio"
+msgstr "Configuración de escritorio"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -31,15 +29,15 @@ msgstr "Configurar el dock, esquinas activas y fondo de escritorio"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Se ilustran los tamaños de iconos del dock"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Se corrigió la copia de los fondos de pantalla del sistema"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Update search results"
-msgstr ""
+msgstr "Se actualizaron los resultados de la búsqueda"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
