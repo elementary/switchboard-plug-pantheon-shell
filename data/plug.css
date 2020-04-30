@@ -85,3 +85,8 @@
         0 0 0 1px alpha (#000, 0.05),
         0 3px 3px alpha (#000, 0.22);
 }
+
+radiobutton .card {
+    background-color: mix(@base_color, @colorAccent, 0.05);
+    border-radius: 4px;
+}
