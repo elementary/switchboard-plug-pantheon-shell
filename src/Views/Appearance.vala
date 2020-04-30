@@ -38,7 +38,7 @@ public class Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
-        var dark_label = new Gtk.Label (_("Appearance:"));
+        var dark_label = new Gtk.Label (_("Style:"));
         dark_label.halign = Gtk.Align.END;
 
         var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
