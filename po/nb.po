@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 00:12+0000\n"
+"POT-Creation-Date: 2020-04-30 21:32+0000\n"
 "PO-Revision-Date: 2019-01-04 00:08+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
@@ -106,40 +106,44 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Bruk det valgte bildet som ny skrivebordsbakgrunn"
 
 #: src/Views/Appearance.vala:41
-msgid "Prefer dark style:"
+msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:47
-msgid ""
-"Use a dark visual style for system components like the Panel indicators."
+#: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
+#: src/Views/Dock.vala:42
+msgid "Default"
+msgstr "Forvalg"
+
+#: src/Views/Appearance.vala:73
+msgid "Dark"
 msgstr ""
 
-#: src/Views/Appearance.vala:54
+#: src/Views/Appearance.vala:81
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:88
 msgid "Window animations:"
 msgstr "Vindusanimasjoner:"
 
-#: src/Views/Appearance.vala:60
+#: src/Views/Appearance.vala:94
 msgid "Panel translucency:"
 msgstr "Panelgjennomsiktighet:"
 
-#: src/Views/Appearance.vala:66
+#: src/Views/Appearance.vala:100
 #, fuzzy
 msgid "Text size:"
 msgstr "Ikonstørrelse:"
 
-#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:104 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Lite"
 
-#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
-msgid "Default"
-msgstr "Forvalg"
-
-#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:106 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Stor"
 
-#: src/Views/Appearance.vala:73
+#: src/Views/Appearance.vala:107
 #, fuzzy
 msgid "Larger"
 msgstr "Stor"

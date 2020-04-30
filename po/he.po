@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 00:12+0000\n"
+"POT-Creation-Date: 2020-04-30 21:32+0000\n"
 "PO-Revision-Date: 2020-04-30 21:30+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -101,39 +101,46 @@ msgid "Set selected image to be the new desktop background"
 msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשולחן העבודה"
 
 #: src/Views/Appearance.vala:41
-msgid "Prefer dark style:"
-msgstr "העדפת סגנון חשוך:"
+msgid "Style:"
+msgstr ""
 
-#: src/Views/Appearance.vala:47
-msgid ""
-"Use a dark visual style for system components like the Panel indicators."
-msgstr "להשתמש בסגנון חזותי חשוך לרכיבי מערכת כגון מחווני חלוניות."
-
-#: src/Views/Appearance.vala:54
-msgid "Window animations:"
-msgstr "הנפשות חלון:"
-
-#: src/Views/Appearance.vala:60
-msgid "Panel translucency:"
-msgstr "שקיפות חלונית:"
-
-#: src/Views/Appearance.vala:66
-msgid "Text size:"
-msgstr "גודל כתב:"
-
-#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
-msgid "Small"
-msgstr "קטן"
-
-#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
+#: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "בררת מחדל"
 
-#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:73
+msgid "Dark"
+msgstr ""
+
+#: src/Views/Appearance.vala:81
+#, fuzzy
+#| msgid ""
+#| "Use a dark visual style for system components like the Panel indicators."
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr "להשתמש בסגנון חזותי חשוך לרכיבי מערכת כגון מחווני חלוניות."
+
+#: src/Views/Appearance.vala:88
+msgid "Window animations:"
+msgstr "הנפשות חלון:"
+
+#: src/Views/Appearance.vala:94
+msgid "Panel translucency:"
+msgstr "שקיפות חלונית:"
+
+#: src/Views/Appearance.vala:100
+msgid "Text size:"
+msgstr "גודל כתב:"
+
+#: src/Views/Appearance.vala:104 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "קטן"
+
+#: src/Views/Appearance.vala:106 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "גדול"
 
-#: src/Views/Appearance.vala:73
+#: src/Views/Appearance.vala:107
 msgid "Larger"
 msgstr "גדול מאוד"
 
@@ -299,6 +306,9 @@ msgstr "הגדרה כמצגת שולחן העבודה"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "יצירת מצגת"
+
+#~ msgid "Prefer dark style:"
+#~ msgstr "העדפת סגנון חשוך:"
 
 #~ msgid "Normal"
 #~ msgstr "רגיל"

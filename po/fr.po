@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 00:12+0000\n"
+"POT-Creation-Date: 2020-04-30 21:32+0000\n"
 "PO-Revision-Date: 2020-04-28 00:41+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -101,41 +101,48 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Définit l'image sélectionnée comme le nouveau fond d'écran"
 
 #: src/Views/Appearance.vala:41
-msgid "Prefer dark style:"
-msgstr "Préférer le thème sombre :"
+msgid "Style:"
+msgstr ""
 
-#: src/Views/Appearance.vala:47
-msgid ""
-"Use a dark visual style for system components like the Panel indicators."
+#: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
+#: src/Views/Dock.vala:42
+msgid "Default"
+msgstr "Défaut"
+
+#: src/Views/Appearance.vala:73
+msgid "Dark"
+msgstr ""
+
+#: src/Views/Appearance.vala:81
+#, fuzzy
+#| msgid ""
+#| "Use a dark visual style for system components like the Panel indicators."
+msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 "Utilise un thème visuel sombre pour les composants du systèmes tels que les "
 "indicateurs du panneau."
 
-#: src/Views/Appearance.vala:54
+#: src/Views/Appearance.vala:88
 msgid "Window animations:"
 msgstr "Animations des fenêtres :"
 
-#: src/Views/Appearance.vala:60
+#: src/Views/Appearance.vala:94
 msgid "Panel translucency:"
 msgstr "Transparence du panneau :"
 
-#: src/Views/Appearance.vala:66
+#: src/Views/Appearance.vala:100
 msgid "Text size:"
 msgstr "Taille du texte :"
 
-#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:104 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Petit"
 
-#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
-msgid "Default"
-msgstr "Défaut"
-
-#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:106 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Grand"
 
-#: src/Views/Appearance.vala:73
+#: src/Views/Appearance.vala:107
 msgid "Larger"
 msgstr "Plus grand"
 
@@ -301,6 +308,9 @@ msgstr "Définir comme fond d'écran animé"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Créer un fond d'écran animé"
+
+#~ msgid "Prefer dark style:"
+#~ msgstr "Préférer le thème sombre :"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 00:12+0000\n"
+"POT-Creation-Date: 2020-04-30 21:32+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -107,39 +107,43 @@ msgid "Set selected image to be the new desktop background"
 msgstr "將所選的影像設為新的桌面背景"
 
 #: src/Views/Appearance.vala:41
-msgid "Prefer dark style:"
+msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:47
-msgid ""
-"Use a dark visual style for system components like the Panel indicators."
-msgstr ""
-
-#: src/Views/Appearance.vala:54
-msgid "Window animations:"
-msgstr "視窗動畫："
-
-#: src/Views/Appearance.vala:60
-msgid "Panel translucency:"
-msgstr "面板透明度："
-
-#: src/Views/Appearance.vala:66
-msgid "Text size:"
-msgstr "文字大小："
-
-#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
-msgid "Small"
-msgstr "較小"
-
-#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
+#: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "預設"
 
-#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:73
+msgid "Dark"
+msgstr ""
+
+#: src/Views/Appearance.vala:81
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:88
+msgid "Window animations:"
+msgstr "視窗動畫："
+
+#: src/Views/Appearance.vala:94
+msgid "Panel translucency:"
+msgstr "面板透明度："
+
+#: src/Views/Appearance.vala:100
+msgid "Text size:"
+msgstr "文字大小："
+
+#: src/Views/Appearance.vala:104 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "較小"
+
+#: src/Views/Appearance.vala:106 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "大"
 
-#: src/Views/Appearance.vala:73
+#: src/Views/Appearance.vala:107
 msgid "Larger"
 msgstr "較大"
 

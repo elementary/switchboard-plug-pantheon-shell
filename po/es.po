@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 00:12+0000\n"
+"POT-Creation-Date: 2020-04-30 21:32+0000\n"
 "PO-Revision-Date: 2020-04-30 04:10+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -101,41 +101,48 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Configurar la imagen seleccionada como fondo de escritorio"
 
 #: src/Views/Appearance.vala:41
-msgid "Prefer dark style:"
-msgstr "Preferir estilo oscuro:"
+msgid "Style:"
+msgstr ""
 
-#: src/Views/Appearance.vala:47
-msgid ""
-"Use a dark visual style for system components like the Panel indicators."
+#: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
+#: src/Views/Dock.vala:42
+msgid "Default"
+msgstr "Predeterminado"
+
+#: src/Views/Appearance.vala:73
+msgid "Dark"
+msgstr ""
+
+#: src/Views/Appearance.vala:81
+#, fuzzy
+#| msgid ""
+#| "Use a dark visual style for system components like the Panel indicators."
+msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 "Se utilizará un estilo visual oscuro en componentes del sistema tales como "
 "los indicadores del panel."
 
-#: src/Views/Appearance.vala:54
+#: src/Views/Appearance.vala:88
 msgid "Window animations:"
 msgstr "Animación de ventana:"
 
-#: src/Views/Appearance.vala:60
+#: src/Views/Appearance.vala:94
 msgid "Panel translucency:"
 msgstr "Translucidez del panel:"
 
-#: src/Views/Appearance.vala:66
+#: src/Views/Appearance.vala:100
 msgid "Text size:"
 msgstr "Tamaño del texto:"
 
-#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:104 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Pequeño"
 
-#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
-msgid "Default"
-msgstr "Predeterminado"
-
-#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:106 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Grande"
 
-#: src/Views/Appearance.vala:73
+#: src/Views/Appearance.vala:107
 msgid "Larger"
 msgstr "Más grande"
 
@@ -301,6 +308,9 @@ msgstr "Establecer como pase de fondos"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Crear pase de fondos"
+
+#~ msgid "Prefer dark style:"
+#~ msgstr "Preferir estilo oscuro:"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

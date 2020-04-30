@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 00:12+0000\n"
+"POT-Creation-Date: 2020-04-30 21:32+0000\n"
 "PO-Revision-Date: 2018-12-24 10:49+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
@@ -107,39 +107,43 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Aseta valittu kuva työpöydän uudeksi taustakuvaksi"
 
 #: src/Views/Appearance.vala:41
-msgid "Prefer dark style:"
+msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:47
-msgid ""
-"Use a dark visual style for system components like the Panel indicators."
-msgstr ""
-
-#: src/Views/Appearance.vala:54
-msgid "Window animations:"
-msgstr "Ikkuna-animaatiot:"
-
-#: src/Views/Appearance.vala:60
-msgid "Panel translucency:"
-msgstr "Paneelin läpinäkyvyys:"
-
-#: src/Views/Appearance.vala:66
-msgid "Text size:"
-msgstr "Tekstin koko:"
-
-#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
-msgid "Small"
-msgstr "Pieni"
-
-#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
+#: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Oletus"
 
-#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:73
+msgid "Dark"
+msgstr ""
+
+#: src/Views/Appearance.vala:81
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:88
+msgid "Window animations:"
+msgstr "Ikkuna-animaatiot:"
+
+#: src/Views/Appearance.vala:94
+msgid "Panel translucency:"
+msgstr "Paneelin läpinäkyvyys:"
+
+#: src/Views/Appearance.vala:100
+msgid "Text size:"
+msgstr "Tekstin koko:"
+
+#: src/Views/Appearance.vala:104 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "Pieni"
+
+#: src/Views/Appearance.vala:106 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Suuri"
 
-#: src/Views/Appearance.vala:73
+#: src/Views/Appearance.vala:107
 msgid "Larger"
 msgstr "Suurempi"
 

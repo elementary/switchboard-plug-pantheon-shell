@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 00:12+0000\n"
+"POT-Creation-Date: 2020-04-30 21:32+0000\n"
 "PO-Revision-Date: 2018-12-17 20:58+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
@@ -104,39 +104,43 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Nustatyti pasirinktą paveikslą naujuoju darbalaukio fonu"
 
 #: src/Views/Appearance.vala:41
-msgid "Prefer dark style:"
+msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:47
-msgid ""
-"Use a dark visual style for system components like the Panel indicators."
-msgstr ""
-
-#: src/Views/Appearance.vala:54
-msgid "Window animations:"
-msgstr "Langų animacijos:"
-
-#: src/Views/Appearance.vala:60
-msgid "Panel translucency:"
-msgstr "Skydelio dalinis permatomumas:"
-
-#: src/Views/Appearance.vala:66
-msgid "Text size:"
-msgstr "Teksto dydis:"
-
-#: src/Views/Appearance.vala:70 src/Views/Dock.vala:38
-msgid "Small"
-msgstr "Mažas"
-
-#: src/Views/Appearance.vala:71 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
+#: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Numatytasis"
 
-#: src/Views/Appearance.vala:72 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:73
+msgid "Dark"
+msgstr ""
+
+#: src/Views/Appearance.vala:81
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:88
+msgid "Window animations:"
+msgstr "Langų animacijos:"
+
+#: src/Views/Appearance.vala:94
+msgid "Panel translucency:"
+msgstr "Skydelio dalinis permatomumas:"
+
+#: src/Views/Appearance.vala:100
+msgid "Text size:"
+msgstr "Teksto dydis:"
+
+#: src/Views/Appearance.vala:104 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "Mažas"
+
+#: src/Views/Appearance.vala:106 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Didelis"
 
-#: src/Views/Appearance.vala:73
+#: src/Views/Appearance.vala:107
 msgid "Larger"
 msgstr "Didesnis"
 
