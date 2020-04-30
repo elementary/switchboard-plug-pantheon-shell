@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-27 00:12+0000\n"
-"PO-Revision-Date: 2020-04-21 00:10+0000\n"
+"PO-Revision-Date: 2020-04-30 21:30+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
@@ -102,12 +102,12 @@ msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשול
 
 #: src/Views/Appearance.vala:41
 msgid "Prefer dark style:"
-msgstr ""
+msgstr "העדפת סגנון חשוך:"
 
 #: src/Views/Appearance.vala:47
 msgid ""
 "Use a dark visual style for system components like the Panel indicators."
-msgstr ""
+msgstr "להשתמש בסגנון חזותי חשוך לרכיבי מערכת כגון מחווני חלוניות."
 
 #: src/Views/Appearance.vala:54
 msgid "Window animations:"
