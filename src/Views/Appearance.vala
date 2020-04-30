@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 elementary, Inc. (https://elementary.io)
+* Copyright 2018-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -49,11 +49,15 @@ public class Appearance : Gtk.Grid {
         prefer_default_card.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
         prefer_default_card.add (prefer_default_image);
 
+        var prefer_default_grid = new Gtk.Grid ();
+        prefer_default_grid.row_spacing = 6;
+        prefer_default_grid.attach (prefer_default_card, 0, 0);
+        prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
+
         var prefer_default_radio = new Gtk.RadioButton (null);
-        prefer_default_radio.halign = Gtk.Align.CENTER;
-        prefer_default_radio.tooltip_text = _("Use the default visual style for system components like the Dock and Panel indicators.");
+        prefer_default_radio.halign = Gtk.Align.START;
         prefer_default_radio.get_style_context ().add_class ("image-button");
-        prefer_default_radio.add (prefer_default_card);
+        prefer_default_radio.add (prefer_default_grid);
 
         var prefer_dark_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg");
 
@@ -63,11 +67,23 @@ public class Appearance : Gtk.Grid {
         prefer_dark_card.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
         prefer_dark_card.add (prefer_dark_image);
 
+        var prefer_dark_grid = new Gtk.Grid ();
+        prefer_dark_grid.row_spacing = 6;
+        prefer_dark_grid.attach (prefer_dark_card, 0, 0);
+        prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
+
         var prefer_dark_radio = new Gtk.RadioButton.from_widget (prefer_default_radio);
-        prefer_dark_radio.halign = Gtk.Align.CENTER;
-        prefer_dark_radio.tooltip_text = _("Use a dark visual style for system components like the Dock and Panel indicators.");
+        prefer_dark_radio.halign = Gtk.Align.START;
+        prefer_dark_radio.hexpand = true;
         prefer_dark_radio.get_style_context ().add_class ("image-button");
-        prefer_dark_radio.add (prefer_dark_card);
+        prefer_dark_radio.add (prefer_dark_grid);
+
+        var dark_info = new Gtk.Label (_("Visual style for system components like the Dock and Panel indicators."));
+        dark_info.max_width_chars = 60;
+        dark_info.margin_bottom = 18;
+        dark_info.wrap = true;
+        dark_info.xalign = 0;
+        dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var animations_label = new Gtk.Label (_("Window animations:"));
         animations_label.halign = Gtk.Align.END;
@@ -141,6 +157,7 @@ public class Appearance : Gtk.Grid {
             attach (dark_label, 0, 0);
             attach (prefer_default_radio, 1, 0);
             attach (prefer_dark_radio, 2, 0);
+            attach (dark_info, 1, 1, 2);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
