@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 21:32+0000\n"
-"PO-Revision-Date: 2020-04-28 00:41+0000\n"
+"PO-Revision-Date: 2020-05-02 11:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:41
 msgid "Style:"
-msgstr ""
+msgstr "Estilo:"
 
 #: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
 #: src/Views/Dock.vala:42
@@ -112,16 +112,13 @@ msgstr "Predefinido"
 
 #: src/Views/Appearance.vala:73
 msgid "Dark"
-msgstr ""
+msgstr "Escuro"
 
 #: src/Views/Appearance.vala:81
-#, fuzzy
-#| msgid ""
-#| "Use a dark visual style for system components like the Panel indicators."
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
-"Usar um estilo visual escuro para componentes do sistema como os indicadores "
-"do Painel."
+"Estilo visual escuro para componentes do sistema como os indicadores da Doca "
+"e Painel."
 
 #: src/Views/Appearance.vala:88
 msgid "Window animations:"
