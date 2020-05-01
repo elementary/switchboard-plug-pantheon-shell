@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 21:32+0000\n"
-"PO-Revision-Date: 2019-04-13 15:53+0000\n"
+"PO-Revision-Date: 2020-05-02 11:10+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:43+0000\n"
 
 #: src/Plug.vala:40
@@ -63,22 +63,16 @@ msgid "Display"
 msgstr "Görünüm"
 
 #: src/Plug.vala:116
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "Pencere animasyonları:"
+msgstr "Pencere animasyonları"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "Panel saydamlığı:"
+msgstr "Panel saydamlığı"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Text size:"
 msgid "Text size"
-msgstr "Metin boyutu:"
+msgstr "Metin boyutu"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -108,7 +102,7 @@ msgstr "Seçili resmi yeni masaüstü arkaplanı olarak ayarla"
 
 #: src/Views/Appearance.vala:41
 msgid "Style:"
-msgstr ""
+msgstr "Stil:"
 
 #: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
 #: src/Views/Dock.vala:42
@@ -117,11 +111,11 @@ msgstr "Varsayılan"
 
 #: src/Views/Appearance.vala:73
 msgid "Dark"
-msgstr ""
+msgstr "Koyu"
 
 #: src/Views/Appearance.vala:81
 msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr ""
+msgstr "Rıhtım ve Panel göstergeleri gibi sistem bileşenleri için görsel stil."
 
 #: src/Views/Appearance.vala:88
 msgid "Window animations:"
