@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 21:32+0000\n"
-"PO-Revision-Date: 2020-05-02 11:10+0000\n"
+"PO-Revision-Date: 2020-05-08 14:10+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ca/>\n"
@@ -150,7 +150,7 @@ msgstr "Es maximitza la finestra focalitzada"
 
 #: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
-msgstr "La finestra focalitzada tapa l'acoblador"
+msgstr "La finestra amb el focus tapa l'acoblador"
 
 #: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
