@@ -19,53 +19,6 @@
 */
 
 public class Appearance : Gtk.Grid {
-    private const string CSS = """
-        /*  TODO: Improve this, probably just add it to greenfield */
-        .color-button radio,
-        .color-button radio:checked {
-            border-color: alpha(#000, 0.3);
-            border-radius: 50%;
-            color: #fff;
-            padding: 0.5rem;
-            -gtk-icon-shadow: none;
-        }
-
-        /* TODO: Should probably just add like `blueberry-bg`, etc. to greenfield?
-         * That way it could even be a different shade for light/dark.
-         */
-
-        .color-button.blueberry radio {
-            background: @BLUEBERRY_500;
-        }
-
-        .color-button.strawberry radio {
-            background: @STRAWBERRY_500;
-        }
-
-        .color-button.orange radio {
-            background: @ORANGE_500;
-        }
-
-        .color-button.banana radio {
-            background: @BANANA_500;
-        }
-
-        .color-button.lime radio {
-            background: @LIME_500;
-        }
-
-        .color-button.mint radio {
-            background: @MINT_500;
-        }
-
-        .color-button.grape radio {
-            background: @GRAPE_500;
-        }
-
-        .color-button.bubblegum radio {
-            background: @BUBBLEGUM_500;
-        }
-    """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
@@ -304,19 +257,6 @@ public class Appearance : Gtk.Grid {
         text_size_modebutton.mode_changed.connect (() => {
             set_text_scale (interface_settings, text_size_modebutton.selected);
         });
-
-        var provider = new Gtk.CssProvider ();
-        try {
-            provider.load_from_data (CSS, CSS.length);
-
-            Gtk.StyleContext.add_provider_for_screen (
-                Gdk.Screen.get_default (),
-                provider,
-                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-            );
-        } catch (GLib.Error e) {
-            return;
-        }
     }
 
     private class ColorButton : Gtk.RadioButton {
