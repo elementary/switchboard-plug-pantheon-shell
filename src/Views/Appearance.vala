@@ -22,26 +22,28 @@ public class Appearance : Gtk.Grid {
     private const string CSS = """
         .color-button radio,
         .color-button radio:checked {
-            border-color: alpha (#000, 0.3);
-            box-shadow:
-                inset 0 1px 0 0 alpha (@inset_dark_color, 0.7),
-                inset 0 0 0 1px alpha (@inset_dark_color, 0.3),
-                0 1px 0 0 alpha (@bg_highlight_color, 0.3);
+            border-color: alpha(#000, 0.3);
+            border-radius: 50%;
             color: #fff;
-            padding: 6px;
+            padding: 0.5rem;
             -gtk-icon-shadow: none;
         }
 
         .color-button.blueberry radio {
-            background: shade(@BLUEBERRY_300, 0.85);
+            background: @BLUEBERRY_500;
         }
 
-        .color-button.slate radio {
-            background: @SLATE_300;
+        .color-button.strawberry radio {
+            background: @STRAWBERRY_500;
+        }
+
+        .color-button.grape radio {
+            background: @GRAPE_500;
         }
     """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
+    private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
 
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
@@ -107,29 +109,36 @@ public class Appearance : Gtk.Grid {
         dark_info.xalign = 0;
         dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var accent_label = new Gtk.Label (_("Accent color:"));
+        /// TRANSLATORS: as in "Accent color"
+        var accent_label = new Gtk.Label (_("Accent:"));
         accent_label.halign = Gtk.Align.END;
 
-        var blueberry_button = new Gtk.RadioButton (null);
-        blueberry_button.tooltip_text = _("Blueberry");
-        blueberry_button.width_request = blueberry_button.height_request = 24;
+        var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
-        var blueberry_button_context = blueberry_button.get_style_context ();
-        blueberry_button_context.add_class ("color-button");
-        blueberry_button_context.add_class ("blueberry");
-
-        var slate_button = new Gtk.RadioButton.from_widget (blueberry_button);
-        slate_button.tooltip_text = _("Slate");
-        slate_button.width_request = slate_button.height_request = 24;
-
-        var slate_button_context = slate_button.get_style_context ();
-        slate_button_context.add_class ("color-button");
-        slate_button_context.add_class ("slate");
+        // TODO: Maybe foreach over an array of arrays of color names and human names?
+        var blueberry_button = new ColorButton (
+            "blueberry",
+            _("Blueberry"),
+            interface_settings
+        );
+        var strawberry_button = new ColorButton (
+            "strawberry",
+            _("Strawberry"),
+            interface_settings,
+            blueberry_button
+        );
+        var grape_button = new ColorButton (
+            "grape",
+            _("Grape"),
+            interface_settings,
+            blueberry_button
+        );
 
         var accent_grid = new Gtk.Grid ();
         accent_grid.column_spacing = 6;
-        accent_grid.attach (blueberry_button, 0, 0);
-        accent_grid.attach (slate_button, 1, 0);
+        accent_grid.add (blueberry_button);
+        accent_grid.add (strawberry_button);
+        accent_grid.add (grape_button);
 
         var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
         accent_info.margin_bottom = 18;
@@ -168,13 +177,11 @@ public class Appearance : Gtk.Grid {
         attach (text_size_label, 0, 6);
         attach (text_size_modebutton, 1, 6, 2);
 
-        var animations_settings = new Settings (ANIMATIONS_SCHEMA);
+        var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
-        var panel_settings = new Settings (PANEL_SCHEMA);
+        var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
-
-        var interface_settings = new Settings (INTERFACE_SCHEMA);
 
         update_text_size_modebutton (interface_settings);
 
@@ -250,22 +257,53 @@ public class Appearance : Gtk.Grid {
         } catch (GLib.Error e) {
             return;
         }
+    }
 
-        var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
+    private class ColorButton : Gtk.RadioButton {
+        public string color_name { get; construct; }
+        public string human_name { get; construct; }
+        public GLib.Settings interface_settings { get; construct; }
+        public Gtk.RadioButton? radio_group_member { get; construct; }
 
-        if (current_stylesheet == "elementary") {
-            blueberry_button.active = true;
-        } else if (current_stylesheet == "elementary-slate") {
-            slate_button.active = true;
+        public ColorButton (
+            string _color_name,
+            string _human_name,
+            GLib.Settings _interface_settings,
+            Gtk.RadioButton? _radio_group_member = null
+        ) {
+            Object (
+                color_name: _color_name,
+                human_name: _human_name,
+                interface_settings: _interface_settings,
+                radio_group_member: _radio_group_member
+            );
         }
 
-        blueberry_button.clicked.connect (() => {
-            interface_settings.set_string (STYLESHEET_KEY, "elementary");
-        });
+        construct {
+            tooltip_text = _(human_name);
+            width_request = height_request = 24;
 
-        slate_button.clicked.connect (() => {
-            interface_settings.set_string (STYLESHEET_KEY, "elementary-slate");
-        });
+            var context = get_style_context ();
+            context.add_class ("color-button");
+            context.add_class (color_name);
+
+            var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
+            var current_accent = current_stylesheet.replace (STYLESHEET_PREFIX, "");
+            if (current_accent == color_name) {
+                active = true;
+            }
+
+            if (radio_group_member != null) {
+                set_group (radio_group_member.get_group ());
+            }
+
+            clicked.connect (() => {
+                interface_settings.set_string (
+                    STYLESHEET_KEY,
+                    STYLESHEET_PREFIX + color_name
+                );
+            });
+        }
     }
 
     private int get_text_scale (GLib.Settings interface_settings) {
