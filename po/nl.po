@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 21:32+0000\n"
-"PO-Revision-Date: 2020-01-04 11:07+0000\n"
+"PO-Revision-Date: 2020-05-08 14:10+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
@@ -63,22 +63,16 @@ msgid "Display"
 msgstr "Beeldscherm"
 
 #: src/Plug.vala:116
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "Venster animaties:"
+msgstr "Venster animaties"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "Paneel doorzichtigheid:"
+msgstr "Paneel doorzichtigheid"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Text size:"
 msgid "Text size"
-msgstr "Tekstgrootte:"
+msgstr "Tekstgrootte"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -108,7 +102,7 @@ msgstr "Gebruik de geselecteerde afbeelding als nieuwe bureaubladachtergrond"
 
 #: src/Views/Appearance.vala:41
 msgid "Style:"
-msgstr ""
+msgstr "Stijl:"
 
 #: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
 #: src/Views/Dock.vala:42
@@ -117,11 +111,12 @@ msgstr "Standaard"
 
 #: src/Views/Appearance.vala:73
 msgid "Dark"
-msgstr ""
+msgstr "Donker"
 
 #: src/Views/Appearance.vala:81
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
+"Visuele stijl voor systeemonderdelen zoals de Dock en Panel indicatoren."
 
 #: src/Views/Appearance.vala:88
 msgid "Window animations:"
