@@ -20,6 +20,7 @@
 
 public class Appearance : Gtk.Grid {
     private const string CSS = """
+        /*  TODO: Improve this, probably just add it to greenfield */
         .color-button radio,
         .color-button radio:checked {
             border-color: alpha(#000, 0.3);
@@ -29,6 +30,10 @@ public class Appearance : Gtk.Grid {
             -gtk-icon-shadow: none;
         }
 
+        /* TODO: Should probably just add like `blueberry-bg`, etc. to greenfield?
+         * That way it could even be a different shade for light/dark.
+         */
+
         .color-button.blueberry radio {
             background: @BLUEBERRY_500;
         }
@@ -37,8 +42,28 @@ public class Appearance : Gtk.Grid {
             background: @STRAWBERRY_500;
         }
 
+        .color-button.orange radio {
+            background: @ORANGE_500;
+        }
+
+        .color-button.banana radio {
+            background: @BANANA_500;
+        }
+
+        .color-button.lime radio {
+            background: @LIME_500;
+        }
+
+        .color-button.mint radio {
+            background: @MINT_500;
+        }
+
         .color-button.grape radio {
             background: @GRAPE_500;
+        }
+
+        .color-button.bubblegum radio {
+            background: @BUBBLEGUM_500;
         }
     """;
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
@@ -127,9 +152,39 @@ public class Appearance : Gtk.Grid {
             interface_settings,
             blueberry_button
         );
+        var orange_button = new ColorButton (
+            "orange",
+            _("Orange"),
+            interface_settings,
+            blueberry_button
+        );
+        var banana_button = new ColorButton (
+            "banana",
+            _("Banana"),
+            interface_settings,
+            blueberry_button
+        );
+        var lime_button = new ColorButton (
+            "lime",
+            _("Lime"),
+            interface_settings,
+            blueberry_button
+        );
+        var mint_button = new ColorButton (
+            "mint",
+            _("Mint"),
+            interface_settings,
+            blueberry_button
+        );
         var grape_button = new ColorButton (
             "grape",
             _("Grape"),
+            interface_settings,
+            blueberry_button
+        );
+        var bubblegum_button = new ColorButton (
+            "bubblegum",
+            _("Bubblegum"),
             interface_settings,
             blueberry_button
         );
@@ -138,7 +193,12 @@ public class Appearance : Gtk.Grid {
         accent_grid.column_spacing = 6;
         accent_grid.add (blueberry_button);
         accent_grid.add (strawberry_button);
+        accent_grid.add (orange_button);
+        accent_grid.add (banana_button);
+        accent_grid.add (lime_button);
+        accent_grid.add (mint_button);
         accent_grid.add (grape_button);
+        accent_grid.add (bubblegum_button);
 
         var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
         accent_info.margin_bottom = 18;
