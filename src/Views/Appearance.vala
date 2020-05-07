@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 elementary, Inc. (https://elementary.io)
+* Copyright 2018-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -60,6 +60,53 @@ public class Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
+        var dark_label = new Gtk.Label (_("Style:"));
+        dark_label.halign = Gtk.Align.END;
+
+        var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
+
+        var prefer_default_card = new Gtk.Grid ();
+        prefer_default_card.margin = 6;
+        prefer_default_card.margin_start = 12;
+        prefer_default_card.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
+        prefer_default_card.add (prefer_default_image);
+
+        var prefer_default_grid = new Gtk.Grid ();
+        prefer_default_grid.row_spacing = 6;
+        prefer_default_grid.attach (prefer_default_card, 0, 0);
+        prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
+
+        var prefer_default_radio = new Gtk.RadioButton (null);
+        prefer_default_radio.halign = Gtk.Align.START;
+        prefer_default_radio.get_style_context ().add_class ("image-button");
+        prefer_default_radio.add (prefer_default_grid);
+
+        var prefer_dark_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg");
+
+        var prefer_dark_card = new Gtk.Grid ();
+        prefer_dark_card.margin = 6;
+        prefer_dark_card.margin_start = 12;
+        prefer_dark_card.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
+        prefer_dark_card.add (prefer_dark_image);
+
+        var prefer_dark_grid = new Gtk.Grid ();
+        prefer_dark_grid.row_spacing = 6;
+        prefer_dark_grid.attach (prefer_dark_card, 0, 0);
+        prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
+
+        var prefer_dark_radio = new Gtk.RadioButton.from_widget (prefer_default_radio);
+        prefer_dark_radio.halign = Gtk.Align.START;
+        prefer_dark_radio.hexpand = true;
+        prefer_dark_radio.get_style_context ().add_class ("image-button");
+        prefer_dark_radio.add (prefer_dark_grid);
+
+        var dark_info = new Gtk.Label (_("Visual style for system components like the Dock and Panel indicators."));
+        dark_info.max_width_chars = 60;
+        dark_info.margin_bottom = 18;
+        dark_info.wrap = true;
+        dark_info.xalign = 0;
+        dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
         var accent_label = new Gtk.Label (_("Accent color:"));
         accent_label.halign = Gtk.Align.END;
 
@@ -84,9 +131,9 @@ public class Appearance : Gtk.Grid {
         accent_grid.attach (blueberry_button, 0, 0);
         accent_grid.attach (slate_button, 1, 0);
 
-        var accent_help_label = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
-        accent_help_label.margin_bottom = 6;
-        accent_help_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
+        accent_info.margin_bottom = 18;
+        accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var animations_label = new Gtk.Label (_("Window animations:"));
         animations_label.halign = Gtk.Align.END;
@@ -109,15 +156,17 @@ public class Appearance : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        attach (accent_label, 0, 0);
-        attach (accent_grid,  1, 0);
-        attach (accent_help_label, 1, 1);
-        attach (animations_label, 0, 2);
-        attach (animations_switch, 1, 2);
-        attach (translucency_label, 0, 3);
-        attach (translucency_switch, 1, 3);
-        attach (text_size_label, 0, 4);
-        attach (text_size_modebutton, 1, 4);
+        // Row 0 and 1 are for the dark style UI that gets attached only if we
+        // can connect to the DBus API
+        attach (accent_label, 0, 2);
+        attach (accent_grid,  1, 2);
+        attach (accent_info, 1, 3, 2);
+        attach (animations_label, 0, 4);
+        attach (animations_switch, 1, 4);
+        attach (translucency_label, 0, 5);
+        attach (translucency_switch, 1, 5);
+        attach (text_size_label, 0, 6);
+        attach (text_size_modebutton, 1, 6, 2);
 
         var animations_settings = new Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -128,6 +177,58 @@ public class Appearance : Gtk.Grid {
         var interface_settings = new Settings (INTERFACE_SCHEMA);
 
         update_text_size_modebutton (interface_settings);
+
+        Pantheon.AccountsService? pantheon_act = null;
+
+        string? user_path = null;
+        try {
+            FDO.Accounts? accounts_service = GLib.Bus.get_proxy_sync (
+                GLib.BusType.SYSTEM,
+               "org.freedesktop.Accounts",
+               "/org/freedesktop/Accounts"
+            );
+
+            user_path = accounts_service.find_user_by_name (GLib.Environment.get_user_name ());
+        } catch (Error e) {
+            critical (e.message);
+        }
+
+        if (user_path != null) {
+            try {
+                pantheon_act = GLib.Bus.get_proxy_sync (
+                    GLib.BusType.SYSTEM,
+                    "org.freedesktop.Accounts",
+                    user_path,
+                    GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES
+                );
+            } catch (Error e) {
+                warning ("Unable to get AccountsService proxy, color scheme preference may be incorrect");
+            }
+        }
+
+        if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
+            attach (dark_label, 0, 0);
+            attach (prefer_default_radio, 1, 0);
+            attach (prefer_dark_radio, 2, 0);
+            attach (dark_info, 1, 1, 2);
+
+            switch (pantheon_act.prefers_color_scheme) {
+                case Granite.Settings.ColorScheme.DARK:
+                    prefer_dark_radio.active = true;
+                    break;
+                default:
+                    prefer_default_radio.active = true;
+                    break;
+            }
+
+            prefer_default_radio.toggled.connect (() => {
+                pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.NO_PREFERENCE;
+            });
+
+            prefer_dark_radio.toggled.connect (() => {
+                pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
+            });
+        }
 
         interface_settings.changed.connect (() => {
             update_text_size_modebutton (interface_settings);

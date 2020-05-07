@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"POT-Creation-Date: 2020-04-30 21:32+0000\n"
 "PO-Revision-Date: 2014-12-16 09:22+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,246 +14,58 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/desktop-plug.vala:40
+#: src/Plug.vala:40
 msgid "Desktop"
 msgstr ""
 
-#: src/desktop-plug.vala:41
+#: src/Plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:109
+#: src/Plug.vala:55 src/Plug.vala:109
 msgid "Wallpaper"
 msgstr ""
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:115
+#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Appearance"
 msgstr ""
 
-#: src/desktop-plug.vala:62 src/desktop-plug.vala:110 src/desktop-plug.vala:111
-#: src/desktop-plug.vala:112 src/desktop-plug.vala:113
-#: src/desktop-plug.vala:114
+#: src/Plug.vala:62 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:113 src/Plug.vala:114
 msgid "Dock"
 msgstr ""
 
-#: src/desktop-plug.vala:65 src/desktop-plug.vala:116
+#: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
 msgstr ""
 
-#: src/desktop-plug.vala:111
+#: src/Plug.vala:111
 msgid "Hide Mode"
 msgstr ""
 
-#: src/desktop-plug.vala:112
+#: src/Plug.vala:112
 msgid "Icon Size"
 msgstr ""
 
-#: src/desktop-plug.vala:113
+#: src/Plug.vala:113
 msgid "Pressure reveal"
 msgstr ""
 
-#: src/desktop-plug.vala:114
+#: src/Plug.vala:114
 msgid "Display"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:118
-msgid "Remove"
+#: src/Plug.vala:116
+msgid "Window animations"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:188
-#, c-format
-msgid "Artist: %s"
+#: src/Plug.vala:117
+msgid "Panel translucency"
 msgstr ""
 
-#: src/Views/Appearance.vala:41
-msgid "Window animations:"
-msgstr ""
-
-#: src/Views/Appearance.vala:47
-msgid "Panel translucency:"
-msgstr ""
-
-#: src/Views/Appearance.vala:53
-msgid "Text size:"
-msgstr ""
-
-#: src/Views/Appearance.vala:57 src/Views/Dock.vala:34
-msgid "Small"
-msgstr ""
-
-#: src/Views/Appearance.vala:58
-msgid "Default"
-msgstr ""
-
-#: src/Views/Appearance.vala:59 src/Views/Dock.vala:36
-msgid "Large"
-msgstr ""
-
-#: src/Views/Appearance.vala:60
-msgid "Larger"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:101
-msgid "Import Photo…"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:106
-msgid "Centered"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:107
-msgid "Zoom"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:108
-msgid "Spanned"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:151
-msgid "Import Photo"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:152
-msgid "Import"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:153 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr ""
-
-#: src/Views/HotCorners.vala:34
-msgid "When the cursor enters the corner of the display:"
-msgstr ""
-
-#: src/Views/HotCorners.vala:68
-msgid "Custom command:"
-msgstr ""
-
-#: src/Views/HotCorners.vala:105
-msgid "Do nothing"
-msgstr ""
-
-#. none
-#: src/Views/HotCorners.vala:106
-msgid "Multitasking View"
-msgstr ""
-
-#. show-workspace-view
-#: src/Views/HotCorners.vala:107
-msgid "Maximize current window"
-msgstr ""
-
-#. maximize-current
-#: src/Views/HotCorners.vala:108
-msgid "Show Applications Menu"
-msgstr ""
-
-#. open-launcher
-#: src/Views/HotCorners.vala:109
-msgid "Show all windows"
-msgstr ""
-
-#. window-overview-all
-#: src/Views/HotCorners.vala:110
-msgid "Switch to new workspace"
-msgstr ""
-
-#. switch-new-workspace
-#: src/Views/HotCorners.vala:111
-msgid "Execute custom command"
-msgstr ""
-
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr ""
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr ""
-
-#: src/Views/Dock.vala:83
-msgid "Focused window is maximized"
-msgstr ""
-
-#: src/Views/Dock.vala:84
-msgid "Focused window overlaps the dock"
-msgstr ""
-
-#: src/Views/Dock.vala:85
-msgid "Any window overlaps the dock"
-msgstr ""
-
-#: src/Views/Dock.vala:86
-msgid "Not being used"
-msgstr ""
-
-#: src/Views/Dock.vala:122
-msgid "Primary display:"
-msgstr ""
-
-#: src/Views/Dock.vala:126
-msgid "Display:"
-msgstr ""
-
-#: src/Views/Dock.vala:157
-msgid "Icon size:"
-msgstr ""
-
-#: src/Views/Dock.vala:159
-msgid "Hide when:"
-msgstr ""
-
-#: src/Views/Dock.vala:163
-msgid "Pressure reveal:"
-msgstr ""
-
-#: src/Views/Dock.vala:203
-#, c-format
-msgid "Monitor %d"
-msgstr ""
-
-#: src/Views/Dock.vala:208
-#, c-format
-msgid "Display %d"
-msgstr ""
-
-#: set-wallpaper-contract/set-wallpaper.vala:95
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
-
-#: set-wallpaper-contract/set-wallpaper.vala:98
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: set-wallpaper-contract/set-wallpaper.vala:102
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr ""
-
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr ""
-
-#: set-wallpaper-contract/set-wallpaper.vala:222
-#: set-wallpaper-contract/set-wallpaper.vala:230
-msgid "Set As Desktop Slideshow"
-msgstr ""
-
-#: set-wallpaper-contract/set-wallpaper.vala:226
-msgid "Create slideshow"
+#: src/Plug.vala:118
+msgid "Text size"
 msgstr ""
 
 #.
@@ -280,4 +92,208 @@ msgstr ""
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
+msgstr ""
+
+#: src/Views/Appearance.vala:41
+msgid "Style:"
+msgstr ""
+
+#: src/Views/Appearance.vala:55 src/Views/Appearance.vala:105
+#: src/Views/Dock.vala:42
+msgid "Default"
+msgstr ""
+
+#: src/Views/Appearance.vala:73
+msgid "Dark"
+msgstr ""
+
+#: src/Views/Appearance.vala:81
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:88
+msgid "Window animations:"
+msgstr ""
+
+#: src/Views/Appearance.vala:94
+msgid "Panel translucency:"
+msgstr ""
+
+#: src/Views/Appearance.vala:100
+msgid "Text size:"
+msgstr ""
+
+#: src/Views/Appearance.vala:104 src/Views/Dock.vala:38
+msgid "Small"
+msgstr ""
+
+#: src/Views/Appearance.vala:106 src/Views/Dock.vala:50
+msgid "Large"
+msgstr ""
+
+#: src/Views/Appearance.vala:107
+msgid "Larger"
+msgstr ""
+
+#: src/Views/Dock.vala:70
+msgid "Focused window is maximized"
+msgstr ""
+
+#: src/Views/Dock.vala:71
+msgid "Focused window overlaps the dock"
+msgstr ""
+
+#: src/Views/Dock.vala:72
+msgid "Any window overlaps the dock"
+msgstr ""
+
+#: src/Views/Dock.vala:73
+msgid "Not being used"
+msgstr ""
+
+#: src/Views/Dock.vala:109
+msgid "Primary display:"
+msgstr ""
+
+#: src/Views/Dock.vala:113
+msgid "Display:"
+msgstr ""
+
+#: src/Views/Dock.vala:144
+msgid "Icon size:"
+msgstr ""
+
+#: src/Views/Dock.vala:146
+msgid "Hide when:"
+msgstr ""
+
+#: src/Views/Dock.vala:150
+msgid "Pressure reveal:"
+msgstr ""
+
+#: src/Views/Dock.vala:217
+#, c-format
+msgid "Monitor %d"
+msgstr ""
+
+#: src/Views/Dock.vala:222
+#, c-format
+msgid "Display %d"
+msgstr ""
+
+#: src/Views/HotCorners.vala:37
+msgid "When the cursor enters the corner of the display:"
+msgstr ""
+
+#: src/Views/HotCorners.vala:69
+msgid "Custom command:"
+msgstr ""
+
+#: src/Views/HotCorners.vala:108
+msgid "Do nothing"
+msgstr ""
+
+#. none
+#: src/Views/HotCorners.vala:109
+msgid "Multitasking View"
+msgstr ""
+
+#. show-workspace-view
+#: src/Views/HotCorners.vala:110
+msgid "Maximize current window"
+msgstr ""
+
+#. maximize-current
+#: src/Views/HotCorners.vala:111
+msgid "Show Applications Menu"
+msgstr ""
+
+#. open-launcher
+#: src/Views/HotCorners.vala:112
+msgid "Show all windows"
+msgstr ""
+
+#. window-overview-all
+#: src/Views/HotCorners.vala:113
+msgid "Switch to new workspace"
+msgstr ""
+
+#. switch-new-workspace
+#: src/Views/HotCorners.vala:114
+msgid "Execute custom command"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:100
+msgid "Import Photo…"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:105
+msgid "Centered"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:106
+msgid "Zoom"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:107
+msgid "Spanned"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:150
+msgid "Import Photo"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:151
+msgid "Import"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+msgid "Cancel"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:188
+#, c-format
+msgid "Artist: %s"
+msgstr ""
+
+#: set-wallpaper-contract/set-wallpaper.vala:94
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: set-wallpaper-contract/set-wallpaper.vala:97
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: set-wallpaper-contract/set-wallpaper.vala:101
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: set-wallpaper-contract/set-wallpaper.vala:104
+msgid "1 day"
+msgstr ""
+
+#: set-wallpaper-contract/set-wallpaper.vala:108
+msgid "Show each photo for"
+msgstr ""
+
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
+msgid "Set As Desktop Slideshow"
+msgstr ""
+
+#: set-wallpaper-contract/set-wallpaper.vala:223
+msgid "Create slideshow"
 msgstr ""

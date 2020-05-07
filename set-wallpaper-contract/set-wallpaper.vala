@@ -38,8 +38,6 @@ namespace SetWallpaperContractor {
         </transition>
     """;
 
-    const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
-
     private int delay_value = 60;
 
     [DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
@@ -110,12 +108,12 @@ namespace SetWallpaperContractor {
         duration_label.set_markup (_("Show each photo for") + " <b>" + text + "</b>");
     }
 
-    private string get_local_bg_location () {
+    private string get_local_bg_directory () {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
     private File ensure_local_bg_exists () {
-        var folder = File.new_for_path (get_local_bg_location ());
+        var folder = File.new_for_path (get_local_bg_directory ());
         if (!folder.query_exists ()) {
             try {
                 folder.make_directory_with_parents ();
@@ -131,13 +129,13 @@ namespace SetWallpaperContractor {
         File? dest = null;
 
         try {
-            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            dest = File.new_for_path (get_local_bg_directory () + source.get_basename ());
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
-        }   
+        }
 
-        return dest;    
+        return dest;
     }
 
     private File? copy_for_greeter (File source) {
@@ -178,7 +176,7 @@ namespace SetWallpaperContractor {
                     "org.freedesktop.Accounts",
                     "/org/freedesktop/Accounts/User" + uid);
         } catch (Error e) {
-            warning ("%s\n", e.message); 
+            warning (e.message);
         }
 
         var folder = ensure_local_bg_exists ();
@@ -190,7 +188,7 @@ namespace SetWallpaperContractor {
 
                 string path = file.get_path ();
                 File append_file = file;
-                if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
+                if (!path.has_prefix (get_local_bg_directory ())) {
                     var local_file = copy_for_library (file);
                     if (local_file != null) {
                         append_file = local_file;

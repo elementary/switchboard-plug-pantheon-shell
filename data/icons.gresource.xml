@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/io/elementary/switchboard/plug/pantheon-shell">
+    <file alias="32x32@2/apps/application-default-icon-symbolic.svg" compressed="true" preprocess="xml-stripblanks">application-default-icon/32-symbolic.svg</file>
+    <file alias="32x32/apps/application-default-icon-symbolic.svg" compressed="true" preprocess="xml-stripblanks">application-default-icon/32-symbolic.svg</file>
+    <file alias="48x48@2/apps/application-default-icon-symbolic.svg" compressed="true" preprocess="xml-stripblanks">application-default-icon/48-symbolic.svg</file>
+    <file alias="48x48/apps/application-default-icon-symbolic.svg" compressed="true" preprocess="xml-stripblanks">application-default-icon/48-symbolic.svg</file>
+    <file alias="64x64@2/apps/application-default-icon-symbolic.svg" compressed="true" preprocess="xml-stripblanks">application-default-icon/64-symbolic.svg</file>
+    <file alias="64x64/apps/application-default-icon-symbolic.svg" compressed="true" preprocess="xml-stripblanks">application-default-icon/64-symbolic.svg</file>
+    <file alias="appearance-default.svg" compressed="true" preprocess="xml-stripblanks">appearance-default.svg</file>
+    <file alias="appearance-dark.svg" compressed="true" preprocess="xml-stripblanks">appearance-dark.svg</file>
     <file alias="plug.css" compressed="true">plug.css</file>
   </gresource>
 </gresources>

@@ -1,7 +1,7 @@
 project(
     'pantheon-desktop',
     'vala', 'c',
-    version: '2.8.1'
+    version: '2.8.4'
 )
 gettext_name = meson.project_name() + '-plug'
 gnome = import('gnome')
@@ -23,11 +23,12 @@ add_project_arguments(
     language: 'vala'
 )
 
-plank_dep = dependency('plank', version: '>=0.10.9')
-glib_dep = dependency('glib-2.0')
 gio_dep = dependency('gio-2.0')
+glib_dep = dependency('glib-2.0')
 gobject_dep = dependency('gobject-2.0')
+granite_dep = dependency('granite', version: '>=5.4.0')
 gtk_dep = dependency('gtk+-3.0', version: '>= 3.22')
+plank_dep = dependency('plank', version: '>=0.10.9')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 
 plug_resources = gnome.compile_resources(

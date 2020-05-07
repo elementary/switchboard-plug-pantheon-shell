@@ -1,5 +1,5 @@
 # Switchboard Desktop Plug
-[![l10n](https://l10n.elementary.io/widgets/switchboard/switchboard-plug-pantheon-desktop/svg-badge.svg)](https://l10n.elementary.io/projects/switchboard/switchboard-plug-pantheon-desktop)
+[![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-pantheon-shell/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
 ![screenshot](data/screenshot.png?raw=true)
 
