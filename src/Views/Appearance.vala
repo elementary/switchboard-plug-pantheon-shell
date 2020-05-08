@@ -91,50 +91,28 @@ public class Appearance : Gtk.Grid {
         var accent_label = new Gtk.Label (_("Accent:"));
         accent_label.halign = Gtk.Align.END;
 
-        // TODO: Maybe foreach over an array of arrays of color names and human names?
         var blueberry_button = new ColorButton ("blueberry");
         blueberry_button.tooltip_text = _("Blueberry");
 
-        var strawberry_button = new ColorButton (
-            "strawberry",
-            blueberry_button
-        );
+        var strawberry_button = new ColorButton ("strawberry", blueberry_button);
         strawberry_button.tooltip_text = _("Strawberry");
 
-        var orange_button = new ColorButton (
-            "orange",
-            blueberry_button
-        );
+        var orange_button = new ColorButton ("orange", blueberry_button);
         orange_button.tooltip_text = _("Orange");
 
-        var banana_button = new ColorButton (
-            "banana",
-            blueberry_button
-        );
+        var banana_button = new ColorButton ("banana", blueberry_button);
         banana_button.tooltip_text = _("Banana");
 
-        var lime_button = new ColorButton (
-            "lime",
-            blueberry_button
-        );
+        var lime_button = new ColorButton ("lime", blueberry_button);
         lime_button.tooltip_text = _("Lime");
 
-        var mint_button = new ColorButton (
-            "mint",
-            blueberry_button
-        );
+        var mint_button = new ColorButton ("mint", blueberry_button);
         mint_button.tooltip_text = _("Mint");
 
-        var grape_button = new ColorButton (
-            "grape",
-            blueberry_button
-        );
+        var grape_button = new ColorButton ("grape", blueberry_button);
         grape_button.tooltip_text = _("Grape");
 
-        var bubblegum_button = new ColorButton (
-            "bubblegum",
-            blueberry_button
-        );
+        var bubblegum_button = new ColorButton ("bubblegum", blueberry_button);
         bubblegum_button.tooltip_text = _("Bubblegum");
 
         var accent_grid = new Gtk.Grid ();
