@@ -65,7 +65,7 @@ public class HotCorners : Gtk.Grid {
         unowned Gtk.StyleContext icon_style_context = icon.get_style_context ();
         icon_style_context.add_class (Granite.STYLE_CLASS_CARD);
         icon_style_context.add_class ("hotcorner-display");
-        icon_style_context.add_class ("rounded");
+        icon_style_context.add_class (Granite.STYLE_CLASS_ROUNDED);
 
         var custom_command = new Gtk.Entry ();
         custom_command.primary_icon_name = "utilities-terminal-symbolic";
