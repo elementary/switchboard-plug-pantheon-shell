@@ -91,56 +91,51 @@ public class Appearance : Gtk.Grid {
         var accent_label = new Gtk.Label (_("Accent:"));
         accent_label.halign = Gtk.Align.END;
 
-        var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
-
         // TODO: Maybe foreach over an array of arrays of color names and human names?
-        var blueberry_button = new ColorButton (
-            "blueberry",
-            _("Blueberry"),
-            interface_settings
-        );
+        var blueberry_button = new ColorButton ("blueberry");
+        blueberry_button.tooltip_text = _("Blueberry");
+
         var strawberry_button = new ColorButton (
             "strawberry",
-            _("Strawberry"),
-            interface_settings,
             blueberry_button
         );
+        strawberry_button.tooltip_text = _("Strawberry");
+
         var orange_button = new ColorButton (
             "orange",
-            _("Orange"),
-            interface_settings,
             blueberry_button
         );
+        orange_button.tooltip_text = _("Orange");
+
         var banana_button = new ColorButton (
             "banana",
-            _("Banana"),
-            interface_settings,
             blueberry_button
         );
+        banana_button.tooltip_text = _("Banana");
+
         var lime_button = new ColorButton (
             "lime",
-            _("Lime"),
-            interface_settings,
             blueberry_button
         );
+        lime_button.tooltip_text = _("Lime");
+
         var mint_button = new ColorButton (
             "mint",
-            _("Mint"),
-            interface_settings,
             blueberry_button
         );
+        mint_button.tooltip_text = _("Mint");
+
         var grape_button = new ColorButton (
             "grape",
-            _("Grape"),
-            interface_settings,
             blueberry_button
         );
+        grape_button.tooltip_text = _("Grape");
+
         var bubblegum_button = new ColorButton (
             "bubblegum",
-            _("Bubblegum"),
-            interface_settings,
             blueberry_button
         );
+        bubblegum_button.tooltip_text = _("Bubblegum");
 
         var accent_grid = new Gtk.Grid ();
         accent_grid.column_spacing = 6;
@@ -196,8 +191,6 @@ public class Appearance : Gtk.Grid {
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
 
-        update_text_size_modebutton (interface_settings);
-
         Pantheon.AccountsService? pantheon_act = null;
 
         string? user_path = null;
@@ -250,6 +243,10 @@ public class Appearance : Gtk.Grid {
             });
         }
 
+        var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
+
+        update_text_size_modebutton (interface_settings);
+
         interface_settings.changed.connect (() => {
             update_text_size_modebutton (interface_settings);
         });
@@ -261,42 +258,31 @@ public class Appearance : Gtk.Grid {
 
     private class ColorButton : Gtk.RadioButton {
         public string color_name { get; construct; }
-        public string human_name { get; construct; }
-        public GLib.Settings interface_settings { get; construct; }
-        public Gtk.RadioButton? radio_group_member { get; construct; }
 
-        public ColorButton (
-            string _color_name,
-            string _human_name,
-            GLib.Settings _interface_settings,
-            Gtk.RadioButton? _radio_group_member = null
-        ) {
+        private static GLib.Settings interface_settings;
+        private static string current_accent;
+
+        public ColorButton (string _color_name, Gtk.RadioButton? group_member = null) {
             Object (
                 color_name: _color_name,
-                human_name: _human_name,
-                interface_settings: _interface_settings,
-                radio_group_member: _radio_group_member
+                group: group_member
             );
         }
 
-        construct {
-            tooltip_text = _(human_name);
-            width_request = height_request = 24;
+        static construct {
+            interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
-            var context = get_style_context ();
+            var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
+            current_accent = current_stylesheet.replace (STYLESHEET_PREFIX, "");
+        }
+
+        construct {
+            unowned Gtk.StyleContext context = get_style_context ();
             context.add_class ("color-button");
             context.add_class (color_name);
 
-            if (radio_group_member != null) {
-                set_group (radio_group_member.get_group ());
-            }
-
             realize.connect (() => {
-                var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
-                var current_accent = current_stylesheet.replace (STYLESHEET_PREFIX, "");
-                if (current_accent == color_name) {
-                    this.active = true;
-                }
+                active = current_accent == color_name;
             });
 
             clicked.connect (() => {
