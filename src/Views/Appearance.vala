@@ -115,6 +115,12 @@ public class Appearance : Gtk.Grid {
         var bubblegum_button = new ColorButton ("bubblegum", blueberry_button);
         bubblegum_button.tooltip_text = _("Bubblegum");
 
+        var cocoa_button = new ColorButton ("cocoa", blueberry_button);
+        cocoa_button.tooltip_text = _("Cocoa");
+
+        var slate_button = new ColorButton ("slate", blueberry_button);
+        slate_button.tooltip_text = _("Slate");
+
         var accent_grid = new Gtk.Grid ();
         accent_grid.column_spacing = 6;
         accent_grid.add (blueberry_button);
@@ -125,6 +131,8 @@ public class Appearance : Gtk.Grid {
         accent_grid.add (mint_button);
         accent_grid.add (grape_button);
         accent_grid.add (bubblegum_button);
+        accent_grid.add (cocoa_button);
+        accent_grid.add (slate_button);
 
         var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
         accent_info.margin_bottom = 18;
