@@ -287,15 +287,17 @@ public class Appearance : Gtk.Grid {
             context.add_class ("color-button");
             context.add_class (color_name);
 
-            var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
-            var current_accent = current_stylesheet.replace (STYLESHEET_PREFIX, "");
-            if (current_accent == color_name) {
-                active = true;
-            }
-
             if (radio_group_member != null) {
                 set_group (radio_group_member.get_group ());
             }
+
+            realize.connect (() => {
+                var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
+                var current_accent = current_stylesheet.replace (STYLESHEET_PREFIX, "");
+                if (current_accent == color_name) {
+                    this.active = true;
+                }
+            });
 
             clicked.connect (() => {
                 interface_settings.set_string (
