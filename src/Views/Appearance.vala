@@ -20,6 +20,8 @@
 
 public class Appearance : Gtk.Grid {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
+    private const string STYLESHEET_KEY = "gtk-theme";
+    private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
 
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
@@ -106,24 +108,24 @@ public class Appearance : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        // Row 0 and 1 are for the dark style UI that gets attached only if we
-        // can connect to the DBus API
-        attach (animations_label, 0, 2);
-        attach (animations_switch, 1, 2);
-        attach (translucency_label, 0, 3);
-        attach (translucency_switch, 1, 3);
-        attach (text_size_label, 0, 4);
-        attach (text_size_modebutton, 1, 4, 2);
+        /* Row 0 and 1 are for the dark style UI that gets attached only if we
+         * can connect to the DBus API
+         *
+         * Row 2 and 3 are for accent color UI that gets constructed only if the
+         * current stylesheet is supported (begins with the STYLESHEET_PREFIX)
+         */
+        attach (animations_label, 0, 4);
+        attach (animations_switch, 1, 4);
+        attach (translucency_label, 0, 5);
+        attach (translucency_switch, 1, 5);
+        attach (text_size_label, 0, 6);
+        attach (text_size_modebutton, 1, 6, 2);
 
-        var animations_settings = new Settings (ANIMATIONS_SCHEMA);
+        var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
-        var panel_settings = new Settings (PANEL_SCHEMA);
+        var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
-
-        var interface_settings = new Settings (INTERFACE_SCHEMA);
-
-        update_text_size_modebutton (interface_settings);
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -177,6 +179,70 @@ public class Appearance : Gtk.Grid {
             });
         }
 
+        var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
+        var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
+
+        debug ("Current stylesheet: %s", current_stylesheet);
+
+        if (current_stylesheet.has_prefix (STYLESHEET_PREFIX)) {
+            /// TRANSLATORS: as in "Accent color"
+            var accent_label = new Gtk.Label (_("Accent:"));
+            accent_label.halign = Gtk.Align.END;
+
+            var blueberry_button = new ColorButton ("blueberry");
+            blueberry_button.tooltip_text = _("Blueberry");
+
+            var strawberry_button = new ColorButton ("strawberry", blueberry_button);
+            strawberry_button.tooltip_text = _("Strawberry");
+
+            var orange_button = new ColorButton ("orange", blueberry_button);
+            orange_button.tooltip_text = _("Orange");
+
+            var banana_button = new ColorButton ("banana", blueberry_button);
+            banana_button.tooltip_text = _("Banana");
+
+            var lime_button = new ColorButton ("lime", blueberry_button);
+            lime_button.tooltip_text = _("Lime");
+
+            var mint_button = new ColorButton ("mint", blueberry_button);
+            mint_button.tooltip_text = _("Mint");
+
+            var grape_button = new ColorButton ("grape", blueberry_button);
+            grape_button.tooltip_text = _("Grape");
+
+            var bubblegum_button = new ColorButton ("bubblegum", blueberry_button);
+            bubblegum_button.tooltip_text = _("Bubblegum");
+
+            var cocoa_button = new ColorButton ("cocoa", blueberry_button);
+            cocoa_button.tooltip_text = _("Cocoa");
+
+            var slate_button = new ColorButton ("slate", blueberry_button);
+            slate_button.tooltip_text = _("Slate");
+
+            var accent_grid = new Gtk.Grid ();
+            accent_grid.column_spacing = 6;
+            accent_grid.add (blueberry_button);
+            accent_grid.add (strawberry_button);
+            accent_grid.add (orange_button);
+            accent_grid.add (banana_button);
+            accent_grid.add (lime_button);
+            accent_grid.add (mint_button);
+            accent_grid.add (grape_button);
+            accent_grid.add (bubblegum_button);
+            accent_grid.add (cocoa_button);
+            accent_grid.add (slate_button);
+
+            var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
+            accent_info.margin_bottom = 18;
+            accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+            attach (accent_label, 0, 2);
+            attach (accent_grid, 1, 2, 2);
+            attach (accent_info, 1, 3, 2);
+        }
+
+        update_text_size_modebutton (interface_settings);
+
         interface_settings.changed.connect (() => {
             update_text_size_modebutton (interface_settings);
         });
@@ -184,6 +250,44 @@ public class Appearance : Gtk.Grid {
         text_size_modebutton.mode_changed.connect (() => {
             set_text_scale (interface_settings, text_size_modebutton.selected);
         });
+    }
+
+    private class ColorButton : Gtk.RadioButton {
+        public string color_name { get; construct; }
+
+        private static GLib.Settings interface_settings;
+        private static string current_accent;
+
+        public ColorButton (string _color_name, Gtk.RadioButton? group_member = null) {
+            Object (
+                color_name: _color_name,
+                group: group_member
+            );
+        }
+
+        static construct {
+            interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
+
+            var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
+            current_accent = current_stylesheet.replace (STYLESHEET_PREFIX, "");
+        }
+
+        construct {
+            unowned Gtk.StyleContext context = get_style_context ();
+            context.add_class ("color-button");
+            context.add_class (color_name);
+
+            realize.connect (() => {
+                active = current_accent == color_name;
+            });
+
+            clicked.connect (() => {
+                interface_settings.set_string (
+                    STYLESHEET_KEY,
+                    STYLESHEET_PREFIX + color_name
+                );
+            });
+        }
     }
 
     private int get_text_scale (GLib.Settings interface_settings) {
