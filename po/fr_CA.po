@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 21:32+0000\n"
-"PO-Revision-Date: 2017-04-19 19:43+0000\n"
-"Last-Translator: Benjamin CARADEUC <bencrdc@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-pantheon-shell/fr_CA/>\n"
+"PO-Revision-Date: 2020-05-08 14:10+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Language-Team: French (Canada) <https://l10n.elementary.io/projects/"
+"switchboard/switchboard-plug-pantheon-shell/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
 
 #: src/Plug.vala:40
@@ -21,7 +21,7 @@ msgstr "Bureau"
 
 #: src/Plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configurer le dock, les coins intelligents, et changer de fond d'écran"
+msgstr "Configurer le dock, les coins dynamiques, et changer de fond d'écran"
 
 #: src/Plug.vala:55 src/Plug.vala:109
 msgid "Wallpaper"

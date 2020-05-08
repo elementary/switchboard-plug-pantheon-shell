@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-30 21:32+0000\n"
-"PO-Revision-Date: 2020-05-02 11:10+0000\n"
+"PO-Revision-Date: 2020-05-08 14:10+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fr/>\n"
@@ -26,7 +26,7 @@ msgstr "Bureau"
 
 #: src/Plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configurer le dock, les coins intelligents et changer le fond d'écran"
+msgstr "Configurer le dock, les coins dynamiques et modifier le fond d'écran"
 
 #: src/Plug.vala:55 src/Plug.vala:109
 msgid "Wallpaper"
@@ -44,7 +44,7 @@ msgstr "Dock"
 
 #: src/Plug.vala:65 src/Plug.vala:119
 msgid "Hot Corners"
-msgstr "Coins intelligents"
+msgstr "Coins dynamiques"
 
 #: src/Plug.vala:111
 msgid "Hide Mode"
