@@ -26,7 +26,7 @@ add_project_arguments(
 gio_dep = dependency('gio-2.0')
 glib_dep = dependency('glib-2.0')
 gobject_dep = dependency('gobject-2.0')
-granite_dep = dependency('granite', version: '>=5.4.0')
+granite_dep = dependency('granite', version: '>=5.5.0')
 gtk_dep = dependency('gtk+-3.0', version: '>= 3.22')
 plank_dep = dependency('plank', version: '>=0.10.9')
 posix_dep = meson.get_compiler('vala').find_library('posix')
