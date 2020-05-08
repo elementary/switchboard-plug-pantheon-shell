@@ -181,7 +181,7 @@ public class Appearance : Gtk.Grid {
         // Row 0 and 1 are for the dark style UI that gets attached only if we
         // can connect to the DBus API
         attach (accent_label, 0, 2);
-        attach (accent_grid,  1, 2, 2);
+        attach (accent_grid, 1, 2, 2);
         attach (accent_info, 1, 3, 2);
         attach (animations_label, 0, 4);
         attach (animations_switch, 1, 4);
