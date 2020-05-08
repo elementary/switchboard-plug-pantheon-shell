@@ -35,7 +35,7 @@ public class HotCorners : Gtk.Grid {
         custom_command_revealer = new Gtk.Revealer ();
 
         var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
-        expl.get_style_context ().add_class ("h4");
+        expl.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
         expl.halign = Gtk.Align.START;
 
         var topleft = create_hotcorner ();
@@ -61,7 +61,11 @@ public class HotCorners : Gtk.Grid {
         var icon = new Gtk.Grid ();
         icon.height_request = 198;
         icon.width_request = 292;
-        icon.get_style_context ().add_class ("hotcorner-display");
+
+        unowned Gtk.StyleContext icon_style_context = icon.get_style_context ();
+        icon_style_context.add_class (Granite.STYLE_CLASS_CARD);
+        icon_style_context.add_class ("hotcorner-display");
+        icon_style_context.add_class ("rounded");
 
         var custom_command = new Gtk.Entry ();
         custom_command.primary_icon_name = "utilities-terminal-symbolic";
