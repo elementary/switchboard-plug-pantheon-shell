@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2020-05-02 11:10+0000\n"
+"PO-Revision-Date: 2020-05-11 20:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -147,53 +147,55 @@ msgstr "Maior"
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:189
 msgid "Accent:"
-msgstr ""
+msgstr "Destaque:"
 
 #: src/Views/Appearance.vala:193
 msgid "Blueberry"
-msgstr ""
+msgstr "Mirtilo"
 
 #: src/Views/Appearance.vala:196
 msgid "Strawberry"
-msgstr ""
+msgstr "Morango"
 
 #: src/Views/Appearance.vala:199
 msgid "Orange"
-msgstr ""
+msgstr "Laranja"
 
 #: src/Views/Appearance.vala:202
 msgid "Banana"
-msgstr ""
+msgstr "Banana"
 
 #: src/Views/Appearance.vala:205
 msgid "Lime"
-msgstr ""
+msgstr "Lima"
 
 #: src/Views/Appearance.vala:208
 msgid "Mint"
-msgstr ""
+msgstr "Menta"
 
 #: src/Views/Appearance.vala:211
 msgid "Grape"
-msgstr ""
+msgstr "Uva"
 
 #: src/Views/Appearance.vala:214
 msgid "Bubblegum"
-msgstr ""
+msgstr "Pastilha elástica"
 
 #: src/Views/Appearance.vala:217
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacau"
 
 #: src/Views/Appearance.vala:220
 msgid "Slate"
-msgstr ""
+msgstr "Ardósia"
 
 #: src/Views/Appearance.vala:235
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Utilizado em todo o sistema por omissão. As aplicações podem usar sempre a "
+"própria cor de destaque."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
