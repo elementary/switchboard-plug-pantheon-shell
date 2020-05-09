@@ -279,13 +279,13 @@ public class Appearance : Gtk.Grid {
 
             realize.connect (() => {
                 active = current_accent == color_name;
-            });
 
-            clicked.connect (() => {
-                interface_settings.set_string (
-                    STYLESHEET_KEY,
-                    STYLESHEET_PREFIX + color_name
-                );
+                toggled.connect (() => {
+                    interface_settings.set_string (
+                        STYLESHEET_KEY,
+                        STYLESHEET_PREFIX + color_name
+                    );
+                });
             });
         }
     }
