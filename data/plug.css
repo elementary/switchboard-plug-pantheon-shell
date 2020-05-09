@@ -79,5 +79,4 @@ radiobutton .card {
             alpha (@accent_color_300, 0.1),
             alpha (@accent_color_500, 0.1)
         );
-    border-radius: 4px;
 }

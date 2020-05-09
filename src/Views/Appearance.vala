@@ -48,8 +48,11 @@ public class Appearance : Gtk.Grid {
         var prefer_default_card = new Gtk.Grid ();
         prefer_default_card.margin = 6;
         prefer_default_card.margin_start = 12;
-        prefer_default_card.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
         prefer_default_card.add (prefer_default_image);
+
+        unowned Gtk.StyleContext prefer_default_card_context = prefer_default_card.get_style_context ();
+        prefer_default_card_context.add_class (Granite.STYLE_CLASS_CARD);
+        prefer_default_card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
 
         var prefer_default_grid = new Gtk.Grid ();
         prefer_default_grid.row_spacing = 6;
@@ -66,8 +69,11 @@ public class Appearance : Gtk.Grid {
         var prefer_dark_card = new Gtk.Grid ();
         prefer_dark_card.margin = 6;
         prefer_dark_card.margin_start = 12;
-        prefer_dark_card.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
         prefer_dark_card.add (prefer_dark_image);
+
+        unowned Gtk.StyleContext prefer_dark_card_context = prefer_dark_card.get_style_context ();
+        prefer_dark_card_context.add_class (Granite.STYLE_CLASS_CARD);
+        prefer_dark_card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
 
         var prefer_dark_grid = new Gtk.Grid ();
         prefer_dark_grid.row_spacing = 6;
