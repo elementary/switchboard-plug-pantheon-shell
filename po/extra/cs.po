@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:19+0000\n"
-"PO-Revision-Date: 2020-05-08 14:10+0000\n"
+"PO-Revision-Date: 2020-05-11 20:10+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/cs/>\n"
@@ -21,23 +21,23 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
-msgstr ""
+msgstr "Nastavení plochy"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Nastavení panelu, rohů a změna pozadí plochy"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Ilustruje velikosti ikon na panelu"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Oprava toho, že jsou systémové obrázky na plochu kopírovány"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Update search results"
-msgstr ""
+msgstr "Aktualizovat výsledky vyhledávání"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
@@ -48,3 +48,4 @@ msgstr "Aktualizované překlady"
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
+"Oprava problémů s nastavením pozadí na přihlašovací a zamykací obrazovce"
