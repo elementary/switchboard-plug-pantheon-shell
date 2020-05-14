@@ -2,6 +2,6 @@
 Name=Set as _Desktop Background
 Icon=preferences-desktop-wallpaper
 Description=Set selected image to be the new desktop background
-MimeType=image
+MimeType=image/bmp;image/gif;image/jpeg;image/png;image/svg+xml;image/tiff
 Exec=@SWEXECDIR@/@EXEC_NAME@ %F
 X-GNOME-Gettext-Domain=@GETTEXT_DOMAIN@
