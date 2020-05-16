@@ -15,7 +15,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  */
-public class IOHelper : GLib.Object {
+public class PantheonShell.IOHelper : GLib.Object {
     private const string[] ACCEPTED_TYPES = {
         "image/jpeg",
         "image/png",

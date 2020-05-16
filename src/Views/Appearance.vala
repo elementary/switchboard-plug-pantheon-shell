@@ -18,7 +18,7 @@
 *
 */
 
-public class Appearance : Gtk.Grid {
+public class PantheonShell.Appearance : Gtk.Grid {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
