@@ -17,12 +17,12 @@
  */
 
 [DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
-interface AccountsServiceUser : Object {
+interface PantheonShell.AccountsServiceUser : Object {
     [DBus (name = "BackgroundFile")]
     public abstract string background_file { owned get; set; }
 }
 
-public class Wallpaper : Gtk.Grid {
+public class PantheonShell.Wallpaper : Gtk.Grid {
     public enum ColumnType {
         ICON,
         NAME

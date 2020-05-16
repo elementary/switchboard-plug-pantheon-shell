@@ -18,7 +18,7 @@
  *
  */
 
-public class SolidColorContainer : WallpaperContainer {
+public class PantheonShell.SolidColorContainer : WallpaperContainer {
     public string color { get; construct; }
     public Gdk.RGBA rgba {
         get {
@@ -37,7 +37,7 @@ public class SolidColorContainer : WallpaperContainer {
         thumb.fill (rgba_to_pixel (rgba));
     }
 
-    // Borrowed from 
+    // Borrowed from
     // https://github.com/GNOME/california/blob/master/src/util/util-gfx.vala
     private static uint32 rgba_to_pixel (Gdk.RGBA rgba) {
         return (uint32) fp_to_uint8 (rgba.red) << 24

@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Dock : Gtk.Grid {
+public class PantheonShell.Dock : Gtk.Grid {
     private Gtk.Label primary_monitor_label;
     private Gtk.Switch primary_monitor;
     private Gtk.Label monitor_label;
