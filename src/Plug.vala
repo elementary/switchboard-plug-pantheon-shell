@@ -18,7 +18,7 @@
 *
 */
 
-public class GalaPlug : Switchboard.Plug {
+public class PantheonShell.GalaPlug : Switchboard.Plug {
     private Gtk.Stack stack;
     private Gtk.Grid main_grid;
 
@@ -123,6 +123,6 @@ public class GalaPlug : Switchboard.Plug {
 
 public Switchboard.Plug get_plug (Module module) {
     debug ("Activating Desktop plug");
-    var plug = new GalaPlug ();
+    var plug = new PantheonShell.GalaPlug ();
     return plug;
 }

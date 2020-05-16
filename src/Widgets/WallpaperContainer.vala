@@ -18,7 +18,7 @@
  *
  */
 
-public class WallpaperContainer : Gtk.FlowBoxChild {
+public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public signal void trash ();
 
     private const int THUMB_WIDTH = 162;
