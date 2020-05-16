@@ -18,13 +18,13 @@
 *
 */
 
-public class PantheonShell.GalaPlug : Switchboard.Plug {
+public class PantheonShell.Plug : Switchboard.Plug {
     private Gtk.Stack stack;
     private Gtk.Grid main_grid;
 
     private Wallpaper wallpaper_view;
 
-    public GalaPlug () {
+    public Plug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("desktop", null);
         settings.set ("desktop/appearance/wallpaper", "wallpaper");
@@ -123,6 +123,6 @@ public class PantheonShell.GalaPlug : Switchboard.Plug {
 
 public Switchboard.Plug get_plug (Module module) {
     debug ("Activating Desktop plug");
-    var plug = new PantheonShell.GalaPlug ();
+    var plug = new PantheonShell.Plug ();
     return plug;
 }
