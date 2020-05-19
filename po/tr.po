@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2020-05-02 11:10+0000\n"
+"PO-Revision-Date: 2020-05-18 20:11+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
@@ -144,53 +144,55 @@ msgstr "Çok Büyük"
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:189
 msgid "Accent:"
-msgstr ""
+msgstr "Vurgu rengi:"
 
 #: src/Views/Appearance.vala:193
 msgid "Blueberry"
-msgstr ""
+msgstr "Yaban mersini"
 
 #: src/Views/Appearance.vala:196
 msgid "Strawberry"
-msgstr ""
+msgstr "Çilek kırmızısı"
 
 #: src/Views/Appearance.vala:199
 msgid "Orange"
-msgstr ""
+msgstr "Turuncu"
 
 #: src/Views/Appearance.vala:202
 msgid "Banana"
-msgstr ""
+msgstr "Muz sarısı"
 
 #: src/Views/Appearance.vala:205
 msgid "Lime"
-msgstr ""
+msgstr "Limon yeşili"
 
 #: src/Views/Appearance.vala:208
 msgid "Mint"
-msgstr ""
+msgstr "Nane yeşili"
 
 #: src/Views/Appearance.vala:211
 msgid "Grape"
-msgstr ""
+msgstr "Mor"
 
 #: src/Views/Appearance.vala:214
 msgid "Bubblegum"
-msgstr ""
+msgstr "Pembe"
 
 #: src/Views/Appearance.vala:217
 msgid "Cocoa"
-msgstr ""
+msgstr "Kahverengi"
 
 #: src/Views/Appearance.vala:220
 msgid "Slate"
-msgstr ""
+msgstr "Koyu gri"
 
 #: src/Views/Appearance.vala:235
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Varsayılan olarak sistem genelinde kullanılır. Uygulamalar her zaman kendi "
+"vurgu renklerini kullanabilir."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
