@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2020-04-27 00:10+0000\n"
+"PO-Revision-Date: 2020-05-21 00:11+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/pt_BR/>\n"
@@ -103,7 +103,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:43
 msgid "Style:"
-msgstr ""
+msgstr "Estilo:"
 
 #: src/Views/Appearance.vala:57 src/Views/Appearance.vala:107
 #: src/Views/Dock.vala:42
@@ -112,11 +112,12 @@ msgstr "Padrão"
 
 #: src/Views/Appearance.vala:75
 msgid "Dark"
-msgstr ""
+msgstr "Escuro"
 
 #: src/Views/Appearance.vala:83
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
+"Estilo visual para componentes do sistema, como os indicadores Dock e Panel."
 
 #: src/Views/Appearance.vala:90
 msgid "Window animations:"
@@ -145,53 +146,55 @@ msgstr "Maior"
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:189
 msgid "Accent:"
-msgstr ""
+msgstr "Destaque:"
 
 #: src/Views/Appearance.vala:193
 msgid "Blueberry"
-msgstr ""
+msgstr "Mirtilo"
 
 #: src/Views/Appearance.vala:196
 msgid "Strawberry"
-msgstr ""
+msgstr "Morango"
 
 #: src/Views/Appearance.vala:199
 msgid "Orange"
-msgstr ""
+msgstr "Laranja"
 
 #: src/Views/Appearance.vala:202
 msgid "Banana"
-msgstr ""
+msgstr "Banana"
 
 #: src/Views/Appearance.vala:205
 msgid "Lime"
-msgstr ""
+msgstr "Limão"
 
 #: src/Views/Appearance.vala:208
 msgid "Mint"
-msgstr ""
+msgstr "Menta"
 
 #: src/Views/Appearance.vala:211
 msgid "Grape"
-msgstr ""
+msgstr "Uva"
 
 #: src/Views/Appearance.vala:214
 msgid "Bubblegum"
-msgstr ""
+msgstr "Chiclete"
 
 #: src/Views/Appearance.vala:217
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacau"
 
 #: src/Views/Appearance.vala:220
 msgid "Slate"
-msgstr ""
+msgstr "Ardósia"
 
 #: src/Views/Appearance.vala:235
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Utilizado em todo o sistema por padrão. Os aplicativos sempre podem usar sua "
+"própria cor de destaque."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
