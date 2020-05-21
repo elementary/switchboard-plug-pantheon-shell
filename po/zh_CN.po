@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2019-12-20 16:09+0000\n"
+"PO-Revision-Date: 2020-05-22 11:11+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -63,22 +63,16 @@ msgid "Display"
 msgstr "显示"
 
 #: src/Plug.vala:116
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "窗口动画："
+msgstr "窗口动画"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "面板透明度："
+msgstr "面板透明"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Text size:"
 msgid "Text size"
-msgstr "文本大小："
+msgstr "文本大小"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -108,7 +102,7 @@ msgstr "将所选图片设置为新的桌面背景"
 
 #: src/Views/Appearance.vala:43
 msgid "Style:"
-msgstr ""
+msgstr "风格："
 
 #: src/Views/Appearance.vala:57 src/Views/Appearance.vala:107
 #: src/Views/Dock.vala:42
@@ -117,11 +111,11 @@ msgstr "默认"
 
 #: src/Views/Appearance.vala:75
 msgid "Dark"
-msgstr ""
+msgstr "深色"
 
 #: src/Views/Appearance.vala:83
 msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr ""
+msgstr "系统部件如 Dock 和指示器面板的视觉风格。"
 
 #: src/Views/Appearance.vala:90
 msgid "Window animations:"
@@ -150,53 +144,53 @@ msgstr "较大"
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:189
 msgid "Accent:"
-msgstr ""
+msgstr "强调色："
 
 #: src/Views/Appearance.vala:193
 msgid "Blueberry"
-msgstr ""
+msgstr "蓝莓"
 
 #: src/Views/Appearance.vala:196
 msgid "Strawberry"
-msgstr ""
+msgstr "草莓"
 
 #: src/Views/Appearance.vala:199
 msgid "Orange"
-msgstr ""
+msgstr "橙子"
 
 #: src/Views/Appearance.vala:202
 msgid "Banana"
-msgstr ""
+msgstr "香蕉"
 
 #: src/Views/Appearance.vala:205
 msgid "Lime"
-msgstr ""
+msgstr "青柠"
 
 #: src/Views/Appearance.vala:208
 msgid "Mint"
-msgstr ""
+msgstr "薄荷"
 
 #: src/Views/Appearance.vala:211
 msgid "Grape"
-msgstr ""
+msgstr "葡萄"
 
 #: src/Views/Appearance.vala:214
 msgid "Bubblegum"
-msgstr ""
+msgstr "泡泡糖"
 
 #: src/Views/Appearance.vala:217
 msgid "Cocoa"
-msgstr ""
+msgstr "可可"
 
 #: src/Views/Appearance.vala:220
 msgid "Slate"
-msgstr ""
+msgstr "石板"
 
 #: src/Views/Appearance.vala:235
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr ""
+msgstr "系统范围内生效。自带强调色配置的应用程序除外。"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
