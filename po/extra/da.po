@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:19+0000\n"
-"PO-Revision-Date: 2020-05-28 13:11+0000\n"
+"PO-Revision-Date: 2020-05-29 15:23+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/da/>\n"
@@ -21,23 +21,23 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
-msgstr ""
+msgstr "Skrivebords Indstillinger"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Konfigurer dokken, varme hjørner, og skift skrivebordsbaggrund"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Illustrer Dok ikon størrelser"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Ret system baggrunde der blev kopieret"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Update search results"
-msgstr ""
+msgstr "Opdater søge resultater"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
@@ -48,3 +48,5 @@ msgstr "Opdaterede oversættelser"
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
+"Ret problemer med indstilling af skrivebordsbaggrunde på Log ind og "
+"Låseskærmen"
