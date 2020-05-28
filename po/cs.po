@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2020-05-11 20:10+0000\n"
+"PO-Revision-Date: 2020-05-29 15:23+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/cs/>\n"
@@ -149,11 +149,11 @@ msgstr "Zvýraznění:"
 
 #: src/Views/Appearance.vala:193
 msgid "Blueberry"
-msgstr ""
+msgstr "Borůvka"
 
 #: src/Views/Appearance.vala:196
 msgid "Strawberry"
-msgstr ""
+msgstr "Ostružina"
 
 #: src/Views/Appearance.vala:199
 msgid "Orange"
@@ -173,7 +173,7 @@ msgstr "Máta"
 
 #: src/Views/Appearance.vala:211
 msgid "Grape"
-msgstr ""
+msgstr "Hroznové"
 
 #: src/Views/Appearance.vala:214
 msgid "Bubblegum"
@@ -185,13 +185,15 @@ msgstr "Kakao"
 
 #: src/Views/Appearance.vala:220
 msgid "Slate"
-msgstr ""
+msgstr "Břidlice"
 
 #: src/Views/Appearance.vala:235
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Ve výchozím stavu použito napříč celým systémem. Aplikace vždy mohou použít "
+"své vlastní barvy zvýraznění."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -199,11 +201,11 @@ msgstr "Aktivní okno je maximalizováno"
 
 #: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
-msgstr "Aktivní okno překrývá dock"
+msgstr "Aktivní okno překrývá dok"
 
 #: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
-msgstr "Jakékoliv okno překrývá dock"
+msgstr "Jakékoliv okno překrývá dok"
 
 #: src/Views/Dock.vala:73
 msgid "Not being used"
@@ -245,7 +247,7 @@ msgstr "Když se kurzor dotkne rohu obrazovky:"
 
 #: src/Views/HotCorners.vala:69
 msgid "Custom command:"
-msgstr "Vlastní příkaz:"
+msgstr "Uživatelsky určený příkaz:"
 
 #: src/Views/HotCorners.vala:108
 msgid "Do nothing"
