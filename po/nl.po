@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2020-05-08 14:10+0000\n"
+"PO-Revision-Date: 2020-06-08 10:11+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
@@ -145,53 +145,55 @@ msgstr "Groter"
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:189
 msgid "Accent:"
-msgstr ""
+msgstr "Tint:"
 
 #: src/Views/Appearance.vala:193
 msgid "Blueberry"
-msgstr ""
+msgstr "Bosbes"
 
 #: src/Views/Appearance.vala:196
 msgid "Strawberry"
-msgstr ""
+msgstr "Aardbei"
 
 #: src/Views/Appearance.vala:199
 msgid "Orange"
-msgstr ""
+msgstr "Sinaasappel"
 
 #: src/Views/Appearance.vala:202
 msgid "Banana"
-msgstr ""
+msgstr "Banaan"
 
 #: src/Views/Appearance.vala:205
 msgid "Lime"
-msgstr ""
+msgstr "Limoen"
 
 #: src/Views/Appearance.vala:208
 msgid "Mint"
-msgstr ""
+msgstr "Munt"
 
 #: src/Views/Appearance.vala:211
 msgid "Grape"
-msgstr ""
+msgstr "Druif"
 
 #: src/Views/Appearance.vala:214
 msgid "Bubblegum"
-msgstr ""
+msgstr "Kauwgom"
 
 #: src/Views/Appearance.vala:217
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacao"
 
 #: src/Views/Appearance.vala:220
 msgid "Slate"
-msgstr ""
+msgstr "Leisteen"
 
 #: src/Views/Appearance.vala:235
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Wordt als standaard gebruikt door het hele systeem. Apps kunnen altijd hun "
+"eigen kleuraccent gebruiken."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
