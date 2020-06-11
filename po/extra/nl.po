@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:19+0000\n"
-"PO-Revision-Date: 2020-01-01 23:08+0000\n"
+"PO-Revision-Date: 2020-06-12 18:11+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/nl/>\n"
@@ -20,10 +20,8 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
-#, fuzzy
-#| msgid "Desktop"
 msgid "Desktop Settings"
-msgstr "Bureaublad"
+msgstr "Bureaublad instellingen"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -31,15 +29,15 @@ msgstr "Configureer het dock, actieve hoeken, en verander de achtergrond"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Illustreer de grote van Dock icoontjes"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Voorkom dat systeem achtergronden worden gekopieerd"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Update search results"
-msgstr ""
+msgstr "Update zoekresultaten"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
