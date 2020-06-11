@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:19+0000\n"
-"PO-Revision-Date: 2020-04-30 04:10+0000\n"
+"PO-Revision-Date: 2020-06-12 18:11+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/pt/>\n"
@@ -25,7 +25,7 @@ msgstr "Definições do Ambiente de trabalho"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configurar a doca, os cantos ativos e mudar o papel de parede"
+msgstr "Configurar a doca, cantos ativos e alterar o papel de parede"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "Illustrate Dock icon sizes"
