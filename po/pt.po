@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2020-05-11 20:10+0000\n"
+"PO-Revision-Date: 2020-06-12 18:11+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -26,7 +26,7 @@ msgstr "Ambiente de trabalho"
 
 #: src/Plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configurar o papel de parede, a doca e os cantos ativos"
+msgstr "Configurar a doca, cantos ativos e alterar o papel de parede"
 
 #: src/Plug.vala:55 src/Plug.vala:109
 msgid "Wallpaper"
@@ -295,7 +295,7 @@ msgstr "Centrado"
 
 #: src/Views/Wallpaper.vala:106
 msgid "Zoom"
-msgstr "Ampliar"
+msgstr "Ampliado"
 
 #: src/Views/Wallpaper.vala:107
 msgid "Spanned"
