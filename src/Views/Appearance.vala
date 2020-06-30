@@ -93,6 +93,36 @@ public class PantheonShell.Appearance : Gtk.Grid {
         dark_info.xalign = 0;
         dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
+        var schedule_grid = new Gtk.Grid ();
+        schedule_grid.column_spacing = 12;
+        schedule_grid.row_spacing = 12;
+        schedule_grid.margin_top = 24;
+
+        var schedule_label = new Gtk.Label (_("Schedule:"));
+        schedule_label.halign = Gtk.Align.END;
+        schedule_label.xalign = 1;
+
+        var schedule_button = new Granite.Widgets.ModeButton ();
+        schedule_button.append_text (_("Sunset to Sunrise"));
+        schedule_button.append_text (_("Manual"));
+
+        var from_label = new Gtk.Label (_("From:"));
+
+        var from_time = new Granite.Widgets.TimePicker ();
+        from_time.time = double_date_time (20.0);
+
+        var to_label = new Gtk.Label (_("To:"));
+
+        var to_time = new Granite.Widgets.TimePicker ();
+        to_time.time = double_date_time (6.0);
+
+        schedule_grid.attach (schedule_label, 0, 0, 1, 1);
+        schedule_grid.attach (schedule_button, 1, 0, 4, 1);
+        schedule_grid.attach (from_label, 1, 1, 1, 1);
+        schedule_grid.attach (from_time, 2, 1, 1, 1);
+        schedule_grid.attach (to_label, 3, 1, 1, 1);
+        schedule_grid.attach (to_time, 4, 1, 1, 1);
+
         var animations_label = new Gtk.Label (_("Window animations:"));
         animations_label.halign = Gtk.Align.END;
 
@@ -166,6 +196,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
             attach (prefer_default_radio, 1, 0);
             attach (prefer_dark_radio, 2, 0);
             attach (dark_info, 1, 1, 2);
+            attach (schedule_grid, 1, 10);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -316,5 +347,14 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
     private void update_text_size_modebutton (GLib.Settings interface_settings) {
         text_size_modebutton.set_active (get_text_scale (interface_settings));
+    }
+
+    private static DateTime double_date_time (double dbl) {
+        var hours = (int) dbl;
+        var minutes = (int) Math.round ((dbl - hours) * 60);
+
+        var date_time = new DateTime.local (1, 1, 1, hours, minutes, 0.0);
+
+        return date_time;
     }
 }
