@@ -109,12 +109,10 @@ public class PantheonShell.Appearance : Gtk.Grid {
         var from_label = new Gtk.Label (_("From:"));
 
         var from_time = new Granite.Widgets.TimePicker ();
-        from_time.time = double_date_time (20.0);
 
         var to_label = new Gtk.Label (_("To:"));
 
         var to_time = new Granite.Widgets.TimePicker ();
-        to_time.time = double_date_time (6.0);
 
         schedule_grid.attach (schedule_label, 0, 0, 1, 1);
         schedule_grid.attach (schedule_button, 1, 0, 4, 1);
@@ -213,6 +211,42 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
             prefer_dark_radio.toggled.connect (() => {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
+            });
+
+            var settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
+
+            from_time.time = double_date_time (settings.get_double ("night-light-schedule-from"));
+            to_time.time = double_date_time (settings.get_double ("night-light-schedule-to"));
+
+            var automatic_schedule = settings.get_boolean ("night-light-schedule-automatic");
+            if (automatic_schedule) {
+                schedule_button.selected = 0;
+                from_label.sensitive = false;
+                from_time.sensitive = false;
+                to_label.sensitive = false;
+                to_time.sensitive = false;
+            } else {
+                schedule_button.selected = 1;
+                from_label.sensitive = true;
+                from_time.sensitive = true;
+                to_label.sensitive = true;
+                to_time.sensitive = true;
+            }
+
+            schedule_button.mode_changed.connect (() => {
+                if (schedule_button.selected == 0) {
+                    settings.set_boolean ("night-light-schedule-automatic", true);
+                    from_label.sensitive = false;
+                    from_time.sensitive = false;
+                    to_label.sensitive = false;
+                    to_time.sensitive = false;
+                } else {
+                    settings.set_boolean ("night-light-schedule-automatic", false);
+                    from_label.sensitive = true;
+                    from_time.sensitive = true;
+                    to_label.sensitive = true;
+                    to_time.sensitive = true;
+                }
             });
         }
 
