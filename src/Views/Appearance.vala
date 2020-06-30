@@ -252,7 +252,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
                     from_label.sensitive = true;
                     from_time.sensitive = true;
                     to_label.sensitive = true;
-                    to_time.sensitive = true;  
+                    to_time.sensitive = true;
                 } else {
                     settings.set_string ("prefer-dark-schedule", "disabled");
                     from_label.sensitive = false;
