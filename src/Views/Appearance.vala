@@ -103,6 +103,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
         schedule_label.xalign = 1;
 
         var schedule_button = new Granite.Widgets.ModeButton ();
+        schedule_button.append_text (_("Disabled"));
         schedule_button.append_text (_("Sunset to Sunrise"));
         schedule_button.append_text (_("Manual"));
 
@@ -213,39 +214,51 @@ public class PantheonShell.Appearance : Gtk.Grid {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
             });
 
-            var settings = new GLib.Settings ("org.gnome.settings-daemon.plugins.color");
+            var settings = new GLib.Settings ("io.elementary.settings-daemon.plugins.color");
 
-            from_time.time = double_date_time (settings.get_double ("night-light-schedule-from"));
-            to_time.time = double_date_time (settings.get_double ("night-light-schedule-to"));
+            from_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-from"));
+            to_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-to"));
 
-            var automatic_schedule = settings.get_boolean ("night-light-schedule-automatic");
-            if (automatic_schedule) {
-                schedule_button.selected = 0;
-                from_label.sensitive = false;
-                from_time.sensitive = false;
-                to_label.sensitive = false;
-                to_time.sensitive = false;
-            } else {
-                schedule_button.selected = 1;
+            var schedule = settings.get_string ("prefer-dark-schedule");
+            if (schedule == "manual") {
                 from_label.sensitive = true;
                 from_time.sensitive = true;
                 to_label.sensitive = true;
                 to_time.sensitive = true;
+            } else {
+                from_label.sensitive = false;
+                from_time.sensitive = false;
+                to_label.sensitive = false;
+                to_time.sensitive = false;
+            }
+
+            if (schedule == "sunset-to-sunrise") {
+                schedule_button.selected = 1;
+            } else if (schedule == "manual") {
+                schedule_button.selected = 2;
+            } else {
+                schedule_button.selected = 0;
             }
 
             schedule_button.mode_changed.connect (() => {
-                if (schedule_button.selected == 0) {
-                    settings.set_boolean ("night-light-schedule-automatic", true);
+                if (schedule_button.selected == 1) {
+                    settings.set_string ("prefer-dark-schedule", "sunset-to-sunrise");
                     from_label.sensitive = false;
                     from_time.sensitive = false;
                     to_label.sensitive = false;
                     to_time.sensitive = false;
-                } else {
-                    settings.set_boolean ("night-light-schedule-automatic", false);
+                } else if (schedule_button.selected == 2) {
+                    settings.set_string ("prefer-dark-schedule", "manual");
                     from_label.sensitive = true;
                     from_time.sensitive = true;
                     to_label.sensitive = true;
-                    to_time.sensitive = true;
+                    to_time.sensitive = true;  
+                } else {
+                    settings.set_string ("prefer-dark-schedule", "disabled");
+                    from_label.sensitive = false;
+                    from_time.sensitive = false;
+                    to_label.sensitive = false;
+                    to_time.sensitive = false;
                 }
             });
         }
