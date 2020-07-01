@@ -214,6 +214,18 @@ public class PantheonShell.Appearance : Gtk.Grid {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
             });
 
+            ((GLib.DBusProxy) pantheon_act).g_properties_changed.connect ((changed, invalid) => {
+                var color_scheme = changed.lookup_value ("PrefersColorScheme", new VariantType ("i"));
+                switch ((Granite.Settings.ColorScheme) color_scheme.get_int32 ()) {
+                    case Granite.Settings.ColorScheme.DARK:
+                        prefer_dark_radio.active = true;
+                        break;
+                    default:
+                        prefer_default_radio.active = true;
+                        break;
+                }
+            });
+
             var settings = new GLib.Settings ("io.elementary.settings-daemon.plugins.color");
 
             from_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-from"));
