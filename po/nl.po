@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2020-06-08 10:11+0000\n"
+"PO-Revision-Date: 2020-07-15 23:12+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
@@ -26,7 +26,7 @@ msgstr "Bureaublad"
 
 #: src/Plug.vala:41
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configureer de dock, actieve hoeken, en pas de achtergrond aan"
+msgstr "Configureer het dock, actieve hoeken, en pas de achtergrond aan"
 
 #: src/Plug.vala:55 src/Plug.vala:109
 msgid "Wallpaper"
@@ -115,8 +115,7 @@ msgstr "Donker"
 
 #: src/Views/Appearance.vala:83
 msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr ""
-"Visuele stijl voor systeemonderdelen zoals de Dock en Panel indicatoren."
+msgstr "Visuele stijl voor systeemonderdelen zoals de Dock en Panel iconen."
 
 #: src/Views/Appearance.vala:90
 msgid "Window animations:"
