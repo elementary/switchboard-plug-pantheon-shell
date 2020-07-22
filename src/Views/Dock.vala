@@ -154,15 +154,18 @@ public class PantheonShell.Dock : Gtk.Grid {
         indicator_switch.halign = Gtk.Align.START;
         indicator_switch.valign = Gtk.Align.CENTER;
 
-        indicator_switch.active = (dock_preferences.Theme == "Gtk+-indicatorless");
+        var gsettings = Gtk.Settings.get_default();
+
+        // Has to have full path otherwise Plank won't understand where to look.
+        indicator_switch.active = (dock_preferences.Theme == "/usr/share/themes/" + gsettings.gtk_theme_name + "plank-no-indicators");
 
         indicator_switch.notify["active"].connect (() => {
             if (indicator_switch.active) {
                 // Theme with indicators
-                dock_preferences.Theme = "Gtk+";
+                dock_preferences.Theme = "/usr/share/themes/" + gsettings.gtk_theme_name + "/plank";
             } else {
                 // Theme without indicators
-                dock_preferences.Theme = "Gtk+-indicatorless";
+                dock_preferences.Theme = "/usr/share/themes/" + gsettings.gtk_theme_name + "/plank-no-indicators";
             }
         });
 
