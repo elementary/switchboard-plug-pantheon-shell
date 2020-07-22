@@ -24,7 +24,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
 
-
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
 
@@ -130,6 +129,14 @@ public class PantheonShell.Appearance : Gtk.Grid {
         var dyslexia_font_switch = new Gtk.Switch ();
         dyslexia_font_switch.halign = Gtk.Align.START;
 
+        var dyslexia_font_description_label = new Gtk.Label (
+            _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
+        );
+        dyslexia_font_description_label.max_width_chars = 60;
+        dyslexia_font_description_label.wrap = true;
+        dyslexia_font_description_label.xalign = 0;
+        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
         /* Row 0 and 1 are for the dark style UI that gets attached only if we
          * can connect to the DBus API
          *
@@ -140,11 +147,11 @@ public class PantheonShell.Appearance : Gtk.Grid {
         attach (animations_switch, 1, 4);
         attach (translucency_label, 0, 5);
         attach (translucency_switch, 1, 5);
-        attach (dyslexia_font_label, 0, 6);
-        attach (dyslexia_font_switch, 1, 6);
-        attach (text_size_label, 0, 7);
-        attach (text_size_modebutton, 1, 7, 2);
-
+        attach (text_size_label, 0, 6);
+        attach (text_size_modebutton, 1, 6, 2);
+        attach (dyslexia_font_label, 0, 7);
+        attach (dyslexia_font_switch, 1, 7);
+        attach (dyslexia_font_description_label, 1, 8);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
