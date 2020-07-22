@@ -157,7 +157,7 @@ public class PantheonShell.Dock : Gtk.Grid {
         var gsettings = Gtk.Settings.get_default ();
 
         // Has to have full path otherwise Plank won't understand where to look.
-        if (dock_preferences.Theme == "/usr/share/themes/" + gsettings.gtk_theme_name + "plank-no-indicators") {
+        if (dock_preferences.Theme == "/usr/share/themes/" + gsettings.gtk_theme_name + "/plank-no-indicators") {
             indicator_switch.active = true;
         } else if (dock_preferences.Theme == "/usr/share/themes/" + gsettings.gtk_theme_name + "/plank") {
             indicator_switch.active = false;
