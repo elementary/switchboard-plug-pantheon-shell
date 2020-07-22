@@ -154,24 +154,7 @@ public class PantheonShell.Dock : Gtk.Grid {
         indicator_switch.halign = Gtk.Align.START;
         indicator_switch.valign = Gtk.Align.CENTER;
 
-        var gsettings = Gtk.Settings.get_default ();
-
-        // Has to have full path otherwise Plank won't understand where to look.
-        if (dock_preferences.Theme == "/usr/share/themes/" + gsettings.gtk_theme_name + "/plank-no-indicators") {
-            indicator_switch.active = true;
-        } else if (dock_preferences.Theme == "/usr/share/themes/" + gsettings.gtk_theme_name + "/plank") {
-            indicator_switch.active = false;
-        }
-
-        indicator_switch.notify["active"].connect (() => {
-            if (indicator_switch.active) {
-                // Theme with indicators
-                dock_preferences.Theme = "/usr/share/themes/" + gsettings.gtk_theme_name + "/plank";
-            } else {
-                // Theme without indicators
-                dock_preferences.Theme = "/usr/share/themes/" + gsettings.gtk_theme_name + "/plank-no-indicators";
-            }
-        });
+        dock_preferences.bind_property ("Indicators", indicator_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
 
         var indicator_label = new Gtk.Label (_("Display running indicators:"));
         indicator_label.halign = Gtk.Align.END;
