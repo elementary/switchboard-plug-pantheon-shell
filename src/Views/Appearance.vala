@@ -34,8 +34,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
     private Granite.Widgets.ModeButton text_size_modebutton;
 
-    public string current_stylesheet = "";
-
     construct {
         column_spacing = 12;
         halign = Gtk.Align.CENTER;
@@ -188,7 +186,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
         }
 
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
-        current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
+        var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
 
         debug ("Current stylesheet: %s", current_stylesheet);
 
