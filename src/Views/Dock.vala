@@ -150,6 +150,25 @@ public class PantheonShell.Dock : Gtk.Grid {
         var pressure_label = new Gtk.Label (_("Pressure reveal:"));
         pressure_label.halign = Gtk.Align.END;
 
+        var indicator_switch = new Gtk.Switch ();
+        indicator_switch.halign = Gtk.Align.START;
+        indicator_switch.valign = Gtk.Align.CENTER;
+
+        indicator_switch.active = (dock_preferences.Theme == "Gtk+-indicatorless");
+
+        indicator_switch.notify["active"].connect (() => {
+            if (indicator_switch.active) {
+                // Theme without indicators
+                dock_preferences.Theme = "Gtk+-indicatorless";
+            } else {
+                // Theme with indicators
+                dock_preferences.Theme = "Gtk+";
+            }
+        });
+
+        var indicator_label = new Gtk.Label (_("Display running indicators:"));
+        indicator_label.halign = Gtk.Align.END;
+
         attach (icon_label, 1, 0, 1, 1);
         attach (icon_size_grid, 2, 0, 2);
         attach (hide_label, 1, 1, 1, 1);
@@ -161,6 +180,8 @@ public class PantheonShell.Dock : Gtk.Grid {
         attach (monitor, 2, 4, 1, 1);
         attach (pressure_label, 1, 5, 1, 1);
         attach (pressure_switch, 2, 5, 1, 1);
+        attach (indicator_label, 1, 6, 1, 1);
+        attach (indicator_switch, 2, 6, 1, 1);
 
         check_for_screens ();
 
