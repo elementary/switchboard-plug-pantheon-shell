@@ -330,22 +330,16 @@ public class PantheonShell.Appearance : Gtk.Grid {
     }
 
     private void toggle_dyslexia_support (GLib.Settings interface_settings, bool state) {
-
-
         if (state == true) {
             interface_settings.set_string (FONT_KEY, OD_REG_FONT);
             interface_settings.set_string (DOCUMENT_FONT_KEY, OD_DOC_FONT);
             interface_settings.set_string (MONOSPACE_FONT_KEY, OD_MON_FONT);
         }
-
         else {
-
             interface_settings.reset (FONT_KEY);
             interface_settings.reset (DOCUMENT_FONT_KEY);
             interface_settings.reset (MONOSPACE_FONT_KEY);
-
         }
-
     }
 
     private bool update_dyslexia_font_switch (GLib.Settings interface_settings) {
@@ -360,7 +354,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
         else {
             return false;
         }
-
     }
 
     private int get_text_scale (GLib.Settings interface_settings) {
