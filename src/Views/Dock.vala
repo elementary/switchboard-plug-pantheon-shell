@@ -154,7 +154,7 @@ public class PantheonShell.Dock : Gtk.Grid {
         indicator_switch.halign = Gtk.Align.START;
         indicator_switch.valign = Gtk.Align.CENTER;
 
-        var gsettings = Gtk.Settings.get_default();
+        var gsettings = Gtk.Settings.get_default ();
 
         // Has to have full path otherwise Plank won't understand where to look.
         indicator_switch.active = (dock_preferences.Theme == "/usr/share/themes/" + gsettings.gtk_theme_name + "plank-no-indicators");
