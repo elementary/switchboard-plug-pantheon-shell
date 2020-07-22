@@ -158,11 +158,11 @@ public class PantheonShell.Dock : Gtk.Grid {
 
         indicator_switch.notify["active"].connect (() => {
             if (indicator_switch.active) {
-                // Theme without indicators
-                dock_preferences.Theme = "Gtk+-indicatorless";
-            } else {
                 // Theme with indicators
                 dock_preferences.Theme = "Gtk+";
+            } else {
+                // Theme without indicators
+                dock_preferences.Theme = "Gtk+-indicatorless";
             }
         });
 
