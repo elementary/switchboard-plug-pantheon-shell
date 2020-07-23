@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 21:13+0000\n"
-"PO-Revision-Date: 2020-04-30 21:30+0000\n"
+"PO-Revision-Date: 2020-07-23 16:35+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
@@ -102,7 +102,7 @@ msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשול
 
 #: src/Views/Appearance.vala:43
 msgid "Style:"
-msgstr ""
+msgstr "סגנון:"
 
 #: src/Views/Appearance.vala:57 src/Views/Appearance.vala:107
 #: src/Views/Dock.vala:42
@@ -111,14 +111,11 @@ msgstr "בררת מחדל"
 
 #: src/Views/Appearance.vala:75
 msgid "Dark"
-msgstr ""
+msgstr "כהה"
 
 #: src/Views/Appearance.vala:83
-#, fuzzy
-#| msgid ""
-#| "Use a dark visual style for system components like the Panel indicators."
 msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr "להשתמש בסגנון חזותי חשוך לרכיבי מערכת כגון מחווני חלוניות."
+msgstr "סגנון חזותי לרכיבי מערכת כגון מעגן ומחווני חלוניות."
 
 #: src/Views/Appearance.vala:90
 msgid "Window animations:"
@@ -147,53 +144,55 @@ msgstr "גדול מאוד"
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:189
 msgid "Accent:"
-msgstr ""
+msgstr "גוון:"
 
 #: src/Views/Appearance.vala:193
 msgid "Blueberry"
-msgstr ""
+msgstr "אוכמניה"
 
 #: src/Views/Appearance.vala:196
 msgid "Strawberry"
-msgstr ""
+msgstr "תות"
 
 #: src/Views/Appearance.vala:199
 msgid "Orange"
-msgstr ""
+msgstr "תפוז"
 
 #: src/Views/Appearance.vala:202
 msgid "Banana"
-msgstr ""
+msgstr "בננה"
 
 #: src/Views/Appearance.vala:205
 msgid "Lime"
-msgstr ""
+msgstr "ליים"
 
 #: src/Views/Appearance.vala:208
 msgid "Mint"
-msgstr ""
+msgstr "נענע"
 
 #: src/Views/Appearance.vala:211
 msgid "Grape"
-msgstr ""
+msgstr "ענב"
 
 #: src/Views/Appearance.vala:214
 msgid "Bubblegum"
-msgstr ""
+msgstr "מסטיק"
 
 #: src/Views/Appearance.vala:217
 msgid "Cocoa"
-msgstr ""
+msgstr "קקאו"
 
 #: src/Views/Appearance.vala:220
 msgid "Slate"
-msgstr ""
+msgstr "רעף"
 
 #: src/Views/Appearance.vala:235
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"נעשה בזה שימוש בכל רחבי המערכת כבררת מחדל. היישומים תמיד יכולים להשתמש "
+"בגוונים משלהם."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
