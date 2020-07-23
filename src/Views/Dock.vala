@@ -66,6 +66,12 @@ public class PantheonShell.Dock : Gtk.Grid {
 
         dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
 
+        var indicator_switch = new Gtk.Switch ();
+        indicator_switch.halign = Gtk.Align.START;
+        indicator_switch.valign = Gtk.Align.CENTER;
+
+        dock_preferences.bind_property ("DisplayIndicators", indicator_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
+
         var hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append_text (_("Focused window is maximized"));
         hide_mode.append_text (_("Focused window overlaps the dock"));
@@ -149,21 +155,6 @@ public class PantheonShell.Dock : Gtk.Grid {
         primary_monitor_grid.add (primary_monitor);
         var pressure_label = new Gtk.Label (_("Pressure reveal:"));
         pressure_label.halign = Gtk.Align.END;
-
-        var indicator_switch = new Gtk.Switch ();
-        indicator_switch.halign = Gtk.Align.START;
-        indicator_switch.valign = Gtk.Align.CENTER;
-
-        dock_preferences.bind_property ("DisplayIndicators", indicator_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
-
-        indicator_switch.notify["active"].connect (() => {
-            if (indicator_switch.active) {
-                dock_preferences.DisplayIndicators = true;
-            } else {
-                dock_preferences.DisplayIndicators = false;
-            }
-        });
-
         var indicator_label = new Gtk.Label (_("Display running indicators:"));
         indicator_label.halign = Gtk.Align.END;
 
