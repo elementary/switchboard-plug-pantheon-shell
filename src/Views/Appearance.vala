@@ -116,7 +116,8 @@ public class PantheonShell.Appearance : Gtk.Grid {
         };
 
         var animations_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
+            halign = Gtk.Align.START,
+            margin_top = 12
         };
 
         var translucency_label = new Gtk.Label (_("Panel translucency:")) {
@@ -129,10 +130,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         var text_size_label = new Gtk.Label (_("Text size:")) {
             halign = Gtk.Align.END,
-            margin_top = 12
+            margin_top = 24
         };
 
-        text_size_modebutton = new Granite.Widgets.ModeButton ();
+        text_size_modebutton = new Granite.Widgets.ModeButton () {
+            margin_top = 24
+        };
         text_size_modebutton.append_text (_("Small"));
         text_size_modebutton.append_text (_("Default"));
         text_size_modebutton.append_text (_("Large"));
