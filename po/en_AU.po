@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-08 21:13+0000\n"
+"POT-Creation-Date: 2020-07-23 16:37+0000\n"
 "PO-Revision-Date: 2012-10-26 19:34+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: English (Australia) <en_AU@li.org>\n"
@@ -99,93 +99,103 @@ msgstr ""
 msgid "Set selected image to be the new desktop background"
 msgstr ""
 
-#: src/Views/Appearance.vala:43
+#: src/Views/Appearance.vala:52
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:57 src/Views/Appearance.vala:107
+#: src/Views/Appearance.vala:69 src/Views/Appearance.vala:122
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr ""
 
-#: src/Views/Appearance.vala:75
+#: src/Views/Appearance.vala:90
 msgid "Dark"
 msgstr ""
 
-#: src/Views/Appearance.vala:83
+#: src/Views/Appearance.vala:98
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 
-#: src/Views/Appearance.vala:90
+#: src/Views/Appearance.vala:105
 msgid "Window animations:"
 msgstr ""
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:111
 msgid "Panel translucency:"
 msgstr ""
 
-#: src/Views/Appearance.vala:102
+#: src/Views/Appearance.vala:117
 msgid "Text size:"
 msgstr ""
 
-#: src/Views/Appearance.vala:106 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:121 src/Views/Dock.vala:38
 msgid "Small"
 msgstr ""
 
-#: src/Views/Appearance.vala:108 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:123 src/Views/Dock.vala:50
 msgid "Large"
 msgstr ""
 
-#: src/Views/Appearance.vala:109
+#: src/Views/Appearance.vala:124
 msgid "Larger"
 msgstr ""
 
+#: src/Views/Appearance.vala:126
+msgid "Dyslexia-friendly text:"
+msgstr ""
+
+#: src/Views/Appearance.vala:133
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:189
+#: src/Views/Appearance.vala:221
 msgid "Accent:"
 msgstr ""
 
-#: src/Views/Appearance.vala:193
+#: src/Views/Appearance.vala:225
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:196
+#: src/Views/Appearance.vala:228
 msgid "Strawberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:199
+#: src/Views/Appearance.vala:231
 msgid "Orange"
 msgstr ""
 
-#: src/Views/Appearance.vala:202
+#: src/Views/Appearance.vala:234
 msgid "Banana"
 msgstr ""
 
-#: src/Views/Appearance.vala:205
+#: src/Views/Appearance.vala:237
 msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:208
+#: src/Views/Appearance.vala:240
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:211
+#: src/Views/Appearance.vala:243
 msgid "Grape"
 msgstr ""
 
-#: src/Views/Appearance.vala:214
+#: src/Views/Appearance.vala:246
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:217
+#: src/Views/Appearance.vala:249
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:220
+#: src/Views/Appearance.vala:252
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:235
+#: src/Views/Appearance.vala:267
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -241,41 +251,41 @@ msgstr ""
 msgid "When the cursor enters the corner of the display:"
 msgstr ""
 
-#: src/Views/HotCorners.vala:69
+#: src/Views/HotCorners.vala:73
 msgid "Custom command:"
 msgstr ""
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:112
 msgid "Do nothing"
 msgstr ""
 
 #. none
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:113
 msgid "Multitasking View"
 msgstr ""
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:110
+#: src/Views/HotCorners.vala:114
 msgid "Maximize current window"
 msgstr ""
 
 #. maximize-current
-#: src/Views/HotCorners.vala:111
+#: src/Views/HotCorners.vala:115
 msgid "Show Applications Menu"
 msgstr ""
 
 #. open-launcher
-#: src/Views/HotCorners.vala:112
+#: src/Views/HotCorners.vala:116
 msgid "Show all windows"
 msgstr ""
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:113
+#: src/Views/HotCorners.vala:117
 msgid "Switch to new workspace"
 msgstr ""
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:114
+#: src/Views/HotCorners.vala:118
 msgid "Execute custom command"
 msgstr ""
 
