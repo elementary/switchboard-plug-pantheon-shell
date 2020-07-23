@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-08 21:13+0000\n"
+"POT-Creation-Date: 2020-07-23 17:22+0000\n"
 "PO-Revision-Date: 2020-06-12 18:11+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -33,7 +33,7 @@ msgid "Wallpaper"
 msgstr "Papel de parede"
 
 #: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
-#: src/Plug.vala:118
+#: src/Plug.vala:118 src/Plug.vala:119
 msgid "Appearance"
 msgstr "Aparência"
 
@@ -42,7 +42,7 @@ msgstr "Aparência"
 msgid "Dock"
 msgstr "Doca"
 
-#: src/Plug.vala:65 src/Plug.vala:119
+#: src/Plug.vala:65 src/Plug.vala:120
 msgid "Hot Corners"
 msgstr "Cantos ativos"
 
@@ -74,6 +74,10 @@ msgstr "Translucidez do painel"
 msgid "Text size"
 msgstr "Tamanho do texto"
 
+#: src/Plug.vala:119
+msgid "Dyslexia-friendly text"
+msgstr ""
+
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -101,95 +105,105 @@ msgid "Set selected image to be the new desktop background"
 msgstr ""
 "Definir a imagem selecionada para ser o novo fundo do ambiente de trabalho"
 
-#: src/Views/Appearance.vala:43
+#: src/Views/Appearance.vala:52
 msgid "Style:"
 msgstr "Estilo:"
 
-#: src/Views/Appearance.vala:57 src/Views/Appearance.vala:107
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Predefinido"
 
-#: src/Views/Appearance.vala:75
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr "Escuro"
 
-#: src/Views/Appearance.vala:83
+#: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 "Estilo visual escuro para componentes do sistema como os indicadores da Doca "
 "e Painel."
 
-#: src/Views/Appearance.vala:90
+#: src/Views/Appearance.vala:113
 msgid "Window animations:"
 msgstr "Animações de janelas:"
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:123
 msgid "Panel translucency:"
 msgstr "Translucidez do painel:"
 
-#: src/Views/Appearance.vala:102
+#: src/Views/Appearance.vala:131
 msgid "Text size:"
 msgstr "Tamanho do texto:"
 
-#: src/Views/Appearance.vala:106 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Pequeno"
 
-#: src/Views/Appearance.vala:108 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Grande"
 
-#: src/Views/Appearance.vala:109
+#: src/Views/Appearance.vala:142
 msgid "Larger"
 msgstr "Maior"
 
+#: src/Views/Appearance.vala:144
+msgid "Dyslexia-friendly text:"
+msgstr ""
+
+#: src/Views/Appearance.vala:153
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:189
+#: src/Views/Appearance.vala:242
 msgid "Accent:"
 msgstr "Destaque:"
 
-#: src/Views/Appearance.vala:193
+#: src/Views/Appearance.vala:246
 msgid "Blueberry"
 msgstr "Mirtilo"
 
-#: src/Views/Appearance.vala:196
+#: src/Views/Appearance.vala:249
 msgid "Strawberry"
 msgstr "Morango"
 
-#: src/Views/Appearance.vala:199
+#: src/Views/Appearance.vala:252
 msgid "Orange"
 msgstr "Laranja"
 
-#: src/Views/Appearance.vala:202
+#: src/Views/Appearance.vala:255
 msgid "Banana"
 msgstr "Banana"
 
-#: src/Views/Appearance.vala:205
+#: src/Views/Appearance.vala:258
 msgid "Lime"
 msgstr "Lima"
 
-#: src/Views/Appearance.vala:208
+#: src/Views/Appearance.vala:261
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:211
+#: src/Views/Appearance.vala:264
 msgid "Grape"
 msgstr "Uva"
 
-#: src/Views/Appearance.vala:214
+#: src/Views/Appearance.vala:267
 msgid "Bubblegum"
 msgstr "Pastilha elástica"
 
-#: src/Views/Appearance.vala:217
+#: src/Views/Appearance.vala:270
 msgid "Cocoa"
 msgstr "Cacau"
 
-#: src/Views/Appearance.vala:220
+#: src/Views/Appearance.vala:273
 msgid "Slate"
 msgstr "Ardósia"
 
-#: src/Views/Appearance.vala:235
+#: src/Views/Appearance.vala:288
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -247,41 +261,41 @@ msgstr "Ecrã %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Quando o cursor vai para o canto do ecrã:"
 
-#: src/Views/HotCorners.vala:69
+#: src/Views/HotCorners.vala:73
 msgid "Custom command:"
 msgstr "Comando personalizado:"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/HotCorners.vala:112
 msgid "Do nothing"
 msgstr "Não fazer nada"
 
 #. none
-#: src/Views/HotCorners.vala:109
+#: src/Views/HotCorners.vala:113
 msgid "Multitasking View"
 msgstr "Vista de Tarefas"
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:110
+#: src/Views/HotCorners.vala:114
 msgid "Maximize current window"
 msgstr "Maximizar janela focada"
 
 #. maximize-current
-#: src/Views/HotCorners.vala:111
+#: src/Views/HotCorners.vala:115
 msgid "Show Applications Menu"
 msgstr "Mostrar Menu de Aplicações"
 
 #. open-launcher
-#: src/Views/HotCorners.vala:112
+#: src/Views/HotCorners.vala:116
 msgid "Show all windows"
 msgstr "Mostrar todas as janelas"
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:113
+#: src/Views/HotCorners.vala:117
 msgid "Switch to new workspace"
 msgstr "Alternar para nova área de trabalho"
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:114
+#: src/Views/HotCorners.vala:118
 msgid "Execute custom command"
 msgstr "Executar comando personalizado"
 
