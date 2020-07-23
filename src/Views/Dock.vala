@@ -154,7 +154,15 @@ public class PantheonShell.Dock : Gtk.Grid {
         indicator_switch.halign = Gtk.Align.START;
         indicator_switch.valign = Gtk.Align.CENTER;
 
-        dock_preferences.bind_property ("Indicators", indicator_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
+        dock_preferences.bind_property ("DisplayIndicators", indicator_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
+
+        indicator_switch.notify["active"].connect (() => {
+            if (indicator_switch.active) {
+                dock_preferences.DisplayIndicators = true;
+            } else {
+                dock_preferences.DisplayIndicators = false;
+            }
+        });
 
         var indicator_label = new Gtk.Label (_("Display running indicators:"));
         indicator_label.halign = Gtk.Align.END;
