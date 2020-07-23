@@ -151,14 +151,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
         attach (text_size_modebutton, 1, 6, 2);
         attach (dyslexia_font_label, 0, 7);
         attach (dyslexia_font_switch, 1, 7);
-        attach (dyslexia_font_description_label, 1, 8);
+        attach (dyslexia_font_description_label, 1, 8, 2);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
-
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -349,8 +348,8 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         if (interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT ) {
             return true;
-
         }
+
         else {
             return false;
         }
