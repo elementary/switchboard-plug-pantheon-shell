@@ -49,73 +49,88 @@ public class PantheonShell.Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
-        var dark_label = new Gtk.Label (_("Style:"));
-        dark_label.halign = Gtk.Align.END;
+        var dark_label = new Gtk.Label (_("Style:")) {
+            halign = Gtk.Align.END
+        };
 
         var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
 
-        var prefer_default_card = new Gtk.Grid ();
-        prefer_default_card.margin = 6;
-        prefer_default_card.margin_start = 12;
+        var prefer_default_card = new Gtk.Grid () {
+            margin = 6,
+            margin_start = 12
+        };
         prefer_default_card.add (prefer_default_image);
 
         unowned Gtk.StyleContext prefer_default_card_context = prefer_default_card.get_style_context ();
         prefer_default_card_context.add_class (Granite.STYLE_CLASS_CARD);
         prefer_default_card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
 
-        var prefer_default_grid = new Gtk.Grid ();
-        prefer_default_grid.row_spacing = 6;
+        var prefer_default_grid = new Gtk.Grid () {
+            row_spacing = 6
+        };
         prefer_default_grid.attach (prefer_default_card, 0, 0);
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
 
-        var prefer_default_radio = new Gtk.RadioButton (null);
-        prefer_default_radio.halign = Gtk.Align.START;
+        var prefer_default_radio = new Gtk.RadioButton (null) {
+            halign = Gtk.Align.START
+        };
         prefer_default_radio.get_style_context ().add_class ("image-button");
         prefer_default_radio.add (prefer_default_grid);
 
         var prefer_dark_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg");
 
-        var prefer_dark_card = new Gtk.Grid ();
-        prefer_dark_card.margin = 6;
-        prefer_dark_card.margin_start = 12;
+        var prefer_dark_card = new Gtk.Grid () {
+            margin = 6,
+            margin_start = 12
+        };
         prefer_dark_card.add (prefer_dark_image);
 
         unowned Gtk.StyleContext prefer_dark_card_context = prefer_dark_card.get_style_context ();
         prefer_dark_card_context.add_class (Granite.STYLE_CLASS_CARD);
         prefer_dark_card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
 
-        var prefer_dark_grid = new Gtk.Grid ();
-        prefer_dark_grid.row_spacing = 6;
+        var prefer_dark_grid = new Gtk.Grid () {
+            row_spacing = 6
+        };
         prefer_dark_grid.attach (prefer_dark_card, 0, 0);
         prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
 
-        var prefer_dark_radio = new Gtk.RadioButton.from_widget (prefer_default_radio);
-        prefer_dark_radio.halign = Gtk.Align.START;
-        prefer_dark_radio.hexpand = true;
+        var prefer_dark_radio = new Gtk.RadioButton.from_widget (prefer_default_radio) {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
         prefer_dark_radio.get_style_context ().add_class ("image-button");
         prefer_dark_radio.add (prefer_dark_grid);
 
-        var dark_info = new Gtk.Label (_("Visual style for system components like the Dock and Panel indicators."));
-        dark_info.max_width_chars = 60;
-        dark_info.margin_bottom = 18;
-        dark_info.wrap = true;
-        dark_info.xalign = 0;
+        var dark_info = new Gtk.Label (_("Visual style for system components like the Dock and Panel indicators.")) {
+            max_width_chars = 60,
+            margin_bottom = 18,
+            wrap = true,
+            xalign = 0
+        };
         dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var animations_label = new Gtk.Label (_("Window animations:"));
-        animations_label.halign = Gtk.Align.END;
+        var animations_label = new Gtk.Label (_("Window animations:")) {
+            halign = Gtk.Align.END,
+            margin_top = 12
+        };
 
-        var animations_switch = new Gtk.Switch ();
-        animations_switch.halign = Gtk.Align.START;
+        var animations_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
 
-        var translucency_label = new Gtk.Label (_("Panel translucency:"));
-        translucency_label.halign = Gtk.Align.END;
+        var translucency_label = new Gtk.Label (_("Panel translucency:")) {
+            halign = Gtk.Align.END
+        };
 
-        var translucency_switch = new Gtk.Switch ();
-        translucency_switch.halign = Gtk.Align.START;
+        var translucency_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
 
-        var text_size_label = new Gtk.Label (_("Text size:"));
-        text_size_label.halign = Gtk.Align.END;
+        var text_size_label = new Gtk.Label (_("Text size:")) {
+            halign = Gtk.Align.END,
+            margin_top = 12
+        };
 
         text_size_modebutton = new Granite.Widgets.ModeButton ();
         text_size_modebutton.append_text (_("Small"));
@@ -123,18 +138,21 @@ public class PantheonShell.Appearance : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:"));
-        dyslexia_font_label.halign = Gtk.Align.END;
+        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:")) {
+            halign = Gtk.Align.END
+        };
 
-        var dyslexia_font_switch = new Gtk.Switch ();
-        dyslexia_font_switch.halign = Gtk.Align.START;
+        var dyslexia_font_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
 
         var dyslexia_font_description_label = new Gtk.Label (
             _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
-        );
-        dyslexia_font_description_label.max_width_chars = 60;
-        dyslexia_font_description_label.wrap = true;
-        dyslexia_font_description_label.xalign = 0;
+        ) {
+            max_width_chars = 60,
+            wrap = true,
+            xalign = 0
+        };
         dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         /* Row 0 and 1 are for the dark style UI that gets attached only if we
