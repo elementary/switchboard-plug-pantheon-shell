@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 16:37+0000\n"
+"POT-Creation-Date: 2020-07-23 17:22+0000\n"
 "PO-Revision-Date: 2018-10-20 21:05+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
@@ -32,7 +32,7 @@ msgid "Wallpaper"
 msgstr "Gambar Latar"
 
 #: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
-#: src/Plug.vala:118
+#: src/Plug.vala:118 src/Plug.vala:119
 msgid "Appearance"
 msgstr ""
 
@@ -41,7 +41,7 @@ msgstr ""
 msgid "Dock"
 msgstr "Dok"
 
-#: src/Plug.vala:65 src/Plug.vala:119
+#: src/Plug.vala:65 src/Plug.vala:120
 msgid "Hot Corners"
 msgstr "Pojok Interaktif"
 
@@ -74,6 +74,10 @@ msgstr ""
 msgid "Text size"
 msgstr "Ukuran ikon:"
 
+#: src/Plug.vala:119
+msgid "Dyslexia-friendly text"
+msgstr ""
+
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -104,101 +108,101 @@ msgstr "Tetapkan gambar yang dipilih menjadi latar belakang destop yang baru"
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:69 src/Views/Appearance.vala:122
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr ""
 
-#: src/Views/Appearance.vala:90
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr ""
 
-#: src/Views/Appearance.vala:98
+#: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 
-#: src/Views/Appearance.vala:105
+#: src/Views/Appearance.vala:113
 msgid "Window animations:"
 msgstr ""
 
-#: src/Views/Appearance.vala:111
+#: src/Views/Appearance.vala:123
 msgid "Panel translucency:"
 msgstr ""
 
-#: src/Views/Appearance.vala:117
+#: src/Views/Appearance.vala:131
 #, fuzzy
 msgid "Text size:"
 msgstr "Ukuran ikon:"
 
-#: src/Views/Appearance.vala:121 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Kecil"
 
-#: src/Views/Appearance.vala:123 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Besar"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:142
 #, fuzzy
 msgid "Larger"
 msgstr "Besar"
 
-#: src/Views/Appearance.vala:126
+#: src/Views/Appearance.vala:144
 msgid "Dyslexia-friendly text:"
 msgstr ""
 
-#: src/Views/Appearance.vala:133
+#: src/Views/Appearance.vala:153
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:221
+#: src/Views/Appearance.vala:242
 msgid "Accent:"
 msgstr ""
 
-#: src/Views/Appearance.vala:225
+#: src/Views/Appearance.vala:246
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:228
+#: src/Views/Appearance.vala:249
 msgid "Strawberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:231
+#: src/Views/Appearance.vala:252
 msgid "Orange"
 msgstr ""
 
-#: src/Views/Appearance.vala:234
+#: src/Views/Appearance.vala:255
 msgid "Banana"
 msgstr ""
 
-#: src/Views/Appearance.vala:237
+#: src/Views/Appearance.vala:258
 msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:240
+#: src/Views/Appearance.vala:261
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:243
+#: src/Views/Appearance.vala:264
 msgid "Grape"
 msgstr ""
 
-#: src/Views/Appearance.vala:246
+#: src/Views/Appearance.vala:267
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:249
+#: src/Views/Appearance.vala:270
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:252
+#: src/Views/Appearance.vala:273
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:267
+#: src/Views/Appearance.vala:288
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

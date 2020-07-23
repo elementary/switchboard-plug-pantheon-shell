@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 16:37+0000\n"
+"POT-Creation-Date: 2020-07-23 17:22+0000\n"
 "PO-Revision-Date: 2020-07-15 23:12+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@posteo.net>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -33,7 +33,7 @@ msgid "Wallpaper"
 msgstr "Wallpaper"
 
 #: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
-#: src/Plug.vala:118
+#: src/Plug.vala:118 src/Plug.vala:119
 msgid "Appearance"
 msgstr "Appearance"
 
@@ -42,7 +42,7 @@ msgstr "Appearance"
 msgid "Dock"
 msgstr "Dock"
 
-#: src/Plug.vala:65 src/Plug.vala:119
+#: src/Plug.vala:65 src/Plug.vala:120
 msgid "Hot Corners"
 msgstr "Hot Corners"
 
@@ -74,6 +74,10 @@ msgstr "Panel translucency"
 msgid "Text size"
 msgstr "Text size"
 
+#: src/Plug.vala:119
+msgid "Dyslexia-friendly text"
+msgstr ""
+
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
 #. *
@@ -104,99 +108,99 @@ msgstr "Set selected image to be the new desktop background"
 msgid "Style:"
 msgstr "Style:"
 
-#: src/Views/Appearance.vala:69 src/Views/Appearance.vala:122
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Default"
 
-#: src/Views/Appearance.vala:90
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr "Dark"
 
-#: src/Views/Appearance.vala:98
+#: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr "Visual style for system components like the Dock and Panel indicators."
 
-#: src/Views/Appearance.vala:105
+#: src/Views/Appearance.vala:113
 msgid "Window animations:"
 msgstr "Window animations:"
 
-#: src/Views/Appearance.vala:111
+#: src/Views/Appearance.vala:123
 msgid "Panel translucency:"
 msgstr "Panel translucency:"
 
-#: src/Views/Appearance.vala:117
+#: src/Views/Appearance.vala:131
 msgid "Text size:"
 msgstr "Text size:"
 
-#: src/Views/Appearance.vala:121 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Small"
 
-#: src/Views/Appearance.vala:123 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Large"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:142
 msgid "Larger"
 msgstr "Larger"
 
-#: src/Views/Appearance.vala:126
+#: src/Views/Appearance.vala:144
 msgid "Dyslexia-friendly text:"
 msgstr ""
 
-#: src/Views/Appearance.vala:133
+#: src/Views/Appearance.vala:153
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:221
+#: src/Views/Appearance.vala:242
 msgid "Accent:"
 msgstr "Accent:"
 
-#: src/Views/Appearance.vala:225
+#: src/Views/Appearance.vala:246
 msgid "Blueberry"
 msgstr "Blueberry"
 
-#: src/Views/Appearance.vala:228
+#: src/Views/Appearance.vala:249
 msgid "Strawberry"
 msgstr "Strawberry"
 
-#: src/Views/Appearance.vala:231
+#: src/Views/Appearance.vala:252
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:234
+#: src/Views/Appearance.vala:255
 msgid "Banana"
 msgstr "Banana"
 
-#: src/Views/Appearance.vala:237
+#: src/Views/Appearance.vala:258
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:240
+#: src/Views/Appearance.vala:261
 msgid "Mint"
 msgstr "Mint"
 
-#: src/Views/Appearance.vala:243
+#: src/Views/Appearance.vala:264
 msgid "Grape"
 msgstr "Grape"
 
-#: src/Views/Appearance.vala:246
+#: src/Views/Appearance.vala:267
 msgid "Bubblegum"
 msgstr "Bubblegum"
 
-#: src/Views/Appearance.vala:249
+#: src/Views/Appearance.vala:270
 msgid "Cocoa"
 msgstr "Cocoa"
 
-#: src/Views/Appearance.vala:252
+#: src/Views/Appearance.vala:273
 msgid "Slate"
 msgstr "Slate"
 
-#: src/Views/Appearance.vala:267
+#: src/Views/Appearance.vala:288
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
