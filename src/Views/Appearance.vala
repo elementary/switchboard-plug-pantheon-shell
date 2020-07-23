@@ -30,6 +30,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
     private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
     private const string ANIMATIONS_KEY = "enable-animations";
 
+    private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
+    private const string FONT_KEY = "font-name";
+    private const string DOCUMENT_FONT_KEY = "document-font-name";
+    private const string MONOSPACE_FONT_KEY = "monospace-font-name";
+
+    private const string OD_REG_FONT = "OpenDyslexic Regular 9";
+    private const string OD_DOC_FONT = "OpenDyslexic Regular 10";
+    private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
+
     private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
 
     private Granite.Widgets.ModeButton text_size_modebutton;
@@ -114,6 +123,20 @@ public class PantheonShell.Appearance : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
+        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:"));
+        dyslexia_font_label.halign = Gtk.Align.END;
+
+        var dyslexia_font_switch = new Gtk.Switch ();
+        dyslexia_font_switch.halign = Gtk.Align.START;
+
+        var dyslexia_font_description_label = new Gtk.Label (
+            _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
+        );
+        dyslexia_font_description_label.max_width_chars = 60;
+        dyslexia_font_description_label.wrap = true;
+        dyslexia_font_description_label.xalign = 0;
+        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
         /* Row 0 and 1 are for the dark style UI that gets attached only if we
          * can connect to the DBus API
          *
@@ -126,6 +149,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
         attach (translucency_switch, 1, 5);
         attach (text_size_label, 0, 6);
         attach (text_size_modebutton, 1, 6, 2);
+        attach (dyslexia_font_label, 0, 7);
+        attach (dyslexia_font_switch, 1, 7);
+        attach (dyslexia_font_description_label, 1, 8, 2);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -256,6 +282,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
         text_size_modebutton.mode_changed.connect (() => {
             set_text_scale (interface_settings, text_size_modebutton.selected);
         });
+
+        dyslexia_font_switch.set_active (update_dyslexia_font_switch (interface_settings));
+
+        dyslexia_font_switch.state_set.connect (() => {
+            toggle_dyslexia_support (interface_settings, dyslexia_font_switch.get_active () );
+        });
     }
 
     private class ColorButton : Gtk.RadioButton {
@@ -293,6 +325,33 @@ public class PantheonShell.Appearance : Gtk.Grid {
                     );
                 });
             });
+        }
+    }
+
+    private void toggle_dyslexia_support (GLib.Settings interface_settings, bool state) {
+        if (state == true) {
+            interface_settings.set_string (FONT_KEY, OD_REG_FONT);
+            interface_settings.set_string (DOCUMENT_FONT_KEY, OD_DOC_FONT);
+            interface_settings.set_string (MONOSPACE_FONT_KEY, OD_MON_FONT);
+        }
+        else {
+            interface_settings.reset (FONT_KEY);
+            interface_settings.reset (DOCUMENT_FONT_KEY);
+            interface_settings.reset (MONOSPACE_FONT_KEY);
+        }
+    }
+
+    private bool update_dyslexia_font_switch (GLib.Settings interface_settings) {
+        var interface_font = interface_settings.get_string (FONT_KEY);
+        var document_font = interface_settings.get_string (DOCUMENT_FONT_KEY);
+        var monospace_font = interface_settings.get_string (MONOSPACE_FONT_KEY);
+
+        if (interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT ) {
+            return true;
+        }
+
+        else {
+            return false;
         }
     }
 
