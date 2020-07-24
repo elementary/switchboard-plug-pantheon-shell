@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-05-09 19:27+0000\n"
+"PO-Revision-Date: 2020-07-25 16:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -71,7 +71,7 @@ msgstr "テキストサイズ"
 
 #: src/Plug.vala:119
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "ディスクレシアに配慮したテキスト"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -144,13 +144,13 @@ msgstr "最大"
 
 #: src/Views/Appearance.vala:144
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "ディスクレシアに配慮したテキスト:"
 
 #: src/Views/Appearance.vala:153
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
-msgstr ""
+msgstr "下部が強調され、字間が確保された書体を使用することで、可読性と読む速度の改善に役立つ可能性があります。"
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:242
