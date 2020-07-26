@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-07-25 16:12+0000\n"
+"PO-Revision-Date: 2020-07-28 14:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -71,7 +71,7 @@ msgstr "テキストサイズ"
 
 #: src/Plug.vala:119
 msgid "Dyslexia-friendly text"
-msgstr "ディスクレシアに配慮したテキスト"
+msgstr "ディスレクシアに配慮したテキスト"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -144,7 +144,7 @@ msgstr "最大"
 
 #: src/Views/Appearance.vala:144
 msgid "Dyslexia-friendly text:"
-msgstr "ディスクレシアに配慮したテキスト:"
+msgstr "ディスレクシアに配慮したテキスト:"
 
 #: src/Views/Appearance.vala:153
 msgid ""
