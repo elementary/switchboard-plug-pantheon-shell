@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-05-08 14:10+0000\n"
+"PO-Revision-Date: 2020-07-25 16:12+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -29,16 +29,18 @@ msgstr "Configurer le dock, les coins dynamiques et modifier le fond d'écran"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nouvelles fonctionnalités :"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"Préférence de texte appropriée pour les dyslexiques afin d'utiliser la "
+"police OpenDyslexia dans tout le système"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Other updates:"
-msgstr ""
+msgstr "Autres mises à jour :"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27

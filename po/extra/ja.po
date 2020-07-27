@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-06-08 10:11+0000\n"
+"PO-Revision-Date: 2020-07-25 16:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -29,16 +29,16 @@ msgstr "ドック、ホットコーナーを設定し、壁紙を変更します
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "新機能:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
-msgstr ""
+msgstr "ディスクレシアに配慮した OpenDyslexia フォントをシステム全体に適用できる設定を追加"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Other updates:"
-msgstr ""
+msgstr "そのほかのアップデート:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27

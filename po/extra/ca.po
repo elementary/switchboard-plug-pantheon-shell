@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-04-30 04:10+0000\n"
+"PO-Revision-Date: 2020-07-25 16:12+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ca/>\n"
@@ -30,16 +30,18 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Característiques noves:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"Preferència de text adaptada a la dislèxia per usar a tot el sistema la "
+"lletra OpenDyslexia"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Other updates:"
-msgstr ""
+msgstr "Altres actualitzacions:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
