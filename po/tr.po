@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-05-18 20:11+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"PO-Revision-Date: 2020-07-28 14:12+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
 "Language: tr\n"
@@ -76,7 +76,7 @@ msgstr "Metin boyutu"
 
 #: src/Plug.vala:119
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "Disleksi-dostu yazı"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -147,13 +147,15 @@ msgstr "Çok Büyük"
 
 #: src/Views/Appearance.vala:144
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "Disleksi-dostu yazı:"
 
 #: src/Views/Appearance.vala:153
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"Aşağıdan ağır şekiller ve artırılmış karakter aralığı, okunabilirliği ve "
+"okuma hızını artırmaya yardımcı olabilir."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:242
