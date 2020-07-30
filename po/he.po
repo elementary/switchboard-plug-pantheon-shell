@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-07-23 16:35+0000\n"
+"PO-Revision-Date: 2020-07-31 03:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
@@ -76,7 +76,7 @@ msgstr "גודל כתב"
 
 #: src/Plug.vala:119
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "טקסט ידידותי לדיסקלציה"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -147,13 +147,15 @@ msgstr "גדול מאוד"
 
 #: src/Views/Appearance.vala:144
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "טקסט ידידותי לדיסלקציה:"
 
 #: src/Views/Appearance.vala:153
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"צורות עם בסיס רחב ויותר ריווח בין התווים עשוי לשפר את מידת הקריאות ואת "
+"מהירות הקריאה של הטקסט."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:242
