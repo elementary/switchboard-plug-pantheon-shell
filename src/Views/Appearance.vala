@@ -208,6 +208,10 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
             prefer_default_radio.toggled.connect (() => {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.NO_PREFERENCE;
+
+                if (prefer_default_radio.active) {
+                    schedule_button.selected = 0;
+                }
             });
 
             prefer_dark_radio.toggled.connect (() => {
