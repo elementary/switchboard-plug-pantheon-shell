@@ -30,10 +30,11 @@ public class PantheonShell.Plug : Switchboard.Plug {
         settings.set ("desktop/appearance/wallpaper", "wallpaper");
         settings.set ("desktop/appearance", "appearance");
         settings.set ("desktop/dock", "dock");
-        settings.set ("desktop/hot-corners", "multitasking");
+        settings.set ("desktop/multitasking "multitasking");
 
         // DEPRECATED
         settings.set ("desktop/wallpaper", "wallpaper");
+        settings.set ("desktop/hot-corners", "multitasking");
 
         Object (category: Category.PERSONAL,
                 code_name: "io.elementary.switchboard.pantheon-shell",
