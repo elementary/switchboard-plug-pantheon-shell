@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 17:22+0000\n"
+"POT-Creation-Date: 2020-08-18 19:55+0000\n"
 "PO-Revision-Date: 2019-12-19 21:07+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,67 +21,73 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:41
 msgid "Desktop"
 msgstr "Namizje"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Nastavitve sidrišča, vročih kotov in ozadja"
 
-#: src/Plug.vala:55 src/Plug.vala:109
+#: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
 msgstr "Ozadje"
 
-#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
-#: src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
+#: src/Plug.vala:119 src/Plug.vala:120
 msgid "Appearance"
 msgstr "Izgled"
 
-#: src/Plug.vala:62 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
-#: src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
 msgstr "Sidrišče"
 
-#: src/Plug.vala:65 src/Plug.vala:120
-msgid "Hot Corners"
-msgstr "Bližnjice v kotih zaslona"
+#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+#, fuzzy
+#| msgid "Multitasking View"
+msgid "Multitasking"
+msgstr "Pokaži vsa okna"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:112
 msgid "Hide Mode"
 msgstr "Način skrivanja"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:113
 msgid "Icon Size"
 msgstr "Velikost ikon"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:114
 msgid "Pressure reveal"
 msgstr "Prikaži ob pritisku"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:115
 msgid "Display"
 msgstr "Zaslon"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:117
 #, fuzzy
 #| msgid "Window animations:"
 msgid "Window animations"
 msgstr "Animacije oken:"
 
-#: src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Panel translucency"
 msgstr ""
 
-#: src/Plug.vala:118
+#: src/Plug.vala:119
 #, fuzzy
 #| msgid "Text size:"
 msgid "Text size"
 msgstr "Velikost besedila:"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:120
 msgid "Dyslexia-friendly text"
 msgstr ""
+
+#: src/Plug.vala:122
+msgid "Hot Corners"
+msgstr "Bližnjice v kotih zaslona"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -257,45 +263,45 @@ msgstr "Monitor %d"
 msgid "Display %d"
 msgstr "Zaslon %d"
 
-#: src/Views/HotCorners.vala:37
+#: src/Views/Multitasking.vala:37
 msgid "When the cursor enters the corner of the display:"
 msgstr "Ko miškin kazalec vstopi v kot zaslona:"
 
-#: src/Views/HotCorners.vala:73
+#: src/Views/Multitasking.vala:73
 msgid "Custom command:"
 msgstr "Ukaz:"
 
-#: src/Views/HotCorners.vala:112
+#: src/Views/Multitasking.vala:112
 msgid "Do nothing"
 msgstr "Ne naredi ničesar"
 
 #. none
-#: src/Views/HotCorners.vala:113
+#: src/Views/Multitasking.vala:113
 msgid "Multitasking View"
 msgstr "Pokaži vsa okna"
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:114
+#: src/Views/Multitasking.vala:114
 msgid "Maximize current window"
 msgstr "Maksimiraj trenutno okno"
 
 #. maximize-current
-#: src/Views/HotCorners.vala:115
+#: src/Views/Multitasking.vala:115
 msgid "Show Applications Menu"
 msgstr "Prikaži aplikacijski meni"
 
 #. open-launcher
-#: src/Views/HotCorners.vala:116
+#: src/Views/Multitasking.vala:116
 msgid "Show all windows"
 msgstr "Pokaži vsa okna"
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:117
+#: src/Views/Multitasking.vala:117
 msgid "Switch to new workspace"
 msgstr "Preklopi na nov delovni prostor"
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:118
+#: src/Views/Multitasking.vala:118
 msgid "Execute custom command"
 msgstr "Poženi ukaz"
 
