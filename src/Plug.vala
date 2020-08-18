@@ -30,10 +30,11 @@ public class PantheonShell.Plug : Switchboard.Plug {
         settings.set ("desktop/appearance/wallpaper", "wallpaper");
         settings.set ("desktop/appearance", "appearance");
         settings.set ("desktop/dock", "dock");
-        settings.set ("desktop/hot-corners", "hotc");
+        settings.set ("desktop/multitasking", "multitasking");
 
         // DEPRECATED
         settings.set ("desktop/wallpaper", "wallpaper");
+        settings.set ("desktop/hot-corners", "multitasking");
 
         Object (category: Category.PERSONAL,
                 code_name: "io.elementary.switchboard.pantheon-shell",
@@ -49,7 +50,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             wallpaper_view = new Wallpaper (this);
 
-            var hotcorners = new HotCorners ();
+            var multitasking = new Multitasking ();
 
             stack = new Gtk.Stack ();
             stack.add_titled (wallpaper_view, "wallpaper", _("Wallpaper"));
@@ -62,7 +63,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
                 stack.add_titled (dock, "dock", _("Dock"));
             }
 
-            stack.add_titled (hotcorners, "hotc", _("Hot Corners"));
+            stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
             var stack_switcher = new Gtk.StackSwitcher ();
             stack_switcher.stack = stack;
@@ -97,8 +98,8 @@ public class PantheonShell.Plug : Switchboard.Plug {
             case "dock":
                 stack.set_visible_child_name ("dock");
                 break;
-            case "hotc":
-                stack.set_visible_child_name ("hotc");
+            case "multitasking":
+                stack.set_visible_child_name ("multitasking");
                 break;
         }
     }
@@ -117,7 +118,8 @@ public class PantheonShell.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Panel translucency")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Text size")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dyslexia-friendly text")), "appearance");
-        search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
+        search_results.set ("%s → %s".printf (display_name, _("Multitasking")), "multitasking");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Hot Corners")), "multitasking");
         return search_results;
     }
 }
