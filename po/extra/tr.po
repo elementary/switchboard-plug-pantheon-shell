@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-07-28 14:12+0000\n"
-"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
+"PO-Revision-Date: 2020-08-13 07:13+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/tr/>\n"
 "Language: tr\n"
@@ -54,7 +54,7 @@ msgstr "Başlatıcı simge boyutları görselleştirildi"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix system wallpapers being copied"
-msgstr "Kopyalanan sistem duvar kağıtlarını düzeltin"
+msgstr "Kopyalanan sistem duvar kağıtları sorunu düzeltildi"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
 msgid "Update search results"
