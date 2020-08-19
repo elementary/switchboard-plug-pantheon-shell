@@ -232,7 +232,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
                 }
             });
 
-            var settings = new GLib.Settings ("io.elementary.settings-daemon.plugins.color");
+            var settings = new GLib.Settings ("io.elementary.settings-daemon.color");
 
             from_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-from"));
             from_time.time_changed.connect (() => {
