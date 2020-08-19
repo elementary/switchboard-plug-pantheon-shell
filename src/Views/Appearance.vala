@@ -208,7 +208,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
             prefer_default_radio.toggled.connect (() => {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.NO_PREFERENCE;
+            });
 
+            prefer_default_radio.pressed.connect (() => {
                 if (prefer_default_radio.active) {
                     schedule_button.selected = 0;
                 }
@@ -233,7 +235,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var settings = new GLib.Settings ("io.elementary.settings-daemon.plugins.color");
 
             from_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-from"));
+            from_time.time_changed.connect (() => {
+                settings.set_double ("prefer-dark-schedule-from", date_time_double (from_time.time));
+            });
             to_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-to"));
+            to_time.time_changed.connect (() => {
+                settings.set_double ("prefer-dark-schedule-to", date_time_double (to_time.time));
+            });
 
             var schedule = settings.get_string ("prefer-dark-schedule");
             if (schedule == "manual") {
@@ -419,5 +427,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
         var date_time = new DateTime.local (1, 1, 1, hours, minutes, 0.0);
 
         return date_time;
+    }
+
+    private static double date_time_double (DateTime date_time) {
+        double time_double = 0;
+        time_double += date_time.get_hour ();
+        time_double += (double) date_time.get_minute () / 60;
+
+        return time_double;
     }
 }
