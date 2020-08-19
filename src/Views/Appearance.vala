@@ -211,9 +211,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
             });
 
             prefer_default_radio.pressed.connect (() => {
-                if (prefer_default_radio.active) {
-                    schedule_button.selected = 0;
-                }
+                schedule_button.selected = 0;
             });
 
             prefer_dark_radio.toggled.connect (() => {
