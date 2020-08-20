@@ -30,6 +30,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
     private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
     private const string ANIMATIONS_KEY = "enable-animations";
 
+    private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
+    private const string FONT_KEY = "font-name";
+    private const string DOCUMENT_FONT_KEY = "document-font-name";
+    private const string MONOSPACE_FONT_KEY = "monospace-font-name";
+
+    private const string OD_REG_FONT = "OpenDyslexic Regular 9";
+    private const string OD_DOC_FONT = "OpenDyslexic Regular 10";
+    private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
+
     private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
 
     private Granite.Widgets.ModeButton text_size_modebutton;
@@ -40,62 +49,71 @@ public class PantheonShell.Appearance : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 6;
 
-        var dark_label = new Gtk.Label (_("Style:"));
-        dark_label.halign = Gtk.Align.END;
+        var dark_label = new Gtk.Label (_("Style:")) {
+            halign = Gtk.Align.END
+        };
 
         var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
 
-        var prefer_default_card = new Gtk.Grid ();
-        prefer_default_card.margin = 6;
-        prefer_default_card.margin_start = 12;
+        var prefer_default_card = new Gtk.Grid () {
+            margin = 6,
+            margin_start = 12
+        };
         prefer_default_card.add (prefer_default_image);
 
         unowned Gtk.StyleContext prefer_default_card_context = prefer_default_card.get_style_context ();
         prefer_default_card_context.add_class (Granite.STYLE_CLASS_CARD);
         prefer_default_card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
 
-        var prefer_default_grid = new Gtk.Grid ();
-        prefer_default_grid.row_spacing = 6;
+        var prefer_default_grid = new Gtk.Grid () {
+            row_spacing = 6
+        };
         prefer_default_grid.attach (prefer_default_card, 0, 0);
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
 
-        var prefer_default_radio = new Gtk.RadioButton (null);
-        prefer_default_radio.halign = Gtk.Align.START;
+        var prefer_default_radio = new Gtk.RadioButton (null) {
+            halign = Gtk.Align.START
+        };
         prefer_default_radio.get_style_context ().add_class ("image-button");
         prefer_default_radio.add (prefer_default_grid);
 
         var prefer_dark_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg");
 
-        var prefer_dark_card = new Gtk.Grid ();
-        prefer_dark_card.margin = 6;
-        prefer_dark_card.margin_start = 12;
+        var prefer_dark_card = new Gtk.Grid () {
+            margin = 6,
+            margin_start = 12
+        };
         prefer_dark_card.add (prefer_dark_image);
 
         unowned Gtk.StyleContext prefer_dark_card_context = prefer_dark_card.get_style_context ();
         prefer_dark_card_context.add_class (Granite.STYLE_CLASS_CARD);
         prefer_dark_card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
 
-        var prefer_dark_grid = new Gtk.Grid ();
-        prefer_dark_grid.row_spacing = 6;
+        var prefer_dark_grid = new Gtk.Grid () {
+            row_spacing = 6
+        };
         prefer_dark_grid.attach (prefer_dark_card, 0, 0);
         prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
 
-        var prefer_dark_radio = new Gtk.RadioButton.from_widget (prefer_default_radio);
-        prefer_dark_radio.halign = Gtk.Align.START;
-        prefer_dark_radio.hexpand = true;
+        var prefer_dark_radio = new Gtk.RadioButton.from_widget (prefer_default_radio) {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
         prefer_dark_radio.get_style_context ().add_class ("image-button");
         prefer_dark_radio.add (prefer_dark_grid);
 
-        var dark_info = new Gtk.Label (_("Visual style for system components like the Dock and Panel indicators."));
-        dark_info.max_width_chars = 60;
-        dark_info.margin_bottom = 18;
-        dark_info.wrap = true;
-        dark_info.xalign = 0;
+        var dark_info = new Gtk.Label (_("Visual style for system components like the Dock and Panel indicators.")) {
+            max_width_chars = 60,
+            margin_bottom = 18,
+            wrap = true,
+            xalign = 0
+        };
         dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var schedule_label = new Gtk.Label (_("Schedule:"));
-        schedule_label.halign = Gtk.Align.END;
-        schedule_label.xalign = 1;
+        var schedule_label = new Gtk.Label (_("Schedule:")) {
+            halign = Gtk.Align.END,
+            xalign = 1
+        };
 
         var schedule_mode_button = new Granite.Widgets.ModeButton ();
         schedule_mode_button.append_text (_("Disabled"));
@@ -110,52 +128,79 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         var to_time = new Granite.Widgets.TimePicker ();
 
-        var schedule_grid = new Gtk.Grid ();
-        schedule_grid.column_spacing = 12;
-        schedule_grid.row_spacing = 12;
+        var schedule_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 12
+        };
 
         schedule_grid.attach (from_label, 0, 0, 1, 1);
         schedule_grid.attach (from_time, 1, 0, 1, 1);
         schedule_grid.attach (to_label, 2, 0, 1, 1);
         schedule_grid.attach (to_time, 3, 0, 1, 1);
 
-        attach (schedule_label, 0, 7, 1, 1);
-        attach (schedule_mode_button,  1, 7, 2, 1);
-        attach (schedule_grid, 1, 8, 2, 1);
+        var animations_label = new Gtk.Label (_("Window animations:")) {
+            halign = Gtk.Align.END,
+            margin_top = 12
+        };
 
-        var animations_label = new Gtk.Label (_("Window animations:"));
-        animations_label.halign = Gtk.Align.END;
+        var animations_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START,
+            margin_top = 12
+        };
 
-        var animations_switch = new Gtk.Switch ();
-        animations_switch.halign = Gtk.Align.START;
+        var translucency_label = new Gtk.Label (_("Panel translucency:")) {
+            halign = Gtk.Align.END
+        };
 
-        var translucency_label = new Gtk.Label (_("Panel translucency:"));
-        translucency_label.halign = Gtk.Align.END;
+        var translucency_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
 
-        var translucency_switch = new Gtk.Switch ();
-        translucency_switch.halign = Gtk.Align.START;
+        var text_size_label = new Gtk.Label (_("Text size:")) {
+            halign = Gtk.Align.END,
+            margin_top = 24
+        };
 
-        var text_size_label = new Gtk.Label (_("Text size:"));
-        text_size_label.halign = Gtk.Align.END;
-
-        text_size_modebutton = new Granite.Widgets.ModeButton ();
+        text_size_modebutton = new Granite.Widgets.ModeButton () {
+            margin_top = 24
+        };
         text_size_modebutton.append_text (_("Small"));
         text_size_modebutton.append_text (_("Default"));
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        /* Row 0 and 1 are for the dark style UI that gets attached only if we
+        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:")) {
+            halign = Gtk.Align.END
+        };
+
+        var dyslexia_font_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
+
+        var dyslexia_font_description_label = new Gtk.Label (
+            _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
+        ) {
+            max_width_chars = 60,
+            wrap = true,
+            xalign = 0
+        };
+        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        /* Rows 0 to 3 are for the dark style UI that gets attached only if we
          * can connect to the DBus API
          *
-         * Row 2 and 3 are for accent color UI that gets constructed only if the
+         * Row 4 and 5 are for accent color UI that gets constructed only if the
          * current stylesheet is supported (begins with the STYLESHEET_PREFIX)
          */
-        attach (animations_label, 0, 4);
-        attach (animations_switch, 1, 4);
-        attach (translucency_label, 0, 5);
-        attach (translucency_switch, 1, 5);
-        attach (text_size_label, 0, 6);
-        attach (text_size_modebutton, 1, 6, 2);
+        attach (animations_label, 0, 6);
+        attach (animations_switch, 1, 6);
+        attach (translucency_label, 0, 7);
+        attach (translucency_switch, 1, 7);
+        attach (text_size_label, 0, 8);
+        attach (text_size_modebutton, 1, 8, 2);
+        attach (dyslexia_font_label, 0, 9);
+        attach (dyslexia_font_switch, 1, 9);
+        attach (dyslexia_font_description_label, 1, 10, 2);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -196,6 +241,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
             attach (prefer_default_radio, 1, 0);
             attach (prefer_dark_radio, 2, 0);
             attach (dark_info, 1, 1, 2);
+            attach (schedule_label, 0, 2, 1, 1);
+            attach (schedule_mode_button,  1, 2, 2, 1);
+            attach (schedule_grid, 1, 3, 2, 1);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -342,9 +390,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
             accent_info.margin_bottom = 18;
             accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-            attach (accent_label, 0, 2);
-            attach (accent_grid, 1, 2, 2);
-            attach (accent_info, 1, 3, 2);
+            attach (accent_label, 0, 4);
+            attach (accent_grid, 1, 4, 2);
+            attach (accent_info, 1, 5, 2);
         }
 
         update_text_size_modebutton (interface_settings);
@@ -355,6 +403,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         text_size_modebutton.mode_changed.connect (() => {
             set_text_scale (interface_settings, text_size_modebutton.selected);
+        });
+
+        dyslexia_font_switch.set_active (update_dyslexia_font_switch (interface_settings));
+
+        dyslexia_font_switch.state_set.connect (() => {
+            toggle_dyslexia_support (interface_settings, dyslexia_font_switch.get_active () );
         });
     }
 
@@ -393,6 +447,33 @@ public class PantheonShell.Appearance : Gtk.Grid {
                     );
                 });
             });
+        }
+    }
+
+    private void toggle_dyslexia_support (GLib.Settings interface_settings, bool state) {
+        if (state == true) {
+            interface_settings.set_string (FONT_KEY, OD_REG_FONT);
+            interface_settings.set_string (DOCUMENT_FONT_KEY, OD_DOC_FONT);
+            interface_settings.set_string (MONOSPACE_FONT_KEY, OD_MON_FONT);
+        }
+        else {
+            interface_settings.reset (FONT_KEY);
+            interface_settings.reset (DOCUMENT_FONT_KEY);
+            interface_settings.reset (MONOSPACE_FONT_KEY);
+        }
+    }
+
+    private bool update_dyslexia_font_switch (GLib.Settings interface_settings) {
+        var interface_font = interface_settings.get_string (FONT_KEY);
+        var document_font = interface_settings.get_string (DOCUMENT_FONT_KEY);
+        var monospace_font = interface_settings.get_string (MONOSPACE_FONT_KEY);
+
+        if (interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT ) {
+            return true;
+        }
+
+        else {
+            return false;
         }
     }
 

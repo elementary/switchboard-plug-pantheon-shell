@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-08 21:13+0000\n"
+"POT-Creation-Date: 2020-08-18 19:55+0000\n"
 "PO-Revision-Date: 2020-05-29 15:23+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -20,59 +20,69 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-09 05:49+0000\n"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:41
 msgid "Desktop"
 msgstr "Plocha"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Nastavujte dock, aktivní rohy a měňte tapetu plochy"
 
-#: src/Plug.vala:55 src/Plug.vala:109
+#: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
 msgstr "Tapeta"
 
-#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
-#: src/Plug.vala:118
+#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
+#: src/Plug.vala:119 src/Plug.vala:120
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: src/Plug.vala:62 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
-#: src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
 msgstr "Panel"
 
-#: src/Plug.vala:65 src/Plug.vala:119
-msgid "Hot Corners"
-msgstr "Aktivní rohy"
+#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+#, fuzzy
+#| msgid "Multitasking View"
+msgid "Multitasking"
+msgstr "Zobrazení multitaskingu"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:112
 msgid "Hide Mode"
 msgstr "Režim skrývání"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:113
 msgid "Icon Size"
 msgstr "Velikost ikon"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:114
 msgid "Pressure reveal"
 msgstr "Vysunutí tlakem"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:115
 msgid "Display"
 msgstr "Displej"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:117
 msgid "Window animations"
 msgstr "Animace oken"
 
-#: src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Panel translucency"
 msgstr "Průsvitnost panelu"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:119
 msgid "Text size"
 msgstr "Velikost textu"
+
+#: src/Plug.vala:120
+msgid "Dyslexia-friendly text"
+msgstr ""
+
+#: src/Plug.vala:122
+msgid "Hot Corners"
+msgstr "Aktivní rohy"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -100,94 +110,104 @@ msgstr "Nastavit jako _pozadí plochy"
 msgid "Set selected image to be the new desktop background"
 msgstr "Nastavit vybraný obrázek jako nové pozadí plochy"
 
-#: src/Views/Appearance.vala:43
+#: src/Views/Appearance.vala:52
 msgid "Style:"
 msgstr "Styl:"
 
-#: src/Views/Appearance.vala:57 src/Views/Appearance.vala:107
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Výchozí"
 
-#: src/Views/Appearance.vala:75
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr "Tmavý"
 
-#: src/Views/Appearance.vala:83
+#: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 "Vizuální styl pro součásti systému jako je Panel nebo indikátory na něm."
 
-#: src/Views/Appearance.vala:90
+#: src/Views/Appearance.vala:113
 msgid "Window animations:"
 msgstr "Animace oken:"
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:123
 msgid "Panel translucency:"
 msgstr "Průsvitnost panelu:"
 
-#: src/Views/Appearance.vala:102
+#: src/Views/Appearance.vala:131
 msgid "Text size:"
 msgstr "Velikost textu:"
 
-#: src/Views/Appearance.vala:106 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Malé"
 
-#: src/Views/Appearance.vala:108 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Velké"
 
-#: src/Views/Appearance.vala:109
+#: src/Views/Appearance.vala:142
 msgid "Larger"
 msgstr "Větší"
 
+#: src/Views/Appearance.vala:144
+msgid "Dyslexia-friendly text:"
+msgstr ""
+
+#: src/Views/Appearance.vala:153
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:189
+#: src/Views/Appearance.vala:242
 msgid "Accent:"
 msgstr "Zvýraznění:"
 
-#: src/Views/Appearance.vala:193
+#: src/Views/Appearance.vala:246
 msgid "Blueberry"
 msgstr "Borůvka"
 
-#: src/Views/Appearance.vala:196
+#: src/Views/Appearance.vala:249
 msgid "Strawberry"
 msgstr "Ostružina"
 
-#: src/Views/Appearance.vala:199
+#: src/Views/Appearance.vala:252
 msgid "Orange"
 msgstr "Pomeranč"
 
-#: src/Views/Appearance.vala:202
+#: src/Views/Appearance.vala:255
 msgid "Banana"
 msgstr "Banán"
 
-#: src/Views/Appearance.vala:205
+#: src/Views/Appearance.vala:258
 msgid "Lime"
 msgstr "Citron"
 
-#: src/Views/Appearance.vala:208
+#: src/Views/Appearance.vala:261
 msgid "Mint"
 msgstr "Máta"
 
-#: src/Views/Appearance.vala:211
+#: src/Views/Appearance.vala:264
 msgid "Grape"
 msgstr "Hroznové"
 
-#: src/Views/Appearance.vala:214
+#: src/Views/Appearance.vala:267
 msgid "Bubblegum"
 msgstr "Žvýkačka"
 
-#: src/Views/Appearance.vala:217
+#: src/Views/Appearance.vala:270
 msgid "Cocoa"
 msgstr "Kakao"
 
-#: src/Views/Appearance.vala:220
+#: src/Views/Appearance.vala:273
 msgid "Slate"
 msgstr "Břidlice"
 
-#: src/Views/Appearance.vala:235
+#: src/Views/Appearance.vala:288
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -241,45 +261,45 @@ msgstr "Monitor %d"
 msgid "Display %d"
 msgstr "Displej %d"
 
-#: src/Views/HotCorners.vala:37
+#: src/Views/Multitasking.vala:37
 msgid "When the cursor enters the corner of the display:"
 msgstr "Když se kurzor dotkne rohu obrazovky:"
 
-#: src/Views/HotCorners.vala:69
+#: src/Views/Multitasking.vala:73
 msgid "Custom command:"
 msgstr "Uživatelsky určený příkaz:"
 
-#: src/Views/HotCorners.vala:108
+#: src/Views/Multitasking.vala:112
 msgid "Do nothing"
 msgstr "Nedělat nic"
 
 #. none
-#: src/Views/HotCorners.vala:109
+#: src/Views/Multitasking.vala:113
 msgid "Multitasking View"
 msgstr "Zobrazení multitaskingu"
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:110
+#: src/Views/Multitasking.vala:114
 msgid "Maximize current window"
 msgstr "Maximalizovat aktuální okno"
 
 #. maximize-current
-#: src/Views/HotCorners.vala:111
+#: src/Views/Multitasking.vala:115
 msgid "Show Applications Menu"
 msgstr "Zobrazit nabídku aplikací"
 
 #. open-launcher
-#: src/Views/HotCorners.vala:112
+#: src/Views/Multitasking.vala:116
 msgid "Show all windows"
 msgstr "Zobrazit všechna okna"
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:113
+#: src/Views/Multitasking.vala:117
 msgid "Switch to new workspace"
 msgstr "Přepnout na novou pracovní plochu"
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:114
+#: src/Views/Multitasking.vala:118
 msgid "Execute custom command"
 msgstr "Provést vlastní příkaz"
 

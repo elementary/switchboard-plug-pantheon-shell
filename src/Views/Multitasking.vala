@@ -19,7 +19,7 @@
 * Authored by: Tom Beckmann
 */
 
-public class PantheonShell.HotCorners : Gtk.Grid {
+public class PantheonShell.Multitasking : Gtk.Grid {
     private GLib.Settings behavior_settings;
     private Gtk.Revealer custom_command_revealer;
     private Gee.HashSet<string> keys_using_custom_command = new Gee.HashSet<string> ();
