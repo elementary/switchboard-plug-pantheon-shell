@@ -242,7 +242,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
             attach (prefer_dark_radio, 2, 0);
             attach (dark_info, 1, 1, 2);
             attach (schedule_label, 0, 2, 1, 1);
-            attach (schedule_mode_button,  1, 2, 2, 1);
+            attach (schedule_mode_button, 1, 2, 2, 1);
             attach (schedule_grid, 1, 3, 2, 1);
 
             switch (pantheon_act.prefers_color_scheme) {
