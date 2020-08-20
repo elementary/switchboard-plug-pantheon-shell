@@ -93,19 +93,14 @@ public class PantheonShell.Appearance : Gtk.Grid {
         dark_info.xalign = 0;
         dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var schedule_grid = new Gtk.Grid ();
-        schedule_grid.column_spacing = 12;
-        schedule_grid.row_spacing = 12;
-        schedule_grid.margin_top = 24;
-
         var schedule_label = new Gtk.Label (_("Schedule:"));
         schedule_label.halign = Gtk.Align.END;
         schedule_label.xalign = 1;
 
-        var schedule_button = new Granite.Widgets.ModeButton ();
-        schedule_button.append_text (_("Disabled"));
-        schedule_button.append_text (_("Sunset to Sunrise"));
-        schedule_button.append_text (_("Manual"));
+        var schedule_mode_button = new Granite.Widgets.ModeButton ();
+        schedule_mode_button.append_text (_("Disabled"));
+        schedule_mode_button.append_text (_("Sunset to Sunrise"));
+        schedule_mode_button.append_text (_("Manual"));
 
         var from_label = new Gtk.Label (_("From:"));
 
@@ -115,12 +110,18 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         var to_time = new Granite.Widgets.TimePicker ();
 
-        schedule_grid.attach (schedule_label, 0, 0, 1, 1);
-        schedule_grid.attach (schedule_button, 1, 0, 4, 1);
-        schedule_grid.attach (from_label, 1, 1, 1, 1);
-        schedule_grid.attach (from_time, 2, 1, 1, 1);
-        schedule_grid.attach (to_label, 3, 1, 1, 1);
-        schedule_grid.attach (to_time, 4, 1, 1, 1);
+        var schedule_grid = new Gtk.Grid ();
+        schedule_grid.column_spacing = 12;
+        schedule_grid.row_spacing = 12;
+
+        schedule_grid.attach (from_label, 0, 0, 1, 1);
+        schedule_grid.attach (from_time, 1, 0, 1, 1);
+        schedule_grid.attach (to_label, 2, 0, 1, 1);
+        schedule_grid.attach (to_time, 3, 0, 1, 1);
+
+        attach (schedule_label, 0, 7, 1, 1);
+        attach (schedule_mode_button,  1, 7, 2, 1);
+        attach (schedule_grid, 1, 8, 2, 1);
 
         var animations_label = new Gtk.Label (_("Window animations:"));
         animations_label.halign = Gtk.Align.END;
@@ -195,7 +196,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
             attach (prefer_default_radio, 1, 0);
             attach (prefer_dark_radio, 2, 0);
             attach (dark_info, 1, 1, 2);
-            attach (schedule_grid, 1, 10);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -211,7 +211,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
             });
 
             prefer_default_radio.pressed.connect (() => {
-                schedule_button.selected = 0;
+                schedule_mode_button.selected = 0;
             });
 
             prefer_dark_radio.toggled.connect (() => {
@@ -255,21 +255,21 @@ public class PantheonShell.Appearance : Gtk.Grid {
             }
 
             if (schedule == "sunset-to-sunrise") {
-                schedule_button.selected = 1;
+                schedule_mode_button.selected = 1;
             } else if (schedule == "manual") {
-                schedule_button.selected = 2;
+                schedule_mode_button.selected = 2;
             } else {
-                schedule_button.selected = 0;
+                schedule_mode_button.selected = 0;
             }
 
-            schedule_button.mode_changed.connect (() => {
-                if (schedule_button.selected == 1) {
+            schedule_mode_button.mode_changed.connect (() => {
+                if (schedule_mode_button.selected == 1) {
                     settings.set_string ("prefer-dark-schedule", "sunset-to-sunrise");
                     from_label.sensitive = false;
                     from_time.sensitive = false;
                     to_label.sensitive = false;
                     to_time.sensitive = false;
-                } else if (schedule_button.selected == 2) {
+                } else if (schedule_mode_button.selected == 2) {
                     settings.set_string ("prefer-dark-schedule", "manual");
                     from_label.sensitive = true;
                     from_time.sensitive = true;
