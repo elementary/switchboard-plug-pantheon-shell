@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-18 19:55+0000\n"
-"PO-Revision-Date: 2020-07-28 14:12+0000\n"
+"PO-Revision-Date: 2020-08-20 16:17+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -43,10 +43,8 @@ msgid "Dock"
 msgstr "Doca"
 
 #: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "Vista de Tarefas"
+msgstr "Multitarefas"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
