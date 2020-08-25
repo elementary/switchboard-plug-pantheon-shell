@@ -17,8 +17,8 @@ Homepage: https://github.com/elementary/switchboard-plug-pantheon-shell
 
 Package: switchboard-plug-pantheon-shell
 Architecture: any
-Depends: fonts-opendyslexic, gala, ${misc:Depends}, ${shlibs:Depends}
-Recommends: plank
+Depends: gala, ${misc:Depends}, ${shlibs:Depends}
+Recommends: fonts-opendyslexic, plank
 Enhances: switchboard
 Conflicts: switchboard-plug-wallpaper
 Replaces: switchboard-plug-wallpaper
