@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-05-29 15:23+0000\n"
+"POT-Creation-Date: 2020-08-18 19:55+0000\n"
+"PO-Revision-Date: 2020-08-25 06:13+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/cs/>\n"
@@ -20,63 +20,67 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-09 05:49+0000\n"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:41
 msgid "Desktop"
 msgstr "Plocha"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Nastavujte dock, aktivní rohy a měňte tapetu plochy"
 
-#: src/Plug.vala:55 src/Plug.vala:109
+#: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
 msgstr "Tapeta"
 
-#: src/Plug.vala:58 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
-#: src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
+#: src/Plug.vala:119 src/Plug.vala:120
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: src/Plug.vala:62 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
-#: src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
 msgstr "Panel"
 
-#: src/Plug.vala:65 src/Plug.vala:120
-msgid "Hot Corners"
-msgstr "Aktivní rohy"
+#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+msgid "Multitasking"
+msgstr "Multitasking"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:112
 msgid "Hide Mode"
 msgstr "Režim skrývání"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:113
 msgid "Icon Size"
 msgstr "Velikost ikon"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:114
 msgid "Pressure reveal"
 msgstr "Vysunutí tlakem"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:115
 msgid "Display"
 msgstr "Displej"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:117
 msgid "Window animations"
 msgstr "Animace oken"
 
-#: src/Plug.vala:117
+#: src/Plug.vala:118
 msgid "Panel translucency"
 msgstr "Průsvitnost panelu"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:119
 msgid "Text size"
 msgstr "Velikost textu"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:120
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "Text pro dyslektiky"
+
+#: src/Plug.vala:122
+msgid "Hot Corners"
+msgstr "Aktivní rohy"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -148,13 +152,15 @@ msgstr "Větší"
 
 #: src/Views/Appearance.vala:144
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "Text pro dyslektiky:"
 
 #: src/Views/Appearance.vala:153
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"Tvary se zdůrazněnou spodní částí a větší rozestupy mezi znaky mohou pomoci "
+"rozlišitelnosti a rychlosti čtení."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:242
@@ -255,45 +261,45 @@ msgstr "Monitor %d"
 msgid "Display %d"
 msgstr "Displej %d"
 
-#: src/Views/HotCorners.vala:37
+#: src/Views/Multitasking.vala:37
 msgid "When the cursor enters the corner of the display:"
 msgstr "Když se kurzor dotkne rohu obrazovky:"
 
-#: src/Views/HotCorners.vala:73
+#: src/Views/Multitasking.vala:73
 msgid "Custom command:"
 msgstr "Uživatelsky určený příkaz:"
 
-#: src/Views/HotCorners.vala:112
+#: src/Views/Multitasking.vala:112
 msgid "Do nothing"
 msgstr "Nedělat nic"
 
 #. none
-#: src/Views/HotCorners.vala:113
+#: src/Views/Multitasking.vala:113
 msgid "Multitasking View"
 msgstr "Zobrazení multitaskingu"
 
 #. show-workspace-view
-#: src/Views/HotCorners.vala:114
+#: src/Views/Multitasking.vala:114
 msgid "Maximize current window"
 msgstr "Maximalizovat aktuální okno"
 
 #. maximize-current
-#: src/Views/HotCorners.vala:115
+#: src/Views/Multitasking.vala:115
 msgid "Show Applications Menu"
 msgstr "Zobrazit nabídku aplikací"
 
 #. open-launcher
-#: src/Views/HotCorners.vala:116
+#: src/Views/Multitasking.vala:116
 msgid "Show all windows"
 msgstr "Zobrazit všechna okna"
 
 #. window-overview-all
-#: src/Views/HotCorners.vala:117
+#: src/Views/Multitasking.vala:117
 msgid "Switch to new workspace"
 msgstr "Přepnout na novou pracovní plochu"
 
 #. switch-new-workspace
-#: src/Views/HotCorners.vala:118
+#: src/Views/Multitasking.vala:118
 msgid "Execute custom command"
 msgstr "Provést vlastní příkaz"
 

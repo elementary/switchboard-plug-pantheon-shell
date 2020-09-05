@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-05-02 11:10+0000\n"
+"PO-Revision-Date: 2020-08-13 07:13+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/tr/>\n"
@@ -29,16 +29,17 @@ msgstr "Rıhtım ve etkin köşeleri yapılandırın, duvar kağıdını değiş
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Yeni özellikler:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"Disleksi-dostu yazı seçeneği OpenDyslexia fontunu sistem genelinde kullanır"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Other updates:"
-msgstr ""
+msgstr "Diğer güncellemeler:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
@@ -49,15 +50,15 @@ msgstr "Çeviriler güncellendi"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Başlatıcı simge boyutları görselleştirildi"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Kopyalanan sistem duvar kağıtları sorunu düzeltildi"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
 msgid "Update search results"
-msgstr ""
+msgstr "Arama sonuçlarını güncelle"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
