@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2019-11-25 10:25+0000\n"
+"PO-Revision-Date: 2020-09-11 00:34+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/mr/>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
-#, fuzzy
-#| msgid "Desktop"
 msgid "Desktop Settings"
-msgstr "डेस्कटॉप"
+msgstr "डेस्कटॉप सेटिंग्ज"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -31,16 +29,18 @@ msgstr "डॉक, हॉट कॉर्नर कॉन्फिगर कर�
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "नवीन वैशिष्ट्ये:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"ओपनडिस्लेक्सिया फॉन्ट सिस्टम-व्यापी वापरण्यासाठी डिस्लेक्सिया-अनुकूल मजकूर "
+"प्राधान्य"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Other updates:"
-msgstr ""
+msgstr "इतर अद्यतने:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
@@ -51,15 +51,15 @@ msgstr "अद्ययावत भाषांतर"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "डॉक चिन्ह आकार सचित्र करा"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "सिस्टम वॉलपेपर कॉपी होणाऱ्या समस्येचे निराकरण करा"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
 msgid "Update search results"
-msgstr ""
+msgstr "शोध परिणाम अद्यतनित करा"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
