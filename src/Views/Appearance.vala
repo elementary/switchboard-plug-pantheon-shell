@@ -265,7 +265,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
             prefer_dark_radio.toggled.connect (() => {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
             });
-            
+
             /* Connect to button_release_event so that this is only triggered
              * through user interaction, not if scheduling changes the selection
              */
