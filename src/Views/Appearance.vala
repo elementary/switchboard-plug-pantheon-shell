@@ -122,11 +122,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         var from_label = new Gtk.Label (_("From:"));
 
-        var from_time = new Granite.Widgets.TimePicker ();
+        var from_time = new Granite.Widgets.TimePicker () {
+            hexpand = true
+        };
 
         var to_label = new Gtk.Label (_("To:"));
 
-        var to_time = new Granite.Widgets.TimePicker ();
+        var to_time = new Granite.Widgets.TimePicker () {
+            hexpand = true
+        };
 
         var schedule_grid = new Gtk.Grid () {
             column_spacing = 12,
