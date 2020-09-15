@@ -318,12 +318,14 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
             schedule_mode_button.mode_changed.connect (() => {
                 if (schedule_mode_button.selected == 1) {
-                    settings.set_string ("prefer-dark-schedule", "sunset-to-sunrise");
+                    schedule = "sunset-to-sunrise";
                 } else if (schedule_mode_button.selected == 2) {
-                    settings.set_string ("prefer-dark-schedule", "manual");
+                    schedule = "manual";
                 } else {
-                    settings.set_string ("prefer-dark-schedule", "disabled");
+                    schedule = "disabled";
                 }
+
+                settings.set_string ("prefer-dark-schedule", schedule);
 
                 from_label.sensitive = schedule == "manual";
                 from_time.sensitive = schedule == "manual";
