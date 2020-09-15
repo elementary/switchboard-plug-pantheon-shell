@@ -134,7 +134,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         var schedule_grid = new Gtk.Grid () {
             column_spacing = 12,
-            row_spacing = 12
+            margin_bottom = 24
         };
 
         schedule_grid.attach (from_label, 0, 0, 1, 1);
