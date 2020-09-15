@@ -137,10 +137,10 @@ public class PantheonShell.Appearance : Gtk.Grid {
             margin_bottom = 24
         };
 
-        schedule_grid.attach (from_label, 0, 0, 1, 1);
-        schedule_grid.attach (from_time, 1, 0, 1, 1);
-        schedule_grid.attach (to_label, 2, 0, 1, 1);
-        schedule_grid.attach (to_time, 3, 0, 1, 1);
+        schedule_grid.add (from_label);
+        schedule_grid.add (from_time);
+        schedule_grid.add (to_label);
+        schedule_grid.add (to_time);
 
         var animations_label = new Gtk.Label (_("Window animations:")) {
             halign = Gtk.Align.END,
