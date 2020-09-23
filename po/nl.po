@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-18 19:55+0000\n"
-"PO-Revision-Date: 2020-07-15 23:12+0000\n"
+"PO-Revision-Date: 2020-09-20 14:33+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
@@ -43,10 +43,8 @@ msgid "Dock"
 msgstr "Dock"
 
 #: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "Multitasking weergave"
+msgstr "Multitasking"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -78,7 +76,7 @@ msgstr "Tekstgrootte"
 
 #: src/Plug.vala:120
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "Dyslexie-vriendelijke tekst"
 
 #: src/Plug.vala:122
 msgid "Hot Corners"
@@ -153,13 +151,15 @@ msgstr "Groter"
 
 #: src/Views/Appearance.vala:144
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "Dyslexie-vriendelijke tekst:"
 
 #: src/Views/Appearance.vala:153
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"Gewijzigde vormen en meer ruimte tussen tekens verbetert de leesbaarheid en "
+"-snelheid."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:242
