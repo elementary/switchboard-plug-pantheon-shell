@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-09-24 16:44+0000\n"
+"PO-Revision-Date: 2020-09-29 18:44+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -36,10 +36,12 @@ msgstr "Нові функції:"
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"Налаштування зручного для людей з дислексією тексту за допомогою "
+"загальносистемного шрифту OpenDyslexia"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Other updates:"
-msgstr ""
+msgstr "Інші оновлення:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
@@ -50,16 +52,16 @@ msgstr "Оновлено переклади"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Ілюстровані розміри піктограм в доку"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Виправлено копіювання системного тла"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
 msgid "Update search results"
-msgstr ""
+msgstr "Оновлення результатів пошуку"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
-msgstr ""
+msgstr "Розв'язано проблеми з налаштуванням тла на екрані входу та блокування"
