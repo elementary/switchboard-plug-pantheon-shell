@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 19:55+0000\n"
+"POT-Creation-Date: 2020-09-29 18:45+0000\n"
 "PO-Revision-Date: 2020-08-20 16:17+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -107,7 +107,7 @@ msgstr "選択された画像を新しいデスクトップの背景として設
 msgid "Style:"
 msgstr "スタイル:"
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "デフォルト"
@@ -123,34 +123,58 @@ msgstr ""
 "です。"
 
 #: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr ""
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr ""
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr ""
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr ""
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr ""
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr ""
+
+#: src/Views/Appearance.vala:145
 msgid "Window animations:"
 msgstr "ウィンドウアニメーション:"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
 msgstr "パネルを透過:"
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:163
 msgid "Text size:"
 msgstr "テキストサイズ:"
 
-#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "小"
 
-#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "大"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:174
 msgid "Larger"
 msgstr "最大"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
 msgstr "ディスレクシアに配慮したテキスト:"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -159,51 +183,51 @@ msgstr ""
 "に役立つ可能性があります。"
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:242
+#: src/Views/Appearance.vala:344
 msgid "Accent:"
 msgstr "アクセント:"
 
-#: src/Views/Appearance.vala:246
+#: src/Views/Appearance.vala:348
 msgid "Blueberry"
 msgstr "ブルーベリー"
 
-#: src/Views/Appearance.vala:249
+#: src/Views/Appearance.vala:351
 msgid "Strawberry"
 msgstr "ストロベリー"
 
-#: src/Views/Appearance.vala:252
+#: src/Views/Appearance.vala:354
 msgid "Orange"
 msgstr "オレンジ"
 
-#: src/Views/Appearance.vala:255
+#: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr "バナナ"
 
-#: src/Views/Appearance.vala:258
+#: src/Views/Appearance.vala:360
 msgid "Lime"
 msgstr "ライム"
 
-#: src/Views/Appearance.vala:261
+#: src/Views/Appearance.vala:363
 msgid "Mint"
 msgstr "ミント"
 
-#: src/Views/Appearance.vala:264
+#: src/Views/Appearance.vala:366
 msgid "Grape"
 msgstr "グレープ"
 
-#: src/Views/Appearance.vala:267
+#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr "ピンク"
 
-#: src/Views/Appearance.vala:270
+#: src/Views/Appearance.vala:372
 msgid "Cocoa"
 msgstr "ココア"
 
-#: src/Views/Appearance.vala:273
+#: src/Views/Appearance.vala:375
 msgid "Slate"
 msgstr "スレート"
 
-#: src/Views/Appearance.vala:288
+#: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

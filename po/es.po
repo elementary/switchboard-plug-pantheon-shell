@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 19:55+0000\n"
+"POT-Creation-Date: 2020-09-29 18:45+0000\n"
 "PO-Revision-Date: 2020-08-23 19:13+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -112,7 +112,7 @@ msgstr "Configurar la imagen seleccionada como fondo de escritorio"
 msgid "Style:"
 msgstr "Estilo:"
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Predeterminado"
@@ -128,34 +128,58 @@ msgstr ""
 "panel y el dock."
 
 #: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr ""
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr ""
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr ""
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr ""
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr ""
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr ""
+
+#: src/Views/Appearance.vala:145
 msgid "Window animations:"
 msgstr "Animación de ventana:"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
 msgstr "Translucidez del panel:"
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:163
 msgid "Text size:"
 msgstr "Tamaño del texto:"
 
-#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Pequeño"
 
-#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Grande"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:174
 msgid "Larger"
 msgstr "Más grande"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
 msgstr "Texto para disléxicos:"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -164,51 +188,51 @@ msgstr ""
 "caracteres puede ayudar a mejorar la legibilidad y la velocidad de lectura."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:242
+#: src/Views/Appearance.vala:344
 msgid "Accent:"
 msgstr "Realce:"
 
-#: src/Views/Appearance.vala:246
+#: src/Views/Appearance.vala:348
 msgid "Blueberry"
 msgstr "Arándano"
 
-#: src/Views/Appearance.vala:249
+#: src/Views/Appearance.vala:351
 msgid "Strawberry"
 msgstr "Fresa"
 
-#: src/Views/Appearance.vala:252
+#: src/Views/Appearance.vala:354
 msgid "Orange"
 msgstr "Naranja"
 
-#: src/Views/Appearance.vala:255
+#: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr "Plátano"
 
-#: src/Views/Appearance.vala:258
+#: src/Views/Appearance.vala:360
 msgid "Lime"
 msgstr "Lima"
 
-#: src/Views/Appearance.vala:261
+#: src/Views/Appearance.vala:363
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:264
+#: src/Views/Appearance.vala:366
 msgid "Grape"
 msgstr "Uva"
 
-#: src/Views/Appearance.vala:267
+#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr "Chicle"
 
-#: src/Views/Appearance.vala:270
+#: src/Views/Appearance.vala:372
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:273
+#: src/Views/Appearance.vala:375
 msgid "Slate"
 msgstr "Pizarra"
 
-#: src/Views/Appearance.vala:288
+#: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

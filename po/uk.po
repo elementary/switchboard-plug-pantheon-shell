@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 19:55+0000\n"
+"POT-Creation-Date: 2020-09-29 18:45+0000\n"
 "PO-Revision-Date: 2020-09-26 20:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 05:46+0000\n"
 
@@ -113,7 +113,7 @@ msgstr "Зробити позначене зображення новим зоб
 msgid "Style:"
 msgstr "Стиль:"
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Типовий"
@@ -128,34 +128,58 @@ msgstr ""
 "Візуальний стиль для складників системи, таких як індикатори Доку і Панелі."
 
 #: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr ""
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr ""
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr ""
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr ""
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr ""
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr ""
+
+#: src/Views/Appearance.vala:145
 msgid "Window animations:"
 msgstr "Анімації вікон:"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
 msgstr "Напівпрозорість панелі:"
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:163
 msgid "Text size:"
 msgstr "Розмір тексту:"
 
-#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Малий"
 
-#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Великий"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:174
 msgid "Larger"
 msgstr "Збільшений"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
 msgstr "Текст, придатний для читання людьми з дислексією:"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -164,51 +188,51 @@ msgstr ""
 "допомогти покращити читабельність та швидкість читання."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:242
+#: src/Views/Appearance.vala:344
 msgid "Accent:"
 msgstr "Основний колір:"
 
-#: src/Views/Appearance.vala:246
+#: src/Views/Appearance.vala:348
 msgid "Blueberry"
 msgstr "Чорничний"
 
-#: src/Views/Appearance.vala:249
+#: src/Views/Appearance.vala:351
 msgid "Strawberry"
 msgstr "Полуничний"
 
-#: src/Views/Appearance.vala:252
+#: src/Views/Appearance.vala:354
 msgid "Orange"
 msgstr "Помаранчевий"
 
-#: src/Views/Appearance.vala:255
+#: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr "Банановий"
 
-#: src/Views/Appearance.vala:258
+#: src/Views/Appearance.vala:360
 msgid "Lime"
 msgstr "Лаймовий"
 
-#: src/Views/Appearance.vala:261
+#: src/Views/Appearance.vala:363
 msgid "Mint"
 msgstr "М'ятний"
 
-#: src/Views/Appearance.vala:264
+#: src/Views/Appearance.vala:366
 msgid "Grape"
 msgstr "Виноградний"
 
-#: src/Views/Appearance.vala:267
+#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr "Жуйковий"
 
-#: src/Views/Appearance.vala:270
+#: src/Views/Appearance.vala:372
 msgid "Cocoa"
 msgstr "Какаовий"
 
-#: src/Views/Appearance.vala:273
+#: src/Views/Appearance.vala:375
 msgid "Slate"
 msgstr "Камінно-сірий"
 
-#: src/Views/Appearance.vala:288
+#: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

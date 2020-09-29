@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 19:55+0000\n"
+"POT-Creation-Date: 2020-09-29 18:45+0000\n"
 "PO-Revision-Date: 2014-12-22 12:44+0000\n"
 "Last-Translator: ERX <eriksh@inbox.lv>\n"
 "Language-Team: Latvian <lv@li.org>\n"
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr ""
@@ -125,86 +125,110 @@ msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 
 #: src/Views/Appearance.vala:113
-msgid "Window animations:"
+msgid "Schedule:"
+msgstr ""
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr ""
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr ""
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
 msgstr ""
 
 #: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr ""
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr ""
+
+#: src/Views/Appearance.vala:145
+msgid "Window animations:"
+msgstr ""
+
+#: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
 msgstr ""
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:163
 msgid "Text size:"
 msgstr ""
 
-#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
 msgid "Small"
 msgstr ""
 
-#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Liels"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:174
 #, fuzzy
 msgid "Larger"
 msgstr "Liels"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
 msgstr ""
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:242
+#: src/Views/Appearance.vala:344
 msgid "Accent:"
 msgstr ""
 
-#: src/Views/Appearance.vala:246
+#: src/Views/Appearance.vala:348
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:249
+#: src/Views/Appearance.vala:351
 msgid "Strawberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:252
+#: src/Views/Appearance.vala:354
 msgid "Orange"
 msgstr ""
 
-#: src/Views/Appearance.vala:255
+#: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr ""
 
-#: src/Views/Appearance.vala:258
+#: src/Views/Appearance.vala:360
 msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:261
+#: src/Views/Appearance.vala:363
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:264
+#: src/Views/Appearance.vala:366
 msgid "Grape"
 msgstr ""
 
-#: src/Views/Appearance.vala:267
+#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:270
+#: src/Views/Appearance.vala:372
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:273
+#: src/Views/Appearance.vala:375
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:288
+#: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
