@@ -110,6 +110,38 @@ public class PantheonShell.Appearance : Gtk.Grid {
         };
         dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
+        var schedule_label = new Gtk.Label (_("Schedule:")) {
+            halign = Gtk.Align.END,
+            xalign = 1
+        };
+
+        var schedule_mode_button = new Granite.Widgets.ModeButton ();
+        schedule_mode_button.append_text (_("Disabled"));
+        schedule_mode_button.append_text (_("Sunset to Sunrise"));
+        schedule_mode_button.append_text (_("Manual"));
+
+        var from_label = new Gtk.Label (_("From:"));
+
+        var from_time = new Granite.Widgets.TimePicker () {
+            hexpand = true
+        };
+
+        var to_label = new Gtk.Label (_("To:"));
+
+        var to_time = new Granite.Widgets.TimePicker () {
+            hexpand = true
+        };
+
+        var schedule_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin_bottom = 24
+        };
+
+        schedule_grid.add (from_label);
+        schedule_grid.add (from_time);
+        schedule_grid.add (to_label);
+        schedule_grid.add (to_time);
+
         var animations_label = new Gtk.Label (_("Window animations:")) {
             halign = Gtk.Align.END,
             margin_top = 12
@@ -158,21 +190,21 @@ public class PantheonShell.Appearance : Gtk.Grid {
         };
         dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        /* Row 0 and 1 are for the dark style UI that gets attached only if we
+        /* Rows 0 to 3 are for the dark style UI that gets attached only if we
          * can connect to the DBus API
          *
-         * Row 2 and 3 are for accent color UI that gets constructed only if the
+         * Row 4 and 5 are for accent color UI that gets constructed only if the
          * current stylesheet is supported (begins with the STYLESHEET_PREFIX)
          */
-        attach (animations_label, 0, 4);
-        attach (animations_switch, 1, 4);
-        attach (translucency_label, 0, 5);
-        attach (translucency_switch, 1, 5);
-        attach (text_size_label, 0, 6);
-        attach (text_size_modebutton, 1, 6, 2);
-        attach (dyslexia_font_label, 0, 7);
-        attach (dyslexia_font_switch, 1, 7);
-        attach (dyslexia_font_description_label, 1, 8, 2);
+        attach (animations_label, 0, 6);
+        attach (animations_switch, 1, 6);
+        attach (translucency_label, 0, 7);
+        attach (translucency_switch, 1, 7);
+        attach (text_size_label, 0, 8);
+        attach (text_size_modebutton, 1, 8, 2);
+        attach (dyslexia_font_label, 0, 9);
+        attach (dyslexia_font_switch, 1, 9);
+        attach (dyslexia_font_description_label, 1, 10, 2);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -213,6 +245,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
             attach (prefer_default_radio, 1, 0);
             attach (prefer_dark_radio, 2, 0);
             attach (dark_info, 1, 1, 2);
+            attach (schedule_label, 0, 2, 1, 1);
+            attach (schedule_mode_button, 1, 2, 2, 1);
+            attach (schedule_grid, 1, 3, 2, 1);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -229,6 +264,73 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
             prefer_dark_radio.toggled.connect (() => {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
+            });
+
+            /* Connect to button_release_event so that this is only triggered
+             * through user interaction, not if scheduling changes the selection
+             */
+            prefer_default_radio.button_release_event.connect (() => {
+                schedule_mode_button.selected = 0;
+                return Gdk.EVENT_PROPAGATE;
+            });
+
+            prefer_dark_radio.button_release_event.connect (() => {
+                schedule_mode_button.selected = 0;
+                return Gdk.EVENT_PROPAGATE;
+            });
+
+            ((GLib.DBusProxy) pantheon_act).g_properties_changed.connect ((changed, invalid) => {
+                var color_scheme = changed.lookup_value ("PrefersColorScheme", new VariantType ("i"));
+                switch ((Granite.Settings.ColorScheme) color_scheme.get_int32 ()) {
+                    case Granite.Settings.ColorScheme.DARK:
+                        prefer_dark_radio.active = true;
+                        break;
+                    default:
+                        prefer_default_radio.active = true;
+                        break;
+                }
+            });
+
+            var settings = new GLib.Settings ("io.elementary.settings-daemon.prefers-color-scheme");
+
+            from_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-from"));
+            from_time.time_changed.connect (() => {
+                settings.set_double ("prefer-dark-schedule-from", date_time_double (from_time.time));
+            });
+            to_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-to"));
+            to_time.time_changed.connect (() => {
+                settings.set_double ("prefer-dark-schedule-to", date_time_double (to_time.time));
+            });
+
+            var schedule = settings.get_string ("prefer-dark-schedule");
+            from_label.sensitive = schedule == "manual";
+            from_time.sensitive = schedule == "manual";
+            to_label.sensitive = schedule == "manual";
+            to_time.sensitive = schedule == "manual";
+
+            if (schedule == "sunset-to-sunrise") {
+                schedule_mode_button.selected = 1;
+            } else if (schedule == "manual") {
+                schedule_mode_button.selected = 2;
+            } else {
+                schedule_mode_button.selected = 0;
+            }
+
+            schedule_mode_button.mode_changed.connect (() => {
+                if (schedule_mode_button.selected == 1) {
+                    schedule = "sunset-to-sunrise";
+                } else if (schedule_mode_button.selected == 2) {
+                    schedule = "manual";
+                } else {
+                    schedule = "disabled";
+                }
+
+                settings.set_string ("prefer-dark-schedule", schedule);
+
+                from_label.sensitive = schedule == "manual";
+                from_time.sensitive = schedule == "manual";
+                to_label.sensitive = schedule == "manual";
+                to_time.sensitive = schedule == "manual";
             });
         }
 
@@ -289,9 +391,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
             accent_info.margin_bottom = 18;
             accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-            attach (accent_label, 0, 2);
-            attach (accent_grid, 1, 2, 2);
-            attach (accent_info, 1, 3, 2);
+            attach (accent_label, 0, 4);
+            attach (accent_grid, 1, 4, 2);
+            attach (accent_info, 1, 5, 2);
         }
 
         update_text_size_modebutton (interface_settings);
@@ -396,5 +498,22 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
     private void update_text_size_modebutton (GLib.Settings interface_settings) {
         text_size_modebutton.set_active (get_text_scale (interface_settings));
+    }
+
+    private static DateTime double_date_time (double dbl) {
+        var hours = (int) dbl;
+        var minutes = (int) Math.round ((dbl - hours) * 60);
+
+        var date_time = new DateTime.local (1, 1, 1, hours, minutes, 0.0);
+
+        return date_time;
+    }
+
+    private static double date_time_double (DateTime date_time) {
+        double time_double = 0;
+        time_double += date_time.get_hour ();
+        time_double += (double) date_time.get_minute () / 60;
+
+        return time_double;
     }
 }
