@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
-"PO-Revision-Date: 2017-04-17 14:12+0000\n"
-"Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:49+0000\n"
 
 #: src/Plug.vala:41
@@ -115,7 +115,7 @@ msgstr ""
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
-msgstr ""
+msgstr "Uobičajeno"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
@@ -131,7 +131,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
-msgstr ""
+msgstr "Onemogućeno"
 
 #: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
@@ -139,15 +139,15 @@ msgstr ""
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
-msgstr ""
+msgstr "Ručno"
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
-msgstr ""
+msgstr "Od:"
 
 #: src/Views/Appearance.vala:129
 msgid "To:"
-msgstr ""
+msgstr "Do:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
@@ -354,7 +354,7 @@ msgstr "Odustani"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Ukloni"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
