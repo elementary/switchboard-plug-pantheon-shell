@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/uk/>\n"
 "Language: uk\n"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
-msgstr ""
+msgstr "Розклад:"
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
@@ -137,7 +137,7 @@ msgstr "Вимкнено"
 
 #: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Від заходу до світанку"
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
