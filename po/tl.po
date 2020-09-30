@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
-"PO-Revision-Date: 2016-06-30 20:35+0000\n"
-"Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
-"Language-Team: Tagalog <tl@li.org>\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Tagalog <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/tl/>\n"
 "Language: tl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/Plug.vala:41
 msgid "Desktop"
@@ -132,7 +133,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
-msgstr ""
+msgstr "Hindi pinagana"
 
 #: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
@@ -144,11 +145,11 @@ msgstr ""
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
-msgstr ""
+msgstr "Mula:"
 
 #: src/Views/Appearance.vala:129
 msgid "To:"
-msgstr ""
+msgstr "Para:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
@@ -354,7 +355,7 @@ msgstr "Ikansela"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Tanggalin"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
