@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
-"PO-Revision-Date: 2018-11-05 22:34+0000\n"
-"Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
-"Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Bosnian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/bs/>\n"
 "Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:41
@@ -119,7 +119,7 @@ msgstr ""
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
-msgstr ""
+msgstr "Podrazumijevano"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
@@ -131,27 +131,27 @@ msgstr ""
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
-msgstr ""
+msgstr "Vremenski plan:"
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
-msgstr ""
+msgstr "Deaktivirano"
 
 #: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Od sumraka do zore"
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
-msgstr ""
+msgstr "Ručno"
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
-msgstr ""
+msgstr "Od:"
 
 #: src/Views/Appearance.vala:129
 msgid "To:"
-msgstr ""
+msgstr "Do:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
