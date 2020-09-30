@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
-"PO-Revision-Date: 2017-01-18 12:45+0000\n"
-"Last-Translator: Panan <panan25444@gmail.com>\n"
-"Language-Team: Thai <th@li.org>\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Thai <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/th/>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/Plug.vala:41
 msgid "Desktop"
@@ -116,7 +117,7 @@ msgstr ""
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
-msgstr ""
+msgstr "ค่าเริ่มต้น"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
@@ -132,7 +133,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
-msgstr ""
+msgstr "ปิดใช้งาน"
 
 #: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
@@ -140,15 +141,15 @@ msgstr ""
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
-msgstr ""
+msgstr "กำหนดเอาเอง"
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
-msgstr ""
+msgstr "จาก:"
 
 #: src/Views/Appearance.vala:129
 msgid "To:"
-msgstr ""
+msgstr "ถึง:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
@@ -354,7 +355,7 @@ msgstr "ยกเลิก"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "เอาออก"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
