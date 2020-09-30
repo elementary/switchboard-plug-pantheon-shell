@@ -2,8 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Assamese <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/as/>\n"
+"Language: as\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Plug.vala:41
 msgid "Desktop"
@@ -333,11 +341,11 @@ msgstr ""
 
 #: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
 msgid "Cancel"
-msgstr ""
+msgstr "বাতিল কৰক"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "আঁতৰাওক"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
