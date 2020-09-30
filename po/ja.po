@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
-"PO-Revision-Date: 2020-08-20 16:17+0000\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -124,27 +124,27 @@ msgstr ""
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
-msgstr ""
+msgstr "スケジュール:"
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
-msgstr ""
+msgstr "無効"
 
 #: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "日没から日の出まで"
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
-msgstr ""
+msgstr "手動"
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
-msgstr ""
+msgstr "開始:"
 
 #: src/Views/Appearance.vala:129
 msgid "To:"
-msgstr ""
+msgstr "終了:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
