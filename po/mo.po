@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
-"PO-Revision-Date: 2018-05-27 17:18+0000\n"
-"Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
-"Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Moldovan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mo/>\n"
 "Language: mo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Plug.vala:41
 msgid "Desktop"
@@ -113,7 +113,7 @@ msgstr ""
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
-msgstr ""
+msgstr "Mod implicit"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
@@ -125,27 +125,27 @@ msgstr ""
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
-msgstr ""
+msgstr "Planifică:"
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
-msgstr ""
+msgstr "Dezactivat"
 
 #: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Apus de soare la răsăritul soarelui"
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
-msgstr ""
+msgstr "Manuală"
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
-msgstr ""
+msgstr "De la:"
 
 #: src/Views/Appearance.vala:129
 msgid "To:"
-msgstr ""
+msgstr "Pentru:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
