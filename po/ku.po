@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
-"PO-Revision-Date: 2018-02-11 00:08+0000\n"
-"Last-Translator: Rokar <mail@rokar.de>\n"
-"Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Kurdish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ku/>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-15 06:30+0000\n"
 
 #: src/Plug.vala:41
@@ -116,7 +116,7 @@ msgstr ""
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
-msgstr ""
+msgstr "Jixweber"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
@@ -132,7 +132,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
-msgstr ""
+msgstr "Na çalak"
 
 #: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
@@ -140,15 +140,15 @@ msgstr ""
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
-msgstr ""
+msgstr "Bi Destan"
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
-msgstr ""
+msgstr "Ji:"
 
 #: src/Views/Appearance.vala:129
 msgid "To:"
-msgstr ""
+msgstr "Ji bo:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
@@ -355,7 +355,7 @@ msgstr "Betal bike"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr ""
+msgstr "Rake"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
