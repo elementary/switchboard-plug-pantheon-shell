@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -43,10 +43,8 @@ msgid "Dock"
 msgstr "DOCK"
 
 #: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "多任务视图"
+msgstr "多任务"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -78,7 +76,7 @@ msgstr "文本大小"
 
 #: src/Plug.vala:120
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "读写障碍文字"
 
 #: src/Plug.vala:122
 msgid "Hot Corners"
@@ -176,14 +174,16 @@ msgid "Larger"
 msgstr "较大"
 
 #: src/Views/Appearance.vala:176
+#, fuzzy
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "读写障碍文字："
 
 #: src/Views/Appearance.vala:185
+#, fuzzy
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
-msgstr ""
+msgstr "底部较粗的形状和更大的字符间距有助于提高易读性和阅读速度。"
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:344
@@ -192,31 +192,31 @@ msgstr "强调色："
 
 #: src/Views/Appearance.vala:348
 msgid "Blueberry"
-msgstr "蓝莓"
+msgstr "蓝莓色"
 
 #: src/Views/Appearance.vala:351
 msgid "Strawberry"
-msgstr "草莓"
+msgstr "草莓红"
 
 #: src/Views/Appearance.vala:354
 msgid "Orange"
-msgstr "橙子"
+msgstr "橙色"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
-msgstr "香蕉"
+msgstr "香蕉黄"
 
 #: src/Views/Appearance.vala:360
 msgid "Lime"
-msgstr "青柠"
+msgstr "青柠色"
 
 #: src/Views/Appearance.vala:363
 msgid "Mint"
-msgstr "薄荷"
+msgstr "薄荷绿"
 
 #: src/Views/Appearance.vala:366
 msgid "Grape"
-msgstr "葡萄"
+msgstr "葡萄紫"
 
 #: src/Views/Appearance.vala:369
 msgid "Bubblegum"
@@ -224,17 +224,17 @@ msgstr "泡泡糖"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"
-msgstr "可可"
+msgstr "可可色"
 
 #: src/Views/Appearance.vala:375
 msgid "Slate"
-msgstr "石板"
+msgstr "石头灰"
 
 #: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr "系统范围内生效。自带强调色配置的应用程序除外。"
+msgstr "默认情况下将用于系统全局。自带强调色配置的应用程序除外，它们将使用自己的强调色。"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
