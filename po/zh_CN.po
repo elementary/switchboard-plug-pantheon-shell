@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-29 18:45+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"PO-Revision-Date: 2020-10-03 11:14+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -220,7 +220,7 @@ msgstr "葡萄紫"
 
 #: src/Views/Appearance.vala:369
 msgid "Bubblegum"
-msgstr "泡泡糖"
+msgstr "泡泡糖粉"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"
