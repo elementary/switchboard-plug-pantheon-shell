@@ -344,44 +344,44 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var accent_label = new Gtk.Label (_("Accent:"));
             accent_label.halign = Gtk.Align.END;
 
-            var blueberry_button = new ColorButton ("blueberry");
-            blueberry_button.tooltip_text = _("Blueberry");
-
-            var strawberry_button = new ColorButton ("strawberry", blueberry_button);
+            var strawberry_button = new ColorButton ("strawberry");
             strawberry_button.tooltip_text = _("Strawberry");
 
-            var orange_button = new ColorButton ("orange", blueberry_button);
+            var orange_button = new ColorButton ("orange", strawberry_button);
             orange_button.tooltip_text = _("Orange");
 
-            var banana_button = new ColorButton ("banana", blueberry_button);
+            var banana_button = new ColorButton ("banana", strawberry_button);
             banana_button.tooltip_text = _("Banana");
 
-            var lime_button = new ColorButton ("lime", blueberry_button);
+            var lime_button = new ColorButton ("lime", strawberry_button);
             lime_button.tooltip_text = _("Lime");
 
-            var mint_button = new ColorButton ("mint", blueberry_button);
+            var mint_button = new ColorButton ("mint", strawberry_button);
             mint_button.tooltip_text = _("Mint");
 
-            var grape_button = new ColorButton ("grape", blueberry_button);
+            var blueberry_button = new ColorButton ("blueberry", strawberry_button);
+            blueberry_button.tooltip_text = _("Blueberry");
+
+            var grape_button = new ColorButton ("grape", strawberry_button);
             grape_button.tooltip_text = _("Grape");
 
-            var bubblegum_button = new ColorButton ("bubblegum", blueberry_button);
+            var bubblegum_button = new ColorButton ("bubblegum", strawberry_button);
             bubblegum_button.tooltip_text = _("Bubblegum");
 
-            var cocoa_button = new ColorButton ("cocoa", blueberry_button);
+            var cocoa_button = new ColorButton ("cocoa", strawberry_button);
             cocoa_button.tooltip_text = _("Cocoa");
 
-            var slate_button = new ColorButton ("slate", blueberry_button);
+            var slate_button = new ColorButton ("slate", strawberry_button);
             slate_button.tooltip_text = _("Slate");
 
             var accent_grid = new Gtk.Grid ();
             accent_grid.column_spacing = 6;
-            accent_grid.add (blueberry_button);
             accent_grid.add (strawberry_button);
             accent_grid.add (orange_button);
             accent_grid.add (banana_button);
             accent_grid.add (lime_button);
             accent_grid.add (mint_button);
+            accent_grid.add (blueberry_button);
             accent_grid.add (grape_button);
             accent_grid.add (bubblegum_button);
             accent_grid.add (cocoa_button);
