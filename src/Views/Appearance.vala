@@ -366,7 +366,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
             bubblegum_button.tooltip_text = _("Bubblegum");
 
             var grape_button = new ColorButton ("grape", blueberry_button);
-            grape_button.tooltip_text = _("Bubblegum");
+            grape_button.tooltip_text = _("Grape");
 
             var cocoa_button = new ColorButton ("cocoa", blueberry_button);
             cocoa_button.tooltip_text = _("Cocoa");
