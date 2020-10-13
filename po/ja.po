@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-29 18:45+0000\n"
+"POT-Creation-Date: 2020-10-13 21:08+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -192,32 +192,32 @@ msgid "Blueberry"
 msgstr "ブルーベリー"
 
 #: src/Views/Appearance.vala:351
-msgid "Strawberry"
-msgstr "ストロベリー"
+msgid "Mint"
+msgstr "ミント"
 
 #: src/Views/Appearance.vala:354
-msgid "Orange"
-msgstr "オレンジ"
+msgid "Lime"
+msgstr "ライム"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr "バナナ"
 
 #: src/Views/Appearance.vala:360
-msgid "Lime"
-msgstr "ライム"
+msgid "Orange"
+msgstr "オレンジ"
 
 #: src/Views/Appearance.vala:363
-msgid "Mint"
-msgstr "ミント"
+msgid "Strawberry"
+msgstr "ストロベリー"
 
 #: src/Views/Appearance.vala:366
-msgid "Grape"
-msgstr "グレープ"
-
-#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr "ピンク"
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "グレープ"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"

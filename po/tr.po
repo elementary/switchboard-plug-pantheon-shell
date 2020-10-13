@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-29 18:45+0000\n"
+"POT-Creation-Date: 2020-10-13 21:08+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -195,32 +195,32 @@ msgid "Blueberry"
 msgstr "Yaban mersini"
 
 #: src/Views/Appearance.vala:351
-msgid "Strawberry"
-msgstr "Çilek kırmızısı"
+msgid "Mint"
+msgstr "Nane yeşili"
 
 #: src/Views/Appearance.vala:354
-msgid "Orange"
-msgstr "Turuncu"
+msgid "Lime"
+msgstr "Limon yeşili"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr "Muz sarısı"
 
 #: src/Views/Appearance.vala:360
-msgid "Lime"
-msgstr "Limon yeşili"
+msgid "Orange"
+msgstr "Turuncu"
 
 #: src/Views/Appearance.vala:363
-msgid "Mint"
-msgstr "Nane yeşili"
+msgid "Strawberry"
+msgstr "Çilek kırmızısı"
 
 #: src/Views/Appearance.vala:366
-msgid "Grape"
-msgstr "Mor"
-
-#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr "Pembe"
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "Mor"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"

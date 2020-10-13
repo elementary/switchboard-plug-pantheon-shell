@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-29 18:45+0000\n"
+"POT-Creation-Date: 2020-10-13 21:08+0000\n"
 "PO-Revision-Date: 2020-10-03 11:14+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -195,32 +195,32 @@ msgid "Blueberry"
 msgstr "蓝莓色"
 
 #: src/Views/Appearance.vala:351
-msgid "Strawberry"
-msgstr "草莓红"
+msgid "Mint"
+msgstr "薄荷绿"
 
 #: src/Views/Appearance.vala:354
-msgid "Orange"
-msgstr "橙色"
+msgid "Lime"
+msgstr "青柠色"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr "香蕉黄"
 
 #: src/Views/Appearance.vala:360
-msgid "Lime"
-msgstr "青柠色"
+msgid "Orange"
+msgstr "橙色"
 
 #: src/Views/Appearance.vala:363
-msgid "Mint"
-msgstr "薄荷绿"
+msgid "Strawberry"
+msgstr "草莓红"
 
 #: src/Views/Appearance.vala:366
-msgid "Grape"
-msgstr "葡萄紫"
-
-#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr "泡泡糖粉"
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "葡萄紫"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"
@@ -234,7 +234,9 @@ msgstr "石头灰"
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr "默认情况下将用于系统全局。自带强调色配置的应用程序除外，它们将使用自己的强调色。"
+msgstr ""
+"默认情况下将用于系统全局。自带强调色配置的应用程序除外，它们将使用自己的强调"
+"色。"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"

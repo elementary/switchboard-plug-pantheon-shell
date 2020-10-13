@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-29 18:45+0000\n"
+"POT-Creation-Date: 2020-10-13 21:08+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -198,32 +198,32 @@ msgid "Blueberry"
 msgstr "Mirtilo"
 
 #: src/Views/Appearance.vala:351
-msgid "Strawberry"
-msgstr "Morango"
+msgid "Mint"
+msgstr "Menta"
 
 #: src/Views/Appearance.vala:354
-msgid "Orange"
-msgstr "Laranja"
+msgid "Lime"
+msgstr "Lima"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr "Banana"
 
 #: src/Views/Appearance.vala:360
-msgid "Lime"
-msgstr "Lima"
+msgid "Orange"
+msgstr "Laranja"
 
 #: src/Views/Appearance.vala:363
-msgid "Mint"
-msgstr "Menta"
+msgid "Strawberry"
+msgstr "Morango"
 
 #: src/Views/Appearance.vala:366
-msgid "Grape"
-msgstr "Uva"
-
-#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr "Pastilha elástica"
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "Uva"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"

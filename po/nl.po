@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-29 18:45+0000\n"
+"POT-Creation-Date: 2020-10-13 21:08+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -195,32 +195,32 @@ msgid "Blueberry"
 msgstr "Bosbes"
 
 #: src/Views/Appearance.vala:351
-msgid "Strawberry"
-msgstr "Aardbei"
+msgid "Mint"
+msgstr "Munt"
 
 #: src/Views/Appearance.vala:354
-msgid "Orange"
-msgstr "Sinaasappel"
+msgid "Lime"
+msgstr "Limoen"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
 msgstr "Banaan"
 
 #: src/Views/Appearance.vala:360
-msgid "Lime"
-msgstr "Limoen"
+msgid "Orange"
+msgstr "Sinaasappel"
 
 #: src/Views/Appearance.vala:363
-msgid "Mint"
-msgstr "Munt"
+msgid "Strawberry"
+msgstr "Aardbei"
 
 #: src/Views/Appearance.vala:366
-msgid "Grape"
-msgstr "Druif"
-
-#: src/Views/Appearance.vala:369
 msgid "Bubblegum"
 msgstr "Kauwgom"
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "Druif"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"

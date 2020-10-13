@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-29 18:45+0000\n"
+"POT-Creation-Date: 2020-10-13 21:08+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
-"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-14 05:46+0000\n"
 
@@ -198,11 +198,11 @@ msgid "Blueberry"
 msgstr ""
 
 #: src/Views/Appearance.vala:351
-msgid "Strawberry"
+msgid "Mint"
 msgstr ""
 
 #: src/Views/Appearance.vala:354
-msgid "Orange"
+msgid "Lime"
 msgstr ""
 
 #: src/Views/Appearance.vala:357
@@ -210,19 +210,19 @@ msgid "Banana"
 msgstr ""
 
 #: src/Views/Appearance.vala:360
-msgid "Lime"
+msgid "Orange"
 msgstr ""
 
 #: src/Views/Appearance.vala:363
-msgid "Mint"
+msgid "Strawberry"
 msgstr ""
 
 #: src/Views/Appearance.vala:366
-msgid "Grape"
+msgid "Bubblegum"
 msgstr ""
 
 #: src/Views/Appearance.vala:369
-msgid "Bubblegum"
+msgid "Grape"
 msgstr ""
 
 #: src/Views/Appearance.vala:372
