@@ -347,23 +347,20 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var blueberry_button = new ColorButton ("blueberry");
             blueberry_button.tooltip_text = _("Blueberry");
 
-            var strawberry_button = new ColorButton ("strawberry", blueberry_button);
-            strawberry_button.tooltip_text = _("Strawberry");
-
-            var orange_button = new ColorButton ("orange", blueberry_button);
-            orange_button.tooltip_text = _("Orange");
-
-            var banana_button = new ColorButton ("banana", blueberry_button);
-            banana_button.tooltip_text = _("Banana");
+            var mint_button = new ColorButton ("mint", blueberry_button);
+            mint_button.tooltip_text = _("Mint");
 
             var lime_button = new ColorButton ("lime", blueberry_button);
             lime_button.tooltip_text = _("Lime");
 
-            var mint_button = new ColorButton ("mint", blueberry_button);
-            mint_button.tooltip_text = _("Mint");
+            var banana_button = new ColorButton ("banana", blueberry_button);
+            banana_button.tooltip_text = _("Banana");
 
-            var grape_button = new ColorButton ("grape", blueberry_button);
-            grape_button.tooltip_text = _("Grape");
+            var orange_button = new ColorButton ("orange", blueberry_button);
+            orange_button.tooltip_text = _("Orange");
+
+            var strawberry_button = new ColorButton ("strawberry", blueberry_button);
+            strawberry_button.tooltip_text = _("Strawberry");
 
             var bubblegum_button = new ColorButton ("bubblegum", blueberry_button);
             bubblegum_button.tooltip_text = _("Bubblegum");
@@ -377,15 +374,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var accent_grid = new Gtk.Grid ();
             accent_grid.column_spacing = 6;
             accent_grid.add (blueberry_button);
-            accent_grid.add (grape_button);
-            accent_grid.add (bubblegum_button);
-            accent_grid.add (strawberry_button);
-            accent_grid.add (orange_button);
-            accent_grid.add (banana_button);
-            accent_grid.add (lime_button);
             accent_grid.add (mint_button);
-            accent_grid.add (slate_button);
+            accent_grid.add (lime_button);
+            accent_grid.add (banana_button);
+            accent_grid.add (orange_button);
+            accent_grid.add (strawberry_button);
+            accent_grid.add (bubblegum_button);
+            accent_grid.add (grape_button);
             accent_grid.add (cocoa_button);
+            accent_grid.add (slate_button);
 
             var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
             accent_info.margin_bottom = 18;
