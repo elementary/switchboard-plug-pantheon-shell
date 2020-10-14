@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-13 21:08+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-10-15 09:14+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
 "Language: es\n"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
-msgstr "Fijar el horario:"
+msgstr "Programación:"
 
 #: src/Views/Appearance.vala:119
 msgid "Disabled"
@@ -153,7 +153,7 @@ msgstr "Hasta:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
-msgstr "Animación de ventana:"
+msgstr "Animación de ventanas:"
 
 #: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
@@ -301,7 +301,7 @@ msgstr "No hacer nada"
 #. none
 #: src/Views/Multitasking.vala:113
 msgid "Multitasking View"
-msgstr "Vista de multitarea"
+msgstr "Vista multitarea"
 
 #. show-workspace-view
 #: src/Views/Multitasking.vala:114
