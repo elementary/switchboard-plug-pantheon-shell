@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-13 21:08+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-10-24 12:15+0000\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/it/>\n"
 "Language: it\n"
@@ -43,10 +43,8 @@ msgid "Dock"
 msgstr "Dock"
 
 #: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "Panoramica degli spazi di lavoro"
+msgstr "Multitasking"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -62,29 +60,23 @@ msgstr "Mostra al passaggio del puntatore"
 
 #: src/Plug.vala:115
 msgid "Display"
-msgstr "Monitor"
+msgstr "Schermo"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "Animazioni delle finestre:"
+msgstr "Animazioni delle finestre"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "Trasparenza pannello:"
+msgstr "Trasparenza del pannello"
 
 #: src/Plug.vala:119
-#, fuzzy
-#| msgid "Text size:"
 msgid "Text size"
-msgstr "Dimensione del testo:"
+msgstr "Dimensione del testo"
 
 #: src/Plug.vala:120
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "Testo adatto alla dislessia"
 
 #: src/Plug.vala:122
 msgid "Hot Corners"
@@ -110,15 +102,15 @@ msgstr "Angoli attivi"
 #.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr "Imposta come sfondo del _desktop"
+msgstr "Imposta come sfondo della _scrivania"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr "Imposta l'immagine selezionata come nuovo sfondo del desktop"
+msgstr "Imposta l'immagine selezionata come nuovo sfondo della scrivania"
 
 #: src/Views/Appearance.vala:52
 msgid "Style:"
-msgstr ""
+msgstr "Stile:"
 
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
@@ -127,11 +119,12 @@ msgstr "Predefinito"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
-msgstr ""
+msgstr "Scuro"
 
 #: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
+"Stile per i componenti di sistema come gli indicatori del pannello e la dock."
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
@@ -183,64 +176,68 @@ msgstr "Molto grande"
 
 #: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "Testo adatto alla dislessia:"
 
 #: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"Simboli con fondo pesante e una maggiore spaziatura dei caratteri possono "
+"aiutare a migliorare la leggibilità e la velocità di lettura."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:344
 msgid "Accent:"
-msgstr ""
+msgstr "Colore di sistema:"
 
 #: src/Views/Appearance.vala:348
 msgid "Blueberry"
-msgstr ""
+msgstr "Mirtillo"
 
 #: src/Views/Appearance.vala:351
 msgid "Mint"
-msgstr ""
+msgstr "Menta"
 
 #: src/Views/Appearance.vala:354
 msgid "Lime"
-msgstr ""
+msgstr "Lime"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
-msgstr ""
+msgstr "Banana"
 
 #: src/Views/Appearance.vala:360
 msgid "Orange"
-msgstr ""
+msgstr "Arancia"
 
 #: src/Views/Appearance.vala:363
 msgid "Strawberry"
-msgstr ""
+msgstr "Fragola"
 
 #: src/Views/Appearance.vala:366
 msgid "Bubblegum"
-msgstr ""
+msgstr "Gomma da masticare"
 
 #: src/Views/Appearance.vala:369
 msgid "Grape"
-msgstr ""
+msgstr "Uva"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacao"
 
 #: src/Views/Appearance.vala:375
 msgid "Slate"
-msgstr ""
+msgstr "Ardesia"
 
 #: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Utilizzato in tutto il sistema per impostazione predefinita. Le applicazioni "
+"possono sempre utilizzare il proprio colore principale."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -264,7 +261,7 @@ msgstr "Schermo principale:"
 
 #: src/Views/Dock.vala:113
 msgid "Display:"
-msgstr "Monitor:"
+msgstr "Schermo:"
 
 #: src/Views/Dock.vala:144
 msgid "Icon size:"
@@ -323,7 +320,7 @@ msgstr "Mostra tutte le finestre"
 #. window-overview-all
 #: src/Views/Multitasking.vala:117
 msgid "Switch to new workspace"
-msgstr "Passare ad un nuovo spazio di lavoro"
+msgstr "Passa a un nuovo spazio di lavoro"
 
 #. switch-new-workspace
 #: src/Views/Multitasking.vala:118
@@ -360,7 +357,7 @@ msgstr "Annulla"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
-msgstr "Elimina"
+msgstr "Rimuovi"
 
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
@@ -399,7 +396,7 @@ msgstr "Mostra ogni foto per"
 #: set-wallpaper-contract/set-wallpaper.vala:219
 #: set-wallpaper-contract/set-wallpaper.vala:227
 msgid "Set As Desktop Slideshow"
-msgstr "Imposta come presentazione del desktop"
+msgstr "Imposta come presentazione della scrivania"
 
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
