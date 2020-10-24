@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-13 21:08+0000\n"
-"PO-Revision-Date: 2020-10-03 11:14+0000\n"
+"PO-Revision-Date: 2020-10-24 12:15+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -40,7 +40,7 @@ msgstr "外观"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
-msgstr "DOCK"
+msgstr "Dock"
 
 #: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
 msgid "Multitasking"
@@ -174,7 +174,6 @@ msgid "Larger"
 msgstr "较大"
 
 #: src/Views/Appearance.vala:176
-#, fuzzy
 msgid "Dyslexia-friendly text:"
 msgstr "读写障碍文字："
 
