@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 19:55+0000\n"
-"PO-Revision-Date: 2020-08-25 06:13+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"POT-Creation-Date: 2020-10-13 21:08+0000\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
 "Language: he\n"
@@ -112,7 +112,7 @@ msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשול
 msgid "Style:"
 msgstr "סגנון:"
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "בררת מחדל"
@@ -126,34 +126,58 @@ msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr "סגנון חזותי לרכיבי מערכת כגון מעגן ומחווני חלוניות."
 
 #: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr "לו״ז:"
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr "מושבתת"
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr "שקיעה עד זריחה"
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr "ידני"
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr "התחלה:"
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr "סיום:"
+
+#: src/Views/Appearance.vala:145
 msgid "Window animations:"
 msgstr "הנפשות חלון:"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
 msgstr "שקיפות חלונית:"
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:163
 msgid "Text size:"
 msgstr "גודל כתב:"
 
-#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "קטן"
 
-#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "גדול"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:174
 msgid "Larger"
 msgstr "גדול מאוד"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
 msgstr "טקסט ידידותי לדיסלקציה:"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -162,51 +186,51 @@ msgstr ""
 "מהירות הקריאה של הטקסט."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:242
+#: src/Views/Appearance.vala:344
 msgid "Accent:"
 msgstr "גוון:"
 
-#: src/Views/Appearance.vala:246
+#: src/Views/Appearance.vala:348
 msgid "Blueberry"
 msgstr "אוכמניה"
 
-#: src/Views/Appearance.vala:249
-msgid "Strawberry"
-msgstr "תות"
-
-#: src/Views/Appearance.vala:252
-msgid "Orange"
-msgstr "תפוז"
-
-#: src/Views/Appearance.vala:255
-msgid "Banana"
-msgstr "בננה"
-
-#: src/Views/Appearance.vala:258
-msgid "Lime"
-msgstr "ליים"
-
-#: src/Views/Appearance.vala:261
+#: src/Views/Appearance.vala:351
 msgid "Mint"
 msgstr "נענע"
 
-#: src/Views/Appearance.vala:264
-msgid "Grape"
-msgstr "ענב"
+#: src/Views/Appearance.vala:354
+msgid "Lime"
+msgstr "ליים"
 
-#: src/Views/Appearance.vala:267
+#: src/Views/Appearance.vala:357
+msgid "Banana"
+msgstr "בננה"
+
+#: src/Views/Appearance.vala:360
+msgid "Orange"
+msgstr "תפוז"
+
+#: src/Views/Appearance.vala:363
+msgid "Strawberry"
+msgstr "תות"
+
+#: src/Views/Appearance.vala:366
 msgid "Bubblegum"
 msgstr "מסטיק"
 
-#: src/Views/Appearance.vala:270
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "ענב"
+
+#: src/Views/Appearance.vala:372
 msgid "Cocoa"
 msgstr "קקאו"
 
-#: src/Views/Appearance.vala:273
+#: src/Views/Appearance.vala:375
 msgid "Slate"
 msgstr "רעף"
 
-#: src/Views/Appearance.vala:288
+#: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 19:55+0000\n"
-"PO-Revision-Date: 2018-10-25 16:05+0000\n"
-"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
-"Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
+"POT-Creation-Date: 2020-10-13 21:08+0000\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Swedish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:41
@@ -115,10 +115,10 @@ msgstr "Använd bilden som ny skrivbordsbakgrund"
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
@@ -129,87 +129,111 @@ msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 
 #: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr "Schema:"
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr "Solnedgång till soluppgång"
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr "Manuellt"
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr "Från:"
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr "Till:"
+
+#: src/Views/Appearance.vala:145
 msgid "Window animations:"
 msgstr ""
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
 msgstr ""
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:163
 #, fuzzy
 msgid "Text size:"
 msgstr "Ikonstorlek:"
 
-#: src/Views/Appearance.vala:139 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Liten"
 
-#: src/Views/Appearance.vala:141 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Stor"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:174
 #, fuzzy
 msgid "Larger"
 msgstr "Stor"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
 msgstr ""
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:242
+#: src/Views/Appearance.vala:344
 msgid "Accent:"
 msgstr ""
 
-#: src/Views/Appearance.vala:246
+#: src/Views/Appearance.vala:348
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:249
-msgid "Strawberry"
-msgstr ""
-
-#: src/Views/Appearance.vala:252
-msgid "Orange"
-msgstr ""
-
-#: src/Views/Appearance.vala:255
-msgid "Banana"
-msgstr ""
-
-#: src/Views/Appearance.vala:258
-msgid "Lime"
-msgstr ""
-
-#: src/Views/Appearance.vala:261
+#: src/Views/Appearance.vala:351
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:264
-msgid "Grape"
+#: src/Views/Appearance.vala:354
+msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:267
+#: src/Views/Appearance.vala:357
+msgid "Banana"
+msgstr ""
+
+#: src/Views/Appearance.vala:360
+msgid "Orange"
+msgstr ""
+
+#: src/Views/Appearance.vala:363
+msgid "Strawberry"
+msgstr ""
+
+#: src/Views/Appearance.vala:366
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:270
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr ""
+
+#: src/Views/Appearance.vala:372
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:273
+#: src/Views/Appearance.vala:375
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:288
+#: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

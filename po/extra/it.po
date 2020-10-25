@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2019-07-02 12:28+0000\n"
+"PO-Revision-Date: 2020-10-24 12:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/it/>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
-#, fuzzy
-#| msgid "Desktop"
 msgid "Desktop Settings"
-msgstr "Scrivania"
+msgstr "Impostazioni della scrivania"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -31,36 +29,40 @@ msgstr "Configura la dock, gli angoli attivi e cambia lo sfondo"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nuove funzionalità:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"Preferenza di testo compatibile con la dislessia che utilizza il carattere "
+"OpenDyslexia a livello di sistema"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Other updates:"
-msgstr ""
+msgstr "Altri aggiornamenti:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
 msgid "Updated translations"
-msgstr ""
+msgstr "Traduzioni aggiornate"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Mostra le dimensioni delle icone della dock"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Previene gli sfondi di sistema dall'essere copiati"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
 msgid "Update search results"
-msgstr ""
+msgstr "Aggiorna i risultati della ricerca"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
+"Risolvi i problemi con l'impostazione degli sfondi nella schermata di "
+"accesso e blocco"
