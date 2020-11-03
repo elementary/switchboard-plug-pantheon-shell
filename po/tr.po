@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-13 21:08+0000\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -33,7 +33,7 @@ msgid "Wallpaper"
 msgstr "Duvar Kağıdı"
 
 #: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Appearance"
 msgstr "Görünüm"
 
@@ -42,7 +42,7 @@ msgstr "Görünüm"
 msgid "Dock"
 msgstr "Rıhtım"
 
-#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 msgid "Multitasking"
 msgstr "Çoklu Görev"
 
@@ -63,22 +63,32 @@ msgid "Display"
 msgstr "Görünüm"
 
 #: src/Plug.vala:117
+msgid "Dark style"
+msgstr ""
+
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Accent:"
+msgid "Accent color"
+msgstr "Vurgu rengi:"
+
+#: src/Plug.vala:119
 msgid "Window animations"
 msgstr "Pencere animasyonları"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:120
 msgid "Panel translucency"
 msgstr "Panel saydamlığı"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:121
 msgid "Text size"
 msgstr "Metin boyutu"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
 msgstr "Disleksi-dostu yazı"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:124
 msgid "Hot Corners"
 msgstr "Etkin Köşeler"
 
