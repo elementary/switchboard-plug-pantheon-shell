@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-13 21:08+0000\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -28,7 +28,7 @@ msgid "Wallpaper"
 msgstr "壁紙"
 
 #: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Appearance"
 msgstr "外観"
 
@@ -37,7 +37,7 @@ msgstr "外観"
 msgid "Dock"
 msgstr "ドック"
 
-#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 msgid "Multitasking"
 msgstr "マルチタスク"
 
@@ -58,22 +58,34 @@ msgid "Display"
 msgstr "ディスプレイ"
 
 #: src/Plug.vala:117
+#, fuzzy
+#| msgid "Prefer dark style:"
+msgid "Dark style"
+msgstr "ダークスタイル:"
+
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Accent:"
+msgid "Accent color"
+msgstr "アクセント:"
+
+#: src/Plug.vala:119
 msgid "Window animations"
 msgstr "ウィンドウアニメーション"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:120
 msgid "Panel translucency"
 msgstr "パネルを透過"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:121
 msgid "Text size"
 msgstr "テキストサイズ"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
 msgstr "ディスレクシアに配慮したテキスト"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:124
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
@@ -394,9 +406,6 @@ msgstr "デスクトップスライドショーとして設定"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "スライドショーを作成"
-
-#~ msgid "Prefer dark style:"
-#~ msgstr "ダークスタイル:"
 
 #~ msgid "Normal"
 #~ msgstr "標準"

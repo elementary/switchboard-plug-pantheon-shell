@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-13 21:08+0000\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -33,7 +33,7 @@ msgid "Wallpaper"
 msgstr "Fond d'écran"
 
 #: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Appearance"
 msgstr "Apparence"
 
@@ -42,7 +42,7 @@ msgstr "Apparence"
 msgid "Dock"
 msgstr "Dock"
 
-#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 msgid "Multitasking"
 msgstr "Multitâche"
 
@@ -63,22 +63,34 @@ msgid "Display"
 msgstr "Affichage"
 
 #: src/Plug.vala:117
+#, fuzzy
+#| msgid "Prefer dark style:"
+msgid "Dark style"
+msgstr "Préférer le thème sombre :"
+
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Accent:"
+msgid "Accent color"
+msgstr "Couleur d'accentuation :"
+
+#: src/Plug.vala:119
 msgid "Window animations"
 msgstr "Animations des fenêtres"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:120
 msgid "Panel translucency"
 msgstr "Transparence du panneau"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:121
 msgid "Text size"
 msgstr "Taille du texte"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
 msgstr "Texte approprié aux dyslexiques"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:124
 msgid "Hot Corners"
 msgstr "Coins dynamiques"
 
@@ -403,9 +415,6 @@ msgstr "Définir comme fond d'écran animé"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Créer un fond d'écran animé"
-
-#~ msgid "Prefer dark style:"
-#~ msgstr "Préférer le thème sombre :"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

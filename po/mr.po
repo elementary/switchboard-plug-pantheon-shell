@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-13 21:08+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"PO-Revision-Date: 2020-11-02 18:15+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mr/>\n"
 "Language: mr\n"
@@ -28,7 +28,7 @@ msgid "Wallpaper"
 msgstr "वॉलपेपर"
 
 #: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Appearance"
 msgstr "दर्शन"
 
@@ -37,11 +37,9 @@ msgstr "दर्शन"
 msgid "Dock"
 msgstr "डॉक"
 
-#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
-#, fuzzy
-#| msgid "Multitasking View"
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 msgid "Multitasking"
-msgstr "मल्टीटास्किंग प्रदर्शन"
+msgstr "मल्टीटास्किंग"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -60,28 +58,32 @@ msgid "Display"
 msgstr "प्रदर्शन"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Window animations:"
-msgid "Window animations"
-msgstr "विंडो अॅनिमेशन:"
+msgid "Dark style"
+msgstr ""
 
 #: src/Plug.vala:118
 #, fuzzy
-#| msgid "Panel translucency:"
-msgid "Panel translucency"
-msgstr "पॅनेल पारंपारिकता:"
+#| msgid "Accent:"
+msgid "Accent color"
+msgstr "एक्सेंट:"
 
 #: src/Plug.vala:119
-#, fuzzy
-#| msgid "Text size:"
-msgid "Text size"
-msgstr "टेक्स्ट आकार :"
+msgid "Window animations"
+msgstr "विंडो अॅनिमेशन"
 
 #: src/Plug.vala:120
-msgid "Dyslexia-friendly text"
-msgstr ""
+msgid "Panel translucency"
+msgstr "पॅनेल पारंपारिकता"
+
+#: src/Plug.vala:121
+msgid "Text size"
+msgstr "टेक्स्ट आकार"
 
 #: src/Plug.vala:122
+msgid "Dyslexia-friendly text"
+msgstr "डिसिलेक्सिया-अनुकूल मजकूर"
+
+#: src/Plug.vala:124
 msgid "Hot Corners"
 msgstr "हॉट कॉर्नर"
 
@@ -113,7 +115,7 @@ msgstr "नवीन डेस्कटॉप पार्श्वभूमी 
 
 #: src/Views/Appearance.vala:52
 msgid "Style:"
-msgstr ""
+msgstr "शैली:"
 
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
@@ -122,11 +124,11 @@ msgstr "डिफॉल्ट"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
-msgstr ""
+msgstr "गडद"
 
 #: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr ""
+msgstr "डॉक आणि पॅनेल सूचक सारख्या सिस्टम घटकांसाठी व्हिज्युअल शैली."
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
@@ -178,64 +180,65 @@ msgstr "आणखी मोठा"
 
 #: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "डिस्लेक्सिया-अनुकूल मजकूर:"
 
 #: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"तळाशी-जड आकार आणि वर्णांमधील वाढीव अंतर सुवाच्यता आणि वाचन गती सुधारण्यात मदत करते."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:344
 msgid "Accent:"
-msgstr ""
+msgstr "एक्सेंट:"
 
 #: src/Views/Appearance.vala:348
 msgid "Blueberry"
-msgstr ""
+msgstr "ब्लूबेरी"
 
 #: src/Views/Appearance.vala:351
 msgid "Mint"
-msgstr ""
+msgstr "पुदीना"
 
 #: src/Views/Appearance.vala:354
 msgid "Lime"
-msgstr ""
+msgstr "लिंबू"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
-msgstr ""
+msgstr "केळे"
 
 #: src/Views/Appearance.vala:360
 msgid "Orange"
-msgstr ""
+msgstr "नारिंगी"
 
 #: src/Views/Appearance.vala:363
 msgid "Strawberry"
-msgstr ""
+msgstr "स्ट्रॉबेरी"
 
 #: src/Views/Appearance.vala:366
 msgid "Bubblegum"
-msgstr ""
+msgstr "बबलगम"
 
 #: src/Views/Appearance.vala:369
 msgid "Grape"
-msgstr ""
+msgstr "द्राक्ष"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"
-msgstr ""
+msgstr "कोकाआ"
 
 #: src/Views/Appearance.vala:375
 msgid "Slate"
-msgstr ""
+msgstr "स्लेट"
 
 #: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr ""
+msgstr "डीफॉल्टनुसार प्रणालीवर वापरली जाते. अॅप्स नेहमीच स्वत: चे अॅक्सेंट रंग वापरू शकतात."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"

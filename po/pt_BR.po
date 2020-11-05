@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-13 21:08+0000\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -33,7 +33,7 @@ msgid "Wallpaper"
 msgstr "Papel de parede"
 
 #: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Appearance"
 msgstr "Aparência"
 
@@ -42,7 +42,7 @@ msgstr "Aparência"
 msgid "Dock"
 msgstr "Dock"
 
-#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
@@ -65,22 +65,32 @@ msgid "Display"
 msgstr "Tela"
 
 #: src/Plug.vala:117
+msgid "Dark style"
+msgstr ""
+
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Accent:"
+msgid "Accent color"
+msgstr "Destaque:"
+
+#: src/Plug.vala:119
 msgid "Window animations"
 msgstr "Animações de janela"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:120
 msgid "Panel translucency"
 msgstr "Translucidez do painel"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:121
 msgid "Text size"
 msgstr "Tamanho do texto"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
 msgstr ""
 
-#: src/Plug.vala:122
+#: src/Plug.vala:124
 msgid "Hot Corners"
 msgstr "Cantos de Acesso Rápido"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-13 21:08+0000\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -34,7 +34,7 @@ msgid "Wallpaper"
 msgstr "Fons d'escriptori"
 
 #: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Appearance"
 msgstr "Aparença"
 
@@ -43,7 +43,7 @@ msgstr "Aparença"
 msgid "Dock"
 msgstr "Acoblador"
 
-#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 msgid "Multitasking"
 msgstr "Multitasca"
 
@@ -64,22 +64,34 @@ msgid "Display"
 msgstr "Pantalla"
 
 #: src/Plug.vala:117
+#, fuzzy
+#| msgid "Prefer dark style:"
+msgid "Dark style"
+msgstr "Prefereix l'estil fosc:"
+
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Accent:"
+msgid "Accent color"
+msgstr "Accentuació:"
+
+#: src/Plug.vala:119
 msgid "Window animations"
 msgstr "Animacions de finestres"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:120
 msgid "Panel translucency"
 msgstr "Translucidesa del plafó"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:121
 msgid "Text size"
 msgstr "Mida del text"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
 msgstr "Text adaptat a la dislèxia"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:124
 msgid "Hot Corners"
 msgstr "Cantons actius"
 
@@ -403,9 +415,6 @@ msgstr "Estableix com a presentació de diapositives"
 #: set-wallpaper-contract/set-wallpaper.vala:223
 msgid "Create slideshow"
 msgstr "Crea una presentació de diapositives"
-
-#~ msgid "Prefer dark style:"
-#~ msgstr "Prefereix l'estil fosc:"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

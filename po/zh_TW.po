@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-13 21:08+0000\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -33,7 +33,7 @@ msgid "Wallpaper"
 msgstr "桌布"
 
 #: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Appearance"
 msgstr "外觀"
 
@@ -42,7 +42,7 @@ msgstr "外觀"
 msgid "Dock"
 msgstr "Dock"
 
-#: src/Plug.vala:66 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
@@ -65,28 +65,36 @@ msgid "Display"
 msgstr "顯示"
 
 #: src/Plug.vala:117
+msgid "Dark style"
+msgstr ""
+
+#: src/Plug.vala:118
+msgid "Accent color"
+msgstr ""
+
+#: src/Plug.vala:119
 #, fuzzy
 #| msgid "Window animations:"
 msgid "Window animations"
 msgstr "視窗動畫："
 
-#: src/Plug.vala:118
+#: src/Plug.vala:120
 #, fuzzy
 #| msgid "Panel translucency:"
 msgid "Panel translucency"
 msgstr "面板透明度："
 
-#: src/Plug.vala:119
+#: src/Plug.vala:121
 #, fuzzy
 #| msgid "Text size:"
 msgid "Text size"
 msgstr "文字大小："
 
-#: src/Plug.vala:120
+#: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
 msgstr ""
 
-#: src/Plug.vala:122
+#: src/Plug.vala:124
 msgid "Hot Corners"
 msgstr "熱角"
 
