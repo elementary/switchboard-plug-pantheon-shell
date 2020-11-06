@@ -7,236 +7,88 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-10-15 14:51+0000\n"
-"Last-Translator: Nuno Alexandre MS Ribeiro <nuno.anarresti@gmail.com>\n"
-"Language-Team: Portuguese <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-pantheon-shell/pt/>\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"PO-Revision-Date: 2020-11-06 02:15+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-pantheon-shell/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
-#: src/desktop-plug.vala:36
+#: src/Plug.vala:41
 msgid "Desktop"
 msgstr "Ambiente de trabalho"
 
-#: src/desktop-plug.vala:37
+#: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configurar o papel de parede, a dock e os cantos ativos"
+msgstr "Configurar a doca, cantos ativos e alterar o papel de parede"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
+#: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
 msgstr "Papel de parede"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
-#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
-#: src/desktop-plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+msgid "Appearance"
+msgstr "Aparência"
+
+#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
-msgstr "Dock"
+msgstr "Doca"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
-msgid "Hot Corners"
-msgstr "Cantos ativos"
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+msgid "Multitasking"
+msgstr "Multitarefas"
 
-#: src/desktop-plug.vala:101
+#: src/Plug.vala:112
 msgid "Hide Mode"
-msgstr "Modo de Ocultação"
+msgstr "Modo Oculto"
 
-#: src/desktop-plug.vala:102
+#: src/Plug.vala:113
 msgid "Icon Size"
 msgstr "Tamanho dos ícones"
 
-#: src/desktop-plug.vala:103
+#: src/Plug.vala:114
 msgid "Pressure reveal"
-msgstr "Revelar por pressão"
+msgstr "Mostrar por pressão"
 
-#: src/desktop-plug.vala:104
+#: src/Plug.vala:115
 msgid "Display"
 msgstr "Visualização"
 
-#: src/Widgets/WallpaperContainer.vala:118
-msgid "Remove"
-msgstr "Remover"
+#: src/Plug.vala:117
+msgid "Dark style"
+msgstr "Estilo escuro"
 
-#: src/Widgets/WallpaperContainer.vala:188
-#, c-format
-msgid "Artist: %s"
-msgstr "Artista: %s"
+#: src/Plug.vala:118
+msgid "Accent color"
+msgstr "Cor de destaque"
 
-#: src/Views/Wallpaper.vala:103
-msgid "Import Photo…"
-msgstr "Importar foto…"
+#: src/Plug.vala:119
+msgid "Window animations"
+msgstr "Animações de janela"
 
-#: src/Views/Wallpaper.vala:108
-msgid "Centered"
-msgstr "Centrado"
+#: src/Plug.vala:120
+msgid "Panel translucency"
+msgstr "Translucidez do painel"
 
-#: src/Views/Wallpaper.vala:109
-msgid "Zoom"
-msgstr "Ampliar"
+#: src/Plug.vala:121
+msgid "Text size"
+msgstr "Tamanho do texto"
 
-#: src/Views/Wallpaper.vala:110
-msgid "Spanned"
-msgstr "Expandido"
+#: src/Plug.vala:122
+msgid "Dyslexia-friendly text"
+msgstr "Texto amigável à dislexia"
 
-#: src/Views/Wallpaper.vala:153
-msgid "Import Photo"
-msgstr "Importar foto"
-
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/Views/Wallpaper.vala:155
-msgid "Import"
-msgstr "Importar"
-
-#: src/Views/HotCorners.vala:34
-msgid "When the cursor enters the corner of the display:"
-msgstr "Quando o cursor vai para o canto do ecrã:"
-
-#: src/Views/HotCorners.vala:66
-msgid "Custom command:"
-msgstr "Comando personalizado:"
-
-#: src/Views/HotCorners.vala:103
-msgid "Do nothing"
-msgstr "Não fazer nada"
-
-#. none
-#: src/Views/HotCorners.vala:104
-msgid "Multitasking View"
-msgstr "Vista multi-tarefa"
-
-#. show-workspace-view
-#: src/Views/HotCorners.vala:105
-msgid "Maximize current window"
-msgstr "Maximizar janela focada"
-
-#. maximize-current
-#: src/Views/HotCorners.vala:106
-msgid "Show Applications Menu"
-msgstr "Mostrar Menu de Aplicações"
-
-#. open-launcher
-#: src/Views/HotCorners.vala:107
-msgid "Show all windows"
-msgstr "Mostar todas as janelas"
-
-#. window-overview-all
-#: src/Views/HotCorners.vala:108
-msgid "Switch to new workspace"
-msgstr "Alternar para novo espaço de trabalho"
-
-#. switch-new-workspace
-#: src/Views/HotCorners.vala:109
-msgid "Execute custom command"
-msgstr "Executar comando personalizado"
-
-#: src/Views/Dock.vala:34
-msgid "Small"
-msgstr "Pequeno"
-
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Normal"
-
-#: src/Views/Dock.vala:36
-msgid "Large"
-msgstr "Grande"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "Personalizado (%dpx)"
-
-#: src/Views/Dock.vala:83
-msgid "Focused window is maximized"
-msgstr "Janela focada está maximizada"
-
-#: src/Views/Dock.vala:84
-msgid "Focused window overlaps the dock"
-msgstr "Janela focada sobrepõe-se à dock"
-
-#: src/Views/Dock.vala:85
-msgid "Any window overlaps the dock"
-msgstr "Qualquer janela se sobrepõe à dock"
-
-#: src/Views/Dock.vala:86
-msgid "Not being used"
-msgstr "Não usado"
-
-#: src/Views/Dock.vala:122
-msgid "Primary display:"
-msgstr "Ecrã principal:"
-
-#: src/Views/Dock.vala:126
-msgid "Display:"
-msgstr "Ecrã:"
-
-#: src/Views/Dock.vala:157
-msgid "Icon size:"
-msgstr "Tamanho dos ícones:"
-
-#: src/Views/Dock.vala:159
-msgid "Hide when:"
-msgstr "Esconder quando:"
-
-#: src/Views/Dock.vala:163
-msgid "Pressure reveal:"
-msgstr "Revelar com pressão:"
-
-#: src/Views/Dock.vala:203
-#, c-format
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: src/Views/Dock.vala:208
-#, c-format
-msgid "Display %d"
-msgstr "Ecrã %d"
-
-#: set-wallpaper-contract/set-wallpaper.vala:95
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d segundo"
-msgstr[1] "%d segundos"
-
-#: set-wallpaper-contract/set-wallpaper.vala:98
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d minuto"
-msgstr[1] "%d minutos"
-
-#: set-wallpaper-contract/set-wallpaper.vala:102
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d hora"
-msgstr[1] "%d horas"
-
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "1 dia"
-
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "Mostrar cada fotografia durante"
-
-#: set-wallpaper-contract/set-wallpaper.vala:222
-#: set-wallpaper-contract/set-wallpaper.vala:230
-msgid "Set As Desktop Slideshow"
-msgstr "Definir Apresentação de Diapositivos como Fundo"
-
-#: set-wallpaper-contract/set-wallpaper.vala:226
-msgid "Create slideshow"
-msgstr "Criar apresentação de diapositivos"
+#: src/Plug.vala:124
+msgid "Hot Corners"
+msgstr "Cantos ativos"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -258,11 +110,313 @@ msgstr "Criar apresentação de diapositivos"
 #.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr "_Definir como fundo da área de trabalho"
+msgstr "_Definir como fundo do ambiente de trabalho"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr "Definir a imagem selecionada como fundo da área de trabalho"
+msgstr ""
+"Definir a imagem selecionada para ser o novo fundo do ambiente de trabalho"
+
+#: src/Views/Appearance.vala:52
+msgid "Style:"
+msgstr "Estilo:"
+
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Dock.vala:42
+msgid "Default"
+msgstr "Predefinido"
+
+#: src/Views/Appearance.vala:96
+msgid "Dark"
+msgstr "Escuro"
+
+#: src/Views/Appearance.vala:105
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr ""
+"Estilo visual escuro para componentes do sistema como os indicadores da Doca "
+"e Painel."
+
+#: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr "Horário:"
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr "Desativado"
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr "Pôr do sol ao nascer do sol"
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr "Manual"
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr "De:"
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr "Para:"
+
+#: src/Views/Appearance.vala:145
+msgid "Window animations:"
+msgstr "Animações de janelas:"
+
+#: src/Views/Appearance.vala:155
+msgid "Panel translucency:"
+msgstr "Translucidez do painel:"
+
+#: src/Views/Appearance.vala:163
+msgid "Text size:"
+msgstr "Tamanho do texto:"
+
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "Pequeno"
+
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+msgid "Large"
+msgstr "Grande"
+
+#: src/Views/Appearance.vala:174
+msgid "Larger"
+msgstr "Maior"
+
+#: src/Views/Appearance.vala:176
+msgid "Dyslexia-friendly text:"
+msgstr "Texto amigável à dislexia:"
+
+#: src/Views/Appearance.vala:185
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+"Formas pesadas no fundo e maior espaçamento entre caracteres podem ajudar a "
+"melhorar a legibilidade e a velocidade de leitura."
+
+#. / TRANSLATORS: as in "Accent color"
+#: src/Views/Appearance.vala:344
+msgid "Accent:"
+msgstr "Destaque:"
+
+#: src/Views/Appearance.vala:348
+msgid "Blueberry"
+msgstr "Mirtilo"
+
+#: src/Views/Appearance.vala:351
+msgid "Mint"
+msgstr "Menta"
+
+#: src/Views/Appearance.vala:354
+msgid "Lime"
+msgstr "Lima"
+
+#: src/Views/Appearance.vala:357
+msgid "Banana"
+msgstr "Banana"
+
+#: src/Views/Appearance.vala:360
+msgid "Orange"
+msgstr "Laranja"
+
+#: src/Views/Appearance.vala:363
+msgid "Strawberry"
+msgstr "Morango"
+
+#: src/Views/Appearance.vala:366
+msgid "Bubblegum"
+msgstr "Pastilha elástica"
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "Uva"
+
+#: src/Views/Appearance.vala:372
+msgid "Cocoa"
+msgstr "Cacau"
+
+#: src/Views/Appearance.vala:375
+msgid "Slate"
+msgstr "Ardósia"
+
+#: src/Views/Appearance.vala:390
+msgid ""
+"Used across the system by default. Apps can always use their own accent "
+"color."
+msgstr ""
+"Utilizado em todo o sistema por omissão. As aplicações podem usar sempre a "
+"própria cor de destaque."
+
+#: src/Views/Dock.vala:70
+msgid "Focused window is maximized"
+msgstr "Janela focada está maximizada"
+
+#: src/Views/Dock.vala:71
+msgid "Focused window overlaps the dock"
+msgstr "Janela focada sobrepõe-se à doca"
+
+#: src/Views/Dock.vala:72
+msgid "Any window overlaps the dock"
+msgstr "Qualquer janela sobrepõe-se à doca"
+
+#: src/Views/Dock.vala:73
+msgid "Not being used"
+msgstr "Não está a ser usada"
+
+#: src/Views/Dock.vala:109
+msgid "Primary display:"
+msgstr "Ecrã principal:"
+
+#: src/Views/Dock.vala:113
+msgid "Display:"
+msgstr "Ecrã:"
+
+#: src/Views/Dock.vala:144
+msgid "Icon size:"
+msgstr "Tamanho dos ícones:"
+
+#: src/Views/Dock.vala:146
+msgid "Hide when:"
+msgstr "Ocultar quando:"
+
+#: src/Views/Dock.vala:150
+msgid "Pressure reveal:"
+msgstr "Mostrar com pressão:"
+
+#: src/Views/Dock.vala:217
+#, c-format
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: src/Views/Dock.vala:222
+#, c-format
+msgid "Display %d"
+msgstr "Ecrã %d"
+
+#: src/Views/Multitasking.vala:37
+msgid "When the cursor enters the corner of the display:"
+msgstr "Quando o cursor vai para o canto do ecrã:"
+
+#: src/Views/Multitasking.vala:73
+msgid "Custom command:"
+msgstr "Comando personalizado:"
+
+#: src/Views/Multitasking.vala:112
+msgid "Do nothing"
+msgstr "Não fazer nada"
+
+#. none
+#: src/Views/Multitasking.vala:113
+msgid "Multitasking View"
+msgstr "Vista de Tarefas"
+
+#. show-workspace-view
+#: src/Views/Multitasking.vala:114
+msgid "Maximize current window"
+msgstr "Maximizar janela focada"
+
+#. maximize-current
+#: src/Views/Multitasking.vala:115
+msgid "Show Applications Menu"
+msgstr "Mostrar Menu de Aplicações"
+
+#. open-launcher
+#: src/Views/Multitasking.vala:116
+msgid "Show all windows"
+msgstr "Mostrar todas as janelas"
+
+#. window-overview-all
+#: src/Views/Multitasking.vala:117
+msgid "Switch to new workspace"
+msgstr "Alternar para nova área de trabalho"
+
+#. switch-new-workspace
+#: src/Views/Multitasking.vala:118
+msgid "Execute custom command"
+msgstr "Executar comando personalizado"
+
+#: src/Views/Wallpaper.vala:100
+msgid "Import Photo…"
+msgstr "Importar foto…"
+
+#: src/Views/Wallpaper.vala:105
+msgid "Centered"
+msgstr "Centrado"
+
+#: src/Views/Wallpaper.vala:106
+msgid "Zoom"
+msgstr "Ampliado"
+
+#: src/Views/Wallpaper.vala:107
+msgid "Spanned"
+msgstr "Expandido"
+
+#: src/Views/Wallpaper.vala:150
+msgid "Import Photo"
+msgstr "Importar foto"
+
+#: src/Views/Wallpaper.vala:151
+msgid "Import"
+msgstr "Importar"
+
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "Remover"
+
+#: src/Widgets/WallpaperContainer.vala:188
+#, c-format
+msgid "Artist: %s"
+msgstr "Artista: %s"
+
+#: set-wallpaper-contract/set-wallpaper.vala:94
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d segundo"
+msgstr[1] "%d segundos"
+
+#: set-wallpaper-contract/set-wallpaper.vala:97
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuto"
+msgstr[1] "%d minutos"
+
+#: set-wallpaper-contract/set-wallpaper.vala:101
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d hora"
+msgstr[1] "%d horas"
+
+#: set-wallpaper-contract/set-wallpaper.vala:104
+msgid "1 day"
+msgstr "1 dia"
+
+#: set-wallpaper-contract/set-wallpaper.vala:108
+msgid "Show each photo for"
+msgstr "Mostrar cada foto durante"
+
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
+msgid "Set As Desktop Slideshow"
+msgstr "Definir como apresentação de diapositivos  do ambiente de trabalho"
+
+#: set-wallpaper-contract/set-wallpaper.vala:223
+msgid "Create slideshow"
+msgstr "Criar apresentação de diapositivos"
+
+#~ msgid "Normal"
+#~ msgstr "Normal"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "Personalizado (%dpx)"
 
 #~ msgid "Theme"
 #~ msgstr "Tema"

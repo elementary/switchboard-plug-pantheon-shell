@@ -7,236 +7,92 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-10-08 21:51+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
-#: src/desktop-plug.vala:36
+#: src/Plug.vala:41
 msgid "Desktop"
 msgstr "שולחן העבודה"
 
-#: src/desktop-plug.vala:37
+#: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "הגדרת המעגן, הפינות החמות והחלפת רקע שולחן העבודה"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
+#: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
 msgstr "תמונת רקע"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
-#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
-#: src/desktop-plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+msgid "Appearance"
+msgstr "מראה"
+
+#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
 msgstr "רציף"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
-msgid "Hot Corners"
-msgstr "קצוות חמים"
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+msgid "Multitasking"
+msgstr "ריבוי משימות"
 
-#: src/desktop-plug.vala:101
+#: src/Plug.vala:112
 msgid "Hide Mode"
 msgstr "מצב הסתרה"
 
-#: src/desktop-plug.vala:102
+#: src/Plug.vala:113
 msgid "Icon Size"
 msgstr "גודל הסמלים"
 
-#: src/desktop-plug.vala:103
+#: src/Plug.vala:114
 msgid "Pressure reveal"
 msgstr "גילוי בלחץ"
 
-#: src/desktop-plug.vala:104
+#: src/Plug.vala:115
 msgid "Display"
 msgstr "תצוגה"
 
-#: src/Widgets/WallpaperContainer.vala:118
-msgid "Remove"
-msgstr "הסרה"
+#: src/Plug.vala:117
+#, fuzzy
+#| msgid "Prefer dark style:"
+msgid "Dark style"
+msgstr "העדפת סגנון חשוך:"
 
-#: src/Widgets/WallpaperContainer.vala:188
-#, c-format
-msgid "Artist: %s"
-msgstr "אמן: %s"
+#: src/Plug.vala:118
+#, fuzzy
+#| msgid "Accent:"
+msgid "Accent color"
+msgstr "גוון:"
 
-#: src/Views/Wallpaper.vala:103
-msgid "Import Photo…"
-msgstr "ייבוא תמונה…"
+#: src/Plug.vala:119
+msgid "Window animations"
+msgstr "הנפשות חלון"
 
-#: src/Views/Wallpaper.vala:108
-msgid "Centered"
-msgstr "ממורכז"
+#: src/Plug.vala:120
+msgid "Panel translucency"
+msgstr "שקיפות חלונית"
 
-#: src/Views/Wallpaper.vala:109
-msgid "Zoom"
-msgstr "תקריב"
+#: src/Plug.vala:121
+msgid "Text size"
+msgstr "גודל כתב"
 
-#: src/Views/Wallpaper.vala:110
-msgid "Spanned"
-msgstr "מגושר"
+#: src/Plug.vala:122
+msgid "Dyslexia-friendly text"
+msgstr "טקסט ידידותי לדיסקלציה"
 
-#: src/Views/Wallpaper.vala:153
-msgid "Import Photo"
-msgstr "ייבוא תמונה"
-
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "ביטול"
-
-#: src/Views/Wallpaper.vala:155
-msgid "Import"
-msgstr "ייבוא"
-
-#: src/Views/HotCorners.vala:34
-msgid "When the cursor enters the corner of the display:"
-msgstr "כאשר הסמן מגיע לקצה של המסך:"
-
-#: src/Views/HotCorners.vala:66
-msgid "Custom command:"
-msgstr "פקודה בהתאמה אישית:"
-
-#: src/Views/HotCorners.vala:103
-msgid "Do nothing"
-msgstr "לא לעשות כלום"
-
-#. none
-#: src/Views/HotCorners.vala:104
-msgid "Multitasking View"
-msgstr "תצוגת ריבוי משימות"
-
-#. show-workspace-view
-#: src/Views/HotCorners.vala:105
-msgid "Maximize current window"
-msgstr "הגדלת החלון הנוכחי"
-
-#. maximize-current
-#: src/Views/HotCorners.vala:106
-msgid "Show Applications Menu"
-msgstr "הראה תפריט תוכנות"
-
-#. open-launcher
-#: src/Views/HotCorners.vala:107
-msgid "Show all windows"
-msgstr "הצגת כל החלונות"
-
-#. window-overview-all
-#: src/Views/HotCorners.vala:108
-msgid "Switch to new workspace"
-msgstr "מעבר לסביבת עבודה חדשה"
-
-#. switch-new-workspace
-#: src/Views/HotCorners.vala:109
-msgid "Execute custom command"
-msgstr "הפעלת פקודה בהתאמה אישית"
-
-#: src/Views/Dock.vala:34
-msgid "Small"
-msgstr "קטן"
-
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "רגיל"
-
-#: src/Views/Dock.vala:36
-msgid "Large"
-msgstr "גדול"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "בהתאמה אישית (%d פיקסלים)"
-
-#: src/Views/Dock.vala:83
-msgid "Focused window is maximized"
-msgstr "החלון שבמיקוד מוגדל"
-
-#: src/Views/Dock.vala:84
-msgid "Focused window overlaps the dock"
-msgstr "החלון שבמיקוד חופף מעל המעגן"
-
-#: src/Views/Dock.vala:85
-msgid "Any window overlaps the dock"
-msgstr "חלון כלשהו חופף מעל המעגן"
-
-#: src/Views/Dock.vala:86
-msgid "Not being used"
-msgstr "לא בשימוש"
-
-#: src/Views/Dock.vala:122
-msgid "Primary display:"
-msgstr "תצוגה עיקרית:"
-
-#: src/Views/Dock.vala:126
-msgid "Display:"
-msgstr "תצוגה:"
-
-#: src/Views/Dock.vala:157
-msgid "Icon size:"
-msgstr "גודל הסמלים:"
-
-#: src/Views/Dock.vala:159
-msgid "Hide when:"
-msgstr "להסתיר כאשר:"
-
-#: src/Views/Dock.vala:163
-msgid "Pressure reveal:"
-msgstr "לחץ לגילוי:"
-
-#: src/Views/Dock.vala:203
-#, c-format
-msgid "Monitor %d"
-msgstr "צג %d"
-
-#: src/Views/Dock.vala:208
-#, c-format
-msgid "Display %d"
-msgstr "תצוגה %d"
-
-#: set-wallpaper-contract/set-wallpaper.vala:95
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "שנייה אחת"
-msgstr[1] "%d שניות"
-
-#: set-wallpaper-contract/set-wallpaper.vala:98
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "דקה אחת"
-msgstr[1] "%d דקות"
-
-#: set-wallpaper-contract/set-wallpaper.vala:102
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "שעה אחת"
-msgstr[1] "%d שעות"
-
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "יום אחד"
-
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "הצגת כל תמונה למשך"
-
-#: set-wallpaper-contract/set-wallpaper.vala:222
-#: set-wallpaper-contract/set-wallpaper.vala:230
-msgid "Set As Desktop Slideshow"
-msgstr "הגדרה כמצגת שולחן העבודה"
-
-#: set-wallpaper-contract/set-wallpaper.vala:226
-msgid "Create slideshow"
-msgstr "יצירת מצגת"
+#: src/Plug.vala:124
+msgid "Hot Corners"
+msgstr "קצוות חמים"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -263,6 +119,305 @@ msgstr "הגדרה כ_רקע לשולחן העבודה"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשולחן העבודה"
+
+#: src/Views/Appearance.vala:52
+msgid "Style:"
+msgstr "סגנון:"
+
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Dock.vala:42
+msgid "Default"
+msgstr "בררת מחדל"
+
+#: src/Views/Appearance.vala:96
+msgid "Dark"
+msgstr "כהה"
+
+#: src/Views/Appearance.vala:105
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr "סגנון חזותי לרכיבי מערכת כגון מעגן ומחווני חלוניות."
+
+#: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr "לו״ז:"
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr "מושבתת"
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr "שקיעה עד זריחה"
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr "ידני"
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr "התחלה:"
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr "סיום:"
+
+#: src/Views/Appearance.vala:145
+msgid "Window animations:"
+msgstr "הנפשות חלון:"
+
+#: src/Views/Appearance.vala:155
+msgid "Panel translucency:"
+msgstr "שקיפות חלונית:"
+
+#: src/Views/Appearance.vala:163
+msgid "Text size:"
+msgstr "גודל כתב:"
+
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "קטן"
+
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+msgid "Large"
+msgstr "גדול"
+
+#: src/Views/Appearance.vala:174
+msgid "Larger"
+msgstr "גדול מאוד"
+
+#: src/Views/Appearance.vala:176
+msgid "Dyslexia-friendly text:"
+msgstr "טקסט ידידותי לדיסלקציה:"
+
+#: src/Views/Appearance.vala:185
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+"צורות עם בסיס רחב ויותר ריווח בין התווים עשוי לשפר את מידת הקריאות ואת "
+"מהירות הקריאה של הטקסט."
+
+#. / TRANSLATORS: as in "Accent color"
+#: src/Views/Appearance.vala:344
+msgid "Accent:"
+msgstr "גוון:"
+
+#: src/Views/Appearance.vala:348
+msgid "Blueberry"
+msgstr "אוכמניה"
+
+#: src/Views/Appearance.vala:351
+msgid "Mint"
+msgstr "נענע"
+
+#: src/Views/Appearance.vala:354
+msgid "Lime"
+msgstr "ליים"
+
+#: src/Views/Appearance.vala:357
+msgid "Banana"
+msgstr "בננה"
+
+#: src/Views/Appearance.vala:360
+msgid "Orange"
+msgstr "תפוז"
+
+#: src/Views/Appearance.vala:363
+msgid "Strawberry"
+msgstr "תות"
+
+#: src/Views/Appearance.vala:366
+msgid "Bubblegum"
+msgstr "מסטיק"
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "ענב"
+
+#: src/Views/Appearance.vala:372
+msgid "Cocoa"
+msgstr "קקאו"
+
+#: src/Views/Appearance.vala:375
+msgid "Slate"
+msgstr "רעף"
+
+#: src/Views/Appearance.vala:390
+msgid ""
+"Used across the system by default. Apps can always use their own accent "
+"color."
+msgstr ""
+"נעשה בזה שימוש בכל רחבי המערכת כבררת מחדל. היישומים תמיד יכולים להשתמש "
+"בגוונים משלהם."
+
+#: src/Views/Dock.vala:70
+msgid "Focused window is maximized"
+msgstr "החלון שבמיקוד מוגדל"
+
+#: src/Views/Dock.vala:71
+msgid "Focused window overlaps the dock"
+msgstr "החלון שבמיקוד חופף מעל המעגן"
+
+#: src/Views/Dock.vala:72
+msgid "Any window overlaps the dock"
+msgstr "חלון כלשהו חופף מעל המעגן"
+
+#: src/Views/Dock.vala:73
+msgid "Not being used"
+msgstr "לא בשימוש"
+
+#: src/Views/Dock.vala:109
+msgid "Primary display:"
+msgstr "תצוגה עיקרית:"
+
+#: src/Views/Dock.vala:113
+msgid "Display:"
+msgstr "תצוגה:"
+
+#: src/Views/Dock.vala:144
+msgid "Icon size:"
+msgstr "גודל הסמלים:"
+
+#: src/Views/Dock.vala:146
+msgid "Hide when:"
+msgstr "להסתיר כאשר:"
+
+#: src/Views/Dock.vala:150
+msgid "Pressure reveal:"
+msgstr "לחץ לגילוי:"
+
+#: src/Views/Dock.vala:217
+#, c-format
+msgid "Monitor %d"
+msgstr "צג %d"
+
+#: src/Views/Dock.vala:222
+#, c-format
+msgid "Display %d"
+msgstr "תצוגה %d"
+
+#: src/Views/Multitasking.vala:37
+msgid "When the cursor enters the corner of the display:"
+msgstr "כאשר הסמן מגיע לקצה של המסך:"
+
+#: src/Views/Multitasking.vala:73
+msgid "Custom command:"
+msgstr "פקודה בהתאמה אישית:"
+
+#: src/Views/Multitasking.vala:112
+msgid "Do nothing"
+msgstr "לא לעשות כלום"
+
+#. none
+#: src/Views/Multitasking.vala:113
+msgid "Multitasking View"
+msgstr "תצוגת ריבוי משימות"
+
+#. show-workspace-view
+#: src/Views/Multitasking.vala:114
+msgid "Maximize current window"
+msgstr "הגדלת החלון הנוכחי"
+
+#. maximize-current
+#: src/Views/Multitasking.vala:115
+msgid "Show Applications Menu"
+msgstr "הראה תפריט תוכנות"
+
+#. open-launcher
+#: src/Views/Multitasking.vala:116
+msgid "Show all windows"
+msgstr "הצגת כל החלונות"
+
+#. window-overview-all
+#: src/Views/Multitasking.vala:117
+msgid "Switch to new workspace"
+msgstr "מעבר לסביבת עבודה חדשה"
+
+#. switch-new-workspace
+#: src/Views/Multitasking.vala:118
+msgid "Execute custom command"
+msgstr "הפעלת פקודה בהתאמה אישית"
+
+#: src/Views/Wallpaper.vala:100
+msgid "Import Photo…"
+msgstr "ייבוא תמונה…"
+
+#: src/Views/Wallpaper.vala:105
+msgid "Centered"
+msgstr "ממורכז"
+
+#: src/Views/Wallpaper.vala:106
+msgid "Zoom"
+msgstr "תקריב"
+
+#: src/Views/Wallpaper.vala:107
+msgid "Spanned"
+msgstr "מגושר"
+
+#: src/Views/Wallpaper.vala:150
+msgid "Import Photo"
+msgstr "ייבוא תמונה"
+
+#: src/Views/Wallpaper.vala:151
+msgid "Import"
+msgstr "ייבוא"
+
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+msgid "Cancel"
+msgstr "ביטול"
+
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "הסרה"
+
+#: src/Widgets/WallpaperContainer.vala:188
+#, c-format
+msgid "Artist: %s"
+msgstr "אמן: %s"
+
+#: set-wallpaper-contract/set-wallpaper.vala:94
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "שנייה אחת"
+msgstr[1] "%d שניות"
+
+#: set-wallpaper-contract/set-wallpaper.vala:97
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "דקה אחת"
+msgstr[1] "%d דקות"
+
+#: set-wallpaper-contract/set-wallpaper.vala:101
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "שעה אחת"
+msgstr[1] "%d שעות"
+
+#: set-wallpaper-contract/set-wallpaper.vala:104
+msgid "1 day"
+msgstr "יום אחד"
+
+#: set-wallpaper-contract/set-wallpaper.vala:108
+msgid "Show each photo for"
+msgstr "הצגת כל תמונה למשך"
+
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
+msgid "Set As Desktop Slideshow"
+msgstr "הגדרה כמצגת שולחן העבודה"
+
+#: set-wallpaper-contract/set-wallpaper.vala:223
+msgid "Create slideshow"
+msgstr "יצירת מצגת"
+
+#~ msgid "Normal"
+#~ msgstr "רגיל"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "בהתאמה אישית (%d פיקסלים)"
 
 #~ msgid "Theme"
 #~ msgstr "ערכת עיצוב"

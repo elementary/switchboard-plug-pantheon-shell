@@ -7,241 +7,89 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2017-04-10 19:12+0000\n"
-"Last-Translator: Oleh Astappiev <astappev@gmail.com>\n"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"PO-Revision-Date: 2020-11-06 02:15+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 05:46+0000\n"
 
-#: src/desktop-plug.vala:36
+#: src/Plug.vala:41
 msgid "Desktop"
 msgstr "Стільниця"
 
-#: src/desktop-plug.vala:37
+#: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Налаштування доку, активних кутів, та зміна шпалер"
+msgstr "Налаштування доку, дій кутів та зміна тла"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
+#: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
-msgstr "Шпалери"
+msgstr "Тло"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
-#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
-#: src/desktop-plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+msgid "Appearance"
+msgstr "Вигляд"
+
+#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
 msgstr "Док"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
-msgid "Hot Corners"
-msgstr "Гарячі кути"
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+msgid "Multitasking"
+msgstr "Багатозадачність"
 
-#: src/desktop-plug.vala:101
+#: src/Plug.vala:112
 msgid "Hide Mode"
-msgstr "Режим ховання"
+msgstr "Режим приховування"
 
-#: src/desktop-plug.vala:102
+#: src/Plug.vala:113
 msgid "Icon Size"
 msgstr "Розмір піктограм"
 
-#: src/desktop-plug.vala:103
-#, fuzzy
+#: src/Plug.vala:114
 msgid "Pressure reveal"
-msgstr "Показувати натиск:"
+msgstr "Показувати натиск"
 
-#: src/desktop-plug.vala:104
+#: src/Plug.vala:115
 msgid "Display"
 msgstr "Екран"
 
-#: src/Widgets/WallpaperContainer.vala:118
-msgid "Remove"
-msgstr ""
+#: src/Plug.vala:117
+msgid "Dark style"
+msgstr "Темний стиль"
 
-#: src/Widgets/WallpaperContainer.vala:188
-#, c-format
-msgid "Artist: %s"
-msgstr ""
+#: src/Plug.vala:118
+msgid "Accent color"
+msgstr "Основний колір"
 
-#: src/Views/Wallpaper.vala:103
-msgid "Import Photo…"
-msgstr ""
+#: src/Plug.vala:119
+msgid "Window animations"
+msgstr "Анімації вікон"
 
-#: src/Views/Wallpaper.vala:108
-msgid "Centered"
-msgstr "У центрі"
+#: src/Plug.vala:120
+msgid "Panel translucency"
+msgstr "Напівпрозорість панелі"
 
-#: src/Views/Wallpaper.vala:109
-msgid "Zoom"
-msgstr "Збільшити"
+#: src/Plug.vala:121
+msgid "Text size"
+msgstr "Розмір тексту"
 
-#: src/Views/Wallpaper.vala:110
-msgid "Spanned"
-msgstr "Заповнити"
+#: src/Plug.vala:122
+msgid "Dyslexia-friendly text"
+msgstr "Текст, придатний для читання людьми з дислексією"
 
-#: src/Views/Wallpaper.vala:153
-msgid "Import Photo"
-msgstr ""
-
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: src/Views/Wallpaper.vala:155
-msgid "Import"
-msgstr ""
-
-#: src/Views/HotCorners.vala:34
-msgid "When the cursor enters the corner of the display:"
-msgstr "Коли курсор потрапляє в куток екрану:"
-
-#: src/Views/HotCorners.vala:66
-msgid "Custom command:"
-msgstr "Доступні команди:"
-
-#: src/Views/HotCorners.vala:103
-msgid "Do nothing"
-msgstr "Нічого не робити"
-
-#. none
-#: src/Views/HotCorners.vala:104
-msgid "Multitasking View"
-msgstr "Багатозадачний вигляд"
-
-#. show-workspace-view
-#: src/Views/HotCorners.vala:105
-msgid "Maximize current window"
-msgstr "Максимізувати поточне вікно"
-
-#. maximize-current
-#: src/Views/HotCorners.vala:106
-msgid "Show Applications Menu"
-msgstr "Показати меню програм"
-
-#. open-launcher
-#: src/Views/HotCorners.vala:107
-msgid "Show all windows"
-msgstr "Показати усі вікна"
-
-#. window-overview-all
-#: src/Views/HotCorners.vala:108
-msgid "Switch to new workspace"
-msgstr ""
-
-#. switch-new-workspace
-#: src/Views/HotCorners.vala:109
-msgid "Execute custom command"
-msgstr "Виконати призначену команду"
-
-#: src/Views/Dock.vala:34
-msgid "Small"
-msgstr "Малий"
-
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Звичайний"
-
-#: src/Views/Dock.vala:36
-msgid "Large"
-msgstr "Великий"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "Власний (%dpx)"
-
-#: src/Views/Dock.vala:83
-msgid "Focused window is maximized"
-msgstr "Вікно у фокусі на весь екран"
-
-#: src/Views/Dock.vala:84
-msgid "Focused window overlaps the dock"
-msgstr "ВІкно у фокусі перекриває док"
-
-#: src/Views/Dock.vala:85
-msgid "Any window overlaps the dock"
-msgstr "Будь-яке відкно перекрива док"
-
-#: src/Views/Dock.vala:86
-msgid "Not being used"
-msgstr "Не використовується"
-
-#: src/Views/Dock.vala:122
-msgid "Primary display:"
-msgstr "Основний дисплей:"
-
-#: src/Views/Dock.vala:126
-msgid "Display:"
-msgstr "Екран:"
-
-#: src/Views/Dock.vala:157
-msgid "Icon size:"
-msgstr "Розмір пікторами:"
-
-#: src/Views/Dock.vala:159
-msgid "Hide when:"
-msgstr "Приховати коли:"
-
-#: src/Views/Dock.vala:163
-msgid "Pressure reveal:"
-msgstr "Показувати натиск:"
-
-#: src/Views/Dock.vala:203
-#, c-format
-msgid "Monitor %d"
-msgstr "Монітор %d"
-
-#: src/Views/Dock.vala:208
-#, c-format
-msgid "Display %d"
-msgstr "Екран %d"
-
-#: set-wallpaper-contract/set-wallpaper.vala:95
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d секунда"
-msgstr[1] "%d секунди"
-msgstr[2] "%d секунд"
-
-#: set-wallpaper-contract/set-wallpaper.vala:98
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d хвилина"
-msgstr[1] "%d хвилини"
-msgstr[2] "%d хвилин"
-
-#: set-wallpaper-contract/set-wallpaper.vala:102
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d година"
-msgstr[1] "%d години"
-msgstr[2] "%d годин"
-
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "1 день"
-
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "Показувати кожну фотографію"
-
-#: set-wallpaper-contract/set-wallpaper.vala:222
-#: set-wallpaper-contract/set-wallpaper.vala:230
-msgid "Set As Desktop Slideshow"
-msgstr "Зробити слайдшоу стільниці"
-
-#: set-wallpaper-contract/set-wallpaper.vala:226
-msgid "Create slideshow"
-msgstr "Створити слайдшоу"
+#: src/Plug.vala:124
+msgid "Hot Corners"
+msgstr "Дії кутів"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -268,6 +116,309 @@ msgstr "Зробити _тлом стільниці"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Зробити позначене зображення новим зображенням тла стільниці"
+
+#: src/Views/Appearance.vala:52
+msgid "Style:"
+msgstr "Стиль:"
+
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Dock.vala:42
+msgid "Default"
+msgstr "Типовий"
+
+#: src/Views/Appearance.vala:96
+msgid "Dark"
+msgstr "Темний"
+
+#: src/Views/Appearance.vala:105
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr ""
+"Візуальний стиль для складників системи, таких як індикатори Доку і Панелі."
+
+#: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr "Розклад:"
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr "Від заходу до світанку"
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr "Посібник"
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr "З:"
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr "До:"
+
+#: src/Views/Appearance.vala:145
+msgid "Window animations:"
+msgstr "Анімації вікон:"
+
+#: src/Views/Appearance.vala:155
+msgid "Panel translucency:"
+msgstr "Напівпрозорість панелі:"
+
+#: src/Views/Appearance.vala:163
+msgid "Text size:"
+msgstr "Розмір тексту:"
+
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "Малий"
+
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+msgid "Large"
+msgstr "Великий"
+
+#: src/Views/Appearance.vala:174
+msgid "Larger"
+msgstr "Збільшений"
+
+#: src/Views/Appearance.vala:176
+msgid "Dyslexia-friendly text:"
+msgstr "Текст, придатний для читання людьми з дислексією:"
+
+#: src/Views/Appearance.vala:185
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+"Потовщена нижня частина та збільшений інтервал між символами можуть "
+"допомогти покращити читабельність та швидкість читання."
+
+#. / TRANSLATORS: as in "Accent color"
+#: src/Views/Appearance.vala:344
+msgid "Accent:"
+msgstr "Основний колір:"
+
+#: src/Views/Appearance.vala:348
+msgid "Blueberry"
+msgstr "Чорничний"
+
+#: src/Views/Appearance.vala:351
+msgid "Mint"
+msgstr "М'ятний"
+
+#: src/Views/Appearance.vala:354
+msgid "Lime"
+msgstr "Лаймовий"
+
+#: src/Views/Appearance.vala:357
+msgid "Banana"
+msgstr "Банановий"
+
+#: src/Views/Appearance.vala:360
+msgid "Orange"
+msgstr "Помаранчевий"
+
+#: src/Views/Appearance.vala:363
+msgid "Strawberry"
+msgstr "Полуничний"
+
+#: src/Views/Appearance.vala:366
+msgid "Bubblegum"
+msgstr "Жуйковий"
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr "Виноградний"
+
+#: src/Views/Appearance.vala:372
+msgid "Cocoa"
+msgstr "Какаовий"
+
+#: src/Views/Appearance.vala:375
+msgid "Slate"
+msgstr "Камінно-сірий"
+
+#: src/Views/Appearance.vala:390
+msgid ""
+"Used across the system by default. Apps can always use their own accent "
+"color."
+msgstr ""
+"Вжито типово в системі. Застосунки завжди можуть застосувати свій власний "
+"основний колір."
+
+#: src/Views/Dock.vala:70
+msgid "Focused window is maximized"
+msgstr "Вікно у фокусі розгорнуто"
+
+#: src/Views/Dock.vala:71
+msgid "Focused window overlaps the dock"
+msgstr "ВІкно у фокусі перекриває док"
+
+#: src/Views/Dock.vala:72
+msgid "Any window overlaps the dock"
+msgstr "Будь-яке вікно перекриває док"
+
+#: src/Views/Dock.vala:73
+msgid "Not being used"
+msgstr "Не використовується"
+
+#: src/Views/Dock.vala:109
+msgid "Primary display:"
+msgstr "Основний дисплей:"
+
+#: src/Views/Dock.vala:113
+msgid "Display:"
+msgstr "Екран:"
+
+#: src/Views/Dock.vala:144
+msgid "Icon size:"
+msgstr "Розмір пікторами:"
+
+#: src/Views/Dock.vala:146
+msgid "Hide when:"
+msgstr "Приховати коли:"
+
+#: src/Views/Dock.vala:150
+msgid "Pressure reveal:"
+msgstr "Показувати натиск:"
+
+#: src/Views/Dock.vala:217
+#, c-format
+msgid "Monitor %d"
+msgstr "Монітор %d"
+
+#: src/Views/Dock.vala:222
+#, c-format
+msgid "Display %d"
+msgstr "Екран %d"
+
+#: src/Views/Multitasking.vala:37
+msgid "When the cursor enters the corner of the display:"
+msgstr "Коли курсор потрапляє в куток екрану:"
+
+#: src/Views/Multitasking.vala:73
+msgid "Custom command:"
+msgstr "Доступні команди:"
+
+#: src/Views/Multitasking.vala:112
+msgid "Do nothing"
+msgstr "Нічого не робити"
+
+#. none
+#: src/Views/Multitasking.vala:113
+msgid "Multitasking View"
+msgstr "Багатозадачне подання"
+
+#. show-workspace-view
+#: src/Views/Multitasking.vala:114
+msgid "Maximize current window"
+msgstr "Розгорнути поточне вікно"
+
+#. maximize-current
+#: src/Views/Multitasking.vala:115
+msgid "Show Applications Menu"
+msgstr "Показати меню застосунків"
+
+#. open-launcher
+#: src/Views/Multitasking.vala:116
+msgid "Show all windows"
+msgstr "Показати всі вікна"
+
+#. window-overview-all
+#: src/Views/Multitasking.vala:117
+msgid "Switch to new workspace"
+msgstr "Перейти до нового робочого простору"
+
+#. switch-new-workspace
+#: src/Views/Multitasking.vala:118
+msgid "Execute custom command"
+msgstr "Виконати призначену команду"
+
+#: src/Views/Wallpaper.vala:100
+msgid "Import Photo…"
+msgstr "Імпортувати світлину…"
+
+#: src/Views/Wallpaper.vala:105
+msgid "Centered"
+msgstr "Центрувати"
+
+#: src/Views/Wallpaper.vala:106
+msgid "Zoom"
+msgstr "Збільшити"
+
+#: src/Views/Wallpaper.vala:107
+msgid "Spanned"
+msgstr "Заповнити"
+
+#: src/Views/Wallpaper.vala:150
+msgid "Import Photo"
+msgstr "Імпортувати світлину"
+
+#: src/Views/Wallpaper.vala:151
+msgid "Import"
+msgstr "Імпортувати"
+
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "Вилучити"
+
+#: src/Widgets/WallpaperContainer.vala:188
+#, c-format
+msgid "Artist: %s"
+msgstr "Автор: %s"
+
+#: set-wallpaper-contract/set-wallpaper.vala:94
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d секунда"
+msgstr[1] "%d секунди"
+msgstr[2] "%d секунд"
+
+#: set-wallpaper-contract/set-wallpaper.vala:97
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d хвилина"
+msgstr[1] "%d хвилини"
+msgstr[2] "%d хвилин"
+
+#: set-wallpaper-contract/set-wallpaper.vala:101
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d година"
+msgstr[1] "%d години"
+msgstr[2] "%d годин"
+
+#: set-wallpaper-contract/set-wallpaper.vala:104
+msgid "1 day"
+msgstr "1 день"
+
+#: set-wallpaper-contract/set-wallpaper.vala:108
+msgid "Show each photo for"
+msgstr "Показувати кожну світлину впродовж"
+
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
+msgid "Set As Desktop Slideshow"
+msgstr "Зробити слайдшоу стільниці"
+
+#: set-wallpaper-contract/set-wallpaper.vala:223
+msgid "Create slideshow"
+msgstr "Створити слайдшоу"
+
+#~ msgid "Normal"
+#~ msgstr "Звичайний"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "Власний (%dpx)"
 
 #~ msgid "Theme"
 #~ msgstr "Тема"

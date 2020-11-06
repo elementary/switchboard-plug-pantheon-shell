@@ -20,20 +20,20 @@
 */
 
 [DBus (name = "org.freedesktop.thumbnails.Thumbnailer1")]
-interface Thumbnailer : Object {
+interface PantheonShell.Thumbnailer : Object {
     public signal void ready (uint32 handle, string[] uris);
     public signal void finished (uint32 handle);
     public abstract uint32 queue (string[] uris, string [] mime_types, string flavor, string scheduler, uint32 dequeue) throws GLib.Error;
     public abstract void dequeue (uint32 handle) throws GLib.Error;
 }
 
-public class ThumbnailGenerator {
+public class PantheonShell.ThumbnailGenerator {
     private const string THUMBNAILER_DBUS_ID = "org.freedesktop.thumbnails.Thumbnailer1";
     private const string THUMBNAILER_DBUS_PATH = "/org/freedesktop/thumbnails/Thumbnailer1";
 
     public delegate void ThumbnailReady ();
     public class ThumbnailReadyWrapper {
-        public ThumbnailReady cb;
+        public unowned ThumbnailReady cb { get; set; }
     }
 
     private static ThumbnailGenerator? instance = null;

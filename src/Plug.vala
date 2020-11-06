@@ -18,21 +18,26 @@
 *
 */
 
-public class GalaPlug : Switchboard.Plug {
-    Gtk.Stack stack;
-    Gtk.Grid main_grid;
+public class PantheonShell.Plug : Switchboard.Plug {
+    private Gtk.Stack stack;
+    private Gtk.Grid main_grid;
 
     private Wallpaper wallpaper_view;
 
-    public GalaPlug () {
+    public Plug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("desktop", null);
-        settings.set ("desktop/wallpaper", "wallpaper");
+        settings.set ("desktop/appearance/wallpaper", "wallpaper");
         settings.set ("desktop/appearance", "appearance");
         settings.set ("desktop/dock", "dock");
-        settings.set ("desktop/hot-corners", "hotc");
+        settings.set ("desktop/multitasking", "multitasking");
+
+        // DEPRECATED
+        settings.set ("desktop/wallpaper", "wallpaper");
+        settings.set ("desktop/hot-corners", "multitasking");
+
         Object (category: Category.PERSONAL,
-                code_name: "pantheon-desktop",
+                code_name: "io.elementary.switchboard.pantheon-shell",
                 display_name: _("Desktop"),
                 description: _("Configure the dock, hot corners, and change wallpaper"),
                 icon: "preferences-desktop-wallpaper",
@@ -45,7 +50,7 @@ public class GalaPlug : Switchboard.Plug {
 
             wallpaper_view = new Wallpaper (this);
 
-            var hotcorners = new HotCorners ();
+            var multitasking = new Multitasking ();
 
             stack = new Gtk.Stack ();
             stack.add_titled (wallpaper_view, "wallpaper", _("Wallpaper"));
@@ -58,7 +63,7 @@ public class GalaPlug : Switchboard.Plug {
                 stack.add_titled (dock, "dock", _("Dock"));
             }
 
-            stack.add_titled (hotcorners, "hotc", _("Hot Corners"));
+            stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
             var stack_switcher = new Gtk.StackSwitcher ();
             stack_switcher.stack = stack;
@@ -93,15 +98,15 @@ public class GalaPlug : Switchboard.Plug {
             case "dock":
                 stack.set_visible_child_name ("dock");
                 break;
-            case "hotc":
-                stack.set_visible_child_name ("hotc");
+            case "multitasking":
+                stack.set_visible_child_name ("multitasking");
                 break;
         }
     }
 
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
-        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        var search_results = new Gee.TreeMap<string, string> ();
         search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
         search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
@@ -109,14 +114,20 @@ public class GalaPlug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Pressure reveal")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
-        search_results.set ("%s → %s".printf (display_name, _("Hot Corners")), "hotc");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dark style")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Accent color")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Window animations")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Panel translucency")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Text size")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dyslexia-friendly text")), "appearance");
+        search_results.set ("%s → %s".printf (display_name, _("Multitasking")), "multitasking");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Hot Corners")), "multitasking");
         return search_results;
     }
 }
 
 public Switchboard.Plug get_plug (Module module) {
     debug ("Activating Desktop plug");
-    var plug = new GalaPlug ();
+    var plug = new PantheonShell.Plug ();
     return plug;
 }
-

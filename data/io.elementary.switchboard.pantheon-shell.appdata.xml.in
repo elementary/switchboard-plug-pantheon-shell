@@ -2,15 +2,56 @@
 <component type="addon">
   <id>io.elementary.switchboard.pantheon-shell</id>
   <extends>io.elementary.switchboard</extends>
-  <name>Desktop</name>
+  <name>Desktop Settings</name>
   <summary>Configure the dock, hot corners, and change wallpaper</summary>
+  <icon type="stock">preferences-desktop-wallpaper</icon>
+  <translation type="gettext">pantheon-desktop-plug</translation>
+  <releases>
+    <release version="2.9.0" date="2020-04-22" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Dyslexia-friendly text preference to use the OpenDyslexia font system-wide</li>
+        </ul>
+        <p>Other updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="2.8.4" date="2020-04-22" urgency="medium">
+      <description>
+        <p>Illustrate Dock icon sizes</p>
+        <p>Fix system wallpapers being copied</p>
+        <p>Update search results</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+    <release version="2.8.3" date="2020-04-08" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
+    <release version="2.8.2" date="2019-11-15" urgency="medium">
+      <description>
+        <p>Fix issues with setting wallpapers on the Login and Lock screen</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+  </releases>
   <screenshots>
-      <screenshot type="default">
-          <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot.png</image>
-      </screenshot>
-      <screenshot>
-          <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-hotcorners.png</image>
-      </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-appearance.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-dock.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-hotcorners.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-pantheon-shell/issues</url>

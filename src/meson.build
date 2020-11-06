@@ -1,17 +1,18 @@
 plug_files = files(
-    'ThumbnailGenerator.vala',
     'IOHelper.vala',
-    'GalaSettings.vala',
-    'desktop-plug.vala',
-    'Widgets/WallpaperContainer.vala',
-    'Widgets/SolidColorContainer.vala',
-    'Views/Wallpaper.vala',
+    'PantheonAccountsServicePlugin.vala',
+    'Plug.vala',
+    'ThumbnailGenerator.vala',
     'Views/Appearance.vala',
-    'Views/HotCorners.vala',
     'Views/Dock.vala',
+    'Views/Multitasking.vala',
+    'Views/Wallpaper.vala',
+    'Widgets/SolidColorContainer.vala',
+    'Widgets/WallpaperContainer.vala',
 )
 
 switchboard_dep = dependency('switchboard-2.0')
+switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 plank_datadir = plank_dep.get_pkgconfig_variable('pkgdatadir')
 
@@ -33,8 +34,8 @@ shared_module(
         glib_dep,
         gio_dep,
         gobject_dep,
+        granite_dep,
         gtk_dep,
-        dependency('granite'),
         dependency('gexiv2'),
         dependency('gnome-desktop-3.0'),
         plank_dep,
@@ -42,5 +43,5 @@ shared_module(
         switchboard_dep
     ],
     install: true,
-    install_dir : join_paths(switchboard_dep.get_pkgconfig_variable('plugsdir'), 'personal')
+    install_dir : join_paths(switchboard_plugsdir, 'personal')
 )

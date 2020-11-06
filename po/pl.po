@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-10-09 01:01+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
+"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -18,229 +18,86 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-15 06:30+0000\n"
 
-#: src/desktop-plug.vala:36
+#: src/Plug.vala:41
 msgid "Desktop"
 msgstr "Pulpit"
 
-#: src/desktop-plug.vala:37
+#: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Konfiguruj dok, gorące narożniki i zmień tło pulpitu"
 
-#: src/desktop-plug.vala:51 src/desktop-plug.vala:99
+#: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
 msgstr "Tło pulpitu"
 
-#: src/desktop-plug.vala:55 src/desktop-plug.vala:100 src/desktop-plug.vala:101
-#: src/desktop-plug.vala:102 src/desktop-plug.vala:103
-#: src/desktop-plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
+#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+msgid "Appearance"
+msgstr "Wygląd"
+
+#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
 msgstr "Dok"
 
-#: src/desktop-plug.vala:58 src/desktop-plug.vala:105
-msgid "Hot Corners"
-msgstr "Aktywne narożniki"
+#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+#, fuzzy
+#| msgid "Multitasking View"
+msgid "Multitasking"
+msgstr "Widok wielozadaniowy"
 
-#: src/desktop-plug.vala:101
+#: src/Plug.vala:112
 msgid "Hide Mode"
 msgstr "Tryb ukrywania"
 
-#: src/desktop-plug.vala:102
+#: src/Plug.vala:113
 msgid "Icon Size"
 msgstr "Rozmiar ikon"
 
-#: src/desktop-plug.vala:103
+#: src/Plug.vala:114
 msgid "Pressure reveal"
 msgstr "Odsłona nacisku"
 
-#: src/desktop-plug.vala:104
+#: src/Plug.vala:115
 msgid "Display"
 msgstr "Ekran"
 
-#: src/Widgets/WallpaperContainer.vala:118
-msgid "Remove"
-msgstr "Usuń"
+#: src/Plug.vala:117
+msgid "Dark style"
+msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:188
-#, c-format
-msgid "Artist: %s"
-msgstr "Artysta: %s"
+#: src/Plug.vala:118
+msgid "Accent color"
+msgstr ""
 
-#: src/Views/Wallpaper.vala:103
-msgid "Import Photo…"
-msgstr "Importuj zdjęcie…"
+#: src/Plug.vala:119
+#, fuzzy
+#| msgid "Window animations:"
+msgid "Window animations"
+msgstr "Animacje okien:"
 
-#: src/Views/Wallpaper.vala:108
-msgid "Centered"
-msgstr "Wyśrodkowanie"
+#: src/Plug.vala:120
+#, fuzzy
+#| msgid "Panel translucency:"
+msgid "Panel translucency"
+msgstr "Przezroczystość panelu:"
 
-#: src/Views/Wallpaper.vala:109
-msgid "Zoom"
-msgstr "Przybliżenie"
+#: src/Plug.vala:121
+#, fuzzy
+#| msgid "Text size:"
+msgid "Text size"
+msgstr "Rozmiar tekstu:"
 
-#: src/Views/Wallpaper.vala:110
-msgid "Spanned"
-msgstr "Rozpięcie"
+#: src/Plug.vala:122
+msgid "Dyslexia-friendly text"
+msgstr ""
 
-#: src/Views/Wallpaper.vala:153
-msgid "Import Photo"
-msgstr "Importuj zdjęcie"
-
-#: src/Views/Wallpaper.vala:154 set-wallpaper-contract/set-wallpaper.vala:225
-msgid "Cancel"
-msgstr "Anuluj"
-
-#: src/Views/Wallpaper.vala:155
-msgid "Import"
-msgstr "Importuj"
-
-#: src/Views/HotCorners.vala:34
-msgid "When the cursor enters the corner of the display:"
-msgstr "Gdy kursor dotknie rogu ekranu:"
-
-#: src/Views/HotCorners.vala:66
-msgid "Custom command:"
-msgstr "Własne polecenie:"
-
-#: src/Views/HotCorners.vala:103
-msgid "Do nothing"
-msgstr "Nic nie rób"
-
-#. none
-#: src/Views/HotCorners.vala:104
-msgid "Multitasking View"
-msgstr "Widok wielozadaniowy"
-
-#. show-workspace-view
-#: src/Views/HotCorners.vala:105
-msgid "Maximize current window"
-msgstr "Maksymalizuj bieżące okno"
-
-#. maximize-current
-#: src/Views/HotCorners.vala:106
-msgid "Show Applications Menu"
-msgstr "Pokazuj menu z programami"
-
-#. open-launcher
-#: src/Views/HotCorners.vala:107
-msgid "Show all windows"
-msgstr "Pokaż wszystkie okna"
-
-#. window-overview-all
-#: src/Views/HotCorners.vala:108
-msgid "Switch to new workspace"
-msgstr "Przełącz na nowy obszar roboczy"
-
-#. switch-new-workspace
-#: src/Views/HotCorners.vala:109
-msgid "Execute custom command"
-msgstr "Wykonaj własne polecenie"
-
-#: src/Views/Dock.vala:34
-msgid "Small"
-msgstr "Mały"
-
-#: src/Views/Dock.vala:35
-msgid "Normal"
-msgstr "Normalny"
-
-#: src/Views/Dock.vala:36
-msgid "Large"
-msgstr "Duży"
-
-#: src/Views/Dock.vala:54
-#, c-format
-msgid "Custom (%dpx)"
-msgstr "Własny (%d px)"
-
-#: src/Views/Dock.vala:83
-msgid "Focused window is maximized"
-msgstr "Używane okno jest zmaksymalizowane"
-
-#: src/Views/Dock.vala:84
-msgid "Focused window overlaps the dock"
-msgstr "Używane okno zachodzi na dok"
-
-#: src/Views/Dock.vala:85
-msgid "Any window overlaps the dock"
-msgstr "Pewne okno zachodzi na dok"
-
-#: src/Views/Dock.vala:86
-msgid "Not being used"
-msgstr "Nieużywane"
-
-#: src/Views/Dock.vala:122
-msgid "Primary display:"
-msgstr "Główny ekran:"
-
-#: src/Views/Dock.vala:126
-msgid "Display:"
-msgstr "Ekran:"
-
-#: src/Views/Dock.vala:157
-msgid "Icon size:"
-msgstr "Rozmiar ikon:"
-
-#: src/Views/Dock.vala:159
-msgid "Hide when:"
-msgstr "Ukryj, gdy:"
-
-#: src/Views/Dock.vala:163
-msgid "Pressure reveal:"
-msgstr "Odsłona nacisku:"
-
-#: src/Views/Dock.vala:203
-#, c-format
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: src/Views/Dock.vala:208
-#, c-format
-msgid "Display %d"
-msgstr "Ekran %d"
-
-#: set-wallpaper-contract/set-wallpaper.vala:95
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d sekunda"
-msgstr[1] "%d sekundy"
-msgstr[2] "%d sekund"
-
-#: set-wallpaper-contract/set-wallpaper.vala:98
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d minuta"
-msgstr[1] "%d minuty"
-msgstr[2] "%d minut"
-
-#: set-wallpaper-contract/set-wallpaper.vala:102
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d godzina"
-msgstr[1] "%d godziny"
-msgstr[2] "%d godzin"
-
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "1 dzień"
-
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "Wyświetlanie każdego zdjęcia przez"
-
-#: set-wallpaper-contract/set-wallpaper.vala:222
-#: set-wallpaper-contract/set-wallpaper.vala:230
-msgid "Set As Desktop Slideshow"
-msgstr "Ustaw jako pokaz slajdów na pulpicie"
-
-#: set-wallpaper-contract/set-wallpaper.vala:226
-msgid "Create slideshow"
-msgstr "Utwórz pokaz slajdów"
+#: src/Plug.vala:124
+msgid "Hot Corners"
+msgstr "Aktywne narożniki"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -267,6 +124,304 @@ msgstr "Ustaw jako _tło pulpitu"
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
 msgstr "Ustawia wybrany obraz jako nowe tło pulpitu"
+
+#: src/Views/Appearance.vala:52
+msgid "Style:"
+msgstr ""
+
+#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Dock.vala:42
+msgid "Default"
+msgstr "Domyślne"
+
+#: src/Views/Appearance.vala:96
+msgid "Dark"
+msgstr ""
+
+#: src/Views/Appearance.vala:105
+msgid "Visual style for system components like the Dock and Panel indicators."
+msgstr ""
+
+#: src/Views/Appearance.vala:113
+msgid "Schedule:"
+msgstr "Zaplanowany:"
+
+#: src/Views/Appearance.vala:119
+msgid "Disabled"
+msgstr "Wyłączone"
+
+#: src/Views/Appearance.vala:120
+msgid "Sunset to Sunrise"
+msgstr "Od zachodu słońca do wschodu"
+
+#: src/Views/Appearance.vala:121
+msgid "Manual"
+msgstr "Ręcznie"
+
+#: src/Views/Appearance.vala:123
+msgid "From:"
+msgstr "Od:"
+
+#: src/Views/Appearance.vala:129
+msgid "To:"
+msgstr "Do:"
+
+#: src/Views/Appearance.vala:145
+msgid "Window animations:"
+msgstr "Animacje okien:"
+
+#: src/Views/Appearance.vala:155
+msgid "Panel translucency:"
+msgstr "Przezroczystość panelu:"
+
+#: src/Views/Appearance.vala:163
+msgid "Text size:"
+msgstr "Rozmiar tekstu:"
+
+#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+msgid "Small"
+msgstr "Mały"
+
+#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+msgid "Large"
+msgstr "Duży"
+
+#: src/Views/Appearance.vala:174
+msgid "Larger"
+msgstr "Większy"
+
+#: src/Views/Appearance.vala:176
+msgid "Dyslexia-friendly text:"
+msgstr ""
+
+#: src/Views/Appearance.vala:185
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+
+#. / TRANSLATORS: as in "Accent color"
+#: src/Views/Appearance.vala:344
+msgid "Accent:"
+msgstr ""
+
+#: src/Views/Appearance.vala:348
+msgid "Blueberry"
+msgstr ""
+
+#: src/Views/Appearance.vala:351
+msgid "Mint"
+msgstr ""
+
+#: src/Views/Appearance.vala:354
+msgid "Lime"
+msgstr ""
+
+#: src/Views/Appearance.vala:357
+msgid "Banana"
+msgstr ""
+
+#: src/Views/Appearance.vala:360
+msgid "Orange"
+msgstr ""
+
+#: src/Views/Appearance.vala:363
+msgid "Strawberry"
+msgstr ""
+
+#: src/Views/Appearance.vala:366
+msgid "Bubblegum"
+msgstr ""
+
+#: src/Views/Appearance.vala:369
+msgid "Grape"
+msgstr ""
+
+#: src/Views/Appearance.vala:372
+msgid "Cocoa"
+msgstr ""
+
+#: src/Views/Appearance.vala:375
+msgid "Slate"
+msgstr ""
+
+#: src/Views/Appearance.vala:390
+msgid ""
+"Used across the system by default. Apps can always use their own accent "
+"color."
+msgstr ""
+
+#: src/Views/Dock.vala:70
+msgid "Focused window is maximized"
+msgstr "Używane okno jest zmaksymalizowane"
+
+#: src/Views/Dock.vala:71
+msgid "Focused window overlaps the dock"
+msgstr "Używane okno zachodzi na dok"
+
+#: src/Views/Dock.vala:72
+msgid "Any window overlaps the dock"
+msgstr "Pewne okno zachodzi na dok"
+
+#: src/Views/Dock.vala:73
+msgid "Not being used"
+msgstr "Nieużywane"
+
+#: src/Views/Dock.vala:109
+msgid "Primary display:"
+msgstr "Główny ekran:"
+
+#: src/Views/Dock.vala:113
+msgid "Display:"
+msgstr "Ekran:"
+
+#: src/Views/Dock.vala:144
+msgid "Icon size:"
+msgstr "Rozmiar ikon:"
+
+#: src/Views/Dock.vala:146
+msgid "Hide when:"
+msgstr "Ukryj, gdy:"
+
+#: src/Views/Dock.vala:150
+msgid "Pressure reveal:"
+msgstr "Odsłona nacisku:"
+
+#: src/Views/Dock.vala:217
+#, c-format
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: src/Views/Dock.vala:222
+#, c-format
+msgid "Display %d"
+msgstr "Ekran %d"
+
+#: src/Views/Multitasking.vala:37
+msgid "When the cursor enters the corner of the display:"
+msgstr "Gdy kursor dotknie rogu ekranu:"
+
+#: src/Views/Multitasking.vala:73
+msgid "Custom command:"
+msgstr "Własne polecenie:"
+
+#: src/Views/Multitasking.vala:112
+msgid "Do nothing"
+msgstr "Nic nie rób"
+
+#. none
+#: src/Views/Multitasking.vala:113
+msgid "Multitasking View"
+msgstr "Widok wielozadaniowy"
+
+#. show-workspace-view
+#: src/Views/Multitasking.vala:114
+msgid "Maximize current window"
+msgstr "Maksymalizuj bieżące okno"
+
+#. maximize-current
+#: src/Views/Multitasking.vala:115
+msgid "Show Applications Menu"
+msgstr "Pokazuj menu z programami"
+
+#. open-launcher
+#: src/Views/Multitasking.vala:116
+msgid "Show all windows"
+msgstr "Pokaż wszystkie okna"
+
+#. window-overview-all
+#: src/Views/Multitasking.vala:117
+msgid "Switch to new workspace"
+msgstr "Przełącz na nowy obszar roboczy"
+
+#. switch-new-workspace
+#: src/Views/Multitasking.vala:118
+msgid "Execute custom command"
+msgstr "Wykonaj własne polecenie"
+
+#: src/Views/Wallpaper.vala:100
+msgid "Import Photo…"
+msgstr "Importuj zdjęcie…"
+
+#: src/Views/Wallpaper.vala:105
+msgid "Centered"
+msgstr "Wyśrodkowanie"
+
+#: src/Views/Wallpaper.vala:106
+msgid "Zoom"
+msgstr "Przybliżenie"
+
+#: src/Views/Wallpaper.vala:107
+msgid "Spanned"
+msgstr "Rozpięcie"
+
+#: src/Views/Wallpaper.vala:150
+msgid "Import Photo"
+msgstr "Importuj zdjęcie"
+
+#: src/Views/Wallpaper.vala:151
+msgid "Import"
+msgstr "Importuj"
+
+#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: src/Widgets/WallpaperContainer.vala:118
+msgid "Remove"
+msgstr "Usuń"
+
+#: src/Widgets/WallpaperContainer.vala:188
+#, c-format
+msgid "Artist: %s"
+msgstr "Artysta: %s"
+
+#: set-wallpaper-contract/set-wallpaper.vala:94
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekunda"
+msgstr[1] "%d sekundy"
+msgstr[2] "%d sekund"
+
+#: set-wallpaper-contract/set-wallpaper.vala:97
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuta"
+msgstr[1] "%d minuty"
+msgstr[2] "%d minut"
+
+#: set-wallpaper-contract/set-wallpaper.vala:101
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d godzina"
+msgstr[1] "%d godziny"
+msgstr[2] "%d godzin"
+
+#: set-wallpaper-contract/set-wallpaper.vala:104
+msgid "1 day"
+msgstr "1 dzień"
+
+#: set-wallpaper-contract/set-wallpaper.vala:108
+msgid "Show each photo for"
+msgstr "Wyświetlanie każdego zdjęcia przez"
+
+#: set-wallpaper-contract/set-wallpaper.vala:219
+#: set-wallpaper-contract/set-wallpaper.vala:227
+msgid "Set As Desktop Slideshow"
+msgstr "Ustaw jako pokaz slajdów na pulpicie"
+
+#: set-wallpaper-contract/set-wallpaper.vala:223
+msgid "Create slideshow"
+msgstr "Utwórz pokaz slajdów"
+
+#~ msgid "Normal"
+#~ msgstr "Normalny"
+
+#~ msgid "Custom (%dpx)"
+#~ msgstr "Własny (%d px)"
 
 #~ msgid "Theme"
 #~ msgstr "Motyw"

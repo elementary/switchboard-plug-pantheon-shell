@@ -7,20 +7,58 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:36-0700\n"
-"PO-Revision-Date: 2018-05-09 16:23-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2020-07-23 17:22+0000\n"
+"PO-Revision-Date: 2020-05-08 14:10+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"Language-Team: French (Canada) <https://l10n.elementary.io/projects/"
+"switchboard/desktop-plug-extra/fr_CA/>\n"
 "Language: fr_CA\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
-msgid "Desktop"
+msgid "Desktop Settings"
 msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
+msgstr "Configurer le dock, les coins dynamiques, et changer de fond d'écran"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
+msgid "New features:"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
+msgid ""
+"Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
+msgid "Other updates:"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
+msgid "Illustrate Dock icon sizes"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
+msgid "Fix system wallpapers being copied"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
+msgid "Update search results"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
+msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""

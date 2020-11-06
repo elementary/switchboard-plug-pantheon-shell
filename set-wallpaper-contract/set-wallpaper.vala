@@ -38,13 +38,12 @@ namespace SetWallpaperContractor {
         </transition>
     """;
 
-    const string SYSTEM_BACKGROUNDS_PATH = "/usr/share/backgrounds";
-
     private int delay_value = 60;
 
-    [DBus (name = "org.freedesktop.Accounts.User")]
+    [DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
     interface AccountsServiceUser : Object {
-        public abstract void set_background_file (string filename) throws GLib.Error;
+        [DBus (name = "BackgroundFile")]
+        public abstract string background_file { owned get; set; }
     }
 
     private void update_slideshow (string path, List<File> files, int duration) {
@@ -109,12 +108,12 @@ namespace SetWallpaperContractor {
         duration_label.set_markup (_("Show each photo for") + " <b>" + text + "</b>");
     }
 
-    private string get_local_bg_location () {
+    private string get_local_bg_directory () {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
     private File ensure_local_bg_exists () {
-        var folder = File.new_for_path (get_local_bg_location ());
+        var folder = File.new_for_path (get_local_bg_directory ());
         if (!folder.query_exists ()) {
             try {
                 folder.make_directory_with_parents ();
@@ -130,13 +129,13 @@ namespace SetWallpaperContractor {
         File? dest = null;
 
         try {
-            dest = File.new_for_path (get_local_bg_location () + source.get_basename ());
+            dest = File.new_for_path (get_local_bg_directory () + source.get_basename ());
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
-        }   
+        }
 
-        return dest;    
+        return dest;
     }
 
     private File? copy_for_greeter (File source) {
@@ -157,6 +156,8 @@ namespace SetWallpaperContractor {
 
             dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
+            // Ensure wallpaper is readable by greeter user (owner rw, others r)
+            FileUtils.chmod (dest.get_path (), 0604);
         } catch (Error e) {
             warning ("%s\n", e.message);
             return null;
@@ -175,7 +176,7 @@ namespace SetWallpaperContractor {
                     "org.freedesktop.Accounts",
                     "/org/freedesktop/Accounts/User" + uid);
         } catch (Error e) {
-            warning ("%s\n", e.message); 
+            warning (e.message);
         }
 
         var folder = ensure_local_bg_exists ();
@@ -187,7 +188,7 @@ namespace SetWallpaperContractor {
 
                 string path = file.get_path ();
                 File append_file = file;
-                if (!path.has_prefix (SYSTEM_BACKGROUNDS_PATH) && !path.has_prefix (get_local_bg_location ())) {
+                if (!path.has_prefix (get_local_bg_directory ())) {
                     var local_file = copy_for_library (file);
                     if (local_file != null) {
                         append_file = local_file;
@@ -201,11 +202,7 @@ namespace SetWallpaperContractor {
                     path = greeter_file.get_path ();
                 }
 
-                try {
-                    accounts_service.set_background_file (path);
-                } catch (Error e) {
-                    warning ("%s\n", e.message);
-                }        
+                accounts_service.background_file = path;
             }
         }
 
@@ -252,7 +249,7 @@ namespace SetWallpaperContractor {
 
         dialog.set_default_response (Gtk.ResponseType.OK);
         dialog.get_content_area ().add (grid);
-        dialog.get_action_area ().margin = 4;
+        dialog.get_content_area ().margin = 4;
         dialog.show_all ();
 
         if (dialog.run () == Gtk.ResponseType.OK) {
