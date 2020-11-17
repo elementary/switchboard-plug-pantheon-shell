@@ -27,16 +27,19 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
     construct {
         column_spacing = 12;
-        row_spacing = 24;
+        row_spacing = 6;
         halign = Gtk.Align.CENTER;
 
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
 
         custom_command_revealer = new Gtk.Revealer ();
 
-        var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
-        expl.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-        expl.halign = Gtk.Align.START;
+        var hotcorner_title = new Gtk.Label (_("When the cursor enters the corner of the display:")) {
+            halign = Gtk.Align.START,
+            margin_bottom = 6,
+            margin_top = 6
+        };
+        hotcorner_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var topleft = create_hotcorner ();
         topleft.changed.connect (() => hotcorner_changed ("hotcorner-topleft", topleft));
@@ -85,15 +88,48 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
         custom_command_revealer.add (cc_grid);
 
-        attach (expl, 0, 0, 3, 1);
+        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_bottom = 24,
+            margin_top = 24
+        };
+
+        var workspaces_title = new Gtk.Label (_("Move windows to a new workspace:")) {
+            halign = Gtk.Align.START,
+            margin_bottom = 6
+        };
+        workspaces_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+
+        var fullscreen_label = new Gtk.Label (_("When entering fullscreen:")) {
+            halign = Gtk.Align.END
+        };
+        var fullscreen_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
+
+        var maximize_label = new Gtk.Label (_("When maximizing:")) {
+            halign = Gtk.Align.END
+        };
+        var maximize_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
+
+        attach (hotcorner_title, 0, 0, 3);
         attach (icon, 1, 1, 1, 3);
         attach (topleft, 0, 1, 1, 1);
         attach (topright, 2, 1, 1, 1);
         attach (bottomleft, 0, 3, 1, 1);
         attach (bottomright, 2, 3, 1, 1);
         attach (custom_command_revealer, 0, 4, 2, 1);
+        attach (separator, 0, 5, 3);
+        attach (workspaces_title, 0, 6, 3);
+        attach (fullscreen_label, 0, 7);
+        attach (fullscreen_switch, 1, 7);
+        attach (maximize_label, 0, 8);
+        attach (maximize_switch, 1, 8);
 
         behavior_settings.bind ("hotcorner-custom-command", custom_command, "text", GLib.SettingsBindFlags.DEFAULT);
+        behavior_settings.bind ("move-fullscreened-workspace", fullscreen_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        behavior_settings.bind ("move-maximized-workspace", maximize_switch, "active", GLib.SettingsBindFlags.DEFAULT);
     }
 
     private void hotcorner_changed (string settings_key, Gtk.ComboBoxText combo) {
