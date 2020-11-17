@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -297,41 +297,53 @@ msgstr "Екран %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Когато курсора докосне ъгъла на екрана:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "Команда по избор:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "Да не се прави нищо"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "Многозадачен изглед"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "Увеличаване на текущия прозорец"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "Показване на меню с приложения"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "Показване на всички прозорци"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr ""
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "Изпълняване на команда по избор"
 

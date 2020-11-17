@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
 "PO-Revision-Date: 2020-11-06 02:15+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -298,41 +298,55 @@ msgstr "Pantalla %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Cuando el cursor entre a una esquina de la pantalla:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "Orden personalizada:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Move windows to a new workspace:"
+msgstr "Cambiar a un área de trabajo nueva"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "No hacer nada"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "Vista multitarea"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "Maximizar ventana actual"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "Mostrar menú de aplicaciones"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "Mostrar todas las ventanas"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "Cambiar a un área de trabajo nueva"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "Ejecutar orden personalizada"
 

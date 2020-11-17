@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -300,41 +300,55 @@ msgstr "디스플레이 %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "커서를 화면의 모서리로 움직였을 때 동작:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "사용자 지정 명령어:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Move windows to a new workspace:"
+msgstr "새 작업공간으로 전환"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "아무것도 하지 않기"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "멀티태스킹 보기"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "현재 창을 최대화하기"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "애플리케이션 메뉴 보기"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "모든 창 보기"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "새 작업공간으로 전환"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "사용자 지정 명렁어 실행"
 

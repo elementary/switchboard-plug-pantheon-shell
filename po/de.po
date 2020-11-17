@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
 "PO-Revision-Date: 2020-10-27 06:15+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -299,41 +299,55 @@ msgstr "Bildschirm %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Beim Berühren der Bildschirmecken mit dem Zeiger:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "Benutzerdefinierter Befehl:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Move windows to a new workspace:"
+msgstr "Zu einem neuen Arbeitsbereich wechseln"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "Nichts tun"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "Arbeitsflächenübersicht"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "Aktuelles Fenster maximieren"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "App-Menü anzeigen"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "Alle Fenster anzeigen"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "Zu einem neuen Arbeitsbereich wechseln"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "Benutzerdefinierten Befehl ausführen"
 

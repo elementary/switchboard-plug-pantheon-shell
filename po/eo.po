@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -300,41 +300,55 @@ msgstr "Ekrano %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Kiam la musmontrilo venas en angulo de la ekrano:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "Propra komando:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Move windows to a new workspace:"
+msgstr "Salti al nova laborspaco"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "Fari nenion"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "Taskbaskula vido"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "Maksimumigi la aktivan fenestron"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "Montri la Aplikaĵan Menuon"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "Montri ĉiujn fenestrojn"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "Salti al nova laborspaco"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "Lanĉi propran komandon"
 
