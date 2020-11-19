@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-11-06 02:15+0000\n"
+"PO-Revision-Date: 2020-11-20 04:15+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -291,25 +291,23 @@ msgstr "ディスプレイ %d"
 
 #: src/Views/Multitasking.vala:37
 msgid "When the cursor enters the corner of the display:"
-msgstr "カーソルがディスプレイのコーナーに入ったとき:"
+msgstr "カーソルがディスプレイの隅に入ったときの動作:"
 
 #: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "カスタムコマンド:"
 
 #: src/Views/Multitasking.vala:96
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
-msgstr "新しいワークスペースに切り替え"
+msgstr "以下の場合にウィンドウを新しいワークスペースに移動:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen:"
-msgstr ""
+msgstr "全画面表示にした場合:"
 
 #: src/Views/Multitasking.vala:109
 msgid "When maximizing:"
-msgstr ""
+msgstr "最大化した場合:"
 
 #: src/Views/Multitasking.vala:148
 msgid "Do nothing"
