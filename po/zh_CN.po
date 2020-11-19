@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-10-24 12:15+0000\n"
-"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
+"PO-Revision-Date: 2020-11-20 04:15+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -26,7 +26,7 @@ msgstr "桌面"
 
 #: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "配置 Dock 和热角、更换壁纸"
+msgstr "配置程序坞和热角、更换壁纸"
 
 #: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
@@ -40,7 +40,7 @@ msgstr "外观"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
-msgstr "Dock"
+msgstr "程序坞"
 
 #: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 msgid "Multitasking"
@@ -133,7 +133,7 @@ msgstr "深色"
 
 #: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr "系统部件如 Dock 和指示器面板的视觉风格。"
+msgstr "系统部件如程序坞和指示器面板的视觉风格。"
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
@@ -253,11 +253,11 @@ msgstr "焦点窗口最大化时"
 
 #: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
-msgstr "焦点窗口与 Dock 重叠时"
+msgstr "焦点窗口与程序坞重叠时"
 
 #: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
-msgstr "任何窗口与 Dock 重叠时"
+msgstr "任何窗口与程序坞重叠时"
 
 #: src/Views/Dock.vala:73
 msgid "Not being used"
