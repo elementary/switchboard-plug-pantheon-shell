@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-11-16 17:15+0000\n"
+"PO-Revision-Date: 2020-11-22 21:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mr/>\n"
@@ -293,18 +293,16 @@ msgid "Custom command:"
 msgstr "सानुकूल आज्ञा :"
 
 #: src/Views/Multitasking.vala:96
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
-msgstr "नवीन कार्यक्षेत्रावर स्विच करा"
+msgstr "विंडोज एका नवीन कार्यक्षेत्रात हलवा:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen:"
-msgstr ""
+msgstr "पूर्णस्क्रीनमध्ये प्रवेश करताना:"
 
 #: src/Views/Multitasking.vala:109
 msgid "When maximizing:"
-msgstr ""
+msgstr "जास्तीत जास्त करताना:"
 
 #: src/Views/Multitasking.vala:148
 msgid "Do nothing"
