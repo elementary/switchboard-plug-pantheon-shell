@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-11-06 02:15+0000\n"
+"PO-Revision-Date: 2020-11-22 21:15+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -304,18 +304,16 @@ msgid "Custom command:"
 msgstr "Comando personalizado:"
 
 #: src/Views/Multitasking.vala:96
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
-msgstr "Alternar para nova área de trabalho"
+msgstr "Mover as janelas para uma nova área de trabalho:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen:"
-msgstr ""
+msgstr "Ao entrar em ecrã inteiro:"
 
 #: src/Views/Multitasking.vala:109
 msgid "When maximizing:"
-msgstr ""
+msgstr "Ao maximizar:"
 
 #: src/Views/Multitasking.vala:148
 msgid "Do nothing"
