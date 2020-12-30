@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"PO-Revision-Date: 2020-11-20 04:15+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -58,16 +58,12 @@ msgid "Display"
 msgstr "ディスプレイ"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Prefer dark style:"
 msgid "Dark style"
-msgstr "ダークスタイル:"
+msgstr "ダークスタイル"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "アクセント:"
+msgstr "アクセントカラー"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -295,43 +291,55 @@ msgstr "ディスプレイ %d"
 
 #: src/Views/Multitasking.vala:37
 msgid "When the cursor enters the corner of the display:"
-msgstr "カーソルがディスプレイのコーナーに入ったとき:"
+msgstr "カーソルがディスプレイの隅に入ったときの動作:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "カスタムコマンド:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr "以下の場合にウィンドウを新しいワークスペースに移動:"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr "全画面表示にした場合:"
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr "最大化した場合:"
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "何もしない"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "マルチタスク画面"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "現在のウィンドウを最大化"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "アプリケーションメニューを表示"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "すべてのウィンドウを表示"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "新しいワークスペースに切り替え"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "カスタムコマンドを実行"
 

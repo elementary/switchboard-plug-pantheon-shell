@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"PO-Revision-Date: 2020-12-06 19:16+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
 "Language: tr\n"
@@ -64,13 +64,11 @@ msgstr "Görünüm"
 
 #: src/Plug.vala:117
 msgid "Dark style"
-msgstr ""
+msgstr "Koyu renk tema"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "Vurgu rengi:"
+msgstr "Vurgu rengi"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -298,41 +296,53 @@ msgstr "Görüntü %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "İmleç ekranın köşesine geldiğinde:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "Özel komut:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr "Pencereleri yeni bir çalışma alanına taşı:"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr "Tam ekrana girerken:"
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr "Ekranı kaplarken:"
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "Hiçbir şey yapma"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "Çoklu Görev Görünümü"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "Geçerli pencereye ekranı kaplat"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "Uygulamalar Menüsünü Göster"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "Tüm pencereleri göster"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "Yeni bir çalışma alanına geç"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "Özel komut çalıştır"
 

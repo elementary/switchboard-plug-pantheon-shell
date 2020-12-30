@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"PO-Revision-Date: 2020-11-19 00:10+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ca/>\n"
 "Language: ca\n"
@@ -64,16 +64,12 @@ msgid "Display"
 msgstr "Pantalla"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Prefer dark style:"
 msgid "Dark style"
-msgstr "Prefereix l'estil fosc:"
+msgstr "Estil fosc"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "Accentuació:"
+msgstr "Accentuació del color"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -303,41 +299,53 @@ msgstr "Pantalla %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Quan el cursor toqui un cantó de la pantalla:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "Ordre personalitzada:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr "Mou les finestres a un espai de treball nou:"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr "Quan s'obri la pantalla completa:"
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr "Quan es maximitzi:"
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "No facis res"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "Vista de multitasca"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "Maximitza la finestra actual"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "Mostra el menú d'aplicacions"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "Mostra totes les finestres"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "Canvia a un espai de treball nou"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "Executa una ordre personalitzada"
 

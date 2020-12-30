@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"PO-Revision-Date: 2020-12-14 19:16+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
 "Language: he\n"
@@ -63,16 +63,12 @@ msgid "Display"
 msgstr "תצוגה"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Prefer dark style:"
 msgid "Dark style"
-msgstr "העדפת סגנון חשוך:"
+msgstr "סגנון חשוך"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "גוון:"
+msgstr "גוון נלווה"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -300,41 +296,53 @@ msgstr "תצוגה %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "כאשר הסמן מגיע לקצה של המסך:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "פקודה בהתאמה אישית:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr "העברת חלונות לסביבת עבודה חדשה:"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr "בעת מעבר למסך מלא:"
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr "בעת הגדלה:"
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "לא לעשות כלום"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "תצוגת ריבוי משימות"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "הגדלת החלון הנוכחי"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "הראה תפריט תוכנות"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "הצגת כל החלונות"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "מעבר לסביבת עבודה חדשה"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "הפעלת פקודה בהתאמה אישית"
 

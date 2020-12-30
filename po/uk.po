@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
-"PO-Revision-Date: 2020-10-04 20:14+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"PO-Revision-Date: 2020-11-19 00:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-20 05:46+0000\n"
 
@@ -65,13 +65,11 @@ msgstr "Екран"
 
 #: src/Plug.vala:117
 msgid "Dark style"
-msgstr ""
+msgstr "Темний стиль"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "Основний колір:"
+msgstr "Основний колір"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -300,41 +298,53 @@ msgstr "Екран %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Коли курсор потрапляє в куток екрану:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "Доступні команди:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr "Перемістити вікно до нового робочого простору:"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr "Під час входу в повноекранний режим:"
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr "Під час розгортання:"
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "Нічого не робити"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "Багатозадачне подання"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "Розгорнути поточне вікно"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "Показати меню застосунків"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "Показати всі вікна"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "Перейти до нового робочого простору"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "Виконати призначену команду"
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"PO-Revision-Date: 2020-11-20 04:15+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fr/>\n"
@@ -63,16 +63,12 @@ msgid "Display"
 msgstr "Affichage"
 
 #: src/Plug.vala:117
-#, fuzzy
-#| msgid "Prefer dark style:"
 msgid "Dark style"
-msgstr "Préférer le thème sombre :"
+msgstr "Thème sombre"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "Couleur d'accentuation :"
+msgstr "Couleur d'accentuation"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -303,41 +299,53 @@ msgstr "Affichage %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "Quand le curseur entre dans les coins de l'écran :"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "Commande personnalisée :"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr "Basculer la fenêtre vers un nouvel espace de travail :"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr "Lors du passage en plein écran :"
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr "Lors de l'agrandissement :"
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "Ne rien faire"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "Vue multitâche"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "Maximiser la fenêtre actuelle"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "Afficher le menu Applications"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "Afficher toutes les fenêtres"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "Basculer vers un nouvel espace de travail"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "Exécuter une commande personnalisée"
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
-"PO-Revision-Date: 2020-11-02 18:15+0000\n"
+"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"PO-Revision-Date: 2020-11-22 21:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mr/>\n"
@@ -59,13 +59,11 @@ msgstr "प्रदर्शन"
 
 #: src/Plug.vala:117
 msgid "Dark style"
-msgstr ""
+msgstr "गडद शैली"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "एक्सेंट:"
+msgstr "एक्सेंट रंग"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -290,41 +288,53 @@ msgstr "प्रदर्शन  %d"
 msgid "When the cursor enters the corner of the display:"
 msgstr "जेव्हा कर्सर प्रदर्शनाच्या कोप-यात प्रवेश करतो:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:76
 msgid "Custom command:"
 msgstr "सानुकूल आज्ञा :"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr "विंडोज एका नवीन कार्यक्षेत्रात हलवा:"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen:"
+msgstr "पूर्णस्क्रीनमध्ये प्रवेश करताना:"
+
+#: src/Views/Multitasking.vala:109
+msgid "When maximizing:"
+msgstr "जास्तीत जास्त करताना:"
+
+#: src/Views/Multitasking.vala:148
 msgid "Do nothing"
 msgstr "काही करू नका"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:149
 msgid "Multitasking View"
 msgstr "मल्टीटास्किंग प्रदर्शन"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:150
 msgid "Maximize current window"
 msgstr "वर्तमान विंडो मोठ्यात मोठी करा"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
 msgstr "अप्लिकेशन मेनू दर्शवा"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:152
 msgid "Show all windows"
 msgstr "सर्व विंडोज दाखवा"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:153
 msgid "Switch to new workspace"
 msgstr "नवीन कार्यक्षेत्रावर स्विच करा"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:154
 msgid "Execute custom command"
 msgstr "सानुकूल आज्ञा चालवा"
 
