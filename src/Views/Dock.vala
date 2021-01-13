@@ -172,11 +172,11 @@ public class PantheonShell.Dock : Gtk.Grid {
             case 32:
                 icon_size_32.active = true;
                 break;
-            case 48:
-                icon_size_48.active = true;
-                break;
             case 64:
                 icon_size_64.active = true;
+                break;
+            case 128:
+                icon_size_128.active = true;
                 break;
             default:
                 icon_size_unsupported.active = true;
