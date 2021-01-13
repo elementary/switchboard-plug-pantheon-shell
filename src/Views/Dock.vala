@@ -37,25 +37,29 @@ public class PantheonShell.Dock : Gtk.Grid {
         icon_size_32.image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic", Gtk.IconSize.DND);
         icon_size_32.tooltip_text = _("Small");
 
-        var icon_size_48 = new Gtk.RadioButton.from_widget (icon_size_32);
-        icon_size_48.image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic", Gtk.IconSize.DIALOG);
-        icon_size_48.tooltip_text = _("Default");
-
         var image_64 = new Gtk.Image ();
         image_64.icon_name = "application-default-icon-symbolic";
         image_64.pixel_size = 64;
 
         var icon_size_64 = new Gtk.RadioButton.from_widget (icon_size_32);
         icon_size_64.image = image_64;
-        icon_size_64.tooltip_text = _("Large");
+        icon_size_64.tooltip_text = _("Default");
+
+        var image_128 = new Gtk.Image ();
+        image_128.icon_name = "application-default-icon-symbolic";
+        image_128.pixel_size = 128;
+
+        var icon_size_128 = new Gtk.RadioButton.from_widget (icon_size_32);
+        icon_size_128.image = image_128;
+        icon_size_128.tooltip_text = _("Large");
 
         var icon_size_unsupported = new Gtk.RadioButton.from_widget (icon_size_32);
 
         var icon_size_grid = new Gtk.Grid ();
         icon_size_grid.column_spacing = 24;
         icon_size_grid.add (icon_size_32);
-        icon_size_grid.add (icon_size_48);
         icon_size_grid.add (icon_size_64);
+        icon_size_grid.add (icon_size_128);
 
         Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
         dock_preferences = new Plank.DockPreferences ("dock1");
@@ -183,12 +187,12 @@ public class PantheonShell.Dock : Gtk.Grid {
             dock_preferences.IconSize = 32;
         });
 
-        icon_size_48.toggled.connect (() => {
-            dock_preferences.IconSize = 48;
-        });
-
         icon_size_64.toggled.connect (() => {
             dock_preferences.IconSize = 64;
+        });
+
+        icon_size_128.toggled.connect (() => {
+            dock_preferences.IconSize = 128;
         });
     }
 
