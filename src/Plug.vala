@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011–2018 elementary, Inc. (https://elementary.io)
+* Copyright (c) 2011–2021 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -52,7 +52,10 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             var multitasking = new Multitasking ();
 
-            stack = new Gtk.Stack ();
+            stack = new Gtk.Stack () {
+                transition_duration = 100,
+                transition_type = Gtk.StackTransitionType.CROSSFADE
+            };
             stack.add_titled (wallpaper_view, "wallpaper", _("Wallpaper"));
 
             var appearance = new Appearance ();
@@ -65,11 +68,12 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.stack = stack;
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.homogeneous = true;
-            stack_switcher.margin = 24;
+            var stack_switcher = new Gtk.StackSwitcher () {
+                halign = Gtk.Align.CENTER,
+                homogeneous = true,
+                margin = 24,
+                stack = stack
+            };
 
             main_grid.attach (stack_switcher, 0, 0, 1, 1);
             main_grid.attach (stack, 0, 1, 1, 1);
