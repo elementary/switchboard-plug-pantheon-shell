@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-11-27 08:15+0000\n"
+"PO-Revision-Date: 2021-01-22 08:41+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
 
 #: src/Plug.vala:41
@@ -76,7 +76,7 @@ msgstr "窗口动画"
 
 #: src/Plug.vala:120
 msgid "Panel translucency"
-msgstr "面板透明"
+msgstr "透明顶栏"
 
 #: src/Plug.vala:121
 msgid "Text size"
@@ -84,7 +84,7 @@ msgstr "文本大小"
 
 #: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
-msgstr "阅读障碍友好文本"
+msgstr "线衬字体"
 
 #: src/Plug.vala:124
 msgid "Hot Corners"
@@ -163,7 +163,7 @@ msgstr "窗口动画："
 
 #: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
-msgstr "面板透明："
+msgstr "透明顶栏："
 
 #: src/Views/Appearance.vala:163
 msgid "Text size:"
@@ -183,7 +183,7 @@ msgstr "更大"
 
 #: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
-msgstr "阅读障碍友好文本："
+msgstr "线衬字体："
 
 #: src/Views/Appearance.vala:185
 msgid ""
