@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2021-01-24 12:10+0000\n"
+"PO-Revision-Date: 2021-01-24 12:11+0000\n"
 "Last-Translator: liorlobel <lior@llobel.online>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
@@ -200,11 +200,11 @@ msgstr "גוון:"
 
 #: src/Views/Appearance.vala:348
 msgid "Blueberry"
-msgstr "אוכמניה"
+msgstr "אוכמניות"
 
 #: src/Views/Appearance.vala:351
 msgid "Mint"
-msgstr "נענע"
+msgstr "ירוק מנטה"
 
 #: src/Views/Appearance.vala:354
 msgid "Lime"
