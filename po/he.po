@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
 "PO-Revision-Date: 2021-01-24 12:11+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Last-Translator: liorlobel <lior@llobel.online>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
 "Language: he\n"
@@ -208,7 +208,7 @@ msgstr "ירוק מנטה"
 
 #: src/Views/Appearance.vala:354
 msgid "Lime"
-msgstr "ליים"
+msgstr "ירוק ליים"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
