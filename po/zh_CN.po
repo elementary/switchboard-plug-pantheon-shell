@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2021-01-22 08:41+0000\n"
+"PO-Revision-Date: 2021-01-25 07:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -290,7 +290,7 @@ msgstr "显示器 %d"
 
 #: src/Views/Multitasking.vala:37
 msgid "When the cursor enters the corner of the display:"
-msgstr "指针进入角落时："
+msgstr "指针触碰角落时："
 
 #: src/Views/Multitasking.vala:76
 msgid "Custom command:"
@@ -306,7 +306,7 @@ msgstr "进入全屏时："
 
 #: src/Views/Multitasking.vala:109
 msgid "When maximizing:"
-msgstr "窗口最大化时："
+msgstr "最大化窗口："
 
 #: src/Views/Multitasking.vala:148
 msgid "Do nothing"
