@@ -93,7 +93,7 @@ public class PantheonShell.Dock : Gtk.Grid {
             dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
         });
 
-        hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.DEFAULT);
+        hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.SYNC_CREATE);
         hide_switch.bind_property ("active", hide_mode, "sensitive", BindingFlags.DEFAULT);
 
         hide_switch.notify["active"].connect (() => {
