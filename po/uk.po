@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2021-01-30 19:26+0000\n"
-"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"PO-Revision-Date: 2021-01-30 21:06+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/uk/>\n"
 "Language: uk\n"
@@ -57,7 +57,7 @@ msgstr "Розмір піктограм"
 
 #: src/Plug.vala:114
 msgid "Pressure reveal"
-msgstr "Показувати натиск"
+msgstr "Виявляти натиск"
 
 #: src/Plug.vala:115
 msgid "Display"
