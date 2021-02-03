@@ -20,6 +20,7 @@ executable(
         glib_dep,
         gio_dep,
         gobject_dep,
+        granite_dep,
         gtk_dep,
         posix_dep,
         meson.get_compiler('c').find_library('m')
