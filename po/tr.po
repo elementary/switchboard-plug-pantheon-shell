@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-12-06 19:16+0000\n"
+"PO-Revision-Date: 2021-02-07 19:50+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:43+0000\n"
 
 #: src/Plug.vala:41
@@ -147,7 +147,7 @@ msgstr "Otomatik"
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
-msgstr "Elle"
+msgstr "El ile"
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
