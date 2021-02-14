@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-02-14 15:23+0000\n"
+"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:16+0000\n"
 
 #: src/Plug.vala:41
@@ -43,10 +43,8 @@ msgid "Dock"
 msgstr "Dock"
 
 #: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "Multitasking View"
+msgstr "Multitasking"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -66,13 +64,11 @@ msgstr "Display"
 
 #: src/Plug.vala:117
 msgid "Dark style"
-msgstr ""
+msgstr "Dark style"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "Accent:"
+msgstr "Accent colour"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -305,18 +301,16 @@ msgid "Custom command:"
 msgstr "Custom command:"
 
 #: src/Views/Multitasking.vala:96
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
-msgstr "Switch to new workspace"
+msgstr "Move windows to a new workspace:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen:"
-msgstr ""
+msgstr "When entering fullscreen:"
 
 #: src/Views/Multitasking.vala:109
 msgid "When maximizing:"
-msgstr ""
+msgstr "When maximizing:"
 
 #: src/Views/Multitasking.vala:148
 msgid "Do nothing"
