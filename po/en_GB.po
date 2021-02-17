@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
 "PO-Revision-Date: 2021-02-14 15:23+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -370,7 +370,7 @@ msgstr "Import Photo"
 msgid "Import"
 msgstr "Import"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "Cancel"
 
@@ -412,13 +412,14 @@ msgstr "1 day"
 msgid "Show each photo for"
 msgstr "Show each photo for"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "Set As Desktop Slideshow"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+#, fuzzy
+#| msgid "Create slideshow"
+msgid "Create Slideshow"
 msgstr "Create slideshow"
 
 #~ msgid "Normal"

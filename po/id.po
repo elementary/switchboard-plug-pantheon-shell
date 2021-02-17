@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
@@ -372,7 +372,7 @@ msgstr "Impor Foto"
 msgid "Import"
 msgstr "Impor"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "Batal"
 
@@ -411,13 +411,14 @@ msgstr "1 hari"
 msgid "Show each photo for"
 msgstr "Tampilkan tiap foto untuk"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "Atur sebagai Pertunjukan Salindia Destop"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+#, fuzzy
+#| msgid "Create slideshow"
+msgid "Create Slideshow"
 msgstr "Buat pertunjukansalindia"
 
 #~ msgid "Normal"

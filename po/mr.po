@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
 "PO-Revision-Date: 2020-11-22 21:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -362,7 +362,7 @@ msgstr "फोटो आयात करा"
 msgid "Import"
 msgstr "आयात करा"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "रद्द करा"
 
@@ -404,13 +404,14 @@ msgstr "1 दिवस"
 msgid "Show each photo for"
 msgstr "साठी प्रत्येक फोटो दर्शवा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "डेस्कटॉप स्लाइडशो म्हणून सेट करा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+#, fuzzy
+#| msgid "Create slideshow"
+msgid "Create Slideshow"
 msgstr "स्लाइडशो तयार करा"
 
 #~ msgid "Normal"

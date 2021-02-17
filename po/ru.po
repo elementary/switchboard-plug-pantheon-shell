@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -372,7 +372,7 @@ msgstr "Импорт фото"
 msgid "Import"
 msgstr "Импортировать"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "Отменить"
 
@@ -417,13 +417,14 @@ msgstr "1 дня"
 msgid "Show each photo for"
 msgstr "Показывать каждое фото в течение"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "Установить как слайд-шоу на рабочем столе"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+#, fuzzy
+#| msgid "Create slideshow"
+msgid "Create Slideshow"
 msgstr "Создать слайд-шоу"
 
 #~ msgid "Normal"

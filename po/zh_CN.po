@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 23:50+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
 "PO-Revision-Date: 2021-01-25 07:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -240,7 +240,9 @@ msgstr "石头灰"
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr "默认情况下将用于系统全局。自带高亮色调配置的应用程序除外，它们将使用自己的高亮颜色。"
+msgstr ""
+"默认情况下将用于系统全局。自带高亮色调配置的应用程序除外，它们将使用自己的高"
+"亮颜色。"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -366,7 +368,7 @@ msgstr "导入照片"
 msgid "Import"
 msgstr "导入"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "取消"
 
@@ -405,13 +407,14 @@ msgstr "1 天"
 msgid "Show each photo for"
 msgstr "每张照片时长"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "设为桌面幻灯片"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+#, fuzzy
+#| msgid "Create slideshow"
+msgid "Create Slideshow"
 msgstr "创建幻灯片"
 
 #~ msgid "Normal"
