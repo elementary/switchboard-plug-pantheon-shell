@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2021-02-17 08:00+0000\n"
+"PO-Revision-Date: 2021-02-18 02:08+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/nb/>\n"
@@ -46,7 +46,7 @@ msgstr "Dokk"
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "Vis arbeidsområder"
+msgstr "Fleroppgavehåndtering"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -73,21 +73,16 @@ msgid "Accent color"
 msgstr "Kontrastfarge"
 
 #: src/Plug.vala:119
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "Vindusanimasjoner:"
+msgstr "Vindusanimasjoner"
 
 #: src/Plug.vala:120
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "Panelgjennomsiktighet:"
+msgstr "Panelgjennomsiktighet"
 
 #: src/Plug.vala:121
-#, fuzzy
 msgid "Text size"
-msgstr "Ikonstørrelse:"
+msgstr "Tekststørrelse"
 
 #: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
@@ -174,9 +169,8 @@ msgid "Panel translucency:"
 msgstr "Panelgjennomsiktighet:"
 
 #: src/Views/Appearance.vala:163
-#, fuzzy
 msgid "Text size:"
-msgstr "Ikonstørrelse:"
+msgstr "Tekststørrelse:"
 
 #: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
 msgid "Small"
@@ -187,9 +181,8 @@ msgid "Large"
 msgstr "Stor"
 
 #: src/Views/Appearance.vala:174
-#, fuzzy
 msgid "Larger"
-msgstr "Stor"
+msgstr "Større"
 
 #: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
@@ -310,10 +303,8 @@ msgid "Custom command:"
 msgstr "Egendefinert komamndo:"
 
 #: src/Views/Multitasking.vala:96
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
-msgstr "Bytt til nytt arbeidsområde"
+msgstr "Flytt vinduer til nytt arbeidsområde:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen:"
@@ -428,8 +419,6 @@ msgid "Set As Desktop Slideshow"
 msgstr "Sett som skrivebord-lysbildeserie"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Lag lysbildeserie"
 
