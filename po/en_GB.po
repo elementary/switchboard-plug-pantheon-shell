@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2021-02-14 15:23+0000\n"
+"PO-Revision-Date: 2021-02-17 08:00+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/en_GB/>\n"
@@ -417,10 +417,8 @@ msgid "Set As Desktop Slideshow"
 msgstr "Set As Desktop Slideshow"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
-msgstr "Create slideshow"
+msgstr "Create Slideshow"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"
