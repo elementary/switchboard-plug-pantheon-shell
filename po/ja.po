@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2020-11-20 04:15+0000\n"
+"PO-Revision-Date: 2021-02-17 08:00+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
 #: src/Plug.vala:41
@@ -411,8 +411,6 @@ msgid "Set As Desktop Slideshow"
 msgstr "デスクトップスライドショーとして設定"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
 
