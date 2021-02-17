@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-02-17 08:00+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/nb/>\n"
 "Language: nb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:41
@@ -66,11 +66,11 @@ msgstr "Skjerm"
 
 #: src/Plug.vala:117
 msgid "Dark style"
-msgstr ""
+msgstr "Mørk stil"
 
 #: src/Plug.vala:118
 msgid "Accent color"
-msgstr ""
+msgstr "Kontrastfarge"
 
 #: src/Plug.vala:119
 #, fuzzy
@@ -91,7 +91,7 @@ msgstr "Ikonstørrelse:"
 
 #: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "Dysleksi-vennlig tekst"
 
 #: src/Plug.vala:124
 msgid "Hot Corners"
@@ -125,7 +125,7 @@ msgstr "Bruk det valgte bildet som ny skrivebordsbakgrunn"
 
 #: src/Views/Appearance.vala:52
 msgid "Style:"
-msgstr ""
+msgstr "Stil:"
 
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
@@ -134,11 +134,12 @@ msgstr "Forvalg"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
-msgstr ""
+msgstr "Mørk"
 
 #: src/Views/Appearance.vala:105
+#, fuzzy
 msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr ""
+msgstr "Visuell stil for systemkomponenter som Dokken og panelindikatorer."
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
@@ -192,64 +193,67 @@ msgstr "Stor"
 
 #: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "Dysleksi-vennlig tekst:"
 
 #: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"Bunntunge former og økt tegnavstand kan hjelpe lesbarheten og lesehastighet."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:344
 msgid "Accent:"
-msgstr ""
+msgstr "Kontrastfarge:"
 
 #: src/Views/Appearance.vala:348
 msgid "Blueberry"
-msgstr ""
+msgstr "Blåbær"
 
 #: src/Views/Appearance.vala:351
 msgid "Mint"
-msgstr ""
+msgstr "Mint"
 
 #: src/Views/Appearance.vala:354
 msgid "Lime"
-msgstr ""
+msgstr "Lime"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
-msgstr ""
+msgstr "Banan"
 
 #: src/Views/Appearance.vala:360
 msgid "Orange"
-msgstr ""
+msgstr "Appelsin"
 
 #: src/Views/Appearance.vala:363
 msgid "Strawberry"
-msgstr ""
+msgstr "Jordbær"
 
 #: src/Views/Appearance.vala:366
 msgid "Bubblegum"
-msgstr ""
+msgstr "Tyggegummi"
 
 #: src/Views/Appearance.vala:369
 msgid "Grape"
-msgstr ""
+msgstr "Drue"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"
-msgstr ""
+msgstr "Kakao"
 
 #: src/Views/Appearance.vala:375
 msgid "Slate"
-msgstr ""
+msgstr "Skifer"
 
 #: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Brukt på hele systemet som forvalg. Programmer kan alltid velge sin egen "
+"kontrastfarge."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -313,11 +317,11 @@ msgstr "Bytt til nytt arbeidsområde"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen:"
-msgstr ""
+msgstr "Ved fullskjermsvisning:"
 
 #: src/Views/Multitasking.vala:109
 msgid "When maximizing:"
-msgstr ""
+msgstr "Ved maksimering:"
 
 #: src/Views/Multitasking.vala:148
 msgid "Do nothing"
