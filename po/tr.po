@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2021-02-07 19:50+0000\n"
+"PO-Revision-Date: 2021-02-18 20:23+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
@@ -417,10 +417,8 @@ msgid "Set As Desktop Slideshow"
 msgstr "Masaüstü Slayt Gösterisi Olarak Ayarla"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
-msgstr "Slayt gösterisi oluştur"
+msgstr "Slayt Gösterisi Oluştur"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"
