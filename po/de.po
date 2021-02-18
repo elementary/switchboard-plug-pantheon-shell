@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2021-02-15 21:09+0000\n"
+"PO-Revision-Date: 2021-02-18 20:23+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -191,8 +191,8 @@ msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
-"Grundlinienbetonte Formen und größere Zeichenabstände helfen, die "
-"Leserlichkeit zu verstärken und die Lesegeschwindigkeit zu erhöhen."
+"Grundlinienbetonte Formen und größere Zeichenabstände helfen, Leserlichkeit "
+"und Lesegeschwindigkeit zu erhöhen."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:344
@@ -419,8 +419,6 @@ msgid "Set As Desktop Slideshow"
 msgstr "Als Schreibtisch-Diaschau festlegen"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Diaschau erstellen"
 
