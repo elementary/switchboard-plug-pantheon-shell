@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2021-02-18 20:23+0000\n"
+"PO-Revision-Date: 2021-02-20 08:36+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -306,7 +306,6 @@ msgid "Move windows to a new workspace:"
 msgstr "Fenster in einen neuen Arbeitsbereich verschieben:"
 
 #: src/Views/Multitasking.vala:102
-#, fuzzy
 msgid "When entering fullscreen:"
 msgstr "Beim Wechsel zur Vollbildschirmdarstellung:"
 
