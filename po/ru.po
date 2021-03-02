@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-03-02 21:07+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-25 05:57+0000\n"
 
 #: src/Plug.vala:41
@@ -39,10 +39,8 @@ msgid "Dock"
 msgstr "Док-панель"
 
 #: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "Многозадачный вид"
+msgstr "Многозадачность"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -62,33 +60,27 @@ msgstr "Отображение"
 
 #: src/Plug.vala:117
 msgid "Dark style"
-msgstr ""
+msgstr "Темный стиль"
 
 #: src/Plug.vala:118
 msgid "Accent color"
-msgstr ""
+msgstr "Основной цвет"
 
 #: src/Plug.vala:119
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "Анимации окон:"
+msgstr "Анимации окон"
 
 #: src/Plug.vala:120
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "Прозрачность панели:"
+msgstr "Прозрачность панели"
 
 #: src/Plug.vala:121
-#, fuzzy
-#| msgid "Text size:"
 msgid "Text size"
-msgstr "Размер текста:"
+msgstr "Размер текста"
 
 #: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "Текст, подходящий для чтения людьми с дислексией"
 
 #: src/Plug.vala:124
 msgid "Hot Corners"
@@ -122,7 +114,7 @@ msgstr "Назначить выбранное изображение новым 
 
 #: src/Views/Appearance.vala:52
 msgid "Style:"
-msgstr ""
+msgstr "Стиль:"
 
 #: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
 #: src/Views/Dock.vala:42
@@ -131,11 +123,13 @@ msgstr "Обычный"
 
 #: src/Views/Appearance.vala:96
 msgid "Dark"
-msgstr ""
+msgstr "Тёмный"
 
 #: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
+"Визуальный стиль для составляющих системы, таких как индикаторы Дока и "
+"Панели."
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
@@ -187,64 +181,68 @@ msgstr "Больше"
 
 #: src/Views/Appearance.vala:176
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "Текст, подходящий для чтения людьми с дислексией:"
 
 #: src/Views/Appearance.vala:185
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"Утолщенная нижняя часть и увеличенный интервал между символами могут помочь "
+"улучшить читабельность и скорость чтения."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:344
 msgid "Accent:"
-msgstr ""
+msgstr "Основной цвет:"
 
 #: src/Views/Appearance.vala:348
 msgid "Blueberry"
-msgstr ""
+msgstr "Черничный"
 
 #: src/Views/Appearance.vala:351
 msgid "Mint"
-msgstr ""
+msgstr "Мятный"
 
 #: src/Views/Appearance.vala:354
 msgid "Lime"
-msgstr ""
+msgstr "Лаймовый"
 
 #: src/Views/Appearance.vala:357
 msgid "Banana"
-msgstr ""
+msgstr "Банановий"
 
 #: src/Views/Appearance.vala:360
 msgid "Orange"
-msgstr ""
+msgstr "Оранжевый"
 
 #: src/Views/Appearance.vala:363
 msgid "Strawberry"
-msgstr ""
+msgstr "Клубничный"
 
 #: src/Views/Appearance.vala:366
 msgid "Bubblegum"
-msgstr ""
+msgstr "Бубль-гумовый"
 
 #: src/Views/Appearance.vala:369
 msgid "Grape"
-msgstr ""
+msgstr "Виноградный"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"
-msgstr ""
+msgstr "Какаовый"
 
 #: src/Views/Appearance.vala:375
 msgid "Slate"
-msgstr ""
+msgstr "Каменно-серый"
 
 #: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Используется в системе по умолчанию. Приложения всегда могут использовать "
+"свой собственный основной цвет."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -301,18 +299,16 @@ msgid "Custom command:"
 msgstr "Пользовательская команда:"
 
 #: src/Views/Multitasking.vala:96
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
-msgstr "Переключиться на новый рабочий стол"
+msgstr "Переместить окно на новый рабочий стол:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen:"
-msgstr ""
+msgstr "При входе в полноэкранный режим:"
 
 #: src/Views/Multitasking.vala:109
 msgid "When maximizing:"
-msgstr ""
+msgstr "Во время развертывания:"
 
 #: src/Views/Multitasking.vala:148
 msgid "Do nothing"
@@ -422,10 +418,8 @@ msgid "Set As Desktop Slideshow"
 msgstr "Установить как слайд-шоу на рабочем столе"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
-msgstr "Создать слайд-шоу"
+msgstr "Создать слайдшоу"
 
 #~ msgid "Normal"
 #~ msgstr "Нормальный"
