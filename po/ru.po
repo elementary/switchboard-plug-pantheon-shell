@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2021-03-03 11:48+0000\n"
+"PO-Revision-Date: 2021-03-15 10:24+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -64,7 +64,7 @@ msgstr "Темный стиль"
 
 #: src/Plug.vala:118
 msgid "Accent color"
-msgstr "Основной цвет"
+msgstr "Цветовой акцент"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -242,7 +242,7 @@ msgid ""
 "color."
 msgstr ""
 "Используется в системе по умолчанию. Приложения всегда могут использовать "
-"свой собственный основной цвет."
+"свой собственный цветовой акцент."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
