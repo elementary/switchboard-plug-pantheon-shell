@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2021-02-17 08:00+0000\n"
+"PO-Revision-Date: 2021-03-16 16:50+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -384,19 +384,19 @@ msgstr "アーティスト: %s"
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] "%d 秒"
+msgstr[0] "%d秒"
 
 #: set-wallpaper-contract/set-wallpaper.vala:97
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] "%d 分"
+msgstr[0] "%d分"
 
 #: set-wallpaper-contract/set-wallpaper.vala:101
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] "%d 時間"
+msgstr[0] "%d時間"
 
 #: set-wallpaper-contract/set-wallpaper.vala:104
 msgid "1 day"
