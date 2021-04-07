@@ -91,28 +91,22 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
         custom_command_revealer.add (cc_grid);
 
-        var workspaces_title = new Granite.HeaderLabel (_("Move windows to a new workspace:")) {
-            margin_top = 24
+        var workspaces_label = new Gtk.Label (_("Move windows to a new workspace:")) {
+            halign = Gtk.Align.END,
+            margin_top = 36,
+            margin_bottom = 12
         };
 
-        var fullscreen_label = new Gtk.Label (_("When entering fullscreen:")) {
-            halign = Gtk.Align.END
-        };
-        var fullscreen_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
-        };
+        var fullscreen_checkbutton = new Gtk.CheckButton.with_label (_("When entering fullscreen"));
+        var maximize_checkbutton = new Gtk.CheckButton.with_label (_("When maximizing"));
 
-        var maximize_label = new Gtk.Label (_("When maximizing:")) {
-            halign = Gtk.Align.END
+        var checkbutton_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin_top = 36,
+            margin_bottom = 12
         };
-        var maximize_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
-        };
-
-        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-            margin_bottom = 12,
-            margin_top = 12
-        };
+        checkbutton_grid.add (fullscreen_checkbutton);
+        checkbutton_grid.add (maximize_checkbutton);
 
         var animations_label = new Gtk.Label (_("Window animations:")) {
             halign = Gtk.Align.END
@@ -129,12 +123,8 @@ public class PantheonShell.Multitasking : Gtk.Grid {
         attach (bottomleft, 0, 3, 1, 1);
         attach (bottomright, 2, 3, 1, 1);
         attach (custom_command_revealer, 0, 4, 2, 1);
-        attach (workspaces_title, 0, 5, 3);
-        attach (fullscreen_label, 0, 6);
-        attach (fullscreen_switch, 1, 6);
-        attach (maximize_label, 0, 7);
-        attach (maximize_switch, 1, 7);
-        attach (separator, 0, 8, 3);
+        attach (workspaces_label, 0, 5);
+        attach (checkbutton_grid, 1, 5, 2);
         attach (animations_label, 0, 9);
         attach (animations_switch, 1, 9);
 
@@ -142,8 +132,8 @@ public class PantheonShell.Multitasking : Gtk.Grid {
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
         behavior_settings.bind ("hotcorner-custom-command", custom_command, "text", GLib.SettingsBindFlags.DEFAULT);
-        behavior_settings.bind ("move-fullscreened-workspace", fullscreen_switch, "active", GLib.SettingsBindFlags.DEFAULT);
-        behavior_settings.bind ("move-maximized-workspace", maximize_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
+        behavior_settings.bind ("move-maximized-workspace", maximize_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
     }
 
     private void hotcorner_changed (string settings_key, Gtk.ComboBoxText combo) {
