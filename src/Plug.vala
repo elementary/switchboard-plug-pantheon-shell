@@ -108,12 +108,12 @@ public class PantheonShell.Plug : Switchboard.Plug {
     public override async Gee.TreeMap<string, string> search (string search) {
         var search_results = new Gee.TreeMap<string, string> ();
         search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
-        search_results.set ("%s → %s".printf (display_name, _("Dock& Panel")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Hide Mode")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Icon Size")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Pressure reveal")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Display")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Panel translucency")), "dock");
+        search_results.set ("%s → %s".printf (display_name, _("Dock & Panel")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Hide Mode")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Icon Size")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Pressure reveal")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Display")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Panel translucency")), "dock");
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dark style")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Accent color")), "appearance");
