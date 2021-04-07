@@ -393,8 +393,10 @@ public class PantheonShell.Appearance : Gtk.Grid {
             accent_grid.add (cocoa_button);
             accent_grid.add (slate_button);
 
-            var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color."));
-            accent_info.margin_bottom = 18;
+            var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color.")) {
+                margin_bottom = 18,
+                xalign = 0
+            };
             accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
             attach (accent_label, 0, 4);
