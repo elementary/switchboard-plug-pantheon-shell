@@ -60,7 +60,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             if (GLib.Environment.find_program_in_path ("plank") != null) {
                 var dock = new Dock ();
-                stack.add_titled (dock, "dock", _("Dock"));
+                stack.add_titled (dock, "dock", _("Dock & Panel"));
             }
 
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
@@ -108,20 +108,21 @@ public class PantheonShell.Plug : Switchboard.Plug {
     public override async Gee.TreeMap<string, string> search (string search) {
         var search_results = new Gee.TreeMap<string, string> ();
         search_results.set ("%s → %s".printf (display_name, _("Wallpaper")), "wallpaper");
-        search_results.set ("%s → %s".printf (display_name, _("Dock")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Hide Mode")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Icon Size")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Pressure reveal")), "dock");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Dock"), _("Display")), "dock");
+        search_results.set ("%s → %s".printf (display_name, _("Dock& Panel")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Hide Mode")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Icon Size")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Pressure reveal")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Display")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock& Panel"), _("Panel translucency")), "dock");
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dark style")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Accent color")), "appearance");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Window animations")), "appearance");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Panel translucency")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Text size")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dyslexia-friendly text")), "appearance");
         search_results.set ("%s → %s".printf (display_name, _("Multitasking")), "multitasking");
         search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Hot Corners")), "multitasking");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Move workspaces on fullscreen")), "multitasking");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Window animations")), "multitasking");
         return search_results;
     }
 }

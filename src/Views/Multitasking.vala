@@ -23,7 +23,10 @@ public class PantheonShell.Multitasking : Gtk.Grid {
     private GLib.Settings behavior_settings;
     private Gtk.Revealer custom_command_revealer;
     private Gee.HashSet<string> keys_using_custom_command = new Gee.HashSet<string> ();
+
     private const string CUSTOM_COMMAND_ID = "5";
+    private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
+    private const string ANIMATIONS_KEY = "enable-animations";
 
     construct {
         column_spacing = 12;
@@ -88,16 +91,9 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
         custom_command_revealer.add (cc_grid);
 
-        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-            margin_bottom = 24,
+        var workspaces_title = new Granite.HeaderLabel (_("Move windows to a new workspace:")) {
             margin_top = 24
         };
-
-        var workspaces_title = new Gtk.Label (_("Move windows to a new workspace:")) {
-            halign = Gtk.Align.START,
-            margin_bottom = 6
-        };
-        workspaces_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var fullscreen_label = new Gtk.Label (_("When entering fullscreen:")) {
             halign = Gtk.Align.END
@@ -113,6 +109,19 @@ public class PantheonShell.Multitasking : Gtk.Grid {
             halign = Gtk.Align.START
         };
 
+        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
+            margin_bottom = 12,
+            margin_top = 12
+        };
+
+        var animations_label = new Gtk.Label (_("Window animations:")) {
+            halign = Gtk.Align.END
+        };
+
+        var animations_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
+
         attach (hotcorner_title, 0, 0, 3);
         attach (icon, 1, 1, 1, 3);
         attach (topleft, 0, 1, 1, 1);
@@ -120,12 +129,17 @@ public class PantheonShell.Multitasking : Gtk.Grid {
         attach (bottomleft, 0, 3, 1, 1);
         attach (bottomright, 2, 3, 1, 1);
         attach (custom_command_revealer, 0, 4, 2, 1);
-        attach (separator, 0, 5, 3);
-        attach (workspaces_title, 0, 6, 3);
-        attach (fullscreen_label, 0, 7);
-        attach (fullscreen_switch, 1, 7);
-        attach (maximize_label, 0, 8);
-        attach (maximize_switch, 1, 8);
+        attach (workspaces_title, 0, 5, 3);
+        attach (fullscreen_label, 0, 6);
+        attach (fullscreen_switch, 1, 6);
+        attach (maximize_label, 0, 7);
+        attach (maximize_switch, 1, 7);
+        attach (separator, 0, 8, 3);
+        attach (animations_label, 0, 9);
+        attach (animations_switch, 1, 9);
+
+        var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
+        animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
         behavior_settings.bind ("hotcorner-custom-command", custom_command, "text", GLib.SettingsBindFlags.DEFAULT);
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_switch, "active", GLib.SettingsBindFlags.DEFAULT);
