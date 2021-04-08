@@ -43,18 +43,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
     private Granite.Widgets.ModeButton text_size_modebutton;
 
-    public Appearance () {
-        Object (
-            column_spacing: 12,
-            halign: Gtk.Align.CENTER,
-            margin_bottom: 24,
-            margin_end: 6,
-            margin_start: 6,
-            row_spacing: 6
-        );
-    }
-
     construct {
+        column_spacing = 12;
+        halign = Gtk.Align.CENTER;
+        row_spacing = 6;
+        margin_start = margin_end = 6;
+        margin_bottom = 24;
+
         var dark_label = new Gtk.Label (_("Style:")) {
             halign = Gtk.Align.END
         };
