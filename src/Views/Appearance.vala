@@ -421,14 +421,14 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
     private class PrefersAccentColorButton : Gtk.RadioButton {
         public string preference { get; construct; }
-        public int32 index { get; construct; }
+        public int index { get; construct; }
 
         private Pantheon.AccountsService? pantheon_act = null;
 
         private static GLib.Settings interface_settings;
         private static string current_accent;
 
-        public PrefersAccentColorButton (string _preference, Pantheon.AccountsService? _pantheon_act, int32 _index, Gtk.RadioButton? group_member = null) {
+        public PrefersAccentColorButton (string _preference, Pantheon.AccountsService? _pantheon_act, int _index, Gtk.RadioButton? group_member = null) {
             Object (
                 preference: _preference,
                 index: _index,
