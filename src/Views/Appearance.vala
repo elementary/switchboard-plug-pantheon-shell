@@ -374,6 +374,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var slate_button = new ColorButton ("slate", blueberry_button);
             slate_button.tooltip_text = _("Slate");
 
+            var slate_button = new ColorButton ("no-preference", blueberry_button);
+            slate_button.tooltip_text = _("No Preference");
+
             var accent_grid = new Gtk.Grid ();
             accent_grid.column_spacing = 6;
             accent_grid.add (blueberry_button);
