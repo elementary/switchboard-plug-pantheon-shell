@@ -374,8 +374,8 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var slate_button = new ColorButton ("slate", blueberry_button);
             slate_button.tooltip_text = _("Slate");
 
-            var slate_button = new ColorButton ("no-preference", blueberry_button);
-            slate_button.tooltip_text = _("No Preference");
+            var no_preference_button = new ColorButton ("no-preference", blueberry_button);
+            no_preference_button.tooltip_text = _("No Preference");
 
             var accent_grid = new Gtk.Grid ();
             accent_grid.column_spacing = 6;
@@ -389,6 +389,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
             accent_grid.add (grape_button);
             accent_grid.add (cocoa_button);
             accent_grid.add (slate_button);
+            accent_grid.add (no_preference_button);
 
             var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color.")) {
                 margin_bottom = 18,
