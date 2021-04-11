@@ -282,13 +282,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
             ((GLib.DBusProxy) pantheon_act).g_properties_changed.connect ((changed, invalid) => {
                 var color_scheme = changed.lookup_value ("PrefersColorScheme", new VariantType ("i"));
-                switch ((Granite.Settings.ColorScheme) color_scheme.get_int32 ()) {
-                    case Granite.Settings.ColorScheme.DARK:
-                        prefer_dark_radio.active = true;
-                        break;
-                    default:
-                        prefer_default_radio.active = true;
-                        break;
+                if (color_scheme != null) {
+                    switch ((Granite.Settings.ColorScheme) color_scheme.get_int32 ()) {
+                        case Granite.Settings.ColorScheme.DARK:
+                            prefer_dark_radio.active = true;
+                            break;
+                        default:
+                            prefer_default_radio.active = true;
+                            break;
+                    }
                 }
             });
 
@@ -454,8 +456,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
             context.add_class (theme);
 
             realize.connect (() => {
-                active = granite_settings.prefers_accent_color == preference;
-
                 toggled.connect (() => {
                     if (preference != Granite.Settings.AccentColor.NO_PREFERENCE) {
                         interface_settings.set_string (
@@ -465,7 +465,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
                     }
 
                     if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersAccentColor") != null) {
-                        pantheon_act.prefers_accent_color = (int32) preference;
+                        pantheon_act.prefers_accent_color = preference;
                     }
                 });
             });
