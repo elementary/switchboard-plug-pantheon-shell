@@ -365,10 +365,10 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var strawberry_button = new PrefersAccentColorButton ("strawberry", pantheon_act, Granite.Settings.AccentColor.RED, blueberry_button);
             strawberry_button.tooltip_text = _("Strawberry");
 
-            var bubblegum_button = new PrefersAccentColorButton ("bubblegum", pantheon_act, Granite.Settings.AccentColor.PURPLE, blueberry_button);
+            var bubblegum_button = new PrefersAccentColorButton ("bubblegum", pantheon_act, Granite.Settings.AccentColor.PINK, blueberry_button);
             bubblegum_button.tooltip_text = _("Bubblegum");
 
-            var grape_button = new PrefersAccentColorButton ("grape", pantheon_act, Granite.Settings.AccentColor.PINK, blueberry_button);
+            var grape_button = new PrefersAccentColorButton ("grape", pantheon_act, Granite.Settings.AccentColor.PURPLE, blueberry_button);
             grape_button.tooltip_text = _("Grape");
 
             var cocoa_button = new PrefersAccentColorButton ("cocoa", pantheon_act, Granite.Settings.AccentColor.BROWN, blueberry_button);
