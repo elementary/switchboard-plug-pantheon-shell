@@ -1,5 +1,5 @@
 /*
-* Copyright 2018-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2018–2021 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -42,6 +42,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
         halign = Gtk.Align.CENTER;
         row_spacing = 6;
         margin_start = margin_end = 6;
+        margin_bottom = 24;
 
         var dark_label = new Gtk.Label (_("Style:")) {
             halign = Gtk.Align.END
