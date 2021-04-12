@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:12+0000\n"
+"POT-Creation-Date: 2021-04-12 20:23+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,17 +32,18 @@ msgstr "Настройка на лентата, горещите ъгли и ф�
 msgid "Wallpaper"
 msgstr "Фон"
 
-#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120 src/Plug.vala:121
 msgid "Appearance"
 msgstr ""
 
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115
-msgid "Dock"
-msgstr "Лента"
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+msgid "Dock & Panel"
+msgstr ""
 
-#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:125
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
@@ -64,34 +65,38 @@ msgstr ""
 msgid "Display"
 msgstr "Екран"
 
-#: src/Plug.vala:117
-msgid "Dark style"
-msgstr ""
-
-#: src/Plug.vala:118
-msgid "Accent color"
-msgstr ""
-
-#: src/Plug.vala:119
-msgid "Window animations"
-msgstr ""
-
-#: src/Plug.vala:120
+#: src/Plug.vala:116
 msgid "Panel translucency"
 msgstr ""
 
-#: src/Plug.vala:121
+#: src/Plug.vala:118
+msgid "Dark style"
+msgstr ""
+
+#: src/Plug.vala:119
+msgid "Accent color"
+msgstr ""
+
+#: src/Plug.vala:120
 #, fuzzy
 msgid "Text size"
 msgstr "Размер на иконките:"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:121
 msgid "Dyslexia-friendly text"
 msgstr ""
 
-#: src/Plug.vala:124
+#: src/Plug.vala:123
 msgid "Hot Corners"
 msgstr "Горещи ъгли"
+
+#: src/Plug.vala:124
+msgid "Move windows to a new workspace"
+msgstr ""
+
+#: src/Plug.vala:125
+msgid "Window animations"
+msgstr ""
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -119,133 +124,129 @@ msgstr "Задаване като фон на работния плот"
 msgid "Set selected image to be the new desktop background"
 msgstr "Задава избраното изображение като фон на работния плот"
 
-#: src/Views/Appearance.vala:52
+#: src/Views/Appearance.vala:47
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "По подразбиране"
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:91
 msgid "Dark"
 msgstr ""
 
-#: src/Views/Appearance.vala:105
+#: src/Views/Appearance.vala:100
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 
-#: src/Views/Appearance.vala:113
+#: src/Views/Appearance.vala:108
 msgid "Schedule:"
 msgstr ""
 
-#: src/Views/Appearance.vala:119
+#: src/Views/Appearance.vala:114
 msgid "Disabled"
 msgstr "Изключено"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:115
 msgid "Sunset to Sunrise"
 msgstr ""
 
-#: src/Views/Appearance.vala:121
+#: src/Views/Appearance.vala:116
 msgid "Manual"
 msgstr ""
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:118
 msgid "From:"
 msgstr "От:"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:124
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:145
-msgid "Window animations:"
-msgstr ""
-
-#: src/Views/Appearance.vala:155
-msgid "Panel translucency:"
-msgstr ""
-
-#: src/Views/Appearance.vala:163
+#: src/Views/Appearance.vala:140
 #, fuzzy
 msgid "Text size:"
 msgstr "Размер на иконките:"
 
-#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
 msgid "Small"
 msgstr ""
 
-#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Голям"
 
-#: src/Views/Appearance.vala:174
+#: src/Views/Appearance.vala:151
 #, fuzzy
 msgid "Larger"
 msgstr "Голям"
 
-#: src/Views/Appearance.vala:176
+#: src/Views/Appearance.vala:153
 msgid "Dyslexia-friendly text:"
 msgstr ""
 
-#: src/Views/Appearance.vala:185
+#: src/Views/Appearance.vala:162
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:344
+#: src/Views/Appearance.vala:311
 msgid "Accent:"
 msgstr ""
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:315
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:351
+#: src/Views/Appearance.vala:318
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:321
 msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:324
 msgid "Banana"
 msgstr ""
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:327
 msgid "Orange"
 msgstr ""
 
-#: src/Views/Appearance.vala:363
+#: src/Views/Appearance.vala:330
 msgid "Strawberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:366
+#: src/Views/Appearance.vala:333
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:336
 msgid "Grape"
 msgstr ""
 
-#: src/Views/Appearance.vala:372
+#: src/Views/Appearance.vala:339
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:375
+#: src/Views/Appearance.vala:342
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:390
+#: src/Views/Appearance.vala:357
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+
+#: src/Views/Dock.vala:31
+msgid "Dock"
+msgstr "Лента"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -283,67 +284,79 @@ msgstr "Да се скрива, когато:"
 msgid "Pressure reveal:"
 msgstr ""
 
-#: src/Views/Dock.vala:217
+#: src/Views/Dock.vala:153
+msgid "Panel"
+msgstr ""
+
+#: src/Views/Dock.vala:157
+msgid "Panel translucency:"
+msgstr ""
+
+#: src/Views/Dock.vala:239
 #, c-format
 msgid "Monitor %d"
 msgstr "Монитор %d"
 
-#: src/Views/Dock.vala:222
+#: src/Views/Dock.vala:244
 #, c-format
 msgid "Display %d"
 msgstr "Екран %d"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:40
 msgid "When the cursor enters the corner of the display:"
 msgstr "Когато курсора докосне ъгъла на екрана:"
 
-#: src/Views/Multitasking.vala:76
+#: src/Views/Multitasking.vala:79
 msgid "Custom command:"
 msgstr "Команда по избор:"
 
-#: src/Views/Multitasking.vala:96
+#: src/Views/Multitasking.vala:94
 msgid "Move windows to a new workspace:"
 msgstr ""
 
-#: src/Views/Multitasking.vala:102
-msgid "When entering fullscreen:"
+#: src/Views/Multitasking.vala:100
+msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:109
-msgid "When maximizing:"
+#: src/Views/Multitasking.vala:101
+msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:148
+#: src/Views/Multitasking.vala:111
+msgid "Window animations:"
+msgstr ""
+
+#: src/Views/Multitasking.vala:152
 msgid "Do nothing"
 msgstr "Да не се прави нищо"
 
 #. none
-#: src/Views/Multitasking.vala:149
+#: src/Views/Multitasking.vala:153
 msgid "Multitasking View"
 msgstr "Многозадачен изглед"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:150
+#: src/Views/Multitasking.vala:154
 msgid "Maximize current window"
 msgstr "Увеличаване на текущия прозорец"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:151
+#: src/Views/Multitasking.vala:155
 msgid "Show Applications Menu"
 msgstr "Показване на меню с приложения"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:156
 msgid "Show all windows"
 msgstr "Показване на всички прозорци"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:157
 msgid "Switch to new workspace"
 msgstr ""
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:158
 msgid "Execute custom command"
 msgstr "Изпълняване на команда по избор"
 
