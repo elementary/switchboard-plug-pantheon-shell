@@ -23,7 +23,10 @@ public class PantheonShell.Multitasking : Gtk.Grid {
     private GLib.Settings behavior_settings;
     private Gtk.Revealer custom_command_revealer;
     private Gee.HashSet<string> keys_using_custom_command = new Gee.HashSet<string> ();
+
     private const string CUSTOM_COMMAND_ID = "5";
+    private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
+    private const string ANIMATIONS_KEY = "enable-animations";
 
     construct {
         column_spacing = 12;
@@ -88,28 +91,28 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
         custom_command_revealer.add (cc_grid);
 
-        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL) {
-            margin_bottom = 24,
-            margin_top = 24
+        var workspaces_label = new Gtk.Label (_("Move windows to a new workspace:")) {
+            halign = Gtk.Align.END,
+            margin_top = 36,
+            margin_bottom = 12
         };
 
-        var workspaces_title = new Gtk.Label (_("Move windows to a new workspace:")) {
-            halign = Gtk.Align.START,
-            margin_bottom = 6
-        };
-        workspaces_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+        var fullscreen_checkbutton = new Gtk.CheckButton.with_label (_("When entering fullscreen"));
+        var maximize_checkbutton = new Gtk.CheckButton.with_label (_("When maximizing"));
 
-        var fullscreen_label = new Gtk.Label (_("When entering fullscreen:")) {
+        var checkbutton_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin_top = 36,
+            margin_bottom = 12
+        };
+        checkbutton_grid.add (fullscreen_checkbutton);
+        checkbutton_grid.add (maximize_checkbutton);
+
+        var animations_label = new Gtk.Label (_("Window animations:")) {
             halign = Gtk.Align.END
         };
-        var fullscreen_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
-        };
 
-        var maximize_label = new Gtk.Label (_("When maximizing:")) {
-            halign = Gtk.Align.END
-        };
-        var maximize_switch = new Gtk.Switch () {
+        var animations_switch = new Gtk.Switch () {
             halign = Gtk.Align.START
         };
 
@@ -120,16 +123,17 @@ public class PantheonShell.Multitasking : Gtk.Grid {
         attach (bottomleft, 0, 3, 1, 1);
         attach (bottomright, 2, 3, 1, 1);
         attach (custom_command_revealer, 0, 4, 2, 1);
-        attach (separator, 0, 5, 3);
-        attach (workspaces_title, 0, 6, 3);
-        attach (fullscreen_label, 0, 7);
-        attach (fullscreen_switch, 1, 7);
-        attach (maximize_label, 0, 8);
-        attach (maximize_switch, 1, 8);
+        attach (workspaces_label, 0, 5);
+        attach (checkbutton_grid, 1, 5, 2);
+        attach (animations_label, 0, 9);
+        attach (animations_switch, 1, 9);
+
+        var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
+        animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
         behavior_settings.bind ("hotcorner-custom-command", custom_command, "text", GLib.SettingsBindFlags.DEFAULT);
-        behavior_settings.bind ("move-fullscreened-workspace", fullscreen_switch, "active", GLib.SettingsBindFlags.DEFAULT);
-        behavior_settings.bind ("move-maximized-workspace", maximize_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
+        behavior_settings.bind ("move-maximized-workspace", maximize_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
     }
 
     private void hotcorner_changed (string settings_key, Gtk.ComboBoxText combo) {
