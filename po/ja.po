@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-11-20 04:15+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
+"PO-Revision-Date: 2021-03-16 16:50+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
 #: src/Plug.vala:41
@@ -367,7 +367,7 @@ msgstr "写真をインポート"
 msgid "Import"
 msgstr "インポート"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -384,19 +384,19 @@ msgstr "アーティスト: %s"
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] "%d 秒"
+msgstr[0] "%d秒"
 
 #: set-wallpaper-contract/set-wallpaper.vala:97
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] "%d 分"
+msgstr[0] "%d分"
 
 #: set-wallpaper-contract/set-wallpaper.vala:101
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] "%d 時間"
+msgstr[0] "%d時間"
 
 #: set-wallpaper-contract/set-wallpaper.vala:104
 msgid "1 day"
@@ -406,13 +406,12 @@ msgstr "1 日"
 msgid "Show each photo for"
 msgstr "それぞれの写真を表示する時間"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "デスクトップスライドショーとして設定"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+msgid "Create Slideshow"
 msgstr "スライドショーを作成"
 
 #~ msgid "Normal"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-12-06 19:16+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
+"PO-Revision-Date: 2021-03-05 01:33+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:43+0000\n"
 
 #: src/Plug.vala:41
@@ -26,7 +26,7 @@ msgstr "Masaüstü"
 
 #: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Rıhtım ve etkin köşeleri yapılandırın, duvar kağıdını değiştirin"
+msgstr "Dock'u ve etkin köşeleri yapılandırın, duvar kağıdını değiştirin"
 
 #: src/Plug.vala:56 src/Plug.vala:110
 msgid "Wallpaper"
@@ -40,7 +40,7 @@ msgstr "Görünüm"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115
 msgid "Dock"
-msgstr "Rıhtım"
+msgstr "Dock"
 
 #: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
 msgid "Multitasking"
@@ -131,7 +131,7 @@ msgstr "Koyu"
 
 #: src/Views/Appearance.vala:105
 msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr "Rıhtım ve Panel göstergeleri gibi sistem bileşenleri için görsel stil."
+msgstr "Dock ve Panel göstergeleri gibi sistem bileşenleri için görsel stil."
 
 #: src/Views/Appearance.vala:113
 msgid "Schedule:"
@@ -147,7 +147,7 @@ msgstr "Otomatik"
 
 #: src/Views/Appearance.vala:121
 msgid "Manual"
-msgstr "Elle"
+msgstr "El ile"
 
 #: src/Views/Appearance.vala:123
 msgid "From:"
@@ -252,11 +252,11 @@ msgstr "Odaktaki pencere ekranı kapladığında"
 
 #: src/Views/Dock.vala:71
 msgid "Focused window overlaps the dock"
-msgstr "Odaktaki pencere rıhtımın üstüne geldiğinde"
+msgstr "Odaktaki pencere dock'un üstüne geldiğinde"
 
 #: src/Views/Dock.vala:72
 msgid "Any window overlaps the dock"
-msgstr "Herhangi bir pencere rıhtımın üstüne geldiğinde"
+msgstr "Herhangi bir pencere dock'un üstüne geldiğinde"
 
 #: src/Views/Dock.vala:73
 msgid "Not being used"
@@ -370,7 +370,7 @@ msgstr "Fotoğrafı İçe Aktar"
 msgid "Import"
 msgstr "İçe Aktar"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "Vazgeç"
 
@@ -412,14 +412,13 @@ msgstr "1 gün"
 msgid "Show each photo for"
 msgstr "Her bir fotoğrafın gösterileceği süre:"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "Masaüstü Slayt Gösterisi Olarak Ayarla"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
-msgstr "Slayt gösterisi oluştur"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+msgid "Create Slideshow"
+msgstr "Slayt Gösterisi Oluştur"
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

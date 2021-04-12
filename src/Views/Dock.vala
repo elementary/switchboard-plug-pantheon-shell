@@ -18,6 +18,9 @@
 */
 
 public class PantheonShell.Dock : Gtk.Grid {
+    private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
+    private const string TRANSLUCENCY_KEY = "use-transparency";
+
     private Gtk.Label primary_monitor_label;
     private Gtk.Switch primary_monitor;
     private Gtk.Label monitor_label;
@@ -25,10 +28,7 @@ public class PantheonShell.Dock : Gtk.Grid {
     private Plank.DockPreferences dock_preferences;
 
     construct {
-        column_spacing = 12;
-        halign = Gtk.Align.CENTER;
-        row_spacing = 12;
-        margin_start = margin_end = 6;
+        var dock_header = new Granite.HeaderLabel (_("Dock"));
 
         weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
         default_theme.add_resource_path ("/io/elementary/switchboard/plug/pantheon-shell");
@@ -93,7 +93,7 @@ public class PantheonShell.Dock : Gtk.Grid {
             dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
         });
 
-        hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.DEFAULT);
+        hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.SYNC_CREATE);
         hide_switch.bind_property ("active", hide_mode, "sensitive", BindingFlags.DEFAULT);
 
         hide_switch.notify["active"].connect (() => {
@@ -150,17 +150,36 @@ public class PantheonShell.Dock : Gtk.Grid {
         var pressure_label = new Gtk.Label (_("Pressure reveal:"));
         pressure_label.halign = Gtk.Align.END;
 
-        attach (icon_label, 1, 0, 1, 1);
-        attach (icon_size_grid, 2, 0, 2);
-        attach (hide_label, 1, 1, 1, 1);
-        attach (hide_mode, 2, 1, 1, 1);
-        attach (hide_switch, 3, 1, 1, 1);
-        attach (primary_monitor_label, 1, 3, 1, 1);
-        attach (primary_monitor_grid, 2, 3, 1, 1);
-        attach (monitor_label, 1, 4, 1, 1);
-        attach (monitor, 2, 4, 1, 1);
-        attach (pressure_label, 1, 5, 1, 1);
-        attach (pressure_switch, 2, 5, 1, 1);
+        var panel_header = new Granite.HeaderLabel (_("Panel")) {
+            margin_top = 12
+        };
+
+        var translucency_label = new Gtk.Label (_("Panel translucency:")) {
+            halign = Gtk.Align.END
+        };
+
+        var translucency_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
+
+        column_spacing = 12;
+        halign = Gtk.Align.CENTER;
+        row_spacing = 12;
+        attach (dock_header, 0, 0, 3);
+        attach (icon_label, 0, 1);
+        attach (icon_size_grid, 1, 1, 2);
+        attach (hide_label, 0, 2);
+        attach (hide_mode, 1, 2);
+        attach (hide_switch, 2, 2);
+        attach (primary_monitor_label, 0, 3);
+        attach (primary_monitor_grid, 1, 3);
+        attach (monitor_label, 0, 4);
+        attach (monitor, 1, 4);
+        attach (pressure_label, 0, 5);
+        attach (pressure_switch, 1, 5);
+        attach (panel_header, 0, 6, 3);
+        attach (translucency_label, 0, 7);
+        attach (translucency_switch, 1, 7);
 
         check_for_screens ();
 
@@ -190,6 +209,9 @@ public class PantheonShell.Dock : Gtk.Grid {
         icon_size_64.toggled.connect (() => {
             dock_preferences.IconSize = 64;
         });
+
+        var panel_settings = new GLib.Settings (PANEL_SCHEMA);
+        panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
     }
 
     private void check_for_screens () {

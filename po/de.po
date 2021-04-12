@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 23:50+0000\n"
-"PO-Revision-Date: 2020-10-27 06:15+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
+"PO-Revision-Date: 2021-02-24 23:37+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:06+0000\n"
 
 #: src/Plug.vala:41
@@ -64,13 +64,11 @@ msgstr "Bildschirm"
 
 #: src/Plug.vala:117
 msgid "Dark style"
-msgstr ""
+msgstr "Dunkler Stil"
 
 #: src/Plug.vala:118
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "Akzentfarbe:"
+msgstr "Akzentfarbe"
 
 #: src/Plug.vala:119
 msgid "Window animations"
@@ -116,7 +114,7 @@ msgstr "Als Hintergrund_bild festlegen"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr "Das ausgewählte Bild als neues Hintergrundbild festlegen"
+msgstr "Ausgewähltes Bild als neues Hintergrundbild festlegen"
 
 #: src/Views/Appearance.vala:52
 msgid "Style:"
@@ -161,7 +159,7 @@ msgstr "Bis:"
 
 #: src/Views/Appearance.vala:145
 msgid "Window animations:"
-msgstr "Fenster-Animationen:"
+msgstr "Fensteranimationen:"
 
 #: src/Views/Appearance.vala:155
 msgid "Panel translucency:"
@@ -193,8 +191,8 @@ msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
-"Bottom-heavy shapes und größere Zeichenabstände erhöhen möglicherweise die "
-"Leserlichkeit und die Lesegeschwindigkeit."
+"Grundlinienbetonte Formen und größere Zeichenabstände helfen, Leserlichkeit "
+"und Lesegeschwindigkeit zu erhöhen."
 
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:344
@@ -227,27 +225,27 @@ msgstr "Erdbeere"
 
 #: src/Views/Appearance.vala:366
 msgid "Bubblegum"
-msgstr ""
+msgstr "Rosa"
 
 #: src/Views/Appearance.vala:369
 msgid "Grape"
-msgstr ""
+msgstr "Violett"
 
 #: src/Views/Appearance.vala:372
 msgid "Cocoa"
-msgstr ""
+msgstr "Kakao"
 
 #: src/Views/Appearance.vala:375
 msgid "Slate"
-msgstr ""
+msgstr "Schiefer"
 
 #: src/Views/Appearance.vala:390
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
-"Diese Farbe wird systemweit als Standard verwendet. Anwendungen können immer "
-"eigene Akzentfarben verwenden."
+"Diese Farbe wird systemweit als Standard verwendet. Anwendungen haben immer "
+"die Möglichkeit, eigene Akzentfarben verwenden."
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -304,18 +302,16 @@ msgid "Custom command:"
 msgstr "Benutzerdefinierter Befehl:"
 
 #: src/Views/Multitasking.vala:96
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
-msgstr "Zu einem neuen Arbeitsbereich wechseln"
+msgstr "Fenster in einen neuen Arbeitsbereich verschieben:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen:"
-msgstr ""
+msgstr "Beim Wechsel zur Vollbildschirmdarstellung:"
 
 #: src/Views/Multitasking.vala:109
 msgid "When maximizing:"
-msgstr ""
+msgstr "Beim Maximieren:"
 
 #: src/Views/Multitasking.vala:148
 msgid "Do nothing"
@@ -334,7 +330,7 @@ msgstr "Aktuelles Fenster maximieren"
 #. maximize-current
 #: src/Views/Multitasking.vala:151
 msgid "Show Applications Menu"
-msgstr "App-Menü anzeigen"
+msgstr "Anwendungsmenü anzeigen"
 
 #. open-launcher
 #: src/Views/Multitasking.vala:152
@@ -375,7 +371,7 @@ msgstr "Foto importieren"
 msgid "Import"
 msgstr "Importieren"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -417,13 +413,12 @@ msgstr "1 Tag"
 msgid "Show each photo for"
 msgstr "Jedes Bild anzeigen für"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "Als Schreibtisch-Diaschau festlegen"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+msgid "Create Slideshow"
 msgstr "Diaschau erstellen"
 
 #~ msgid "Normal"

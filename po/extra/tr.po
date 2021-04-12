@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 17:22+0000\n"
-"PO-Revision-Date: 2020-08-13 07:13+0000\n"
+"POT-Creation-Date: 2021-02-17 01:12+0000\n"
+"PO-Revision-Date: 2021-03-05 01:33+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
@@ -25,7 +25,7 @@ msgstr "Masaüstü Ayarları"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Rıhtım ve etkin köşeleri yapılandırın, duvar kağıdını değiştirin"
+msgstr "Dock'u ve etkin köşeleri yapılandırın, duvar kağıdını değiştirin"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
@@ -50,7 +50,7 @@ msgstr "Çeviriler güncellendi"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Illustrate Dock icon sizes"
-msgstr "Başlatıcı simge boyutları görselleştirildi"
+msgstr "Dock simge boyutları görselleştirildi"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "Fix system wallpapers being copied"
