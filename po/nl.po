@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:12+0000\n"
+"POT-Creation-Date: 2021-04-12 20:23+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -32,17 +32,18 @@ msgstr "Configureer het dock, actieve hoeken, en pas de achtergrond aan"
 msgid "Wallpaper"
 msgstr "Achtergrondafbeelding"
 
-#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120 src/Plug.vala:121
 msgid "Appearance"
 msgstr "Uiterlijk"
 
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115
-msgid "Dock"
-msgstr "Dock"
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+msgid "Dock & Panel"
+msgstr ""
 
-#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Multitasking"
 msgstr "Multitasking"
 
@@ -62,35 +63,41 @@ msgstr "Onthul bij druk"
 msgid "Display"
 msgstr "Beeldscherm"
 
-#: src/Plug.vala:117
+#: src/Plug.vala:116
+msgid "Panel translucency"
+msgstr "Paneel doorzichtigheid"
+
+#: src/Plug.vala:118
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:118
+#: src/Plug.vala:119
 #, fuzzy
 #| msgid "Accent:"
 msgid "Accent color"
 msgstr "Tint:"
 
-#: src/Plug.vala:119
-msgid "Window animations"
-msgstr "Venster animaties"
-
 #: src/Plug.vala:120
-msgid "Panel translucency"
-msgstr "Paneel doorzichtigheid"
-
-#: src/Plug.vala:121
 msgid "Text size"
 msgstr "Tekstgrootte"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:121
 msgid "Dyslexia-friendly text"
 msgstr "Dyslexie-vriendelijke tekst"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:123
 msgid "Hot Corners"
 msgstr "Actieve hoeken"
+
+#: src/Plug.vala:124
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Move windows to a new workspace"
+msgstr "Wissel naar nieuw werkblad"
+
+#: src/Plug.vala:125
+msgid "Window animations"
+msgstr "Venster animaties"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -118,76 +125,68 @@ msgstr "Stel in als _bureaubladachtergrond"
 msgid "Set selected image to be the new desktop background"
 msgstr "Gebruik de geselecteerde afbeelding als nieuwe bureaubladachtergrond"
 
-#: src/Views/Appearance.vala:52
+#: src/Views/Appearance.vala:47
 msgid "Style:"
 msgstr "Stijl:"
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Standaard"
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:91
 msgid "Dark"
 msgstr "Donker"
 
-#: src/Views/Appearance.vala:105
+#: src/Views/Appearance.vala:100
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr "Visuele stijl voor systeemonderdelen zoals de Dock en Panel iconen."
 
-#: src/Views/Appearance.vala:113
+#: src/Views/Appearance.vala:108
 msgid "Schedule:"
 msgstr "Planning:"
 
-#: src/Views/Appearance.vala:119
+#: src/Views/Appearance.vala:114
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:115
 msgid "Sunset to Sunrise"
 msgstr "Zonsondergang tot zonsopgang"
 
-#: src/Views/Appearance.vala:121
+#: src/Views/Appearance.vala:116
 msgid "Manual"
 msgstr "Handmatig"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:118
 msgid "From:"
 msgstr "Van:"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:124
 msgid "To:"
 msgstr "Tot:"
 
-#: src/Views/Appearance.vala:145
-msgid "Window animations:"
-msgstr "Venster animaties:"
-
-#: src/Views/Appearance.vala:155
-msgid "Panel translucency:"
-msgstr "Paneel doorzichtigheid:"
-
-#: src/Views/Appearance.vala:163
+#: src/Views/Appearance.vala:140
 msgid "Text size:"
 msgstr "Tekstgrootte:"
 
-#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Klein"
 
-#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Groot"
 
-#: src/Views/Appearance.vala:174
+#: src/Views/Appearance.vala:151
 msgid "Larger"
 msgstr "Groter"
 
-#: src/Views/Appearance.vala:176
+#: src/Views/Appearance.vala:153
 msgid "Dyslexia-friendly text:"
 msgstr "Dyslexie-vriendelijke tekst:"
 
-#: src/Views/Appearance.vala:185
+#: src/Views/Appearance.vala:162
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -196,57 +195,61 @@ msgstr ""
 "snelheid."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:344
+#: src/Views/Appearance.vala:311
 msgid "Accent:"
 msgstr "Tint:"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:315
 msgid "Blueberry"
 msgstr "Bosbes"
 
-#: src/Views/Appearance.vala:351
+#: src/Views/Appearance.vala:318
 msgid "Mint"
 msgstr "Munt"
 
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:321
 msgid "Lime"
 msgstr "Limoen"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:324
 msgid "Banana"
 msgstr "Banaan"
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:327
 msgid "Orange"
 msgstr "Sinaasappel"
 
-#: src/Views/Appearance.vala:363
+#: src/Views/Appearance.vala:330
 msgid "Strawberry"
 msgstr "Aardbei"
 
-#: src/Views/Appearance.vala:366
+#: src/Views/Appearance.vala:333
 msgid "Bubblegum"
 msgstr "Kauwgom"
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:336
 msgid "Grape"
 msgstr "Druif"
 
-#: src/Views/Appearance.vala:372
+#: src/Views/Appearance.vala:339
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:375
+#: src/Views/Appearance.vala:342
 msgid "Slate"
 msgstr "Leisteen"
 
-#: src/Views/Appearance.vala:390
+#: src/Views/Appearance.vala:357
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
 "Wordt als standaard gebruikt door het hele systeem. Apps kunnen altijd hun "
 "eigen kleuraccent gebruiken."
+
+#: src/Views/Dock.vala:31
+msgid "Dock"
+msgstr "Dock"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -284,69 +287,81 @@ msgstr "Verberg wanneer:"
 msgid "Pressure reveal:"
 msgstr "Onthul bij druk:"
 
-#: src/Views/Dock.vala:217
+#: src/Views/Dock.vala:153
+msgid "Panel"
+msgstr ""
+
+#: src/Views/Dock.vala:157
+msgid "Panel translucency:"
+msgstr "Paneel doorzichtigheid:"
+
+#: src/Views/Dock.vala:239
 #, c-format
 msgid "Monitor %d"
 msgstr "Beeldscherm %d"
 
-#: src/Views/Dock.vala:222
+#: src/Views/Dock.vala:244
 #, c-format
 msgid "Display %d"
 msgstr "Beeldscherm %d"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:40
 msgid "When the cursor enters the corner of the display:"
 msgstr "Als de muisaanwijzer de hoek van het scherm bereikt:"
 
-#: src/Views/Multitasking.vala:76
+#: src/Views/Multitasking.vala:79
 msgid "Custom command:"
 msgstr "Aangepast commando:"
 
-#: src/Views/Multitasking.vala:96
+#: src/Views/Multitasking.vala:94
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
 msgstr "Wissel naar nieuw werkblad"
 
-#: src/Views/Multitasking.vala:102
-msgid "When entering fullscreen:"
+#: src/Views/Multitasking.vala:100
+msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:109
-msgid "When maximizing:"
+#: src/Views/Multitasking.vala:101
+msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:148
+#: src/Views/Multitasking.vala:111
+msgid "Window animations:"
+msgstr "Venster animaties:"
+
+#: src/Views/Multitasking.vala:152
 msgid "Do nothing"
 msgstr "Niets doen"
 
 #. none
-#: src/Views/Multitasking.vala:149
+#: src/Views/Multitasking.vala:153
 msgid "Multitasking View"
 msgstr "Multitasking weergave"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:150
+#: src/Views/Multitasking.vala:154
 msgid "Maximize current window"
 msgstr "Maximaliseer het huidige venster"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:151
+#: src/Views/Multitasking.vala:155
 msgid "Show Applications Menu"
 msgstr "Toon toepassingsmenu"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:156
 msgid "Show all windows"
 msgstr "Toon alle vensters"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:157
 msgid "Switch to new workspace"
 msgstr "Wissel naar nieuw werkblad"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:158
 msgid "Execute custom command"
 msgstr "Voer aangepast commando uit"
 
