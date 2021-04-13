@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-01-25 07:22+0000\n"
+"PO-Revision-Date: 2021-04-13 07:49+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -88,10 +88,8 @@ msgid "Hot Corners"
 msgstr "热区"
 
 #: src/Plug.vala:124
-#, fuzzy
-#| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
-msgstr "移动至新工作区："
+msgstr "移动至新工作区"
 
 #: src/Plug.vala:125
 msgid "Window animations"
@@ -314,16 +312,12 @@ msgid "Move windows to a new workspace:"
 msgstr "移动至新工作区："
 
 #: src/Views/Multitasking.vala:100
-#, fuzzy
-#| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
-msgstr "进入全屏时："
+msgstr "进入全屏时"
 
 #: src/Views/Multitasking.vala:101
-#, fuzzy
-#| msgid "When maximizing:"
 msgid "When maximizing"
-msgstr "最大化窗口："
+msgstr "最大化窗口"
 
 #: src/Views/Multitasking.vala:111
 msgid "Window animations:"
