@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-02-24 23:37+0000\n"
+"PO-Revision-Date: 2021-04-13 02:14+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -40,7 +40,7 @@ msgstr "Erscheinungsbild"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Dock & Panel"
-msgstr ""
+msgstr "Dock & Leiste"
 
 #: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
@@ -88,10 +88,8 @@ msgid "Hot Corners"
 msgstr "Aktive Ecken"
 
 #: src/Plug.vala:124
-#, fuzzy
-#| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
-msgstr "Fenster in einen neuen Arbeitsbereich verschieben:"
+msgstr "Fenster in einen neuen Arbeitsbereich verschieben"
 
 #: src/Plug.vala:125
 msgid "Window animations"
@@ -288,7 +286,7 @@ msgstr "Verzögertes Einblenden:"
 
 #: src/Views/Dock.vala:153
 msgid "Panel"
-msgstr ""
+msgstr "Leiste"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
@@ -317,16 +315,12 @@ msgid "Move windows to a new workspace:"
 msgstr "Fenster in einen neuen Arbeitsbereich verschieben:"
 
 #: src/Views/Multitasking.vala:100
-#, fuzzy
-#| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
-msgstr "Beim Wechsel zur Vollbildschirmdarstellung:"
+msgstr "Beim Wechsel zur Vollbildschirmdarstellung"
 
 #: src/Views/Multitasking.vala:101
-#, fuzzy
-#| msgid "When maximizing:"
 msgid "When maximizing"
-msgstr "Beim Maximieren:"
+msgstr "Beim Maximieren"
 
 #: src/Views/Multitasking.vala:111
 msgid "Window animations:"
