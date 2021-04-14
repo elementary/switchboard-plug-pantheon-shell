@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-04-14 17:24+0000\n"
+"PO-Revision-Date: 2021-04-14 19:55+0000\n"
 "Last-Translator: Marius Meisenzahl <mariusmeisenzahl@gmail.com>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -222,7 +222,7 @@ msgstr "Erdbeere"
 
 #: src/Views/Appearance.vala:333
 msgid "Bubblegum"
-msgstr "Rosa"
+msgstr "Bubblegum"
 
 #: src/Views/Appearance.vala:336
 msgid "Grape"
