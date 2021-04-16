@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-02-17 13:39+0000\n"
+"PO-Revision-Date: 2021-04-16 11:03+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ca/>\n"
@@ -41,7 +41,7 @@ msgstr "Aparença"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Dock & Panel"
-msgstr ""
+msgstr "Acoblador i plafó"
 
 #: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
@@ -89,10 +89,8 @@ msgid "Hot Corners"
 msgstr "Cantons actius"
 
 #: src/Plug.vala:124
-#, fuzzy
-#| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
-msgstr "Mou les finestres a un espai de treball nou:"
+msgstr "Mou les finestres a un espai de treball nou"
 
 #: src/Plug.vala:125
 msgid "Window animations"
@@ -290,7 +288,7 @@ msgstr "Revelació per pressió:"
 
 #: src/Views/Dock.vala:153
 msgid "Panel"
-msgstr ""
+msgstr "Plafó"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
@@ -319,16 +317,12 @@ msgid "Move windows to a new workspace:"
 msgstr "Mou les finestres a un espai de treball nou:"
 
 #: src/Views/Multitasking.vala:100
-#, fuzzy
-#| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
-msgstr "Quan s'obri la pantalla completa:"
+msgstr "Quan s'obri la pantalla completa"
 
 #: src/Views/Multitasking.vala:101
-#, fuzzy
-#| msgid "When maximizing:"
 msgid "When maximizing"
-msgstr "Quan es maximitzi:"
+msgstr "Quan es maximitzi"
 
 #: src/Views/Multitasking.vala:111
 msgid "Window animations:"
