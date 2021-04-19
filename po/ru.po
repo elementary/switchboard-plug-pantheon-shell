@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-03-15 10:24+0000\n"
+"PO-Revision-Date: 2021-04-15 01:48+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -84,10 +84,8 @@ msgid "Hot Corners"
 msgstr "Активные углы"
 
 #: src/Plug.vala:124
-#, fuzzy
-#| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
-msgstr "Переместить окно на новый рабочий стол:"
+msgstr "Переместить окно на новый рабочий стол"
 
 #: src/Plug.vala:125
 msgid "Window animations"
@@ -314,16 +312,12 @@ msgid "Move windows to a new workspace:"
 msgstr "Переместить окно на новый рабочий стол:"
 
 #: src/Views/Multitasking.vala:100
-#, fuzzy
-#| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
-msgstr "При входе в полноэкранный режим:"
+msgstr "При входе в полноэкранный режим"
 
 #: src/Views/Multitasking.vala:101
-#, fuzzy
-#| msgid "When maximizing:"
 msgid "When maximizing"
-msgstr "Во время развертывания:"
+msgstr "Во время развертывания"
 
 #: src/Views/Multitasking.vala:111
 msgid "Window animations:"
