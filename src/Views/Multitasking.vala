@@ -30,6 +30,7 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
     construct {
         margin_start = margin_end = 12;
+        margin_bottom = 24;
         column_spacing = 12;
         row_spacing = 6;
         halign = Gtk.Align.CENTER;
