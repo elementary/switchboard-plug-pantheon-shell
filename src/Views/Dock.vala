@@ -162,6 +162,8 @@ public class PantheonShell.Dock : Gtk.Grid {
             halign = Gtk.Align.START
         };
 
+        margin_start = margin_end = 12;
+        margin_bottom = 24;
         column_spacing = 12;
         halign = Gtk.Align.CENTER;
         row_spacing = 12;
