@@ -41,7 +41,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
         column_spacing = 12;
         halign = Gtk.Align.CENTER;
         row_spacing = 6;
-        margin_start = margin_end = 6;
+        margin_start = margin_end = 12;
         margin_bottom = 24;
 
         var dark_label = new Gtk.Label (_("Style:")) {
