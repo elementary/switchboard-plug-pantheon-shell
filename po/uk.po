@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:12+0000\n"
-"PO-Revision-Date: 2021-02-17 08:00+0000\n"
+"POT-Creation-Date: 2021-04-12 20:23+0000\n"
+"PO-Revision-Date: 2021-04-13 02:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/uk/>\n"
@@ -33,17 +33,18 @@ msgstr "Налаштування доку, дій кутів та зміна т�
 msgid "Wallpaper"
 msgstr "Тло"
 
-#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120 src/Plug.vala:121
 msgid "Appearance"
 msgstr "Вигляд"
 
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115
-msgid "Dock"
-msgstr "Док"
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+msgid "Dock & Panel"
+msgstr "Док і панель"
 
-#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Multitasking"
 msgstr "Багатозадачність"
 
@@ -63,33 +64,37 @@ msgstr "Виявляти притиск"
 msgid "Display"
 msgstr "Екран"
 
-#: src/Plug.vala:117
-msgid "Dark style"
-msgstr "Темний стиль"
-
-#: src/Plug.vala:118
-msgid "Accent color"
-msgstr "Основний колір"
-
-#: src/Plug.vala:119
-msgid "Window animations"
-msgstr "Анімації вікон"
-
-#: src/Plug.vala:120
+#: src/Plug.vala:116
 msgid "Panel translucency"
 msgstr "Напівпрозорість панелі"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:118
+msgid "Dark style"
+msgstr "Темний стиль"
+
+#: src/Plug.vala:119
+msgid "Accent color"
+msgstr "Основний колір"
+
+#: src/Plug.vala:120
 msgid "Text size"
 msgstr "Розмір тексту"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:121
 msgid "Dyslexia-friendly text"
 msgstr "Текст, придатний для читання людьми з дислексією"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:123
 msgid "Hot Corners"
 msgstr "Дії кутів"
+
+#: src/Plug.vala:124
+msgid "Move windows to a new workspace"
+msgstr "Перемістити вікно до нового робочого простору"
+
+#: src/Plug.vala:125
+msgid "Window animations"
+msgstr "Анімації вікон"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -117,77 +122,69 @@ msgstr "Зробити _тлом стільниці"
 msgid "Set selected image to be the new desktop background"
 msgstr "Зробити позначене зображення новим зображенням тла стільниці"
 
-#: src/Views/Appearance.vala:52
+#: src/Views/Appearance.vala:47
 msgid "Style:"
 msgstr "Стиль:"
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Типовий"
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:91
 msgid "Dark"
 msgstr "Темний"
 
-#: src/Views/Appearance.vala:105
+#: src/Views/Appearance.vala:100
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 "Візуальний стиль для складників системи, таких як індикатори Дока і Панелі."
 
-#: src/Views/Appearance.vala:113
+#: src/Views/Appearance.vala:108
 msgid "Schedule:"
 msgstr "Розклад:"
 
-#: src/Views/Appearance.vala:119
+#: src/Views/Appearance.vala:114
 msgid "Disabled"
 msgstr "Вимкнено"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:115
 msgid "Sunset to Sunrise"
 msgstr "Від заходу до світанку"
 
-#: src/Views/Appearance.vala:121
+#: src/Views/Appearance.vala:116
 msgid "Manual"
 msgstr "Посібник"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:118
 msgid "From:"
 msgstr "З:"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:124
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:145
-msgid "Window animations:"
-msgstr "Анімації вікон:"
-
-#: src/Views/Appearance.vala:155
-msgid "Panel translucency:"
-msgstr "Напівпрозорість панелі:"
-
-#: src/Views/Appearance.vala:163
+#: src/Views/Appearance.vala:140
 msgid "Text size:"
 msgstr "Розмір тексту:"
 
-#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Малий"
 
-#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Великий"
 
-#: src/Views/Appearance.vala:174
+#: src/Views/Appearance.vala:151
 msgid "Larger"
 msgstr "Збільшений"
 
-#: src/Views/Appearance.vala:176
+#: src/Views/Appearance.vala:153
 msgid "Dyslexia-friendly text:"
 msgstr "Текст, придатний для читання людьми з дислексією:"
 
-#: src/Views/Appearance.vala:185
+#: src/Views/Appearance.vala:162
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -196,57 +193,61 @@ msgstr ""
 "допомогти покращити читабельність та швидкість читання."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:344
+#: src/Views/Appearance.vala:311
 msgid "Accent:"
 msgstr "Основний колір:"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:315
 msgid "Blueberry"
 msgstr "Чорничний"
 
-#: src/Views/Appearance.vala:351
+#: src/Views/Appearance.vala:318
 msgid "Mint"
 msgstr "М'ятний"
 
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:321
 msgid "Lime"
 msgstr "Лаймовий"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:324
 msgid "Banana"
 msgstr "Банановий"
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:327
 msgid "Orange"
 msgstr "Помаранчевий"
 
-#: src/Views/Appearance.vala:363
+#: src/Views/Appearance.vala:330
 msgid "Strawberry"
 msgstr "Полуничний"
 
-#: src/Views/Appearance.vala:366
+#: src/Views/Appearance.vala:333
 msgid "Bubblegum"
 msgstr "Жуйковий"
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:336
 msgid "Grape"
 msgstr "Виноградний"
 
-#: src/Views/Appearance.vala:372
+#: src/Views/Appearance.vala:339
 msgid "Cocoa"
 msgstr "Какаовий"
 
-#: src/Views/Appearance.vala:375
+#: src/Views/Appearance.vala:342
 msgid "Slate"
 msgstr "Камінно-сірий"
 
-#: src/Views/Appearance.vala:390
+#: src/Views/Appearance.vala:357
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
 "Вжито типово в системі. Застосунки завжди можуть застосувати свій власний "
 "основний колір."
+
+#: src/Views/Dock.vala:31
+msgid "Dock"
+msgstr "Док"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -284,67 +285,79 @@ msgstr "Приховати коли:"
 msgid "Pressure reveal:"
 msgstr "Показувати натиск:"
 
-#: src/Views/Dock.vala:217
+#: src/Views/Dock.vala:153
+msgid "Panel"
+msgstr "Панель"
+
+#: src/Views/Dock.vala:157
+msgid "Panel translucency:"
+msgstr "Напівпрозорість панелі:"
+
+#: src/Views/Dock.vala:239
 #, c-format
 msgid "Monitor %d"
 msgstr "Монітор %d"
 
-#: src/Views/Dock.vala:222
+#: src/Views/Dock.vala:244
 #, c-format
 msgid "Display %d"
 msgstr "Екран %d"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:40
 msgid "When the cursor enters the corner of the display:"
 msgstr "Коли курсор потрапляє в куток екрану:"
 
-#: src/Views/Multitasking.vala:76
+#: src/Views/Multitasking.vala:79
 msgid "Custom command:"
 msgstr "Доступні команди:"
 
-#: src/Views/Multitasking.vala:96
+#: src/Views/Multitasking.vala:94
 msgid "Move windows to a new workspace:"
 msgstr "Перемістити вікно до нового робочого простору:"
 
-#: src/Views/Multitasking.vala:102
-msgid "When entering fullscreen:"
-msgstr "Під час входу в повноекранний режим:"
+#: src/Views/Multitasking.vala:100
+msgid "When entering fullscreen"
+msgstr "Під час входу в повноекранний режим"
 
-#: src/Views/Multitasking.vala:109
-msgid "When maximizing:"
-msgstr "Під час розгортання:"
+#: src/Views/Multitasking.vala:101
+msgid "When maximizing"
+msgstr "Під час розгортання"
 
-#: src/Views/Multitasking.vala:148
+#: src/Views/Multitasking.vala:111
+msgid "Window animations:"
+msgstr "Анімації вікон:"
+
+#: src/Views/Multitasking.vala:152
 msgid "Do nothing"
 msgstr "Нічого не робити"
 
 #. none
-#: src/Views/Multitasking.vala:149
+#: src/Views/Multitasking.vala:153
 msgid "Multitasking View"
 msgstr "Багатозадачне подання"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:150
+#: src/Views/Multitasking.vala:154
 msgid "Maximize current window"
 msgstr "Розгорнути поточне вікно"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:151
+#: src/Views/Multitasking.vala:155
 msgid "Show Applications Menu"
 msgstr "Показати меню застосунків"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:156
 msgid "Show all windows"
 msgstr "Показати всі вікна"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:157
 msgid "Switch to new workspace"
 msgstr "Перейти до нового робочого простору"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:158
 msgid "Execute custom command"
 msgstr "Виконати призначену команду"
 

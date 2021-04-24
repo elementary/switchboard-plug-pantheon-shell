@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-17 01:12+0000\n"
+"POT-Creation-Date: 2021-04-12 20:23+0000\n"
 "PO-Revision-Date: 2021-02-17 13:39+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -32,17 +32,18 @@ msgstr "Configurar el dock, esquinas activas y fondo de escritorio"
 msgid "Wallpaper"
 msgstr "Fondo de pantalla"
 
-#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120 src/Plug.vala:121
 msgid "Appearance"
 msgstr "Apariencia"
 
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115
-msgid "Dock"
-msgstr "Dock"
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+msgid "Dock & Panel"
+msgstr ""
 
-#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Multitasking"
 msgstr "Multitarea"
 
@@ -62,33 +63,39 @@ msgstr "Mostrar al presionar"
 msgid "Display"
 msgstr "Pantalla"
 
-#: src/Plug.vala:117
-msgid "Dark style"
-msgstr "Estilo oscuro"
-
-#: src/Plug.vala:118
-msgid "Accent color"
-msgstr "Color de realce"
-
-#: src/Plug.vala:119
-msgid "Window animations"
-msgstr "Animaciones de ventanas"
-
-#: src/Plug.vala:120
+#: src/Plug.vala:116
 msgid "Panel translucency"
 msgstr "Traslucidez del panel"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:118
+msgid "Dark style"
+msgstr "Estilo oscuro"
+
+#: src/Plug.vala:119
+msgid "Accent color"
+msgstr "Color de realce"
+
+#: src/Plug.vala:120
 msgid "Text size"
 msgstr "Tamaño del texto"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:121
 msgid "Dyslexia-friendly text"
 msgstr "Texto para disléxicos"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:123
 msgid "Hot Corners"
 msgstr "Esquinas activas"
+
+#: src/Plug.vala:124
+#, fuzzy
+#| msgid "Move windows to a new workspace:"
+msgid "Move windows to a new workspace"
+msgstr "Mover ventanas a un área de trabajo nueva:"
+
+#: src/Plug.vala:125
+msgid "Window animations"
+msgstr "Animaciones de ventanas"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -116,78 +123,70 @@ msgstr "Establecer como _fondo de escritorio"
 msgid "Set selected image to be the new desktop background"
 msgstr "Configurar la imagen seleccionada como fondo de escritorio"
 
-#: src/Views/Appearance.vala:52
+#: src/Views/Appearance.vala:47
 msgid "Style:"
 msgstr "Estilo:"
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Predeterminado"
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:91
 msgid "Dark"
 msgstr "Oscuro"
 
-#: src/Views/Appearance.vala:105
+#: src/Views/Appearance.vala:100
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 "Estilo visual para componentes del sistema tales como los indicadores del "
 "panel y el dock."
 
-#: src/Views/Appearance.vala:113
+#: src/Views/Appearance.vala:108
 msgid "Schedule:"
 msgstr "Programación:"
 
-#: src/Views/Appearance.vala:119
+#: src/Views/Appearance.vala:114
 msgid "Disabled"
 msgstr "Desactivado"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:115
 msgid "Sunset to Sunrise"
 msgstr "Atardecer al amanecer"
 
-#: src/Views/Appearance.vala:121
+#: src/Views/Appearance.vala:116
 msgid "Manual"
 msgstr "Manual"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:118
 msgid "From:"
 msgstr "Desde:"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:124
 msgid "To:"
 msgstr "Hasta:"
 
-#: src/Views/Appearance.vala:145
-msgid "Window animations:"
-msgstr "Animación de ventanas:"
-
-#: src/Views/Appearance.vala:155
-msgid "Panel translucency:"
-msgstr "Translucidez del panel:"
-
-#: src/Views/Appearance.vala:163
+#: src/Views/Appearance.vala:140
 msgid "Text size:"
 msgstr "Tamaño del texto:"
 
-#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Pequeño"
 
-#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Grande"
 
-#: src/Views/Appearance.vala:174
+#: src/Views/Appearance.vala:151
 msgid "Larger"
 msgstr "Más grande"
 
-#: src/Views/Appearance.vala:176
+#: src/Views/Appearance.vala:153
 msgid "Dyslexia-friendly text:"
 msgstr "Texto para disléxicos:"
 
-#: src/Views/Appearance.vala:185
+#: src/Views/Appearance.vala:162
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -196,57 +195,61 @@ msgstr ""
 "caracteres puede ayudar a mejorar la legibilidad y la velocidad de lectura."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:344
+#: src/Views/Appearance.vala:311
 msgid "Accent:"
 msgstr "Realce:"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:315
 msgid "Blueberry"
 msgstr "Arándano"
 
-#: src/Views/Appearance.vala:351
+#: src/Views/Appearance.vala:318
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:321
 msgid "Lime"
 msgstr "Lima"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:324
 msgid "Banana"
 msgstr "Plátano"
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:327
 msgid "Orange"
 msgstr "Naranja"
 
-#: src/Views/Appearance.vala:363
+#: src/Views/Appearance.vala:330
 msgid "Strawberry"
 msgstr "Fresa"
 
-#: src/Views/Appearance.vala:366
+#: src/Views/Appearance.vala:333
 msgid "Bubblegum"
 msgstr "Chicle"
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:336
 msgid "Grape"
 msgstr "Uva"
 
-#: src/Views/Appearance.vala:372
+#: src/Views/Appearance.vala:339
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:375
+#: src/Views/Appearance.vala:342
 msgid "Slate"
 msgstr "Pizarra"
 
-#: src/Views/Appearance.vala:390
+#: src/Views/Appearance.vala:357
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
 "Se utiliza de manera predeterminada en todo el sistema. Las aplicaciones "
 "pueden escoger su propio color."
+
+#: src/Views/Dock.vala:31
+msgid "Dock"
+msgstr "Dock"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -284,67 +287,83 @@ msgstr "Ocultar cuando:"
 msgid "Pressure reveal:"
 msgstr "Mostrar al presionar:"
 
-#: src/Views/Dock.vala:217
+#: src/Views/Dock.vala:153
+msgid "Panel"
+msgstr ""
+
+#: src/Views/Dock.vala:157
+msgid "Panel translucency:"
+msgstr "Translucidez del panel:"
+
+#: src/Views/Dock.vala:239
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:222
+#: src/Views/Dock.vala:244
 #, c-format
 msgid "Display %d"
 msgstr "Pantalla %d"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:40
 msgid "When the cursor enters the corner of the display:"
 msgstr "Cuando el cursor entre a una esquina de la pantalla:"
 
-#: src/Views/Multitasking.vala:76
+#: src/Views/Multitasking.vala:79
 msgid "Custom command:"
 msgstr "Orden personalizada:"
 
-#: src/Views/Multitasking.vala:96
+#: src/Views/Multitasking.vala:94
 msgid "Move windows to a new workspace:"
 msgstr "Mover ventanas a un área de trabajo nueva:"
 
-#: src/Views/Multitasking.vala:102
-msgid "When entering fullscreen:"
+#: src/Views/Multitasking.vala:100
+#, fuzzy
+#| msgid "When entering fullscreen:"
+msgid "When entering fullscreen"
 msgstr "Al activar el modo de pantalla completa:"
 
-#: src/Views/Multitasking.vala:109
-msgid "When maximizing:"
+#: src/Views/Multitasking.vala:101
+#, fuzzy
+#| msgid "When maximizing:"
+msgid "When maximizing"
 msgstr "Al maximizar:"
 
-#: src/Views/Multitasking.vala:148
+#: src/Views/Multitasking.vala:111
+msgid "Window animations:"
+msgstr "Animación de ventanas:"
+
+#: src/Views/Multitasking.vala:152
 msgid "Do nothing"
 msgstr "No hacer nada"
 
 #. none
-#: src/Views/Multitasking.vala:149
+#: src/Views/Multitasking.vala:153
 msgid "Multitasking View"
 msgstr "Vista multitarea"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:150
+#: src/Views/Multitasking.vala:154
 msgid "Maximize current window"
 msgstr "Maximizar ventana actual"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:151
+#: src/Views/Multitasking.vala:155
 msgid "Show Applications Menu"
 msgstr "Mostrar menú de aplicaciones"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:156
 msgid "Show all windows"
 msgstr "Mostrar todas las ventanas"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:157
 msgid "Switch to new workspace"
 msgstr "Cambiar a un área de trabajo nueva"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:158
 msgid "Execute custom command"
 msgstr "Ejecutar orden personalizada"
 
