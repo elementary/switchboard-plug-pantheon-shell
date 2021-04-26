@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-04-15 01:48+0000\n"
+"PO-Revision-Date: 2021-04-24 13:12+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -36,7 +36,7 @@ msgstr "Вид"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Dock & Panel"
-msgstr ""
+msgstr "Док и панель"
 
 #: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
@@ -283,7 +283,7 @@ msgstr "Выявление давления:"
 
 #: src/Views/Dock.vala:153
 msgid "Panel"
-msgstr ""
+msgstr "Панель"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
