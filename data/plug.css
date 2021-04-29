@@ -83,5 +83,7 @@ radiobutton .card {
 
 .color-button.auto radio {
     background-image: url("auto.png");
-    background-size: cover;
+    background-position: -1px -1px;
+    background-repeat: no-repeat;
+    background-size: calc(100% + 2px);
 }
