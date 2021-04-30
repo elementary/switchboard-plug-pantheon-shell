@@ -1,5 +1,5 @@
 /*
-* Copyright 2018–2021 elementary, Inc. (https://elementary.io)
+* Copyright (c) 2018 elementary LLC. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -79,11 +79,4 @@ radiobutton .card {
             alpha (@accent_color_300, 0.1),
             alpha (@accent_color_500, 0.1)
         );
-}
-
-.color-button.auto radio {
-    background-image: url("auto.png");
-    background-position: -1px -1px;
-    background-repeat: no-repeat;
-    background-size: calc(100% + 2px);
 }
