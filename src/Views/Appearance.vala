@@ -422,6 +422,8 @@ public class PantheonShell.Appearance : Gtk.Grid {
             context.add_class (theme);
 
             realize.connect (() => {
+                active = preference == granite_settings.prefers_accent_color;
+
                 toggled.connect (() => {
                     if (preference != Granite.Settings.AccentColor.NO_PREFERENCE) {
                         interface_settings.set_string (
