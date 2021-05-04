@@ -37,6 +37,47 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
     private Granite.Widgets.ModeButton text_size_modebutton;
 
+    private enum AccentColor {
+        NO_PREFERENCE,
+        RED,
+        ORANGE,
+        YELLOW,
+        GREEN,
+        MINT,
+        BLUE,
+        PURPLE,
+        PINK,
+        BROWN,
+        GRAY;
+
+        public string to_string () {
+            switch (this) {
+                case RED:
+                    return "strawberry";
+                case ORANGE:
+                    return "orange";
+                case YELLOW:
+                    return "banana";
+                case GREEN:
+                    return "lime";
+                case MINT:
+                    return "mint";
+                case BLUE:
+                    return "blueberry";
+                case PURPLE:
+                    return "grape";
+                case PINK:
+                    return "bubblegum";
+                case BROWN:
+                    return "cocoa";
+                case GRAY:
+                    return "slate";
+            }
+
+            return "auto";
+        }
+    }
+
     construct {
         column_spacing = 12;
         halign = Gtk.Align.CENTER;
@@ -313,37 +354,37 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var accent_label = new Gtk.Label (_("Accent:"));
             accent_label.halign = Gtk.Align.END;
 
-            var blueberry_button = new PrefersAccentColorButton ("blueberry", pantheon_act, AccentColor.BLUE);
+            var blueberry_button = new PrefersAccentColorButton (pantheon_act, AccentColor.BLUE);
             blueberry_button.tooltip_text = _("Blueberry");
 
-            var mint_button = new PrefersAccentColorButton ("mint", pantheon_act, AccentColor.MINT, blueberry_button);
+            var mint_button = new PrefersAccentColorButton (pantheon_act, AccentColor.MINT, blueberry_button);
             mint_button.tooltip_text = _("Mint");
 
-            var lime_button = new PrefersAccentColorButton ("lime", pantheon_act, AccentColor.GREEN, blueberry_button);
+            var lime_button = new PrefersAccentColorButton (pantheon_act, AccentColor.GREEN, blueberry_button);
             lime_button.tooltip_text = _("Lime");
 
-            var banana_button = new PrefersAccentColorButton ("banana", pantheon_act, AccentColor.YELLOW, blueberry_button);
+            var banana_button = new PrefersAccentColorButton (pantheon_act, AccentColor.YELLOW, blueberry_button);
             banana_button.tooltip_text = _("Banana");
 
-            var orange_button = new PrefersAccentColorButton ("orange", pantheon_act, AccentColor.ORANGE, blueberry_button);
+            var orange_button = new PrefersAccentColorButton (pantheon_act, AccentColor.ORANGE, blueberry_button);
             orange_button.tooltip_text = _("Orange");
 
-            var strawberry_button = new PrefersAccentColorButton ("strawberry", pantheon_act, AccentColor.RED, blueberry_button);
+            var strawberry_button = new PrefersAccentColorButton (pantheon_act, AccentColor.RED, blueberry_button);
             strawberry_button.tooltip_text = _("Strawberry");
 
-            var bubblegum_button = new PrefersAccentColorButton ("bubblegum", pantheon_act, AccentColor.PINK, blueberry_button);
+            var bubblegum_button = new PrefersAccentColorButton (pantheon_act, AccentColor.PINK, blueberry_button);
             bubblegum_button.tooltip_text = _("Bubblegum");
 
-            var grape_button = new PrefersAccentColorButton ("grape", pantheon_act, AccentColor.PURPLE, blueberry_button);
+            var grape_button = new PrefersAccentColorButton (pantheon_act, AccentColor.PURPLE, blueberry_button);
             grape_button.tooltip_text = _("Grape");
 
-            var cocoa_button = new PrefersAccentColorButton ("cocoa", pantheon_act, AccentColor.BROWN, blueberry_button);
+            var cocoa_button = new PrefersAccentColorButton (pantheon_act, AccentColor.BROWN, blueberry_button);
             cocoa_button.tooltip_text = _("Cocoa");
 
-            var slate_button = new PrefersAccentColorButton ("slate", pantheon_act, AccentColor.GRAY, blueberry_button);
+            var slate_button = new PrefersAccentColorButton (pantheon_act, AccentColor.GRAY, blueberry_button);
             slate_button.tooltip_text = _("Slate");
 
-            var auto_button = new PrefersAccentColorButton ("auto", pantheon_act, AccentColor.NO_PREFERENCE, blueberry_button);
+            var auto_button = new PrefersAccentColorButton (pantheon_act, AccentColor.NO_PREFERENCE, blueberry_button);
             auto_button.tooltip_text = _("Automatic based on wallpaper");
 
             var accent_grid = new Gtk.Grid ();
@@ -389,49 +430,43 @@ public class PantheonShell.Appearance : Gtk.Grid {
     }
 
     private class PrefersAccentColorButton : Gtk.RadioButton {
-        public string theme { get; construct; }
-        public AccentColor preference { get; construct; }
-
-        private Pantheon.AccountsService? pantheon_act = null;
+        public AccentColor color { get; construct; }
+        public Pantheon.AccountsService? pantheon_act { get; construct; default = null; }
 
         private static GLib.Settings interface_settings;
-        private static string current_accent;
 
-        public PrefersAccentColorButton (string _theme, Pantheon.AccountsService? _pantheon_act, AccentColor _preference, Gtk.RadioButton? group_member = null) {
+        public PrefersAccentColorButton (Pantheon.AccountsService? pantheon_act, AccentColor color, Gtk.RadioButton? group_member = null) {
             Object (
-                theme: _theme,
-                preference: _preference,
+                pantheon_act: pantheon_act,
+                color: color,
                 group: group_member
             );
-
-            pantheon_act = _pantheon_act;
         }
 
         static construct {
             interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
             var current_stylesheet = interface_settings.get_string (STYLESHEET_KEY);
-            current_accent = current_stylesheet.replace (STYLESHEET_PREFIX, "");
         }
 
         construct {
             unowned Gtk.StyleContext context = get_style_context ();
-            context.add_class ("color-button");
-            context.add_class (theme);
+            context.add_class (Granite.STYLE_CLASS_COLOR_BUTTON);
+            context.add_class (color.to_string ());
 
             realize.connect (() => {
-                active = preference == pantheon_act.prefers_accent_color;
+                active = color == pantheon_act.prefers_accent_color;
 
                 toggled.connect (() => {
-                    if (preference != AccentColor.NO_PREFERENCE) {
+                    if (color != AccentColor.NO_PREFERENCE) {
                         interface_settings.set_string (
                             STYLESHEET_KEY,
-                            STYLESHEET_PREFIX + theme
+                            STYLESHEET_PREFIX + color.to_string ()
                         );
                     }
 
                     if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersAccentColor") != null) {
-                        pantheon_act.prefers_accent_color = preference;
+                        pantheon_act.prefers_accent_color = color;
                     }
                 });
             });
@@ -502,19 +537,5 @@ public class PantheonShell.Appearance : Gtk.Grid {
         time_double += (double) date_time.get_minute () / 60;
 
         return time_double;
-    }
-
-    private enum AccentColor {
-        NO_PREFERENCE,
-        RED,
-        ORANGE,
-        YELLOW,
-        GREEN,
-        MINT,
-        BLUE,
-        PURPLE,
-        PINK,
-        BROWN,
-        GRAY
     }
 }
