@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-04 18:26+0000\n"
-"PO-Revision-Date: 2021-05-05 08:46+0000\n"
-"Last-Translator: Chengyu Liu <wer5lcy@live.cn>\n"
+"PO-Revision-Date: 2021-05-05 21:17+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -40,7 +40,7 @@ msgstr "外观"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Dock & Panel"
-msgstr "Dock & Panel"
+msgstr "程序坞与顶栏"
 
 #: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
