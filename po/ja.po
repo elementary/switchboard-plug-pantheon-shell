@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-04 18:26+0000\n"
-"PO-Revision-Date: 2021-04-13 02:14+0000\n"
+"PO-Revision-Date: 2021-05-05 03:18+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -234,7 +234,7 @@ msgstr "スレート"
 
 #: src/Views/Appearance.vala:388
 msgid "Automatic based on wallpaper"
-msgstr ""
+msgstr "壁紙に基づいて自動的に設定"
 
 #: src/Views/Appearance.vala:404
 msgid ""
