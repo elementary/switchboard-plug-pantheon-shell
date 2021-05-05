@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-04 18:26+0000\n"
-"PO-Revision-Date: 2021-05-04 12:26+0000\n"
+"PO-Revision-Date: 2021-05-05 21:17+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
@@ -239,7 +239,7 @@ msgstr "Liuskekivi"
 
 #: src/Views/Appearance.vala:388
 msgid "Automatic based on wallpaper"
-msgstr ""
+msgstr "Automaattinen taustakuvaan pohjautuen"
 
 #: src/Views/Appearance.vala:404
 msgid ""
@@ -309,7 +309,7 @@ msgstr "Näyttö %d"
 
 #: src/Views/Multitasking.vala:42
 msgid "When the cursor enters the corner of the display:"
-msgstr "Kun hiiren osoitin kohdistetaan näytön reunaan:"
+msgstr "Kun hiiren osoitin kohdistetaan näytön kulmaan:"
 
 #: src/Views/Multitasking.vala:81
 msgid "Custom command:"
