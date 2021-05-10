@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-04 18:26+0000\n"
-"PO-Revision-Date: 2021-05-05 21:17+0000\n"
+"PO-Revision-Date: 2021-05-10 20:45+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -81,7 +81,7 @@ msgstr "Textgröße"
 
 #: src/Plug.vala:121
 msgid "Dyslexia-friendly text"
-msgstr "Leicht verständlicher Text"
+msgstr "Dyslexie-freundlicher Text"
 
 #: src/Plug.vala:123
 msgid "Hot Corners"
@@ -183,7 +183,6 @@ msgid "Dyslexia-friendly text:"
 msgstr "Leicht verständlicher Text:"
 
 #: src/Views/Appearance.vala:203
-#, fuzzy
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
