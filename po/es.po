@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-04 18:26+0000\n"
-"PO-Revision-Date: 2021-05-19 03:38+0000\n"
+"PO-Revision-Date: 2021-05-19 09:24+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
@@ -239,7 +239,7 @@ msgstr "Pizarra"
 
 #: src/Views/Appearance.vala:388
 msgid "Automatic based on wallpaper"
-msgstr ""
+msgstr "Automático, en función del fondo"
 
 #: src/Views/Appearance.vala:404
 msgid ""
@@ -291,7 +291,7 @@ msgstr "Mostrar al presionar:"
 
 #: src/Views/Dock.vala:153
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
@@ -320,16 +320,12 @@ msgid "Move windows to a new workspace:"
 msgstr "Mover ventanas a un área de trabajo nueva:"
 
 #: src/Views/Multitasking.vala:102
-#, fuzzy
-#| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
-msgstr "Al activar el modo de pantalla completa:"
+msgstr "Al activar el modo de pantalla completa"
 
 #: src/Views/Multitasking.vala:103
-#, fuzzy
-#| msgid "When maximizing:"
 msgid "When maximizing"
-msgstr "Al maximizar:"
+msgstr "Al maximizar"
 
 #: src/Views/Multitasking.vala:113
 msgid "Window animations:"
