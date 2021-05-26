@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2021-05-04 18:26+0000\n"
+"PO-Revision-Date: 2021-04-24 13:12+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-25 05:57+0000\n"
 
 #: src/Plug.vala:41
@@ -28,21 +28,20 @@ msgstr "Настроить док-панель, активные углы и с�
 msgid "Wallpaper"
 msgstr "Фон рабочего стола"
 
-#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120 src/Plug.vala:121
 msgid "Appearance"
 msgstr "Вид"
 
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115
-msgid "Dock"
-msgstr "Док-панель"
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+msgid "Dock & Panel"
+msgstr "Док и панель"
 
-#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
-#, fuzzy
-#| msgid "Multitasking View"
+#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Multitasking"
-msgstr "Многозадачный вид"
+msgstr "Многозадачность"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -60,39 +59,37 @@ msgstr "Выявление давления"
 msgid "Display"
 msgstr "Отображение"
 
-#: src/Plug.vala:117
-msgid "Dark style"
-msgstr ""
+#: src/Plug.vala:116
+msgid "Panel translucency"
+msgstr "Прозрачность панели"
 
 #: src/Plug.vala:118
-msgid "Accent color"
-msgstr ""
+msgid "Dark style"
+msgstr "Темный стиль"
 
 #: src/Plug.vala:119
-#, fuzzy
-#| msgid "Window animations:"
-msgid "Window animations"
-msgstr "Анимации окон:"
+msgid "Accent color"
+msgstr "Цветовой акцент"
 
 #: src/Plug.vala:120
-#, fuzzy
-#| msgid "Panel translucency:"
-msgid "Panel translucency"
-msgstr "Прозрачность панели:"
+msgid "Text size"
+msgstr "Размер текста"
 
 #: src/Plug.vala:121
-#, fuzzy
-#| msgid "Text size:"
-msgid "Text size"
-msgstr "Размер текста:"
-
-#: src/Plug.vala:122
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "Текст, подходящий для чтения людьми с дислексией"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:123
 msgid "Hot Corners"
 msgstr "Активные углы"
+
+#: src/Plug.vala:124
+msgid "Move windows to a new workspace"
+msgstr "Переместить окно на новый рабочий стол"
+
+#: src/Plug.vala:125
+msgid "Window animations"
+msgstr "Анимации окон"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -120,131 +117,137 @@ msgstr "Установить как фон рабочего _стола"
 msgid "Set selected image to be the new desktop background"
 msgstr "Назначить выбранное изображение новым фоном рабочего стола"
 
-#: src/Views/Appearance.vala:52
+#: src/Views/Appearance.vala:88
 msgid "Style:"
-msgstr ""
+msgstr "Стиль:"
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
 #: src/Views/Dock.vala:42
 msgid "Default"
-msgstr "Обычный"
+msgstr "По умолчанию"
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:132
 msgid "Dark"
-msgstr ""
+msgstr "Тёмный"
 
-#: src/Views/Appearance.vala:105
+#: src/Views/Appearance.vala:141
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
+"Визуальный стиль для составляющих системы, таких как индикаторы Дока и "
+"Панели."
 
-#: src/Views/Appearance.vala:113
+#: src/Views/Appearance.vala:149
 msgid "Schedule:"
 msgstr "Расписание:"
 
-#: src/Views/Appearance.vala:119
+#: src/Views/Appearance.vala:155
 msgid "Disabled"
 msgstr "Отключено"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:156
 msgid "Sunset to Sunrise"
 msgstr "От заката до рассвета"
 
-#: src/Views/Appearance.vala:121
+#: src/Views/Appearance.vala:157
 msgid "Manual"
 msgstr "Вручную"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:159
 msgid "From:"
 msgstr "С:"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:165
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:145
-msgid "Window animations:"
-msgstr "Анимации окон:"
-
-#: src/Views/Appearance.vala:155
-msgid "Panel translucency:"
-msgstr "Прозрачность панели:"
-
-#: src/Views/Appearance.vala:163
+#: src/Views/Appearance.vala:181
 msgid "Text size:"
 msgstr "Размер текста:"
 
-#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Маленький"
 
-#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Большой"
 
-#: src/Views/Appearance.vala:174
+#: src/Views/Appearance.vala:192
 msgid "Larger"
 msgstr "Больше"
 
-#: src/Views/Appearance.vala:176
+#: src/Views/Appearance.vala:194
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "Текст, подходящий для чтения людьми с дислексией:"
 
-#: src/Views/Appearance.vala:185
+#: src/Views/Appearance.vala:203
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"Утолщенная нижняя часть и увеличенный интервал между символами могут помочь "
+"улучшить читабельность и скорость чтения."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:344
-msgid "Accent:"
-msgstr ""
-
-#: src/Views/Appearance.vala:348
-msgid "Blueberry"
-msgstr ""
-
-#: src/Views/Appearance.vala:351
-msgid "Mint"
-msgstr ""
-
 #: src/Views/Appearance.vala:354
+msgid "Accent:"
+msgstr "Основной цвет:"
+
+#: src/Views/Appearance.vala:358
+msgid "Blueberry"
+msgstr "Черничный"
+
+#: src/Views/Appearance.vala:361
+msgid "Mint"
+msgstr "Мятный"
+
+#: src/Views/Appearance.vala:364
 msgid "Lime"
-msgstr ""
+msgstr "Лаймовый"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:367
 msgid "Banana"
-msgstr ""
+msgstr "Банановий"
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:370
 msgid "Orange"
-msgstr ""
+msgstr "Оранжевый"
 
-#: src/Views/Appearance.vala:363
+#: src/Views/Appearance.vala:373
 msgid "Strawberry"
-msgstr ""
+msgstr "Клубничный"
 
-#: src/Views/Appearance.vala:366
+#: src/Views/Appearance.vala:376
 msgid "Bubblegum"
-msgstr ""
+msgstr "Бубль-гумовый"
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:379
 msgid "Grape"
-msgstr ""
+msgstr "Виноградный"
 
-#: src/Views/Appearance.vala:372
+#: src/Views/Appearance.vala:382
 msgid "Cocoa"
-msgstr ""
+msgstr "Какаовый"
 
-#: src/Views/Appearance.vala:375
+#: src/Views/Appearance.vala:385
 msgid "Slate"
+msgstr "Каменно-серый"
+
+#: src/Views/Appearance.vala:388
+msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:390
+#: src/Views/Appearance.vala:404
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"Используется в системе по умолчанию. Приложения всегда могут использовать "
+"свой собственный цветовой акцент."
+
+#: src/Views/Dock.vala:31
+msgid "Dock"
+msgstr "Док-панель"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -282,55 +285,79 @@ msgstr "Скрывать, если:"
 msgid "Pressure reveal:"
 msgstr "Выявление давления:"
 
-#: src/Views/Dock.vala:217
+#: src/Views/Dock.vala:153
+msgid "Panel"
+msgstr "Панель"
+
+#: src/Views/Dock.vala:157
+msgid "Panel translucency:"
+msgstr "Прозрачность панели:"
+
+#: src/Views/Dock.vala:241
 #, c-format
 msgid "Monitor %d"
 msgstr "Монитор %d"
 
-#: src/Views/Dock.vala:222
+#: src/Views/Dock.vala:246
 #, c-format
 msgid "Display %d"
 msgstr "Экран %d"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:42
 msgid "When the cursor enters the corner of the display:"
 msgstr "При наведении курсора в угол экрана:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:81
 msgid "Custom command:"
 msgstr "Пользовательская команда:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+msgid "Move windows to a new workspace:"
+msgstr "Переместить окно на новый рабочий стол:"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen"
+msgstr "При входе в полноэкранный режим"
+
+#: src/Views/Multitasking.vala:103
+msgid "When maximizing"
+msgstr "Во время развертывания"
+
+#: src/Views/Multitasking.vala:113
+msgid "Window animations:"
+msgstr "Анимации окон:"
+
+#: src/Views/Multitasking.vala:154
 msgid "Do nothing"
 msgstr "Ничего не делать"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
 msgstr "Многозадачный вид"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:156
 msgid "Maximize current window"
 msgstr "Развернуть текущее окно"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:157
 msgid "Show Applications Menu"
 msgstr "Показать меню приложений"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:158
 msgid "Show all windows"
 msgstr "Показать все окна"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
 msgstr "Переключиться на новый рабочий стол"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:160
 msgid "Execute custom command"
 msgstr "Выполнить пользовательскую команду"
 
@@ -358,7 +385,7 @@ msgstr "Импорт фото"
 msgid "Import"
 msgstr "Импортировать"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "Отменить"
 
@@ -403,14 +430,13 @@ msgstr "1 дня"
 msgid "Show each photo for"
 msgstr "Показывать каждое фото в течение"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "Установить как слайд-шоу на рабочем столе"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
-msgstr "Создать слайд-шоу"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+msgid "Create Slideshow"
+msgstr "Создать слайдшоу"
 
 #~ msgid "Normal"
 #~ msgstr "Нормальный"

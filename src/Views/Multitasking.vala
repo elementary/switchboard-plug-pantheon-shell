@@ -23,20 +23,28 @@ public class PantheonShell.Multitasking : Gtk.Grid {
     private GLib.Settings behavior_settings;
     private Gtk.Revealer custom_command_revealer;
     private Gee.HashSet<string> keys_using_custom_command = new Gee.HashSet<string> ();
+
     private const string CUSTOM_COMMAND_ID = "5";
+    private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
+    private const string ANIMATIONS_KEY = "enable-animations";
 
     construct {
+        margin_start = margin_end = 12;
+        margin_bottom = 24;
         column_spacing = 12;
-        row_spacing = 24;
+        row_spacing = 6;
         halign = Gtk.Align.CENTER;
 
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
 
         custom_command_revealer = new Gtk.Revealer ();
 
-        var expl = new Gtk.Label (_("When the cursor enters the corner of the display:"));
-        expl.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-        expl.halign = Gtk.Align.START;
+        var hotcorner_title = new Gtk.Label (_("When the cursor enters the corner of the display:")) {
+            halign = Gtk.Align.START,
+            margin_bottom = 6,
+            margin_top = 6
+        };
+        hotcorner_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var topleft = create_hotcorner ();
         topleft.changed.connect (() => hotcorner_changed ("hotcorner-topleft", topleft));
@@ -85,15 +93,49 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
         custom_command_revealer.add (cc_grid);
 
-        attach (expl, 0, 0, 3, 1);
+        var workspaces_label = new Gtk.Label (_("Move windows to a new workspace:")) {
+            halign = Gtk.Align.END,
+            margin_top = 36,
+            margin_bottom = 12
+        };
+
+        var fullscreen_checkbutton = new Gtk.CheckButton.with_label (_("When entering fullscreen"));
+        var maximize_checkbutton = new Gtk.CheckButton.with_label (_("When maximizing"));
+
+        var checkbutton_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin_top = 36,
+            margin_bottom = 12
+        };
+        checkbutton_grid.add (fullscreen_checkbutton);
+        checkbutton_grid.add (maximize_checkbutton);
+
+        var animations_label = new Gtk.Label (_("Window animations:")) {
+            halign = Gtk.Align.END
+        };
+
+        var animations_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
+
+        attach (hotcorner_title, 0, 0, 3);
         attach (icon, 1, 1, 1, 3);
         attach (topleft, 0, 1, 1, 1);
         attach (topright, 2, 1, 1, 1);
         attach (bottomleft, 0, 3, 1, 1);
         attach (bottomright, 2, 3, 1, 1);
         attach (custom_command_revealer, 0, 4, 2, 1);
+        attach (workspaces_label, 0, 5);
+        attach (checkbutton_grid, 1, 5, 2);
+        attach (animations_label, 0, 9);
+        attach (animations_switch, 1, 9);
+
+        var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
+        animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
         behavior_settings.bind ("hotcorner-custom-command", custom_command, "text", GLib.SettingsBindFlags.DEFAULT);
+        behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
+        behavior_settings.bind ("move-maximized-workspace", maximize_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
     }
 
     private void hotcorner_changed (string settings_key, Gtk.ComboBoxText combo) {

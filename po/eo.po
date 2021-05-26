@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-03 19:57+0000\n"
+"POT-Creation-Date: 2021-05-04 18:26+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -32,17 +32,18 @@ msgstr "Agordi la butonbreton, sensemajn angulojn, kaj fonon"
 msgid "Wallpaper"
 msgstr "Fono"
 
-#: src/Plug.vala:59 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
-#: src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120 src/Plug.vala:121
 msgid "Appearance"
 msgstr "Aspekto"
 
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115
-msgid "Dock"
-msgstr "Butonbreto"
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+msgid "Dock & Panel"
+msgstr ""
 
-#: src/Plug.vala:66 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:125
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
@@ -64,39 +65,45 @@ msgstr "Rivelo per klako"
 msgid "Display"
 msgstr "Ekrano"
 
-#: src/Plug.vala:117
-msgid "Dark style"
-msgstr ""
-
-#: src/Plug.vala:118
-msgid "Accent color"
-msgstr ""
-
-#: src/Plug.vala:119
-#, fuzzy
-#| msgid "Window animations:"
-msgid "Window animations"
-msgstr "Fenestraj animacioj:"
-
-#: src/Plug.vala:120
+#: src/Plug.vala:116
 #, fuzzy
 #| msgid "Panel translucency:"
 msgid "Panel translucency"
 msgstr "Panel travidebleco:"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:118
+msgid "Dark style"
+msgstr ""
+
+#: src/Plug.vala:119
+msgid "Accent color"
+msgstr ""
+
+#: src/Plug.vala:120
 #, fuzzy
 #| msgid "Text size:"
 msgid "Text size"
 msgstr "Teksta amplekso:"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:121
 msgid "Dyslexia-friendly text"
 msgstr ""
 
-#: src/Plug.vala:124
+#: src/Plug.vala:123
 msgid "Hot Corners"
 msgstr "Sensemaj Anguloj"
+
+#: src/Plug.vala:124
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Move windows to a new workspace"
+msgstr "Salti al nova laborspaco"
+
+#: src/Plug.vala:125
+#, fuzzy
+#| msgid "Window animations:"
+msgid "Window animations"
+msgstr "Fenestraj animacioj:"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -124,131 +131,131 @@ msgstr "Agordi kiel Labortabla _Fono"
 msgid "Set selected image to be the new desktop background"
 msgstr "Agordi la elektitan bildon kiel novan labortablan fonon"
 
-#: src/Views/Appearance.vala:52
+#: src/Views/Appearance.vala:88
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:72 src/Views/Appearance.vala:172
+#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Apriora"
 
-#: src/Views/Appearance.vala:96
+#: src/Views/Appearance.vala:132
 msgid "Dark"
 msgstr ""
 
-#: src/Views/Appearance.vala:105
+#: src/Views/Appearance.vala:141
 msgid "Visual style for system components like the Dock and Panel indicators."
 msgstr ""
 
-#: src/Views/Appearance.vala:113
+#: src/Views/Appearance.vala:149
 msgid "Schedule:"
 msgstr "Tempoplano:"
 
-#: src/Views/Appearance.vala:119
+#: src/Views/Appearance.vala:155
 msgid "Disabled"
 msgstr "Malaktivigita"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:156
 msgid "Sunset to Sunrise"
 msgstr "De krepusko ĝis aŭroro"
 
-#: src/Views/Appearance.vala:121
+#: src/Views/Appearance.vala:157
 msgid "Manual"
 msgstr "Mana"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:159
 msgid "From:"
 msgstr "De:"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:165
 msgid "To:"
 msgstr "Ĝis:"
 
-#: src/Views/Appearance.vala:145
-msgid "Window animations:"
-msgstr "Fenestraj animacioj:"
-
-#: src/Views/Appearance.vala:155
-msgid "Panel translucency:"
-msgstr "Panel travidebleco:"
-
-#: src/Views/Appearance.vala:163
+#: src/Views/Appearance.vala:181
 msgid "Text size:"
 msgstr "Teksta amplekso:"
 
-#: src/Views/Appearance.vala:171 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Malgranda"
 
-#: src/Views/Appearance.vala:173 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Granda"
 
-#: src/Views/Appearance.vala:174
+#: src/Views/Appearance.vala:192
 msgid "Larger"
 msgstr "Grandega"
 
-#: src/Views/Appearance.vala:176
+#: src/Views/Appearance.vala:194
 msgid "Dyslexia-friendly text:"
 msgstr ""
 
-#: src/Views/Appearance.vala:185
+#: src/Views/Appearance.vala:203
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:344
+#: src/Views/Appearance.vala:354
 msgid "Accent:"
 msgstr ""
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:358
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:351
+#: src/Views/Appearance.vala:361
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:364
 msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:367
 msgid "Banana"
 msgstr ""
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:370
 msgid "Orange"
 msgstr ""
 
-#: src/Views/Appearance.vala:363
+#: src/Views/Appearance.vala:373
 msgid "Strawberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:366
+#: src/Views/Appearance.vala:376
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:379
 msgid "Grape"
 msgstr ""
 
-#: src/Views/Appearance.vala:372
+#: src/Views/Appearance.vala:382
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:375
+#: src/Views/Appearance.vala:385
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:390
+#: src/Views/Appearance.vala:388
+msgid "Automatic based on wallpaper"
+msgstr ""
+
+#: src/Views/Appearance.vala:404
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+
+#: src/Views/Dock.vala:31
+msgid "Dock"
+msgstr "Butonbreto"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -286,55 +293,81 @@ msgstr "Kaŝi kiam:"
 msgid "Pressure reveal:"
 msgstr "Rivelo per klako:"
 
-#: src/Views/Dock.vala:217
+#: src/Views/Dock.vala:153
+msgid "Panel"
+msgstr ""
+
+#: src/Views/Dock.vala:157
+msgid "Panel translucency:"
+msgstr "Panel travidebleco:"
+
+#: src/Views/Dock.vala:241
 #, c-format
 msgid "Monitor %d"
 msgstr "Ekrano %d"
 
-#: src/Views/Dock.vala:222
+#: src/Views/Dock.vala:246
 #, c-format
 msgid "Display %d"
 msgstr "Ekrano %d"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:42
 msgid "When the cursor enters the corner of the display:"
 msgstr "Kiam la musmontrilo venas en angulo de la ekrano:"
 
-#: src/Views/Multitasking.vala:73
+#: src/Views/Multitasking.vala:81
 msgid "Custom command:"
 msgstr "Propra komando:"
 
-#: src/Views/Multitasking.vala:112
+#: src/Views/Multitasking.vala:96
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Move windows to a new workspace:"
+msgstr "Salti al nova laborspaco"
+
+#: src/Views/Multitasking.vala:102
+msgid "When entering fullscreen"
+msgstr ""
+
+#: src/Views/Multitasking.vala:103
+msgid "When maximizing"
+msgstr ""
+
+#: src/Views/Multitasking.vala:113
+msgid "Window animations:"
+msgstr "Fenestraj animacioj:"
+
+#: src/Views/Multitasking.vala:154
 msgid "Do nothing"
 msgstr "Fari nenion"
 
 #. none
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
 msgstr "Taskbaskula vido"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:156
 msgid "Maximize current window"
 msgstr "Maksimumigi la aktivan fenestron"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:157
 msgid "Show Applications Menu"
 msgstr "Montri la Aplikaĵan Menuon"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:158
 msgid "Show all windows"
 msgstr "Montri ĉiujn fenestrojn"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
 msgstr "Salti al nova laborspaco"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:160
 msgid "Execute custom command"
 msgstr "Lanĉi propran komandon"
 
@@ -362,7 +395,7 @@ msgstr "Importi Foton"
 msgid "Import"
 msgstr "Importi"
 
-#: src/Views/Wallpaper.vala:152 set-wallpaper-contract/set-wallpaper.vala:222
+#: src/Views/Wallpaper.vala:152
 msgid "Cancel"
 msgstr "Rezigni"
 
@@ -404,13 +437,14 @@ msgstr "1 tago"
 msgid "Show each photo for"
 msgstr "Montri ĉiun foton dum"
 
-#: set-wallpaper-contract/set-wallpaper.vala:219
-#: set-wallpaper-contract/set-wallpaper.vala:227
+#: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "Agordi kiel fundan animacion"
 
-#: set-wallpaper-contract/set-wallpaper.vala:223
-msgid "Create slideshow"
+#: set-wallpaper-contract/set-wallpaper.vala:233
+#, fuzzy
+#| msgid "Create slideshow"
+msgid "Create Slideshow"
 msgstr "Krei animacion"
 
 #~ msgid "Normal"
