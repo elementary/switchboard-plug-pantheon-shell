@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-04 18:26+0000\n"
+"POT-Creation-Date: 2021-06-19 15:12+0000\n"
 "PO-Revision-Date: 2020-11-22 21:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -132,8 +132,10 @@ msgid "Dark"
 msgstr "गडद"
 
 #: src/Views/Appearance.vala:141
-msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr "डॉक आणि पॅनेल सूचक सारख्या सिस्टम घटकांसाठी व्हिज्युअल शैली."
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
+msgstr ""
 
 #: src/Views/Appearance.vala:149
 msgid "Schedule:"
@@ -436,6 +438,10 @@ msgstr "डेस्कटॉप स्लाइडशो म्हणून स
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "स्लाइडशो तयार करा"
+
+#~ msgid ""
+#~ "Visual style for system components like the Dock and Panel indicators."
+#~ msgstr "डॉक आणि पॅनेल सूचक सारख्या सिस्टम घटकांसाठी व्हिज्युअल शैली."
 
 #~ msgid "Normal"
 #~ msgstr "साधारण"

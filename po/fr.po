@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-04 18:26+0000\n"
+"POT-Creation-Date: 2021-06-19 15:12+0000\n"
 "PO-Revision-Date: 2021-05-05 21:17+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -135,10 +135,10 @@ msgid "Dark"
 msgstr "Sombre"
 
 #: src/Views/Appearance.vala:141
-msgid "Visual style for system components like the Dock and Panel indicators."
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
 msgstr ""
-"Thème visuel pour les composants du système comme le dock ou les indicateurs "
-"du panneau."
 
 #: src/Views/Appearance.vala:149
 msgid "Schedule:"
@@ -439,6 +439,12 @@ msgstr "Définir comme fond d'écran animé"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Créer un fond d'écran animé"
+
+#~ msgid ""
+#~ "Visual style for system components like the Dock and Panel indicators."
+#~ msgstr ""
+#~ "Thème visuel pour les composants du système comme le dock ou les "
+#~ "indicateurs du panneau."
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-04 18:26+0000\n"
+"POT-Creation-Date: 2021-06-19 15:12+0000\n"
 "PO-Revision-Date: 2021-05-05 21:17+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -135,8 +135,10 @@ msgid "Dark"
 msgstr "深色"
 
 #: src/Views/Appearance.vala:141
-msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr "系统部件如程序坞和指示器面板的视觉风格。"
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
+msgstr ""
 
 #: src/Views/Appearance.vala:149
 msgid "Schedule:"
@@ -431,6 +433,10 @@ msgstr "设为桌面幻灯片"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "创建幻灯片"
+
+#~ msgid ""
+#~ "Visual style for system components like the Dock and Panel indicators."
+#~ msgstr "系统部件如程序坞和指示器面板的视觉风格。"
 
 #~ msgid "Normal"
 #~ msgstr "普通"

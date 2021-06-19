@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-04 18:26+0000\n"
+"POT-Creation-Date: 2021-06-19 15:12+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: zh (generated) <https://l10n.elementary.io/projects/"
@@ -130,7 +130,9 @@ msgid "Dark"
 msgstr ""
 
 #: src/Views/Appearance.vala:141
-msgid "Visual style for system components like the Dock and Panel indicators."
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
 msgstr ""
 
 #: src/Views/Appearance.vala:149

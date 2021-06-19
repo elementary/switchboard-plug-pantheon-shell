@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-04 18:26+0000\n"
+"POT-Creation-Date: 2021-06-19 15:12+0000\n"
 "PO-Revision-Date: 2021-06-05 23:30+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -136,9 +136,10 @@ msgid "Dark"
 msgstr "Темний"
 
 #: src/Views/Appearance.vala:141
-msgid "Visual style for system components like the Dock and Panel indicators."
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
 msgstr ""
-"Візуальний стиль для складників системи, таких як індикатори Дока і Панелі."
 
 #: src/Views/Appearance.vala:149
 msgid "Schedule:"
@@ -441,6 +442,12 @@ msgstr "Зробити слайдшоу стільниці"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Створити слайдшоу"
+
+#~ msgid ""
+#~ "Visual style for system components like the Dock and Panel indicators."
+#~ msgstr ""
+#~ "Візуальний стиль для складників системи, таких як індикатори Дока і "
+#~ "Панелі."
 
 #~ msgid "Normal"
 #~ msgstr "Звичайний"
