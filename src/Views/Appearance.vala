@@ -138,7 +138,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
         prefer_dark_radio.get_style_context ().add_class ("image-button");
         prefer_dark_radio.add (prefer_dark_grid);
 
-        var dark_info = new Gtk.Label (_("Visual style for system components like the Dock and Panel indicators.")) {
+        var dark_info = new Gtk.Label (_("Preferred visual style for system components. Apps may also choose to follow this preference.")) {
             max_width_chars = 60,
             margin_bottom = 18,
             wrap = true,
