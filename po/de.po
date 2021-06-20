@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-19 15:12+0000\n"
-"PO-Revision-Date: 2021-06-20 11:00+0000\n"
+"PO-Revision-Date: 2021-06-20 17:07+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -431,7 +431,7 @@ msgstr "1 Tag"
 
 #: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"
-msgstr "Jedes Bild anzeigen für"
+msgstr "Bild jeweils anzeigen für"
 
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
