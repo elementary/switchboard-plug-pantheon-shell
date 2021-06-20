@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-19 15:12+0000\n"
-"PO-Revision-Date: 2021-05-10 20:45+0000\n"
+"PO-Revision-Date: 2021-06-20 11:00+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -139,6 +139,8 @@ msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
+"Bevorzugtes Aussehen der Betriebssystembestandteile. Anwendungen steht es "
+"frei, diese Einstellung ebenfalls zu berücksichtigen."
 
 #: src/Views/Appearance.vala:149
 msgid "Schedule:"
@@ -182,7 +184,7 @@ msgstr "Größer"
 
 #: src/Views/Appearance.vala:194
 msgid "Dyslexia-friendly text:"
-msgstr "Leicht verständlicher Text:"
+msgstr "Dyslexie-freundlicher Text:"
 
 #: src/Views/Appearance.vala:203
 msgid ""
@@ -223,7 +225,7 @@ msgstr "Erdbeere"
 
 #: src/Views/Appearance.vala:376
 msgid "Bubblegum"
-msgstr "Bubblegum"
+msgstr "Rosa"
 
 #: src/Views/Appearance.vala:379
 msgid "Grape"
@@ -295,7 +297,7 @@ msgstr "Leiste"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
-msgstr "Panel-Transparenz:"
+msgstr "Leistentransparenz:"
 
 #: src/Views/Dock.vala:241
 #, c-format
