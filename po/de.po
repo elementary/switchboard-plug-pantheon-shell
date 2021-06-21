@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-19 15:12+0000\n"
-"PO-Revision-Date: 2021-06-20 17:07+0000\n"
+"PO-Revision-Date: 2021-06-21 00:38+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -65,7 +65,7 @@ msgstr "Bildschirm"
 
 #: src/Plug.vala:116
 msgid "Panel translucency"
-msgstr "Panel-Transparenz"
+msgstr "Leistentransparenz"
 
 #: src/Plug.vala:118
 msgid "Dark style"
@@ -402,7 +402,7 @@ msgstr "Entfernen"
 #: src/Widgets/WallpaperContainer.vala:188
 #, c-format
 msgid "Artist: %s"
-msgstr "Interpret: %s"
+msgstr "Künstler: %s"
 
 #: set-wallpaper-contract/set-wallpaper.vala:94
 #, c-format
