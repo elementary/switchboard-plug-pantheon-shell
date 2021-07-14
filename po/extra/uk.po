@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-19 15:12+0000\n"
-"PO-Revision-Date: 2021-07-05 13:54+0000\n"
+"PO-Revision-Date: 2021-07-15 01:01+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -30,7 +30,7 @@ msgstr "Налаштування доку, дій кутів та зміна т�
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr "Нові функції:"
+msgstr "Нові можливості:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid ""
