@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-07-15 01:01+0000\n"
+"PO-Revision-Date: 2021-07-15 23:09+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -34,7 +34,7 @@ msgstr "Нові можливості:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Accent color and dark style options"
-msgstr ""
+msgstr "Варіанти основного кольору та темний стиль"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid ""
@@ -46,6 +46,7 @@ msgstr ""
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Maximize and fullscreen workspace management options"
 msgstr ""
+"Параметри керування максимізованими та повноекранними робочими просторами"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
@@ -53,19 +54,19 @@ msgstr "Інші оновлення:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Fix a freeze after opening Power settings"
-msgstr ""
+msgstr "Виправлено зависання після відкриття налаштувань живлення"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Improved filter for image file types when importing"
-msgstr ""
+msgstr "Вдосконалено фільтр типів файлів зображень під час імпортування"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Visual updates"
-msgstr ""
+msgstr "Оновлено зовнішній вигляд"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Some options now appear in different tabs"
-msgstr ""
+msgstr "Деякі параметри тепер розміщено на різних вкладках"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
