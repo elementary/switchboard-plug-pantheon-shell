@@ -17,6 +17,8 @@
         </ul>
         <p>Other updates:</p>
         <ul>
+          <li>Fix a freeze after opening Power settings</li>
+          <li>Improved filter for image file types when importing</li>
           <li>Visual updates</li>
           <li>Some options now appear in different tabs</li>
           <li>Updated translations</li>
