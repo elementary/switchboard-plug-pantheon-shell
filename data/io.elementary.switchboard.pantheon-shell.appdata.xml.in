@@ -7,14 +7,18 @@
   <icon type="stock">preferences-desktop-wallpaper</icon>
   <translation type="gettext">pantheon-desktop-plug</translation>
   <releases>
-    <release version="2.9.0" date="2020-04-22" urgency="medium">
+    <release version="6.0.0" date="2021-07-15" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
+          <li>Accent color and dark style options</li>
           <li>Dyslexia-friendly text preference to use the OpenDyslexia font system-wide</li>
+          <li>Maximize and fullscreen workspace management options</li> 
         </ul>
         <p>Other updates:</p>
         <ul>
+          <li>Visual updates</li>
+          <li>Some options now appear in different tabs</li>
           <li>Updated translations</li>
         </ul>
       </description>
