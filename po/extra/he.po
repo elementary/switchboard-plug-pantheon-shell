@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-07-16 09:57+0000\n"
+"PO-Revision-Date: 2021-07-17 07:44+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -58,11 +58,11 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Visual updates"
-msgstr ""
+msgstr "עדכונים חזותיים"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Some options now appear in different tabs"
-msgstr ""
+msgstr "חלק מהאפשרויות מופיעות מעתה בלשוניות אחרות"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
