@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2020-07-25 16:12+0000\n"
+"PO-Revision-Date: 2021-07-19 19:06+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
@@ -30,11 +30,11 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr "Característiques noves:"
+msgstr "Funcions noves:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Accent color and dark style options"
-msgstr ""
+msgstr "Opcions d'accentuació del color i d'estil fosc"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid ""
@@ -46,6 +46,7 @@ msgstr ""
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Maximize and fullscreen workspace management options"
 msgstr ""
+"Opcions de gestió de l’espai de treball de pantalla completa i maximització"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
@@ -53,19 +54,20 @@ msgstr "Altres actualitzacions:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Fix a freeze after opening Power settings"
-msgstr ""
+msgstr "Solució d'una congelació després d'obrir la configuració d'energia"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Improved filter for image file types when importing"
 msgstr ""
+"S'ha millorat el filtre per als tipus de fitxers d'imatge en importar-los."
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Visual updates"
-msgstr ""
+msgstr "Actualitzacions visuals"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Some options now appear in different tabs"
-msgstr ""
+msgstr "Ara algunes opcions apareixen en pestanyes diferents"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
