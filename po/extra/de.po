@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-07-20 18:18+0000\n"
+"PO-Revision-Date: 2021-07-21 14:31+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/de/>\n"
@@ -33,36 +33,40 @@ msgstr "Neue Funktionen:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Accent color and dark style options"
-msgstr ""
+msgstr "Akzentfarben und Optionen für Dark Mode"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"Wenn Dyslexie-freundliche Schriftart gewählt ist, wird OpenDyslexia "
+"systemweit genutzt"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Maximize and fullscreen workspace management options"
-msgstr ""
+msgstr "Maximieren und Vollbild Workspace Anpassungsmöglichkeiten"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
-msgstr ""
+msgstr "Weitere Aktualisierungen:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Fix a freeze after opening Power settings"
 msgstr ""
+"Fehler behoben, der zum Einfrieren führte wenn die Leistungseinstellungen "
+"geöffnet wurden"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Improved filter for image file types when importing"
-msgstr ""
+msgstr "Verbesserter Filter für den Import von Bilddateitypen"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Visual updates"
-msgstr ""
+msgstr "Optische Anpassungen"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Some options now appear in different tabs"
-msgstr ""
+msgstr "Einige Optionen erscheinen nun in anderen Tabs"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
@@ -73,16 +77,18 @@ msgstr "Aktualisierte Übersetzungen"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Dock-Icon Größen veranschaulicht"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Fehler beim Kopieren von Bildschirmhintergründen behoben"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
 msgid "Update search results"
-msgstr ""
+msgstr "Suchresultate aktualisiert"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
+"Probleme beim Setzen von Hintergründen für den Login- und Sperrbildschirm "
+"behoben"
