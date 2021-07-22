@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-04-05 18:56+0000\n"
+"PO-Revision-Date: 2021-07-22 17:45+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ru/>\n"
@@ -30,7 +30,7 @@ msgstr "Настройка дока, активных углов и смена �
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr "Новые функции:"
+msgstr "Новые возможности:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Accent color and dark style options"
