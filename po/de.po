@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-07-21 14:31+0000\n"
+"PO-Revision-Date: 2021-07-23 10:18+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -89,7 +89,7 @@ msgstr "Aktive Ecken"
 
 #: src/Plug.vala:124
 msgid "Move windows to a new workspace"
-msgstr "Fenster in einen neuen Arbeitsbereich verschieben"
+msgstr "Fenster in eine neue Arbeitsfläche verschieben"
 
 #: src/Plug.vala:125
 msgid "Window animations"
@@ -319,7 +319,7 @@ msgstr "Benutzerdefinierter Befehl:"
 
 #: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
-msgstr "Fenster in einen neuen Arbeitsbereich verschieben:"
+msgstr "Fenster in eine neue Arbeitsfläche verschieben:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
@@ -360,7 +360,7 @@ msgstr "Alle Fenster anzeigen"
 #. window-overview-all
 #: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
-msgstr "Zu einem neuen Arbeitsbereich wechseln"
+msgstr "Zu einer neuen Arbeitsfläche wechseln"
 
 #. switch-new-workspace
 #: src/Views/Multitasking.vala:160
