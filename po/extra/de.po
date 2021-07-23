@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-07-21 14:31+0000\n"
+"PO-Revision-Date: 2021-07-23 10:18+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/de/>\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Maximize and fullscreen workspace management options"
-msgstr "Maximieren und Vollbild Workspace Anpassungsmöglichkeiten"
+msgstr "Anpassungsmöglichkeiten für das Maximieren und Arbeitsflächen"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
