@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-06-22 01:58+0000\n"
+"PO-Revision-Date: 2021-07-25 12:43+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -221,7 +221,7 @@ msgstr "Клубничный"
 
 #: src/Views/Appearance.vala:376
 msgid "Bubblegum"
-msgstr "Бубль-гумовый"
+msgstr "Бубльгумовый"
 
 #: src/Views/Appearance.vala:379
 msgid "Grape"
