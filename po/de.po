@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-08-07 19:15+0000\n"
+"PO-Revision-Date: 2021-08-07 21:06+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Plug.vala:41
 msgid "Desktop"
-msgstr "Desktop"
+msgstr "Benutzeroberfläche"
 
 #: src/Plug.vala:42
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -293,11 +293,11 @@ msgstr "Verzögertes Einblenden:"
 
 #: src/Views/Dock.vala:153
 msgid "Panel"
-msgstr "Panel"
+msgstr "Leiste"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
-msgstr "Paneltransparenz:"
+msgstr "Leistentransparenz:"
 
 #: src/Views/Dock.vala:241
 #, c-format
