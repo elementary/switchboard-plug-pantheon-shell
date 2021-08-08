@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2020-07-28 14:12+0000\n"
+"PO-Revision-Date: 2021-08-08 14:01+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
@@ -33,7 +33,7 @@ msgstr "Novas funcionalidades:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Accent color and dark style options"
-msgstr ""
+msgstr "Opções de cor do destaque e estilo escuro"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid ""
@@ -44,7 +44,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Maximize and fullscreen workspace management options"
-msgstr ""
+msgstr "Opções de gestão da área de trabalho do maximizar e ecrã inteiro"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
