@@ -18,6 +18,8 @@ plank_datadir = plank_dep.get_pkgconfig_variable('pkgdatadir')
 
 configuration = configuration_data()
 configuration.set('PLANKDATADIR', plank_datadir)
+configuration.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+configuration.set('GETTEXT_PACKAGE', meson.project_name() + '-plug')
 
 config_file = configure_file(
     input: 'Config.vala.in',
