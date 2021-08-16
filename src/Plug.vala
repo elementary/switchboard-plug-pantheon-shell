@@ -25,6 +25,9 @@ public class PantheonShell.Plug : Switchboard.Plug {
     private Wallpaper wallpaper_view;
 
     public Plug () {
+        GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
+        GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
+
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("desktop", null);
         settings.set ("desktop/appearance/wallpaper", "wallpaper");
