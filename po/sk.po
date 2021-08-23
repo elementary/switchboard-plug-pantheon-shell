@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-08-23 14:23+0000\n"
+"PO-Revision-Date: 2021-08-23 19:38+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/sk/>\n"
@@ -438,11 +438,11 @@ msgstr "Zobraziť každú fotku po dobu"
 
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "Nastaviť ako prezentáciu pozadí plochy"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
-msgstr ""
+msgstr "Vytvoriť prezentáciu"
 
 #~ msgid "Normal"
 #~ msgstr "Normálne"
