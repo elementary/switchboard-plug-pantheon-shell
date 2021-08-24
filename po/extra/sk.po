@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-08-23 13:53+0000\n"
+"PO-Revision-Date: 2021-08-24 18:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/sk/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
-msgstr ""
+msgstr "Nastavenia pracovnej plochy"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -29,60 +29,66 @@ msgstr "Nastavujte dok, aktívne rohy a meňte tapetu plochy"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkcie:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Accent color and dark style options"
-msgstr ""
+msgstr "Možnosť vybrať farebný odtieň a tmavý štýl"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"Predvoľba textu pre dyslektikov použitím písma OpenDyslexia naprieč celým "
+"systémom"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Maximize and fullscreen workspace management options"
 msgstr ""
+"Možnosti správy pracovných plôch maximalizovaných okien a okien na celú "
+"obrazovku"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
-msgstr ""
+msgstr "Iné aktualizácie:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Fix a freeze after opening Power settings"
-msgstr ""
+msgstr "Opravené zamŕzanie po otvorení Nastavení napájania"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Improved filter for image file types when importing"
-msgstr ""
+msgstr "Vylepšený filter pre rôzne typy obrázkov pri importovaní"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Visual updates"
-msgstr ""
+msgstr "Vizuálne aktualizácie"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Some options now appear in different tabs"
-msgstr ""
+msgstr "Niektoré možnosti boli presunuté na iné tably"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizované preklady"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Ilustrované veľkosti ikon v doku"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Oprava kopírovaných systémových tapiet"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
 msgid "Update search results"
-msgstr ""
+msgstr "Aktualizované výsledky vyhľadávania"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
+"Opravené problémy s nastavovaním tapiet na obrazovke prihlásenia a zamknutej "
+"obrazovke"
