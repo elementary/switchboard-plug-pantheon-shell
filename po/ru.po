@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-08-27 20:33+0000\n"
+"PO-Revision-Date: 2021-08-28 22:51+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -85,7 +85,7 @@ msgstr "Активные углы"
 
 #: src/Plug.vala:124
 msgid "Move windows to a new workspace"
-msgstr "Переместить окно на новый рабочий стол"
+msgstr "Переместить окно на новое рабочее пространство"
 
 #: src/Plug.vala:125
 msgid "Window animations"
@@ -193,7 +193,7 @@ msgstr ""
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:354
 msgid "Accent:"
-msgstr "Основной цвет:"
+msgstr "Цветовой акцент:"
 
 #: src/Views/Appearance.vala:358
 msgid "Blueberry"
@@ -315,7 +315,7 @@ msgstr "Пользовательская команда:"
 
 #: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
-msgstr "Переместить окно на новый рабочий стол:"
+msgstr "Переместить окно на новое рабочее пространство:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
@@ -356,7 +356,7 @@ msgstr "Показать все окна"
 #. window-overview-all
 #: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
-msgstr "Переключиться на новый рабочий стол"
+msgstr "Переключиться на новое рабочее пространство"
 
 #. switch-new-workspace
 #: src/Views/Multitasking.vala:160
