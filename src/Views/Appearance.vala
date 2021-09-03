@@ -356,7 +356,8 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
             var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color.")) {
                 margin_bottom = 18,
-                xalign = 0
+                xalign = 0,
+                wrap = true
             };
             accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
