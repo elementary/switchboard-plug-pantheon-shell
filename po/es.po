@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-02-17 13:39+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"PO-Revision-Date: 2021-06-21 12:56+0000\n"
+"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
 "Language: es\n"
@@ -40,7 +40,7 @@ msgstr "Apariencia"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Dock & Panel"
-msgstr ""
+msgstr "Dock y panel"
 
 #: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
@@ -88,10 +88,8 @@ msgid "Hot Corners"
 msgstr "Esquinas activas"
 
 #: src/Plug.vala:124
-#, fuzzy
-#| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
-msgstr "Mover ventanas a un área de trabajo nueva:"
+msgstr "Mover ventanas a un nuevo espacio de trabajo"
 
 #: src/Plug.vala:125
 msgid "Window animations"
@@ -123,70 +121,72 @@ msgstr "Establecer como _fondo de escritorio"
 msgid "Set selected image to be the new desktop background"
 msgstr "Configurar la imagen seleccionada como fondo de escritorio"
 
-#: src/Views/Appearance.vala:47
+#: src/Views/Appearance.vala:88
 msgid "Style:"
 msgstr "Estilo:"
 
-#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Predeterminado"
 
-#: src/Views/Appearance.vala:91
+#: src/Views/Appearance.vala:132
 msgid "Dark"
 msgstr "Oscuro"
 
-#: src/Views/Appearance.vala:100
-msgid "Visual style for system components like the Dock and Panel indicators."
+#: src/Views/Appearance.vala:141
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
 msgstr ""
-"Estilo visual para componentes del sistema tales como los indicadores del "
-"panel y el dock."
+"Estilo visual preferido para los componentes del sistema. Las aplicaciones "
+"también pueden optar por seguir esta preferencia."
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:149
 msgid "Schedule:"
 msgstr "Programación:"
 
-#: src/Views/Appearance.vala:114
+#: src/Views/Appearance.vala:155
 msgid "Disabled"
 msgstr "Desactivado"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:156
 msgid "Sunset to Sunrise"
 msgstr "Atardecer al amanecer"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:157
 msgid "Manual"
 msgstr "Manual"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:159
 msgid "From:"
 msgstr "Desde:"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:165
 msgid "To:"
 msgstr "Hasta:"
 
-#: src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:181
 msgid "Text size:"
 msgstr "Tamaño del texto:"
 
-#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Pequeño"
 
-#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Grande"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:192
 msgid "Larger"
 msgstr "Más grande"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:194
 msgid "Dyslexia-friendly text:"
 msgstr "Texto para disléxicos:"
 
-#: src/Views/Appearance.vala:162
+#: src/Views/Appearance.vala:203
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -195,51 +195,55 @@ msgstr ""
 "caracteres puede ayudar a mejorar la legibilidad y la velocidad de lectura."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:354
 msgid "Accent:"
 msgstr "Realce:"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:358
 msgid "Blueberry"
 msgstr "Arándano"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:361
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:364
 msgid "Lime"
 msgstr "Lima"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:367
 msgid "Banana"
 msgstr "Plátano"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:370
 msgid "Orange"
 msgstr "Naranja"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:373
 msgid "Strawberry"
 msgstr "Fresa"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:376
 msgid "Bubblegum"
 msgstr "Chicle"
 
-#: src/Views/Appearance.vala:336
+#: src/Views/Appearance.vala:379
 msgid "Grape"
 msgstr "Uva"
 
-#: src/Views/Appearance.vala:339
+#: src/Views/Appearance.vala:382
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:385
 msgid "Slate"
 msgstr "Pizarra"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:388
+msgid "Automatic based on wallpaper"
+msgstr "Automático, en función del fondo"
+
+#: src/Views/Appearance.vala:404
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -289,81 +293,77 @@ msgstr "Mostrar al presionar:"
 
 #: src/Views/Dock.vala:153
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
 msgstr "Translucidez del panel:"
 
-#: src/Views/Dock.vala:239
+#: src/Views/Dock.vala:241
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:244
+#: src/Views/Dock.vala:246
 #, c-format
 msgid "Display %d"
 msgstr "Pantalla %d"
 
-#: src/Views/Multitasking.vala:40
+#: src/Views/Multitasking.vala:42
 msgid "When the cursor enters the corner of the display:"
 msgstr "Cuando el cursor entre a una esquina de la pantalla:"
 
-#: src/Views/Multitasking.vala:79
+#: src/Views/Multitasking.vala:81
 msgid "Custom command:"
 msgstr "Orden personalizada:"
 
-#: src/Views/Multitasking.vala:94
+#: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
 msgstr "Mover ventanas a un área de trabajo nueva:"
 
-#: src/Views/Multitasking.vala:100
-#, fuzzy
-#| msgid "When entering fullscreen:"
+#: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
-msgstr "Al activar el modo de pantalla completa:"
+msgstr "Al activar el modo de pantalla completa"
 
-#: src/Views/Multitasking.vala:101
-#, fuzzy
-#| msgid "When maximizing:"
+#: src/Views/Multitasking.vala:103
 msgid "When maximizing"
-msgstr "Al maximizar:"
+msgstr "Al maximizar"
 
-#: src/Views/Multitasking.vala:111
+#: src/Views/Multitasking.vala:113
 msgid "Window animations:"
 msgstr "Animación de ventanas:"
 
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:154
 msgid "Do nothing"
 msgstr "No hacer nada"
 
 #. none
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
 msgstr "Vista multitarea"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:156
 msgid "Maximize current window"
 msgstr "Maximizar ventana actual"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:157
 msgid "Show Applications Menu"
 msgstr "Mostrar menú de aplicaciones"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:158
 msgid "Show all windows"
 msgstr "Mostrar todas las ventanas"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
 msgstr "Cambiar a un área de trabajo nueva"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:160
 msgid "Execute custom command"
 msgstr "Ejecutar orden personalizada"
 
@@ -440,6 +440,12 @@ msgstr "Establecer como pase de fondos"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Crear pase de fondos"
+
+#~ msgid ""
+#~ "Visual style for system components like the Dock and Panel indicators."
+#~ msgstr ""
+#~ "Estilo visual para componentes del sistema tales como los indicadores del "
+#~ "panel y el dock."
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

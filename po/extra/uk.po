@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2020-09-29 18:44+0000\n"
+"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"PO-Revision-Date: 2021-07-15 23:09+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
-msgstr "Параметри стільниці"
+msgstr "Налаштування стільниці"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
@@ -30,9 +30,13 @@ msgstr "Налаштування доку, дій кутів та зміна т�
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr "Нові функції:"
+msgstr "Нові можливості:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
+msgid "Accent color and dark style options"
+msgstr "Варіанти основного кольору та темний стиль"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
@@ -40,28 +44,49 @@ msgstr ""
 "загальносистемного шрифту OpenDyslexia"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
+msgid "Maximize and fullscreen workspace management options"
+msgstr ""
+"Параметри керування максимізованими та повноекранними робочими просторами"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
 msgstr "Інші оновлення:"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
+msgid "Fix a freeze after opening Power settings"
+msgstr "Виправлено зависання після відкриття налаштувань живлення"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
+msgid "Improved filter for image file types when importing"
+msgstr "Вдосконалено фільтр типів файлів зображень під час імпортування"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
+msgid "Visual updates"
+msgstr "Оновлено зовнішній вигляд"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
+msgid "Some options now appear in different tabs"
+msgstr "Деякі параметри тепер розміщено на різних вкладках"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
 msgid "Updated translations"
 msgstr "Оновлено переклади"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
 msgid "Illustrate Dock icon sizes"
 msgstr "Ілюстровані розміри піктограм в доку"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
 msgid "Fix system wallpapers being copied"
 msgstr "Виправлено копіювання системного тла"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
 msgid "Update search results"
 msgstr "Оновлення результатів пошуку"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr "Розв'язано проблеми з налаштуванням тла на екрані входу та блокування"

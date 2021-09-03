@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"PO-Revision-Date: 2021-08-25 19:33+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/hu/>\n"
 "Language: hu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:41
@@ -35,19 +35,17 @@ msgstr "Háttérkép"
 #: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
 #: src/Plug.vala:120 src/Plug.vala:121
 msgid "Appearance"
-msgstr ""
+msgstr "Megjelenés"
 
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Dock & Panel"
-msgstr ""
+msgstr "Dokk és állapotsor"
 
 #: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "Többfeladatos nézet"
+msgstr "Feladatkezelés"
 
 #: src/Plug.vala:112
 msgid "Hide Mode"
@@ -58,9 +56,8 @@ msgid "Icon Size"
 msgstr "Ikonméret"
 
 #: src/Plug.vala:114
-#, fuzzy
 msgid "Pressure reveal"
-msgstr "Felfedés csak nyomásra:"
+msgstr "Felfedés csak nyomásra"
 
 #: src/Plug.vala:115
 msgid "Display"
@@ -68,24 +65,23 @@ msgstr "Kijelző"
 
 #: src/Plug.vala:116
 msgid "Panel translucency"
-msgstr ""
+msgstr "Átlátszó állapotsor"
 
 #: src/Plug.vala:118
 msgid "Dark style"
-msgstr ""
+msgstr "Sötét mód"
 
 #: src/Plug.vala:119
 msgid "Accent color"
-msgstr ""
+msgstr "Kiemelőszín"
 
 #: src/Plug.vala:120
-#, fuzzy
 msgid "Text size"
-msgstr "Ikonméret:"
+msgstr "Szövegméret"
 
 #: src/Plug.vala:121
 msgid "Dyslexia-friendly text"
-msgstr ""
+msgstr "Diszlexiabarát szöveg"
 
 #: src/Plug.vala:123
 msgid "Hot Corners"
@@ -93,11 +89,11 @@ msgstr "Érzékeny sarkok"
 
 #: src/Plug.vala:124
 msgid "Move windows to a new workspace"
-msgstr ""
+msgstr "Ablakok új munkaterületre mozgatása"
 
 #: src/Plug.vala:125
 msgid "Window animations"
-msgstr ""
+msgstr "Ablakanimációk"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -125,125 +121,135 @@ msgstr "Beállítás _asztali háttérképként"
 msgid "Set selected image to be the new desktop background"
 msgstr "Kiválasztott kép beállítása új asztali háttérképként"
 
-#: src/Views/Appearance.vala:47
+#: src/Views/Appearance.vala:88
 msgid "Style:"
-msgstr ""
+msgstr "Téma:"
 
-#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: src/Views/Appearance.vala:91
+#: src/Views/Appearance.vala:132
 msgid "Dark"
-msgstr ""
+msgstr "Sötét"
 
-#: src/Views/Appearance.vala:100
-msgid "Visual style for system components like the Dock and Panel indicators."
+#: src/Views/Appearance.vala:141
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
 msgstr ""
+"A rendszerösszetevők előnyben részesített megjelenítési témája. Az "
+"alkalmazások szintén követhetik ezt a beállítást."
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:149
 msgid "Schedule:"
-msgstr "Időbeosztás:"
+msgstr "Időzítés:"
 
-#: src/Views/Appearance.vala:114
+#: src/Views/Appearance.vala:155
 msgid "Disabled"
 msgstr "Kikapcsolva"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:156
 msgid "Sunset to Sunrise"
-msgstr "Napkeltétől napnyugtáig"
+msgstr "Napnyugtától napkeltéig"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:157
 msgid "Manual"
 msgstr "Kézi"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:159
 msgid "From:"
 msgstr "Ettől:"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:165
 msgid "To:"
 msgstr "Eddig:"
 
-#: src/Views/Appearance.vala:140
-#, fuzzy
+#: src/Views/Appearance.vala:181
 msgid "Text size:"
-msgstr "Ikonméret:"
+msgstr "Szövegméret:"
 
-#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Kicsi"
 
-#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Nagy"
 
-#: src/Views/Appearance.vala:151
-#, fuzzy
+#: src/Views/Appearance.vala:192
 msgid "Larger"
-msgstr "Nagy"
+msgstr "Nagyobb"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:194
 msgid "Dyslexia-friendly text:"
-msgstr ""
+msgstr "Diszlexiabarát szöveg:"
 
-#: src/Views/Appearance.vala:162
+#: src/Views/Appearance.vala:203
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"Az alulra súlyozott alakok és nagyobb karakterközök segíthetik a megértést "
+"és az olvasási sebességet."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:354
 msgid "Accent:"
-msgstr ""
+msgstr "Kiemelőszín:"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:358
 msgid "Blueberry"
-msgstr ""
+msgstr "Áfonya"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:361
 msgid "Mint"
-msgstr ""
+msgstr "Menta"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:364
 msgid "Lime"
-msgstr ""
+msgstr "Lime"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:367
 msgid "Banana"
-msgstr ""
+msgstr "Banán"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:370
 msgid "Orange"
-msgstr ""
+msgstr "Narancs"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:373
 msgid "Strawberry"
-msgstr ""
+msgstr "Eper"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:376
 msgid "Bubblegum"
-msgstr ""
+msgstr "Rágógumi"
 
-#: src/Views/Appearance.vala:336
+#: src/Views/Appearance.vala:379
 msgid "Grape"
-msgstr ""
+msgstr "Szőlő"
 
-#: src/Views/Appearance.vala:339
+#: src/Views/Appearance.vala:382
 msgid "Cocoa"
-msgstr ""
+msgstr "Kakaó"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:385
 msgid "Slate"
-msgstr ""
+msgstr "Pala"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:388
+msgid "Automatic based on wallpaper"
+msgstr "Automatikus a háttérkép alapján"
+
+#: src/Views/Appearance.vala:404
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"A rendszerben alapértelmezetten használt. Az alkalmazások mindig "
+"használhatnak saját színt."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -279,7 +285,7 @@ msgstr "Ikonméret:"
 
 #: src/Views/Dock.vala:146
 msgid "Hide when:"
-msgstr "Elrejtés ha:"
+msgstr "Elrejtés, ha:"
 
 #: src/Views/Dock.vala:150
 msgid "Pressure reveal:"
@@ -287,77 +293,77 @@ msgstr "Felfedés csak nyomásra:"
 
 #: src/Views/Dock.vala:153
 msgid "Panel"
-msgstr ""
+msgstr "Állapotsor"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
-msgstr ""
+msgstr "Átlátszó állapotsor:"
 
-#: src/Views/Dock.vala:239
+#: src/Views/Dock.vala:241
 #, c-format
 msgid "Monitor %d"
-msgstr "%d monitor"
+msgstr "%d. monitor"
 
-#: src/Views/Dock.vala:244
+#: src/Views/Dock.vala:246
 #, c-format
 msgid "Display %d"
-msgstr "%d kijelző"
+msgstr "%d. kijelző"
 
-#: src/Views/Multitasking.vala:40
+#: src/Views/Multitasking.vala:42
 msgid "When the cursor enters the corner of the display:"
-msgstr "Ha a kurzor eléri a képernyő szélét:"
+msgstr "Ha a kurzor eléri a képernyő sarkát:"
 
-#: src/Views/Multitasking.vala:79
+#: src/Views/Multitasking.vala:81
 msgid "Custom command:"
 msgstr "Egyedi parancs:"
 
-#: src/Views/Multitasking.vala:94
+#: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
-msgstr ""
+msgstr "Ablakok új munkaterületre mozgatása:"
 
-#: src/Views/Multitasking.vala:100
+#: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
-msgstr ""
+msgstr "Teljes képernyőre váltáskor"
 
-#: src/Views/Multitasking.vala:101
+#: src/Views/Multitasking.vala:103
 msgid "When maximizing"
-msgstr ""
+msgstr "Teljes méretre váltáskor"
 
-#: src/Views/Multitasking.vala:111
+#: src/Views/Multitasking.vala:113
 msgid "Window animations:"
-msgstr ""
+msgstr "Ablakanimációk:"
 
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:154
 msgid "Do nothing"
 msgstr "Ne tegyen semmit"
 
 #. none
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
 msgstr "Többfeladatos nézet"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:156
 msgid "Maximize current window"
-msgstr "Az aktuális ablak maximalizálása"
+msgstr "Az aktuális ablak teljes méretre állítása"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:157
 msgid "Show Applications Menu"
-msgstr "Alkalmazás menü megjelenítése"
+msgstr "Alkalmazásmenü megjelenítése"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:158
 msgid "Show all windows"
 msgstr "Az összes ablak megjelenítése"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "Váltás új munkaterületre"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:160
 msgid "Execute custom command"
 msgstr "Egyedi parancs végrehajtása"
 
@@ -387,7 +393,7 @@ msgstr "Importálás"
 
 #: src/Views/Wallpaper.vala:152
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Mégse"
 
 #: src/Widgets/WallpaperContainer.vala:118
 msgid "Remove"
@@ -425,15 +431,13 @@ msgstr "1 nap"
 
 #: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"
-msgstr "Minden fotó megjelenítése ehhez"
+msgstr "Minden fotó megjelenítése eddig:"
 
 #: set-wallpaper-contract/set-wallpaper.vala:226
 msgid "Set As Desktop Slideshow"
 msgstr "Beállítás asztali diavetítésként"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Diavetítés létrehozása"
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2020-08-09 22:13+0000\n"
+"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"PO-Revision-Date: 2021-07-18 00:36+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
@@ -29,36 +29,60 @@ msgstr "הגדרת המעגן, הפינות החמות והחלפת רקע שו�
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr "תכונות חדשות:"
+msgstr "יכולות חדשות:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
+msgid "Accent color and dark style options"
+msgstr "אפשריות צבע מוביל וסגנון כהה"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr "העדפת טקסט ידידותי לדיסלקטים לשימוש בגופן OpenDyslexia בכל המערכת"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
+msgid "Maximize and fullscreen workspace management options"
+msgstr "אפשרויות לניהול הגדלה וסביבת עבודה של מסכים מלאים"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
 msgstr "עדכונים אחרים:"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
+msgid "Fix a freeze after opening Power settings"
+msgstr "תוקן קיפאון לאחר פתיחת הגדרות צריכת החשמל"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
+msgid "Improved filter for image file types when importing"
+msgstr "מסנן משופר לסוגי קובצי תמונות בעת ייבוא"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
+msgid "Visual updates"
+msgstr "עדכונים חזותיים"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
+msgid "Some options now appear in different tabs"
+msgstr "חלק מהאפשרויות מופיעות מעתה בלשוניות אחרות"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
 msgid "Illustrate Dock icon sizes"
 msgstr "הדמיית גדלי סמלי המעגן"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
 msgid "Fix system wallpapers being copied"
 msgstr "תיקון מצב בו הטפטים של המערכת משוכפלים"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
 msgid "Update search results"
 msgstr "עדכון תוצאות חיפוש"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr "תיקון תקלות עם הגדרת רקעים במסך הכניסה והנעילה"

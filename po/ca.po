@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-04-16 11:03+0000\n"
+"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"PO-Revision-Date: 2021-06-20 17:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ca/>\n"
@@ -122,70 +122,72 @@ msgstr "Estableix com a fons _d'escriptori"
 msgid "Set selected image to be the new desktop background"
 msgstr "Estableix la imatge seleccionada com a fons d'escriptori nou"
 
-#: src/Views/Appearance.vala:47
+#: src/Views/Appearance.vala:88
 msgid "Style:"
 msgstr "Estil:"
 
-#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Views/Appearance.vala:91
+#: src/Views/Appearance.vala:132
 msgid "Dark"
 msgstr "Fosc"
 
-#: src/Views/Appearance.vala:100
-msgid "Visual style for system components like the Dock and Panel indicators."
+#: src/Views/Appearance.vala:141
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
 msgstr ""
-"Estil visual per a components del sistema com ara els indicadors de "
-"l'acoblador i del plafó."
+"Estil visual preferit per als components del sistema. Les aplicacions també "
+"poden triar seguir aquesta preferència."
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:149
 msgid "Schedule:"
 msgstr "Planificació:"
 
-#: src/Views/Appearance.vala:114
+#: src/Views/Appearance.vala:155
 msgid "Disabled"
 msgstr "Inhabilitat"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:156
 msgid "Sunset to Sunrise"
 msgstr "De la posta a l'alba"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:157
 msgid "Manual"
 msgstr "Manual"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:159
 msgid "From:"
 msgstr "De:"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:165
 msgid "To:"
 msgstr "A:"
 
-#: src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:181
 msgid "Text size:"
 msgstr "Mida del text:"
 
-#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Petita"
 
-#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Grossa"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:192
 msgid "Larger"
 msgstr "Més grossa"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:194
 msgid "Dyslexia-friendly text:"
 msgstr "Text adaptat a la dislèxia:"
 
-#: src/Views/Appearance.vala:162
+#: src/Views/Appearance.vala:203
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -194,51 +196,55 @@ msgstr ""
 "a millorar la llegibilitat i la velocitat de lectura."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:354
 msgid "Accent:"
 msgstr "Accentuació:"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:358
 msgid "Blueberry"
 msgstr "Nabiu"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:361
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:364
 msgid "Lime"
 msgstr "Llima"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:367
 msgid "Banana"
 msgstr "Plàtan"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:370
 msgid "Orange"
 msgstr "Taronja"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:373
 msgid "Strawberry"
 msgstr "Maduixa"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:376
 msgid "Bubblegum"
 msgstr "Xiclet"
 
-#: src/Views/Appearance.vala:336
+#: src/Views/Appearance.vala:379
 msgid "Grape"
 msgstr "Raïm"
 
-#: src/Views/Appearance.vala:339
+#: src/Views/Appearance.vala:382
 msgid "Cocoa"
 msgstr "Cacau"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:385
 msgid "Slate"
 msgstr "Pissarra"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:388
+msgid "Automatic based on wallpaper"
+msgstr "Automàtic segons el fons"
+
+#: src/Views/Appearance.vala:404
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -294,71 +300,71 @@ msgstr "Plafó"
 msgid "Panel translucency:"
 msgstr "Translucidesa del plafó:"
 
-#: src/Views/Dock.vala:239
+#: src/Views/Dock.vala:241
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:244
+#: src/Views/Dock.vala:246
 #, c-format
 msgid "Display %d"
 msgstr "Pantalla %d"
 
-#: src/Views/Multitasking.vala:40
+#: src/Views/Multitasking.vala:42
 msgid "When the cursor enters the corner of the display:"
 msgstr "Quan el cursor toqui un cantó de la pantalla:"
 
-#: src/Views/Multitasking.vala:79
+#: src/Views/Multitasking.vala:81
 msgid "Custom command:"
 msgstr "Ordre personalitzada:"
 
-#: src/Views/Multitasking.vala:94
+#: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
 msgstr "Mou les finestres a un espai de treball nou:"
 
-#: src/Views/Multitasking.vala:100
+#: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
 msgstr "Quan s'obri la pantalla completa"
 
-#: src/Views/Multitasking.vala:101
+#: src/Views/Multitasking.vala:103
 msgid "When maximizing"
 msgstr "Quan es maximitzi"
 
-#: src/Views/Multitasking.vala:111
+#: src/Views/Multitasking.vala:113
 msgid "Window animations:"
 msgstr "Animacions de finestres:"
 
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:154
 msgid "Do nothing"
 msgstr "No facis res"
 
 #. none
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
 msgstr "Vista de multitasca"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:156
 msgid "Maximize current window"
 msgstr "Maximitza la finestra actual"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:157
 msgid "Show Applications Menu"
 msgstr "Mostra el menú d'aplicacions"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:158
 msgid "Show all windows"
 msgstr "Mostra totes les finestres"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
 msgstr "Canvia a un espai de treball nou"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:160
 msgid "Execute custom command"
 msgstr "Executa una ordre personalitzada"
 
@@ -435,6 +441,12 @@ msgstr "Estableix com a presentació de diapositives"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Crea una presentació"
+
+#~ msgid ""
+#~ "Visual style for system components like the Dock and Panel indicators."
+#~ msgstr ""
+#~ "Estil visual per a components del sistema com ara els indicadors de "
+#~ "l'acoblador i del plafó."
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

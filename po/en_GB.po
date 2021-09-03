@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 20:23+0000\n"
-"PO-Revision-Date: 2021-02-17 08:00+0000\n"
+"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"PO-Revision-Date: 2021-07-05 13:54+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/en_GB/>\n"
@@ -40,7 +40,7 @@ msgstr "Appearance"
 #: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Dock & Panel"
-msgstr ""
+msgstr "Dock & Panel"
 
 #: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
@@ -88,10 +88,8 @@ msgid "Hot Corners"
 msgstr "Hot Corners"
 
 #: src/Plug.vala:124
-#, fuzzy
-#| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
-msgstr "Move windows to a new workspace:"
+msgstr "Move windows to a new workspace"
 
 #: src/Plug.vala:125
 msgid "Window animations"
@@ -123,68 +121,72 @@ msgstr "Set as _Desktop Background"
 msgid "Set selected image to be the new desktop background"
 msgstr "Set selected image to be the new desktop background"
 
-#: src/Views/Appearance.vala:47
+#: src/Views/Appearance.vala:88
 msgid "Style:"
 msgstr "Style:"
 
-#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Default"
 
-#: src/Views/Appearance.vala:91
+#: src/Views/Appearance.vala:132
 msgid "Dark"
 msgstr "Dark"
 
-#: src/Views/Appearance.vala:100
-msgid "Visual style for system components like the Dock and Panel indicators."
-msgstr "Visual style for system components like the Dock and Panel indicators."
+#: src/Views/Appearance.vala:141
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
+msgstr ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:149
 msgid "Schedule:"
 msgstr "Schedule:"
 
-#: src/Views/Appearance.vala:114
+#: src/Views/Appearance.vala:155
 msgid "Disabled"
 msgstr "Disabled"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:156
 msgid "Sunset to Sunrise"
 msgstr "Sunset to Sunrise"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:157
 msgid "Manual"
 msgstr "Manual"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:159
 msgid "From:"
 msgstr "From:"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:165
 msgid "To:"
 msgstr "To:"
 
-#: src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:181
 msgid "Text size:"
 msgstr "Text size:"
 
-#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Small"
 
-#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Large"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:192
 msgid "Larger"
 msgstr "Larger"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:194
 msgid "Dyslexia-friendly text:"
 msgstr "Dyslexia-friendly text:"
 
-#: src/Views/Appearance.vala:162
+#: src/Views/Appearance.vala:203
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -193,51 +195,55 @@ msgstr ""
 "legibility and reading speed."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:354
 msgid "Accent:"
 msgstr "Accent:"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:358
 msgid "Blueberry"
 msgstr "Blueberry"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:361
 msgid "Mint"
 msgstr "Mint"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:364
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:367
 msgid "Banana"
 msgstr "Banana"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:370
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:373
 msgid "Strawberry"
 msgstr "Strawberry"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:376
 msgid "Bubblegum"
 msgstr "Bubblegum"
 
-#: src/Views/Appearance.vala:336
+#: src/Views/Appearance.vala:379
 msgid "Grape"
 msgstr "Grape"
 
-#: src/Views/Appearance.vala:339
+#: src/Views/Appearance.vala:382
 msgid "Cocoa"
 msgstr "Cocoa"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:385
 msgid "Slate"
 msgstr "Slate"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:388
+msgid "Automatic based on wallpaper"
+msgstr "Automatic based on wallpaper"
+
+#: src/Views/Appearance.vala:404
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -287,81 +293,77 @@ msgstr "Pressure reveal:"
 
 #: src/Views/Dock.vala:153
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 #: src/Views/Dock.vala:157
 msgid "Panel translucency:"
 msgstr "Panel translucency:"
 
-#: src/Views/Dock.vala:239
+#: src/Views/Dock.vala:241
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:244
+#: src/Views/Dock.vala:246
 #, c-format
 msgid "Display %d"
 msgstr "Display %d"
 
-#: src/Views/Multitasking.vala:40
+#: src/Views/Multitasking.vala:42
 msgid "When the cursor enters the corner of the display:"
 msgstr "When the cursor enters the corner of the display:"
 
-#: src/Views/Multitasking.vala:79
+#: src/Views/Multitasking.vala:81
 msgid "Custom command:"
 msgstr "Custom command:"
 
-#: src/Views/Multitasking.vala:94
+#: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
 msgstr "Move windows to a new workspace:"
 
-#: src/Views/Multitasking.vala:100
-#, fuzzy
-#| msgid "When entering fullscreen:"
+#: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
-msgstr "When entering fullscreen:"
+msgstr "When entering fullscreen"
 
-#: src/Views/Multitasking.vala:101
-#, fuzzy
-#| msgid "When maximizing:"
+#: src/Views/Multitasking.vala:103
 msgid "When maximizing"
-msgstr "When maximizing:"
+msgstr "When maximising"
 
-#: src/Views/Multitasking.vala:111
+#: src/Views/Multitasking.vala:113
 msgid "Window animations:"
 msgstr "Window animations:"
 
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:154
 msgid "Do nothing"
 msgstr "Do nothing"
 
 #. none
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
 msgstr "Multitasking View"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:156
 msgid "Maximize current window"
 msgstr "Maximise current window"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:157
 msgid "Show Applications Menu"
 msgstr "Show Applications Menu"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:158
 msgid "Show all windows"
 msgstr "Show all windows"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
 msgstr "Switch to new workspace"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:160
 msgid "Execute custom command"
 msgstr "Execute custom command"
 
@@ -438,6 +440,11 @@ msgstr "Set As Desktop Slideshow"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Create Slideshow"
+
+#~ msgid ""
+#~ "Visual style for system components like the Dock and Panel indicators."
+#~ msgstr ""
+#~ "Visual style for system components like the Dock and Panel indicators."
 
 #~ msgid "Normal"
 #~ msgstr "Normal"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 20:23+0000\n"
+"POT-Creation-Date: 2021-07-15 22:31+0000\n"
 "PO-Revision-Date: 2021-02-17 13:39+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -122,69 +122,70 @@ msgstr "Постави за позадину _радне површи"
 msgid "Set selected image to be the new desktop background"
 msgstr "Постави изабрану слику за нову позадину радне површи"
 
-#: src/Views/Appearance.vala:47
+#: src/Views/Appearance.vala:88
 msgid "Style:"
 msgstr "Стил:"
 
-#: src/Views/Appearance.vala:67 src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
 #: src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Основно"
 
-#: src/Views/Appearance.vala:91
+#: src/Views/Appearance.vala:132
 msgid "Dark"
 msgstr "Тамно"
 
-#: src/Views/Appearance.vala:100
-msgid "Visual style for system components like the Dock and Panel indicators."
+#: src/Views/Appearance.vala:141
+msgid ""
+"Preferred visual style for system components. Apps may also choose to follow "
+"this preference."
 msgstr ""
-"Визуелни стил за компоненте система као што су указивачи луке и панела."
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:149
 msgid "Schedule:"
 msgstr "Закажи:"
 
-#: src/Views/Appearance.vala:114
+#: src/Views/Appearance.vala:155
 msgid "Disabled"
 msgstr "Искључено"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:156
 msgid "Sunset to Sunrise"
 msgstr "Сумрака до свитаја"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:157
 msgid "Manual"
 msgstr "Ручно"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:159
 msgid "From:"
 msgstr "Од:"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:165
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:181
 msgid "Text size:"
 msgstr "Величина текста:"
 
-#: src/Views/Appearance.vala:148 src/Views/Dock.vala:38
+#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Мали"
 
-#: src/Views/Appearance.vala:150 src/Views/Dock.vala:50
+#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Велик"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:192
 msgid "Larger"
 msgstr "Увећан"
 
-#: src/Views/Appearance.vala:153
+#: src/Views/Appearance.vala:194
 msgid "Dyslexia-friendly text:"
 msgstr "Текст пригодан дислексији:"
 
-#: src/Views/Appearance.vala:162
+#: src/Views/Appearance.vala:203
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -193,51 +194,55 @@ msgstr ""
 "читљивости и повећати брзину читања."
 
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:354
 msgid "Accent:"
 msgstr "Наглашена:"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:358
 msgid "Blueberry"
 msgstr "Боровница"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:361
 msgid "Mint"
 msgstr "Нана"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:364
 msgid "Lime"
 msgstr "Лимета"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:367
 msgid "Banana"
 msgstr "Банана"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:370
 msgid "Orange"
 msgstr "Наранџа"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:373
 msgid "Strawberry"
 msgstr "Јагода"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:376
 msgid "Bubblegum"
 msgstr "Жвакаћа гума"
 
-#: src/Views/Appearance.vala:336
+#: src/Views/Appearance.vala:379
 msgid "Grape"
 msgstr "Грожђе"
 
-#: src/Views/Appearance.vala:339
+#: src/Views/Appearance.vala:382
 msgid "Cocoa"
 msgstr "Какао"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:385
 msgid "Slate"
 msgstr "Шкриљац"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:388
+msgid "Automatic based on wallpaper"
+msgstr ""
+
+#: src/Views/Appearance.vala:404
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -293,75 +298,75 @@ msgstr ""
 msgid "Panel translucency:"
 msgstr "Прозрачност панела:"
 
-#: src/Views/Dock.vala:239
+#: src/Views/Dock.vala:241
 #, c-format
 msgid "Monitor %d"
 msgstr "Монитор бр. %d"
 
-#: src/Views/Dock.vala:244
+#: src/Views/Dock.vala:246
 #, c-format
 msgid "Display %d"
 msgstr "Екран бр. %d"
 
-#: src/Views/Multitasking.vala:40
+#: src/Views/Multitasking.vala:42
 msgid "When the cursor enters the corner of the display:"
 msgstr "Када курзор уђе у угао екрана:"
 
-#: src/Views/Multitasking.vala:79
+#: src/Views/Multitasking.vala:81
 msgid "Custom command:"
 msgstr "Произвољна наредба:"
 
-#: src/Views/Multitasking.vala:94
+#: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
 msgstr "Премести прозоре на нови радни простор:"
 
-#: src/Views/Multitasking.vala:100
+#: src/Views/Multitasking.vala:102
 #, fuzzy
 #| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
 msgstr "Приликом преласка на цео екран:"
 
-#: src/Views/Multitasking.vala:101
+#: src/Views/Multitasking.vala:103
 #, fuzzy
 #| msgid "When maximizing:"
 msgid "When maximizing"
 msgstr "Приликом увеличања:"
 
-#: src/Views/Multitasking.vala:111
+#: src/Views/Multitasking.vala:113
 msgid "Window animations:"
 msgstr "Анимације прозора:"
 
-#: src/Views/Multitasking.vala:152
+#: src/Views/Multitasking.vala:154
 msgid "Do nothing"
 msgstr "Не ради ништа"
 
 #. none
-#: src/Views/Multitasking.vala:153
+#: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
 msgstr "Преглед са више задатака"
 
 #. show-workspace-view
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:156
 msgid "Maximize current window"
 msgstr "Увећај текући прозор"
 
 #. maximize-current
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:157
 msgid "Show Applications Menu"
 msgstr "Прикажи изборник програма"
 
 #. open-launcher
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:158
 msgid "Show all windows"
 msgstr "Прикажи све прозоре"
 
 #. window-overview-all
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:159
 msgid "Switch to new workspace"
 msgstr "Пређи на нови радни простор"
 
 #. switch-new-workspace
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:160
 msgid "Execute custom command"
 msgstr "Изврши произвољну наредбу"
 
@@ -438,6 +443,11 @@ msgstr "Постави као смењиву позадину радне пов�
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Направи покретни приказ"
+
+#~ msgid ""
+#~ "Visual style for system components like the Dock and Panel indicators."
+#~ msgstr ""
+#~ "Визуелни стил за компоненте система као што су указивачи луке и панела."
 
 #~ msgid "Normal"
 #~ msgstr "Обично"

@@ -7,14 +7,20 @@
   <icon type="stock">preferences-desktop-wallpaper</icon>
   <translation type="gettext">pantheon-desktop-plug</translation>
   <releases>
-    <release version="2.9.0" date="2020-04-22" urgency="medium">
+    <release version="6.0.0" date="2021-07-15" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
+          <li>Accent color and dark style options</li>
           <li>Dyslexia-friendly text preference to use the OpenDyslexia font system-wide</li>
+          <li>Maximize and fullscreen workspace management options</li>
         </ul>
         <p>Other updates:</p>
         <ul>
+          <li>Fix a freeze after opening Power settings</li>
+          <li>Improved filter for image file types when importing</li>
+          <li>Visual updates</li>
+          <li>Some options now appear in different tabs</li>
           <li>Updated translations</li>
         </ul>
       </description>
@@ -41,16 +47,16 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-wallpapers.png</image>
     </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-appearance.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-dock.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-dock-panel.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-hotcorners.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-multitasking.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
