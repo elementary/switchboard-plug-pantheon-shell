@@ -20,9 +20,12 @@
 
 public class PantheonShell.Appearance : Gtk.Grid {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
+    private const string XSETTINGS_SCHEMA = "org.gnome.settings-daemon.plugins.xsettings";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
+    private const string ANTIALIAS_KEY = "antialiasing";
+    private const string SUBPIXELORDER_KEY = "rgba-order";
 
     private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
     private const string FONT_KEY = "font-name";
@@ -36,6 +39,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
     private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
 
     private Granite.Widgets.ModeButton text_size_modebutton;
+    
+    private Granite.Widgets.ModeButton text_antialias_modebutton;
+    
+    private Granite.Widgets.ModeButton text_subpixelorder_modebutton;
+    private Gtk.Label text_subpixelorder_label;
+    private Gtk.Label text_subpixelorder_description_label;
 
     private enum AccentColor {
         NO_PREFERENCE,
@@ -190,6 +199,90 @@ public class PantheonShell.Appearance : Gtk.Grid {
         text_size_modebutton.append_text (_("Default"));
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
+        
+        var text_antialias_label = new Gtk.Label(_("Text anti-aliasing:")) {
+            halign = Gtk.Align.END,
+        };
+        
+        text_antialias_modebutton = new Granite.Widgets.ModeButton ();
+        
+        text_antialias_modebutton.mode_added.connect ((mode_ix,mode_widget) => {
+            
+            var font_options = new Cairo.FontOptions();
+            
+            switch (mode_ix) {
+                case 0:
+                    font_options.set_antialias(Cairo.Antialias.NONE);
+                    break;
+                case 1:
+                    font_options.set_antialias(Cairo.Antialias.GRAY);
+                    break;
+                case 2:
+                    font_options.set_antialias(Cairo.Antialias.SUBPIXEL);
+                    break;
+            }
+            
+            mode_widget.set_font_options (font_options);
+        });
+        
+        text_antialias_modebutton.append_text (_("None"));
+        text_antialias_modebutton.append_text (_("Grayscale"));
+        text_antialias_modebutton.append_text (_("Subpixel"));
+        
+        var text_antialias_description_label = new Gtk.Label (
+            _("Text anti-aliasing can improve text appearance and legibility, depending on display hardware. Choose the mode that looks best on your display. Apps have to be re-opened for changes to take effect")
+        ) {
+            max_width_chars = 60,
+            wrap = true,
+            xalign = 0
+        };
+        
+        text_antialias_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        text_subpixelorder_label = new Gtk.Label(_("Text subpixel order:")) {
+            halign = Gtk.Align.END,
+        };
+        
+        text_subpixelorder_modebutton = new Granite.Widgets.ModeButton ();
+        
+        text_subpixelorder_modebutton.mode_added.connect ((mode_ix,mode_widget) => {
+            
+            var font_options = new Cairo.FontOptions();
+            font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+            
+            switch (mode_ix) {
+                case 0:
+                    font_options.set_subpixel_order (Cairo.SubpixelOrder.RGB);
+                    break;
+                case 1:
+                    font_options.set_subpixel_order (Cairo.SubpixelOrder.BGR);
+                    break;
+                case 2:
+                    font_options.set_subpixel_order (Cairo.SubpixelOrder.VRGB);
+                    break;
+                case 3:
+                    font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
+                    break;
+            }
+            
+            mode_widget.set_font_options (font_options);
+        });
+        
+        text_subpixelorder_modebutton.append_text (_("Red On Left (RGB)"));
+        text_subpixelorder_modebutton.append_text (_("Blue On Left (BGR)"));
+        text_subpixelorder_modebutton.append_text (_("Red On Top (VRGB)"));
+        text_subpixelorder_modebutton.append_text (_("Blue On Top (VBGR)"));
+        
+        text_subpixelorder_description_label = new Gtk.Label (
+            _("Different displays have different positions of the red, green, and blue subpixels. Select the mode that looks the best on your display. Apps have to be re-opened for changes to take effect")
+        ) {
+            max_width_chars = 60,
+            wrap = true,
+            xalign = 0
+        };
+        
+        text_subpixelorder_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
 
         var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:")) {
             halign = Gtk.Align.END
@@ -216,9 +309,18 @@ public class PantheonShell.Appearance : Gtk.Grid {
          */
         attach (text_size_label, 0, 8);
         attach (text_size_modebutton, 1, 8, 2);
-        attach (dyslexia_font_label, 0, 9);
-        attach (dyslexia_font_switch, 1, 9);
-        attach (dyslexia_font_description_label, 1, 10, 2);
+        
+        attach (text_antialias_label, 0, 9);
+        attach (text_antialias_modebutton, 1, 9, 2);
+        attach (text_antialias_description_label, 1, 10, 2);
+        
+        attach (text_subpixelorder_label, 0, 11);
+        attach (text_subpixelorder_modebutton, 1, 11, 2);
+        attach (text_subpixelorder_description_label, 1, 12, 2);
+        
+        attach (dyslexia_font_label, 0, 13);
+        attach (dyslexia_font_switch, 1, 13);
+        attach (dyslexia_font_description_label, 1, 14, 2);
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -428,6 +530,25 @@ public class PantheonShell.Appearance : Gtk.Grid {
         dyslexia_font_switch.state_set.connect (() => {
             toggle_dyslexia_support (interface_settings, dyslexia_font_switch.get_active () );
         });
+        
+        var xsettings_settings = new GLib.Settings (XSETTINGS_SCHEMA);
+        
+        update_text_antialias_modebutton (xsettings_settings);
+        
+        xsettings_settings.changed.connect (() => {
+            update_text_antialias_modebutton (xsettings_settings);
+            update_text_subpixelorder_modebutton (xsettings_settings);
+        });
+        
+        text_antialias_modebutton.mode_changed.connect (() => {
+            set_text_antialias (xsettings_settings, text_antialias_modebutton.selected);
+        });
+        
+        update_text_subpixelorder_modebutton (xsettings_settings);
+        
+        text_subpixelorder_modebutton.mode_changed.connect (() => {
+            set_text_subpixelorder (xsettings_settings, text_subpixelorder_modebutton.selected);
+        });
     }
 
     private class PrefersAccentColorButton : Gtk.RadioButton {
@@ -521,6 +642,43 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
     private void update_text_size_modebutton (GLib.Settings interface_settings) {
         text_size_modebutton.set_active (get_text_scale (interface_settings));
+    }
+    
+    private int get_text_antialias (GLib.Settings xsettings_settings) {
+        return xsettings_settings.get_enum (ANTIALIAS_KEY);
+    }
+    
+    private void set_text_antialias (GLib.Settings xsettings_settings, int option) {
+        xsettings_settings.set_enum (ANTIALIAS_KEY, option);
+    }
+    
+    private void update_text_antialias_modebutton (GLib.Settings xsettings_settings) {
+        text_antialias_modebutton.set_active (get_text_antialias (xsettings_settings));
+    }
+    
+    private int get_text_subpixelorder (GLib.Settings xsettings_settings) {
+        return xsettings_settings.get_enum (SUBPIXELORDER_KEY) - 1;
+    }
+    
+    private void set_text_subpixelorder (GLib.Settings xsettings_settings, int option) {
+        xsettings_settings.set_enum (SUBPIXELORDER_KEY, option + 1);
+    }
+    
+    private void update_text_subpixelorder_modebutton (GLib.Settings xsettings_settings) {
+    
+        var antialias = get_text_antialias (xsettings_settings);
+        
+        if (antialias != 2) {
+           text_subpixelorder_label.visible = false;
+           text_subpixelorder_modebutton.visible = false;
+           text_subpixelorder_description_label.visible = false;
+        } else {
+           text_subpixelorder_label.visible = true;
+           text_subpixelorder_modebutton.visible = true;
+           text_subpixelorder_description_label.visible = true;
+        }
+        
+        text_subpixelorder_modebutton.set_active (get_text_subpixelorder (xsettings_settings));
     }
 
     private static DateTime double_date_time (double dbl) {
