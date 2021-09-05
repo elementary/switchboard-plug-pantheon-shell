@@ -202,9 +202,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
         
         var text_antialias_label = new Gtk.Label(_("Text anti-aliasing:")) {
             halign = Gtk.Align.END,
+            margin_top = 18
         };
         
-        text_antialias_modebutton = new Granite.Widgets.ModeButton ();
+        text_antialias_modebutton = new Granite.Widgets.ModeButton () {
+            margin_top = 18
+        };
         
         text_antialias_modebutton.mode_added.connect ((mode_ix,mode_widget) => {
             
@@ -241,9 +244,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         text_subpixelorder_label = new Gtk.Label(_("Text subpixel order:")) {
             halign = Gtk.Align.END,
+            margin_top = 18
         };
         
-        text_subpixelorder_modebutton = new Granite.Widgets.ModeButton ();
+        text_subpixelorder_modebutton = new Granite.Widgets.ModeButton () {
+            margin_top = 18
+        };
         
         text_subpixelorder_modebutton.mode_added.connect ((mode_ix,mode_widget) => {
             
@@ -285,11 +291,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
 
         var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:")) {
-            halign = Gtk.Align.END
+            halign = Gtk.Align.END,
+            margin_top = 18
         };
 
         var dyslexia_font_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
+            halign = Gtk.Align.START,
+            margin_top = 18
         };
 
         var dyslexia_font_description_label = new Gtk.Label (
