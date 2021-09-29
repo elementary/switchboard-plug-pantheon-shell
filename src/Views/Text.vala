@@ -38,9 +38,6 @@ public class PantheonShell.Text : Gtk.Grid {
     private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
 
     private Granite.Widgets.ModeButton text_size_modebutton;
-    // private TextFontOptionRadioGroup text_antialias_group;
-    // private TextFontOptionRadioGroup text_subpixelorder_group;
-    private Gtk.Label text_subpixelorder_label;
 
     construct {
         column_spacing = 12;
@@ -60,70 +57,95 @@ public class PantheonShell.Text : Gtk.Grid {
         text_size_modebutton.append_text (_("Larger"));
 
         var antialias_label = new Gtk.Label (_("Anti-aliasing:")) {
-            halign = Gtk.Align.END
+            halign = Gtk.Align.END,
+            margin_top = 18
         };
 
         // Needed to handle options outside of these choices
-        var aa_invalid_radio = new Gtk.RadioButton (null);
+        var antialias_invalid_radio = new Gtk.RadioButton (null);
 
-        var grayscale_font_options = new Cairo.FontOptions ();
-        grayscale_font_options.set_antialias (Cairo.Antialias.GRAY);
+        var antialias_grayscale_font_options = new Cairo.FontOptions ();
+        antialias_grayscale_font_options.set_antialias (Cairo.Antialias.GRAY);
 
-        var grayscale_label = new Gtk.Label (_("Default"));
-        grayscale_label.set_font_options (grayscale_font_options);
+        var antialias_grayscale_label = new Gtk.Label (_("Default"));
+        antialias_grayscale_label.set_font_options (antialias_grayscale_font_options);
 
-        var grayscale_radio = new Gtk.RadioButton.from_widget (aa_invalid_radio);
-        grayscale_radio.add (grayscale_label);
+        var antialias_grayscale_radio = new Gtk.RadioButton.from_widget (antialias_invalid_radio);
+        antialias_grayscale_radio.add (antialias_grayscale_label);
 
-        var subpixel_font_options = new Cairo.FontOptions ();
-        subpixel_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        var antialias_subpixel_font_options = new Cairo.FontOptions ();
+        antialias_subpixel_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
 
-        var subpixel_label = new Gtk.Label (_("Subpixel"));
-        subpixel_label.set_font_options (subpixel_font_options);
+        var antialias_subpixel_label = new Gtk.Label (_("Subpixel"));
+        antialias_subpixel_label.set_font_options (antialias_subpixel_font_options);
 
-        var subpixel_radio = new Gtk.RadioButton.from_widget (aa_invalid_radio);
-        subpixel_radio.add (subpixel_label);
+        var antialias_subpixel_radio = new Gtk.RadioButton.from_widget (antialias_invalid_radio);
+        antialias_subpixel_radio.add (antialias_subpixel_label);
 
         var antialias_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin_top = 18
+        };
+        antialias_grid.add (antialias_grayscale_radio);
+        antialias_grid.add (antialias_subpixel_radio);
+
+        var subpixel_label = new Gtk.Label (_("Subpixel order:")) {
+            halign = Gtk.Align.END
+        };
+
+        var subpixel_rgb_font_options = new Cairo.FontOptions ();
+        subpixel_rgb_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        subpixel_rgb_font_options.set_subpixel_order (Cairo.SubpixelOrder.RGB);
+
+        /// TRANSLATORS: Subpixel order from for red, green, blue from left to right
+        var subpixel_rgb_label = new Gtk.Label (_("RGB"));
+        subpixel_rgb_label.set_font_options (subpixel_rgb_font_options);
+
+        var subpixel_rgb_radio = new Gtk.RadioButton (null);
+        subpixel_rgb_radio.add (subpixel_rgb_label);
+
+        var subpixel_bgr_font_options = new Cairo.FontOptions ();
+        subpixel_bgr_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        subpixel_bgr_font_options.set_subpixel_order (Cairo.SubpixelOrder.BGR);
+
+        /// TRANSLATORS: Subpixel order from for blue, green, red from left to right
+        var subpixel_bgr_label = new Gtk.Label (_("BGR"));
+        subpixel_bgr_label.set_font_options (subpixel_bgr_font_options);
+
+        var subpixel_bgr_radio = new Gtk.RadioButton.from_widget (subpixel_rgb_radio);
+        subpixel_bgr_radio.add (subpixel_bgr_label);
+
+        var subpixel_vrgb_font_options = new Cairo.FontOptions ();
+        subpixel_vrgb_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        subpixel_vrgb_font_options.set_subpixel_order (Cairo.SubpixelOrder.VRGB);
+
+        /// TRANSLATORS: Subpixel order from for red, green, blue from top to bottom
+        var subpixel_vrgb_label = new Gtk.Label (_("Vertical RGB"));
+        subpixel_vrgb_label.set_font_options (subpixel_vrgb_font_options);
+
+        var subpixel_vrgb_radio = new Gtk.RadioButton.from_widget (subpixel_rgb_radio);
+        subpixel_vrgb_radio.add (subpixel_vrgb_label);
+
+        var subpixel_vbgr_font_options = new Cairo.FontOptions ();
+        subpixel_vbgr_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        subpixel_vbgr_font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
+
+        /// TRANSLATORS: Subpixel order from for blue, green, red from top to bottom
+        var subpixel_vbgr_label = new Gtk.Label (_("Vertical BGR"));
+        subpixel_vbgr_label.set_font_options (subpixel_vbgr_font_options);
+
+        var subpixel_vbgr_radio = new Gtk.RadioButton.from_widget (subpixel_rgb_radio);
+        subpixel_vbgr_radio.add (subpixel_vbgr_label);
+
+        var subpixel_grid = new Gtk.Grid () {
             column_spacing = 12
         };
-        antialias_grid.add (grayscale_radio);
-        antialias_grid.add (subpixel_radio);
+        subpixel_grid.add (subpixel_rgb_radio);
+        subpixel_grid.add (subpixel_bgr_radio);
+        subpixel_grid.add (subpixel_vrgb_radio);
+        subpixel_grid.add (subpixel_vbgr_radio);
 
-        // text_antialias_group.append_option (_("Default"), (font_options) => {
-        //     font_options.set_antialias (Cairo.Antialias.GRAY);
-        // });
-
-        // text_antialias_group.append_option (_("Subpixel"), (font_options) => {
-        //     font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
-        // });
-
-        // text_subpixelorder_label = new Gtk.Label (_("Subpixel order:")) {
-        //     halign = Gtk.Align.END,
-        //     margin_top = 18
-        // };
-
-        // text_subpixelorder_group = new TextFontOptionRadioGroup () {
-        //     margin_top = 18
-        // };
-
-        // text_subpixelorder_group.append_option (_("RGB"), (font_options) => {
-        //     font_options.set_subpixel_order (Cairo.SubpixelOrder.RGB);
-        // });
-
-        // text_subpixelorder_group.append_option (_("BGR"), (font_options) => {
-        //     font_options.set_subpixel_order (Cairo.SubpixelOrder.BGR);
-        // });
-
-        // text_subpixelorder_group.append_option (_("Vertical RGB"), (font_options) => {
-        //     font_options.set_subpixel_order (Cairo.SubpixelOrder.VRGB);
-        // });
-
-        // text_subpixelorder_group.append_option (_("Vertical BGR"), (font_options) => {
-        //     font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
-        // });
-
-        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:")) {
+        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly font:")) {
             halign = Gtk.Align.END,
             margin_top = 18
         };
@@ -142,18 +164,18 @@ public class PantheonShell.Text : Gtk.Grid {
         };
         dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        attach (text_size_label, 0, 8);
-        attach (text_size_modebutton, 1, 8, 2);
+        attach (text_size_label, 0, 0);
+        attach (text_size_modebutton, 1, 0);
 
-        attach (antialias_label, 0, 9);
-        attach (antialias_grid, 1, 9, 2);
+        attach (antialias_label, 0, 1);
+        attach (antialias_grid, 1, 1);
 
-        attach (text_subpixelorder_label, 0, 11);
-        // attach (text_subpixelorder_group, 1, 11, 2);
+        attach (subpixel_label, 0, 2);
+        attach (subpixel_grid, 1, 2);
 
-        attach (dyslexia_font_label, 0, 13);
-        attach (dyslexia_font_switch, 1, 13);
-        attach (dyslexia_font_description_label, 1, 14, 2);
+        attach (dyslexia_font_label, 0, 3);
+        attach (dyslexia_font_switch, 1, 3);
+        attach (dyslexia_font_description_label, 1, 4);
 
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
@@ -172,25 +194,6 @@ public class PantheonShell.Text : Gtk.Grid {
         dyslexia_font_switch.state_set.connect (() => {
             toggle_dyslexia_support (interface_settings, dyslexia_font_switch.get_active () );
         });
-
-        var xsettings_settings = new GLib.Settings (XSETTINGS_SCHEMA);
-
-        // update_text_antialias_modebutton (xsettings_settings);
-
-        // xsettings_settings.changed.connect (() => {
-        //     update_text_antialias_modebutton (xsettings_settings);
-        //     update_text_subpixelorder_modebutton (xsettings_settings);
-        // });
-
-        // text_antialias_group.changed.connect (() => {
-        //     set_text_antialias (xsettings_settings, text_antialias_group.selected);
-        // });
-
-        // update_text_subpixelorder_modebutton (xsettings_settings);
-
-        // text_subpixelorder_group.changed.connect (() => {
-        //     set_text_subpixelorder (xsettings_settings, text_subpixelorder_group.selected);
-        // });
     }
 
     private void toggle_dyslexia_support (GLib.Settings interface_settings, bool state) {
@@ -241,28 +244,4 @@ public class PantheonShell.Text : Gtk.Grid {
     private void update_text_size_modebutton (GLib.Settings interface_settings) {
         text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
-
-    // private int get_text_antialias (GLib.Settings xsettings_settings) {
-    //     return xsettings_settings.get_enum (ANTIALIAS_KEY);
-    // }
-
-    // private void set_text_antialias (GLib.Settings xsettings_settings, int option) {
-    //     xsettings_settings.set_enum (ANTIALIAS_KEY, option);
-    // }
-
-    // private void update_text_antialias_modebutton (GLib.Settings xsettings_settings) {
-    //     text_antialias_group.set_active (get_text_antialias (xsettings_settings));
-    // }
-
-    // private int get_text_subpixelorder (GLib.Settings xsettings_settings) {
-    //     return xsettings_settings.get_enum (SUBPIXELORDER_KEY) - 1;
-    // }
-
-    // private void set_text_subpixelorder (GLib.Settings xsettings_settings, int option) {
-    //     xsettings_settings.set_enum (SUBPIXELORDER_KEY, option + 1);
-    // }
-
-    // private void update_text_subpixelorder_modebutton (GLib.Settings xsettings_settings) {
-    //     text_subpixelorder_group.set_active (get_text_subpixelorder (xsettings_settings));
-    // }
 }
