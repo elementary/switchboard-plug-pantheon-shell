@@ -61,7 +61,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             var appearance = new Appearance ();
             stack.add_titled (appearance, "appearance", _("Appearance"));
-            
+
             var text = new Text ();
             stack.add_titled (text, "text", _("Text"));
 
