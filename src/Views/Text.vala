@@ -20,7 +20,6 @@
 */
 
 public class PantheonShell.Text : Gtk.Grid {
-
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string XSETTINGS_SCHEMA = "org.gnome.settings-daemon.plugins.xsettings";
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
@@ -31,7 +30,7 @@ public class PantheonShell.Text : Gtk.Grid {
     private const string FONT_KEY = "font-name";
     private const string DOCUMENT_FONT_KEY = "document-font-name";
     private const string MONOSPACE_FONT_KEY = "monospace-font-name";
-    
+
     private const string OD_REG_FONT = "OpenDyslexic Regular 9";
     private const string OD_DOC_FONT = "OpenDyslexic Regular 10";
     private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
@@ -50,7 +49,7 @@ public class PantheonShell.Text : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 12;
         margin_bottom = 24;
-    
+
         var text_size_label = new Gtk.Label (_("Text size:")) {
             halign = Gtk.Align.END,
             margin_top = 24
@@ -63,29 +62,29 @@ public class PantheonShell.Text : Gtk.Grid {
         text_size_modebutton.append_text (_("Default"));
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
-        
-        var text_antialias_label = new Gtk.Label(_("Text anti-aliasing:")) {
+
+        var text_antialias_label = new Gtk.Label (_("Text anti-aliasing:")) {
             halign = Gtk.Align.END,
             margin_top = 18
         };
-        
+
         text_antialias_group = new TextFontOptionRadioGroup () {
             margin_top = 18
         };
-        
-        text_antialias_group.append_option(_("None"), (font_options) => {
-            font_options.set_antialias(Cairo.Antialias.NONE);
+
+        text_antialias_group.append_option (_("None"), (font_options) => {
+            font_options.set_antialias (Cairo.Antialias.NONE);
         });
-        
-        text_antialias_group.append_option(_("Grayscale"), (font_options) => {
-            font_options.set_antialias(Cairo.Antialias.GRAY);
+
+        text_antialias_group.append_option (_("Grayscale"), (font_options) => {
+            font_options.set_antialias (Cairo.Antialias.GRAY);
         });
-        
-        text_antialias_group.append_option(_("Subpixel"), (font_options) => {
-            font_options.set_antialias(Cairo.Antialias.SUBPIXEL);
+
+        text_antialias_group.append_option (_("Subpixel"), (font_options) => {
+            font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
         });
-        
-        
+
+
         var text_antialias_description_label = new Gtk.Label (
             _("Text anti-aliasing can improve text appearance and legibility, depending on display hardware. Choose the mode that looks best on your display. Apps have to be re-opened for changes to take effect")
         ) {
@@ -93,34 +92,34 @@ public class PantheonShell.Text : Gtk.Grid {
             wrap = true,
             xalign = 0
         };
-        
+
         text_antialias_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        text_subpixelorder_label = new Gtk.Label(_("Text subpixel order:")) {
+        text_subpixelorder_label = new Gtk.Label (_("Text subpixel order:")) {
             halign = Gtk.Align.END,
             margin_top = 18
         };
-        
+
         text_subpixelorder_group = new TextFontOptionRadioGroup () {
             margin_top = 18
         };
-        
-        text_subpixelorder_group.append_option(_("Red On Left (RGB)"), (font_options) => {
+
+        text_subpixelorder_group.append_option (_("Red On Left (RGB)"), (font_options) => {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.RGB);
         });
-        
-        text_subpixelorder_group.append_option(_("Blue On Left (BGR)"), (font_options) => {
+
+        text_subpixelorder_group.append_option (_("Blue On Left (BGR)"), (font_options) => {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.BGR);
         });
-        
-        text_subpixelorder_group.append_option(_("Red On Top (VRGB)"), (font_options) => {
+
+        text_subpixelorder_group.append_option (_("Red On Top (VRGB)"), (font_options) => {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.VRGB);
         });
-        
-        text_subpixelorder_group.append_option(_("Blue On Top (VBGR)"), (font_options) => {
+
+        text_subpixelorder_group.append_option (_("Blue On Top (VBGR)"), (font_options) => {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
         });
-        
+
         text_subpixelorder_description_label = new Gtk.Label (
             _("Different displays have different positions of the red, green, and blue subpixels. Select the mode that looks the best on your display. Apps have to be re-opened for changes to take effect")
         ) {
@@ -128,7 +127,7 @@ public class PantheonShell.Text : Gtk.Grid {
             wrap = true,
             xalign = 0
         };
-        
+
         text_subpixelorder_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
 
@@ -159,21 +158,21 @@ public class PantheonShell.Text : Gtk.Grid {
          */
         attach (text_size_label, 0, 8);
         attach (text_size_modebutton, 1, 8, 2);
-        
+
         attach (text_antialias_label, 0, 9);
         attach (text_antialias_group, 1, 9, 2);
         attach (text_antialias_description_label, 1, 10, 2);
-        
+
         attach (text_subpixelorder_label, 0, 11);
         attach (text_subpixelorder_group, 1, 11, 2);
         attach (text_subpixelorder_description_label, 1, 12, 2);
-        
+
         attach (dyslexia_font_label, 0, 13);
         attach (dyslexia_font_switch, 1, 13);
         attach (dyslexia_font_description_label, 1, 14, 2);
-        
+
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
-        
+
         update_text_size_modebutton (interface_settings);
 
         interface_settings.changed.connect (() => {
@@ -189,27 +188,27 @@ public class PantheonShell.Text : Gtk.Grid {
         dyslexia_font_switch.state_set.connect (() => {
             toggle_dyslexia_support (interface_settings, dyslexia_font_switch.get_active () );
         });
-        
+
         var xsettings_settings = new GLib.Settings (XSETTINGS_SCHEMA);
-        
+
         update_text_antialias_modebutton (xsettings_settings);
-        
+
         xsettings_settings.changed.connect (() => {
             update_text_antialias_modebutton (xsettings_settings);
             update_text_subpixelorder_modebutton (xsettings_settings);
         });
-        
+
         text_antialias_group.changed.connect (() => {
             set_text_antialias (xsettings_settings, text_antialias_group.selected);
         });
-        
+
         update_text_subpixelorder_modebutton (xsettings_settings);
-        
+
         text_subpixelorder_group.changed.connect (() => {
             set_text_subpixelorder (xsettings_settings, text_subpixelorder_group.selected);
         });
     }
-    
+
     private void toggle_dyslexia_support (GLib.Settings interface_settings, bool state) {
         if (state == true) {
             interface_settings.set_string (FONT_KEY, OD_REG_FONT);
@@ -258,31 +257,31 @@ public class PantheonShell.Text : Gtk.Grid {
     private void update_text_size_modebutton (GLib.Settings interface_settings) {
         text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
-    
+
     private int get_text_antialias (GLib.Settings xsettings_settings) {
         return xsettings_settings.get_enum (ANTIALIAS_KEY);
     }
-    
+
     private void set_text_antialias (GLib.Settings xsettings_settings, int option) {
         xsettings_settings.set_enum (ANTIALIAS_KEY, option);
     }
-    
+
     private void update_text_antialias_modebutton (GLib.Settings xsettings_settings) {
         text_antialias_group.set_active (get_text_antialias (xsettings_settings));
     }
-    
+
     private int get_text_subpixelorder (GLib.Settings xsettings_settings) {
         return xsettings_settings.get_enum (SUBPIXELORDER_KEY) - 1;
     }
-    
+
     private void set_text_subpixelorder (GLib.Settings xsettings_settings, int option) {
         xsettings_settings.set_enum (SUBPIXELORDER_KEY, option + 1);
     }
-    
+
     private void update_text_subpixelorder_modebutton (GLib.Settings xsettings_settings) {
-    
+
         var antialias = get_text_antialias (xsettings_settings);
-        
+
         if (antialias != 2) {
            text_subpixelorder_label.visible = false;
            text_subpixelorder_group.visible = false;
@@ -292,7 +291,7 @@ public class PantheonShell.Text : Gtk.Grid {
            text_subpixelorder_group.visible = true;
            text_subpixelorder_description_label.visible = true;
         }
-        
+
         text_subpixelorder_group.set_active (get_text_subpixelorder (xsettings_settings));
     }
 
