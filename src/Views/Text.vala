@@ -50,7 +50,7 @@ public class PantheonShell.Text : Gtk.Grid {
         margin_start = margin_end = 12;
         margin_bottom = 24;
 
-        var text_size_label = new Gtk.Label (_("Text size:")) {
+        var text_size_label = new Gtk.Label (_("Size:")) {
             halign = Gtk.Align.END,
             margin_top = 24
         };
@@ -63,7 +63,7 @@ public class PantheonShell.Text : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        var text_antialias_label = new Gtk.Label (_("Text anti-aliasing:")) {
+        var text_antialias_label = new Gtk.Label (_("Anti-aliasing:")) {
             halign = Gtk.Align.END,
             margin_top = 18
         };
@@ -72,11 +72,7 @@ public class PantheonShell.Text : Gtk.Grid {
             margin_top = 18
         };
 
-        text_antialias_group.append_option (_("None"), (font_options) => {
-            font_options.set_antialias (Cairo.Antialias.NONE);
-        });
-
-        text_antialias_group.append_option (_("Grayscale"), (font_options) => {
+        text_antialias_group.append_option (_("Default"), (font_options) => {
             font_options.set_antialias (Cairo.Antialias.GRAY);
         });
 
@@ -84,18 +80,9 @@ public class PantheonShell.Text : Gtk.Grid {
             font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
         });
 
-
-        var text_antialias_description_label = new Gtk.Label (
-            _("Text anti-aliasing can improve text appearance and legibility, depending on display hardware. Choose the mode that looks best on your display. Apps have to be re-opened for changes to take effect")
-        ) {
-            max_width_chars = 60,
-            wrap = true,
-            xalign = 0
-        };
-
         text_antialias_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        text_subpixelorder_label = new Gtk.Label (_("Text subpixel order:")) {
+        text_subpixelorder_label = new Gtk.Label (_("Subpixel order:")) {
             halign = Gtk.Align.END,
             margin_top = 18
         };
@@ -104,34 +91,26 @@ public class PantheonShell.Text : Gtk.Grid {
             margin_top = 18
         };
 
-        text_subpixelorder_group.append_option (_("Red On Left (RGB)"), (font_options) => {
+        text_subpixelorder_group.append_option (_("RGB"), (font_options) => {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.RGB);
         });
 
-        text_subpixelorder_group.append_option (_("Blue On Left (BGR)"), (font_options) => {
+        text_subpixelorder_group.append_option (_("BGR"), (font_options) => {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.BGR);
         });
 
-        text_subpixelorder_group.append_option (_("Red On Top (VRGB)"), (font_options) => {
+        text_subpixelorder_group.append_option (_("Vertical RGB"), (font_options) => {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.VRGB);
         });
 
-        text_subpixelorder_group.append_option (_("Blue On Top (VBGR)"), (font_options) => {
+        text_subpixelorder_group.append_option (_("Vertical BGR"), (font_options) => {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
         });
-
-        text_subpixelorder_description_label = new Gtk.Label (
-            _("Different displays have different positions of the red, green, and blue subpixels. Select the mode that looks the best on your display. Apps have to be re-opened for changes to take effect")
-        ) {
-            max_width_chars = 60,
-            wrap = true,
-            xalign = 0
-        };
 
         text_subpixelorder_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
 
-        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:")) {
+        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly font:")) {
             halign = Gtk.Align.END,
             margin_top = 18
         };
