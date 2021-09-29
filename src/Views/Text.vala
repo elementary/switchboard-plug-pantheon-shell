@@ -51,13 +51,10 @@ public class PantheonShell.Text : Gtk.Grid {
         margin_bottom = 24;
 
         var text_size_label = new Gtk.Label (_("Size:")) {
-            halign = Gtk.Align.END,
-            margin_top = 24
+            halign = Gtk.Align.END
         };
 
-        text_size_modebutton = new Granite.Widgets.ModeButton () {
-            margin_top = 24
-        };
+        text_size_modebutton = new Granite.Widgets.ModeButton ();
         text_size_modebutton.append_text (_("Small"));
         text_size_modebutton.append_text (_("Default"));
         text_size_modebutton.append_text (_("Large"));
@@ -79,8 +76,6 @@ public class PantheonShell.Text : Gtk.Grid {
         text_antialias_group.append_option (_("Subpixel"), (font_options) => {
             font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
         });
-
-        text_antialias_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         text_subpixelorder_label = new Gtk.Label (_("Subpixel order:")) {
             halign = Gtk.Align.END,
@@ -107,10 +102,7 @@ public class PantheonShell.Text : Gtk.Grid {
             font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
         });
 
-        text_subpixelorder_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-
-
-        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly font:")) {
+        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:")) {
             halign = Gtk.Align.END,
             margin_top = 18
         };
@@ -129,22 +121,14 @@ public class PantheonShell.Text : Gtk.Grid {
         };
         dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        /* Rows 0 to 3 are for the dark style UI that gets attached only if we
-         * can connect to the DBus API
-         *
-         * Row 4 and 5 are for accent color UI that gets constructed only if the
-         * current stylesheet is supported (begins with the STYLESHEET_PREFIX)
-         */
         attach (text_size_label, 0, 8);
         attach (text_size_modebutton, 1, 8, 2);
 
         attach (text_antialias_label, 0, 9);
         attach (text_antialias_group, 1, 9, 2);
-        attach (text_antialias_description_label, 1, 10, 2);
 
         attach (text_subpixelorder_label, 0, 11);
         attach (text_subpixelorder_group, 1, 11, 2);
-        attach (text_subpixelorder_description_label, 1, 12, 2);
 
         attach (dyslexia_font_label, 0, 13);
         attach (dyslexia_font_switch, 1, 13);
