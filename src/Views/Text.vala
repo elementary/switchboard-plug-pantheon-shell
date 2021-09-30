@@ -97,7 +97,7 @@ public class PantheonShell.Text : Gtk.Grid {
         rgb_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
         rgb_font_options.set_subpixel_order (Cairo.SubpixelOrder.RGB);
 
-        /// TRANSLATORS: Subpixel order from for red, green, blue from left to right
+        /// TRANSLATORS: Subpixel order for red, green, blue from left to right
         var rgb_label = new Gtk.Label (_("RGB"));
         rgb_label.set_font_options (rgb_font_options);
 
@@ -108,7 +108,7 @@ public class PantheonShell.Text : Gtk.Grid {
         bgr_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
         bgr_font_options.set_subpixel_order (Cairo.SubpixelOrder.BGR);
 
-        /// TRANSLATORS: Subpixel order from for blue, green, red from left to right
+        /// TRANSLATORS: Subpixel order for blue, green, red from left to right
         var bgr_label = new Gtk.Label (_("BGR"));
         bgr_label.set_font_options (bgr_font_options);
 
@@ -119,7 +119,7 @@ public class PantheonShell.Text : Gtk.Grid {
         vrgb_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
         vrgb_font_options.set_subpixel_order (Cairo.SubpixelOrder.VRGB);
 
-        /// TRANSLATORS: Subpixel order from for red, green, blue from top to bottom
+        /// TRANSLATORS: Subpixel order for red, green, blue from top to bottom
         var vrgb_label = new Gtk.Label (_("Vertical RGB"));
         vrgb_label.set_font_options (vrgb_font_options);
 
@@ -130,7 +130,7 @@ public class PantheonShell.Text : Gtk.Grid {
         vbgr_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
         vbgr_font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
 
-        /// TRANSLATORS: Subpixel order from for blue, green, red from top to bottom
+        /// TRANSLATORS: Subpixel order for blue, green, red from top to bottom
         var vbgr_label = new Gtk.Label (_("Vertical BGR"));
         vbgr_label.set_font_options (vbgr_font_options);
 
@@ -188,6 +188,20 @@ public class PantheonShell.Text : Gtk.Grid {
         text_size_modebutton.mode_changed.connect (() => {
             set_text_scale (interface_settings, text_size_modebutton.selected);
         });
+
+        subpixel_radio.bind_property (
+            "active",
+            subpixel_order_label,
+            "sensitive",
+            BindingFlags.SYNC_CREATE
+        );
+
+        subpixel_radio.bind_property (
+            "active",
+            subpixel_order_grid,
+            "sensitive",
+            BindingFlags.SYNC_CREATE
+        );
 
         dyslexia_font_switch.set_active (update_dyslexia_font_switch (interface_settings));
 
