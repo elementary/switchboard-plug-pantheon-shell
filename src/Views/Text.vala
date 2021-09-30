@@ -56,7 +56,7 @@ public class PantheonShell.Text : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly font:")) {
+        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly:")) {
             halign = Gtk.Align.END,
             margin_top = 18
         };
@@ -75,9 +75,50 @@ public class PantheonShell.Text : Gtk.Grid {
         };
         dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var antialias_header = new Granite.HeaderLabel (_("Anti-aliasing")) {
+        var antialiasing_header = new Granite.HeaderLabel (_("Anti-aliasing")) {
             margin_top = 12
         };
+
+        string demo_string = _("Anti-aliasing improves text appearance and legibility depending on display hardware. Choose the options below that make this text the most legible on your hardware.");
+
+        var grayscale_font_options = new Cairo.FontOptions ();
+        grayscale_font_options.set_antialias (Cairo.Antialias.GRAY);
+
+        var subpixel_font_options = new Cairo.FontOptions ();
+        subpixel_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+
+        var rgb_font_options = new Cairo.FontOptions ();
+        rgb_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        rgb_font_options.set_subpixel_order (Cairo.SubpixelOrder.RGB);
+
+        var bgr_font_options = new Cairo.FontOptions ();
+        bgr_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        bgr_font_options.set_subpixel_order (Cairo.SubpixelOrder.BGR);
+
+        var vrgb_font_options = new Cairo.FontOptions ();
+        vrgb_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        vrgb_font_options.set_subpixel_order (Cairo.SubpixelOrder.VRGB);
+
+        var vbgr_font_options = new Cairo.FontOptions ();
+        vbgr_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
+        vbgr_font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
+
+        var grayscale_demo = new Gtk.Label (demo_string) {
+            margin = 12,
+            max_width_chars = 1, // Prevent the string from expanding the grid
+            wrap = true,
+            xalign = 0
+        };
+
+        var demo_stack = new Gtk.Stack () {
+            margin_bottom = 12
+        };
+        demo_stack.add (grayscale_demo);
+
+        unowned Gtk.StyleContext demo_stack_context = demo_stack.get_style_context ();
+        demo_stack_context.add_class (Granite.STYLE_CLASS_CARD);
+        demo_stack_context.add_class (Granite.STYLE_CLASS_ROUNDED);
+        demo_stack_context.add_class (Gtk.STYLE_CLASS_VIEW);
 
         var antialias_label = new Gtk.Label (_("Method:")) {
             halign = Gtk.Align.END
@@ -86,17 +127,11 @@ public class PantheonShell.Text : Gtk.Grid {
         // Needed to handle options outside of these choices
         var antialias_invalid_radio = new Gtk.RadioButton (null);
 
-        var grayscale_font_options = new Cairo.FontOptions ();
-        grayscale_font_options.set_antialias (Cairo.Antialias.GRAY);
-
         var grayscale_label = new Gtk.Label (_("Default"));
         grayscale_label.set_font_options (grayscale_font_options);
 
         var grayscale_radio = new Gtk.RadioButton.from_widget (antialias_invalid_radio);
         grayscale_radio.add (grayscale_label);
-
-        var subpixel_font_options = new Cairo.FontOptions ();
-        subpixel_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
 
         var subpixel_label = new Gtk.Label (_("Subpixel"));
         subpixel_label.set_font_options (subpixel_font_options);
@@ -114,20 +149,12 @@ public class PantheonShell.Text : Gtk.Grid {
             halign = Gtk.Align.END
         };
 
-        var rgb_font_options = new Cairo.FontOptions ();
-        rgb_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
-        rgb_font_options.set_subpixel_order (Cairo.SubpixelOrder.RGB);
-
         /// TRANSLATORS: Subpixel order for red, green, blue from left to right
         var rgb_label = new Gtk.Label (_("RGB"));
         rgb_label.set_font_options (rgb_font_options);
 
         var rgb_radio = new Gtk.RadioButton (null);
         rgb_radio.add (rgb_label);
-
-        var bgr_font_options = new Cairo.FontOptions ();
-        bgr_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
-        bgr_font_options.set_subpixel_order (Cairo.SubpixelOrder.BGR);
 
         /// TRANSLATORS: Subpixel order for blue, green, red from left to right
         var bgr_label = new Gtk.Label (_("BGR"));
@@ -136,20 +163,12 @@ public class PantheonShell.Text : Gtk.Grid {
         var bgr_radio = new Gtk.RadioButton.from_widget (rgb_radio);
         bgr_radio.add (bgr_label);
 
-        var vrgb_font_options = new Cairo.FontOptions ();
-        vrgb_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
-        vrgb_font_options.set_subpixel_order (Cairo.SubpixelOrder.VRGB);
-
         /// TRANSLATORS: Subpixel order for red, green, blue from top to bottom
         var vrgb_label = new Gtk.Label (_("Vertical RGB"));
         vrgb_label.set_font_options (vrgb_font_options);
 
         var vrgb_radio = new Gtk.RadioButton.from_widget (rgb_radio);
         vrgb_radio.add (vrgb_label);
-
-        var vbgr_font_options = new Cairo.FontOptions ();
-        vbgr_font_options.set_antialias (Cairo.Antialias.SUBPIXEL);
-        vbgr_font_options.set_subpixel_order (Cairo.SubpixelOrder.VBGR);
 
         /// TRANSLATORS: Subpixel order for blue, green, red from top to bottom
         var vbgr_label = new Gtk.Label (_("Vertical BGR"));
@@ -173,12 +192,13 @@ public class PantheonShell.Text : Gtk.Grid {
         attach (dyslexia_font_switch, 1, 1);
         attach (dyslexia_font_description_label, 1, 2);
 
-        attach (antialias_header, 0, 3, 2);
-        attach (antialias_label, 0, 4);
-        attach (antialias_grid, 1, 4);
+        attach (antialiasing_header, 0, 3, 2);
+        attach (demo_stack, 0, 4, 2);
+        attach (antialias_label, 0, 5);
+        attach (antialias_grid, 1, 5);
 
-        attach (subpixel_order_label, 0, 5);
-        attach (subpixel_order_grid, 1, 5);
+        attach (subpixel_order_label, 0, 6);
+        attach (subpixel_order_grid, 1, 6);
 
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
