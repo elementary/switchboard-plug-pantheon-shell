@@ -56,9 +56,31 @@ public class PantheonShell.Text : Gtk.Grid {
         text_size_modebutton.append_text (_("Large"));
         text_size_modebutton.append_text (_("Larger"));
 
-        var antialias_label = new Gtk.Label (_("Anti-aliasing:")) {
+        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly font:")) {
             halign = Gtk.Align.END,
             margin_top = 18
+        };
+
+        var dyslexia_font_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START,
+            margin_top = 18
+        };
+
+        var dyslexia_font_description_label = new Gtk.Label (
+            _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
+        ) {
+            max_width_chars = 60,
+            wrap = true,
+            xalign = 0
+        };
+        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        var antialias_header = new Granite.HeaderLabel (_("Anti-aliasing")) {
+            margin_top = 12
+        };
+
+        var antialias_label = new Gtk.Label (_("Method:")) {
+            halign = Gtk.Align.END
         };
 
         // Needed to handle options outside of these choices
@@ -83,8 +105,7 @@ public class PantheonShell.Text : Gtk.Grid {
         subpixel_radio.add (subpixel_label);
 
         var antialias_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            margin_top = 18
+            column_spacing = 12
         };
         antialias_grid.add (grayscale_radio);
         antialias_grid.add (subpixel_radio);
@@ -145,37 +166,19 @@ public class PantheonShell.Text : Gtk.Grid {
         subpixel_order_grid.add (vrgb_radio);
         subpixel_order_grid.add (vbgr_radio);
 
-        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly font:")) {
-            halign = Gtk.Align.END,
-            margin_top = 18
-        };
-
-        var dyslexia_font_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START,
-            margin_top = 18
-        };
-
-        var dyslexia_font_description_label = new Gtk.Label (
-            _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
-        ) {
-            max_width_chars = 60,
-            wrap = true,
-            xalign = 0
-        };
-        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-
         attach (text_size_label, 0, 0);
         attach (text_size_modebutton, 1, 0);
 
-        attach (antialias_label, 0, 1);
-        attach (antialias_grid, 1, 1);
+        attach (dyslexia_font_label, 0, 1);
+        attach (dyslexia_font_switch, 1, 1);
+        attach (dyslexia_font_description_label, 1, 2);
 
-        attach (subpixel_order_label, 0, 2);
-        attach (subpixel_order_grid, 1, 2);
+        attach (antialias_header, 0, 3, 2);
+        attach (antialias_label, 0, 4);
+        attach (antialias_grid, 1, 4);
 
-        attach (dyslexia_font_label, 0, 3);
-        attach (dyslexia_font_switch, 1, 3);
-        attach (dyslexia_font_description_label, 1, 4);
+        attach (subpixel_order_label, 0, 5);
+        attach (subpixel_order_grid, 1, 5);
 
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
 
