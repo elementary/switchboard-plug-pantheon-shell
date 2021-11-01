@@ -34,6 +34,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         settings.set ("desktop/appearance", "appearance");
         settings.set ("desktop/dock", "dock");
         settings.set ("desktop/multitasking", "multitasking");
+        settings.set ("desktop/text", "text");
 
         // DEPRECATED
         settings.set ("desktop/wallpaper", "wallpaper");
@@ -54,12 +55,13 @@ public class PantheonShell.Plug : Switchboard.Plug {
             wallpaper_view = new Wallpaper (this);
 
             var multitasking = new Multitasking ();
+            var appearance = new Appearance ();
+            var text = new Text ();
 
             stack = new Gtk.Stack ();
             stack.add_titled (wallpaper_view, "wallpaper", _("Wallpaper"));
-
-            var appearance = new Appearance ();
             stack.add_titled (appearance, "appearance", _("Appearance"));
+            stack.add_titled (text, "text", _("Text"));
 
             if (GLib.Environment.find_program_in_path ("plank") != null) {
                 var dock = new Dock ();
@@ -101,6 +103,9 @@ public class PantheonShell.Plug : Switchboard.Plug {
             case "dock":
                 stack.set_visible_child_name ("dock");
                 break;
+            case "text":
+                stack.set_visible_child_name ("text");
+                break;
             case "multitasking":
                 stack.set_visible_child_name ("multitasking");
                 break;
@@ -120,8 +125,9 @@ public class PantheonShell.Plug : Switchboard.Plug {
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dark style")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Accent color")), "appearance");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Text size")), "appearance");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dyslexia-friendly text")), "appearance");
+        search_results.set ("%s → %s".printf (display_name, _("Text")), "text");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Text"), _("Size")), "text");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Text"), _("Dyslexia-friendly")), "text");
         search_results.set ("%s → %s".printf (display_name, _("Multitasking")), "multitasking");
         search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Hot Corners")), "multitasking");
         search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Move windows to a new workspace")), "multitasking");
