@@ -76,49 +76,33 @@ public class PantheonShell.Text : Gtk.Grid {
         attach (dyslexia_font_description_label, 1, 2, 2);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
-
-        update_text_size_modebutton (interface_settings);
-
-        interface_settings.changed.connect (() => {
-            update_text_size_modebutton (interface_settings);
-        });
-
-        text_size_modebutton.mode_changed.connect (() => {
-            set_text_scale (interface_settings, text_size_modebutton.selected);
-        });
-
-        dyslexia_font_switch.set_active (update_dyslexia_font_switch (interface_settings));
-
-        dyslexia_font_switch.state_set.connect (() => {
-            toggle_dyslexia_support (interface_settings, dyslexia_font_switch.get_active () );
-        });
-    }
-
-    private void toggle_dyslexia_support (GLib.Settings interface_settings, bool state) {
-        if (state == true) {
-            interface_settings.set_string (FONT_KEY, OD_REG_FONT);
-            interface_settings.set_string (DOCUMENT_FONT_KEY, OD_DOC_FONT);
-            interface_settings.set_string (MONOSPACE_FONT_KEY, OD_MON_FONT);
-        }
-        else {
-            interface_settings.reset (FONT_KEY);
-            interface_settings.reset (DOCUMENT_FONT_KEY);
-            interface_settings.reset (MONOSPACE_FONT_KEY);
-        }
-    }
-
-    private bool update_dyslexia_font_switch (GLib.Settings interface_settings) {
         var interface_font = interface_settings.get_string (FONT_KEY);
         var document_font = interface_settings.get_string (DOCUMENT_FONT_KEY);
         var monospace_font = interface_settings.get_string (MONOSPACE_FONT_KEY);
 
-        if (interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT ) {
-            return true;
-        }
+        text_size_modebutton.set_active (get_text_scale (interface_settings));
 
-        else {
-            return false;
-        }
+        interface_settings.changed.connect (() => {
+            text_size_modebutton.set_active (get_text_scale (interface_settings));
+        });
+
+        text_size_modebutton.mode_changed.connect (() => {
+            interface_settings.set_double (TEXT_SIZE_KEY, TEXT_SCALE[text_size_modebutton.selected]);
+        });
+
+        dyslexia_font_switch.active = interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT;
+
+        dyslexia_font_switch.state_set.connect (() => {
+            if (dyslexia_font_switch.active) {
+                interface_settings.set_string (FONT_KEY, OD_REG_FONT);
+                interface_settings.set_string (DOCUMENT_FONT_KEY, OD_DOC_FONT);
+                interface_settings.set_string (MONOSPACE_FONT_KEY, OD_MON_FONT);
+            } else {
+                interface_settings.reset (FONT_KEY);
+                interface_settings.reset (DOCUMENT_FONT_KEY);
+                interface_settings.reset (MONOSPACE_FONT_KEY);
+            }
+        });
     }
 
     private int get_text_scale (GLib.Settings interface_settings) {
@@ -133,13 +117,5 @@ public class PantheonShell.Text : Gtk.Grid {
         } else {
             return 3;
         }
-    }
-
-    private void set_text_scale (GLib.Settings interface_settings, int option) {
-        interface_settings.set_double (TEXT_SIZE_KEY, TEXT_SCALE[option]);
-    }
-
-    private void update_text_size_modebutton (GLib.Settings interface_settings) {
-        text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
 }
