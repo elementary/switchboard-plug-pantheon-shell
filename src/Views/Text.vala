@@ -19,8 +19,6 @@
 */
 
 public class PantheonShell.Text : Gtk.Grid {
-    private const string TEXT_SIZE_KEY = "text-scaling-factor";
-
     private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
     private const string FONT_KEY = "font-name";
     private const string DOCUMENT_FONT_KEY = "document-font-name";
@@ -30,20 +28,22 @@ public class PantheonShell.Text : Gtk.Grid {
     private const string OD_DOC_FONT = "OpenDyslexic Regular 10";
     private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
 
-    private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
-
-    private Granite.Widgets.ModeButton text_size_modebutton;
-
     construct {
         var text_size_label = new Gtk.Label (_("Size:")) {
-            halign = Gtk.Align.END
+            halign = Gtk.Align.END,
+            valign = Gtk.Align.START
         };
 
-        text_size_modebutton = new Granite.Widgets.ModeButton ();
-        text_size_modebutton.append_text (_("Small"));
-        text_size_modebutton.append_text (_("Default"));
-        text_size_modebutton.append_text (_("Large"));
-        text_size_modebutton.append_text (_("Larger"));
+        var text_size_adjustment = new Gtk.Adjustment (-1, 0.75, 1.5, 0.05, 0.05, 0.05);
+
+        var text_size_scale = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, text_size_adjustment) {
+            draw_value = false
+        };
+        text_size_scale.add_mark (0.75, Gtk.PositionType.BOTTOM, _("Small"));
+        text_size_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Default"));
+        text_size_scale.add_mark (1.25, Gtk.PositionType.BOTTOM, null);
+        // Avoid rendering bug when putting mark at the very end
+        text_size_scale.add_mark (1.45, Gtk.PositionType.BOTTOM, _("Largest"));
 
         var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly:")) {
             halign = Gtk.Align.END,
@@ -70,21 +70,18 @@ public class PantheonShell.Text : Gtk.Grid {
         margin_start = margin_end = 12;
         margin_bottom = 24;
         attach (text_size_label, 0, 0);
-        attach (text_size_modebutton, 1, 0, 2);
+        attach (text_size_scale, 1, 0, 2);
         attach (dyslexia_font_label, 0, 1);
         attach (dyslexia_font_switch, 1, 1);
         attach (dyslexia_font_description_label, 1, 2, 2);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
+        interface_settings.bind ("text-scaling-factor", text_size_adjustment, "value", SettingsBindFlags.GET);
 
-        update_text_size_modebutton (interface_settings);
-
-        interface_settings.changed.connect (() => {
-            update_text_size_modebutton (interface_settings);
-        });
-
-        text_size_modebutton.mode_changed.connect (() => {
-            set_text_scale (interface_settings, text_size_modebutton.selected);
+        // Setting scale is slow, so we wait to keep UI responsive
+        text_size_scale.button_release_event.connect (() => {
+            interface_settings.set_double ("text-scaling-factor", text_size_scale.get_value ());
+            return Gdk.EVENT_PROPAGATE;
         });
 
         dyslexia_font_switch.set_active (update_dyslexia_font_switch (interface_settings));
@@ -119,27 +116,5 @@ public class PantheonShell.Text : Gtk.Grid {
         else {
             return false;
         }
-    }
-
-    private int get_text_scale (GLib.Settings interface_settings) {
-        double text_scaling_factor = interface_settings.get_double (TEXT_SIZE_KEY);
-
-        if (text_scaling_factor <= TEXT_SCALE[0]) {
-            return 0;
-        } else if (text_scaling_factor <= TEXT_SCALE[1]) {
-            return 1;
-        } else if (text_scaling_factor <= TEXT_SCALE[2]) {
-            return 2;
-        } else {
-            return 3;
-        }
-    }
-
-    private void set_text_scale (GLib.Settings interface_settings, int option) {
-        interface_settings.set_double (TEXT_SIZE_KEY, TEXT_SCALE[option]);
-    }
-
-    private void update_text_size_modebutton (GLib.Settings interface_settings) {
-        text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
 }
