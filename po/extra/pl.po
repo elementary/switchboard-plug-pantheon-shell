@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2019-11-17 20:25+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
+"PO-Revision-Date: 2021-11-03 11:54+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/pl/>\n"
 "Language: pl\n"
@@ -18,52 +18,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
-msgstr ""
+msgstr "Ustawienia pulpitu"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Konfiguruj dok, gorące narożniki i zmień tło pulpitu"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nowe funkcje:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Accent color and dark style options"
-msgstr ""
+msgstr "Kolor akcentu i ustawienia ciemnego motywu"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
+"Ustawienie tekstu przyjaznego dla dyslektyków przy użyciu czcionki "
+"OpenDyslexia w całym systemie"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Maximize and fullscreen workspace management options"
-msgstr ""
+msgstr "Opcje zarządzania maksymalizacji i pełnego ekranu"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:18
 msgid "Other updates:"
-msgstr ""
+msgstr "Inne aktualizacje:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Fix a freeze after opening Power settings"
-msgstr ""
+msgstr "Naprawiono zawieszenie po otwarciu ustawień zasilania"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Improved filter for image file types when importing"
-msgstr ""
+msgstr "Usprawniono filtr dla plików obrazkowych podczas importowania"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Visual updates"
-msgstr ""
+msgstr "Aktualizacje wizualne"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Some options now appear in different tabs"
-msgstr ""
+msgstr "Niektóre opcje są teraz w innych kartach"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
@@ -74,16 +76,18 @@ msgstr "Zaktualizowane tłumaczenia"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
 msgid "Illustrate Dock icon sizes"
-msgstr ""
+msgstr "Zilustrowano rozmiary ikon doka"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
 msgid "Fix system wallpapers being copied"
-msgstr ""
+msgstr "Naprawiono kopiowanie systemowych tapet"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
 msgid "Update search results"
-msgstr ""
+msgstr "Zaktualizowano wyniki wyszukiwania"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
+"Naprawiono problemy z ustawianiem tapety na ekranie logowania i blokady "
+"ekranu"
