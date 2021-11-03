@@ -34,6 +34,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         settings.set ("desktop/appearance", "appearance");
         settings.set ("desktop/dock", "dock");
         settings.set ("desktop/multitasking", "multitasking");
+        settings.set ("desktop/text", "text");
 
         // DEPRECATED
         settings.set ("desktop/wallpaper", "wallpaper");
@@ -60,6 +61,9 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             var appearance = new Appearance ();
             stack.add_titled (appearance, "appearance", _("Appearance"));
+            
+            var text = new Text ();
+            stack.add_titled (text, "text", _("Text"));
 
             if (GLib.Environment.find_program_in_path ("plank") != null) {
                 var dock = new Dock ();
