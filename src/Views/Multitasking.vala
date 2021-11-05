@@ -19,7 +19,7 @@
 * Authored by: Tom Beckmann
 */
 
-public class PantheonShell.Multitasking : Gtk.Grid {
+public class PantheonShell.Multitasking : Granite.SimpleSettingsPage {
     private GLib.Settings behavior_settings;
     private Gtk.Revealer custom_command_revealer;
     private Gee.HashSet<string> keys_using_custom_command = new Gee.HashSet<string> ();
@@ -28,13 +28,14 @@ public class PantheonShell.Multitasking : Gtk.Grid {
     private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
     private const string ANIMATIONS_KEY = "enable-animations";
 
-    construct {
-        margin_start = margin_end = 12;
-        margin_bottom = 24;
-        column_spacing = 12;
-        row_spacing = 6;
-        halign = Gtk.Align.CENTER;
+    public Multitasking () {
+        Object (
+            title: _("Multitasking"),
+            icon_name: "preferences-desktop-workspaces"
+        );
+    }
 
+    construct {
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
 
         custom_command_revealer = new Gtk.Revealer ();
@@ -80,8 +81,9 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
         var cc_label = new Gtk.Label (_("Custom command:"));
 
-        var cc_grid = new Gtk.Grid ();
-        cc_grid.column_spacing = column_spacing;
+        var cc_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
         cc_grid.halign = Gtk.Align.END;
         cc_grid.margin_top = 24;
         cc_grid.add (cc_label);
@@ -118,17 +120,17 @@ public class PantheonShell.Multitasking : Gtk.Grid {
             halign = Gtk.Align.START
         };
 
-        attach (hotcorner_title, 0, 0, 3);
-        attach (icon, 1, 1, 1, 3);
-        attach (topleft, 0, 1, 1, 1);
-        attach (topright, 2, 1, 1, 1);
-        attach (bottomleft, 0, 3, 1, 1);
-        attach (bottomright, 2, 3, 1, 1);
-        attach (custom_command_revealer, 0, 4, 2, 1);
-        attach (workspaces_label, 0, 5);
-        attach (checkbutton_grid, 1, 5, 2);
-        attach (animations_label, 0, 9);
-        attach (animations_switch, 1, 9);
+        content_area.attach (hotcorner_title, 0, 0, 3);
+        content_area.attach (icon, 1, 1, 1, 3);
+        content_area.attach (topleft, 0, 1, 1, 1);
+        content_area.attach (topright, 2, 1, 1, 1);
+        content_area.attach (bottomleft, 0, 3, 1, 1);
+        content_area.attach (bottomright, 2, 3, 1, 1);
+        content_area.attach (custom_command_revealer, 0, 4, 2, 1);
+        content_area.attach (workspaces_label, 0, 5);
+        content_area.attach (checkbutton_grid, 1, 5, 2);
+        content_area.attach (animations_label, 0, 9);
+        content_area.attach (animations_switch, 1, 9);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);

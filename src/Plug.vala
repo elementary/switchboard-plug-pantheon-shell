@@ -68,14 +68,21 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.stack = stack;
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.homogeneous = true;
-            stack_switcher.margin = 24;
+            var sidebar = new Granite.SettingsSidebar (stack);
 
-            main_grid.attach (stack_switcher, 0, 0, 1, 1);
-            main_grid.attach (stack, 0, 1, 1, 1);
+            var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+                expand = true,
+                hscrollbar_policy = Gtk.PolicyType.NEVER
+            };
+            scrolled_window.add (sidebar);
+
+            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
+                position = 240
+            };
+            paned.pack1 (scrolled_window, false, false);
+            paned.pack2 (stack, true, false);
+
+            main_grid.add (paned);
             main_grid.show_all ();
         }
 

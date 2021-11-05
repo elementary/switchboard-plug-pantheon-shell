@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class PantheonShell.Dock : Gtk.Grid {
+public class PantheonShell.Dock : Granite.SimpleSettingsPage {
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
 
@@ -26,6 +26,13 @@ public class PantheonShell.Dock : Gtk.Grid {
     private Gtk.Label monitor_label;
     private Gtk.ComboBoxText monitor;
     private Plank.DockPreferences dock_preferences;
+
+    public Dock () {
+        Object (
+            title: _("Dock & Panel"),
+            icon_name: "preferences-desktop-wallpaper"
+        );
+    }
 
     construct {
         var dock_header = new Granite.HeaderLabel (_("Dock"));
@@ -162,26 +169,21 @@ public class PantheonShell.Dock : Gtk.Grid {
             halign = Gtk.Align.START
         };
 
-        margin_start = margin_end = 12;
-        margin_bottom = 24;
-        column_spacing = 12;
-        halign = Gtk.Align.CENTER;
-        row_spacing = 12;
-        attach (dock_header, 0, 0, 3);
-        attach (icon_label, 0, 1);
-        attach (icon_size_grid, 1, 1, 2);
-        attach (hide_label, 0, 2);
-        attach (hide_mode, 1, 2);
-        attach (hide_switch, 2, 2);
-        attach (primary_monitor_label, 0, 3);
-        attach (primary_monitor_grid, 1, 3);
-        attach (monitor_label, 0, 4);
-        attach (monitor, 1, 4);
-        attach (pressure_label, 0, 5);
-        attach (pressure_switch, 1, 5);
-        attach (panel_header, 0, 6, 3);
-        attach (translucency_label, 0, 7);
-        attach (translucency_switch, 1, 7);
+        content_area.attach (dock_header, 0, 0, 3);
+        content_area.attach (icon_label, 0, 1);
+        content_area.attach (icon_size_grid, 1, 1, 2);
+        content_area.attach (hide_label, 0, 2);
+        content_area.attach (hide_mode, 1, 2);
+        content_area.attach (hide_switch, 2, 2);
+        content_area.attach (primary_monitor_label, 0, 3);
+        content_area.attach (primary_monitor_grid, 1, 3);
+        content_area.attach (monitor_label, 0, 4);
+        content_area.attach (monitor, 1, 4);
+        content_area.attach (pressure_label, 0, 5);
+        content_area.attach (pressure_switch, 1, 5);
+        content_area.attach (panel_header, 0, 6, 3);
+        content_area.attach (translucency_label, 0, 7);
+        content_area.attach (translucency_switch, 1, 7);
 
         check_for_screens ();
 

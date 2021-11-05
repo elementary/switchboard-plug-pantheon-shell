@@ -18,7 +18,7 @@
 *
 */
 
-public class PantheonShell.Appearance : Gtk.Grid {
+public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
@@ -78,13 +78,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
         }
     }
 
-    construct {
-        column_spacing = 12;
-        halign = Gtk.Align.CENTER;
-        row_spacing = 6;
-        margin_start = margin_end = 12;
-        margin_bottom = 24;
+    public Appearance  () {
+        Object (
+            title: _("Appearance"),
+            description : _("Preferred accents and style for system components. Apps may also follow these preferences, but can always choose their own accents or style."),
+            icon_name: "preferences-desktop-theme"
+        );
+    }
 
+    construct {
         var dark_label = new Gtk.Label (_("Style:")) {
             halign = Gtk.Align.END
         };
@@ -137,14 +139,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
         };
         prefer_dark_radio.get_style_context ().add_class ("image-button");
         prefer_dark_radio.add (prefer_dark_grid);
-
-        var dark_info = new Gtk.Label (_("Preferred visual style for system components. Apps may also choose to follow this preference.")) {
-            max_width_chars = 60,
-            margin_bottom = 18,
-            wrap = true,
-            xalign = 0
-        };
-        dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var schedule_label = new Gtk.Label (_("Schedule:")) {
             halign = Gtk.Align.END,
@@ -214,11 +208,11 @@ public class PantheonShell.Appearance : Gtk.Grid {
          * Row 4 and 5 are for accent color UI that gets constructed only if the
          * current stylesheet is supported (begins with the STYLESHEET_PREFIX)
          */
-        attach (text_size_label, 0, 8);
-        attach (text_size_modebutton, 1, 8, 2);
-        attach (dyslexia_font_label, 0, 9);
-        attach (dyslexia_font_switch, 1, 9);
-        attach (dyslexia_font_description_label, 1, 10, 2);
+        content_area.attach (text_size_label, 0, 8);
+        content_area.attach (text_size_modebutton, 1, 8, 2);
+        content_area.attach (dyslexia_font_label, 0, 9);
+        content_area.attach (dyslexia_font_switch, 1, 9);
+        content_area.attach (dyslexia_font_description_label, 1, 10, 2);
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -249,13 +243,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
         }
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
-            attach (dark_label, 0, 0);
-            attach (prefer_default_radio, 1, 0);
-            attach (prefer_dark_radio, 2, 0);
-            attach (dark_info, 1, 1, 2);
-            attach (schedule_label, 0, 2, 1, 1);
-            attach (schedule_mode_button, 1, 2, 2, 1);
-            attach (schedule_grid, 1, 3, 2, 1);
+            content_area.attach (dark_label, 0, 0);
+            content_area.attach (prefer_default_radio, 1, 0);
+            content_area.attach (prefer_dark_radio, 2, 0);
+            content_area.attach (schedule_label, 0, 2, 1, 1);
+            content_area.attach (schedule_mode_button, 1, 2, 2, 1);
+            content_area.attach (schedule_grid, 1, 3, 2, 1);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -401,16 +394,8 @@ public class PantheonShell.Appearance : Gtk.Grid {
             accent_grid.add (slate_button);
             accent_grid.add (auto_button);
 
-            var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color.")) {
-                margin_bottom = 18,
-                xalign = 0,
-                wrap = true
-            };
-            accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-
-            attach (accent_label, 0, 4);
-            attach (accent_grid, 1, 4, 2);
-            attach (accent_info, 1, 5, 2);
+            content_area.attach (accent_label, 0, 4);
+            content_area.attach (accent_grid, 1, 4, 2);
         }
 
         update_text_size_modebutton (interface_settings);
