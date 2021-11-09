@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-09 03:28+0000\n"
-"PO-Revision-Date: 2021-06-21 12:56+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2021-11-09 04:12+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
 "Language: fi\n"
@@ -357,7 +357,7 @@ msgstr "Suorita omavalintainen komento"
 
 #: src/Views/Text.vala:38
 msgid "Size:"
-msgstr ""
+msgstr "Koko:"
 
 #: src/Views/Text.vala:46
 msgid "Larger"
