@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"POT-Creation-Date: 2021-11-09 03:28+0000\n"
 "PO-Revision-Date: 2021-07-30 18:21+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -54,7 +54,8 @@ msgstr "Autres mises à jour :"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Fix a freeze after opening Power settings"
-msgstr "Correction d'un blocage après l'ouverture des paramètres d'alimentation"
+msgstr ""
+"Correction d'un blocage après l'ouverture des paramètres d'alimentation"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Improved filter for image file types when importing"
