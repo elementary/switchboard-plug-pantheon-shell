@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-09 03:28+0000\n"
-"PO-Revision-Date: 2021-09-07 17:31+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2021-11-09 04:12+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -355,7 +355,7 @@ msgstr "执行自定义命令"
 
 #: src/Views/Text.vala:38
 msgid "Size:"
-msgstr ""
+msgstr "大小："
 
 #: src/Views/Text.vala:46
 msgid "Larger"
