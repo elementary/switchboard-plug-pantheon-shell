@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-09 03:28+0000\n"
-"PO-Revision-Date: 2021-06-19 21:52+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
+"PO-Revision-Date: 2021-11-09 04:12+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
 "Language: pt\n"
@@ -358,7 +358,7 @@ msgstr "Executar comando personalizado"
 
 #: src/Views/Text.vala:38
 msgid "Size:"
-msgstr ""
+msgstr "Tamanho:"
 
 #: src/Views/Text.vala:46
 msgid "Larger"
