@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"POT-Creation-Date: 2021-11-09 03:28+0000\n"
 "PO-Revision-Date: 2021-08-26 20:39+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -20,78 +20,87 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:06+0000\n"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:45
 msgid "Desktop"
 msgstr "Arbeitsumgebung"
 
-#: src/Plug.vala:42
+#: src/Plug.vala:46
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Dock, aktive Ecken und Hintergrundbild einrichten"
 
-#: src/Plug.vala:56 src/Plug.vala:110
+#: src/Plug.vala:62 src/Plug.vala:118
 msgid "Wallpaper"
 msgstr "Hintergrund"
 
-#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
-#: src/Plug.vala:120 src/Plug.vala:121
+#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
 msgid "Appearance"
 msgstr "Erscheinungsbild"
 
-#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#, fuzzy
+#| msgid "Text size"
+msgid "Text"
+msgstr "Textgröße"
+
+#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
+#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Dock & Panel"
 msgstr "Dock & Leiste"
 
-#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
-#: src/Plug.vala:125
+#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Multitasking"
 msgstr "Arbeitsflächen"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:120
 msgid "Hide Mode"
 msgstr "Ausblenden"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:121
 msgid "Icon Size"
 msgstr "Symbolgröße"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:122
 msgid "Pressure reveal"
 msgstr "Verzögertes Einblenden"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:123
 msgid "Display"
 msgstr "Bildschirm"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:124
 msgid "Panel translucency"
 msgstr "Leistentransparenz"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:126
 msgid "Dark style"
 msgstr "Dunkle Gestaltung"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:127
 msgid "Accent color"
 msgstr "Akzentfarbe"
 
-#: src/Plug.vala:120
-msgid "Text size"
-msgstr "Textgröße"
+#: src/Plug.vala:129
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Size"
+msgstr "Symbolgröße"
 
-#: src/Plug.vala:121
-msgid "Dyslexia-friendly text"
+#: src/Plug.vala:130
+#, fuzzy
+#| msgid "Dyslexia-friendly text"
+msgid "Dyslexia-friendly"
 msgstr "Dyslexie-freundlicher Text"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:132
 msgid "Hot Corners"
 msgstr "Aktive Ecken"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:133
 msgid "Move windows to a new workspace"
 msgstr "Fenster in eine neue Arbeitsfläche verschieben"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "Fensteranimationen"
 
@@ -121,20 +130,19 @@ msgstr "Als Hintergrund_bild festlegen"
 msgid "Set selected image to be the new desktop background"
 msgstr "Ausgewähltes Bild als neues Hintergrundbild festlegen"
 
-#: src/Views/Appearance.vala:88
+#: src/Views/Appearance.vala:74
 msgid "Style:"
 msgstr "Stil:"
 
-#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
-#: src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
 msgid "Default"
 msgstr "Standard"
 
-#: src/Views/Appearance.vala:132
+#: src/Views/Appearance.vala:118
 msgid "Dark"
 msgstr "Dunkel"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:127
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -142,108 +150,80 @@ msgstr ""
 "Bevorzugtes Aussehen der Betriebssystembestandteile. Anwendungen steht es "
 "frei, diese Einstellung ebenfalls zu berücksichtigen."
 
-#: src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:135
 msgid "Schedule:"
 msgstr "Zeitplan:"
 
-#: src/Views/Appearance.vala:155
+#: src/Views/Appearance.vala:141
 msgid "Disabled"
 msgstr "Deaktiviert"
 
-#: src/Views/Appearance.vala:156
+#: src/Views/Appearance.vala:142
 msgid "Sunset to Sunrise"
 msgstr "Sonnenuntergang bis Sonnenaufgang"
 
-#: src/Views/Appearance.vala:157
+#: src/Views/Appearance.vala:143
 msgid "Manual"
 msgstr "Benutzerdefiniert"
 
-#: src/Views/Appearance.vala:159
+#: src/Views/Appearance.vala:145
 msgid "From:"
 msgstr "Von:"
 
-#: src/Views/Appearance.vala:165
+#: src/Views/Appearance.vala:151
 msgid "To:"
 msgstr "Bis:"
 
-#: src/Views/Appearance.vala:181
-msgid "Text size:"
-msgstr "Textgröße:"
-
-#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
-msgid "Small"
-msgstr "Klein"
-
-#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
-msgid "Large"
-msgstr "Groß"
-
-#: src/Views/Appearance.vala:192
-msgid "Larger"
-msgstr "Größer"
-
-#: src/Views/Appearance.vala:194
-msgid "Dyslexia-friendly text:"
-msgstr "Dyslexie-freundlicher Text:"
-
-#: src/Views/Appearance.vala:203
-msgid ""
-"Bottom-heavy shapes and increased character spacing can help improve "
-"legibility and reading speed."
-msgstr ""
-"Grundlinienbetonte Formen und größere Zeichenabstände helfen, Leserlichkeit "
-"und Lesegeschwindigkeit zu erhöhen."
-
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:298
 msgid "Accent:"
 msgstr "Akzentfarbe:"
 
-#: src/Views/Appearance.vala:358
+#: src/Views/Appearance.vala:302
 msgid "Blueberry"
 msgstr "Blaubeere"
 
-#: src/Views/Appearance.vala:361
+#: src/Views/Appearance.vala:305
 msgid "Mint"
 msgstr "Minze"
 
-#: src/Views/Appearance.vala:364
+#: src/Views/Appearance.vala:308
 msgid "Lime"
 msgstr "Limette"
 
-#: src/Views/Appearance.vala:367
+#: src/Views/Appearance.vala:311
 msgid "Banana"
 msgstr "Banane"
 
-#: src/Views/Appearance.vala:370
+#: src/Views/Appearance.vala:314
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:373
+#: src/Views/Appearance.vala:317
 msgid "Strawberry"
 msgstr "Erdbeere"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:320
 msgid "Bubblegum"
 msgstr "Rosa"
 
-#: src/Views/Appearance.vala:379
+#: src/Views/Appearance.vala:323
 msgid "Grape"
 msgstr "Weintraube"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:326
 msgid "Cocoa"
 msgstr "Kakao"
 
-#: src/Views/Appearance.vala:385
+#: src/Views/Appearance.vala:329
 msgid "Slate"
 msgstr "Schiefer"
 
-#: src/Views/Appearance.vala:388
+#: src/Views/Appearance.vala:332
 msgid "Automatic based on wallpaper"
 msgstr "Automatisch, abhängig vom Hintergrundbild"
 
-#: src/Views/Appearance.vala:404
+#: src/Views/Appearance.vala:348
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -254,6 +234,14 @@ msgstr ""
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Dock"
+
+#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+msgid "Small"
+msgstr "Klein"
+
+#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+msgid "Large"
+msgstr "Groß"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -367,6 +355,28 @@ msgstr "Zu einer neuen Arbeitsfläche wechseln"
 msgid "Execute custom command"
 msgstr "Benutzerdefinierten Befehl ausführen"
 
+#: src/Views/Text.vala:38
+msgid "Size:"
+msgstr ""
+
+#: src/Views/Text.vala:46
+msgid "Larger"
+msgstr "Größer"
+
+#: src/Views/Text.vala:48
+#, fuzzy
+#| msgid "Dyslexia-friendly text:"
+msgid "Dyslexia-friendly:"
+msgstr "Dyslexie-freundlicher Text:"
+
+#: src/Views/Text.vala:59
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+"Grundlinienbetonte Formen und größere Zeichenabstände helfen, Leserlichkeit "
+"und Lesegeschwindigkeit zu erhöhen."
+
 #: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
 msgstr "Foto importieren …"
@@ -440,6 +450,9 @@ msgstr "Als Schreibtisch-Diaschau festlegen"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Diaschau erstellen"
+
+#~ msgid "Text size:"
+#~ msgstr "Textgröße:"
 
 #~ msgid ""
 #~ "Visual style for system components like the Dock and Panel indicators."

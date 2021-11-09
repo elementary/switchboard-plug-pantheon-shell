@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:31+0000\n"
+"POT-Creation-Date: 2021-11-09 03:28+0000\n"
 "PO-Revision-Date: 2021-06-20 11:00+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -15,78 +15,87 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:45
 msgid "Desktop"
 msgstr "デスクトップ"
 
-#: src/Plug.vala:42
+#: src/Plug.vala:46
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "ドック、ホットコーナーを設定し、壁紙を変更します"
 
-#: src/Plug.vala:56 src/Plug.vala:110
+#: src/Plug.vala:62 src/Plug.vala:118
 msgid "Wallpaper"
 msgstr "壁紙"
 
-#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
-#: src/Plug.vala:120 src/Plug.vala:121
+#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
 msgid "Appearance"
 msgstr "外観"
 
-#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#, fuzzy
+#| msgid "Text size"
+msgid "Text"
+msgstr "テキストサイズ"
+
+#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
+#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Dock & Panel"
 msgstr "ドックとパネル"
 
-#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
-#: src/Plug.vala:125
+#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Multitasking"
 msgstr "マルチタスク"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:120
 msgid "Hide Mode"
 msgstr "隠す方法"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:121
 msgid "Icon Size"
 msgstr "アイコンサイズ"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:122
 msgid "Pressure reveal"
 msgstr "押し込んで表示"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:123
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:124
 msgid "Panel translucency"
 msgstr "パネルを透過"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:126
 msgid "Dark style"
 msgstr "ダークスタイル"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:127
 msgid "Accent color"
 msgstr "アクセントカラー"
 
-#: src/Plug.vala:120
-msgid "Text size"
-msgstr "テキストサイズ"
+#: src/Plug.vala:129
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Size"
+msgstr "アイコンサイズ"
 
-#: src/Plug.vala:121
-msgid "Dyslexia-friendly text"
+#: src/Plug.vala:130
+#, fuzzy
+#| msgid "Dyslexia-friendly text"
+msgid "Dyslexia-friendly"
 msgstr "ディスレクシアに配慮したテキスト"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:132
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:133
 msgid "Move windows to a new workspace"
 msgstr "以下の場合にウィンドウを新しいワークスペースに移動"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "ウィンドウアニメーション"
 
@@ -116,20 +125,19 @@ msgstr "デスクトップの背景として設定(_D)"
 msgid "Set selected image to be the new desktop background"
 msgstr "選択された画像を新しいデスクトップの背景として設定します"
 
-#: src/Views/Appearance.vala:88
+#: src/Views/Appearance.vala:74
 msgid "Style:"
 msgstr "スタイル:"
 
-#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
-#: src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/Views/Appearance.vala:132
+#: src/Views/Appearance.vala:118
 msgid "Dark"
 msgstr "ダーク"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:127
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -137,108 +145,80 @@ msgstr ""
 "システムコンポーネントで使用される視覚スタイルを選択します。一部のアプリもこ"
 "の設定に従うことがあります。"
 
-#: src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:135
 msgid "Schedule:"
 msgstr "スケジュール:"
 
-#: src/Views/Appearance.vala:155
+#: src/Views/Appearance.vala:141
 msgid "Disabled"
 msgstr "無効"
 
-#: src/Views/Appearance.vala:156
+#: src/Views/Appearance.vala:142
 msgid "Sunset to Sunrise"
 msgstr "日没から日の出まで"
 
-#: src/Views/Appearance.vala:157
+#: src/Views/Appearance.vala:143
 msgid "Manual"
 msgstr "手動"
 
-#: src/Views/Appearance.vala:159
+#: src/Views/Appearance.vala:145
 msgid "From:"
 msgstr "開始:"
 
-#: src/Views/Appearance.vala:165
+#: src/Views/Appearance.vala:151
 msgid "To:"
 msgstr "終了:"
 
-#: src/Views/Appearance.vala:181
-msgid "Text size:"
-msgstr "テキストサイズ:"
-
-#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
-msgid "Small"
-msgstr "小"
-
-#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
-msgid "Large"
-msgstr "大"
-
-#: src/Views/Appearance.vala:192
-msgid "Larger"
-msgstr "最大"
-
-#: src/Views/Appearance.vala:194
-msgid "Dyslexia-friendly text:"
-msgstr "ディスレクシアに配慮したテキスト:"
-
-#: src/Views/Appearance.vala:203
-msgid ""
-"Bottom-heavy shapes and increased character spacing can help improve "
-"legibility and reading speed."
-msgstr ""
-"下部が強調され、字間が確保された書体を使用することで、可読性と読む速度の改善"
-"に役立つ可能性があります。"
-
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:298
 msgid "Accent:"
 msgstr "アクセント:"
 
-#: src/Views/Appearance.vala:358
+#: src/Views/Appearance.vala:302
 msgid "Blueberry"
 msgstr "ブルーベリー"
 
-#: src/Views/Appearance.vala:361
+#: src/Views/Appearance.vala:305
 msgid "Mint"
 msgstr "ミント"
 
-#: src/Views/Appearance.vala:364
+#: src/Views/Appearance.vala:308
 msgid "Lime"
 msgstr "ライム"
 
-#: src/Views/Appearance.vala:367
+#: src/Views/Appearance.vala:311
 msgid "Banana"
 msgstr "バナナ"
 
-#: src/Views/Appearance.vala:370
+#: src/Views/Appearance.vala:314
 msgid "Orange"
 msgstr "オレンジ"
 
-#: src/Views/Appearance.vala:373
+#: src/Views/Appearance.vala:317
 msgid "Strawberry"
 msgstr "ストロベリー"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:320
 msgid "Bubblegum"
 msgstr "ピンク"
 
-#: src/Views/Appearance.vala:379
+#: src/Views/Appearance.vala:323
 msgid "Grape"
 msgstr "グレープ"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:326
 msgid "Cocoa"
 msgstr "ココア"
 
-#: src/Views/Appearance.vala:385
+#: src/Views/Appearance.vala:329
 msgid "Slate"
 msgstr "スレート"
 
-#: src/Views/Appearance.vala:388
+#: src/Views/Appearance.vala:332
 msgid "Automatic based on wallpaper"
 msgstr "壁紙に基づいて自動的に設定"
 
-#: src/Views/Appearance.vala:404
+#: src/Views/Appearance.vala:348
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -249,6 +229,14 @@ msgstr ""
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "ドック"
+
+#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+msgid "Small"
+msgstr "小"
+
+#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+msgid "Large"
+msgstr "大"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -362,6 +350,28 @@ msgstr "新しいワークスペースに切り替え"
 msgid "Execute custom command"
 msgstr "カスタムコマンドを実行"
 
+#: src/Views/Text.vala:38
+msgid "Size:"
+msgstr ""
+
+#: src/Views/Text.vala:46
+msgid "Larger"
+msgstr "最大"
+
+#: src/Views/Text.vala:48
+#, fuzzy
+#| msgid "Dyslexia-friendly text:"
+msgid "Dyslexia-friendly:"
+msgstr "ディスレクシアに配慮したテキスト:"
+
+#: src/Views/Text.vala:59
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+"下部が強調され、字間が確保された書体を使用することで、可読性と読む速度の改善"
+"に役立つ可能性があります。"
+
 #: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
 msgstr "写真をインポート…"
@@ -432,6 +442,9 @@ msgstr "デスクトップスライドショーとして設定"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
+
+#~ msgid "Text size:"
+#~ msgstr "テキストサイズ:"
 
 #~ msgid ""
 #~ "Visual style for system components like the Dock and Panel indicators."
