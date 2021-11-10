@@ -28,22 +28,23 @@ public class PantheonShell.Text : Gtk.Grid {
     private const string OD_DOC_FONT = "OpenDyslexic Regular 10";
     private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
 
+    private uint scale_timeout;
+
     construct {
-        var text_size_label = new Gtk.Label (_("Size:")) {
-            halign = Gtk.Align.END,
-            valign = Gtk.Align.START
+        var size_label = new Gtk.Label (_("Size:")) {
+            halign = Gtk.Align.END
         };
 
-        var text_size_adjustment = new Gtk.Adjustment (-1, 0.75, 1.5, 0.05, 0.05, 0.05);
+        var size_adjustment = new Gtk.Adjustment (-1, 0.75, 1.5, 0.05, 0, 0);
 
-        var text_size_scale = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, text_size_adjustment) {
-            draw_value = false
+        var size_scale = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, size_adjustment) {
+            draw_value = false,
+            hexpand = true
         };
-        text_size_scale.add_mark (0.75, Gtk.PositionType.BOTTOM, _("Small"));
-        text_size_scale.add_mark (1, Gtk.PositionType.BOTTOM, _("Default"));
-        text_size_scale.add_mark (1.25, Gtk.PositionType.BOTTOM, null);
-        // Avoid rendering bug when putting mark at the very end
-        text_size_scale.add_mark (1.45, Gtk.PositionType.BOTTOM, _("Largest"));
+        size_scale.add_mark (1, Gtk.PositionType.TOP, null);
+        size_scale.add_mark (1.25, Gtk.PositionType.TOP, null);
+
+        var size_spinbutton = new Gtk.SpinButton (size_adjustment, 0.25, 2);
 
         var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly:")) {
             halign = Gtk.Align.END,
@@ -69,19 +70,27 @@ public class PantheonShell.Text : Gtk.Grid {
         row_spacing = 6;
         margin_start = margin_end = 12;
         margin_bottom = 24;
-        attach (text_size_label, 0, 0);
-        attach (text_size_scale, 1, 0, 2);
+        attach (size_label, 0, 0);
+        attach (size_scale, 1, 0);
+        attach (size_spinbutton, 2, 0);
         attach (dyslexia_font_label, 0, 1);
         attach (dyslexia_font_switch, 1, 1);
         attach (dyslexia_font_description_label, 1, 2, 2);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
-        interface_settings.bind ("text-scaling-factor", text_size_adjustment, "value", SettingsBindFlags.GET);
+        interface_settings.bind ("text-scaling-factor", size_adjustment, "value", SettingsBindFlags.GET);
 
-        // Setting scale is slow, so we wait to keep UI responsive
-        text_size_scale.button_release_event.connect (() => {
-            interface_settings.set_double ("text-scaling-factor", text_size_scale.get_value ());
-            return Gdk.EVENT_PROPAGATE;
+        // Setting scale is slow, so we wait while pressed to keep UI responsive
+        size_adjustment.value_changed.connect (() => {
+            if (scale_timeout != 0) {
+                GLib.Source.remove (scale_timeout);
+            }
+
+            scale_timeout = Timeout.add (300, () => {
+                scale_timeout = 0;
+                interface_settings.set_double ("text-scaling-factor", size_adjustment.value);
+                return false;
+            });
         });
 
         var interface_font = interface_settings.get_string (FONT_KEY);
