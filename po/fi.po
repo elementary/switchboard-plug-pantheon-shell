@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-06-21 12:56+0000\n"
+"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"PO-Revision-Date: 2021-11-09 09:28+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
@@ -20,78 +20,81 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:45
 msgid "Desktop"
 msgstr "Työpöytä"
 
-#: src/Plug.vala:42
+#: src/Plug.vala:46
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Hallitse telakkaa, toimintokulmia ja vaihda taustakuvia"
 
-#: src/Plug.vala:56 src/Plug.vala:110
+#: src/Plug.vala:62 src/Plug.vala:118
 msgid "Wallpaper"
 msgstr "Taustakuva"
 
-#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
-#: src/Plug.vala:120 src/Plug.vala:121
+#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
 msgid "Appearance"
 msgstr "Ulkoasu"
 
-#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+msgid "Text"
+msgstr "Teksti"
+
+#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
+#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Dock & Panel"
 msgstr "Telakka ja paneeli"
 
-#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
-#: src/Plug.vala:125
+#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Multitasking"
 msgstr "Moniajo"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:120
 msgid "Hide Mode"
 msgstr "Piilotustila"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:121
 msgid "Icon Size"
 msgstr "Kuvakekoko"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:122
 msgid "Pressure reveal"
 msgstr "Esiintuomisen paine"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:123
 msgid "Display"
 msgstr "Näyttö"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:124
 msgid "Panel translucency"
 msgstr "Paneelin läpinäkyvyys"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:126
 msgid "Dark style"
 msgstr "Tumma tyyli"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:127
 msgid "Accent color"
 msgstr "Korostusväri"
 
-#: src/Plug.vala:120
-msgid "Text size"
-msgstr "Tekstin koko"
+#: src/Plug.vala:129
+msgid "Size"
+msgstr "Koko"
 
-#: src/Plug.vala:121
-msgid "Dyslexia-friendly text"
-msgstr "Lukihäiriöisille sopiva teksti"
+#: src/Plug.vala:130
+msgid "Dyslexia-friendly"
+msgstr "Lukihäiriöisille sopiva"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:132
 msgid "Hot Corners"
 msgstr "Toimintokulmat"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:133
 msgid "Move windows to a new workspace"
 msgstr "Siirrä ikkunat uuteen työtilaan"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "Ikkuna-animaatiot"
 
@@ -121,20 +124,19 @@ msgstr "Aseta _työpöydän taustakuvaksi"
 msgid "Set selected image to be the new desktop background"
 msgstr "Aseta valittu kuva työpöydän uudeksi taustakuvaksi"
 
-#: src/Views/Appearance.vala:88
+#: src/Views/Appearance.vala:74
 msgid "Style:"
 msgstr "Tyyli:"
 
-#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
-#: src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
 msgid "Default"
 msgstr "Oletus"
 
-#: src/Views/Appearance.vala:132
+#: src/Views/Appearance.vala:118
 msgid "Dark"
 msgstr "Tumma"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:127
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -142,108 +144,80 @@ msgstr ""
 "Ensisijainen visuaalinen tyyli järjestelmän komponenteille. Sovellukset "
 "voivat seurata tätä asetusta."
 
-#: src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:135
 msgid "Schedule:"
 msgstr "Aikataulu:"
 
-#: src/Views/Appearance.vala:155
+#: src/Views/Appearance.vala:141
 msgid "Disabled"
 msgstr "Pois käytöstä"
 
-#: src/Views/Appearance.vala:156
+#: src/Views/Appearance.vala:142
 msgid "Sunset to Sunrise"
 msgstr "Auringonlaskusta auringonnousuun"
 
-#: src/Views/Appearance.vala:157
+#: src/Views/Appearance.vala:143
 msgid "Manual"
 msgstr "Manuaalinen"
 
-#: src/Views/Appearance.vala:159
+#: src/Views/Appearance.vala:145
 msgid "From:"
 msgstr "Alkaa:"
 
-#: src/Views/Appearance.vala:165
+#: src/Views/Appearance.vala:151
 msgid "To:"
 msgstr "Päättyy:"
 
-#: src/Views/Appearance.vala:181
-msgid "Text size:"
-msgstr "Tekstin koko:"
-
-#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
-msgid "Small"
-msgstr "Pieni"
-
-#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
-msgid "Large"
-msgstr "Suuri"
-
-#: src/Views/Appearance.vala:192
-msgid "Larger"
-msgstr "Suurempi"
-
-#: src/Views/Appearance.vala:194
-msgid "Dyslexia-friendly text:"
-msgstr "Lukihäiriöisille sopiva teksti:"
-
-#: src/Views/Appearance.vala:203
-msgid ""
-"Bottom-heavy shapes and increased character spacing can help improve "
-"legibility and reading speed."
-msgstr ""
-"Alaosaan painottuvat muodot ja suurennettu merkistövälistys voivat auttaa "
-"luettavuutta sekä lukunopeutta."
-
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:298
 msgid "Accent:"
 msgstr "Korostus:"
 
-#: src/Views/Appearance.vala:358
+#: src/Views/Appearance.vala:302
 msgid "Blueberry"
 msgstr "Mustikka"
 
-#: src/Views/Appearance.vala:361
+#: src/Views/Appearance.vala:305
 msgid "Mint"
 msgstr "Minttu"
 
-#: src/Views/Appearance.vala:364
+#: src/Views/Appearance.vala:308
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:367
+#: src/Views/Appearance.vala:311
 msgid "Banana"
 msgstr "Banaani"
 
-#: src/Views/Appearance.vala:370
+#: src/Views/Appearance.vala:314
 msgid "Orange"
 msgstr "Appelsiini"
 
-#: src/Views/Appearance.vala:373
+#: src/Views/Appearance.vala:317
 msgid "Strawberry"
 msgstr "Mansikka"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:320
 msgid "Bubblegum"
 msgstr "Purukumi"
 
-#: src/Views/Appearance.vala:379
+#: src/Views/Appearance.vala:323
 msgid "Grape"
 msgstr "Viinirypäle"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:326
 msgid "Cocoa"
 msgstr "Kaakao"
 
-#: src/Views/Appearance.vala:385
+#: src/Views/Appearance.vala:329
 msgid "Slate"
 msgstr "Liuskekivi"
 
-#: src/Views/Appearance.vala:388
+#: src/Views/Appearance.vala:332
 msgid "Automatic based on wallpaper"
 msgstr "Automaattinen taustakuvaan pohjautuen"
 
-#: src/Views/Appearance.vala:404
+#: src/Views/Appearance.vala:348
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -254,6 +228,14 @@ msgstr ""
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Telakka"
+
+#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+msgid "Small"
+msgstr "Pieni"
+
+#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+msgid "Large"
+msgstr "Suuri"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -367,6 +349,26 @@ msgstr "Vaihda uuteen työtilaan"
 msgid "Execute custom command"
 msgstr "Suorita omavalintainen komento"
 
+#: src/Views/Text.vala:38
+msgid "Size:"
+msgstr "Koko:"
+
+#: src/Views/Text.vala:46
+msgid "Larger"
+msgstr "Suurempi"
+
+#: src/Views/Text.vala:48
+msgid "Dyslexia-friendly:"
+msgstr "Lukihäiriöisille sopiva:"
+
+#: src/Views/Text.vala:59
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+"Alaosaan painottuvat muodot ja suurennettu merkistövälistys voivat auttaa "
+"luettavuutta sekä lukunopeutta."
+
 #: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
 msgstr "Tuo kuva…"
@@ -440,6 +442,9 @@ msgstr "Aseta työpöydän diaesitykseksi"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Luo diaesitys"
+
+#~ msgid "Text size:"
+#~ msgstr "Tekstin koko:"
 
 #~ msgid ""
 #~ "Visual style for system components like the Dock and Panel indicators."

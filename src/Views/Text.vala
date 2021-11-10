@@ -84,37 +84,22 @@ public class PantheonShell.Text : Gtk.Grid {
             return Gdk.EVENT_PROPAGATE;
         });
 
-        dyslexia_font_switch.set_active (update_dyslexia_font_switch (interface_settings));
-
-        dyslexia_font_switch.state_set.connect (() => {
-            toggle_dyslexia_support (interface_settings, dyslexia_font_switch.get_active () );
-        });
-    }
-
-    private void toggle_dyslexia_support (GLib.Settings interface_settings, bool state) {
-        if (state == true) {
-            interface_settings.set_string (FONT_KEY, OD_REG_FONT);
-            interface_settings.set_string (DOCUMENT_FONT_KEY, OD_DOC_FONT);
-            interface_settings.set_string (MONOSPACE_FONT_KEY, OD_MON_FONT);
-        }
-        else {
-            interface_settings.reset (FONT_KEY);
-            interface_settings.reset (DOCUMENT_FONT_KEY);
-            interface_settings.reset (MONOSPACE_FONT_KEY);
-        }
-    }
-
-    private bool update_dyslexia_font_switch (GLib.Settings interface_settings) {
         var interface_font = interface_settings.get_string (FONT_KEY);
         var document_font = interface_settings.get_string (DOCUMENT_FONT_KEY);
         var monospace_font = interface_settings.get_string (MONOSPACE_FONT_KEY);
 
-        if (interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT ) {
-            return true;
-        }
+        dyslexia_font_switch.active = interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT;
 
-        else {
-            return false;
-        }
+        dyslexia_font_switch.state_set.connect (() => {
+            if (dyslexia_font_switch.active) {
+                interface_settings.set_string (FONT_KEY, OD_REG_FONT);
+                interface_settings.set_string (DOCUMENT_FONT_KEY, OD_DOC_FONT);
+                interface_settings.set_string (MONOSPACE_FONT_KEY, OD_MON_FONT);
+            } else {
+                interface_settings.reset (FONT_KEY);
+                interface_settings.reset (DOCUMENT_FONT_KEY);
+                interface_settings.reset (MONOSPACE_FONT_KEY);
+            }
+        });
     }
 }
