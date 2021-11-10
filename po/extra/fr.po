@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-07-30 18:21+0000\n"
+"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"PO-Revision-Date: 2021-11-09 12:14+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -39,8 +39,8 @@ msgstr "Options pour la couleur d'accentuation et le thème sombre"
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
-"Préférence de texte appropriée pour les dyslexiques afin d'utiliser la "
-"police OpenDyslexia dans tout le système"
+"Préférence pour les textes adaptés à la dyslexie : utilisation de la police "
+"OpenDyslexia dans tout le système"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:16
 msgid "Maximize and fullscreen workspace management options"
@@ -54,7 +54,8 @@ msgstr "Autres mises à jour :"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Fix a freeze after opening Power settings"
-msgstr "Correction d'un blocage après l'ouverture des paramètres d'alimentation"
+msgstr ""
+"Correction d'un blocage après l'ouverture des paramètres d'alimentation"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Improved filter for image file types when importing"

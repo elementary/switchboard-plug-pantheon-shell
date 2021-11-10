@@ -22,20 +22,6 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
-    private const string TEXT_SIZE_KEY = "text-scaling-factor";
-
-    private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
-    private const string FONT_KEY = "font-name";
-    private const string DOCUMENT_FONT_KEY = "document-font-name";
-    private const string MONOSPACE_FONT_KEY = "monospace-font-name";
-
-    private const string OD_REG_FONT = "OpenDyslexic Regular 9";
-    private const string OD_DOC_FONT = "OpenDyslexic Regular 10";
-    private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
-
-    private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
-
-    private Granite.Widgets.ModeButton text_size_modebutton;
 
     private enum AccentColor {
         NO_PREFERENCE,
@@ -171,48 +157,6 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
         schedule_grid.add (from_time);
         schedule_grid.add (to_label);
         schedule_grid.add (to_time);
-
-        var text_size_label = new Gtk.Label (_("Text size:")) {
-            halign = Gtk.Align.END,
-            margin_top = 24
-        };
-
-        text_size_modebutton = new Granite.Widgets.ModeButton () {
-            margin_top = 24
-        };
-        text_size_modebutton.append_text (_("Small"));
-        text_size_modebutton.append_text (_("Default"));
-        text_size_modebutton.append_text (_("Large"));
-        text_size_modebutton.append_text (_("Larger"));
-
-        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly text:")) {
-            halign = Gtk.Align.END
-        };
-
-        var dyslexia_font_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
-        };
-
-        var dyslexia_font_description_label = new Gtk.Label (
-            _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
-        ) {
-            max_width_chars = 60,
-            wrap = true,
-            xalign = 0
-        };
-        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-
-        /* Rows 0 to 3 are for the dark style UI that gets attached only if we
-         * can connect to the DBus API
-         *
-         * Row 4 and 5 are for accent color UI that gets constructed only if the
-         * current stylesheet is supported (begins with the STYLESHEET_PREFIX)
-         */
-        content_area.attach (text_size_label, 0, 8);
-        content_area.attach (text_size_modebutton, 1, 8, 2);
-        content_area.attach (dyslexia_font_label, 0, 9);
-        content_area.attach (dyslexia_font_switch, 1, 9);
-        content_area.attach (dyslexia_font_description_label, 1, 10, 2);
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -397,22 +341,6 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
             content_area.attach (accent_label, 0, 4);
             content_area.attach (accent_grid, 1, 4, 2);
         }
-
-        update_text_size_modebutton (interface_settings);
-
-        interface_settings.changed.connect (() => {
-            update_text_size_modebutton (interface_settings);
-        });
-
-        text_size_modebutton.mode_changed.connect (() => {
-            set_text_scale (interface_settings, text_size_modebutton.selected);
-        });
-
-        dyslexia_font_switch.set_active (update_dyslexia_font_switch (interface_settings));
-
-        dyslexia_font_switch.state_set.connect (() => {
-            toggle_dyslexia_support (interface_settings, dyslexia_font_switch.get_active () );
-        });
     }
 
     private class PrefersAccentColorButton : Gtk.RadioButton {
@@ -457,55 +385,6 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
                 });
             });
         }
-    }
-
-    private void toggle_dyslexia_support (GLib.Settings interface_settings, bool state) {
-        if (state == true) {
-            interface_settings.set_string (FONT_KEY, OD_REG_FONT);
-            interface_settings.set_string (DOCUMENT_FONT_KEY, OD_DOC_FONT);
-            interface_settings.set_string (MONOSPACE_FONT_KEY, OD_MON_FONT);
-        }
-        else {
-            interface_settings.reset (FONT_KEY);
-            interface_settings.reset (DOCUMENT_FONT_KEY);
-            interface_settings.reset (MONOSPACE_FONT_KEY);
-        }
-    }
-
-    private bool update_dyslexia_font_switch (GLib.Settings interface_settings) {
-        var interface_font = interface_settings.get_string (FONT_KEY);
-        var document_font = interface_settings.get_string (DOCUMENT_FONT_KEY);
-        var monospace_font = interface_settings.get_string (MONOSPACE_FONT_KEY);
-
-        if (interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT ) {
-            return true;
-        }
-
-        else {
-            return false;
-        }
-    }
-
-    private int get_text_scale (GLib.Settings interface_settings) {
-        double text_scaling_factor = interface_settings.get_double (TEXT_SIZE_KEY);
-
-        if (text_scaling_factor <= TEXT_SCALE[0]) {
-            return 0;
-        } else if (text_scaling_factor <= TEXT_SCALE[1]) {
-            return 1;
-        } else if (text_scaling_factor <= TEXT_SCALE[2]) {
-            return 2;
-        } else {
-            return 3;
-        }
-    }
-
-    private void set_text_scale (GLib.Settings interface_settings, int option) {
-        interface_settings.set_double (TEXT_SIZE_KEY, TEXT_SCALE[option]);
-    }
-
-    private void update_text_size_modebutton (GLib.Settings interface_settings) {
-        text_size_modebutton.set_active (get_text_scale (interface_settings));
     }
 
     private static DateTime double_date_time (double dbl) {

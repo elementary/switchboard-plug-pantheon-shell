@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:31+0000\n"
-"PO-Revision-Date: 2021-06-20 19:26+0000\n"
+"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"PO-Revision-Date: 2021-11-10 14:38+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
@@ -20,78 +20,81 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:43+0000\n"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:45
 msgid "Desktop"
 msgstr "Masaüstü"
 
-#: src/Plug.vala:42
+#: src/Plug.vala:46
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Dock'u ve etkin köşeleri yapılandırın, duvar kağıdını değiştirin"
 
-#: src/Plug.vala:56 src/Plug.vala:110
+#: src/Plug.vala:62 src/Plug.vala:118
 msgid "Wallpaper"
 msgstr "Duvar Kağıdı"
 
-#: src/Plug.vala:59 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
-#: src/Plug.vala:120 src/Plug.vala:121
+#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/Plug.vala:63 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+msgid "Text"
+msgstr "Metin"
+
+#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
+#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Dock & Panel"
 msgstr "Dock ve Panel"
 
-#: src/Plug.vala:66 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
-#: src/Plug.vala:125
+#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Multitasking"
 msgstr "Çoklu Görev"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:120
 msgid "Hide Mode"
 msgstr "Gizleme Modu"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:121
 msgid "Icon Size"
 msgstr "Simge Boyutu"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:122
 msgid "Pressure reveal"
 msgstr "Hassasiyeti azalt"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:123
 msgid "Display"
 msgstr "Görünüm"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:124
 msgid "Panel translucency"
 msgstr "Panel saydamlığı"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:126
 msgid "Dark style"
 msgstr "Koyu renk tema"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:127
 msgid "Accent color"
 msgstr "Vurgu rengi"
 
-#: src/Plug.vala:120
-msgid "Text size"
-msgstr "Metin boyutu"
+#: src/Plug.vala:129
+msgid "Size"
+msgstr "Boyut"
 
-#: src/Plug.vala:121
-msgid "Dyslexia-friendly text"
-msgstr "Disleksi-dostu yazı"
+#: src/Plug.vala:130
+msgid "Dyslexia-friendly"
+msgstr "Disleksi dostu"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:132
 msgid "Hot Corners"
 msgstr "Etkin Köşeler"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:133
 msgid "Move windows to a new workspace"
 msgstr "Pencereleri yeni bir çalışma alanına taşı"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "Pencere animasyonları"
 
@@ -121,20 +124,19 @@ msgstr "_Masaüstü Arkapalanı Olarak Ayarla"
 msgid "Set selected image to be the new desktop background"
 msgstr "Seçili resmi yeni masaüstü arkaplanı olarak ayarla"
 
-#: src/Views/Appearance.vala:88
+#: src/Views/Appearance.vala:74
 msgid "Style:"
 msgstr "Stil:"
 
-#: src/Views/Appearance.vala:108 src/Views/Appearance.vala:190
-#: src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
 msgid "Default"
 msgstr "Varsayılan"
 
-#: src/Views/Appearance.vala:132
+#: src/Views/Appearance.vala:118
 msgid "Dark"
 msgstr "Koyu"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:127
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -142,108 +144,80 @@ msgstr ""
 "Sistem bileşenleri için tercih edilen görsel stil. Uygulamalar da bu tercihi "
 "takip etmeyi seçebilir."
 
-#: src/Views/Appearance.vala:149
+#: src/Views/Appearance.vala:135
 msgid "Schedule:"
 msgstr "Zamanlama:"
 
-#: src/Views/Appearance.vala:155
+#: src/Views/Appearance.vala:141
 msgid "Disabled"
 msgstr "Devre dışı bırakıldı"
 
-#: src/Views/Appearance.vala:156
+#: src/Views/Appearance.vala:142
 msgid "Sunset to Sunrise"
 msgstr "Otomatik"
 
-#: src/Views/Appearance.vala:157
+#: src/Views/Appearance.vala:143
 msgid "Manual"
 msgstr "El ile"
 
-#: src/Views/Appearance.vala:159
+#: src/Views/Appearance.vala:145
 msgid "From:"
 msgstr "Başlangıç:"
 
-#: src/Views/Appearance.vala:165
+#: src/Views/Appearance.vala:151
 msgid "To:"
 msgstr "Bitiş:"
 
-#: src/Views/Appearance.vala:181
-msgid "Text size:"
-msgstr "Metin boyutu:"
-
-#: src/Views/Appearance.vala:189 src/Views/Dock.vala:38
-msgid "Small"
-msgstr "Küçük"
-
-#: src/Views/Appearance.vala:191 src/Views/Dock.vala:50
-msgid "Large"
-msgstr "Büyük"
-
-#: src/Views/Appearance.vala:192
-msgid "Larger"
-msgstr "Çok Büyük"
-
-#: src/Views/Appearance.vala:194
-msgid "Dyslexia-friendly text:"
-msgstr "Disleksi-dostu yazı:"
-
-#: src/Views/Appearance.vala:203
-msgid ""
-"Bottom-heavy shapes and increased character spacing can help improve "
-"legibility and reading speed."
-msgstr ""
-"Aşağıdan ağır şekiller ve artırılmış karakter aralığı, okunabilirliği ve "
-"okuma hızını artırmaya yardımcı olabilir."
-
 #. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:298
 msgid "Accent:"
 msgstr "Vurgu rengi:"
 
-#: src/Views/Appearance.vala:358
+#: src/Views/Appearance.vala:302
 msgid "Blueberry"
 msgstr "Yaban mersini"
 
-#: src/Views/Appearance.vala:361
+#: src/Views/Appearance.vala:305
 msgid "Mint"
 msgstr "Nane yeşili"
 
-#: src/Views/Appearance.vala:364
+#: src/Views/Appearance.vala:308
 msgid "Lime"
 msgstr "Limon yeşili"
 
-#: src/Views/Appearance.vala:367
+#: src/Views/Appearance.vala:311
 msgid "Banana"
 msgstr "Muz sarısı"
 
-#: src/Views/Appearance.vala:370
+#: src/Views/Appearance.vala:314
 msgid "Orange"
 msgstr "Turuncu"
 
-#: src/Views/Appearance.vala:373
+#: src/Views/Appearance.vala:317
 msgid "Strawberry"
 msgstr "Çilek kırmızısı"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:320
 msgid "Bubblegum"
 msgstr "Pembe"
 
-#: src/Views/Appearance.vala:379
+#: src/Views/Appearance.vala:323
 msgid "Grape"
 msgstr "Mor"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:326
 msgid "Cocoa"
 msgstr "Kahverengi"
 
-#: src/Views/Appearance.vala:385
+#: src/Views/Appearance.vala:329
 msgid "Slate"
 msgstr "Koyu gri"
 
-#: src/Views/Appearance.vala:388
+#: src/Views/Appearance.vala:332
 msgid "Automatic based on wallpaper"
 msgstr "Duvar kağıdına göre otomatik"
 
-#: src/Views/Appearance.vala:404
+#: src/Views/Appearance.vala:348
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -254,6 +228,14 @@ msgstr ""
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Dock"
+
+#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+msgid "Small"
+msgstr "Küçük"
+
+#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+msgid "Large"
+msgstr "Büyük"
 
 #: src/Views/Dock.vala:70
 msgid "Focused window is maximized"
@@ -367,6 +349,26 @@ msgstr "Yeni bir çalışma alanına geç"
 msgid "Execute custom command"
 msgstr "Özel komut çalıştır"
 
+#: src/Views/Text.vala:38
+msgid "Size:"
+msgstr "Boyut:"
+
+#: src/Views/Text.vala:46
+msgid "Larger"
+msgstr "Çok Büyük"
+
+#: src/Views/Text.vala:48
+msgid "Dyslexia-friendly:"
+msgstr "Disleksi dostu:"
+
+#: src/Views/Text.vala:59
+msgid ""
+"Bottom-heavy shapes and increased character spacing can help improve "
+"legibility and reading speed."
+msgstr ""
+"Aşağıdan ağır şekiller ve artırılmış karakter aralığı, okunabilirliği ve "
+"okuma hızını artırmaya yardımcı olabilir."
+
 #: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
 msgstr "Fotoğrafı İçe Aktar…"
@@ -440,6 +442,9 @@ msgstr "Masaüstü Slayt Gösterisi Olarak Ayarla"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Slayt Gösterisi Oluştur"
+
+#~ msgid "Text size:"
+#~ msgstr "Metin boyutu:"
 
 #~ msgid ""
 #~ "Visual style for system components like the Dock and Panel indicators."
