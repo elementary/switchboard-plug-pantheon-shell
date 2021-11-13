@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-09 03:28+0000\n"
-"PO-Revision-Date: 2021-11-09 04:12+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-11-13 02:01+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/hu/>\n"
 "Language: hu\n"
@@ -37,10 +37,8 @@ msgid "Appearance"
 msgstr "Megjelenés"
 
 #: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
-#, fuzzy
-#| msgid "Text size"
 msgid "Text"
-msgstr "Szövegméret"
+msgstr "Szöveg"
 
 #: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
 #: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
@@ -81,16 +79,12 @@ msgid "Accent color"
 msgstr "Kiemelőszín"
 
 #: src/Plug.vala:129
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Size"
-msgstr "Ikonméret"
+msgstr "Méret"
 
 #: src/Plug.vala:130
-#, fuzzy
-#| msgid "Dyslexia-friendly text"
 msgid "Dyslexia-friendly"
-msgstr "Diszlexiabarát szöveg"
+msgstr "Diszlexiabarát"
 
 #: src/Plug.vala:132
 msgid "Hot Corners"
@@ -364,10 +358,8 @@ msgid "Larger"
 msgstr "Nagyobb"
 
 #: src/Views/Text.vala:48
-#, fuzzy
-#| msgid "Dyslexia-friendly text:"
 msgid "Dyslexia-friendly:"
-msgstr "Diszlexiabarát szöveg:"
+msgstr "Diszlexiabarát:"
 
 #: src/Views/Text.vala:59
 msgid ""
