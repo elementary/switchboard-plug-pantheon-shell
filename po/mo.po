@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"POT-Creation-Date: 2021-11-16 17:49+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Moldovan <https://l10n.elementary.io/projects/switchboard/"
@@ -128,7 +128,7 @@ msgstr "Setați imaginea selectată ca fiind noul fundal pentru desktop"
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Mod implicit"
 
@@ -225,11 +225,11 @@ msgstr ""
 msgid "Dock"
 msgstr "Doc"
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Mic"
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Mare"
 
@@ -345,20 +345,15 @@ msgstr ""
 msgid "Execute custom command"
 msgstr "Executați comanda personalizată"
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr ""
 
-#: src/Views/Text.vala:46
-#, fuzzy
-msgid "Larger"
-msgstr "Mare"
-
-#: src/Views/Text.vala:48
+#: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
 msgstr ""
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -439,6 +434,10 @@ msgstr "Setați ca Prezentare de Spațiul de lucru"
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Creează prezentare"
+
+#, fuzzy
+#~ msgid "Larger"
+#~ msgstr "Mare"
 
 #, fuzzy
 #~ msgid "Text size:"

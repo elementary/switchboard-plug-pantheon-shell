@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"POT-Creation-Date: 2021-11-16 17:49+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -140,7 +140,7 @@ msgstr "Agordi la elektitan bildon kiel novan labortablan fonon"
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Apriora"
 
@@ -237,11 +237,11 @@ msgstr ""
 msgid "Dock"
 msgstr "Butonbreto"
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Malgranda"
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Granda"
 
@@ -359,19 +359,15 @@ msgstr "Salti al nova laborspaco"
 msgid "Execute custom command"
 msgstr "Lanĉi propran komandon"
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr ""
 
-#: src/Views/Text.vala:46
-msgid "Larger"
-msgstr "Grandega"
-
-#: src/Views/Text.vala:48
+#: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
 msgstr ""
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -452,6 +448,9 @@ msgstr "Agordi kiel fundan animacion"
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Krei animacion"
+
+#~ msgid "Larger"
+#~ msgstr "Grandega"
 
 #~ msgid "Text size:"
 #~ msgstr "Teksta amplekso:"

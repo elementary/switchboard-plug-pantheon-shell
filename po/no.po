@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"POT-Creation-Date: 2021-11-16 17:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Style:"
 msgstr ""
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr ""
 
@@ -211,11 +211,11 @@ msgstr ""
 msgid "Dock"
 msgstr ""
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr ""
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr ""
 
@@ -331,19 +331,15 @@ msgstr ""
 msgid "Execute custom command"
 msgstr ""
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr ""
 
-#: src/Views/Text.vala:46
-msgid "Larger"
-msgstr ""
-
-#: src/Views/Text.vala:48
+#: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
 msgstr ""
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."

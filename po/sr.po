@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"POT-Creation-Date: 2021-11-16 17:49+0000\n"
 "PO-Revision-Date: 2021-02-17 13:39+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -135,7 +135,7 @@ msgstr "Постави изабрану слику за нову позадин�
 msgid "Style:"
 msgstr "Стил:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Основно"
 
@@ -234,11 +234,11 @@ msgstr ""
 msgid "Dock"
 msgstr "Лука"
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Мали"
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Велик"
 
@@ -358,21 +358,17 @@ msgstr "Пређи на нови радни простор"
 msgid "Execute custom command"
 msgstr "Изврши произвољну наредбу"
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr ""
 
-#: src/Views/Text.vala:46
-msgid "Larger"
-msgstr "Увећан"
-
-#: src/Views/Text.vala:48
+#: src/Views/Text.vala:49
 #, fuzzy
 #| msgid "Dyslexia-friendly text:"
 msgid "Dyslexia-friendly:"
 msgstr "Текст пригодан дислексији:"
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -453,6 +449,9 @@ msgstr "Постави као смењиву позадину радне пов�
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Направи покретни приказ"
+
+#~ msgid "Larger"
+#~ msgstr "Увећан"
 
 #~ msgid "Text size:"
 #~ msgstr "Величина текста:"

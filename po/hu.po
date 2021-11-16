@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"POT-Creation-Date: 2021-11-16 17:49+0000\n"
 "PO-Revision-Date: 2021-11-13 02:01+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -128,7 +128,7 @@ msgstr "Kiválasztott kép beállítása új asztali háttérképként"
 msgid "Style:"
 msgstr "Téma:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Alapértelmezett"
 
@@ -229,11 +229,11 @@ msgstr ""
 msgid "Dock"
 msgstr "Dokk"
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Kicsi"
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Nagy"
 
@@ -349,19 +349,15 @@ msgstr "Váltás új munkaterületre"
 msgid "Execute custom command"
 msgstr "Egyedi parancs végrehajtása"
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr "Méret:"
 
-#: src/Views/Text.vala:46
-msgid "Larger"
-msgstr "Nagyobb"
-
-#: src/Views/Text.vala:48
+#: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
 msgstr "Diszlexiabarát:"
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -442,6 +438,9 @@ msgstr "Beállítás asztali diavetítésként"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Diavetítés létrehozása"
+
+#~ msgid "Larger"
+#~ msgstr "Nagyobb"
 
 #~ msgid "Text size:"
 #~ msgstr "Szövegméret:"
