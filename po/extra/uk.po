@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2021-07-15 23:09+0000\n"
+"PO-Revision-Date: 2021-11-18 20:03+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -31,15 +31,15 @@ msgstr "Налаштування доку, дій кутів та зміна т�
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 msgid "New features:"
-msgstr "Нові можливості:"
+msgstr "Нові функції:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Move Text settings to their own page"
-msgstr ""
+msgstr "Налаштування тексту отримали власну сторінку"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "More granular settings for text scale"
-msgstr ""
+msgstr "Докладніші налаштування масштабу тексту"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
