@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2021-11-09 12:14+0000\n"
+"PO-Revision-Date: 2021-11-19 08:57+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -34,11 +34,11 @@ msgstr "Nouvelles fonctionnalités :"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Move Text settings to their own page"
-msgstr ""
+msgstr "Déplacement des paramètres de texte vers une page distincte"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "More granular settings for text scale"
-msgstr ""
+msgstr "Réglages plus fins de la mise à l'échelle du texte"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
