@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2021-11-26 02:25+0000\n"
-"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
+"PO-Revision-Date: 2021-12-07 05:49+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -76,7 +76,7 @@ msgstr "暗色风格"
 
 #: src/Plug.vala:127
 msgid "Accent color"
-msgstr "高亮色调"
+msgstr "强调色"
 
 #: src/Plug.vala:129
 msgid "Size"
@@ -92,7 +92,7 @@ msgstr "热区"
 
 #: src/Plug.vala:133
 msgid "Move windows to a new workspace"
-msgstr "移动至新工作区"
+msgstr "移至新工作区"
 
 #: src/Plug.vala:134
 msgid "Window animations"
@@ -140,7 +140,7 @@ msgstr "深色"
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
-msgstr "针对系统组件的偏好视觉风格。应用程序可能也会遵循这个设置。"
+msgstr "针对系统组件的视觉风格。应用程序可能也会遵循这个设置。"
 
 #: src/Views/Appearance.vala:135
 msgid "Schedule:"
@@ -169,7 +169,7 @@ msgstr "结束时间："
 #. / TRANSLATORS: as in "Accent color"
 #: src/Views/Appearance.vala:298
 msgid "Accent:"
-msgstr "高亮色调："
+msgstr "强调色："
 
 #: src/Views/Appearance.vala:302
 msgid "Blueberry"
@@ -219,9 +219,7 @@ msgstr "基于壁纸自动"
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr ""
-"默认情况下将用于系统全局。自带高亮色调配置的应用程序除外，它们将使用自己的高"
-"亮颜色。"
+msgstr "默认情况下将用于系统全局。自带强调色配置的应用程序除外，它们将使用自己的强调色。"
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -299,7 +297,7 @@ msgstr "自定义命令："
 
 #: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
-msgstr "移动至新工作区："
+msgstr "移至新工作区："
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
