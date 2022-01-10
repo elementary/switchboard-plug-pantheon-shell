@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-01-10 13:13+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-09 05:49+0000\n"
 
 #: src/Plug.vala:45
@@ -77,10 +77,8 @@ msgid "Dark style"
 msgstr ""
 
 #: src/Plug.vala:127
-#, fuzzy
-#| msgid "Accent:"
 msgid "Accent color"
-msgstr "Zvýraznění:"
+msgstr "Barva zvýraznění"
 
 #: src/Plug.vala:129
 #, fuzzy
@@ -308,10 +306,8 @@ msgid "Custom command:"
 msgstr "Uživatelsky určený příkaz:"
 
 #: src/Views/Multitasking.vala:96
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace:"
-msgstr "Přepnout na novou pracovní plochu"
+msgstr "Přesunout okna na novou plochu:"
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
