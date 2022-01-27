@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2021-12-07 09:40+0000\n"
+"PO-Revision-Date: 2022-01-27 10:36+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -219,7 +219,7 @@ msgstr "基于壁纸自动"
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr "默认情况下将用于系统全局。自带强调色配置的应用程序除外，它们将使用自己的强调色。"
+msgstr "默认情况下将用于系统全局，自带强调色的应用程序除外。它们将使用自己的强调色。"
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -297,7 +297,7 @@ msgstr "自定义命令："
 
 #: src/Views/Multitasking.vala:96
 msgid "Move windows to a new workspace:"
-msgstr "移至新工作区："
+msgstr "移动窗口至新工作区："
 
 #: src/Views/Multitasking.vala:102
 msgid "When entering fullscreen"
@@ -305,7 +305,7 @@ msgstr "进入全屏时"
 
 #: src/Views/Multitasking.vala:103
 msgid "When maximizing"
-msgstr "最大化窗口"
+msgstr "窗口最大化时"
 
 #: src/Views/Multitasking.vala:113
 msgid "Window animations:"
