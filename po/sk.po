@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2021-11-30 16:52+0000\n"
+"PO-Revision-Date: 2022-03-02 17:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/sk/>\n"
@@ -48,7 +48,7 @@ msgstr "Dok a panel"
 #: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Plug.vala:134
 msgid "Multitasking"
-msgstr "Paralelné zobrazenie"
+msgstr "Zobrazenie úloh"
 
 #: src/Plug.vala:120
 msgid "Hide Mode"
@@ -322,7 +322,7 @@ msgstr "Nerobiť nič"
 #. none
 #: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
-msgstr "Paralelné zobrazenie"
+msgstr "Zobrazenie úloh"
 
 #. show-workspace-view
 #: src/Views/Multitasking.vala:156
