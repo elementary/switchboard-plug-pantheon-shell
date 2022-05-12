@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"POT-Creation-Date: 2021-11-18 18:15+0000\n"
 "PO-Revision-Date: 2021-11-10 14:38+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -128,7 +128,7 @@ msgstr "Seçili resmi yeni masaüstü arkaplanı olarak ayarla"
 msgid "Style:"
 msgstr "Stil:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Varsayılan"
 
@@ -229,11 +229,11 @@ msgstr ""
 msgid "Dock"
 msgstr "Dock"
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Küçük"
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Büyük"
 
@@ -349,19 +349,15 @@ msgstr "Yeni bir çalışma alanına geç"
 msgid "Execute custom command"
 msgstr "Özel komut çalıştır"
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr "Boyut:"
 
-#: src/Views/Text.vala:46
-msgid "Larger"
-msgstr "Çok Büyük"
-
-#: src/Views/Text.vala:48
+#: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
 msgstr "Disleksi dostu:"
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -442,6 +438,9 @@ msgstr "Masaüstü Slayt Gösterisi Olarak Ayarla"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Slayt Gösterisi Oluştur"
+
+#~ msgid "Larger"
+#~ msgstr "Çok Büyük"
 
 #~ msgid "Text size:"
 #~ msgstr "Metin boyutu:"

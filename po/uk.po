@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
-"PO-Revision-Date: 2021-11-09 21:43+0000\n"
-"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"POT-Creation-Date: 2021-11-18 18:15+0000\n"
+"PO-Revision-Date: 2021-12-18 22:46+0000\n"
+"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/uk/>\n"
 "Language: uk\n"
@@ -129,7 +129,7 @@ msgstr "Зробити позначене зображення новим зоб
 msgid "Style:"
 msgstr "Стиль:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Типовий"
 
@@ -192,7 +192,7 @@ msgstr "Банановий"
 
 #: src/Views/Appearance.vala:314
 msgid "Orange"
-msgstr "Жовтогарячий"
+msgstr "Апельсиновий"
 
 #: src/Views/Appearance.vala:317
 msgid "Strawberry"
@@ -230,11 +230,11 @@ msgstr ""
 msgid "Dock"
 msgstr "Док"
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Малий"
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Великий"
 
@@ -350,19 +350,15 @@ msgstr "Перейти до нового робочого простору"
 msgid "Execute custom command"
 msgstr "Виконати призначену команду"
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr "Розмір:"
 
-#: src/Views/Text.vala:46
-msgid "Larger"
-msgstr "Збільшений"
-
-#: src/Views/Text.vala:48
+#: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
 msgstr "Придатно для читання людьми з дислексією:"
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -446,6 +442,9 @@ msgstr "Зробити слайдшоу стільниці"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Створити слайдшоу"
+
+#~ msgid "Larger"
+#~ msgstr "Збільшений"
 
 #~ msgid "Text size:"
 #~ msgstr "Розмір тексту:"

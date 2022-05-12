@@ -7,6 +7,19 @@
   <icon type="stock">preferences-desktop-wallpaper</icon>
   <translation type="gettext">pantheon-desktop-plug</translation>
   <releases>
+    <release version="6.1.0" date="2021-11-23" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Move Text settings to their own page</li>
+          <li>More granular settings for text scale</li>
+        </ul>
+        <p>Other updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.0.0" date="2021-07-15" urgency="medium">
       <description>
         <p>New features:</p>
@@ -51,6 +64,9 @@
     </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-appearance.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-text.png</image>
     </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-dock-panel.png</image>

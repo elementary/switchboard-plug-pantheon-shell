@@ -20,7 +20,6 @@
 
 public class PantheonShell.Text : Granite.SimpleSettingsPage {
     private const string TEXT_SIZE_KEY = "text-scaling-factor";
-
     private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
     private const string FONT_KEY = "font-name";
     private const string DOCUMENT_FONT_KEY = "document-font-name";
@@ -30,9 +29,7 @@ public class PantheonShell.Text : Granite.SimpleSettingsPage {
     private const string OD_DOC_FONT = "OpenDyslexic Regular 10";
     private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
 
-    private const double[] TEXT_SCALE = {0.75, 1, 1.25, 1.5};
-
-    private Granite.Widgets.ModeButton text_size_modebutton;
+    private uint scale_timeout;
 
     public Text () {
         Object (
@@ -42,15 +39,20 @@ public class PantheonShell.Text : Granite.SimpleSettingsPage {
     }
 
     construct {
-        var text_size_label = new Gtk.Label (_("Size:")) {
+        var size_label = new Gtk.Label (_("Size:")) {
             halign = Gtk.Align.END
         };
 
-        text_size_modebutton = new Granite.Widgets.ModeButton ();
-        text_size_modebutton.append_text (_("Small"));
-        text_size_modebutton.append_text (_("Default"));
-        text_size_modebutton.append_text (_("Large"));
-        text_size_modebutton.append_text (_("Larger"));
+        var size_adjustment = new Gtk.Adjustment (-1, 0.75, 1.5, 0.05, 0, 0);
+
+        var size_scale = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, size_adjustment) {
+            draw_value = false,
+            hexpand = true
+        };
+        size_scale.add_mark (1, Gtk.PositionType.TOP, null);
+        size_scale.add_mark (1.25, Gtk.PositionType.TOP, null);
+
+        var size_spinbutton = new Gtk.SpinButton (size_adjustment, 0.25, 2);
 
         var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly:")) {
             halign = Gtk.Align.END,
@@ -71,26 +73,32 @@ public class PantheonShell.Text : Granite.SimpleSettingsPage {
         };
         dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        content_area.attach (text_size_label, 0, 0);
-        content_area.attach (text_size_modebutton, 1, 0, 2);
+        content_area.attach (size_label, 0, 0);
+        content_area.attach (size_scale, 1, 0);
+        content_area.attach (size_spinbutton, 2, 0);
         content_area.attach (dyslexia_font_label, 0, 1);
         content_area.attach (dyslexia_font_switch, 1, 1);
         content_area.attach (dyslexia_font_description_label, 1, 2, 2);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
+        interface_settings.bind ("text-scaling-factor", size_adjustment, "value", SettingsBindFlags.GET);
+
+        // Setting scale is slow, so we wait while pressed to keep UI responsive
+        size_adjustment.value_changed.connect (() => {
+            if (scale_timeout != 0) {
+                GLib.Source.remove (scale_timeout);
+            }
+
+            scale_timeout = Timeout.add (300, () => {
+                scale_timeout = 0;
+                interface_settings.set_double ("text-scaling-factor", size_adjustment.value);
+                return false;
+            });
+        });
+
         var interface_font = interface_settings.get_string (FONT_KEY);
         var document_font = interface_settings.get_string (DOCUMENT_FONT_KEY);
         var monospace_font = interface_settings.get_string (MONOSPACE_FONT_KEY);
-
-        text_size_modebutton.set_active (get_text_scale (interface_settings));
-
-        interface_settings.changed.connect (() => {
-            text_size_modebutton.set_active (get_text_scale (interface_settings));
-        });
-
-        text_size_modebutton.mode_changed.connect (() => {
-            interface_settings.set_double (TEXT_SIZE_KEY, TEXT_SCALE[text_size_modebutton.selected]);
-        });
 
         dyslexia_font_switch.active = interface_font == OD_REG_FONT || document_font == OD_DOC_FONT || monospace_font == OD_MON_FONT;
 
@@ -105,19 +113,5 @@ public class PantheonShell.Text : Granite.SimpleSettingsPage {
                 interface_settings.reset (MONOSPACE_FONT_KEY);
             }
         });
-    }
-
-    private int get_text_scale (GLib.Settings interface_settings) {
-        double text_scaling_factor = interface_settings.get_double (TEXT_SIZE_KEY);
-
-        if (text_scaling_factor <= TEXT_SCALE[0]) {
-            return 0;
-        } else if (text_scaling_factor <= TEXT_SCALE[1]) {
-            return 1;
-        } else if (text_scaling_factor <= TEXT_SCALE[2]) {
-            return 2;
-        } else {
-            return 3;
-        }
     }
 }

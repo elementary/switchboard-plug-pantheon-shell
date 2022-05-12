@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
-"PO-Revision-Date: 2021-11-09 04:12+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2021-11-18 18:15+0000\n"
+"PO-Revision-Date: 2022-03-02 17:20+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/sk/>\n"
 "Language: sk\n"
@@ -37,10 +37,8 @@ msgid "Appearance"
 msgstr "Vzhľad"
 
 #: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
-#, fuzzy
-#| msgid "Text size"
 msgid "Text"
-msgstr "Veľkosť textu"
+msgstr "Text"
 
 #: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
 #: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
@@ -50,7 +48,7 @@ msgstr "Dok a panel"
 #: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Plug.vala:134
 msgid "Multitasking"
-msgstr "Paralelné zobrazenie"
+msgstr "Zobrazenie úloh"
 
 #: src/Plug.vala:120
 msgid "Hide Mode"
@@ -81,14 +79,10 @@ msgid "Accent color"
 msgstr "Farebný odtieň"
 
 #: src/Plug.vala:129
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Size"
-msgstr "Veľkosť ikon"
+msgstr "Veľkosť"
 
 #: src/Plug.vala:130
-#, fuzzy
-#| msgid "Dyslexia-friendly text"
 msgid "Dyslexia-friendly"
 msgstr "Text pre dyslektikov"
 
@@ -134,7 +128,7 @@ msgstr "Nastaví vybraný obrázok ako nové pozadie pracovnej plochy"
 msgid "Style:"
 msgstr "Štýl:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Predvolený"
 
@@ -235,11 +229,11 @@ msgstr ""
 msgid "Dock"
 msgstr "Dok"
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr "Malá"
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr "Veľká"
 
@@ -328,7 +322,7 @@ msgstr "Nerobiť nič"
 #. none
 #: src/Views/Multitasking.vala:155
 msgid "Multitasking View"
-msgstr "Paralelné zobrazenie"
+msgstr "Zobrazenie úloh"
 
 #. show-workspace-view
 #: src/Views/Multitasking.vala:156
@@ -355,21 +349,15 @@ msgstr "Prepnúť na novú pracovnú plochu"
 msgid "Execute custom command"
 msgstr "Spustiť vlastný program"
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr "Veľkosť:"
 
-#: src/Views/Text.vala:46
-msgid "Larger"
-msgstr "Väčšia"
-
-#: src/Views/Text.vala:48
-#, fuzzy
-#| msgid "Dyslexia-friendly text:"
+#: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
 msgstr "Text pre dyslektikov:"
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -453,6 +441,9 @@ msgstr "Nastaviť ako prezentáciu pozadí plochy"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Vytvoriť prezentáciu"
+
+#~ msgid "Larger"
+#~ msgstr "Väčšia"
 
 #~ msgid "Text size:"
 #~ msgstr "Veľkosť textu:"

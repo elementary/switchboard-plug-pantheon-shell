@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-09 03:28+0000\n"
+"POT-Creation-Date: 2021-11-18 18:15+0000\n"
 "PO-Revision-Date: 2020-11-22 21:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -131,7 +131,7 @@ msgstr "नवीन डेस्कटॉप पार्श्वभूमी 
 msgid "Style:"
 msgstr "शैली:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42 src/Views/Text.vala:44
+#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "डिफॉल्ट"
 
@@ -228,11 +228,11 @@ msgstr "डीफॉल्टनुसार प्रणालीवर वा�
 msgid "Dock"
 msgstr "डॉक"
 
-#: src/Views/Dock.vala:38 src/Views/Text.vala:43
+#: src/Views/Dock.vala:38
 msgid "Small"
 msgstr "लहान"
 
-#: src/Views/Dock.vala:50 src/Views/Text.vala:45
+#: src/Views/Dock.vala:50
 msgid "Large"
 msgstr "मोठा"
 
@@ -352,21 +352,17 @@ msgstr "नवीन कार्यक्षेत्रावर स्वि�
 msgid "Execute custom command"
 msgstr "सानुकूल आज्ञा चालवा"
 
-#: src/Views/Text.vala:38
+#: src/Views/Text.vala:34
 msgid "Size:"
 msgstr ""
 
-#: src/Views/Text.vala:46
-msgid "Larger"
-msgstr "आणखी मोठा"
-
-#: src/Views/Text.vala:48
+#: src/Views/Text.vala:49
 #, fuzzy
 #| msgid "Dyslexia-friendly text:"
 msgid "Dyslexia-friendly:"
 msgstr "डिस्लेक्सिया-अनुकूल मजकूर:"
 
-#: src/Views/Text.vala:59
+#: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -448,6 +444,9 @@ msgstr "डेस्कटॉप स्लाइडशो म्हणून स
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "स्लाइडशो तयार करा"
+
+#~ msgid "Larger"
+#~ msgstr "आणखी मोठा"
 
 #~ msgid "Text size:"
 #~ msgstr "टेक्स्ट आकार :"
