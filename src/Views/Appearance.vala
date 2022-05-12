@@ -65,15 +65,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
     }
 
     construct {
-        column_spacing = 12;
+        column_spacing = 7; // Off by one with Gtk.RadioButton
         halign = Gtk.Align.CENTER;
         row_spacing = 6;
         margin_start = margin_end = 12;
         margin_bottom = 24;
 
-        var dark_label = new Gtk.Label (_("Style:")) {
-            halign = Gtk.Align.END
-        };
+        var dark_label = new Granite.HeaderLabel (_("Style"));
 
         var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
 
@@ -124,28 +122,31 @@ public class PantheonShell.Appearance : Gtk.Grid {
         prefer_dark_radio.get_style_context ().add_class ("image-button");
         prefer_dark_radio.add (prefer_dark_grid);
 
+        var prefer_style_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
+        prefer_style_box.add (prefer_default_radio);
+        prefer_style_box.add (prefer_dark_radio);
+
         var dark_info = new Gtk.Label (_("Preferred visual style for system components. Apps may also choose to follow this preference.")) {
             max_width_chars = 60,
-            margin_bottom = 18,
             wrap = true,
             xalign = 0
         };
         dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var schedule_label = new Gtk.Label (_("Schedule:")) {
-            halign = Gtk.Align.END,
-            xalign = 1
-        };
+        var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
-        var schedule_mode_button = new Granite.Widgets.ModeButton ();
-        schedule_mode_button.append_text (_("Disabled"));
-        schedule_mode_button.append_text (_("Sunset to Sunrise"));
-        schedule_mode_button.append_text (_("Manual"));
+        var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled"));
+
+        var schedule_sunset_radio = new Gtk.RadioButton.with_label_from_widget (
+            schedule_disabled_radio,
+            _("Sunrise to Sunset")
+        );
 
         var from_label = new Gtk.Label (_("From:"));
 
         var from_time = new Granite.Widgets.TimePicker () {
-            hexpand = true
+            hexpand = true,
+            margin_end = 6
         };
 
         var to_label = new Gtk.Label (_("To:"));
@@ -154,15 +155,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
             hexpand = true
         };
 
-        var schedule_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            margin_bottom = 24
-        };
+        var schedule_manual_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+        schedule_manual_box.add (from_label);
+        schedule_manual_box.add (from_time);
+        schedule_manual_box.add (to_label);
+        schedule_manual_box.add (to_time);
 
-        schedule_grid.add (from_label);
-        schedule_grid.add (from_time);
-        schedule_grid.add (to_label);
-        schedule_grid.add (to_time);
+        var schedule_manual_radio = new Gtk.RadioButton.from_widget (schedule_disabled_radio) ;
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -193,13 +192,14 @@ public class PantheonShell.Appearance : Gtk.Grid {
         }
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
-            attach (dark_label, 0, 0);
-            attach (prefer_default_radio, 1, 0);
-            attach (prefer_dark_radio, 2, 0);
-            attach (dark_info, 1, 1, 2);
-            attach (schedule_label, 0, 2, 1, 1);
-            attach (schedule_mode_button, 1, 2, 2, 1);
-            attach (schedule_grid, 1, 3, 2, 1);
+            attach (dark_label, 0, 0, 2);
+            attach (dark_info, 0, 1, 2);
+            attach (prefer_style_box, 0, 2, 2);
+            attach (schedule_label, 0, 3, 2);
+            attach (schedule_disabled_radio, 0, 4, 2);
+            attach (schedule_sunset_radio, 0, 5, 2);
+            attach (schedule_manual_radio, 0, 6);
+            attach (schedule_manual_box, 1, 6);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -222,12 +222,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
              * through user interaction, not if scheduling changes the selection
              */
             prefer_default_radio.button_release_event.connect (() => {
-                schedule_mode_button.selected = 0;
+                schedule_disabled_radio.active = true;
                 return Gdk.EVENT_PROPAGATE;
             });
 
             prefer_dark_radio.button_release_event.connect (() => {
-                schedule_mode_button.selected = 0;
+                schedule_disabled_radio.active = true;
                 return Gdk.EVENT_PROPAGATE;
             });
 
@@ -257,35 +257,27 @@ public class PantheonShell.Appearance : Gtk.Grid {
             });
 
             var schedule = settings.get_string ("prefer-dark-schedule");
-            from_label.sensitive = schedule == "manual";
-            from_time.sensitive = schedule == "manual";
-            to_label.sensitive = schedule == "manual";
-            to_time.sensitive = schedule == "manual";
-
             if (schedule == "sunset-to-sunrise") {
-                schedule_mode_button.selected = 1;
+                schedule_sunset_radio.active = true;
             } else if (schedule == "manual") {
-                schedule_mode_button.selected = 2;
+                schedule_manual_radio.active = true;
             } else {
-                schedule_mode_button.selected = 0;
+                schedule_disabled_radio.active = true;
             }
 
-            schedule_mode_button.mode_changed.connect (() => {
-                if (schedule_mode_button.selected == 1) {
-                    schedule = "sunset-to-sunrise";
-                } else if (schedule_mode_button.selected == 2) {
-                    schedule = "manual";
-                } else {
-                    schedule = "disabled";
-                }
-
-                settings.set_string ("prefer-dark-schedule", schedule);
-
-                from_label.sensitive = schedule == "manual";
-                from_time.sensitive = schedule == "manual";
-                to_label.sensitive = schedule == "manual";
-                to_time.sensitive = schedule == "manual";
+            schedule_disabled_radio.clicked.connect (() => {
+                settings.set_string ("prefer-dark-schedule", "disabled");
             });
+
+            schedule_manual_radio.clicked.connect (() => {
+                settings.set_string ("prefer-dark-schedule", "manual");
+            });
+
+            schedule_sunset_radio.clicked.connect (() => {
+                settings.set_string ("prefer-dark-schedule", "sunset-to-sunrise");
+            });
+
+            schedule_manual_radio.bind_property ("active", schedule_manual_box, "sensitive", BindingFlags.SYNC_CREATE);
         }
 
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
@@ -295,8 +287,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         if (current_stylesheet.has_prefix (STYLESHEET_PREFIX)) {
             /// TRANSLATORS: as in "Accent color"
-            var accent_label = new Gtk.Label (_("Accent:"));
-            accent_label.halign = Gtk.Align.END;
+            var accent_label = new Granite.HeaderLabel (_("Accent:")) {
+                margin_top = 18
+            };
 
             var blueberry_button = new PrefersAccentColorButton (pantheon_act, AccentColor.BLUE);
             blueberry_button.tooltip_text = _("Blueberry");
@@ -346,15 +339,14 @@ public class PantheonShell.Appearance : Gtk.Grid {
             accent_grid.add (auto_button);
 
             var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color.")) {
-                margin_bottom = 18,
                 xalign = 0,
                 wrap = true
             };
             accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-            attach (accent_label, 0, 4);
-            attach (accent_grid, 1, 4, 2);
-            attach (accent_info, 1, 5, 2);
+            attach (accent_label, 0, 7, 2);
+            attach (accent_info, 0, 8, 2);
+            attach (accent_grid, 0, 9, 2);
         }
     }
 
