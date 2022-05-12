@@ -139,7 +139,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         var schedule_sunset_radio = new Gtk.RadioButton.with_label_from_widget (
             schedule_disabled_radio,
-            _("Sunrise to Sunset")
+            _("Sunset to Sunrise")
         );
 
         var from_label = new Gtk.Label (_("From:"));
