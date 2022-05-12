@@ -30,7 +30,7 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
     public Dock () {
         Object (
             title: _("Dock & Panel"),
-            icon_name: "preferences-desktop-wallpaper"
+            icon_name: "preferences-desktop"
         );
     }
 

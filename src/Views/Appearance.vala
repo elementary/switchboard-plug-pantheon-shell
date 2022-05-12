@@ -73,10 +73,6 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
     }
 
     construct {
-        var dark_label = new Gtk.Label (_("Style:")) {
-            halign = Gtk.Align.END
-        };
-
         var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
 
         var prefer_default_card = new Gtk.Grid () {
@@ -126,37 +122,39 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
         prefer_dark_radio.get_style_context ().add_class ("image-button");
         prefer_dark_radio.add (prefer_dark_grid);
 
-        var schedule_label = new Gtk.Label (_("Schedule:")) {
-            halign = Gtk.Align.END,
-            xalign = 1
-        };
+        var prefer_style_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
+        prefer_style_box.add (prefer_default_radio);
+        prefer_style_box.add (prefer_dark_radio);
 
-        var schedule_mode_button = new Granite.Widgets.ModeButton ();
-        schedule_mode_button.append_text (_("Disabled"));
-        schedule_mode_button.append_text (_("Sunset to Sunrise"));
-        schedule_mode_button.append_text (_("Manual"));
+        var schedule_label = new Granite.HeaderLabel (_("Schedule"));
+
+        var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled"));
+
+        var schedule_sunset_radio = new Gtk.RadioButton.with_label_from_widget (
+            schedule_disabled_radio,
+            _("Sunset to Sunrise")
+        );
 
         var from_label = new Gtk.Label (_("From:"));
 
         var from_time = new Granite.Widgets.TimePicker () {
-            hexpand = true
+            margin_end = 6
         };
 
         var to_label = new Gtk.Label (_("To:"));
 
-        var to_time = new Granite.Widgets.TimePicker () {
+        var to_time = new Granite.Widgets.TimePicker () ;
+
+        var schedule_manual_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+            halign = Gtk.Align.START,
             hexpand = true
         };
+        schedule_manual_box.add (from_label);
+        schedule_manual_box.add (from_time);
+        schedule_manual_box.add (to_label);
+        schedule_manual_box.add (to_time);
 
-        var schedule_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            margin_bottom = 24
-        };
-
-        schedule_grid.add (from_label);
-        schedule_grid.add (from_time);
-        schedule_grid.add (to_label);
-        schedule_grid.add (to_time);
+        var schedule_manual_radio = new Gtk.RadioButton.from_widget (schedule_disabled_radio) ;
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -187,12 +185,15 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
         }
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
-            content_area.attach (dark_label, 0, 0);
-            content_area.attach (prefer_default_radio, 1, 0);
-            content_area.attach (prefer_dark_radio, 2, 0);
-            content_area.attach (schedule_label, 0, 2, 1, 1);
-            content_area.attach (schedule_mode_button, 1, 2, 2, 1);
-            content_area.attach (schedule_grid, 1, 3, 2, 1);
+
+            content_area.column_spacing = 7; // Off by one with Gtk.RadioButton
+            content_area.margin_start = 60;
+            content_area.attach (prefer_style_box, 0, 0, 2);
+            content_area.attach (schedule_label, 0, 1, 2);
+            content_area.attach (schedule_disabled_radio, 0, 2, 2);
+            content_area.attach (schedule_sunset_radio, 0, 3, 2);
+            content_area.attach (schedule_manual_radio, 0, 4);
+            content_area.attach (schedule_manual_box, 1, 4);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -215,12 +216,12 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
              * through user interaction, not if scheduling changes the selection
              */
             prefer_default_radio.button_release_event.connect (() => {
-                schedule_mode_button.selected = 0;
+                schedule_disabled_radio.active = true;
                 return Gdk.EVENT_PROPAGATE;
             });
 
             prefer_dark_radio.button_release_event.connect (() => {
-                schedule_mode_button.selected = 0;
+                schedule_disabled_radio.active = true;
                 return Gdk.EVENT_PROPAGATE;
             });
 
@@ -250,35 +251,27 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
             });
 
             var schedule = settings.get_string ("prefer-dark-schedule");
-            from_label.sensitive = schedule == "manual";
-            from_time.sensitive = schedule == "manual";
-            to_label.sensitive = schedule == "manual";
-            to_time.sensitive = schedule == "manual";
-
             if (schedule == "sunset-to-sunrise") {
-                schedule_mode_button.selected = 1;
+                schedule_sunset_radio.active = true;
             } else if (schedule == "manual") {
-                schedule_mode_button.selected = 2;
+                schedule_manual_radio.active = true;
             } else {
-                schedule_mode_button.selected = 0;
+                schedule_disabled_radio.active = true;
             }
 
-            schedule_mode_button.mode_changed.connect (() => {
-                if (schedule_mode_button.selected == 1) {
-                    schedule = "sunset-to-sunrise";
-                } else if (schedule_mode_button.selected == 2) {
-                    schedule = "manual";
-                } else {
-                    schedule = "disabled";
-                }
-
-                settings.set_string ("prefer-dark-schedule", schedule);
-
-                from_label.sensitive = schedule == "manual";
-                from_time.sensitive = schedule == "manual";
-                to_label.sensitive = schedule == "manual";
-                to_time.sensitive = schedule == "manual";
+            schedule_disabled_radio.clicked.connect (() => {
+                settings.set_string ("prefer-dark-schedule", "disabled");
             });
+
+            schedule_manual_radio.clicked.connect (() => {
+                settings.set_string ("prefer-dark-schedule", "manual");
+            });
+
+            schedule_sunset_radio.clicked.connect (() => {
+                settings.set_string ("prefer-dark-schedule", "sunset-to-sunrise");
+            });
+
+            schedule_manual_radio.bind_property ("active", schedule_manual_box, "sensitive", BindingFlags.SYNC_CREATE);
         }
 
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
@@ -287,9 +280,9 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
         debug ("Current stylesheet: %s", current_stylesheet);
 
         if (current_stylesheet.has_prefix (STYLESHEET_PREFIX)) {
-            /// TRANSLATORS: as in "Accent color"
-            var accent_label = new Gtk.Label (_("Accent:"));
-            accent_label.halign = Gtk.Align.END;
+            var accent_label = new Granite.HeaderLabel (_("Accent Color")) {
+                margin_top = 18
+            };
 
             var blueberry_button = new PrefersAccentColorButton (pantheon_act, AccentColor.BLUE);
             blueberry_button.tooltip_text = _("Blueberry");
@@ -338,8 +331,8 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
             accent_grid.add (slate_button);
             accent_grid.add (auto_button);
 
-            content_area.attach (accent_label, 0, 4);
-            content_area.attach (accent_grid, 1, 4, 2);
+            content_area.attach (accent_label, 0, 5, 2);
+            content_area.attach (accent_grid, 0, 6, 2);
         }
     }
 
