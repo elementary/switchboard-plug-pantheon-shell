@@ -286,8 +286,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
         debug ("Current stylesheet: %s", current_stylesheet);
 
         if (current_stylesheet.has_prefix (STYLESHEET_PREFIX)) {
-            /// TRANSLATORS: as in "Accent color"
-            var accent_label = new Granite.HeaderLabel (_("Accent:")) {
+            var accent_label = new Granite.HeaderLabel (_("Accent Color")) {
                 margin_top = 18
             };
 
