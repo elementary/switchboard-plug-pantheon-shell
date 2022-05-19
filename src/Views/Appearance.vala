@@ -135,7 +135,9 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
-        var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled"));
+        var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled")) {
+            margin_bottom = 3
+        };
 
         var schedule_sunset_radio = new Gtk.RadioButton.with_label_from_widget (
             schedule_disabled_radio,
