@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-22 03:54+0000\n"
-"PO-Revision-Date: 2021-12-18 22:46+0000\n"
-"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/uk/>\n"
 "Language: uk\n"
@@ -148,10 +148,8 @@ msgstr ""
 "дотримуватися цього налаштування."
 
 #: src/Views/Appearance.vala:136
-#, fuzzy
-#| msgid "Schedule:"
 msgid "Schedule"
-msgstr "Розклад:"
+msgstr "Розклад"
 
 #: src/Views/Appearance.vala:138
 msgid "Disabled"
