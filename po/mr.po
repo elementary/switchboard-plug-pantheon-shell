@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-22 03:54+0000\n"
-"PO-Revision-Date: 2020-11-22 21:15+0000\n"
-"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mr/>\n"
 "Language: mr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:45
@@ -148,10 +148,8 @@ msgid ""
 msgstr ""
 
 #: src/Views/Appearance.vala:136
-#, fuzzy
-#| msgid "Schedule:"
 msgid "Schedule"
-msgstr "निर्धारित करा:"
+msgstr "निर्धारित करा"
 
 #: src/Views/Appearance.vala:138
 msgid "Disabled"
