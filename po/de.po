@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:15+0000\n"
+"POT-Creation-Date: 2022-05-22 03:54+0000\n"
 "PO-Revision-Date: 2021-11-11 12:09+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -125,18 +125,20 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Ausgewähltes Bild als neues Hintergrundbild festlegen"
 
 #: src/Views/Appearance.vala:74
-msgid "Style:"
+#, fuzzy
+#| msgid "Style:"
+msgid "Style"
 msgstr "Stil:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Standard"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:116
 msgid "Dark"
 msgstr "Dunkel"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:129
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -144,80 +146,79 @@ msgstr ""
 "Bevorzugtes Aussehen der Betriebssystembestandteile. Anwendungen steht es "
 "frei, diese Einstellung ebenfalls zu berücksichtigen."
 
-#: src/Views/Appearance.vala:135
-msgid "Schedule:"
+#: src/Views/Appearance.vala:136
+#, fuzzy
+#| msgid "Schedule:"
+msgid "Schedule"
 msgstr "Zeitplan:"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:138
 msgid "Disabled"
 msgstr "Deaktiviert"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:144
 msgid "Sunset to Sunrise"
 msgstr "Sonnenuntergang bis Sonnenaufgang"
 
-#: src/Views/Appearance.vala:143
-msgid "Manual"
-msgstr "Benutzerdefiniert"
-
-#: src/Views/Appearance.vala:145
+#: src/Views/Appearance.vala:147
 msgid "From:"
 msgstr "Von:"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:154
 msgid "To:"
 msgstr "Bis:"
 
-#. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:298
-msgid "Accent:"
-msgstr "Akzentfarbe:"
+#: src/Views/Appearance.vala:291
+#, fuzzy
+#| msgid "Accent color"
+msgid "Accent Color"
+msgstr "Akzentfarbe"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:296
 msgid "Blueberry"
 msgstr "Blaubeere"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:299
 msgid "Mint"
 msgstr "Minze"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:302
 msgid "Lime"
 msgstr "Limette"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:305
 msgid "Banana"
 msgstr "Banane"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:308
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:311
 msgid "Strawberry"
 msgstr "Erdbeere"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:314
 msgid "Bubblegum"
 msgstr "Rosa"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:317
 msgid "Grape"
 msgstr "Weintraube"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:320
 msgid "Cocoa"
 msgstr "Kakao"
 
-#: src/Views/Appearance.vala:329
+#: src/Views/Appearance.vala:323
 msgid "Slate"
 msgstr "Schiefer"
 
-#: src/Views/Appearance.vala:332
+#: src/Views/Appearance.vala:326
 msgid "Automatic based on wallpaper"
 msgstr "Automatisch, abhängig vom Hintergrundbild"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:342
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -438,6 +439,12 @@ msgstr "Als Schreibtisch-Diaschau festlegen"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Diaschau erstellen"
+
+#~ msgid "Manual"
+#~ msgstr "Benutzerdefiniert"
+
+#~ msgid "Accent:"
+#~ msgstr "Akzentfarbe:"
 
 #~ msgid "Larger"
 #~ msgstr "Größer"

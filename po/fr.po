@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:15+0000\n"
+"POT-Creation-Date: 2022-05-22 03:54+0000\n"
 "PO-Revision-Date: 2021-11-09 12:14+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -125,18 +125,20 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Définit l'image sélectionnée comme le nouveau fond d'écran"
 
 #: src/Views/Appearance.vala:74
-msgid "Style:"
+#, fuzzy
+#| msgid "Style:"
+msgid "Style"
 msgstr "Thème :"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Défaut"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:116
 msgid "Dark"
 msgstr "Sombre"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:129
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -144,80 +146,79 @@ msgstr ""
 "Thème préféré pour les composants du système. Les applications peuvent "
 "également s'adapter à ce paramètre."
 
-#: src/Views/Appearance.vala:135
-msgid "Schedule:"
+#: src/Views/Appearance.vala:136
+#, fuzzy
+#| msgid "Schedule:"
+msgid "Schedule"
 msgstr "Horaires :"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:138
 msgid "Disabled"
 msgstr "Désactivé"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:144
 msgid "Sunset to Sunrise"
 msgstr "Du coucher au lever du soleil"
 
-#: src/Views/Appearance.vala:143
-msgid "Manual"
-msgstr "Manuel"
-
-#: src/Views/Appearance.vala:145
+#: src/Views/Appearance.vala:147
 msgid "From:"
 msgstr "À partir de :"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:154
 msgid "To:"
 msgstr "Jusqu'à :"
 
-#. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:298
-msgid "Accent:"
-msgstr "Couleur d'accentuation :"
+#: src/Views/Appearance.vala:291
+#, fuzzy
+#| msgid "Accent color"
+msgid "Accent Color"
+msgstr "Couleur d'accentuation"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:296
 msgid "Blueberry"
 msgstr "Myrtille"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:299
 msgid "Mint"
 msgstr "Menthe"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:302
 msgid "Lime"
 msgstr "Citron Vert"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:305
 msgid "Banana"
 msgstr "Banane"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:308
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:311
 msgid "Strawberry"
 msgstr "Fraise"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:314
 msgid "Bubblegum"
 msgstr "Chewing-gum"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:317
 msgid "Grape"
 msgstr "Raisin"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:320
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:329
+#: src/Views/Appearance.vala:323
 msgid "Slate"
 msgstr "Ardoise"
 
-#: src/Views/Appearance.vala:332
+#: src/Views/Appearance.vala:326
 msgid "Automatic based on wallpaper"
 msgstr "Automatique à partir du fond d'écran"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:342
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -439,6 +440,12 @@ msgstr "Définir comme fond d'écran animé"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Créer un fond d'écran animé"
+
+#~ msgid "Manual"
+#~ msgstr "Manuel"
+
+#~ msgid "Accent:"
+#~ msgstr "Couleur d'accentuation :"
 
 #~ msgid "Larger"
 #~ msgstr "Plus grand"

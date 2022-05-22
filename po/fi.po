@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:15+0000\n"
+"POT-Creation-Date: 2022-05-22 03:54+0000\n"
 "PO-Revision-Date: 2021-11-09 09:28+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -125,18 +125,20 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Aseta valittu kuva työpöydän uudeksi taustakuvaksi"
 
 #: src/Views/Appearance.vala:74
-msgid "Style:"
+#, fuzzy
+#| msgid "Style:"
+msgid "Style"
 msgstr "Tyyli:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Oletus"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:116
 msgid "Dark"
 msgstr "Tumma"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:129
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -144,80 +146,79 @@ msgstr ""
 "Ensisijainen visuaalinen tyyli järjestelmän komponenteille. Sovellukset "
 "voivat seurata tätä asetusta."
 
-#: src/Views/Appearance.vala:135
-msgid "Schedule:"
+#: src/Views/Appearance.vala:136
+#, fuzzy
+#| msgid "Schedule:"
+msgid "Schedule"
 msgstr "Aikataulu:"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:138
 msgid "Disabled"
 msgstr "Pois käytöstä"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:144
 msgid "Sunset to Sunrise"
 msgstr "Auringonlaskusta auringonnousuun"
 
-#: src/Views/Appearance.vala:143
-msgid "Manual"
-msgstr "Manuaalinen"
-
-#: src/Views/Appearance.vala:145
+#: src/Views/Appearance.vala:147
 msgid "From:"
 msgstr "Alkaa:"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:154
 msgid "To:"
 msgstr "Päättyy:"
 
-#. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:298
-msgid "Accent:"
-msgstr "Korostus:"
+#: src/Views/Appearance.vala:291
+#, fuzzy
+#| msgid "Accent color"
+msgid "Accent Color"
+msgstr "Korostusväri"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:296
 msgid "Blueberry"
 msgstr "Mustikka"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:299
 msgid "Mint"
 msgstr "Minttu"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:302
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:305
 msgid "Banana"
 msgstr "Banaani"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:308
 msgid "Orange"
 msgstr "Appelsiini"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:311
 msgid "Strawberry"
 msgstr "Mansikka"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:314
 msgid "Bubblegum"
 msgstr "Purukumi"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:317
 msgid "Grape"
 msgstr "Viinirypäle"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:320
 msgid "Cocoa"
 msgstr "Kaakao"
 
-#: src/Views/Appearance.vala:329
+#: src/Views/Appearance.vala:323
 msgid "Slate"
 msgstr "Liuskekivi"
 
-#: src/Views/Appearance.vala:332
+#: src/Views/Appearance.vala:326
 msgid "Automatic based on wallpaper"
 msgstr "Automaattinen taustakuvaan pohjautuen"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:342
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -438,6 +439,12 @@ msgstr "Aseta työpöydän diaesitykseksi"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Luo diaesitys"
+
+#~ msgid "Manual"
+#~ msgstr "Manuaalinen"
+
+#~ msgid "Accent:"
+#~ msgstr "Korostus:"
 
 #~ msgid "Larger"
 #~ msgstr "Suurempi"

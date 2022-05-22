@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:15+0000\n"
+"POT-Creation-Date: 2022-05-22 03:54+0000\n"
 "PO-Revision-Date: 2021-11-09 04:12+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -132,18 +132,20 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Bruk det valgte bildet som ny skrivebordsbakgrunn"
 
 #: src/Views/Appearance.vala:74
-msgid "Style:"
+#, fuzzy
+#| msgid "Style:"
+msgid "Style"
 msgstr "Stil:"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Forvalg"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:116
 msgid "Dark"
 msgstr "Mørk"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:129
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -151,80 +153,79 @@ msgstr ""
 "Foretrukket visuell stil for systemkomponenter. Programmer kan også velge å "
 "følge denne."
 
-#: src/Views/Appearance.vala:135
-msgid "Schedule:"
+#: src/Views/Appearance.vala:136
+#, fuzzy
+#| msgid "Schedule:"
+msgid "Schedule"
 msgstr "Kjørepan:"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:138
 msgid "Disabled"
 msgstr "Slått av"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:144
 msgid "Sunset to Sunrise"
 msgstr "Solnedgang til soloppgang"
 
-#: src/Views/Appearance.vala:143
-msgid "Manual"
-msgstr "Manuell"
-
-#: src/Views/Appearance.vala:145
+#: src/Views/Appearance.vala:147
 msgid "From:"
 msgstr "Fra:"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:154
 msgid "To:"
 msgstr "Til:"
 
-#. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:298
-msgid "Accent:"
-msgstr "Kontrastfarge:"
+#: src/Views/Appearance.vala:291
+#, fuzzy
+#| msgid "Accent color"
+msgid "Accent Color"
+msgstr "Kontrastfarge"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:296
 msgid "Blueberry"
 msgstr "Blåbær"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:299
 msgid "Mint"
 msgstr "Mint"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:302
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:305
 msgid "Banana"
 msgstr "Banan"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:308
 msgid "Orange"
 msgstr "Appelsin"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:311
 msgid "Strawberry"
 msgstr "Jordbær"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:314
 msgid "Bubblegum"
 msgstr "Tyggegummi"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:317
 msgid "Grape"
 msgstr "Drue"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:320
 msgid "Cocoa"
 msgstr "Kakao"
 
-#: src/Views/Appearance.vala:329
+#: src/Views/Appearance.vala:323
 msgid "Slate"
 msgstr "Skifer"
 
-#: src/Views/Appearance.vala:332
+#: src/Views/Appearance.vala:326
 msgid "Automatic based on wallpaper"
 msgstr "Automatisk basert på bakgrunnsbilde"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:342
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -446,6 +447,12 @@ msgstr "Sett som skrivebord-lysbildeserie"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Lag lysbildeserie"
+
+#~ msgid "Manual"
+#~ msgstr "Manuell"
+
+#~ msgid "Accent:"
+#~ msgstr "Kontrastfarge:"
 
 #~ msgid "Larger"
 #~ msgstr "Større"
