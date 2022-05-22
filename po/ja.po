@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-22 03:54+0000\n"
-"PO-Revision-Date: 2021-11-09 12:14+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -120,10 +120,8 @@ msgid "Set selected image to be the new desktop background"
 msgstr "選択された画像を新しいデスクトップの背景として設定します"
 
 #: src/Views/Appearance.vala:74
-#, fuzzy
-#| msgid "Style:"
 msgid "Style"
-msgstr "スタイル:"
+msgstr "スタイル"
 
 #: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
@@ -164,8 +162,6 @@ msgid "To:"
 msgstr "終了:"
 
 #: src/Views/Appearance.vala:291
-#, fuzzy
-#| msgid "Accent color"
 msgid "Accent Color"
 msgstr "アクセントカラー"
 
