@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-22 03:54+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
-"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
 "Language: nl\n"
@@ -147,10 +147,8 @@ msgstr ""
 "kiezen deze voorkeur te volgen."
 
 #: src/Views/Appearance.vala:136
-#, fuzzy
-#| msgid "Schedule:"
 msgid "Schedule"
-msgstr "Planning:"
+msgstr "Planning"
 
 #: src/Views/Appearance.vala:138
 msgid "Disabled"
