@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-22 03:54+0000\n"
-"PO-Revision-Date: 2021-11-09 04:12+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
@@ -153,10 +153,8 @@ msgstr ""
 "también pueden optar por seguir esta preferencia."
 
 #: src/Views/Appearance.vala:136
-#, fuzzy
-#| msgid "Schedule:"
 msgid "Schedule"
-msgstr "Programación:"
+msgstr "Horario"
 
 #: src/Views/Appearance.vala:138
 msgid "Disabled"
