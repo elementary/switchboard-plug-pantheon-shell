@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-22 03:54+0000\n"
-"PO-Revision-Date: 2022-05-24 16:28+0000\n"
+"PO-Revision-Date: 2022-05-25 14:48+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -363,7 +363,7 @@ msgstr ""
 
 #: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
-msgstr "Importar foto…"
+msgstr "Importar imagem…"
 
 #: src/Views/Wallpaper.vala:105
 msgid "Centered"
@@ -379,7 +379,7 @@ msgstr "Expandido"
 
 #: src/Views/Wallpaper.vala:150
 msgid "Import Photo"
-msgstr "Importar foto"
+msgstr "Importar imagem"
 
 #: src/Views/Wallpaper.vala:151
 msgid "Import"
