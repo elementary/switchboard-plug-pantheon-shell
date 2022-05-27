@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2021-11-10 14:38+0000\n"
-"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"POT-Creation-Date: 2022-05-22 03:54+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
 "Language: tr\n"
@@ -125,18 +125,18 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Seçili resmi yeni masaüstü arkaplanı olarak ayarla"
 
 #: src/Views/Appearance.vala:74
-msgid "Style:"
-msgstr "Stil:"
+msgid "Style"
+msgstr "Stil"
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Varsayılan"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:116
 msgid "Dark"
 msgstr "Koyu"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:129
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -144,80 +144,75 @@ msgstr ""
 "Sistem bileşenleri için tercih edilen görsel stil. Uygulamalar da bu tercihi "
 "takip etmeyi seçebilir."
 
-#: src/Views/Appearance.vala:135
-msgid "Schedule:"
-msgstr "Zamanlama:"
+#: src/Views/Appearance.vala:136
+msgid "Schedule"
+msgstr "Zamanlama"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:138
 msgid "Disabled"
 msgstr "Devre dışı bırakıldı"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:144
 msgid "Sunset to Sunrise"
 msgstr "Otomatik"
 
-#: src/Views/Appearance.vala:143
-msgid "Manual"
-msgstr "El ile"
-
-#: src/Views/Appearance.vala:145
+#: src/Views/Appearance.vala:147
 msgid "From:"
 msgstr "Başlangıç:"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:154
 msgid "To:"
 msgstr "Bitiş:"
 
-#. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:298
-msgid "Accent:"
-msgstr "Vurgu rengi:"
+#: src/Views/Appearance.vala:291
+msgid "Accent Color"
+msgstr "Vurgu Rengi"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:296
 msgid "Blueberry"
 msgstr "Yaban mersini"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:299
 msgid "Mint"
 msgstr "Nane yeşili"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:302
 msgid "Lime"
 msgstr "Limon yeşili"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:305
 msgid "Banana"
 msgstr "Muz sarısı"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:308
 msgid "Orange"
 msgstr "Turuncu"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:311
 msgid "Strawberry"
 msgstr "Çilek kırmızısı"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:314
 msgid "Bubblegum"
 msgstr "Pembe"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:317
 msgid "Grape"
 msgstr "Mor"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:320
 msgid "Cocoa"
 msgstr "Kahverengi"
 
-#: src/Views/Appearance.vala:329
+#: src/Views/Appearance.vala:323
 msgid "Slate"
 msgstr "Koyu gri"
 
-#: src/Views/Appearance.vala:332
+#: src/Views/Appearance.vala:326
 msgid "Automatic based on wallpaper"
 msgstr "Duvar kağıdına göre otomatik"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:342
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -438,6 +433,12 @@ msgstr "Masaüstü Slayt Gösterisi Olarak Ayarla"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Slayt Gösterisi Oluştur"
+
+#~ msgid "Manual"
+#~ msgstr "El ile"
+
+#~ msgid "Accent:"
+#~ msgstr "Vurgu rengi:"
 
 #~ msgid "Larger"
 #~ msgstr "Çok Büyük"

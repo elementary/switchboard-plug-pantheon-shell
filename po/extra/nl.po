@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2022-01-15 13:59+0000\n"
+"POT-Creation-Date: 2022-05-22 03:54+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/nl/>\n"
@@ -25,7 +25,9 @@ msgstr "Bureaublad instellingen"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Configureer het dock, actieve hoeken, en pas de achtergrond aan"
+msgstr ""
+"Configureer de dock, interactieve hoeken, en pas het bureaubladachtergrond "
+"aan"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25

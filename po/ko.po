@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
+"POT-Creation-Date: 2022-05-22 03:54+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
 #: src/Plug.vala:45
@@ -137,97 +137,92 @@ msgid "Set selected image to be the new desktop background"
 msgstr "선택한 이미지를 새 바탕화면 배경으로 설정합니다"
 
 #: src/Views/Appearance.vala:74
-msgid "Style:"
+msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "기본"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:116
 msgid "Dark"
 msgstr ""
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:129
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
 
-#: src/Views/Appearance.vala:135
-msgid "Schedule:"
-msgstr "설정:"
+#: src/Views/Appearance.vala:136
+msgid "Schedule"
+msgstr "설정"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:138
 msgid "Disabled"
 msgstr "사용 안 함"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:144
 msgid "Sunset to Sunrise"
 msgstr "해 뜰 때부터 해 질 때까지"
 
-#: src/Views/Appearance.vala:143
-msgid "Manual"
-msgstr "수동"
-
-#: src/Views/Appearance.vala:145
+#: src/Views/Appearance.vala:147
 msgid "From:"
 msgstr "시작:"
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:154
 msgid "To:"
 msgstr "끝:"
 
-#. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:298
-msgid "Accent:"
+#: src/Views/Appearance.vala:291
+msgid "Accent Color"
 msgstr ""
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:296
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:299
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:302
 msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:305
 msgid "Banana"
 msgstr ""
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:308
 msgid "Orange"
 msgstr ""
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:311
 msgid "Strawberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:314
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:317
 msgid "Grape"
 msgstr ""
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:320
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:329
+#: src/Views/Appearance.vala:323
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:332
+#: src/Views/Appearance.vala:326
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:342
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -445,6 +440,9 @@ msgstr "배경화면 슬라이드쇼로 설정"
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "슬라이드쇼 만들기"
+
+#~ msgid "Manual"
+#~ msgstr "수동"
 
 #~ msgid "Larger"
 #~ msgstr "더 크게"

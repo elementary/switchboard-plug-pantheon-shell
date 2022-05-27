@@ -128,7 +128,9 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
 
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
-        var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled"));
+        var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled")) {
+            margin_bottom = 3
+        };
 
         var schedule_sunset_radio = new Gtk.RadioButton.with_label_from_widget (
             schedule_disabled_radio,
@@ -138,6 +140,7 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
         var from_label = new Gtk.Label (_("From:"));
 
         var from_time = new Granite.Widgets.TimePicker () {
+            hexpand = true,
             margin_end = 6
         };
 
@@ -185,7 +188,6 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
         }
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
-
             content_area.column_spacing = 7; // Off by one with Gtk.RadioButton
             content_area.margin_start = 60;
             content_area.attach (prefer_style_box, 0, 0, 2);

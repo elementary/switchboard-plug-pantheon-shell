@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:15+0000\n"
-"PO-Revision-Date: 2022-01-28 09:40+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"POT-Creation-Date: 2022-05-22 03:54+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -125,101 +125,101 @@ msgid "Set selected image to be the new desktop background"
 msgstr "将所选图片设置为新的桌面背景"
 
 #: src/Views/Appearance.vala:74
-msgid "Style:"
+#, fuzzy
+#| msgid "Style:"
+msgid "Style"
 msgstr "风格："
 
-#: src/Views/Appearance.vala:94 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "默认"
 
-#: src/Views/Appearance.vala:118
+#: src/Views/Appearance.vala:116
 msgid "Dark"
 msgstr "深色"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:129
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr "系统组件的视觉风格偏好。应用程序可能也会遵循这个设置。"
 
-#: src/Views/Appearance.vala:135
-msgid "Schedule:"
-msgstr "计划："
+#: src/Views/Appearance.vala:136
+msgid "Schedule"
+msgstr "计划"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:138
 msgid "Disabled"
 msgstr "已禁用"
 
-#: src/Views/Appearance.vala:142
+#: src/Views/Appearance.vala:144
 msgid "Sunset to Sunrise"
 msgstr "日落至日出"
 
-#: src/Views/Appearance.vala:143
-msgid "Manual"
-msgstr "手动选择"
-
-#: src/Views/Appearance.vala:145
+#: src/Views/Appearance.vala:147
 msgid "From:"
 msgstr "开始时间："
 
-#: src/Views/Appearance.vala:151
+#: src/Views/Appearance.vala:154
 msgid "To:"
 msgstr "结束时间："
 
-#. / TRANSLATORS: as in "Accent color"
-#: src/Views/Appearance.vala:298
-msgid "Accent:"
-msgstr "强调色："
+#: src/Views/Appearance.vala:291
+#, fuzzy
+#| msgid "Accent color"
+msgid "Accent Color"
+msgstr "强调色"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:296
 msgid "Blueberry"
 msgstr "蓝莓色"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:299
 msgid "Mint"
 msgstr "薄荷绿"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:302
 msgid "Lime"
 msgstr "青柠色"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:305
 msgid "Banana"
 msgstr "香蕉黄"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:308
 msgid "Orange"
 msgstr "橘子橙"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:311
 msgid "Strawberry"
 msgstr "草莓红"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:314
 msgid "Bubblegum"
 msgstr "泡泡糖"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:317
 msgid "Grape"
 msgstr "葡萄紫"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:320
 msgid "Cocoa"
 msgstr "可可色"
 
-#: src/Views/Appearance.vala:329
+#: src/Views/Appearance.vala:323
 msgid "Slate"
 msgstr "石头灰"
 
-#: src/Views/Appearance.vala:332
+#: src/Views/Appearance.vala:326
 msgid "Automatic based on wallpaper"
 msgstr "基于壁纸自动"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:342
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr "默认情况下将用于系统全局，自带强调色的应用程序除外。它们将使用自己的强调色。"
+msgstr ""
+"默认情况下将用于系统全局，自带强调色的应用程序除外。它们将使用自己的强调色。"
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -429,6 +429,12 @@ msgstr "设为桌面幻灯片"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "创建幻灯片"
+
+#~ msgid "Manual"
+#~ msgstr "手动选择"
+
+#~ msgid "Accent:"
+#~ msgstr "强调色："
 
 #~ msgid "Larger"
 #~ msgstr "更大"
