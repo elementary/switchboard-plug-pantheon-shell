@@ -64,7 +64,7 @@ public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
         }
     }
 
-    public Appearance  () {
+    public Appearance () {
         Object (
             title: _("Appearance"),
             description : _("Preferred accents and style for system components. Apps may also follow these preferences, but can always choose their own accents or style."),
