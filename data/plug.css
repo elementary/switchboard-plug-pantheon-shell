@@ -17,27 +17,12 @@
 * Boston, MA 02110-1301 USA.
 */
 
-.hotcorner-display {
+.hotcorner {
     background-image:
         radial-gradient(
             circle,
-            alpha(@accent_color_500, 0.6) 70%,
-            alpha(@accent_color_500, 0) 1%
-        ),
-        radial-gradient(
-            circle,
-            alpha(@accent_color_500, 0.6) 70%,
-            alpha(@accent_color_500, 0) 1%
-        ),
-        radial-gradient(
-            circle,
-            alpha(@accent_color_500, 0.6) 70%,
-            alpha(@accent_color_500, 0) 1%
-        ),
-        radial-gradient(
-            circle,
-            alpha(@accent_color_500, 0.6) 70%,
-            alpha(@accent_color_500, 0) 1%
+            alpha(@accent_color, 0.4) 70%,
+            alpha(@accent_color, 0) 1px
         ),
         linear-gradient(
             to bottom,
@@ -45,8 +30,27 @@
             alpha (@accent_color_500, 0.1)
         );
     background-repeat: no-repeat;
-    background-position: -32px -32px, -32px calc(100% + 32px), calc(100% + 32px) -32px, calc(100% + 32px) calc(100% + 32px), 0;
-    background-size: 64px 64px, 64px 64px, 64px 64px, 64px 64px, cover;
+    background-size: 48px 48px, cover;
+    color: @selected_fg_color;
+    font-weight: 600;
+    min-height: 3.5em;
+    padding: 12px;
+}
+
+.hotcorner.topleft {
+    background-position: -24px -24px, 0;
+}
+
+.hotcorner.topright {
+    background-position: calc(100% + 24px) -24px, 0;
+}
+
+.hotcorner.bottomleft {
+    background-position: -24px calc(100% + 24px), 0;
+}
+
+.hotcorner.bottomright {
+    background-position: calc(100% + 24px) calc(100% + 24px), 0;
 }
 
 .wallpaper-container {
