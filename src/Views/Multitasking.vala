@@ -23,8 +23,6 @@ public class PantheonShell.Multitasking : Granite.SimpleSettingsPage {
     private GLib.Settings behavior_settings;
     private Gtk.Revealer custom_command_revealer;
     private Gee.HashSet<string> keys_using_custom_command = new Gee.HashSet<string> ();
-
-    private const string CUSTOM_COMMAND_ID = "5";
     private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
     private const string ANIMATIONS_KEY = "enable-animations";
 
@@ -36,68 +34,36 @@ public class PantheonShell.Multitasking : Granite.SimpleSettingsPage {
     }
 
     construct {
-        behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
-
-        custom_command_revealer = new Gtk.Revealer ();
-
         var hotcorner_title = new Gtk.Label (_("When the cursor enters the corner of the display:")) {
             halign = Gtk.Align.START,
-            margin_bottom = 6,
-            margin_top = 6
+            margin_bottom = 6
         };
         hotcorner_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-        var topleft = create_hotcorner ();
-        topleft.changed.connect (() => hotcorner_changed ("hotcorner-topleft", topleft));
-        topleft.active_id = behavior_settings.get_enum ("hotcorner-topleft").to_string ();
-        topleft.valign = Gtk.Align.START;
+        var topleft = new HotcornerControl (_("Top Left"), "topleft");
+        var topright = new HotcornerControl (_("Top Right"), "topright");
+        var bottomleft = new HotcornerControl (_("Bottom Left"), "bottomleft");
+        var bottomright = new HotcornerControl (_("Bottom Right"), "bottomright");
 
-        var topright = create_hotcorner ();
-        topright.changed.connect (() => hotcorner_changed ("hotcorner-topright", topright));
-        topright.active_id = behavior_settings.get_enum ("hotcorner-topright").to_string ();
-        topright.valign = Gtk.Align.START;
-
-        var bottomleft = create_hotcorner ();
-        bottomleft.changed.connect (() => hotcorner_changed ("hotcorner-bottomleft", bottomleft));
-        bottomleft.active_id = behavior_settings.get_enum ("hotcorner-bottomleft").to_string ();
-        bottomleft.valign = Gtk.Align.END;
-
-        var bottomright = create_hotcorner ();
-        bottomright.changed.connect (() => hotcorner_changed ("hotcorner-bottomright", bottomright));
-        bottomright.active_id = behavior_settings.get_enum ("hotcorner-bottomright").to_string ();
-        bottomright.valign = Gtk.Align.END;
-
-        var icon = new Gtk.Grid ();
-        icon.height_request = 198;
-        icon.width_request = 292;
-
-        unowned Gtk.StyleContext icon_style_context = icon.get_style_context ();
-        icon_style_context.add_class (Granite.STYLE_CLASS_CARD);
-        icon_style_context.add_class ("hotcorner-display");
-        icon_style_context.add_class (Granite.STYLE_CLASS_ROUNDED);
-
-        var custom_command = new Gtk.Entry ();
-        custom_command.primary_icon_name = "utilities-terminal-symbolic";
+        var custom_command = new Gtk.Entry () {
+            hexpand = true,
+            primary_icon_name = "utilities-terminal-symbolic"
+        };
 
         var cc_label = new Gtk.Label (_("Custom command:"));
 
-        var cc_grid = new Gtk.Grid () {
-            column_spacing = 12
-        };
-        cc_grid.halign = Gtk.Align.END;
-        cc_grid.margin_top = 24;
+        var cc_grid = new Gtk.Grid ();
+        cc_grid.column_spacing = 12;
+        cc_grid.margin_bottom = 12;
         cc_grid.add (cc_label);
         cc_grid.add (custom_command);
 
-        var cc_sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-        cc_sizegroup.add_widget (icon);
-        cc_sizegroup.add_widget (custom_command);
-
+        custom_command_revealer = new Gtk.Revealer ();
         custom_command_revealer.add (cc_grid);
 
         var workspaces_label = new Gtk.Label (_("Move windows to a new workspace:")) {
             halign = Gtk.Align.END,
-            margin_top = 36,
+            margin_top = 12,
             margin_bottom = 12
         };
 
@@ -106,7 +72,7 @@ public class PantheonShell.Multitasking : Granite.SimpleSettingsPage {
 
         var checkbutton_grid = new Gtk.Grid () {
             column_spacing = 12,
-            margin_top = 36,
+            margin_top = 12,
             margin_bottom = 12
         };
         checkbutton_grid.add (fullscreen_checkbutton);
@@ -120,47 +86,103 @@ public class PantheonShell.Multitasking : Granite.SimpleSettingsPage {
             halign = Gtk.Align.START
         };
 
-        content_area.attach (hotcorner_title, 0, 0, 3);
-        content_area.attach (icon, 1, 1, 1, 3);
-        content_area.attach (topleft, 0, 1, 1, 1);
-        content_area.attach (topright, 2, 1, 1, 1);
-        content_area.attach (bottomleft, 0, 3, 1, 1);
-        content_area.attach (bottomright, 2, 3, 1, 1);
-        content_area.attach (custom_command_revealer, 0, 4, 2, 1);
-        content_area.attach (workspaces_label, 0, 5);
-        content_area.attach (checkbutton_grid, 1, 5, 2);
-        content_area.attach (animations_label, 0, 9);
-        content_area.attach (animations_switch, 1, 9);
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 6,
+            halign = Gtk.Align.CENTER
+        };
+        grid.attach (hotcorner_title, 0, 0, 2);
+        grid.attach (topleft, 0, 1, 2);
+        grid.attach (topright, 0, 2, 2);
+        grid.attach (bottomleft, 0, 3, 2);
+        grid.attach (bottomright, 0, 4, 2);
+        grid.attach (custom_command_revealer, 0, 5, 2);
+        grid.attach (workspaces_label, 0, 6);
+        grid.attach (checkbutton_grid, 1, 6);
+        grid.attach (animations_label, 0, 7);
+        grid.attach (animations_switch, 1, 7);
+
+        content_area.attach (grid, 0, 0);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
+        behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
         behavior_settings.bind ("hotcorner-custom-command", custom_command, "text", GLib.SettingsBindFlags.DEFAULT);
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
         behavior_settings.bind ("move-maximized-workspace", maximize_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
+
+        hotcorner_changed ();
+        behavior_settings.changed.connect (() => {
+            hotcorner_changed ();
+        });
     }
 
-    private void hotcorner_changed (string settings_key, Gtk.ComboBoxText combo) {
-        behavior_settings.set_enum (settings_key, int.parse (combo.active_id));
-        if (combo.active_id == CUSTOM_COMMAND_ID) {
-            keys_using_custom_command.add (settings_key);
-        } else {
-            keys_using_custom_command.remove (settings_key);
+    private void hotcorner_changed () {
+        string[] hotcorner_keys = {"hotcorner-topleft", "hotcorner-topright", "hotcorner-bottomleft", "hotcorner-bottomright"};
+        foreach (unowned var key in hotcorner_keys) {
+            if (behavior_settings.get_enum (key) == 5) { //Custom Command
+                keys_using_custom_command.add (key);
+            } else {
+                keys_using_custom_command.remove (key);
+            }
+
+            custom_command_revealer.reveal_child = keys_using_custom_command.size > 0;
+        }
+    }
+
+    private class HotcornerControl : Gtk.Box {
+        public string label { get; construct; }
+        public string position { get; construct; }
+
+        private static Settings settings;
+        private static Gtk.SizeGroup size_group;
+
+        public HotcornerControl (string label, string position) {
+            Object (
+                label: label,
+                position: position
+            );
         }
 
-        custom_command_revealer.reveal_child = keys_using_custom_command.size > 0;
-    }
+        static construct {
+            settings = new Settings ("org.pantheon.desktop.gala.behavior");
+            size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.BOTH);
+        }
 
-    private Gtk.ComboBoxText create_hotcorner () {
-        var box = new Gtk.ComboBoxText ();
-        box.append ("0", _("Do nothing"));              // none
-        box.append ("1", _("Multitasking View"));       // show-workspace-view
-        box.append ("2", _("Maximize current window")); // maximize-current
-        box.append ("4", _("Show Applications Menu"));  // open-launcher
-        box.append ("7", _("Show all windows"));        // window-overview-all
-        box.append ("8", _("Switch to new workspace")); // switch-new-workspace
-        box.append (CUSTOM_COMMAND_ID, _("Execute custom command"));  // custom-command
+        construct {
+            var label = new Gtk.Label (label) {
+                max_width_chars = 12,
+                wrap = true,
+                wrap_mode = Pango.WrapMode.WORD_CHAR
+            };
 
-        return box;
+            unowned var label_style_context = label.get_style_context ();
+            label_style_context.add_class (Granite.STYLE_CLASS_CARD);
+            label_style_context.add_class (Granite.STYLE_CLASS_ROUNDED);
+            label_style_context.add_class ("hotcorner");
+            label_style_context.add_class (position);
+
+            var combo = new Gtk.ComboBoxText () {
+                hexpand = true,
+                valign = Gtk.Align.CENTER
+            };
+            combo.append ("none", _("Do nothing"));
+            combo.append ("show-workspace-view", _("Multitasking View"));
+            combo.append ("maximize-current", _("Maximize current window"));
+            combo.append ("open-launcher", _("Show Applications Menu"));
+            combo.append ("window-overview-all", _("Show all windows"));
+            combo.append ("switch-to-workspace-last", _("Switch to new workspace"));
+            combo.append ("custom-command", _("Execute custom command"));
+
+            margin_bottom = 12;
+            spacing = 12;
+            add (label);
+            add (combo);
+
+            size_group.add_widget (label);
+
+            settings.bind ("hotcorner-" + position, combo, "active-id", SettingsBindFlags.DEFAULT);
+        }
     }
 }
