@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-22 03:54+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-06-02 19:08+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
 "Language: fi\n"
@@ -125,10 +125,8 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Aseta valittu kuva työpöydän uudeksi taustakuvaksi"
 
 #: src/Views/Appearance.vala:74
-#, fuzzy
-#| msgid "Style:"
 msgid "Style"
-msgstr "Tyyli:"
+msgstr "Tyyli"
 
 #: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
 msgid "Default"
@@ -167,8 +165,6 @@ msgid "To:"
 msgstr "Päättyy:"
 
 #: src/Views/Appearance.vala:291
-#, fuzzy
-#| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Korostusväri"
 
