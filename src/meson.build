@@ -15,10 +15,7 @@ plug_files = files(
 switchboard_dep = dependency('switchboard-2.0')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
-plank_datadir = plank_dep.get_pkgconfig_variable('pkgdatadir')
-
 configuration = configuration_data()
-configuration.set('PLANKDATADIR', plank_datadir)
 configuration.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 configuration.set('GETTEXT_PACKAGE', meson.project_name() + '-plug')
 
@@ -40,8 +37,6 @@ shared_module(
         granite_dep,
         gtk_dep,
         dependency('gexiv2'),
-        dependency('gnome-desktop-3.0'),
-        plank_dep,
         posix_dep,
         switchboard_dep
     ],

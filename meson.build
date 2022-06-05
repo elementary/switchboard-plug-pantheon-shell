@@ -28,7 +28,6 @@ glib_dep = dependency('glib-2.0')
 gobject_dep = dependency('gobject-2.0')
 granite_dep = dependency('granite-7')
 gtk_dep = dependency('gtk4')
-plank_dep = dependency('plank', version: '>=0.10.9')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 
 plug_resources = gnome.compile_resources(
