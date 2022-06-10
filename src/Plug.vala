@@ -70,18 +70,25 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.stack = stack;
-            stack_switcher.halign = Gtk.Align.CENTER;
-            // stack_switcher.homogeneous = true;
-            stack_switcher.margin_start = 24;
-            stack_switcher.margin_end = 24;
-            stack_switcher.margin_top = 24;
-            stack_switcher.margin_bottom = 24;
+            var stack_switcher = new Gtk.StackSwitcher () {
+                stack = stack,
+                halign = Gtk.Align.CENTER,
+                margin_start = 24,
+                margin_end = 24,
+                margin_top = 24,
+                margin_bottom = 24
+            };
+
+            var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+            var switcher_toggles = stack_switcher.observe_children ();
+            if (size_group.get_widgets ().length () == 0) {
+                for (var index = 0; index < switcher_toggles.get_n_items (); index++) {
+                    size_group.add_widget ((Gtk.ToggleButton) switcher_toggles.get_item (index));
+                }
+            }
 
             main_grid.attach (stack_switcher, 0, 0, 1, 1);
             main_grid.attach (stack, 0, 1, 1, 1);
-            // main_grid.show_all ();
         }
 
         return main_grid;

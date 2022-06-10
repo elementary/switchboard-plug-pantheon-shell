@@ -65,7 +65,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
     }
 
     construct {
-        column_spacing = 7; // Off by one with Gtk.RadioButton
+        column_spacing = 7; // Off by one with Gtk.CheckButton
         halign = Gtk.Align.CENTER;
         row_spacing = 6;
         margin_start = margin_end = 12;
@@ -73,7 +73,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
 
         var dark_label = new Granite.HeaderLabel (_("Style"));
 
-        var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
+        var css_provider = new Gtk.CssProvider ();
+        css_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-styles.css");
+
+        var prefer_default_radio = new Gtk.CheckButton () {
+            halign = Gtk.Align.START
+        };
+        prefer_default_radio.add_css_class ("image-button");
 
         var prefer_default_card = new Gtk.Grid () {
             margin_top = 6,
@@ -81,25 +87,24 @@ public class PantheonShell.Appearance : Gtk.Grid {
             margin_end = 6,
             margin_start = 12
         };
-        prefer_default_card.attach (prefer_default_image, 0, 0);
-
-        unowned Gtk.StyleContext prefer_default_card_context = prefer_default_card.get_style_context ();
-        prefer_default_card_context.add_class (Granite.STYLE_CLASS_CARD);
-        prefer_default_card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
+        prefer_default_card.add_css_class (Granite.STYLE_CLASS_CARD);
+        prefer_default_card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+        prefer_default_card.add_css_class ("prefer-default");
+        prefer_default_card.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var prefer_default_grid = new Gtk.Grid () {
             row_spacing = 6
         };
         prefer_default_grid.attach (prefer_default_card, 0, 0);
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
-
-        var prefer_default_radio = new Gtk.CheckButton () {
-            halign = Gtk.Align.START
-        };
-        prefer_default_radio.get_style_context ().add_class ("image-button");
         prefer_default_grid.set_parent (prefer_default_radio);
 
-        var prefer_dark_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg");
+        var prefer_dark_radio = new Gtk.CheckButton () {
+            halign = Gtk.Align.START,
+            hexpand = true,
+            group = prefer_default_radio
+        };
+        prefer_dark_radio.add_css_class ("image-button");
 
         var prefer_dark_card = new Gtk.Grid () {
             margin_top = 6,
@@ -107,24 +112,16 @@ public class PantheonShell.Appearance : Gtk.Grid {
             margin_end = 6,
             margin_start = 12
         };
-        prefer_dark_card.attach (prefer_dark_image, 0, 0);
-
-        unowned Gtk.StyleContext prefer_dark_card_context = prefer_dark_card.get_style_context ();
-        prefer_dark_card_context.add_class (Granite.STYLE_CLASS_CARD);
-        prefer_dark_card_context.add_class (Granite.STYLE_CLASS_ROUNDED);
+        prefer_dark_card.add_css_class (Granite.STYLE_CLASS_CARD);
+        prefer_dark_card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+        prefer_dark_card.add_css_class ("prefer-dark");
+        prefer_dark_card.get_style_context ().add_provider (css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var prefer_dark_grid = new Gtk.Grid () {
             row_spacing = 6
         };
         prefer_dark_grid.attach (prefer_dark_card, 0, 0);
         prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
-
-        var prefer_dark_radio = new Gtk.CheckButton () {
-            halign = Gtk.Align.START,
-            hexpand = true,
-            group = prefer_default_radio
-        };
-        prefer_dark_radio.get_style_context ().add_class ("image-button");
         prefer_dark_grid.set_parent (prefer_dark_radio);
 
         var prefer_style_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
@@ -136,7 +133,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
             wrap = true,
             xalign = 0
         };
-        dark_info.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
+        dark_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
@@ -348,7 +345,7 @@ public class PantheonShell.Appearance : Gtk.Grid {
                 xalign = 0,
                 wrap = true
             };
-            accent_info.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
+            accent_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             attach (accent_label, 0, 7, 2);
             attach (accent_info, 0, 8, 2);
@@ -377,9 +374,8 @@ public class PantheonShell.Appearance : Gtk.Grid {
         }
 
         construct {
-            unowned Gtk.StyleContext context = get_style_context ();
-            context.add_class (Granite.STYLE_CLASS_COLOR_BUTTON);
-            context.add_class (color.to_string ());
+            add_css_class (Granite.STYLE_CLASS_COLOR_BUTTON);
+            add_css_class (color.to_string ());
 
             realize.connect (() => {
                 active = color == pantheon_act.prefers_accent_color;

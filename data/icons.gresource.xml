@@ -10,5 +10,6 @@
     <file alias="appearance-default.svg" compressed="true" preprocess="xml-stripblanks">appearance-default.svg</file>
     <file alias="appearance-dark.svg" compressed="true" preprocess="xml-stripblanks">appearance-dark.svg</file>
     <file alias="plug.css" compressed="true">plug.css</file>
+    <file alias="appearance-styles.css" compressed="true">appearance-styles.css</file>
   </gresource>
 </gresources>
