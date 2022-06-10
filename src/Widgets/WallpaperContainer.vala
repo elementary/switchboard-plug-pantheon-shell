@@ -72,10 +72,9 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     construct {
-        var style_context = get_style_context ();
-        style_context.add_class ("wallpaper-container");
+        add_css_class ("wallpaper-container");
 
-        scale = style_context.get_scale ();
+        scale = get_style_context ().get_scale ();
 
         height_request = THUMB_HEIGHT + 18;
         width_request = THUMB_WIDTH + 18;
@@ -84,9 +83,10 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
         Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-        image = new Gtk.Image ();
-        image.halign = Gtk.Align.CENTER;
-        image.valign = Gtk.Align.CENTER;
+        image = new Gtk.Image () {
+            halign = Gtk.Align.CENTER,
+            valign = Gtk.Align.CENTER
+        };
         image.get_style_context ().set_scale (1);
 
         // We need an extra grid to not apply a scale == 1 to the "card" style.
@@ -96,7 +96,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             margin_top = 9,
             margin_bottom = 9
         };
-        card_box.get_style_context ().add_class ("card");
+        card_box.add_css_class ("card");
         card_box.append (image);
 
         var check = new Gtk.Image.from_icon_name ("selection-checked") {
@@ -143,8 +143,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             context_menu = new Gtk.Popover () {
                 child = move_to_trash
             };
-            // context_menu.append (move_to_trash);
-            // context_menu.show_all ();
         }
 
         activate.connect (() => {
@@ -219,11 +217,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             return;
         }
 
-        // try {
-        //     yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
-        // } catch (Error e) {
-        //     warning (e.message);
-        // }
         image.set_from_file (thumb_path);
         image.width_request = THUMB_WIDTH;
         image.height_request = THUMB_HEIGHT;

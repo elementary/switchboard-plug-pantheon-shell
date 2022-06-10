@@ -79,11 +79,12 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
 
-        wallpaper_view = new Gtk.FlowBox ();
-        wallpaper_view.activate_on_single_click = true;
-        wallpaper_view.get_style_context ().add_class (Granite.STYLE_CLASS_VIEW);
-        wallpaper_view.homogeneous = true;
-        wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
+        wallpaper_view = new Gtk.FlowBox () {
+            activate_on_single_click = true,
+            homogeneous = true,
+            selection_mode = Gtk.SelectionMode.SINGLE
+        };
+        wallpaper_view.add_css_class (Granite.STYLE_CLASS_VIEW);
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
 
         var color = settings.get_string ("primary-color");
@@ -92,6 +93,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         // Gtk.TargetEntry e = {"text/uri-list", 0, 0};
         // wallpaper_view.drag_data_received.connect (on_drag_data_received);
         // Gtk.drag_dest_set (wallpaper_view, Gtk.DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
+        var drop_target = new Gtk.DropTarget (typeof (Gdk.FileList), Gdk.DragAction.COPY);
+        wallpaper_view.add_controller (drop_target);
+        drop_target.on_drop.connect (on_drag_data_received);
 
         wallpaper_scrolled_window = new Gtk.ScrolledWindow () {
             hexpand = true,
@@ -135,7 +139,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         load_settings ();
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class ("inline-toolbar");
+        actionbar.add_css_class ("inline-toolbar");
         actionbar.pack_start (add_wallpaper_button);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
@@ -181,16 +185,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         chooser.response.connect ((id) => {
             if (id == Gtk.ResponseType.ACCEPT) {
                 ListModel files = chooser.get_files ();
-                // foreach (unowned string uri in uris) {
-                //     var file = GLib.File.new_for_uri (uri);
-                //     string local_uri = uri;
-                //     var dest = copy_for_library (file);
-                //     if (dest != null) {
-                //         local_uri = dest.get_uri ();
-                //     }
-
-                //     add_wallpaper_from_file (file, local_uri);
-                // }
                 for (var iter = 0; iter < files.get_n_items (); iter++) {
                     var file = (File) files.get_item (iter);
                     string local_uri = file.get_uri ();
@@ -310,15 +304,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             if (active_wallpaper == solid_color) {
                 active_wallpaper.checked = false;
 
-                // foreach (var child in wallpaper_view.get_children ()) {
-                //     var container = (WallpaperContainer) child;
-                //     if (container.uri == current_wallpaper_path) {
-                //         container.checked = true;
-                //         wallpaper_view.select_child (container);
-                //         active_wallpaper = container;
-                //         break;
-                //     }
-                // }
                 var children = wallpaper_view.observe_children ();
                 for (var iter = 0; iter < children.get_n_items (); iter++) {
                     var container = (WallpaperContainer) children.get_item (iter);
@@ -429,13 +414,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         }
 
         solid_color = new SolidColorContainer (color);
-        // solid_color.show_all ();
     }
 
     private void clean_wallpapers () {
-        // foreach (var child in wallpaper_view.get_children ()) {
-        //     child.destroy ();
-        // }
         while (wallpaper_view.get_last_child () != null) {
             wallpaper_view.get_last_child ().destroy ();
         }
@@ -525,34 +506,27 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         return dest;
     }
 
-    // private void on_drag_data_received (Gtk.Widget widget, Gdk.DragContext ctx, int x, int y, Gtk.SelectionData sel, uint information, uint timestamp) {
-    //     if (sel.get_length () > 0) {
-    //         try {
-    //             var file = File.new_for_uri (sel.get_uris ()[0]);
-    //             var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
+    private bool on_drag_data_received (Gtk.DropTarget controller, Value val, double x, double y) {
+        var drop_target = (Gtk.DropTarget) controller;
+        var file_list = (Gdk.FileList) val;
+        file_list.get_files ().foreach ((file) => {
+            var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
 
-    //             if (!IOHelper.is_valid_file_type (info)) {
-    //                 Gtk.drag_finish (ctx, false, false, timestamp);
-    //                 return;
-    //             }
+            if (!IOHelper.is_valid_file_type (info)) {
+                drop_target.reject ();
+            }
 
-    //             string local_uri = file.get_uri ();
-    //             var dest = copy_for_library (file);
-    //             if (dest != null) {
-    //                 local_uri = dest.get_uri ();
-    //             }
+            string local_uri = file.get_uri ();
+            var dest = copy_for_library (file);
+            if (dest != null) {
+                local_uri = dest.get_uri ();
+            }
 
-    //             add_wallpaper_from_file (file, local_uri);
+            add_wallpaper_from_file (file, local_uri);
+        });
 
-    //             Gtk.drag_finish (ctx, true, false, timestamp);
-    //         } catch (Error e) {
-    //             warning (e.message);
-    //         }
-    //     }
-
-    //     Gtk.drag_finish (ctx, false, false, timestamp);
-    //     return;
-    // }
+        return false;
+    }
 
     private void add_wallpaper_from_file (GLib.File file, string uri) {
         try {
@@ -561,8 +535,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             var thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
             var wallpaper = new WallpaperContainer (uri, thumb_path, thumb_valid);
             wallpaper_view.append (wallpaper);
-
-            // wallpaper.show_all ();
 
             wallpaper.trash.connect (() => {
                 var new_file = File.new_for_uri (uri);
