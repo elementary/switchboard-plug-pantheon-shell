@@ -90,9 +90,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var color = settings.get_string ("primary-color");
         create_solid_color_container (color);
 
-        // Gtk.TargetEntry e = {"text/uri-list", 0, 0};
-        // wallpaper_view.drag_data_received.connect (on_drag_data_received);
-        // Gtk.drag_dest_set (wallpaper_view, Gtk.DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
         var drop_target = new Gtk.DropTarget (typeof (Gdk.FileList), Gdk.DragAction.COPY);
         wallpaper_view.add_controller (drop_target);
         drop_target.on_drop.connect (on_drag_data_received);
@@ -417,8 +414,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     }
 
     private void clean_wallpapers () {
-        while (wallpaper_view.get_last_child () != null) {
-            wallpaper_view.get_last_child ().destroy ();
+        var children = wallpaper_view.observe_children ();
+        for (var index = 0; index < children.get_n_items (); index++) {
+            ((Gtk.Widget) children.get_item (index)).destroy ();
         }
 
         solid_color = null;
@@ -510,19 +508,23 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var drop_target = (Gtk.DropTarget) controller;
         var file_list = (Gdk.FileList) val;
         file_list.get_files ().foreach ((file) => {
-            var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
+            try {
+                var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
 
-            if (!IOHelper.is_valid_file_type (info)) {
-                drop_target.reject ();
+                if (!IOHelper.is_valid_file_type (info)) {
+                    drop_target.reject ();
+                }
+
+                string local_uri = file.get_uri ();
+                var dest = copy_for_library (file);
+                if (dest != null) {
+                    local_uri = dest.get_uri ();
+                }
+
+                add_wallpaper_from_file (file, local_uri);
+            } catch (Error e) {
+                warning (e.message);
             }
-
-            string local_uri = file.get_uri ();
-            var dest = copy_for_library (file);
-            if (dest != null) {
-                local_uri = dest.get_uri ();
-            }
-
-            add_wallpaper_from_file (file, local_uri);
         });
 
         return false;
