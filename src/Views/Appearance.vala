@@ -58,6 +58,8 @@ public class PantheonShell.Appearance : Gtk.Grid {
                     return "cocoa";
                 case GRAY:
                     return "slate";
+                case NO_PREFERENCE:
+                    return "no preference";
             }
 
             return "auto";

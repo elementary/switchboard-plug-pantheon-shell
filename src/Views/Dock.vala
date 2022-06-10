@@ -43,28 +43,32 @@ public class PantheonShell.Dock : Gtk.Grid {
         weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
         default_theme.add_resource_path ("/io/elementary/switchboard/plug/pantheon-shell");
 
-        var icon_size_32 = new Gtk.CheckButton ();
-        icon_size_32.tooltip_text = _("Small");
+        var icon_size_32 = new Gtk.CheckButton () {
+            tooltip_text = _("Small")
+        };
         var icon_size_32_image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic") {
             pixel_size = 32
         };
         icon_size_32_image.set_parent (icon_size_32);
 
-        var icon_size_48 = new Gtk.CheckButton ();
-        icon_size_48.tooltip_text = _("Default");
+        var icon_size_48 = new Gtk.CheckButton () {
+            tooltip_text = _("Default")
+        };
         icon_size_48.group = icon_size_32;
         var icon_size_48_image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic") {
             pixel_size = 48
         };
         icon_size_48_image.set_parent (icon_size_48);
 
-        var image_64 = new Gtk.Image ();
-        image_64.icon_name = "application-default-icon-symbolic";
-        image_64.pixel_size = 64;
+        var image_64 = new Gtk.Image () {
+            icon_name = "application-default-icon-symbolic",
+            pixel_size = 64
+        };
 
-        var icon_size_64 = new Gtk.CheckButton ();
-        icon_size_64.tooltip_text = _("Large");
-        icon_size_64.group = icon_size_32;
+        var icon_size_64 = new Gtk.CheckButton () {
+            tooltip_text = _("Large"),
+            group = icon_size_32
+        };
         image_64.set_parent (icon_size_64);
 
         var icon_size_unsupported = new Gtk.CheckButton () {
@@ -84,9 +88,10 @@ public class PantheonShell.Dock : Gtk.Grid {
 
         dock_preferences = new Settings.full (schema, null, "/net/launchpad/plank/docks/dock1/");
 
-        var pressure_switch = new Gtk.Switch ();
-        pressure_switch.halign = Gtk.Align.START;
-        pressure_switch.valign = Gtk.Align.CENTER;
+        var pressure_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.CENTER
+        };
 
         dock_preferences.bind ("pressure-reveal", pressure_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
@@ -98,9 +103,10 @@ public class PantheonShell.Dock : Gtk.Grid {
 
         PlankHideTypes[] hide_mode_ids = {PlankHideTypes.DODGE_MAXIMIZED, PlankHideTypes.INTELLIGENT, PlankHideTypes.WINDOW_DODGE, PlankHideTypes.AUTO};
 
-        var hide_switch = new Gtk.Switch ();
-        hide_switch.halign = Gtk.Align.START;
-        hide_switch.valign = Gtk.Align.CENTER;
+        var hide_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.CENTER
+        };
 
         var hide_none = (dock_preferences.get_enum ("hide-mode") != PlankHideTypes.NONE);
         hide_switch.active = hide_none;
@@ -131,16 +137,15 @@ public class PantheonShell.Dock : Gtk.Grid {
 
         monitor = new Gtk.ComboBoxText ();
 
-        primary_monitor_label = new Gtk.Label (_("Primary display:"));
-        primary_monitor_label.halign = Gtk.Align.END;
-        // primary_monitor_label.no_show_all = true;
+        primary_monitor_label = new Gtk.Label (_("Primary display:")) {
+            halign = Gtk.Align.END
+        };
 
-        monitor_label = new Gtk.Label (_("Display:"));
-        // monitor_label.no_show_all = true;
-        monitor_label.halign = Gtk.Align.END;
+        monitor_label = new Gtk.Label (_("Display:")) {
+            halign = Gtk.Align.END
+        };
 
         primary_monitor = new Gtk.Switch ();
-        // primary_monitor.no_show_all = true;
         primary_monitor.notify["active"].connect (() => {
             if (primary_monitor.active == true) {
                 dock_preferences.set_string ("monitor", "");
@@ -172,14 +177,17 @@ public class PantheonShell.Dock : Gtk.Grid {
 
         iface.monitors_changed.connect (() => {check_for_screens ();});
 
-        var icon_label = new Gtk.Label (_("Icon size:"));
-        icon_label.halign = Gtk.Align.END;
-        var hide_label = new Gtk.Label (_("Hide when:"));
-        hide_label.halign = Gtk.Align.END;
+        var icon_label = new Gtk.Label (_("Icon size:")) {
+            halign = Gtk.Align.END
+        };
+        var hide_label = new Gtk.Label (_("Hide when:")) {
+            halign = Gtk.Align.END
+        };
         var primary_monitor_grid = new Gtk.Grid ();
         primary_monitor_grid.attach (primary_monitor, 0, 0);
-        var pressure_label = new Gtk.Label (_("Pressure reveal:"));
-        pressure_label.halign = Gtk.Align.END;
+        var pressure_label = new Gtk.Label (_("Pressure reveal:")) {
+            halign = Gtk.Align.END
+        };
 
         var panel_header = new Granite.HeaderLabel (_("Panel")) {
             margin_top = 12
@@ -251,52 +259,17 @@ public class PantheonShell.Dock : Gtk.Grid {
         int i = 0;
         int primary_screen = 0;
         var default_display = get_display ();
-        // var default_screen = get_screen ();
         monitor.remove_all ();
+
+        // the following code was taken from switchboard-plug-display
+
+        MutterReadMonitor[] mutter_monitors;
+        MutterReadLogicalMonitor[] mutter_logical_monitors;
+        GLib.HashTable<string, GLib.Variant> properties;
+        uint current_serial;
+
         try {
-            // var screen = new Gnome.RRScreen (default_screen);
-            // for (i = 0; i < default_display.get_n_monitors () ; i++) {
-            //     var monitor_plug_name = default_display.get_monitor (i).model;
-
-            //     if (monitor_plug_name != null) {
-            //         unowned Gnome.RROutput output = screen.get_output_by_name (monitor_plug_name);
-            //         if (output != null && output.get_display_name () != null && output.get_display_name () != "") {
-            //             monitor.append_text (output.get_display_name ());
-            //             if (output.get_is_primary () == true) {
-            //                 primary_screen = i;
-            //             }
-            //             continue;
-            //         }
-            //     }
-
-            //     monitor.append_text (_("Monitor %d").printf (i + 1) );
-            // }
-
-            // the following code was taken from switchboard-plug-display
-
-            MutterReadMonitor[] mutter_monitors;
-            MutterReadLogicalMonitor[] mutter_logical_monitors;
-            GLib.HashTable<string, GLib.Variant> properties;
-            uint current_serial;
-
-            try {
-                iface.get_current_state (out current_serial, out mutter_monitors, out mutter_logical_monitors, out properties);
-            } catch (Error e) {
-                critical (e.message);
-            }
-
-            foreach (var mutter_monitor in mutter_monitors) {
-                var display_name_variant = mutter_monitor.properties.lookup ("display-name");
-                if (display_name_variant.get_string () != null && display_name_variant.get_string () != "") {
-                    monitor.append_text (display_name_variant.get_string ());
-                    // var is_preferred = mutter_monitor.modes.properties.lookup ("is-preferred");;
-                    // if (is_preferred.get_boolean () == true) {
-                    //     primary_screen = i;
-                    // }
-
-                    i++;
-                }
-            }
+            iface.get_current_state (out current_serial, out mutter_monitors, out mutter_logical_monitors, out properties);
         } catch (Error e) {
             critical (e.message);
             for (i = 0; i < default_display.get_monitors ().get_n_items () ; i ++) {
@@ -304,11 +277,25 @@ public class PantheonShell.Dock : Gtk.Grid {
             }
         }
 
+        foreach (var mutter_monitor in mutter_monitors) {
+            var display_name_variant = mutter_monitor.properties.lookup ("display-name");
+            if (display_name_variant.get_string () != null && display_name_variant.get_string () != "") {
+                monitor.append_text (display_name_variant.get_string ());
+                // var is_preferred = mutter_monitor.properties.lookup ("is-preferred");;
+                // if (is_preferred.get_boolean () == true) {
+                //     primary_screen = i;
+                // }
+
+                i++;
+            }
+
+            monitor.append_text (_("Monitor %d").printf (i + 1) );
+        }
+
         if (i <= 1) {
             primary_monitor_label.hide ();
             primary_monitor.hide ();
             monitor_label.hide ();
-            // monitor.no_show_all = true;
             monitor.hide ();
         } else {
             if (dock_preferences.get_string ("monitor") != "") {
