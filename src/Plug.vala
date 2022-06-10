@@ -73,12 +73,15 @@ public class PantheonShell.Plug : Switchboard.Plug {
             var stack_switcher = new Gtk.StackSwitcher ();
             stack_switcher.stack = stack;
             stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.homogeneous = true;
-            stack_switcher.margin = 24;
+            // stack_switcher.homogeneous = true;
+            stack_switcher.margin_start = 24;
+            stack_switcher.margin_end = 24;
+            stack_switcher.margin_top = 24;
+            stack_switcher.margin_bottom = 24;
 
             main_grid.attach (stack_switcher, 0, 0, 1, 1);
             main_grid.attach (stack, 0, 1, 1, 1);
-            main_grid.show_all ();
+            // main_grid.show_all ();
         }
 
         return main_grid;

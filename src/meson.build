@@ -3,6 +3,7 @@ plug_files = files(
     'PantheonAccountsServicePlugin.vala',
     'Plug.vala',
     'ThumbnailGenerator.vala',
+    'Interfaces/MutterDisplayConfig.vala',
     'Views/Appearance.vala',
     'Views/Dock.vala',
     'Views/Multitasking.vala',

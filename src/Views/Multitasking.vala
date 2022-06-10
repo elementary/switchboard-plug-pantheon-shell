@@ -80,18 +80,18 @@ public class PantheonShell.Multitasking : Gtk.Grid {
 
         var cc_label = new Gtk.Label (_("Custom command:"));
 
-        var cc_grid = new Gtk.Grid ();
-        cc_grid.column_spacing = column_spacing;
-        cc_grid.halign = Gtk.Align.END;
-        cc_grid.margin_top = 24;
-        cc_grid.add (cc_label);
-        cc_grid.add (custom_command);
+        var cc_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, column_spacing) {
+            halign = Gtk.Align.END,
+            margin_top = 24
+        };
+        cc_grid.append (cc_label);
+        cc_grid.append (custom_command);
 
         var cc_sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
         cc_sizegroup.add_widget (icon);
         cc_sizegroup.add_widget (custom_command);
 
-        custom_command_revealer.add (cc_grid);
+        custom_command_revealer.child = cc_grid;
 
         var workspaces_label = new Gtk.Label (_("Move windows to a new workspace:")) {
             halign = Gtk.Align.END,
@@ -102,13 +102,12 @@ public class PantheonShell.Multitasking : Gtk.Grid {
         var fullscreen_checkbutton = new Gtk.CheckButton.with_label (_("When entering fullscreen"));
         var maximize_checkbutton = new Gtk.CheckButton.with_label (_("When maximizing"));
 
-        var checkbutton_grid = new Gtk.Grid () {
-            column_spacing = 12,
+        var checkbutton_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) {
             margin_top = 36,
             margin_bottom = 12
         };
-        checkbutton_grid.add (fullscreen_checkbutton);
-        checkbutton_grid.add (maximize_checkbutton);
+        checkbutton_grid.append (fullscreen_checkbutton);
+        checkbutton_grid.append (maximize_checkbutton);
 
         var animations_label = new Gtk.Label (_("Window animations:")) {
             halign = Gtk.Align.END

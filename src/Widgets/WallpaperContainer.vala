@@ -24,10 +24,11 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     private const int THUMB_WIDTH = 162;
     private const int THUMB_HEIGHT = 100;
 
-    private Gtk.Grid card_box;
-    private Gtk.Menu context_menu;
+    private Gtk.Box card_box;
+    private Gtk.Popover context_menu;
+    private Gtk.GestureClick overlay_event_controller;
     private Gtk.Revealer check_revealer;
-    private Granite.AsyncImage image;
+    private Gtk.Image image;
 
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
@@ -81,42 +82,53 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-        image = new Granite.AsyncImage ();
+        image = new Gtk.Image ();
         image.halign = Gtk.Align.CENTER;
         image.valign = Gtk.Align.CENTER;
         image.get_style_context ().set_scale (1);
 
         // We need an extra grid to not apply a scale == 1 to the "card" style.
-        card_box = new Gtk.Grid ();
+        card_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
+            margin_start = 9,
+            margin_end = 9,
+            margin_top = 9,
+            margin_bottom = 9
+        };
         card_box.get_style_context ().add_class ("card");
-        card_box.add (image);
-        card_box.margin = 9;
+        card_box.append (image);
 
-        var check = new Gtk.Image.from_icon_name ("selection-checked", Gtk.IconSize.LARGE_TOOLBAR);
-        check.halign = Gtk.Align.START;
-        check.valign = Gtk.Align.START;
+        var check = new Gtk.Image.from_icon_name ("selection-checked") {
+            pixel_size = 24,
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.START
+        };
 
-        check_revealer = new Gtk.Revealer ();
-        check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-        check_revealer.add (check);
+        check_revealer = new Gtk.Revealer () {
+            transition_type = Gtk.RevealerTransitionType.CROSSFADE,
+            child = check
+        };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (card_box);
+        var overlay = new Gtk.Overlay () {
+            child = card_box
+        };
         overlay.add_overlay (check_revealer);
 
-        var event_box = new Gtk.EventBox ();
-        event_box.add (overlay);
+        overlay_event_controller = new Gtk.GestureClick ();
+        overlay.add_controller (overlay_event_controller);
 
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
-        margin = 6;
-        add (event_box);
+        margin_start = 6;
+        margin_end = 6;
+        margin_top = 6;
+        margin_bottom = 6;
+        child = overlay;
 
         if (uri != null) {
-            var move_to_trash = new Gtk.MenuItem.with_label (_("Remove"));
-            move_to_trash.activate.connect (() => trash ());
+            var move_to_trash = new Gtk.Button.with_label (_("Remove"));
+            move_to_trash.clicked.connect (() => trash ());
 
             var file = File.new_for_uri (uri);
             file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_DELETE, 0, Priority.DEFAULT, null, (obj, res) => {
@@ -128,16 +140,18 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                 }
             });
 
-            context_menu = new Gtk.Menu ();
-            context_menu.append (move_to_trash);
-            context_menu.show_all ();
+            context_menu = new Gtk.Popover () {
+                child = move_to_trash
+            };
+            // context_menu.append (move_to_trash);
+            // context_menu.show_all ();
         }
 
         activate.connect (() => {
             checked = true;
         });
 
-        event_box.button_press_event.connect (show_context_menu);
+        overlay_event_controller.pressed.connect (show_context_menu);
 
         try {
             if (uri != null) {
@@ -191,12 +205,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         }
     }
 
-    private bool show_context_menu (Gtk.Widget sender, Gdk.EventButton evt) {
-        if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3) {
-            context_menu.popup_at_pointer (null);
-            return Gdk.EVENT_STOP;
+    private void show_context_menu (int n_press, double x, double y) {
+        var evt = overlay_event_controller.get_current_event ();
+        if (evt.get_event_type () == Gdk.EventType.BUTTON_PRESS && evt.get_modifier_state () == Gdk.ModifierType.BUTTON3_MASK) {
+            context_menu.popup ();
+            // return Gdk.EVENT_STOP;
         }
-        return Gdk.EVENT_PROPAGATE;
+        // return Gdk.EVENT_PROPAGATE;
     }
 
     private async void update_thumb () {
@@ -204,11 +219,14 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             return;
         }
 
-        try {
-            yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
-        } catch (Error e) {
-            warning (e.message);
-        }
+        // try {
+        //     yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
+        // } catch (Error e) {
+        //     warning (e.message);
+        // }
+        image.set_from_file (thumb_path);
+        image.width_request = THUMB_WIDTH;
+        image.height_request = THUMB_HEIGHT;
 
         load_artist_tooltip ();
     }

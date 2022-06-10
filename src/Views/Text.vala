@@ -63,7 +63,7 @@ public class PantheonShell.Text : Gtk.Grid {
             wrap = true,
             xalign = 0
         };
-        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        dyslexia_font_description_label.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         column_spacing = 12;
         halign = Gtk.Align.CENTER;

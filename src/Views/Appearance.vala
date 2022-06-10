@@ -76,10 +76,12 @@ public class PantheonShell.Appearance : Gtk.Grid {
         var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
 
         var prefer_default_card = new Gtk.Grid () {
-            margin = 6,
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_end = 6,
             margin_start = 12
         };
-        prefer_default_card.add (prefer_default_image);
+        prefer_default_card.attach (prefer_default_image, 0, 0);
 
         unowned Gtk.StyleContext prefer_default_card_context = prefer_default_card.get_style_context ();
         prefer_default_card_context.add_class (Granite.STYLE_CLASS_CARD);
@@ -91,19 +93,21 @@ public class PantheonShell.Appearance : Gtk.Grid {
         prefer_default_grid.attach (prefer_default_card, 0, 0);
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
 
-        var prefer_default_radio = new Gtk.RadioButton (null) {
+        var prefer_default_radio = new Gtk.CheckButton () {
             halign = Gtk.Align.START
         };
         prefer_default_radio.get_style_context ().add_class ("image-button");
-        prefer_default_radio.add (prefer_default_grid);
+        prefer_default_grid.set_parent (prefer_default_radio);
 
         var prefer_dark_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg");
 
         var prefer_dark_card = new Gtk.Grid () {
-            margin = 6,
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_end = 6,
             margin_start = 12
         };
-        prefer_dark_card.add (prefer_dark_image);
+        prefer_dark_card.attach (prefer_dark_image, 0, 0);
 
         unowned Gtk.StyleContext prefer_dark_card_context = prefer_dark_card.get_style_context ();
         prefer_dark_card_context.add_class (Granite.STYLE_CLASS_CARD);
@@ -115,55 +119,57 @@ public class PantheonShell.Appearance : Gtk.Grid {
         prefer_dark_grid.attach (prefer_dark_card, 0, 0);
         prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
 
-        var prefer_dark_radio = new Gtk.RadioButton.from_widget (prefer_default_radio) {
+        var prefer_dark_radio = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
-            hexpand = true
+            hexpand = true,
+            group = prefer_default_radio
         };
         prefer_dark_radio.get_style_context ().add_class ("image-button");
-        prefer_dark_radio.add (prefer_dark_grid);
+        prefer_dark_grid.set_parent (prefer_dark_radio);
 
         var prefer_style_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
-        prefer_style_box.add (prefer_default_radio);
-        prefer_style_box.add (prefer_dark_radio);
+        prefer_style_box.append (prefer_default_radio);
+        prefer_style_box.append (prefer_dark_radio);
 
         var dark_info = new Gtk.Label (_("Preferred visual style for system components. Apps may also choose to follow this preference.")) {
             max_width_chars = 60,
             wrap = true,
             xalign = 0
         };
-        dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        dark_info.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
-        var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled")) {
+        var schedule_disabled_radio = new Gtk.CheckButton.with_label (_("Disabled")) {
             margin_bottom = 3
         };
 
-        var schedule_sunset_radio = new Gtk.RadioButton.with_label_from_widget (
-            schedule_disabled_radio,
-            _("Sunset to Sunrise")
-        );
+        var schedule_sunset_radio = new Gtk.CheckButton.with_label (_("Sunset to Sunrise")) {
+            group = schedule_disabled_radio
+        };
 
         var from_label = new Gtk.Label (_("From:"));
 
-        var from_time = new Granite.Widgets.TimePicker () {
+        var from_time = new Granite.TimePicker () {
             hexpand = true,
             margin_end = 6
         };
 
         var to_label = new Gtk.Label (_("To:"));
 
-        var to_time = new Granite.Widgets.TimePicker () {
+        var to_time = new Granite.TimePicker () {
             hexpand = true
         };
 
         var schedule_manual_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        schedule_manual_box.add (from_label);
-        schedule_manual_box.add (from_time);
-        schedule_manual_box.add (to_label);
-        schedule_manual_box.add (to_time);
+        schedule_manual_box.append (from_label);
+        schedule_manual_box.append (from_time);
+        schedule_manual_box.append (to_label);
+        schedule_manual_box.append (to_time);
 
-        var schedule_manual_radio = new Gtk.RadioButton.from_widget (schedule_disabled_radio) ;
+        var schedule_manual_radio = new Gtk.CheckButton () {
+            group = schedule_disabled_radio
+        };
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -223,15 +229,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
             /* Connect to button_release_event so that this is only triggered
              * through user interaction, not if scheduling changes the selection
              */
-            prefer_default_radio.button_release_event.connect (() => {
-                schedule_disabled_radio.active = true;
-                return Gdk.EVENT_PROPAGATE;
-            });
+            // prefer_default_radio.button_release_event.connect (() => {
+            //     schedule_disabled_radio.active = true;
+            //     return Gdk.EVENT_PROPAGATE;
+            // });
 
-            prefer_dark_radio.button_release_event.connect (() => {
-                schedule_disabled_radio.active = true;
-                return Gdk.EVENT_PROPAGATE;
-            });
+            // prefer_dark_radio.button_release_event.connect (() => {
+            //     schedule_disabled_radio.active = true;
+            //     return Gdk.EVENT_PROPAGATE;
+            // });
 
             ((GLib.DBusProxy) pantheon_act).g_properties_changed.connect ((changed, invalid) => {
                 var color_scheme = changed.lookup_value ("PrefersColorScheme", new VariantType ("i"));
@@ -267,15 +273,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
                 schedule_disabled_radio.active = true;
             }
 
-            schedule_disabled_radio.clicked.connect (() => {
+            schedule_disabled_radio.toggled.connect (() => {
                 settings.set_string ("prefer-dark-schedule", "disabled");
             });
 
-            schedule_manual_radio.clicked.connect (() => {
+            schedule_manual_radio.toggled.connect (() => {
                 settings.set_string ("prefer-dark-schedule", "manual");
             });
 
-            schedule_sunset_radio.clicked.connect (() => {
+            schedule_sunset_radio.toggled.connect (() => {
                 settings.set_string ("prefer-dark-schedule", "sunset-to-sunrise");
             });
 
@@ -325,25 +331,24 @@ public class PantheonShell.Appearance : Gtk.Grid {
             var auto_button = new PrefersAccentColorButton (pantheon_act, AccentColor.NO_PREFERENCE, blueberry_button);
             auto_button.tooltip_text = _("Automatic based on wallpaper");
 
-            var accent_grid = new Gtk.Grid ();
-            accent_grid.column_spacing = 6;
-            accent_grid.add (blueberry_button);
-            accent_grid.add (mint_button);
-            accent_grid.add (lime_button);
-            accent_grid.add (banana_button);
-            accent_grid.add (orange_button);
-            accent_grid.add (strawberry_button);
-            accent_grid.add (bubblegum_button);
-            accent_grid.add (grape_button);
-            accent_grid.add (cocoa_button);
-            accent_grid.add (slate_button);
-            accent_grid.add (auto_button);
+            var accent_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+            accent_grid.append (blueberry_button);
+            accent_grid.append (mint_button);
+            accent_grid.append (lime_button);
+            accent_grid.append (banana_button);
+            accent_grid.append (orange_button);
+            accent_grid.append (strawberry_button);
+            accent_grid.append (bubblegum_button);
+            accent_grid.append (grape_button);
+            accent_grid.append (cocoa_button);
+            accent_grid.append (slate_button);
+            accent_grid.append (auto_button);
 
             var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color.")) {
                 xalign = 0,
                 wrap = true
             };
-            accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+            accent_info.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             attach (accent_label, 0, 7, 2);
             attach (accent_info, 0, 8, 2);
@@ -351,13 +356,13 @@ public class PantheonShell.Appearance : Gtk.Grid {
         }
     }
 
-    private class PrefersAccentColorButton : Gtk.RadioButton {
+    private class PrefersAccentColorButton : Gtk.CheckButton {
         public AccentColor color { get; construct; }
         public Pantheon.AccountsService? pantheon_act { get; construct; default = null; }
 
         private static GLib.Settings interface_settings;
 
-        public PrefersAccentColorButton (Pantheon.AccountsService? pantheon_act, AccentColor color, Gtk.RadioButton? group_member = null) {
+        public PrefersAccentColorButton (Pantheon.AccountsService? pantheon_act, AccentColor color, Gtk.CheckButton? group_member = null) {
             Object (
                 pantheon_act: pantheon_act,
                 color: color,

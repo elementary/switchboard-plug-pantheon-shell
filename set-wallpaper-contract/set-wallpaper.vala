@@ -167,7 +167,6 @@ namespace SetWallpaperContractor {
     }
 
     public static int main (string[] args) {
-        Gtk.init (ref args);
 
         AccountsServiceUser? accounts_service = null;
         try {
@@ -232,20 +231,25 @@ namespace SetWallpaperContractor {
         };
         dialog.add_button (_("Create Slideshow"), Gtk.ResponseType.OK);
         dialog.set_default_response (Gtk.ResponseType.OK);
-        dialog.custom_bin.add (duration);
-        dialog.show_all ();
+        dialog.custom_bin.append (duration);
+        dialog.present ();
 
         delay_value_changed (duration, dialog.secondary_label);
         duration.value_changed.connect (() => delay_value_changed (duration, dialog.secondary_label));
 
-        if (dialog.run () == Gtk.ResponseType.OK) {
-            dialog.destroy ();
+        int return_val = 1;
+        dialog.response.connect ((id) => {
+            if (id == Gtk.ResponseType.OK) {
+                dialog.destroy ();
 
-            var path = folder.get_child (SLIDESHOW_FILENAME).get_path ();
-            update_slideshow (path, files, delay_value);
-            return 0;
-        }
+                var path = folder.get_child (SLIDESHOW_FILENAME).get_path ();
+                update_slideshow (path, files, delay_value);
+                return_val = 0;
+            } else {
+                return_val = 1;
+            }
+        });
 
-        return 1;
+        return return_val;
     }
 }

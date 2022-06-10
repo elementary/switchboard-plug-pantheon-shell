@@ -25,46 +25,70 @@ public class PantheonShell.Dock : Gtk.Grid {
     private Gtk.Switch primary_monitor;
     private Gtk.Label monitor_label;
     private Gtk.ComboBoxText monitor;
-    private Plank.DockPreferences dock_preferences;
+    private Settings dock_preferences;
+    private MutterDisplayConfigInterface iface;
+
+    private enum PlankHideTypes {
+        NONE,
+        INTELLIGENT,
+        AUTO,
+        DODGE_MAXIMIZED,
+        WINDOW_DODGE,
+        DODGE_ACTIVE
+    }
 
     construct {
         var dock_header = new Granite.HeaderLabel (_("Dock"));
 
-        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
         default_theme.add_resource_path ("/io/elementary/switchboard/plug/pantheon-shell");
 
-        var icon_size_32 = new Gtk.RadioButton (null);
-        icon_size_32.image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic", Gtk.IconSize.DND);
+        var icon_size_32 = new Gtk.CheckButton ();
         icon_size_32.tooltip_text = _("Small");
+        var icon_size_32_image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic") {
+            pixel_size = 32
+        };
+        icon_size_32_image.set_parent (icon_size_32);
 
-        var icon_size_48 = new Gtk.RadioButton.from_widget (icon_size_32);
-        icon_size_48.image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic", Gtk.IconSize.DIALOG);
+        var icon_size_48 = new Gtk.CheckButton ();
         icon_size_48.tooltip_text = _("Default");
+        icon_size_48.group = icon_size_32;
+        var icon_size_48_image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic") {
+            pixel_size = 48
+        };
+        icon_size_48_image.set_parent (icon_size_48);
 
         var image_64 = new Gtk.Image ();
         image_64.icon_name = "application-default-icon-symbolic";
         image_64.pixel_size = 64;
 
-        var icon_size_64 = new Gtk.RadioButton.from_widget (icon_size_32);
-        icon_size_64.image = image_64;
+        var icon_size_64 = new Gtk.CheckButton ();
         icon_size_64.tooltip_text = _("Large");
+        icon_size_64.group = icon_size_32;
+        image_64.set_parent (icon_size_64);
 
-        var icon_size_unsupported = new Gtk.RadioButton.from_widget (icon_size_32);
+        var icon_size_unsupported = new Gtk.CheckButton () {
+            group = icon_size_32
+        };
 
-        var icon_size_grid = new Gtk.Grid ();
-        icon_size_grid.column_spacing = 24;
-        icon_size_grid.add (icon_size_32);
-        icon_size_grid.add (icon_size_48);
-        icon_size_grid.add (icon_size_64);
+        var icon_size_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 24);
+        icon_size_grid.append (icon_size_32);
+        icon_size_grid.append (icon_size_48);
+        icon_size_grid.append (icon_size_64);
 
-        Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
-        dock_preferences = new Plank.DockPreferences ("dock1");
+        var schema_id = "net.launchpad.plank.dock.settings";
+        var schema = GLib.SettingsSchemaSource.get_default ().lookup (schema_id, true);
+		if (schema == null) {
+			error ("GSettingsSchema '%s' not found", schema_id);
+		}
+
+        dock_preferences = new Settings.full (schema, null, "/net/launchpad/plank/docks/dock1/");
 
         var pressure_switch = new Gtk.Switch ();
         pressure_switch.halign = Gtk.Align.START;
         pressure_switch.valign = Gtk.Align.CENTER;
 
-        dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
+        dock_preferences.bind ("pressure-reveal", pressure_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
         var hide_mode = new Gtk.ComboBoxText ();
         hide_mode.append_text (_("Focused window is maximized"));
@@ -72,35 +96,36 @@ public class PantheonShell.Dock : Gtk.Grid {
         hide_mode.append_text (_("Any window overlaps the dock"));
         hide_mode.append_text (_("Not being used"));
 
-        Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.WINDOW_DODGE, Plank.HideType.AUTO};
+        PlankHideTypes[] hide_mode_ids = {PlankHideTypes.DODGE_MAXIMIZED, PlankHideTypes.INTELLIGENT, PlankHideTypes.WINDOW_DODGE, PlankHideTypes.AUTO};
 
         var hide_switch = new Gtk.Switch ();
         hide_switch.halign = Gtk.Align.START;
         hide_switch.valign = Gtk.Align.CENTER;
 
-        var hide_none = (dock_preferences.HideMode != Plank.HideType.NONE);
+        var hide_none = (dock_preferences.get_enum ("hide-mode") != PlankHideTypes.NONE);
         hide_switch.active = hide_none;
         if (hide_none) {
-            for (int i = 0; i < hide_mode_ids.length; i++) {
-                if (hide_mode_ids[i] == dock_preferences.HideMode)
+            for (var i = 0; i < hide_mode_ids.length; i++) {
+                if (hide_mode_ids[i] == dock_preferences.get_enum ("hide-mode")) {
                     hide_mode.active = i;
+                }
             }
         } else {
             hide_mode.sensitive = false;
         }
 
-        hide_mode.changed.connect (() => {
-            dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
-        });
-
         hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.SYNC_CREATE);
         hide_switch.bind_property ("active", hide_mode, "sensitive", BindingFlags.DEFAULT);
 
+        hide_mode.changed.connect (() => {
+            dock_preferences.set_enum ("hide-mode", hide_mode_ids[hide_mode.active]);
+        });
+
         hide_switch.notify["active"].connect (() => {
             if (hide_switch.active) {
-                dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
+                dock_preferences.set_enum ("hide-mode", hide_mode_ids[hide_mode.active]);
             } else {
-                dock_preferences.HideMode = Plank.HideType.NONE;
+                dock_preferences.set_enum ("hide-mode", PlankHideTypes.NONE);
             }
         });
 
@@ -108,45 +133,51 @@ public class PantheonShell.Dock : Gtk.Grid {
 
         primary_monitor_label = new Gtk.Label (_("Primary display:"));
         primary_monitor_label.halign = Gtk.Align.END;
-        primary_monitor_label.no_show_all = true;
+        // primary_monitor_label.no_show_all = true;
 
         monitor_label = new Gtk.Label (_("Display:"));
-        monitor_label.no_show_all = true;
+        // monitor_label.no_show_all = true;
         monitor_label.halign = Gtk.Align.END;
 
         primary_monitor = new Gtk.Switch ();
-        primary_monitor.no_show_all = true;
+        // primary_monitor.no_show_all = true;
         primary_monitor.notify["active"].connect (() => {
             if (primary_monitor.active == true) {
-                dock_preferences.Monitor = "";
+                dock_preferences.set_string ("monitor", "");
                 monitor_label.sensitive = false;
                 monitor.sensitive = false;
             } else {
                 var plug_names = get_monitor_plug_names (get_display ());
                 if (plug_names.length > monitor.active)
-                    dock_preferences.Monitor = plug_names[monitor.active];
+                    dock_preferences.set_string ("monitor", plug_names[monitor.active]);
                 monitor_label.sensitive = true;
                 monitor.sensitive = true;
             }
         });
-        primary_monitor.active = (dock_preferences.Monitor == "");
+        primary_monitor.active = (dock_preferences.get_string ("monitor") == "");
 
         monitor.notify["active"].connect (() => {
             if (monitor.active >= 0 && primary_monitor.active == false) {
                 var plug_names = get_monitor_plug_names (get_display ());
                 if (plug_names.length > monitor.active)
-                    dock_preferences.Monitor = plug_names[monitor.active];
+                    dock_preferences.set_string ("monitor", plug_names[monitor.active]);
             }
         });
 
-        get_screen ().monitors_changed.connect (() => {check_for_screens ();});
+        try {
+            iface = Bus.get_proxy_sync (BusType.SESSION, "org.gnome.Mutter.DisplayConfig", "/org/gnome/Mutter/DisplayConfig");
+        } catch (Error e) {
+            critical (e.message);
+        }
+
+        iface.monitors_changed.connect (() => {check_for_screens ();});
 
         var icon_label = new Gtk.Label (_("Icon size:"));
         icon_label.halign = Gtk.Align.END;
         var hide_label = new Gtk.Label (_("Hide when:"));
         hide_label.halign = Gtk.Align.END;
         var primary_monitor_grid = new Gtk.Grid ();
-        primary_monitor_grid.add (primary_monitor);
+        primary_monitor_grid.attach (primary_monitor, 0, 0);
         var pressure_label = new Gtk.Label (_("Pressure reveal:"));
         pressure_label.halign = Gtk.Align.END;
 
@@ -185,7 +216,7 @@ public class PantheonShell.Dock : Gtk.Grid {
 
         check_for_screens ();
 
-        switch (dock_preferences.IconSize) {
+        switch (dock_preferences.get_int ("icon-size")) {
             case 32:
                 icon_size_32.active = true;
                 break;
@@ -201,15 +232,15 @@ public class PantheonShell.Dock : Gtk.Grid {
         }
 
         icon_size_32.toggled.connect (() => {
-            dock_preferences.IconSize = 32;
+            dock_preferences.set_int ("icon-size", 32);
         });
 
         icon_size_48.toggled.connect (() => {
-            dock_preferences.IconSize = 48;
+            dock_preferences.set_int ("icon-size", 48);
         });
 
         icon_size_64.toggled.connect (() => {
-            dock_preferences.IconSize = 64;
+            dock_preferences.set_int ("icon-size", 64);
         });
 
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
@@ -220,29 +251,55 @@ public class PantheonShell.Dock : Gtk.Grid {
         int i = 0;
         int primary_screen = 0;
         var default_display = get_display ();
-        var default_screen = get_screen ();
+        // var default_screen = get_screen ();
         monitor.remove_all ();
         try {
-            var screen = new Gnome.RRScreen (default_screen);
-            for (i = 0; i < default_display.get_n_monitors () ; i++) {
-                var monitor_plug_name = default_display.get_monitor (i).model;
+            // var screen = new Gnome.RRScreen (default_screen);
+            // for (i = 0; i < default_display.get_n_monitors () ; i++) {
+            //     var monitor_plug_name = default_display.get_monitor (i).model;
 
-                if (monitor_plug_name != null) {
-                    unowned Gnome.RROutput output = screen.get_output_by_name (monitor_plug_name);
-                    if (output != null && output.get_display_name () != null && output.get_display_name () != "") {
-                        monitor.append_text (output.get_display_name ());
-                        if (output.get_is_primary () == true) {
-                            primary_screen = i;
-                        }
-                        continue;
-                    }
+            //     if (monitor_plug_name != null) {
+            //         unowned Gnome.RROutput output = screen.get_output_by_name (monitor_plug_name);
+            //         if (output != null && output.get_display_name () != null && output.get_display_name () != "") {
+            //             monitor.append_text (output.get_display_name ());
+            //             if (output.get_is_primary () == true) {
+            //                 primary_screen = i;
+            //             }
+            //             continue;
+            //         }
+            //     }
+
+            //     monitor.append_text (_("Monitor %d").printf (i + 1) );
+            // }
+
+            // the following code was taken from switchboard-plug-display
+
+            MutterReadMonitor[] mutter_monitors;
+            MutterReadLogicalMonitor[] mutter_logical_monitors;
+            GLib.HashTable<string, GLib.Variant> properties;
+            uint current_serial;
+
+            try {
+                iface.get_current_state (out current_serial, out mutter_monitors, out mutter_logical_monitors, out properties);
+            } catch (Error e) {
+                critical (e.message);
+            }
+
+            foreach (var mutter_monitor in mutter_monitors) {
+                var display_name_variant = mutter_monitor.properties.lookup ("display-name");
+                if (display_name_variant.get_string () != null && display_name_variant.get_string () != "") {
+                    monitor.append_text (display_name_variant.get_string ());
+                    // var is_preferred = mutter_monitor.modes.properties.lookup ("is-preferred");;
+                    // if (is_preferred.get_boolean () == true) {
+                    //     primary_screen = i;
+                    // }
+
+                    i++;
                 }
-
-                monitor.append_text (_("Monitor %d").printf (i + 1) );
             }
         } catch (Error e) {
             critical (e.message);
-            for (i = 0; i < default_display.get_n_monitors () ; i ++) {
+            for (i = 0; i < default_display.get_monitors ().get_n_items () ; i ++) {
                 monitor.append_text (_("Display %d").printf (i + 1));
             }
         }
@@ -251,11 +308,11 @@ public class PantheonShell.Dock : Gtk.Grid {
             primary_monitor_label.hide ();
             primary_monitor.hide ();
             monitor_label.hide ();
-            monitor.no_show_all = true;
+            // monitor.no_show_all = true;
             monitor.hide ();
         } else {
-            if (dock_preferences.Monitor != "") {
-                monitor.active = find_monitor_number (get_display (), dock_preferences.Monitor);
+            if (dock_preferences.get_string ("monitor") != "") {
+                monitor.active = find_monitor_number (get_display (), dock_preferences.get_string ("monitor"));
             } else {
                 monitor.active = primary_screen;
             }
@@ -268,27 +325,28 @@ public class PantheonShell.Dock : Gtk.Grid {
     }
 
     static string[] get_monitor_plug_names (Gdk.Display display) {
-        int n_monitors = display.get_n_monitors ();
+        var monitors = display.get_monitors ();
+        var n_monitors = monitors.get_n_items ();
         var result = new string[n_monitors];
 
         for (int i = 0; i < n_monitors; i++) {
-            result[i] = display.get_monitor (i).model;
+            result[i] = ((Gdk.Monitor) monitors.get_item (i)).model;
         }
 
         return result;
     }
 
     static int find_monitor_number (Gdk.Display display, string plug_name) {
-        int n_monitors = display.get_n_monitors ();
+        var monitors = display.get_monitors ();
 
-        for (int i = 0; i < n_monitors; i++) {
-            var monitor = display.get_monitor (i);
+        for (int i = 0; i < monitors.get_n_items (); i++) {
+            var monitor = (Gdk.Monitor) monitors.get_item (i);
             var name = monitor.get_model ();
             if (plug_name == name)
                 return i;
         }
 
-        return display.get_n_monitors ();
+        return (int) monitors.get_n_items ();
     }
 
 }
