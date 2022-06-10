@@ -256,7 +256,7 @@ public class PantheonShell.Dock : Gtk.Grid {
     }
 
     private void check_for_screens () {
-        int i = 0;
+        int i;
         int primary_screen = 0;
         var default_display = get_display ();
         monitor.remove_all ();
@@ -277,20 +277,47 @@ public class PantheonShell.Dock : Gtk.Grid {
             }
         }
 
-        foreach (var mutter_monitor in mutter_monitors) {
-            var display_name_variant = mutter_monitor.properties.lookup ("display-name");
-            if (display_name_variant.get_string () != null && display_name_variant.get_string () != "") {
-                monitor.append_text (display_name_variant.get_string ());
-                // var is_preferred = mutter_monitor.properties.lookup ("is-preferred");;
-                // if (is_preferred.get_boolean () == true) {
-                //     primary_screen = i;
-                // }
+        for (i = 0; i < mutter_monitors.length; i++) {
+            var mutter_monitor = mutter_monitors[i];
+            var logical_monitor = mutter_logical_monitors[i];
 
-                i++;
+            if (mutter_monitor.monitor.connector == logical_monitor.monitors[0].connector) {
+                var display_name_variant = mutter_monitor.properties.lookup ("display-name");
+                if (display_name_variant.get_string () != null && display_name_variant.get_string () != "") {
+                    monitor.append_text (display_name_variant.get_string ());
+                    if (logical_monitor.primary) {
+                        primary_screen = i;
+                        continue;
+                    }
+                }
+
+                monitor.append_text (_("Monitor %d").printf (i + 1));
             }
-
-            monitor.append_text (_("Monitor %d").printf (i + 1) );
         }
+
+        // foreach (var mutter_monitor in mutter_monitors) {
+        //     var display_name_variant = mutter_monitor.properties.lookup ("display-name");
+        //     print ("%s\n", mutter_monitor.monitor.connector.to_string ());
+        //     if (display_name_variant.get_string () != null && display_name_variant.get_string () != "") {
+        //         monitor.append_text (display_name_variant.get_string ());
+        //         // var is_preferred = mutter_monitor.properties.lookup ("is-preferred");;
+        //         // if (is_preferred.get_boolean () == true) {
+        //         //     primary_screen = i;
+        //         // }
+
+        //         i++;
+        //     }
+
+        //     monitor.append_text (_("Monitor %d").printf (i + 1) );
+        // }
+
+        // foreach (var logical_monitor in mutter_logical_monitors) {
+        //     // var display_name_variant = logical_monitor.properties.lookup ("display-name");
+        //     print ("%s\n", logical_monitor.monitors[0].connector.to_string ());
+        //     // logical_monitor.properties.get_keys ().foreach ((key) => {
+        //     //     print ("%s\n", key);
+        //     // });
+        // }
 
         if (i <= 1) {
             primary_monitor_label.hide ();
