@@ -28,7 +28,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     private Gtk.Popover context_menu;
     private Gtk.GestureClick overlay_event_controller;
     private Gtk.Revealer check_revealer;
-    private Gtk.Image image;
+    private Gtk.Picture image;
 
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
@@ -72,31 +72,19 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     construct {
-        add_css_class ("wallpaper-container");
-
-        scale = get_style_context ().get_scale ();
-
-        height_request = THUMB_HEIGHT + 18;
-        width_request = THUMB_WIDTH + 18;
-
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
         Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-        image = new Gtk.Image () {
-            halign = Gtk.Align.CENTER,
-            valign = Gtk.Align.CENTER
+        image = new Gtk.Picture () {
+            can_shrink = true
         };
-        image.get_style_context ().set_scale (1);
 
-        // We need an extra grid to not apply a scale == 1 to the "card" style.
         card_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
-            margin_start = 9,
-            margin_end = 9,
-            margin_top = 9,
-            margin_bottom = 9
+            overflow = Gtk.Overflow.HIDDEN
         };
-        card_box.add_css_class ("card");
+        card_box.add_css_class (Granite.STYLE_CLASS_CARD);
+        card_box.add_css_class (Granite.STYLE_CLASS_ROUNDED);
         card_box.append (image);
 
         var check = new Gtk.Image.from_icon_name ("selection-checked") {
@@ -111,19 +99,15 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         };
 
         var overlay = new Gtk.Overlay () {
-            child = card_box
+            child = card_box,
+            halign = Gtk.Align.CENTER
         };
         overlay.add_overlay (check_revealer);
 
         overlay_event_controller = new Gtk.GestureClick ();
         overlay.add_controller (overlay_event_controller);
 
-        halign = Gtk.Align.CENTER;
-        valign = Gtk.Align.CENTER;
-        margin_start = 6;
-        margin_end = 6;
-        margin_top = 6;
-        margin_bottom = 6;
+        add_css_class ("wallpaper-container");
         child = overlay;
 
         if (uri != null) {
@@ -151,6 +135,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
         overlay_event_controller.pressed.connect (show_context_menu);
 
+        scale = get_style_context ().get_scale ();
         try {
             if (uri != null) {
                 if (thumb_path != null && thumb_valid) {
@@ -159,8 +144,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                     generate_and_load_thumb ();
                 }
             } else {
-                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale);
-                image.gicon = thumb;
+                image.set_pixbuf (new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale));
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
@@ -217,9 +201,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             return;
         }
 
-        image.set_from_file (thumb_path);
-        image.width_request = THUMB_WIDTH;
-        image.height_request = THUMB_HEIGHT;
+        image.set_filename (thumb_path);
 
         load_artist_tooltip ();
     }
