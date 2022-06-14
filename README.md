@@ -8,13 +8,11 @@
 You'll need the following dependencies:
 
 * gnome-settings-daemon-dev
-* libswitchboard-2.0-dev
-* libgnome-desktop-3-dev
+* libswitchboard-3-dev
 * libgee-0.8-dev
 * libgexiv2-dev
-* libgtk-3-dev (>= 3.22)
-* libplank-dev
-* libgranite-dev
+* libgtk-4-dev
+* libgranite-7-dev
 * meson
 * valac
 

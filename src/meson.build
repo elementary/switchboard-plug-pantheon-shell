@@ -13,7 +13,7 @@ plug_files = files(
     'Widgets/WallpaperContainer.vala',
 )
 
-switchboard_dep = dependency('switchboard-2.0')
+switchboard_dep = dependency('switchboard-3')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 configuration = configuration_data()
