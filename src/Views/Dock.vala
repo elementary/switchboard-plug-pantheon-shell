@@ -281,10 +281,9 @@ public class PantheonShell.Dock : Gtk.Grid {
             var mutter_monitor = mutter_monitors[i];
             var logical_monitor = mutter_logical_monitors[i];
 
-            if (mutter_monitor.monitor.connector == logical_monitor.monitors[0].connector) {
-                var display_name_variant = mutter_monitor.properties.lookup ("display-name");
-                if (display_name_variant.get_string () != null && display_name_variant.get_string () != "") {
-                    monitor.append_text (display_name_variant.get_string ());
+            if (mutter_monitor.monitor in logical_monitor.monitors) {
+                if (mutter_monitor.monitor.connector != null && mutter_monitor.monitor.connector != "") {
+                    monitor.append_text (mutter_monitor.monitor.connector);
                     if (logical_monitor.primary) {
                         primary_screen = i;
                         continue;
