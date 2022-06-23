@@ -44,7 +44,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
                 code_name: "io.elementary.switchboard.pantheon-shell",
                 display_name: _("Desktop"),
                 description: _("Configure the dock, hot corners, and change wallpaper"),
-                icon: "preferences-desktop-wallpaper",
+                icon: "preferences-desktop",
                 supported_settings: settings);
     }
 
