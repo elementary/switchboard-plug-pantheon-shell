@@ -91,7 +91,6 @@ public class PantheonShell.Multitasking : Gtk.Box {
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
-        // behavior_settings.bind ("hotcorner-custom-command", custom_command, "text", GLib.SettingsBindFlags.DEFAULT);
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
         behavior_settings.bind ("move-maximized-workspace", maximize_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
     }
@@ -207,7 +206,6 @@ public class PantheonShell.Multitasking : Gtk.Box {
 
             string[] commands = setting_string.split (";;");
             foreach (unowned string command in commands) {
-                critical (command);
                 if (command.has_prefix ("hotcorner-" + position)) {
                     this_command = command.replace ("hotcorner-%s:".printf (position), "");
                 }
