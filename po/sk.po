@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-22 03:54+0000\n"
+"POT-Creation-Date: 2022-07-01 18:24+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -290,61 +290,67 @@ msgstr "Monitor %d"
 msgid "Display %d"
 msgstr "Displej %d"
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:28
 msgid "When the cursor enters the corner of the display:"
 msgstr "Keď sa kurzor dotkne rohu obrazovky:"
 
-#: src/Views/Multitasking.vala:81
-msgid "Custom command:"
-msgstr "Vlastný príkaz:"
+#: src/Views/Multitasking.vala:35
+msgid "Top Left"
+msgstr ""
 
-#: src/Views/Multitasking.vala:96
+#: src/Views/Multitasking.vala:36
+msgid "Top Right"
+msgstr ""
+
+#: src/Views/Multitasking.vala:37
+msgid "Bottom Left"
+msgstr ""
+
+#: src/Views/Multitasking.vala:38
+msgid "Bottom Right"
+msgstr ""
+
+#: src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace:"
 msgstr "Presunúť okná na novú pracovnú plochu:"
 
-#: src/Views/Multitasking.vala:102
+#: src/Views/Multitasking.vala:46
 msgid "When entering fullscreen"
 msgstr "Keď je aplikácia na celú obrazovku"
 
-#: src/Views/Multitasking.vala:103
+#: src/Views/Multitasking.vala:47
 msgid "When maximizing"
 msgstr "Keď sa aplikácia maximalizuje"
 
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:57
 msgid "Window animations:"
 msgstr "Animácie okien:"
 
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:135
 msgid "Do nothing"
 msgstr "Nerobiť nič"
 
-#. none
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:136
 msgid "Multitasking View"
 msgstr "Zobrazenie úloh"
 
-#. show-workspace-view
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:137
 msgid "Maximize current window"
 msgstr "Maximalizovať aktuálne okno"
 
-#. maximize-current
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:138
 msgid "Show Applications Menu"
 msgstr "Zobraziť menu aplikácií"
 
-#. open-launcher
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:139
 msgid "Show all windows"
 msgstr "Zobraziť všetky okná"
 
-#. window-overview-all
-#: src/Views/Multitasking.vala:159
+#: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
 msgstr "Prepnúť na novú pracovnú plochu"
 
-#. switch-new-workspace
-#: src/Views/Multitasking.vala:160
+#: src/Views/Multitasking.vala:141
 msgid "Execute custom command"
 msgstr "Spustiť vlastný program"
 
@@ -440,6 +446,9 @@ msgstr "Nastaviť ako prezentáciu pozadí plochy"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Vytvoriť prezentáciu"
+
+#~ msgid "Custom command:"
+#~ msgstr "Vlastný príkaz:"
 
 #~ msgid "Manual"
 #~ msgstr "Ručný"
