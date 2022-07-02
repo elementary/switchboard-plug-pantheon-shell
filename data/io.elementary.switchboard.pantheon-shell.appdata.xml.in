@@ -7,6 +7,19 @@
   <icon type="stock">preferences-desktop-wallpaper</icon>
   <translation type="gettext">pantheon-desktop-plug</translation>
   <releases>
+    <release version="6.2.0" date="2022-07-01" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Set custom Terminal commands for each hotcorner</li>
+          <li>Redesigned Appearance and Multitasking views</li>
+        </ul>
+        <p>Other updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.1.0" date="2021-11-23" urgency="medium">
       <description>
         <p>New features:</p>
