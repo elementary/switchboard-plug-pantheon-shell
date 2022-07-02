@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-22 03:54+0000\n"
+"POT-Creation-Date: 2022-07-01 18:24+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Belarusian <https://l10n.elementary.io/projects/switchboard/"
@@ -278,61 +278,67 @@ msgstr ""
 msgid "Display %d"
 msgstr ""
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:28
 msgid "When the cursor enters the corner of the display:"
 msgstr ""
 
-#: src/Views/Multitasking.vala:81
-msgid "Custom command:"
+#: src/Views/Multitasking.vala:35
+msgid "Top Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:96
+#: src/Views/Multitasking.vala:36
+msgid "Top Right"
+msgstr ""
+
+#: src/Views/Multitasking.vala:37
+msgid "Bottom Left"
+msgstr ""
+
+#: src/Views/Multitasking.vala:38
+msgid "Bottom Right"
+msgstr ""
+
+#: src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace:"
 msgstr ""
 
-#: src/Views/Multitasking.vala:102
+#: src/Views/Multitasking.vala:46
 msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:103
+#: src/Views/Multitasking.vala:47
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:57
 msgid "Window animations:"
 msgstr ""
 
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:135
 msgid "Do nothing"
 msgstr "Нічога не рабіць"
 
-#. none
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:136
 msgid "Multitasking View"
 msgstr ""
 
-#. show-workspace-view
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:137
 msgid "Maximize current window"
 msgstr ""
 
-#. maximize-current
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:138
 msgid "Show Applications Menu"
 msgstr ""
 
-#. open-launcher
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:139
 msgid "Show all windows"
 msgstr ""
 
-#. window-overview-all
-#: src/Views/Multitasking.vala:159
+#: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
 msgstr ""
 
-#. switch-new-workspace
-#: src/Views/Multitasking.vala:160
+#: src/Views/Multitasking.vala:141
 msgid "Execute custom command"
 msgstr ""
 
