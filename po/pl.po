@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-01 18:24+0000\n"
-"PO-Revision-Date: 2022-05-23 08:30+0000\n"
+"PO-Revision-Date: 2022-07-02 10:49+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pl/>\n"
@@ -293,19 +293,19 @@ msgstr "Gdy kursor dotknie rogu ekranu:"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "Lewy górny"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "Prawy górny"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "Lewy dolny"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "Prawy dolny"
 
 #: src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace:"
