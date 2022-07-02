@@ -46,13 +46,12 @@ public class PantheonShell.Multitasking : Gtk.Box {
         var fullscreen_checkbutton = new Gtk.CheckButton.with_label (_("When entering fullscreen"));
         var maximize_checkbutton = new Gtk.CheckButton.with_label (_("When maximizing"));
 
-        var checkbutton_grid = new Gtk.Grid () {
-            column_spacing = 12,
+        var checkbutton_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) {
             margin_top = 12,
             margin_bottom = 12
         };
-        checkbutton_grid.append (fullscreen_checkbutton);
-        checkbutton_grid.append (maximize_checkbutton);
+        checkbutton_box.append (fullscreen_checkbutton);
+        checkbutton_box.append (maximize_checkbutton);
 
         var animations_label = new Gtk.Label (_("Window animations:")) {
             halign = Gtk.Align.END
@@ -76,16 +75,16 @@ public class PantheonShell.Multitasking : Gtk.Box {
         grid.attach (bottomleft, 0, 3, 2);
         grid.attach (bottomright, 0, 4, 2);
         grid.attach (workspaces_label, 0, 6);
-        grid.attach (checkbutton_grid, 1, 6);
+        grid.attach (checkbutton_box, 1, 6);
         grid.attach (animations_label, 0, 7);
         grid.attach (animations_switch, 1, 7);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
-            hscrollbar_policy = Gtk.PolicyType.NEVER
+        var scrolled = new Gtk.ScrolledWindow () {
+            hscrollbar_policy = Gtk.PolicyType.NEVER,
+            child = grid
         };
-        scrolled.add (grid);
 
-        add (scrolled);
+        append (scrolled);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -146,9 +145,9 @@ public class PantheonShell.Multitasking : Gtk.Box {
 
             var command_revealer = new Gtk.Revealer () {
                 margin_top = 6,
-                transition_type = Gtk.RevealerTransitionType.SLIDE_DOWN
+                transition_type = Gtk.RevealerTransitionType.SLIDE_DOWN,
+                child = command_entry
             };
-            command_revealer.add (command_entry);
 
             margin_bottom = 12;
             column_spacing = 12;
