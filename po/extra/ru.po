@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 18:24+0000\n"
+"POT-Creation-Date: 2022-07-02 19:21+0000\n"
 "PO-Revision-Date: 2021-11-20 11:51+0000\n"
 "Last-Translator: asdffdsdaf <asdffdsdaf@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -30,75 +30,86 @@ msgstr "Настройка дока, активных углов и смена �
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
 msgid "New features:"
 msgstr "Новые возможности:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
-msgid "Move Text settings to their own page"
-msgstr "Настройки текста перемещены в свою собственную вкладку"
+msgid "Set custom Terminal commands for each hotcorner"
+msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
-msgid "More granular settings for text scale"
-msgstr "Настройки размера текста перемещены"
+msgid "Redesigned Appearance and Multitasking views"
+msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
 msgid "Other updates:"
 msgstr "Остальные обновления:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:46
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:51
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:57
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:50
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:59
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:64
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:70
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
+msgid "Move Text settings to their own page"
+msgstr "Настройки текста перемещены в свою собственную вкладку"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
+msgid "More granular settings for text scale"
+msgstr "Настройки размера текста перемещены"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:40
 msgid "Accent color and dark style options"
 msgstr "Настройки цветового акцента и тёмного стиля"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:41
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
 "Настройка удобного для людей с дислексией текста, при использовании "
 "общесистемного шрифта OpenDyslexia"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:29
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:42
 msgid "Maximize and fullscreen workspace management options"
 msgstr ""
 "Настройки управления рабочим пространством в максимизированном и "
 "полноэкранном режимах"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:46
 msgid "Fix a freeze after opening Power settings"
 msgstr "Исправлено зависание после открытия настроек питания"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:34
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:47
 msgid "Improved filter for image file types when importing"
 msgstr "Улучшен фильтр типов файлов изображения при импорте"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:35
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:48
 msgid "Visual updates"
 msgstr "Обновления внешнего вида"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:36
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:49
 msgid "Some options now appear in different tabs"
 msgstr "Некоторые опции теперь отображаются на разных вкладках"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:56
 msgid "Illustrate Dock icon sizes"
 msgstr "Иллюстрированные размеры пиктограмм в доке"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:57
 msgid "Fix system wallpapers being copied"
 msgstr "Исправлено копирование обоев системы"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:45
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:58
 msgid "Update search results"
 msgstr "Обновление результатов поиска"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:56
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:69
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr "Решены проблемы с настройкой обоев на экране входа и блокировки"

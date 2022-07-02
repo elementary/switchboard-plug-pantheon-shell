@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 18:24+0000\n"
+"POT-Creation-Date: 2022-07-02 19:21+0000\n"
 "PO-Revision-Date: 2021-11-19 13:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -29,75 +29,86 @@ msgstr "ドック、ホットコーナーを設定し、壁紙を変更します
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
 msgid "New features:"
 msgstr "新機能:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
-msgid "Move Text settings to their own page"
-msgstr "テキストの設定を独立したページに移動"
+msgid "Set custom Terminal commands for each hotcorner"
+msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
-msgid "More granular settings for text scale"
-msgstr "テキストサイズの設定をより細かく変更できるように修正"
+msgid "Redesigned Appearance and Multitasking views"
+msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
 msgid "Other updates:"
 msgstr "そのほかのアップデート:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:46
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:51
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:57
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:50
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:59
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:64
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:70
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
+msgid "Move Text settings to their own page"
+msgstr "テキストの設定を独立したページに移動"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
+msgid "More granular settings for text scale"
+msgstr "テキストサイズの設定をより細かく変更できるように修正"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:40
 msgid "Accent color and dark style options"
 msgstr "アクセントカラーとダークスタイルのオプションを追加"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:41
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
 "ディスレクシアに配慮した OpenDyslexia フォントをシステム全体に適用できる設定"
 "を追加"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:29
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:42
 msgid "Maximize and fullscreen workspace management options"
 msgstr ""
 "ウィンドウを最大化・全画面表示にした場合のワークスペースの扱いに関するオプ"
 "ションを追加"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:46
 msgid "Fix a freeze after opening Power settings"
 msgstr "電源の設定を開いた後にこのプラグを開くとフリーズする不具合を修正"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:34
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:47
 msgid "Improved filter for image file types when importing"
 msgstr "インポート時の画像ファイルの種類の条件を改善"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:35
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:48
 msgid "Visual updates"
 msgstr "視覚的なアップデート"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:36
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:49
 msgid "Some options now appear in different tabs"
 msgstr "一部のオプションを別のタブに移動"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:56
 msgid "Illustrate Dock icon sizes"
 msgstr "ドックアイコンの大きさを視覚化"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:57
 msgid "Fix system wallpapers being copied"
 msgstr "システムの壁紙がコピーされる不具合を修正"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:45
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:58
 msgid "Update search results"
 msgstr "検索結果を更新"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:56
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:69
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr "ログイン・ロック画面に壁紙を設定できない不具合を修正"
