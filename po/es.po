@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-22 03:54+0000\n"
+"POT-Creation-Date: 2022-07-02 19:21+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -296,61 +296,67 @@ msgstr "Monitor %d"
 msgid "Display %d"
 msgstr "Pantalla %d"
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:28
 msgid "When the cursor enters the corner of the display:"
 msgstr "Cuando el cursor entre a una esquina de la pantalla:"
 
-#: src/Views/Multitasking.vala:81
-msgid "Custom command:"
-msgstr "Orden personalizada:"
+#: src/Views/Multitasking.vala:35
+msgid "Top Left"
+msgstr ""
 
-#: src/Views/Multitasking.vala:96
+#: src/Views/Multitasking.vala:36
+msgid "Top Right"
+msgstr ""
+
+#: src/Views/Multitasking.vala:37
+msgid "Bottom Left"
+msgstr ""
+
+#: src/Views/Multitasking.vala:38
+msgid "Bottom Right"
+msgstr ""
+
+#: src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace:"
 msgstr "Mover ventanas a un área de trabajo nueva:"
 
-#: src/Views/Multitasking.vala:102
+#: src/Views/Multitasking.vala:46
 msgid "When entering fullscreen"
 msgstr "Al activar el modo de pantalla completa"
 
-#: src/Views/Multitasking.vala:103
+#: src/Views/Multitasking.vala:47
 msgid "When maximizing"
 msgstr "Al maximizar"
 
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:57
 msgid "Window animations:"
 msgstr "Animación de ventanas:"
 
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:135
 msgid "Do nothing"
 msgstr "No hacer nada"
 
-#. none
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:136
 msgid "Multitasking View"
 msgstr "Vista multitarea"
 
-#. show-workspace-view
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:137
 msgid "Maximize current window"
 msgstr "Maximizar ventana actual"
 
-#. maximize-current
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:138
 msgid "Show Applications Menu"
 msgstr "Mostrar menú de aplicaciones"
 
-#. open-launcher
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:139
 msgid "Show all windows"
 msgstr "Mostrar todas las ventanas"
 
-#. window-overview-all
-#: src/Views/Multitasking.vala:159
+#: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
 msgstr "Cambiar a un área de trabajo nueva"
 
-#. switch-new-workspace
-#: src/Views/Multitasking.vala:160
+#: src/Views/Multitasking.vala:141
 msgid "Execute custom command"
 msgstr "Ejecutar orden personalizada"
 
@@ -445,6 +451,9 @@ msgstr "Establecer como pase de fondos"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Crear pase de fondos"
+
+#~ msgid "Custom command:"
+#~ msgstr "Orden personalizada:"
 
 #~ msgid "Manual"
 #~ msgstr "Manual"

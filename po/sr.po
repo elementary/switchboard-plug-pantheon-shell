@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-22 03:54+0000\n"
+"POT-Creation-Date: 2022-07-02 19:21+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -295,65 +295,71 @@ msgstr "Монитор бр. %d"
 msgid "Display %d"
 msgstr "Екран бр. %d"
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:28
 msgid "When the cursor enters the corner of the display:"
 msgstr "Када курзор уђе у угао екрана:"
 
-#: src/Views/Multitasking.vala:81
-msgid "Custom command:"
-msgstr "Произвољна наредба:"
+#: src/Views/Multitasking.vala:35
+msgid "Top Left"
+msgstr ""
 
-#: src/Views/Multitasking.vala:96
+#: src/Views/Multitasking.vala:36
+msgid "Top Right"
+msgstr ""
+
+#: src/Views/Multitasking.vala:37
+msgid "Bottom Left"
+msgstr ""
+
+#: src/Views/Multitasking.vala:38
+msgid "Bottom Right"
+msgstr ""
+
+#: src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace:"
 msgstr "Премести прозоре на нови радни простор:"
 
-#: src/Views/Multitasking.vala:102
+#: src/Views/Multitasking.vala:46
 #, fuzzy
 #| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
 msgstr "Приликом преласка на цео екран:"
 
-#: src/Views/Multitasking.vala:103
+#: src/Views/Multitasking.vala:47
 #, fuzzy
 #| msgid "When maximizing:"
 msgid "When maximizing"
 msgstr "Приликом увеличања:"
 
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:57
 msgid "Window animations:"
 msgstr "Анимације прозора:"
 
-#: src/Views/Multitasking.vala:154
+#: src/Views/Multitasking.vala:135
 msgid "Do nothing"
 msgstr "Не ради ништа"
 
-#. none
-#: src/Views/Multitasking.vala:155
+#: src/Views/Multitasking.vala:136
 msgid "Multitasking View"
 msgstr "Преглед са више задатака"
 
-#. show-workspace-view
-#: src/Views/Multitasking.vala:156
+#: src/Views/Multitasking.vala:137
 msgid "Maximize current window"
 msgstr "Увећај текући прозор"
 
-#. maximize-current
-#: src/Views/Multitasking.vala:157
+#: src/Views/Multitasking.vala:138
 msgid "Show Applications Menu"
 msgstr "Прикажи изборник програма"
 
-#. open-launcher
-#: src/Views/Multitasking.vala:158
+#: src/Views/Multitasking.vala:139
 msgid "Show all windows"
 msgstr "Прикажи све прозоре"
 
-#. window-overview-all
-#: src/Views/Multitasking.vala:159
+#: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
 msgstr "Пређи на нови радни простор"
 
-#. switch-new-workspace
-#: src/Views/Multitasking.vala:160
+#: src/Views/Multitasking.vala:141
 msgid "Execute custom command"
 msgstr "Изврши произвољну наредбу"
 
@@ -448,6 +454,9 @@ msgstr "Постави као смењиву позадину радне пов�
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Направи покретни приказ"
+
+#~ msgid "Custom command:"
+#~ msgstr "Произвољна наредба:"
 
 #~ msgid "Manual"
 #~ msgstr "Ручно"
