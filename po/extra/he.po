@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-02 19:21+0000\n"
-"PO-Revision-Date: 2021-11-18 20:03+0000\n"
+"PO-Revision-Date: 2022-07-03 06:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -35,11 +35,11 @@ msgstr "יכולות חדשות:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Set custom Terminal commands for each hotcorner"
-msgstr ""
+msgstr "הגדרת פקודות מסוף משלך לכל פינה חמה"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Redesigned Appearance and Multitasking views"
-msgstr ""
+msgstr "תצוגות הגדרות המראה וריבוי המשימות עוצבו מחדש"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
