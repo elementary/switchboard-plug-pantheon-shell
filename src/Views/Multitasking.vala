@@ -37,10 +37,8 @@ public class PantheonShell.Multitasking : Gtk.Box {
         var bottomleft = new HotcornerControl (_("Bottom Left"), "bottomleft");
         var bottomright = new HotcornerControl (_("Bottom Right"), "bottomright");
 
-        var workspaces_label = new Gtk.Label (_("Move windows to a new workspace:")) {
-            halign = Gtk.Align.END,
-            margin_top = 12,
-            margin_bottom = 12
+        var workspaces_label = new Granite.HeaderLabel (_("Move windows to a new workspace")) {
+            margin_top = 12
         };
 
         var fullscreen_checkbutton = new Gtk.CheckButton.with_label (_("When entering fullscreen"));
@@ -48,7 +46,6 @@ public class PantheonShell.Multitasking : Gtk.Box {
 
         var checkbutton_grid = new Gtk.Grid () {
             column_spacing = 12,
-            margin_top = 12,
             margin_bottom = 12
         };
         checkbutton_grid.add (fullscreen_checkbutton);
@@ -59,13 +56,13 @@ public class PantheonShell.Multitasking : Gtk.Box {
         };
 
         var animations_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
+            halign = Gtk.Align.START,
+            hexpand = true
         };
 
         var grid = new Gtk.Grid () {
             column_spacing = 12,
             row_spacing = 6,
-            halign = Gtk.Align.CENTER,
             margin_start = 12,
             margin_end = 12,
             margin_bottom = 12
@@ -75,15 +72,18 @@ public class PantheonShell.Multitasking : Gtk.Box {
         grid.attach (topright, 0, 2, 2);
         grid.attach (bottomleft, 0, 3, 2);
         grid.attach (bottomright, 0, 4, 2);
-        grid.attach (workspaces_label, 0, 6);
-        grid.attach (checkbutton_grid, 1, 6);
-        grid.attach (animations_label, 0, 7);
-        grid.attach (animations_switch, 1, 7);
+        grid.attach (workspaces_label, 0, 6, 2);
+        grid.attach (checkbutton_grid, 0, 7, 2);
+        grid.attach (animations_label, 0, 8);
+        grid.attach (animations_switch, 1, 8);
+
+        var clamp = new Hdy.Clamp ();
+        clamp.add (grid);
 
         var scrolled = new Gtk.ScrolledWindow (null, null) {
             hscrollbar_policy = Gtk.PolicyType.NEVER
         };
-        scrolled.add (grid);
+        scrolled.add (clamp);
 
         add (scrolled);
 

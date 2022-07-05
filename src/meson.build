@@ -39,6 +39,7 @@ shared_module(
         gobject_dep,
         granite_dep,
         gtk_dep,
+        hdy_dep,
         dependency('gexiv2'),
         dependency('gnome-desktop-3.0'),
         plank_dep,
