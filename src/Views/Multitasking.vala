@@ -25,7 +25,7 @@ public class PantheonShell.Multitasking : Gtk.Box {
     private const string ANIMATIONS_KEY = "enable-animations";
 
     construct {
-        var hotcorner_title = new Gtk.Label (_("When the cursor enters the corner of the display:")) {
+        var hotcorner_title = new Gtk.Label (_("When the pointer enters a display corner")) {
             halign = Gtk.Align.START,
             margin_bottom = 6,
             margin_top = 6
