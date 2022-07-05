@@ -187,8 +187,8 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
 
         var grid = new Gtk.Grid () {
-             column_spacing = 7, // Off by one with Gtk.RadioButton
-             row_spacing = 6,
+            column_spacing = 7, // Off by one with Gtk.RadioButton
+            row_spacing = 6,
             margin_start = 12,
             margin_end = 12,
             margin_bottom = 24
