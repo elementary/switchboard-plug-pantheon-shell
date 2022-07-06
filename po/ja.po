@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-02 19:21+0000\n"
+"POT-Creation-Date: 2022-07-06 07:27+0000\n"
 "PO-Revision-Date: 2022-07-02 03:19+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -85,7 +85,7 @@ msgstr "ディスレクシア対応"
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:133 src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace"
 msgstr "以下の場合にウィンドウを新しいワークスペースに移動"
 
@@ -119,19 +119,19 @@ msgstr "デスクトップの背景として設定(_D)"
 msgid "Set selected image to be the new desktop background"
 msgstr "選択された画像を新しいデスクトップの背景として設定します"
 
-#: src/Views/Appearance.vala:74
+#: src/Views/Appearance.vala:68
 msgid "Style"
 msgstr "スタイル"
 
-#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:110
 msgid "Dark"
 msgstr "ダーク"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -139,75 +139,75 @@ msgstr ""
 "システムコンポーネントで使用される視覚スタイルを選択します。一部のアプリもこ"
 "の設定に従うことがあります。"
 
-#: src/Views/Appearance.vala:136
+#: src/Views/Appearance.vala:129
 msgid "Schedule"
 msgstr "スケジュール"
 
-#: src/Views/Appearance.vala:138
+#: src/Views/Appearance.vala:131
 msgid "Disabled"
 msgstr "無効"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
 msgstr "日没から日の出まで"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:140
 msgid "From:"
 msgstr "開始:"
 
-#: src/Views/Appearance.vala:154
+#: src/Views/Appearance.vala:147
 msgid "To:"
 msgstr "終了:"
 
-#: src/Views/Appearance.vala:291
+#: src/Views/Appearance.vala:292
 msgid "Accent Color"
 msgstr "アクセントカラー"
 
-#: src/Views/Appearance.vala:296
+#: src/Views/Appearance.vala:297
 msgid "Blueberry"
 msgstr "ブルーベリー"
 
-#: src/Views/Appearance.vala:299
+#: src/Views/Appearance.vala:300
 msgid "Mint"
 msgstr "ミント"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:303
 msgid "Lime"
 msgstr "ライム"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:306
 msgid "Banana"
 msgstr "バナナ"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:309
 msgid "Orange"
 msgstr "オレンジ"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:312
 msgid "Strawberry"
 msgstr "ストロベリー"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:315
 msgid "Bubblegum"
 msgstr "ピンク"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:318
 msgid "Grape"
 msgstr "グレープ"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:321
 msgid "Cocoa"
 msgstr "ココア"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:324
 msgid "Slate"
 msgstr "スレート"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:327
 msgid "Automatic based on wallpaper"
 msgstr "壁紙に基づいて自動的に設定"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:343
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -227,62 +227,64 @@ msgstr "小"
 msgid "Large"
 msgstr "大"
 
-#: src/Views/Dock.vala:70
+#: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
 msgstr "フォーカスされたウィンドウが最大化されたとき"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
 msgstr "フォーカスされたウィンドウが重なったとき"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
 msgstr "いずれかのウィンドウが重なったとき"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Not being used"
 msgstr "使われていないとき"
 
-#: src/Views/Dock.vala:109
+#: src/Views/Dock.vala:110
 msgid "Primary display:"
 msgstr "プライマリーディスプレイ:"
 
-#: src/Views/Dock.vala:113
+#: src/Views/Dock.vala:114
 msgid "Display:"
 msgstr "ディスプレイ:"
 
-#: src/Views/Dock.vala:144
+#: src/Views/Dock.vala:145
 msgid "Icon size:"
 msgstr "アイコンサイズ:"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:147
 msgid "Hide when:"
 msgstr "隠す場合:"
 
-#: src/Views/Dock.vala:150
+#: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
 msgstr "押し込んで表示:"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:154
 msgid "Panel"
 msgstr "パネル"
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:158
 msgid "Panel translucency:"
 msgstr "パネルを透過:"
 
-#: src/Views/Dock.vala:241
+#: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
 msgstr "モニター %d"
 
-#: src/Views/Dock.vala:246
+#: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
 msgstr "ディスプレイ %d"
 
 #: src/Views/Multitasking.vala:28
-msgid "When the cursor enters the corner of the display:"
+#, fuzzy
+#| msgid "When the cursor enters the corner of the display:"
+msgid "When the pointer enters a display corner"
 msgstr "カーソルがディスプレイの隅に入ったときの動作:"
 
 #: src/Views/Multitasking.vala:35
@@ -301,19 +303,15 @@ msgstr "左下"
 msgid "Bottom Right"
 msgstr "右下"
 
-#: src/Views/Multitasking.vala:40
-msgid "Move windows to a new workspace:"
-msgstr "以下の場合にウィンドウを新しいワークスペースに移動:"
-
-#: src/Views/Multitasking.vala:46
+#: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
 msgstr "全画面表示にした場合"
 
-#: src/Views/Multitasking.vala:47
+#: src/Views/Multitasking.vala:45
 msgid "When maximizing"
 msgstr "最大化した場合"
 
-#: src/Views/Multitasking.vala:57
+#: src/Views/Multitasking.vala:54
 msgid "Window animations:"
 msgstr "ウィンドウアニメーション:"
 
@@ -431,6 +429,9 @@ msgstr "デスクトップスライドショーとして設定"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
+
+#~ msgid "Move windows to a new workspace:"
+#~ msgstr "以下の場合にウィンドウを新しいワークスペースに移動:"
 
 #~ msgid "Custom command:"
 #~ msgstr "カスタムコマンド:"
