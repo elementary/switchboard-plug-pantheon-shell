@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-07-02 19:21+0000\n"
+"PO-Revision-Date: 2022-07-07 15:49+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -287,10 +287,8 @@ msgid "Display %d"
 msgstr "Bildschirm %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "Beim Berühren der Bildschirmecken mit dem Zeiger:"
+msgstr "Beim Berühren einer Bildschirmecke mit dem Zeiger"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
