@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2021-11-19 13:40+0000\n"
+"PO-Revision-Date: 2022-07-08 16:31+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -35,11 +35,11 @@ msgstr "新機能:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "Set custom Terminal commands for each hotcorner"
-msgstr ""
+msgstr "各ホットコーナーに別々のカスタムコマンドを設定できる機能を追加"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Redesigned Appearance and Multitasking views"
-msgstr ""
+msgstr "“外観”と“マルチタスク”ビューのデザインを変更"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
