@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-07-02 03:19+0000\n"
+"PO-Revision-Date: 2022-07-08 16:31+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -282,10 +282,8 @@ msgid "Display %d"
 msgstr "ディスプレイ %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "カーソルがディスプレイの隅に入ったときの動作:"
+msgstr "ポインターがディスプレイの隅に入ったときの動作"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
