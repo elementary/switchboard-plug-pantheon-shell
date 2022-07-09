@@ -37,7 +37,7 @@ shared_module(
         gobject_dep,
         granite_dep,
         gtk_dep,
-        hdy_dep,
+        adw_dep,
         dependency('gexiv2'),
         posix_dep,
         switchboard_dep

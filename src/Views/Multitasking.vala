@@ -19,10 +19,14 @@
 * Authored by: Tom Beckmann
 */
 
-public class PantheonShell.Multitasking : Gtk.Box {
+public class PantheonShell.Multitasking : Gtk.Widget {
     private GLib.Settings behavior_settings;
     private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
     private const string ANIMATIONS_KEY = "enable-animations";
+
+    static construct {
+        set_layout_manager_type (typeof (Gtk.BinLayout));
+    }
 
     construct {
         var hotcorner_title = new Gtk.Label (_("When the pointer enters a display corner")) {
@@ -73,21 +77,20 @@ public class PantheonShell.Multitasking : Gtk.Box {
         grid.attach (bottomleft, 0, 3, 2);
         grid.attach (bottomright, 0, 4, 2);
         grid.attach (workspaces_label, 0, 6, 2);
-        grid.attach (checkbutton_grid, 0, 7, 2);
+        grid.attach (checkbutton_box, 0, 7, 2);
         grid.attach (animations_label, 0, 8);
         grid.attach (animations_switch, 1, 8);
 
-        var clamp = new Hdy.Clamp ();
-        clamp.add (grid);
-
-        var scrolled = new Gtk.ScrolledWindow () {
-            hscrollbar_policy = Gtk.PolicyType.NEVER,
+        var clamp = new Adw.Clamp () {
             child = grid
         };
 
-        scrolled.add (clamp);
+        var scrolled = new Gtk.ScrolledWindow () {
+            hscrollbar_policy = Gtk.PolicyType.NEVER,
+            child = clamp
+        };
 
-        append (scrolled);
+        scrolled.set_parent (this);
 
         var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
         animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
@@ -95,6 +98,10 @@ public class PantheonShell.Multitasking : Gtk.Box {
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
         behavior_settings.bind ("move-maximized-workspace", maximize_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
+    }
+
+    ~Multitasking () {
+        this.get_last_child ().unparent ();
     }
 
     private class HotcornerControl : Gtk.Grid {

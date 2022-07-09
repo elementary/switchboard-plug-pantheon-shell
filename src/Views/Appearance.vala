@@ -18,7 +18,7 @@
 *
 */
 
-public class PantheonShell.Appearance : Gtk.Box {
+public class PantheonShell.Appearance : Gtk.Widget {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
@@ -64,6 +64,10 @@ public class PantheonShell.Appearance : Gtk.Box {
 
             return "auto";
         }
+    }
+
+    static construct {
+        set_layout_manager_type (typeof (Gtk.BinLayout));
     }
 
     construct {
@@ -355,10 +359,15 @@ public class PantheonShell.Appearance : Gtk.Box {
             grid.attach (accent_grid, 0, 9, 2);
         }
 
-        var clamp = new Hdy.Clamp ();
-        clamp.add (grid);
+        var clamp = new Adw.Clamp () {
+            child = grid
+        };
 
-        add (clamp);
+        clamp.set_parent (this);
+    }
+
+    ~Appearance () {
+        this.get_last_child ().unparent ();
     }
 
     private class PrefersAccentColorButton : Gtk.CheckButton {

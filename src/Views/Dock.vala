@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class PantheonShell.Dock : Gtk.Box {
+public class PantheonShell.Dock : Gtk.Widget {
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
 
@@ -35,6 +35,10 @@ public class PantheonShell.Dock : Gtk.Box {
         DODGE_MAXIMIZED,
         WINDOW_DODGE,
         DODGE_ACTIVE
+    }
+
+    static construct {
+        set_layout_manager_type (typeof (Gtk.BinLayout));
     }
 
     construct {
@@ -212,7 +216,7 @@ public class PantheonShell.Dock : Gtk.Box {
         };
         grid.attach (dock_header, 0, 0, 3);
         grid.attach (icon_label, 0, 1);
-        grid.attach (icon_size_box, 1, 1, 2);
+        grid.attach (icon_size_grid, 1, 1, 2);
         grid.attach (hide_label, 0, 2);
         grid.attach (hide_mode, 1, 2);
         grid.attach (hide_switch, 2, 2);
@@ -226,10 +230,11 @@ public class PantheonShell.Dock : Gtk.Box {
         grid.attach (translucency_label, 0, 7);
         grid.attach (translucency_switch, 1, 7);
 
-        var clamp = new Hdy.Clamp ();
-        clamp.add (grid);
+        var clamp = new Adw.Clamp () {
+            child = grid
+        };
 
-        add (clamp);
+        clamp.set_parent (this);
 
         check_for_screens ();
 
@@ -371,4 +376,7 @@ public class PantheonShell.Dock : Gtk.Box {
         return (int) monitors.get_n_items ();
     }
 
+    ~Dock () {
+        this.get_last_child ().unparent ();
+    }
 }
