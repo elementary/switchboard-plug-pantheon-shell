@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 18:24+0000\n"
+"POT-Creation-Date: 2022-07-06 07:27+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -98,7 +98,7 @@ msgstr ""
 msgid "Hot Corners"
 msgstr "핫 코너"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:133 src/Views/Multitasking.vala:40
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
@@ -136,93 +136,93 @@ msgstr "바탕 화면 배경으로 설정(_D)"
 msgid "Set selected image to be the new desktop background"
 msgstr "선택한 이미지를 새 바탕화면 배경으로 설정합니다"
 
-#: src/Views/Appearance.vala:74
+#: src/Views/Appearance.vala:68
 msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "기본"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:110
 msgid "Dark"
 msgstr ""
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
 
-#: src/Views/Appearance.vala:136
+#: src/Views/Appearance.vala:129
 msgid "Schedule"
 msgstr "설정"
 
-#: src/Views/Appearance.vala:138
+#: src/Views/Appearance.vala:131
 msgid "Disabled"
 msgstr "사용 안 함"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
 msgstr "해 뜰 때부터 해 질 때까지"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:140
 msgid "From:"
 msgstr "시작:"
 
-#: src/Views/Appearance.vala:154
+#: src/Views/Appearance.vala:147
 msgid "To:"
 msgstr "끝:"
 
-#: src/Views/Appearance.vala:291
+#: src/Views/Appearance.vala:292
 msgid "Accent Color"
 msgstr ""
 
-#: src/Views/Appearance.vala:296
+#: src/Views/Appearance.vala:297
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:299
+#: src/Views/Appearance.vala:300
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:303
 msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:306
 msgid "Banana"
 msgstr ""
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:309
 msgid "Orange"
 msgstr ""
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:312
 msgid "Strawberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:315
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:318
 msgid "Grape"
 msgstr ""
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:321
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:324
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:327
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:343
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -240,62 +240,64 @@ msgstr "작게"
 msgid "Large"
 msgstr "크게"
 
-#: src/Views/Dock.vala:70
+#: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
 msgstr "포커스 된 창이 최대화될 때"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
 msgstr "포커스 된 창이 플랭크와 겹칠 때"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
 msgstr "플랭크와 겹치는 창이 있을 때"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Not being used"
 msgstr "항상 숨김"
 
-#: src/Views/Dock.vala:109
+#: src/Views/Dock.vala:110
 msgid "Primary display:"
 msgstr "주 모니터:"
 
-#: src/Views/Dock.vala:113
+#: src/Views/Dock.vala:114
 msgid "Display:"
 msgstr "디스플레이:"
 
-#: src/Views/Dock.vala:144
+#: src/Views/Dock.vala:145
 msgid "Icon size:"
 msgstr "아이콘 크기:"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:147
 msgid "Hide when:"
 msgstr "다음 경우에 숨김:"
 
-#: src/Views/Dock.vala:150
+#: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
 msgstr "압력 표시:"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:154
 msgid "Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:158
 msgid "Panel translucency:"
 msgstr "패널 투명도:"
 
-#: src/Views/Dock.vala:241
+#: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
 msgstr "모니터 %d"
 
-#: src/Views/Dock.vala:246
+#: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
 msgstr "디스플레이 %d"
 
 #: src/Views/Multitasking.vala:28
-msgid "When the cursor enters the corner of the display:"
+#, fuzzy
+#| msgid "When the cursor enters the corner of the display:"
+msgid "When the pointer enters a display corner"
 msgstr "커서를 화면의 모서리로 움직였을 때 동작:"
 
 #: src/Views/Multitasking.vala:35
@@ -314,21 +316,15 @@ msgstr ""
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:40
-#, fuzzy
-#| msgid "Switch to new workspace"
-msgid "Move windows to a new workspace:"
-msgstr "새 작업공간으로 전환"
-
-#: src/Views/Multitasking.vala:46
+#: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:47
+#: src/Views/Multitasking.vala:45
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:57
+#: src/Views/Multitasking.vala:54
 msgid "Window animations:"
 msgstr "창 애니메이션:"
 
@@ -446,6 +442,11 @@ msgstr "배경화면 슬라이드쇼로 설정"
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "슬라이드쇼 만들기"
+
+#, fuzzy
+#~| msgid "Switch to new workspace"
+#~ msgid "Move windows to a new workspace:"
+#~ msgstr "새 작업공간으로 전환"
 
 #~ msgid "Custom command:"
 #~ msgstr "사용자 지정 명령어:"

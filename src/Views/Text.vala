@@ -18,7 +18,7 @@
 *
 */
 
-public class PantheonShell.Text : Gtk.Grid {
+public class PantheonShell.Text : Gtk.Box {
     private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
     private const string FONT_KEY = "font-name";
     private const string DOCUMENT_FONT_KEY = "document-font-name";
@@ -59,23 +59,29 @@ public class PantheonShell.Text : Gtk.Grid {
         var dyslexia_font_description_label = new Gtk.Label (
             _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
         ) {
-            max_width_chars = 60,
             wrap = true,
             xalign = 0
         };
         dyslexia_font_description_label.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
-        column_spacing = 12;
-        halign = Gtk.Align.CENTER;
-        row_spacing = 6;
-        margin_start = margin_end = 12;
-        margin_bottom = 24;
-        attach (size_label, 0, 0);
-        attach (size_scale, 1, 0);
-        attach (size_spinbutton, 2, 0);
-        attach (dyslexia_font_label, 0, 1);
-        attach (dyslexia_font_switch, 1, 1);
-        attach (dyslexia_font_description_label, 1, 2, 2);
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 6,
+            margin_start = 12,
+            margin_end = 12,
+            margin_bottom = 24
+        };
+        grid.attach (size_label, 0, 0);
+        grid.attach (size_scale, 1, 0);
+        grid.attach (size_spinbutton, 2, 0);
+        grid.attach (dyslexia_font_label, 0, 1);
+        grid.attach (dyslexia_font_switch, 1, 1);
+        grid.attach (dyslexia_font_description_label, 1, 2, 2);
+
+        var clamp = new Hdy.Clamp ();
+        clamp.add (grid);
+
+        add (clamp);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
         interface_settings.bind ("text-scaling-factor", size_adjustment, "value", SettingsBindFlags.GET);

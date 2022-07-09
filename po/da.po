@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 18:24+0000\n"
+"POT-Creation-Date: 2022-07-06 07:27+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -98,7 +98,7 @@ msgstr ""
 msgid "Hot Corners"
 msgstr "Skærmhjørner"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:133 src/Views/Multitasking.vala:40
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
@@ -134,97 +134,97 @@ msgstr "Brug som _Skrivebordsbaggrund"
 msgid "Set selected image to be the new desktop background"
 msgstr "Brug det valgte billede som ny skrivebordsbaggrund"
 
-#: src/Views/Appearance.vala:74
+#: src/Views/Appearance.vala:68
 #, fuzzy
 #| msgid "Style:"
 msgid "Style"
 msgstr "Stil:"
 
-#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Standard"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:110
 msgid "Dark"
 msgstr "Mørk"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
 
-#: src/Views/Appearance.vala:136
+#: src/Views/Appearance.vala:129
 msgid "Schedule"
 msgstr "Tidsplan"
 
-#: src/Views/Appearance.vala:138
+#: src/Views/Appearance.vala:131
 msgid "Disabled"
 msgstr "Deaktiveret"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
 msgstr "Solnedgang til Solopgang"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:140
 msgid "From:"
 msgstr "Fra:"
 
-#: src/Views/Appearance.vala:154
+#: src/Views/Appearance.vala:147
 msgid "To:"
 msgstr "Til:"
 
-#: src/Views/Appearance.vala:291
+#: src/Views/Appearance.vala:292
 #, fuzzy
 #| msgid "Accent:"
 msgid "Accent Color"
 msgstr "Accent:"
 
-#: src/Views/Appearance.vala:296
+#: src/Views/Appearance.vala:297
 msgid "Blueberry"
 msgstr "Blåbær"
 
-#: src/Views/Appearance.vala:299
+#: src/Views/Appearance.vala:300
 msgid "Mint"
 msgstr "Mint"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:303
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:306
 msgid "Banana"
 msgstr "Banan"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:309
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:312
 msgid "Strawberry"
 msgstr "Jordbær"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:315
 msgid "Bubblegum"
 msgstr "Tyggegummi"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:318
 msgid "Grape"
 msgstr "Grape"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:321
 msgid "Cocoa"
 msgstr "Kakao"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:324
 msgid "Slate"
 msgstr "Skifergrå"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:327
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:343
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -244,62 +244,64 @@ msgstr "Lille"
 msgid "Large"
 msgstr "Stor"
 
-#: src/Views/Dock.vala:70
+#: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
 msgstr "Det aktive vindue er maksimeret"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
 msgstr "Det aktive vindue overlapper dokken"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
 msgstr "Et hvilket som helst vindue overlapper dokken"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Not being used"
 msgstr "Anvendes ikke"
 
-#: src/Views/Dock.vala:109
+#: src/Views/Dock.vala:110
 msgid "Primary display:"
 msgstr "Primær skærm:"
 
-#: src/Views/Dock.vala:113
+#: src/Views/Dock.vala:114
 msgid "Display:"
 msgstr "Skærm:"
 
-#: src/Views/Dock.vala:144
+#: src/Views/Dock.vala:145
 msgid "Icon size:"
 msgstr "Ikon størrelse:"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:147
 msgid "Hide when:"
 msgstr "Skjul når:"
 
-#: src/Views/Dock.vala:150
+#: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
 msgstr "Tryk afslører:"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:154
 msgid "Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:158
 msgid "Panel translucency:"
 msgstr "Panel gennemsigtighed:"
 
-#: src/Views/Dock.vala:241
+#: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:246
+#: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
 msgstr "Skærm %d"
 
 #: src/Views/Multitasking.vala:28
-msgid "When the cursor enters the corner of the display:"
+#, fuzzy
+#| msgid "When the cursor enters the corner of the display:"
+msgid "When the pointer enters a display corner"
 msgstr "Når markøren flyttes til et hjørne af skærmen:"
 
 #: src/Views/Multitasking.vala:35
@@ -318,21 +320,15 @@ msgstr ""
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:40
-#, fuzzy
-#| msgid "Switch to new workspace"
-msgid "Move windows to a new workspace:"
-msgstr "Skift til nyt arbejdsområde"
-
-#: src/Views/Multitasking.vala:46
+#: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:47
+#: src/Views/Multitasking.vala:45
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:57
+#: src/Views/Multitasking.vala:54
 msgid "Window animations:"
 msgstr "Vindue animationer:"
 
@@ -453,6 +449,11 @@ msgstr "Indstil Som Desktop Diasshow"
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Lav Diasshow"
+
+#, fuzzy
+#~| msgid "Switch to new workspace"
+#~ msgid "Move windows to a new workspace:"
+#~ msgstr "Skift til nyt arbejdsområde"
 
 #~ msgid "Custom command:"
 #~ msgstr "Brugerdefineret kommando:"

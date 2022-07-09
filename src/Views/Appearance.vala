@@ -18,7 +18,7 @@
 *
 */
 
-public class PantheonShell.Appearance : Gtk.Grid {
+public class PantheonShell.Appearance : Gtk.Box {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
@@ -67,12 +67,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
     }
 
     construct {
-        column_spacing = 7; // Off by one with Gtk.CheckButton
-        halign = Gtk.Align.CENTER;
-        row_spacing = 6;
-        margin_start = margin_end = 12;
-        margin_bottom = 24;
-
         var dark_label = new Granite.HeaderLabel (_("Style"));
 
         var css_provider = new Gtk.CssProvider ();
@@ -131,7 +125,6 @@ public class PantheonShell.Appearance : Gtk.Grid {
         prefer_style_box.append (prefer_dark_radio);
 
         var dark_info = new Gtk.Label (_("Preferred visual style for system components. Apps may also choose to follow this preference.")) {
-            max_width_chars = 60,
             wrap = true,
             xalign = 0
         };
@@ -198,15 +191,23 @@ public class PantheonShell.Appearance : Gtk.Grid {
             }
         }
 
+        var grid = new Gtk.Grid () {
+            column_spacing = 7, // Off by one with Gtk.RadioButton
+            row_spacing = 6,
+            margin_start = 12,
+            margin_end = 12,
+            margin_bottom = 24
+        };
+
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
-            attach (dark_label, 0, 0, 2);
-            attach (dark_info, 0, 1, 2);
-            attach (prefer_style_box, 0, 2, 2);
-            attach (schedule_label, 0, 3, 2);
-            attach (schedule_disabled_radio, 0, 4, 2);
-            attach (schedule_sunset_radio, 0, 5, 2);
-            attach (schedule_manual_radio, 0, 6);
-            attach (schedule_manual_box, 1, 6);
+            grid.attach (dark_label, 0, 0, 2);
+            grid.attach (dark_info, 0, 1, 2);
+            grid.attach (prefer_style_box, 0, 2, 2);
+            grid.attach (schedule_label, 0, 3, 2);
+            grid.attach (schedule_disabled_radio, 0, 4, 2);
+            grid.attach (schedule_sunset_radio, 0, 5, 2);
+            grid.attach (schedule_manual_radio, 0, 6);
+            grid.attach (schedule_manual_box, 1, 6);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -349,10 +350,15 @@ public class PantheonShell.Appearance : Gtk.Grid {
             };
             accent_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
-            attach (accent_label, 0, 7, 2);
-            attach (accent_info, 0, 8, 2);
-            attach (accent_grid, 0, 9, 2);
+            grid.attach (accent_label, 0, 7, 2);
+            grid.attach (accent_info, 0, 8, 2);
+            grid.attach (accent_grid, 0, 9, 2);
         }
+
+        var clamp = new Hdy.Clamp ();
+        clamp.add (grid);
+
+        add (clamp);
     }
 
     private class PrefersAccentColorButton : Gtk.CheckButton {

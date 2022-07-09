@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 18:24+0000\n"
+"POT-Creation-Date: 2022-07-06 07:27+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -90,7 +90,7 @@ msgstr "Pro dyslektiky"
 msgid "Hot Corners"
 msgstr "Aktivní rohy"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:133 src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace"
 msgstr "Přesunout okna na novou pracovní plochu"
 
@@ -124,21 +124,21 @@ msgstr "Nastavit jako _pozadí plochy"
 msgid "Set selected image to be the new desktop background"
 msgstr "Nastavit vybraný obrázek jako nové pozadí plochy"
 
-#: src/Views/Appearance.vala:74
+#: src/Views/Appearance.vala:68
 #, fuzzy
 #| msgid "Style:"
 msgid "Style"
 msgstr "Styl:"
 
-#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Výchozí"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:110
 msgid "Dark"
 msgstr "Tmavý"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -146,77 +146,77 @@ msgstr ""
 "Upřednostňovaný vzhled součástí systému. Aplikace mohou i tak mít své "
 "vlastní předvolby."
 
-#: src/Views/Appearance.vala:136
+#: src/Views/Appearance.vala:129
 msgid "Schedule"
 msgstr "Rozvrh"
 
-#: src/Views/Appearance.vala:138
+#: src/Views/Appearance.vala:131
 msgid "Disabled"
 msgstr "Vypnuto"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
 msgstr "Od západu slunce po východ"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:140
 msgid "From:"
 msgstr "Od:"
 
-#: src/Views/Appearance.vala:154
+#: src/Views/Appearance.vala:147
 msgid "To:"
 msgstr "Do:"
 
-#: src/Views/Appearance.vala:291
+#: src/Views/Appearance.vala:292
 #, fuzzy
 #| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Barva zvýraznění"
 
-#: src/Views/Appearance.vala:296
+#: src/Views/Appearance.vala:297
 msgid "Blueberry"
 msgstr "Borůvka"
 
-#: src/Views/Appearance.vala:299
+#: src/Views/Appearance.vala:300
 msgid "Mint"
 msgstr "Máta"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:303
 msgid "Lime"
 msgstr "Citron"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:306
 msgid "Banana"
 msgstr "Banán"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:309
 msgid "Orange"
 msgstr "Pomeranč"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:312
 msgid "Strawberry"
 msgstr "Ostružina"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:315
 msgid "Bubblegum"
 msgstr "Žvýkačka"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:318
 msgid "Grape"
 msgstr "Hroznové"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:321
 msgid "Cocoa"
 msgstr "Kakao"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:324
 msgid "Slate"
 msgstr "Břidlice"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:327
 msgid "Automatic based on wallpaper"
 msgstr "Automaticky podle pozadí plochy"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:343
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -236,62 +236,64 @@ msgstr "Malé"
 msgid "Large"
 msgstr "Velké"
 
-#: src/Views/Dock.vala:70
+#: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
 msgstr "Aktivní okno je maximalizováno"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
 msgstr "Aktivní okno překrývá dok"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
 msgstr "Jakékoliv okno překrývá dok"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Not being used"
 msgstr "Se nepoužívá"
 
-#: src/Views/Dock.vala:109
+#: src/Views/Dock.vala:110
 msgid "Primary display:"
 msgstr "Hlavní displej:"
 
-#: src/Views/Dock.vala:113
+#: src/Views/Dock.vala:114
 msgid "Display:"
 msgstr "Displej:"
 
-#: src/Views/Dock.vala:144
+#: src/Views/Dock.vala:145
 msgid "Icon size:"
 msgstr "Velikost ikon:"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:147
 msgid "Hide when:"
 msgstr "Skrýt když:"
 
-#: src/Views/Dock.vala:150
+#: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
 msgstr "Vysunutí tlakem:"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:154
 msgid "Panel"
 msgstr "Panel"
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:158
 msgid "Panel translucency:"
 msgstr "Průsvitnost panelu:"
 
-#: src/Views/Dock.vala:241
+#: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:246
+#: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
 msgstr "Displej %d"
 
 #: src/Views/Multitasking.vala:28
-msgid "When the cursor enters the corner of the display:"
+#, fuzzy
+#| msgid "When the cursor enters the corner of the display:"
+msgid "When the pointer enters a display corner"
 msgstr "Když se kurzor dotkne rohu obrazovky:"
 
 #: src/Views/Multitasking.vala:35
@@ -310,19 +312,15 @@ msgstr ""
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:40
-msgid "Move windows to a new workspace:"
-msgstr "Přesunout okna na novou plochu:"
-
-#: src/Views/Multitasking.vala:46
+#: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
 msgstr "Při přechodu do celoobrazovkového režimu"
 
-#: src/Views/Multitasking.vala:47
+#: src/Views/Multitasking.vala:45
 msgid "When maximizing"
 msgstr "Při maximalizaci"
 
-#: src/Views/Multitasking.vala:57
+#: src/Views/Multitasking.vala:54
 msgid "Window animations:"
 msgstr "Animace oken:"
 
@@ -446,6 +444,9 @@ msgstr "Nastavit jako posloupnost pozadí plochy"
 #: set-wallpaper-contract/set-wallpaper.vala:233
 msgid "Create Slideshow"
 msgstr "Vytvořit posloupnost pozadí"
+
+#~ msgid "Move windows to a new workspace:"
+#~ msgstr "Přesunout okna na novou plochu:"
 
 #~ msgid "Custom command:"
 #~ msgstr "Uživatelsky určený příkaz:"
