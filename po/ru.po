@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
 "PO-Revision-Date: 2022-07-12 19:46+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -121,10 +121,8 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Назначить выбранное изображение новым фоном рабочего стола"
 
 #: src/Views/Appearance.vala:68
-#, fuzzy
-#| msgid "Style:"
 msgid "Style"
-msgstr "Стиль:"
+msgstr "Стиль"
 
 #: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
@@ -163,8 +161,6 @@ msgid "To:"
 msgstr "До:"
 
 #: src/Views/Appearance.vala:292
-#, fuzzy
-#| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Цветовой акцент"
 
@@ -292,19 +288,19 @@ msgstr "При наведении курсора в угол экрана"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "Слева сверху"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "Справа сверху"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "Слева снизу"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "Справа снизу"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
