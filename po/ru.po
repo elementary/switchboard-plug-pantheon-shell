@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
 "PO-Revision-Date: 2022-07-24 13:45+0000\n"
-"Last-Translator: Stas <SedovSG@yandex.ru>\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -26,7 +26,7 @@ msgstr "Настройка дока, активных углов и смена �
 
 #: src/Plug.vala:62 src/Plug.vala:118
 msgid "Wallpaper"
-msgstr "Фон рабочего стола"
+msgstr "Обои"
 
 #: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
 msgid "Appearance"
