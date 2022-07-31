@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-07-04 15:04+0000\n"
+"PO-Revision-Date: 2022-07-12 14:26+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/hu/>\n"
@@ -287,10 +287,8 @@ msgid "Display %d"
 msgstr "%d. kijelző"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "Ha a kurzor eléri a képernyő sarkát:"
+msgstr "Ha a mutató elér egy képernyősarkat"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"

@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-07-24 13:45+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -26,11 +26,11 @@ msgstr "Настройка дока, активных углов и смена �
 
 #: src/Plug.vala:62 src/Plug.vala:118
 msgid "Wallpaper"
-msgstr "Фон рабочего стола"
+msgstr "Обои"
 
 #: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
 msgid "Appearance"
-msgstr "Вид"
+msgstr "Внешний вид"
 
 #: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
 msgid "Text"
@@ -121,10 +121,8 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Назначить выбранное изображение новым фоном рабочего стола"
 
 #: src/Views/Appearance.vala:68
-#, fuzzy
-#| msgid "Style:"
 msgid "Style"
-msgstr "Стиль:"
+msgstr "Стиль"
 
 #: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
@@ -163,8 +161,6 @@ msgid "To:"
 msgstr "До:"
 
 #: src/Views/Appearance.vala:292
-#, fuzzy
-#| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Цветовой акцент"
 
@@ -287,26 +283,24 @@ msgid "Display %d"
 msgstr "Экран %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "При наведении курсора в угол экрана:"
+msgstr "При наведении курсора в угол экрана"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "Слева сверху"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "Справа сверху"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "Слева снизу"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "Справа снизу"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"

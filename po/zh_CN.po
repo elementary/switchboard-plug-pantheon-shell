@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-06-13 08:01+0000\n"
+"PO-Revision-Date: 2022-07-20 09:38+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hans/>\n"
@@ -284,26 +284,24 @@ msgid "Display %d"
 msgstr "显示器 %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "指针触碰角落时："
+msgstr "指针触碰角落时"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "左上角"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "右上角"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "左下角"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "右下角"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
