@@ -115,6 +115,7 @@ public class PantheonShell.Text : Gtk.Box {
                 interface_settings.reset (DOCUMENT_FONT_KEY);
                 interface_settings.reset (MONOSPACE_FONT_KEY);
             }
+            return Gdk.EVENT_PROPAGATE;
         });
     }
 }
