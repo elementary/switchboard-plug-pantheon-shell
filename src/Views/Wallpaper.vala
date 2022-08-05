@@ -69,7 +69,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                 settings.set_string ("picture-options", "none");
             } else {
                 combo.sensitive = true;
-                settings.set_string ("picture-options", combo.get_active_id ());
+                settings.set_string ("picture-options", combo.active_id);
             }
         }
     }
@@ -288,7 +288,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
     private void update_mode () {
         if (!prevent_update_mode) {
-            settings.set_string ("picture-options", combo.get_active_id ());
+            settings.set_string ("picture-options", combo.active_id);
 
             // Changing the mode, while a solid color is selected, change focus to the
             // wallpaper tile.
