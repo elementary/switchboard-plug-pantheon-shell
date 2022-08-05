@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-08-05 16:24+0000\n"
+"Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ko/>\n"
 "Language: ko\n"
@@ -37,10 +37,8 @@ msgid "Appearance"
 msgstr "꾸미기"
 
 #: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
-#, fuzzy
-#| msgid "Text size:"
 msgid "Text"
-msgstr "텍스트 크기:"
+msgstr "텍스트"
 
 #: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
 #: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
@@ -71,10 +69,8 @@ msgid "Display"
 msgstr "화면"
 
 #: src/Plug.vala:124
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "패널 투명도:"
+msgstr "패널 투명도"
 
 #: src/Plug.vala:126
 msgid "Dark style"
@@ -105,10 +101,8 @@ msgid "Move windows to a new workspace"
 msgstr "새 작업공간으로 전환"
 
 #: src/Plug.vala:134
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "창 애니메이션:"
+msgstr "창 애니메이션"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -295,10 +289,8 @@ msgid "Display %d"
 msgstr "디스플레이 %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "커서를 화면의 모서리로 움직였을 때 동작:"
+msgstr "포인터를 화면의 모서리로 움직였을 때"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
