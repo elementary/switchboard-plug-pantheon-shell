@@ -230,19 +230,6 @@ public class PantheonShell.Appearance : Gtk.Widget {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
             });
 
-            /* Connect to button_release_event so that this is only triggered
-             * through user interaction, not if scheduling changes the selection
-             */
-            // prefer_default_radio.button_release_event.connect (() => {
-            //     schedule_disabled_radio.active = true;
-            //     return Gdk.EVENT_PROPAGATE;
-            // });
-
-            // prefer_dark_radio.button_release_event.connect (() => {
-            //     schedule_disabled_radio.active = true;
-            //     return Gdk.EVENT_PROPAGATE;
-            // });
-
             ((GLib.DBusProxy) pantheon_act).g_properties_changed.connect ((changed, invalid) => {
                 var color_scheme = changed.lookup_value ("PrefersColorScheme", new VariantType ("i"));
                 if (color_scheme != null) {
