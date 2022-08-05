@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2016 elementary LLC.
+ * Copyright 2015-2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -50,7 +50,27 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     private Gtk.ComboBoxText combo;
     private Gtk.ColorButton color_button;
 
-    private WallpaperContainer active_wallpaper = null;
+    private WallpaperContainer _active_wallpaper = null;
+    private WallpaperContainer active_wallpaper {
+        get {
+            return _active_wallpaper;
+        }
+        set {
+            _active_wallpaper.checked = false;
+            _active_wallpaper = value;
+            wallpaper_view.select_child (_active_wallpaper);
+            _active_wallpaper.checked = true;
+
+            if (_active_wallpaper is SolidColorContainer) {
+                combo.sensitive = false;
+                settings.set_string ("primary-color", solid_color.color);
+                settings.set_string ("picture-options", "none");
+            } else {
+                combo.sensitive = true;
+                settings.set_string ("picture-options", combo.get_active_id ());
+            }
+        }
+    }
     private SolidColorContainer solid_color = null;
 
     private Cancellable last_cancellable;
@@ -79,11 +99,12 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
 
-        wallpaper_view = new Gtk.FlowBox ();
-        wallpaper_view.activate_on_single_click = true;
+        wallpaper_view = new Gtk.FlowBox () {
+            activate_on_single_click = true,
+            homogeneous = true,
+            selection_mode = Gtk.SelectionMode.SINGLE
+        };
         wallpaper_view.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        wallpaper_view.homogeneous = true;
-        wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
 
         var color = settings.get_string ("primary-color");
@@ -93,15 +114,18 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         wallpaper_view.drag_data_received.connect (on_drag_data_received);
         Gtk.drag_dest_set (wallpaper_view, Gtk.DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
 
-        wallpaper_scrolled_window = new Gtk.ScrolledWindow (null, null);
-        wallpaper_scrolled_window.expand = true;
+        wallpaper_scrolled_window = new Gtk.ScrolledWindow (null, null) {
+            expand = true
+        };
         wallpaper_scrolled_window.add (wallpaper_view);
 
-        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
-        add_wallpaper_button.margin = 12;
+        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
+            margin = 12
+        };
 
-        combo = new Gtk.ComboBoxText ();
-        combo.valign = Gtk.Align.CENTER;
+        combo = new Gtk.ComboBoxText () {
+            valign = Gtk.Align.CENTER
+        };
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
         combo.append ("spanned", _("Spanned"));
@@ -112,10 +136,11 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             rgba_color = { 1, 1, 1, 1 };
         }
 
-        color_button = new Gtk.ColorButton ();
-        color_button.margin = 12;
-        color_button.margin_start = 0;
-        color_button.rgba = rgba_color;
+        color_button = new Gtk.ColorButton () {
+            margin = 12,
+            margin_start = 0,
+            rgba = rgba_color
+        };
         color_button.color_set.connect (update_color);
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
@@ -142,18 +167,20 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var filter = new Gtk.FileFilter ();
         filter.add_mime_type ("image/*");
 
-        var preview_area = new Granite.AsyncImage (false);
-        preview_area.pixel_size = 256;
-        preview_area.margin_end = 12;
+        var preview_area = new Granite.AsyncImage (false) {
+            pixel_size = 256,
+            margin_end = 12
+        };
 
         var chooser = new Gtk.FileChooserNative (
             _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
             _("Import"),
             _("Cancel")
-        );
-        chooser.filter = filter;
-        chooser.select_multiple = true;
-        chooser.set_preview_widget (preview_area);
+        ) {
+            filter = filter,
+            select_multiple = true,
+            preview_widget = preview_area
+        };
 
         chooser.update_preview.connect (() => {
             string uri = chooser.get_preview_uri ();
@@ -232,33 +259,18 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         accountsservice.background_file = path;
     }
 
-    private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
-        var children = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
+    private void update_checked_wallpaper () {
+        var selected_child = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
 
-        if (!(children is SolidColorContainer)) {
-            current_wallpaper_path = children.uri;
+        if (!(selected_child is SolidColorContainer)) {
+            current_wallpaper_path = selected_child.uri;
             update_accountsservice ();
-
-            if (active_wallpaper == solid_color) {
-                combo.set_sensitive (true);
-                settings.set_string ("picture-options", combo.get_active_id ());
-            }
-
-        } else {
-            set_combo_disabled_if_necessary ();
-            settings.set_string ("primary-color", solid_color.color);
         }
 
         // We don't do gradient backgrounds, reset the key that might interfere
         settings.reset ("color-shading-type");
 
-        children.checked = true;
-
-        if (active_wallpaper != null && active_wallpaper != children) {
-            active_wallpaper.checked = false;
-        }
-
-        active_wallpaper = children;
+        active_wallpaper = selected_child;
     }
 
     private void update_color () {
@@ -268,13 +280,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             wallpaper_view.add (solid_color);
             wallpaper_view.select_child (solid_color);
 
-            if (active_wallpaper != null) {
-                active_wallpaper.checked = false;
-            }
-
             active_wallpaper = solid_color;
-            active_wallpaper.checked = true;
-            settings.set_string ("primary-color", solid_color.color);
         }
     }
 
@@ -285,13 +291,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             // Changing the mode, while a solid color is selected, change focus to the
             // wallpaper tile.
             if (active_wallpaper == solid_color) {
-                active_wallpaper.checked = false;
-
                 foreach (var child in wallpaper_view.get_children ()) {
                     var container = (WallpaperContainer) child;
                     if (container.uri == current_wallpaper_path) {
-                        container.checked = true;
-                        wallpaper_view.select_child (container);
                         active_wallpaper = container;
                         break;
                     }
@@ -370,8 +372,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                 finished = true;
 
                 if (settings.get_string ("picture-options") == "none") {
-                    wallpaper_view.select_child (solid_color);
-                    solid_color.checked = true;
                     active_wallpaper = solid_color;
                 }
 
@@ -532,13 +532,16 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                 var new_file = File.new_for_uri (uri);
                 new_file.delete_async.begin ();
                 wallpaper_view.remove (wallpaper);
+
+                if (active_wallpaper == wallpaper) {
+                    active_wallpaper = solid_color;
+                }
+                update_checked_wallpaper ();
+                wallpaper.destroy ();
             });
 
             // Select the wallpaper if it is the current wallpaper
             if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
-                this.wallpaper_view.select_child (wallpaper);
-                // Set the widget activated without activating it
-                wallpaper.checked = true;
                 active_wallpaper = wallpaper;
             }
         } catch (Error e) {
