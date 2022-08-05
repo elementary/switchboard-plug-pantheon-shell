@@ -397,6 +397,10 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         solid_color = new SolidColorContainer (color);
         solid_color.show_all ();
+
+        if (settings.get_string ("picture-options") == "none") {
+            active_wallpaper = solid_color;
+        }
     }
 
     private void clean_wallpapers () {
