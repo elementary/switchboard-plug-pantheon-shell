@@ -448,7 +448,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         }
 
         try {
-            string path = Path.build_filename (local_bg_directory, source.get_basename ());
+            var timestamp = new DateTime.now_local ().format ("%Y-%m-%d-%H-%M-%S");
+            var filename = "%s-%s".printf (timestamp, source.get_basename ());
+            string path = Path.build_filename (local_bg_directory, filename);
             dest = File.new_for_path (path);
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
