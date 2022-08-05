@@ -152,10 +152,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var filter = new Gtk.FileFilter ();
         filter.add_mime_type ("image/*");
 
-        var preview_area = new Gtk.Image ();
-        preview_area.pixel_size = 256;
-        preview_area.margin_end = 12;
-
         var chooser = new Gtk.FileChooserNative (
             _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
             _("Import"),
@@ -163,19 +159,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         );
         chooser.filter = filter;
         chooser.select_multiple = true;
-        // chooser.set_preview_widget (preview_area);
-
-        // chooser.update_preview.connect (() => {
-        //     string uri = chooser.get_preview_uri ();
-
-        //     if (uri != null && uri.has_prefix ("file://") == true) {
-        //         var file = GLib.File.new_for_uri (uri);
-        //         preview_area.set_from_gicon_async.begin (new FileIcon (file), 256);
-        //         preview_area.show ();
-        //     } else {
-        //         preview_area.hide ();
-        //     }
-        // });
 
         chooser.show ();
 
