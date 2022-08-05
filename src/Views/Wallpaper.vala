@@ -183,7 +183,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         };
 
         chooser.update_preview.connect (() => {
-            string uri = chooser.get_preview_uri ();
+            var uri = chooser.get_preview_uri ();
 
             if (uri != null && uri.has_prefix ("file://") == true) {
                 var file = GLib.File.new_for_uri (uri);
@@ -196,9 +196,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         if (chooser.run () == Gtk.ResponseType.ACCEPT) {
             SList<string> uris = chooser.get_uris ();
-            foreach (unowned string uri in uris) {
+            foreach (unowned var uri in uris) {
                 var file = GLib.File.new_for_uri (uri);
-                string local_uri = uri;
+                var local_uri = uri;
                 var dest = copy_for_library (file);
                 if (dest != null) {
                     local_uri = dest.get_uri ();
@@ -215,14 +215,14 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         // TODO: need to store the previous state, before changing to none
         // when a solid color is selected, because the combobox doesn't know
         // about it anymore. The previous state should be loaded instead here.
-        string picture_options = settings.get_string ("picture-options");
+        var picture_options = settings.get_string ("picture-options");
         if (picture_options == "none") {
-            combo.set_sensitive (false);
+            combo.sensitive = false;
             picture_options = "zoom";
         }
 
         prevent_update_mode = true;
-        combo.set_active_id (picture_options);
+        combo.active_id = picture_options;
 
         current_wallpaper_path = settings.get_string ("picture-uri");
     }
@@ -232,11 +232,11 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
      */
     private void update_accountsservice () {
         var file = File.new_for_uri (current_wallpaper_path);
-        string uri = file.get_uri ();
-        string path = file.get_path ();
+        var uri = file.get_uri ();
+        var path = file.get_path ();
 
-        bool path_has_prefix_bg_dir = false;
-        foreach (unowned string directory in get_bg_directories ()) {
+        var path_has_prefix_bg_dir = false;
+        foreach (unowned var directory in get_bg_directories ()) {
             if (path.has_prefix (directory)) {
                 path_has_prefix_bg_dir = true;
                 break;
@@ -306,7 +306,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
     private void set_combo_disabled_if_necessary () {
         if (active_wallpaper != solid_color) {
-            combo.set_sensitive (false);
+            combo.sensitive = false;
             settings.set_string ("picture-options", "none");
         }
     }
@@ -321,7 +321,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         clean_wallpapers ();
 
-        foreach (unowned string directory in get_bg_directories ()) {
+        foreach (unowned var directory in get_bg_directories ()) {
             load_wallpapers.begin (directory, cancellable);
         }
     }
@@ -361,7 +361,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                 }
 
                 var file = directory.resolve_relative_path (file_info.get_name ());
-                string uri = file.get_uri ();
+                var uri = file.get_uri ();
 
                 add_wallpaper_from_file (file, uri);
             }
@@ -421,7 +421,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         // Add user background directory first
         background_directories += get_local_bg_directory ();
 
-        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
+        foreach (unowned var data_dir in Environment.get_system_data_dirs ()) {
             var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
             if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
                 debug ("Found system background directory: %s", system_background_dir);
@@ -439,7 +439,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     private static File? copy_for_library (File source) {
         File? dest = null;
 
-        string local_bg_directory = get_local_bg_directory ();
+        var local_bg_directory = get_local_bg_directory ();
         try {
             File folder = File.new_for_path (local_bg_directory);
             folder.make_directory_with_parents ();
@@ -452,7 +452,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         }
 
         try {
-            string path = Path.build_filename (local_bg_directory, source.get_basename ());
+            var path = Path.build_filename (local_bg_directory, source.get_basename ());
             dest = File.new_for_path (path);
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
@@ -465,7 +465,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     private static File? copy_for_greeter (File source) {
         File? dest = null;
         try {
-            string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
+            var greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
             if (greeter_data_dir == "") {
                 greeter_data_dir = Path.build_filename ("/var/lib/lightdm-data/", Environment.get_user_name (), "wallpaper");
             }
@@ -504,7 +504,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                     return;
                 }
 
-                string local_uri = file.get_uri ();
+                var local_uri = file.get_uri ();
                 var dest = copy_for_library (file);
                 if (dest != null) {
                     local_uri = dest.get_uri ();
