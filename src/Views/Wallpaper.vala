@@ -56,7 +56,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             return _active_wallpaper;
         }
         set {
-            _active_wallpaper.checked = false;
+            if (_active_wallpaper != null) {
+                _active_wallpaper.checked = false;
+            }
             _active_wallpaper = value;
             wallpaper_view.select_child (_active_wallpaper);
             _active_wallpaper.checked = true;
@@ -540,7 +542,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                 if (active_wallpaper == wallpaper) {
                     active_wallpaper = solid_color;
                 }
-                update_checked_wallpaper ();
                 wallpaper.destroy ();
             });
 
