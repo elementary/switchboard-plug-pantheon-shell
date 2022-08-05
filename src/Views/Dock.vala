@@ -24,9 +24,8 @@ public class PantheonShell.Dock : Gtk.Widget {
     private Gtk.Label primary_monitor_label;
     private Gtk.Switch primary_monitor;
     private Gtk.Label monitor_label;
-    private Gtk.ComboBoxText monitor;
+    private Gtk.ComboBoxText monitor_combo;
     private Settings dock_preferences;
-    private MutterDisplayConfigInterface iface;
 
     private enum PlankHideTypes {
         NONE,
@@ -141,7 +140,7 @@ public class PantheonShell.Dock : Gtk.Widget {
             }
         });
 
-        monitor = new Gtk.ComboBoxText ();
+        monitor_combo = new Gtk.ComboBoxText ();
 
         primary_monitor_label = new Gtk.Label (_("Primary display:")) {
             halign = Gtk.Align.END
@@ -156,32 +155,24 @@ public class PantheonShell.Dock : Gtk.Widget {
             if (primary_monitor.active == true) {
                 dock_preferences.set_string ("monitor", "");
                 monitor_label.sensitive = false;
-                monitor.sensitive = false;
+                monitor_combo.sensitive = false;
             } else {
                 var plug_names = get_monitor_plug_names (get_display ());
                 if (plug_names.length > monitor.active)
                     dock_preferences.set_string ("monitor", plug_names[monitor.active]);
                 monitor_label.sensitive = true;
-                monitor.sensitive = true;
+                monitor_combo.sensitive = true;
             }
         });
         primary_monitor.active = (dock_preferences.get_string ("monitor") == "");
 
-        monitor.notify["active"].connect (() => {
-            if (monitor.active >= 0 && primary_monitor.active == false) {
+        monitor_combo.notify["active"].connect (() => {
+            if (monitor_combo.active >= 0 && primary_monitor.active == false) {
                 var plug_names = get_monitor_plug_names (get_display ());
-                if (plug_names.length > monitor.active)
-                    dock_preferences.set_string ("monitor", plug_names[monitor.active]);
+                if (plug_names.length > monitor_combo.active)
+                    dock_preferences.set_string ("monitor", plug_names[monitor_combo.active]);
             }
         });
-
-        try {
-            iface = Bus.get_proxy_sync (BusType.SESSION, "org.gnome.Mutter.DisplayConfig", "/org/gnome/Mutter/DisplayConfig");
-        } catch (Error e) {
-            critical (e.message);
-        }
-
-        iface.monitors_changed.connect (() => {check_for_screens ();});
 
         var icon_label = new Gtk.Label (_("Icon size:")) {
             halign = Gtk.Align.END
@@ -223,7 +214,7 @@ public class PantheonShell.Dock : Gtk.Widget {
         grid.attach (primary_monitor_label, 0, 3);
         grid.attach (primary_monitor_grid, 1, 3);
         grid.attach (monitor_label, 0, 4);
-        grid.attach (monitor, 1, 4);
+        grid.attach (monitor_combo, 1, 4);
         grid.attach (pressure_label, 0, 5);
         grid.attach (pressure_switch, 1, 5);
         grid.attach (panel_header, 0, 6, 3);
@@ -236,7 +227,13 @@ public class PantheonShell.Dock : Gtk.Widget {
 
         clamp.set_parent (this);
 
-        check_for_screens ();
+        var display = get_display ();
+        var monitors_list = display.get_monitors ();
+        monitors_list.items_changed.connect (() => {
+            check_for_screens (monitors_list);
+        );
+
+        check_for_screens (monitors_list);
 
         switch (dock_preferences.get_int ("icon-size")) {
             case 32:
@@ -269,85 +266,38 @@ public class PantheonShell.Dock : Gtk.Widget {
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
     }
 
-    private void check_for_screens () {
-        int i;
+    private void check_for_screens (ListModel monitors) {
+        int index = 0;
         int primary_screen = 0;
-        var default_display = get_display ();
-        monitor.remove_all ();
+        monitor_combo.remove_all ();
 
-        // the following code was taken from switchboard-plug-display
+        // TODO: get primary display
 
-        MutterReadMonitor[] mutter_monitors;
-        MutterReadLogicalMonitor[] mutter_logical_monitors;
-        GLib.HashTable<string, GLib.Variant> properties;
-        uint current_serial;
-
-        try {
-            iface.get_current_state (out current_serial, out mutter_monitors, out mutter_logical_monitors, out properties);
-        } catch (Error e) {
-            critical (e.message);
-            for (i = 0; i < default_display.get_monitors ().get_n_items () ; i ++) {
-                monitor.append_text (_("Display %d").printf (i + 1));
+        for (index = 0; index < monitors.get_n_items (); index++) {
+            var monitor = (Gdk.Monitor) monitors.get_item (index);
+            if (monitor.connector != null || monitor.connector != "") {
+                monitor_combo.append_text (monitor.connector);
+            } else {
+                monitor_combo.append_text ("Display %d", index + 1);
             }
         }
 
-        for (i = 0; i < mutter_monitors.length; i++) {
-            var mutter_monitor = mutter_monitors[i];
-            var logical_monitor = mutter_logical_monitors[i];
-
-            if (mutter_monitor.monitor in logical_monitor.monitors) {
-                if (mutter_monitor.monitor.connector != null && mutter_monitor.monitor.connector != "") {
-                    monitor.append_text (mutter_monitor.monitor.connector);
-                    if (logical_monitor.primary) {
-                        primary_screen = i;
-                        continue;
-                    }
-                }
-
-                monitor.append_text (_("Monitor %d").printf (i + 1));
-            }
-        }
-
-        // foreach (var mutter_monitor in mutter_monitors) {
-        //     var display_name_variant = mutter_monitor.properties.lookup ("display-name");
-        //     print ("%s\n", mutter_monitor.monitor.connector.to_string ());
-        //     if (display_name_variant.get_string () != null && display_name_variant.get_string () != "") {
-        //         monitor.append_text (display_name_variant.get_string ());
-        //         // var is_preferred = mutter_monitor.properties.lookup ("is-preferred");;
-        //         // if (is_preferred.get_boolean () == true) {
-        //         //     primary_screen = i;
-        //         // }
-
-        //         i++;
-        //     }
-
-        //     monitor.append_text (_("Monitor %d").printf (i + 1) );
-        // }
-
-        // foreach (var logical_monitor in mutter_logical_monitors) {
-        //     // var display_name_variant = logical_monitor.properties.lookup ("display-name");
-        //     print ("%s\n", logical_monitor.monitors[0].connector.to_string ());
-        //     // logical_monitor.properties.get_keys ().foreach ((key) => {
-        //     //     print ("%s\n", key);
-        //     // });
-        // }
-
-        if (i <= 1) {
+        if (index <= 1) {
             primary_monitor_label.hide ();
             primary_monitor.hide ();
             monitor_label.hide ();
-            monitor.hide ();
+            monitor_combo.hide ();
         } else {
             if (dock_preferences.get_string ("monitor") != "") {
-                monitor.active = find_monitor_number (get_display (), dock_preferences.get_string ("monitor"));
+                monitor_combo.active = find_monitor_number (get_display (), dock_preferences.get_string ("monitor"));
             } else {
-                monitor.active = primary_screen;
+                monitor_combo.active = primary_screen;
             }
 
             primary_monitor_label.show ();
             primary_monitor.show ();
             monitor_label.show ();
-            monitor.show ();
+            monitor_combo.show ();
         }
     }
 
