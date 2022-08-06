@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-08-05 16:24+0000\n"
+"PO-Revision-Date: 2022-08-06 13:58+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ko/>\n"
@@ -43,14 +43,12 @@ msgstr "텍스트"
 #: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
 #: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Dock & Panel"
-msgstr ""
+msgstr "독 & 패널"
 
 #: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Plug.vala:134
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "멀티태스킹 보기"
+msgstr "멀티태스킹"
 
 #: src/Plug.vala:120
 msgid "Hide Mode"
@@ -74,31 +72,27 @@ msgstr "패널 투명도"
 
 #: src/Plug.vala:126
 msgid "Dark style"
-msgstr ""
+msgstr "다크 스타일"
 
 #: src/Plug.vala:127
 msgid "Accent color"
-msgstr ""
+msgstr "강조색"
 
 #: src/Plug.vala:129
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Size"
-msgstr "아이콘 크기"
+msgstr "크기"
 
 #: src/Plug.vala:130
 msgid "Dyslexia-friendly"
-msgstr ""
+msgstr "난독증 친화적"
 
 #: src/Plug.vala:132
 msgid "Hot Corners"
 msgstr "핫 코너"
 
 #: src/Plug.vala:133 src/Views/Multitasking.vala:40
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
-msgstr "새 작업공간으로 전환"
+msgstr "새 작업 공간으로 창 이동"
 
 #: src/Plug.vala:134
 msgid "Window animations"
@@ -132,7 +126,7 @@ msgstr "선택한 이미지를 새 바탕화면 배경으로 설정합니다"
 
 #: src/Views/Appearance.vala:68
 msgid "Style"
-msgstr ""
+msgstr "스타일"
 
 #: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
@@ -140,7 +134,7 @@ msgstr "기본"
 
 #: src/Views/Appearance.vala:110
 msgid "Dark"
-msgstr ""
+msgstr "다크"
 
 #: src/Views/Appearance.vala:123
 msgid ""
