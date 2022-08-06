@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-08-06 13:58+0000\n"
+"PO-Revision-Date: 2022-08-06 20:16+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ko/>\n"
@@ -140,7 +140,7 @@ msgstr "다크"
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
-msgstr ""
+msgstr "시스템 구성 요소에 대해 선호하는 비주얼 스타일입니다. 앱은 이 기본 설정을 따르도록 선택할 수도 있습니다."
 
 #: src/Views/Appearance.vala:129
 msgid "Schedule"
@@ -164,57 +164,57 @@ msgstr "끝:"
 
 #: src/Views/Appearance.vala:292
 msgid "Accent Color"
-msgstr ""
+msgstr "강조색"
 
 #: src/Views/Appearance.vala:297
 msgid "Blueberry"
-msgstr ""
+msgstr "블루베리"
 
 #: src/Views/Appearance.vala:300
 msgid "Mint"
-msgstr ""
+msgstr "민트"
 
 #: src/Views/Appearance.vala:303
 msgid "Lime"
-msgstr ""
+msgstr "라임"
 
 #: src/Views/Appearance.vala:306
 msgid "Banana"
-msgstr ""
+msgstr "바나나"
 
 #: src/Views/Appearance.vala:309
 msgid "Orange"
-msgstr ""
+msgstr "오렌지"
 
 #: src/Views/Appearance.vala:312
 msgid "Strawberry"
-msgstr ""
+msgstr "딸기"
 
 #: src/Views/Appearance.vala:315
 msgid "Bubblegum"
-msgstr ""
+msgstr "풍선껌"
 
 #: src/Views/Appearance.vala:318
 msgid "Grape"
-msgstr ""
+msgstr "포도"
 
 #: src/Views/Appearance.vala:321
 msgid "Cocoa"
-msgstr ""
+msgstr "코코아"
 
 #: src/Views/Appearance.vala:324
 msgid "Slate"
-msgstr ""
+msgstr "슬레이트"
 
 #: src/Views/Appearance.vala:327
 msgid "Automatic based on wallpaper"
-msgstr ""
+msgstr "배경 화면에 따라 자동"
 
 #: src/Views/Appearance.vala:343
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr ""
+msgstr "기본적으로 시스템 전체에 사용됩니다. 앱은 항상 고유한 강조 색상을 사용할 수 있습니다."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -266,7 +266,7 @@ msgstr "압력 표시:"
 
 #: src/Views/Dock.vala:154
 msgid "Panel"
-msgstr ""
+msgstr "패널"
 
 #: src/Views/Dock.vala:158
 msgid "Panel translucency:"
@@ -288,27 +288,27 @@ msgstr "포인터를 화면의 모서리로 움직였을 때"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "왼쪽 위"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "오른쪽 위"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "왼쪽 아래"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "오른쪽 아래"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
-msgstr ""
+msgstr "전체 화면 진입 시"
 
 #: src/Views/Multitasking.vala:45
 msgid "When maximizing"
-msgstr ""
+msgstr "최대화할 때"
 
 #: src/Views/Multitasking.vala:54
 msgid "Window animations:"
@@ -336,7 +336,7 @@ msgstr "모든 창 보기"
 
 #: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
-msgstr "새 작업공간으로 전환"
+msgstr "새 작업 공간으로 전환"
 
 #: src/Views/Multitasking.vala:141
 msgid "Execute custom command"
@@ -344,17 +344,17 @@ msgstr "사용자 지정 명렁어 실행"
 
 #: src/Views/Text.vala:34
 msgid "Size:"
-msgstr ""
+msgstr "크기:"
 
 #: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
-msgstr ""
+msgstr "난독증 친화적:"
 
 #: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
-msgstr ""
+msgstr "아래가 두툼한 모양과 넓어진 문자 간격은 가독성과 읽기 속도를 향상시키는 데 도움이 됩니다."
 
 #: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
@@ -424,8 +424,6 @@ msgid "Set As Desktop Slideshow"
 msgstr "배경화면 슬라이드쇼로 설정"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "슬라이드쇼 만들기"
 
