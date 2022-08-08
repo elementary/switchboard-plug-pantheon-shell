@@ -63,7 +63,7 @@
     min-height: 18px;
 }
 
-.wallpaper-container radio:backdrop:checked {
+.wallpaper-container check:backdrop:checked {
     background-color: @accent_color;
     -gtk-icon-shadow: 0 1px 1px shade(@accent_color, 0.7);
 }
