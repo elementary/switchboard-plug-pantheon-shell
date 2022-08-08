@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2017 elementary LLC. (https://bugs.launchpad.net/switchboard-plug-pantheon-shell)
+ * Copyright 2015-2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -94,9 +94,12 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         card_box.add (image);
         card_box.margin = 9;
 
-        var check = new Gtk.Image.from_icon_name ("selection-checked", Gtk.IconSize.LARGE_TOOLBAR);
-        check.halign = Gtk.Align.START;
-        check.valign = Gtk.Align.START;
+        var check = new Gtk.RadioButton (null) {
+            active = true,
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.START,
+            can_focus = false
+        };
 
         check_revealer = new Gtk.Revealer ();
         check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
