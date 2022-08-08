@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-06 07:27+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-08-06 20:16+0000\n"
+"Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ko/>\n"
 "Language: ko\n"
@@ -37,22 +37,18 @@ msgid "Appearance"
 msgstr "꾸미기"
 
 #: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
-#, fuzzy
-#| msgid "Text size:"
 msgid "Text"
-msgstr "텍스트 크기:"
+msgstr "텍스트"
 
 #: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
 #: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Dock & Panel"
-msgstr ""
+msgstr "독 & 패널"
 
 #: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Plug.vala:134
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "멀티태스킹 보기"
+msgstr "멀티태스킹"
 
 #: src/Plug.vala:120
 msgid "Hide Mode"
@@ -71,44 +67,36 @@ msgid "Display"
 msgstr "화면"
 
 #: src/Plug.vala:124
-#, fuzzy
-#| msgid "Panel translucency:"
 msgid "Panel translucency"
-msgstr "패널 투명도:"
+msgstr "패널 투명도"
 
 #: src/Plug.vala:126
 msgid "Dark style"
-msgstr ""
+msgstr "다크 스타일"
 
 #: src/Plug.vala:127
 msgid "Accent color"
-msgstr ""
+msgstr "강조색"
 
 #: src/Plug.vala:129
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Size"
-msgstr "아이콘 크기"
+msgstr "크기"
 
 #: src/Plug.vala:130
 msgid "Dyslexia-friendly"
-msgstr ""
+msgstr "난독증 친화적"
 
 #: src/Plug.vala:132
 msgid "Hot Corners"
 msgstr "핫 코너"
 
 #: src/Plug.vala:133 src/Views/Multitasking.vala:40
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
-msgstr "새 작업공간으로 전환"
+msgstr "새 작업 공간으로 창 이동"
 
 #: src/Plug.vala:134
-#, fuzzy
-#| msgid "Window animations:"
 msgid "Window animations"
-msgstr "창 애니메이션:"
+msgstr "창 애니메이션"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -138,7 +126,7 @@ msgstr "선택한 이미지를 새 바탕화면 배경으로 설정합니다"
 
 #: src/Views/Appearance.vala:68
 msgid "Style"
-msgstr ""
+msgstr "스타일"
 
 #: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
@@ -146,13 +134,13 @@ msgstr "기본"
 
 #: src/Views/Appearance.vala:110
 msgid "Dark"
-msgstr ""
+msgstr "다크"
 
 #: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
-msgstr ""
+msgstr "시스템 구성 요소에 대해 선호하는 비주얼 스타일입니다. 앱은 이 기본 설정을 따르도록 선택할 수도 있습니다."
 
 #: src/Views/Appearance.vala:129
 msgid "Schedule"
@@ -176,57 +164,57 @@ msgstr "끝:"
 
 #: src/Views/Appearance.vala:292
 msgid "Accent Color"
-msgstr ""
+msgstr "강조색"
 
 #: src/Views/Appearance.vala:297
 msgid "Blueberry"
-msgstr ""
+msgstr "블루베리"
 
 #: src/Views/Appearance.vala:300
 msgid "Mint"
-msgstr ""
+msgstr "민트"
 
 #: src/Views/Appearance.vala:303
 msgid "Lime"
-msgstr ""
+msgstr "라임"
 
 #: src/Views/Appearance.vala:306
 msgid "Banana"
-msgstr ""
+msgstr "바나나"
 
 #: src/Views/Appearance.vala:309
 msgid "Orange"
-msgstr ""
+msgstr "오렌지"
 
 #: src/Views/Appearance.vala:312
 msgid "Strawberry"
-msgstr ""
+msgstr "딸기"
 
 #: src/Views/Appearance.vala:315
 msgid "Bubblegum"
-msgstr ""
+msgstr "풍선껌"
 
 #: src/Views/Appearance.vala:318
 msgid "Grape"
-msgstr ""
+msgstr "포도"
 
 #: src/Views/Appearance.vala:321
 msgid "Cocoa"
-msgstr ""
+msgstr "코코아"
 
 #: src/Views/Appearance.vala:324
 msgid "Slate"
-msgstr ""
+msgstr "슬레이트"
 
 #: src/Views/Appearance.vala:327
 msgid "Automatic based on wallpaper"
-msgstr ""
+msgstr "배경 화면에 따라 자동"
 
 #: src/Views/Appearance.vala:343
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr ""
+msgstr "기본적으로 시스템 전체에 사용됩니다. 앱은 항상 고유한 강조 색상을 사용할 수 있습니다."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -278,7 +266,7 @@ msgstr "압력 표시:"
 
 #: src/Views/Dock.vala:154
 msgid "Panel"
-msgstr ""
+msgstr "패널"
 
 #: src/Views/Dock.vala:158
 msgid "Panel translucency:"
@@ -295,34 +283,32 @@ msgid "Display %d"
 msgstr "디스플레이 %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "커서를 화면의 모서리로 움직였을 때 동작:"
+msgstr "포인터를 화면의 모서리로 움직였을 때"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "왼쪽 위"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "오른쪽 위"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "왼쪽 아래"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "오른쪽 아래"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
-msgstr ""
+msgstr "전체 화면 진입 시"
 
 #: src/Views/Multitasking.vala:45
 msgid "When maximizing"
-msgstr ""
+msgstr "최대화할 때"
 
 #: src/Views/Multitasking.vala:54
 msgid "Window animations:"
@@ -350,7 +336,7 @@ msgstr "모든 창 보기"
 
 #: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
-msgstr "새 작업공간으로 전환"
+msgstr "새 작업 공간으로 전환"
 
 #: src/Views/Multitasking.vala:141
 msgid "Execute custom command"
@@ -358,17 +344,17 @@ msgstr "사용자 지정 명렁어 실행"
 
 #: src/Views/Text.vala:34
 msgid "Size:"
-msgstr ""
+msgstr "크기:"
 
 #: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
-msgstr ""
+msgstr "난독증 친화적:"
 
 #: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
-msgstr ""
+msgstr "아래가 두툼한 모양과 넓어진 문자 간격은 가독성과 읽기 속도를 향상시키는 데 도움이 됩니다."
 
 #: src/Views/Wallpaper.vala:100
 msgid "Import Photo…"
@@ -438,8 +424,6 @@ msgid "Set As Desktop Slideshow"
 msgstr "배경화면 슬라이드쇼로 설정"
 
 #: set-wallpaper-contract/set-wallpaper.vala:233
-#, fuzzy
-#| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "슬라이드쇼 만들기"
 
