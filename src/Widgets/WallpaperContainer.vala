@@ -94,7 +94,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         card_box.add (image);
         card_box.margin = 9;
 
-        var check = new Gtk.RadioButton (null) {
+        var check = new Gtk.CheckButton () {
             active = true,
             halign = Gtk.Align.START,
             valign = Gtk.Align.START,
