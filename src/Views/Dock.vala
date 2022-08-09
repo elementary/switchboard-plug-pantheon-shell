@@ -158,8 +158,10 @@ public class PantheonShell.Dock : Gtk.Widget {
                 monitor_combo.sensitive = false;
             } else {
                 var plug_names = get_monitor_plug_names (get_display ());
-                if (plug_names.length > monitor.active)
-                    dock_preferences.set_string ("monitor", plug_names[monitor.active]);
+                if (plug_names.length > monitor_combo.active) {
+                    dock_preferences.set_string ("monitor", plug_names[monitor_combo.active]);
+                }
+
                 monitor_label.sensitive = true;
                 monitor_combo.sensitive = true;
             }
@@ -231,7 +233,7 @@ public class PantheonShell.Dock : Gtk.Widget {
         var monitors_list = display.get_monitors ();
         monitors_list.items_changed.connect (() => {
             check_for_screens (monitors_list);
-        );
+        });
 
         check_for_screens (monitors_list);
 
@@ -278,7 +280,7 @@ public class PantheonShell.Dock : Gtk.Widget {
             if (monitor.connector != null || monitor.connector != "") {
                 monitor_combo.append_text (monitor.connector);
             } else {
-                monitor_combo.append_text ("Display %d", index + 1);
+                monitor_combo.insert_text (index + 1, "Display %d");
             }
         }
 
