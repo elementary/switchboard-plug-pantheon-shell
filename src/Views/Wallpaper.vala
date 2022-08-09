@@ -85,6 +85,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
+        wallpaper_view.set_sort_func (wallpapers_sort_function);
 
         var color = settings.get_string ("primary-color");
         create_solid_color_container (color);
@@ -552,5 +553,26 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         if (last_cancellable != null) {
             last_cancellable.cancel ();
         }
+    }
+
+    private int wallpapers_sort_function (Gtk.FlowBoxChild _child1, Gtk.FlowBoxChild _child2) {
+        var uri1 = ((WallpaperContainer) _child1).uri;
+        var uri2 = ((WallpaperContainer) _child2).uri;
+
+        if (uri1 == null || uri2 == null) {
+            return 0;
+        }
+
+        var uri1_is_system = uri1.contains ("file:///usr/share/backgrounds/");
+        var uri2_is_system = uri2.contains ("file:///usr/share/backgrounds/");
+
+        // Sort wallpapers from /usr/share/backgrounds/ first
+        if (uri1_is_system && !uri2_is_system) {
+            return -1;
+        } else if (!uri1_is_system && uri2_is_system) {
+            return 1;
+        }
+
+        return uri1.collate (uri2);
     }
 }
