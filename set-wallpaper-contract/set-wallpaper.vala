@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
+* Copyright 2017-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -129,7 +129,10 @@ namespace SetWallpaperContractor {
         File? dest = null;
 
         try {
-            dest = File.new_for_path (get_local_bg_directory () + source.get_basename ());
+            var timestamp = new DateTime.now_local ().format ("%Y-%m-%d-%H-%M-%S");
+            var filename = "%s-%s".printf (timestamp, source.get_basename ());
+            var path = Path.build_filename (get_local_bg_directory (), filename);
+            dest = File.new_for_path (path);
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning ("%s\n", e.message);
