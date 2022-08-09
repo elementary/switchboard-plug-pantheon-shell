@@ -100,6 +100,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             valign = Gtk.Align.START,
             can_focus = false
         };
+        check.button_release_event.connect (() => { return Gdk.EVENT_STOP; });
 
         check_revealer = new Gtk.Revealer ();
         check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
