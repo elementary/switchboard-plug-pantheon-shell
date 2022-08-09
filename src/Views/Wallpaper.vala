@@ -555,9 +555,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         }
     }
 
-    private int wallpapers_sort_function (Gtk.FlowBoxChild _child1, Gtk.FlowBoxChild _child2) {
-        var uri1 = ((WallpaperContainer) _child1).uri;
-        var uri2 = ((WallpaperContainer) _child2).uri;
+    private int wallpapers_sort_function (Gtk.FlowBoxChild child1, Gtk.FlowBoxChild child2) {
+        var uri1 = ((WallpaperContainer) child1).uri;
+        var uri2 = ((WallpaperContainer) child2).uri;
 
         if (uri1 == null || uri2 == null) {
             return 0;
