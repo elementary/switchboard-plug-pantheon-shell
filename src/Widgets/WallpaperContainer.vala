@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2017 elementary LLC. (https://bugs.launchpad.net/switchboard-plug-pantheon-shell)
+ * Copyright 2015-2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -87,11 +87,12 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         card_box.add_css_class (Granite.STYLE_CLASS_ROUNDED);
         card_box.append (image);
 
-        var check = new Gtk.Image.from_icon_name ("selection-checked") {
-            pixel_size = 24,
+        var check = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/check.svg") {
             halign = Gtk.Align.START,
-            valign = Gtk.Align.START
+            valign = Gtk.Align.START,
+            can_focus = false
         };
+        check.add_css_class ("check");
 
         check_revealer = new Gtk.Revealer () {
             transition_type = Gtk.RevealerTransitionType.CROSSFADE,
@@ -102,6 +103,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             child = card_box,
             halign = Gtk.Align.CENTER
         };
+
         overlay.add_overlay (check_revealer);
 
         overlay_event_controller = new Gtk.GestureClick ();

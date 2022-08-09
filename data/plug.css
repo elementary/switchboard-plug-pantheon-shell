@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 elementary LLC. (https://elementary.io)
+* Copyright 2018-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -57,6 +57,14 @@
     background-color: transparent;
 }
 
+.wallpaper-container .check {
+    border-radius: 50%;
+    min-width: 18px;
+    min-height: 18px;
+    background-color: @accent_color;
+    -gtk-icon-shadow: 0 1px 1px shade(@accent_color, 0.7);
+}
+
 .wallpaper-container .card {
     margin: 9px;
     min-height: 128px;
@@ -71,7 +79,16 @@
 
 .wallpaper-container:focus .card {
     box-shadow:
-        0 0 0 4px @selected_bg_color,
-        0 0 0 1px alpha(#000, 0.05),
-        0 3px 3px alpha(#000, 0.22);
+        0 0 0 4px @accent_color,
+        0 0 0 1px alpha (#000, 0.05),
+        0 3px 3px alpha (#000, 0.22);
+}
+
+radiobutton .card {
+    background-image:
+        linear-gradient(
+            to bottom,
+            alpha (@accent_color_300, 0.1),
+            alpha (@accent_color_500, 0.1)
+        );
 }
