@@ -47,11 +47,13 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
+    private Gtk.Overlay view_overlay;
     private Gtk.ComboBoxText combo;
     private Gtk.ColorButton color_button;
 
     private WallpaperContainer active_wallpaper = null;
     private SolidColorContainer solid_color = null;
+    private WallpaperContainer wallpaper_for_removal = null;
 
     private Cancellable last_cancellable;
 
@@ -97,6 +99,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         wallpaper_scrolled_window.expand = true;
         wallpaper_scrolled_window.add (wallpaper_view);
 
+        view_overlay = new Gtk.Overlay ();
+        view_overlay.add (wallpaper_scrolled_window);
+
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
         add_wallpaper_button.margin = 12;
 
@@ -132,7 +137,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         actionbar.pack_end (combo);
 
         attach (separator, 0, 0, 1, 1);
-        attach (wallpaper_scrolled_window, 0, 1, 1, 1);
+        attach (view_overlay, 0, 1, 1, 1);
         attach (actionbar, 0, 2, 1, 1);
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
@@ -531,9 +536,8 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             wallpaper.show_all ();
 
             wallpaper.trash.connect (() => {
-                var new_file = File.new_for_uri (uri);
-                new_file.delete_async.begin ();
-                wallpaper_view.remove (wallpaper);
+                mark_for_removal (wallpaper);
+                send_undo_toast ();
             });
 
             // Select the wallpaper if it is the current wallpaper
@@ -552,5 +556,47 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         if (last_cancellable != null) {
             last_cancellable.cancel ();
         }
+    }
+
+    private void send_undo_toast () {
+        foreach (weak Gtk.Widget child in view_overlay.get_children ()) {
+            if (child is Granite.Widgets.Toast) {
+                child.destroy ();
+            }
+        }
+
+        var toast = new Granite.Widgets.Toast (_("Wallpaper Deleted"));
+        toast.set_default_action (_("Undo"));
+        toast.show_all ();
+
+        toast.default_action.connect (() => {
+            undo_removal ();
+        });
+
+        toast.notify["child-revealed"].connect (() => {
+            if (!toast.child_revealed && wallpaper_for_removal != null) {
+                confirm_removal ();
+            }
+        });
+
+        view_overlay.add_overlay (toast);
+        toast.send_notification ();
+    }
+
+    private void mark_for_removal (WallpaperContainer wallpaper) {
+        wallpaper_view.remove (wallpaper);
+        wallpaper_for_removal = wallpaper;
+    }
+
+    private void confirm_removal () {
+        var wallpaper_file = File.new_for_uri (wallpaper_for_removal.uri);
+        wallpaper_file.trash_async.begin ();
+        wallpaper_for_removal.destroy ();
+        wallpaper_for_removal = null;
+    }
+
+    private void undo_removal () {
+        wallpaper_view.add (wallpaper_for_removal);
+        wallpaper_for_removal = null;
     }
 }
