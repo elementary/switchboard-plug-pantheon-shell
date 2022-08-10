@@ -541,8 +541,8 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             wallpaper.show_all ();
 
             wallpaper.trash.connect (() => {
-                mark_for_removal (wallpaper);
                 send_undo_toast ();
+                mark_for_removal (wallpaper);
             });
 
             // Select the wallpaper if it is the current wallpaper
