@@ -526,6 +526,11 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     }
 
     private void add_wallpaper_from_file (GLib.File file, string uri) {
+        // don't load 'removed' wallpaper on plug reload
+        if (wallpaper_for_removal != null && wallpaper_for_removal.uri == uri) {
+            return;
+        }
+
         try {
             var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
             var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
@@ -563,6 +568,10 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             if (child is Granite.Widgets.Toast) {
                 child.destroy ();
             }
+        }
+
+        if (wallpaper_for_removal != null) {
+            confirm_removal ();
         }
 
         var toast = new Granite.Widgets.Toast (_("Wallpaper Deleted"));
