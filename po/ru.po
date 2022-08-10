@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 17:22+0000\n"
-"PO-Revision-Date: 2022-07-24 13:45+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"PO-Revision-Date: 2022-08-10 18:19+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -394,7 +394,7 @@ msgstr "Обои"
 
 #: src/Views/Wallpaper.vala:578
 msgid "Undo"
-msgstr ""
+msgstr "Отменить"
 
 #: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
