@@ -583,6 +583,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         }
 
         return uri1.collate (uri2);
+    }
 
     private void send_undo_toast () {
         foreach (weak Gtk.Widget child in view_overlay.get_children ()) {
