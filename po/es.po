@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 07:27+0000\n"
+"POT-Creation-Date: 2022-08-10 17:22+0000\n"
 "PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -172,57 +172,57 @@ msgstr "Desde:"
 msgid "To:"
 msgstr "Hasta:"
 
-#: src/Views/Appearance.vala:292
+#: src/Views/Appearance.vala:298
 #, fuzzy
 #| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Color de realce"
 
-#: src/Views/Appearance.vala:297
+#: src/Views/Appearance.vala:303
 msgid "Blueberry"
 msgstr "Arándano"
 
-#: src/Views/Appearance.vala:300
+#: src/Views/Appearance.vala:306
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:309
 msgid "Lime"
 msgstr "Lima"
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:312
 msgid "Banana"
 msgstr "Plátano"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:315
 msgid "Orange"
 msgstr "Naranja"
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:318
 msgid "Strawberry"
 msgstr "Fresa"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:321
 msgid "Bubblegum"
 msgstr "Chicle"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:324
 msgid "Grape"
 msgstr "Uva"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:327
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:330
 msgid "Slate"
 msgstr "Pizarra"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:333
 msgid "Automatic based on wallpaper"
 msgstr "Automático, en función del fondo"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -376,39 +376,49 @@ msgstr ""
 "Las formas más gruesas por la parte inferior y un mayor espacio entre "
 "caracteres puede ayudar a mejorar la legibilidad y la velocidad de lectura."
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:105
 msgid "Import Photo…"
 msgstr "Importar foto…"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:110
 msgid "Centered"
 msgstr "Centrado"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:111
 msgid "Zoom"
 msgstr "Ampliado"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:112
 msgid "Spanned"
 msgstr "Distribuido"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:155
 msgid "Import Photo"
 msgstr "Importar foto"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:156
 msgid "Import"
 msgstr "Importar"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:157
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Widgets/WallpaperContainer.vala:118
+#: src/Views/Wallpaper.vala:577
+#, fuzzy
+#| msgid "Wallpaper"
+msgid "Wallpaper Deleted"
+msgstr "Fondo de pantalla"
+
+#: src/Views/Wallpaper.vala:578
+msgid "Undo"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
 msgstr "Quitar"
 
-#: src/Widgets/WallpaperContainer.vala:188
+#: src/Widgets/WallpaperContainer.vala:191
 #, c-format
 msgid "Artist: %s"
 msgstr "Artista: %s"
@@ -442,11 +452,11 @@ msgstr "1 día"
 msgid "Show each photo for"
 msgstr "Mostrar cada imagen durante"
 
-#: set-wallpaper-contract/set-wallpaper.vala:226
+#: set-wallpaper-contract/set-wallpaper.vala:229
 msgid "Set As Desktop Slideshow"
 msgstr "Establecer como pase de fondos"
 
-#: set-wallpaper-contract/set-wallpaper.vala:233
+#: set-wallpaper-contract/set-wallpaper.vala:236
 msgid "Create Slideshow"
 msgstr "Crear pase de fondos"
 

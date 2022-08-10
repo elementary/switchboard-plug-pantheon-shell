@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 07:27+0000\n"
+"POT-Creation-Date: 2022-08-10 17:22+0000\n"
 "PO-Revision-Date: 2022-07-20 09:38+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -162,55 +162,55 @@ msgstr "开始时间："
 msgid "To:"
 msgstr "结束时间："
 
-#: src/Views/Appearance.vala:292
+#: src/Views/Appearance.vala:298
 msgid "Accent Color"
 msgstr "强调色"
 
-#: src/Views/Appearance.vala:297
+#: src/Views/Appearance.vala:303
 msgid "Blueberry"
 msgstr "蓝莓色"
 
-#: src/Views/Appearance.vala:300
+#: src/Views/Appearance.vala:306
 msgid "Mint"
 msgstr "薄荷绿"
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:309
 msgid "Lime"
 msgstr "青柠色"
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:312
 msgid "Banana"
 msgstr "香蕉黄"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:315
 msgid "Orange"
 msgstr "橘子橙"
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:318
 msgid "Strawberry"
 msgstr "草莓红"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:321
 msgid "Bubblegum"
 msgstr "泡泡糖"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:324
 msgid "Grape"
 msgstr "葡萄紫"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:327
 msgid "Cocoa"
 msgstr "可可色"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:330
 msgid "Slate"
 msgstr "石头灰"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:333
 msgid "Automatic based on wallpaper"
 msgstr "基于壁纸自动"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -357,39 +357,49 @@ msgid ""
 "legibility and reading speed."
 msgstr "底部较粗的字形和更大的字符间距有助于提高易读性和阅读速度。"
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:105
 msgid "Import Photo…"
 msgstr "导入照片…"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:110
 msgid "Centered"
 msgstr "居中"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:111
 msgid "Zoom"
 msgstr "缩放"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:112
 msgid "Spanned"
 msgstr "平铺"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:155
 msgid "Import Photo"
 msgstr "导入照片"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:156
 msgid "Import"
 msgstr "导入"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:157
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Widgets/WallpaperContainer.vala:118
+#: src/Views/Wallpaper.vala:577
+#, fuzzy
+#| msgid "Wallpaper"
+msgid "Wallpaper Deleted"
+msgstr "壁纸"
+
+#: src/Views/Wallpaper.vala:578
+msgid "Undo"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
 msgstr "删除"
 
-#: src/Widgets/WallpaperContainer.vala:188
+#: src/Widgets/WallpaperContainer.vala:191
 #, c-format
 msgid "Artist: %s"
 msgstr "艺术家：%s"
@@ -420,11 +430,11 @@ msgstr "1 天"
 msgid "Show each photo for"
 msgstr "每张照片时长"
 
-#: set-wallpaper-contract/set-wallpaper.vala:226
+#: set-wallpaper-contract/set-wallpaper.vala:229
 msgid "Set As Desktop Slideshow"
 msgstr "设为桌面幻灯片"
 
-#: set-wallpaper-contract/set-wallpaper.vala:233
+#: set-wallpaper-contract/set-wallpaper.vala:236
 msgid "Create Slideshow"
 msgstr "创建幻灯片"
 
