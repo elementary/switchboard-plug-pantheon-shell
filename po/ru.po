@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 07:27+0000\n"
+"POT-Creation-Date: 2022-08-10 17:22+0000\n"
 "PO-Revision-Date: 2022-07-24 13:45+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -160,55 +160,55 @@ msgstr "С:"
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:292
+#: src/Views/Appearance.vala:298
 msgid "Accent Color"
 msgstr "Цветовой акцент"
 
-#: src/Views/Appearance.vala:297
+#: src/Views/Appearance.vala:303
 msgid "Blueberry"
 msgstr "Черничный"
 
-#: src/Views/Appearance.vala:300
+#: src/Views/Appearance.vala:306
 msgid "Mint"
 msgstr "Мятный"
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:309
 msgid "Lime"
 msgstr "Лаймовый"
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:312
 msgid "Banana"
 msgstr "Банановый"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:315
 msgid "Orange"
 msgstr "Апельсиновый"
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:318
 msgid "Strawberry"
 msgstr "Клубничный"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:321
 msgid "Bubblegum"
 msgstr "Жвачный"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:324
 msgid "Grape"
 msgstr "Виноградный"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:327
 msgid "Cocoa"
 msgstr "Какао"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:330
 msgid "Slate"
 msgstr "Каменно-серый"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:333
 msgid "Automatic based on wallpaper"
 msgstr "Автоматическая на основе обоев"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -358,39 +358,49 @@ msgstr ""
 "Утолщенная нижняя часть и увеличенный интервал между символами могут помочь "
 "улучшить читабельность и скорость чтения."
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:105
 msgid "Import Photo…"
 msgstr "Импортировать фото…"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:110
 msgid "Centered"
 msgstr "По центру"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:111
 msgid "Zoom"
 msgstr "Увеличить"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:112
 msgid "Spanned"
 msgstr "Составить"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:155
 msgid "Import Photo"
 msgstr "Импорт фото"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:156
 msgid "Import"
 msgstr "Импортировать"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:157
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/Widgets/WallpaperContainer.vala:118
+#: src/Views/Wallpaper.vala:577
+#, fuzzy
+#| msgid "Wallpaper"
+msgid "Wallpaper Deleted"
+msgstr "Обои"
+
+#: src/Views/Wallpaper.vala:578
+msgid "Undo"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
 msgstr "Удалить"
 
-#: src/Widgets/WallpaperContainer.vala:188
+#: src/Widgets/WallpaperContainer.vala:191
 #, c-format
 msgid "Artist: %s"
 msgstr "Автор: %s"
@@ -427,11 +437,11 @@ msgstr "1 дня"
 msgid "Show each photo for"
 msgstr "Показывать каждое фото в течение"
 
-#: set-wallpaper-contract/set-wallpaper.vala:226
+#: set-wallpaper-contract/set-wallpaper.vala:229
 msgid "Set As Desktop Slideshow"
 msgstr "Установить как слайд-шоу на рабочем столе"
 
-#: set-wallpaper-contract/set-wallpaper.vala:233
+#: set-wallpaper-contract/set-wallpaper.vala:236
 msgid "Create Slideshow"
 msgstr "Создать слайдшоу"
 

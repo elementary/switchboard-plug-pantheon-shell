@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 07:27+0000\n"
+"POT-Creation-Date: 2022-08-10 17:22+0000\n"
 "PO-Revision-Date: 2022-08-06 20:16+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -140,7 +140,9 @@ msgstr "다크"
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
-msgstr "시스템 구성 요소에 대해 선호하는 비주얼 스타일입니다. 앱은 이 기본 설정을 따르도록 선택할 수도 있습니다."
+msgstr ""
+"시스템 구성 요소에 대해 선호하는 비주얼 스타일입니다. 앱은 이 기본 설정을 따"
+"르도록 선택할 수도 있습니다."
 
 #: src/Views/Appearance.vala:129
 msgid "Schedule"
@@ -162,59 +164,61 @@ msgstr "시작:"
 msgid "To:"
 msgstr "끝:"
 
-#: src/Views/Appearance.vala:292
+#: src/Views/Appearance.vala:298
 msgid "Accent Color"
 msgstr "강조색"
 
-#: src/Views/Appearance.vala:297
+#: src/Views/Appearance.vala:303
 msgid "Blueberry"
 msgstr "블루베리"
 
-#: src/Views/Appearance.vala:300
+#: src/Views/Appearance.vala:306
 msgid "Mint"
 msgstr "민트"
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:309
 msgid "Lime"
 msgstr "라임"
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:312
 msgid "Banana"
 msgstr "바나나"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:315
 msgid "Orange"
 msgstr "오렌지"
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:318
 msgid "Strawberry"
 msgstr "딸기"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:321
 msgid "Bubblegum"
 msgstr "풍선껌"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:324
 msgid "Grape"
 msgstr "포도"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:327
 msgid "Cocoa"
 msgstr "코코아"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:330
 msgid "Slate"
 msgstr "슬레이트"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:333
 msgid "Automatic based on wallpaper"
 msgstr "배경 화면에 따라 자동"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
-msgstr "기본적으로 시스템 전체에 사용됩니다. 앱은 항상 고유한 강조 색상을 사용할 수 있습니다."
+msgstr ""
+"기본적으로 시스템 전체에 사용됩니다. 앱은 항상 고유한 강조 색상을 사용할 수 "
+"있습니다."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -354,41 +358,53 @@ msgstr "난독증 친화적:"
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
-msgstr "아래가 두툼한 모양과 넓어진 문자 간격은 가독성과 읽기 속도를 향상시키는 데 도움이 됩니다."
+msgstr ""
+"아래가 두툼한 모양과 넓어진 문자 간격은 가독성과 읽기 속도를 향상시키는 데 도"
+"움이 됩니다."
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:105
 msgid "Import Photo…"
 msgstr "사진 가져오기…"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:110
 msgid "Centered"
 msgstr "중앙 정렬"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:111
 msgid "Zoom"
 msgstr "확대"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:112
 msgid "Spanned"
 msgstr "지연됨"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:155
 msgid "Import Photo"
 msgstr "사진 가져오기"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:156
 msgid "Import"
 msgstr "가져오기"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:157
 msgid "Cancel"
 msgstr "취소"
 
-#: src/Widgets/WallpaperContainer.vala:118
+#: src/Views/Wallpaper.vala:577
+#, fuzzy
+#| msgid "Wallpaper"
+msgid "Wallpaper Deleted"
+msgstr "배경화면"
+
+#: src/Views/Wallpaper.vala:578
+msgid "Undo"
+msgstr ""
+
+#: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
 msgstr "제거"
 
-#: src/Widgets/WallpaperContainer.vala:188
+#: src/Widgets/WallpaperContainer.vala:191
 #, c-format
 msgid "Artist: %s"
 msgstr "아티스트: %s"
@@ -419,11 +435,11 @@ msgstr "1일"
 msgid "Show each photo for"
 msgstr "각 사진을 표시할 시간"
 
-#: set-wallpaper-contract/set-wallpaper.vala:226
+#: set-wallpaper-contract/set-wallpaper.vala:229
 msgid "Set As Desktop Slideshow"
 msgstr "배경화면 슬라이드쇼로 설정"
 
-#: set-wallpaper-contract/set-wallpaper.vala:233
+#: set-wallpaper-contract/set-wallpaper.vala:236
 msgid "Create Slideshow"
 msgstr "슬라이드쇼 만들기"
 
