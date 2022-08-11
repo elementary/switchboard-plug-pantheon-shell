@@ -397,7 +397,11 @@ public class PantheonShell.Appearance : Gtk.Widget {
 
         construct {
             add_css_class (Granite.STYLE_CLASS_COLOR_BUTTON);
-            add_css_class (color.to_string ());
+            if (color == AccentColor.NO_PREFERENCE) {
+                add_css_class ("auto");
+            } else {
+                add_css_class (color.to_string ());
+            }
 
             realize.connect (() => {
                 active = color == pantheon_act.prefers_accent_color;
