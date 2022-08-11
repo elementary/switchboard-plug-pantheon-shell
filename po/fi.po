@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 17:22+0000\n"
-"PO-Revision-Date: 2022-08-10 18:19+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-08-11 17:38+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
 "Language: fi\n"
@@ -287,26 +287,24 @@ msgid "Display %d"
 msgstr "Näyttö %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "Kun hiiren osoitin kohdistetaan näytön kulmaan:"
+msgstr "Kun hiiren osoitin kohdistetaan näytön kulmaan"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "Vasen ylä"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "Oikea ylä"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "Vasen ala"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "Oikea ala"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
@@ -393,10 +391,8 @@ msgid "Cancel"
 msgstr "Peru"
 
 #: src/Views/Wallpaper.vala:577
-#, fuzzy
-#| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
-msgstr "Taustakuva"
+msgstr "Taustakuva poistettu"
 
 #: src/Views/Wallpaper.vala:578
 msgid "Undo"
