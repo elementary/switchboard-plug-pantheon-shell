@@ -72,10 +72,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     construct {
-        var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
-        Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
         image = new Gtk.Picture () {
             can_shrink = true
         };

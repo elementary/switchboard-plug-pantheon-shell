@@ -602,7 +602,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     }
 
     private void undo_removal () {
-        wallpaper_view.add (wallpaper_for_removal);
+        wallpaper_view.append (wallpaper_for_removal);
         wallpaper_for_removal = null;
     }
 }

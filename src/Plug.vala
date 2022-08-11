@@ -38,7 +38,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
         var provider = new Gtk.CssProvider ();
         provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         // DEPRECATED
         settings.set ("desktop/wallpaper", "wallpaper");
