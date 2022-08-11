@@ -549,6 +549,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var child = view_overlay.get_first_child ();
         while (child != null) {
             if (child is Granite.Toast) {
+                view_overlay.remove_overlay (child);
                 child.destroy ();
             }
             child = view_overlay.get_first_child ();
