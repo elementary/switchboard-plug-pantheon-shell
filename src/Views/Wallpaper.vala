@@ -417,18 +417,27 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
+    private static string[] get_system_bg_directories () {
+        string[] directories = {};
+        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
+            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
+            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
+                debug ("Found system background directory: %s", system_background_dir);
+                directories += system_background_dir;
+            }
+        }
+
+        return directories;
+    }
+
     private string[] get_bg_directories () {
         string[] background_directories = {};
 
         // Add user background directory first
         background_directories += get_local_bg_directory ();
 
-        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
-            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
-            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
-                debug ("Found system background directory: %s", system_background_dir);
-                background_directories += system_background_dir;
-            }
+        foreach (var bg_dir in get_system_bg_directories ()) {
+            background_directories += bg_dir;
         }
 
         if (background_directories.length == 0) {
@@ -572,8 +581,13 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             return 0;
         }
 
-        var uri1_is_system = uri1.contains ("file:///usr/share/backgrounds/");
-        var uri2_is_system = uri2.contains ("file:///usr/share/backgrounds/");
+        var uri1_is_system = false;
+        var uri2_is_system = false;
+        foreach (var bg_dir in get_system_bg_directories ()) {
+            bg_dir = "file://" + bg_dir;
+            uri1_is_system = uri1.contains (bg_dir) || uri1_is_system;
+            uri2_is_system = uri2.contains (bg_dir) || uri2_is_system;
+        }
 
         // Sort wallpapers from /usr/share/backgrounds/ first
         if (uri1_is_system && !uri2_is_system) {
