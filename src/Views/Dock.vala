@@ -49,6 +49,7 @@ public class PantheonShell.Dock : Gtk.Widget {
         var icon_size_32 = new Gtk.CheckButton () {
             tooltip_text = _("Small")
         };
+        icon_size_32.add_css_class ("image-button");
         var icon_size_32_image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic") {
             pixel_size = 32
         };
@@ -57,20 +58,21 @@ public class PantheonShell.Dock : Gtk.Widget {
         var icon_size_48 = new Gtk.CheckButton () {
             tooltip_text = _("Default")
         };
+        icon_size_48.add_css_class ("image-button");
         icon_size_48.group = icon_size_32;
         var icon_size_48_image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic") {
             pixel_size = 48
         };
         icon_size_48_image.set_parent (icon_size_48);
 
-        var image_64 = new Gtk.Image () {
-            icon_name = "application-default-icon-symbolic",
-            pixel_size = 64
-        };
-
         var icon_size_64 = new Gtk.CheckButton () {
             tooltip_text = _("Large"),
             group = icon_size_32
+        };
+        icon_size_64.add_css_class ("image-button");
+        var image_64 = new Gtk.Image () {
+            icon_name = "application-default-icon-symbolic",
+            pixel_size = 64
         };
         image_64.set_parent (icon_size_64);
 
