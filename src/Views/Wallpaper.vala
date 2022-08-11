@@ -47,11 +47,13 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
+    private Gtk.Overlay view_overlay;
     private Gtk.ComboBoxText combo;
     private Gtk.ColorButton color_button;
 
     private WallpaperContainer active_wallpaper = null;
     private SolidColorContainer solid_color = null;
+    private WallpaperContainer wallpaper_for_removal = null;
 
     private Cancellable last_cancellable;
 
@@ -100,6 +102,10 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             child = wallpaper_view
         };
 
+        view_overlay = new Gtk.Overlay () {
+            child = wallpaper_scrolled_window
+        };
+ 
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
             margin_start = 12,
             margin_end = 12,
@@ -142,7 +148,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         actionbar.pack_end (combo);
 
         attach (separator, 0, 0, 1, 1);
-        attach (wallpaper_scrolled_window, 0, 1, 1, 1);
+        attach (view_overlay, 0, 1, 1, 1);
         attach (actionbar, 0, 2, 1, 1);
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
@@ -516,6 +522,11 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     }
 
     private void add_wallpaper_from_file (GLib.File file, string uri) {
+        // don't load 'removed' wallpaper on plug reload
+        if (wallpaper_for_removal != null && wallpaper_for_removal.uri == uri) {
+            return;
+        }
+
         try {
             var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
             var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
@@ -524,9 +535,8 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             wallpaper_view.append (wallpaper);
 
             wallpaper.trash.connect (() => {
-                var new_file = File.new_for_uri (uri);
-                new_file.delete_async.begin ();
-                wallpaper_view.remove (wallpaper);
+                send_undo_toast ();
+                mark_for_removal (wallpaper);
             });
 
             // Select the wallpaper if it is the current wallpaper
@@ -545,5 +555,54 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         if (last_cancellable != null) {
             last_cancellable.cancel ();
         }
+    }
+
+    private void send_undo_toast () {
+        var children = wallpaper_view.observe_children ();
+        for (var index = 0; index < children.get_n_items (); index++) {
+            var child = (Gtk.Widget) children.get_item (index);
+            if (child is Granite.Toast) {
+                child.destroy ();
+            }
+        }
+
+        if (wallpaper_for_removal != null) {
+            confirm_removal ();
+        }
+
+        var toast = new Granite.Toast (_("Wallpaper Deleted"));
+        toast.set_default_action (_("Undo"));
+
+        toast.default_action.connect (() => {
+            undo_removal ();
+        });
+
+        var toast_revealer = (Gtk.Revealer) toast.get_first_child ();
+        toast_revealer.notify["reveal-child"].connect (() => {
+            if (!toast_revealer.reveal_child && wallpaper_for_removal != null) {
+                confirm_removal ();
+            }
+        });
+
+        view_overlay.add_overlay (toast);
+        view_overlay.set_measure_overlay (toast, true);
+        toast.send_notification ();
+    }
+
+    private void mark_for_removal (WallpaperContainer wallpaper) {
+        wallpaper_view.remove (wallpaper);
+        wallpaper_for_removal = wallpaper;
+    }
+
+    private void confirm_removal () {
+        var wallpaper_file = File.new_for_uri (wallpaper_for_removal.uri);
+        wallpaper_file.trash_async.begin ();
+        wallpaper_for_removal.destroy ();
+        wallpaper_for_removal = null;
+    }
+
+    private void undo_removal () {
+        wallpaper_view.add (wallpaper_for_removal);
+        wallpaper_for_removal = null;
     }
 }
