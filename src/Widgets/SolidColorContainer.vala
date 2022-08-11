@@ -20,7 +20,7 @@
 
 public class PantheonShell.SolidColorContainer : WallpaperContainer {
     public string color { get; construct; }
-    public Gdk.RGBA rgba {
+    private Gdk.RGBA rgba {
         get {
             Gdk.RGBA rgba = {};
             rgba.parse (color);

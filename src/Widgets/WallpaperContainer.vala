@@ -176,7 +176,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             }
 
             if (metadata.has_exif ()) {
-                var artist_name = metadata.get_tag_string ("Exif.Image.Artist");
+                string? artist_name = null;
+                try {
+                    artist_name = metadata.try_get_tag_string ("Exif.Image.Artist");
+                } catch (Error e) {
+                    warning (e.message);
+                }
+
                 if (artist_name != null) {
                     set_tooltip_text (_("Artist: %s").printf (artist_name));
                 }
