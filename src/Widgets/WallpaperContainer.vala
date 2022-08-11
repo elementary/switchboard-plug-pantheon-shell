@@ -21,19 +21,18 @@
 public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public signal void trash ();
 
-    private const int THUMB_WIDTH = 162;
-    private const int THUMB_HEIGHT = 100;
+    protected const int THUMB_WIDTH = 162;
+    protected const int THUMB_HEIGHT = 100;
 
     private Gtk.Box card_box;
     private Gtk.Popover context_menu;
     private Gtk.GestureClick overlay_event_controller;
     private Gtk.Revealer check_revealer;
-    private Gtk.Picture image;
+    protected Gtk.Picture image;
 
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
-    public Gdk.Pixbuf thumb { get; set; }
 
     private int scale;
 
