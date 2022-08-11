@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 17:22+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/lt/>\n"
@@ -403,7 +403,7 @@ msgstr "Darbalaukio fonas"
 
 #: src/Views/Wallpaper.vala:578
 msgid "Undo"
-msgstr ""
+msgstr "Atšaukti"
 
 #: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"

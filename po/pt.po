@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 17:22+0000\n"
-"PO-Revision-Date: 2022-08-01 14:35+0000\n"
+"PO-Revision-Date: 2022-08-10 19:12+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -392,14 +392,12 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #: src/Views/Wallpaper.vala:577
-#, fuzzy
-#| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
-msgstr "Papel de parede"
+msgstr "Papel de parede eliminado"
 
 #: src/Views/Wallpaper.vala:578
 msgid "Undo"
-msgstr ""
+msgstr "Desfazer"
 
 #: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 17:22+0000\n"
-"PO-Revision-Date: 2022-07-06 18:34+0000\n"
+"PO-Revision-Date: 2022-08-10 19:12+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
@@ -391,14 +391,12 @@ msgid "Cancel"
 msgstr "ביטול"
 
 #: src/Views/Wallpaper.vala:577
-#, fuzzy
-#| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
-msgstr "תמונת רקע"
+msgstr "תמונת רקע נמחקה"
 
 #: src/Views/Wallpaper.vala:578
 msgid "Undo"
-msgstr ""
+msgstr "ביטול"
 
 #: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
