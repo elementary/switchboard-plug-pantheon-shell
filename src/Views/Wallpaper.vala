@@ -585,8 +585,8 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var uri2_is_system = false;
         foreach (var bg_dir in get_system_bg_directories ()) {
             bg_dir = "file://" + bg_dir;
-            uri1_is_system = uri1.contains (bg_dir) || uri1_is_system;
-            uri2_is_system = uri2.contains (bg_dir) || uri2_is_system;
+            uri1_is_system = uri1.has_prefix (bg_dir) || uri1_is_system;
+            uri2_is_system = uri2.has_prefix (bg_dir) || uri2_is_system;
         }
 
         // Sort wallpapers from /usr/share/backgrounds/ first
