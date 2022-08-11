@@ -145,6 +145,9 @@ namespace SetWallpaperContractor {
         File? dest = null;
         try {
             string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
+            if (greeter_data_dir == "") {
+                greeter_data_dir = Path.build_filename ("/var/lib/lightdm-data/", Environment.get_user_name (), "wallpaper");
+            }
 
             var folder = File.new_for_path (greeter_data_dir);
             if (folder.query_exists ()) {
