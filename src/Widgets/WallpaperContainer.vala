@@ -75,7 +75,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         image = new Gtk.Picture () {
             can_shrink = true
         };
-        
+
         card_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
             overflow = Gtk.Overflow.HIDDEN
         };

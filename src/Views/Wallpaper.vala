@@ -105,7 +105,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         view_overlay = new Gtk.Overlay () {
             child = wallpaper_scrolled_window
         };
- 
+
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
             margin_start = 12,
             margin_end = 12,
