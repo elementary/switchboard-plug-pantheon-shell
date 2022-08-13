@@ -33,6 +33,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
+    public uint64 creation_date = 0;
 
     private int scale;
 
@@ -112,14 +113,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             move_to_trash.clicked.connect (() => trash ());
 
             var file = File.new_for_uri (uri);
-            file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_DELETE, 0, Priority.DEFAULT, null, (obj, res) => {
-                try {
-                    var info = file.query_info_async.end (res);
-                    move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
-                } catch (Error e) {
-                    critical (e.message);
-                }
-            });
+            try {
+                var info = file.query_info ("*", FileQueryInfoFlags.NONE);
+                creation_date = info.get_attribute_uint64 (GLib.FileAttribute.TIME_CREATED);
+                move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
+            } catch (Error e) {
+                critical (e.message);
+            }
 
             context_menu = new Gtk.Popover () {
                 child = move_to_trash
