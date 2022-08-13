@@ -87,6 +87,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
+        wallpaper_view.set_sort_func (wallpapers_sort_function);
 
         var color = settings.get_string ("primary-color");
         create_solid_color_container (color);
@@ -416,18 +417,27 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
+    private static string[] get_system_bg_directories () {
+        string[] directories = {};
+        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
+            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
+            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
+                debug ("Found system background directory: %s", system_background_dir);
+                directories += system_background_dir;
+            }
+        }
+
+        return directories;
+    }
+
     private string[] get_bg_directories () {
         string[] background_directories = {};
 
         // Add user background directory first
         background_directories += get_local_bg_directory ();
 
-        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
-            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
-            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
-                debug ("Found system background directory: %s", system_background_dir);
-                background_directories += system_background_dir;
-            }
+        foreach (var bg_dir in get_system_bg_directories ()) {
+            background_directories += bg_dir;
         }
 
         if (background_directories.length == 0) {
@@ -555,11 +565,54 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         } catch (Error e) {
             critical ("Unable to add wallpaper: %s", e.message);
         }
+
+        wallpaper_view.invalidate_sort ();
     }
 
     public void cancel_thumbnail_generation () {
         if (last_cancellable != null) {
             last_cancellable.cancel ();
+        }
+    }
+
+    private int wallpapers_sort_function (Gtk.FlowBoxChild _child1, Gtk.FlowBoxChild _child2) {
+        var child1 = (WallpaperContainer) _child1;
+        var child2 = (WallpaperContainer) _child2;
+        var uri1 = child1.uri;
+        var uri2 = child2.uri;
+
+        if (uri1 == null || uri2 == null) {
+            return 0;
+        }
+
+        var uri1_is_system = false;
+        var uri2_is_system = false;
+        foreach (var bg_dir in get_system_bg_directories ()) {
+            bg_dir = "file://" + bg_dir;
+            uri1_is_system = uri1.has_prefix (bg_dir) || uri1_is_system;
+            uri2_is_system = uri2.has_prefix (bg_dir) || uri2_is_system;
+        }
+
+        // Sort system wallpapers last
+        if (uri1_is_system && !uri2_is_system) {
+            return 1;
+        } else if (!uri1_is_system && uri2_is_system) {
+            return -1;
+        }
+
+        var child1_date = child1.creation_date;
+        var child2_date = child2.creation_date;
+
+        // sort by filename if creation dates are equal
+        if (child1_date == child2_date) {
+            return uri1.collate (uri2);
+        }
+
+        // sort recently added first
+        if (child1_date >= child2_date) {
+            return -1;
+        } else {
+            return 1;
         }
     }
 
