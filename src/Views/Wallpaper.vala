@@ -565,6 +565,8 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         } catch (Error e) {
             critical ("Unable to add wallpaper: %s", e.message);
         }
+
+        wallpaper_view.invalidate_sort ();
     }
 
     public void cancel_thumbnail_generation () {
@@ -573,9 +575,11 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         }
     }
 
-    private int wallpapers_sort_function (Gtk.FlowBoxChild child1, Gtk.FlowBoxChild child2) {
-        var uri1 = ((WallpaperContainer) child1).uri;
-        var uri2 = ((WallpaperContainer) child2).uri;
+    private int wallpapers_sort_function (Gtk.FlowBoxChild _child1, Gtk.FlowBoxChild _child2) {
+        var child1 = (WallpaperContainer) _child1;
+        var child2 = (WallpaperContainer) _child2;
+        var uri1 = child1.uri;
+        var uri2 = child2.uri;
 
         if (uri1 == null || uri2 == null) {
             return 0;
@@ -589,14 +593,33 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             uri2_is_system = uri2.has_prefix (bg_dir) || uri2_is_system;
         }
 
-        // Sort wallpapers from /usr/share/backgrounds/ first
+        // Sort system wallpapers last
         if (uri1_is_system && !uri2_is_system) {
-            return -1;
+            return 1;
         } else if (!uri1_is_system && uri2_is_system) {
+            return -1;
+        }
+
+        var child1_date = child1.creation_date;
+        var child2_date = child2.creation_date;
+
+        // sort by filename if creation dates are unknown or equal
+        if (child1_date == null && child2_date == null) {
+            return uri1.collate (uri2);
+        }
+        if (child1_date.compare (child2_date) == 0) {
+            return uri1.collate (uri2);
+        }
+
+        // sort files with unknown creation date last
+        if (child1_date == null && child2_date != null) {
+            return -1;
+        } else if (child1_date != null && child2_date == null) {
             return 1;
         }
 
-        return uri1.collate (uri2);
+        // sort recently added first
+        return -child1_date.compare (child2_date);
     }
 
     private void send_undo_toast () {
