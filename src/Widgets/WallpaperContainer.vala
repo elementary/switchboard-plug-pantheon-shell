@@ -33,7 +33,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; set; }
-    public DateTime? creation_date = null;
+    public uint64 creation_date = 0;
 
     private int scale;
 
@@ -121,10 +121,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             var file = File.new_for_uri (uri);
             try {
                 var info = file.query_info ("*", FileQueryInfoFlags.NONE);
-                var t = (int64) info.get_attribute_uint64 (GLib.FileAttribute.TIME_CREATED);
-                if (t > 0) {
-                    creation_date = new DateTime.from_unix_utc (t);
-                }
+                creation_date = info.get_attribute_uint64 (GLib.FileAttribute.TIME_CREATED);
                 move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
             } catch (Error e) {
                 critical (e.message);

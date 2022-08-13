@@ -603,23 +603,17 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var child1_date = child1.creation_date;
         var child2_date = child2.creation_date;
 
-        // sort by filename if creation dates are unknown or equal
-        if (child1_date == null && child2_date == null) {
+        // sort by filename if creation dates are equal
+        if (child1_date == child2_date) {
             return uri1.collate (uri2);
-        }
-        if (child1_date.compare (child2_date) == 0) {
-            return uri1.collate (uri2);
-        }
-
-        // sort files with unknown creation date last
-        if (child1_date == null && child2_date != null) {
-            return -1;
-        } else if (child1_date != null && child2_date == null) {
-            return 1;
         }
 
         // sort recently added first
-        return -child1_date.compare (child2_date);
+        if (child1_date >= child2_date) {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 
     private void send_undo_toast () {
