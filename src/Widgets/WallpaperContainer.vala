@@ -91,12 +91,15 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         card_box.add (image);
         card_box.margin = 9;
 
-        var check = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/check.svg") {
+        var check_provider = new Gtk.CssProvider ();
+        check_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
+
+        var check = new Gtk.RadioButton (null) {
             halign = Gtk.Align.START,
             valign = Gtk.Align.START,
             can_focus = false
         };
-        check.get_style_context ().add_class ("check");
+        check.get_style_context ().add_provider (check_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
         check_revealer = new Gtk.Revealer ();
         check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
