@@ -1,3 +1,175 @@
+switchboard-plug-pantheon-shell (6.3.0) bionic; urgency=medium
+
+  * Release 6.3.0 (#329)
+  * WallpaperContainer: style selection check with CSS (#330)
+  * Sort wallpapers (#325)
+  * Fallback to hardcoded path if required (#328)
+  * Load stylesheet once (#326)
+  * Update translation files
+  * Update translation template
+  * Undo mechanism for trashing wallpapers (#327)
+  * Fix accent color (#324)
+  * Selected wallpaper check: follow accent color (#323)
+  * Add timestamp to filename in contract (#322)
+  * Add timestamp to filename (#321)
+  * Use focus_in_event (#315)
+  * Propagate state_set event (#317)
+  * Use Hdy.Clamp to set page width (#314)
+  * Release 6.2.0 (#313)
+  * Multitasking: redesign (#310)
+  * Appearance: re-layout to use more vertical space (#307)
+  * Release 6.1.0 (#300)
+  * Add missing screenshot
+  * Update screenshots
+  * Text sizescale (#298)
+  * Move Text settings to their own page (#297)
+  * Wrap accent color info label (#290)
+  * l10n: Correctly setup the locales (#286)
+  * README: Fix screenshot link
+  * Release 6.0.0 (#282)
+  * Appearance: Mention apps in dark style copy (#279)
+  * Set accent color based on wallpaper (#263)
+  * Add padding to appearance, dock, multitasking views (#268)
+  * Move switches from appearance to other tabs (#266)
+  * Appearance: Add bottom margin (#265)
+  * Appearance: Fix alignment of accent help label (#264)
+  * SetWallpaper: Use Granite.MessageDialog (#259)
+  * Views/Dock: set pressure hide sensitivity on construct (#258)
+  * LINGUAS: sort, remove en_US
+  * Multitasking: Add auto workspace behavior switches (#252)
+  * Plug: Add dark style and accent to search results (#250)
+  * Appearance: Re-order Accent Colors (#247)
+  * Schedule dark mode (#233)
+  * HotCorners: Rename to Multitasking (#241)
+  * Dyslexia follow up (#237)
+  * Option to enable dyslexia-friendly text (#235)
+  * Use a selection of image MIME types instead of general image type
+    (#230)
+  * Add PantheonShell namespace to all classes (#231)
+  * Appearance: Use Granite.STYLE_CLASS_ROUNDED (#227)
+  * Appearance: avoid an unintentional accent change (#228)
+  * Revert "Appearance: Use Granite.STYLE_CLASS_ROUNDED"
+  * Appearance: Use Granite.STYLE_CLASS_ROUNDED
+  * Hotcorners: Update illustration for greenfield (#226)
+  * Appearance settings for accent color (#134)
+  * Make dark mode illustration darker (#221)
+  * Use illustrations for appearance setting (#220)
+  * AppData: Add "Settings" to name (#218)
+  * Appearance: Add dark preference (#216)
+  * Revert "Meson: bump Granite dep to 5.4"
+  * Meson: bump Granite dep to 5.4
+  * Release 2.8.4 (#214)
+  * Wallpaper: Only copy if not in ANY backgrounddirs (#213)
+  * Plug: Add a11y search strings (#211)
+  * AppData: Add Icon & Gettext (#209)
+  * Dock: Illustrate icon size (#208)
+  * Release 2.8.3 (#205)
+  * Get system background directories from XDG_DATA_DIRS (#193)
+  * Release 2.8.2 (#192)
+  * AppData: Add 2.8.2 release info
+  * Update POTFILES
+  * Add Gettext Updates to Actions
+  * Split deb packaging into its own branch
+  * Add Release to Actions
+  * Granite.Services.Settings → GLib.Settings (#191)
+  * run installation in CI (#189)
+  * Add Lint to CI (#187)
+  * Fix code style errors (#188)
+  * Build with GitHub CI (#186)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * Chmod 0604 copy of wallpaper for greeter (#182)
+  * build: fix install path for switchboard plug (#180)
+  * Rename desktop-plug.vala to Plug.vala (#179)
+  * Plug: Change code name to RDNN
+  * Fix translations
+  * Use the interfaces provided by LightDM (#177)
+  * Add Silesian and update translation template
+  * Update for wallpaper settings deprecation (#175)
+  * Create FUNDING.yml
+  * Release 2.8.1
+  * Wallpaper: Use FileChooserNative (#169)
+  * Partially revert commits unintentionally pushed 7dc4a4 and 4a46d6
+  * Don't be fancy
+  * WIP: Build system backgrounds dir from DATADIR
+  * Fix various compilation warnings (#164)
+  * Release 2.8.0
+  * HotCorners: Use CSS for the hotcorner image (#163)
+  * Wallpapers: ignore all symlinks (#162)
+  * Add Appearance Tab (#155)
+  * Release 2.7.2
+  * Use file paths instead of URIs for wallpaper folders (#161)
+  * Release 2.7.1
+  * Meson.build: Use GLib preset for l10n
+  * Added screenshot (#150)
+  * Plug search improvements (#147)
+  * Add hotcorner CSS from system stylesheet (#130)
+  * Add a new option for switchting to a new workspace for hotcorners
+    (#115)
+  * Make RDNN scheme match wingpanel (#124)
+  * Dock.vala: Fix deprecations in check_for_screens
+  * WallpaperContainer.vala: replace deprecated menu.popup
+  * Dock.vala: fix deprecations in get_monitor_plug_names
+  * Wallpaper.vala: margin_right is deprecated
+  * Bump required Gtk to 3.22
+  * Release 0.2.7
+  * Appdata: remove zero-width space
+  * Add appdata file (#122)
+  * Merge remote-tracking branch 'origin/master'
+  * Add editorconfig file
+  * Add an import function (#118)
+  * Dry add wallpaper (#121)
+  * Remove non-existant setting (#120)
+  * Fix wallpaper container css (#108)
+  * Remove custom folder and pictures (#117)
+  * WallpaperContainer.vala: fix warnings with implicit begin (#110)
+  * Drop support for Plank < 0.10.9  (#113)
+  * Don't create dock page if no plank (#114)
+  * Remove Minimize current window hotcorner (#97) (#101)
+  * Trash wallpapers (#106)
+  * Remove unused Gala settings (#107)
+  * Fix warnings about IOError (#104)
+  * Fix deprecated margins (#105)
+  * meson: use Meson build system (#93)
+  * hotcorners: use GResource to get the hotcorner image (#92)
+  * Fix incorrect use of width and height parameters of the
+    set_from_file_async call (#91)
+  * Refactor the Wallpaper class (#89)
+  * Update README.md (#87)
+  * Require Granite >= 0.5
+  * Load wallpapers using Granite.AsyncImage (#86)
+  * Remove unused make dist (#85)
+  * Scroll to selected wallpaper after loading (#74)
+  * Revert size to 162x100 (#84)
+  * Display wallpaper artist Exif data in tooltip (#82)
+  * build: Don't check for pkg-config twice which seems to be fatal
+    (FIX) (#80)
+  * build: Don't check for pkg-config twice which seems to be fatal
+    (#79)
+  * Prevent the currently selected wallpaper being unchecked when
+    selecting again (#77)
+  * Use freedesktop Thumbnailer (Tumbler) to get wallpaper thumbnails
+    (#75)
+  * Save wallpaper source state (#72)
+  * Reset color shading type on wallpaper change (#73)
+  * Custom command revealer (#71)
+  * Reset picture options if a solid color has been set (#70)
+  * Make stack switcher homogeneous (#69)
+  * Fixed translations (#66)
+  * Create .gitignore (#65)
+  * Create CODE_OF_CONDUCT.md (#64)
+  * Release 0.2.6
+  * Fixed missing directory parameter (#63)
+  * Enable HiDPI on the wallpapers (#62)
+  * Merge remote-tracking branch 'refs/remotes/origin/master'
+  * Fix gee_abstract_map_clear warnings; improve performance (#59)
+  * Fix get int32 warnings (#60)
+  * Fix build with cmake 3.8 (#58)
+  * set-wallpaper-contract/CMakeLists.txt: fix posix dependency (#56)
+  * Update translation template (#57)
+
+ -- elementary OS Team <builds@elementary.io>  Mon, 15 Aug 2022 18:17:10 +0000
+
 switchboard-plug-pantheon-shell (6.2.0) bionic; urgency=medium
 
   * Release 6.2.0 (#313)
