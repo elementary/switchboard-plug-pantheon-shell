@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-07-03 06:20+0000\n"
+"PO-Revision-Date: 2022-08-15 22:41+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -36,35 +36,35 @@ msgstr "יכולות חדשות:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "There is now an undo option after removing a wallpaper"
-msgstr ""
+msgstr "מעתה אפשר להתחרט לאחר הסרת תמונת רקע"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr ""
+msgstr "תמונות הרקע מסודרות כך שהתמונות שהוספת תופענה בהתחלה"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
-msgstr ""
+msgstr "תיקונים:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
 msgid "Wallpaper accent color follows system setting"
-msgstr ""
+msgstr "צבע הרקע המשני מתאים את עצמו להגדרת המערכת"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
+msgstr "חוזה הגדרת תמונת רקע נכשל בצורה עדינה כשהוא מופעל בתור sudo"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Wallpapers with the same name are distinguished"
-msgstr ""
+msgstr "תמונות רקע באותו השם נבדלות זו מזו"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
+msgstr "החלפת סגנונות מהמקלדת מבטלת תזמון סגנון כהה"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Style dyslexia-friendly switch properly"
-msgstr ""
+msgstr "הסגנון הידידותי לבעלי דיסקלציה מתחלף כראוי"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
