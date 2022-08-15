@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-07-03 00:43+0000\n"
+"PO-Revision-Date: 2022-08-15 19:27+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -37,35 +37,37 @@ msgstr "Нові функції:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "There is now an undo option after removing a wallpaper"
-msgstr ""
+msgstr "Відтепер є можливість скасувати вибір після вилучення тла"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr ""
+msgstr "Зображення тла тепер впорядковуються починаючи від власних зображень"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
-msgstr ""
+msgstr "Виправлення:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
 msgid "Wallpaper accent color follows system setting"
-msgstr ""
+msgstr "Основний колір тла відповідає налаштуванням системи"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
+msgstr "Set-wallpaper не правильно працював під час запуску як sudo"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Wallpapers with the same name are distinguished"
-msgstr ""
+msgstr "Розрізнення зображень тла з однаковими назвами"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
+"Перемикання стилів за допомогою клавіатури скасовувало планування темного "
+"стилю"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Style dyslexia-friendly switch properly"
-msgstr ""
+msgstr "Правильне перемикання стилів для людей з дислексією"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
