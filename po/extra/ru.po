@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-08-03 14:30+0000\n"
+"PO-Revision-Date: 2022-08-16 23:43+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ru/>\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr ""
+msgstr "Обои теперь сортируются с пользовательскими обоями в начале"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
@@ -54,6 +54,8 @@ msgstr ""
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr ""
+"Контракт set-wallpaper выдавал катастрофическую ошибку при запуске от "
+"суперпользователя"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Wallpapers with the same name are distinguished"
