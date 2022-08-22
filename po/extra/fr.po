@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
 "PO-Revision-Date: 2022-08-22 08:52+0000\n"
-"Last-Translator: Xavier Naxara <xaviernaxara33@gmail.com>\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
 "Language: fr\n"
@@ -42,7 +42,9 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr "Les fonds d'écrans sont maintenant stockés avec les fonds personnalisés"
+msgstr ""
+"Les fonds d'écran sont désormais affichés en premier avec les fonds "
+"personnalisés"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
