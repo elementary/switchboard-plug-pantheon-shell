@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-08-22 08:52+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"PO-Revision-Date: 2022-08-22 08:53+0000\n"
+"Last-Translator: Xavier Naxara <xaviernaxara33@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
 "Language: fr\n"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Wallpapers with the same name are distinguished"
-msgstr ""
+msgstr "Les fonds d'écran ayant le même nom sont différentiés"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Switching styles with the keyboard cancels dark style scheduling"
