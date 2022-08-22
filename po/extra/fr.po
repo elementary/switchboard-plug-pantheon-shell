@@ -46,7 +46,7 @@ msgstr "Les fonds d'écrans sont maintenant stockés avec les fonds personnalis�
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
-msgstr ""
+msgstr "Correctifs :"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
 msgid "Wallpaper accent color follows system setting"
