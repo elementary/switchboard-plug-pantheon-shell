@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-07-04 08:15+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
+"PO-Revision-Date: 2022-08-22 08:52+0000\n"
+"Last-Translator: Xavier Naxara <xaviernaxara33@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
 "Language: fr\n"
@@ -37,10 +37,12 @@ msgstr "Nouvelles fonctionnalités :"
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "There is now an undo option after removing a wallpaper"
 msgstr ""
+"Il y a désormais la possibilité de revenir en arrière après avoir supprimé "
+"un fond d'écran"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr ""
+msgstr "Les fonds d'écrans sont maintenant stockés avec les fonds personnalisés"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
