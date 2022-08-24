@@ -24,6 +24,9 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     protected const int THUMB_WIDTH = 162;
     protected const int THUMB_HEIGHT = 100;
 
+    private static Gtk.CssProvider check_css_provider;
+    private static Gtk.CheckButton check_group; // Check used for turning CheckButtons into RadioButtons
+
     private Gtk.Box card_box;
     private Gtk.Popover context_menu;
     private Gtk.GestureClick overlay_event_controller;
@@ -71,6 +74,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         Object (uri: uri, thumb_path: thumb_path, thumb_valid: thumb_valid);
     }
 
+    static construct {
+        check_css_provider = new Gtk.CssProvider ();
+        check_css_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
+
+        check_group = new Gtk.CheckButton ();
+    }
+
     construct {
         image = new Gtk.Picture () {
             can_shrink = true
@@ -83,12 +93,17 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         card_box.add_css_class (Granite.STYLE_CLASS_ROUNDED);
         card_box.append (image);
 
-        var check = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/check.svg") {
+        var check = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
             valign = Gtk.Align.START,
-            can_focus = false
+            focusable = false,
+            active = true,
+            group = check_group
         };
-        check.add_css_class ("check");
+        check.notify["active"].connect (() => {
+            check.active = true;
+        });
+        check.get_style_context ().add_provider (check_css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
         check_revealer = new Gtk.Revealer () {
             transition_type = Gtk.RevealerTransitionType.CROSSFADE,
