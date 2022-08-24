@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-10 17:21+0000\n"
+"POT-Creation-Date: 2022-08-15 18:16+0000\n"
 "PO-Revision-Date: 2020-05-29 15:23+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -28,84 +28,119 @@ msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Konfigurer dokken, varme hjørner, og skift skrivebordsbaggrund"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:46
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:59
 msgid "New features:"
 msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
-msgid "Set custom Terminal commands for each hotcorner"
+msgid "There is now an undo option after removing a wallpaper"
 msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
-msgid "Redesigned Appearance and Multitasking views"
+msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
-msgid "Other updates:"
+msgid "Fixes:"
 msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:50
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:59
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:64
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:70
+msgid "Wallpaper accent color follows system setting"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
+msgid "Set-wallpaper contract fails gracefully when run as sudo"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
+msgid "Wallpapers with the same name are distinguished"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
+msgid "Switching styles with the keyboard cancels dark style scheduling"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
+msgid "Style dyslexia-friendly switch properly"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:51
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:65
+msgid "Other updates:"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:40
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:53
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:71
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:80
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:85
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:91
 msgid "Updated translations"
 msgstr "Opdaterede oversættelser"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:35
+msgid "Set custom Terminal commands for each hotcorner"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:36
+msgid "Redesigned Appearance and Multitasking views"
+msgstr ""
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:48
 msgid "Move Text settings to their own page"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:49
 msgid "More granular settings for text scale"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:40
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:61
 msgid "Accent color and dark style options"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:41
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:62
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:42
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:63
 msgid "Maximize and fullscreen workspace management options"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:46
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:67
 msgid "Fix a freeze after opening Power settings"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:47
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:68
 msgid "Improved filter for image file types when importing"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:48
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:69
 msgid "Visual updates"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:49
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:70
 msgid "Some options now appear in different tabs"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:56
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:77
 msgid "Illustrate Dock icon sizes"
 msgstr "Illustrer Dok ikon størrelser"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:57
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:78
 msgid "Fix system wallpapers being copied"
 msgstr "Ret system baggrunde der blev kopieret"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:58
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:79
 msgid "Update search results"
 msgstr "Opdater søge resultater"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:69
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:90
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
 "Ret problemer med indstilling af skrivebordsbaggrunde på Log ind og "

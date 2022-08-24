@@ -7,6 +7,27 @@
   <icon type="stock">preferences-desktop-wallpaper</icon>
   <translation type="gettext">pantheon-desktop-plug</translation>
   <releases>
+    <release version="6.3.0" date="2022-08-15" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>There is now an undo option after removing a wallpaper</li>
+          <li>Wallpapers are now sorted with custom wallpapers first</li>
+        </ul>
+        <p>Fixes:</p>
+        <ul>
+          <li>Wallpaper accent color follows system setting</li>
+          <li>Set-wallpaper contract fails gracefully when run as sudo</li>
+          <li>Wallpapers with the same name are distinguished</li>
+          <li>Switching styles with the keyboard cancels dark style scheduling</li>
+          <li>Style dyslexia-friendly switch properly</li>
+        </ul>
+        <p>Other updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.2.0" date="2022-07-02" urgency="medium">
       <description>
         <p>New features:</p>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-10 17:22+0000\n"
+"POT-Creation-Date: 2022-08-15 18:16+0000\n"
 "PO-Revision-Date: 2022-08-11 15:50+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -15,81 +15,81 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:49
 msgid "Desktop"
 msgstr "デスクトップ"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "ドック、ホットコーナーを設定し、壁紙を変更します"
 
-#: src/Plug.vala:62 src/Plug.vala:118
+#: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
 msgstr "壁紙"
 
-#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
+#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
 msgid "Appearance"
 msgstr "外観"
 
-#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
 msgid "Text"
 msgstr "テキスト"
 
-#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
-#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
+#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Dock & Panel"
 msgstr "ドックとパネル"
 
-#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
-#: src/Plug.vala:134
+#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:138
 msgid "Multitasking"
 msgstr "マルチタスク"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:124
 msgid "Hide Mode"
 msgstr "隠す方法"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:125
 msgid "Icon Size"
 msgstr "アイコンサイズ"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:126
 msgid "Pressure reveal"
 msgstr "押し込んで表示"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:127
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:128
 msgid "Panel translucency"
 msgstr "パネルを透過"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:130
 msgid "Dark style"
 msgstr "ダークスタイル"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:131
 msgid "Accent color"
 msgstr "アクセントカラー"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:133
 msgid "Size"
 msgstr "サイズ"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:134
 msgid "Dyslexia-friendly"
 msgstr "ディスレクシア対応"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:136
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/Plug.vala:133 src/Views/Multitasking.vala:40
+#: src/Plug.vala:137 src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace"
 msgstr "以下の場合にウィンドウを新しいワークスペースに移動"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:138
 msgid "Window animations"
 msgstr "ウィンドウアニメーション"
 
@@ -357,39 +357,39 @@ msgstr ""
 "下部が強調され、字間が確保された書体を使用することで、可読性と読む速度の改善"
 "に役立つ可能性があります。"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
 msgstr "写真をインポート…"
 
-#: src/Views/Wallpaper.vala:110
+#: src/Views/Wallpaper.vala:111
 msgid "Centered"
 msgstr "中央に表示"
 
-#: src/Views/Wallpaper.vala:111
+#: src/Views/Wallpaper.vala:112
 msgid "Zoom"
 msgstr "ズーム"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:113
 msgid "Spanned"
 msgstr "敷き詰め"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
 msgstr "写真をインポート"
 
-#: src/Views/Wallpaper.vala:156
+#: src/Views/Wallpaper.vala:157
 msgid "Import"
 msgstr "インポート"
 
-#: src/Views/Wallpaper.vala:157
+#: src/Views/Wallpaper.vala:158
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Views/Wallpaper.vala:577
+#: src/Views/Wallpaper.vala:630
 msgid "Wallpaper Deleted"
 msgstr "壁紙を削除しました"
 
-#: src/Views/Wallpaper.vala:578
+#: src/Views/Wallpaper.vala:631
 msgid "Undo"
 msgstr "元に戻す"
 
@@ -397,7 +397,7 @@ msgstr "元に戻す"
 msgid "Remove"
 msgstr "削除"
 
-#: src/Widgets/WallpaperContainer.vala:191
+#: src/Widgets/WallpaperContainer.vala:190
 #, c-format
 msgid "Artist: %s"
 msgstr "アーティスト: %s"
@@ -428,11 +428,11 @@ msgstr "1 日"
 msgid "Show each photo for"
 msgstr "それぞれの写真を表示する時間"
 
-#: set-wallpaper-contract/set-wallpaper.vala:229
+#: set-wallpaper-contract/set-wallpaper.vala:232
 msgid "Set As Desktop Slideshow"
 msgstr "デスクトップスライドショーとして設定"
 
-#: set-wallpaper-contract/set-wallpaper.vala:236
+#: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-10 17:22+0000\n"
+"POT-Creation-Date: 2022-08-15 18:16+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Moldovan <https://l10n.elementary.io/projects/switchboard/"
@@ -13,88 +13,88 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:49
 msgid "Desktop"
 msgstr "Spațiul de lucru"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 "Configurați docul, colțurile fierbinți și modificați imaginea de fundal"
 
-#: src/Plug.vala:62 src/Plug.vala:118
+#: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
 msgstr "Tapet"
 
-#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
+#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
 msgid "Appearance"
 msgstr ""
 
-#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
 #, fuzzy
 msgid "Text"
 msgstr "Dimensiune pictograma:"
 
-#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
-#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
+#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
-#: src/Plug.vala:134
+#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:138
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
 msgstr "Vizualizare multitasking"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:124
 msgid "Hide Mode"
 msgstr "Ascundeți modul"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:125
 msgid "Icon Size"
 msgstr "Dimensiune pictogramă"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:126
 #, fuzzy
 msgid "Pressure reveal"
 msgstr "Difuzează previzualizarea:"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:127
 msgid "Display"
 msgstr "Afișează"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:128
 msgid "Panel translucency"
 msgstr ""
 
-#: src/Plug.vala:126
+#: src/Plug.vala:130
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:127
+#: src/Plug.vala:131
 msgid "Accent color"
 msgstr ""
 
-#: src/Plug.vala:129
+#: src/Plug.vala:133
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Dimensiune pictogramă"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:134
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:132
+#: src/Plug.vala:136
 msgid "Hot Corners"
 msgstr "Colțuri calde"
 
-#: src/Plug.vala:133 src/Views/Multitasking.vala:40
+#: src/Plug.vala:137 src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace"
 msgstr ""
 
-#: src/Plug.vala:134
+#: src/Plug.vala:138
 msgid "Window animations"
 msgstr ""
 
@@ -360,41 +360,41 @@ msgid ""
 "legibility and reading speed."
 msgstr ""
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
 msgstr "Importați fotografia …"
 
-#: src/Views/Wallpaper.vala:110
+#: src/Views/Wallpaper.vala:111
 msgid "Centered"
 msgstr "Centrat"
 
-#: src/Views/Wallpaper.vala:111
+#: src/Views/Wallpaper.vala:112
 msgid "Zoom"
 msgstr "Înfocare"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:113
 msgid "Spanned"
 msgstr "Etalonează"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
 msgstr "Importați fotografia"
 
-#: src/Views/Wallpaper.vala:156
+#: src/Views/Wallpaper.vala:157
 msgid "Import"
 msgstr "Importare"
 
-#: src/Views/Wallpaper.vala:157
+#: src/Views/Wallpaper.vala:158
 msgid "Cancel"
 msgstr "Anulare"
 
-#: src/Views/Wallpaper.vala:577
+#: src/Views/Wallpaper.vala:630
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Tapet"
 
-#: src/Views/Wallpaper.vala:578
+#: src/Views/Wallpaper.vala:631
 msgid "Undo"
 msgstr "Anula"
 
@@ -402,7 +402,7 @@ msgstr "Anula"
 msgid "Remove"
 msgstr "Șterge"
 
-#: src/Widgets/WallpaperContainer.vala:191
+#: src/Widgets/WallpaperContainer.vala:190
 #, c-format
 msgid "Artist: %s"
 msgstr "Artist: %s 1"
@@ -436,11 +436,11 @@ msgstr "1 zi"
 msgid "Show each photo for"
 msgstr "Afișați fiecare fotografie pentru"
 
-#: set-wallpaper-contract/set-wallpaper.vala:229
+#: set-wallpaper-contract/set-wallpaper.vala:232
 msgid "Set As Desktop Slideshow"
 msgstr "Setați ca Prezentare de Spațiul de lucru"
 
-#: set-wallpaper-contract/set-wallpaper.vala:236
+#: set-wallpaper-contract/set-wallpaper.vala:239
 #, fuzzy
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
