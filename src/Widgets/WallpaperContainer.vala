@@ -25,7 +25,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     protected const int THUMB_HEIGHT = 100;
 
     private static Gtk.CssProvider check_css_provider;
-    private static Gtk.CheckButton check_group; // Check used for turning CheckButtons into RadioButtons
+    private static Gtk.CheckButton check_group; // used for turning CheckButtons into RadioButtons
 
     private Gtk.Box card_box;
     private Gtk.Popover context_menu;
