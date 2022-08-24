@@ -36,14 +36,15 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
-    public uint64 creation_date = 0;
+    public uint64 creation_date { get; construct; default = 0; }
 
     private int scale;
 
     public bool checked {
         get {
             return Gtk.StateFlags.CHECKED in get_state_flags ();
-        } set {
+        }
+        set {
             if (value) {
                 card_box.set_state_flags (Gtk.StateFlags.CHECKED, false);
                 check_revealer.reveal_child = true;
@@ -59,7 +60,8 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public bool selected {
         get {
             return Gtk.StateFlags.SELECTED in get_state_flags ();
-        } set {
+        }
+        set {
             if (value) {
                 set_state_flags (Gtk.StateFlags.SELECTED, false);
             } else {
@@ -117,7 +119,9 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
         overlay.add_overlay (check_revealer);
 
-        overlay_event_controller = new Gtk.GestureClick ();
+        overlay_event_controller = new Gtk.GestureClick () {
+            button = Gdk.BUTTON_SECONDARY
+        };
         overlay.add_controller (overlay_event_controller);
 
         add_css_class ("wallpaper-container");
@@ -139,6 +143,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             context_menu = new Gtk.Popover () {
                 child = move_to_trash
             };
+            context_menu.set_parent (this);
         }
 
         activate.connect (() => {
@@ -206,12 +211,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     private void show_context_menu (int n_press, double x, double y) {
-        var evt = overlay_event_controller.get_current_event ();
-        if (evt.get_event_type () == Gdk.EventType.BUTTON_PRESS && evt.get_modifier_state () == Gdk.ModifierType.BUTTON3_MASK) {
-            context_menu.popup ();
-            // return Gdk.EVENT_STOP;
-        }
-        // return Gdk.EVENT_PROPAGATE;
+        context_menu.popup ();
     }
 
     private async void update_thumb () {

@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2016 elementary LLC.
+ * Copyright 2015-2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,7 +40,7 @@ public class PantheonShell.SolidColorContainer : WallpaperContainer {
     }
 
     // Borrowed from
-    // https://github.com/GNOME/california/blob/master/src/util/util-gfx.vala
+    // https://gitlab.gnome.org/Archive/california/-/blob/master/src/util/util-gfx.vala
     private static uint32 rgba_to_pixel (Gdk.RGBA rgba) {
         return (uint32) fp_to_uint8 (rgba.red) << 24
             | (uint32) fp_to_uint8 (rgba.green) << 16

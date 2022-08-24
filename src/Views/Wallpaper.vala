@@ -604,13 +604,13 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     }
 
     private void send_undo_toast () {
-        var child = view_overlay.get_first_child ();
-        while (child != null) {
+        var children = view_overlay.observe_children ();
+        for (int i = 0; i < children.get_n_items (); i++) {
+            var child = (Gtk.Widget) children.get_item (i);
             if (child is Granite.Toast) {
                 view_overlay.remove_overlay (child);
                 child.destroy ();
             }
-            child = view_overlay.get_first_child ();
         }
 
         if (wallpaper_for_removal != null) {
