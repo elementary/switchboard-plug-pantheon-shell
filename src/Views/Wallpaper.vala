@@ -73,8 +73,10 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         wallpaper_view = new Gtk.FlowBox () {
             activate_on_single_click = true,
+            selection_mode = Gtk.SelectionMode.SINGLE,
             homogeneous = true,
-            selection_mode = Gtk.SelectionMode.SINGLE
+            row_spacing = 18,
+            column_spacing = 18
         };
         wallpaper_view.add_css_class (Granite.STYLE_CLASS_VIEW);
         wallpaper_view.child_activated.connect (update_checked_wallpaper);

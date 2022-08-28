@@ -85,7 +85,8 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
     construct {
         image = new Gtk.Picture () {
-            can_shrink = true
+            can_shrink = true,
+            keep_aspect_ratio = false
         };
 
         card_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
