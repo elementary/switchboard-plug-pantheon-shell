@@ -27,53 +27,32 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     private static Gtk.CssProvider check_css_provider;
     private static Gtk.CheckButton check_group; // used for turning CheckButtons into RadioButtons
 
-    private Gtk.Box card_box;
     private Gtk.Popover context_menu;
-    private Gtk.GestureClick overlay_event_controller;
     private Gtk.Revealer check_revealer;
     protected Gtk.Picture image;
 
-    public string? thumb_path { get; construct set; }
-    public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
-    public uint64 creation_date { get; construct; default = 0; }
 
-    private int scale;
+    private bool thumb_valid { get; set; default = false; }
+    private string? thumb_path { get; set; }
+    public uint64 creation_date { get; set; default = 0; } // in unix time
 
     public bool checked {
         get {
-            return Gtk.StateFlags.CHECKED in get_state_flags ();
+            return check_revealer.reveal_child;
         }
         set {
+            check_revealer.reveal_child = value;
             if (value) {
-                card_box.set_state_flags (Gtk.StateFlags.CHECKED, false);
-                check_revealer.reveal_child = true;
+                set_state_flags (Gtk.StateFlags.CHECKED, false);
             } else {
-                card_box.unset_state_flags (Gtk.StateFlags.CHECKED);
-                check_revealer.reveal_child = false;
+                unset_state_flags (Gtk.StateFlags.CHECKED);
             }
-
-            queue_draw ();
         }
     }
 
-    public bool selected {
-        get {
-            return Gtk.StateFlags.SELECTED in get_state_flags ();
-        }
-        set {
-            if (value) {
-                set_state_flags (Gtk.StateFlags.SELECTED, false);
-            } else {
-                unset_state_flags (Gtk.StateFlags.SELECTED);
-            }
-
-            queue_draw ();
-        }
-    }
-
-    public WallpaperContainer (string uri, string? thumb_path, bool thumb_valid) {
-        Object (uri: uri, thumb_path: thumb_path, thumb_valid: thumb_valid);
+    public WallpaperContainer (string uri) {
+        Object (uri: uri);
     }
 
     static construct {
@@ -88,13 +67,8 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             can_shrink = true,
             keep_aspect_ratio = false
         };
-
-        card_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
-            overflow = Gtk.Overflow.HIDDEN
-        };
-        card_box.add_css_class (Granite.STYLE_CLASS_CARD);
-        card_box.add_css_class (Granite.STYLE_CLASS_ROUNDED);
-        card_box.append (image);
+        image.add_css_class (Granite.STYLE_CLASS_CARD);
+        image.add_css_class (Granite.STYLE_CLASS_ROUNDED);
 
         var check = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
@@ -103,9 +77,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             active = true,
             group = check_group
         };
-        check.notify["active"].connect (() => {
-            check.active = true;
-        });
         check.get_style_context ().add_provider (check_css_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
         check_revealer = new Gtk.Revealer () {
@@ -114,13 +85,12 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         };
 
         var overlay = new Gtk.Overlay () {
-            child = card_box,
+            child = image,
             halign = Gtk.Align.CENTER
         };
-
         overlay.add_overlay (check_revealer);
 
-        overlay_event_controller = new Gtk.GestureClick () {
+        var overlay_event_controller = new Gtk.GestureClick () {
             button = Gdk.BUTTON_SECONDARY
         };
         overlay.add_controller (overlay_event_controller);
@@ -128,32 +98,46 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         add_css_class ("wallpaper-container");
         child = overlay;
 
-        if (uri != null) {
-            var move_to_trash = new Gtk.Button.with_label (_("Remove"));
-            move_to_trash.clicked.connect (() => trash ());
+        // Context menu
+        var move_to_trash = new Gtk.Button.with_label (_("Remove")) {
+            sensitive = false
+        };
 
+        var context_menu_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        context_menu_box.append (move_to_trash);
+
+        context_menu = new Gtk.Popover () {
+            child = context_menu_box,
+            autohide = true
+        };
+        context_menu.set_parent (this);
+
+        // load file info
+        if (uri != null) {
             var file = File.new_for_uri (uri);
             try {
                 var info = file.query_info ("*", FileQueryInfoFlags.NONE);
+                load_thumb_info (info);
                 creation_date = info.get_attribute_uint64 (GLib.FileAttribute.TIME_CREATED);
                 move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
             } catch (Error e) {
                 critical (e.message);
             }
-
-            context_menu = new Gtk.Popover () {
-                child = move_to_trash
-            };
-            context_menu.set_parent (this);
         }
 
-        activate.connect (() => {
-            checked = true;
+        // signals
+        check.notify["active"].connect (() => {
+            check.active = true;
         });
 
-        overlay_event_controller.pressed.connect (show_context_menu);
+        overlay_event_controller.pressed.connect (() => {
+            context_menu.popup ();
+        });
 
-        scale = get_style_context ().get_scale ();
+        move_to_trash.clicked.connect (() => trash ());
+
+        // load thumb
+        var scale = get_style_context ().get_scale ();
         try {
             if (uri != null) {
                 if (thumb_path != null && thumb_valid) {
@@ -162,7 +146,9 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                     generate_and_load_thumb ();
                 }
             } else {
-                image.set_pixbuf (new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale));
+                image.set_pixbuf (
+                    new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale)
+                );
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
@@ -170,58 +156,59 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         }
     }
 
+    private void load_thumb_info (FileInfo info) {
+        thumb_valid = info.get_attribute_boolean (FileAttribute.THUMBNAIL_IS_VALID);
+        thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+    }
+
     private void generate_and_load_thumb () {
+        var scale = get_style_context ().get_scale ();
         ThumbnailGenerator.get_default ().get_thumbnail (uri, THUMB_WIDTH * scale, () => {
             try {
                 var file = File.new_for_uri (uri);
-                var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);
-                thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
+                var info = file.query_info (
+                    string.join (",", FileAttribute.THUMBNAIL_PATH, FileAttribute.THUMBNAIL_IS_VALID),
+                    FileQueryInfoFlags.NONE
+                );
+                load_thumb_info (info);
                 update_thumb.begin ();
             } catch (Error e) {
-                warning ("Error loading thumbnail for '%s': %s", uri, e.message);
+                warning ("Error loading thumbnail for \"%s\": %s", uri, e.message);
             }
         });
     }
 
-    private void load_artist_tooltip () {
-        if (uri != null) {
-            string path = "";
-            GExiv2.Metadata metadata;
-            try {
-                path = Filename.from_uri (uri);
-                metadata = new GExiv2.Metadata ();
-                metadata.open_path (path);
-            } catch (Error e) {
-                warning ("Error parsing exif metadata of \"%s\": %s", path, e.message);
-                return;
-            }
-
-            if (metadata.has_exif ()) {
-                string? artist_name = null;
-                try {
-                    artist_name = metadata.try_get_tag_string ("Exif.Image.Artist");
-                } catch (Error e) {
-                    warning (e.message);
-                }
-
-                if (artist_name != null) {
-                    set_tooltip_text (_("Artist: %s").printf (artist_name));
-                }
-            }
-        }
-    }
-
-    private void show_context_menu (int n_press, double x, double y) {
-        context_menu.popup ();
-    }
-
     private async void update_thumb () {
-        if (thumb_path == null) {
+        if (!thumb_valid || thumb_path == null) {
             return;
         }
 
         image.set_filename (thumb_path);
 
         load_artist_tooltip ();
+    }
+
+    private void load_artist_tooltip () {
+        var metadata = new GExiv2.Metadata ();
+        try {
+            var path = Filename.from_uri (uri);
+            metadata.open_path (path);
+        } catch (Error e) {
+            warning ("Error parsing exif metadata of \"%s\": %s", uri, e.message);
+            return;
+        }
+
+        if (metadata.has_exif ()) {
+            string? artist_name = null;
+            try {
+                artist_name = metadata.try_get_tag_string ("Exif.Image.Artist");
+            } catch (Error e) {
+                warning (e.message);
+            }
+
+            if (artist_name != null) {
+                set_tooltip_text (_("Artist: %s").printf (artist_name));
+            }
+        }
     }
 }
