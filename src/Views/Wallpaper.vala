@@ -179,7 +179,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         filter.add_mime_type ("image/*");
 
         var chooser = new Gtk.FileChooserNative (
-            _("Import Photo !"),
+            _("Import Photo"),
             (Gtk.Window) get_root (),
             Gtk.FileChooserAction.OPEN,
             _("Import"),
