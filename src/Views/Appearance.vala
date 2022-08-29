@@ -213,6 +213,56 @@ public class PantheonShell.Appearance : Gtk.Box {
                     break;
             }
 
+            var settings = new GLib.Settings ("io.elementary.settings-daemon.prefers-color-scheme");
+
+            settings.bind_with_mapping (
+                "prefer-dark-schedule", schedule_disabled_radio, "active", GLib.SettingsBindFlags.DEFAULT,
+                (value, variant, user_data) => {
+                    value.set_boolean (variant.get_string () == "disabled");
+                    return true;
+                },
+                (value, expected_type, user_data) => {
+                    if (value.get_boolean ()) {
+                        return new Variant ("s", "disabled");
+                    }
+
+                    return null;
+                },
+                null, null
+            );
+
+            settings.bind_with_mapping (
+                "prefer-dark-schedule", schedule_manual_radio, "active", GLib.SettingsBindFlags.DEFAULT,
+                (value, variant, user_data) => {
+                    value.set_boolean (variant.get_string () == "manual");
+                    return true;
+                },
+                (value, expected_type, user_data) => {
+                    if (value.get_boolean ()) {
+                        return new Variant ("s", "manual");
+                    }
+
+                    return null;
+                },
+                null, null
+            );
+
+            settings.bind_with_mapping (
+                "prefer-dark-schedule", schedule_sunset_radio, "active", GLib.SettingsBindFlags.DEFAULT,
+                (value, variant, user_data) => {
+                    value.set_boolean (variant.get_string () == "sunset-to-sunrise");
+                    return true;
+                },
+                (value, expected_type, user_data) => {
+                    if (value.get_boolean ()) {
+                        return new Variant ("s", "sunset-to-sunrise");
+                    }
+
+                    return null;
+                },
+                null, null
+            );
+
             prefer_default_radio.toggled.connect (() => {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.NO_PREFERENCE;
             });
@@ -254,8 +304,6 @@ public class PantheonShell.Appearance : Gtk.Box {
                 }
             });
 
-            var settings = new GLib.Settings ("io.elementary.settings-daemon.prefers-color-scheme");
-
             from_time.time = double_date_time (settings.get_double ("prefer-dark-schedule-from"));
             from_time.time_changed.connect (() => {
                 settings.set_double ("prefer-dark-schedule-from", date_time_double (from_time.time));
@@ -266,48 +314,6 @@ public class PantheonShell.Appearance : Gtk.Box {
             });
 
             schedule_manual_radio.bind_property ("active", schedule_manual_box, "sensitive", BindingFlags.SYNC_CREATE);
-
-            settings.bind_with_mapping (
-                "prefer-dark-schedule", schedule_disabled_radio, "active", GLib.SettingsBindFlags.DEFAULT,
-                (value, variant, user_data) => {
-                    value.set_boolean (variant.get_string () == "disabled");
-                    return true;
-                },
-                (value, expected_type, user_data) => {
-                    if (value.get_boolean ()) {
-                        return new Variant ("s", "disabled");
-                    }
-                },
-                null, null
-            );
-
-            settings.bind_with_mapping (
-                "prefer-dark-schedule", schedule_manual_radio, "active", GLib.SettingsBindFlags.DEFAULT,
-                (value, variant, user_data) => {
-                    value.set_boolean (variant.get_string () == "manual");
-                    return true;
-                },
-                (value, expected_type, user_data) => {
-                    if (value.get_boolean ()) {
-                        return new Variant ("s", "manual");
-                    }
-                },
-                null, null
-            );
-
-            settings.bind_with_mapping (
-                "prefer-dark-schedule", schedule_sunset_radio, "active", GLib.SettingsBindFlags.DEFAULT,
-                (value, variant, user_data) => {
-                    value.set_boolean (variant.get_string () == "sunset-to-sunrise");
-                    return true;
-                },
-                (value, expected_type, user_data) => {
-                    if (value.get_boolean ()) {
-                        return new Variant ("s", "sunset-to-sunrise");
-                    }
-                },
-                null, null
-            );
         }
 
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
