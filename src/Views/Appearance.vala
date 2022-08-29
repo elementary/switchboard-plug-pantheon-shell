@@ -273,28 +273,49 @@ public class PantheonShell.Appearance : Gtk.Widget {
                 settings.set_double ("prefer-dark-schedule-to", date_time_double (to_time.time));
             });
 
-            var schedule = settings.get_string ("prefer-dark-schedule");
-            if (schedule == "sunset-to-sunrise") {
-                schedule_sunset_radio.active = true;
-            } else if (schedule == "manual") {
-                schedule_manual_radio.active = true;
-            } else {
-                schedule_disabled_radio.active = true;
-            }
-
-            schedule_disabled_radio.toggled.connect (() => {
-                settings.set_string ("prefer-dark-schedule", "disabled");
-            });
-
-            schedule_manual_radio.toggled.connect (() => {
-                settings.set_string ("prefer-dark-schedule", "manual");
-            });
-
-            schedule_sunset_radio.toggled.connect (() => {
-                settings.set_string ("prefer-dark-schedule", "sunset-to-sunrise");
-            });
-
             schedule_manual_radio.bind_property ("active", schedule_manual_box, "sensitive", BindingFlags.SYNC_CREATE);
+
+            settings.bind_with_mapping (
+                "prefer-dark-schedule", schedule_disabled_radio, "active", GLib.SettingsBindFlags.DEFAULT,
+                (value, variant, user_data) => {
+                    value.set_boolean (variant.get_string () == "disabled");
+                    return true;
+                },
+                (value, expected_type, user_data) => {
+                    if (value.get_boolean ()) {
+                        return new Variant ("s", "disabled");
+                    }
+                },
+                null, null
+            );
+
+            settings.bind_with_mapping (
+                "prefer-dark-schedule", schedule_manual_radio, "active", GLib.SettingsBindFlags.DEFAULT,
+                (value, variant, user_data) => {
+                    value.set_boolean (variant.get_string () == "manual");
+                    return true;
+                },
+                (value, expected_type, user_data) => {
+                    if (value.get_boolean ()) {
+                        return new Variant ("s", "manual");
+                    }
+                },
+                null, null
+            );
+
+            settings.bind_with_mapping (
+                "prefer-dark-schedule", schedule_sunset_radio, "active", GLib.SettingsBindFlags.DEFAULT,
+                (value, variant, user_data) => {
+                    value.set_boolean (variant.get_string () == "sunset-to-sunrise");
+                    return true;
+                },
+                (value, expected_type, user_data) => {
+                    if (value.get_boolean ()) {
+                        return new Variant ("s", "sunset-to-sunrise");
+                    }
+                },
+                null, null
+            );
         }
 
         var interface_settings = new GLib.Settings (INTERFACE_SCHEMA);
