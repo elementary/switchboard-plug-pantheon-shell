@@ -18,22 +18,21 @@
  *
  */
 
-public class PantheonShell.SolidColorContainer : WallpaperContainer {
-    public string color { get; construct; }
-    private Gdk.RGBA rgba {
-        get {
-            Gdk.RGBA rgba = {};
-            rgba.parse (color);
+public class PantheonShell.SolidColorContainer : GenericContainer {
+    private static GLib.Settings settings;
 
-            return rgba;
-        }
-    }
-
-    public SolidColorContainer (string color_value) {
-        Object (color: color_value);
+    static construct {
+        settings = new GLib.Settings ("org.gnome.desktop.background");
     }
 
     construct {
+        fill_thumb ();
+        settings.changed["primary-color"].connect (fill_thumb);
+    }
+
+    private void fill_thumb () {
+        Gdk.RGBA rgba = {};
+        rgba.parse (settings.get_string ("primary-color"));
         var thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH, THUMB_HEIGHT);
         thumb.fill (rgba_to_pixel (rgba));
         image.set_pixbuf (thumb);

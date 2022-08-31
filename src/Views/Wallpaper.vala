@@ -34,10 +34,18 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         FileAttribute.THUMBNAIL_IS_VALID
     };
 
+    private const string [] ALLOWED_MIMETYPES = {
+        "image/jpeg",
+        "image/png",
+        "image/tiff",
+        "image/svg+xml",
+        "image/gif"
+    };
+
     private static GLib.Settings settings;
 
     // Instance of the AccountsServices-Interface for this user
-    private AccountsServiceUser? accountsservice = null;
+    private static AccountsServiceUser? accountsservice = null;
 
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
@@ -45,56 +53,34 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     private Gtk.ComboBoxText combo;
     private Gtk.ColorButton color_button;
 
-    private WallpaperContainer _active_wallpaper = null;
-    private WallpaperContainer active_wallpaper {
-        get {
-            return _active_wallpaper;
-        }
-        set {
-            if (_active_wallpaper != null) {
-                _active_wallpaper.checked = false;
-            }
-            _active_wallpaper = value;
-            wallpaper_view.select_child (_active_wallpaper);
-            _active_wallpaper.checked = true;
-
-            if (_active_wallpaper is SolidColorContainer) {
-                combo.sensitive = false;
-                settings.set_string ("primary-color", solid_color.color);
-                settings.set_string ("picture-options", "none");
-            } else {
-                combo.sensitive = true;
-                settings.set_string ("picture-options", combo.active_id);
-            }
-        }
-    }
+    private GenericContainer? previous_wallpaper { get; set; default = null; }
 
     private SolidColorContainer solid_color = null;
-    private WallpaperContainer wallpaper_for_removal = null;
+    private UriContainer? wallpaper_for_removal = null;
 
     private Cancellable last_cancellable;
 
-    private string current_wallpaper_path;
-    private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
-    private bool finished; // Shows that we got or wallpapers together
-
     static construct {
         settings = new GLib.Settings ("org.gnome.desktop.background");
-    }
 
-    construct {
         // DBus connection needed in update_wallpaper for
         // passing the wallpaper-information to accountsservice.
         try {
             int uid = (int) Posix.getuid ();
-            accountsservice = Bus.get_proxy_sync (BusType.SYSTEM,
-                    "org.freedesktop.Accounts",
-                    "/org/freedesktop/Accounts/User%i".printf (uid));
-        } catch (Error e) {
+            accountsservice = Bus.get_proxy_sync (
+                BusType.SYSTEM,
+                "org.freedesktop.Accounts",
+                "/org/freedesktop/Accounts/User%i".printf (uid)
+            );
+        } catch (IOError e) {
             warning (e.message);
         }
+    }
 
+    construct {
         var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
+
+        var drop_target = new Gtk.DropTarget (typeof (Gdk.FileList), Gdk.DragAction.COPY);
 
         wallpaper_view = new Gtk.FlowBox () {
             activate_on_single_click = true,
@@ -105,14 +91,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         };
         wallpaper_view.add_css_class (Granite.STYLE_CLASS_VIEW);
         wallpaper_view.set_sort_func (wallpapers_sort_function);
-        wallpaper_view.child_activated.connect (update_checked_wallpaper);
-
-        var color = settings.get_string ("primary-color");
-        create_solid_color_container (color);
-
-        var drop_target = new Gtk.DropTarget (typeof (Gdk.FileList), Gdk.DragAction.COPY);
         wallpaper_view.add_controller (drop_target);
-        drop_target.on_drop.connect (on_drag_data_received);
 
         wallpaper_scrolled_window = new Gtk.ScrolledWindow () {
             hexpand = true,
@@ -124,7 +103,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
             child = wallpaper_scrolled_window
         };
 
-        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
+        var import_button = new Gtk.Button.with_label (_("Import Photo…")) {
             margin_start = 12,
             margin_end = 12,
             margin_top = 12,
@@ -137,32 +116,22 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
         combo.append ("spanned", _("Spanned"));
-        combo.changed.connect (update_mode);
-
-        Gdk.RGBA rgba_color = {};
-        if (!rgba_color.parse (color)) {
-            rgba_color = { 1, 1, 1, 1 };
-        }
 
         color_button = new Gtk.ColorButton () {
             margin_start = 6,
             margin_end = 12,
             margin_top = 12,
-            margin_bottom = 12,
-            rgba = rgba_color
+            margin_bottom = 12
         };
-        color_button.color_set.connect (update_color);
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-        size_group.add_widget (add_wallpaper_button);
+        size_group.add_widget (import_button);
         size_group.add_widget (combo);
         size_group.add_widget (color_button);
 
-        load_settings ();
-
         var actionbar = new Gtk.ActionBar ();
         actionbar.add_css_class ("inline-toolbar");
-        actionbar.pack_start (add_wallpaper_button);
+        actionbar.pack_start (import_button);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
 
@@ -171,12 +140,48 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         append (view_overlay);
         append (actionbar);
 
-        add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
+        load_settings ();
+
+        // connect signals
+        drop_target.on_drop.connect (on_drag_data_received);
+        wallpaper_view.child_activated.connect (update_checked_wallpaper);
+        import_button.clicked.connect (show_wallpaper_chooser);
+        combo.changed.connect (() => {
+            settings.set_string ("picture-options", combo.get_active_id ());
+        });
+        color_button.color_set.connect (() => {
+            settings.set_string ("primary-color", color_button.rgba.to_string ());
+            wallpaper_view.child_activated (solid_color);
+        });
+    }
+
+    private void load_settings () {
+        // TODO: need to store the previous state, before changing to none
+        // when a solid color is selected, because the combobox doesn't know
+        // about it anymore. The previous state should be loaded instead here.
+
+        var picture_options = settings.get_string ("picture-options");
+        if (picture_options == "none") {
+            combo.sensitive = false;
+            picture_options = "zoom";
+        }
+
+        combo.active_id = picture_options;
+
+        // load color button
+        var color = settings.get_string ("primary-color");
+        Gdk.RGBA rgba_color = {};
+        if (!rgba_color.parse (color)) {
+            rgba_color = { 1, 1, 1, 1 };
+        }
+        color_button.rgba = rgba_color;
     }
 
     private void show_wallpaper_chooser () {
         var filter = new Gtk.FileFilter ();
-        filter.add_mime_type ("image/*");
+        foreach (var type in ALLOWED_MIMETYPES) {
+            filter.add_mime_type (type);
+        }
 
         var chooser = new Gtk.FileChooserNative (
             _("Import Photo"),
@@ -193,16 +198,16 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         chooser.response.connect ((id) => {
             chooser.destroy ();
             if (id == Gtk.ResponseType.ACCEPT) {
-                ListModel files = chooser.get_files ();
+                var files = chooser.get_files ();
                 for (var iter = 0; iter < files.get_n_items (); iter++) {
                     var file = (File) files.get_item (iter);
-                    string local_uri = file.get_uri ();
+                    var local_uri = file.get_uri ();
                     var dest = copy_for_library (file);
                     if (dest != null) {
                         local_uri = dest.get_uri ();
                     }
 
-                    add_wallpaper_from_file (local_uri);
+                    add_wallpaper_from_uri (local_uri);
                 }
             }
         });
@@ -210,105 +215,79 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         chooser.show ();
     }
 
-    private void load_settings () {
-        // TODO: need to store the previous state, before changing to none
-        // when a solid color is selected, because the combobox doesn't know
-        // about it anymore. The previous state should be loaded instead here.
-        string picture_options = settings.get_string ("picture-options");
-        if (picture_options == "none") {
-            combo.sensitive = false;
-            picture_options = "zoom";
+    private void update_checked_wallpaper (Gtk.FlowBoxChild _selected_child) {
+        // We don't do gradient backgrounds, reset the key that might interfere
+        settings.reset ("color-shading-type");
+
+        if (previous_wallpaper != null) {
+            previous_wallpaper.checked = false;
         }
 
-        prevent_update_mode = true;
-        combo.active_id = picture_options;
+        var selected_child = (GenericContainer) _selected_child;
+        previous_wallpaper = selected_child;
 
-        current_wallpaper_path = settings.get_string ("picture-uri");
+        selected_child.checked = true;
+
+        if (selected_child is SolidColorContainer) {
+            combo.sensitive = false;
+
+            settings.set_string ("picture-options", "none");
+        } else if (selected_child is UriContainer) {
+            combo.sensitive = true;
+
+            settings.set_string ("picture-uri", ((UriContainer) selected_child).uri);
+            settings.set_string ("picture-options", combo.active_id);
+            update_accountsservice ();
+        }
     }
 
     /*
      * This integrates with LightDM
      */
-    private void update_accountsservice () {
-        var file = File.new_for_uri (current_wallpaper_path);
-        string uri = file.get_uri ();
-        string path = file.get_path ();
-
-        bool path_has_prefix_bg_dir = false;
-        foreach (unowned string directory in get_bg_directories ()) {
-            if (path.has_prefix (directory)) {
-                path_has_prefix_bg_dir = true;
-                break;
-            }
-        }
-
-        if (!path_has_prefix_bg_dir) {
-            var local_file = copy_for_library (file);
-            if (local_file != null) {
-                uri = local_file.get_uri ();
-            }
-        }
+     private void update_accountsservice () {
+        var file = File.new_for_uri (settings.get_string ("picture-uri"));
+        var path = file.get_path ();
 
         var greeter_file = copy_for_greeter (file);
         if (greeter_file != null) {
             path = greeter_file.get_path ();
         }
 
-        settings.set_string ("picture-uri", uri);
         accountsservice.background_file = path;
     }
 
-    private void update_checked_wallpaper () {
-        var selected_child = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
+    public void load_wallpapers () {
+        clean_wallpapers ();
 
-        if (!(selected_child is SolidColorContainer)) {
-            current_wallpaper_path = selected_child.uri;
-            update_accountsservice ();
-        }
+        load_wallpapers_from_folders.begin ((obj, res) => {
+            solid_color = new SolidColorContainer ();
+            wallpaper_view.append (solid_color);
 
-        // We don't do gradient backgrounds, reset the key that might interfere
-        settings.reset ("color-shading-type");
-
-        active_wallpaper = selected_child;
-    }
-
-    private void update_color () {
-        if (finished) {
-            if (active_wallpaper != solid_color) {
-                combo.sensitive = false;
-            }
-
-            create_solid_color_container (color_button.rgba.to_string ());
-            wallpaper_view.prepend (solid_color);
-
-            active_wallpaper = solid_color;
-        }
-    }
-
-    private void update_mode () {
-        if (!prevent_update_mode) {
-            settings.set_string ("picture-options", combo.get_active_id ());
-
-            // Changing the mode, while a solid color is selected, change focus to the
-            // wallpaper tile.
-            if (active_wallpaper == solid_color) {
-                active_wallpaper.checked = false;
-
+            // Select current wallpaper
+            if (settings.get_string ("picture-options") == "none") {
+                wallpaper_view.child_activated (solid_color);
+            } else {
                 var children = wallpaper_view.observe_children ();
-                for (var iter = 0; iter < children.get_n_items (); iter++) {
-                    var container = (WallpaperContainer) children.get_item (iter);
-                    if (container.uri == current_wallpaper_path) {
-                        active_wallpaper = container;
-                        break;
+                for (var i = 0; i < children.get_n_items (); i++) {
+                    var child = (GenericContainer) children.get_item (i);
+                    if (child is UriContainer && settings.get_string ("picture-uri") == ((UriContainer) child).uri) {
+                        wallpaper_view.child_activated (child);
                     }
                 }
             }
-        } else {
-            prevent_update_mode = false;
+        });
+    }
+
+    private void clean_wallpapers () {
+        var child = wallpaper_view.get_first_child ();
+        while (child != null) {
+            wallpaper_view.remove (child);
+            child.destroy ();
+            child = wallpaper_view.get_first_child ();
         }
     }
 
-    public void update_wallpaper_folder () {
+    private async void load_wallpapers_from_folders () {
         if (last_cancellable != null) {
             last_cancellable.cancel ();
         }
@@ -316,29 +295,26 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         var cancellable = new Cancellable ();
         last_cancellable = cancellable;
 
-        clean_wallpapers ();
-
         foreach (unowned string directory in get_bg_directories ()) {
-            load_wallpapers.begin (directory, cancellable);
+            yield load_wallpapers_from_folder (directory);
         }
     }
 
-    private async void load_wallpapers (string basefolder, Cancellable cancellable, bool toplevel_folder = true) {
-        if (cancellable.is_cancelled ()) {
+    private async void load_wallpapers_from_folder (string folder) {
+        if (last_cancellable.is_cancelled ()) {
             return;
         }
 
-        var directory = File.new_for_path (basefolder);
-
+        var directory = File.new_for_path (folder);
         try {
             // Enumerator object that will let us read through the wallpapers asynchronously
             var attrs = string.joinv (",", REQUIRED_FILE_ATTRS);
-            var e = yield directory.enumerate_children_async (attrs, 0, Priority.DEFAULT);
-            FileInfo file_info;
+            var e = yield directory.enumerate_children_async (attrs, FileQueryInfoFlags.NONE, Priority.DEFAULT);
 
+            FileInfo? file_info = null;
             // Loop through and add each wallpaper in the batch
             while ((file_info = e.next_file ()) != null) {
-                if (cancellable.is_cancelled ()) {
+                if (last_cancellable.is_cancelled ()) {
                     ThumbnailGenerator.get_default ().dequeue_all ();
                     return;
                 }
@@ -350,69 +326,30 @@ public class PantheonShell.Wallpaper : Gtk.Box {
                 if (file_info.get_file_type () == FileType.DIRECTORY) {
                     // Spawn off another loader for the subdirectory
                     var subdir = directory.resolve_relative_path (file_info.get_name ());
-                    yield load_wallpapers (subdir.get_path (), cancellable, false);
-                    continue;
-                } else if (!IOHelper.is_valid_file_type (file_info)) {
-                    // Skip non-picture files
+                    yield load_wallpapers_from_folder (subdir.get_path ());
                     continue;
                 }
 
                 var file = directory.resolve_relative_path (file_info.get_name ());
-                string uri = file.get_uri ();
+                var uri = file.get_uri ();
 
-                add_wallpaper_from_file (uri);
+                add_wallpaper_from_uri (uri);
             }
-
-            if (toplevel_folder) {
-                create_solid_color_container (color_button.rgba.to_string ());
-                wallpaper_view.prepend (solid_color);
-                finished = true;
-
-                if (settings.get_string ("picture-options") == "none") {
-                    active_wallpaper = solid_color;
-                }
-
-                if (active_wallpaper != null) {
-                    Gtk.Allocation alloc;
-                    active_wallpaper.get_allocation (out alloc);
-                    wallpaper_scrolled_window.get_vadjustment ().value = alloc.y;
-                }
-            }
-        } catch (Error err) {
-            if (!(err is IOError.NOT_FOUND)) {
-                warning (err.message);
+        } catch (Error e) {
+            if (!(e is IOError.NOT_FOUND)) {
+                warning (e.message);
             }
         }
-    }
-
-    private void create_solid_color_container (string color) {
-        if (solid_color != null) {
-            wallpaper_view.remove (solid_color);
-            solid_color.destroy ();
-        }
-
-        solid_color = new SolidColorContainer (color);
-    }
-
-    private void clean_wallpapers () {
-        var child = wallpaper_view.get_first_child ();
-        while (child != null) {
-            wallpaper_view.remove (child);
-            child.destroy ();
-            child = wallpaper_view.get_first_child ();
-        }
-
-        solid_color = null;
     }
 
     private static string get_local_bg_directory () {
-        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
+        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds");
     }
 
     private static string[] get_system_bg_directories () {
         string[] directories = {};
         foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
-            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
+            var system_background_dir = Path.build_filename (data_dir, "backgrounds");
             if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
                 debug ("Found system background directory: %s", system_background_dir);
                 directories += system_background_dir;
@@ -442,10 +379,9 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     private static File? copy_for_library (File source) {
         File? dest = null;
 
-        string local_bg_directory = get_local_bg_directory ();
+        var local_bg_directory = get_local_bg_directory ();
         try {
-            File folder = File.new_for_path (local_bg_directory);
-            folder.make_directory_with_parents ();
+            File.new_for_path (local_bg_directory).make_directory_with_parents ();
         } catch (Error e) {
             if (e is GLib.IOError.EXISTS) {
                 debug ("Local background directory already exists");
@@ -469,6 +405,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
 
     private static File? copy_for_greeter (File source) {
         File? dest = null;
+
         try {
             string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
             if (greeter_data_dir == "") {
@@ -498,96 +435,65 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         return dest;
     }
 
-    private bool on_drag_data_received (Gtk.DropTarget controller, Value val, double x, double y) {
+    private bool on_drag_data_received (Value val, double x, double y) {
         var file_list = (Gdk.FileList) val;
         foreach (var file in file_list.get_files ()) {
-            try {
-                var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), FileQueryInfoFlags.NONE);
-
-                if (!IOHelper.is_valid_file_type (info)) {
-                    continue;
-                }
-
-                string local_uri = file.get_uri ();
-                var dest = copy_for_library (file);
-                if (dest != null) {
-                    local_uri = dest.get_uri ();
-                }
-
-                add_wallpaper_from_file (local_uri);
-            } catch (Error e) {
-                warning (e.message);
+            var local_uri = file.get_uri ();
+            var dest = copy_for_library (file);
+            if (dest != null) {
+                local_uri = dest.get_uri ();
             }
+
+            add_wallpaper_from_uri (local_uri);
         }
 
         return true;
     }
 
-    private void add_wallpaper_from_file (string uri) {
+    private void add_wallpaper_from_uri (string uri) {
+        var file = File.new_for_uri (uri);
+
+        string? mime_type;
+        try {
+            var file_info = file.query_info (FileAttribute.STANDARD_CONTENT_TYPE, FileQueryInfoFlags.NONE, null);
+            mime_type = file_info.get_content_type ().to_ascii ();
+        } catch (Error e) {
+            warning ("Could not get mime type for file \"%s\": %s", uri, e.message);
+            return;
+        }
+
+        if (!(mime_type in ALLOWED_MIMETYPES)) {
+            warning ("File with not allowed mimetype: %s, %s", uri, mime_type);
+            return;
+        }
+
         // don't load 'removed' wallpaper on plug reload
         if (wallpaper_for_removal != null && wallpaper_for_removal.uri == uri) {
             return;
         }
 
-        var wallpaper = new WallpaperContainer (uri);
-        wallpaper_view.prepend (wallpaper);
+        UriContainer wallpaper;
+        if (mime_type.has_prefix ("image/")) {
+            wallpaper = new ImageContainer (uri);
+
+        //  TODO: https://github.com/elementary/switchboard-plug-pantheon-shell/issues/296
+        //  } else if (mime_type == "application/xml") {
+        //      wallpaper = new XmlContainer (uri);
+        //      ...
+
+        } else {
+            // Fixes Use of possibly unassigned local variable `wallpaper'
+            // However, the file should never get here since it's been filtered before
+            warning ("Filtered file %s of unknown type %s", uri, mime_type);
+            return;
+        }
+
+        wallpaper_view.append (wallpaper);
 
         wallpaper.trash.connect (() => {
             send_undo_toast ();
             mark_for_removal (wallpaper);
         });
-
-        // Select the wallpaper if it is the current wallpaper
-        if (current_wallpaper_path == uri && settings.get_string ("picture-options") != "none") {
-            active_wallpaper = wallpaper;
-        }
-    }
-
-    public void cancel_thumbnail_generation () {
-        if (last_cancellable != null) {
-            last_cancellable.cancel ();
-        }
-    }
-
-    private int wallpapers_sort_function (Gtk.FlowBoxChild _child1, Gtk.FlowBoxChild _child2) {
-        var child1 = (WallpaperContainer) _child1;
-        var child2 = (WallpaperContainer) _child2;
-        var uri1 = child1.uri;
-        var uri2 = child2.uri;
-
-        if (uri1 == null || uri2 == null) {
-            return 0;
-        }
-
-        var uri1_is_system = false;
-        var uri2_is_system = false;
-        foreach (var bg_dir in get_system_bg_directories ()) {
-            bg_dir = "file://" + bg_dir;
-            uri1_is_system = uri1.has_prefix (bg_dir) || uri1_is_system;
-            uri2_is_system = uri2.has_prefix (bg_dir) || uri2_is_system;
-        }
-
-        // Sort system wallpapers last
-        if (uri1_is_system && !uri2_is_system) {
-            return 1;
-        } else if (!uri1_is_system && uri2_is_system) {
-            return -1;
-        }
-
-        var child1_date = child1.creation_date;
-        var child2_date = child2.creation_date;
-
-        // sort by filename if creation dates are equal
-        if (child1_date == child2_date) {
-            return uri1.collate (uri2);
-        }
-
-        // sort recently added first
-        if (child1_date >= child2_date) {
-            return -1;
-        } else {
-            return 1;
-        }
     }
 
     private void send_undo_toast () {
@@ -623,7 +529,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         toast.send_notification ();
     }
 
-    private void mark_for_removal (WallpaperContainer wallpaper) {
+    private void mark_for_removal (UriContainer wallpaper) {
         wallpaper_view.remove (wallpaper);
         wallpaper_for_removal = wallpaper;
     }
@@ -636,7 +542,57 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     }
 
     private void undo_removal () {
-        wallpaper_view.prepend (wallpaper_for_removal);
+        wallpaper_view.append (wallpaper_for_removal);
         wallpaper_for_removal = null;
+    }
+
+    private int wallpapers_sort_function (Gtk.FlowBoxChild _child1, Gtk.FlowBoxChild _child2) {
+        var child1 = (GenericContainer) _child1;
+        var child2 = (GenericContainer) _child2;
+
+        if (child1 is SolidColorContainer) {
+            return 1;
+        } else if (child2 is SolidColorContainer) {
+            return -1;
+        }
+
+        var uri1 = ((UriContainer) child1).uri;
+        var uri2 = ((UriContainer) child2).uri;
+
+        var uri1_is_system = false;
+        var uri2_is_system = false;
+        foreach (var bg_dir in get_system_bg_directories ()) {
+            bg_dir = "file://" + bg_dir;
+            uri1_is_system = uri1.has_prefix (bg_dir) || uri1_is_system;
+            uri2_is_system = uri2.has_prefix (bg_dir) || uri2_is_system;
+        }
+
+        // Sort system wallpapers last
+        if (uri1_is_system && !uri2_is_system) {
+            return 1;
+        } else if (!uri1_is_system && uri2_is_system) {
+            return -1;
+        }
+
+        var child1_date = ((UriContainer) child1).creation_date;
+        var child2_date = ((UriContainer) child2).creation_date;
+
+        // sort by filename if creation dates are equal
+        if (child1_date == child2_date) {
+            return uri1.collate (uri2);
+        }
+
+        // sort recently added first
+        if (child1_date >= child2_date) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
+
+    public void cancel_thumbnail_generation () {
+        if (last_cancellable != null) {
+            last_cancellable.cancel ();
+        }
     }
 }

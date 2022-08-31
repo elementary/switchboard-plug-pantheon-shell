@@ -99,7 +99,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
     }
 
     public override void shown () {
-        wallpaper_view.update_wallpaper_folder ();
+        wallpaper_view.load_wallpapers ();
     }
 
     public override void hidden () {

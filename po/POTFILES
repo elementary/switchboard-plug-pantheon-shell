@@ -1,4 +1,3 @@
-src/IOHelper.vala
 src/Plug.vala
 src/ThumbnailGenerator.vala
 src/Translations.vala
@@ -7,6 +6,8 @@ src/Views/Dock.vala
 src/Views/Multitasking.vala
 src/Views/Text.vala
 src/Views/Wallpaper.vala
+src/Widgets/GenericContainer.vala
+src/Widgets/ImageContainer.vala
+src/Widgets/UriContainer.vala
 src/Widgets/SolidColorContainer.vala
-src/Widgets/WallpaperContainer.vala
 set-wallpaper-contract/set-wallpaper.vala
