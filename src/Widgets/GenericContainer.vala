@@ -47,7 +47,6 @@ public class PantheonShell.GenericContainer : Gtk.FlowBoxChild {
                 card_box.unset_state_flags (Gtk.StateFlags.CHECKED);
             }
         }
-
     }
 
     static construct {
