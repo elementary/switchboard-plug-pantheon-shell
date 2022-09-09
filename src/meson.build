@@ -11,6 +11,7 @@ plug_files = files(
     'Widgets/ImageContainer.vala',
     'Widgets/SolidColorContainer.vala',
     'Widgets/UriContainer.vala',
+    'Widgets/XMLContainer.vala',
 )
 
 switchboard_dep = dependency('switchboard-3')

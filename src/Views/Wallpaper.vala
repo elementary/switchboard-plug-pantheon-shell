@@ -478,7 +478,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
 
         //  TODO: https://github.com/elementary/switchboard-plug-pantheon-shell/issues/296
         //  } else if (mime_type == "application/xml") {
-        //      wallpaper = new XmlContainer (uri);
+        //      wallpaper = new XMLContainer (uri);
         //      ...
 
         } else {
