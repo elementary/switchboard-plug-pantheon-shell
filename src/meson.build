@@ -1,5 +1,4 @@
 plug_files = files(
-    'IOHelper.vala',
     'PantheonAccountsServicePlugin.vala',
     'Plug.vala',
     'ThumbnailGenerator.vala',
@@ -8,8 +7,11 @@ plug_files = files(
     'Views/Multitasking.vala',
     'Views/Text.vala',
     'Views/Wallpaper.vala',
+    'Widgets/GenericContainer.vala',
+    'Widgets/ImageContainer.vala',
     'Widgets/SolidColorContainer.vala',
-    'Widgets/WallpaperContainer.vala',
+    'Widgets/UriContainer.vala',
+    'Widgets/XMLContainer.vala',
 )
 
 switchboard_dep = dependency('switchboard-3')
