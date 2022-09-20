@@ -42,7 +42,8 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         "image/gif"
     };
 
-    private static GLib.Settings settings;
+    private static GLib.Settings gnome_background_settings;
+    private static GLib.Settings gala_background_settings;
 
     // Instance of the AccountsServices-Interface for this user
     private static AccountsServiceUser? accountsservice = null;
@@ -50,6 +51,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
     private Gtk.Overlay view_overlay;
+    private Gtk.Switch dim_switch;
     private Gtk.ComboBoxText combo;
     private Gtk.ColorButton color_button;
 
@@ -61,7 +63,8 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     private Cancellable last_cancellable;
 
     static construct {
-        settings = new GLib.Settings ("org.gnome.desktop.background");
+        gnome_background_settings = new GLib.Settings ("org.gnome.desktop.background");
+        gala_background_settings = new Settings ("io.elementary.desktop.background");
 
         // DBus connection needed in update_wallpaper for
         // passing the wallpaper-information to accountsservice.
@@ -110,6 +113,15 @@ public class PantheonShell.Wallpaper : Gtk.Box {
             margin_bottom = 12
         };
 
+        var dim_label = new Gtk.Label ("Dim wallpaper in dark style:") {
+            margin_end = 12
+        };
+        
+        dim_switch = new Gtk.Switch () {
+            vexpand = false,
+            valign = Gtk.Align.CENTER
+        };
+
         combo = new Gtk.ComboBoxText () {
             valign = Gtk.Align.CENTER
         };
@@ -132,6 +144,8 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         var actionbar = new Gtk.ActionBar ();
         actionbar.add_css_class ("inline-toolbar");
         actionbar.pack_start (import_button);
+        actionbar.pack_start (dim_label);
+        actionbar.pack_start (dim_switch);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
 
@@ -147,20 +161,22 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
         import_button.clicked.connect (show_wallpaper_chooser);
         combo.changed.connect (() => {
-            settings.set_string ("picture-options", combo.get_active_id ());
+            gnome_background_settings.set_string ("picture-options", combo.get_active_id ());
         });
         color_button.color_set.connect (() => {
-            settings.set_string ("primary-color", color_button.rgba.to_string ());
+            gnome_background_settings.set_string ("primary-color", color_button.rgba.to_string ());
             wallpaper_view.child_activated (solid_color);
         });
     }
 
     private void load_settings () {
+        gala_background_settings.bind ("dim-wallpaper-in-dark-style", dim_switch, "active", SettingsBindFlags.DEFAULT);
+
         // TODO: need to store the previous state, before changing to none
         // when a solid color is selected, because the combobox doesn't know
         // about it anymore. The previous state should be loaded instead here.
 
-        var picture_options = settings.get_string ("picture-options");
+        var picture_options = gnome_background_settings.get_string ("picture-options");
         if (picture_options == "none") {
             combo.sensitive = false;
             picture_options = "zoom";
@@ -169,7 +185,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         combo.active_id = picture_options;
 
         // load color button
-        var color = settings.get_string ("primary-color");
+        var color = gnome_background_settings.get_string ("primary-color");
         Gdk.RGBA rgba_color = {};
         if (!rgba_color.parse (color)) {
             rgba_color = { 1, 1, 1, 1 };
@@ -217,7 +233,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
 
     private void update_checked_wallpaper (Gtk.FlowBoxChild _selected_child) {
         // We don't do gradient backgrounds, reset the key that might interfere
-        settings.reset ("color-shading-type");
+        gnome_background_settings.reset ("color-shading-type");
 
         if (previous_wallpaper != null) {
             previous_wallpaper.checked = false;
@@ -231,12 +247,12 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         if (selected_child is SolidColorContainer) {
             combo.sensitive = false;
 
-            settings.set_string ("picture-options", "none");
+            gnome_background_settings.set_string ("picture-options", "none");
         } else if (selected_child is UriContainer) {
             combo.sensitive = true;
 
-            settings.set_string ("picture-uri", ((UriContainer) selected_child).uri);
-            settings.set_string ("picture-options", combo.active_id);
+            gnome_background_settings.set_string ("picture-uri", ((UriContainer) selected_child).uri);
+            gnome_background_settings.set_string ("picture-options", combo.active_id);
             update_accountsservice ();
         }
     }
@@ -245,7 +261,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
      * This integrates with LightDM
      */
      private void update_accountsservice () {
-        var file = File.new_for_uri (settings.get_string ("picture-uri"));
+        var file = File.new_for_uri (gnome_background_settings.get_string ("picture-uri"));
         var path = file.get_path ();
 
         var greeter_file = copy_for_greeter (file);
@@ -264,13 +280,13 @@ public class PantheonShell.Wallpaper : Gtk.Box {
             wallpaper_view.append (solid_color);
 
             // Select current wallpaper
-            if (settings.get_string ("picture-options") == "none") {
+            if (gnome_background_settings.get_string ("picture-options") == "none") {
                 wallpaper_view.child_activated (solid_color);
             } else {
                 var children = wallpaper_view.observe_children ();
                 for (var i = 0; i < children.get_n_items (); i++) {
                     var child = (GenericContainer) children.get_item (i);
-                    if (child is UriContainer && settings.get_string ("picture-uri") == ((UriContainer) child).uri) {
+                    if (child is UriContainer && gnome_background_settings.get_string ("picture-uri") == ((UriContainer) child).uri) {
                         wallpaper_view.child_activated (child);
                     }
                 }
