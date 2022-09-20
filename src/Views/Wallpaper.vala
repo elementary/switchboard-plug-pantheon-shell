@@ -116,7 +116,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         var dim_label = new Gtk.Label ("Dim wallpaper in dark style:") {
             margin_end = 12
         };
-        
+
         dim_switch = new Gtk.Switch () {
             vexpand = false,
             valign = Gtk.Align.CENTER
