@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-09-21 02:54+0000\n"
+"PO-Revision-Date: 2022-09-23 23:35+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/ckb/>\n"
@@ -22,85 +22,81 @@ msgstr ""
 
 #: src/Plug.vala:49
 msgid "Desktop"
-msgstr "پێشخان"
+msgstr "ڕوومێز"
 
 #: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "وێنەی پاشبنەما بگۆڕە، و دۆک و گۆشە گەرمەکان ڕێک بخە"
 
 #: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
-msgstr "کاغەزی دیوار"
+msgstr "پاشبنەما"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
 msgid "Appearance"
-msgstr ""
+msgstr "دەرکەوتن"
 
 #: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
 msgid "Text"
-msgstr ""
+msgstr "دەق"
 
 #: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
 #: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Dock & Panel"
-msgstr ""
+msgstr "دۆک & پانێڵ"
 
 #: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 #: src/Plug.vala:138
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "دیتنی چەندین شاشە"
+msgstr "مەڵتیتاسکینگ"
 
 #: src/Plug.vala:124
 msgid "Hide Mode"
-msgstr "شاردنەوەی مۆد"
+msgstr "دۆخی شاردنەوە"
 
 #: src/Plug.vala:125
 msgid "Icon Size"
-msgstr "ئەندازەی وێنۆچکە"
+msgstr "قەبارەی ئایکۆن"
 
 #: src/Plug.vala:126
 msgid "Pressure reveal"
-msgstr ""
+msgstr "دەرخستنی فشار"
 
 #: src/Plug.vala:127
 msgid "Display"
-msgstr "نیشاندان"
+msgstr "ڕوونما"
 
 #: src/Plug.vala:128
 msgid "Panel translucency"
-msgstr ""
+msgstr "هەبوونی ڕەنگ لە باگراوندی پانێڵی سەرەوە"
 
 #: src/Plug.vala:130
 msgid "Dark style"
-msgstr ""
+msgstr "ستایلی تارک"
 
 #: src/Plug.vala:131
 msgid "Accent color"
-msgstr ""
+msgstr "ڕەنگی ئەکسێنت"
 
 #: src/Plug.vala:133
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Size"
-msgstr "ئەندازەی وێنۆچکە"
+msgstr "قەبارە"
 
 #: src/Plug.vala:134
 msgid "Dyslexia-friendly"
-msgstr ""
+msgstr "دۆستی ناڕێکی خوێندنەوە"
 
 #: src/Plug.vala:136
 msgid "Hot Corners"
-msgstr "کۆشەکانی داخ"
+msgstr "گەرمە گۆشەکان"
 
 #: src/Plug.vala:137 src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace"
-msgstr ""
+msgstr "گواستنەوەی پەنجەرەکان بۆ ناوچەکارێکی نوێ"
 
 #: src/Plug.vala:138
 msgid "Window animations"
-msgstr ""
+msgstr "ئەنیمەیشنەکانی پەنجەرە"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -122,169 +118,173 @@ msgstr ""
 #.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "بیکە بە وێنەی پاشبنەما"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "وێنەی دیاریکراو بکە بە وێنەی پاشبنەما"
 
 #: src/Views/Appearance.vala:68
 msgid "Style"
-msgstr ""
+msgstr "ستایل"
 
 #: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
-msgstr ""
+msgstr "بنەڕەت"
 
 #: src/Views/Appearance.vala:110
 msgid "Dark"
-msgstr ""
+msgstr "تاریک"
 
 #: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
+"شێوازی بینراوی پەسەندکراو بۆ پێکهاتەکانی سیستەم. تکایە بزانە کە لەوانەیە "
+"بەرنامەکانیش بچنە دۆخی تاریکییەوە ئەگەر هەیان بێت."
 
 #: src/Views/Appearance.vala:129
 msgid "Schedule"
-msgstr ""
+msgstr "دیاریکردنی کات"
 
 #: src/Views/Appearance.vala:131
 msgid "Disabled"
-msgstr ""
+msgstr "وەستێنراو"
 
 #: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "خۆرهەڵاتن بۆ خۆراوابوون"
 
 #: src/Views/Appearance.vala:140
 msgid "From:"
-msgstr ""
+msgstr "لە:"
 
 #: src/Views/Appearance.vala:147
 msgid "To:"
-msgstr ""
+msgstr "بۆ:"
 
 #: src/Views/Appearance.vala:298
 msgid "Accent Color"
-msgstr ""
+msgstr "ڕەنگی ئەکسێنت"
 
 #: src/Views/Appearance.vala:303
 msgid "Blueberry"
-msgstr ""
+msgstr "بلوبێری"
 
 #: src/Views/Appearance.vala:306
 msgid "Mint"
-msgstr ""
+msgstr "نەعنا"
 
 #: src/Views/Appearance.vala:309
 msgid "Lime"
-msgstr ""
+msgstr "لیمۆ"
 
 #: src/Views/Appearance.vala:312
 msgid "Banana"
-msgstr ""
+msgstr "مۆز"
 
 #: src/Views/Appearance.vala:315
 msgid "Orange"
-msgstr ""
+msgstr "پڕتەقاڵ"
 
 #: src/Views/Appearance.vala:318
 msgid "Strawberry"
-msgstr ""
+msgstr "شیلیک"
 
 #: src/Views/Appearance.vala:321
 msgid "Bubblegum"
-msgstr ""
+msgstr "بەبڵ-گەم"
 
 #: src/Views/Appearance.vala:324
 msgid "Grape"
-msgstr ""
+msgstr "ترێ"
 
 #: src/Views/Appearance.vala:327
 msgid "Cocoa"
-msgstr ""
+msgstr "کاکاو"
 
 #: src/Views/Appearance.vala:330
 msgid "Slate"
-msgstr ""
+msgstr "تەختە"
 
 #: src/Views/Appearance.vala:333
 msgid "Automatic based on wallpaper"
-msgstr ""
+msgstr "خۆکرانە بەپێی ڕەنگی پاشبنەما"
 
 #: src/Views/Appearance.vala:349
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"ئەم ڕەنگەی کە دیاریدەکەیت لە هەموو سیستەمەکەدا بەکاردێت، بەڵام بەرنامەکان "
+"دەتوانن ڕەنگی خۆیان بەکاربهێنن."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
-msgstr "لەنگەرگا(دۆک)"
+msgstr "دۆک"
 
 #: src/Views/Dock.vala:38
 msgid "Small"
-msgstr ""
+msgstr "بچوک"
 
 #: src/Views/Dock.vala:50
 msgid "Large"
-msgstr "زۆر گەورە"
+msgstr "گەورە"
 
 #: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
-msgstr "سەرنجدانی پەنجێرەی گەورەکراوە"
+msgstr "پەنجەرەی خاوەن سەرنج بە گەورەیی کراوەتەوە"
 
 #: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
-msgstr "سەرنجدانی پەنجێرەی سەر لەنگەرگا"
+msgstr "پەنجەرەی خاوەن سەرنج دەکەوێتە سەر دۆک"
 
 #: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
-msgstr "هیچ پەنجێرەیێک لەسە لەنگەرگا نییە"
+msgstr "هەر پەنجەرەیەک بکەوێتە سەر دۆک"
 
 #: src/Views/Dock.vala:74
 msgid "Not being used"
-msgstr "سوودی لێ نەگیراوە"
+msgstr "بەکارناهێنرێت"
 
 #: src/Views/Dock.vala:110
 msgid "Primary display:"
-msgstr ""
+msgstr "ڕوونمای سەرەکی:"
 
 #: src/Views/Dock.vala:114
 msgid "Display:"
-msgstr "نیشاندان:"
+msgstr "ڕوونما:"
 
 #: src/Views/Dock.vala:145
 msgid "Icon size:"
-msgstr ""
+msgstr "قەبارەی ئایکۆن:"
 
 #: src/Views/Dock.vala:147
 msgid "Hide when:"
-msgstr "شاردن تاکوو :"
+msgstr "با دۆک شاراوە بێت کاتێک کە:"
 
 #: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "دەرخستنی فشار:"
 
 #: src/Views/Dock.vala:154
 msgid "Panel"
-msgstr ""
+msgstr "پانێڵ"
 
 #: src/Views/Dock.vala:158
 msgid "Panel translucency:"
-msgstr ""
+msgstr "هەبوونی ڕەنگ لە پاشبنەمای پانێڵ:"
 
 #: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
-msgstr "شاشەی %d"
+msgstr "مۆنیتەر %d"
 
 #: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
-msgstr "نیشاندان %d"
+msgstr "ڕوونما %d"
 
 #: src/Views/Multitasking.vala:28
 msgid "When the pointer enters a display corner"
@@ -292,157 +292,157 @@ msgstr "کاتێک نیشاندەری ماوس دەچێتە گۆشەی ڕوون�
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "گۆشەی سەرەوەی دەستەچەپ"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "گۆشەی سەرەوەی دەستەڕاست"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "گۆشەی خوارەوەی دەستەچەپ"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "گۆشەی خوارەوەت دەستەڕاست"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
-msgstr ""
+msgstr "کاتێک پڕ بە ڕوونما دەکرێت"
 
 #: src/Views/Multitasking.vala:45
 msgid "When maximizing"
-msgstr ""
+msgstr "کاتێک گەورە دەکرێت"
 
 #: src/Views/Multitasking.vala:54
 msgid "Window animations:"
-msgstr ""
+msgstr "ئەنیمەیشنی پەنجەرەکان:"
 
 #: src/Views/Multitasking.vala:135
 msgid "Do nothing"
-msgstr ""
+msgstr "هیچ با ڕوونەدات"
 
 #: src/Views/Multitasking.vala:136
 msgid "Multitasking View"
-msgstr "دیتنی چەندین شاشە"
+msgstr "دیمەنی مەڵتی-تاسکینگ"
 
 #: src/Views/Multitasking.vala:137
 msgid "Maximize current window"
-msgstr ""
+msgstr "پەنجەرەی ئیستا گەورە بکە"
 
 #: src/Views/Multitasking.vala:138
 msgid "Show Applications Menu"
-msgstr "نیشاندانی مینیۆی ئەپلیکەیشێن"
+msgstr "پشاندانی لیستی بەرنامەکان"
 
 #: src/Views/Multitasking.vala:139
 msgid "Show all windows"
-msgstr ""
+msgstr "پشاندانی هەموو پەنجەرەکان"
 
 #: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "چوونە ناوچەکارێکی نوێ"
 
 #: src/Views/Multitasking.vala:141
 msgid "Execute custom command"
-msgstr ""
+msgstr "جێبەجێکردنی فەرمانێکی تایبەت"
 
 #: src/Views/Text.vala:34
 msgid "Size:"
-msgstr ""
+msgstr "قەبارە:"
 
 #: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
-msgstr ""
+msgstr "دۆستی ناڕێکی خوێندنەوە:"
 
 #: src/Views/Text.vala:60
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
+"قورسکردنی بەشی خوارەوەی شێوەکان و زیادکردنی دووری نێوان پیتەکان دەتوانێت "
+"یارمەتیدەر بێت لە باشترکردنی خوێندنەوە و خێرایی خوێندنەوە."
 
 #: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
-msgstr ""
+msgstr "هێنانی وێنە…"
 
 #: src/Views/Wallpaper.vala:111
 msgid "Centered"
-msgstr "ناوەندی"
+msgstr "ناوەڕاستی وێنە"
 
 #: src/Views/Wallpaper.vala:112
 msgid "Zoom"
-msgstr "زووم"
+msgstr "بێتەپێش"
 
 #: src/Views/Wallpaper.vala:113
 msgid "Spanned"
-msgstr "سپانەر"
+msgstr "تەواوی وێنە"
 
 #: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
-msgstr ""
+msgstr "هێنانی وێنە"
 
 #: src/Views/Wallpaper.vala:157
 msgid "Import"
-msgstr ""
+msgstr "هێنان"
 
 #: src/Views/Wallpaper.vala:158
 msgid "Cancel"
 msgstr "هەڵوەشاندنەوە"
 
 #: src/Views/Wallpaper.vala:630
-#, fuzzy
-#| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
-msgstr "کاغەزی دیوار"
+msgstr "وێنەی پاشبنەما سڕایەوە"
 
 #: src/Views/Wallpaper.vala:631
 msgid "Undo"
-msgstr ""
+msgstr "هەڵوەشاندنەوە"
 
 #: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
-msgstr ""
+msgstr "سڕینەوە"
 
 #: src/Widgets/WallpaperContainer.vala:190
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "هونەرمەند: %s"
 
 #: set-wallpaper-contract/set-wallpaper.vala:94
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "تەنها %d چرکە"
+msgstr[1] "%d چرکە"
 
 #: set-wallpaper-contract/set-wallpaper.vala:97
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "تەنها %d خولەک"
+msgstr[1] "%d خولەک"
 
 #: set-wallpaper-contract/set-wallpaper.vala:101
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "تەنها %d کاتژمێر"
+msgstr[1] "%d کاتژمێر"
 
 #: set-wallpaper-contract/set-wallpaper.vala:104
 msgid "1 day"
-msgstr ""
+msgstr "یەک ڕۆژ"
 
 #: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"
-msgstr ""
+msgstr "هەر وێنەیەک پشاندە بۆ"
 
 #: set-wallpaper-contract/set-wallpaper.vala:232
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "دانانی وەکو سلایدشۆوی ڕوومێز"
 
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
-msgstr ""
+msgstr "دروستکردنی سلایدشۆو"
 
 #, fuzzy
 #~ msgid "Larger"
