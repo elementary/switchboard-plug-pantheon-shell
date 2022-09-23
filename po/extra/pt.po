@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-08-01 14:35+0000\n"
+"PO-Revision-Date: 2022-09-04 23:27+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/pt/>\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
-msgstr ""
+msgstr "Correções:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
 msgid "Wallpaper accent color follows system setting"

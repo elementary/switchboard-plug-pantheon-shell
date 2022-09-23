@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-07-08 16:31+0000\n"
+"PO-Revision-Date: 2022-09-04 06:39+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -36,35 +36,35 @@ msgstr "新機能:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "There is now an undo option after removing a wallpaper"
-msgstr ""
+msgstr "壁紙の削除を元に戻せる機能を追加"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr ""
+msgstr "ユーザーが追加した壁紙が壁紙一覧の先頭に表示されるように修正"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
-msgstr ""
+msgstr "修正点:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
 msgid "Wallpaper accent color follows system setting"
-msgstr ""
+msgstr "壁紙のアクセントカラーがシステム設定に従うように修正"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
+msgstr "メニュー項目“デスクトップの背景として設定”が root ユーザーで実行された場合、適切に終了するように修正"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Wallpapers with the same name are distinguished"
-msgstr ""
+msgstr "ファイル名が同一複数の背景画像を別のものとして認識するように修正"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
+msgstr "スタイルの切り替えをキー操作で行った際に、ダークスタイルのスケジュールを無効化するように修正"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Style dyslexia-friendly switch properly"
-msgstr ""
+msgstr "“ディスレクシアに対応”スイッチが適切なスタイルで表示されるように修正"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
