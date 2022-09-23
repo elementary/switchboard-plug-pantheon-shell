@@ -519,9 +519,13 @@ public class PantheonShell.Wallpaper : Gtk.Box {
 
         var toast_revealer = (Gtk.Revealer) toast.get_first_child ();
         toast_revealer.notify["reveal-child"].connect (() => {
-            if (!toast_revealer.reveal_child && wallpaper_for_removal != null) {
-                confirm_removal ();
-            }
+            // give some time for undo action to emit
+            Idle.add (() => {
+                if (!toast_revealer.reveal_child && wallpaper_for_removal != null) {
+                    confirm_removal ();
+                }
+                return Source.REMOVE;
+            });
         });
 
         view_overlay.add_overlay (toast);
@@ -530,8 +534,8 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     }
 
     private void mark_for_removal (UriContainer wallpaper) {
-        wallpaper_view.remove (wallpaper);
         wallpaper_for_removal = wallpaper;
+        wallpaper.hide ();
     }
 
     private void confirm_removal () {
@@ -542,7 +546,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     }
 
     private void undo_removal () {
-        wallpaper_view.append (wallpaper_for_removal);
+        wallpaper_for_removal.show ();
         wallpaper_for_removal = null;
     }
 
