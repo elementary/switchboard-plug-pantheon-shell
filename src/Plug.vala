@@ -20,7 +20,7 @@
 
 public class PantheonShell.Plug : Switchboard.Plug {
     private Gtk.Stack stack;
-    private Gtk.Grid main_grid;
+    private Gtk.Box main_box;
 
     private Wallpaper wallpaper_view;
 
@@ -53,8 +53,8 @@ public class PantheonShell.Plug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (main_grid == null) {
-            main_grid = new Gtk.Grid ();
+        if (main_box == null) {
+            main_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
 
             wallpaper_view = new Wallpaper ();
 
@@ -91,11 +91,11 @@ public class PantheonShell.Plug : Switchboard.Plug {
                 }
             }
 
-            main_grid.attach (stack_switcher, 0, 0, 1, 1);
-            main_grid.attach (stack, 0, 1, 1, 1);
+            main_box.append (stack_switcher);
+            main_box.append (stack);
         }
 
-        return main_grid;
+        return main_box;
     }
 
     public override void shown () {
