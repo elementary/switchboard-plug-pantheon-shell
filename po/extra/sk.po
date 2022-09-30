@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2021-11-30 16:52+0000\n"
+"PO-Revision-Date: 2022-09-30 22:36+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/sk/>\n"
@@ -36,35 +36,35 @@ msgstr "Nové funkcie:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "There is now an undo option after removing a wallpaper"
-msgstr ""
+msgstr "Pridaná možnosť zrušenia odstránenia tapety"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr ""
+msgstr "Vlastné tapety sa po novom zobrazujú navrchu zoznamu"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
-msgstr ""
+msgstr "Opravy:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
 msgid "Wallpaper accent color follows system setting"
-msgstr ""
+msgstr "Farebný odtieň tapety reflektuje nastavenie systému"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
+msgstr "Dohoda Set-wallpaper zlyhávala pri spustení ako sudo"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Wallpapers with the same name are distinguished"
-msgstr ""
+msgstr "Odlišovať tapety s rovnakým názvom"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
+msgstr "Prepínanie štýlov pomocou klávesnice vypínalo časovanie tmavého štýlu"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Style dyslexia-friendly switch properly"
-msgstr ""
+msgstr "Prepínač textu pre dyslektikov je správne zobrazený"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
@@ -85,11 +85,11 @@ msgstr "Aktualizované preklady"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:35
 msgid "Set custom Terminal commands for each hotcorner"
-msgstr ""
+msgstr "Možnosť nastavenia vlastného príkazu Terminálu pre každý aktívny roh"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:36
 msgid "Redesigned Appearance and Multitasking views"
-msgstr ""
+msgstr "Prerobené zobrazenie Vzhľad a Zobrazenie úloh"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:48
 msgid "Move Text settings to their own page"
