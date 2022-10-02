@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
 "PO-Revision-Date: 2022-10-02 08:07+0000\n"
-"Last-Translator: Sergey <xih@yandex.ru>\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -22,7 +22,7 @@ msgstr "Рабочий стол"
 
 #: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Настройка дока, активных углов и смена обоев"
+msgstr "Настройка дока, активных углов и обоев"
 
 #: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
@@ -68,7 +68,7 @@ msgstr "Прозрачность панели"
 
 #: src/Plug.vala:130
 msgid "Dark style"
-msgstr "Темный стиль"
+msgstr "Тёмный стиль"
 
 #: src/Plug.vala:131
 msgid "Accent color"
@@ -80,7 +80,7 @@ msgstr "Размер"
 
 #: src/Plug.vala:134
 msgid "Dyslexia-friendly"
-msgstr "Удобный для чтения людьми с дислексией"
+msgstr "Текст для людей с дислексией"
 
 #: src/Plug.vala:136
 msgid "Hot Corners"
@@ -190,7 +190,7 @@ msgstr "Клубничный"
 
 #: src/Views/Appearance.vala:321
 msgid "Bubblegum"
-msgstr "Жвачный"
+msgstr "Бубльгумовый"
 
 #: src/Views/Appearance.vala:324
 msgid "Grape"
