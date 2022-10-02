@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
 "PO-Revision-Date: 2022-10-02 08:07+0000\n"
-"Last-Translator: Stas <SedovSG@yandex.ru>\n"
+"Last-Translator: Sergey <xih@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -56,7 +56,7 @@ msgstr "Размер значков"
 
 #: src/Plug.vala:126
 msgid "Pressure reveal"
-msgstr "Выявление давления"
+msgstr "Надавить чтоб раскрыть"
 
 #: src/Plug.vala:127
 msgid "Display"
@@ -262,7 +262,7 @@ msgstr "Скрывать, если:"
 
 #: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
-msgstr "Выявлять давление:"
+msgstr "Надавить чтоб раскрыть:"
 
 #: src/Views/Dock.vala:154
 msgid "Panel"
