@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"PO-Revision-Date: 2022-10-14 17:11+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/nl/>\n"
@@ -87,7 +87,7 @@ msgstr "Bijgewerkte vertalingen"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:35
 msgid "Set custom Terminal commands for each hotcorner"
-msgstr ""
+msgstr "Stel eigen terminal-commando's in voor elke hotcorner"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:36
 msgid "Redesigned Appearance and Multitasking views"
