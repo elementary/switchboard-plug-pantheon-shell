@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-10-14 15:37+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"PO-Revision-Date: 2022-10-14 17:11+0000\n"
+"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
 "Language: nl\n"
@@ -310,7 +310,7 @@ msgstr ""
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
-msgstr "Bij het binnengaan van volledig scherm"
+msgstr "Bij het openen van volledig scherm"
 
 #: src/Views/Multitasking.vala:45
 msgid "When maximizing"
