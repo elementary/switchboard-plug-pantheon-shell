@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
 "PO-Revision-Date: 2022-10-14 17:11+0000\n"
-"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
 "Language: nl\n"
@@ -294,19 +294,19 @@ msgstr "Wanneer de muisaanwijzer de hoek van het scherm bereikt"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr "Linker bovenhoek"
+msgstr "Linksboven"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr "Rechter bovenhoek"
+msgstr "Rechtsboven"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "Linksonder"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "Rechtsonder"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
