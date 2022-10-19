@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-09-04 23:27+0000\n"
+"PO-Revision-Date: 2022-10-20 01:42+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/pt/>\n"
@@ -36,11 +36,13 @@ msgstr "Novas funcionalidades:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 msgid "There is now an undo option after removing a wallpaper"
-msgstr ""
+msgstr "Existe agora uma opção de anular após a remoção de um papel de parede"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr ""
+"Os papéis de parede são agora classificados primeiro com papéis de parede "
+"personalizados"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
 msgid "Fixes:"
@@ -48,23 +50,23 @@ msgstr "Correções:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
 msgid "Wallpaper accent color follows system setting"
-msgstr ""
+msgstr "A cor de destaque do papel de parede segue a configuração do sistema"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
+msgstr "Definir papel de parede falha graciosamente quando executado como sudo"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
 msgid "Wallpapers with the same name are distinguished"
-msgstr ""
+msgstr "Distinguem-se os papéis de parede com o mesmo nome"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:22
 msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
+msgstr "A troca de estilos com o teclado cancela o agendamento do estilo escuro"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "Style dyslexia-friendly switch properly"
-msgstr ""
+msgstr "O estilo amigável à dislexia troca devidamente"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:38
