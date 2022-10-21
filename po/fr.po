@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 18:16+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
 "PO-Revision-Date: 2022-08-22 09:32+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -164,55 +164,55 @@ msgstr "À partir de :"
 msgid "To:"
 msgstr "Jusqu'à :"
 
-#: src/Views/Appearance.vala:298
+#: src/Views/Appearance.vala:325
 msgid "Accent Color"
 msgstr "Couleur d'accentuation"
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
 msgstr "Myrtille"
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:333
 msgid "Mint"
 msgstr "Menthe"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:336
 msgid "Lime"
 msgstr "Citron Vert"
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:339
 msgid "Banana"
 msgstr "Banane"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:342
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
 msgstr "Fraise"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
 msgstr "Chewing-gum"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:351
 msgid "Grape"
 msgstr "Raisin"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:357
 msgid "Slate"
 msgstr "Ardoise"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr "Automatique à partir du fond d'écran"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

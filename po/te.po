@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 18:16+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
 "PO-Revision-Date: 2014-12-16 09:22+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,55 +156,55 @@ msgstr ""
 msgid "To:"
 msgstr ""
 
-#: src/Views/Appearance.vala:298
+#: src/Views/Appearance.vala:325
 msgid "Accent Color"
 msgstr ""
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:333
 msgid "Mint"
 msgstr ""
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:336
 msgid "Lime"
 msgstr ""
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:339
 msgid "Banana"
 msgstr ""
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:342
 msgid "Orange"
 msgstr ""
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
 msgstr ""
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
 msgstr ""
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:351
 msgid "Grape"
 msgstr ""
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
 msgstr ""
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:357
 msgid "Slate"
 msgstr ""
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 18:16+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -164,55 +164,55 @@ msgstr "시작:"
 msgid "To:"
 msgstr "끝:"
 
-#: src/Views/Appearance.vala:298
+#: src/Views/Appearance.vala:325
 msgid "Accent Color"
 msgstr "강조색"
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
 msgstr "블루베리"
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:333
 msgid "Mint"
 msgstr "민트"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:336
 msgid "Lime"
 msgstr "라임"
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:339
 msgid "Banana"
 msgstr "바나나"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:342
 msgid "Orange"
 msgstr "오렌지"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
 msgstr "딸기"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
 msgstr "풍선껌"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:351
 msgid "Grape"
 msgstr "포도"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
 msgstr "코코아"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:357
 msgid "Slate"
 msgstr "슬레이트"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr "배경 화면에 따라 자동"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
