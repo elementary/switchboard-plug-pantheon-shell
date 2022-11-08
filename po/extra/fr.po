@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:39+0000\n"
-"PO-Revision-Date: 2022-08-22 08:53+0000\n"
+"PO-Revision-Date: 2022-11-09 09:29+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
@@ -85,10 +85,12 @@ msgstr "Les fonds d'écran ayant le même nom sont différentiés"
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
+"Passer d'un thème à l'autre avec le clavier annule la planification du thème "
+"sombre"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
 msgid "Style dyslexia-friendly switch properly"
-msgstr ""
+msgstr "Mise en forme appropriée du bouton pour la dyslexie"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
 msgid "Set custom Terminal commands for each hotcorner"
