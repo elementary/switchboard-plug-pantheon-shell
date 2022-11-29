@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2015-2017 elementary LLC. (https://bugs.launchpad.net/switchboard-plug-pantheon-shell)
+ * Copyright 2015-2022 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,6 +33,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; set; }
+    public uint64 creation_date = 0;
 
     private int scale;
 
@@ -79,10 +80,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         height_request = THUMB_HEIGHT + 18;
         width_request = THUMB_WIDTH + 18;
 
-        var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
         image = new Granite.AsyncImage ();
         image.halign = Gtk.Align.CENTER;
         image.valign = Gtk.Align.CENTER;
@@ -94,9 +91,15 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         card_box.add (image);
         card_box.margin = 9;
 
-        var check = new Gtk.Image.from_icon_name ("selection-checked", Gtk.IconSize.LARGE_TOOLBAR);
-        check.halign = Gtk.Align.START;
-        check.valign = Gtk.Align.START;
+        var check_provider = new Gtk.CssProvider ();
+        check_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
+
+        var check = new Gtk.RadioButton (null) {
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.START,
+            can_focus = false
+        };
+        check.get_style_context ().add_provider (check_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
         check_revealer = new Gtk.Revealer ();
         check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
@@ -119,14 +122,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             move_to_trash.activate.connect (() => trash ());
 
             var file = File.new_for_uri (uri);
-            file.query_info_async.begin (GLib.FileAttribute.ACCESS_CAN_DELETE, 0, Priority.DEFAULT, null, (obj, res) => {
-                try {
-                    var info = file.query_info_async.end (res);
-                    move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
-                } catch (Error e) {
-                    critical (e.message);
-                }
-            });
+            try {
+                var info = file.query_info ("*", FileQueryInfoFlags.NONE);
+                creation_date = info.get_attribute_uint64 (GLib.FileAttribute.TIME_CREATED);
+                move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
+            } catch (Error e) {
+                critical (e.message);
+            }
 
             context_menu = new Gtk.Menu ();
             context_menu.append (move_to_trash);

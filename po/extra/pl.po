@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-22 03:54+0000\n"
-"PO-Revision-Date: 2021-11-19 15:16+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"PO-Revision-Date: 2022-08-16 17:31+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/pl/>\n"
@@ -29,75 +29,127 @@ msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Konfiguruj dok, gorące narożniki i zmień tło pulpitu"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:12
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:25
-msgid "New features:"
-msgstr "Nowe funkcje:"
-
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
-msgid "Move Text settings to their own page"
-msgstr "Przeniesiono ustawienia tekstu na osobną stronę"
-
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
-msgid "More granular settings for text scale"
-msgstr "Dokładniejsze opcje dla skalowania tekstu"
-
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:34
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:47
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:60
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:74
 msgid "Other updates:"
 msgstr "Inne aktualizacje:"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:37
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:46
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:51
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:57
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:36
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:49
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:62
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:80
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:89
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:94
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:100
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:27
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:21
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:42
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:55
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:68
+msgid "New features:"
+msgstr "Nowe funkcje:"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
+msgid "There is now an undo option after removing a wallpaper"
+msgstr "Dodano możliwość cofnięcia po usunięciu tła pulpitu"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
+msgid "Wallpapers are now sorted with custom wallpapers first"
+msgstr ""
+"Tła pulpitu są teraz posortowane tak by niestandardowe tła pojawiały się "
+"najpierw"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
+msgid "Fixes:"
+msgstr "Poprawki:"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
+msgid "Wallpaper accent color follows system setting"
+msgstr "Kolor akcentu tła pulpitu jest teraz zgodny z ustawieniami systemu"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:29
+msgid "Set-wallpaper contract fails gracefully when run as sudo"
+msgstr "Kontrakt set-wallpaper nie psuje się gdy jest uruchomiony z sudo"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
+msgid "Wallpapers with the same name are distinguished"
+msgstr "Tła pulpitu z taką samą nazwą są teraz rozróżniane"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
+msgid "Switching styles with the keyboard cancels dark style scheduling"
+msgstr ""
+"Zmiana stylu przy użyciu klawiatury anuluje ustawienia automatycznego "
+"ciemnego stylu"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
+msgid "Style dyslexia-friendly switch properly"
+msgstr "Przełącznik przyjazny dla dyslektyków ma teraz poprawny styl"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
+msgid "Set custom Terminal commands for each hotcorner"
+msgstr "Ustawianie spersonalizowanych poleceń w każdym z rogów Terminala"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:45
+msgid "Redesigned Appearance and Multitasking views"
+msgstr "Przeprojektowano widoki Wyświetlanie oraz Wielozadaniowość"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:57
+msgid "Move Text settings to their own page"
+msgstr "Przeniesiono ustawienia tekstu na osobną stronę"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:58
+msgid "More granular settings for text scale"
+msgstr "Dokładniejsze opcje dla skalowania tekstu"
+
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:70
 msgid "Accent color and dark style options"
 msgstr "Kolor akcentu i ustawienia ciemnego motywu"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:71
 msgid ""
 "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
 msgstr ""
 "Ustawienie tekstu przyjaznego dla dyslektyków przy użyciu czcionki "
 "OpenDyslexia w całym systemie"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:29
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:72
 msgid "Maximize and fullscreen workspace management options"
 msgstr "Opcje zarządzania maksymalizacji i pełnego ekranu"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:76
 msgid "Fix a freeze after opening Power settings"
 msgstr "Naprawiono zawieszenie po otwarciu ustawień zasilania"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:34
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:77
 msgid "Improved filter for image file types when importing"
 msgstr "Usprawniono filtr dla plików obrazkowych podczas importowania"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:35
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:78
 msgid "Visual updates"
 msgstr "Aktualizacje wizualne"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:36
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:79
 msgid "Some options now appear in different tabs"
 msgstr "Niektóre opcje są teraz w innych kartach"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:86
 msgid "Illustrate Dock icon sizes"
 msgstr "Zilustrowano rozmiary ikon doka"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:87
 msgid "Fix system wallpapers being copied"
 msgstr "Naprawiono kopiowanie systemowych tapet"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:45
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:88
 msgid "Update search results"
 msgstr "Zaktualizowano wyniki wyszukiwania"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:56
+#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:99
 msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 msgstr ""
 "Naprawiono problemy z ustawianiem tapety na ekranie logowania i blokady "
