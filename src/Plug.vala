@@ -82,9 +82,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
             };
             scrolled_window.add (sidebar);
 
-            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
-                position = 240
-            };
+            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             paned.pack1 (scrolled_window, false, false);
             paned.pack2 (stack, true, false);
 
