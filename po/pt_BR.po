@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-02 19:21+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/pt_BR/>\n"
@@ -20,91 +20,91 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:49
 msgid "Desktop"
 msgstr "Área de Trabalho"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Configure o dock, os cantos, e mude o papel de parede"
 
-#: src/Plug.vala:62 src/Plug.vala:118
+#: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
 msgstr "Papel de parede"
 
-#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
+#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
 msgid "Appearance"
 msgstr "Aparência"
 
-#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
 #, fuzzy
 #| msgid "Text size"
 msgid "Text"
 msgstr "Tamanho do texto"
 
-#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
-#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
+#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
-#: src/Plug.vala:134
+#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:138
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
 msgstr "Visão Multitarefa"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:124
 msgid "Hide Mode"
 msgstr "Modo de Ocultação"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:125
 msgid "Icon Size"
 msgstr "Tamanho dos Ícones"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:126
 msgid "Pressure reveal"
 msgstr "Pressão para revelação"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:127
 msgid "Display"
 msgstr "Tela"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:128
 msgid "Panel translucency"
 msgstr "Translucidez do painel"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:130
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:127
+#: src/Plug.vala:131
 #, fuzzy
 #| msgid "Accent:"
 msgid "Accent color"
 msgstr "Destaque:"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:133
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Tamanho dos Ícones"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:134
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:132
+#: src/Plug.vala:136
 msgid "Hot Corners"
 msgstr "Cantos de Acesso Rápido"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:137 src/Views/Multitasking.vala:40
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
 msgstr "Alternar para novo espaço de trabalho"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:138
 msgid "Window animations"
 msgstr "Animações de janela"
 
@@ -135,97 +135,97 @@ msgid "Set selected image to be the new desktop background"
 msgstr ""
 "Definir a imagem selecionada como o novo plano de fundo da área de trabalho"
 
-#: src/Views/Appearance.vala:74
+#: src/Views/Appearance.vala:68
 #, fuzzy
 #| msgid "Style:"
 msgid "Style"
 msgstr "Estilo:"
 
-#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Padrão"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:110
 msgid "Dark"
 msgstr "Escuro"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
 
-#: src/Views/Appearance.vala:136
+#: src/Views/Appearance.vala:129
 msgid "Schedule"
 msgstr "Cronograma"
 
-#: src/Views/Appearance.vala:138
+#: src/Views/Appearance.vala:131
 msgid "Disabled"
 msgstr "Desabilitado"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
 msgstr "Do pôr ao nascer do sol"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:140
 msgid "From:"
 msgstr "Das:"
 
-#: src/Views/Appearance.vala:154
+#: src/Views/Appearance.vala:147
 msgid "To:"
 msgstr "Às:"
 
-#: src/Views/Appearance.vala:291
+#: src/Views/Appearance.vala:325
 #, fuzzy
 #| msgid "Accent:"
 msgid "Accent Color"
 msgstr "Destaque:"
 
-#: src/Views/Appearance.vala:296
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
 msgstr "Mirtilo"
 
-#: src/Views/Appearance.vala:299
+#: src/Views/Appearance.vala:333
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:336
 msgid "Lime"
 msgstr "Limão"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:339
 msgid "Banana"
 msgstr "Banana"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:342
 msgid "Orange"
 msgstr "Laranja"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
 msgstr "Morango"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
 msgstr "Chiclete"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:351
 msgid "Grape"
 msgstr "Uva"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
 msgstr "Cacau"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:357
 msgid "Slate"
 msgstr "Ardósia"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -245,62 +245,64 @@ msgstr "Pequeno"
 msgid "Large"
 msgstr "Grande"
 
-#: src/Views/Dock.vala:70
+#: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
 msgstr "Janela ativa está maximizada"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
 msgstr "Janela ativa sobrepõe o dock"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
 msgstr "Qualquer janela sobrepõe o dock"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Not being used"
 msgstr "Não está em uso"
 
-#: src/Views/Dock.vala:109
+#: src/Views/Dock.vala:110
 msgid "Primary display:"
 msgstr "Tela primária:"
 
-#: src/Views/Dock.vala:113
+#: src/Views/Dock.vala:114
 msgid "Display:"
 msgstr "Tela:"
 
-#: src/Views/Dock.vala:144
+#: src/Views/Dock.vala:145
 msgid "Icon size:"
 msgstr "Tamanho dos ícones:"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:147
 msgid "Hide when:"
 msgstr "Ocultar quando:"
 
-#: src/Views/Dock.vala:150
+#: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
 msgstr "Mostrar pressão:"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:154
 msgid "Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:158
 msgid "Panel translucency:"
 msgstr "Translucidez do painel:"
 
-#: src/Views/Dock.vala:241
+#: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:246
+#: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
 msgstr "Tela %d"
 
 #: src/Views/Multitasking.vala:28
-msgid "When the cursor enters the corner of the display:"
+#, fuzzy
+#| msgid "When the cursor enters the corner of the display:"
+msgid "When the pointer enters a display corner"
 msgstr "Quando o cursor toca o canto da tela:"
 
 #: src/Views/Multitasking.vala:35
@@ -319,21 +321,15 @@ msgstr ""
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:40
-#, fuzzy
-#| msgid "Switch to new workspace"
-msgid "Move windows to a new workspace:"
-msgstr "Alternar para novo espaço de trabalho"
-
-#: src/Views/Multitasking.vala:46
+#: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:47
+#: src/Views/Multitasking.vala:45
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:57
+#: src/Views/Multitasking.vala:54
 msgid "Window animations:"
 msgstr "Animações das janelas:"
 
@@ -379,39 +375,49 @@ msgid ""
 "legibility and reading speed."
 msgstr ""
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
 msgstr "Importar Foto…"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:111
 msgid "Centered"
 msgstr "Centralizado"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Zoom"
 msgstr "Ampliação"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:113
 msgid "Spanned"
 msgstr "Expandido"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
 msgstr "Importar Foto"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:157
 msgid "Import"
 msgstr "Importar"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:158
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Widgets/WallpaperContainer.vala:118
+#: src/Views/Wallpaper.vala:630
+#, fuzzy
+#| msgid "Wallpaper"
+msgid "Wallpaper Deleted"
+msgstr "Papel de parede"
+
+#: src/Views/Wallpaper.vala:631
+msgid "Undo"
+msgstr "Desfazer"
+
+#: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
 msgstr "Remover"
 
-#: src/Widgets/WallpaperContainer.vala:188
+#: src/Widgets/WallpaperContainer.vala:190
 #, c-format
 msgid "Artist: %s"
 msgstr "Artista: %s"
@@ -445,15 +451,20 @@ msgstr "1 dia"
 msgid "Show each photo for"
 msgstr "Mostrar cada foto para"
 
-#: set-wallpaper-contract/set-wallpaper.vala:226
+#: set-wallpaper-contract/set-wallpaper.vala:232
 msgid "Set As Desktop Slideshow"
 msgstr "Definir como Apresentação de Slides na Área de Trabalho"
 
-#: set-wallpaper-contract/set-wallpaper.vala:233
+#: set-wallpaper-contract/set-wallpaper.vala:239
 #, fuzzy
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Criar apresentação de slides"
+
+#, fuzzy
+#~| msgid "Switch to new workspace"
+#~ msgid "Move windows to a new workspace:"
+#~ msgstr "Alternar para novo espaço de trabalho"
 
 #~ msgid "Custom command:"
 #~ msgstr "Comando personalizado:"

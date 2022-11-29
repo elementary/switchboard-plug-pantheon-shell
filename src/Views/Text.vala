@@ -67,18 +67,26 @@ public class PantheonShell.Text : Granite.SimpleSettingsPage {
         var dyslexia_font_description_label = new Gtk.Label (
             _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
         ) {
-            max_width_chars = 60,
             wrap = true,
             xalign = 0
         };
         dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        content_area.attach (size_label, 0, 0);
-        content_area.attach (size_scale, 1, 0);
-        content_area.attach (size_spinbutton, 2, 0);
-        content_area.attach (dyslexia_font_label, 0, 1);
-        content_area.attach (dyslexia_font_switch, 1, 1);
-        content_area.attach (dyslexia_font_description_label, 1, 2, 2);
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 6
+        };
+        grid.attach (size_label, 0, 0);
+        grid.attach (size_scale, 1, 0);
+        grid.attach (size_spinbutton, 2, 0);
+        grid.attach (dyslexia_font_label, 0, 1);
+        grid.attach (dyslexia_font_switch, 1, 1);
+        grid.attach (dyslexia_font_description_label, 1, 2, 2);
+
+        var clamp = new Hdy.Clamp ();
+        clamp.add (grid);
+
+        content_area.add (clamp);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
         interface_settings.bind ("text-scaling-factor", size_adjustment, "value", SettingsBindFlags.GET);
@@ -112,6 +120,7 @@ public class PantheonShell.Text : Granite.SimpleSettingsPage {
                 interface_settings.reset (DOCUMENT_FONT_KEY);
                 interface_settings.reset (MONOSPACE_FONT_KEY);
             }
+            return Gdk.EVENT_PROPAGATE;
         });
     }
 }

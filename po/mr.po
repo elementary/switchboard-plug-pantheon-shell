@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-02 19:21+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mr/>\n"
@@ -15,89 +15,89 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:49
 msgid "Desktop"
 msgstr "डेस्कटॉप"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "डॉक, हॉट कॉर्नर कॉन्फिगर करा आणि वॉलपेपर बदला"
 
-#: src/Plug.vala:62 src/Plug.vala:118
+#: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
 msgstr "वॉलपेपर"
 
-#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
+#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
 msgid "Appearance"
 msgstr "दर्शन"
 
-#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
 #, fuzzy
 #| msgid "Text size"
 msgid "Text"
 msgstr "टेक्स्ट आकार"
 
-#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
-#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
+#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
-#: src/Plug.vala:134
+#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:138
 msgid "Multitasking"
 msgstr "मल्टीटास्किंग"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:124
 msgid "Hide Mode"
 msgstr "लपवा मोड"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:125
 msgid "Icon Size"
 msgstr "आयकॉन आकार"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:126
 msgid "Pressure reveal"
 msgstr "दबावाने प्रकट करा"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:127
 msgid "Display"
 msgstr "प्रदर्शन"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:128
 msgid "Panel translucency"
 msgstr "पॅनेल पारंपारिकता"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:130
 msgid "Dark style"
 msgstr "गडद शैली"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:131
 msgid "Accent color"
 msgstr "एक्सेंट रंग"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:133
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "आयकॉन आकार"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:134
 #, fuzzy
 #| msgid "Dyslexia-friendly text"
 msgid "Dyslexia-friendly"
 msgstr "डिसिलेक्सिया-अनुकूल मजकूर"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:136
 msgid "Hot Corners"
 msgstr "हॉट कॉर्नर"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:137 src/Views/Multitasking.vala:40
 #, fuzzy
 #| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
 msgstr "विंडोज एका नवीन कार्यक्षेत्रात हलवा:"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:138
 msgid "Window animations"
 msgstr "विंडो अॅनिमेशन"
 
@@ -127,97 +127,97 @@ msgstr "डेस्कटॉप पार्श्वभूमी म्हण�
 msgid "Set selected image to be the new desktop background"
 msgstr "नवीन डेस्कटॉप पार्श्वभूमी म्हणून निवडलेली प्रतिमा सेट करा"
 
-#: src/Views/Appearance.vala:74
+#: src/Views/Appearance.vala:68
 #, fuzzy
 #| msgid "Style:"
 msgid "Style"
 msgstr "शैली:"
 
-#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "डिफॉल्ट"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:110
 msgid "Dark"
 msgstr "गडद"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
 
-#: src/Views/Appearance.vala:136
+#: src/Views/Appearance.vala:129
 msgid "Schedule"
 msgstr "निर्धारित करा"
 
-#: src/Views/Appearance.vala:138
+#: src/Views/Appearance.vala:131
 msgid "Disabled"
 msgstr "अक्षम"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
 msgstr "सूर्योदयापासून सूर्यास्तापर्यंत"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:140
 msgid "From:"
 msgstr "पासून:"
 
-#: src/Views/Appearance.vala:154
+#: src/Views/Appearance.vala:147
 msgid "To:"
 msgstr "पर्यंत:"
 
-#: src/Views/Appearance.vala:291
+#: src/Views/Appearance.vala:325
 #, fuzzy
 #| msgid "Accent color"
 msgid "Accent Color"
 msgstr "एक्सेंट रंग"
 
-#: src/Views/Appearance.vala:296
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
 msgstr "ब्लूबेरी"
 
-#: src/Views/Appearance.vala:299
+#: src/Views/Appearance.vala:333
 msgid "Mint"
 msgstr "पुदीना"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:336
 msgid "Lime"
 msgstr "लिंबू"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:339
 msgid "Banana"
 msgstr "केळे"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:342
 msgid "Orange"
 msgstr "नारिंगी"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
 msgstr "स्ट्रॉबेरी"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
 msgstr "बबलगम"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:351
 msgid "Grape"
 msgstr "द्राक्ष"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
 msgstr "कोकाआ"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:357
 msgid "Slate"
 msgstr "स्लेट"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -235,62 +235,64 @@ msgstr "लहान"
 msgid "Large"
 msgstr "मोठा"
 
-#: src/Views/Dock.vala:70
+#: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
 msgstr "फोकस केलेली विंडो मोठी केली आहे"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
 msgstr "फोकस केलेली विंडो डॉकला आच्छादित करते"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
 msgstr "कोणतीही विंडो जी डॉक आच्छादित करते"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Not being used"
 msgstr "वापरात नाही"
 
-#: src/Views/Dock.vala:109
+#: src/Views/Dock.vala:110
 msgid "Primary display:"
 msgstr "प्राथमिक प्रदर्शन :"
 
-#: src/Views/Dock.vala:113
+#: src/Views/Dock.vala:114
 msgid "Display:"
 msgstr "प्रदर्शन :"
 
-#: src/Views/Dock.vala:144
+#: src/Views/Dock.vala:145
 msgid "Icon size:"
 msgstr "आयकॉन आकार :"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:147
 msgid "Hide when:"
 msgstr "लपवा जेंव्हा:"
 
-#: src/Views/Dock.vala:150
+#: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
 msgstr "दबावाने प्रकट करा :"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:154
 msgid "Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:158
 msgid "Panel translucency:"
 msgstr "पॅनेल पारंपारिकता:"
 
-#: src/Views/Dock.vala:241
+#: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
 msgstr "मॉनिटर %d"
 
-#: src/Views/Dock.vala:246
+#: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
 msgstr "प्रदर्शन  %d"
 
 #: src/Views/Multitasking.vala:28
-msgid "When the cursor enters the corner of the display:"
+#, fuzzy
+#| msgid "When the cursor enters the corner of the display:"
+msgid "When the pointer enters a display corner"
 msgstr "जेव्हा कर्सर प्रदर्शनाच्या कोप-यात प्रवेश करतो:"
 
 #: src/Views/Multitasking.vala:35
@@ -309,23 +311,19 @@ msgstr ""
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:40
-msgid "Move windows to a new workspace:"
-msgstr "विंडोज एका नवीन कार्यक्षेत्रात हलवा:"
-
-#: src/Views/Multitasking.vala:46
+#: src/Views/Multitasking.vala:44
 #, fuzzy
 #| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
 msgstr "पूर्णस्क्रीनमध्ये प्रवेश करताना:"
 
-#: src/Views/Multitasking.vala:47
+#: src/Views/Multitasking.vala:45
 #, fuzzy
 #| msgid "When maximizing:"
 msgid "When maximizing"
 msgstr "जास्तीत जास्त करताना:"
 
-#: src/Views/Multitasking.vala:57
+#: src/Views/Multitasking.vala:54
 msgid "Window animations:"
 msgstr "विंडो अॅनिमेशन:"
 
@@ -374,39 +372,49 @@ msgid ""
 msgstr ""
 "तळाशी-जड आकार आणि वर्णांमधील वाढीव अंतर सुवाच्यता आणि वाचन गती सुधारण्यात मदत करते."
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
 msgstr "फोटो आयात करा…"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:111
 msgid "Centered"
 msgstr "केंद्रित"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Zoom"
 msgstr "झूम करा"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:113
 msgid "Spanned"
 msgstr "स्पॅन केलेले"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
 msgstr "फोटो आयात करा"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:157
 msgid "Import"
 msgstr "आयात करा"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:158
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Widgets/WallpaperContainer.vala:118
+#: src/Views/Wallpaper.vala:630
+#, fuzzy
+#| msgid "Wallpaper"
+msgid "Wallpaper Deleted"
+msgstr "वॉलपेपर"
+
+#: src/Views/Wallpaper.vala:631
+msgid "Undo"
+msgstr "पूर्ववत करा"
+
+#: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
 msgstr "काढा"
 
-#: src/Widgets/WallpaperContainer.vala:188
+#: src/Widgets/WallpaperContainer.vala:190
 #, c-format
 msgid "Artist: %s"
 msgstr "कलाकारः %s"
@@ -440,15 +448,18 @@ msgstr "1 दिवस"
 msgid "Show each photo for"
 msgstr "साठी प्रत्येक फोटो दर्शवा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:226
+#: set-wallpaper-contract/set-wallpaper.vala:232
 msgid "Set As Desktop Slideshow"
 msgstr "डेस्कटॉप स्लाइडशो म्हणून सेट करा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:233
+#: set-wallpaper-contract/set-wallpaper.vala:239
 #, fuzzy
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "स्लाइडशो तयार करा"
+
+#~ msgid "Move windows to a new workspace:"
+#~ msgstr "विंडोज एका नवीन कार्यक्षेत्रात हलवा:"
 
 #~ msgid "Custom command:"
 #~ msgstr "सानुकूल आज्ञा :"

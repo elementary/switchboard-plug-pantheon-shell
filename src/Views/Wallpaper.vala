@@ -47,11 +47,13 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
 
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
+    private Gtk.Overlay view_overlay;
     private Gtk.ComboBoxText combo;
     private Gtk.ColorButton color_button;
 
     private WallpaperContainer active_wallpaper = null;
     private SolidColorContainer solid_color = null;
+    private WallpaperContainer wallpaper_for_removal = null;
 
     private Cancellable last_cancellable;
 
@@ -89,6 +91,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         wallpaper_view.homogeneous = true;
         wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
+        wallpaper_view.set_sort_func (wallpapers_sort_function);
 
         var color = settings.get_string ("primary-color");
         create_solid_color_container (color);
@@ -100,6 +103,9 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         wallpaper_scrolled_window = new Gtk.ScrolledWindow (null, null);
         wallpaper_scrolled_window.expand = true;
         wallpaper_scrolled_window.add (wallpaper_view);
+
+        view_overlay = new Gtk.Overlay ();
+        view_overlay.add (wallpaper_scrolled_window);
 
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
         add_wallpaper_button.margin = 12;
@@ -136,9 +142,9 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         actionbar.pack_end (combo);
 
         var grid = new Gtk.Grid ();
-        grid.attach (separator, 0, 0, 1, 1);
-        grid.attach (wallpaper_scrolled_window, 0, 1, 1, 1);
-        grid.attach (actionbar, 0, 2, 1, 1);
+        grid.attach (separator, 0, 0);
+        grid.attach (view_overlay, 0, 1);
+        grid.attach (actionbar, 0, 2);
 
         add (grid);
 
@@ -418,18 +424,27 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
     }
 
+    private static string[] get_system_bg_directories () {
+        string[] directories = {};
+        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
+            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
+            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
+                debug ("Found system background directory: %s", system_background_dir);
+                directories += system_background_dir;
+            }
+        }
+
+        return directories;
+    }
+
     private string[] get_bg_directories () {
         string[] background_directories = {};
 
         // Add user background directory first
         background_directories += get_local_bg_directory ();
 
-        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
-            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
-            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
-                debug ("Found system background directory: %s", system_background_dir);
-                background_directories += system_background_dir;
-            }
+        foreach (var bg_dir in get_system_bg_directories ()) {
+            background_directories += bg_dir;
         }
 
         if (background_directories.length == 0) {
@@ -455,7 +470,9 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         }
 
         try {
-            string path = Path.build_filename (local_bg_directory, source.get_basename ());
+            var timestamp = new DateTime.now_local ().format ("%Y-%m-%d-%H-%M-%S");
+            var filename = "%s-%s".printf (timestamp, source.get_basename ());
+            string path = Path.build_filename (local_bg_directory, filename);
             dest = File.new_for_path (path);
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
@@ -526,6 +543,11 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
     }
 
     private void add_wallpaper_from_file (GLib.File file, string uri) {
+        // don't load 'removed' wallpaper on plug reload
+        if (wallpaper_for_removal != null && wallpaper_for_removal.uri == uri) {
+            return;
+        }
+
         try {
             var info = file.query_info (string.joinv (",", REQUIRED_FILE_ATTRS), 0);
             var thumb_path = info.get_attribute_as_string (FileAttribute.THUMBNAIL_PATH);
@@ -536,9 +558,8 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
             wallpaper.show_all ();
 
             wallpaper.trash.connect (() => {
-                var new_file = File.new_for_uri (uri);
-                new_file.delete_async.begin ();
-                wallpaper_view.remove (wallpaper);
+                send_undo_toast ();
+                mark_for_removal (wallpaper);
             });
 
             // Select the wallpaper if it is the current wallpaper
@@ -551,11 +572,100 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         } catch (Error e) {
             critical ("Unable to add wallpaper: %s", e.message);
         }
+
+        wallpaper_view.invalidate_sort ();
     }
 
     public void cancel_thumbnail_generation () {
         if (last_cancellable != null) {
             last_cancellable.cancel ();
         }
+    }
+
+    private int wallpapers_sort_function (Gtk.FlowBoxChild _child1, Gtk.FlowBoxChild _child2) {
+        var child1 = (WallpaperContainer) _child1;
+        var child2 = (WallpaperContainer) _child2;
+        var uri1 = child1.uri;
+        var uri2 = child2.uri;
+
+        if (uri1 == null || uri2 == null) {
+            return 0;
+        }
+
+        var uri1_is_system = false;
+        var uri2_is_system = false;
+        foreach (var bg_dir in get_system_bg_directories ()) {
+            bg_dir = "file://" + bg_dir;
+            uri1_is_system = uri1.has_prefix (bg_dir) || uri1_is_system;
+            uri2_is_system = uri2.has_prefix (bg_dir) || uri2_is_system;
+        }
+
+        // Sort system wallpapers last
+        if (uri1_is_system && !uri2_is_system) {
+            return 1;
+        } else if (!uri1_is_system && uri2_is_system) {
+            return -1;
+        }
+
+        var child1_date = child1.creation_date;
+        var child2_date = child2.creation_date;
+
+        // sort by filename if creation dates are equal
+        if (child1_date == child2_date) {
+            return uri1.collate (uri2);
+        }
+
+        // sort recently added first
+        if (child1_date >= child2_date) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
+
+    private void send_undo_toast () {
+        foreach (weak Gtk.Widget child in view_overlay.get_children ()) {
+            if (child is Granite.Widgets.Toast) {
+                child.destroy ();
+            }
+        }
+
+        if (wallpaper_for_removal != null) {
+            confirm_removal ();
+        }
+
+        var toast = new Granite.Widgets.Toast (_("Wallpaper Deleted"));
+        toast.set_default_action (_("Undo"));
+        toast.show_all ();
+
+        toast.default_action.connect (() => {
+            undo_removal ();
+        });
+
+        toast.notify["child-revealed"].connect (() => {
+            if (!toast.child_revealed && wallpaper_for_removal != null) {
+                confirm_removal ();
+            }
+        });
+
+        view_overlay.add_overlay (toast);
+        toast.send_notification ();
+    }
+
+    private void mark_for_removal (WallpaperContainer wallpaper) {
+        wallpaper_view.remove (wallpaper);
+        wallpaper_for_removal = wallpaper;
+    }
+
+    private void confirm_removal () {
+        var wallpaper_file = File.new_for_uri (wallpaper_for_removal.uri);
+        wallpaper_file.trash_async.begin ();
+        wallpaper_for_removal.destroy ();
+        wallpaper_for_removal = null;
+    }
+
+    private void undo_removal () {
+        wallpaper_view.add (wallpaper_for_removal);
+        wallpaper_for_removal = null;
     }
 }

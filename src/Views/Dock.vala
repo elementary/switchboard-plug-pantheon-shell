@@ -58,11 +58,10 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
 
         var icon_size_unsupported = new Gtk.RadioButton.from_widget (icon_size_32);
 
-        var icon_size_grid = new Gtk.Grid ();
-        icon_size_grid.column_spacing = 24;
-        icon_size_grid.add (icon_size_32);
-        icon_size_grid.add (icon_size_48);
-        icon_size_grid.add (icon_size_64);
+        var icon_size_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 24);
+        icon_size_box.add (icon_size_32);
+        icon_size_box.add (icon_size_48);
+        icon_size_box.add (icon_size_64);
 
         Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
         dock_preferences = new Plank.DockPreferences ("dock1");
@@ -73,7 +72,9 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
 
         dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
 
-        var hide_mode = new Gtk.ComboBoxText ();
+        var hide_mode = new Gtk.ComboBoxText () {
+            hexpand = true
+        };
         hide_mode.append_text (_("Focused window is maximized"));
         hide_mode.append_text (_("Focused window overlaps the dock"));
         hide_mode.append_text (_("Any window overlaps the dock"));
@@ -169,21 +170,30 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
             halign = Gtk.Align.START
         };
 
-        content_area.attach (dock_header, 0, 0, 3);
-        content_area.attach (icon_label, 0, 1);
-        content_area.attach (icon_size_grid, 1, 1, 2);
-        content_area.attach (hide_label, 0, 2);
-        content_area.attach (hide_mode, 1, 2);
-        content_area.attach (hide_switch, 2, 2);
-        content_area.attach (primary_monitor_label, 0, 3);
-        content_area.attach (primary_monitor_grid, 1, 3);
-        content_area.attach (monitor_label, 0, 4);
-        content_area.attach (monitor, 1, 4);
-        content_area.attach (pressure_label, 0, 5);
-        content_area.attach (pressure_switch, 1, 5);
-        content_area.attach (panel_header, 0, 6, 3);
-        content_area.attach (translucency_label, 0, 7);
-        content_area.attach (translucency_switch, 1, 7);
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 12
+        };
+        grid.attach (dock_header, 0, 0, 3);
+        grid.attach (icon_label, 0, 1);
+        grid.attach (icon_size_box, 1, 1, 2);
+        grid.attach (hide_label, 0, 2);
+        grid.attach (hide_mode, 1, 2);
+        grid.attach (hide_switch, 2, 2);
+        grid.attach (primary_monitor_label, 0, 3);
+        grid.attach (primary_monitor_grid, 1, 3);
+        grid.attach (monitor_label, 0, 4);
+        grid.attach (monitor, 1, 4);
+        grid.attach (pressure_label, 0, 5);
+        grid.attach (pressure_switch, 1, 5);
+        grid.attach (panel_header, 0, 6, 3);
+        grid.attach (translucency_label, 0, 7);
+        grid.attach (translucency_switch, 1, 7);
+
+        var clamp = new Hdy.Clamp ();
+        clamp.add (grid);
+
+        content_area.add (clamp);
 
         check_for_screens ();
 

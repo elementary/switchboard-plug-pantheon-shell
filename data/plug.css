@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2018 elementary LLC. (https://elementary.io)
+* Copyright 2018-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -71,7 +71,7 @@
 
 .wallpaper-container:focus .card {
     box-shadow:
-        0 0 0 4px @colorAccent,
+        0 0 0 4px @accent_color,
         0 0 0 1px alpha (#000, 0.05),
         0 3px 3px alpha (#000, 0.22);
 }

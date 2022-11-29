@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-02 19:21+0000\n"
-"PO-Revision-Date: 2022-06-02 19:08+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"PO-Revision-Date: 2022-08-11 17:38+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
@@ -20,81 +20,81 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:49
 msgid "Desktop"
 msgstr "Työpöytä"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Hallitse telakkaa, toimintokulmia ja vaihda taustakuvia"
 
-#: src/Plug.vala:62 src/Plug.vala:118
+#: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
 msgstr "Taustakuva"
 
-#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
+#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
 msgid "Appearance"
 msgstr "Ulkoasu"
 
-#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
 msgid "Text"
 msgstr "Teksti"
 
-#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
-#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
+#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Dock & Panel"
 msgstr "Telakka ja paneeli"
 
-#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
-#: src/Plug.vala:134
+#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:138
 msgid "Multitasking"
 msgstr "Moniajo"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:124
 msgid "Hide Mode"
 msgstr "Piilotustila"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:125
 msgid "Icon Size"
 msgstr "Kuvakekoko"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:126
 msgid "Pressure reveal"
 msgstr "Esiintuomisen paine"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:127
 msgid "Display"
 msgstr "Näyttö"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:128
 msgid "Panel translucency"
 msgstr "Paneelin läpinäkyvyys"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:130
 msgid "Dark style"
 msgstr "Tumma tyyli"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:131
 msgid "Accent color"
 msgstr "Korostusväri"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:133
 msgid "Size"
 msgstr "Koko"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:134
 msgid "Dyslexia-friendly"
 msgstr "Lukihäiriöisille sopiva"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:136
 msgid "Hot Corners"
 msgstr "Toimintokulmat"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:137 src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace"
 msgstr "Siirrä ikkunat uuteen työtilaan"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:138
 msgid "Window animations"
 msgstr "Ikkuna-animaatiot"
 
@@ -124,19 +124,19 @@ msgstr "Aseta _työpöydän taustakuvaksi"
 msgid "Set selected image to be the new desktop background"
 msgstr "Aseta valittu kuva työpöydän uudeksi taustakuvaksi"
 
-#: src/Views/Appearance.vala:74
+#: src/Views/Appearance.vala:68
 msgid "Style"
 msgstr "Tyyli"
 
-#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Oletus"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:110
 msgid "Dark"
 msgstr "Tumma"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -144,75 +144,75 @@ msgstr ""
 "Ensisijainen visuaalinen tyyli järjestelmän komponenteille. Sovellukset "
 "voivat seurata tätä asetusta."
 
-#: src/Views/Appearance.vala:136
+#: src/Views/Appearance.vala:129
 msgid "Schedule"
 msgstr "Aikataulu"
 
-#: src/Views/Appearance.vala:138
+#: src/Views/Appearance.vala:131
 msgid "Disabled"
 msgstr "Pois käytöstä"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
 msgstr "Auringonlaskusta auringonnousuun"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:140
 msgid "From:"
 msgstr "Alkaa:"
 
-#: src/Views/Appearance.vala:154
+#: src/Views/Appearance.vala:147
 msgid "To:"
 msgstr "Päättyy:"
 
-#: src/Views/Appearance.vala:291
+#: src/Views/Appearance.vala:325
 msgid "Accent Color"
 msgstr "Korostusväri"
 
-#: src/Views/Appearance.vala:296
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
 msgstr "Mustikka"
 
-#: src/Views/Appearance.vala:299
+#: src/Views/Appearance.vala:333
 msgid "Mint"
 msgstr "Minttu"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:336
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:339
 msgid "Banana"
 msgstr "Banaani"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:342
 msgid "Orange"
 msgstr "Appelsiini"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
 msgstr "Mansikka"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
 msgstr "Purukumi"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:351
 msgid "Grape"
 msgstr "Viinirypäle"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
 msgstr "Kaakao"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:357
 msgid "Slate"
 msgstr "Liuskekivi"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr "Automaattinen taustakuvaan pohjautuen"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -232,93 +232,89 @@ msgstr "Pieni"
 msgid "Large"
 msgstr "Suuri"
 
-#: src/Views/Dock.vala:70
+#: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
 msgstr "Kohdistettu ikkuna on suurennettu"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
 msgstr "Kohdistettu ikkuna on päällekkäin telakan kanssa"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
 msgstr "Mikä tahansa ikkuna on päällekkäin telakan kanssa"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Not being used"
 msgstr "Ei käytössä"
 
-#: src/Views/Dock.vala:109
+#: src/Views/Dock.vala:110
 msgid "Primary display:"
 msgstr "Ensisijainen näyttö:"
 
-#: src/Views/Dock.vala:113
+#: src/Views/Dock.vala:114
 msgid "Display:"
 msgstr "Näyttö:"
 
-#: src/Views/Dock.vala:144
+#: src/Views/Dock.vala:145
 msgid "Icon size:"
 msgstr "Kuvakekoko:"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:147
 msgid "Hide when:"
 msgstr "Piilota kun:"
 
-#: src/Views/Dock.vala:150
+#: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
 msgstr "Esiintuomisen paine:"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:154
 msgid "Panel"
 msgstr "Paneeli"
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:158
 msgid "Panel translucency:"
 msgstr "Paneelin läpinäkyvyys:"
 
-#: src/Views/Dock.vala:241
+#: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
 msgstr "Näyttö %d"
 
-#: src/Views/Dock.vala:246
+#: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
 msgstr "Näyttö %d"
 
 #: src/Views/Multitasking.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "Kun hiiren osoitin kohdistetaan näytön kulmaan:"
+msgid "When the pointer enters a display corner"
+msgstr "Kun hiiren osoitin kohdistetaan näytön kulmaan"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "Vasen ylä"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "Oikea ylä"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "Vasen ala"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "Oikea ala"
 
-#: src/Views/Multitasking.vala:40
-msgid "Move windows to a new workspace:"
-msgstr "Siirrä ikkunat uuteen työtilaan:"
-
-#: src/Views/Multitasking.vala:46
+#: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
 msgstr "Koko näytön tilaan siirryttäessä"
 
-#: src/Views/Multitasking.vala:47
+#: src/Views/Multitasking.vala:45
 msgid "When maximizing"
 msgstr "Suurennettaessa"
 
-#: src/Views/Multitasking.vala:57
+#: src/Views/Multitasking.vala:54
 msgid "Window animations:"
 msgstr "Ikkuna-animaatiot:"
 
@@ -366,39 +362,47 @@ msgstr ""
 "Alaosaan painottuvat muodot ja suurennettu merkistövälistys voivat auttaa "
 "luettavuutta sekä lukunopeutta."
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
 msgstr "Tuo kuva…"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:111
 msgid "Centered"
 msgstr "Keskitetty"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Zoom"
 msgstr "Lähennetty"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:113
 msgid "Spanned"
 msgstr "Peitetty"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
 msgstr "Tuo kuva"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:157
 msgid "Import"
 msgstr "Tuo"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:158
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/Widgets/WallpaperContainer.vala:118
+#: src/Views/Wallpaper.vala:630
+msgid "Wallpaper Deleted"
+msgstr "Taustakuva poistettu"
+
+#: src/Views/Wallpaper.vala:631
+msgid "Undo"
+msgstr "Kumoa"
+
+#: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
 msgstr "Poista"
 
-#: src/Widgets/WallpaperContainer.vala:188
+#: src/Widgets/WallpaperContainer.vala:190
 #, c-format
 msgid "Artist: %s"
 msgstr "Artisti: %s"
@@ -432,13 +436,16 @@ msgstr "1 päivä"
 msgid "Show each photo for"
 msgstr "Näytä jokaista kuvaa"
 
-#: set-wallpaper-contract/set-wallpaper.vala:226
+#: set-wallpaper-contract/set-wallpaper.vala:232
 msgid "Set As Desktop Slideshow"
 msgstr "Aseta työpöydän diaesitykseksi"
 
-#: set-wallpaper-contract/set-wallpaper.vala:233
+#: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Luo diaesitys"
+
+#~ msgid "Move windows to a new workspace:"
+#~ msgstr "Siirrä ikkunat uuteen työtilaan:"
 
 #~ msgid "Custom command:"
 #~ msgstr "Omavalintainen komento:"

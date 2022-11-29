@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-02 19:21+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"PO-Revision-Date: 2022-09-30 22:36+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/sk/>\n"
 "Language: sk\n"
@@ -20,81 +20,81 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:49
 msgid "Desktop"
 msgstr "Pracovná plocha"
 
-#: src/Plug.vala:46
+#: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Nastavujte dok, aktívne rohy a meňte tapetu plochy"
 
-#: src/Plug.vala:62 src/Plug.vala:118
+#: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
 msgstr "Tapeta"
 
-#: src/Plug.vala:63 src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127
+#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
 msgid "Appearance"
 msgstr "Vzhľad"
 
-#: src/Plug.vala:64 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
 msgid "Text"
 msgstr "Text"
 
-#: src/Plug.vala:68 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
-#: src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
+#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Dock & Panel"
 msgstr "Dok a panel"
 
-#: src/Plug.vala:71 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
-#: src/Plug.vala:134
+#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:138
 msgid "Multitasking"
 msgstr "Zobrazenie úloh"
 
-#: src/Plug.vala:120
+#: src/Plug.vala:124
 msgid "Hide Mode"
 msgstr "Režim skrývania"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:125
 msgid "Icon Size"
 msgstr "Veľkosť ikon"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:126
 msgid "Pressure reveal"
 msgstr "Vysunutie tlakom"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:127
 msgid "Display"
 msgstr "Obrazovka"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:128
 msgid "Panel translucency"
 msgstr "Priesvitnosť panelu"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:130
 msgid "Dark style"
 msgstr "Tmavý režim"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:131
 msgid "Accent color"
 msgstr "Farebný odtieň"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:133
 msgid "Size"
 msgstr "Veľkosť"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:134
 msgid "Dyslexia-friendly"
 msgstr "Text pre dyslektikov"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:136
 msgid "Hot Corners"
 msgstr "Aktívne rohy"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:137 src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace"
 msgstr "Presunúť okná na novú pracovnú plochu"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:138
 msgid "Window animations"
 msgstr "Animácia okien"
 
@@ -124,21 +124,19 @@ msgstr "Nastaviť ako _pozadie plochy"
 msgid "Set selected image to be the new desktop background"
 msgstr "Nastaví vybraný obrázok ako nové pozadie pracovnej plochy"
 
-#: src/Views/Appearance.vala:74
-#, fuzzy
-#| msgid "Style:"
+#: src/Views/Appearance.vala:68
 msgid "Style"
-msgstr "Štýl:"
+msgstr "Štýl"
 
-#: src/Views/Appearance.vala:92 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
 msgstr "Predvolený"
 
-#: src/Views/Appearance.vala:116
+#: src/Views/Appearance.vala:110
 msgid "Dark"
 msgstr "Tmavý"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:123
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -146,77 +144,75 @@ msgstr ""
 "Preferovaný vizuálny štýl pre systémové súčasti. Aplikácie môžu nasledovať "
 "túto preferenciu."
 
-#: src/Views/Appearance.vala:136
+#: src/Views/Appearance.vala:129
 msgid "Schedule"
 msgstr "Rozvrh"
 
-#: src/Views/Appearance.vala:138
+#: src/Views/Appearance.vala:131
 msgid "Disabled"
 msgstr "Vypnutý"
 
-#: src/Views/Appearance.vala:144
+#: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
 msgstr "Od západu po východ slnka"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:140
 msgid "From:"
 msgstr "Od:"
 
-#: src/Views/Appearance.vala:154
+#: src/Views/Appearance.vala:147
 msgid "To:"
 msgstr "Do:"
 
-#: src/Views/Appearance.vala:291
-#, fuzzy
-#| msgid "Accent color"
+#: src/Views/Appearance.vala:325
 msgid "Accent Color"
 msgstr "Farebný odtieň"
 
-#: src/Views/Appearance.vala:296
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
-msgstr "Čučoriedka"
+msgstr "Čučoriedkový"
 
-#: src/Views/Appearance.vala:299
+#: src/Views/Appearance.vala:333
 msgid "Mint"
-msgstr "Mäta"
+msgstr "Mätový"
 
-#: src/Views/Appearance.vala:302
+#: src/Views/Appearance.vala:336
 msgid "Lime"
-msgstr "Limetka"
+msgstr "Limetkový"
 
-#: src/Views/Appearance.vala:305
+#: src/Views/Appearance.vala:339
 msgid "Banana"
-msgstr "Banán"
+msgstr "Banánový"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:342
 msgid "Orange"
-msgstr "Pomaranč"
+msgstr "Pomarančový"
 
-#: src/Views/Appearance.vala:311
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
-msgstr "Jahoda"
+msgstr "Jahodový"
 
-#: src/Views/Appearance.vala:314
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
-msgstr "Žuvačka"
+msgstr "Žuvačkový"
 
-#: src/Views/Appearance.vala:317
+#: src/Views/Appearance.vala:351
 msgid "Grape"
-msgstr "Hrozno"
+msgstr "Hroznový"
 
-#: src/Views/Appearance.vala:320
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
-msgstr "Kakao"
+msgstr "Kakaový"
 
-#: src/Views/Appearance.vala:323
+#: src/Views/Appearance.vala:357
 msgid "Slate"
-msgstr "Bridlica"
+msgstr "Bridlicový"
 
-#: src/Views/Appearance.vala:326
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr "Automatický podľa tapety"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -236,93 +232,89 @@ msgstr "Malá"
 msgid "Large"
 msgstr "Veľká"
 
-#: src/Views/Dock.vala:70
+#: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
 msgstr "Aktívne okno je maximalizované"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
 msgstr "Aktívne okno prekrýva dok"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
 msgstr "Akékoľvek okno prekrýva dok"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Not being used"
 msgstr "Sa nepoužíva"
 
-#: src/Views/Dock.vala:109
+#: src/Views/Dock.vala:110
 msgid "Primary display:"
 msgstr "Hlavná obrazovka:"
 
-#: src/Views/Dock.vala:113
+#: src/Views/Dock.vala:114
 msgid "Display:"
 msgstr "Obrazovka:"
 
-#: src/Views/Dock.vala:144
+#: src/Views/Dock.vala:145
 msgid "Icon size:"
 msgstr "Veľkosť ikon:"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:147
 msgid "Hide when:"
 msgstr "Skryť keď:"
 
-#: src/Views/Dock.vala:150
+#: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
 msgstr "Vysunutie tlakom:"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:154
 msgid "Panel"
 msgstr "Panel"
 
-#: src/Views/Dock.vala:157
+#: src/Views/Dock.vala:158
 msgid "Panel translucency:"
 msgstr "Priesvitnosť panelu:"
 
-#: src/Views/Dock.vala:241
+#: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:246
+#: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
 msgstr "Displej %d"
 
 #: src/Views/Multitasking.vala:28
-msgid "When the cursor enters the corner of the display:"
-msgstr "Keď sa kurzor dotkne rohu obrazovky:"
+msgid "When the pointer enters a display corner"
+msgstr "Keď sa kurzor dotkne rohu obrazovky"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "Horný ľavý"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "Horný pravý"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "Dolný ľavý"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "Dolný pravý"
 
-#: src/Views/Multitasking.vala:40
-msgid "Move windows to a new workspace:"
-msgstr "Presunúť okná na novú pracovnú plochu:"
-
-#: src/Views/Multitasking.vala:46
+#: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
 msgstr "Keď je aplikácia na celú obrazovku"
 
-#: src/Views/Multitasking.vala:47
+#: src/Views/Multitasking.vala:45
 msgid "When maximizing"
 msgstr "Keď sa aplikácia maximalizuje"
 
-#: src/Views/Multitasking.vala:57
+#: src/Views/Multitasking.vala:54
 msgid "Window animations:"
 msgstr "Animácie okien:"
 
@@ -370,39 +362,47 @@ msgstr ""
 "Tvary so zdôraznenou spodnou časťou a väčšími rozostupmi medzi znakmi môžu "
 "zlepšiť rozlíšiteľnosť a rýchlosť čítania."
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
 msgstr "Importovať fotku…"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:111
 msgid "Centered"
 msgstr "Centrovať"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Zoom"
 msgstr "Priblížiť"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:113
 msgid "Spanned"
 msgstr "Vyplniť"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
 msgstr "Importovať fotku"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:157
 msgid "Import"
 msgstr "Importovať"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:158
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: src/Widgets/WallpaperContainer.vala:118
+#: src/Views/Wallpaper.vala:630
+msgid "Wallpaper Deleted"
+msgstr "Tapeta odstránená"
+
+#: src/Views/Wallpaper.vala:631
+msgid "Undo"
+msgstr "Späť"
+
+#: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
 msgstr "Odstrániť"
 
-#: src/Widgets/WallpaperContainer.vala:188
+#: src/Widgets/WallpaperContainer.vala:190
 #, c-format
 msgid "Artist: %s"
 msgstr "Umelec: %s"
@@ -439,13 +439,16 @@ msgstr "1 deň"
 msgid "Show each photo for"
 msgstr "Zobraziť každú fotku po dobu"
 
-#: set-wallpaper-contract/set-wallpaper.vala:226
+#: set-wallpaper-contract/set-wallpaper.vala:232
 msgid "Set As Desktop Slideshow"
 msgstr "Nastaviť ako prezentáciu pozadí plochy"
 
-#: set-wallpaper-contract/set-wallpaper.vala:233
+#: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Vytvoriť prezentáciu"
+
+#~ msgid "Move windows to a new workspace:"
+#~ msgstr "Presunúť okná na novú pracovnú plochu:"
 
 #~ msgid "Custom command:"
 #~ msgstr "Vlastný príkaz:"

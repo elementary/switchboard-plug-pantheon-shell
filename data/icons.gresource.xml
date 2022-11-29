@@ -9,6 +9,7 @@
     <file alias="64x64/apps/application-default-icon-symbolic.svg" compressed="true" preprocess="xml-stripblanks">application-default-icon/64-symbolic.svg</file>
     <file alias="appearance-default.svg" compressed="true" preprocess="xml-stripblanks">appearance-default.svg</file>
     <file alias="appearance-dark.svg" compressed="true" preprocess="xml-stripblanks">appearance-dark.svg</file>
+    <file compressed="true">Check.css</file>
     <file alias="plug.css" compressed="true">plug.css</file>
   </gresource>
 </gresources>
