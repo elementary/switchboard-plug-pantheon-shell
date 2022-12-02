@@ -32,7 +32,7 @@ public class PantheonShell.ImageContainer : UriContainer {
         try {
             var info = file.query_info ("*", FileQueryInfoFlags.NONE);
             load_thumb_info (info);
-            move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
+            move_to_trash_button.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
         } catch (Error e) {
             critical (e.message);
         }

@@ -34,7 +34,7 @@ public class PantheonShell.GenericContainer : Gtk.FlowBoxChild {
     protected Gtk.Overlay overlay;
     protected Gtk.Box context_menu_box;
     protected Gtk.Popover context_menu;
-    protected Gtk.Button move_to_trash;
+    protected Gtk.Button move_to_trash_button;
 
     public bool checked {
         get {
@@ -100,36 +100,40 @@ public class PantheonShell.GenericContainer : Gtk.FlowBoxChild {
         child = overlay;
 
         // Context menu
-        move_to_trash = new Gtk.Button () {
+        move_to_trash_button = new Gtk.Button () {
             child = new Granite.AccelLabel (_("Remove")),
             sensitive = false
         };
-        move_to_trash.get_style_context ().add_provider (move_to_trash_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-        move_to_trash.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+        move_to_trash_button.get_style_context ().add_provider (move_to_trash_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        move_to_trash_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
         // remove background-color transition so it looks identical to menu item
-        move_to_trash.add_css_class ("remove-button");
+        move_to_trash_button.add_css_class ("remove-button");
 
         context_menu_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
             margin_top = 3,
             margin_bottom = 3
         };
-        context_menu_box.append (move_to_trash);
+        context_menu_box.append (move_to_trash_button);
 
         context_menu = new Gtk.Popover () {
             child = context_menu_box,
             autohide = true
         };
-        context_menu.set_parent (this);
+        context_menu.set_parent (overlay);
 
         // signals
         check.notify["active"].connect (() => {
             check.active = true;
         });
 
-        overlay_event_controller.pressed.connect (() => {
+        overlay_event_controller.pressed.connect ((n_press, x, y) => {
+            var rect = Gdk.Rectangle ();
+            rect = {(int) x, (int) y, 1, 1};
+
+            context_menu.pointing_to = rect;
             context_menu.popup ();
         });
 
-        move_to_trash.clicked.connect (() => trash ());
+        move_to_trash_button.clicked.connect (() => trash ());
     }
 }
