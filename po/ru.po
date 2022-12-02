@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-08-11 23:48+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"PO-Revision-Date: 2022-10-04 21:31+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -22,7 +22,7 @@ msgstr "Рабочий стол"
 
 #: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr "Настройка дока, активных углов и смена обоев"
+msgstr "Настройка дока, активных углов и обоев"
 
 #: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
@@ -56,7 +56,7 @@ msgstr "Размер значков"
 
 #: src/Plug.vala:126
 msgid "Pressure reveal"
-msgstr "Выявление давления"
+msgstr "Надавить для раскрытия"
 
 #: src/Plug.vala:127
 msgid "Display"
@@ -68,7 +68,7 @@ msgstr "Прозрачность панели"
 
 #: src/Plug.vala:130
 msgid "Dark style"
-msgstr "Темный стиль"
+msgstr "Тёмный стиль"
 
 #: src/Plug.vala:131
 msgid "Accent color"
@@ -80,7 +80,7 @@ msgstr "Размер"
 
 #: src/Plug.vala:134
 msgid "Dyslexia-friendly"
-msgstr "Удобный для чтения людьми с дислексией"
+msgstr "Текст для людей с дислексией"
 
 #: src/Plug.vala:136
 msgid "Hot Corners"
@@ -88,7 +88,7 @@ msgstr "Активные углы"
 
 #: src/Plug.vala:137 src/Views/Multitasking.vala:40
 msgid "Move windows to a new workspace"
-msgstr "Переместить окно на новое рабочее пространство"
+msgstr "Переместить окно на новый рабочий стол"
 
 #: src/Plug.vala:138
 msgid "Window animations"
@@ -160,55 +160,55 @@ msgstr "С:"
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:298
+#: src/Views/Appearance.vala:325
 msgid "Accent Color"
 msgstr "Цветовой акцент"
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
 msgstr "Черничный"
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:333
 msgid "Mint"
 msgstr "Мятный"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:336
 msgid "Lime"
 msgstr "Лаймовый"
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:339
 msgid "Banana"
 msgstr "Банановый"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:342
 msgid "Orange"
 msgstr "Апельсиновый"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
 msgstr "Клубничный"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
-msgstr "Жвачный"
+msgstr "Бубльгумовый"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:351
 msgid "Grape"
 msgstr "Виноградный"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
 msgstr "Какао"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:357
 msgid "Slate"
 msgstr "Каменно-серый"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr "Автоматическая на основе обоев"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -262,7 +262,7 @@ msgstr "Скрывать, если:"
 
 #: src/Views/Dock.vala:151
 msgid "Pressure reveal:"
-msgstr "Выявлять давление:"
+msgstr "Надавить чтоб раскрыть:"
 
 #: src/Views/Dock.vala:154
 msgid "Panel"
@@ -336,7 +336,7 @@ msgstr "Показать все окна"
 
 #: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
-msgstr "Переключиться на новое рабочее пространство"
+msgstr "Переключиться на новый рабочий стол"
 
 #: src/Views/Multitasking.vala:141
 msgid "Execute custom command"
@@ -429,7 +429,7 @@ msgstr[2] "%d часов"
 
 #: set-wallpaper-contract/set-wallpaper.vala:104
 msgid "1 day"
-msgstr "1 дня"
+msgstr "1 день"
 
 #: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"

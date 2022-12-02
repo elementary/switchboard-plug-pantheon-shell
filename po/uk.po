@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 18:16+0000\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
 "PO-Revision-Date: 2022-08-10 20:03+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -165,55 +165,55 @@ msgstr "З:"
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:298
+#: src/Views/Appearance.vala:325
 msgid "Accent Color"
 msgstr "Основний колір"
 
-#: src/Views/Appearance.vala:303
+#: src/Views/Appearance.vala:330
 msgid "Blueberry"
 msgstr "Чорничний"
 
-#: src/Views/Appearance.vala:306
+#: src/Views/Appearance.vala:333
 msgid "Mint"
 msgstr "М'ятний"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:336
 msgid "Lime"
 msgstr "Лаймовий"
 
-#: src/Views/Appearance.vala:312
+#: src/Views/Appearance.vala:339
 msgid "Banana"
 msgstr "Банановий"
 
-#: src/Views/Appearance.vala:315
+#: src/Views/Appearance.vala:342
 msgid "Orange"
 msgstr "Апельсиновий"
 
-#: src/Views/Appearance.vala:318
+#: src/Views/Appearance.vala:345
 msgid "Strawberry"
 msgstr "Полуничний"
 
-#: src/Views/Appearance.vala:321
+#: src/Views/Appearance.vala:348
 msgid "Bubblegum"
 msgstr "Жуйковий"
 
-#: src/Views/Appearance.vala:324
+#: src/Views/Appearance.vala:351
 msgid "Grape"
 msgstr "Виноградний"
 
-#: src/Views/Appearance.vala:327
+#: src/Views/Appearance.vala:354
 msgid "Cocoa"
 msgstr "Какаовий"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:357
 msgid "Slate"
 msgstr "Камінно-сірий"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr "Автоматично залежно від тла"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."

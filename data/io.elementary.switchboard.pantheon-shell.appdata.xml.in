@@ -4,9 +4,18 @@
   <extends>io.elementary.switchboard</extends>
   <name>Desktop Settings</name>
   <summary>Configure the dock, hot corners, and change wallpaper</summary>
-  <icon type="stock">preferences-desktop-wallpaper</icon>
+  <icon type="stock">preferences-desktop</icon>
   <translation type="gettext">pantheon-desktop-plug</translation>
   <releases>
+    <release version="6.3.1" date="2022-10-20" urgency="medium">
+      <description>
+        <p>Other updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="6.3.0" date="2022-08-15" urgency="medium">
       <description>
         <p>New features:</p>

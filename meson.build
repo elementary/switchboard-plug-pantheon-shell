@@ -1,7 +1,7 @@
 project(
     'pantheon-desktop',
     'vala', 'c',
-    version: '6.3.0'
+    version: '6.3.1'
 )
 gettext_name = meson.project_name() + '-plug'
 gnome = import('gnome')

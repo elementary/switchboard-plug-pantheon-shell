@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-15 18:16+0000\n"
-"PO-Revision-Date: 2022-08-10 18:19+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"PO-Revision-Date: 2022-09-30 22:36+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/sk/>\n"
 "Language: sk\n"
@@ -125,10 +125,8 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Nastaví vybraný obrázok ako nové pozadie pracovnej plochy"
 
 #: src/Views/Appearance.vala:68
-#, fuzzy
-#| msgid "Style:"
 msgid "Style"
-msgstr "Štýl:"
+msgstr "Štýl"
 
 #: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
@@ -166,57 +164,55 @@ msgstr "Od:"
 msgid "To:"
 msgstr "Do:"
 
-#: src/Views/Appearance.vala:298
-#, fuzzy
-#| msgid "Accent color"
+#: src/Views/Appearance.vala:325
 msgid "Accent Color"
 msgstr "Farebný odtieň"
 
-#: src/Views/Appearance.vala:303
-msgid "Blueberry"
-msgstr "Čučoriedka"
-
-#: src/Views/Appearance.vala:306
-msgid "Mint"
-msgstr "Mäta"
-
-#: src/Views/Appearance.vala:309
-msgid "Lime"
-msgstr "Limetka"
-
-#: src/Views/Appearance.vala:312
-msgid "Banana"
-msgstr "Banán"
-
-#: src/Views/Appearance.vala:315
-msgid "Orange"
-msgstr "Pomaranč"
-
-#: src/Views/Appearance.vala:318
-msgid "Strawberry"
-msgstr "Jahoda"
-
-#: src/Views/Appearance.vala:321
-msgid "Bubblegum"
-msgstr "Žuvačka"
-
-#: src/Views/Appearance.vala:324
-msgid "Grape"
-msgstr "Hrozno"
-
-#: src/Views/Appearance.vala:327
-msgid "Cocoa"
-msgstr "Kakao"
-
 #: src/Views/Appearance.vala:330
-msgid "Slate"
-msgstr "Bridlica"
+msgid "Blueberry"
+msgstr "Čučoriedkový"
 
 #: src/Views/Appearance.vala:333
+msgid "Mint"
+msgstr "Mätový"
+
+#: src/Views/Appearance.vala:336
+msgid "Lime"
+msgstr "Limetkový"
+
+#: src/Views/Appearance.vala:339
+msgid "Banana"
+msgstr "Banánový"
+
+#: src/Views/Appearance.vala:342
+msgid "Orange"
+msgstr "Pomarančový"
+
+#: src/Views/Appearance.vala:345
+msgid "Strawberry"
+msgstr "Jahodový"
+
+#: src/Views/Appearance.vala:348
+msgid "Bubblegum"
+msgstr "Žuvačkový"
+
+#: src/Views/Appearance.vala:351
+msgid "Grape"
+msgstr "Hroznový"
+
+#: src/Views/Appearance.vala:354
+msgid "Cocoa"
+msgstr "Kakaový"
+
+#: src/Views/Appearance.vala:357
+msgid "Slate"
+msgstr "Bridlicový"
+
+#: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
 msgstr "Automatický podľa tapety"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:376
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -291,26 +287,24 @@ msgid "Display %d"
 msgstr "Displej %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "Keď sa kurzor dotkne rohu obrazovky:"
+msgstr "Keď sa kurzor dotkne rohu obrazovky"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "Horný ľavý"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "Horný pravý"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "Dolný ľavý"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "Dolný pravý"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
@@ -397,10 +391,8 @@ msgid "Cancel"
 msgstr "Zrušiť"
 
 #: src/Views/Wallpaper.vala:630
-#, fuzzy
-#| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
-msgstr "Tapeta"
+msgstr "Tapeta odstránená"
 
 #: src/Views/Wallpaper.vala:631
 msgid "Undo"
