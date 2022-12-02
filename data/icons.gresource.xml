@@ -10,6 +10,7 @@
     <file alias="appearance-default.svg" compressed="true" preprocess="xml-stripblanks">appearance-default.svg</file>
     <file alias="appearance-dark.svg" compressed="true" preprocess="xml-stripblanks">appearance-dark.svg</file>
     <file compressed="true">Check.css</file>
+    <file compressed="true">RemoveButton.css</file>
     <file alias="plug.css" compressed="true">plug.css</file>
     <file alias="appearance-styles.css" compressed="true">appearance-styles.css</file>
   </gresource>

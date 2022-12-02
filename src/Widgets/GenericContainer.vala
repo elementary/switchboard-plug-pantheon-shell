@@ -25,6 +25,7 @@ public class PantheonShell.GenericContainer : Gtk.FlowBoxChild {
     protected const int THUMB_HEIGHT = 100;
 
     private static Gtk.CssProvider check_css_provider;
+    private static Gtk.CssProvider move_to_trash_provider;
     private static Gtk.CheckButton check_group; // used for turning CheckButtons into RadioButtons
 
     protected Gtk.Box card_box;
@@ -52,6 +53,9 @@ public class PantheonShell.GenericContainer : Gtk.FlowBoxChild {
     static construct {
         check_css_provider = new Gtk.CssProvider ();
         check_css_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
+
+        move_to_trash_provider = new Gtk.CssProvider ();
+        move_to_trash_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/RemoveButton.css");
 
         check_group = new Gtk.CheckButton ();
     }
@@ -96,11 +100,19 @@ public class PantheonShell.GenericContainer : Gtk.FlowBoxChild {
         child = overlay;
 
         // Context menu
-        move_to_trash = new Gtk.Button.with_label (_("Remove")) {
+        move_to_trash = new Gtk.Button () {
+            child = new Granite.AccelLabel (_("Remove")),
             sensitive = false
         };
+        move_to_trash.get_style_context ().add_provider (move_to_trash_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        move_to_trash.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+        // remove background-color transition so it looks identical to menu item
+        move_to_trash.add_css_class ("remove-button");
 
-        context_menu_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        context_menu_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
+            margin_top = 3,
+            margin_bottom = 3
+        };
         context_menu_box.append (move_to_trash);
 
         context_menu = new Gtk.Popover () {
