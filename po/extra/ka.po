@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:39+0000\n"
-"PO-Revision-Date: 2023-03-11 14:25+0000\n"
+"PO-Revision-Date: 2023-03-12 14:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ka/>\n"
@@ -33,7 +33,7 @@ msgstr ""
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:60
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:74
 msgid "Other updates:"
-msgstr ""
+msgstr "სხვა განახლებები:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:14
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:36
@@ -63,7 +63,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
 msgid "Fixes:"
-msgstr ""
+msgstr "შეცდომების გასწორებები:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
 msgid "Wallpaper accent color follows system setting"
