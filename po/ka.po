@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:39+0000\n"
-"PO-Revision-Date: 2020-10-02 07:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-03-11 14:34+0000\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ka/>\n"
 "Language: ka\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -42,10 +42,8 @@ msgstr ""
 
 #: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 #: src/Plug.vala:138
-#, fuzzy
-#| msgid "Multitasking View"
 msgid "Multitasking"
-msgstr "მრავალამოცანიანი ხედი"
+msgstr "მრავალამოცანიანობა"
 
 #: src/Plug.vala:124
 msgid "Hide Mode"
@@ -61,7 +59,7 @@ msgstr ""
 
 #: src/Plug.vala:127
 msgid "Display"
-msgstr "დისპლეი"
+msgstr "ჩვენება"
 
 #: src/Plug.vala:128
 msgid "Panel translucency"
@@ -76,10 +74,8 @@ msgid "Accent color"
 msgstr ""
 
 #: src/Plug.vala:133
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Size"
-msgstr "ხატულას ზომა"
+msgstr "ზომა"
 
 #: src/Plug.vala:134
 msgid "Dyslexia-friendly"
@@ -129,7 +125,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
-msgstr "ნაგულისხმევი"
+msgstr "ნაგულისხმები"
 
 #: src/Views/Appearance.vala:110
 msgid "Dark"
@@ -229,15 +225,15 @@ msgstr "დიდი"
 
 #: src/Views/Dock.vala:71
 msgid "Focused window is maximized"
-msgstr "ფოლუსირებული ფანჯარა გაშლილია"
+msgstr "ფოკუსის მქონე ფანჯარა გაშლილია"
 
 #: src/Views/Dock.vala:72
 msgid "Focused window overlaps the dock"
-msgstr "ფოკუსირებული ფანჯარა გადაფარავს დოკს"
+msgstr "ფოკუსის მქონე ფანჯარა დოკს გადაფარავს"
 
 #: src/Views/Dock.vala:73
 msgid "Any window overlaps the dock"
-msgstr "ნებისმიერი ფანჯარა გადაფარავს დოკს"
+msgstr "დოკს ნებისმიერი ფანჯარა გადაფარავს"
 
 #: src/Views/Dock.vala:74
 msgid "Not being used"
@@ -249,7 +245,7 @@ msgstr ""
 
 #: src/Views/Dock.vala:114
 msgid "Display:"
-msgstr "დისპლეი:"
+msgstr "ეკრანი:"
 
 #: src/Views/Dock.vala:145
 msgid "Icon size:"
@@ -274,18 +270,16 @@ msgstr ""
 #: src/Views/Dock.vala:249
 #, c-format
 msgid "Monitor %d"
-msgstr "მონიტორი %d"
+msgstr "ეკრანი %d"
 
 #: src/Views/Dock.vala:254
 #, c-format
 msgid "Display %d"
-msgstr "დისპლეი %d"
+msgstr "ეკრანი %d"
 
 #: src/Views/Multitasking.vala:28
-#, fuzzy
-#| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
-msgstr "როცა კურსორი დისპლეის კუთხეში მივა:"
+msgstr "როცა კურსორი ეკრანის კუთხეში მივა"
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
@@ -386,10 +380,8 @@ msgid "Cancel"
 msgstr "გაუქმება"
 
 #: src/Views/Wallpaper.vala:630
-#, fuzzy
-#| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
-msgstr "ფონური გამოსახულება"
+msgstr "ფონური გამოსახულება წაიშალა"
 
 #: src/Views/Wallpaper.vala:631
 msgid "Undo"
