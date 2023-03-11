@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 17:39+0000\n"
-"PO-Revision-Date: 2023-03-11 14:34+0000\n"
+"PO-Revision-Date: 2023-03-12 14:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ka/>\n"
@@ -29,16 +29,16 @@ msgstr "ფონური გამოსახულება"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
 msgid "Appearance"
-msgstr ""
+msgstr "გარემოს იერსახე"
 
 #: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
 msgid "Text"
-msgstr ""
+msgstr "ტექსტი"
 
 #: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
 #: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Dock & Panel"
-msgstr ""
+msgstr "დოკი და პანელი"
 
 #: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 #: src/Plug.vala:138
@@ -67,11 +67,11 @@ msgstr ""
 
 #: src/Plug.vala:130
 msgid "Dark style"
-msgstr ""
+msgstr "მუქი სტილი"
 
 #: src/Plug.vala:131
 msgid "Accent color"
-msgstr ""
+msgstr "აქცენტის ფერი"
 
 #: src/Plug.vala:133
 msgid "Size"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: src/Plug.vala:138
 msgid "Window animations"
-msgstr ""
+msgstr "ფანჯრის ანიმაციები"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -113,7 +113,7 @@ msgstr ""
 #.
 #: src/Translations.vala:20
 msgid "Set as _Desktop Background"
-msgstr ""
+msgstr "სურათის ფონზე _დაყენება"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:68
 msgid "Style"
-msgstr ""
+msgstr "სტილი"
 
 #: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
 msgid "Default"
@@ -129,7 +129,7 @@ msgstr "ნაგულისხმები"
 
 #: src/Views/Appearance.vala:110
 msgid "Dark"
-msgstr ""
+msgstr "ბნელი"
 
 #: src/Views/Appearance.vala:123
 msgid ""
@@ -139,7 +139,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:129
 msgid "Schedule"
-msgstr ""
+msgstr "განრიგი"
 
 #: src/Views/Appearance.vala:131
 msgid "Disabled"
@@ -147,7 +147,7 @@ msgstr "გამორთულია"
 
 #: src/Views/Appearance.vala:137
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "დაისიდან აისამდე"
 
 #: src/Views/Appearance.vala:140
 msgid "From:"
@@ -159,51 +159,51 @@ msgstr "სადამდე:"
 
 #: src/Views/Appearance.vala:325
 msgid "Accent Color"
-msgstr ""
+msgstr "აქცენტის ფერი"
 
 #: src/Views/Appearance.vala:330
 msgid "Blueberry"
-msgstr ""
+msgstr "მოცვი"
 
 #: src/Views/Appearance.vala:333
 msgid "Mint"
-msgstr ""
+msgstr "პიტნა"
 
 #: src/Views/Appearance.vala:336
 msgid "Lime"
-msgstr ""
+msgstr "ლიმონის ფერი"
 
 #: src/Views/Appearance.vala:339
 msgid "Banana"
-msgstr ""
+msgstr "ბანანი"
 
 #: src/Views/Appearance.vala:342
 msgid "Orange"
-msgstr ""
+msgstr "ნარინჯისფერი"
 
 #: src/Views/Appearance.vala:345
 msgid "Strawberry"
-msgstr ""
+msgstr "მარწყვი"
 
 #: src/Views/Appearance.vala:348
 msgid "Bubblegum"
-msgstr ""
+msgstr "საღეჭი რეზინი"
 
 #: src/Views/Appearance.vala:351
 msgid "Grape"
-msgstr ""
+msgstr "ყურძენი"
 
 #: src/Views/Appearance.vala:354
 msgid "Cocoa"
-msgstr ""
+msgstr "კოკო"
 
 #: src/Views/Appearance.vala:357
 msgid "Slate"
-msgstr ""
+msgstr "ფიქალი"
 
 #: src/Views/Appearance.vala:360
 msgid "Automatic based on wallpaper"
-msgstr ""
+msgstr "ავტომატური, ფონის სურათზე დაყრდნობით"
 
 #: src/Views/Appearance.vala:376
 msgid ""
@@ -217,7 +217,7 @@ msgstr "დოკი"
 
 #: src/Views/Dock.vala:38
 msgid "Small"
-msgstr ""
+msgstr "პატარა"
 
 #: src/Views/Dock.vala:50
 msgid "Large"
@@ -241,7 +241,7 @@ msgstr "არ გამოიყენება"
 
 #: src/Views/Dock.vala:110
 msgid "Primary display:"
-msgstr ""
+msgstr "ძირითადი ეკრანი:"
 
 #: src/Views/Dock.vala:114
 msgid "Display:"
@@ -249,7 +249,7 @@ msgstr "ეკრანი:"
 
 #: src/Views/Dock.vala:145
 msgid "Icon size:"
-msgstr ""
+msgstr "ხატულების ზომა:"
 
 #: src/Views/Dock.vala:147
 msgid "Hide when:"
@@ -261,11 +261,11 @@ msgstr ""
 
 #: src/Views/Dock.vala:154
 msgid "Panel"
-msgstr ""
+msgstr "ზოლი"
 
 #: src/Views/Dock.vala:158
 msgid "Panel translucency:"
-msgstr ""
+msgstr "პანელის გამჭვირვალობა:"
 
 #: src/Views/Dock.vala:249
 #, c-format
@@ -283,31 +283,31 @@ msgstr "როცა კურსორი ეკრანის კუთხე
 
 #: src/Views/Multitasking.vala:35
 msgid "Top Left"
-msgstr ""
+msgstr "ზედა მარცხენა"
 
 #: src/Views/Multitasking.vala:36
 msgid "Top Right"
-msgstr ""
+msgstr "ზედა მარჯვენა"
 
 #: src/Views/Multitasking.vala:37
 msgid "Bottom Left"
-msgstr ""
+msgstr "ქვედა მარცხენა"
 
 #: src/Views/Multitasking.vala:38
 msgid "Bottom Right"
-msgstr ""
+msgstr "ქვედა მარჯვენა"
 
 #: src/Views/Multitasking.vala:44
 msgid "When entering fullscreen"
-msgstr ""
+msgstr "მთელ ეკრანზე გადასვლისას"
 
 #: src/Views/Multitasking.vala:45
 msgid "When maximizing"
-msgstr ""
+msgstr "გადიდებისას"
 
 #: src/Views/Multitasking.vala:54
 msgid "Window animations:"
-msgstr ""
+msgstr "ფანჯრის ანიმაციები:"
 
 #: src/Views/Multitasking.vala:135
 msgid "Do nothing"
@@ -319,7 +319,7 @@ msgstr "მრავალამოცანიანი ხედი"
 
 #: src/Views/Multitasking.vala:137
 msgid "Maximize current window"
-msgstr ""
+msgstr "მიმდინარე ფანჯრის გადიდება"
 
 #: src/Views/Multitasking.vala:138
 msgid "Show Applications Menu"
@@ -327,7 +327,7 @@ msgstr "პროგრამების მენიუს ჩვენებ�
 
 #: src/Views/Multitasking.vala:139
 msgid "Show all windows"
-msgstr ""
+msgstr "ყველა ფანჯრის ჩვენება"
 
 #: src/Views/Multitasking.vala:140
 msgid "Switch to new workspace"
@@ -339,7 +339,7 @@ msgstr ""
 
 #: src/Views/Text.vala:34
 msgid "Size:"
-msgstr ""
+msgstr "ზომა:"
 
 #: src/Views/Text.vala:49
 msgid "Dyslexia-friendly:"
@@ -353,7 +353,7 @@ msgstr ""
 
 #: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
-msgstr ""
+msgstr "სურათის შემოტანა…"
 
 #: src/Views/Wallpaper.vala:111
 msgid "Centered"
@@ -369,11 +369,11 @@ msgstr "მოცვა"
 
 #: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
-msgstr ""
+msgstr "სურათის შემოტანა"
 
 #: src/Views/Wallpaper.vala:157
 msgid "Import"
-msgstr ""
+msgstr "შემოტანა"
 
 #: src/Views/Wallpaper.vala:158
 msgid "Cancel"
@@ -385,41 +385,38 @@ msgstr "ფონური გამოსახულება წაიშა�
 
 #: src/Views/Wallpaper.vala:631
 msgid "Undo"
-msgstr ""
+msgstr "დაბრუნება"
 
 #: src/Widgets/WallpaperContainer.vala:121
 msgid "Remove"
-msgstr "ამოღება"
+msgstr "წაშლა"
 
 #: src/Widgets/WallpaperContainer.vala:190
 #, c-format
 msgid "Artist: %s"
-msgstr ""
+msgstr "შემსრულებელი: %s"
 
 #: set-wallpaper-contract/set-wallpaper.vala:94
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d წამი"
 
 #: set-wallpaper-contract/set-wallpaper.vala:97
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d წუთი"
 
 #: set-wallpaper-contract/set-wallpaper.vala:101
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d საათი"
 
 #: set-wallpaper-contract/set-wallpaper.vala:104
 msgid "1 day"
-msgstr ""
+msgstr "%1 დღე"
 
 #: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"
@@ -431,7 +428,7 @@ msgstr ""
 
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
-msgstr ""
+msgstr "სლაიდშოუს შექმნა"
 
 #~ msgid "Manual"
 #~ msgstr "ხელით"
