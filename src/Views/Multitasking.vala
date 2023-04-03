@@ -137,6 +137,8 @@ public class PantheonShell.Multitasking : Gtk.Box {
             combo.append ("maximize-current", _("Maximize current window"));
             combo.append ("open-launcher", _("Show Applications Menu"));
             combo.append ("window-overview-all", _("Show all windows"));
+            combo.append ("switch-to-workspace-previous", _("Switch to previous workspace"));
+            combo.append ("switch-to-workspace-next", _("Switch to next workspace"));
             combo.append ("switch-to-workspace-last", _("Switch to new workspace"));
             combo.append ("custom-command", _("Execute custom command"));
 
