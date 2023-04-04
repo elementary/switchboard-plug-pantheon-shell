@@ -112,7 +112,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
         add_wallpaper_button.margin = 12;
 
-        var dim_label = new Gtk.Label ("Dim wallpaper in dark style:") {
+        var dim_label = new Gtk.Label ("Dim the wallpaper in dark style:") {
             margin_end = 12
         };
 
