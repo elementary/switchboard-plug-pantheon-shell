@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"POT-Creation-Date: 2023-04-11 00:18+0000\n"
 "PO-Revision-Date: 2022-08-11 07:27+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -340,10 +340,22 @@ msgid "Show all windows"
 msgstr "Pokaż wszystkie okna"
 
 #: src/Views/Multitasking.vala:140
-msgid "Switch to new workspace"
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Switch to previous workspace"
 msgstr "Przełącz na nowy obszar roboczy"
 
 #: src/Views/Multitasking.vala:141
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Switch to next workspace"
+msgstr "Przełącz na nowy obszar roboczy"
+
+#: src/Views/Multitasking.vala:142
+msgid "Switch to new workspace"
+msgstr "Przełącz na nowy obszar roboczy"
+
+#: src/Views/Multitasking.vala:143
 msgid "Execute custom command"
 msgstr "Wykonaj własne polecenie"
 

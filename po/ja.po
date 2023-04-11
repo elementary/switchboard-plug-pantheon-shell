@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"POT-Creation-Date: 2023-04-11 00:18+0000\n"
 "PO-Revision-Date: 2023-03-21 18:59+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -334,10 +334,22 @@ msgid "Show all windows"
 msgstr "すべてのウィンドウを表示"
 
 #: src/Views/Multitasking.vala:140
-msgid "Switch to new workspace"
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Switch to previous workspace"
 msgstr "新しいワークスペースに切り替え"
 
 #: src/Views/Multitasking.vala:141
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Switch to next workspace"
+msgstr "新しいワークスペースに切り替え"
+
+#: src/Views/Multitasking.vala:142
+msgid "Switch to new workspace"
+msgstr "新しいワークスペースに切り替え"
+
+#: src/Views/Multitasking.vala:143
 msgid "Execute custom command"
 msgstr "カスタムコマンドを実行"
 
@@ -353,7 +365,8 @@ msgstr "ディスレクシアに対応:"
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
-msgstr "下部が強調され、字間が確保された書体を使用します。これにより、読みやすさと読"
+msgstr ""
+"下部が強調され、字間が確保された書体を使用します。これにより、読みやすさと読"
 "む速度の改善に役立つ可能性があります。"
 
 #: src/Views/Wallpaper.vala:106
