@@ -112,17 +112,17 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
         add_wallpaper_button.margin = 12;
 
-        var dim_label = new Gtk.Label ("Dim the wallpaper in dark style:") {
-            margin_end = 12
-        };
+        var dim_label = new Gtk.Label ("Dim with dark style:");
 
         dim_switch = new Gtk.Switch () {
-            vexpand = false,
+            margin_end = 6,
             valign = Gtk.Align.CENTER
         };
 
-        combo = new Gtk.ComboBoxText ();
-        combo.valign = Gtk.Align.CENTER;
+        combo = new Gtk.ComboBoxText () {
+            margin_end = 6,
+            valign = Gtk.Align.CENTER
+        };
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
         combo.append ("spanned", _("Spanned"));
@@ -149,10 +149,10 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         actionbar.pack_start (add_wallpaper_button);
-        actionbar.pack_start (dim_label);
-        actionbar.pack_start (dim_switch);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
+        actionbar.pack_end (dim_switch);
+        actionbar.pack_end (dim_label);
 
         attach (separator, 0, 0, 1, 1);
         attach (view_overlay, 0, 1, 1, 1);
