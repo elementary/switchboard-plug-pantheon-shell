@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:39+0000\n"
-"PO-Revision-Date: 2022-10-14 17:11+0000\n"
+"POT-Creation-Date: 2023-04-11 00:18+0000\n"
+"PO-Revision-Date: 2023-02-10 17:25+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -98,7 +98,7 @@ msgstr "Verplaats vensters naar een nieuw werkblad"
 
 #: src/Plug.vala:138
 msgid "Window animations"
-msgstr "Venster animaties"
+msgstr "Vensteranimaties"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -318,7 +318,7 @@ msgstr "Bij het maximaliseren"
 
 #: src/Views/Multitasking.vala:54
 msgid "Window animations:"
-msgstr "Venster animaties:"
+msgstr "Vensteranimaties:"
 
 #: src/Views/Multitasking.vala:135
 msgid "Do nothing"
@@ -341,10 +341,22 @@ msgid "Show all windows"
 msgstr "Toon alle vensters"
 
 #: src/Views/Multitasking.vala:140
-msgid "Switch to new workspace"
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Switch to previous workspace"
 msgstr "Wissel naar nieuw werkblad"
 
 #: src/Views/Multitasking.vala:141
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Switch to next workspace"
+msgstr "Wissel naar nieuw werkblad"
+
+#: src/Views/Multitasking.vala:142
+msgid "Switch to new workspace"
+msgstr "Wissel naar nieuw werkblad"
+
+#: src/Views/Multitasking.vala:143
 msgid "Execute custom command"
 msgstr "Voer aangepast commando uit"
 
@@ -393,10 +405,8 @@ msgid "Cancel"
 msgstr "Annuleren"
 
 #: src/Views/Wallpaper.vala:630
-#, fuzzy
-#| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
-msgstr "Bureaubladachtergrond"
+msgstr "Bureaubladachtergrond verwijdert"
 
 #: src/Views/Wallpaper.vala:631
 msgid "Undo"

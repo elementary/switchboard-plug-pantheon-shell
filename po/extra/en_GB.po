@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:39+0000\n"
-"PO-Revision-Date: 2021-11-30 10:04+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"POT-Creation-Date: 2023-04-11 00:18+0000\n"
+"PO-Revision-Date: 2023-02-18 10:25+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/desktop-plug-extra/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
 msgid "Desktop Settings"
@@ -55,43 +55,43 @@ msgstr "New features:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:23
 msgid "There is now an undo option after removing a wallpaper"
-msgstr ""
+msgstr "There is now an undo option after removing a wallpaper"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:24
 msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr ""
+msgstr "Wallpapers are now sorted with custom wallpapers first"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:26
 msgid "Fixes:"
-msgstr ""
+msgstr "Fixes:"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:28
 msgid "Wallpaper accent color follows system setting"
-msgstr ""
+msgstr "Wallpaper accent colour follows system setting"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:29
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
+msgstr "Set-wallpaper contract fails gracefully when run as sudo"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:30
 msgid "Wallpapers with the same name are distinguished"
-msgstr ""
+msgstr "Wallpapers with the same name are distinguished"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
 msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
+msgstr "Switching styles with the keyboard cancels dark style scheduling"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:32
 msgid "Style dyslexia-friendly switch properly"
-msgstr ""
+msgstr "Style dyslexia-friendly switch properly"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:44
 msgid "Set custom Terminal commands for each hotcorner"
-msgstr ""
+msgstr "Set custom Terminal commands for each hotcorner"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:45
 msgid "Redesigned Appearance and Multitasking views"
-msgstr ""
+msgstr "Redesigned Appearance and Multitasking views"
 
 #: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:57
 msgid "Move Text settings to their own page"

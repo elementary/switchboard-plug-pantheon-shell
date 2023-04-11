@@ -40,7 +40,9 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
     };
 
     public Switchboard.Plug plug { get; construct set; }
-    private GLib.Settings settings;
+
+    private static GLib.Settings gnome_background_settings;
+    private static GLib.Settings gala_background_settings;
 
     //Instance of the AccountsServices-Interface for this user
     private AccountsServiceUser? accountsservice = null;
@@ -48,6 +50,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
     private Gtk.Overlay view_overlay;
+    private Gtk.Switch dim_switch;
     private Gtk.ComboBoxText combo;
     private Gtk.ColorButton color_button;
 
@@ -69,9 +72,12 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         );
     }
 
-    construct {
-        settings = new GLib.Settings ("org.gnome.desktop.background");
+    static construct {
+        gnome_background_settings = new GLib.Settings ("org.gnome.desktop.background");
+        gala_background_settings = new GLib.Settings ("io.elementary.desktop.background");
+    }
 
+    construct {
         // DBus connection needed in update_wallpaper for
         // passing the wallpaper-information to accountsservice.
          try {
@@ -93,7 +99,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
         wallpaper_view.set_sort_func (wallpapers_sort_function);
 
-        var color = settings.get_string ("primary-color");
+        var color = gnome_background_settings.get_string ("primary-color");
         create_solid_color_container (color);
 
         Gtk.TargetEntry e = {"text/uri-list", 0, 0};
@@ -110,8 +116,17 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
         add_wallpaper_button.margin = 12;
 
-        combo = new Gtk.ComboBoxText ();
-        combo.valign = Gtk.Align.CENTER;
+        var dim_label = new Gtk.Label ("Dim with dark style:");
+
+        dim_switch = new Gtk.Switch () {
+            margin_end = 6,
+            valign = Gtk.Align.CENTER
+        };
+
+        combo = new Gtk.ComboBoxText () {
+            margin_end = 6,
+            valign = Gtk.Align.CENTER
+        };
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
         combo.append ("spanned", _("Spanned"));
@@ -140,6 +155,8 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         actionbar.pack_start (add_wallpaper_button);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
+        actionbar.pack_end (dim_switch);
+        actionbar.pack_end (dim_label);
 
         var grid = new Gtk.Grid ();
         grid.attach (separator, 0, 0);
@@ -198,10 +215,12 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
     }
 
     private void load_settings () {
+        gala_background_settings.bind ("dim-wallpaper-in-dark-style", dim_switch, "active", SettingsBindFlags.DEFAULT);
+
         // TODO: need to store the previous state, before changing to none
         // when a solid color is selected, because the combobox doesn't know
         // about it anymore. The previous state should be loaded instead here.
-        string picture_options = settings.get_string ("picture-options");
+        string picture_options = gnome_background_settings.get_string ("picture-options");
         if (picture_options == "none") {
             combo.set_sensitive (false);
             picture_options = "zoom";
@@ -210,7 +229,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         prevent_update_mode = true;
         combo.set_active_id (picture_options);
 
-        current_wallpaper_path = settings.get_string ("picture-uri");
+        current_wallpaper_path = gnome_background_settings.get_string ("picture-uri");
     }
 
     /*
@@ -241,7 +260,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
             path = greeter_file.get_path ();
         }
 
-        settings.set_string ("picture-uri", uri);
+        gnome_background_settings.set_string ("picture-uri", uri);
         accountsservice.background_file = path;
     }
 
@@ -254,16 +273,16 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
 
             if (active_wallpaper == solid_color) {
                 combo.set_sensitive (true);
-                settings.set_string ("picture-options", combo.get_active_id ());
+                gnome_background_settings.set_string ("picture-options", combo.get_active_id ());
             }
 
         } else {
             set_combo_disabled_if_necessary ();
-            settings.set_string ("primary-color", solid_color.color);
+            gnome_background_settings.set_string ("primary-color", solid_color.color);
         }
 
         // We don't do gradient backgrounds, reset the key that might interfere
-        settings.reset ("color-shading-type");
+        gnome_background_settings.reset ("color-shading-type");
 
         children.checked = true;
 
@@ -287,13 +306,13 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
 
             active_wallpaper = solid_color;
             active_wallpaper.checked = true;
-            settings.set_string ("primary-color", solid_color.color);
+            gnome_background_settings.set_string ("primary-color", solid_color.color);
         }
     }
 
     private void update_mode () {
         if (!prevent_update_mode) {
-            settings.set_string ("picture-options", combo.get_active_id ());
+            gnome_background_settings.set_string ("picture-options", combo.get_active_id ());
 
             // Changing the mode, while a solid color is selected, change focus to the
             // wallpaper tile.
@@ -318,7 +337,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
     private void set_combo_disabled_if_necessary () {
         if (active_wallpaper != solid_color) {
             combo.set_sensitive (false);
-            settings.set_string ("picture-options", "none");
+            gnome_background_settings.set_string ("picture-options", "none");
         }
     }
 
@@ -382,7 +401,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
                 wallpaper_view.add (solid_color);
                 finished = true;
 
-                if (settings.get_string ("picture-options") == "none") {
+                if (gnome_background_settings.get_string ("picture-options") == "none") {
                     wallpaper_view.select_child (solid_color);
                     solid_color.checked = true;
                     active_wallpaper = solid_color;
@@ -563,7 +582,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
             });
 
             // Select the wallpaper if it is the current wallpaper
-            if (current_wallpaper_path.has_suffix (uri) && settings.get_string ("picture-options") != "none") {
+            if (current_wallpaper_path.has_suffix (uri) && gnome_background_settings.get_string ("picture-options") != "none") {
                 this.wallpaper_view.select_child (wallpaper);
                 // Set the widget activated without activating it
                 wallpaper.checked = true;

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:39+0000\n"
-"PO-Revision-Date: 2022-08-11 15:50+0000\n"
+"POT-Creation-Date: 2023-04-11 00:18+0000\n"
+"PO-Revision-Date: 2023-03-21 18:59+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.16.4\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
 #: src/Plug.vala:49
@@ -334,10 +334,22 @@ msgid "Show all windows"
 msgstr "すべてのウィンドウを表示"
 
 #: src/Views/Multitasking.vala:140
-msgid "Switch to new workspace"
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Switch to previous workspace"
 msgstr "新しいワークスペースに切り替え"
 
 #: src/Views/Multitasking.vala:141
+#, fuzzy
+#| msgid "Switch to new workspace"
+msgid "Switch to next workspace"
+msgstr "新しいワークスペースに切り替え"
+
+#: src/Views/Multitasking.vala:142
+msgid "Switch to new workspace"
+msgstr "新しいワークスペースに切り替え"
+
+#: src/Views/Multitasking.vala:143
 msgid "Execute custom command"
 msgstr "カスタムコマンドを実行"
 
@@ -354,8 +366,8 @@ msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
-"下部が強調され、字間が確保された書体を使用することで、可読性と読む速度の改善"
-"に役立つ可能性があります。"
+"下部が強調され、字間が確保された書体を使用します。これにより、読みやすさと読"
+"む速度の改善に役立つ可能性があります。"
 
 #: src/Views/Wallpaper.vala:106
 msgid "Import Photo…"
@@ -367,11 +379,11 @@ msgstr "中央に表示"
 
 #: src/Views/Wallpaper.vala:112
 msgid "Zoom"
-msgstr "ズーム"
+msgstr "画面に合わせる"
 
 #: src/Views/Wallpaper.vala:113
 msgid "Spanned"
-msgstr "敷き詰め"
+msgstr "並べる"
 
 #: src/Views/Wallpaper.vala:156
 msgid "Import Photo"
