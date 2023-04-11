@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 17:39+0000\n"
+"POT-Creation-Date: 2023-04-11 00:18+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Moldovan <https://l10n.elementary.io/projects/switchboard/"
@@ -339,10 +339,18 @@ msgid "Show all windows"
 msgstr "Afișați toate ferestrele"
 
 #: src/Views/Multitasking.vala:140
-msgid "Switch to new workspace"
+msgid "Switch to previous workspace"
 msgstr ""
 
 #: src/Views/Multitasking.vala:141
+msgid "Switch to next workspace"
+msgstr ""
+
+#: src/Views/Multitasking.vala:142
+msgid "Switch to new workspace"
+msgstr ""
+
+#: src/Views/Multitasking.vala:143
 msgid "Execute custom command"
 msgstr "Executați comanda personalizată"
 
