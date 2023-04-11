@@ -384,10 +384,38 @@ public class PantheonShell.Appearance : Gtk.Box {
             grid.attach (accent_grid, 0, 9, 2);
         }
 
+        var animations_label = new Granite.HeaderLabel (_("Reduce Motion")) {
+            margin_top = 18
+        };
+
+        var animations_description = new Gtk.Label (_("Disable animations in the window manager and some other interface elements.")) {
+            wrap = true,
+            xalign = 0
+        };
+        animations_description.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        var animations_switch = new Gtk.Switch () {
+            halign = Gtk.Align.END,
+            hexpand = true,
+            valign = Gtk.Align.CENTER
+        };
+
+        var animations_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        animations_grid.attach (animations_label, 0, 0);
+        animations_grid.attach (animations_description, 0, 1);
+        animations_grid.attach (animations_switch, 1, 0, 1, 2);
+
+        grid.attach (animations_grid, 0, 10, 2);
+
         var clamp = new Hdy.Clamp ();
         clamp.add (grid);
 
         add (clamp);
+
+        var animations_settings = new Settings ("org.pantheon.desktop.gala.animations");
+        animations_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.INVERT_BOOLEAN);
     }
 
     private class PrefersAccentColorButton : Gtk.RadioButton {

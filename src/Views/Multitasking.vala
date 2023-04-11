@@ -21,8 +21,6 @@
 
 public class PantheonShell.Multitasking : Gtk.Box {
     private GLib.Settings behavior_settings;
-    private const string ANIMATIONS_SCHEMA = "org.pantheon.desktop.gala.animations";
-    private const string ANIMATIONS_KEY = "enable-animations";
 
     construct {
         var hotcorner_title = new Gtk.Label (_("When the pointer enters a display corner")) {
@@ -51,15 +49,6 @@ public class PantheonShell.Multitasking : Gtk.Box {
         checkbutton_grid.add (fullscreen_checkbutton);
         checkbutton_grid.add (maximize_checkbutton);
 
-        var animations_label = new Gtk.Label (_("Window animations:")) {
-            halign = Gtk.Align.END
-        };
-
-        var animations_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START,
-            hexpand = true
-        };
-
         var grid = new Gtk.Grid () {
             column_spacing = 12,
             row_spacing = 6,
@@ -74,8 +63,6 @@ public class PantheonShell.Multitasking : Gtk.Box {
         grid.attach (bottomright, 0, 4, 2);
         grid.attach (workspaces_label, 0, 6, 2);
         grid.attach (checkbutton_grid, 0, 7, 2);
-        grid.attach (animations_label, 0, 8);
-        grid.attach (animations_switch, 1, 8);
 
         var clamp = new Hdy.Clamp ();
         clamp.add (grid);
@@ -86,9 +73,6 @@ public class PantheonShell.Multitasking : Gtk.Box {
         scrolled.add (clamp);
 
         add (scrolled);
-
-        var animations_settings = new GLib.Settings (ANIMATIONS_SCHEMA);
-        animations_settings.bind (ANIMATIONS_KEY, animations_switch, "active", SettingsBindFlags.DEFAULT);
 
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);

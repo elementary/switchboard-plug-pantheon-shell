@@ -129,13 +129,14 @@ public class PantheonShell.Plug : Switchboard.Plug {
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dark style")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Accent color")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Reduce motion")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Window animations")), "appearance");
         search_results.set ("%s → %s".printf (display_name, _("Text")), "text");
         search_results.set ("%s → %s → %s".printf (display_name, _("Text"), _("Size")), "text");
         search_results.set ("%s → %s → %s".printf (display_name, _("Text"), _("Dyslexia-friendly")), "text");
         search_results.set ("%s → %s".printf (display_name, _("Multitasking")), "multitasking");
         search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Hot Corners")), "multitasking");
         search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Move windows to a new workspace")), "multitasking");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Window animations")), "multitasking");
         return search_results;
     }
 }
