@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-12 08:57+0000\n"
-"PO-Revision-Date: 2022-08-12 16:35+0000\n"
+"PO-Revision-Date: 2023-04-15 14:59+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.16.4\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -80,7 +80,7 @@ msgstr "Kiemelőszín"
 
 #: src/Plug.vala:132
 msgid "Reduce motion"
-msgstr ""
+msgstr "Kevesebb mozgás"
 
 #: src/Plug.vala:133
 msgid "Window animations"
@@ -226,12 +226,12 @@ msgstr ""
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "Kevesebb mozgás"
 
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
-msgstr ""
+msgstr "Az ablakkezelő és néhány más felületi elem animációinak letiltása."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -348,16 +348,12 @@ msgid "Show all windows"
 msgstr "Az összes ablak megjelenítése"
 
 #: src/Views/Multitasking.vala:124
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
-msgstr "Váltás új munkaterületre"
+msgstr "Váltás az előző munkaterületre"
 
 #: src/Views/Multitasking.vala:125
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
-msgstr "Váltás új munkaterületre"
+msgstr "Váltás a következő munkaterületre"
 
 #: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
