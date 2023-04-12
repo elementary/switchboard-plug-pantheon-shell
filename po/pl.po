@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-12 08:57+0000\n"
-"PO-Revision-Date: 2023-04-12 08:25+0000\n"
+"PO-Revision-Date: 2023-04-15 14:59+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pl/>\n"
@@ -81,7 +81,7 @@ msgstr "Kolor akcentowy"
 
 #: src/Plug.vala:132
 msgid "Reduce motion"
-msgstr ""
+msgstr "Zmniejsz ruch"
 
 #: src/Plug.vala:133
 msgid "Window animations"
@@ -227,12 +227,12 @@ msgstr ""
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "Zmniejsz ruch"
 
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
-msgstr ""
+msgstr "Wyłącz animacje menedżera okien i kilku innych elementach interfejsu."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
