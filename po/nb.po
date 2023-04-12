@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 00:18+0000\n"
+"POT-Creation-Date: 2023-04-12 08:25+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -79,11 +79,11 @@ msgstr "Mørk stil"
 msgid "Accent color"
 msgstr "Kontrastfarge"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:133 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Størrelse"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:134 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Dysleksi-vennlig"
 
@@ -129,7 +129,7 @@ msgstr "Bruk det valgte bildet som ny skrivebordsbakgrunn"
 msgid "Style"
 msgstr "Stil"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
 msgid "Default"
 msgstr "Forvalg"
 
@@ -225,7 +225,7 @@ msgstr ""
 msgid "Dock"
 msgstr "Dokk"
 
-#: src/Views/Dock.vala:38
+#: src/Views/Dock.vala:35
 msgid "Small"
 msgstr "Lite"
 
@@ -233,56 +233,56 @@ msgstr "Lite"
 msgid "Large"
 msgstr "Stor"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window is maximized"
 msgstr "Fokusert vindu er maksimert"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Focused window overlaps the dock"
 msgstr "Fokusert vindu overlapper dokken"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Any window overlaps the dock"
 msgstr "Hvilket som helst vindu overlapper dokken"
 
-#: src/Views/Dock.vala:74
+#: src/Views/Dock.vala:75
 msgid "Not being used"
 msgstr "Ikke brukes"
 
-#: src/Views/Dock.vala:110
+#: src/Views/Dock.vala:111
 msgid "Primary display:"
 msgstr "Hovedskjerm:"
 
-#: src/Views/Dock.vala:114
+#: src/Views/Dock.vala:115
 msgid "Display:"
 msgstr "Skjerm:"
 
-#: src/Views/Dock.vala:145
+#: src/Views/Dock.vala:146
 msgid "Icon size:"
 msgstr "Ikonstørrelse:"
 
-#: src/Views/Dock.vala:147
+#: src/Views/Dock.vala:148
 msgid "Hide when:"
 msgstr "Skjul når:"
 
-#: src/Views/Dock.vala:151
+#: src/Views/Dock.vala:152
 msgid "Pressure reveal:"
 msgstr "Vis når den blir trykket på:"
 
-#: src/Views/Dock.vala:154
+#: src/Views/Dock.vala:155
 msgid "Panel"
 msgstr "Panel"
 
-#: src/Views/Dock.vala:158
+#: src/Views/Dock.vala:159
 msgid "Panel translucency:"
 msgstr "Panelgjennomsiktighet:"
 
-#: src/Views/Dock.vala:249
+#: src/Views/Dock.vala:250
 #, c-format
 msgid "Monitor %d"
 msgstr "Skjerm %d"
 
-#: src/Views/Dock.vala:254
+#: src/Views/Dock.vala:255
 #, c-format
 msgid "Display %d"
 msgstr "Skjerm %d"
@@ -363,56 +363,48 @@ msgstr "Bytt til nytt arbeidsområde"
 msgid "Execute custom command"
 msgstr "Utfør egendefinert kommando"
 
-#: src/Views/Text.vala:34
-msgid "Size:"
-msgstr "Størrelse:"
-
-#: src/Views/Text.vala:49
-msgid "Dyslexia-friendly:"
-msgstr "Dysleksi-vennlig:"
-
-#: src/Views/Text.vala:60
+#: src/Views/Text.vala:61
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
 "Bunntunge former og økt tegnavstand kan hjelpe lesbarheten og lesehastighet."
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
 msgstr "Importer bilde…"
 
-#: src/Views/Wallpaper.vala:111
+#: src/Views/Wallpaper.vala:126
 msgid "Centered"
 msgstr "Midtstilt"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:127
 msgid "Zoom"
 msgstr "Forstørret"
 
-#: src/Views/Wallpaper.vala:113
+#: src/Views/Wallpaper.vala:128
 msgid "Spanned"
 msgstr "Spredt"
 
-#: src/Views/Wallpaper.vala:156
+#: src/Views/Wallpaper.vala:173
 msgid "Import Photo"
 msgstr "Importer bilde"
 
-#: src/Views/Wallpaper.vala:157
+#: src/Views/Wallpaper.vala:174
 msgid "Import"
 msgstr "Importer"
 
-#: src/Views/Wallpaper.vala:158
+#: src/Views/Wallpaper.vala:175
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Views/Wallpaper.vala:630
+#: src/Views/Wallpaper.vala:649
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Bakgrunnsbilde"
 
-#: src/Views/Wallpaper.vala:631
+#: src/Views/Wallpaper.vala:650
 msgid "Undo"
 msgstr "Angre"
 
@@ -461,6 +453,12 @@ msgstr "Sett som skrivebord-lysbildeserie"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Lag lysbildeserie"
+
+#~ msgid "Size:"
+#~ msgstr "Størrelse:"
+
+#~ msgid "Dyslexia-friendly:"
+#~ msgstr "Dysleksi-vennlig:"
 
 #~ msgid "Move windows to a new workspace:"
 #~ msgstr "Flytt vinduer til nytt arbeidsområde:"

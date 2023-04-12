@@ -31,9 +31,7 @@ public class PantheonShell.Text : Gtk.Box {
     private uint scale_timeout;
 
     construct {
-        var size_label = new Gtk.Label (_("Size:")) {
-            halign = Gtk.Align.END
-        };
+        var size_label = new Granite.HeaderLabel (_("Size"));
 
         var size_adjustment = new Gtk.Adjustment (-1, 0.75, 1.5, 0.05, 0, 0);
 
@@ -46,14 +44,17 @@ public class PantheonShell.Text : Gtk.Box {
 
         var size_spinbutton = new Gtk.SpinButton (size_adjustment, 0.25, 2);
 
-        var dyslexia_font_label = new Gtk.Label (_("Dyslexia-friendly:")) {
-            halign = Gtk.Align.END,
-            margin_top = 18
+        var size_grid = new Gtk.Grid () {
+            column_spacing = 12
         };
+        size_grid.attach (size_label, 0, 0);
+        size_grid.attach (size_scale, 0, 1);
+        size_grid.attach (size_spinbutton, 1, 1);
+
+        var dyslexia_font_label = new Granite.HeaderLabel (_("Dyslexia-friendly"));
 
         var dyslexia_font_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START,
-            margin_top = 18
+            valign = Gtk.Align.CENTER
         };
 
         var dyslexia_font_description_label = new Gtk.Label (
@@ -64,22 +65,23 @@ public class PantheonShell.Text : Gtk.Box {
         };
         dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 6,
+        var dyslexia_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        dyslexia_grid.attach (dyslexia_font_label, 0, 0);
+        dyslexia_grid.attach (dyslexia_font_description_label, 0, 1);
+        dyslexia_grid.attach (dyslexia_font_switch, 1, 0, 1, 2);
+
+        var box = new Gtk.Box (VERTICAL, 24) {
             margin_start = 12,
             margin_end = 12,
             margin_bottom = 24
         };
-        grid.attach (size_label, 0, 0);
-        grid.attach (size_scale, 1, 0);
-        grid.attach (size_spinbutton, 2, 0);
-        grid.attach (dyslexia_font_label, 0, 1);
-        grid.attach (dyslexia_font_switch, 1, 1);
-        grid.attach (dyslexia_font_description_label, 1, 2, 2);
+        box.add (size_grid);
+        box.add (dyslexia_grid);
 
         var clamp = new Hdy.Clamp ();
-        clamp.add (grid);
+        clamp.add (box);
 
         add (clamp);
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 00:18+0000\n"
+"POT-Creation-Date: 2023-04-12 08:25+0000\n"
 "PO-Revision-Date: 2022-09-23 23:35+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -78,11 +78,11 @@ msgstr "ستایلی تارک"
 msgid "Accent color"
 msgstr "ڕەنگی ئەکسێنت"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:133 src/Views/Text.vala:34
 msgid "Size"
 msgstr "قەبارە"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:134 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "دۆستی ناڕێکی خوێندنەوە"
 
@@ -128,7 +128,7 @@ msgstr "وێنەی دیاریکراو بکە بە وێنەی پاشبنەما"
 msgid "Style"
 msgstr "ستایل"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
 msgid "Default"
 msgstr "بنەڕەت"
 
@@ -224,7 +224,7 @@ msgstr ""
 msgid "Dock"
 msgstr "دۆک"
 
-#: src/Views/Dock.vala:38
+#: src/Views/Dock.vala:35
 msgid "Small"
 msgstr "بچوک"
 
@@ -232,56 +232,56 @@ msgstr "بچوک"
 msgid "Large"
 msgstr "گەورە"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window is maximized"
 msgstr "پەنجەرەی خاوەن سەرنج بە گەورەیی کراوەتەوە"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Focused window overlaps the dock"
 msgstr "پەنجەرەی خاوەن سەرنج دەکەوێتە سەر دۆک"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Any window overlaps the dock"
 msgstr "هەر پەنجەرەیەک بکەوێتە سەر دۆک"
 
-#: src/Views/Dock.vala:74
+#: src/Views/Dock.vala:75
 msgid "Not being used"
 msgstr "بەکارناهێنرێت"
 
-#: src/Views/Dock.vala:110
+#: src/Views/Dock.vala:111
 msgid "Primary display:"
 msgstr "ڕوونمای سەرەکی:"
 
-#: src/Views/Dock.vala:114
+#: src/Views/Dock.vala:115
 msgid "Display:"
 msgstr "ڕوونما:"
 
-#: src/Views/Dock.vala:145
+#: src/Views/Dock.vala:146
 msgid "Icon size:"
 msgstr "قەبارەی ئایکۆن:"
 
-#: src/Views/Dock.vala:147
+#: src/Views/Dock.vala:148
 msgid "Hide when:"
 msgstr "با دۆک شاراوە بێت کاتێک کە:"
 
-#: src/Views/Dock.vala:151
+#: src/Views/Dock.vala:152
 msgid "Pressure reveal:"
 msgstr "دەرخستنی فشار:"
 
-#: src/Views/Dock.vala:154
+#: src/Views/Dock.vala:155
 msgid "Panel"
 msgstr "پانێڵ"
 
-#: src/Views/Dock.vala:158
+#: src/Views/Dock.vala:159
 msgid "Panel translucency:"
 msgstr "هەبوونی ڕەنگ لە پاشبنەمای پانێڵ:"
 
-#: src/Views/Dock.vala:249
+#: src/Views/Dock.vala:250
 #, c-format
 msgid "Monitor %d"
 msgstr "مۆنیتەر %d"
 
-#: src/Views/Dock.vala:254
+#: src/Views/Dock.vala:255
 #, c-format
 msgid "Display %d"
 msgstr "ڕوونما %d"
@@ -358,15 +358,7 @@ msgstr "چوونە ناوچەکارێکی نوێ"
 msgid "Execute custom command"
 msgstr "جێبەجێکردنی فەرمانێکی تایبەت"
 
-#: src/Views/Text.vala:34
-msgid "Size:"
-msgstr "قەبارە:"
-
-#: src/Views/Text.vala:49
-msgid "Dyslexia-friendly:"
-msgstr "دۆستی ناڕێکی خوێندنەوە:"
-
-#: src/Views/Text.vala:60
+#: src/Views/Text.vala:61
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -374,39 +366,39 @@ msgstr ""
 "قورسکردنی بەشی خوارەوەی شێوەکان و زیادکردنی دووری نێوان پیتەکان دەتوانێت "
 "یارمەتیدەر بێت لە باشترکردنی خوێندنەوە و خێرایی خوێندنەوە."
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
 msgstr "هێنانی وێنە…"
 
-#: src/Views/Wallpaper.vala:111
+#: src/Views/Wallpaper.vala:126
 msgid "Centered"
 msgstr "ناوەڕاستی وێنە"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:127
 msgid "Zoom"
 msgstr "بێتەپێش"
 
-#: src/Views/Wallpaper.vala:113
+#: src/Views/Wallpaper.vala:128
 msgid "Spanned"
 msgstr "تەواوی وێنە"
 
-#: src/Views/Wallpaper.vala:156
+#: src/Views/Wallpaper.vala:173
 msgid "Import Photo"
 msgstr "هێنانی وێنە"
 
-#: src/Views/Wallpaper.vala:157
+#: src/Views/Wallpaper.vala:174
 msgid "Import"
 msgstr "هێنان"
 
-#: src/Views/Wallpaper.vala:158
+#: src/Views/Wallpaper.vala:175
 msgid "Cancel"
 msgstr "هەڵوەشاندنەوە"
 
-#: src/Views/Wallpaper.vala:630
+#: src/Views/Wallpaper.vala:649
 msgid "Wallpaper Deleted"
 msgstr "وێنەی پاشبنەما سڕایەوە"
 
-#: src/Views/Wallpaper.vala:631
+#: src/Views/Wallpaper.vala:650
 msgid "Undo"
 msgstr "هەڵوەشاندنەوە"
 
@@ -455,6 +447,12 @@ msgstr "دانانی وەکو سلایدشۆوی ڕوومێز"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "دروستکردنی سلایدشۆو"
+
+#~ msgid "Size:"
+#~ msgstr "قەبارە:"
+
+#~ msgid "Dyslexia-friendly:"
+#~ msgstr "دۆستی ناڕێکی خوێندنەوە:"
 
 #, fuzzy
 #~ msgid "Larger"

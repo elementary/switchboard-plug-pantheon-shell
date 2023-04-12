@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 00:18+0000\n"
+"POT-Creation-Date: 2023-04-12 08:25+0000\n"
 "PO-Revision-Date: 2022-08-10 19:12+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -78,11 +78,11 @@ msgstr "סגנון חשוך"
 msgid "Accent color"
 msgstr "גוון נלווה"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:133 src/Views/Text.vala:34
 msgid "Size"
 msgstr "גודל"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:134 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "ידידותי לדיסקלציה"
 
@@ -128,7 +128,7 @@ msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשול
 msgid "Style"
 msgstr "סגנון"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
 msgid "Default"
 msgstr "בררת מחדל"
 
@@ -224,7 +224,7 @@ msgstr ""
 msgid "Dock"
 msgstr "מעגן"
 
-#: src/Views/Dock.vala:38
+#: src/Views/Dock.vala:35
 msgid "Small"
 msgstr "קטן"
 
@@ -232,56 +232,56 @@ msgstr "קטן"
 msgid "Large"
 msgstr "גדול"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window is maximized"
 msgstr "החלון שבמיקוד מוגדל"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Focused window overlaps the dock"
 msgstr "החלון שבמיקוד חופף מעל המעגן"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Any window overlaps the dock"
 msgstr "חלון כלשהו חופף מעל המעגן"
 
-#: src/Views/Dock.vala:74
+#: src/Views/Dock.vala:75
 msgid "Not being used"
 msgstr "לא בשימוש"
 
-#: src/Views/Dock.vala:110
+#: src/Views/Dock.vala:111
 msgid "Primary display:"
 msgstr "תצוגה עיקרית:"
 
-#: src/Views/Dock.vala:114
+#: src/Views/Dock.vala:115
 msgid "Display:"
 msgstr "תצוגה:"
 
-#: src/Views/Dock.vala:145
+#: src/Views/Dock.vala:146
 msgid "Icon size:"
 msgstr "גודל הסמלים:"
 
-#: src/Views/Dock.vala:147
+#: src/Views/Dock.vala:148
 msgid "Hide when:"
 msgstr "להסתיר כאשר:"
 
-#: src/Views/Dock.vala:151
+#: src/Views/Dock.vala:152
 msgid "Pressure reveal:"
 msgstr "לחץ לגילוי:"
 
-#: src/Views/Dock.vala:154
+#: src/Views/Dock.vala:155
 msgid "Panel"
 msgstr "לוח"
 
-#: src/Views/Dock.vala:158
+#: src/Views/Dock.vala:159
 msgid "Panel translucency:"
 msgstr "שקיפות חלונית:"
 
-#: src/Views/Dock.vala:249
+#: src/Views/Dock.vala:250
 #, c-format
 msgid "Monitor %d"
 msgstr "צג %d"
 
-#: src/Views/Dock.vala:254
+#: src/Views/Dock.vala:255
 #, c-format
 msgid "Display %d"
 msgstr "תצוגה %d"
@@ -358,15 +358,7 @@ msgstr "מעבר לסביבת עבודה חדשה"
 msgid "Execute custom command"
 msgstr "הפעלת פקודה בהתאמה אישית"
 
-#: src/Views/Text.vala:34
-msgid "Size:"
-msgstr "גודל:"
-
-#: src/Views/Text.vala:49
-msgid "Dyslexia-friendly:"
-msgstr "ידידותי לדיסלקציה:"
-
-#: src/Views/Text.vala:60
+#: src/Views/Text.vala:61
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -374,39 +366,39 @@ msgstr ""
 "צורות עם בסיס רחב ויותר ריווח בין התווים עשוי לשפר את מידת הקריאות ואת "
 "מהירות הקריאה של הטקסט."
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
 msgstr "ייבוא תמונה…"
 
-#: src/Views/Wallpaper.vala:111
+#: src/Views/Wallpaper.vala:126
 msgid "Centered"
 msgstr "ממורכז"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:127
 msgid "Zoom"
 msgstr "תקריב"
 
-#: src/Views/Wallpaper.vala:113
+#: src/Views/Wallpaper.vala:128
 msgid "Spanned"
 msgstr "מגושר"
 
-#: src/Views/Wallpaper.vala:156
+#: src/Views/Wallpaper.vala:173
 msgid "Import Photo"
 msgstr "ייבוא תמונה"
 
-#: src/Views/Wallpaper.vala:157
+#: src/Views/Wallpaper.vala:174
 msgid "Import"
 msgstr "ייבוא"
 
-#: src/Views/Wallpaper.vala:158
+#: src/Views/Wallpaper.vala:175
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Views/Wallpaper.vala:630
+#: src/Views/Wallpaper.vala:649
 msgid "Wallpaper Deleted"
 msgstr "תמונת רקע נמחקה"
 
-#: src/Views/Wallpaper.vala:631
+#: src/Views/Wallpaper.vala:650
 msgid "Undo"
 msgstr "ביטול"
 
@@ -455,6 +447,12 @@ msgstr "הגדרה כמצגת שולחן העבודה"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "יצירת מצגת"
+
+#~ msgid "Size:"
+#~ msgstr "גודל:"
+
+#~ msgid "Dyslexia-friendly:"
+#~ msgstr "ידידותי לדיסלקציה:"
 
 #~ msgid "Move windows to a new workspace:"
 #~ msgstr "העברת חלונות לסביבת עבודה חדשה:"
