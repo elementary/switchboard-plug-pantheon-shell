@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:25+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -33,10 +33,11 @@ msgid "Wallpaper"
 msgstr "Bakgrunnsbilde"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr "Utseende"
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 msgid "Text"
 msgstr "Tekst"
 
@@ -46,8 +47,7 @@ msgstr "Tekst"
 msgid "Dock & Panel"
 msgstr "Dokk og panel"
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Multitasking"
 msgstr "Fleroppgavehåndtering"
 
@@ -79,25 +79,29 @@ msgstr "Mørk stil"
 msgid "Accent color"
 msgstr "Kontrastfarge"
 
-#: src/Plug.vala:133 src/Views/Text.vala:34
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
+#: src/Plug.vala:133
+msgid "Window animations"
+msgstr "Vindusanimasjoner"
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Størrelse"
 
-#: src/Plug.vala:134 src/Views/Text.vala:54
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Dysleksi-vennlig"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "Aktive hjørner"
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Flytt vinduer til nytt arbeidsområde"
-
-#: src/Plug.vala:138
-msgid "Window animations"
-msgstr "Vindusanimasjoner"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -221,6 +225,15 @@ msgstr ""
 "Brukt på hele systemet som forvalg. Programmer kan alltid velge sin egen "
 "kontrastfarge."
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Dokk"
@@ -287,79 +300,75 @@ msgstr "Skjerm %d"
 msgid "Display %d"
 msgstr "Skjerm %d"
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
 msgstr "Når pekeren havner i et skjermhjørne"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 #, fuzzy
 msgid "Top Left"
 msgstr "Øverst til venstre"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 #, fuzzy
 msgid "Top Right"
 msgstr "Øverst til høyre"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 #, fuzzy
 msgid "Bottom Left"
 msgstr "Nederst til venstre"
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 #, fuzzy
 msgid "Bottom Right"
 msgstr "Nederst til høyre"
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr "Ved fullskjermsvisning"
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr "Ved maksimering"
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr "Vindusanimasjoner:"
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr "Ikke gjør noe"
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr "Vis arbeidsområder"
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr "Maksimer gjeldende vindu"
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr "Vis applikasjonsmeny"
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr "Vis alle vinduer"
 
-#: src/Views/Multitasking.vala:140
+#: src/Views/Multitasking.vala:124
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "Bytt til nytt arbeidsområde"
 
-#: src/Views/Multitasking.vala:141
+#: src/Views/Multitasking.vala:125
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "Bytt til nytt arbeidsområde"
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr "Bytt til nytt arbeidsområde"
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr "Utfør egendefinert kommando"
 
@@ -453,6 +462,9 @@ msgstr "Sett som skrivebord-lysbildeserie"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Lag lysbildeserie"
+
+#~ msgid "Window animations:"
+#~ msgstr "Vindusanimasjoner:"
 
 #~ msgid "Size:"
 #~ msgstr "Størrelse:"

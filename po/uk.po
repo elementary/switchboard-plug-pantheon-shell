@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:25+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2023-04-12 08:25+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -34,10 +34,11 @@ msgid "Wallpaper"
 msgstr "Тло"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr "Вигляд"
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 msgid "Text"
 msgstr "Текст"
 
@@ -46,8 +47,7 @@ msgstr "Текст"
 msgid "Dock & Panel"
 msgstr "Док і панель"
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Multitasking"
 msgstr "Багатозадачність"
 
@@ -79,25 +79,29 @@ msgstr "Темний стиль"
 msgid "Accent color"
 msgstr "Основний колір"
 
-#: src/Plug.vala:133 src/Views/Text.vala:34
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
+#: src/Plug.vala:133
+msgid "Window animations"
+msgstr "Анімації вікон"
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Розмір"
 
-#: src/Plug.vala:134 src/Views/Text.vala:54
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Придатно для читання людьми з дислексією"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "Дії кутів"
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Перемістити вікно до нового робочого простору"
-
-#: src/Plug.vala:138
-msgid "Window animations"
-msgstr "Анімації вікон"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -221,6 +225,15 @@ msgstr ""
 "Вжито типово в системі. Застосунки завжди можуть використовувати свій "
 "власний основний колір."
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Док"
@@ -287,71 +300,67 @@ msgstr "Монітор %d"
 msgid "Display %d"
 msgstr "Екран %d"
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
 msgstr "Коли вказівник переміщується в кут екрана"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 msgid "Top Left"
 msgstr "Верхній лівий"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 msgid "Top Right"
 msgstr "Верхній правий"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Left"
 msgstr "Нижній лівий"
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 msgid "Bottom Right"
 msgstr "Нижній правий"
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr "Під час входу в повноекранний режим"
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr "Під час розгортання"
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr "Анімації вікон:"
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr "Нічого не робити"
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr "Багатозадачний вигляд"
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr "Розгорнути поточне вікно"
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr "Показати меню застосунків"
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr "Показати всі вікна"
 
-#: src/Views/Multitasking.vala:140
+#: src/Views/Multitasking.vala:124
 msgid "Switch to previous workspace"
 msgstr "Перейти до попереднього робочого простору"
 
-#: src/Views/Multitasking.vala:141
+#: src/Views/Multitasking.vala:125
 msgid "Switch to next workspace"
 msgstr "Перейти до наступного робочого простору"
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr "Перейти до нового робочого простору"
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr "Виконати призначену команду"
 
@@ -447,6 +456,9 @@ msgstr "Зробити слайдшоу стільниці"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Створити слайдшоу"
+
+#~ msgid "Window animations:"
+#~ msgstr "Анімації вікон:"
 
 #~ msgid "Size:"
 #~ msgstr "Розмір:"

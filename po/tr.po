@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:25+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2022-08-15 19:27+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -33,10 +33,11 @@ msgid "Wallpaper"
 msgstr "Duvar Kağıdı"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 msgid "Text"
 msgstr "Metin"
 
@@ -45,8 +46,7 @@ msgstr "Metin"
 msgid "Dock & Panel"
 msgstr "Dock ve Panel"
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Multitasking"
 msgstr "Çoklu Görev"
 
@@ -78,25 +78,29 @@ msgstr "Koyu renk tema"
 msgid "Accent color"
 msgstr "Vurgu rengi"
 
-#: src/Plug.vala:133 src/Views/Text.vala:34
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
+#: src/Plug.vala:133
+msgid "Window animations"
+msgstr "Pencere animasyonları"
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Boyut"
 
-#: src/Plug.vala:134 src/Views/Text.vala:54
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Disleksi dostu"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "Etkin Köşeler"
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Pencereleri yeni bir çalışma alanına taşı"
-
-#: src/Plug.vala:138
-msgid "Window animations"
-msgstr "Pencere animasyonları"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -220,6 +224,15 @@ msgstr ""
 "Varsayılan olarak sistem genelinde kullanılır. Uygulamalar her zaman kendi "
 "vurgu renklerini kullanabilir."
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Dock"
@@ -286,75 +299,71 @@ msgstr "Ekran %d"
 msgid "Display %d"
 msgstr "Görüntü %d"
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
 msgstr "İşaretçi ekranın köşesine geldiğinde"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 msgid "Top Left"
 msgstr "Sol Üst"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 msgid "Top Right"
 msgstr "Sağ Üst"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Left"
 msgstr "Sol Alt"
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 msgid "Bottom Right"
 msgstr "Sağ Alt"
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr "Tam ekrana girerken"
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr "Ekranı kaplarken"
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr "Pencere animasyonları:"
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr "Hiçbir şey yapma"
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr "Çoklu Görev Görünümü"
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr "Geçerli pencereye ekranı kaplat"
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr "Uygulamalar Menüsünü Göster"
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr "Tüm pencereleri göster"
 
-#: src/Views/Multitasking.vala:140
+#: src/Views/Multitasking.vala:124
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "Yeni bir çalışma alanına geç"
 
-#: src/Views/Multitasking.vala:141
+#: src/Views/Multitasking.vala:125
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "Yeni bir çalışma alanına geç"
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr "Yeni bir çalışma alanına geç"
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr "Özel komut çalıştır"
 
@@ -447,6 +456,9 @@ msgstr "Masaüstü Slayt Gösterisi Olarak Ayarla"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Slayt Gösterisi Oluştur"
+
+#~ msgid "Window animations:"
+#~ msgstr "Pencere animasyonları:"
 
 #~ msgid "Size:"
 #~ msgstr "Boyut:"

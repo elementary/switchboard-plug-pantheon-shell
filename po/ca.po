@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:25+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2023-04-12 08:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -34,10 +34,11 @@ msgid "Wallpaper"
 msgstr "Fons d'escriptori"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr "Aparença"
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 msgid "Text"
 msgstr "Text"
 
@@ -46,8 +47,7 @@ msgstr "Text"
 msgid "Dock & Panel"
 msgstr "Acoblador i plafó"
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Multitasking"
 msgstr "Multitasca"
 
@@ -79,25 +79,29 @@ msgstr "Estil fosc"
 msgid "Accent color"
 msgstr "Accentuació del color"
 
-#: src/Plug.vala:133 src/Views/Text.vala:34
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
+#: src/Plug.vala:133
+msgid "Window animations"
+msgstr "Animacions de finestres"
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Mida"
 
-#: src/Plug.vala:134 src/Views/Text.vala:54
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Adaptat a la dislèxia"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "Cantons actius"
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Mou les finestres a un espai de treball nou"
-
-#: src/Plug.vala:138
-msgid "Window animations"
-msgstr "Animacions de finestres"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -221,6 +225,15 @@ msgstr ""
 "S'usa per defecte a tot el sistema. Les aplicacions sempre poden usar la "
 "seva accentuació de color."
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Acoblador"
@@ -287,71 +300,67 @@ msgstr "Monitor %d"
 msgid "Display %d"
 msgstr "Pantalla %d"
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
 msgstr "Quan el punter entra en un cantó de la pantalla"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 msgid "Top Left"
 msgstr "Dalt a l'esquerra"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 msgid "Top Right"
 msgstr "Dalt a la dreta"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Left"
 msgstr "A baix a l 'esquerra"
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 msgid "Bottom Right"
 msgstr "A baix a la dreta"
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr "Quan s'obri la pantalla completa"
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr "Quan es maximitzi"
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr "Animacions de finestres:"
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr "No facis res"
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr "Vista de multitasca"
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr "Maximitza la finestra actual"
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr "Mostra el menú d'aplicacions"
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr "Mostra totes les finestres"
 
-#: src/Views/Multitasking.vala:140
+#: src/Views/Multitasking.vala:124
 msgid "Switch to previous workspace"
 msgstr "Canvia a l'espai de treball anterior"
 
-#: src/Views/Multitasking.vala:141
+#: src/Views/Multitasking.vala:125
 msgid "Switch to next workspace"
 msgstr "Canvia a l'espai de treball següent"
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr "Canvia a un espai de treball nou"
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr "Executa una ordre personalitzada"
 
@@ -444,6 +453,9 @@ msgstr "Estableix com a presentació de diapositives"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Crea una presentació"
+
+#~ msgid "Window animations:"
+#~ msgstr "Animacions de finestres:"
 
 #~ msgid "Size:"
 #~ msgstr "Mida:"

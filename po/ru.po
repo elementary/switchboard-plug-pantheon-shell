@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:25+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2023-04-12 08:25+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,10 +29,11 @@ msgid "Wallpaper"
 msgstr "Обои"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr "Внешний вид"
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 msgid "Text"
 msgstr "Текст"
 
@@ -41,8 +42,7 @@ msgstr "Текст"
 msgid "Dock & Panel"
 msgstr "Док и панель"
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Multitasking"
 msgstr "Многозадачность"
 
@@ -74,25 +74,29 @@ msgstr "Тёмный стиль"
 msgid "Accent color"
 msgstr "Цветовой акцент"
 
-#: src/Plug.vala:133 src/Views/Text.vala:34
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
+#: src/Plug.vala:133
+msgid "Window animations"
+msgstr "Анимации окон"
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Размер"
 
-#: src/Plug.vala:134 src/Views/Text.vala:54
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Текст для людей с дислексией"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "Активные углы"
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Переместить окно на новый рабочий стол"
-
-#: src/Plug.vala:138
-msgid "Window animations"
-msgstr "Анимации окон"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -216,6 +220,15 @@ msgstr ""
 "Используется в системе по умолчанию. Приложения всегда могут использовать "
 "свой собственный цветовой акцент."
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Док"
@@ -282,71 +295,67 @@ msgstr "Монитор %d"
 msgid "Display %d"
 msgstr "Экран %d"
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
 msgstr "При наведении курсора в угол экрана"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 msgid "Top Left"
 msgstr "Слева сверху"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 msgid "Top Right"
 msgstr "Справа сверху"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Left"
 msgstr "Слева снизу"
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 msgid "Bottom Right"
 msgstr "Справа снизу"
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr "При входе в полноэкранный режим"
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr "Во время развертывания"
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr "Анимации окон:"
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr "Ничего не делать"
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr "Многозадачный вид"
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr "Развернуть текущее окно"
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr "Показать меню приложений"
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr "Показать все окна"
 
-#: src/Views/Multitasking.vala:140
+#: src/Views/Multitasking.vala:124
 msgid "Switch to previous workspace"
 msgstr "Переключиться на предыдущий рабочий стол"
 
-#: src/Views/Multitasking.vala:141
+#: src/Views/Multitasking.vala:125
 msgid "Switch to next workspace"
 msgstr "Переключиться на следующий рабочий стол"
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr "Переключиться на новый рабочий стол"
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr "Выполнить пользовательскую команду"
 
@@ -442,6 +451,9 @@ msgstr "Установить как слайд-шоу на рабочем сто
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Создать слайдшоу"
+
+#~ msgid "Window animations:"
+#~ msgstr "Анимации окон:"
 
 #~ msgid "Size:"
 #~ msgstr "Размер:"

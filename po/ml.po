@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:25+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Malayalam <https://l10n.elementary.io/projects/switchboard/"
@@ -28,10 +28,11 @@ msgid "Wallpaper"
 msgstr ""
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr ""
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 msgid "Text"
 msgstr ""
 
@@ -40,8 +41,7 @@ msgstr ""
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Multitasking"
 msgstr ""
 
@@ -73,24 +73,28 @@ msgstr ""
 msgid "Accent color"
 msgstr ""
 
-#: src/Plug.vala:133 src/Views/Text.vala:34
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
+#: src/Plug.vala:133
+msgid "Window animations"
+msgstr ""
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 msgid "Size"
 msgstr ""
 
-#: src/Plug.vala:134 src/Views/Text.vala:54
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr ""
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
-msgstr ""
-
-#: src/Plug.vala:138
-msgid "Window animations"
 msgstr ""
 
 #.
@@ -211,6 +215,15 @@ msgid ""
 "color."
 msgstr ""
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr ""
@@ -277,71 +290,67 @@ msgstr ""
 msgid "Display %d"
 msgstr ""
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
 msgstr ""
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 msgid "Top Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 msgid "Top Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr ""
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr ""
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr ""
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr ""
 
-#: src/Views/Multitasking.vala:140
+#: src/Views/Multitasking.vala:124
 msgid "Switch to previous workspace"
 msgstr ""
 
-#: src/Views/Multitasking.vala:141
+#: src/Views/Multitasking.vala:125
 msgid "Switch to next workspace"
 msgstr ""
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr ""
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr ""
 

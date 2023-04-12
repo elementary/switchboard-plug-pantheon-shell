@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:25+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -34,10 +34,11 @@ msgid "Wallpaper"
 msgstr "Ozadje"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr "Izgled"
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 #, fuzzy
 #| msgid "Text size:"
 msgid "Text"
@@ -48,8 +49,7 @@ msgstr "Velikost besedila:"
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
@@ -83,31 +83,35 @@ msgstr ""
 msgid "Accent color"
 msgstr ""
 
-#: src/Plug.vala:133 src/Views/Text.vala:34
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
+#: src/Plug.vala:133
+#, fuzzy
+#| msgid "Window animations:"
+msgid "Window animations"
+msgstr "Animacije oken:"
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Velikost ikon"
 
-#: src/Plug.vala:134 src/Views/Text.vala:54
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "Bližnjice v kotih zaslona"
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
 msgstr "Preklopi na nov delovni prostor"
-
-#: src/Plug.vala:138
-#, fuzzy
-#| msgid "Window animations:"
-msgid "Window animations"
-msgstr "Animacije oken:"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -227,6 +231,15 @@ msgid ""
 "color."
 msgstr ""
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Sidrišče"
@@ -293,77 +306,73 @@ msgstr "Monitor %d"
 msgid "Display %d"
 msgstr "Zaslon %d"
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 #, fuzzy
 #| msgid "When the cursor enters the corner of the display:"
 msgid "When the pointer enters a display corner"
 msgstr "Ko miškin kazalec vstopi v kot zaslona:"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 msgid "Top Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 msgid "Top Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr "Animacije oken:"
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr "Ne naredi ničesar"
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr "Pokaži vsa okna"
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr "Maksimiraj trenutno okno"
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr "Prikaži aplikacijski meni"
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr "Pokaži vsa okna"
 
-#: src/Views/Multitasking.vala:140
+#: src/Views/Multitasking.vala:124
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "Preklopi na nov delovni prostor"
 
-#: src/Views/Multitasking.vala:141
+#: src/Views/Multitasking.vala:125
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "Preklopi na nov delovni prostor"
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr "Preklopi na nov delovni prostor"
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr "Poženi ukaz"
 
@@ -464,6 +473,9 @@ msgstr "Nastavi kot projekcijo na namizju"
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Ustvari projekcijo"
+
+#~ msgid "Window animations:"
+#~ msgstr "Animacije oken:"
 
 #, fuzzy
 #~| msgid "Switch to new workspace"
