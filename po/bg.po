@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 00:18+0000\n"
+"POT-Creation-Date: 2023-04-12 08:25+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -81,13 +81,13 @@ msgstr ""
 msgid "Accent color"
 msgstr ""
 
-#: src/Plug.vala:133
+#: src/Plug.vala:133 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Размер на иконите"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:134 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr ""
 
@@ -133,7 +133,7 @@ msgstr "Задава избраното изображение като фон �
 msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
 msgid "Default"
 msgstr "По подразбиране"
 
@@ -225,7 +225,7 @@ msgstr ""
 msgid "Dock"
 msgstr "Лента"
 
-#: src/Views/Dock.vala:38
+#: src/Views/Dock.vala:35
 msgid "Small"
 msgstr ""
 
@@ -233,56 +233,56 @@ msgstr ""
 msgid "Large"
 msgstr "Голям"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window is maximized"
 msgstr ""
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Focused window overlaps the dock"
 msgstr ""
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Any window overlaps the dock"
 msgstr ""
 
-#: src/Views/Dock.vala:74
+#: src/Views/Dock.vala:75
 msgid "Not being used"
 msgstr "не се използва"
 
-#: src/Views/Dock.vala:110
+#: src/Views/Dock.vala:111
 msgid "Primary display:"
 msgstr "Основен екран:"
 
-#: src/Views/Dock.vala:114
+#: src/Views/Dock.vala:115
 msgid "Display:"
 msgstr "Екран:"
 
-#: src/Views/Dock.vala:145
+#: src/Views/Dock.vala:146
 msgid "Icon size:"
 msgstr "Размер на иконките:"
 
-#: src/Views/Dock.vala:147
+#: src/Views/Dock.vala:148
 msgid "Hide when:"
 msgstr "Да се скрива, когато:"
 
-#: src/Views/Dock.vala:151
+#: src/Views/Dock.vala:152
 msgid "Pressure reveal:"
 msgstr ""
 
-#: src/Views/Dock.vala:154
+#: src/Views/Dock.vala:155
 msgid "Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:158
+#: src/Views/Dock.vala:159
 msgid "Panel translucency:"
 msgstr ""
 
-#: src/Views/Dock.vala:249
+#: src/Views/Dock.vala:250
 #, c-format
 msgid "Monitor %d"
 msgstr "Монитор %d"
 
-#: src/Views/Dock.vala:254
+#: src/Views/Dock.vala:255
 #, c-format
 msgid "Display %d"
 msgstr "Екран %d"
@@ -357,55 +357,47 @@ msgstr ""
 msgid "Execute custom command"
 msgstr "Изпълняване на команда по избор"
 
-#: src/Views/Text.vala:34
-msgid "Size:"
-msgstr ""
-
-#: src/Views/Text.vala:49
-msgid "Dyslexia-friendly:"
-msgstr ""
-
-#: src/Views/Text.vala:60
+#: src/Views/Text.vala:61
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 msgstr ""
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:111
+#: src/Views/Wallpaper.vala:126
 msgid "Centered"
 msgstr "Центрирано"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:127
 msgid "Zoom"
 msgstr "Увеличено"
 
-#: src/Views/Wallpaper.vala:113
+#: src/Views/Wallpaper.vala:128
 msgid "Spanned"
 msgstr "На няколко екрана"
 
-#: src/Views/Wallpaper.vala:156
+#: src/Views/Wallpaper.vala:173
 msgid "Import Photo"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:157
+#: src/Views/Wallpaper.vala:174
 msgid "Import"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:158
+#: src/Views/Wallpaper.vala:175
 msgid "Cancel"
 msgstr "Отказ"
 
-#: src/Views/Wallpaper.vala:630
+#: src/Views/Wallpaper.vala:649
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Фон"
 
-#: src/Views/Wallpaper.vala:631
+#: src/Views/Wallpaper.vala:650
 msgid "Undo"
 msgstr ""
 
