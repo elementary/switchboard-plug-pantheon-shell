@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 00:18+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2022-09-30 22:36+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -33,10 +33,11 @@ msgid "Wallpaper"
 msgstr "Tapeta"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr "Vzhľad"
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 msgid "Text"
 msgstr "Text"
 
@@ -45,8 +46,7 @@ msgstr "Text"
 msgid "Dock & Panel"
 msgstr "Dok a panel"
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Multitasking"
 msgstr "Zobrazenie úloh"
 
@@ -78,25 +78,29 @@ msgstr "Tmavý režim"
 msgid "Accent color"
 msgstr "Farebný odtieň"
 
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
 #: src/Plug.vala:133
+msgid "Window animations"
+msgstr "Animácia okien"
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Veľkosť"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Text pre dyslektikov"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "Aktívne rohy"
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Presunúť okná na novú pracovnú plochu"
-
-#: src/Plug.vala:138
-msgid "Window animations"
-msgstr "Animácia okien"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -128,7 +132,7 @@ msgstr "Nastaví vybraný obrázok ako nové pozadie pracovnej plochy"
 msgid "Style"
 msgstr "Štýl"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
 msgid "Default"
 msgstr "Predvolený"
 
@@ -220,11 +224,20 @@ msgstr ""
 "V predvolenom stave používané v celom systéme. Aplikácie vždy môžu použiť "
 "svoje vlastné farebné odtiene."
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "Dok"
 
-#: src/Views/Dock.vala:38
+#: src/Views/Dock.vala:35
 msgid "Small"
 msgstr "Malá"
 
@@ -232,141 +245,129 @@ msgstr "Malá"
 msgid "Large"
 msgstr "Veľká"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window is maximized"
 msgstr "Aktívne okno je maximalizované"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Focused window overlaps the dock"
 msgstr "Aktívne okno prekrýva dok"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Any window overlaps the dock"
 msgstr "Akékoľvek okno prekrýva dok"
 
-#: src/Views/Dock.vala:74
+#: src/Views/Dock.vala:75
 msgid "Not being used"
 msgstr "Sa nepoužíva"
 
-#: src/Views/Dock.vala:110
+#: src/Views/Dock.vala:111
 msgid "Primary display:"
 msgstr "Hlavná obrazovka:"
 
-#: src/Views/Dock.vala:114
+#: src/Views/Dock.vala:115
 msgid "Display:"
 msgstr "Obrazovka:"
 
-#: src/Views/Dock.vala:145
+#: src/Views/Dock.vala:146
 msgid "Icon size:"
 msgstr "Veľkosť ikon:"
 
-#: src/Views/Dock.vala:147
+#: src/Views/Dock.vala:148
 msgid "Hide when:"
 msgstr "Skryť keď:"
 
-#: src/Views/Dock.vala:151
+#: src/Views/Dock.vala:152
 msgid "Pressure reveal:"
 msgstr "Vysunutie tlakom:"
 
-#: src/Views/Dock.vala:154
+#: src/Views/Dock.vala:155
 msgid "Panel"
 msgstr "Panel"
 
-#: src/Views/Dock.vala:158
+#: src/Views/Dock.vala:159
 msgid "Panel translucency:"
 msgstr "Priesvitnosť panelu:"
 
-#: src/Views/Dock.vala:249
+#: src/Views/Dock.vala:250
 #, c-format
 msgid "Monitor %d"
 msgstr "Monitor %d"
 
-#: src/Views/Dock.vala:254
+#: src/Views/Dock.vala:255
 #, c-format
 msgid "Display %d"
 msgstr "Displej %d"
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
 msgstr "Keď sa kurzor dotkne rohu obrazovky"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 msgid "Top Left"
 msgstr "Horný ľavý"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 msgid "Top Right"
 msgstr "Horný pravý"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Left"
 msgstr "Dolný ľavý"
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 msgid "Bottom Right"
 msgstr "Dolný pravý"
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr "Keď je aplikácia na celú obrazovku"
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr "Keď sa aplikácia maximalizuje"
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr "Animácie okien:"
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr "Nerobiť nič"
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr "Zobrazenie úloh"
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr "Maximalizovať aktuálne okno"
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr "Zobraziť menu aplikácií"
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr "Zobraziť všetky okná"
 
-#: src/Views/Multitasking.vala:140
+#: src/Views/Multitasking.vala:124
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "Prepnúť na novú pracovnú plochu"
 
-#: src/Views/Multitasking.vala:141
+#: src/Views/Multitasking.vala:125
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "Prepnúť na novú pracovnú plochu"
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr "Prepnúť na novú pracovnú plochu"
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr "Spustiť vlastný program"
 
-#: src/Views/Text.vala:34
-msgid "Size:"
-msgstr "Veľkosť:"
-
-#: src/Views/Text.vala:49
-msgid "Dyslexia-friendly:"
-msgstr "Text pre dyslektikov:"
-
-#: src/Views/Text.vala:60
+#: src/Views/Text.vala:61
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -374,39 +375,39 @@ msgstr ""
 "Tvary so zdôraznenou spodnou časťou a väčšími rozostupmi medzi znakmi môžu "
 "zlepšiť rozlíšiteľnosť a rýchlosť čítania."
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
 msgstr "Importovať fotku…"
 
-#: src/Views/Wallpaper.vala:111
+#: src/Views/Wallpaper.vala:126
 msgid "Centered"
 msgstr "Centrovať"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:127
 msgid "Zoom"
 msgstr "Priblížiť"
 
-#: src/Views/Wallpaper.vala:113
+#: src/Views/Wallpaper.vala:128
 msgid "Spanned"
 msgstr "Vyplniť"
 
-#: src/Views/Wallpaper.vala:156
+#: src/Views/Wallpaper.vala:173
 msgid "Import Photo"
 msgstr "Importovať fotku"
 
-#: src/Views/Wallpaper.vala:157
+#: src/Views/Wallpaper.vala:174
 msgid "Import"
 msgstr "Importovať"
 
-#: src/Views/Wallpaper.vala:158
+#: src/Views/Wallpaper.vala:175
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: src/Views/Wallpaper.vala:630
+#: src/Views/Wallpaper.vala:649
 msgid "Wallpaper Deleted"
 msgstr "Tapeta odstránená"
 
-#: src/Views/Wallpaper.vala:631
+#: src/Views/Wallpaper.vala:650
 msgid "Undo"
 msgstr "Späť"
 
@@ -458,6 +459,15 @@ msgstr "Nastaviť ako prezentáciu pozadí plochy"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Vytvoriť prezentáciu"
+
+#~ msgid "Window animations:"
+#~ msgstr "Animácie okien:"
+
+#~ msgid "Size:"
+#~ msgstr "Veľkosť:"
+
+#~ msgid "Dyslexia-friendly:"
+#~ msgstr "Text pre dyslektikov:"
 
 #~ msgid "Move windows to a new workspace:"
 #~ msgstr "Presunúť okná na novú pracovnú plochu:"

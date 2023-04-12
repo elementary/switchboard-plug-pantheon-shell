@@ -37,28 +37,29 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
     construct {
         var dock_header = new Granite.HeaderLabel (_("Dock"));
 
-        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
-        default_theme.add_resource_path ("/io/elementary/switchboard/plug/pantheon-shell");
+        var icon_size_32 = new Gtk.RadioButton (null) {
+            image = new Gtk.Image.from_icon_name ("dock-icon-symbolic", Gtk.IconSize.DND),
+            tooltip_text = _("Small")
+        };
 
-        var icon_size_32 = new Gtk.RadioButton (null);
-        icon_size_32.image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic", Gtk.IconSize.DND);
-        icon_size_32.tooltip_text = _("Small");
+        var icon_size_48 = new Gtk.RadioButton.from_widget (icon_size_32) {
+            image = new Gtk.Image.from_icon_name ("dock-icon-symbolic", Gtk.IconSize.DIALOG),
+            tooltip_text = _("Default")
+        };
 
-        var icon_size_48 = new Gtk.RadioButton.from_widget (icon_size_32);
-        icon_size_48.image = new Gtk.Image.from_icon_name ("application-default-icon-symbolic", Gtk.IconSize.DIALOG);
-        icon_size_48.tooltip_text = _("Default");
+        var image_64 = new Gtk.Image () {
+            icon_name = "dock-icon-symbolic",
+            pixel_size = 64
+        };
 
-        var image_64 = new Gtk.Image ();
-        image_64.icon_name = "application-default-icon-symbolic";
-        image_64.pixel_size = 64;
-
-        var icon_size_64 = new Gtk.RadioButton.from_widget (icon_size_32);
-        icon_size_64.image = image_64;
-        icon_size_64.tooltip_text = _("Large");
+        var icon_size_64 = new Gtk.RadioButton.from_widget (icon_size_32) {
+            image = image_64,
+            tooltip_text = _("Large")
+        };
 
         var icon_size_unsupported = new Gtk.RadioButton.from_widget (icon_size_32);
 
-        var icon_size_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 24);
+        var icon_size_box = new Gtk.Box (HORIZONTAL, 24);
         icon_size_box.add (icon_size_32);
         icon_size_box.add (icon_size_48);
         icon_size_box.add (icon_size_64);

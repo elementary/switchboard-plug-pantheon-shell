@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 00:18+0000\n"
-"PO-Revision-Date: 2023-03-21 18:59+0000\n"
+"POT-Creation-Date: 2023-04-12 08:57+0000\n"
+"PO-Revision-Date: 2023-04-12 08:25+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -28,10 +28,11 @@ msgid "Wallpaper"
 msgstr "壁紙"
 
 #: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
+#: src/Plug.vala:132 src/Plug.vala:133
 msgid "Appearance"
 msgstr "外観"
 
-#: src/Plug.vala:68 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 msgid "Text"
 msgstr "テキスト"
 
@@ -40,8 +41,7 @@ msgstr "テキスト"
 msgid "Dock & Panel"
 msgstr "ドックとパネル"
 
-#: src/Plug.vala:75 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
-#: src/Plug.vala:138
+#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Multitasking"
 msgstr "マルチタスク"
 
@@ -73,25 +73,29 @@ msgstr "ダークスタイル"
 msgid "Accent color"
 msgstr "アクセントカラー"
 
+#: src/Plug.vala:132
+msgid "Reduce motion"
+msgstr ""
+
 #: src/Plug.vala:133
+msgid "Window animations"
+msgstr "ウィンドウアニメーション"
+
+#: src/Plug.vala:135 src/Views/Text.vala:34
 msgid "Size"
 msgstr "サイズ"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "ディスレクシア対応"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/Plug.vala:137 src/Views/Multitasking.vala:40
+#: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "以下の場合にウィンドウを新しいワークスペースに移動"
-
-#: src/Plug.vala:138
-msgid "Window animations"
-msgstr "ウィンドウアニメーション"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -123,7 +127,7 @@ msgstr "選択された画像を新しいデスクトップの背景として設
 msgid "Style"
 msgstr "スタイル"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:42
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
 msgid "Default"
 msgstr "デフォルト"
 
@@ -215,11 +219,20 @@ msgstr ""
 "デフォルトでは、システム全体に適用されます。各アプリは、独自のアクセントカ"
 "ラーを使用できます。"
 
+#: src/Views/Appearance.vala:387
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Views/Appearance.vala:391
+msgid ""
+"Disable animations in the window manager and some other interface elements."
+msgstr ""
+
 #: src/Views/Dock.vala:31
 msgid "Dock"
 msgstr "ドック"
 
-#: src/Views/Dock.vala:38
+#: src/Views/Dock.vala:35
 msgid "Small"
 msgstr "小"
 
@@ -227,141 +240,125 @@ msgstr "小"
 msgid "Large"
 msgstr "大"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:72
 msgid "Focused window is maximized"
 msgstr "フォーカスされたウィンドウが最大化されたとき"
 
-#: src/Views/Dock.vala:72
+#: src/Views/Dock.vala:73
 msgid "Focused window overlaps the dock"
 msgstr "フォーカスされたウィンドウが重なったとき"
 
-#: src/Views/Dock.vala:73
+#: src/Views/Dock.vala:74
 msgid "Any window overlaps the dock"
 msgstr "いずれかのウィンドウが重なったとき"
 
-#: src/Views/Dock.vala:74
+#: src/Views/Dock.vala:75
 msgid "Not being used"
 msgstr "使われていないとき"
 
-#: src/Views/Dock.vala:110
+#: src/Views/Dock.vala:111
 msgid "Primary display:"
 msgstr "プライマリーディスプレイ:"
 
-#: src/Views/Dock.vala:114
+#: src/Views/Dock.vala:115
 msgid "Display:"
 msgstr "ディスプレイ:"
 
-#: src/Views/Dock.vala:145
+#: src/Views/Dock.vala:146
 msgid "Icon size:"
 msgstr "アイコンサイズ:"
 
-#: src/Views/Dock.vala:147
+#: src/Views/Dock.vala:148
 msgid "Hide when:"
 msgstr "隠す場合:"
 
-#: src/Views/Dock.vala:151
+#: src/Views/Dock.vala:152
 msgid "Pressure reveal:"
 msgstr "押し込んで表示:"
 
-#: src/Views/Dock.vala:154
+#: src/Views/Dock.vala:155
 msgid "Panel"
 msgstr "パネル"
 
-#: src/Views/Dock.vala:158
+#: src/Views/Dock.vala:159
 msgid "Panel translucency:"
 msgstr "パネルを透過:"
 
-#: src/Views/Dock.vala:249
+#: src/Views/Dock.vala:250
 #, c-format
 msgid "Monitor %d"
 msgstr "モニター %d"
 
-#: src/Views/Dock.vala:254
+#: src/Views/Dock.vala:255
 #, c-format
 msgid "Display %d"
 msgstr "ディスプレイ %d"
 
-#: src/Views/Multitasking.vala:28
+#: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
 msgstr "ポインターがディスプレイの隅に入ったときの動作"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:33
 msgid "Top Left"
 msgstr "左上"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:34
 msgid "Top Right"
 msgstr "右上"
 
-#: src/Views/Multitasking.vala:37
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Left"
 msgstr "左下"
 
-#: src/Views/Multitasking.vala:38
+#: src/Views/Multitasking.vala:36
 msgid "Bottom Right"
 msgstr "右下"
 
-#: src/Views/Multitasking.vala:44
+#: src/Views/Multitasking.vala:42
 msgid "When entering fullscreen"
 msgstr "全画面表示にした場合"
 
-#: src/Views/Multitasking.vala:45
+#: src/Views/Multitasking.vala:43
 msgid "When maximizing"
 msgstr "最大化した場合"
 
-#: src/Views/Multitasking.vala:54
-msgid "Window animations:"
-msgstr "ウィンドウアニメーション:"
-
-#: src/Views/Multitasking.vala:135
+#: src/Views/Multitasking.vala:119
 msgid "Do nothing"
 msgstr "何もしない"
 
-#: src/Views/Multitasking.vala:136
+#: src/Views/Multitasking.vala:120
 msgid "Multitasking View"
 msgstr "マルチタスク画面"
 
-#: src/Views/Multitasking.vala:137
+#: src/Views/Multitasking.vala:121
 msgid "Maximize current window"
 msgstr "現在のウィンドウを最大化"
 
-#: src/Views/Multitasking.vala:138
+#: src/Views/Multitasking.vala:122
 msgid "Show Applications Menu"
 msgstr "アプリケーションメニューを表示"
 
-#: src/Views/Multitasking.vala:139
+#: src/Views/Multitasking.vala:123
 msgid "Show all windows"
 msgstr "すべてのウィンドウを表示"
 
-#: src/Views/Multitasking.vala:140
-#, fuzzy
-#| msgid "Switch to new workspace"
+#: src/Views/Multitasking.vala:124
 msgid "Switch to previous workspace"
-msgstr "新しいワークスペースに切り替え"
+msgstr "左のワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:141
-#, fuzzy
-#| msgid "Switch to new workspace"
+#: src/Views/Multitasking.vala:125
 msgid "Switch to next workspace"
-msgstr "新しいワークスペースに切り替え"
+msgstr "右のワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:142
+#: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
 msgstr "新しいワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:143
+#: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
 msgstr "カスタムコマンドを実行"
 
-#: src/Views/Text.vala:34
-msgid "Size:"
-msgstr "サイズ:"
-
-#: src/Views/Text.vala:49
-msgid "Dyslexia-friendly:"
-msgstr "ディスレクシアに対応:"
-
-#: src/Views/Text.vala:60
+#: src/Views/Text.vala:61
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
@@ -369,39 +366,39 @@ msgstr ""
 "下部が強調され、字間が確保された書体を使用します。これにより、読みやすさと読"
 "む速度の改善に役立つ可能性があります。"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
 msgstr "写真をインポート…"
 
-#: src/Views/Wallpaper.vala:111
+#: src/Views/Wallpaper.vala:126
 msgid "Centered"
 msgstr "中央に表示"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:127
 msgid "Zoom"
 msgstr "画面に合わせる"
 
-#: src/Views/Wallpaper.vala:113
+#: src/Views/Wallpaper.vala:128
 msgid "Spanned"
 msgstr "並べる"
 
-#: src/Views/Wallpaper.vala:156
+#: src/Views/Wallpaper.vala:173
 msgid "Import Photo"
 msgstr "写真をインポート"
 
-#: src/Views/Wallpaper.vala:157
+#: src/Views/Wallpaper.vala:174
 msgid "Import"
 msgstr "インポート"
 
-#: src/Views/Wallpaper.vala:158
+#: src/Views/Wallpaper.vala:175
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Views/Wallpaper.vala:630
+#: src/Views/Wallpaper.vala:649
 msgid "Wallpaper Deleted"
 msgstr "壁紙を削除しました"
 
-#: src/Views/Wallpaper.vala:631
+#: src/Views/Wallpaper.vala:650
 msgid "Undo"
 msgstr "元に戻す"
 
@@ -447,6 +444,15 @@ msgstr "デスクトップスライドショーとして設定"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
+
+#~ msgid "Window animations:"
+#~ msgstr "ウィンドウアニメーション:"
+
+#~ msgid "Size:"
+#~ msgstr "サイズ:"
+
+#~ msgid "Dyslexia-friendly:"
+#~ msgstr "ディスレクシアに対応:"
 
 #~ msgid "Move windows to a new workspace:"
 #~ msgstr "以下の場合にウィンドウを新しいワークスペースに移動:"
