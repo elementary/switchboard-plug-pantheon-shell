@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-12 08:57+0000\n"
 "PO-Revision-Date: 2023-04-15 14:59+0000\n"
-"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
 "Language: nl\n"
@@ -82,7 +82,7 @@ msgstr "Accent kleur"
 
 #: src/Plug.vala:132
 msgid "Reduce motion"
-msgstr ""
+msgstr "Beperk bewegende elementen"
 
 #: src/Plug.vala:133
 msgid "Window animations"
@@ -228,12 +228,13 @@ msgstr ""
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "Beperk bewegende elementen"
 
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
+"Schalen animaties in de vensterbeheerder en bepaalde interface elementen uit."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -350,16 +351,12 @@ msgid "Show all windows"
 msgstr "Toon alle vensters"
 
 #: src/Views/Multitasking.vala:124
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
-msgstr "Wissel naar nieuw werkblad"
+msgstr "Schakel naar het vorige werkblad"
 
 #: src/Views/Multitasking.vala:125
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
-msgstr "Wissel naar nieuw werkblad"
+msgstr "Schakel naar het volgende werkblad"
 
 #: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
