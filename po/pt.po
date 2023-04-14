@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-12 08:57+0000\n"
-"PO-Revision-Date: 2022-08-10 19:12+0000\n"
+"PO-Revision-Date: 2023-04-15 14:59+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.16.4\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -80,7 +80,7 @@ msgstr "Cor de destaque"
 
 #: src/Plug.vala:132
 msgid "Reduce motion"
-msgstr ""
+msgstr "Reduzir movimento"
 
 #: src/Plug.vala:133
 msgid "Window animations"
@@ -227,12 +227,14 @@ msgstr ""
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "Reduzir Movimento"
 
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
+"Desativar as animações no gestor de janelas e alguns outros elementos de "
+"interface."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -349,20 +351,16 @@ msgid "Show all windows"
 msgstr "Mostrar todas as janelas"
 
 #: src/Views/Multitasking.vala:124
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
-msgstr "Alternar para nova área de trabalho"
+msgstr "Trocar para área de trabalho anterior"
 
 #: src/Views/Multitasking.vala:125
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
-msgstr "Alternar para nova área de trabalho"
+msgstr "Trocar para área de trabalho seguinte"
 
 #: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
-msgstr "Alternar para nova área de trabalho"
+msgstr "Trocar para nova área de trabalho"
 
 #: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
