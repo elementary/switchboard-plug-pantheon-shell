@@ -2,10 +2,43 @@
 <component type="addon">
   <id>io.elementary.switchboard.pantheon-shell</id>
   <extends>io.elementary.switchboard</extends>
+  <translation type="gettext">pantheon-desktop-plug</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+
+  <icon type="stock">preferences-desktop</icon>
   <name>Desktop Settings</name>
   <summary>Configure the dock, hot corners, and change wallpaper</summary>
-  <icon type="stock">preferences-desktop</icon>
-  <translation type="gettext">pantheon-desktop-plug</translation>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-wallpapers.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-appearance.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-text.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-dock-panel.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-multitasking.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <url type="homepage">https://elementary.io/</url>
+  <url type="bugtracker">https://github.com/elementary/switchboard-plug-pantheon-shell/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/switchboard-plug-pantheon-shell/discussions</url>
+  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
     <release version="6.4.0" date="2023-04-30" urgency="medium">
@@ -56,6 +89,7 @@
         </ul>
       </description>
     </release>
+
     <release version="6.2.0" date="2022-07-02" urgency="medium">
       <description>
         <p>New features:</p>
@@ -69,6 +103,7 @@
         </ul>
       </description>
     </release>
+
     <release version="6.1.0" date="2021-11-23" urgency="medium">
       <description>
         <p>New features:</p>
@@ -82,63 +117,10 @@
         </ul>
       </description>
     </release>
-    <release version="6.0.0" date="2021-07-15" urgency="medium">
-      <description>
-        <p>New features:</p>
-        <ul>
-          <li>Accent color and dark style options</li>
-          <li>Dyslexia-friendly text preference to use the OpenDyslexia font system-wide</li>
-          <li>Maximize and fullscreen workspace management options</li>
-        </ul>
-        <p>Other updates:</p>
-        <ul>
-          <li>Fix a freeze after opening Power settings</li>
-          <li>Improved filter for image file types when importing</li>
-          <li>Visual updates</li>
-          <li>Some options now appear in different tabs</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-    <release version="2.8.4" date="2020-04-22" urgency="medium">
-      <description>
-        <p>Illustrate Dock icon sizes</p>
-        <p>Fix system wallpapers being copied</p>
-        <p>Update search results</p>
-        <p>Updated translations</p>
-      </description>
-    </release>
-    <release version="2.8.3" date="2020-04-08" urgency="medium">
-      <description>
-        <p>Updated translations</p>
-      </description>
-    </release>
-    <release version="2.8.2" date="2019-11-15" urgency="medium">
-      <description>
-        <p>Fix issues with setting wallpapers on the Login and Lock screen</p>
-        <p>Updated translations</p>
-      </description>
-    </release>
+
+    <release version="6.0.0" date="2021-07-15" urgency="medium" />
+    <release version="2.8.4" date="2020-04-22" urgency="medium" />
+    <release version="2.8.3" date="2020-04-08" urgency="medium" />
+    <release version="2.8.2" date="2019-11-15" urgency="medium" />
   </releases>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-wallpapers.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-appearance.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-text.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-dock-panel.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-pantheon-shell/master/data/screenshot-multitasking.png</image>
-    </screenshot>
-  </screenshots>
-  <url type="homepage">https://elementary.io</url>
-  <url type="bugtracker">https://github.com/elementary/switchboard-plug-pantheon-shell/issues</url>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0</project_license>
 </component>
