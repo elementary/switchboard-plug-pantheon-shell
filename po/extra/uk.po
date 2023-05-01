@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 22:22+0000\n"
-"PO-Revision-Date: 2022-08-15 19:27+0000\n"
+"PO-Revision-Date: 2023-05-03 17:06+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/pantheon-shell.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -30,7 +30,7 @@ msgstr "Налаштування доку, дій кутів та зміна т�
 
 #: data/pantheon-shell.metainfo.xml.in:39
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/pantheon-shell.metainfo.xml.in:46
 #: data/pantheon-shell.metainfo.xml.in:73
@@ -41,7 +41,7 @@ msgstr "Нові функції:"
 
 #: data/pantheon-shell.metainfo.xml.in:48
 msgid "Add an option to dim wallpapers when dark style is active"
-msgstr ""
+msgstr "Додано опцію затемнення шпалер, коли активовано темний стиль"
 
 #: data/pantheon-shell.metainfo.xml.in:50
 #: data/pantheon-shell.metainfo.xml.in:64
@@ -53,7 +53,7 @@ msgstr "Інші оновлення:"
 
 #: data/pantheon-shell.metainfo.xml.in:52
 msgid "Use a more vertical layout in the Text view"
-msgstr ""
+msgstr "Використано вертикальніше розташування в текстовому поданні"
 
 #: data/pantheon-shell.metainfo.xml.in:53
 #: data/pantheon-shell.metainfo.xml.in:66
