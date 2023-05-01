@@ -6,7 +6,26 @@
   <summary>Configure the dock, hot corners, and change wallpaper</summary>
   <icon type="stock">preferences-desktop</icon>
   <translation type="gettext">pantheon-desktop-plug</translation>
+
   <releases>
+    <release version="6.4.0" date="2023-04-30" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Add an option to dim wallpapers when dark style is active</li>
+        </ul>
+        <p>Other updates:</p>
+        <ul>
+          <li>Use a more vertical layout in the Text view</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-pantheon-shell/issues/184">Add previous and next workspace hot corners</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-pantheon-shell/issues/305">relocate the windows animation toggle to desktop appearances</issue>
+      </issues>
+    </release>
+
     <release version="6.3.1" date="2022-10-20" urgency="medium">
       <description>
         <p>Other updates:</p>
