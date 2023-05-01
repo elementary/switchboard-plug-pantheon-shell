@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:57+0000\n"
+"POT-Creation-Date: 2023-05-01 22:10+0000\n"
 "PO-Revision-Date: 2023-04-15 14:59+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -226,7 +226,8 @@ msgstr "視覚効果を減らす"
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
-msgstr "ウィンドウマネージャーなどのインターフェース要素におけるアニメーションを無効"
+msgstr ""
+"ウィンドウマネージャーなどのインターフェース要素におけるアニメーションを無効"
 "化します。"
 
 #: src/Views/Dock.vala:31
