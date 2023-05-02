@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-01 22:10+0000\n"
+"POT-Creation-Date: 2023-05-01 22:22+0000\n"
 "PO-Revision-Date: 2022-09-30 22:36+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -19,146 +19,133 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:5
+#: data/pantheon-shell.metainfo.xml.in:10
 msgid "Desktop Settings"
 msgstr "Nastavenia pracovnej plochy"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:6
+#: data/pantheon-shell.metainfo.xml.in:11
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Nastavujte dok, aktívne rohy a meňte tapetu plochy"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:13
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:40
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:61
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:74
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:87
+#: data/pantheon-shell.metainfo.xml.in:39
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/pantheon-shell.metainfo.xml.in:46
+#: data/pantheon-shell.metainfo.xml.in:73
+#: data/pantheon-shell.metainfo.xml.in:95
+#: data/pantheon-shell.metainfo.xml.in:109
 msgid "New features:"
 msgstr "Nové funkcie:"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:15
+#: data/pantheon-shell.metainfo.xml.in:48
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:17
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:31
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:53
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:66
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:79
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:93
+#: data/pantheon-shell.metainfo.xml.in:50
+#: data/pantheon-shell.metainfo.xml.in:64
+#: data/pantheon-shell.metainfo.xml.in:86
+#: data/pantheon-shell.metainfo.xml.in:100
+#: data/pantheon-shell.metainfo.xml.in:114
 msgid "Other updates:"
 msgstr "Iné aktualizácie:"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:19
+#: data/pantheon-shell.metainfo.xml.in:52
 msgid "Use a more vertical layout in the Text view"
 msgstr ""
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:20
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:33
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:55
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:68
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:81
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:99
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:108
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:113
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:119
+#: data/pantheon-shell.metainfo.xml.in:53
+#: data/pantheon-shell.metainfo.xml.in:66
+#: data/pantheon-shell.metainfo.xml.in:88
+#: data/pantheon-shell.metainfo.xml.in:102
+#: data/pantheon-shell.metainfo.xml.in:116
 msgid "Updated translations"
 msgstr "Aktualizované preklady"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:42
+#: data/pantheon-shell.metainfo.xml.in:75
 msgid "There is now an undo option after removing a wallpaper"
 msgstr "Pridaná možnosť zrušenia odstránenia tapety"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:43
+#: data/pantheon-shell.metainfo.xml.in:76
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr "Vlastné tapety sa po novom zobrazujú navrchu zoznamu"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:45
+#: data/pantheon-shell.metainfo.xml.in:78
 msgid "Fixes:"
 msgstr "Opravy:"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:47
+#: data/pantheon-shell.metainfo.xml.in:80
 msgid "Wallpaper accent color follows system setting"
 msgstr "Farebný odtieň tapety reflektuje nastavenie systému"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:48
+#: data/pantheon-shell.metainfo.xml.in:81
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr "Dohoda Set-wallpaper zlyhávala pri spustení ako sudo"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:49
+#: data/pantheon-shell.metainfo.xml.in:82
 msgid "Wallpapers with the same name are distinguished"
 msgstr "Odlišovať tapety s rovnakým názvom"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:50
+#: data/pantheon-shell.metainfo.xml.in:83
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr "Prepínanie štýlov pomocou klávesnice vypínalo časovanie tmavého štýlu"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:51
+#: data/pantheon-shell.metainfo.xml.in:84
 msgid "Style dyslexia-friendly switch properly"
 msgstr "Prepínač textu pre dyslektikov je správne zobrazený"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:63
+#: data/pantheon-shell.metainfo.xml.in:97
 msgid "Set custom Terminal commands for each hotcorner"
 msgstr "Možnosť nastavenia vlastného príkazu Terminálu pre každý aktívny roh"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:64
+#: data/pantheon-shell.metainfo.xml.in:98
 msgid "Redesigned Appearance and Multitasking views"
 msgstr "Prerobené zobrazenie Vzhľad a Zobrazenie úloh"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:76
+#: data/pantheon-shell.metainfo.xml.in:111
 msgid "Move Text settings to their own page"
 msgstr "Presunutie nastavení textu na samostatnú kartu"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:77
+#: data/pantheon-shell.metainfo.xml.in:112
 msgid "More granular settings for text scale"
 msgstr "Plynulé nastavovanie veľkosti textu"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:89
-msgid "Accent color and dark style options"
-msgstr "Možnosť vybrať farebný odtieň a tmavý štýl"
+#~ msgid "Accent color and dark style options"
+#~ msgstr "Možnosť vybrať farebný odtieň a tmavý štýl"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:90
-msgid ""
-"Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
-msgstr ""
-"Predvoľba textu pre dyslektikov použitím písma OpenDyslexia naprieč celým "
-"systémom"
+#~ msgid ""
+#~ "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
+#~ msgstr ""
+#~ "Predvoľba textu pre dyslektikov použitím písma OpenDyslexia naprieč celým "
+#~ "systémom"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:91
-msgid "Maximize and fullscreen workspace management options"
-msgstr ""
-"Možnosti správy pracovných plôch maximalizovaných okien a okien na celú "
-"obrazovku"
+#~ msgid "Maximize and fullscreen workspace management options"
+#~ msgstr ""
+#~ "Možnosti správy pracovných plôch maximalizovaných okien a okien na celú "
+#~ "obrazovku"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:95
-msgid "Fix a freeze after opening Power settings"
-msgstr "Opravené zamŕzanie po otvorení Nastavení napájania"
+#~ msgid "Fix a freeze after opening Power settings"
+#~ msgstr "Opravené zamŕzanie po otvorení Nastavení napájania"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:96
-msgid "Improved filter for image file types when importing"
-msgstr "Vylepšený filter pre rôzne typy obrázkov pri importovaní"
+#~ msgid "Improved filter for image file types when importing"
+#~ msgstr "Vylepšený filter pre rôzne typy obrázkov pri importovaní"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:97
-msgid "Visual updates"
-msgstr "Vizuálne aktualizácie"
+#~ msgid "Visual updates"
+#~ msgstr "Vizuálne aktualizácie"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:98
-msgid "Some options now appear in different tabs"
-msgstr "Niektoré možnosti boli presunuté na iné tably"
+#~ msgid "Some options now appear in different tabs"
+#~ msgstr "Niektoré možnosti boli presunuté na iné tably"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:105
-msgid "Illustrate Dock icon sizes"
-msgstr "Ilustrované veľkosti ikon v doku"
+#~ msgid "Illustrate Dock icon sizes"
+#~ msgstr "Ilustrované veľkosti ikon v doku"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:106
-msgid "Fix system wallpapers being copied"
-msgstr "Oprava kopírovaných systémových tapiet"
+#~ msgid "Fix system wallpapers being copied"
+#~ msgstr "Oprava kopírovaných systémových tapiet"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:107
-msgid "Update search results"
-msgstr "Aktualizované výsledky vyhľadávania"
+#~ msgid "Update search results"
+#~ msgstr "Aktualizované výsledky vyhľadávania"
 
-#: data/io.elementary.switchboard.pantheon-shell.appdata.xml.in:118
-msgid "Fix issues with setting wallpapers on the Login and Lock screen"
-msgstr ""
-"Opravené problémy s nastavovaním tapiet na obrazovke prihlásenia a zamknutej "
-"obrazovke"
+#~ msgid "Fix issues with setting wallpapers on the Login and Lock screen"
+#~ msgstr ""
+#~ "Opravené problémy s nastavovaním tapiet na obrazovke prihlásenia a "
+#~ "zamknutej obrazovke"
