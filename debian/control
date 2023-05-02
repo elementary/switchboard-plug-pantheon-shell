@@ -2,7 +2,8 @@ Source: switchboard-plug-pantheon-shell
 Section: x11
 Priority: optional
 Maintainer: elementary OS Team <builds@elementary.io>
-Build-Depends: debhelper (>= 10.5.1),
+Build-Depends: appstream,
+               debhelper (>= 10.5.1),
                gettext,
                libgexiv2-dev,
                libgnome-desktop-3-dev,
