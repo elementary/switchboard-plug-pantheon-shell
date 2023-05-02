@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 22:22+0000\n"
-"PO-Revision-Date: 2022-08-15 22:41+0000\n"
+"PO-Revision-Date: 2023-05-03 17:06+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/pantheon-shell.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -29,7 +29,7 @@ msgstr "הגדרת המעגן, הפינות החמות והחלפת רקע שו�
 
 #: data/pantheon-shell.metainfo.xml.in:39
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary בע״מ"
 
 #: data/pantheon-shell.metainfo.xml.in:46
 #: data/pantheon-shell.metainfo.xml.in:73
@@ -40,7 +40,7 @@ msgstr "יכולות חדשות:"
 
 #: data/pantheon-shell.metainfo.xml.in:48
 msgid "Add an option to dim wallpapers when dark style is active"
-msgstr ""
+msgstr "נוספה אפשרות לעמעם את תמונות הרקע כאשר מצב כהה פעיל"
 
 #: data/pantheon-shell.metainfo.xml.in:50
 #: data/pantheon-shell.metainfo.xml.in:64
@@ -52,7 +52,7 @@ msgstr "עדכונים אחרים:"
 
 #: data/pantheon-shell.metainfo.xml.in:52
 msgid "Use a more vertical layout in the Text view"
-msgstr ""
+msgstr "נעשה שימוש בפריסה אנכית יותר בתצוגת טקסט"
 
 #: data/pantheon-shell.metainfo.xml.in:53
 #: data/pantheon-shell.metainfo.xml.in:66
