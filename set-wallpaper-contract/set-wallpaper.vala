@@ -91,14 +91,14 @@ namespace SetWallpaperContractor {
         // convert to text and remove fractions from values > 1 minute
         string text;
         if (delay_value < 60) {
-            text = ngettext ("%d second", "%d seconds", delay_value).printf (delay_value);
+            text = dngettext (Constants.GETTEXT_DOMAIN, "%d second", "%d seconds", delay_value).printf (delay_value);
         } else if (delay_value < 60 * 60) {
             int minutes = delay_value / 60;
-            text = ngettext ("%d minute", "%d minutes", minutes).printf (minutes);
+            text = dngettext (Constants.GETTEXT_DOMAIN, "%d minute", "%d minutes", minutes).printf (minutes);
             delay_value = minutes * 60;
         } else if (delay_value < 60 * 60 * 24) {
             int hours = delay_value / (60 * 60);
-            text = ngettext ("%d hour", "%d hours", hours).printf (hours);
+            text = dngettext (Constants.GETTEXT_DOMAIN, "%d hour", "%d hours", hours).printf (hours);
             delay_value = hours * (60 * 60);
         } else {
             text = _("1 day");
