@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-01 22:22+0000\n"
+"POT-Creation-Date: 2023-05-04 14:56+0000\n"
 "PO-Revision-Date: 2014-12-16 09:22+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -361,6 +361,10 @@ msgstr ""
 
 #: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
+msgstr ""
+
+#: src/Views/Wallpaper.vala:115
+msgid "Dim with dark style:"
 msgstr ""
 
 #: src/Views/Wallpaper.vala:126
