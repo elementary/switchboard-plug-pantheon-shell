@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-04 14:56+0000\n"
-"PO-Revision-Date: 2023-05-04 22:23+0000\n"
+"PO-Revision-Date: 2023-05-06 10:06+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -96,7 +96,7 @@ msgstr "Активные углы"
 
 #: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
-msgstr "Переместить окно на новый рабочий стол"
+msgstr "Перемещать окно на новый рабочий стол"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
