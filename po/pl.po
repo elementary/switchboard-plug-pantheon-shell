@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-04 14:56+0000\n"
-"PO-Revision-Date: 2023-04-15 14:59+0000\n"
+"PO-Revision-Date: 2023-05-09 17:06+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16.4\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-15 06:30+0000\n"
 
 #: src/Plug.vala:49
@@ -377,10 +377,8 @@ msgid "Import Photo…"
 msgstr "Importuj zdjęcie…"
 
 #: src/Views/Wallpaper.vala:115
-#, fuzzy
-#| msgid "Dark style"
 msgid "Dim with dark style:"
-msgstr "Tryb ciemny"
+msgstr "Przygaś w trybie ciemnym:"
 
 #: src/Views/Wallpaper.vala:126
 msgid "Centered"
