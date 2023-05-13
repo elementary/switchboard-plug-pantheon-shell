@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-04 14:56+0000\n"
-"PO-Revision-Date: 2023-03-12 14:25+0000\n"
+"PO-Revision-Date: 2023-05-14 06:06+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ka/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -21,7 +21,7 @@ msgstr "სამუშაო მაგიდა"
 
 #: src/Plug.vala:50
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "მოირგეთ დოკი, ცხელი კუთხეები და შეცვლეთ ფონის სურათი"
 
 #: src/Plug.vala:66 src/Plug.vala:122
 msgid "Wallpaper"
@@ -55,7 +55,7 @@ msgstr "ხატულას ზომა"
 
 #: src/Plug.vala:126
 msgid "Pressure reveal"
-msgstr ""
+msgstr "დაწოლა გამოსავლენად"
 
 #: src/Plug.vala:127
 msgid "Display"
@@ -63,7 +63,7 @@ msgstr "ჩვენება"
 
 #: src/Plug.vala:128
 msgid "Panel translucency"
-msgstr ""
+msgstr "პანელის გამჭვირვალობა"
 
 #: src/Plug.vala:130
 msgid "Dark style"
@@ -75,7 +75,7 @@ msgstr "აქცენტის ფერი"
 
 #: src/Plug.vala:132
 msgid "Reduce motion"
-msgstr ""
+msgstr "მოძრაობის შემცირება"
 
 #: src/Plug.vala:133
 msgid "Window animations"
@@ -87,7 +87,7 @@ msgstr "ზომა"
 
 #: src/Plug.vala:136 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
-msgstr ""
+msgstr "ტექსტი დისლექსიკებისთვის"
 
 #: src/Plug.vala:138
 msgid "Hot Corners"
@@ -95,7 +95,7 @@ msgstr "ცხელი კუთხეები"
 
 #: src/Plug.vala:139 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
-msgstr ""
+msgstr "ფანჯრების ახალ სამუშაო სივრცეში გადატანა"
 
 #.
 #. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
@@ -121,7 +121,7 @@ msgstr "სურათის ფონზე _დაყენება"
 
 #: src/Translations.vala:21
 msgid "Set selected image to be the new desktop background"
-msgstr ""
+msgstr "მონიშნული გამოსახულების დაყენება ახალი სამუშაო მაგიდის ფონზე"
 
 #: src/Views/Appearance.vala:68
 msgid "Style"
@@ -214,10 +214,12 @@ msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
+"ნაგულისხმებად გამოიყენება მთელ სისტემაში. აპებს ყოველთვის შეუძლიათ, საკუთარი "
+"აქცენტის ფერი გამოიყენონ."
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "მოძრაობის შემცირება"
 
 #: src/Views/Appearance.vala:391
 msgid ""
@@ -270,7 +272,7 @@ msgstr "დამალვა, როცა:"
 
 #: src/Views/Dock.vala:152
 msgid "Pressure reveal:"
-msgstr ""
+msgstr "გამოსაჩენად დააწექით:"
 
 #: src/Views/Dock.vala:155
 msgid "Panel"
@@ -340,19 +342,19 @@ msgstr "ყველა ფანჯრის ჩვენება"
 
 #: src/Views/Multitasking.vala:124
 msgid "Switch to previous workspace"
-msgstr ""
+msgstr "წინა სამუშაო სივრცეზე გადართვა"
 
 #: src/Views/Multitasking.vala:125
 msgid "Switch to next workspace"
-msgstr ""
+msgstr "შემდეგ სამუშაო სივრცეზე გადართვა"
 
 #: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
-msgstr ""
+msgstr "ახალ სამუშაო სივრცეზე გადართვა"
 
 #: src/Views/Multitasking.vala:127
 msgid "Execute custom command"
-msgstr ""
+msgstr "შესასრულებელი ბრძანების მითითება"
 
 #: src/Views/Text.vala:61
 msgid ""
@@ -365,10 +367,8 @@ msgid "Import Photo…"
 msgstr "სურათის შემოტანა…"
 
 #: src/Views/Wallpaper.vala:115
-#, fuzzy
-#| msgid "Dark style"
 msgid "Dim with dark style:"
-msgstr "მუქი სტილი"
+msgstr "დაბნელება ბნელი სტილით:"
 
 #: src/Views/Wallpaper.vala:126
 msgid "Centered"
@@ -435,11 +435,11 @@ msgstr "%1 დღე"
 
 #: set-wallpaper-contract/set-wallpaper.vala:108
 msgid "Show each photo for"
-msgstr ""
+msgstr "ფოტოს ჩვენების დრო"
 
 #: set-wallpaper-contract/set-wallpaper.vala:232
 msgid "Set As Desktop Slideshow"
-msgstr ""
+msgstr "სამუშაო მაგიდის სლაიდშოუს სახით დაყენება"
 
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
