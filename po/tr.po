@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-04 14:56+0000\n"
-"PO-Revision-Date: 2022-08-15 19:27+0000\n"
+"PO-Revision-Date: 2023-05-19 08:06+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:43+0000\n"
 
 #: src/Plug.vala:49
@@ -68,7 +68,7 @@ msgstr "Görünüm"
 
 #: src/Plug.vala:128
 msgid "Panel translucency"
-msgstr "Panel saydamlığı"
+msgstr "Saydam panel"
 
 #: src/Plug.vala:130
 msgid "Dark style"
@@ -80,7 +80,7 @@ msgstr "Vurgu rengi"
 
 #: src/Plug.vala:132
 msgid "Reduce motion"
-msgstr ""
+msgstr "Animasyonları azalt"
 
 #: src/Plug.vala:133
 msgid "Window animations"
@@ -226,12 +226,14 @@ msgstr ""
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "Animasyonları Azalt"
 
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
+"Pencere yöneticisinde ve diğer bazı arayüz ögelerinde animasyonları devre "
+"dışı bırakın."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -287,7 +289,7 @@ msgstr "Panel"
 
 #: src/Views/Dock.vala:159
 msgid "Panel translucency:"
-msgstr "Panel saydamlığı:"
+msgstr "Saydam panel:"
 
 #: src/Views/Dock.vala:250
 #, c-format
@@ -348,16 +350,12 @@ msgid "Show all windows"
 msgstr "Tüm pencereleri göster"
 
 #: src/Views/Multitasking.vala:124
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
-msgstr "Yeni bir çalışma alanına geç"
+msgstr "Önceki çalışma alanına geç"
 
 #: src/Views/Multitasking.vala:125
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
-msgstr "Yeni bir çalışma alanına geç"
+msgstr "Sonraki çalışma alanına geç"
 
 #: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
@@ -380,10 +378,8 @@ msgid "Import Photo…"
 msgstr "Fotoğrafı İçe Aktar…"
 
 #: src/Views/Wallpaper.vala:115
-#, fuzzy
-#| msgid "Dark style"
 msgid "Dim with dark style:"
-msgstr "Koyu renk tema"
+msgstr "Koyu renk tema kullanırken karart:"
 
 #: src/Views/Wallpaper.vala:126
 msgid "Centered"
