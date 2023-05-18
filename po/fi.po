@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-04 14:56+0000\n"
-"PO-Revision-Date: 2022-08-11 17:38+0000\n"
+"PO-Revision-Date: 2023-05-19 08:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
 #: src/Plug.vala:49
@@ -80,7 +80,7 @@ msgstr "Korostusväri"
 
 #: src/Plug.vala:132
 msgid "Reduce motion"
-msgstr ""
+msgstr "Vähennä liikettä"
 
 #: src/Plug.vala:133
 msgid "Window animations"
@@ -226,12 +226,14 @@ msgstr ""
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "Vähennä liikettä"
 
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
+"Poistaa animaatiot käytöstä ikkunanhallinnassa ja joissain muissa "
+"käyttöliittymän osissa."
 
 #: src/Views/Dock.vala:31
 msgid "Dock"
@@ -348,16 +350,12 @@ msgid "Show all windows"
 msgstr "Näytä kaikki ikkunat"
 
 #: src/Views/Multitasking.vala:124
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
-msgstr "Vaihda uuteen työtilaan"
+msgstr "Vaihda edelliseen työtilaan"
 
 #: src/Views/Multitasking.vala:125
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
-msgstr "Vaihda uuteen työtilaan"
+msgstr "Vaihda seuraavaan työtilaan"
 
 #: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
@@ -380,10 +378,8 @@ msgid "Import Photo…"
 msgstr "Tuo kuva…"
 
 #: src/Views/Wallpaper.vala:115
-#, fuzzy
-#| msgid "Dark style"
 msgid "Dim with dark style:"
-msgstr "Tumma tyyli"
+msgstr "Himmennä tummalla tyylillä:"
 
 #: src/Views/Wallpaper.vala:126
 msgid "Centered"
