@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-04 14:56+0000\n"
-"PO-Revision-Date: 2023-05-06 10:06+0000\n"
-"Last-Translator: Corentin Noël <tintou@noel.tf>\n"
+"PO-Revision-Date: 2023-05-23 19:07+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
 "Language: fr\n"
@@ -41,6 +41,8 @@ msgstr "Nouvelles fonctionnalités :"
 #: data/pantheon-shell.metainfo.xml.in:48
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr ""
+"Ajout d'une option pour atténuer le fond d'écran lorsque le thème sombre est "
+"activé"
 
 #: data/pantheon-shell.metainfo.xml.in:50
 #: data/pantheon-shell.metainfo.xml.in:64
