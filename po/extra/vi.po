@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-04 14:56+0000\n"
+"POT-Creation-Date: 2023-05-30 22:20+0000\n"
 "PO-Revision-Date: 2018-05-09 16:23-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -30,80 +30,76 @@ msgid "elementary, Inc."
 msgstr ""
 
 #: data/pantheon-shell.metainfo.xml.in:46
-#: data/pantheon-shell.metainfo.xml.in:73
-#: data/pantheon-shell.metainfo.xml.in:95
-#: data/pantheon-shell.metainfo.xml.in:109
-msgid "New features:"
-msgstr ""
-
-#: data/pantheon-shell.metainfo.xml.in:48
-msgid "Add an option to dim wallpapers when dark style is active"
-msgstr ""
-
-#: data/pantheon-shell.metainfo.xml.in:50
-#: data/pantheon-shell.metainfo.xml.in:64
-#: data/pantheon-shell.metainfo.xml.in:86
-#: data/pantheon-shell.metainfo.xml.in:100
-#: data/pantheon-shell.metainfo.xml.in:114
+#: data/pantheon-shell.metainfo.xml.in:60
+#: data/pantheon-shell.metainfo.xml.in:74
+#: data/pantheon-shell.metainfo.xml.in:96
+#: data/pantheon-shell.metainfo.xml.in:110
 msgid "Other updates:"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:52
-msgid "Use a more vertical layout in the Text view"
+#: data/pantheon-shell.metainfo.xml.in:48
+msgid ""
+"Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:53
-#: data/pantheon-shell.metainfo.xml.in:66
-#: data/pantheon-shell.metainfo.xml.in:88
-#: data/pantheon-shell.metainfo.xml.in:102
-#: data/pantheon-shell.metainfo.xml.in:116
+#: data/pantheon-shell.metainfo.xml.in:49
+#: data/pantheon-shell.metainfo.xml.in:63
+#: data/pantheon-shell.metainfo.xml.in:76
+#: data/pantheon-shell.metainfo.xml.in:98
+#: data/pantheon-shell.metainfo.xml.in:112
 msgid "Updated translations"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:75
+#: data/pantheon-shell.metainfo.xml.in:56
+#: data/pantheon-shell.metainfo.xml.in:83
+#: data/pantheon-shell.metainfo.xml.in:105
+msgid "New features:"
+msgstr ""
+
+#: data/pantheon-shell.metainfo.xml.in:58
+msgid "Add an option to dim wallpapers when dark style is active"
+msgstr ""
+
+#: data/pantheon-shell.metainfo.xml.in:62
+msgid "Use a more vertical layout in the Text view"
+msgstr ""
+
+#: data/pantheon-shell.metainfo.xml.in:85
 msgid "There is now an undo option after removing a wallpaper"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:76
+#: data/pantheon-shell.metainfo.xml.in:86
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:78
+#: data/pantheon-shell.metainfo.xml.in:88
 msgid "Fixes:"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:80
+#: data/pantheon-shell.metainfo.xml.in:90
 msgid "Wallpaper accent color follows system setting"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:81
+#: data/pantheon-shell.metainfo.xml.in:91
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:82
+#: data/pantheon-shell.metainfo.xml.in:92
 msgid "Wallpapers with the same name are distinguished"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:83
+#: data/pantheon-shell.metainfo.xml.in:93
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:84
+#: data/pantheon-shell.metainfo.xml.in:94
 msgid "Style dyslexia-friendly switch properly"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:97
+#: data/pantheon-shell.metainfo.xml.in:107
 msgid "Set custom Terminal commands for each hotcorner"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:98
+#: data/pantheon-shell.metainfo.xml.in:108
 msgid "Redesigned Appearance and Multitasking views"
-msgstr ""
-
-#: data/pantheon-shell.metainfo.xml.in:111
-msgid "Move Text settings to their own page"
-msgstr ""
-
-#: data/pantheon-shell.metainfo.xml.in:112
-msgid "More granular settings for text scale"
 msgstr ""
