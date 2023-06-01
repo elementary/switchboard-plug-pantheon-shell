@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 22:20+0000\n"
-"PO-Revision-Date: 2023-05-23 19:07+0000\n"
+"PO-Revision-Date: 2023-06-02 09:07+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -43,6 +43,8 @@ msgstr "Autres mises à jour :"
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
+"Correction de la traduction de la valeur du délai du diaporama et de "
+"l'étiquette « Atténuer avec le thème sombre  »"
 
 #: data/pantheon-shell.metainfo.xml.in:49
 #: data/pantheon-shell.metainfo.xml.in:63
