@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-30 22:20+0000\n"
-"PO-Revision-Date: 2023-05-03 17:06+0000\n"
+"PO-Revision-Date: 2023-06-02 09:07+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -42,7 +42,7 @@ msgstr "עדכונים אחרים:"
 #: data/pantheon-shell.metainfo.xml.in:48
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
-msgstr ""
+msgstr "תוקן תרגום ערך השהיית מצגת והתווית „עמעום עם סגנון כהה”"
 
 #: data/pantheon-shell.metainfo.xml.in:49
 #: data/pantheon-shell.metainfo.xml.in:63
