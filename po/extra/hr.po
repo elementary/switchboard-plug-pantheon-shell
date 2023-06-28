@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 21:50+0000\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
 "PO-Revision-Date: 2020-04-12 11:10+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -33,76 +33,80 @@ msgid "elementary, Inc."
 msgstr ""
 
 #: data/pantheon-shell.metainfo.xml.in:46
-#: data/pantheon-shell.metainfo.xml.in:60
-#: data/pantheon-shell.metainfo.xml.in:74
-#: data/pantheon-shell.metainfo.xml.in:96
-#: data/pantheon-shell.metainfo.xml.in:110
+#: data/pantheon-shell.metainfo.xml.in:65
+#: data/pantheon-shell.metainfo.xml.in:79
+#: data/pantheon-shell.metainfo.xml.in:101
+#: data/pantheon-shell.metainfo.xml.in:115
 msgid "Other updates:"
 msgstr ""
 
 #: data/pantheon-shell.metainfo.xml.in:48
+msgid "Redesign Dock &amp; Panel settings with helpful description text"
+msgstr ""
+
+#: data/pantheon-shell.metainfo.xml.in:49
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:49
-#: data/pantheon-shell.metainfo.xml.in:63
-#: data/pantheon-shell.metainfo.xml.in:76
-#: data/pantheon-shell.metainfo.xml.in:98
-#: data/pantheon-shell.metainfo.xml.in:112
+#: data/pantheon-shell.metainfo.xml.in:50
+#: data/pantheon-shell.metainfo.xml.in:68
+#: data/pantheon-shell.metainfo.xml.in:81
+#: data/pantheon-shell.metainfo.xml.in:103
+#: data/pantheon-shell.metainfo.xml.in:117
 msgid "Updated translations"
 msgstr "Nadopunjeni prijevodi"
 
-#: data/pantheon-shell.metainfo.xml.in:56
-#: data/pantheon-shell.metainfo.xml.in:83
-#: data/pantheon-shell.metainfo.xml.in:105
+#: data/pantheon-shell.metainfo.xml.in:61
+#: data/pantheon-shell.metainfo.xml.in:88
+#: data/pantheon-shell.metainfo.xml.in:110
 msgid "New features:"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:58
+#: data/pantheon-shell.metainfo.xml.in:63
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:62
+#: data/pantheon-shell.metainfo.xml.in:67
 msgid "Use a more vertical layout in the Text view"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:85
+#: data/pantheon-shell.metainfo.xml.in:90
 msgid "There is now an undo option after removing a wallpaper"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:86
+#: data/pantheon-shell.metainfo.xml.in:91
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:88
+#: data/pantheon-shell.metainfo.xml.in:93
 msgid "Fixes:"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:90
+#: data/pantheon-shell.metainfo.xml.in:95
 msgid "Wallpaper accent color follows system setting"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:91
+#: data/pantheon-shell.metainfo.xml.in:96
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:92
+#: data/pantheon-shell.metainfo.xml.in:97
 msgid "Wallpapers with the same name are distinguished"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:93
+#: data/pantheon-shell.metainfo.xml.in:98
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:94
+#: data/pantheon-shell.metainfo.xml.in:99
 msgid "Style dyslexia-friendly switch properly"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:107
+#: data/pantheon-shell.metainfo.xml.in:112
 msgid "Set custom Terminal commands for each hotcorner"
 msgstr ""
 
-#: data/pantheon-shell.metainfo.xml.in:108
+#: data/pantheon-shell.metainfo.xml.in:113
 msgid "Redesigned Appearance and Multitasking views"
 msgstr ""
