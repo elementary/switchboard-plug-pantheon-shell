@@ -164,6 +164,34 @@ public class PantheonShell.Dock : Gtk.Box {
             halign = Gtk.Align.START
         };
 
+        var indicators_header = new Granite.HeaderLabel (_("Show in Panel"));
+
+        var indicators_box = new Gtk.Box (VERTICAL, 6);
+        indicators_box.add (indicators_header);
+
+        var a11y_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.desktop.wingpanel.a11y", true);
+        if (a11y_schema != null && a11y_schema.has_key ("show-indicator")) {
+            var a11y_check = new Gtk.CheckButton.with_label (_("Accessibility"));
+
+            indicators_box.add (a11y_check);
+
+            var a11y_settings = new Settings ("io.elementary.desktop.wingpanel.a11y");
+            a11y_settings.bind ("show-indicator", a11y_check, "active", DEFAULT);
+        }
+
+        var keyboard_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true);
+        if (keyboard_schema != null && keyboard_schema.has_key ("capslock")) {
+            var caps_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪"));
+            var num_check = new Gtk.CheckButton.with_label (_("Num Lock"));
+
+            indicators_box.add (caps_check);
+            indicators_box.add (num_check);
+
+            var keyboard_settings = new Settings ("io.elementary.wingpanel.keyboard");
+            keyboard_settings.bind ("capslock", caps_check, "active", DEFAULT);
+            keyboard_settings.bind ("numlock", num_check, "active", DEFAULT);
+        }
+
         var grid = new Gtk.Grid () {
             column_spacing = 12,
             row_spacing = 12,
@@ -186,6 +214,11 @@ public class PantheonShell.Dock : Gtk.Box {
         grid.attach (panel_header, 0, 6, 3);
         grid.attach (translucency_label, 0, 7);
         grid.attach (translucency_switch, 1, 7);
+
+        // Only add this box if it has more than the header in it
+        if (indicators_box.get_children ().length () > 1) {
+            grid.attach (indicators_box, 0, 8);
+        }
 
         var clamp = new Hdy.Clamp ();
         clamp.add (grid);
