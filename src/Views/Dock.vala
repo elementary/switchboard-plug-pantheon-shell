@@ -47,25 +47,41 @@ public class PantheonShell.Dock : Gtk.Box {
 
         var hide_header = new Granite.HeaderLabel (_("Hide Dock"));
 
-        var hide_mode = new Gtk.ComboBoxText () {
-            hexpand = true
-        };
-        hide_mode.append_text (_("When the focused window is maximized"));
-        hide_mode.append_text (_("When the focused window overlaps the dock"));
-        hide_mode.append_text (_("When any window overlaps the dock"));
-        hide_mode.append_text (_("When not being used"));
+        var never_radio = new Gtk.RadioButton.with_label (
+            null,
+            _("Never")
+        );
 
-        var hide_switch = new Gtk.Switch () {
-            halign = END,
-            valign = CENTER
-        };
+        var dodge_maximized_radio = new Gtk.RadioButton.with_label_from_widget (
+            never_radio,
+            _("When the focused window is maximized")
+        );
 
-        var hide_grid = new Gtk.Grid () {
-            column_spacing = 12
-        };
-        hide_grid.attach (hide_header, 0, 0);
-        hide_grid.attach (hide_mode, 0, 1);
-        hide_grid.attach (hide_switch, 1, 0, 1, 2);
+        var intelligent_radio = new Gtk.RadioButton.with_label_from_widget (
+            never_radio,
+            _("When the focused window overlaps the dock")
+        );
+
+        var window_dodge_radio = new Gtk.RadioButton.with_label_from_widget (
+            never_radio,
+            _("When any window overlaps the dock")
+        );
+
+        var auto_radio = new Gtk.RadioButton.with_label_from_widget (
+            never_radio,
+            _("When not being used")
+        );
+
+        var hide_radio_box = new Gtk.Box (VERTICAL, 6);
+        hide_radio_box.add (never_radio);
+        hide_radio_box.add (dodge_maximized_radio);
+        hide_radio_box.add (intelligent_radio);
+        hide_radio_box.add (window_dodge_radio);
+        hide_radio_box.add (auto_radio);
+
+        var hide_box = new Gtk.Box (VERTICAL, 0);
+        hide_box.add (hide_header);
+        hide_box.add (hide_radio_box);
 
         display_combo = new Gtk.ComboBoxText () {
             hexpand = true
@@ -133,7 +149,7 @@ public class PantheonShell.Dock : Gtk.Box {
             margin_bottom = 12
         };
         box.add (icon_box);
-        box.add (hide_grid);
+        box.add (hide_box);
         box.add (pressure_grid);
         box.add (display_grid);
         box.add (translucency_grid);
@@ -182,36 +198,57 @@ public class PantheonShell.Dock : Gtk.Box {
             dock_preferences.IconSize = 64;
         });
 
-        Plank.HideType[] hide_mode_ids = {
-            Plank.HideType.DODGE_MAXIMIZED,
-            Plank.HideType.INTELLIGENT,
-            Plank.HideType.WINDOW_DODGE,
-            Plank.HideType.AUTO
-        };
-
-        var hide_none = (dock_preferences.HideMode != Plank.HideType.NONE);
-        hide_switch.active = hide_none;
-        if (hide_none) {
-            for (int i = 0; i < hide_mode_ids.length; i++) {
-                if (hide_mode_ids[i] == dock_preferences.HideMode)
-                    hide_mode.active = i;
-            }
-        } else {
-            hide_mode.sensitive = false;
+        pressure_grid.sensitive = dock_preferences.HideMode != NONE;
+        switch (dock_preferences.HideMode) {
+            case Plank.HideType.NONE:
+                never_radio.active = true;
+                break;
+            case Plank.HideType.DODGE_MAXIMIZED:
+                dodge_maximized_radio.active = true;
+                break;
+            case Plank.HideType.INTELLIGENT:
+                intelligent_radio.active = true;
+                break;
+            case Plank.HideType.WINDOW_DODGE:
+                window_dodge_radio.active = true;
+                break;
+            case Plank.HideType.AUTO:
+                auto_radio.active = true;
+                break;
         }
 
-        hide_mode.changed.connect (() => {
-            dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
+        never_radio.toggled.connect (() => {
+            pressure_grid.sensitive = false;
+            if (never_radio.active) {
+                dock_preferences.HideMode = NONE;
+            }
         });
 
-        hide_switch.bind_property ("active", pressure_grid, "sensitive", SYNC_CREATE);
-        hide_switch.bind_property ("active", hide_mode, "sensitive", DEFAULT);
+        dodge_maximized_radio.toggled.connect (() => {
+            pressure_grid.sensitive = true;
+            if (dodge_maximized_radio.active) {
+                dock_preferences.HideMode = DODGE_MAXIMIZED;
+            }
+        });
 
-        hide_switch.notify["active"].connect (() => {
-            if (hide_switch.active) {
-                dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
-            } else {
-                dock_preferences.HideMode = Plank.HideType.NONE;
+        intelligent_radio.toggled.connect (() => {
+            pressure_grid.sensitive = true;
+            if (intelligent_radio.active) {
+                dock_preferences.HideMode = INTELLIGENT;
+            }
+        });
+
+        window_dodge_radio.toggled.connect (() => {
+            pressure_grid.sensitive = true;
+            if (window_dodge_radio.active) {
+                dock_preferences.HideMode = WINDOW_DODGE;
+            }
+        });
+
+        auto_radio.toggled.connect (() => {
+            pressure_grid.sensitive = true;
+            if (auto_radio.active) {
+                dock_preferences.HideMode = AUTO;
             }
         });
 
