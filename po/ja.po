@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 21:50+0000\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
 "PO-Revision-Date: 2023-06-28 21:58+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -127,7 +127,7 @@ msgstr "選択された画像を新しいデスクトップの背景として設
 msgid "Style"
 msgstr "スタイル"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr "デフォルト"
 
@@ -230,84 +230,106 @@ msgstr ""
 "ウィンドウマネージャーなどのインターフェース要素におけるアニメーションを無効"
 "化します。"
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
-msgstr "ドック"
+#: src/Views/Dock.vala:15
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "アイコンサイズ"
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr "小"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr "大"
 
-#: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
+#: src/Views/Dock.vala:48
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "隠す方法"
+
+#: src/Views/Dock.vala:52
+msgid "Never"
+msgstr ""
+
+#: src/Views/Dock.vala:57
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
 msgstr "フォーカスされたウィンドウが最大化されたとき"
 
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
+#: src/Views/Dock.vala:62
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
 msgstr "フォーカスされたウィンドウが重なったとき"
 
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
+#: src/Views/Dock.vala:67
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
 msgstr "いずれかのウィンドウが重なったとき"
 
-#: src/Views/Dock.vala:75
-msgid "Not being used"
+#: src/Views/Dock.vala:72
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
 msgstr "使われていないとき"
 
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
+#: src/Views/Dock.vala:90
+#, fuzzy
+#| msgid "Primary display:"
+msgid "Dock on Primary Display"
 msgstr "プライマリーディスプレイ:"
 
-#: src/Views/Dock.vala:115
-msgid "Display:"
-msgstr "ディスプレイ:"
+#: src/Views/Dock.vala:104
+#, fuzzy
+#| msgid "Pressure reveal"
+msgid "Dock Pressure Reveal"
+msgstr "押し込んで表示"
+
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
+msgstr ""
+
+#: src/Views/Dock.vala:125
+#, fuzzy
+#| msgid "Panel translucency"
+msgid "Panel Translucency"
+msgstr "パネルを透過"
+
+#: src/Views/Dock.vala:127
+#, fuzzy
+#| msgid "Automatic based on wallpaper"
+msgid "Automatically transparent or opaque based on the wallpaper"
+msgstr "壁紙に基づいて自動的に設定"
 
 #: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr "アイコンサイズ:"
-
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr "隠す場合:"
-
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
-msgstr "押し込んで表示:"
-
-#: src/Views/Dock.vala:155
-msgid "Panel"
-msgstr "パネル"
-
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
-msgstr "パネルを透過:"
-
-#: src/Views/Dock.vala:167
 msgid "Show in Panel"
 msgstr "パネルに表示"
 
-#: src/Views/Dock.vala:174
+#: src/Views/Dock.vala:153
 msgid "Accessibility"
 msgstr "アクセシビリティー"
 
-#: src/Views/Dock.vala:184
+#: src/Views/Dock.vala:163
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:185
+#: src/Views/Dock.vala:164
 msgid "Num Lock"
 msgstr "Num Lock"
 
-#: src/Views/Dock.vala:283
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr "モニター %d"
 
-#: src/Views/Dock.vala:288
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr "ディスプレイ %d"
@@ -466,6 +488,27 @@ msgstr "デスクトップスライドショーとして設定"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
+
+#~ msgid "Dock"
+#~ msgstr "ドック"
+
+#~ msgid "Display:"
+#~ msgstr "ディスプレイ:"
+
+#~ msgid "Icon size:"
+#~ msgstr "アイコンサイズ:"
+
+#~ msgid "Hide when:"
+#~ msgstr "隠す場合:"
+
+#~ msgid "Pressure reveal:"
+#~ msgstr "押し込んで表示:"
+
+#~ msgid "Panel"
+#~ msgstr "パネル"
+
+#~ msgid "Panel translucency:"
+#~ msgstr "パネルを透過:"
 
 #~ msgid "Window animations:"
 #~ msgstr "ウィンドウアニメーション:"

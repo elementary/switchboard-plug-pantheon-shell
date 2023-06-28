@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 21:50+0000\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -137,7 +137,7 @@ msgstr "नवीन डेस्कटॉप पार्श्वभूमी 
 msgid "Style"
 msgstr "शैली:"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr "डिफॉल्ट"
 
@@ -236,84 +236,104 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
-msgstr "डॉक"
+#: src/Views/Dock.vala:15
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "आयकॉन आकार"
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr "लहान"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr "मोठा"
 
-#: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
-msgstr "फोकस केलेली विंडो मोठी केली आहे"
+#: src/Views/Dock.vala:48
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "लपवा मोड"
 
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
-msgstr "फोकस केलेली विंडो डॉकला आच्छादित करते"
-
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
-msgstr "कोणतीही विंडो जी डॉक आच्छादित करते"
-
-#: src/Views/Dock.vala:75
-msgid "Not being used"
-msgstr "वापरात नाही"
-
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
-msgstr "प्राथमिक प्रदर्शन :"
-
-#: src/Views/Dock.vala:115
-msgid "Display:"
-msgstr "प्रदर्शन :"
-
-#: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr "आयकॉन आकार :"
-
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr "लपवा जेंव्हा:"
-
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
-msgstr "दबावाने प्रकट करा :"
-
-#: src/Views/Dock.vala:155
-msgid "Panel"
+#: src/Views/Dock.vala:52
+msgid "Never"
 msgstr ""
 
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
-msgstr "पॅनेल पारंपारिकता:"
+#: src/Views/Dock.vala:57
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
+msgstr "फोकस केलेली विंडो मोठी केली आहे"
 
-#: src/Views/Dock.vala:167
+#: src/Views/Dock.vala:62
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
+msgstr "फोकस केलेली विंडो डॉकला आच्छादित करते"
+
+#: src/Views/Dock.vala:67
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
+msgstr "कोणतीही विंडो जी डॉक आच्छादित करते"
+
+#: src/Views/Dock.vala:72
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
+msgstr "वापरात नाही"
+
+#: src/Views/Dock.vala:90
+#, fuzzy
+#| msgid "Primary display:"
+msgid "Dock on Primary Display"
+msgstr "प्राथमिक प्रदर्शन :"
+
+#: src/Views/Dock.vala:104
+#, fuzzy
+#| msgid "Pressure reveal"
+msgid "Dock Pressure Reveal"
+msgstr "दबावाने प्रकट करा"
+
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
+msgstr ""
+
+#: src/Views/Dock.vala:125
+#, fuzzy
+#| msgid "Panel translucency"
+msgid "Panel Translucency"
+msgstr "पॅनेल पारंपारिकता"
+
+#: src/Views/Dock.vala:127
+msgid "Automatically transparent or opaque based on the wallpaper"
+msgstr ""
+
+#: src/Views/Dock.vala:146
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:174
+#: src/Views/Dock.vala:153
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:184
+#: src/Views/Dock.vala:163
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:185
+#: src/Views/Dock.vala:164
 msgid "Num Lock"
 msgstr ""
 
-#: src/Views/Dock.vala:283
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr "मॉनिटर %d"
 
-#: src/Views/Dock.vala:288
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr "प्रदर्शन  %d"
@@ -490,6 +510,24 @@ msgstr "डेस्कटॉप स्लाइडशो म्हणून स
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "स्लाइडशो तयार करा"
+
+#~ msgid "Dock"
+#~ msgstr "डॉक"
+
+#~ msgid "Display:"
+#~ msgstr "प्रदर्शन :"
+
+#~ msgid "Icon size:"
+#~ msgstr "आयकॉन आकार :"
+
+#~ msgid "Hide when:"
+#~ msgstr "लपवा जेंव्हा:"
+
+#~ msgid "Pressure reveal:"
+#~ msgstr "दबावाने प्रकट करा :"
+
+#~ msgid "Panel translucency:"
+#~ msgstr "पॅनेल पारंपारिकता:"
 
 #~ msgid "Window animations:"
 #~ msgstr "विंडो अॅनिमेशन:"

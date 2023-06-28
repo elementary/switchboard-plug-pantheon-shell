@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 21:50+0000\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bengali <https://l10n.elementary.io/projects/switchboard/"
@@ -127,7 +127,7 @@ msgstr ""
 msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr ""
 
@@ -224,84 +224,86 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
+#: src/Views/Dock.vala:15
+msgid "Dock Icon Size"
 msgstr ""
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr ""
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr ""
 
+#: src/Views/Dock.vala:48
+msgid "Hide Dock"
+msgstr ""
+
+#: src/Views/Dock.vala:52
+msgid "Never"
+msgstr ""
+
+#: src/Views/Dock.vala:57
+msgid "When the focused window is maximized"
+msgstr ""
+
+#: src/Views/Dock.vala:62
+msgid "When the focused window overlaps the dock"
+msgstr ""
+
+#: src/Views/Dock.vala:67
+msgid "When any window overlaps the dock"
+msgstr ""
+
 #: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
+msgid "When not being used"
 msgstr ""
 
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
+#: src/Views/Dock.vala:90
+msgid "Dock on Primary Display"
 msgstr ""
 
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
+#: src/Views/Dock.vala:104
+msgid "Dock Pressure Reveal"
 msgstr ""
 
-#: src/Views/Dock.vala:75
-msgid "Not being used"
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
 msgstr ""
 
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
+#: src/Views/Dock.vala:125
+msgid "Panel Translucency"
 msgstr ""
 
-#: src/Views/Dock.vala:115
-msgid "Display:"
+#: src/Views/Dock.vala:127
+msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
 #: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr ""
-
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr ""
-
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
-msgstr ""
-
-#: src/Views/Dock.vala:155
-msgid "Panel"
-msgstr ""
-
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
-msgstr ""
-
-#: src/Views/Dock.vala:167
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:174
+#: src/Views/Dock.vala:153
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:184
+#: src/Views/Dock.vala:163
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:185
+#: src/Views/Dock.vala:164
 msgid "Num Lock"
 msgstr ""
 
-#: src/Views/Dock.vala:283
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr ""
 
-#: src/Views/Dock.vala:288
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr ""

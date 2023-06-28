@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 21:50+0000\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
 "PO-Revision-Date: 2023-06-28 23:45+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-25 05:57+0000\n"
 
@@ -128,7 +128,7 @@ msgstr "Назначить выбранное изображение новым 
 msgid "Style"
 msgstr "Стиль"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr "По умолчанию"
 
@@ -230,84 +230,106 @@ msgid ""
 msgstr ""
 "Отключить анимации менеджера окон и некоторых других элементов интерфейса."
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
-msgstr "Док"
+#: src/Views/Dock.vala:15
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "Размер значков"
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr "Маленький"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr "Большой"
 
-#: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
+#: src/Views/Dock.vala:48
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "Режим скрытия"
+
+#: src/Views/Dock.vala:52
+msgid "Never"
+msgstr ""
+
+#: src/Views/Dock.vala:57
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
 msgstr "Активное окно развёрнуто"
 
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
+#: src/Views/Dock.vala:62
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
 msgstr "Активное окно перекрывает док-панель"
 
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
+#: src/Views/Dock.vala:67
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
 msgstr "Любое окно перекрывает док-панель"
 
-#: src/Views/Dock.vala:75
-msgid "Not being used"
+#: src/Views/Dock.vala:72
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
 msgstr "Не используется"
 
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
+#: src/Views/Dock.vala:90
+#, fuzzy
+#| msgid "Primary display:"
+msgid "Dock on Primary Display"
 msgstr "Главный экран:"
 
-#: src/Views/Dock.vala:115
-msgid "Display:"
-msgstr "Экран:"
+#: src/Views/Dock.vala:104
+#, fuzzy
+#| msgid "Pressure reveal"
+msgid "Dock Pressure Reveal"
+msgstr "Надавить для раскрытия"
+
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
+msgstr ""
+
+#: src/Views/Dock.vala:125
+#, fuzzy
+#| msgid "Panel translucency"
+msgid "Panel Translucency"
+msgstr "Прозрачность панели"
+
+#: src/Views/Dock.vala:127
+#, fuzzy
+#| msgid "Automatic based on wallpaper"
+msgid "Automatically transparent or opaque based on the wallpaper"
+msgstr "Автоматическая на основе обоев"
 
 #: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr "Размер значков:"
-
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr "Скрывать, если:"
-
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
-msgstr "Надавить чтоб раскрыть:"
-
-#: src/Views/Dock.vala:155
-msgid "Panel"
-msgstr "Панель"
-
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
-msgstr "Прозрачная панель:"
-
-#: src/Views/Dock.vala:167
 msgid "Show in Panel"
 msgstr "Показать на панели"
 
-#: src/Views/Dock.vala:174
+#: src/Views/Dock.vala:153
 msgid "Accessibility"
 msgstr "Универсальный доступ"
 
-#: src/Views/Dock.vala:184
+#: src/Views/Dock.vala:163
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:185
+#: src/Views/Dock.vala:164
 msgid "Num Lock"
 msgstr "Num Lock"
 
-#: src/Views/Dock.vala:283
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr "Монитор %d"
 
-#: src/Views/Dock.vala:288
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr "Экран %d"
@@ -472,6 +494,27 @@ msgstr "Установить как слайд-шоу на рабочем сто
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Создать слайдшоу"
+
+#~ msgid "Dock"
+#~ msgstr "Док"
+
+#~ msgid "Display:"
+#~ msgstr "Экран:"
+
+#~ msgid "Icon size:"
+#~ msgstr "Размер значков:"
+
+#~ msgid "Hide when:"
+#~ msgstr "Скрывать, если:"
+
+#~ msgid "Pressure reveal:"
+#~ msgstr "Надавить чтоб раскрыть:"
+
+#~ msgid "Panel"
+#~ msgstr "Панель"
+
+#~ msgid "Panel translucency:"
+#~ msgstr "Прозрачная панель:"
 
 #~ msgid "Window animations:"
 #~ msgstr "Анимации окон:"

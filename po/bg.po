@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 21:50+0000\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -137,7 +137,7 @@ msgstr "Задава избраното изображение като фон �
 msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr "По подразбиране"
 
@@ -234,84 +234,94 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
-msgstr "Лента"
+#: src/Views/Dock.vala:15
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "Размер на иконите"
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr ""
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr "Голям"
 
+#: src/Views/Dock.vala:48
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "Режим на скриване"
+
+#: src/Views/Dock.vala:52
+msgid "Never"
+msgstr ""
+
+#: src/Views/Dock.vala:57
+msgid "When the focused window is maximized"
+msgstr ""
+
+#: src/Views/Dock.vala:62
+msgid "When the focused window overlaps the dock"
+msgstr ""
+
+#: src/Views/Dock.vala:67
+msgid "When any window overlaps the dock"
+msgstr ""
+
 #: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
-msgstr ""
-
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
-msgstr ""
-
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
-msgstr ""
-
-#: src/Views/Dock.vala:75
-msgid "Not being used"
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
 msgstr "не се използва"
 
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
+#: src/Views/Dock.vala:90
+#, fuzzy
+#| msgid "Primary display:"
+msgid "Dock on Primary Display"
 msgstr "Основен екран:"
 
-#: src/Views/Dock.vala:115
-msgid "Display:"
-msgstr "Екран:"
+#: src/Views/Dock.vala:104
+msgid "Dock Pressure Reveal"
+msgstr ""
+
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
+msgstr ""
+
+#: src/Views/Dock.vala:125
+msgid "Panel Translucency"
+msgstr ""
+
+#: src/Views/Dock.vala:127
+msgid "Automatically transparent or opaque based on the wallpaper"
+msgstr ""
 
 #: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr "Размер на иконките:"
-
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr "Да се скрива, когато:"
-
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
-msgstr ""
-
-#: src/Views/Dock.vala:155
-msgid "Panel"
-msgstr ""
-
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
-msgstr ""
-
-#: src/Views/Dock.vala:167
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:174
+#: src/Views/Dock.vala:153
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:184
+#: src/Views/Dock.vala:163
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:185
+#: src/Views/Dock.vala:164
 msgid "Num Lock"
 msgstr ""
 
-#: src/Views/Dock.vala:283
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr "Монитор %d"
 
-#: src/Views/Dock.vala:288
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr "Екран %d"
@@ -477,6 +487,18 @@ msgstr "Задаване като изреждане на работния пл�
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Създаване на изреждане"
+
+#~ msgid "Dock"
+#~ msgstr "Лента"
+
+#~ msgid "Display:"
+#~ msgstr "Екран:"
+
+#~ msgid "Icon size:"
+#~ msgstr "Размер на иконките:"
+
+#~ msgid "Hide when:"
+#~ msgstr "Да се скрива, когато:"
 
 #~ msgid "Custom command:"
 #~ msgstr "Команда по избор:"
