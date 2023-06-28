@@ -94,6 +94,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
     public override void hidden () {
         wallpaper_view.cancel_thumbnail_generation ();
+        wallpaper_view.confirm_removal ();
     }
 
     public override void search_callback (string location) {
