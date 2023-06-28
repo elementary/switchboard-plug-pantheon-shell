@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 21:50+0000\n"
-"PO-Revision-Date: 2023-05-19 08:06+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2023-06-28 21:58+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
 "Language: fi\n"
@@ -292,14 +292,12 @@ msgid "Panel translucency:"
 msgstr "Paneelin läpinäkyvyys:"
 
 #: src/Views/Dock.vala:167
-#, fuzzy
-#| msgid "Dock & Panel"
 msgid "Show in Panel"
-msgstr "Telakka ja paneeli"
+msgstr "Näytä paneelissa"
 
 #: src/Views/Dock.vala:174
 msgid "Accessibility"
-msgstr ""
+msgstr "Esteettömyys"
 
 #: src/Views/Dock.vala:184
 msgid "Caps Lock ⇪"
