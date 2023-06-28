@@ -164,6 +164,20 @@ public class PantheonShell.Dock : Gtk.Box {
             halign = Gtk.Align.START
         };
 
+        var indicators_header = new Granite.HeaderLabel (_("Show in Panel"));
+
+        var a11y_check = new Gtk.CheckButton.with_label (_("Accessibility"));
+
+        var caps_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪"));
+
+        var num_check = new Gtk.CheckButton.with_label (_("Num Lock"));
+
+        var indicators_box = new Gtk.Box (VERTICAL, 6);
+        indicators_box.add (indicators_header);
+        indicators_box.add (a11y_check);
+        indicators_box.add (caps_check);
+        indicators_box.add (num_check);
+
         var grid = new Gtk.Grid () {
             column_spacing = 12,
             row_spacing = 12,
@@ -186,6 +200,7 @@ public class PantheonShell.Dock : Gtk.Box {
         grid.attach (panel_header, 0, 6, 3);
         grid.attach (translucency_label, 0, 7);
         grid.attach (translucency_switch, 1, 7);
+        grid.attach (indicators_box, 0, 8);
 
         var clamp = new Hdy.Clamp ();
         clamp.add (grid);
@@ -223,6 +238,13 @@ public class PantheonShell.Dock : Gtk.Box {
 
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
+
+        var a11y_settings = new Settings ("io.elementary.desktop.wingpanel.a11y");
+        a11y_settings.bind ("show-indicator", a11y_check, "active", DEFAULT);
+
+        var keyboard_settings = new Settings ("io.elementary.wingpanel.keyboard");
+        keyboard_settings.bind ("capslock", caps_check, "active", DEFAULT);
+        keyboard_settings.bind ("numlock", num_check, "active", DEFAULT);
     }
 
     private void check_for_screens () {
