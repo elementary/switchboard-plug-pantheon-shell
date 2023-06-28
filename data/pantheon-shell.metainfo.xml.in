@@ -45,6 +45,7 @@
       <description>
         <p>Other updates:</p>
         <ul>
+          <li>Redesign Dock &amp; Panel settings with helpful description text</li>
           <li>Fix translation of slideshow delay value and "Dim with dark style" label</li>
           <li>Updated translations</li>
         </ul>
