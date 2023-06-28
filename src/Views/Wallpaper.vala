@@ -669,7 +669,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         wallpaper_for_removal = wallpaper;
     }
 
-    private void confirm_removal () {
+    public void confirm_removal () {
         var wallpaper_file = File.new_for_uri (wallpaper_for_removal.uri);
         wallpaper_file.trash_async.begin ();
         wallpaper_for_removal.destroy ();
