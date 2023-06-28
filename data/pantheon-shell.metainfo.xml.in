@@ -49,6 +49,10 @@
           <li>Updated translations</li>
         </ul>
       </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-pantheon-shell/issues/232">Operating system locked up when dock behavior drop down was open and password prompt opened</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-pantheon-shell/issues/256">Dock: "Hide when" empty when the switch is disabled</issue>
+      </issues>
     </release>
 
     <release version="6.4.0" date="2023-05-01" urgency="medium">
