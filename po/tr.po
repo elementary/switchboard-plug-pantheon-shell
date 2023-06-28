@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 22:20+0000\n"
-"PO-Revision-Date: 2023-05-19 08:06+0000\n"
-"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"POT-Creation-Date: 2023-06-28 21:50+0000\n"
+"PO-Revision-Date: 2023-06-28 21:58+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/tr/>\n"
 "Language: tr\n"
@@ -28,77 +28,77 @@ msgstr "Masaüstü"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Dock'u ve etkin köşeleri yapılandırın, duvar kağıdını değiştirin"
 
-#: src/Plug.vala:66 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123
 msgid "Wallpaper"
 msgstr "Duvar Kağıdı"
 
-#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
-#: src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:133 src/Plug.vala:134
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Text"
 msgstr "Metin"
 
-#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
-#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 msgid "Dock & Panel"
 msgstr "Dock ve Panel"
 
-#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Multitasking"
 msgstr "Çoklu Görev"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Hide Mode"
 msgstr "Gizleme Modu"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:126
 msgid "Icon Size"
 msgstr "Simge Boyutu"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:127
 msgid "Pressure reveal"
 msgstr "Hassasiyeti azalt"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:128
 msgid "Display"
 msgstr "Görünüm"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:129
 msgid "Panel translucency"
 msgstr "Saydam panel"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:131
 msgid "Dark style"
 msgstr "Koyu renk tema"
 
-#: src/Plug.vala:131
+#: src/Plug.vala:132
 msgid "Accent color"
 msgstr "Vurgu rengi"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:133
 msgid "Reduce motion"
 msgstr "Animasyonları azalt"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "Pencere animasyonları"
 
-#: src/Plug.vala:135 src/Views/Text.vala:34
+#: src/Plug.vala:136 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Boyut"
 
-#: src/Plug.vala:136 src/Views/Text.vala:54
+#: src/Plug.vala:137 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Disleksi dostu"
 
-#: src/Plug.vala:138
+#: src/Plug.vala:139
 msgid "Hot Corners"
 msgstr "Etkin Köşeler"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Pencereleri yeni bir çalışma alanına taşı"
 
@@ -291,12 +291,28 @@ msgstr "Panel"
 msgid "Panel translucency:"
 msgstr "Saydam panel:"
 
-#: src/Views/Dock.vala:250
+#: src/Views/Dock.vala:167
+msgid "Show in Panel"
+msgstr "Panel'de göster"
+
+#: src/Views/Dock.vala:174
+msgid "Accessibility"
+msgstr "Erişilebilirlik"
+
+#: src/Views/Dock.vala:184
+msgid "Caps Lock ⇪"
+msgstr ""
+
+#: src/Views/Dock.vala:185
+msgid "Num Lock"
+msgstr ""
+
+#: src/Views/Dock.vala:283
 #, c-format
 msgid "Monitor %d"
 msgstr "Ekran %d"
 
-#: src/Views/Dock.vala:255
+#: src/Views/Dock.vala:288
 #, c-format
 msgid "Display %d"
 msgstr "Görüntü %d"

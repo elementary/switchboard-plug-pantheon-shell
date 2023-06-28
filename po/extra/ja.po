@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 22:20+0000\n"
+"POT-Creation-Date: 2023-06-28 21:50+0000\n"
 "PO-Revision-Date: 2023-06-02 09:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -42,8 +42,9 @@ msgstr "そのほかのアップデート:"
 #: data/pantheon-shell.metainfo.xml.in:48
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
-msgstr "スライドショーの表示時間と \"ダークスタイル時に壁紙を暗くする\" "
-"ラベルがシステム言語で表示されない不具合を修正"
+msgstr ""
+"スライドショーの表示時間と \"ダークスタイル時に壁紙を暗くする\" ラベルがシス"
+"テム言語で表示されない不具合を修正"
 
 #: data/pantheon-shell.metainfo.xml.in:49
 #: data/pantheon-shell.metainfo.xml.in:63

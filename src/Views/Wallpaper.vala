@@ -655,7 +655,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         });
 
         toast.notify["child-revealed"].connect (() => {
-            if (!toast.child_revealed && wallpaper_for_removal != null) {
+            if (!toast.child_revealed) {
                 confirm_removal ();
             }
         });
@@ -669,7 +669,11 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         wallpaper_for_removal = wallpaper;
     }
 
-    private void confirm_removal () {
+    public void confirm_removal () {
+        if (wallpaper_for_removal == null) {
+            return;
+        }
+
         var wallpaper_file = File.new_for_uri (wallpaper_for_removal.uri);
         wallpaper_file.trash_async.begin ();
         wallpaper_for_removal.destroy ();

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 22:20+0000\n"
+"POT-Creation-Date: 2023-06-28 21:50+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bengali <https://l10n.elementary.io/projects/switchboard/"
@@ -23,77 +23,77 @@ msgstr ""
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 
-#: src/Plug.vala:66 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123
 msgid "Wallpaper"
 msgstr ""
 
-#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
-#: src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:133 src/Plug.vala:134
 msgid "Appearance"
 msgstr ""
 
-#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Text"
 msgstr ""
 
-#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
-#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Multitasking"
 msgstr ""
 
-#: src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Hide Mode"
 msgstr ""
 
-#: src/Plug.vala:125
+#: src/Plug.vala:126
 msgid "Icon Size"
 msgstr ""
 
-#: src/Plug.vala:126
+#: src/Plug.vala:127
 msgid "Pressure reveal"
 msgstr ""
 
-#: src/Plug.vala:127
+#: src/Plug.vala:128
 msgid "Display"
 msgstr ""
 
-#: src/Plug.vala:128
+#: src/Plug.vala:129
 msgid "Panel translucency"
 msgstr ""
 
-#: src/Plug.vala:130
+#: src/Plug.vala:131
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:131
+#: src/Plug.vala:132
 msgid "Accent color"
 msgstr ""
 
-#: src/Plug.vala:132
+#: src/Plug.vala:133
 msgid "Reduce motion"
 msgstr ""
 
-#: src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr ""
 
-#: src/Plug.vala:135 src/Views/Text.vala:34
+#: src/Plug.vala:136 src/Views/Text.vala:34
 msgid "Size"
 msgstr ""
 
-#: src/Plug.vala:136 src/Views/Text.vala:54
+#: src/Plug.vala:137 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:138
+#: src/Plug.vala:139
 msgid "Hot Corners"
 msgstr ""
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr ""
 
@@ -280,12 +280,28 @@ msgstr ""
 msgid "Panel translucency:"
 msgstr ""
 
-#: src/Views/Dock.vala:250
+#: src/Views/Dock.vala:167
+msgid "Show in Panel"
+msgstr ""
+
+#: src/Views/Dock.vala:174
+msgid "Accessibility"
+msgstr ""
+
+#: src/Views/Dock.vala:184
+msgid "Caps Lock ⇪"
+msgstr ""
+
+#: src/Views/Dock.vala:185
+msgid "Num Lock"
+msgstr ""
+
+#: src/Views/Dock.vala:283
 #, c-format
 msgid "Monitor %d"
 msgstr ""
 
-#: src/Views/Dock.vala:255
+#: src/Views/Dock.vala:288
 #, c-format
 msgid "Display %d"
 msgstr ""
