@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 21:50+0000\n"
-"PO-Revision-Date: 2022-08-10 18:19+0000\n"
+"PO-Revision-Date: 2023-06-28 21:58+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:53+0000\n"
 
 #: src/Plug.vala:49
@@ -303,7 +303,7 @@ msgstr "Trasparenza pannello:"
 
 #: src/Views/Dock.vala:167
 msgid "Show in Panel"
-msgstr ""
+msgstr "Mostra nel pannello"
 
 #: src/Views/Dock.vala:174
 msgid "Accessibility"
