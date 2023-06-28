@@ -7,10 +7,8 @@ public class PantheonShell.Dock : Gtk.Box {
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
 
-    private Gtk.Label primary_monitor_label;
-    private Gtk.Switch primary_monitor;
-    private Gtk.Label monitor_label;
-    private Gtk.ComboBoxText monitor;
+    private Gtk.Grid display_grid;
+    private Gtk.ComboBoxText display_combo;
     private Plank.DockPreferences dock_preferences;
 
     construct {
@@ -47,8 +45,6 @@ public class PantheonShell.Dock : Gtk.Box {
         icon_box.add (icon_header);
         icon_box.add (icon_size_box);
 
-        Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
-
         var hide_header = new Granite.HeaderLabel (_("Hide Dock"));
 
         var hide_mode = new Gtk.ComboBoxText () {
@@ -61,7 +57,6 @@ public class PantheonShell.Dock : Gtk.Box {
 
         var hide_switch = new Gtk.Switch () {
             halign = END,
-            hexpand = true,
             valign = CENTER
         };
 
@@ -72,20 +67,25 @@ public class PantheonShell.Dock : Gtk.Box {
         hide_grid.attach (hide_mode, 0, 1);
         hide_grid.attach (hide_switch, 1, 0, 1, 2);
 
-        monitor = new Gtk.ComboBoxText ();
+        display_combo = new Gtk.ComboBoxText () {
+            hexpand = true
+        };
 
-        primary_monitor_label = new Gtk.Label (_("Primary display:"));
-        primary_monitor_label.halign = Gtk.Align.END;
-        primary_monitor_label.no_show_all = true;
+        var display_header = new Granite.HeaderLabel (_("Dock on Primary Display"));
 
-        monitor_label = new Gtk.Label (_("Display:"));
-        monitor_label.no_show_all = true;
-        monitor_label.halign = Gtk.Align.END;
+        var display_switch = new Gtk.Switch () {
+            valign = CENTER
+        };
 
-        primary_monitor = new Gtk.Switch ();
-        primary_monitor.no_show_all = true;
+        display_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            no_show_all = true
+        };
+        display_grid.attach (display_header, 0, 0);
+        display_grid.attach (display_combo, 0, 1);
+        display_grid.attach (display_switch, 1, 0, 1, 2);
 
-        var pressure_header = new Granite.HeaderLabel (_("Pressure Reveal"));
+        var pressure_header = new Granite.HeaderLabel (_("Dock Pressure Reveal"));
 
         var pressure_subtitle = new Gtk.Label (_("Prevent accidental reveals by moving the pointer past the display edge. Only works with some devices.")) {
             wrap = true,
@@ -127,27 +127,31 @@ public class PantheonShell.Dock : Gtk.Box {
         translucency_grid.attach (translucency_subtitle, 0, 1);
         translucency_grid.attach (translucency_switch, 1, 0, 1, 2);
 
-        var grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 18,
+        var box = new Gtk.Box (VERTICAL, 18) {
             margin_start = 12,
             margin_end = 12,
-            margin_bottom = 24
+            margin_bottom = 12
         };
-        grid.attach (icon_box, 0, 0, 2);
-        grid.attach (hide_grid, 0, 1, 2);
-        grid.attach (primary_monitor_label, 0, 2);
-        grid.attach (primary_monitor, 1, 2);
-        grid.attach (monitor_label, 0, 3);
-        grid.attach (monitor, 1, 3);
-        grid.attach (pressure_grid, 0, 4, 2);
-        grid.attach (translucency_grid, 0, 5, 2);
+        box.add (icon_box);
+        box.add (hide_grid);
+        box.add (pressure_grid);
+        box.add (display_grid);
+        box.add (translucency_grid);
 
         var clamp = new Hdy.Clamp () {
-            child = grid
+            child = box
         };
 
-        add (clamp);
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = clamp
+        };
+
+        add (scrolled);
+
+        dock_preferences = new Plank.DockPreferences ("dock1");
+        dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", SYNC_CREATE | BIDIRECTIONAL);
+
+        Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
 
         check_for_screens ();
 
@@ -177,9 +181,6 @@ public class PantheonShell.Dock : Gtk.Box {
         icon_size_64.toggled.connect (() => {
             dock_preferences.IconSize = 64;
         });
-
-        dock_preferences = new Plank.DockPreferences ("dock1");
-        dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", SYNC_CREATE | BIDIRECTIONAL);
 
         Plank.HideType[] hide_mode_ids = {
             Plank.HideType.DODGE_MAXIMIZED,
@@ -214,32 +215,28 @@ public class PantheonShell.Dock : Gtk.Box {
             }
         });
 
-        primary_monitor.notify["active"].connect (() => {
-            if (primary_monitor.active == true) {
+        display_switch.notify["active"].connect (() => {
+            if (display_switch.active == true) {
                 dock_preferences.Monitor = "";
-                monitor_label.sensitive = false;
-                monitor.sensitive = false;
             } else {
                 var plug_names = get_monitor_plug_names (get_display ());
-                if (plug_names.length > monitor.active) {
-                    dock_preferences.Monitor = plug_names[monitor.active];
+                if (plug_names.length > display_combo.active) {
+                    dock_preferences.Monitor = plug_names[display_combo.active];
                 }
-
-                monitor_label.sensitive = true;
-                monitor.sensitive = true;
             }
         });
-        primary_monitor.active = (dock_preferences.Monitor == "");
+        display_switch.active = (dock_preferences.Monitor == "");
+        display_switch.bind_property ("active", display_combo, "sensitive", INVERT_BOOLEAN);
 
-        monitor.notify["active"].connect (() => {
-            if (monitor.active >= 0 && primary_monitor.active == false) {
+        display_combo.notify["active"].connect (() => {
+            if (display_combo.active >= 0 && display_switch.active == false) {
                 var plug_names = get_monitor_plug_names (get_display ());
-                if (plug_names.length > monitor.active)
-                    dock_preferences.Monitor = plug_names[monitor.active];
+                if (plug_names.length > display_combo.active)
+                    dock_preferences.Monitor = plug_names[display_combo.active];
             }
         });
 
-        get_screen ().monitors_changed.connect (() => {check_for_screens ();});
+        get_screen ().monitors_changed.connect (check_for_screens);
 
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
@@ -250,7 +247,7 @@ public class PantheonShell.Dock : Gtk.Box {
         int primary_screen = 0;
         var default_display = get_display ();
         var default_screen = get_screen ();
-        monitor.remove_all ();
+        display_combo.remove_all ();
         try {
             var screen = new Gnome.RRScreen (default_screen);
             for (i = 0; i < default_display.get_n_monitors () ; i++) {
@@ -259,7 +256,7 @@ public class PantheonShell.Dock : Gtk.Box {
                 if (monitor_plug_name != null) {
                     unowned Gnome.RROutput output = screen.get_output_by_name (monitor_plug_name);
                     if (output != null && output.get_display_name () != null && output.get_display_name () != "") {
-                        monitor.append_text (output.get_display_name ());
+                        display_combo.append_text (output.get_display_name ());
                         if (output.get_is_primary () == true) {
                             primary_screen = i;
                         }
@@ -267,32 +264,27 @@ public class PantheonShell.Dock : Gtk.Box {
                     }
                 }
 
-                monitor.append_text (_("Monitor %d").printf (i + 1) );
+                display_combo.append_text (_("Monitor %d").printf (i + 1) );
             }
         } catch (Error e) {
             critical (e.message);
             for (i = 0; i < default_display.get_n_monitors () ; i ++) {
-                monitor.append_text (_("Display %d").printf (i + 1));
+                display_combo.append_text (_("Display %d").printf (i + 1));
             }
         }
 
         if (i <= 1) {
-            primary_monitor_label.hide ();
-            primary_monitor.hide ();
-            monitor_label.hide ();
-            monitor.no_show_all = true;
-            monitor.hide ();
+            display_grid.no_show_all = true;
+            display_grid.hide ();
         } else {
             if (dock_preferences.Monitor != "") {
-                monitor.active = find_monitor_number (get_display (), dock_preferences.Monitor);
+                display_combo.active = find_monitor_number (get_display (), dock_preferences.Monitor);
             } else {
-                monitor.active = primary_screen;
+                display_combo.active = primary_screen;
             }
 
-            primary_monitor_label.show ();
-            primary_monitor.show ();
-            monitor_label.show ();
-            monitor.show ();
+            display_grid.no_show_all = false;
+            display_grid.show_all ();
         }
     }
 
