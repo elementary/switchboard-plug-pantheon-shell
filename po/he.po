@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 21:50+0000\n"
-"PO-Revision-Date: 2023-05-04 22:23+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2023-06-28 21:58+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
 "Language: he\n"
@@ -290,14 +290,12 @@ msgid "Panel translucency:"
 msgstr "שקיפות חלונית:"
 
 #: src/Views/Dock.vala:167
-#, fuzzy
-#| msgid "Dock & Panel"
 msgid "Show in Panel"
-msgstr "מעגן ולוח"
+msgstr "הצגה בלוח"
 
 #: src/Views/Dock.vala:174
 msgid "Accessibility"
-msgstr ""
+msgstr "נגישות"
 
 #: src/Views/Dock.vala:184
 msgid "Caps Lock ⇪"
