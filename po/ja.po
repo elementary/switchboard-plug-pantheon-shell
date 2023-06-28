@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 22:20+0000\n"
+"POT-Creation-Date: 2023-06-28 21:50+0000\n"
 "PO-Revision-Date: 2023-05-06 10:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -23,77 +23,77 @@ msgstr "デスクトップ"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "ドック、ホットコーナーを設定し、壁紙を変更します"
 
-#: src/Plug.vala:66 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123
 msgid "Wallpaper"
 msgstr "壁紙"
 
-#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
-#: src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:133 src/Plug.vala:134
 msgid "Appearance"
 msgstr "外観"
 
-#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Text"
 msgstr "テキスト"
 
-#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
-#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 msgid "Dock & Panel"
 msgstr "ドックとパネル"
 
-#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Multitasking"
 msgstr "マルチタスク"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Hide Mode"
 msgstr "隠す方法"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:126
 msgid "Icon Size"
 msgstr "アイコンサイズ"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:127
 msgid "Pressure reveal"
 msgstr "押し込んで表示"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:128
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:129
 msgid "Panel translucency"
 msgstr "パネルを透過"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:131
 msgid "Dark style"
 msgstr "ダークスタイル"
 
-#: src/Plug.vala:131
+#: src/Plug.vala:132
 msgid "Accent color"
 msgstr "アクセントカラー"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:133
 msgid "Reduce motion"
 msgstr "視覚効果を減らす"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "ウィンドウアニメーション"
 
-#: src/Plug.vala:135 src/Views/Text.vala:34
+#: src/Plug.vala:136 src/Views/Text.vala:34
 msgid "Size"
 msgstr "サイズ"
 
-#: src/Plug.vala:136 src/Views/Text.vala:54
+#: src/Plug.vala:137 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "ディスレクシア対応"
 
-#: src/Plug.vala:138
+#: src/Plug.vala:139
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "以下の場合にウィンドウを新しいワークスペースに移動"
 
@@ -286,12 +286,30 @@ msgstr "パネル"
 msgid "Panel translucency:"
 msgstr "パネルを透過:"
 
-#: src/Views/Dock.vala:250
+#: src/Views/Dock.vala:167
+#, fuzzy
+#| msgid "Dock & Panel"
+msgid "Show in Panel"
+msgstr "ドックとパネル"
+
+#: src/Views/Dock.vala:174
+msgid "Accessibility"
+msgstr ""
+
+#: src/Views/Dock.vala:184
+msgid "Caps Lock ⇪"
+msgstr ""
+
+#: src/Views/Dock.vala:185
+msgid "Num Lock"
+msgstr ""
+
+#: src/Views/Dock.vala:283
 #, c-format
 msgid "Monitor %d"
 msgstr "モニター %d"
 
-#: src/Views/Dock.vala:255
+#: src/Views/Dock.vala:288
 #, c-format
 msgid "Display %d"
 msgstr "ディスプレイ %d"

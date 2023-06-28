@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 22:20+0000\n"
+"POT-Creation-Date: 2023-06-28 21:50+0000\n"
 "PO-Revision-Date: 2023-06-14 14:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -28,78 +28,78 @@ msgstr "Skrivebord"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Sett opp dokken, aktive hjørner og endre bakgrunnsbilde"
 
-#: src/Plug.vala:66 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123
 msgid "Wallpaper"
 msgstr "Bakgrunnsbilde"
 
-#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
-#: src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:133 src/Plug.vala:134
 msgid "Appearance"
 msgstr "Utseende"
 
-#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Text"
 msgstr "Tekst"
 
-#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
-#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 #, fuzzy
 msgid "Dock & Panel"
 msgstr "Dokk og panel"
 
-#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Multitasking"
 msgstr "Fleroppgavehåndtering"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Hide Mode"
 msgstr "Skjulemodus"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:126
 msgid "Icon Size"
 msgstr "Ikonstørrelse"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:127
 msgid "Pressure reveal"
 msgstr "Vis når den blir trykket på"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:128
 msgid "Display"
 msgstr "Skjerm"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:129
 msgid "Panel translucency"
 msgstr "Panelgjennomsiktighet"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:131
 msgid "Dark style"
 msgstr "Mørk stil"
 
-#: src/Plug.vala:131
+#: src/Plug.vala:132
 msgid "Accent color"
 msgstr "Kontrastfarge"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:133
 msgid "Reduce motion"
 msgstr "Reduser bevegelse"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "Vindusanimasjoner"
 
-#: src/Plug.vala:135 src/Views/Text.vala:34
+#: src/Plug.vala:136 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Størrelse"
 
-#: src/Plug.vala:136 src/Views/Text.vala:54
+#: src/Plug.vala:137 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Dysleksi-vennlig"
 
-#: src/Plug.vala:138
+#: src/Plug.vala:139
 msgid "Hot Corners"
 msgstr "Aktive hjørner"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Flytt vinduer til nytt arbeidsområde"
 
@@ -291,12 +291,29 @@ msgstr "Panel"
 msgid "Panel translucency:"
 msgstr "Panelgjennomsiktighet:"
 
-#: src/Views/Dock.vala:250
+#: src/Views/Dock.vala:167
+#, fuzzy
+msgid "Show in Panel"
+msgstr "Dokk og panel"
+
+#: src/Views/Dock.vala:174
+msgid "Accessibility"
+msgstr ""
+
+#: src/Views/Dock.vala:184
+msgid "Caps Lock ⇪"
+msgstr ""
+
+#: src/Views/Dock.vala:185
+msgid "Num Lock"
+msgstr ""
+
+#: src/Views/Dock.vala:283
 #, c-format
 msgid "Monitor %d"
 msgstr "Skjerm %d"
 
-#: src/Views/Dock.vala:255
+#: src/Views/Dock.vala:288
 #, c-format
 msgid "Display %d"
 msgstr "Skjerm %d"
