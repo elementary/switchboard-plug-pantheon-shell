@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:57+0000\n"
-"PO-Revision-Date: 2023-02-10 17:25+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
+"PO-Revision-Date: 2023-06-28 21:58+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -30,77 +30,77 @@ msgstr ""
 "Configureer de dock, interactieve hoeken, en pas het bureaubladachtergrond "
 "aan"
 
-#: src/Plug.vala:66 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123
 msgid "Wallpaper"
 msgstr "Bureaubladachtergrond"
 
-#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
-#: src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:133 src/Plug.vala:134
 msgid "Appearance"
 msgstr "Uiterlijk"
 
-#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Text"
 msgstr "Tekst"
 
-#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
-#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 msgid "Dock & Panel"
 msgstr "Dock & paneel"
 
-#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Multitasking"
 msgstr "Multitasking"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Hide Mode"
 msgstr "Verbergmodus"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:126
 msgid "Icon Size"
 msgstr "Pictogramgrootte"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:127
 msgid "Pressure reveal"
 msgstr "Onthul bij druk"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:128
 msgid "Display"
 msgstr "Beeldscherm"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:129
 msgid "Panel translucency"
 msgstr "Paneel doorzichtigheid"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:131
 msgid "Dark style"
 msgstr "Donker thema"
 
-#: src/Plug.vala:131
+#: src/Plug.vala:132
 msgid "Accent color"
 msgstr "Accent kleur"
 
-#: src/Plug.vala:132
-msgid "Reduce motion"
-msgstr ""
-
 #: src/Plug.vala:133
+msgid "Reduce motion"
+msgstr "Beperk bewegende elementen"
+
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "Vensteranimaties"
 
-#: src/Plug.vala:135 src/Views/Text.vala:34
+#: src/Plug.vala:136 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Grootte"
 
-#: src/Plug.vala:136 src/Views/Text.vala:54
+#: src/Plug.vala:137 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "Dyslexie-vriendelijk"
 
-#: src/Plug.vala:138
+#: src/Plug.vala:139
 msgid "Hot Corners"
 msgstr "Interactieve hoeken"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "Verplaats vensters naar een nieuw werkblad"
 
@@ -134,7 +134,7 @@ msgstr "Geselecteerde afbeelding instellen als bureaubladachtergrond"
 msgid "Style"
 msgstr "Stijl"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr "Standaard"
 
@@ -228,82 +228,121 @@ msgstr ""
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "Beperk bewegende elementen"
 
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
+"Schalen animaties in de vensterbeheerder en bepaalde interface elementen uit."
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
-msgstr "Dock"
+#: src/Views/Dock.vala:15
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "Pictogramgrootte"
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr "Klein"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr "Groot"
 
-#: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
+#: src/Views/Dock.vala:48
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "Verbergmodus"
+
+#: src/Views/Dock.vala:52
+msgid "Never"
+msgstr ""
+
+#: src/Views/Dock.vala:57
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
 msgstr "Actief venster is gemaximaliseerd"
 
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
+#: src/Views/Dock.vala:62
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
 msgstr "Actief venster overlapt de dock"
 
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
+#: src/Views/Dock.vala:67
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
 msgstr "Eender welk venster overlapt de dock"
 
-#: src/Views/Dock.vala:75
-msgid "Not being used"
+#: src/Views/Dock.vala:72
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
 msgstr "Niet gebruikt"
 
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
+#: src/Views/Dock.vala:90
+#, fuzzy
+#| msgid "Primary display:"
+msgid "Dock on Primary Display"
 msgstr "Primair beeldscherm:"
 
-#: src/Views/Dock.vala:115
-msgid "Display:"
-msgstr "Beeldscherm:"
+#: src/Views/Dock.vala:104
+#, fuzzy
+#| msgid "Pressure reveal"
+msgid "Dock Pressure Reveal"
+msgstr "Onthul bij druk"
+
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
+msgstr ""
+
+#: src/Views/Dock.vala:125
+#, fuzzy
+#| msgid "Panel translucency"
+msgid "Panel Translucency"
+msgstr "Paneel doorzichtigheid"
+
+#: src/Views/Dock.vala:127
+#, fuzzy
+#| msgid "Automatic based on wallpaper"
+msgid "Automatically transparent or opaque based on the wallpaper"
+msgstr "Automatisch gebasseerd op bureaubladachtergrond"
 
 #: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr "Pictogramgrootte:"
+msgid "Show in Panel"
+msgstr "Toon in paneel"
 
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr "Verberg wanneer:"
+#: src/Views/Dock.vala:153
+msgid "Accessibility"
+msgstr "Toegankelijkheid"
 
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
-msgstr "Onthul bij druk:"
+#: src/Views/Dock.vala:163
+msgid "Caps Lock ⇪"
+msgstr ""
 
-#: src/Views/Dock.vala:155
-msgid "Panel"
-msgstr "Paneel"
+#: src/Views/Dock.vala:164
+msgid "Num Lock"
+msgstr ""
 
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
-msgstr "Paneel doorzichtigheid:"
-
-#: src/Views/Dock.vala:250
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr "Beeldscherm %d"
 
-#: src/Views/Dock.vala:255
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr "Beeldscherm %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
-msgstr "Wanneer de muisaanwijzer de hoek van het scherm bereikt"
+msgstr "Als de muisaanwijzer de hoek van het scherm bereikt"
 
 #: src/Views/Multitasking.vala:33
 msgid "Top Left"
@@ -350,16 +389,12 @@ msgid "Show all windows"
 msgstr "Toon alle vensters"
 
 #: src/Views/Multitasking.vala:124
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
-msgstr "Wissel naar nieuw werkblad"
+msgstr "Schakel naar het vorige werkblad"
 
 #: src/Views/Multitasking.vala:125
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
-msgstr "Wissel naar nieuw werkblad"
+msgstr "Schakel naar het volgende werkblad"
 
 #: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
@@ -380,6 +415,10 @@ msgstr ""
 #: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
 msgstr "Importeer albeelding…"
+
+#: src/Views/Wallpaper.vala:115
+msgid "Dim with dark style:"
+msgstr "Verdim met donker thema:"
 
 #: src/Views/Wallpaper.vala:126
 msgid "Centered"
@@ -407,7 +446,7 @@ msgstr "Annuleren"
 
 #: src/Views/Wallpaper.vala:649
 msgid "Wallpaper Deleted"
-msgstr "Bureaubladachtergrond verwijdert"
+msgstr "Bureaubladachtergrond verwijderd"
 
 #: src/Views/Wallpaper.vala:650
 msgid "Undo"
@@ -458,6 +497,27 @@ msgstr "Instellen als diavoorstelling"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "Maak diavoorstelling"
+
+#~ msgid "Dock"
+#~ msgstr "Dock"
+
+#~ msgid "Display:"
+#~ msgstr "Beeldscherm:"
+
+#~ msgid "Icon size:"
+#~ msgstr "Pictogramgrootte:"
+
+#~ msgid "Hide when:"
+#~ msgstr "Verberg wanneer:"
+
+#~ msgid "Pressure reveal:"
+#~ msgstr "Onthul bij druk:"
+
+#~ msgid "Panel"
+#~ msgstr "Paneel"
+
+#~ msgid "Panel translucency:"
+#~ msgstr "Paneel doorzichtigheid:"
 
 #~ msgid "Window animations:"
 #~ msgstr "Vensteranimaties:"

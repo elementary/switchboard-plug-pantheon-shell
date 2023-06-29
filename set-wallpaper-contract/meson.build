@@ -13,8 +13,15 @@ wallpaper_contract = configure_file(
     install_dir: join_paths(datadir, 'contractor')
 )
 
+contract_config_file = configure_file(
+    input: 'Config.vala.in',
+    output: '@BASENAME@',
+    configuration: contract_configuration
+)
+
 executable(
     contract_exec_name,
+    contract_config_file,
     'set-wallpaper.vala',
     dependencies: [
         glib_dep,

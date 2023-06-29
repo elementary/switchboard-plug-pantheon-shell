@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:57+0000\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -28,87 +28,87 @@ msgstr "桌面"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "調整 Dock、熱角、和更改桌布"
 
-#: src/Plug.vala:66 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123
 msgid "Wallpaper"
 msgstr "桌布"
 
-#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
-#: src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:133 src/Plug.vala:134
 msgid "Appearance"
 msgstr "外觀"
 
-#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 #, fuzzy
 #| msgid "Text size:"
 msgid "Text"
 msgstr "文字大小："
 
-#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
-#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
 msgstr "多工作業檢視"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Hide Mode"
 msgstr "隱藏模式"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:126
 msgid "Icon Size"
 msgstr "圖示大小"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:127
 msgid "Pressure reveal"
 msgstr "壓感揭示"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:128
 msgid "Display"
 msgstr "顯示"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:129
 #, fuzzy
 #| msgid "Panel translucency:"
 msgid "Panel translucency"
 msgstr "面板透明度："
 
-#: src/Plug.vala:130
+#: src/Plug.vala:131
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:131
+#: src/Plug.vala:132
 msgid "Accent color"
 msgstr ""
 
-#: src/Plug.vala:132
+#: src/Plug.vala:133
 msgid "Reduce motion"
 msgstr ""
 
-#: src/Plug.vala:133
+#: src/Plug.vala:134
 #, fuzzy
 #| msgid "Window animations:"
 msgid "Window animations"
 msgstr "視窗動畫："
 
-#: src/Plug.vala:135 src/Views/Text.vala:34
+#: src/Plug.vala:136 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "圖示大小"
 
-#: src/Plug.vala:136 src/Views/Text.vala:54
+#: src/Plug.vala:137 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:138
+#: src/Plug.vala:139
 msgid "Hot Corners"
 msgstr "熱角"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:38
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
@@ -144,7 +144,7 @@ msgstr "將所選的影像設為新的桌面背景"
 msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr "預設"
 
@@ -241,68 +241,104 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
-msgstr "Dock"
+#: src/Views/Dock.vala:15
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "圖示大小"
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr "較小"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr "大"
 
-#: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
-msgstr "焦點下的視窗最大化時"
+#: src/Views/Dock.vala:48
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "隱藏模式"
 
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
-msgstr "焦點下的視窗覆蓋到 Dock 時"
-
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
-msgstr "任何視窗覆蓋到 Dock 時"
-
-#: src/Views/Dock.vala:75
-msgid "Not being used"
-msgstr "不使用"
-
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
-msgstr "主顯示器："
-
-#: src/Views/Dock.vala:115
-msgid "Display:"
-msgstr "顯示器："
-
-#: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr "圖示大小："
-
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr "隱藏條件："
-
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
-msgstr "壓感揭示："
-
-#: src/Views/Dock.vala:155
-msgid "Panel"
+#: src/Views/Dock.vala:52
+msgid "Never"
 msgstr ""
 
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
+#: src/Views/Dock.vala:57
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
+msgstr "焦點下的視窗最大化時"
+
+#: src/Views/Dock.vala:62
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
+msgstr "焦點下的視窗覆蓋到 Dock 時"
+
+#: src/Views/Dock.vala:67
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
+msgstr "任何視窗覆蓋到 Dock 時"
+
+#: src/Views/Dock.vala:72
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
+msgstr "不使用"
+
+#: src/Views/Dock.vala:90
+#, fuzzy
+#| msgid "Primary display:"
+msgid "Dock on Primary Display"
+msgstr "主顯示器："
+
+#: src/Views/Dock.vala:104
+#, fuzzy
+#| msgid "Pressure reveal"
+msgid "Dock Pressure Reveal"
+msgstr "壓感揭示"
+
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
+msgstr ""
+
+#: src/Views/Dock.vala:125
+#, fuzzy
+#| msgid "Panel translucency:"
+msgid "Panel Translucency"
 msgstr "面板透明度："
 
-#: src/Views/Dock.vala:250
+#: src/Views/Dock.vala:127
+msgid "Automatically transparent or opaque based on the wallpaper"
+msgstr ""
+
+#: src/Views/Dock.vala:146
+msgid "Show in Panel"
+msgstr ""
+
+#: src/Views/Dock.vala:153
+msgid "Accessibility"
+msgstr ""
+
+#: src/Views/Dock.vala:163
+msgid "Caps Lock ⇪"
+msgstr ""
+
+#: src/Views/Dock.vala:164
+msgid "Num Lock"
+msgstr ""
+
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr "螢幕 %d"
 
-#: src/Views/Dock.vala:255
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr "顯示器 %d"
@@ -387,6 +423,10 @@ msgstr ""
 msgid "Import Photo…"
 msgstr "匯入相片…"
 
+#: src/Views/Wallpaper.vala:115
+msgid "Dim with dark style:"
+msgstr ""
+
 #: src/Views/Wallpaper.vala:126
 msgid "Centered"
 msgstr "置中"
@@ -465,6 +505,24 @@ msgstr "設為桌面投影秀"
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "製作投影秀"
+
+#~ msgid "Dock"
+#~ msgstr "Dock"
+
+#~ msgid "Display:"
+#~ msgstr "顯示器："
+
+#~ msgid "Icon size:"
+#~ msgstr "圖示大小："
+
+#~ msgid "Hide when:"
+#~ msgstr "隱藏條件："
+
+#~ msgid "Pressure reveal:"
+#~ msgstr "壓感揭示："
+
+#~ msgid "Panel translucency:"
+#~ msgstr "面板透明度："
 
 #~ msgid "Window animations:"
 #~ msgstr "視窗動畫："

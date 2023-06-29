@@ -1,30 +1,14 @@
 /*
-* Copyright (c) 2016 elementary LLC. (https://elementary.io)
-*
-* This program is free software; you can redistribute it and/or
-* modify it under the terms of the GNU General Public
-* License as published by the Free Software Foundation; either
-* version 2 of the License, or (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-* General Public License for more details.
-*
-* You should have received a copy of the GNU General Public
-* License along with this program; if not, write to the
-* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-* Boston, MA 02110-1301 USA
-*/
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: 2016-2023 elementary, Inc. (https://elementary.io)
+ */
 
 public class PantheonShell.Dock : Granite.SimpleSettingsPage {
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
 
-    private Gtk.Label primary_monitor_label;
-    private Gtk.Switch primary_monitor;
-    private Gtk.Label monitor_label;
-    private Gtk.ComboBoxText monitor;
+    private Gtk.Grid display_grid;
+    private Gtk.ComboBoxText display_combo;
     private Plank.DockPreferences dock_preferences;
 
     public Dock () {
@@ -35,7 +19,7 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
     }
 
     construct {
-        var dock_header = new Granite.HeaderLabel (_("Dock"));
+        var icon_header = new Granite.HeaderLabel (_("Dock Icon Size"));
 
         var icon_size_32 = new Gtk.RadioButton (null) {
             image = new Gtk.Image.from_icon_name ("dock-icon-symbolic", Gtk.IconSize.DND),
@@ -64,137 +48,158 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
         icon_size_box.add (icon_size_48);
         icon_size_box.add (icon_size_64);
 
-        Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
-        dock_preferences = new Plank.DockPreferences ("dock1");
+        var icon_box = new Gtk.Box (VERTICAL, 0);
+        icon_box.add (icon_header);
+        icon_box.add (icon_size_box);
 
-        var pressure_switch = new Gtk.Switch ();
-        pressure_switch.halign = Gtk.Align.START;
-        pressure_switch.valign = Gtk.Align.CENTER;
+        var hide_header = new Granite.HeaderLabel (_("Hide Dock"));
 
-        dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", GLib.BindingFlags.SYNC_CREATE | GLib.BindingFlags.BIDIRECTIONAL);
+        var never_radio = new Gtk.RadioButton.with_label (
+            null,
+            _("Never")
+        );
 
-        var hide_mode = new Gtk.ComboBoxText () {
+        var dodge_maximized_radio = new Gtk.RadioButton.with_label_from_widget (
+            never_radio,
+            _("When the focused window is maximized")
+        );
+
+        var intelligent_radio = new Gtk.RadioButton.with_label_from_widget (
+            never_radio,
+            _("When the focused window overlaps the dock")
+        );
+
+        var window_dodge_radio = new Gtk.RadioButton.with_label_from_widget (
+            never_radio,
+            _("When any window overlaps the dock")
+        );
+
+        var auto_radio = new Gtk.RadioButton.with_label_from_widget (
+            never_radio,
+            _("When not being used")
+        );
+
+        var hide_radio_box = new Gtk.Box (VERTICAL, 6);
+        hide_radio_box.add (never_radio);
+        hide_radio_box.add (dodge_maximized_radio);
+        hide_radio_box.add (intelligent_radio);
+        hide_radio_box.add (window_dodge_radio);
+        hide_radio_box.add (auto_radio);
+
+        var hide_box = new Gtk.Box (VERTICAL, 0);
+        hide_box.add (hide_header);
+        hide_box.add (hide_radio_box);
+
+        display_combo = new Gtk.ComboBoxText () {
             hexpand = true
         };
-        hide_mode.append_text (_("Focused window is maximized"));
-        hide_mode.append_text (_("Focused window overlaps the dock"));
-        hide_mode.append_text (_("Any window overlaps the dock"));
-        hide_mode.append_text (_("Not being used"));
 
-        Plank.HideType[] hide_mode_ids = {Plank.HideType.DODGE_MAXIMIZED, Plank.HideType.INTELLIGENT, Plank.HideType.WINDOW_DODGE, Plank.HideType.AUTO};
+        var display_header = new Granite.HeaderLabel (_("Dock on Primary Display"));
 
-        var hide_switch = new Gtk.Switch ();
-        hide_switch.halign = Gtk.Align.START;
-        hide_switch.valign = Gtk.Align.CENTER;
-
-        var hide_none = (dock_preferences.HideMode != Plank.HideType.NONE);
-        hide_switch.active = hide_none;
-        if (hide_none) {
-            for (int i = 0; i < hide_mode_ids.length; i++) {
-                if (hide_mode_ids[i] == dock_preferences.HideMode)
-                    hide_mode.active = i;
-            }
-        } else {
-            hide_mode.sensitive = false;
-        }
-
-        hide_mode.changed.connect (() => {
-            dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
-        });
-
-        hide_switch.bind_property ("active", pressure_switch, "sensitive", BindingFlags.SYNC_CREATE);
-        hide_switch.bind_property ("active", hide_mode, "sensitive", BindingFlags.DEFAULT);
-
-        hide_switch.notify["active"].connect (() => {
-            if (hide_switch.active) {
-                dock_preferences.HideMode = hide_mode_ids[hide_mode.active];
-            } else {
-                dock_preferences.HideMode = Plank.HideType.NONE;
-            }
-        });
-
-        monitor = new Gtk.ComboBoxText ();
-
-        primary_monitor_label = new Gtk.Label (_("Primary display:"));
-        primary_monitor_label.halign = Gtk.Align.END;
-        primary_monitor_label.no_show_all = true;
-
-        monitor_label = new Gtk.Label (_("Display:"));
-        monitor_label.no_show_all = true;
-        monitor_label.halign = Gtk.Align.END;
-
-        primary_monitor = new Gtk.Switch ();
-        primary_monitor.no_show_all = true;
-        primary_monitor.notify["active"].connect (() => {
-            if (primary_monitor.active == true) {
-                dock_preferences.Monitor = "";
-                monitor_label.sensitive = false;
-                monitor.sensitive = false;
-            } else {
-                var plug_names = get_monitor_plug_names (get_display ());
-                if (plug_names.length > monitor.active)
-                    dock_preferences.Monitor = plug_names[monitor.active];
-                monitor_label.sensitive = true;
-                monitor.sensitive = true;
-            }
-        });
-        primary_monitor.active = (dock_preferences.Monitor == "");
-
-        monitor.notify["active"].connect (() => {
-            if (monitor.active >= 0 && primary_monitor.active == false) {
-                var plug_names = get_monitor_plug_names (get_display ());
-                if (plug_names.length > monitor.active)
-                    dock_preferences.Monitor = plug_names[monitor.active];
-            }
-        });
-
-        get_screen ().monitors_changed.connect (() => {check_for_screens ();});
-
-        var icon_label = new Gtk.Label (_("Icon size:"));
-        icon_label.halign = Gtk.Align.END;
-        var hide_label = new Gtk.Label (_("Hide when:"));
-        hide_label.halign = Gtk.Align.END;
-        var primary_monitor_grid = new Gtk.Grid ();
-        primary_monitor_grid.add (primary_monitor);
-        var pressure_label = new Gtk.Label (_("Pressure reveal:"));
-        pressure_label.halign = Gtk.Align.END;
-
-        var panel_header = new Granite.HeaderLabel (_("Panel")) {
-            margin_top = 12
+        var display_switch = new Gtk.Switch () {
+            valign = CENTER
         };
 
-        var translucency_label = new Gtk.Label (_("Panel translucency:")) {
-            halign = Gtk.Align.END
+        display_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            no_show_all = true
         };
+        display_grid.attach (display_header, 0, 0);
+        display_grid.attach (display_combo, 0, 1);
+        display_grid.attach (display_switch, 1, 0, 1, 2);
+
+        var pressure_header = new Granite.HeaderLabel (_("Dock Pressure Reveal"));
+
+        var pressure_subtitle = new Gtk.Label (_("Prevent accidental reveals by moving the pointer past the display edge. Only works with some devices.")) {
+            wrap = true,
+            xalign = 0
+        };
+        pressure_subtitle.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        var pressure_switch = new Gtk.Switch () {
+            halign = END,
+            hexpand = true,
+            valign = CENTER
+        };
+
+        var pressure_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        pressure_grid.attach (pressure_header, 0, 0);
+        pressure_grid.attach (pressure_subtitle, 0, 1);
+        pressure_grid.attach (pressure_switch, 1, 0, 1, 2);
+
+        var translucency_header = new Granite.HeaderLabel (_("Panel Translucency"));
+
+        var translucency_subtitle = new Gtk.Label (_("Automatically transparent or opaque based on the wallpaper")) {
+            wrap = true,
+            xalign = 0
+        };
+        translucency_subtitle.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var translucency_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
+            halign = END,
+            hexpand = true,
+            valign = CENTER
         };
 
-        var grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 12
+        var translucency_grid = new Gtk.Grid () {
+            column_spacing = 12
         };
-        grid.attach (dock_header, 0, 0, 3);
-        grid.attach (icon_label, 0, 1);
-        grid.attach (icon_size_box, 1, 1, 2);
-        grid.attach (hide_label, 0, 2);
-        grid.attach (hide_mode, 1, 2);
-        grid.attach (hide_switch, 2, 2);
-        grid.attach (primary_monitor_label, 0, 3);
-        grid.attach (primary_monitor_grid, 1, 3);
-        grid.attach (monitor_label, 0, 4);
-        grid.attach (monitor, 1, 4);
-        grid.attach (pressure_label, 0, 5);
-        grid.attach (pressure_switch, 1, 5);
-        grid.attach (panel_header, 0, 6, 3);
-        grid.attach (translucency_label, 0, 7);
-        grid.attach (translucency_switch, 1, 7);
+        translucency_grid.attach (translucency_header, 0, 0);
+        translucency_grid.attach (translucency_subtitle, 0, 1);
+        translucency_grid.attach (translucency_switch, 1, 0, 1, 2);
 
-        var clamp = new Hdy.Clamp ();
-        clamp.add (grid);
+        var indicators_header = new Granite.HeaderLabel (_("Show in Panel"));
+
+        var indicators_box = new Gtk.Box (VERTICAL, 6);
+        indicators_box.add (indicators_header);
+
+        var a11y_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.desktop.wingpanel.a11y", true);
+        if (a11y_schema != null && a11y_schema.has_key ("show-indicator")) {
+            var a11y_check = new Gtk.CheckButton.with_label (_("Accessibility"));
+
+            indicators_box.add (a11y_check);
+
+            var a11y_settings = new Settings ("io.elementary.desktop.wingpanel.a11y");
+            a11y_settings.bind ("show-indicator", a11y_check, "active", DEFAULT);
+        }
+
+        var keyboard_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true);
+        if (keyboard_schema != null && keyboard_schema.has_key ("capslock")) {
+            var caps_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪"));
+            var num_check = new Gtk.CheckButton.with_label (_("Num Lock"));
+
+            indicators_box.add (caps_check);
+            indicators_box.add (num_check);
+
+            var keyboard_settings = new Settings ("io.elementary.wingpanel.keyboard");
+            keyboard_settings.bind ("capslock", caps_check, "active", DEFAULT);
+            keyboard_settings.bind ("numlock", num_check, "active", DEFAULT);
+        }
+
+        var box = new Gtk.Box (VERTICAL, 18);
+        box.add (icon_box);
+        box.add (hide_box);
+        box.add (pressure_grid);
+        box.add (display_grid);
+        box.add (translucency_grid);
+
+        // Only add this box if it has more than the header in it
+        if (indicators_box.get_children ().length () > 1) {
+            box.add (indicators_box);
+        }
+
+        var clamp = new Hdy.Clamp () {
+            child = box
+        };
 
         content_area.add (clamp);
+
+        dock_preferences = new Plank.DockPreferences ("dock1");
+        dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", SYNC_CREATE | BIDIRECTIONAL);
+
+        Plank.Paths.initialize ("plank", Constants.PLANKDATADIR);
 
         check_for_screens ();
 
@@ -225,6 +230,83 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
             dock_preferences.IconSize = 64;
         });
 
+        pressure_grid.sensitive = dock_preferences.HideMode != NONE;
+        switch (dock_preferences.HideMode) {
+            case Plank.HideType.NONE:
+                never_radio.active = true;
+                break;
+            case Plank.HideType.DODGE_MAXIMIZED:
+                dodge_maximized_radio.active = true;
+                break;
+            case Plank.HideType.INTELLIGENT:
+                intelligent_radio.active = true;
+                break;
+            case Plank.HideType.WINDOW_DODGE:
+                window_dodge_radio.active = true;
+                break;
+            case Plank.HideType.AUTO:
+                auto_radio.active = true;
+                break;
+        }
+
+        never_radio.toggled.connect (() => {
+            pressure_grid.sensitive = false;
+            if (never_radio.active) {
+                dock_preferences.HideMode = NONE;
+            }
+        });
+
+        dodge_maximized_radio.toggled.connect (() => {
+            pressure_grid.sensitive = true;
+            if (dodge_maximized_radio.active) {
+                dock_preferences.HideMode = DODGE_MAXIMIZED;
+            }
+        });
+
+        intelligent_radio.toggled.connect (() => {
+            pressure_grid.sensitive = true;
+            if (intelligent_radio.active) {
+                dock_preferences.HideMode = INTELLIGENT;
+            }
+        });
+
+        window_dodge_radio.toggled.connect (() => {
+            pressure_grid.sensitive = true;
+            if (window_dodge_radio.active) {
+                dock_preferences.HideMode = WINDOW_DODGE;
+            }
+        });
+
+        auto_radio.toggled.connect (() => {
+            pressure_grid.sensitive = true;
+            if (auto_radio.active) {
+                dock_preferences.HideMode = AUTO;
+            }
+        });
+
+        display_switch.notify["active"].connect (() => {
+            if (display_switch.active == true) {
+                dock_preferences.Monitor = "";
+            } else {
+                var plug_names = get_monitor_plug_names (get_display ());
+                if (plug_names.length > display_combo.active) {
+                    dock_preferences.Monitor = plug_names[display_combo.active];
+                }
+            }
+        });
+        display_switch.active = (dock_preferences.Monitor == "");
+        display_switch.bind_property ("active", display_combo, "sensitive", INVERT_BOOLEAN);
+
+        display_combo.notify["active"].connect (() => {
+            if (display_combo.active >= 0 && display_switch.active == false) {
+                var plug_names = get_monitor_plug_names (get_display ());
+                if (plug_names.length > display_combo.active)
+                    dock_preferences.Monitor = plug_names[display_combo.active];
+            }
+        });
+
+        get_screen ().monitors_changed.connect (check_for_screens);
+
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
     }
@@ -234,7 +316,7 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
         int primary_screen = 0;
         var default_display = get_display ();
         var default_screen = get_screen ();
-        monitor.remove_all ();
+        display_combo.remove_all ();
         try {
             var screen = new Gnome.RRScreen (default_screen);
             for (i = 0; i < default_display.get_n_monitors () ; i++) {
@@ -243,7 +325,7 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
                 if (monitor_plug_name != null) {
                     unowned Gnome.RROutput output = screen.get_output_by_name (monitor_plug_name);
                     if (output != null && output.get_display_name () != null && output.get_display_name () != "") {
-                        monitor.append_text (output.get_display_name ());
+                        display_combo.append_text (output.get_display_name ());
                         if (output.get_is_primary () == true) {
                             primary_screen = i;
                         }
@@ -251,32 +333,27 @@ public class PantheonShell.Dock : Granite.SimpleSettingsPage {
                     }
                 }
 
-                monitor.append_text (_("Monitor %d").printf (i + 1) );
+                display_combo.append_text (_("Monitor %d").printf (i + 1) );
             }
         } catch (Error e) {
             critical (e.message);
             for (i = 0; i < default_display.get_n_monitors () ; i ++) {
-                monitor.append_text (_("Display %d").printf (i + 1));
+                display_combo.append_text (_("Display %d").printf (i + 1));
             }
         }
 
         if (i <= 1) {
-            primary_monitor_label.hide ();
-            primary_monitor.hide ();
-            monitor_label.hide ();
-            monitor.no_show_all = true;
-            monitor.hide ();
+            display_grid.no_show_all = true;
+            display_grid.hide ();
         } else {
             if (dock_preferences.Monitor != "") {
-                monitor.active = find_monitor_number (get_display (), dock_preferences.Monitor);
+                display_combo.active = find_monitor_number (get_display (), dock_preferences.Monitor);
             } else {
-                monitor.active = primary_screen;
+                display_combo.active = primary_screen;
             }
 
-            primary_monitor_label.show ();
-            primary_monitor.show ();
-            monitor_label.show ();
-            monitor.show ();
+            display_grid.no_show_all = false;
+            display_grid.show_all ();
         }
     }
 

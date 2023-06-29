@@ -116,7 +116,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
         add_wallpaper_button.margin = 12;
 
-        var dim_label = new Gtk.Label ("Dim with dark style:");
+        var dim_label = new Gtk.Label (_("Dim with dark style:"));
 
         dim_switch = new Gtk.Switch () {
             margin_end = 6,
@@ -662,7 +662,7 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         });
 
         toast.notify["child-revealed"].connect (() => {
-            if (!toast.child_revealed && wallpaper_for_removal != null) {
+            if (!toast.child_revealed) {
                 confirm_removal ();
             }
         });
@@ -676,7 +676,11 @@ public class PantheonShell.Wallpaper : Granite.SettingsPage {
         wallpaper_for_removal = wallpaper;
     }
 
-    private void confirm_removal () {
+    public void confirm_removal () {
+        if (wallpaper_for_removal == null) {
+            return;
+        }
+
         var wallpaper_file = File.new_for_uri (wallpaper_for_removal.uri);
         wallpaper_file.trash_async.begin ();
         wallpaper_for_removal.destroy ();

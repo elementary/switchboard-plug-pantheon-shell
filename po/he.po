@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:57+0000\n"
-"PO-Revision-Date: 2022-08-10 19:12+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
+"PO-Revision-Date: 2023-06-28 21:58+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
 "Language: he\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -28,77 +28,77 @@ msgstr "שולחן העבודה"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "הגדרת המעגן, הפינות החמות והחלפת רקע שולחן העבודה"
 
-#: src/Plug.vala:66 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123
 msgid "Wallpaper"
 msgstr "תמונת רקע"
 
-#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
-#: src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:133 src/Plug.vala:134
 msgid "Appearance"
 msgstr "מראה"
 
-#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Text"
 msgstr "כתב"
 
-#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
-#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 msgid "Dock & Panel"
 msgstr "מעגן ולוח"
 
-#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Multitasking"
 msgstr "ריבוי משימות"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Hide Mode"
 msgstr "מצב הסתרה"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:126
 msgid "Icon Size"
 msgstr "גודל הסמלים"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:127
 msgid "Pressure reveal"
 msgstr "גילוי בלחץ"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:128
 msgid "Display"
 msgstr "תצוגה"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:129
 msgid "Panel translucency"
 msgstr "שקיפות חלונית"
 
-#: src/Plug.vala:130
+#: src/Plug.vala:131
 msgid "Dark style"
 msgstr "סגנון חשוך"
 
-#: src/Plug.vala:131
+#: src/Plug.vala:132
 msgid "Accent color"
 msgstr "גוון נלווה"
 
-#: src/Plug.vala:132
-msgid "Reduce motion"
-msgstr ""
-
 #: src/Plug.vala:133
+msgid "Reduce motion"
+msgstr "הפחתת תנועה"
+
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr "הנפשות חלון"
 
-#: src/Plug.vala:135 src/Views/Text.vala:34
+#: src/Plug.vala:136 src/Views/Text.vala:34
 msgid "Size"
 msgstr "גודל"
 
-#: src/Plug.vala:136 src/Views/Text.vala:54
+#: src/Plug.vala:137 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr "ידידותי לדיסקלציה"
 
-#: src/Plug.vala:138
+#: src/Plug.vala:139
 msgid "Hot Corners"
 msgstr "קצוות חמים"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr "העברת חלונות לסביבת עבודה חדשה"
 
@@ -132,7 +132,7 @@ msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשול
 msgid "Style"
 msgstr "סגנון"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr "בררת מחדל"
 
@@ -226,75 +226,113 @@ msgstr ""
 
 #: src/Views/Appearance.vala:387
 msgid "Reduce Motion"
-msgstr ""
+msgstr "הפחתת תנועה"
 
 #: src/Views/Appearance.vala:391
 msgid ""
 "Disable animations in the window manager and some other interface elements."
-msgstr ""
+msgstr "השבתת הנפשות במנהל החלונות וברכיבי מנשק חדשים."
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
-msgstr "מעגן"
+#: src/Views/Dock.vala:15
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "גודל הסמלים"
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr "קטן"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr "גדול"
 
-#: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
+#: src/Views/Dock.vala:48
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "מצב הסתרה"
+
+#: src/Views/Dock.vala:52
+msgid "Never"
+msgstr ""
+
+#: src/Views/Dock.vala:57
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
 msgstr "החלון שבמיקוד מוגדל"
 
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
+#: src/Views/Dock.vala:62
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
 msgstr "החלון שבמיקוד חופף מעל המעגן"
 
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
+#: src/Views/Dock.vala:67
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
 msgstr "חלון כלשהו חופף מעל המעגן"
 
-#: src/Views/Dock.vala:75
-msgid "Not being used"
+#: src/Views/Dock.vala:72
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
 msgstr "לא בשימוש"
 
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
+#: src/Views/Dock.vala:90
+#, fuzzy
+#| msgid "Primary display:"
+msgid "Dock on Primary Display"
 msgstr "תצוגה עיקרית:"
 
-#: src/Views/Dock.vala:115
-msgid "Display:"
-msgstr "תצוגה:"
+#: src/Views/Dock.vala:104
+#, fuzzy
+#| msgid "Pressure reveal"
+msgid "Dock Pressure Reveal"
+msgstr "גילוי בלחץ"
+
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
+msgstr ""
+
+#: src/Views/Dock.vala:125
+#, fuzzy
+#| msgid "Panel translucency"
+msgid "Panel Translucency"
+msgstr "שקיפות חלונית"
+
+#: src/Views/Dock.vala:127
+#, fuzzy
+#| msgid "Automatic based on wallpaper"
+msgid "Automatically transparent or opaque based on the wallpaper"
+msgstr "אוטומטית לפי הרקע"
 
 #: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr "גודל הסמלים:"
+msgid "Show in Panel"
+msgstr "הצגה בלוח"
 
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr "להסתיר כאשר:"
+#: src/Views/Dock.vala:153
+msgid "Accessibility"
+msgstr "נגישות"
 
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
-msgstr "לחץ לגילוי:"
+#: src/Views/Dock.vala:163
+msgid "Caps Lock ⇪"
+msgstr ""
 
-#: src/Views/Dock.vala:155
-msgid "Panel"
-msgstr "לוח"
+#: src/Views/Dock.vala:164
+msgid "Num Lock"
+msgstr ""
 
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
-msgstr "שקיפות חלונית:"
-
-#: src/Views/Dock.vala:250
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr "צג %d"
 
-#: src/Views/Dock.vala:255
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr "תצוגה %d"
@@ -348,16 +386,12 @@ msgid "Show all windows"
 msgstr "הצגת כל החלונות"
 
 #: src/Views/Multitasking.vala:124
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
-msgstr "מעבר לסביבת עבודה חדשה"
+msgstr "מעבר לסביבת העבודה הקודמת"
 
 #: src/Views/Multitasking.vala:125
-#, fuzzy
-#| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
-msgstr "מעבר לסביבת עבודה חדשה"
+msgstr "מעבר לסביבת העבודה הבאה"
 
 #: src/Views/Multitasking.vala:126
 msgid "Switch to new workspace"
@@ -378,6 +412,10 @@ msgstr ""
 #: src/Views/Wallpaper.vala:112
 msgid "Import Photo…"
 msgstr "ייבוא תמונה…"
+
+#: src/Views/Wallpaper.vala:115
+msgid "Dim with dark style:"
+msgstr "עמעום עם סגנון חשוך:"
 
 #: src/Views/Wallpaper.vala:126
 msgid "Centered"
@@ -456,6 +494,27 @@ msgstr "הגדרה כמצגת שולחן העבודה"
 #: set-wallpaper-contract/set-wallpaper.vala:239
 msgid "Create Slideshow"
 msgstr "יצירת מצגת"
+
+#~ msgid "Dock"
+#~ msgstr "מעגן"
+
+#~ msgid "Display:"
+#~ msgstr "תצוגה:"
+
+#~ msgid "Icon size:"
+#~ msgstr "גודל הסמלים:"
+
+#~ msgid "Hide when:"
+#~ msgstr "להסתיר כאשר:"
+
+#~ msgid "Pressure reveal:"
+#~ msgstr "לחץ לגילוי:"
+
+#~ msgid "Panel"
+#~ msgstr "לוח"
+
+#~ msgid "Panel translucency:"
+#~ msgstr "שקיפות חלונית:"
 
 #~ msgid "Window animations:"
 #~ msgstr "הנפשות חלון:"

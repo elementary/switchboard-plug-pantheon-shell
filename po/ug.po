@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 08:57+0000\n"
+"POT-Creation-Date: 2023-06-28 23:45+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Uyghur <https://l10n.elementary.io/projects/switchboard/"
@@ -29,83 +29,83 @@ msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 "قوزغاتقۇچ ستونى، قىزىق بۇلۇڭلارنى تەڭشەش، ئۈستەل تەگ رەسىمىنى ئۆزگەرتىش"
 
-#: src/Plug.vala:66 src/Plug.vala:122
+#: src/Plug.vala:66 src/Plug.vala:123
 msgid "Wallpaper"
 msgstr "ئۈستەل تەگ رەسىمى"
 
-#: src/Plug.vala:67 src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131
-#: src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:133 src/Plug.vala:134
 msgid "Appearance"
 msgstr ""
 
-#: src/Plug.vala:68 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 #, fuzzy
 msgid "Text"
 msgstr "سىنبەلگە چوڭلۇقى:"
 
-#: src/Plug.vala:72 src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125
-#: src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:75 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
 msgstr "كۆپ ۋەزىپىلىك كۆرۈنۈش"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:125
 msgid "Hide Mode"
 msgstr "يوشۇرۇش ئەندىزىسى"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:126
 msgid "Icon Size"
 msgstr "سىنبەلگە چوڭلۇقى"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:127
 #, fuzzy
 msgid "Pressure reveal"
 msgstr "بىسىم كۆرسىتىش:"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:128
 msgid "Display"
 msgstr "كۆرسىتىش"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:129
 msgid "Panel translucency"
 msgstr ""
 
-#: src/Plug.vala:130
+#: src/Plug.vala:131
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:131
+#: src/Plug.vala:132
 msgid "Accent color"
 msgstr ""
 
-#: src/Plug.vala:132
+#: src/Plug.vala:133
 msgid "Reduce motion"
 msgstr ""
 
-#: src/Plug.vala:133
+#: src/Plug.vala:134
 msgid "Window animations"
 msgstr ""
 
-#: src/Plug.vala:135 src/Views/Text.vala:34
+#: src/Plug.vala:136 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "سىنبەلگە چوڭلۇقى"
 
-#: src/Plug.vala:136 src/Views/Text.vala:54
+#: src/Plug.vala:137 src/Views/Text.vala:54
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:138
+#: src/Plug.vala:139
 msgid "Hot Corners"
 msgstr "قىزىق بۇلۇڭلار"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:38
 msgid "Move windows to a new workspace"
 msgstr ""
 
@@ -139,7 +139,7 @@ msgstr "تاللانغان رەسىمنى يىڭى ئۈستەليۈزى تەگ �
 msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:40
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
 msgid "Default"
 msgstr "سۈكۈتتىكى"
 
@@ -236,68 +236,101 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:31
-msgid "Dock"
-msgstr "قوزغاتقۇچ ستونى"
+#: src/Views/Dock.vala:15
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "سىنبەلگە چوڭلۇقى"
 
-#: src/Views/Dock.vala:35
+#: src/Views/Dock.vala:19
 msgid "Small"
 msgstr ""
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:34
 msgid "Large"
 msgstr "چوڭ"
 
-#: src/Views/Dock.vala:72
-msgid "Focused window is maximized"
+#: src/Views/Dock.vala:48
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "يوشۇرۇش ئەندىزىسى"
+
+#: src/Views/Dock.vala:52
+msgid "Never"
+msgstr ""
+
+#: src/Views/Dock.vala:57
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
 msgstr "ئاكتىپ كۆزنەك ئەڭ چوڭ ھالەتتە"
 
-#: src/Views/Dock.vala:73
-msgid "Focused window overlaps the dock"
+#: src/Views/Dock.vala:62
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
 msgstr "ئاكتىپ كۆزنەك قوزغاتقۇچ ستونىنى توسىۋالغاندا"
 
-#: src/Views/Dock.vala:74
-msgid "Any window overlaps the dock"
+#: src/Views/Dock.vala:67
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
 msgstr "ھەرقانداق كۆزنەك قوزغاتقۇچ ستونىنى توسۇۋالغاندا"
 
-#: src/Views/Dock.vala:75
-msgid "Not being used"
+#: src/Views/Dock.vala:72
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
 msgstr "ئىشلىتىلمىگەندە"
 
-#: src/Views/Dock.vala:111
-msgid "Primary display:"
+#: src/Views/Dock.vala:90
+#, fuzzy
+#| msgid "Primary display:"
+msgid "Dock on Primary Display"
 msgstr "ئاساسىي ئىكران:"
 
-#: src/Views/Dock.vala:115
-msgid "Display:"
-msgstr "كۆرسىتىش:"
-
-#: src/Views/Dock.vala:146
-msgid "Icon size:"
-msgstr "سىنبەلگە چوڭلۇقى:"
-
-#: src/Views/Dock.vala:148
-msgid "Hide when:"
-msgstr "يوشۇرۇش پەيتى:"
-
-#: src/Views/Dock.vala:152
-msgid "Pressure reveal:"
+#: src/Views/Dock.vala:104
+#, fuzzy
+msgid "Dock Pressure Reveal"
 msgstr "بىسىم كۆرسىتىش:"
 
-#: src/Views/Dock.vala:155
-msgid "Panel"
+#: src/Views/Dock.vala:106
+msgid ""
+"Prevent accidental reveals by moving the pointer past the display edge. Only "
+"works with some devices."
 msgstr ""
 
-#: src/Views/Dock.vala:159
-msgid "Panel translucency:"
+#: src/Views/Dock.vala:125
+msgid "Panel Translucency"
 msgstr ""
 
-#: src/Views/Dock.vala:250
+#: src/Views/Dock.vala:127
+msgid "Automatically transparent or opaque based on the wallpaper"
+msgstr ""
+
+#: src/Views/Dock.vala:146
+msgid "Show in Panel"
+msgstr ""
+
+#: src/Views/Dock.vala:153
+msgid "Accessibility"
+msgstr ""
+
+#: src/Views/Dock.vala:163
+msgid "Caps Lock ⇪"
+msgstr ""
+
+#: src/Views/Dock.vala:164
+msgid "Num Lock"
+msgstr ""
+
+#: src/Views/Dock.vala:337
 #, c-format
 msgid "Monitor %d"
 msgstr "كۆزەتكۈچى %d"
 
-#: src/Views/Dock.vala:255
+#: src/Views/Dock.vala:342
 #, c-format
 msgid "Display %d"
 msgstr "ئىكران %d"
@@ -378,6 +411,10 @@ msgstr ""
 msgid "Import Photo…"
 msgstr ""
 
+#: src/Views/Wallpaper.vala:115
+msgid "Dim with dark style:"
+msgstr ""
+
 #: src/Views/Wallpaper.vala:126
 msgid "Centered"
 msgstr "ئوتتۇرىدا"
@@ -456,6 +493,21 @@ msgstr "ئۈستەليۈزى پرويېكسىيە پليونكىسى قىلىپ 
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "پرويېكسىيە پليونكىسى قۇرۇش"
+
+#~ msgid "Dock"
+#~ msgstr "قوزغاتقۇچ ستونى"
+
+#~ msgid "Display:"
+#~ msgstr "كۆرسىتىش:"
+
+#~ msgid "Icon size:"
+#~ msgstr "سىنبەلگە چوڭلۇقى:"
+
+#~ msgid "Hide when:"
+#~ msgstr "يوشۇرۇش پەيتى:"
+
+#~ msgid "Pressure reveal:"
+#~ msgstr "بىسىم كۆرسىتىش:"
 
 #~ msgid "Custom command:"
 #~ msgstr "ئۆزگىچىلەشتۈرۈلگەن كوماندا:"
