@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 23:45+0000\n"
-"PO-Revision-Date: 2023-06-28 21:58+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-01 08:07+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/hu/>\n"
 "Language: hu\n"
@@ -234,10 +234,8 @@ msgid ""
 msgstr "Az ablakkezelő és néhány más felületi elem animációinak letiltása."
 
 #: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Dock Icon Size"
-msgstr "Ikonméret"
+msgstr "Dokkikon-méret"
 
 #: src/Views/Dock.vala:19
 msgid "Small"
@@ -248,68 +246,52 @@ msgid "Large"
 msgstr "Nagy"
 
 #: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
 msgid "Hide Dock"
-msgstr "Elrejtési mód"
+msgstr "Dokk elrejtése"
 
 #: src/Views/Dock.vala:52
 msgid "Never"
 msgstr ""
 
 #: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
 msgid "When the focused window is maximized"
-msgstr "A fókuszban lévő ablak teljes képernyős"
+msgstr "Amikor a fókuszban lévő ablak teljes képernyős"
 
 #: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
 msgid "When the focused window overlaps the dock"
-msgstr "A fókuszban lévő ablak lefedi a dokkot"
+msgstr "Amikor a fókuszban lévő ablak lefedi a dokkot"
 
 #: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
 msgid "When any window overlaps the dock"
-msgstr "Bármilyen ablak lefedi a dokkot"
+msgstr "Amikor bármilyen ablak lefedi a dokkot"
 
 #: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
 msgid "When not being used"
-msgstr "Nincs használatban"
+msgstr "Amikor nincs használatban"
 
 #: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
 msgid "Dock on Primary Display"
-msgstr "Elsődleges kijelző:"
+msgstr "Dokk az elsődleges kijelzőn"
 
 #: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
 msgid "Dock Pressure Reveal"
-msgstr "Felfedés csak nyomásra"
+msgstr "Dokk felfedése nyomásra"
 
 #: src/Views/Dock.vala:106
 msgid ""
 "Prevent accidental reveals by moving the pointer past the display edge. Only "
 "works with some devices."
 msgstr ""
+"A mutató kijelző szélén való túlhúzása esetén ne fedje fel véletlenül a "
+"dokkot. Csak néhány készüléken működik."
 
 #: src/Views/Dock.vala:125
-#, fuzzy
-#| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Átlátszó állapotsor"
 
 #: src/Views/Dock.vala:127
-#, fuzzy
-#| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
-msgstr "Automatikus a háttérkép alapján"
+msgstr "Automatikusan átlátszó vagy áttetsző a háttérkép alapján"
 
 #: src/Views/Dock.vala:146
 msgid "Show in Panel"
@@ -321,11 +303,11 @@ msgstr "Kisegítő lehetőségek"
 
 #: src/Views/Dock.vala:163
 msgid "Caps Lock ⇪"
-msgstr ""
+msgstr "Caps Lock ⇪"
 
 #: src/Views/Dock.vala:164
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: src/Views/Dock.vala:337
 #, c-format
