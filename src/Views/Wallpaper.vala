@@ -16,12 +16,6 @@
  *
  */
 
-[DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
-interface PantheonShell.AccountsServiceUser : Object {
-    [DBus (name = "BackgroundFile")]
-    public abstract string background_file { owned get; set; }
-}
-
 public class PantheonShell.Wallpaper : Gtk.Grid {
     public enum ColumnType {
         ICON,
@@ -43,9 +37,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
     private static GLib.Settings gnome_background_settings;
     private static GLib.Settings gala_background_settings;
-
-    //Instance of the AccountsServices-Interface for this user
-    private AccountsServiceUser? accountsservice = null;
 
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
@@ -74,17 +65,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     }
 
     construct {
-        // DBus connection needed in update_wallpaper for
-        // passing the wallpaper-information to accountsservice.
-         try {
-            int uid = (int)Posix.getuid ();
-            accountsservice = Bus.get_proxy_sync (BusType.SYSTEM,
-                    "org.freedesktop.Accounts",
-                    "/org/freedesktop/Accounts/User%i".printf (uid));
-        } catch (Error e) {
-            warning (e.message);
-        }
-
         var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
 
         wallpaper_view = new Gtk.FlowBox ();
@@ -248,13 +228,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             }
         }
 
-        var greeter_file = copy_for_greeter (file);
-        if (greeter_file != null) {
-            path = greeter_file.get_path ();
-        }
-
         gnome_background_settings.set_string ("picture-uri", uri);
-        accountsservice.background_file = path;
     }
 
     private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
@@ -489,37 +463,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning (e.message);
-        }
-
-        return dest;
-    }
-
-    private static File? copy_for_greeter (File source) {
-        File? dest = null;
-        try {
-            string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
-            if (greeter_data_dir == "") {
-                greeter_data_dir = Path.build_filename ("/var/lib/lightdm-data/", Environment.get_user_name (), "wallpaper");
-            }
-
-            var folder = File.new_for_path (greeter_data_dir);
-            if (folder.query_exists ()) {
-                var enumerator = folder.enumerate_children ("standard::*", FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
-                FileInfo? info = null;
-                while ((info = enumerator.next_file ()) != null) {
-                    enumerator.get_child (info).@delete ();
-                }
-            } else {
-                folder.make_directory_with_parents ();
-            }
-
-            dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
-            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
-            // Ensure wallpaper is readable by greeter user (owner rw, others r)
-            FileUtils.chmod (dest.get_path (), 0604);
-        } catch (Error e) {
-            warning (e.message);
-            return null;
         }
 
         return dest;
