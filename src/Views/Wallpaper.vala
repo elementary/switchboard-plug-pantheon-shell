@@ -22,7 +22,7 @@ interface PantheonShell.AccountsServiceUser : Object {
     public abstract string background_file { owned get; set; }
 }
 
-public class PantheonShell.Wallpaper : Gtk.Grid {
+public class PantheonShell.Wallpaper : Granite.SettingsPage {
     public enum ColumnType {
         ICON,
         NAME
@@ -65,7 +65,11 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     private bool finished; // Shows that we got or wallpapers together
 
     public Wallpaper (Switchboard.Plug _plug) {
-        Object (plug: _plug);
+        Object (
+            title: _("Wallpaper"),
+            icon_name: "preferences-desktop-wallpaper",
+            plug: _plug
+        );
     }
 
     static construct {
@@ -154,9 +158,12 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         actionbar.pack_end (dim_switch);
         actionbar.pack_end (dim_label);
 
-        attach (separator, 0, 0, 1, 1);
-        attach (view_overlay, 0, 1, 1, 1);
-        attach (actionbar, 0, 2, 1, 1);
+        var grid = new Gtk.Grid ();
+        grid.attach (separator, 0, 0);
+        grid.attach (view_overlay, 0, 1);
+        grid.attach (actionbar, 0, 2);
+
+        add (grid);
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
     }

@@ -3,13 +3,20 @@
  * SPDX-FileCopyrightText: 2016-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class PantheonShell.Dock : Gtk.Box {
+public class PantheonShell.Dock : Granite.SimpleSettingsPage {
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
 
     private Gtk.Grid display_grid;
     private Gtk.ComboBoxText display_combo;
     private Plank.DockPreferences dock_preferences;
+
+    public Dock () {
+        Object (
+            title: _("Dock & Panel"),
+            icon_name: "preferences-desktop"
+        );
+    }
 
     construct {
         var icon_header = new Granite.HeaderLabel (_("Dock Icon Size"));
@@ -171,11 +178,7 @@ public class PantheonShell.Dock : Gtk.Box {
             keyboard_settings.bind ("numlock", num_check, "active", DEFAULT);
         }
 
-        var box = new Gtk.Box (VERTICAL, 18) {
-            margin_start = 12,
-            margin_end = 12,
-            margin_bottom = 12
-        };
+        var box = new Gtk.Box (VERTICAL, 18);
         box.add (icon_box);
         box.add (hide_box);
         box.add (pressure_grid);
@@ -191,11 +194,7 @@ public class PantheonShell.Dock : Gtk.Box {
             child = box
         };
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
-            child = clamp
-        };
-
-        add (scrolled);
+        content_area.add (clamp);
 
         dock_preferences = new Plank.DockPreferences ("dock1");
         dock_preferences.bind_property ("PressureReveal", pressure_switch, "active", SYNC_CREATE | BIDIRECTIONAL);

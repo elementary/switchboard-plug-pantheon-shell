@@ -18,7 +18,7 @@
 *
 */
 
-public class PantheonShell.Appearance : Gtk.Box {
+public class PantheonShell.Appearance : Granite.SimpleSettingsPage {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
@@ -64,9 +64,15 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
     }
 
-    construct {
-        var dark_label = new Granite.HeaderLabel (_("Style"));
+    public Appearance () {
+        Object (
+            title: _("Appearance"),
+            description : _("Preferred accents and style for system components. Apps may also follow these preferences, but can always choose their own accents or style."),
+            icon_name: "preferences-desktop-theme"
+        );
+    }
 
+    construct {
         var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
 
         var prefer_default_card = new Gtk.Grid () {
@@ -120,12 +126,6 @@ public class PantheonShell.Appearance : Gtk.Box {
         prefer_style_box.add (prefer_default_radio);
         prefer_style_box.add (prefer_dark_radio);
 
-        var dark_info = new Gtk.Label (_("Preferred visual style for system components. Apps may also choose to follow this preference.")) {
-            wrap = true,
-            xalign = 0
-        };
-        dark_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
         var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled")) {
@@ -140,17 +140,17 @@ public class PantheonShell.Appearance : Gtk.Box {
         var from_label = new Gtk.Label (_("From:"));
 
         var from_time = new Granite.Widgets.TimePicker () {
-            hexpand = true,
             margin_end = 6
         };
 
         var to_label = new Gtk.Label (_("To:"));
 
-        var to_time = new Granite.Widgets.TimePicker () {
+        var to_time = new Granite.Widgets.TimePicker () ;
+
+        var schedule_manual_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+            halign = Gtk.Align.START,
             hexpand = true
         };
-
-        var schedule_manual_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
         schedule_manual_box.add (from_label);
         schedule_manual_box.add (from_time);
         schedule_manual_box.add (to_label);
@@ -188,15 +188,10 @@ public class PantheonShell.Appearance : Gtk.Box {
 
         var grid = new Gtk.Grid () {
             column_spacing = 7, // Off by one with Gtk.RadioButton
-            row_spacing = 6,
-            margin_start = 12,
-            margin_end = 12,
-            margin_bottom = 24
+            row_spacing = 6
         };
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
-            grid.attach (dark_label, 0, 0, 2);
-            grid.attach (dark_info, 0, 1, 2);
             grid.attach (prefer_style_box, 0, 2, 2);
             grid.attach (schedule_label, 0, 3, 2);
             grid.attach (schedule_disabled_radio, 0, 4, 2);
@@ -373,15 +368,8 @@ public class PantheonShell.Appearance : Gtk.Box {
             accent_grid.add (slate_button);
             accent_grid.add (auto_button);
 
-            var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color.")) {
-                xalign = 0,
-                wrap = true
-            };
-            accent_info.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-
             grid.attach (accent_label, 0, 7, 2);
-            grid.attach (accent_info, 0, 8, 2);
-            grid.attach (accent_grid, 0, 9, 2);
+            grid.attach (accent_grid, 0, 8, 2);
         }
 
         var animations_label = new Granite.HeaderLabel (_("Reduce Motion")) {
@@ -412,7 +400,7 @@ public class PantheonShell.Appearance : Gtk.Box {
         var clamp = new Hdy.Clamp ();
         clamp.add (grid);
 
-        add (clamp);
+        content_area.add (clamp);
 
         var animations_settings = new Settings ("org.pantheon.desktop.gala.animations");
         animations_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.INVERT_BOOLEAN);

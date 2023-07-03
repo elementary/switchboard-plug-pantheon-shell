@@ -1,5 +1,5 @@
 /*
-* Copyright 2021 elementary, Inc. (https://elementary.io)
+* Copyright 2021-2023 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -18,7 +18,8 @@
 *
 */
 
-public class PantheonShell.Text : Gtk.Box {
+public class PantheonShell.Text : Granite.SimpleSettingsPage {
+    private const string TEXT_SIZE_KEY = "text-scaling-factor";
     private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
     private const string FONT_KEY = "font-name";
     private const string DOCUMENT_FONT_KEY = "document-font-name";
@@ -29,6 +30,13 @@ public class PantheonShell.Text : Gtk.Box {
     private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
 
     private uint scale_timeout;
+
+    public Text () {
+        Object (
+            title: _("Text"),
+            icon_name: "preferences-desktop-font"
+        );
+    }
 
     construct {
         var size_label = new Granite.HeaderLabel (_("Size"));
@@ -83,7 +91,7 @@ public class PantheonShell.Text : Gtk.Box {
         var clamp = new Hdy.Clamp ();
         clamp.add (box);
 
-        add (clamp);
+        content_area.add (clamp);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
         interface_settings.bind ("text-scaling-factor", size_adjustment, "value", SettingsBindFlags.GET);

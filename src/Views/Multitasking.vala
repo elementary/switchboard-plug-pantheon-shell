@@ -19,14 +19,20 @@
 * Authored by: Tom Beckmann
 */
 
-public class PantheonShell.Multitasking : Gtk.Box {
+public class PantheonShell.Multitasking : Granite.SimpleSettingsPage {
     private GLib.Settings behavior_settings;
+
+    public Multitasking () {
+        Object (
+            title: _("Multitasking"),
+            icon_name: "preferences-desktop-workspaces"
+        );
+    }
 
     construct {
         var hotcorner_title = new Gtk.Label (_("When the pointer enters a display corner")) {
             halign = Gtk.Align.START,
-            margin_bottom = 6,
-            margin_top = 6
+            margin_bottom = 6
         };
         hotcorner_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
@@ -51,10 +57,7 @@ public class PantheonShell.Multitasking : Gtk.Box {
 
         var grid = new Gtk.Grid () {
             column_spacing = 12,
-            row_spacing = 6,
-            margin_start = 12,
-            margin_end = 12,
-            margin_bottom = 12
+            row_spacing = 6
         };
         grid.attach (hotcorner_title, 0, 0, 2);
         grid.attach (topleft, 0, 1, 2);
@@ -67,12 +70,7 @@ public class PantheonShell.Multitasking : Gtk.Box {
         var clamp = new Hdy.Clamp ();
         clamp.add (grid);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
-            hscrollbar_policy = Gtk.PolicyType.NEVER
-        };
-        scrolled.add (clamp);
-
-        add (scrolled);
+        content_area.add (clamp);
 
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
