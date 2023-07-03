@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 23:45+0000\n"
-"PO-Revision-Date: 2023-06-28 21:58+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"PO-Revision-Date: 2023-07-01 08:07+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
 "Language: ja\n"
@@ -231,10 +231,8 @@ msgstr ""
 "化します。"
 
 #: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Dock Icon Size"
-msgstr "アイコンサイズ"
+msgstr "ドックのアイコンサイズ"
 
 #: src/Views/Dock.vala:19
 msgid "Small"
@@ -245,68 +243,51 @@ msgid "Large"
 msgstr "大"
 
 #: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
 msgid "Hide Dock"
-msgstr "隠す方法"
+msgstr "ドックを隠す"
 
 #: src/Views/Dock.vala:52
 msgid "Never"
-msgstr ""
+msgstr "なし"
 
 #: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
 msgid "When the focused window is maximized"
-msgstr "フォーカスされたウィンドウが最大化されたとき"
+msgstr "フォーカスされたウィンドウが最大化された場合"
 
 #: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
 msgid "When the focused window overlaps the dock"
-msgstr "フォーカスされたウィンドウが重なったとき"
+msgstr "フォーカスされたウィンドウと重なった場合"
 
 #: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
 msgid "When any window overlaps the dock"
-msgstr "いずれかのウィンドウが重なったとき"
+msgstr "いずれかのウィンドウと重なった場合"
 
 #: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
 msgid "When not being used"
-msgstr "使われていないとき"
+msgstr "使われていない場合"
 
 #: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
 msgid "Dock on Primary Display"
-msgstr "プライマリーディスプレイ:"
+msgstr "プライマリーディスプレイ上のドック"
 
 #: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
 msgid "Dock Pressure Reveal"
-msgstr "押し込んで表示"
+msgstr "ドックを押し込んで表示"
 
 #: src/Views/Dock.vala:106
 msgid ""
 "Prevent accidental reveals by moving the pointer past the display edge. Only "
 "works with some devices."
-msgstr ""
+msgstr "ディスプレイの端へポインターを移動させた際に、意図せずドックが表示されてしま"
+"うのを防ぎます。一部のデバイスでのみ動作します。"
 
 #: src/Views/Dock.vala:125
-#, fuzzy
-#| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "パネルを透過"
 
 #: src/Views/Dock.vala:127
-#, fuzzy
-#| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
-msgstr "壁紙に基づいて自動的に設定"
+msgstr "壁紙に基づいて自動的に透明または不透明にします"
 
 #: src/Views/Dock.vala:146
 msgid "Show in Panel"
@@ -336,7 +317,7 @@ msgstr "ディスプレイ %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
-msgstr "ポインターがディスプレイの隅に入ったときの動作"
+msgstr "ポインターをディスプレイの隅に移動させた場合の動作"
 
 #: src/Views/Multitasking.vala:33
 msgid "Top Left"

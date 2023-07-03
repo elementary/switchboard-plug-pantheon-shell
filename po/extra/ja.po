@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 23:45+0000\n"
-"PO-Revision-Date: 2023-06-02 09:07+0000\n"
+"PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -41,7 +41,7 @@ msgstr "そのほかのアップデート:"
 
 #: data/pantheon-shell.metainfo.xml.in:48
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
-msgstr ""
+msgstr "“ドックとパネル”の設定をデザイン変更 (わかりやすいように説明テキストを追加)"
 
 #: data/pantheon-shell.metainfo.xml.in:49
 msgid ""

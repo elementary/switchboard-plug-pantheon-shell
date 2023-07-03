@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 23:45+0000\n"
-"PO-Revision-Date: 2022-08-10 18:19+0000\n"
+"PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Moldovan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/mo/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: src/Plug.vala:49
 msgid "Desktop"
@@ -253,7 +253,7 @@ msgstr "Ascundeți modul"
 
 #: src/Views/Dock.vala:52
 msgid "Never"
-msgstr ""
+msgstr "Niciodată"
 
 #: src/Views/Dock.vala:57
 #, fuzzy

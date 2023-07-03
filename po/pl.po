@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 23:45+0000\n"
-"PO-Revision-Date: 2023-06-28 21:58+0000\n"
+"PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pl/>\n"
@@ -235,10 +235,8 @@ msgid ""
 msgstr "Wyłącz animacje menedżera okien i kilku innych elementach interfejsu."
 
 #: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Dock Icon Size"
-msgstr "Rozmiar ikon"
+msgstr "Rozmiar ikon doku"
 
 #: src/Views/Dock.vala:19
 msgid "Small"
@@ -249,50 +247,36 @@ msgid "Large"
 msgstr "Duży"
 
 #: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
 msgid "Hide Dock"
-msgstr "Tryb ukrywania"
+msgstr "Ukryj dok"
 
 #: src/Views/Dock.vala:52
 msgid "Never"
-msgstr ""
+msgstr "Nigdy"
 
 #: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
 msgid "When the focused window is maximized"
-msgstr "Używane okno jest zmaksymalizowane"
+msgstr "Gdy używane okno jest zmaksymalizowane"
 
 #: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
 msgid "When the focused window overlaps the dock"
-msgstr "Używane okno zachodzi na dok"
+msgstr "Gdy używane okno zachodzi na dok"
 
 #: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
 msgid "When any window overlaps the dock"
-msgstr "Pewne okno zachodzi na dok"
+msgstr "Gdy dowolne okno zachodzi na dok"
 
 #: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
 msgid "When not being used"
-msgstr "Nieużywane"
+msgstr "Gdy nie jest używany"
 
 #: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
 msgid "Dock on Primary Display"
-msgstr "Główny ekran:"
+msgstr "Dok na głównym wyświetlaczu"
 
 #: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
 msgid "Dock Pressure Reveal"
-msgstr "Odsłona nacisku"
+msgstr "Odsłona doku pod wpływem nacisku"
 
 #: src/Views/Dock.vala:106
 msgid ""
