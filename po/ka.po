@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 23:45+0000\n"
-"PO-Revision-Date: 2023-07-01 08:07+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-15 08:30+0000\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ka/>\n"
 "Language: ka\n"
@@ -227,10 +227,8 @@ msgid ""
 msgstr ""
 
 #: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Dock Icon Size"
-msgstr "ხატულას ზომა"
+msgstr "დოკის ხატულას ზომა"
 
 #: src/Views/Dock.vala:19
 msgid "Small"
@@ -241,50 +239,36 @@ msgid "Large"
 msgstr "დიდი"
 
 #: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
 msgid "Hide Dock"
-msgstr "დამალვის რეჟიმი"
+msgstr "დოკის დამალვა"
 
 #: src/Views/Dock.vala:52
 msgid "Never"
 msgstr "არასოდეს"
 
 #: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
 msgid "When the focused window is maximized"
-msgstr "ფოკუსის მქონე ფანჯარა გაშლილია"
+msgstr "როცა ფოკუსის მქონე ფანჯარა ჩაკეცილია"
 
 #: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
 msgid "When the focused window overlaps the dock"
-msgstr "ფოკუსის მქონე ფანჯარა დოკს გადაფარავს"
+msgstr "როცა ფოკუსის მქონე ფანჯარა დოკს ფარავს"
 
 #: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
 msgid "When any window overlaps the dock"
-msgstr "დოკს ნებისმიერი ფანჯარა გადაფარავს"
+msgstr "როცა ნებისმიერი ფანჯარა ფარავს დოკს"
 
 #: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
 msgid "When not being used"
-msgstr "არ გამოიყენება"
+msgstr "როცა არ გამოიყენება"
 
 #: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
 msgid "Dock on Primary Display"
-msgstr "ძირითადი ეკრანი:"
+msgstr "ძირითად ეკრანზე მიმაგრება"
 
 #: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
 msgid "Dock Pressure Reveal"
-msgstr "დაწოლა გამოსავლენად"
+msgstr "დოკზე დაწოლით გამოჩენა"
 
 #: src/Views/Dock.vala:106
 msgid ""
@@ -293,16 +277,12 @@ msgid ""
 msgstr ""
 
 #: src/Views/Dock.vala:125
-#, fuzzy
-#| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "პანელის გამჭვირვალობა"
 
 #: src/Views/Dock.vala:127
-#, fuzzy
-#| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
-msgstr "ავტომატური, ფონის სურათზე დაყრდნობით"
+msgstr "ავტომატური გამჭვირვალე ან გაუმჭვირვალე, ფონის სურათზე დამოკიდებული"
 
 #: src/Views/Dock.vala:146
 msgid "Show in Panel"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 23:45+0000\n"
-"PO-Revision-Date: 2023-06-02 09:07+0000\n"
+"PO-Revision-Date: 2023-07-07 12:07+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -42,6 +42,8 @@ msgstr "Autres mises à jour :"
 #: data/pantheon-shell.metainfo.xml.in:48
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
+"Remaniement des paramètres du dock et du panneau avec un texte de "
+"description utile"
 
 #: data/pantheon-shell.metainfo.xml.in:49
 msgid ""
