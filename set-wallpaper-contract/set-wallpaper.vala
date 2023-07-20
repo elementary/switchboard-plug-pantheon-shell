@@ -40,12 +40,6 @@ namespace SetWallpaperContractor {
 
     private int delay_value = 60;
 
-    [DBus (name = "org.freedesktop.DisplayManager.AccountsService")]
-    interface AccountsServiceUser : Object {
-        [DBus (name = "BackgroundFile")]
-        public abstract string background_file { owned get; set; }
-    }
-
     private void update_slideshow (string path, List<File> files, int duration) {
         var wallpapers = "";
         var len = files.length ();
@@ -141,49 +135,8 @@ namespace SetWallpaperContractor {
         return dest;
     }
 
-    private File? copy_for_greeter (File source) {
-        File? dest = null;
-        try {
-            string greeter_data_dir = Path.build_filename (Environment.get_variable ("XDG_GREETER_DATA_DIR"), "wallpaper");
-            if (greeter_data_dir == "") {
-                greeter_data_dir = Path.build_filename ("/var/lib/lightdm-data/", Environment.get_user_name (), "wallpaper");
-            }
-
-            var folder = File.new_for_path (greeter_data_dir);
-            if (folder.query_exists ()) {
-                var enumerator = folder.enumerate_children ("standard::*", FileQueryInfoFlags.NOFOLLOW_SYMLINKS);
-                FileInfo? info = null;
-                while ((info = enumerator.next_file ()) != null) {
-                    enumerator.get_child (info).@delete ();
-                }
-            } else {
-                folder.make_directory_with_parents ();
-            }
-
-            dest = File.new_for_path (Path.build_filename (greeter_data_dir, source.get_basename ()));
-            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
-            // Ensure wallpaper is readable by greeter user (owner rw, others r)
-            FileUtils.chmod (dest.get_path (), 0604);
-        } catch (Error e) {
-            warning ("%s\n", e.message);
-            return null;
-        }
-
-        return dest;
-    }
-
     public static int main (string[] args) {
         Gtk.init (ref args);
-
-        AccountsServiceUser? accounts_service = null;
-        try {
-            string uid = "%d".printf ((int) Posix.getuid ());
-            accounts_service = Bus.get_proxy_sync (BusType.SYSTEM,
-                    "org.freedesktop.Accounts",
-                    "/org/freedesktop/Accounts/User" + uid);
-        } catch (Error e) {
-            warning (e.message);
-        }
 
         var folder = ensure_local_bg_exists ();
         var files = new List<File> ();
@@ -202,13 +155,6 @@ namespace SetWallpaperContractor {
                 }
 
                 files.append (append_file);
-
-                var greeter_file = copy_for_greeter (file);
-                if (greeter_file != null) {
-                    path = greeter_file.get_path ();
-                }
-
-                accounts_service.background_file = path;
             }
         }
 
