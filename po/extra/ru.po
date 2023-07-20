@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 23:45+0000\n"
+"POT-Creation-Date: 2023-07-20 23:26+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
 #: data/pantheon-shell.metainfo.xml.in:10
@@ -33,10 +33,10 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/pantheon-shell.metainfo.xml.in:46
-#: data/pantheon-shell.metainfo.xml.in:65
-#: data/pantheon-shell.metainfo.xml.in:79
-#: data/pantheon-shell.metainfo.xml.in:101
-#: data/pantheon-shell.metainfo.xml.in:115
+#: data/pantheon-shell.metainfo.xml.in:67
+#: data/pantheon-shell.metainfo.xml.in:81
+#: data/pantheon-shell.metainfo.xml.in:103
+#: data/pantheon-shell.metainfo.xml.in:117
 msgid "Other updates:"
 msgstr "Остальные обновления:"
 
@@ -47,76 +47,86 @@ msgstr ""
 "настройкам"
 
 #: data/pantheon-shell.metainfo.xml.in:49
+msgid "Show or hide optional panel indicators"
+msgstr ""
+
+#: data/pantheon-shell.metainfo.xml.in:50
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Исправлены переводы задержки слайд-шоу и текста \"Затемнять при тёмном стиле"
 "\""
 
-#: data/pantheon-shell.metainfo.xml.in:50
-#: data/pantheon-shell.metainfo.xml.in:68
-#: data/pantheon-shell.metainfo.xml.in:81
-#: data/pantheon-shell.metainfo.xml.in:103
-#: data/pantheon-shell.metainfo.xml.in:117
+#: data/pantheon-shell.metainfo.xml.in:51
+msgid ""
+"Fix an issue where wallpapers were not removed when closing System Settings "
+"immediately after"
+msgstr ""
+
+#: data/pantheon-shell.metainfo.xml.in:52
+#: data/pantheon-shell.metainfo.xml.in:70
+#: data/pantheon-shell.metainfo.xml.in:83
+#: data/pantheon-shell.metainfo.xml.in:105
+#: data/pantheon-shell.metainfo.xml.in:119
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/pantheon-shell.metainfo.xml.in:61
-#: data/pantheon-shell.metainfo.xml.in:88
-#: data/pantheon-shell.metainfo.xml.in:110
+#: data/pantheon-shell.metainfo.xml.in:63
+#: data/pantheon-shell.metainfo.xml.in:90
+#: data/pantheon-shell.metainfo.xml.in:112
 msgid "New features:"
 msgstr "Новые возможности:"
 
-#: data/pantheon-shell.metainfo.xml.in:63
+#: data/pantheon-shell.metainfo.xml.in:65
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "Добавлена опция для затемнения обоев, когда включён тёмный стиль"
 
-#: data/pantheon-shell.metainfo.xml.in:67
+#: data/pantheon-shell.metainfo.xml.in:69
 msgid "Use a more vertical layout in the Text view"
 msgstr ""
 "Использование более вертикального расположения элементов во вкладке «Текст»"
 
-#: data/pantheon-shell.metainfo.xml.in:90
+#: data/pantheon-shell.metainfo.xml.in:92
 msgid "There is now an undo option after removing a wallpaper"
 msgstr "Появилась опция отмены после удаления обоев"
 
-#: data/pantheon-shell.metainfo.xml.in:91
+#: data/pantheon-shell.metainfo.xml.in:93
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr "Обои теперь сортируются с пользовательскими обоями в начале"
 
-#: data/pantheon-shell.metainfo.xml.in:93
+#: data/pantheon-shell.metainfo.xml.in:95
 msgid "Fixes:"
 msgstr "Исправления:"
 
-#: data/pantheon-shell.metainfo.xml.in:95
+#: data/pantheon-shell.metainfo.xml.in:97
 msgid "Wallpaper accent color follows system setting"
 msgstr "Акцентный цвет в меню обоев теперь следует настройкам системы"
 
-#: data/pantheon-shell.metainfo.xml.in:96
+#: data/pantheon-shell.metainfo.xml.in:98
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr ""
 "Контракт для установки обоев теперь выдаёт ошибку когда запущен от "
 "суперпользователя"
 
-#: data/pantheon-shell.metainfo.xml.in:97
+#: data/pantheon-shell.metainfo.xml.in:99
 msgid "Wallpapers with the same name are distinguished"
 msgstr "Обои с одинаковыми именами теперь различаются"
 
-#: data/pantheon-shell.metainfo.xml.in:98
+#: data/pantheon-shell.metainfo.xml.in:100
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 "Изменение стиля системы с помощью клавиатуры отменяет расписание тёмного "
 "режима"
 
-#: data/pantheon-shell.metainfo.xml.in:99
+#: data/pantheon-shell.metainfo.xml.in:101
 msgid "Style dyslexia-friendly switch properly"
 msgstr "Правильная стилизация переключателя шрифта для людей с дислексией"
 
-#: data/pantheon-shell.metainfo.xml.in:112
+#: data/pantheon-shell.metainfo.xml.in:114
 msgid "Set custom Terminal commands for each hotcorner"
 msgstr "Назначайте собственные команды Терминала для каждого активного угла"
 
-#: data/pantheon-shell.metainfo.xml.in:113
+#: data/pantheon-shell.metainfo.xml.in:115
 msgid "Redesigned Appearance and Multitasking views"
 msgstr "Переработано оформление категорий «Внешний вид» и «Многозадачность»"
 
