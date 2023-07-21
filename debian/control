@@ -19,7 +19,7 @@ Homepage: https://github.com/elementary/switchboard-plug-pantheon-shell
 
 Package: switchboard-plug-pantheon-shell
 Architecture: any
-Depends: gala (>= 7.0.2), ${misc:Depends}, ${shlibs:Depends}
+Depends: gala (>= 7.0.2), io.elementary.settings-daemon (>=1.3.0), ${misc:Depends}, ${shlibs:Depends}
 Recommends: plank
 Enhances: switchboard
 Conflicts: switchboard-plug-wallpaper
