@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 23:45+0000\n"
+"POT-Creation-Date: 2023-07-20 23:26+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: English (Canada) <https://l10n.elementary.io/projects/"
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Hot Corners"
 msgstr "Hot Corners"
 
-#: src/Plug.vala:140 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr ""
 
@@ -342,63 +342,63 @@ msgstr "Display %d"
 msgid "When the pointer enters a display corner"
 msgstr "When the cursor enters the corner of the display:"
 
-#: src/Views/Multitasking.vala:33
+#: src/Views/Multitasking.vala:32
 msgid "Top Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:34
+#: src/Views/Multitasking.vala:33
 msgid "Top Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:34
 msgid "Bottom Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:41
 msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:43
+#: src/Views/Multitasking.vala:42
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Do nothing"
 msgstr "Do nothing"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Multitasking View"
 msgstr "Multitasking View"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Maximize current window"
 msgstr "Maximize current window"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show Applications Menu"
 msgstr "Show Applications Menu"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 msgid "Show all windows"
 msgstr "Show all windows"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 msgid "Switch to previous workspace"
 msgstr ""
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 msgid "Switch to next workspace"
 msgstr ""
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Switch to new workspace"
 msgstr ""
 
-#: src/Views/Multitasking.vala:127
+#: src/Views/Multitasking.vala:126
 msgid "Execute custom command"
 msgstr "Execute custom command"
 
@@ -408,45 +408,45 @@ msgid ""
 "legibility and reading speed."
 msgstr ""
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:92
 msgid "Import Photo…"
 msgstr "Import Photo…"
 
-#: src/Views/Wallpaper.vala:115
+#: src/Views/Wallpaper.vala:95
 msgid "Dim with dark style:"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:126
+#: src/Views/Wallpaper.vala:106
 msgid "Centered"
 msgstr "Centred"
 
-#: src/Views/Wallpaper.vala:127
+#: src/Views/Wallpaper.vala:107
 msgid "Zoom"
 msgstr "Zoom"
 
-#: src/Views/Wallpaper.vala:128
+#: src/Views/Wallpaper.vala:108
 msgid "Spanned"
 msgstr "Spanned"
 
-#: src/Views/Wallpaper.vala:173
+#: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
 msgstr "Import Photo"
 
-#: src/Views/Wallpaper.vala:174
+#: src/Views/Wallpaper.vala:154
 msgid "Import"
 msgstr "Import"
 
-#: src/Views/Wallpaper.vala:175
+#: src/Views/Wallpaper.vala:155
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Views/Wallpaper.vala:649
+#: src/Views/Wallpaper.vala:592
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Wallpaper"
 
-#: src/Views/Wallpaper.vala:650
+#: src/Views/Wallpaper.vala:593
 msgid "Undo"
 msgstr "Undo"
 
@@ -459,40 +459,40 @@ msgstr "Remove"
 msgid "Artist: %s"
 msgstr "Artist: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:94
+#: set-wallpaper-contract/set-wallpaper.vala:88
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d second"
 msgstr[1] "%d seconds"
 
-#: set-wallpaper-contract/set-wallpaper.vala:97
+#: set-wallpaper-contract/set-wallpaper.vala:91
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minute"
 msgstr[1] "%d minutes"
 
-#: set-wallpaper-contract/set-wallpaper.vala:101
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d hour"
 msgstr[1] "%d hours"
 
-#: set-wallpaper-contract/set-wallpaper.vala:104
+#: set-wallpaper-contract/set-wallpaper.vala:98
 msgid "1 day"
 msgstr "1 day"
 
-#: set-wallpaper-contract/set-wallpaper.vala:108
+#: set-wallpaper-contract/set-wallpaper.vala:102
 msgid "Show each photo for"
 msgstr "Show each photo for"
 
-#: set-wallpaper-contract/set-wallpaper.vala:232
+#: set-wallpaper-contract/set-wallpaper.vala:178
 msgid "Set As Desktop Slideshow"
 msgstr "Set As Desktop Slideshow"
 
-#: set-wallpaper-contract/set-wallpaper.vala:239
+#: set-wallpaper-contract/set-wallpaper.vala:185
 #, fuzzy
 #| msgid "Create slideshow"
 msgid "Create Slideshow"

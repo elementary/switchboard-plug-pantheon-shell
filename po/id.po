@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 23:45+0000\n"
+"POT-Creation-Date: 2023-07-20 23:26+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
@@ -97,7 +97,7 @@ msgstr "Ramah Disleksia"
 msgid "Hot Corners"
 msgstr "Sudut Panas"
 
-#: src/Plug.vala:140 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "Pindahkan jendela ke ruang kerja baru"
 
@@ -343,63 +343,63 @@ msgstr "Layar %d"
 msgid "When the pointer enters a display corner"
 msgstr "Saat penunjuk memasuki sudut layar"
 
-#: src/Views/Multitasking.vala:33
+#: src/Views/Multitasking.vala:32
 msgid "Top Left"
 msgstr "Kiri Atas"
 
-#: src/Views/Multitasking.vala:34
+#: src/Views/Multitasking.vala:33
 msgid "Top Right"
 msgstr "Kanan Atas"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:34
 msgid "Bottom Left"
 msgstr "Kiri Bawah"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Right"
 msgstr "Kanan Bawah"
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:41
 msgid "When entering fullscreen"
 msgstr "Saat memasuk layar penuh"
 
-#: src/Views/Multitasking.vala:43
+#: src/Views/Multitasking.vala:42
 msgid "When maximizing"
 msgstr "Saat maksimalkan"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Do nothing"
 msgstr "Jangan lakukan apa pun"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Multitasking View"
 msgstr "Tampilan Multi Tugas"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Maximize current window"
 msgstr "Maksimalkan jendela saat ini"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show Applications Menu"
 msgstr "Tampilkan Menu Aplikasi"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 msgid "Show all windows"
 msgstr "Tampilkan semua jendela"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 msgid "Switch to previous workspace"
 msgstr "Beralih ke ruang kerja baru"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 msgid "Switch to next workspace"
 msgstr "Beralih ke ruang kerja baru"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Switch to new workspace"
 msgstr "Beralih ke ruang kerja baru"
 
-#: src/Views/Multitasking.vala:127
+#: src/Views/Multitasking.vala:126
 msgid "Execute custom command"
 msgstr "Jalankan perintah kustom"
 
@@ -411,43 +411,43 @@ msgstr ""
 "Bentuk bagian bawah yang berat dan jarak karakter yang ditingkatkan dapat "
 "membantu meningkatkan keterbacaan dan kecepatan membaca."
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:92
 msgid "Import Photo…"
 msgstr "Impor Foto…"
 
-#: src/Views/Wallpaper.vala:115
+#: src/Views/Wallpaper.vala:95
 msgid "Dim with dark style:"
 msgstr "Gelapkan dengan gaya gelap:"
 
-#: src/Views/Wallpaper.vala:126
+#: src/Views/Wallpaper.vala:106
 msgid "Centered"
 msgstr "Tengah"
 
-#: src/Views/Wallpaper.vala:127
+#: src/Views/Wallpaper.vala:107
 msgid "Zoom"
 msgstr "Perbesar"
 
-#: src/Views/Wallpaper.vala:128
+#: src/Views/Wallpaper.vala:108
 msgid "Spanned"
 msgstr "Bentangkan"
 
-#: src/Views/Wallpaper.vala:173
+#: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
 msgstr "Impor Foto"
 
-#: src/Views/Wallpaper.vala:174
+#: src/Views/Wallpaper.vala:154
 msgid "Import"
 msgstr "Impor"
 
-#: src/Views/Wallpaper.vala:175
+#: src/Views/Wallpaper.vala:155
 msgid "Cancel"
 msgstr "Batal"
 
-#: src/Views/Wallpaper.vala:649
+#: src/Views/Wallpaper.vala:592
 msgid "Wallpaper Deleted"
 msgstr "Gambar Latar Dihapus"
 
-#: src/Views/Wallpaper.vala:650
+#: src/Views/Wallpaper.vala:593
 msgid "Undo"
 msgstr "Urungkan"
 
@@ -460,37 +460,37 @@ msgstr "Hapus"
 msgid "Artist: %s"
 msgstr "Artis: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:94
+#: set-wallpaper-contract/set-wallpaper.vala:88
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d detik"
 
-#: set-wallpaper-contract/set-wallpaper.vala:97
+#: set-wallpaper-contract/set-wallpaper.vala:91
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d menit"
 
-#: set-wallpaper-contract/set-wallpaper.vala:101
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d jam"
 
-#: set-wallpaper-contract/set-wallpaper.vala:104
+#: set-wallpaper-contract/set-wallpaper.vala:98
 msgid "1 day"
 msgstr "1 hari"
 
-#: set-wallpaper-contract/set-wallpaper.vala:108
+#: set-wallpaper-contract/set-wallpaper.vala:102
 msgid "Show each photo for"
 msgstr "Tampilkan tiap foto untuk"
 
-#: set-wallpaper-contract/set-wallpaper.vala:232
+#: set-wallpaper-contract/set-wallpaper.vala:178
 msgid "Set As Desktop Slideshow"
 msgstr "Tetapkan Sebagai Pertunjukan Salindia Desktop"
 
-#: set-wallpaper-contract/set-wallpaper.vala:239
+#: set-wallpaper-contract/set-wallpaper.vala:185
 msgid "Create Slideshow"
 msgstr "Buat Pertunjukan Salindia"
 
