@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 23:26+0000\n"
-"PO-Revision-Date: 2023-07-23 14:07+0000\n"
+"PO-Revision-Date: 2023-07-24 12:54+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: data/pantheon-shell.metainfo.xml.in:49
 msgid "Show or hide optional panel indicators"
-msgstr ""
+msgstr "オプションのパネルインジケーターを表示／非表示にできる機能を追加"
 
 #: data/pantheon-shell.metainfo.xml.in:50
 msgid ""
@@ -59,7 +59,8 @@ msgstr ""
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
-msgstr ""
+msgstr "壁紙削除の操作後“システム設定”を瞬時に終了すると、壁紙が削除されていない不具"
+"合を修正"
 
 #: data/pantheon-shell.metainfo.xml.in:52
 #: data/pantheon-shell.metainfo.xml.in:70
