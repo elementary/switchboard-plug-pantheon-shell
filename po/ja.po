@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 23:45+0000\n"
-"PO-Revision-Date: 2023-06-28 21:58+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"PO-Revision-Date: 2023-07-01 08:07+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
 "Language: ja\n"
@@ -93,7 +93,7 @@ msgstr "ディスレクシア対応"
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/Plug.vala:140 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "以下の場合にウィンドウを新しいワークスペースに移動"
 
@@ -231,10 +231,8 @@ msgstr ""
 "化します。"
 
 #: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
 msgid "Dock Icon Size"
-msgstr "アイコンサイズ"
+msgstr "ドックのアイコンサイズ"
 
 #: src/Views/Dock.vala:19
 msgid "Small"
@@ -245,68 +243,52 @@ msgid "Large"
 msgstr "大"
 
 #: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
 msgid "Hide Dock"
-msgstr "隠す方法"
+msgstr "ドックを隠す"
 
 #: src/Views/Dock.vala:52
 msgid "Never"
-msgstr ""
+msgstr "なし"
 
 #: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
 msgid "When the focused window is maximized"
-msgstr "フォーカスされたウィンドウが最大化されたとき"
+msgstr "フォーカスされたウィンドウが最大化された場合"
 
 #: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
 msgid "When the focused window overlaps the dock"
-msgstr "フォーカスされたウィンドウが重なったとき"
+msgstr "フォーカスされたウィンドウと重なった場合"
 
 #: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
 msgid "When any window overlaps the dock"
-msgstr "いずれかのウィンドウが重なったとき"
+msgstr "いずれかのウィンドウと重なった場合"
 
 #: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
 msgid "When not being used"
-msgstr "使われていないとき"
+msgstr "使われていない場合"
 
 #: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
 msgid "Dock on Primary Display"
-msgstr "プライマリーディスプレイ:"
+msgstr "プライマリーディスプレイ上のドック"
 
 #: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
 msgid "Dock Pressure Reveal"
-msgstr "押し込んで表示"
+msgstr "ドックを押し込んで表示"
 
 #: src/Views/Dock.vala:106
 msgid ""
 "Prevent accidental reveals by moving the pointer past the display edge. Only "
 "works with some devices."
 msgstr ""
+"ディスプレイの端へポインターを移動させた際に、意図せずドックが表示されてしま"
+"うのを防ぎます。一部のデバイスでのみ動作します。"
 
 #: src/Views/Dock.vala:125
-#, fuzzy
-#| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "パネルを透過"
 
 #: src/Views/Dock.vala:127
-#, fuzzy
-#| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
-msgstr "壁紙に基づいて自動的に設定"
+msgstr "壁紙に基づいて自動的に透明または不透明にします"
 
 #: src/Views/Dock.vala:146
 msgid "Show in Panel"
@@ -336,65 +318,65 @@ msgstr "ディスプレイ %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
-msgstr "ポインターがディスプレイの隅に入ったときの動作"
+msgstr "ポインターをディスプレイの隅に移動させた場合の動作"
 
-#: src/Views/Multitasking.vala:33
+#: src/Views/Multitasking.vala:32
 msgid "Top Left"
 msgstr "左上"
 
-#: src/Views/Multitasking.vala:34
+#: src/Views/Multitasking.vala:33
 msgid "Top Right"
 msgstr "右上"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:34
 msgid "Bottom Left"
 msgstr "左下"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Right"
 msgstr "右下"
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:41
 msgid "When entering fullscreen"
 msgstr "全画面表示にした場合"
 
-#: src/Views/Multitasking.vala:43
+#: src/Views/Multitasking.vala:42
 msgid "When maximizing"
 msgstr "最大化した場合"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Do nothing"
 msgstr "何もしない"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Multitasking View"
 msgstr "マルチタスク画面"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Maximize current window"
 msgstr "現在のウィンドウを最大化"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show Applications Menu"
 msgstr "アプリケーションメニューを表示"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 msgid "Show all windows"
 msgstr "すべてのウィンドウを表示"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 msgid "Switch to previous workspace"
 msgstr "左のワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 msgid "Switch to next workspace"
 msgstr "右のワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Switch to new workspace"
 msgstr "新しいワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:127
+#: src/Views/Multitasking.vala:126
 msgid "Execute custom command"
 msgstr "カスタムコマンドを実行"
 
@@ -406,43 +388,43 @@ msgstr ""
 "下部が強調され、字間が確保された書体を使用します。これにより、読みやすさと読"
 "む速度の改善に役立つ可能性があります。"
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:92
 msgid "Import Photo…"
 msgstr "写真をインポート…"
 
-#: src/Views/Wallpaper.vala:115
+#: src/Views/Wallpaper.vala:95
 msgid "Dim with dark style:"
 msgstr "ダークスタイル時に壁紙を暗くする:"
 
-#: src/Views/Wallpaper.vala:126
+#: src/Views/Wallpaper.vala:106
 msgid "Centered"
 msgstr "中央に表示"
 
-#: src/Views/Wallpaper.vala:127
+#: src/Views/Wallpaper.vala:107
 msgid "Zoom"
 msgstr "画面に合わせる"
 
-#: src/Views/Wallpaper.vala:128
+#: src/Views/Wallpaper.vala:108
 msgid "Spanned"
 msgstr "並べる"
 
-#: src/Views/Wallpaper.vala:173
+#: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
 msgstr "写真をインポート"
 
-#: src/Views/Wallpaper.vala:174
+#: src/Views/Wallpaper.vala:154
 msgid "Import"
 msgstr "インポート"
 
-#: src/Views/Wallpaper.vala:175
+#: src/Views/Wallpaper.vala:155
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Views/Wallpaper.vala:649
+#: src/Views/Wallpaper.vala:592
 msgid "Wallpaper Deleted"
 msgstr "壁紙を削除しました"
 
-#: src/Views/Wallpaper.vala:650
+#: src/Views/Wallpaper.vala:593
 msgid "Undo"
 msgstr "元に戻す"
 
@@ -455,37 +437,37 @@ msgstr "削除"
 msgid "Artist: %s"
 msgstr "アーティスト: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:94
+#: set-wallpaper-contract/set-wallpaper.vala:88
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d秒"
 
-#: set-wallpaper-contract/set-wallpaper.vala:97
+#: set-wallpaper-contract/set-wallpaper.vala:91
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d分"
 
-#: set-wallpaper-contract/set-wallpaper.vala:101
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d時間"
 
-#: set-wallpaper-contract/set-wallpaper.vala:104
+#: set-wallpaper-contract/set-wallpaper.vala:98
 msgid "1 day"
 msgstr "1 日"
 
-#: set-wallpaper-contract/set-wallpaper.vala:108
+#: set-wallpaper-contract/set-wallpaper.vala:102
 msgid "Show each photo for"
 msgstr "それぞれの写真を表示する時間"
 
-#: set-wallpaper-contract/set-wallpaper.vala:232
+#: set-wallpaper-contract/set-wallpaper.vala:178
 msgid "Set As Desktop Slideshow"
 msgstr "デスクトップスライドショーとして設定"
 
-#: set-wallpaper-contract/set-wallpaper.vala:239
+#: set-wallpaper-contract/set-wallpaper.vala:185
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
 

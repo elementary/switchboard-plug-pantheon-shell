@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 23:45+0000\n"
+"POT-Creation-Date: 2023-07-20 23:26+0000\n"
 "PO-Revision-Date: 2022-09-30 22:36+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -98,7 +98,7 @@ msgstr "Text pre dyslektikov"
 msgid "Hot Corners"
 msgstr "Aktívne rohy"
 
-#: src/Plug.vala:140 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "Presunúť okná na novú pracovnú plochu"
 
@@ -343,67 +343,67 @@ msgstr "Displej %d"
 msgid "When the pointer enters a display corner"
 msgstr "Keď sa kurzor dotkne rohu obrazovky"
 
-#: src/Views/Multitasking.vala:33
+#: src/Views/Multitasking.vala:32
 msgid "Top Left"
 msgstr "Horný ľavý"
 
-#: src/Views/Multitasking.vala:34
+#: src/Views/Multitasking.vala:33
 msgid "Top Right"
 msgstr "Horný pravý"
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:34
 msgid "Bottom Left"
 msgstr "Dolný ľavý"
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Right"
 msgstr "Dolný pravý"
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:41
 msgid "When entering fullscreen"
 msgstr "Keď je aplikácia na celú obrazovku"
 
-#: src/Views/Multitasking.vala:43
+#: src/Views/Multitasking.vala:42
 msgid "When maximizing"
 msgstr "Keď sa aplikácia maximalizuje"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Do nothing"
 msgstr "Nerobiť nič"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Multitasking View"
 msgstr "Zobrazenie úloh"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Maximize current window"
 msgstr "Maximalizovať aktuálne okno"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show Applications Menu"
 msgstr "Zobraziť menu aplikácií"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 msgid "Show all windows"
 msgstr "Zobraziť všetky okná"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "Prepnúť na novú pracovnú plochu"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "Prepnúť na novú pracovnú plochu"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Switch to new workspace"
 msgstr "Prepnúť na novú pracovnú plochu"
 
-#: src/Views/Multitasking.vala:127
+#: src/Views/Multitasking.vala:126
 msgid "Execute custom command"
 msgstr "Spustiť vlastný program"
 
@@ -415,45 +415,45 @@ msgstr ""
 "Tvary so zdôraznenou spodnou časťou a väčšími rozostupmi medzi znakmi môžu "
 "zlepšiť rozlíšiteľnosť a rýchlosť čítania."
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:92
 msgid "Import Photo…"
 msgstr "Importovať fotku…"
 
-#: src/Views/Wallpaper.vala:115
+#: src/Views/Wallpaper.vala:95
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim with dark style:"
 msgstr "Tmavý režim"
 
-#: src/Views/Wallpaper.vala:126
+#: src/Views/Wallpaper.vala:106
 msgid "Centered"
 msgstr "Centrovať"
 
-#: src/Views/Wallpaper.vala:127
+#: src/Views/Wallpaper.vala:107
 msgid "Zoom"
 msgstr "Priblížiť"
 
-#: src/Views/Wallpaper.vala:128
+#: src/Views/Wallpaper.vala:108
 msgid "Spanned"
 msgstr "Vyplniť"
 
-#: src/Views/Wallpaper.vala:173
+#: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
 msgstr "Importovať fotku"
 
-#: src/Views/Wallpaper.vala:174
+#: src/Views/Wallpaper.vala:154
 msgid "Import"
 msgstr "Importovať"
 
-#: src/Views/Wallpaper.vala:175
+#: src/Views/Wallpaper.vala:155
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: src/Views/Wallpaper.vala:649
+#: src/Views/Wallpaper.vala:592
 msgid "Wallpaper Deleted"
 msgstr "Tapeta odstránená"
 
-#: src/Views/Wallpaper.vala:650
+#: src/Views/Wallpaper.vala:593
 msgid "Undo"
 msgstr "Späť"
 
@@ -466,7 +466,7 @@ msgstr "Odstrániť"
 msgid "Artist: %s"
 msgstr "Umelec: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:94
+#: set-wallpaper-contract/set-wallpaper.vala:88
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -474,7 +474,7 @@ msgstr[0] "%d sekúnd"
 msgstr[1] "%d sekunda"
 msgstr[2] "%d sekundy"
 
-#: set-wallpaper-contract/set-wallpaper.vala:97
+#: set-wallpaper-contract/set-wallpaper.vala:91
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
@@ -482,7 +482,7 @@ msgstr[0] "%d minút"
 msgstr[1] "%d minúta"
 msgstr[2] "%d minúty"
 
-#: set-wallpaper-contract/set-wallpaper.vala:101
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
@@ -490,19 +490,19 @@ msgstr[0] "%d hodín"
 msgstr[1] "%d hodina"
 msgstr[2] "%d hodiny"
 
-#: set-wallpaper-contract/set-wallpaper.vala:104
+#: set-wallpaper-contract/set-wallpaper.vala:98
 msgid "1 day"
 msgstr "1 deň"
 
-#: set-wallpaper-contract/set-wallpaper.vala:108
+#: set-wallpaper-contract/set-wallpaper.vala:102
 msgid "Show each photo for"
 msgstr "Zobraziť každú fotku po dobu"
 
-#: set-wallpaper-contract/set-wallpaper.vala:232
+#: set-wallpaper-contract/set-wallpaper.vala:178
 msgid "Set As Desktop Slideshow"
 msgstr "Nastaviť ako prezentáciu pozadí plochy"
 
-#: set-wallpaper-contract/set-wallpaper.vala:239
+#: set-wallpaper-contract/set-wallpaper.vala:185
 msgid "Create Slideshow"
 msgstr "Vytvoriť prezentáciu"
 

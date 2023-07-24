@@ -25,8 +25,7 @@ public class PantheonShell.Multitasking : Gtk.Box {
     construct {
         var hotcorner_title = new Gtk.Label (_("When the pointer enters a display corner")) {
             halign = Gtk.Align.START,
-            margin_bottom = 6,
-            margin_top = 6
+            margin_bottom = 6
         };
         hotcorner_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 

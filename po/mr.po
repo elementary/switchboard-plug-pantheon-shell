@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 23:45+0000\n"
+"POT-Creation-Date: 2023-07-20 23:26+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -99,7 +99,7 @@ msgstr "डिसिलेक्सिया-अनुकूल मजकूर"
 msgid "Hot Corners"
 msgstr "हॉट कॉर्नर"
 
-#: src/Plug.vala:140 src/Views/Multitasking.vala:38
+#: src/Plug.vala:140 src/Views/Multitasking.vala:37
 #, fuzzy
 #| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
@@ -344,71 +344,71 @@ msgstr "प्रदर्शन  %d"
 msgid "When the pointer enters a display corner"
 msgstr "जेव्हा कर्सर प्रदर्शनाच्या कोप-यात प्रवेश करतो:"
 
-#: src/Views/Multitasking.vala:33
+#: src/Views/Multitasking.vala:32
 msgid "Top Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:34
+#: src/Views/Multitasking.vala:33
 msgid "Top Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:35
+#: src/Views/Multitasking.vala:34
 msgid "Bottom Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:36
+#: src/Views/Multitasking.vala:35
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:41
 #, fuzzy
 #| msgid "When entering fullscreen:"
 msgid "When entering fullscreen"
 msgstr "पूर्णस्क्रीनमध्ये प्रवेश करताना:"
 
-#: src/Views/Multitasking.vala:43
+#: src/Views/Multitasking.vala:42
 #, fuzzy
 #| msgid "When maximizing:"
 msgid "When maximizing"
 msgstr "जास्तीत जास्त करताना:"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Do nothing"
 msgstr "काही करू नका"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Multitasking View"
 msgstr "मल्टीटास्किंग प्रदर्शन"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Maximize current window"
 msgstr "वर्तमान विंडो मोठ्यात मोठी करा"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show Applications Menu"
 msgstr "अप्लिकेशन मेनू दर्शवा"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 msgid "Show all windows"
 msgstr "सर्व विंडोज दाखवा"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "नवीन कार्यक्षेत्रावर स्विच करा"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "नवीन कार्यक्षेत्रावर स्विच करा"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Switch to new workspace"
 msgstr "नवीन कार्यक्षेत्रावर स्विच करा"
 
-#: src/Views/Multitasking.vala:127
+#: src/Views/Multitasking.vala:126
 msgid "Execute custom command"
 msgstr "सानुकूल आज्ञा चालवा"
 
@@ -419,47 +419,47 @@ msgid ""
 msgstr ""
 "तळाशी-जड आकार आणि वर्णांमधील वाढीव अंतर सुवाच्यता आणि वाचन गती सुधारण्यात मदत करते."
 
-#: src/Views/Wallpaper.vala:112
+#: src/Views/Wallpaper.vala:92
 msgid "Import Photo…"
 msgstr "फोटो आयात करा…"
 
-#: src/Views/Wallpaper.vala:115
+#: src/Views/Wallpaper.vala:95
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim with dark style:"
 msgstr "गडद शैली"
 
-#: src/Views/Wallpaper.vala:126
+#: src/Views/Wallpaper.vala:106
 msgid "Centered"
 msgstr "केंद्रित"
 
-#: src/Views/Wallpaper.vala:127
+#: src/Views/Wallpaper.vala:107
 msgid "Zoom"
 msgstr "झूम करा"
 
-#: src/Views/Wallpaper.vala:128
+#: src/Views/Wallpaper.vala:108
 msgid "Spanned"
 msgstr "स्पॅन केलेले"
 
-#: src/Views/Wallpaper.vala:173
+#: src/Views/Wallpaper.vala:153
 msgid "Import Photo"
 msgstr "फोटो आयात करा"
 
-#: src/Views/Wallpaper.vala:174
+#: src/Views/Wallpaper.vala:154
 msgid "Import"
 msgstr "आयात करा"
 
-#: src/Views/Wallpaper.vala:175
+#: src/Views/Wallpaper.vala:155
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Views/Wallpaper.vala:649
+#: src/Views/Wallpaper.vala:592
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "वॉलपेपर"
 
-#: src/Views/Wallpaper.vala:650
+#: src/Views/Wallpaper.vala:593
 msgid "Undo"
 msgstr "पूर्ववत करा"
 
@@ -472,40 +472,40 @@ msgstr "काढा"
 msgid "Artist: %s"
 msgstr "कलाकारः %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:94
+#: set-wallpaper-contract/set-wallpaper.vala:88
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d सेकंद"
 msgstr[1] "%d  सेकंद"
 
-#: set-wallpaper-contract/set-wallpaper.vala:97
+#: set-wallpaper-contract/set-wallpaper.vala:91
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "मिनीट"
 msgstr[1] "मिनीटे"
 
-#: set-wallpaper-contract/set-wallpaper.vala:101
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d तास"
 msgstr[1] "%d  तास"
 
-#: set-wallpaper-contract/set-wallpaper.vala:104
+#: set-wallpaper-contract/set-wallpaper.vala:98
 msgid "1 day"
 msgstr "1 दिवस"
 
-#: set-wallpaper-contract/set-wallpaper.vala:108
+#: set-wallpaper-contract/set-wallpaper.vala:102
 msgid "Show each photo for"
 msgstr "साठी प्रत्येक फोटो दर्शवा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:232
+#: set-wallpaper-contract/set-wallpaper.vala:178
 msgid "Set As Desktop Slideshow"
 msgstr "डेस्कटॉप स्लाइडशो म्हणून सेट करा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:239
+#: set-wallpaper-contract/set-wallpaper.vala:185
 #, fuzzy
 #| msgid "Create slideshow"
 msgid "Create Slideshow"

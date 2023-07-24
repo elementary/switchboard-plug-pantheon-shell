@@ -41,12 +41,14 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="6.4.1" date="2023-05-30" urgency="medium">
+    <release version="6.5.0" date="2023-07-19" urgency="medium">
       <description>
         <p>Other updates:</p>
         <ul>
           <li>Redesign Dock &amp; Panel settings with helpful description text</li>
+          <li>Show or hide optional panel indicators</li>
           <li>Fix translation of slideshow delay value and "Dim with dark style" label</li>
+          <li>Fix an issue where wallpapers were not removed when closing System Settings immediately after</li>
           <li>Updated translations</li>
         </ul>
       </description>
