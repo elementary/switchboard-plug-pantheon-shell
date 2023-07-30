@@ -56,7 +56,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         if (main_grid == null) {
             main_grid = new Gtk.Grid ();
 
-            wallpaper_view = new Wallpaper (this);
+            wallpaper_view = new Wallpaper ();
 
             var multitasking = new Multitasking ();
             var appearance = new Appearance ();

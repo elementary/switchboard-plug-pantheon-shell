@@ -16,7 +16,7 @@
  *
  */
 
-public class PantheonShell.Wallpaper : Gtk.Grid {
+public class PantheonShell.Wallpaper : Gtk.Box {
     public enum ColumnType {
         ICON,
         NAME
@@ -32,8 +32,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         FileAttribute.THUMBNAIL_PATH,
         FileAttribute.THUMBNAIL_IS_VALID
     };
-
-    public Switchboard.Plug plug { get; construct set; }
 
     private static GLib.Settings gnome_background_settings;
     private static GLib.Settings gala_background_settings;
@@ -51,13 +49,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
     private Cancellable last_cancellable;
 
-    private string current_wallpaper_path;
-    private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
     private bool finished; // Shows that we got or wallpapers together
-
-    public Wallpaper (Switchboard.Plug _plug) {
-        Object (plug: _plug);
-    }
 
     static construct {
         gnome_background_settings = new GLib.Settings ("org.gnome.desktop.background");
@@ -65,66 +57,67 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     }
 
     construct {
-        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
+        var separator = new Gtk.Separator (HORIZONTAL);
 
-        wallpaper_view = new Gtk.FlowBox ();
-        wallpaper_view.activate_on_single_click = true;
+        wallpaper_view = new Gtk.FlowBox () {
+            activate_on_single_click = true,
+            homogeneous = true,
+            selection_mode = SINGLE
+        };
         wallpaper_view.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        wallpaper_view.homogeneous = true;
-        wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
-        wallpaper_view.child_activated.connect (update_checked_wallpaper);
         wallpaper_view.set_sort_func (wallpapers_sort_function);
 
-        var color = gnome_background_settings.get_string ("primary-color");
-        create_solid_color_container (color);
+        solid_color = new SolidColorContainer ();
+        wallpaper_view.add (solid_color);
 
-        Gtk.TargetEntry e = {"text/uri-list", 0, 0};
-        wallpaper_view.drag_data_received.connect (on_drag_data_received);
-        Gtk.drag_dest_set (wallpaper_view, Gtk.DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
+        wallpaper_scrolled_window = new Gtk.ScrolledWindow (null, null) {
+            expand = true,
+            child = wallpaper_view
+        };
 
-        wallpaper_scrolled_window = new Gtk.ScrolledWindow (null, null);
-        wallpaper_scrolled_window.expand = true;
-        wallpaper_scrolled_window.add (wallpaper_view);
+        view_overlay = new Gtk.Overlay () {
+            child = wallpaper_scrolled_window
+        };
 
-        view_overlay = new Gtk.Overlay ();
-        view_overlay.add (wallpaper_scrolled_window);
-
-        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
-        add_wallpaper_button.margin = 12;
+        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
+            margin_start = 12,
+            margin_end = 12,
+            margin_top = 12,
+            margin_bottom = 12
+        };
 
         var dim_label = new Gtk.Label (_("Dim with dark style:"));
 
         dim_switch = new Gtk.Switch () {
             margin_end = 6,
-            valign = Gtk.Align.CENTER
+            valign = CENTER
         };
 
         combo = new Gtk.ComboBoxText () {
             margin_end = 6,
-            valign = Gtk.Align.CENTER
+            valign = CENTER
         };
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
         combo.append ("spanned", _("Spanned"));
-        combo.changed.connect (update_mode);
 
         Gdk.RGBA rgba_color = {};
-        if (!rgba_color.parse (color)) {
+        if (!rgba_color.parse (gnome_background_settings.get_string ("primary-color"))) {
             rgba_color = { 1, 1, 1, 1 };
         }
 
-        color_button = new Gtk.ColorButton ();
-        color_button.margin = 12;
-        color_button.margin_start = 0;
-        color_button.rgba = rgba_color;
-        color_button.color_set.connect (update_color);
+        color_button = new Gtk.ColorButton () {
+            margin_start = 0,
+            margin_end = 12,
+            margin_top = 12,
+            margin_bottom = 12,
+            rgba = rgba_color
+        };
 
-        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        var size_group = new Gtk.SizeGroup (HORIZONTAL);
         size_group.add_widget (add_wallpaper_button);
         size_group.add_widget (combo);
         size_group.add_widget (color_button);
-
-        load_settings ();
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
@@ -134,11 +127,27 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         actionbar.pack_end (dim_switch);
         actionbar.pack_end (dim_label);
 
-        attach (separator, 0, 0, 1, 1);
-        attach (view_overlay, 0, 1, 1, 1);
-        attach (actionbar, 0, 2, 1, 1);
+        orientation = VERTICAL;
+        add (separator);
+        add (view_overlay);
+        add (actionbar);
+
+        load_settings ();
+
+        wallpaper_view.selected_children_changed.connect (update_checked_wallpaper);
+
+        combo.changed.connect (update_mode);
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
+
+        color_button.color_set.connect (() => {
+            gnome_background_settings.set_string ("primary-color", color_button.rgba.to_string ());
+            wallpaper_view.select_child (solid_color);
+        });
+
+        Gtk.TargetEntry e = {"text/uri-list", 0, 0};
+        wallpaper_view.drag_data_received.connect (on_drag_data_received);
+        Gtk.drag_dest_set (wallpaper_view, Gtk.DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
     }
 
     private void show_wallpaper_chooser () {
@@ -199,112 +208,58 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             picture_options = "zoom";
         }
 
-        prevent_update_mode = true;
         combo.set_active_id (picture_options);
-
-        current_wallpaper_path = gnome_background_settings.get_string ("picture-uri");
     }
 
-    /*
-     * This integrates with LightDM
-     */
-    private void update_accountsservice () {
-        var file = File.new_for_uri (current_wallpaper_path);
-        string uri = file.get_uri ();
-        string path = file.get_path ();
-
-        bool path_has_prefix_bg_dir = false;
-        foreach (unowned string directory in get_bg_directories ()) {
-            if (path.has_prefix (directory)) {
-                path_has_prefix_bg_dir = true;
-                break;
-            }
+    private void update_checked_wallpaper () {
+        var selected_children = wallpaper_view.get_selected_children ();
+        if (selected_children.is_empty ()) {
+            return;
         }
 
-        if (!path_has_prefix_bg_dir) {
-            var local_file = copy_for_library (file);
-            if (local_file != null) {
-                uri = local_file.get_uri ();
-            }
-        }
+        var selected_child = (WallpaperContainer) selected_children.data;
 
-        gnome_background_settings.set_string ("picture-uri", uri);
-    }
-
-    private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
-        var children = (WallpaperContainer) wallpaper_view.get_selected_children ().data;
-
-        if (!(children is SolidColorContainer)) {
-            current_wallpaper_path = children.uri;
-            update_accountsservice ();
+        if (selected_child is SolidColorContainer) {
+            combo.set_sensitive (false);
+            gnome_background_settings.set_string ("picture-options", "none");
+        } else {
+            gnome_background_settings.set_string ("picture-uri", selected_child.uri);
 
             if (active_wallpaper == solid_color) {
                 combo.set_sensitive (true);
                 gnome_background_settings.set_string ("picture-options", combo.get_active_id ());
             }
-
-        } else {
-            set_combo_disabled_if_necessary ();
-            gnome_background_settings.set_string ("primary-color", solid_color.color);
         }
 
         // We don't do gradient backgrounds, reset the key that might interfere
         gnome_background_settings.reset ("color-shading-type");
 
-        children.checked = true;
+        selected_child.checked = true;
 
-        if (active_wallpaper != null && active_wallpaper != children) {
+        if (active_wallpaper != null && active_wallpaper != selected_child) {
             active_wallpaper.checked = false;
         }
 
-        active_wallpaper = children;
-    }
-
-    private void update_color () {
-        if (finished) {
-            set_combo_disabled_if_necessary ();
-            create_solid_color_container (color_button.rgba.to_string ());
-            wallpaper_view.add (solid_color);
-            wallpaper_view.select_child (solid_color);
-
-            if (active_wallpaper != null) {
-                active_wallpaper.checked = false;
-            }
-
-            active_wallpaper = solid_color;
-            active_wallpaper.checked = true;
-            gnome_background_settings.set_string ("primary-color", solid_color.color);
-        }
+        active_wallpaper = selected_child;
     }
 
     private void update_mode () {
-        if (!prevent_update_mode) {
-            gnome_background_settings.set_string ("picture-options", combo.get_active_id ());
+        gnome_background_settings.set_string ("picture-options", combo.get_active_id ());
 
-            // Changing the mode, while a solid color is selected, change focus to the
-            // wallpaper tile.
-            if (active_wallpaper == solid_color) {
-                active_wallpaper.checked = false;
+        // Changing the mode, while a solid color is selected, change focus to the
+        // wallpaper tile.
+        if (active_wallpaper == solid_color) {
+            active_wallpaper.checked = false;
 
-                foreach (var child in wallpaper_view.get_children ()) {
-                    var container = (WallpaperContainer) child;
-                    if (container.uri == current_wallpaper_path) {
-                        container.checked = true;
-                        wallpaper_view.select_child (container);
-                        active_wallpaper = container;
-                        break;
-                    }
+            foreach (unowned var child in wallpaper_view.get_children ()) {
+                var container = (WallpaperContainer) child;
+                if (container.uri == gnome_background_settings.get_string ("picture-uri")) {
+                    container.checked = true;
+                    wallpaper_view.select_child (container);
+                    active_wallpaper = container;
+                    break;
                 }
             }
-        } else {
-            prevent_update_mode = false;
-        }
-    }
-
-    private void set_combo_disabled_if_necessary () {
-        if (active_wallpaper != solid_color) {
-            combo.set_sensitive (false);
-            gnome_background_settings.set_string ("picture-options", "none");
         }
     }
 
@@ -364,8 +319,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             }
 
             if (toplevel_folder) {
-                create_solid_color_container (color_button.rgba.to_string ());
-                wallpaper_view.add (solid_color);
                 finished = true;
 
                 if (gnome_background_settings.get_string ("picture-options") == "none") {
@@ -387,23 +340,12 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         }
     }
 
-    private void create_solid_color_container (string color) {
-        if (solid_color != null) {
-            wallpaper_view.unselect_child (solid_color);
-            wallpaper_view.remove (solid_color);
-            solid_color.destroy ();
-        }
-
-        solid_color = new SolidColorContainer (color);
-        solid_color.show_all ();
-    }
-
     private void clean_wallpapers () {
-        foreach (var child in wallpaper_view.get_children ()) {
-            child.destroy ();
+        foreach (unowned var child in wallpaper_view.get_children ()) {
+            if (child != solid_color) {
+                child.destroy ();
+            }
         }
-
-        solid_color = null;
     }
 
     private static string get_local_bg_directory () {
@@ -518,9 +460,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             });
 
             // Select the wallpaper if it is the current wallpaper
-            if (current_wallpaper_path.has_suffix (uri) && gnome_background_settings.get_string ("picture-options") != "none") {
-                this.wallpaper_view.select_child (wallpaper);
-                // Set the widget activated without activating it
+            if (gnome_background_settings.get_string ("picture-uri").has_suffix (uri) &&
+                gnome_background_settings.get_string ("picture-options") != "none") {
+                wallpaper_view.select_child (wallpaper);
                 wallpaper.checked = true;
                 active_wallpaper = wallpaper;
             }

@@ -21,21 +21,18 @@
 public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public signal void trash ();
 
-    private const int THUMB_WIDTH = 162;
-    private const int THUMB_HEIGHT = 100;
+    protected const int THUMB_WIDTH = 162;
+    protected const int THUMB_HEIGHT = 100;
 
     private Gtk.Grid card_box;
     private Gtk.Menu context_menu;
     private Gtk.Revealer check_revealer;
-    private Granite.AsyncImage image;
+    protected Granite.AsyncImage image;
 
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
-    public Gdk.Pixbuf thumb { get; set; }
     public uint64 creation_date = 0;
-
-    private int scale;
 
     public bool checked {
         get {
@@ -74,8 +71,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     construct {
         var style_context = get_style_context ();
         style_context.add_class ("wallpaper-container");
-
-        scale = style_context.get_scale ();
 
         height_request = THUMB_HEIGHT + 18;
         width_request = THUMB_WIDTH + 18;
@@ -148,9 +143,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                 } else {
                     generate_and_load_thumb ();
                 }
-            } else {
-                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale);
-                image.gicon = thumb;
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
@@ -159,7 +151,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     private void generate_and_load_thumb () {
-        ThumbnailGenerator.get_default ().get_thumbnail (uri, THUMB_WIDTH * scale, () => {
+        ThumbnailGenerator.get_default ().get_thumbnail (uri, THUMB_WIDTH * get_style_context ().get_scale (), () => {
             try {
                 var file = File.new_for_uri (uri);
                 var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);
