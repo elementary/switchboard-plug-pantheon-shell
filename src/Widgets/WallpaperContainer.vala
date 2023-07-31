@@ -1,5 +1,5 @@
 /*-
- * Copyright 2015-2022 elementary, Inc. (https://elementary.io)
+ * Copyright 2015-2023 elementary, Inc. (https://elementary.io)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +24,9 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     protected const int THUMB_WIDTH = 162;
     protected const int THUMB_HEIGHT = 100;
 
-    private Gtk.Grid card_box;
+    private static Gtk.CssProvider check_provider;
+
+    private Gtk.Box card_box;
     private Gtk.Menu context_menu;
     private Gtk.Revealer check_revealer;
     protected Granite.AsyncImage image;
@@ -68,6 +70,11 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         Object (uri: uri, thumb_path: thumb_path, thumb_valid: thumb_valid);
     }
 
+    static construct {
+        check_provider = new Gtk.CssProvider ();
+        check_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
+    }
+
     construct {
         var style_context = get_style_context ();
         style_context.add_class ("wallpaper-container");
@@ -81,36 +88,35 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         image.get_style_context ().set_scale (1);
 
         // We need an extra grid to not apply a scale == 1 to the "card" style.
-        card_box = new Gtk.Grid ();
+        card_box = new Gtk.Box (VERTICAL, 0) {
+            margin_top = 9,
+            margin_bottom = 9,
+            margin_start = 9,
+            margin_end = 9,
+        };
         card_box.get_style_context ().add_class ("card");
         card_box.add (image);
-        card_box.margin = 9;
-
-        var check_provider = new Gtk.CssProvider ();
-        check_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
 
         var check = new Gtk.RadioButton (null) {
-            halign = Gtk.Align.START,
-            valign = Gtk.Align.START,
+            halign = START,
+            valign = START,
             can_focus = false
         };
         check.get_style_context ().add_provider (check_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
-        check_revealer = new Gtk.Revealer ();
-        check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-        check_revealer.add (check);
+        check_revealer = new Gtk.Revealer () {
+            transition_type = CROSSFADE,
+            child = check
+        };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (card_box);
+        var overlay = new Gtk.Overlay () {
+            child = card_box
+        };
         overlay.add_overlay (check_revealer);
 
-        var event_box = new Gtk.EventBox ();
-        event_box.add (overlay);
-
-        halign = Gtk.Align.CENTER;
-        valign = Gtk.Align.CENTER;
-        margin = 6;
-        add (event_box);
+        halign = CENTER;
+        valign = CENTER;
+        add (overlay);
 
         if (uri != null) {
             var move_to_trash = new Gtk.MenuItem.with_label (_("Remove"));
@@ -130,11 +136,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             context_menu.show_all ();
         }
 
-        activate.connect (() => {
-            checked = true;
-        });
-
-        event_box.button_press_event.connect (show_context_menu);
+        button_press_event.connect (show_context_menu);
 
         try {
             if (uri != null) {

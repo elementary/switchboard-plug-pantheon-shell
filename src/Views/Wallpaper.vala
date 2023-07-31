@@ -62,7 +62,9 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         wallpaper_view = new Gtk.FlowBox () {
             activate_on_single_click = true,
             homogeneous = true,
-            selection_mode = SINGLE
+            selection_mode = SINGLE,
+            row_spacing = 6,
+            column_spacing = 6
         };
         wallpaper_view.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         wallpaper_view.set_sort_func (wallpapers_sort_function);
