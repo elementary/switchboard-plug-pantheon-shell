@@ -90,27 +90,26 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         check_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
 
         var check = new Gtk.RadioButton (null) {
-            halign = Gtk.Align.START,
-            valign = Gtk.Align.START,
+            halign = START,
+            valign = START,
             can_focus = false
         };
         check.get_style_context ().add_provider (check_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
-        check_revealer = new Gtk.Revealer ();
-        check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-        check_revealer.add (check);
+        check_revealer = new Gtk.Revealer () {
+            transition_type = CROSSFADE,
+            child = check
+        };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (card_box);
+        var overlay = new Gtk.Overlay () {
+            child = card_box
+        };
         overlay.add_overlay (check_revealer);
-
-        var event_box = new Gtk.EventBox ();
-        event_box.add (overlay);
 
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
         margin = 6;
-        add (event_box);
+        add (overlay);
 
         if (uri != null) {
             var move_to_trash = new Gtk.MenuItem.with_label (_("Remove"));
@@ -134,7 +133,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             checked = true;
         });
 
-        event_box.button_press_event.connect (show_context_menu);
+        button_press_event.connect (show_context_menu);
 
         try {
             if (uri != null) {

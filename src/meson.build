@@ -8,6 +8,7 @@ plug_files = files(
     'Views/Multitasking.vala',
     'Views/Text.vala',
     'Views/Wallpaper.vala',
+    'Widgets/DoubleWallpaperContainer.vala',
     'Widgets/SolidColorContainer.vala',
     'Widgets/WallpaperContainer.vala',
 )
