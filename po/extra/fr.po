@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 23:26+0000\n"
-"PO-Revision-Date: 2023-07-07 12:07+0000\n"
+"PO-Revision-Date: 2023-08-02 09:08+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -47,7 +47,7 @@ msgstr ""
 
 #: data/pantheon-shell.metainfo.xml.in:49
 msgid "Show or hide optional panel indicators"
-msgstr ""
+msgstr "Affichez ou masquez les indicateurs optionnels du panneau"
 
 #: data/pantheon-shell.metainfo.xml.in:50
 msgid ""
@@ -61,6 +61,8 @@ msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
 msgstr ""
+"Correction d'un problème où les fonds d'écran n'étaient pas supprimés "
+"lorsque l'on fermait les paramètres du système immédiatement"
 
 #: data/pantheon-shell.metainfo.xml.in:52
 #: data/pantheon-shell.metainfo.xml.in:70
