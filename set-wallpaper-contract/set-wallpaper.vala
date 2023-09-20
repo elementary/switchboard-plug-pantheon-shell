@@ -102,73 +102,10 @@ namespace SetWallpaperContractor {
         duration_label.set_markup (_("Show each photo for") + " <b>" + text + "</b>");
     }
 
-    private string get_local_bg_directory () {
-        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
-    }
-
-    private static string[] get_system_bg_directories () {
-        string[] directories = {};
-        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
-            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
-            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
-                debug ("Found system background directory: %s", system_background_dir);
-                directories += system_background_dir;
-            }
-        }
-
-        return directories;
-    }
-
-    private string[] get_bg_directories () {
-        string[] background_directories = {};
-
-        // Add user background directory first
-        background_directories += get_local_bg_directory ();
-
-        foreach (var bg_dir in get_system_bg_directories ()) {
-            background_directories += bg_dir;
-        }
-
-        if (background_directories.length == 0) {
-            warning ("No background directories found");
-        }
-
-        return background_directories;
-    }
-
-    private File ensure_local_bg_exists () {
-        var folder = File.new_for_path (get_local_bg_directory ());
-        if (!folder.query_exists ()) {
-            try {
-                folder.make_directory_with_parents ();
-            } catch (Error e) {
-                warning ("%s\n", e.message);
-            }
-        }
-
-        return folder;
-    }
-
-    private File? copy_for_library (File source) {
-        File? dest = null;
-
-        try {
-            var timestamp = new DateTime.now_local ().format ("%Y-%m-%d-%H-%M-%S");
-            var filename = "%s-%s".printf (timestamp, source.get_basename ());
-            var path = Path.build_filename (get_local_bg_directory (), filename);
-            dest = File.new_for_path (path);
-            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
-        } catch (Error e) {
-            warning ("%s\n", e.message);
-        }
-
-        return dest;
-    }
-
     public static int main (string[] args) {
         Gtk.init (ref args);
 
-        var folder = ensure_local_bg_exists ();
+        var folder = PantheonShell.WallpaperOperation.ensure_local_bg_exists ();
         var files = new List<File> ();
         for (var i = 1; i < args.length; i++) {
             var file = File.new_for_path (args[i]);
@@ -178,7 +115,7 @@ namespace SetWallpaperContractor {
                 string path = file.get_path ();
                 File append_file = file;
                 bool path_has_prefix_bg_dir = false;
-                foreach (unowned string directory in get_bg_directories ()) {
+                foreach (unowned string directory in PantheonShell.WallpaperOperation.get_bg_directories ()) {
                     if (path.has_prefix (directory)) {
                         path_has_prefix_bg_dir = true;
                         break;
@@ -186,7 +123,7 @@ namespace SetWallpaperContractor {
                 }
 
                 if (!path_has_prefix_bg_dir) {
-                    var local_file = copy_for_library (file);
+                    var local_file = PantheonShell.WallpaperOperation.copy_for_library (file);
                     if (local_file != null) {
                         append_file = local_file;
                     }

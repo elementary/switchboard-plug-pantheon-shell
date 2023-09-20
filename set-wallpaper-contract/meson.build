@@ -23,6 +23,7 @@ executable(
     contract_exec_name,
     contract_config_file,
     'set-wallpaper.vala',
+    meson.source_root () / 'src' / 'WallpaperOperation.vala',
     dependencies: [
         glib_dep,
         gio_dep,
