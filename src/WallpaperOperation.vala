@@ -38,7 +38,7 @@ namespace PantheonShell.WallpaperOperation {
         return background_directories;
     }
 
-    public static File ensure_local_bg_exists () {
+    private static File ensure_local_bg_exists () {
         var folder = File.new_for_path (get_local_bg_directory ());
         if (!folder.query_exists ()) {
             try {
@@ -57,8 +57,7 @@ namespace PantheonShell.WallpaperOperation {
         try {
             var timestamp = new DateTime.now_local ().format ("%Y-%m-%d-%H-%M-%S");
             var filename = "%s-%s".printf (timestamp, source.get_basename ());
-            var path = Path.build_filename (get_local_bg_directory (), filename);
-            dest = File.new_for_path (path);
+            dest = ensure_local_bg_exists ().get_child (filename);
             source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
         } catch (Error e) {
             warning (e.message);

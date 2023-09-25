@@ -171,7 +171,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         });
 
         if (chooser.run () == Gtk.ResponseType.ACCEPT) {
-            WallpaperOperation.ensure_local_bg_exists ();
             SList<string> uris = chooser.get_uris ();
             foreach (unowned string uri in uris) {
                 var file = GLib.File.new_for_uri (uri);
@@ -223,7 +222,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         }
 
         if (!path_has_prefix_bg_dir) {
-            WallpaperOperation.ensure_local_bg_exists ();
             var local_file = WallpaperOperation.copy_for_library (file);
             if (local_file != null) {
                 uri = local_file.get_uri ();
@@ -420,7 +418,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                 }
 
                 string local_uri = file.get_uri ();
-                WallpaperOperation.ensure_local_bg_exists ();
                 var dest = WallpaperOperation.copy_for_library (file);
                 if (dest != null) {
                     local_uri = dest.get_uri ();

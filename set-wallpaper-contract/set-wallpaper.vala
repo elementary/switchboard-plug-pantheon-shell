@@ -105,13 +105,11 @@ namespace SetWallpaperContractor {
     public static int main (string[] args) {
         Gtk.init (ref args);
 
-        var folder = PantheonShell.WallpaperOperation.ensure_local_bg_exists ();
         var files = new List<File> ();
         for (var i = 1; i < args.length; i++) {
             var file = File.new_for_path (args[i]);
 
             if (file != null) {
-
                 string path = file.get_path ();
                 File append_file = file;
                 bool path_has_prefix_bg_dir = false;
@@ -168,7 +166,7 @@ namespace SetWallpaperContractor {
         if (dialog.run () == Gtk.ResponseType.OK) {
             dialog.destroy ();
 
-            var path = folder.get_child (SLIDESHOW_FILENAME).get_path ();
+            var path = Path.build_filename (PantheonShell.WallpaperOperation.get_local_bg_directory (), SLIDESHOW_FILENAME);
             update_slideshow (path, files, delay_value);
             return 0;
         }
