@@ -110,17 +110,9 @@ namespace SetWallpaperContractor {
             var file = File.new_for_path (args[i]);
 
             if (file != null) {
-                string path = file.get_path ();
                 File append_file = file;
-                bool path_has_prefix_bg_dir = false;
-                foreach (unowned string directory in PantheonShell.WallpaperOperation.get_bg_directories ()) {
-                    if (path.has_prefix (directory)) {
-                        path_has_prefix_bg_dir = true;
-                        break;
-                    }
-                }
 
-                if (!path_has_prefix_bg_dir) {
+                if (!PantheonShell.WallpaperOperation.get_is_file_in_bg_dir (file)) {
                     var local_file = PantheonShell.WallpaperOperation.copy_for_library (file);
                     if (local_file != null) {
                         append_file = local_file;

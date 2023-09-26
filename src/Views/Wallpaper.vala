@@ -174,6 +174,10 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             SList<string> uris = chooser.get_uris ();
             foreach (unowned string uri in uris) {
                 var file = GLib.File.new_for_uri (uri);
+                if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
+                    return;
+                }
+
                 string local_uri = uri;
                 var dest = WallpaperOperation.copy_for_library (file);
                 if (dest != null) {
@@ -211,17 +215,8 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     private void update_accountsservice () {
         var file = File.new_for_uri (current_wallpaper_path);
         string uri = file.get_uri ();
-        string path = file.get_path ();
 
-        bool path_has_prefix_bg_dir = false;
-        foreach (unowned string directory in WallpaperOperation.get_bg_directories ()) {
-            if (path.has_prefix (directory)) {
-                path_has_prefix_bg_dir = true;
-                break;
-            }
-        }
-
-        if (!path_has_prefix_bg_dir) {
+        if (!WallpaperOperation.get_is_file_in_bg_dir (file)) {
             var local_file = WallpaperOperation.copy_for_library (file);
             if (local_file != null) {
                 uri = local_file.get_uri ();
@@ -414,6 +409,10 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
                 if (!IOHelper.is_valid_file_type (info)) {
                     Gtk.drag_finish (ctx, false, false, timestamp);
+                    return;
+                }
+
+                if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
                     return;
                 }
 

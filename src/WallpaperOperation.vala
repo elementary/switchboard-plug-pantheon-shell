@@ -65,4 +65,16 @@ namespace PantheonShell.WallpaperOperation {
 
         return dest;
     }
+
+    public static bool get_is_file_in_bg_dir (File file) {
+        string path = file.get_path ();
+
+        foreach (unowned string directory in WallpaperOperation.get_bg_directories ()) {
+            if (path.has_prefix (directory)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
