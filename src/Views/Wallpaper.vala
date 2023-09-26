@@ -175,7 +175,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             foreach (unowned string uri in uris) {
                 var file = GLib.File.new_for_uri (uri);
                 if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
-                    return;
+                    continue;
                 }
 
                 string local_uri = uri;
