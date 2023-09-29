@@ -413,6 +413,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                 }
 
                 if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
+                    Gtk.drag_finish (ctx, true, false, timestamp);
                     return;
                 }
 
