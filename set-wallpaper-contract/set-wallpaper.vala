@@ -102,53 +102,18 @@ namespace SetWallpaperContractor {
         duration_label.set_markup (_("Show each photo for") + " <b>" + text + "</b>");
     }
 
-    private string get_local_bg_directory () {
-        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
-    }
-
-    private File ensure_local_bg_exists () {
-        var folder = File.new_for_path (get_local_bg_directory ());
-        if (!folder.query_exists ()) {
-            try {
-                folder.make_directory_with_parents ();
-            } catch (Error e) {
-                warning ("%s\n", e.message);
-            }
-        }
-
-        return folder;
-    }
-
-    private File? copy_for_library (File source) {
-        File? dest = null;
-
-        try {
-            var timestamp = new DateTime.now_local ().format ("%Y-%m-%d-%H-%M-%S");
-            var filename = "%s-%s".printf (timestamp, source.get_basename ());
-            var path = Path.build_filename (get_local_bg_directory (), filename);
-            dest = File.new_for_path (path);
-            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
-        } catch (Error e) {
-            warning ("%s\n", e.message);
-        }
-
-        return dest;
-    }
-
     public static int main (string[] args) {
         Gtk.init (ref args);
 
-        var folder = ensure_local_bg_exists ();
         var files = new List<File> ();
         for (var i = 1; i < args.length; i++) {
             var file = File.new_for_path (args[i]);
 
             if (file != null) {
-
-                string path = file.get_path ();
                 File append_file = file;
-                if (!path.has_prefix (get_local_bg_directory ())) {
-                    var local_file = copy_for_library (file);
+
+                if (!PantheonShell.WallpaperOperation.get_is_file_in_bg_dir (file)) {
+                    var local_file = PantheonShell.WallpaperOperation.copy_for_library (file);
                     if (local_file != null) {
                         append_file = local_file;
                     }
@@ -193,7 +158,7 @@ namespace SetWallpaperContractor {
         if (dialog.run () == Gtk.ResponseType.OK) {
             dialog.destroy ();
 
-            var path = folder.get_child (SLIDESHOW_FILENAME).get_path ();
+            var path = Path.build_filename (PantheonShell.WallpaperOperation.get_local_bg_directory (), SLIDESHOW_FILENAME);
             update_slideshow (path, files, delay_value);
             return 0;
         }
