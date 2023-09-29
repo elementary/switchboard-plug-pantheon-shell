@@ -174,8 +174,12 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             SList<string> uris = chooser.get_uris ();
             foreach (unowned string uri in uris) {
                 var file = GLib.File.new_for_uri (uri);
+                if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
+                    continue;
+                }
+
                 string local_uri = uri;
-                var dest = copy_for_library (file);
+                var dest = WallpaperOperation.copy_for_library (file);
                 if (dest != null) {
                     local_uri = dest.get_uri ();
                 }
@@ -211,18 +215,9 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     private void update_accountsservice () {
         var file = File.new_for_uri (current_wallpaper_path);
         string uri = file.get_uri ();
-        string path = file.get_path ();
 
-        bool path_has_prefix_bg_dir = false;
-        foreach (unowned string directory in get_bg_directories ()) {
-            if (path.has_prefix (directory)) {
-                path_has_prefix_bg_dir = true;
-                break;
-            }
-        }
-
-        if (!path_has_prefix_bg_dir) {
-            var local_file = copy_for_library (file);
+        if (!WallpaperOperation.get_is_file_in_bg_dir (file)) {
+            var local_file = WallpaperOperation.copy_for_library (file);
             if (local_file != null) {
                 uri = local_file.get_uri ();
             }
@@ -318,7 +313,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         clean_wallpapers ();
 
-        foreach (unowned string directory in get_bg_directories ()) {
+        foreach (unowned string directory in WallpaperOperation.get_bg_directories ()) {
             load_wallpapers.begin (directory, cancellable);
         }
     }
@@ -406,68 +401,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         solid_color = null;
     }
 
-    private static string get_local_bg_directory () {
-        return Path.build_filename (Environment.get_user_data_dir (), "backgrounds") + "/";
-    }
-
-    private static string[] get_system_bg_directories () {
-        string[] directories = {};
-        foreach (unowned string data_dir in Environment.get_system_data_dirs ()) {
-            var system_background_dir = Path.build_filename (data_dir, "backgrounds") + "/";
-            if (FileUtils.test (system_background_dir, FileTest.EXISTS)) {
-                debug ("Found system background directory: %s", system_background_dir);
-                directories += system_background_dir;
-            }
-        }
-
-        return directories;
-    }
-
-    private string[] get_bg_directories () {
-        string[] background_directories = {};
-
-        // Add user background directory first
-        background_directories += get_local_bg_directory ();
-
-        foreach (var bg_dir in get_system_bg_directories ()) {
-            background_directories += bg_dir;
-        }
-
-        if (background_directories.length == 0) {
-            warning ("No background directories found");
-        }
-
-        return background_directories;
-    }
-
-    private static File? copy_for_library (File source) {
-        File? dest = null;
-
-        string local_bg_directory = get_local_bg_directory ();
-        try {
-            File folder = File.new_for_path (local_bg_directory);
-            folder.make_directory_with_parents ();
-        } catch (Error e) {
-            if (e is GLib.IOError.EXISTS) {
-                debug ("Local background directory already exists");
-            } else {
-                warning (e.message);
-            }
-        }
-
-        try {
-            var timestamp = new DateTime.now_local ().format ("%Y-%m-%d-%H-%M-%S");
-            var filename = "%s-%s".printf (timestamp, source.get_basename ());
-            string path = Path.build_filename (local_bg_directory, filename);
-            dest = File.new_for_path (path);
-            source.copy (dest, FileCopyFlags.OVERWRITE | FileCopyFlags.ALL_METADATA);
-        } catch (Error e) {
-            warning (e.message);
-        }
-
-        return dest;
-    }
-
     private void on_drag_data_received (Gtk.Widget widget, Gdk.DragContext ctx, int x, int y, Gtk.SelectionData sel, uint information, uint timestamp) {
         if (sel.get_length () > 0) {
             try {
@@ -479,8 +412,13 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
                     return;
                 }
 
+                if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
+                    Gtk.drag_finish (ctx, true, false, timestamp);
+                    return;
+                }
+
                 string local_uri = file.get_uri ();
-                var dest = copy_for_library (file);
+                var dest = WallpaperOperation.copy_for_library (file);
                 if (dest != null) {
                     local_uri = dest.get_uri ();
                 }
@@ -549,7 +487,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         var uri1_is_system = false;
         var uri2_is_system = false;
-        foreach (var bg_dir in get_system_bg_directories ()) {
+        foreach (var bg_dir in WallpaperOperation.get_system_bg_directories ()) {
             bg_dir = "file://" + bg_dir;
             uri1_is_system = uri1.has_prefix (bg_dir) || uri1_is_system;
             uri2_is_system = uri2.has_prefix (bg_dir) || uri2_is_system;
