@@ -1,5 +1,5 @@
 /*
-* Copyright 2017-2022 elementary, Inc. (https://elementary.io)
+* Copyright 2017-2023 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace SetWallpaperContractor {
+public class SetWallpaperContractor : Gtk.Application {
     const int DEFAULT_TRANSITION_DURATION = 1;
     const string SLIDESHOW_FILENAME = "slideshow.xml";
 
@@ -39,6 +39,13 @@ namespace SetWallpaperContractor {
     """;
 
     private int delay_value = 60;
+
+    public SetWallpaperContractor () {
+        Object (
+            application_id: "io.elementary.contract.set-wallpaper",
+            flags: GLib.ApplicationFlags.HANDLES_OPEN
+        );
+    }
 
     private void update_slideshow (string path, List<File> files, int duration) {
         var wallpapers = "";
@@ -102,35 +109,24 @@ namespace SetWallpaperContractor {
         duration_label.set_markup (_("Show each photo for") + " <b>" + text + "</b>");
     }
 
-    public static int main (string[] args) {
-        Gtk.init (ref args);
-
+    public override void open (File[] gfiles, string hint) {
         var files = new List<File> ();
-        for (var i = 1; i < args.length; i++) {
-            var file = File.new_for_path (args[i]);
+        foreach (var gfile in gfiles) {
+            File append_file = gfile;
 
-            if (file != null) {
-                File append_file = file;
-
-                if (!PantheonShell.WallpaperOperation.get_is_file_in_bg_dir (file)) {
-                    var local_file = PantheonShell.WallpaperOperation.copy_for_library (file);
-                    if (local_file != null) {
-                        append_file = local_file;
-                    }
+            if (!PantheonShell.WallpaperOperation.get_is_file_in_bg_dir (gfile)) {
+                var local_file = PantheonShell.WallpaperOperation.copy_for_library (gfile);
+                if (local_file != null) {
+                    append_file = local_file;
                 }
-
-                files.append (append_file);
             }
-        }
 
-        if (files.length () < 1) {
-            warning ("No images specified, aborting.\n");
-            return 1;
+            files.append (append_file);
         }
 
         if (files.length () == 1) {
             set_settings_key (files.data.get_uri ());
-            return 0;
+            return;
         }
 
         var duration = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 0, 100, 10) {
@@ -145,24 +141,33 @@ namespace SetWallpaperContractor {
             "preferences-desktop-wallpaper",
             Gtk.ButtonsType.CANCEL
         ) {
-            badge_icon = new ThemedIcon ("media-playback-start")
+            badge_icon = new ThemedIcon ("media-playback-start"),
+            application = this
         };
         dialog.add_button (_("Create Slideshow"), Gtk.ResponseType.OK);
         dialog.set_default_response (Gtk.ResponseType.OK);
-        dialog.custom_bin.add (duration);
-        dialog.show_all ();
+        dialog.custom_bin.append (duration);
+        dialog.present ();
 
         delay_value_changed (duration, dialog.secondary_label);
         duration.value_changed.connect (() => delay_value_changed (duration, dialog.secondary_label));
 
-        if (dialog.run () == Gtk.ResponseType.OK) {
-            dialog.destroy ();
+        dialog.response.connect ((response_id) => {
+            if (response_id == Gtk.ResponseType.OK) {
+                var path = Path.build_filename (PantheonShell.WallpaperOperation.get_local_bg_directory (), SLIDESHOW_FILENAME);
+                update_slideshow (path, files, delay_value);
+            }
 
-            var path = Path.build_filename (PantheonShell.WallpaperOperation.get_local_bg_directory (), SLIDESHOW_FILENAME);
-            update_slideshow (path, files, delay_value);
-            return 0;
+            dialog.destroy ();
+        });
+    }
+
+    public static int main (string[] args) {
+        if (args.length == 1) {
+            warning ("No images specified, aborting.");
+            return 1;
         }
 
-        return 1;
+        return new SetWallpaperContractor ().run (args);
     }
 }

@@ -28,8 +28,11 @@ executable(
         glib_dep,
         gio_dep,
         gobject_dep,
-        granite_dep,
-        gtk_dep,
+#        granite_dep,
+#        gtk_dep,
+        # TODO: Re-use the variables above when the plug itself is ported to GTK 4
+        dependency('gtk4'),
+        dependency('granite-7'),
         posix_dep,
         meson.get_compiler('c').find_library('m')
     ],
