@@ -117,20 +117,29 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         child = overlay;
 
         if (uri != null) {
-            var move_to_trash = new Gtk.MenuItem.with_label (_("Remove"));
-            move_to_trash.activate.connect (() => trash ());
+            var remove_wallpaper_action = new SimpleAction ("trash", null);
+            remove_wallpaper_action.activate.connect (() => trash ());
+
+            var action_group = new SimpleActionGroup ();
+            action_group.add_action (remove_wallpaper_action);
+
+            insert_action_group ("wallpaper", action_group);
 
             var file = File.new_for_uri (uri);
             try {
                 var info = file.query_info ("*", FileQueryInfoFlags.NONE);
                 creation_date = info.get_attribute_uint64 (GLib.FileAttribute.TIME_CREATED);
-                move_to_trash.sensitive = info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE);
+                remove_wallpaper_action.set_enabled (info.get_attribute_boolean (GLib.FileAttribute.ACCESS_CAN_DELETE));
             } catch (Error e) {
                 critical (e.message);
             }
 
-            var context_menu = new Gtk.Menu ();
-            context_menu.append (move_to_trash);
+            var menu_model = new Menu ();
+            menu_model.append (_("Remove"), "wallpaper.trash");
+
+            var context_menu = new Gtk.Menu.from_model (menu_model) {
+                attach_widget = this
+            };
             context_menu.show_all ();
 
             secondary_click_gesture = new Gtk.GestureMultiPress (overlay) {
