@@ -25,7 +25,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     private const int THUMB_HEIGHT = 100;
 
     private Gtk.Grid card_box;
-    private Gtk.Menu context_menu;
     private Gtk.Revealer check_revealer;
     private Granite.AsyncImage image;
 
@@ -34,6 +33,8 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; set; }
     public uint64 creation_date = 0;
+
+    private Gtk.GestureMultiPress secondary_click_gesture;
 
     private int scale;
 
@@ -109,13 +110,11 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         overlay.add (card_box);
         overlay.add_overlay (check_revealer);
 
-        var event_box = new Gtk.EventBox ();
-        event_box.add (overlay);
-
         halign = Gtk.Align.CENTER;
         valign = Gtk.Align.CENTER;
         margin = 6;
-        add (event_box);
+
+        child = overlay;
 
         if (uri != null) {
             var move_to_trash = new Gtk.MenuItem.with_label (_("Remove"));
@@ -130,17 +129,21 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                 critical (e.message);
             }
 
-            context_menu = new Gtk.Menu ();
+            var context_menu = new Gtk.Menu ();
             context_menu.append (move_to_trash);
             context_menu.show_all ();
+
+            secondary_click_gesture = new Gtk.GestureMultiPress (overlay) {
+                button = Gdk.BUTTON_SECONDARY
+            };
+            secondary_click_gesture.released.connect (() => {
+                context_menu.popup_at_pointer (null);
+            });
         }
 
         activate.connect (() => {
             checked = true;
         });
-
-        event_box.button_press_event.connect (show_context_menu);
-
         try {
             if (uri != null) {
                 if (thumb_path != null && thumb_valid) {
@@ -191,14 +194,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                 }
             }
         }
-    }
-
-    private bool show_context_menu (Gtk.Widget sender, Gdk.EventButton evt) {
-        if (evt.type == Gdk.EventType.BUTTON_PRESS && evt.button == 3) {
-            context_menu.popup_at_pointer (null);
-            return Gdk.EVENT_STOP;
-        }
-        return Gdk.EVENT_PROPAGATE;
     }
 
     private async void update_thumb () {
