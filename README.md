@@ -14,7 +14,6 @@ You'll need the following dependencies:
 * libgexiv2-dev
 * libgtk-3-dev (>= 3.22)
 * libgtk-4-dev
-* libplank-dev
 * libgranite-dev
 * libgranite-7-dev
 * meson
