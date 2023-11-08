@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2023-06-28 21:58+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -141,7 +141,7 @@ msgstr "Постави изабрану слику за нову позадин�
 msgid "Style"
 msgstr "Стил:"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "Основно"
 
@@ -242,107 +242,31 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
-msgid "Dock Icon Size"
-msgstr "Величина иконице"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr "Мали"
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "Велик"
-
-#: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
-msgid "Hide Dock"
-msgstr "Режим скривања"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr ""
-
-#: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
-msgid "When the focused window is maximized"
-msgstr "Прозор у жижи је увећан"
-
-#: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
-msgid "When the focused window overlaps the dock"
-msgstr "Прозор у жижи преклапа луку"
-
-#: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
-msgid "When any window overlaps the dock"
-msgstr "Било који прозор преклапа луку"
-
-#: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
-msgid "When not being used"
-msgstr "Који се не користи"
-
-#: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
-msgid "Dock on Primary Display"
-msgstr "Основни екран:"
-
-#: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
-msgid "Dock Pressure Reveal"
-msgstr "Показивање на притисак"
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Прозрачност панела"
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr "Прикажи у панелу"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr ""
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "Монитор бр. %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "Екран бр. %d"
 
 #: src/Views/Multitasking.vala:26
 #, fuzzy
@@ -460,61 +384,115 @@ msgstr "Увези"
 msgid "Cancel"
 msgstr "Откажи"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Позадина"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr "Поништи"
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr "Уклони"
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr "Извођач: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d секунду"
 msgstr[1] "%d секунде"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d минут"
 msgstr[1] "%d минута"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d сат"
 msgstr[1] "%d сата"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "1 дан"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "Прикажи сваку фотографију"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "Постави као смењиву позадину радне површи"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "Направи покретни приказ"
+
+#, fuzzy
+#~| msgid "Icon Size"
+#~ msgid "Dock Icon Size"
+#~ msgstr "Величина иконице"
+
+#~ msgid "Small"
+#~ msgstr "Мали"
+
+#~ msgid "Large"
+#~ msgstr "Велик"
+
+#, fuzzy
+#~| msgid "Hide Mode"
+#~ msgid "Hide Dock"
+#~ msgstr "Режим скривања"
+
+#, fuzzy
+#~| msgid "Focused window is maximized"
+#~ msgid "When the focused window is maximized"
+#~ msgstr "Прозор у жижи је увећан"
+
+#, fuzzy
+#~| msgid "Focused window overlaps the dock"
+#~ msgid "When the focused window overlaps the dock"
+#~ msgstr "Прозор у жижи преклапа луку"
+
+#, fuzzy
+#~| msgid "Any window overlaps the dock"
+#~ msgid "When any window overlaps the dock"
+#~ msgstr "Било који прозор преклапа луку"
+
+#, fuzzy
+#~| msgid "Not being used"
+#~ msgid "When not being used"
+#~ msgstr "Који се не користи"
+
+#, fuzzy
+#~| msgid "Primary display:"
+#~ msgid "Dock on Primary Display"
+#~ msgstr "Основни екран:"
+
+#, fuzzy
+#~| msgid "Pressure reveal"
+#~ msgid "Dock Pressure Reveal"
+#~ msgstr "Показивање на притисак"
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "Монитор бр. %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "Екран бр. %d"
 
 #~ msgid "Dock"
 #~ msgstr "Лука"

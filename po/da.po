@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -144,7 +144,7 @@ msgstr "Brug det valgte billede som ny skrivebordsbaggrund"
 msgid "Style"
 msgstr "Stil:"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "Standard"
 
@@ -245,107 +245,31 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
-msgid "Dock Icon Size"
-msgstr "Ikonstørrelse"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr "Lille"
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "Stor"
-
-#: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
-msgid "Hide Dock"
-msgstr "Skjult tilstand"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr "Aldrig"
-
-#: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
-msgid "When the focused window is maximized"
-msgstr "Det aktive vindue er maksimeret"
-
-#: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
-msgid "When the focused window overlaps the dock"
-msgstr "Det aktive vindue overlapper dokken"
-
-#: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
-msgid "When any window overlaps the dock"
-msgstr "Et hvilket som helst vindue overlapper dokken"
-
-#: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
-msgid "When not being used"
-msgstr "Anvendes ikke"
-
-#: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
-msgid "Dock on Primary Display"
-msgstr "Primær skærm:"
-
-#: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
-msgid "Dock Pressure Reveal"
-msgstr "Tryk afslør"
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Panel gennemsigtighed"
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr "Vis i Panel"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr ""
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "Skærm %d"
 
 #: src/Views/Multitasking.vala:26
 #, fuzzy
@@ -455,63 +379,120 @@ msgstr "Importer"
 msgid "Cancel"
 msgstr "Annuller"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Baggrundsbillede"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr "Fortryd"
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr "Fjern"
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr "Kunstner: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d sekund"
 msgstr[1] "%d sekunder"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minut"
 msgstr[1] "%d minutter"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d time"
 msgstr[1] "%d timer"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "1 dag"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "Vis alle billeder for"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "Indstil Som Desktop Diasshow"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 #, fuzzy
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Lav Diasshow"
+
+#, fuzzy
+#~| msgid "Icon Size"
+#~ msgid "Dock Icon Size"
+#~ msgstr "Ikonstørrelse"
+
+#~ msgid "Small"
+#~ msgstr "Lille"
+
+#~ msgid "Large"
+#~ msgstr "Stor"
+
+#, fuzzy
+#~| msgid "Hide Mode"
+#~ msgid "Hide Dock"
+#~ msgstr "Skjult tilstand"
+
+#~ msgid "Never"
+#~ msgstr "Aldrig"
+
+#, fuzzy
+#~| msgid "Focused window is maximized"
+#~ msgid "When the focused window is maximized"
+#~ msgstr "Det aktive vindue er maksimeret"
+
+#, fuzzy
+#~| msgid "Focused window overlaps the dock"
+#~ msgid "When the focused window overlaps the dock"
+#~ msgstr "Det aktive vindue overlapper dokken"
+
+#, fuzzy
+#~| msgid "Any window overlaps the dock"
+#~ msgid "When any window overlaps the dock"
+#~ msgstr "Et hvilket som helst vindue overlapper dokken"
+
+#, fuzzy
+#~| msgid "Not being used"
+#~ msgid "When not being used"
+#~ msgstr "Anvendes ikke"
+
+#, fuzzy
+#~| msgid "Primary display:"
+#~ msgid "Dock on Primary Display"
+#~ msgstr "Primær skærm:"
+
+#, fuzzy
+#~| msgid "Pressure reveal"
+#~ msgid "Dock Pressure Reveal"
+#~ msgstr "Tryk afslør"
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "Monitor %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "Skærm %d"
 
 #~ msgid "Dock"
 #~ msgstr "Dok"

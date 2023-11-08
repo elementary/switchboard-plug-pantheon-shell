@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2023-07-14 16:07+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -132,7 +132,7 @@ msgstr "Ausgewähltes Bild als neues Hintergrundbild festlegen"
 msgid "Style"
 msgstr "Stil"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "Standard"
 
@@ -235,92 +235,30 @@ msgstr ""
 "Animationen in der Fensterverwaltung und weiteren Teilen der "
 "Benutzungsoberfläche ausschalten."
 
-#: src/Views/Dock.vala:15
-msgid "Dock Icon Size"
-msgstr "Symbolgröße im Dock"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr "Klein"
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "Groß"
-
-#: src/Views/Dock.vala:48
-msgid "Hide Dock"
-msgstr "Dock ausblenden"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr "Nie"
-
-#: src/Views/Dock.vala:57
-msgid "When the focused window is maximized"
-msgstr "Wenn das aktive Fenster maximiert ist"
-
-#: src/Views/Dock.vala:62
-msgid "When the focused window overlaps the dock"
-msgstr "Wenn das aktive Fenster das Dock überlappt"
-
-#: src/Views/Dock.vala:67
-msgid "When any window overlaps the dock"
-msgstr "Wenn ein beliebiges Fenster das Dock überlappt"
-
-#: src/Views/Dock.vala:72
-msgid "When not being used"
-msgstr "Wenn nicht verwendet"
-
-#: src/Views/Dock.vala:90
-msgid "Dock on Primary Display"
-msgstr "Dock auf dem primärem Bildschirm"
-
-#: src/Views/Dock.vala:104
-msgid "Dock Pressure Reveal"
-msgstr "Verzögertes Einblenden des Docks"
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-"Versehentliches Einblenden des Docks durch Bewegen des Mauszeigers an den "
-"Bildschirmrand wird verhindert. Funktioniert nicht bei allen Geräten."
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 msgid "Panel Translucency"
 msgstr "Leistentransparenz"
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 "Automatisch transparent oder undurchsichtig, abhängig vom Hintergrundbild"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr "In der Leiste anzeigen"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr "Zugangshilfen"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr "Feststelltaste ⇪"
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr "Num Lock"
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "Bildschirm %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "Bildschirm %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
@@ -426,59 +364,107 @@ msgstr "Importieren"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 msgid "Wallpaper Deleted"
 msgstr "Hintergrundbild gelöscht"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr "Rückgängig"
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr "Entfernen"
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr "Künstler: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d Sekunde"
 msgstr[1] "%d Sekunden"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d Minute"
 msgstr[1] "%d Minuten"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d Stunde"
 msgstr[1] "%d Stunden"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "1 Tag"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "Bild jeweils anzeigen für"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "Als Schreibtisch-Diaschau festlegen"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "Diaschau erstellen"
+
+#~ msgid "Dock Icon Size"
+#~ msgstr "Symbolgröße im Dock"
+
+#~ msgid "Small"
+#~ msgstr "Klein"
+
+#~ msgid "Large"
+#~ msgstr "Groß"
+
+#~ msgid "Hide Dock"
+#~ msgstr "Dock ausblenden"
+
+#~ msgid "Never"
+#~ msgstr "Nie"
+
+#~ msgid "When the focused window is maximized"
+#~ msgstr "Wenn das aktive Fenster maximiert ist"
+
+#~ msgid "When the focused window overlaps the dock"
+#~ msgstr "Wenn das aktive Fenster das Dock überlappt"
+
+#~ msgid "When any window overlaps the dock"
+#~ msgstr "Wenn ein beliebiges Fenster das Dock überlappt"
+
+#~ msgid "When not being used"
+#~ msgstr "Wenn nicht verwendet"
+
+#~ msgid "Dock on Primary Display"
+#~ msgstr "Dock auf dem primärem Bildschirm"
+
+#~ msgid "Dock Pressure Reveal"
+#~ msgstr "Verzögertes Einblenden des Docks"
+
+#~ msgid ""
+#~ "Prevent accidental reveals by moving the pointer past the display edge. "
+#~ "Only works with some devices."
+#~ msgstr ""
+#~ "Versehentliches Einblenden des Docks durch Bewegen des Mauszeigers an den "
+#~ "Bildschirmrand wird verhindert. Funktioniert nicht bei allen Geräten."
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "Bildschirm %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "Bildschirm %d"
 
 #~ msgid "Dock"
 #~ msgstr "Dock"

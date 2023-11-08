@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -132,7 +132,7 @@ msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשול
 msgid "Style"
 msgstr "סגנון"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "בררת מחדל"
 
@@ -233,91 +233,29 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr "השבתת הנפשות במנהל החלונות וברכיבי מנשק חדשים."
 
-#: src/Views/Dock.vala:15
-msgid "Dock Icon Size"
-msgstr "גודל הסמלים במעגן"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr "קטן"
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "גדול"
-
-#: src/Views/Dock.vala:48
-msgid "Hide Dock"
-msgstr "הסתרת מעגן"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr "אף פעם"
-
-#: src/Views/Dock.vala:57
-msgid "When the focused window is maximized"
-msgstr "כאשר החלון במיקוד מוגדל"
-
-#: src/Views/Dock.vala:62
-msgid "When the focused window overlaps the dock"
-msgstr "כאשר החלון שבמיקוד חופף מעל המעגן"
-
-#: src/Views/Dock.vala:67
-msgid "When any window overlaps the dock"
-msgstr "כאשר חלון כלשהו חופף מעל המעגן"
-
-#: src/Views/Dock.vala:72
-msgid "When not being used"
-msgstr "כאשר לא בשימוש"
-
-#: src/Views/Dock.vala:90
-msgid "Dock on Primary Display"
-msgstr "מעגן בתצוגה העיקרית"
-
-#: src/Views/Dock.vala:104
-msgid "Dock Pressure Reveal"
-msgstr "גילוי מעגן בלחץ"
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-"למנוע חשיפות מקריות על ידי העברת העכבר מעבר לקצה התצוגה. עובד רק בחלק "
-"מהמכשירים."
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 msgid "Panel Translucency"
 msgstr "שקיפות לוח"
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "אוטומטית שקוף או אטום לפי הרקע"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr "הצגה בלוח"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr "נגישות"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪‎"
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr "Num Lock"
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "צג %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "תצוגה %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
@@ -423,59 +361,107 @@ msgstr "ייבוא"
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 msgid "Wallpaper Deleted"
 msgstr "תמונת רקע נמחקה"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr "ביטול"
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr "הסרה"
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr "אמן: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "שנייה אחת"
 msgstr[1] "%d שניות"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "דקה אחת"
 msgstr[1] "%d דקות"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "שעה אחת"
 msgstr[1] "%d שעות"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "יום אחד"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "הצגת כל תמונה למשך"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "הגדרה כמצגת שולחן העבודה"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "יצירת מצגת"
+
+#~ msgid "Dock Icon Size"
+#~ msgstr "גודל הסמלים במעגן"
+
+#~ msgid "Small"
+#~ msgstr "קטן"
+
+#~ msgid "Large"
+#~ msgstr "גדול"
+
+#~ msgid "Hide Dock"
+#~ msgstr "הסתרת מעגן"
+
+#~ msgid "Never"
+#~ msgstr "אף פעם"
+
+#~ msgid "When the focused window is maximized"
+#~ msgstr "כאשר החלון במיקוד מוגדל"
+
+#~ msgid "When the focused window overlaps the dock"
+#~ msgstr "כאשר החלון שבמיקוד חופף מעל המעגן"
+
+#~ msgid "When any window overlaps the dock"
+#~ msgstr "כאשר חלון כלשהו חופף מעל המעגן"
+
+#~ msgid "When not being used"
+#~ msgstr "כאשר לא בשימוש"
+
+#~ msgid "Dock on Primary Display"
+#~ msgstr "מעגן בתצוגה העיקרית"
+
+#~ msgid "Dock Pressure Reveal"
+#~ msgstr "גילוי מעגן בלחץ"
+
+#~ msgid ""
+#~ "Prevent accidental reveals by moving the pointer past the display edge. "
+#~ "Only works with some devices."
+#~ msgstr ""
+#~ "למנוע חשיפות מקריות על ידי העברת העכבר מעבר לקצה התצוגה. עובד רק בחלק "
+#~ "מהמכשירים."
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "צג %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "תצוגה %d"
 
 #~ msgid "Dock"
 #~ msgstr "מעגן"

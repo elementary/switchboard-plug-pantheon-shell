@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2023-07-03 13:07+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -133,7 +133,7 @@ msgstr "Ustawia wybrany obraz jako nowe tło pulpitu"
 msgid "Style"
 msgstr "Styl"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "Domyślne"
 
@@ -234,91 +234,29 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr "Wyłącz animacje menedżera okien i kilku innych elementach interfejsu."
 
-#: src/Views/Dock.vala:15
-msgid "Dock Icon Size"
-msgstr "Rozmiar ikon doku"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr "Mały"
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "Duży"
-
-#: src/Views/Dock.vala:48
-msgid "Hide Dock"
-msgstr "Ukryj dok"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr "Nigdy"
-
-#: src/Views/Dock.vala:57
-msgid "When the focused window is maximized"
-msgstr "Gdy używane okno jest zmaksymalizowane"
-
-#: src/Views/Dock.vala:62
-msgid "When the focused window overlaps the dock"
-msgstr "Gdy używane okno zachodzi na dok"
-
-#: src/Views/Dock.vala:67
-msgid "When any window overlaps the dock"
-msgstr "Gdy dowolne okno zachodzi na dok"
-
-#: src/Views/Dock.vala:72
-msgid "When not being used"
-msgstr "Gdy nie jest używany"
-
-#: src/Views/Dock.vala:90
-msgid "Dock on Primary Display"
-msgstr "Dok na głównym wyświetlaczu"
-
-#: src/Views/Dock.vala:104
-msgid "Dock Pressure Reveal"
-msgstr "Odsłona doku pod wpływem nacisku"
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-"Zapobiegaj przypadkowym odkryciom przez przesunięcie wskaźnika poza krawędź "
-"ekranu. Działa tylko na niektórych urządzeniach."
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 msgid "Panel Translucency"
 msgstr "Przezroczystość panelu"
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Automatycznie zmień przeźroczystość w zależności od tapety"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr "Pokaż w panelu"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr "Ułatwienia dostępu"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr "Num Lock"
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "Ekran %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
@@ -424,24 +362,24 @@ msgstr "Importuj"
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 msgid "Wallpaper Deleted"
 msgstr "Usunięto tło pulpitu"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr "Cofnij"
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr "Usuń"
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr "Artysta: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -449,7 +387,7 @@ msgstr[0] "%d sekunda"
 msgstr[1] "%d sekundy"
 msgstr[2] "%d sekund"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
@@ -457,7 +395,7 @@ msgstr[0] "%d minuta"
 msgstr[1] "%d minuty"
 msgstr[2] "%d minut"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
@@ -465,21 +403,69 @@ msgstr[0] "%d godzina"
 msgstr[1] "%d godziny"
 msgstr[2] "%d godzin"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "1 dzień"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "Wyświetlanie każdego zdjęcia przez"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "Ustaw jako pokaz slajdów na pulpicie"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "Utwórz pokaz slajdów"
+
+#~ msgid "Dock Icon Size"
+#~ msgstr "Rozmiar ikon doku"
+
+#~ msgid "Small"
+#~ msgstr "Mały"
+
+#~ msgid "Large"
+#~ msgstr "Duży"
+
+#~ msgid "Hide Dock"
+#~ msgstr "Ukryj dok"
+
+#~ msgid "Never"
+#~ msgstr "Nigdy"
+
+#~ msgid "When the focused window is maximized"
+#~ msgstr "Gdy używane okno jest zmaksymalizowane"
+
+#~ msgid "When the focused window overlaps the dock"
+#~ msgstr "Gdy używane okno zachodzi na dok"
+
+#~ msgid "When any window overlaps the dock"
+#~ msgstr "Gdy dowolne okno zachodzi na dok"
+
+#~ msgid "When not being used"
+#~ msgstr "Gdy nie jest używany"
+
+#~ msgid "Dock on Primary Display"
+#~ msgstr "Dok na głównym wyświetlaczu"
+
+#~ msgid "Dock Pressure Reveal"
+#~ msgstr "Odsłona doku pod wpływem nacisku"
+
+#~ msgid ""
+#~ "Prevent accidental reveals by moving the pointer past the display edge. "
+#~ "Only works with some devices."
+#~ msgstr ""
+#~ "Zapobiegaj przypadkowym odkryciom przez przesunięcie wskaźnika poza "
+#~ "krawędź ekranu. Działa tylko na niektórych urządzeniach."
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "Monitor %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "Ekran %d"
 
 #~ msgid "Dock"
 #~ msgstr "Dok"

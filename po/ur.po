@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Urdu <https://l10n.elementary.io/projects/switchboard/"
@@ -134,7 +134,7 @@ msgstr ""
 msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "طے شدہ"
 
@@ -231,95 +231,29 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
-msgid "Dock Icon Size"
-msgstr "آئکن سائز"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr ""
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "بڑا"
-
-#: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Dock"
-msgid "Hide Dock"
-msgstr "ڈاک"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr ""
-
-#: src/Views/Dock.vala:57
-msgid "When the focused window is maximized"
-msgstr ""
-
-#: src/Views/Dock.vala:62
-msgid "When the focused window overlaps the dock"
-msgstr ""
-
-#: src/Views/Dock.vala:67
-msgid "When any window overlaps the dock"
-msgstr ""
-
-#: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
-msgid "When not being used"
-msgstr "استعمال نہیں ہو رہا"
-
-#: src/Views/Dock.vala:90
-msgid "Dock on Primary Display"
-msgstr ""
-
-#: src/Views/Dock.vala:104
-msgid "Dock Pressure Reveal"
-msgstr ""
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 msgid "Panel Translucency"
 msgstr ""
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr ""
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "مانیٹر %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "ڈسپلے %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
@@ -423,63 +357,89 @@ msgstr ""
 msgid "Cancel"
 msgstr "منسوخ کریں"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "وال پیپر"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr ""
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d سیکنڈ"
 msgstr[1] "%d سیکنڈ"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d منٹ"
 msgstr[1] "%d منٹ"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d گھنٹہ"
 msgstr[1] "%d گھنٹے"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "۱ دن"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "ہو فوٹو دیکھائیں اتنی مدت کے لیے"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "بطور ڈیسک ٹاپ سلائیڈ شو سیٹ کریں"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 #, fuzzy
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "سلائیڈ شو بنائیں"
+
+#, fuzzy
+#~| msgid "Icon Size"
+#~ msgid "Dock Icon Size"
+#~ msgstr "آئکن سائز"
+
+#~ msgid "Large"
+#~ msgstr "بڑا"
+
+#, fuzzy
+#~| msgid "Dock"
+#~ msgid "Hide Dock"
+#~ msgstr "ڈاک"
+
+#, fuzzy
+#~| msgid "Not being used"
+#~ msgid "When not being used"
+#~ msgstr "استعمال نہیں ہو رہا"
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "مانیٹر %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "ڈسپلے %d"
 
 #~ msgid "Display:"
 #~ msgstr "ڈسپلے:"

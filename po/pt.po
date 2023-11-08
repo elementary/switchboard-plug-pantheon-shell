@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Style"
 msgstr "Estilo"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "Predefinido"
 
@@ -236,109 +236,33 @@ msgstr ""
 "Desativar as animações no gestor de janelas e alguns outros elementos de "
 "interface."
 
-#: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
-msgid "Dock Icon Size"
-msgstr "Tamanho dos ícones"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr "Pequeno"
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "Grande"
-
-#: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
-msgid "Hide Dock"
-msgstr "Modo Oculto"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr "Nunca"
-
-#: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
-msgid "When the focused window is maximized"
-msgstr "Janela focada está maximizada"
-
-#: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
-msgid "When the focused window overlaps the dock"
-msgstr "Janela focada sobrepõe-se à doca"
-
-#: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
-msgid "When any window overlaps the dock"
-msgstr "Qualquer janela sobrepõe-se à doca"
-
-#: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
-msgid "When not being used"
-msgstr "Não está a ser usada"
-
-#: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
-msgid "Dock on Primary Display"
-msgstr "Ecrã principal:"
-
-#: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
-msgid "Dock Pressure Reveal"
-msgstr "Mostrar por pressão"
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Translucidez do painel"
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 #, fuzzy
 #| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Automático baseado no papel de parede"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr "Mostrar no Painel"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr "Acessibilidade"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr ""
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "Monitor %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "Ecrã %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
@@ -446,59 +370,116 @@ msgstr "Importar"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 msgid "Wallpaper Deleted"
 msgstr "Papel de parede eliminado"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr "Desfazer"
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr "Remover"
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr "Artista: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d segundo"
 msgstr[1] "%d segundos"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuto"
 msgstr[1] "%d minutos"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d hora"
 msgstr[1] "%d horas"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "1 dia"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "Mostrar cada foto durante"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "Definir como apresentação de diapositivos do ambiente de trabalho"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "Criar apresentação de diapositivos"
+
+#, fuzzy
+#~| msgid "Icon Size"
+#~ msgid "Dock Icon Size"
+#~ msgstr "Tamanho dos ícones"
+
+#~ msgid "Small"
+#~ msgstr "Pequeno"
+
+#~ msgid "Large"
+#~ msgstr "Grande"
+
+#, fuzzy
+#~| msgid "Hide Mode"
+#~ msgid "Hide Dock"
+#~ msgstr "Modo Oculto"
+
+#~ msgid "Never"
+#~ msgstr "Nunca"
+
+#, fuzzy
+#~| msgid "Focused window is maximized"
+#~ msgid "When the focused window is maximized"
+#~ msgstr "Janela focada está maximizada"
+
+#, fuzzy
+#~| msgid "Focused window overlaps the dock"
+#~ msgid "When the focused window overlaps the dock"
+#~ msgstr "Janela focada sobrepõe-se à doca"
+
+#, fuzzy
+#~| msgid "Any window overlaps the dock"
+#~ msgid "When any window overlaps the dock"
+#~ msgstr "Qualquer janela sobrepõe-se à doca"
+
+#, fuzzy
+#~| msgid "Not being used"
+#~ msgid "When not being used"
+#~ msgstr "Não está a ser usada"
+
+#, fuzzy
+#~| msgid "Primary display:"
+#~ msgid "Dock on Primary Display"
+#~ msgstr "Ecrã principal:"
+
+#, fuzzy
+#~| msgid "Pressure reveal"
+#~ msgid "Dock Pressure Reveal"
+#~ msgstr "Mostrar por pressão"
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "Monitor %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "Ecrã %d"
 
 #~ msgid "Dock"
 #~ msgstr "Doca"

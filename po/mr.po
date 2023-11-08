@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -137,7 +137,7 @@ msgstr "नवीन डेस्कटॉप पार्श्वभूमी 
 msgid "Style"
 msgstr "शैली:"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "डिफॉल्ट"
 
@@ -236,107 +236,31 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:15
-#, fuzzy
-#| msgid "Icon Size"
-msgid "Dock Icon Size"
-msgstr "आयकॉन आकार"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr "लहान"
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "मोठा"
-
-#: src/Views/Dock.vala:48
-#, fuzzy
-#| msgid "Hide Mode"
-msgid "Hide Dock"
-msgstr "लपवा मोड"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr ""
-
-#: src/Views/Dock.vala:57
-#, fuzzy
-#| msgid "Focused window is maximized"
-msgid "When the focused window is maximized"
-msgstr "फोकस केलेली विंडो मोठी केली आहे"
-
-#: src/Views/Dock.vala:62
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
-msgid "When the focused window overlaps the dock"
-msgstr "फोकस केलेली विंडो डॉकला आच्छादित करते"
-
-#: src/Views/Dock.vala:67
-#, fuzzy
-#| msgid "Any window overlaps the dock"
-msgid "When any window overlaps the dock"
-msgstr "कोणतीही विंडो जी डॉक आच्छादित करते"
-
-#: src/Views/Dock.vala:72
-#, fuzzy
-#| msgid "Not being used"
-msgid "When not being used"
-msgstr "वापरात नाही"
-
-#: src/Views/Dock.vala:90
-#, fuzzy
-#| msgid "Primary display:"
-msgid "Dock on Primary Display"
-msgstr "प्राथमिक प्रदर्शन :"
-
-#: src/Views/Dock.vala:104
-#, fuzzy
-#| msgid "Pressure reveal"
-msgid "Dock Pressure Reveal"
-msgstr "दबावाने प्रकट करा"
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "पॅनेल पारंपारिकता"
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr ""
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "मॉनिटर %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "प्रदर्शन  %d"
 
 #: src/Views/Multitasking.vala:26
 #, fuzzy
@@ -453,63 +377,117 @@ msgstr "आयात करा"
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "वॉलपेपर"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr "पूर्ववत करा"
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr "काढा"
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr "कलाकारः %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d सेकंद"
 msgstr[1] "%d  सेकंद"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "मिनीट"
 msgstr[1] "मिनीटे"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d तास"
 msgstr[1] "%d  तास"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "1 दिवस"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "साठी प्रत्येक फोटो दर्शवा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "डेस्कटॉप स्लाइडशो म्हणून सेट करा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 #, fuzzy
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "स्लाइडशो तयार करा"
+
+#, fuzzy
+#~| msgid "Icon Size"
+#~ msgid "Dock Icon Size"
+#~ msgstr "आयकॉन आकार"
+
+#~ msgid "Small"
+#~ msgstr "लहान"
+
+#~ msgid "Large"
+#~ msgstr "मोठा"
+
+#, fuzzy
+#~| msgid "Hide Mode"
+#~ msgid "Hide Dock"
+#~ msgstr "लपवा मोड"
+
+#, fuzzy
+#~| msgid "Focused window is maximized"
+#~ msgid "When the focused window is maximized"
+#~ msgstr "फोकस केलेली विंडो मोठी केली आहे"
+
+#, fuzzy
+#~| msgid "Focused window overlaps the dock"
+#~ msgid "When the focused window overlaps the dock"
+#~ msgstr "फोकस केलेली विंडो डॉकला आच्छादित करते"
+
+#, fuzzy
+#~| msgid "Any window overlaps the dock"
+#~ msgid "When any window overlaps the dock"
+#~ msgstr "कोणतीही विंडो जी डॉक आच्छादित करते"
+
+#, fuzzy
+#~| msgid "Not being used"
+#~ msgid "When not being used"
+#~ msgstr "वापरात नाही"
+
+#, fuzzy
+#~| msgid "Primary display:"
+#~ msgid "Dock on Primary Display"
+#~ msgstr "प्राथमिक प्रदर्शन :"
+
+#, fuzzy
+#~| msgid "Pressure reveal"
+#~ msgid "Dock Pressure Reveal"
+#~ msgstr "दबावाने प्रकट करा"
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "मॉनिटर %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "प्रदर्शन  %d"
 
 #~ msgid "Dock"
 #~ msgstr "डॉक"

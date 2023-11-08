@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 23:26+0000\n"
+"POT-Creation-Date: 2023-11-08 09:47+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -127,7 +127,7 @@ msgstr "選択された画像を新しいデスクトップの背景として設
 msgid "Style"
 msgstr "スタイル"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:24
+#: src/Views/Appearance.vala:86
 msgid "Default"
 msgstr "デフォルト"
 
@@ -230,91 +230,29 @@ msgstr ""
 "ウィンドウマネージャーなどのインターフェース要素におけるアニメーションを無効"
 "化します。"
 
-#: src/Views/Dock.vala:15
-msgid "Dock Icon Size"
-msgstr "ドックのアイコンサイズ"
-
-#: src/Views/Dock.vala:19
-msgid "Small"
-msgstr "小"
-
-#: src/Views/Dock.vala:34
-msgid "Large"
-msgstr "大"
-
-#: src/Views/Dock.vala:48
-msgid "Hide Dock"
-msgstr "ドックを隠す"
-
-#: src/Views/Dock.vala:52
-msgid "Never"
-msgstr "なし"
-
-#: src/Views/Dock.vala:57
-msgid "When the focused window is maximized"
-msgstr "フォーカスされたウィンドウが最大化された場合"
-
-#: src/Views/Dock.vala:62
-msgid "When the focused window overlaps the dock"
-msgstr "フォーカスされたウィンドウと重なった場合"
-
-#: src/Views/Dock.vala:67
-msgid "When any window overlaps the dock"
-msgstr "いずれかのウィンドウと重なった場合"
-
-#: src/Views/Dock.vala:72
-msgid "When not being used"
-msgstr "使われていない場合"
-
-#: src/Views/Dock.vala:90
-msgid "Dock on Primary Display"
-msgstr "プライマリーディスプレイ上のドック"
-
-#: src/Views/Dock.vala:104
-msgid "Dock Pressure Reveal"
-msgstr "ドックを押し込んで表示"
-
-#: src/Views/Dock.vala:106
-msgid ""
-"Prevent accidental reveals by moving the pointer past the display edge. Only "
-"works with some devices."
-msgstr ""
-"ディスプレイの端へポインターを移動させた際に、意図せずドックが表示されてしま"
-"うのを防ぎます。一部のデバイスでのみ動作します。"
-
-#: src/Views/Dock.vala:125
+#: src/Views/Dock.vala:12
 msgid "Panel Translucency"
 msgstr "パネルを透過"
 
-#: src/Views/Dock.vala:127
+#: src/Views/Dock.vala:14
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "壁紙に基づいて自動的に透明または不透明にします"
 
-#: src/Views/Dock.vala:146
+#: src/Views/Dock.vala:33
 msgid "Show in Panel"
 msgstr "パネルに表示"
 
-#: src/Views/Dock.vala:153
+#: src/Views/Dock.vala:40
 msgid "Accessibility"
 msgstr "アクセシビリティー"
 
-#: src/Views/Dock.vala:163
+#: src/Views/Dock.vala:50
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:164
+#: src/Views/Dock.vala:51
 msgid "Num Lock"
 msgstr "Num Lock"
-
-#: src/Views/Dock.vala:337
-#, c-format
-msgid "Monitor %d"
-msgstr "モニター %d"
-
-#: src/Views/Dock.vala:342
-#, c-format
-msgid "Display %d"
-msgstr "ディスプレイ %d"
 
 #: src/Views/Multitasking.vala:26
 msgid "When the pointer enters a display corner"
@@ -420,56 +358,104 @@ msgstr "インポート"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Views/Wallpaper.vala:592
+#: src/Views/Wallpaper.vala:530
 msgid "Wallpaper Deleted"
 msgstr "壁紙を削除しました"
 
-#: src/Views/Wallpaper.vala:593
+#: src/Views/Wallpaper.vala:531
 msgid "Undo"
 msgstr "元に戻す"
 
-#: src/Widgets/WallpaperContainer.vala:121
+#: src/Widgets/WallpaperContainer.vala:138
 msgid "Remove"
 msgstr "削除"
 
-#: src/Widgets/WallpaperContainer.vala:190
+#: src/Widgets/WallpaperContainer.vala:202
 #, c-format
 msgid "Artist: %s"
 msgstr "アーティスト: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:88
+#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d秒"
 
-#: set-wallpaper-contract/set-wallpaper.vala:91
+#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d分"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
+#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d時間"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
+#: set-wallpaper-contract/set-wallpaper.vala:105
 msgid "1 day"
 msgstr "1 日"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
+#: set-wallpaper-contract/set-wallpaper.vala:109
 msgid "Show each photo for"
 msgstr "それぞれの写真を表示する時間"
 
-#: set-wallpaper-contract/set-wallpaper.vala:178
+#: set-wallpaper-contract/set-wallpaper.vala:139
 msgid "Set As Desktop Slideshow"
 msgstr "デスクトップスライドショーとして設定"
 
-#: set-wallpaper-contract/set-wallpaper.vala:185
+#: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
+
+#~ msgid "Dock Icon Size"
+#~ msgstr "ドックのアイコンサイズ"
+
+#~ msgid "Small"
+#~ msgstr "小"
+
+#~ msgid "Large"
+#~ msgstr "大"
+
+#~ msgid "Hide Dock"
+#~ msgstr "ドックを隠す"
+
+#~ msgid "Never"
+#~ msgstr "なし"
+
+#~ msgid "When the focused window is maximized"
+#~ msgstr "フォーカスされたウィンドウが最大化された場合"
+
+#~ msgid "When the focused window overlaps the dock"
+#~ msgstr "フォーカスされたウィンドウと重なった場合"
+
+#~ msgid "When any window overlaps the dock"
+#~ msgstr "いずれかのウィンドウと重なった場合"
+
+#~ msgid "When not being used"
+#~ msgstr "使われていない場合"
+
+#~ msgid "Dock on Primary Display"
+#~ msgstr "プライマリーディスプレイ上のドック"
+
+#~ msgid "Dock Pressure Reveal"
+#~ msgstr "ドックを押し込んで表示"
+
+#~ msgid ""
+#~ "Prevent accidental reveals by moving the pointer past the display edge. "
+#~ "Only works with some devices."
+#~ msgstr ""
+#~ "ディスプレイの端へポインターを移動させた際に、意図せずドックが表示されてし"
+#~ "まうのを防ぎます。一部のデバイスでのみ動作します。"
+
+#, c-format
+#~ msgid "Monitor %d"
+#~ msgstr "モニター %d"
+
+#, c-format
+#~ msgid "Display %d"
+#~ msgstr "ディスプレイ %d"
 
 #~ msgid "Dock"
 #~ msgstr "ドック"
