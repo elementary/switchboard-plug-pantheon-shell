@@ -41,12 +41,11 @@ public class PantheonShell.Multitasking : Gtk.Box {
         var fullscreen_checkbutton = new Gtk.CheckButton.with_label (_("When entering fullscreen"));
         var maximize_checkbutton = new Gtk.CheckButton.with_label (_("When maximizing"));
 
-        var checkbutton_grid = new Gtk.Grid () {
-            column_spacing = 12,
+        var checkbutton_box = new Gtk.Box (HORIZONTAL, 12) {
             margin_bottom = 12
         };
-        checkbutton_grid.add (fullscreen_checkbutton);
-        checkbutton_grid.add (maximize_checkbutton);
+        checkbutton_box.append (fullscreen_checkbutton);
+        checkbutton_box.append (maximize_checkbutton);
 
         var grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -61,17 +60,18 @@ public class PantheonShell.Multitasking : Gtk.Box {
         grid.attach (bottomleft, 0, 3, 2);
         grid.attach (bottomright, 0, 4, 2);
         grid.attach (workspaces_label, 0, 6, 2);
-        grid.attach (checkbutton_grid, 0, 7, 2);
+        grid.attach (checkbutton_box, 0, 7, 2);
 
-        var clamp = new Hdy.Clamp ();
-        clamp.add (grid);
+        var clamp = new Adw.Clamp () {
+            child = grid
+        };
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = clamp,
             hscrollbar_policy = Gtk.PolicyType.NEVER
         };
-        scrolled.add (clamp);
 
-        add (scrolled);
+        append (scrolled);
 
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -130,10 +130,10 @@ public class PantheonShell.Multitasking : Gtk.Box {
             };
 
             var command_revealer = new Gtk.Revealer () {
+                child = command_entry,
                 margin_top = 6,
                 transition_type = Gtk.RevealerTransitionType.SLIDE_DOWN
             };
-            command_revealer.add (command_entry);
 
             margin_bottom = 12;
             column_spacing = 12;
