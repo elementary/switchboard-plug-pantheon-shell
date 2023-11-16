@@ -39,7 +39,6 @@ shared_module(
         gtk_dep,
         hdy_dep,
         dependency('gexiv2'),
-        dependency('gnome-desktop-3.0'),
         posix_dep,
         switchboard_dep
     ],
