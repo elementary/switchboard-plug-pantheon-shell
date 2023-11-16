@@ -63,7 +63,7 @@ public class PantheonShell.Text : Gtk.Box {
             wrap = true,
             xalign = 0
         };
-        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        dyslexia_font_description_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var dyslexia_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -77,13 +77,14 @@ public class PantheonShell.Text : Gtk.Box {
             margin_end = 12,
             margin_bottom = 24
         };
-        box.add (size_grid);
-        box.add (dyslexia_grid);
+        box.append (size_grid);
+        box.append (dyslexia_grid);
 
-        var clamp = new Hdy.Clamp ();
-        clamp.add (box);
+        var clamp = new Adw.Clamp () {
+            child = box
+        };
 
-        add (clamp);
+        append (clamp);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
         interface_settings.bind ("text-scaling-factor", size_adjustment, "value", SettingsBindFlags.GET);
