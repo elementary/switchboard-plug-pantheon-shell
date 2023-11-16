@@ -54,8 +54,6 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (main_grid == null) {
-            main_grid = new Gtk.Grid ();
-
             wallpaper_view = new Wallpaper (this);
 
             var multitasking = new Multitasking ();
@@ -74,15 +72,19 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.stack = stack;
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.homogeneous = true;
-            stack_switcher.margin = 24;
+            var stack_switcher = new Gtk.StackSwitcher () {
+                stack = stack,
+                halign = CENTER,
+                margin_top = 24,
+                margin_end = 24,
+                margin_bottom = 24,
+                margin_start = 24
+            };
+            // stack_switcher.homogeneous = true;
 
-            main_grid.attach (stack_switcher, 0, 0, 1, 1);
-            main_grid.attach (stack, 0, 1, 1, 1);
-            main_grid.show_all ();
+            main_grid = new Gtk.Grid ();
+            main_grid.attach (stack_switcher, 0, 0);
+            main_grid.attach (stack, 0, 1);
         }
 
         return main_grid;

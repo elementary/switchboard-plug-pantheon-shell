@@ -85,7 +85,7 @@ public class PantheonShell.Appearance : Gtk.Box {
         prefer_default_grid.attach (prefer_default_card, 0, 0);
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
 
-        var prefer_default_radio = new Gtk.RadioButton (null) {
+        var prefer_default_radio = new Gtk.CheckButton (null) {
             halign = Gtk.Align.START
         };
         prefer_default_radio.get_style_context ().add_class ("image-button");
@@ -109,7 +109,7 @@ public class PantheonShell.Appearance : Gtk.Box {
         prefer_dark_grid.attach (prefer_dark_card, 0, 0);
         prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
 
-        var prefer_dark_radio = new Gtk.RadioButton.from_widget (prefer_default_radio) {
+        var prefer_dark_radio = new Gtk.CheckButton.from_widget (prefer_default_radio) {
             halign = Gtk.Align.START,
             hexpand = true
         };
@@ -128,11 +128,11 @@ public class PantheonShell.Appearance : Gtk.Box {
 
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
-        var schedule_disabled_radio = new Gtk.RadioButton.with_label (null, _("Disabled")) {
+        var schedule_disabled_radio = new Gtk.CheckButton.with_label (null, _("Disabled")) {
             margin_bottom = 3
         };
 
-        var schedule_sunset_radio = new Gtk.RadioButton.with_label_from_widget (
+        var schedule_sunset_radio = new Gtk.CheckButton.with_label_from_widget (
             schedule_disabled_radio,
             _("Sunset to Sunrise")
         );
@@ -156,7 +156,7 @@ public class PantheonShell.Appearance : Gtk.Box {
         schedule_manual_box.add (to_label);
         schedule_manual_box.add (to_time);
 
-        var schedule_manual_radio = new Gtk.RadioButton.from_widget (schedule_disabled_radio) ;
+        var schedule_manual_radio = new Gtk.CheckButton.from_widget (schedule_disabled_radio) ;
 
         Pantheon.AccountsService? pantheon_act = null;
 
@@ -187,7 +187,7 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
 
         var grid = new Gtk.Grid () {
-            column_spacing = 7, // Off by one with Gtk.RadioButton
+            column_spacing = 7, // Off by one with Gtk.CheckButton
             row_spacing = 6,
             margin_start = 12,
             margin_end = 12,
@@ -418,13 +418,13 @@ public class PantheonShell.Appearance : Gtk.Box {
         animations_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.INVERT_BOOLEAN);
     }
 
-    private class PrefersAccentColorButton : Gtk.RadioButton {
+    private class PrefersAccentColorButton : Gtk.CheckButton {
         public AccentColor color { get; construct; }
         public Pantheon.AccountsService? pantheon_act { get; construct; default = null; }
 
         private static GLib.Settings interface_settings;
 
-        public PrefersAccentColorButton (Pantheon.AccountsService? pantheon_act, AccentColor color, Gtk.RadioButton? group_member = null) {
+        public PrefersAccentColorButton (Pantheon.AccountsService? pantheon_act, AccentColor color, Gtk.CheckButton? group_member = null) {
             Object (
                 pantheon_act: pantheon_act,
                 color: color,

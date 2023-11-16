@@ -26,15 +26,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
     private Gtk.Box card_box;
     private Gtk.Revealer check_revealer;
-    private Granite.AsyncImage image;
+    private Gtk.Picture image;
 
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; set; }
     public uint64 creation_date = 0;
-
-    private Gtk.GestureMultiPress secondary_click_gesture;
 
     private int scale;
 
@@ -78,7 +76,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
         scale = style_context.get_scale ();
 
-        image = new Granite.AsyncImage () {
+        image = new Gtk.Picture () {
             halign = CENTER,
             valign = CENTER
         };
@@ -92,7 +90,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         var check_provider = new Gtk.CssProvider ();
         check_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
 
-        var check = new Gtk.RadioButton (null) {
+        var check = new Gtk.CheckButton (null) {
             halign = START,
             valign = START,
             can_focus = false

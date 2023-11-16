@@ -7,7 +7,6 @@ public class PantheonShell.Dock : Gtk.Box {
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
 
-
     construct {
         var translucency_header = new Granite.HeaderLabel (_("Panel Translucency"));
 
@@ -15,7 +14,7 @@ public class PantheonShell.Dock : Gtk.Box {
             wrap = true,
             xalign = 0
         };
-        translucency_subtitle.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        translucency_subtitle.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var translucency_switch = new Gtk.Switch () {
             halign = END,
@@ -33,13 +32,13 @@ public class PantheonShell.Dock : Gtk.Box {
         var indicators_header = new Granite.HeaderLabel (_("Show in Panel"));
 
         var indicators_box = new Gtk.Box (VERTICAL, 6);
-        indicators_box.add (indicators_header);
+        indicators_box.append (indicators_header);
 
         var a11y_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.desktop.wingpanel.a11y", true);
         if (a11y_schema != null && a11y_schema.has_key ("show-indicator")) {
             var a11y_check = new Gtk.CheckButton.with_label (_("Accessibility"));
 
-            indicators_box.add (a11y_check);
+            indicators_box.append (a11y_check);
 
             var a11y_settings = new Settings ("io.elementary.desktop.wingpanel.a11y");
             a11y_settings.bind ("show-indicator", a11y_check, "active", DEFAULT);
@@ -50,8 +49,8 @@ public class PantheonShell.Dock : Gtk.Box {
             var caps_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪"));
             var num_check = new Gtk.CheckButton.with_label (_("Num Lock"));
 
-            indicators_box.add (caps_check);
-            indicators_box.add (num_check);
+            indicators_box.append (caps_check);
+            indicators_box.append (num_check);
 
             var keyboard_settings = new Settings ("io.elementary.wingpanel.keyboard");
             keyboard_settings.bind ("capslock", caps_check, "active", DEFAULT);
@@ -63,22 +62,22 @@ public class PantheonShell.Dock : Gtk.Box {
             margin_end = 12,
             margin_bottom = 12
         };
-        box.add (translucency_grid);
+        box.append (translucency_grid);
 
         // Only add this box if it has more than the header in it
-        if (indicators_box.get_children ().length () > 1) {
-            box.add (indicators_box);
+        if (indicators_header.get_next_sibling () != null) {
+            box.append (indicators_box);
         }
 
-        var clamp = new Hdy.Clamp () {
+        var clamp = new Adw.Clamp () {
             child = box
         };
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = clamp
         };
 
-        add (scrolled);
+        append (scrolled);
 
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
