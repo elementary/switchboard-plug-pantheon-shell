@@ -84,13 +84,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
         // We need an extra grid to not apply a scale == 1 to the "card" style.
         card_box = new Gtk.Box (VERTICAL, 0);
-        card_box.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
-        card_box.add (image);
+        card_box.add_css_class (Granite.STYLE_CLASS_CARD);
+        card_box.append (image);
 
         var check_provider = new Gtk.CssProvider ();
         check_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
 
-        var check = new Gtk.CheckButton (null) {
+        var check = new Gtk.CheckButton () {
             halign = START,
             valign = START,
             can_focus = false
@@ -133,16 +133,19 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             var menu_model = new Menu ();
             menu_model.append (_("Remove"), "wallpaper.trash");
 
-            var context_menu = new Gtk.Menu.from_model (menu_model) {
-                attach_widget = this
-            };
-            context_menu.show_all ();
+            var context_menu = new Gtk.PopoverMenu.from_model (menu_model);
+            context_menu.set_parent (this);
 
-            secondary_click_gesture = new Gtk.GestureMultiPress (overlay) {
+            var secondary_click_gesture = new Gtk.GestureClick () {
                 button = Gdk.BUTTON_SECONDARY
             };
-            secondary_click_gesture.released.connect (() => {
-                context_menu.popup_at_pointer (null);
+            overlay.add_controller (secondary_click_gesture);
+            secondary_click_gesture.released.connect ((n_press, x, y) => {
+                context_menu.pointing_to = Gdk.Rectangle () {
+                    x = (int) x,
+                    y = (int) y
+                };
+                context_menu.popup ();
             });
         }
 
@@ -158,7 +161,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                 }
             } else {
                 thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale);
-                image.gicon = thumb;
+                image.paintable = Gdk.Texture.for_pixbuf (thumb);
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
@@ -184,11 +187,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             return;
         }
 
-        try {
-            yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
-        } catch (Error e) {
-            warning (e.message);
-        }
+        image.file = File.new_for_path (thumb_path);
 
         if (uri != null) {
             string path = "";
