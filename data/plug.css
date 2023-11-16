@@ -26,8 +26,8 @@
         ),
         linear-gradient(
             to bottom,
-            alpha (@accent_color_500, 0.1),
-            alpha (@accent_color_500, 0.1)
+            alpha(@accent_color_500, 0.1),
+            alpha(@accent_color_500, 0.1)
         );
     background-repeat: no-repeat;
     background-size: 48px 48px, cover;
@@ -66,23 +66,23 @@
 
 .wallpaper-container .card:checked {
     box-shadow:
-        0 0 0 4px alpha (@text_color, 0.2),
-        0 0 0 1px alpha (#000, 0.05),
-        0 3px 3px alpha (#000, 0.22);
+        0 0 0 4px alpha(@text_color, 0.2),
+        0 0 0 1px alpha(#000, 0.05),
+        0 3px 3px alpha(#000, 0.22);
 }
 
 .wallpaper-container:focus .card {
     box-shadow:
         0 0 0 4px @accent_color,
-        0 0 0 1px alpha (#000, 0.05),
-        0 3px 3px alpha (#000, 0.22);
+        0 0 0 1px alpha(#000, 0.05),
+        0 3px 3px alpha(#000, 0.22);
 }
 
 radiobutton .card {
     background-image:
         linear-gradient(
             to bottom,
-            alpha (@accent_color_300, 0.1),
-            alpha (@accent_color_500, 0.1)
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
         );
 }
