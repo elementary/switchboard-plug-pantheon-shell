@@ -78,7 +78,19 @@
         0 3px 3px alpha(#000, 0.22);
 }
 
-radiobutton .card {
+.wallpaper-container check {
+    border-radius: 50%;
+    min-height: 20px;
+    min-width: 20px;
+    -gtk-icon-transform: scale(0.6);
+}
+
+.wallpaper-container picture {
+    min-width: 162px;
+    min-height: 100px;
+}
+
+checkbutton .card {
     background-image:
         linear-gradient(
             to bottom,
