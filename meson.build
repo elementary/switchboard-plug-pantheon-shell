@@ -14,13 +14,7 @@ libexecdir = join_paths(prefix, get_option('libexecdir'))
 
 add_project_arguments(
     '-DGETTEXT_PACKAGE="@0@"'.format(gettext_name),
-    '-DGNOME_DESKTOP_USE_UNSTABLE_API',
     language: 'c'
-)
-
-add_project_arguments(
-    ['--vapidir', join_paths(meson.current_source_dir(), 'vapi')],
-    language: 'vala'
 )
 
 gio_dep = dependency('gio-2.0')
