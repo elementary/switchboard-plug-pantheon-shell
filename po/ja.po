@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-08 09:47+0000\n"
+"POT-Creation-Date: 2023-11-17 02:33+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -127,7 +127,7 @@ msgstr "選択された画像を新しいデスクトップの背景として設
 msgid "Style"
 msgstr "スタイル"
 
-#: src/Views/Appearance.vala:86
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:31
 msgid "Default"
 msgstr "デフォルト"
 
@@ -230,27 +230,39 @@ msgstr ""
 "ウィンドウマネージャーなどのインターフェース要素におけるアニメーションを無効"
 "化します。"
 
-#: src/Views/Dock.vala:12
+#: src/Views/Dock.vala:11
+msgid "Dock Icon Size"
+msgstr "ドックのアイコンサイズ"
+
+#: src/Views/Dock.vala:20
+msgid "Small"
+msgstr "小"
+
+#: src/Views/Dock.vala:42
+msgid "Large"
+msgstr "大"
+
+#: src/Views/Dock.vala:58
 msgid "Panel Translucency"
 msgstr "パネルを透過"
 
-#: src/Views/Dock.vala:14
+#: src/Views/Dock.vala:60
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "壁紙に基づいて自動的に透明または不透明にします"
 
-#: src/Views/Dock.vala:33
+#: src/Views/Dock.vala:79
 msgid "Show in Panel"
 msgstr "パネルに表示"
 
-#: src/Views/Dock.vala:40
+#: src/Views/Dock.vala:86
 msgid "Accessibility"
 msgstr "アクセシビリティー"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:96
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:51
+#: src/Views/Dock.vala:97
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -326,51 +338,51 @@ msgstr ""
 "下部が強調され、字間が確保された書体を使用します。これにより、読みやすさと読"
 "む速度の改善に役立つ可能性があります。"
 
-#: src/Views/Wallpaper.vala:92
+#: src/Views/Wallpaper.vala:83
 msgid "Import Photo…"
 msgstr "写真をインポート…"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:90
 msgid "Dim with dark style:"
 msgstr "ダークスタイル時に壁紙を暗くする:"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:101
 msgid "Centered"
 msgstr "中央に表示"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:102
 msgid "Zoom"
 msgstr "画面に合わせる"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:103
 msgid "Spanned"
 msgstr "並べる"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:148
 msgid "Import Photo"
 msgstr "写真をインポート"
 
-#: src/Views/Wallpaper.vala:154
+#: src/Views/Wallpaper.vala:149
 msgid "Import"
 msgstr "インポート"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:150
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Views/Wallpaper.vala:530
+#: src/Views/Wallpaper.vala:512
 msgid "Wallpaper Deleted"
 msgstr "壁紙を削除しました"
 
-#: src/Views/Wallpaper.vala:531
+#: src/Views/Wallpaper.vala:513
 msgid "Undo"
 msgstr "元に戻す"
 
-#: src/Widgets/WallpaperContainer.vala:138
+#: src/Widgets/WallpaperContainer.vala:134
 msgid "Remove"
 msgstr "削除"
 
-#: src/Widgets/WallpaperContainer.vala:202
+#: src/Widgets/WallpaperContainer.vala:198
 #, c-format
 msgid "Artist: %s"
 msgstr "アーティスト: %s"
@@ -408,15 +420,6 @@ msgstr "デスクトップスライドショーとして設定"
 #: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "スライドショーを作成"
-
-#~ msgid "Dock Icon Size"
-#~ msgstr "ドックのアイコンサイズ"
-
-#~ msgid "Small"
-#~ msgstr "小"
-
-#~ msgid "Large"
-#~ msgstr "大"
 
 #~ msgid "Hide Dock"
 #~ msgstr "ドックを隠す"
