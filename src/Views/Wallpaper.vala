@@ -1,22 +1,9 @@
-/*-
- * Copyright (c) 2015-2016 elementary LLC.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
-
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
-
- * You should have received a copy of the GNU General Public License
- * along with this program. If not, see <http://www.gnu.org/licenses/>.
- *
+/*
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class PantheonShell.Wallpaper : Gtk.Grid {
+public class PantheonShell.Wallpaper : Gtk.Box {
     public enum ColumnType {
         ICON,
         NAME
@@ -69,11 +56,12 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         var drop_target = new Gtk.DropTarget (typeof (Gdk.FileList), Gdk.DragAction.COPY);
 
-        wallpaper_view = new Gtk.FlowBox ();
-        wallpaper_view.activate_on_single_click = true;
+        wallpaper_view = new Gtk.FlowBox () {
+            activate_on_single_click = true,
+            homogeneous = true,
+            selection_mode = SINGLE
+        };
         wallpaper_view.add_css_class (Granite.STYLE_CLASS_VIEW);
-        wallpaper_view.homogeneous = true;
-        wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
         wallpaper_view.set_sort_func (wallpapers_sort_function);
         wallpaper_view.add_controller (drop_target);
@@ -102,12 +90,12 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
         dim_switch = new Gtk.Switch () {
             margin_end = 6,
-            valign = Gtk.Align.CENTER
+            valign = CENTER
         };
 
         combo = new Gtk.ComboBoxText () {
             margin_end = 6,
-            valign = Gtk.Align.CENTER
+            valign = CENTER
         };
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
@@ -128,7 +116,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         };
         color_button.color_set.connect (update_color);
 
-        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        var size_group = new Gtk.SizeGroup (HORIZONTAL);
         size_group.add_widget (add_wallpaper_button);
         size_group.add_widget (combo);
         size_group.add_widget (color_button);
@@ -143,9 +131,10 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         actionbar.pack_end (dim_switch);
         actionbar.pack_end (dim_label);
 
-        attach (separator, 0, 0, 1, 1);
-        attach (view_overlay, 0, 1, 1, 1);
-        attach (actionbar, 0, 2, 1, 1);
+        orientation = VERTICAL;
+        append (separator);
+        append (view_overlay);
+        append (actionbar);
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
 
@@ -193,7 +182,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         // about it anymore. The previous state should be loaded instead here.
         string picture_options = gnome_background_settings.get_string ("picture-options");
         if (picture_options == "none") {
-            combo.set_sensitive (false);
+            combo.sensitive = false;
             picture_options = "zoom";
         }
 
@@ -228,7 +217,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             update_accountsservice ();
 
             if (active_wallpaper == solid_color) {
-                combo.set_sensitive (true);
+                combo.sensitive = true;
                 gnome_background_settings.set_string ("picture-options", combo.get_active_id ());
             }
 
@@ -295,7 +284,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
     private void set_combo_disabled_if_necessary () {
         if (active_wallpaper != solid_color) {
-            combo.set_sensitive (false);
+            combo.sensitive = false;
             gnome_background_settings.set_string ("picture-options", "none");
         }
     }
