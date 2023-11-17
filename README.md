@@ -7,7 +7,6 @@
 
 You'll need the following dependencies:
 
-* gnome-settings-daemon-dev
 * libswitchboard-3-dev
 * libgee-0.8-dev
 * libgexiv2-dev
