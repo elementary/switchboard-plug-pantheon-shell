@@ -278,21 +278,23 @@ public class PantheonShell.Appearance : Gtk.Box {
             /* Connect to focus_in_event so that this is only triggered
              * through user interaction, not if scheduling changes the selection
              */
-            // prefer_default_radio.focus_in_event.connect (() => {
-            //     // Check if selection changed
-            //     if (pantheon_act.prefers_color_scheme != Granite.Settings.ColorScheme.NO_PREFERENCE) {
-            //         schedule_disabled_radio.active = true;
-            //     }
-            //     return Gdk.EVENT_PROPAGATE;
-            // });
+            var prefer_default_radio_controller = new Gtk.EventControllerFocus ();
+            prefer_default_radio.add_controller (prefer_default_radio_controller);
+            prefer_default_radio_controller.enter.connect (() => {
+                // Check if selection changed
+                if (pantheon_act.prefers_color_scheme != Granite.Settings.ColorScheme.NO_PREFERENCE) {
+                    schedule_disabled_radio.active = true;
+                }
+            });
 
-            // prefer_dark_radio.focus_in_event.connect (() => {
-            //     // Check if selection changed
-            //     if (pantheon_act.prefers_color_scheme != Granite.Settings.ColorScheme.DARK) {
-            //         schedule_disabled_radio.active = true;
-            //     }
-            //     return Gdk.EVENT_PROPAGATE;
-            // });
+            var prefer_dark_radio_controller = new Gtk.EventControllerFocus ();
+            prefer_dark_radio.add_controller (prefer_dark_radio_controller);
+            prefer_dark_radio_controller.enter.connect (() => {
+                // Check if selection changed
+                if (pantheon_act.prefers_color_scheme != Granite.Settings.ColorScheme.DARK) {
+                    schedule_disabled_radio.active = true;
+                }
+            });
 
             ((GLib.DBusProxy) pantheon_act).g_properties_changed.connect ((changed, invalid) => {
                 var color_scheme = changed.lookup_value ("PrefersColorScheme", new VariantType ("i"));
