@@ -1,22 +1,9 @@
-/*-
- * Copyright (c) 2015-2016 elementary LLC.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
-
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
-
- * You should have received a copy of the GNU General Public License
- * along with this program. If not, see <http://www.gnu.org/licenses/>.
- *
+/*
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class PantheonShell.Wallpaper : Gtk.Grid {
+public class PantheonShell.Wallpaper : Gtk.Box {
     public enum ColumnType {
         ICON,
         NAME
@@ -67,11 +54,12 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
     construct {
         var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
 
-        wallpaper_view = new Gtk.FlowBox ();
-        wallpaper_view.activate_on_single_click = true;
+        wallpaper_view = new Gtk.FlowBox () {
+            activate_on_single_click = true,
+            homogeneous = true,
+            selection_mode = SINGLE
+        };
         wallpaper_view.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        wallpaper_view.homogeneous = true;
-        wallpaper_view.selection_mode = Gtk.SelectionMode.SINGLE;
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
         wallpaper_view.set_sort_func (wallpapers_sort_function);
 
@@ -82,26 +70,33 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         wallpaper_view.drag_data_received.connect (on_drag_data_received);
         Gtk.drag_dest_set (wallpaper_view, Gtk.DestDefaults.ALL, {e}, Gdk.DragAction.COPY);
 
-        wallpaper_scrolled_window = new Gtk.ScrolledWindow (null, null);
-        wallpaper_scrolled_window.expand = true;
-        wallpaper_scrolled_window.add (wallpaper_view);
+        wallpaper_scrolled_window = new Gtk.ScrolledWindow (null, null) {
+            child = wallpaper_view,
+            hexpand = true,
+            vexpand = true
+        };
 
-        view_overlay = new Gtk.Overlay ();
-        view_overlay.add (wallpaper_scrolled_window);
+        view_overlay = new Gtk.Overlay () {
+            child = wallpaper_scrolled_window
+        };
 
-        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
-        add_wallpaper_button.margin = 12;
+        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
+        };
 
         var dim_label = new Gtk.Label (_("Dim with dark style:"));
 
         dim_switch = new Gtk.Switch () {
             margin_end = 6,
-            valign = Gtk.Align.CENTER
+            valign = CENTER
         };
 
         combo = new Gtk.ComboBoxText () {
             margin_end = 6,
-            valign = Gtk.Align.CENTER
+            valign = CENTER
         };
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
@@ -113,13 +108,16 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             rgba_color = { 1, 1, 1, 1 };
         }
 
-        color_button = new Gtk.ColorButton ();
-        color_button.margin = 12;
-        color_button.margin_start = 0;
-        color_button.rgba = rgba_color;
+        color_button = new Gtk.ColorButton () {
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 0,
+            rgba = rgba_color
+        };
         color_button.color_set.connect (update_color);
 
-        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        var size_group = new Gtk.SizeGroup (HORIZONTAL);
         size_group.add_widget (add_wallpaper_button);
         size_group.add_widget (combo);
         size_group.add_widget (color_button);
@@ -127,16 +125,17 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         load_settings ();
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
         actionbar.pack_start (add_wallpaper_button);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
         actionbar.pack_end (dim_switch);
         actionbar.pack_end (dim_label);
 
-        attach (separator, 0, 0, 1, 1);
-        attach (view_overlay, 0, 1, 1, 1);
-        attach (actionbar, 0, 2, 1, 1);
+        orientation = VERTICAL;
+        add (separator);
+        add (view_overlay);
+        add (actionbar);
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
     }
@@ -145,10 +144,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         var filter = new Gtk.FileFilter ();
         filter.add_mime_type ("image/*");
 
-        var preview_area = new Granite.AsyncImage (false);
-        preview_area.pixel_size = 256;
-        preview_area.margin_end = 12;
-
         var chooser = new Gtk.FileChooserNative (
             _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
             _("Import"),
@@ -156,19 +151,6 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         );
         chooser.filter = filter;
         chooser.select_multiple = true;
-        chooser.set_preview_widget (preview_area);
-
-        chooser.update_preview.connect (() => {
-            string uri = chooser.get_preview_uri ();
-
-            if (uri != null && uri.has_prefix ("file://") == true) {
-                var file = GLib.File.new_for_uri (uri);
-                preview_area.set_from_gicon_async.begin (new FileIcon (file), 256);
-                preview_area.show ();
-            } else {
-                preview_area.hide ();
-            }
-        });
 
         if (chooser.run () == Gtk.ResponseType.ACCEPT) {
             SList<string> uris = chooser.get_uris ();
@@ -199,7 +181,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
         // about it anymore. The previous state should be loaded instead here.
         string picture_options = gnome_background_settings.get_string ("picture-options");
         if (picture_options == "none") {
-            combo.set_sensitive (false);
+            combo.sensitive = false;
             picture_options = "zoom";
         }
 
@@ -234,7 +216,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
             update_accountsservice ();
 
             if (active_wallpaper == solid_color) {
-                combo.set_sensitive (true);
+                combo.sensitive = true;
                 gnome_background_settings.set_string ("picture-options", combo.get_active_id ());
             }
 
@@ -298,7 +280,7 @@ public class PantheonShell.Wallpaper : Gtk.Grid {
 
     private void set_combo_disabled_if_necessary () {
         if (active_wallpaper != solid_color) {
-            combo.set_sensitive (false);
+            combo.sensitive = false;
             gnome_background_settings.set_string ("picture-options", "none");
         }
     }
