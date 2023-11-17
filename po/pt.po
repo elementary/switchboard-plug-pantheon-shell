@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-08 09:47+0000\n"
+"POT-Creation-Date: 2023-11-17 02:33+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -133,7 +133,7 @@ msgstr ""
 msgid "Style"
 msgstr "Estilo"
 
-#: src/Views/Appearance.vala:86
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:31
 msgid "Default"
 msgstr "Predefinido"
 
@@ -236,31 +236,45 @@ msgstr ""
 "Desativar as animações no gestor de janelas e alguns outros elementos de "
 "interface."
 
-#: src/Views/Dock.vala:12
+#: src/Views/Dock.vala:11
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "Tamanho dos ícones"
+
+#: src/Views/Dock.vala:20
+msgid "Small"
+msgstr "Pequeno"
+
+#: src/Views/Dock.vala:42
+msgid "Large"
+msgstr "Grande"
+
+#: src/Views/Dock.vala:58
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Translucidez do painel"
 
-#: src/Views/Dock.vala:14
+#: src/Views/Dock.vala:60
 #, fuzzy
 #| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Automático baseado no papel de parede"
 
-#: src/Views/Dock.vala:33
+#: src/Views/Dock.vala:79
 msgid "Show in Panel"
 msgstr "Mostrar no Painel"
 
-#: src/Views/Dock.vala:40
+#: src/Views/Dock.vala:86
 msgid "Accessibility"
 msgstr "Acessibilidade"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:96
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:51
+#: src/Views/Dock.vala:97
 msgid "Num Lock"
 msgstr ""
 
@@ -336,53 +350,53 @@ msgstr ""
 "Formas pesadas no fundo e maior espaçamento entre caracteres podem ajudar a "
 "melhorar a legibilidade e a velocidade de leitura."
 
-#: src/Views/Wallpaper.vala:92
+#: src/Views/Wallpaper.vala:83
 msgid "Import Photo…"
 msgstr "Importar imagem…"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:90
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim with dark style:"
 msgstr "Estilo escuro"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:101
 msgid "Centered"
 msgstr "Centrado"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:102
 msgid "Zoom"
 msgstr "Ampliado"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:103
 msgid "Spanned"
 msgstr "Expandido"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:148
 msgid "Import Photo"
 msgstr "Importar imagem"
 
-#: src/Views/Wallpaper.vala:154
+#: src/Views/Wallpaper.vala:149
 msgid "Import"
 msgstr "Importar"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:150
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Views/Wallpaper.vala:530
+#: src/Views/Wallpaper.vala:512
 msgid "Wallpaper Deleted"
 msgstr "Papel de parede eliminado"
 
-#: src/Views/Wallpaper.vala:531
+#: src/Views/Wallpaper.vala:513
 msgid "Undo"
 msgstr "Desfazer"
 
-#: src/Widgets/WallpaperContainer.vala:138
+#: src/Widgets/WallpaperContainer.vala:134
 msgid "Remove"
 msgstr "Remover"
 
-#: src/Widgets/WallpaperContainer.vala:202
+#: src/Widgets/WallpaperContainer.vala:198
 #, c-format
 msgid "Artist: %s"
 msgstr "Artista: %s"
@@ -423,17 +437,6 @@ msgstr "Definir como apresentação de diapositivos do ambiente de trabalho"
 #: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "Criar apresentação de diapositivos"
-
-#, fuzzy
-#~| msgid "Icon Size"
-#~ msgid "Dock Icon Size"
-#~ msgstr "Tamanho dos ícones"
-
-#~ msgid "Small"
-#~ msgstr "Pequeno"
-
-#~ msgid "Large"
-#~ msgstr "Grande"
 
 #, fuzzy
 #~| msgid "Hide Mode"

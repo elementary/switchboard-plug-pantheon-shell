@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-08 09:47+0000\n"
+"POT-Creation-Date: 2023-11-17 02:33+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -132,7 +132,7 @@ msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשול
 msgid "Style"
 msgstr "סגנון"
 
-#: src/Views/Appearance.vala:86
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:31
 msgid "Default"
 msgstr "בררת מחדל"
 
@@ -233,27 +233,39 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr "השבתת הנפשות במנהל החלונות וברכיבי מנשק חדשים."
 
-#: src/Views/Dock.vala:12
+#: src/Views/Dock.vala:11
+msgid "Dock Icon Size"
+msgstr "גודל הסמלים במעגן"
+
+#: src/Views/Dock.vala:20
+msgid "Small"
+msgstr "קטן"
+
+#: src/Views/Dock.vala:42
+msgid "Large"
+msgstr "גדול"
+
+#: src/Views/Dock.vala:58
 msgid "Panel Translucency"
 msgstr "שקיפות לוח"
 
-#: src/Views/Dock.vala:14
+#: src/Views/Dock.vala:60
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "אוטומטית שקוף או אטום לפי הרקע"
 
-#: src/Views/Dock.vala:33
+#: src/Views/Dock.vala:79
 msgid "Show in Panel"
 msgstr "הצגה בלוח"
 
-#: src/Views/Dock.vala:40
+#: src/Views/Dock.vala:86
 msgid "Accessibility"
 msgstr "נגישות"
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:96
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪‎"
 
-#: src/Views/Dock.vala:51
+#: src/Views/Dock.vala:97
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -329,51 +341,51 @@ msgstr ""
 "צורות עם בסיס רחב ויותר ריווח בין התווים עשוי לשפר את מידת הקריאות ואת "
 "מהירות הקריאה של הטקסט."
 
-#: src/Views/Wallpaper.vala:92
+#: src/Views/Wallpaper.vala:83
 msgid "Import Photo…"
 msgstr "ייבוא תמונה…"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:90
 msgid "Dim with dark style:"
 msgstr "עמעום עם סגנון חשוך:"
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:101
 msgid "Centered"
 msgstr "ממורכז"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:102
 msgid "Zoom"
 msgstr "תקריב"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:103
 msgid "Spanned"
 msgstr "מגושר"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:148
 msgid "Import Photo"
 msgstr "ייבוא תמונה"
 
-#: src/Views/Wallpaper.vala:154
+#: src/Views/Wallpaper.vala:149
 msgid "Import"
 msgstr "ייבוא"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:150
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Views/Wallpaper.vala:530
+#: src/Views/Wallpaper.vala:512
 msgid "Wallpaper Deleted"
 msgstr "תמונת רקע נמחקה"
 
-#: src/Views/Wallpaper.vala:531
+#: src/Views/Wallpaper.vala:513
 msgid "Undo"
 msgstr "ביטול"
 
-#: src/Widgets/WallpaperContainer.vala:138
+#: src/Widgets/WallpaperContainer.vala:134
 msgid "Remove"
 msgstr "הסרה"
 
-#: src/Widgets/WallpaperContainer.vala:202
+#: src/Widgets/WallpaperContainer.vala:198
 #, c-format
 msgid "Artist: %s"
 msgstr "אמן: %s"
@@ -414,15 +426,6 @@ msgstr "הגדרה כמצגת שולחן העבודה"
 #: set-wallpaper-contract/set-wallpaper.vala:147
 msgid "Create Slideshow"
 msgstr "יצירת מצגת"
-
-#~ msgid "Dock Icon Size"
-#~ msgstr "גודל הסמלים במעגן"
-
-#~ msgid "Small"
-#~ msgstr "קטן"
-
-#~ msgid "Large"
-#~ msgstr "גדול"
 
 #~ msgid "Hide Dock"
 #~ msgstr "הסתרת מעגן"

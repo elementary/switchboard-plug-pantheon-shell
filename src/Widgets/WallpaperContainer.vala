@@ -89,15 +89,11 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         card_box.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
         card_box.add (image);
 
-        var check_provider = new Gtk.CssProvider ();
-        check_provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/Check.css");
-
         var check = new Gtk.RadioButton (null) {
             halign = START,
             valign = START,
             can_focus = false
         };
-        check.get_style_context ().add_provider (check_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER);
 
         check_revealer = new Gtk.Revealer () {
             child = check,
