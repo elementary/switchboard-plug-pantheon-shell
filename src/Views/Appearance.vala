@@ -65,7 +65,9 @@ public class PantheonShell.Appearance : Gtk.Box {
     }
 
     construct {
-        var dark_label = new Granite.HeaderLabel (_("Style"));
+        var dark_label = new Granite.HeaderLabel (_("Style")) {
+            secondary_text = _("Preferred visual style for system components. Apps may also choose to follow this preference.")
+        };
 
         var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
 
@@ -120,12 +122,6 @@ public class PantheonShell.Appearance : Gtk.Box {
         var prefer_style_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
         prefer_style_box.append (prefer_default_radio);
         prefer_style_box.append (prefer_dark_radio);
-
-        var dark_info = new Gtk.Label (_("Preferred visual style for system components. Apps may also choose to follow this preference.")) {
-            wrap = true,
-            xalign = 0
-        };
-        dark_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
@@ -191,7 +187,6 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
 
         var grid = new Gtk.Grid () {
-            column_spacing = 7, // Off by one with Gtk.CheckButton
             row_spacing = 6,
             margin_start = 12,
             margin_end = 12,
@@ -200,7 +195,6 @@ public class PantheonShell.Appearance : Gtk.Box {
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
             grid.attach (dark_label, 0, 0, 2);
-            grid.attach (dark_info, 0, 1, 2);
             grid.attach (prefer_style_box, 0, 2, 2);
             grid.attach (schedule_label, 0, 3, 2);
             grid.attach (schedule_disabled_radio, 0, 4, 2);
@@ -329,7 +323,8 @@ public class PantheonShell.Appearance : Gtk.Box {
 
         if (current_stylesheet.has_prefix (STYLESHEET_PREFIX)) {
             var accent_label = new Granite.HeaderLabel (_("Accent Color")) {
-                margin_top = 18
+                margin_top = 18,
+                secondary_text = _("Used across the system by default. Apps can always use their own accent color.")
             };
 
             var blueberry_button = new PrefersAccentColorButton (pantheon_act, AccentColor.BLUE);
@@ -378,26 +373,9 @@ public class PantheonShell.Appearance : Gtk.Box {
             accent_box.append (slate_button);
             accent_box.append (auto_button);
 
-            var accent_info = new Gtk.Label (_("Used across the system by default. Apps can always use their own accent color.")) {
-                xalign = 0,
-                wrap = true
-            };
-            accent_info.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
-
             grid.attach (accent_label, 0, 7, 2);
-            grid.attach (accent_info, 0, 8, 2);
-            grid.attach (accent_box, 0, 9, 2);
+            grid.attach (accent_box, 0, 8, 2);
         }
-
-        var animations_label = new Granite.HeaderLabel (_("Reduce Motion")) {
-            margin_top = 18
-        };
-
-        var animations_description = new Gtk.Label (_("Disable animations in the window manager and some other interface elements.")) {
-            wrap = true,
-            xalign = 0
-        };
-        animations_description.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var animations_switch = new Gtk.Switch () {
             halign = Gtk.Align.END,
@@ -405,14 +383,18 @@ public class PantheonShell.Appearance : Gtk.Box {
             valign = Gtk.Align.CENTER
         };
 
-        var animations_grid = new Gtk.Grid () {
-            column_spacing = 12
+        var animations_label = new Granite.HeaderLabel (_("Reduce Motion")) {
+            margin_top = 18,
+            mnemonic_widget = animations_switch,
+            secondary_text = _("Disable animations in the window manager and some other interface elements.")
         };
-        animations_grid.attach (animations_label, 0, 0);
-        animations_grid.attach (animations_description, 0, 1);
-        animations_grid.attach (animations_switch, 1, 0, 1, 2);
 
-        grid.attach (animations_grid, 0, 10, 2);
+
+        var animations_box = new Gtk.Box (HORIZONTAL, 12);
+        animations_box.append (animations_label);
+        animations_box.append (animations_switch);
+
+        grid.attach (animations_box, 0, 10, 2);
 
         var clamp = new Adw.Clamp () {
             child = grid

@@ -52,26 +52,20 @@ public class PantheonShell.Dock : Gtk.Box {
         icon_box.append (icon_header);
         icon_box.append (icon_size_box);
 
-        var translucency_header = new Granite.HeaderLabel (_("Panel Translucency"));
-
-        var translucency_subtitle = new Gtk.Label (_("Automatically transparent or opaque based on the wallpaper")) {
-            wrap = true,
-            xalign = 0
-        };
-        translucency_subtitle.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
-
         var translucency_switch = new Gtk.Switch () {
             halign = END,
             hexpand = true,
             valign = CENTER
         };
 
-        var translucency_grid = new Gtk.Grid () {
-            column_spacing = 12
+        var translucency_header = new Granite.HeaderLabel (_("Panel Translucency")) {
+            mnemonic_widget = translucency_switch,
+            secondary_text = _("Automatically transparent or opaque based on the wallpaper")
         };
-        translucency_grid.attach (translucency_header, 0, 0);
-        translucency_grid.attach (translucency_subtitle, 0, 1);
-        translucency_grid.attach (translucency_switch, 1, 0, 1, 2);
+
+        var translucency_box = new Gtk.Box (HORIZONTAL, 12);
+        translucency_box.append (translucency_header);
+        translucency_box.append (translucency_switch);
 
         var indicators_header = new Granite.HeaderLabel (_("Show in Panel"));
 
@@ -107,7 +101,7 @@ public class PantheonShell.Dock : Gtk.Box {
             margin_bottom = 12
         };
         box.append (icon_box);
-        box.append (translucency_grid);
+        box.append (translucency_box);
 
         // Only add this box if it has more than the header in it
         if (indicators_header.get_next_sibling () != null) {
