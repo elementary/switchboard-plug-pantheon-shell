@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-08 09:47+0000\n"
+"POT-Creation-Date: 2023-11-17 02:33+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -137,7 +137,7 @@ msgstr "Задава избраното изображение като фон �
 msgid "Style"
 msgstr ""
 
-#: src/Views/Appearance.vala:86
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:31
 msgid "Default"
 msgstr "По подразбиране"
 
@@ -234,27 +234,41 @@ msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Dock.vala:12
+#: src/Views/Dock.vala:11
+#, fuzzy
+#| msgid "Icon Size"
+msgid "Dock Icon Size"
+msgstr "Размер на иконите"
+
+#: src/Views/Dock.vala:20
+msgid "Small"
+msgstr ""
+
+#: src/Views/Dock.vala:42
+msgid "Large"
+msgstr "Голям"
+
+#: src/Views/Dock.vala:58
 msgid "Panel Translucency"
 msgstr ""
 
-#: src/Views/Dock.vala:14
+#: src/Views/Dock.vala:60
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:33
+#: src/Views/Dock.vala:79
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:40
+#: src/Views/Dock.vala:86
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:50
+#: src/Views/Dock.vala:96
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:51
+#: src/Views/Dock.vala:97
 msgid "Num Lock"
 msgstr ""
 
@@ -330,53 +344,53 @@ msgid ""
 "legibility and reading speed."
 msgstr ""
 
-#: src/Views/Wallpaper.vala:92
+#: src/Views/Wallpaper.vala:83
 msgid "Import Photo…"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:90
 msgid "Dim with dark style:"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:106
+#: src/Views/Wallpaper.vala:101
 msgid "Centered"
 msgstr "Центрирано"
 
-#: src/Views/Wallpaper.vala:107
+#: src/Views/Wallpaper.vala:102
 msgid "Zoom"
 msgstr "Увеличено"
 
-#: src/Views/Wallpaper.vala:108
+#: src/Views/Wallpaper.vala:103
 msgid "Spanned"
 msgstr "На няколко екрана"
 
-#: src/Views/Wallpaper.vala:153
+#: src/Views/Wallpaper.vala:148
 msgid "Import Photo"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:154
+#: src/Views/Wallpaper.vala:149
 msgid "Import"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:150
 msgid "Cancel"
 msgstr "Отказ"
 
-#: src/Views/Wallpaper.vala:530
+#: src/Views/Wallpaper.vala:512
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Фон"
 
-#: src/Views/Wallpaper.vala:531
+#: src/Views/Wallpaper.vala:513
 msgid "Undo"
 msgstr ""
 
-#: src/Widgets/WallpaperContainer.vala:138
+#: src/Widgets/WallpaperContainer.vala:134
 msgid "Remove"
 msgstr "Премахване"
 
-#: src/Widgets/WallpaperContainer.vala:202
+#: src/Widgets/WallpaperContainer.vala:198
 #, c-format
 msgid "Artist: %s"
 msgstr ""
@@ -419,14 +433,6 @@ msgstr "Задаване като изреждане на работния пл�
 #| msgid "Create slideshow"
 msgid "Create Slideshow"
 msgstr "Създаване на изреждане"
-
-#, fuzzy
-#~| msgid "Icon Size"
-#~ msgid "Dock Icon Size"
-#~ msgstr "Размер на иконите"
-
-#~ msgid "Large"
-#~ msgstr "Голям"
 
 #, fuzzy
 #~| msgid "Hide Mode"
