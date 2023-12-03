@@ -55,11 +55,13 @@
 
 .wallpaper-container {
     background-color: transparent;
+    margin: 1em;
 }
 
 .wallpaper-container .card {
     border-radius: 1px;
     border: none;
+    margin: 0.666em; /* Needs to be separate to position checkbutton */
 }
 
 .wallpaper-container .card:checked {

@@ -24,7 +24,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     private const int THUMB_WIDTH = 162;
     private const int THUMB_HEIGHT = 100;
 
-    private Gtk.Grid card_box;
+    private Gtk.Box card_box;
     private Gtk.Revealer check_revealer;
     private Granite.AsyncImage image;
 
@@ -78,37 +78,35 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
         scale = style_context.get_scale ();
 
-        height_request = THUMB_HEIGHT + 18;
-        width_request = THUMB_WIDTH + 18;
-
-        image = new Granite.AsyncImage ();
-        image.halign = Gtk.Align.CENTER;
-        image.valign = Gtk.Align.CENTER;
+        image = new Granite.AsyncImage () {
+            halign = CENTER,
+            valign = CENTER
+        };
         image.get_style_context ().set_scale (1);
 
         // We need an extra grid to not apply a scale == 1 to the "card" style.
-        card_box = new Gtk.Grid ();
-        card_box.get_style_context ().add_class ("card");
+        card_box = new Gtk.Box (VERTICAL, 0);
+        card_box.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
         card_box.add (image);
-        card_box.margin = 9;
 
         var check = new Gtk.RadioButton (null) {
-            halign = Gtk.Align.START,
-            valign = Gtk.Align.START,
+            halign = START,
+            valign = START,
             can_focus = false
         };
 
-        check_revealer = new Gtk.Revealer ();
-        check_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
-        check_revealer.add (check);
+        check_revealer = new Gtk.Revealer () {
+            child = check,
+            transition_type = CROSSFADE
+        };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (card_box);
+        var overlay = new Gtk.Overlay () {
+            child = card_box
+        };
         overlay.add_overlay (check_revealer);
 
-        halign = Gtk.Align.CENTER;
-        valign = Gtk.Align.CENTER;
-        margin = 6;
+        halign = CENTER;
+        valign = CENTER;
 
         child = overlay;
 
@@ -179,7 +177,17 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         });
     }
 
-    private void load_artist_tooltip () {
+    private async void update_thumb () {
+        if (thumb_path == null) {
+            return;
+        }
+
+        try {
+            yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
+        } catch (Error e) {
+            warning (e.message);
+        }
+
         if (uri != null) {
             string path = "";
             GExiv2.Metadata metadata;
@@ -193,25 +201,15 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             }
 
             if (metadata.has_exif ()) {
-                var artist_name = metadata.get_tag_string ("Exif.Image.Artist");
-                if (artist_name != null) {
-                    set_tooltip_text (_("Artist: %s").printf (artist_name));
+                try {
+                    var artist_name = metadata.try_get_tag_string ("Exif.Image.Artist");
+                    if (artist_name != null) {
+                        tooltip_text = _("Artist: %s").printf (artist_name);
+                    }
+                } catch (Error e) {
+                    critical ("Unable to set wallpaper artist name: %s", e.message);
                 }
             }
         }
-    }
-
-    private async void update_thumb () {
-        if (thumb_path == null) {
-            return;
-        }
-
-        try {
-            yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
-        } catch (Error e) {
-            warning (e.message);
-        }
-
-        load_artist_tooltip ();
     }
 }
