@@ -84,8 +84,30 @@
     -gtk-icon-transform: scale(0.6);
 }
 
-radiobutton .card {
+appearance-view radiobutton .card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 86px 64px, cover;
+    min-width: 92px;
+    min-height: 64px;
+    margin: 6px 6px 12px 12px;
+}
+
+appearance-view radiobutton .card.prefer-default {
+    background-color: white;
     background-image:
+        url("resource:///io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg"),
+        linear-gradient(
+            to bottom,
+            alpha(@accent_color_300, 0.1),
+            alpha(@accent_color_500, 0.1)
+        );
+}
+
+appearance-view radiobutton .card.prefer-dark {
+    background-color: mix(@BLACK_300, @BLACK_500, 0.25);
+    background-image:
+        url("resource:///io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
