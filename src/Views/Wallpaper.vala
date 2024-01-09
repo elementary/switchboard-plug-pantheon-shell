@@ -207,6 +207,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         }
 
         gnome_background_settings.set_string ("picture-uri", uri);
+        gnome_background_settings.set_string ("picture-uri-dark", "");
     }
 
     private void update_checked_wallpaper (Gtk.FlowBox box, Gtk.FlowBoxChild child) {
