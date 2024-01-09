@@ -64,6 +64,10 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
     }
 
+    private Gtk.Grid prefer_dark_card;
+    private Gtk.Grid prefer_default_card;
+    private Settings background_settings;
+
     class construct {
         set_css_name ("appearance-view");
     }
@@ -71,7 +75,7 @@ public class PantheonShell.Appearance : Gtk.Box {
     construct {
         var dark_label = new Granite.HeaderLabel (_("Style"));
 
-        var prefer_default_card = new Gtk.Grid ();
+        prefer_default_card = new Gtk.Grid ();
         prefer_default_card.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
         prefer_default_card.get_style_context ().add_class (Granite.STYLE_CLASS_ROUNDED);
         prefer_default_card.get_style_context ().add_class ("prefer-default");
@@ -84,7 +88,7 @@ public class PantheonShell.Appearance : Gtk.Box {
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
         prefer_default_radio.add (prefer_default_grid);
 
-        var prefer_dark_card = new Gtk.Grid ();
+        prefer_dark_card = new Gtk.Grid ();
         prefer_dark_card.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
         prefer_dark_card.get_style_context ().add_class (Granite.STYLE_CLASS_ROUNDED);
         prefer_dark_card.get_style_context ().add_class ("prefer-dark");
@@ -400,6 +404,53 @@ public class PantheonShell.Appearance : Gtk.Box {
 
         var animations_settings = new Settings ("org.pantheon.desktop.gala.animations");
         animations_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.INVERT_BOOLEAN);
+
+        background_settings = new Settings ("org.gnome.desktop.background");
+        background_settings.changed["picture-uri"].connect (update_background);
+        update_background ();
+    }
+
+    private void update_background () {
+        var background_uri = background_settings.get_string ("picture-uri");
+        var file = File.new_for_uri (background_uri);
+        if (file.query_exists ()) {
+            try {
+                var background_provider = new Gtk.CssProvider ();
+                background_provider.load_from_data (
+                    """
+                    .prefer-default {
+                        background-image:
+                            url("resource:///io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg"),
+                            url("%s");
+                    }
+
+                    .prefer-dark {
+                        background-size: 86px 64px, cover, cover;
+                        background-image:
+                            url("resource:///io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg"),
+                            linear-gradient(
+                                to bottom,
+                                alpha(black, 0.45),
+                                alpha(black, 0.45)
+                            ),
+                            url("%s");
+                    }
+                    """.printf (background_uri, background_uri)
+                );
+
+                prefer_default_card.get_style_context ().add_provider (
+                    background_provider,
+                    Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+                );
+
+                prefer_dark_card.get_style_context ().add_provider (
+                    background_provider,
+                    Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+                );
+            } catch (Error e) {
+                critical ("couldn't set wallpaper on style cards: %s", e.message);
+            }
+        }
     }
 
     private class PrefersAccentColorButton : Gtk.RadioButton {
