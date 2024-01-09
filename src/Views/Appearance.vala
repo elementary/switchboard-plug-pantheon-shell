@@ -64,60 +64,92 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
     }
 
+    class construct {
+        set_css_name ("appearance-view");
+    }
+
     construct {
         var dark_label = new Granite.HeaderLabel (_("Style")) {
             secondary_text = _("Preferred visual style for system components. Apps may also choose to follow this preference.")
         };
 
-        var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
-
-        var prefer_default_card = new Gtk.Box (HORIZONTAL, 0) {
-            margin_top = 6,
-            margin_end = 6,
-            margin_bottom = 6,
-            margin_start = 12
-        };
-        prefer_default_card.append (prefer_default_image);
+        var prefer_default_card = new Gtk.Grid ();
         prefer_default_card.add_css_class (Granite.STYLE_CLASS_CARD);
         prefer_default_card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+        prefer_default_card.add_css_class ("prefer-default");
 
-        var prefer_default_grid = new Gtk.Grid () {
-            row_spacing = 6
-        };
+        var prefer_default_radio = new Gtk.CheckButton ();
+        prefer_default_radio.add_css_class ("image-button");
+
+        var prefer_default_grid = new Gtk.Grid ();
         prefer_default_grid.attach (prefer_default_card, 0, 0);
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
-
-        var prefer_default_radio = new Gtk.CheckButton () {
-            halign = Gtk.Align.START
-        };
-        prefer_default_radio.add_css_class ("image-button");
         prefer_default_grid.set_parent (prefer_default_radio);
 
-        var prefer_dark_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg");
-
-        var prefer_dark_card = new Gtk.Box (HORIZONTAL, 6) {
-            margin_top = 6,
-            margin_end = 6,
-            margin_bottom = 6,
-            margin_start = 12
-        };
-        prefer_dark_card.append (prefer_dark_image);
+        var prefer_dark_card = new Gtk.Grid ();
         prefer_dark_card.add_css_class (Granite.STYLE_CLASS_CARD);
         prefer_dark_card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
-
-        var prefer_dark_grid = new Gtk.Grid () {
-            row_spacing = 6
-        };
-        prefer_dark_grid.attach (prefer_dark_card, 0, 0);
-        prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
+        prefer_dark_card.add_css_class ("prefer-dark");
 
         var prefer_dark_radio = new Gtk.CheckButton () {
-            group = prefer_default_radio,
-            halign = Gtk.Align.START,
-            hexpand = true
+            group = prefer_default_radio
         };
         prefer_dark_radio.add_css_class ("image-button");
+
+        var prefer_dark_grid = new Gtk.Grid ();
+        prefer_dark_grid.attach (prefer_dark_card, 0, 0);
+        prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
         prefer_dark_grid.set_parent (prefer_dark_radio);
+
+        // var prefer_default_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg");
+
+        // var prefer_default_card = new Gtk.Box (HORIZONTAL, 0) {
+        //     margin_top = 6,
+        //     margin_end = 6,
+        //     margin_bottom = 6,
+        //     margin_start = 12
+        // };
+        // prefer_default_card.append (prefer_default_image);
+        // prefer_default_card.add_css_class (Granite.STYLE_CLASS_CARD);
+        // prefer_default_card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+
+        // var prefer_default_grid = new Gtk.Grid () {
+        //     row_spacing = 6
+        // };
+        // prefer_default_grid.attach (prefer_default_card, 0, 0);
+        // prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
+
+        // var prefer_default_radio = new Gtk.CheckButton () {
+        //     halign = Gtk.Align.START
+        // };
+        // prefer_default_radio.add_css_class ("image-button");
+        // prefer_default_grid.set_parent (prefer_default_radio);
+
+        // var prefer_dark_image = new Gtk.Image.from_resource ("/io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg");
+
+        // var prefer_dark_card = new Gtk.Box (HORIZONTAL, 6) {
+        //     margin_top = 6,
+        //     margin_end = 6,
+        //     margin_bottom = 6,
+        //     margin_start = 12
+        // };
+        // prefer_dark_card.append (prefer_dark_image);
+        // prefer_dark_card.add_css_class (Granite.STYLE_CLASS_CARD);
+        // prefer_dark_card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+
+        // var prefer_dark_grid = new Gtk.Grid () {
+        //     row_spacing = 6
+        // };
+        // prefer_dark_grid.attach (prefer_dark_card, 0, 0);
+        // prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
+
+        // var prefer_dark_radio = new Gtk.CheckButton () {
+        //     group = prefer_default_radio,
+        //     halign = Gtk.Align.START,
+        //     hexpand = true
+        // };
+        // prefer_dark_radio.add_css_class ("image-button");
+        // prefer_dark_grid.set_parent (prefer_dark_radio);
 
         var prefer_style_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
         prefer_style_box.append (prefer_default_radio);
