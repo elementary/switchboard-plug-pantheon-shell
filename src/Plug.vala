@@ -80,7 +80,13 @@ public class PantheonShell.Plug : Switchboard.Plug {
                 margin_bottom = 24,
                 margin_start = 24
             };
-            // stack_switcher.homogeneous = true;
+
+            var switcher_sizegroup = new Gtk.SizeGroup (HORIZONTAL);
+            unowned var switcher_child = stack_switcher.get_first_child ();
+            while (switcher_child != null) {
+                switcher_sizegroup.add_widget (switcher_child);
+                switcher_child = switcher_child.get_next_sibling ();
+            }
 
             main_grid = new Gtk.Grid ();
             main_grid.attach (stack_switcher, 0, 0);
