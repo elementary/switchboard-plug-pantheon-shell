@@ -486,11 +486,13 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     }
 
     private void send_undo_toast () {
-        // foreach (weak Gtk.Widget child in view_overlay.get_children ()) {
-        //     if (child is Granite.Toast) {
-        //         child.destroy ();
-        //     }
-        // }
+        unowned var child = view_overlay.get_first_child ();
+        while (child != null) {
+            if (child is Granite.Toast) {
+                ((Granite.Toast) child).withdraw ();
+            }
+            child = child.get_next_sibling ();
+        }
 
         if (wallpaper_for_removal != null) {
             confirm_removal ();
