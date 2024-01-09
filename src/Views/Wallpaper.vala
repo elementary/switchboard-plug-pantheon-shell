@@ -153,25 +153,28 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         chooser.filter = filter;
         chooser.select_multiple = true;
 
-        // if (chooser.run () == Gtk.ResponseType.ACCEPT) {
-        //     SList<string> uris = chooser.get_uris ();
-        //     foreach (unowned string uri in uris) {
-        //         var file = GLib.File.new_for_uri (uri);
-        //         if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
-        //             continue;
-        //         }
+        chooser.show ();
+        chooser.response.connect ((response) => {
+            if (response == Gtk.ResponseType.ACCEPT) {
+                var files = chooser.get_files ();
+                for (var i = 0; i <= files.get_n_items (); i++) {
+                    var file = (File) files.get_item (i);
 
-        //         string local_uri = uri;
-        //         var dest = WallpaperOperation.copy_for_library (file);
-        //         if (dest != null) {
-        //             local_uri = dest.get_uri ();
-        //         }
+                    if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
+                        continue;
+                    }
 
-        //         add_wallpaper_from_file (file, local_uri);
-        //     }
-        // }
+                    var local_uri = file.get_uri ();
+                    var dest = WallpaperOperation.copy_for_library (file);
+                    if (dest != null) {
+                        local_uri = dest.get_uri ();
+                    }
 
-        chooser.destroy ();
+                    add_wallpaper_from_file (file, local_uri);
+                }
+            }
+            chooser.destroy ();
+        });
     }
 
     private void load_settings () {

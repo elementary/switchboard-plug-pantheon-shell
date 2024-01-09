@@ -128,20 +128,25 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             var menu_model = new Menu ();
             menu_model.append (_("Remove"), "wallpaper.trash");
 
-            var context_menu = new Gtk.PopoverMenu.from_model (menu_model);
+            var context_menu = new Gtk.PopoverMenu.from_model (menu_model) {
+                halign = START,
+                has_arrow = false
+            };
             context_menu.set_parent (this);
 
             var secondary_click_gesture = new Gtk.GestureClick () {
                 button = Gdk.BUTTON_SECONDARY
             };
-            overlay.add_controller (secondary_click_gesture);
             secondary_click_gesture.released.connect ((n_press, x, y) => {
+                secondary_click_gesture.set_state (CLAIMED);
                 context_menu.pointing_to = Gdk.Rectangle () {
                     x = (int) x,
                     y = (int) y
                 };
                 context_menu.popup ();
             });
+
+            add_controller (secondary_click_gesture);
         }
 
         activate.connect (() => {
