@@ -3,6 +3,7 @@
   <gresource prefix="/io/elementary/switchboard/plug/pantheon-shell">
     <file alias="appearance-default.svg" compressed="true" preprocess="xml-stripblanks">appearance-default.svg</file>
     <file alias="appearance-dark.svg" compressed="true" preprocess="xml-stripblanks">appearance-dark.svg</file>
+    <file compressed="true" preprocess="xml-stripblanks">appearance-scheduled.svg</file>
     <file compressed="true">plug.css</file>
   </gresource>
   <gresource prefix="io/elementary/switchboard/icons">
