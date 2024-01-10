@@ -371,7 +371,6 @@ public class PantheonShell.Appearance : Gtk.Box {
             secondary_text = _("Disable animations in the window manager and some other interface elements.")
         };
 
-
         var animations_box = new Gtk.Box (HORIZONTAL, 12);
         animations_box.append (animations_label);
         animations_box.append (animations_switch);

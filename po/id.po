@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 02:33+0000\n"
+"POT-Creation-Date: 2024-01-10 18:54+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
@@ -127,19 +127,19 @@ msgstr "Tetapkan sebagai Latar Belakang _Desktop"
 msgid "Set selected image to be the new desktop background"
 msgstr "Tetapkan gambar yang dipilih menjadi latar belakang desktop yang baru"
 
-#: src/Views/Appearance.vala:68
+#: src/Views/Appearance.vala:72
 msgid "Style"
 msgstr "Gaya"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:31
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:31
 msgid "Default"
 msgstr "Bawaan"
 
-#: src/Views/Appearance.vala:110
+#: src/Views/Appearance.vala:99
 msgid "Dark"
 msgstr "Gelap"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:106
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -147,75 +147,75 @@ msgstr ""
 "Gaya visual yang disukai untuk komponen sistem. Aplikasi juga dapat memilih "
 "untuk mengikuti preferensi ini."
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:112
 msgid "Schedule"
 msgstr "Jadwal"
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:114
 msgid "Disabled"
 msgstr "Nonaktifkan"
 
-#: src/Views/Appearance.vala:137
+#: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
 msgstr "Matahari terbenam sampai Matahari terbit"
 
-#: src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:123
 msgid "From:"
 msgstr "Dari:"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:130
 msgid "To:"
 msgstr "Sampai:"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:308
 msgid "Accent Color"
 msgstr "Warna Aksen"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:313
 msgid "Blueberry"
 msgstr "Bluberi"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:316
 msgid "Mint"
 msgstr "Mint"
 
-#: src/Views/Appearance.vala:336
+#: src/Views/Appearance.vala:319
 msgid "Lime"
 msgstr "Jeruk Nipis"
 
-#: src/Views/Appearance.vala:339
+#: src/Views/Appearance.vala:322
 msgid "Banana"
 msgstr "Pisang"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:325
 msgid "Orange"
 msgstr "Jeruk"
 
-#: src/Views/Appearance.vala:345
+#: src/Views/Appearance.vala:328
 msgid "Strawberry"
 msgstr "Stroberi"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:331
 msgid "Bubblegum"
 msgstr "Permen Karet"
 
-#: src/Views/Appearance.vala:351
+#: src/Views/Appearance.vala:334
 msgid "Grape"
 msgstr "Anggur"
 
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:337
 msgid "Cocoa"
 msgstr "Cokelat"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:340
 msgid "Slate"
 msgstr "Hitam asbak"
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:343
 msgid "Automatic based on wallpaper"
 msgstr "Otomatis berdasakan gambar latar belakang"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:358
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -223,15 +223,15 @@ msgstr ""
 "Digunakan di seluruh sistem secara bawaan. Aplikasi selalu dapat menggunakan "
 "warna aksennya sendiri."
 
-#: src/Views/Appearance.vala:387
-msgid "Reduce Motion"
-msgstr "Kurangi Gerakan"
-
-#: src/Views/Appearance.vala:391
+#: src/Views/Appearance.vala:369
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Nonaktifkan animasi di manajer jendela dan beberapa elemen antarmuka lainnya."
+
+#: src/Views/Appearance.vala:381
+msgid "Reduce Motion"
+msgstr "Kurangi Gerakan"
 
 #: src/Views/Dock.vala:11
 #, fuzzy
@@ -381,19 +381,19 @@ msgstr "Impor"
 msgid "Cancel"
 msgstr "Batal"
 
-#: src/Views/Wallpaper.vala:512
+#: src/Views/Wallpaper.vala:513
 msgid "Wallpaper Deleted"
 msgstr "Gambar Latar Dihapus"
 
-#: src/Views/Wallpaper.vala:513
+#: src/Views/Wallpaper.vala:514
 msgid "Undo"
 msgstr "Urungkan"
 
-#: src/Widgets/WallpaperContainer.vala:134
+#: src/Widgets/WallpaperContainer.vala:132
 msgid "Remove"
 msgstr "Hapus"
 
-#: src/Widgets/WallpaperContainer.vala:198
+#: src/Widgets/WallpaperContainer.vala:207
 #, c-format
 msgid "Artist: %s"
 msgstr "Artis: %s"
