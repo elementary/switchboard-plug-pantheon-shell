@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 02:33+0000\n"
+"POT-Creation-Date: 2024-01-10 18:54+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -128,19 +128,19 @@ msgstr "Set as _Desktop Background"
 msgid "Set selected image to be the new desktop background"
 msgstr "Set selected image to be the new desktop background"
 
-#: src/Views/Appearance.vala:68
+#: src/Views/Appearance.vala:72
 msgid "Style"
 msgstr "Style"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:31
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:31
 msgid "Default"
 msgstr "Default"
 
-#: src/Views/Appearance.vala:110
+#: src/Views/Appearance.vala:99
 msgid "Dark"
 msgstr "Dark"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:106
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -148,75 +148,75 @@ msgstr ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:112
 msgid "Schedule"
 msgstr "Schedule"
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:114
 msgid "Disabled"
 msgstr "Disabled"
 
-#: src/Views/Appearance.vala:137
+#: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
 msgstr "Sunset to Sunrise"
 
-#: src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:123
 msgid "From:"
 msgstr "From:"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:130
 msgid "To:"
 msgstr "To:"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:308
 msgid "Accent Color"
 msgstr "Accent Colour"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:313
 msgid "Blueberry"
 msgstr "Blueberry"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:316
 msgid "Mint"
 msgstr "Mint"
 
-#: src/Views/Appearance.vala:336
+#: src/Views/Appearance.vala:319
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:339
+#: src/Views/Appearance.vala:322
 msgid "Banana"
 msgstr "Banana"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:325
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:345
+#: src/Views/Appearance.vala:328
 msgid "Strawberry"
 msgstr "Strawberry"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:331
 msgid "Bubblegum"
 msgstr "Bubblegum"
 
-#: src/Views/Appearance.vala:351
+#: src/Views/Appearance.vala:334
 msgid "Grape"
 msgstr "Grape"
 
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:337
 msgid "Cocoa"
 msgstr "Cocoa"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:340
 msgid "Slate"
 msgstr "Slate"
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:343
 msgid "Automatic based on wallpaper"
 msgstr "Automatic based on wallpaper"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:358
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -224,15 +224,15 @@ msgstr ""
 "Used across the system by default. Apps can always use their own accent "
 "colour."
 
-#: src/Views/Appearance.vala:387
-msgid "Reduce Motion"
-msgstr "Reduce Motion"
-
-#: src/Views/Appearance.vala:391
+#: src/Views/Appearance.vala:369
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Disable animations in the window manager and some other interface elements."
+
+#: src/Views/Appearance.vala:381
+msgid "Reduce Motion"
+msgstr "Reduce Motion"
 
 #: src/Views/Dock.vala:11
 msgid "Dock Icon Size"
@@ -374,19 +374,19 @@ msgstr "Import"
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Views/Wallpaper.vala:512
+#: src/Views/Wallpaper.vala:513
 msgid "Wallpaper Deleted"
 msgstr "Wallpaper Deleted"
 
-#: src/Views/Wallpaper.vala:513
+#: src/Views/Wallpaper.vala:514
 msgid "Undo"
 msgstr "Undo"
 
-#: src/Widgets/WallpaperContainer.vala:134
+#: src/Widgets/WallpaperContainer.vala:132
 msgid "Remove"
 msgstr "Remove"
 
-#: src/Widgets/WallpaperContainer.vala:198
+#: src/Widgets/WallpaperContainer.vala:207
 #, c-format
 msgid "Artist: %s"
 msgstr "Artist: %s"

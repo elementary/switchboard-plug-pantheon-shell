@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 02:33+0000\n"
+"POT-Creation-Date: 2024-01-10 18:54+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -129,19 +129,19 @@ msgstr "Estableix com a fons _d'escriptori"
 msgid "Set selected image to be the new desktop background"
 msgstr "Estableix la imatge seleccionada com a fons d'escriptori nou"
 
-#: src/Views/Appearance.vala:68
+#: src/Views/Appearance.vala:72
 msgid "Style"
 msgstr "Estil"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:31
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:31
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Views/Appearance.vala:110
+#: src/Views/Appearance.vala:99
 msgid "Dark"
 msgstr "Fosc"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:106
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -149,75 +149,75 @@ msgstr ""
 "Estil visual preferit per als components del sistema. Les aplicacions també "
 "poden triar seguir aquesta preferència."
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:112
 msgid "Schedule"
 msgstr "Planificació"
 
-#: src/Views/Appearance.vala:131
+#: src/Views/Appearance.vala:114
 msgid "Disabled"
 msgstr "Inhabilitat"
 
-#: src/Views/Appearance.vala:137
+#: src/Views/Appearance.vala:120
 msgid "Sunset to Sunrise"
 msgstr "De la posta a l'alba"
 
-#: src/Views/Appearance.vala:140
+#: src/Views/Appearance.vala:123
 msgid "From:"
 msgstr "De:"
 
-#: src/Views/Appearance.vala:147
+#: src/Views/Appearance.vala:130
 msgid "To:"
 msgstr "A:"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:308
 msgid "Accent Color"
 msgstr "Accentuació del color"
 
-#: src/Views/Appearance.vala:330
+#: src/Views/Appearance.vala:313
 msgid "Blueberry"
 msgstr "Nabiu"
 
-#: src/Views/Appearance.vala:333
+#: src/Views/Appearance.vala:316
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:336
+#: src/Views/Appearance.vala:319
 msgid "Lime"
 msgstr "Llima"
 
-#: src/Views/Appearance.vala:339
+#: src/Views/Appearance.vala:322
 msgid "Banana"
 msgstr "Plàtan"
 
-#: src/Views/Appearance.vala:342
+#: src/Views/Appearance.vala:325
 msgid "Orange"
 msgstr "Taronja"
 
-#: src/Views/Appearance.vala:345
+#: src/Views/Appearance.vala:328
 msgid "Strawberry"
 msgstr "Maduixa"
 
-#: src/Views/Appearance.vala:348
+#: src/Views/Appearance.vala:331
 msgid "Bubblegum"
 msgstr "Xiclet"
 
-#: src/Views/Appearance.vala:351
+#: src/Views/Appearance.vala:334
 msgid "Grape"
 msgstr "Raïm"
 
-#: src/Views/Appearance.vala:354
+#: src/Views/Appearance.vala:337
 msgid "Cocoa"
 msgstr "Cacau"
 
-#: src/Views/Appearance.vala:357
+#: src/Views/Appearance.vala:340
 msgid "Slate"
 msgstr "Pissarra"
 
-#: src/Views/Appearance.vala:360
+#: src/Views/Appearance.vala:343
 msgid "Automatic based on wallpaper"
 msgstr "Automàtic segons el fons"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:358
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -225,16 +225,16 @@ msgstr ""
 "S'usa per defecte a tot el sistema. Les aplicacions sempre poden usar la "
 "seva accentuació de color."
 
-#: src/Views/Appearance.vala:387
-msgid "Reduce Motion"
-msgstr "Redueix el moviment"
-
-#: src/Views/Appearance.vala:391
+#: src/Views/Appearance.vala:369
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Desactiveu les animacions al gestor de finestres i alguns altres elements de "
 "la interfície."
+
+#: src/Views/Appearance.vala:381
+msgid "Reduce Motion"
+msgstr "Redueix el moviment"
 
 #: src/Views/Dock.vala:11
 msgid "Dock Icon Size"
@@ -376,19 +376,19 @@ msgstr "Importa"
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: src/Views/Wallpaper.vala:512
+#: src/Views/Wallpaper.vala:513
 msgid "Wallpaper Deleted"
 msgstr "Fons d'escriptori suprimit"
 
-#: src/Views/Wallpaper.vala:513
+#: src/Views/Wallpaper.vala:514
 msgid "Undo"
 msgstr "Desfés-ho"
 
-#: src/Widgets/WallpaperContainer.vala:134
+#: src/Widgets/WallpaperContainer.vala:132
 msgid "Remove"
 msgstr "Suprimeix"
 
-#: src/Widgets/WallpaperContainer.vala:198
+#: src/Widgets/WallpaperContainer.vala:207
 #, c-format
 msgid "Artist: %s"
 msgstr "Artista: %s"
