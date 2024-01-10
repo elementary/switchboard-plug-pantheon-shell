@@ -187,8 +187,14 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             return;
         }
 
-        var pixbuf = new Gdk.Pixbuf.from_file_at_scale (thumb_path, THUMB_WIDTH * scale, THUMB_HEIGHT * scale, false);
-        image.paintable = Gdk.Texture.for_pixbuf (pixbuf);
+        try {
+            var pixbuf = new Gdk.Pixbuf.from_file_at_scale (thumb_path, THUMB_WIDTH * scale, THUMB_HEIGHT * scale, false);
+            image.paintable = Gdk.Texture.for_pixbuf (pixbuf);
+        } catch (Error e) {
+            critical ("Unable to set wallpaper thumbnail: %s", e.message);
+            return;
+        }
+
 
         if (uri != null) {
             string path = "";
