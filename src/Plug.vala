@@ -37,7 +37,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         settings.set ("desktop/text", "text");
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/io/elementary/settings/plug/desktop/plug.css");
+        provider.load_from_resource ("/io/elementary/settings/desktop/plug.css");
         Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         // DEPRECATED
