@@ -102,7 +102,7 @@ appearance-view checkbutton .card {
 appearance-view checkbutton .card.prefer-default {
     background-color: white;
     background-image:
-        url("resource:///io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg"),
+        url("resource:///io/elementary/settings/desktop/appearance-default.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
@@ -113,7 +113,7 @@ appearance-view checkbutton .card.prefer-default {
 appearance-view checkbutton .card.prefer-dark {
     background-color: mix(@BLACK_300, @BLACK_500, 0.25);
     background-image:
-        url("resource:///io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg"),
+        url("resource:///io/elementary/settings/desktop/appearance-dark.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),

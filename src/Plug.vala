@@ -37,7 +37,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         settings.set ("desktop/text", "text");
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
+        provider.load_from_resource ("/io/elementary/settings/plug/desktop/plug.css");
         Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         // DEPRECATED
@@ -45,7 +45,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         settings.set ("desktop/hot-corners", "multitasking");
 
         Object (category: Category.PERSONAL,
-                code_name: "io.elementary.switchboard.pantheon-shell",
+                code_name: "io.elementary.settings.desktop",
                 display_name: _("Desktop"),
                 description: _("Configure the dock, hot corners, and change wallpaper"),
                 icon: "preferences-desktop",

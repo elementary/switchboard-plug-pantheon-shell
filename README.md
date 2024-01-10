@@ -1,4 +1,4 @@
-# Switchboard Desktop Plug
+# Desktop Settings
 [![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-pantheon-shell/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
 ![screenshot](data/screenshot-appearance.png?raw=true)

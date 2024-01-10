@@ -1,6 +1,6 @@
 i18n.merge_file(
-    input: 'pantheon-shell.metainfo.xml.in',
-    output: 'io.elementary.switchboard.pantheon-shell.metainfo.xml',
+    input: 'desktop.metainfo.xml.in',
+    output: gettext_name + '.metainfo.xml',
     po_dir: meson.source_root() / 'po' / 'extra',
     type: 'xml',
     install: true,

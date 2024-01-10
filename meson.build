@@ -1,9 +1,9 @@
 project(
-    'pantheon-desktop',
+    'desktop',
     'vala', 'c',
     version: '6.5.0'
 )
-gettext_name = meson.project_name() + '-plug'
+gettext_name = 'io.elementary.settings.' + meson.project_name()
 gnome = import('gnome')
 i18n = import('i18n')
 
