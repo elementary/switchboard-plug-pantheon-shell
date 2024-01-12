@@ -1,6 +1,6 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: switchboard-plug-pantheon-shell
-Source: https://launchpad.net/switchboard-plug-pantheon-shell
+Upstream-Name: io.elementary.settings.desktop
+Source: https://github.com/elementary/switchboard-plug-pantheon-shell
 
 Files: *
 Copyright: 2011-2014 elementary LLC.

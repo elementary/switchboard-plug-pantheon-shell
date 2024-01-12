@@ -1,16 +1,16 @@
-switchboard-plug-pantheon-shell (6.5.0) jammy; urgency=medium
+io.elementary.settings.desktop (6.5.0) jammy; urgency=medium
 
   * Release 6.5.0
 
  -- Danielle Foré <danielle@elementary.io>  Mon, 24 Jul 2023 10:07:14 -0700
 
-switchboard-plug-pantheon-shell (6.4.0) jammy; urgency=medium
+io.elementary.settings.desktop (6.4.0) jammy; urgency=medium
 
   * Release 6.4.0
 
  -- Danielle Foré <danielle@elementary.io>  Tue, 02 May 2023 10:03:05 -0700
 
-switchboard-plug-pantheon-shell (6.3.1) bionic; urgency=medium
+io.elementary.settings.desktop (6.3.1) bionic; urgency=medium
 
   * Release 6.3.1 (#337)
   * Update translation files
@@ -185,7 +185,7 @@ switchboard-plug-pantheon-shell (6.3.1) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Fri, 21 Oct 2022 22:07:49 +0000
 
-switchboard-plug-pantheon-shell (6.3.0) bionic; urgency=medium
+io.elementary.settings.desktop (6.3.0) bionic; urgency=medium
 
   * Release 6.3.0 (#329)
   * WallpaperContainer: style selection check with CSS (#330)
@@ -357,7 +357,7 @@ switchboard-plug-pantheon-shell (6.3.0) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Mon, 15 Aug 2022 18:17:10 +0000
 
-switchboard-plug-pantheon-shell (6.2.0) bionic; urgency=medium
+io.elementary.settings.desktop (6.2.0) bionic; urgency=medium
 
   * Release 6.2.0 (#313)
   * Update translation files
@@ -516,7 +516,7 @@ switchboard-plug-pantheon-shell (6.2.0) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Sun, 03 Jul 2022 07:57:31 +0000
 
-switchboard-plug-pantheon-shell (6.1.0) bionic; urgency=medium
+io.elementary.settings.desktop (6.1.0) bionic; urgency=medium
 
   * Release 6.1.0 (#300)
   * Add missing screenshot
@@ -672,7 +672,7 @@ switchboard-plug-pantheon-shell (6.1.0) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Tue, 23 Nov 2021 21:28:25 +0000
 
-switchboard-plug-pantheon-shell (6.0.0) bionic; urgency=medium
+io.elementary.settings.desktop (6.0.0) bionic; urgency=medium
 
   * Release 6.0.0 (#282)
   * Update translation files
@@ -820,7 +820,7 @@ switchboard-plug-pantheon-shell (6.0.0) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Thu, 15 Jul 2021 22:31:20 +0000
 
-switchboard-plug-pantheon-shell (2.8.4) bionic; urgency=medium
+io.elementary.settings.desktop (2.8.4) bionic; urgency=medium
 
   * Release 2.8.4 (#214)
   * Update translation files
@@ -975,7 +975,7 @@ switchboard-plug-pantheon-shell (2.8.4) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Wed, 22 Apr 2020 21:39:12 +0000
 
-switchboard-plug-pantheon-shell (2.8.3) bionic; urgency=medium
+io.elementary.settings.desktop (2.8.3) bionic; urgency=medium
 
   * Release 2.8.3 (#205)
   * Update translation files
@@ -1113,7 +1113,7 @@ switchboard-plug-pantheon-shell (2.8.3) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Wed, 08 Apr 2020 20:21:17 +0000
 
-switchboard-plug-pantheon-shell (2.8.2) bionic; urgency=medium
+io.elementary.settings.desktop (2.8.2) bionic; urgency=medium
 
   * Release 2.8.2 (#192)
   * Update translation template
@@ -1248,121 +1248,121 @@ switchboard-plug-pantheon-shell (2.8.2) bionic; urgency=medium
 
  -- elementary OS Team <builds@elementary.io>  Fri, 15 Nov 2019 22:20:30 +0000
 
-switchboard-plug-pantheon-shell (2.8.1) bionic; urgency=medium
+io.elementary.settings.desktop (2.8.1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <codygarver@gmail.com>  Wed, 27 Mar 2019 06:34:07 -0500
 
-switchboard-plug-pantheon-shell (2.8.0) bionic; urgency=medium
+io.elementary.settings.desktop (2.8.0) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Fri, 21 Dec 2018 05:29:38 -0600
 
-switchboard-plug-pantheon-shell (2.7.2) bionic; urgency=medium
+io.elementary.settings.desktop (2.7.2) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Wed, 28 Nov 2018 07:34:36 -0600
 
-switchboard-plug-pantheon-shell (2.7.1) bionic; urgency=medium
+io.elementary.settings.desktop (2.7.1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Mon, 15 Oct 2018 19:20:01 -0500
 
-switchboard-plug-pantheon-shell (0.2.7) bionic; urgency=medium
+io.elementary.settings.desktop (0.2.7) bionic; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Fri, 08 Jun 2018 11:47:25 -0500
 
-switchboard-plug-pantheon-shell (0.2.6) xenial; urgency=medium
+io.elementary.settings.desktop (0.2.6) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Wed, 14 Jun 2017 18:01:58 -0500
 
-switchboard-plug-pantheon-shell (0.2.5) xenial; urgency=medium
+io.elementary.settings.desktop (0.2.5) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Mon, 10 Apr 2017 00:07:38 -0500
 
-switchboard-plug-pantheon-shell (0.2.4) xenial; urgency=medium
+io.elementary.settings.desktop (0.2.4) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Mon, 12 Dec 2016 17:44:42 -0600
 
-switchboard-plug-pantheon-shell (0.2.3) xenial; urgency=medium
+io.elementary.settings.desktop (0.2.3) xenial; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Thu, 11 Aug 2016 01:54:23 -0500
 
-switchboard-plug-pantheon-shell (0.2.2.1) trusty; urgency=medium
+io.elementary.settings.desktop (0.2.2.1) trusty; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Wed, 09 Dec 2015 14:12:55 -0600
 
-switchboard-plug-pantheon-shell (0.2.2) trusty; urgency=medium
+io.elementary.settings.desktop (0.2.2) trusty; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Mon, 23 Nov 2015 01:29:28 -0600
 
-switchboard-plug-pantheon-shell (0.2.1) trusty; urgency=medium
+io.elementary.settings.desktop (0.2.1) trusty; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Tue, 01 Sep 2015 10:10:21 -0500
 
-switchboard-plug-pantheon-shell (0.2.0.3) trusty; urgency=medium
+io.elementary.settings.desktop (0.2.0.3) trusty; urgency=medium
 
   * New translations.
 
  -- Cody Garver <cody@elementary.io>  Sun, 02 Aug 2015 19:00:29 -0500
 
-switchboard-plug-pantheon-shell (0.2.0.2) trusty; urgency=medium
+io.elementary.settings.desktop (0.2.0.2) trusty; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementary.io>  Tue, 14 Jul 2015 17:40:16 -0500
 
-switchboard-plug-pantheon-shell (0.2.0.1) trusty; urgency=medium
+io.elementary.settings.desktop (0.2.0.1) trusty; urgency=medium
 
   * Adapt to Plank's "Monitor" settings change
 
  -- Cody Garver <cody@elementaryos.org>  Wed, 08 Apr 2015 19:05:22 -0500
 
-switchboard-plug-pantheon-shell (0.2.0) trusty; urgency=medium
+io.elementary.settings.desktop (0.2.0) trusty; urgency=medium
 
   * New upstream release.
 
  -- Cody Garver <cody@elementaryos.org>  Mon, 06 Apr 2015 20:24:06 -0500
 
-switchboard-plug-pantheon-shell (0.1.3) trusty; urgency=low
+io.elementary.settings.desktop (0.1.3) trusty; urgency=low
 
   * New upstream release.
 
  -- Corentin Noël <tintou@mailoo.org>  Mon, 14 Apr 2014 21:56:22 +0200
 
-switchboard-plug-pantheon-shell (0.1.2) precise; urgency=low
+io.elementary.settings.desktop (0.1.2) precise; urgency=low
 
   * New upstream release.
 
  -- Cody Garver <cody@elementaryos.org>  Sat, 10 Aug 2013 23:55:23 -0500
 
-switchboard-plug-pantheon-shell (0.1.1) precise; urgency=low
+io.elementary.settings.desktop (0.1.1) precise; urgency=low
 
   * New upstream release.
 
  -- Cody Garver <cody@elementaryos.org>  Sun, 09 Jun 2013 19:35:39 -0500
 
-switchboard-plug-pantheon-shell (0.1) unstable; urgency=low
+io.elementary.settings.desktop (0.1) unstable; urgency=low
 
   * Initial Release.
 
