@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 18:54+0000\n"
+"POT-Creation-Date: 2024-01-12 18:04+0000\n"
 "PO-Revision-Date: 2023-07-23 14:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -19,45 +19,43 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/pantheon-shell.metainfo.xml.in:10
+#: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
 msgstr "Paràmetres de l'escriptori"
 
-#: data/pantheon-shell.metainfo.xml.in:11
+#: data/desktop.metainfo.xml.in:11
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr ""
 "Configureu l'acoblador, els cantons actius i canvieu el fons de pantalla."
 
-#: data/pantheon-shell.metainfo.xml.in:39
+#: data/desktop.metainfo.xml.in:39
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/pantheon-shell.metainfo.xml.in:46
-#: data/pantheon-shell.metainfo.xml.in:67
-#: data/pantheon-shell.metainfo.xml.in:81
-#: data/pantheon-shell.metainfo.xml.in:103
-#: data/pantheon-shell.metainfo.xml.in:117
+#: data/desktop.metainfo.xml.in:46 data/desktop.metainfo.xml.in:67
+#: data/desktop.metainfo.xml.in:81 data/desktop.metainfo.xml.in:103
+#: data/desktop.metainfo.xml.in:117
 msgid "Other updates:"
 msgstr "Altres actualitzacions:"
 
-#: data/pantheon-shell.metainfo.xml.in:48
+#: data/desktop.metainfo.xml.in:48
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
 "Redisseny de l'acoblador i configuració del plafó amb un text de descripció "
 "útil"
 
-#: data/pantheon-shell.metainfo.xml.in:49
+#: data/desktop.metainfo.xml.in:49
 msgid "Show or hide optional panel indicators"
 msgstr "Mostra o amaga els indicadors del plafó opcionals"
 
-#: data/pantheon-shell.metainfo.xml.in:50
+#: data/desktop.metainfo.xml.in:50
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Correcció de la traducció del valor del retard de la presentació de "
 "diapositives i de l'etiqueta \"Atenuació amb estil fosc\""
 
-#: data/pantheon-shell.metainfo.xml.in:51
+#: data/desktop.metainfo.xml.in:51
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
@@ -65,73 +63,70 @@ msgstr ""
 "Solució d'un problema en què no s'eliminaven fons de pantalla en tancar la "
 "configuració del sistema immediatament després"
 
-#: data/pantheon-shell.metainfo.xml.in:52
-#: data/pantheon-shell.metainfo.xml.in:70
-#: data/pantheon-shell.metainfo.xml.in:83
-#: data/pantheon-shell.metainfo.xml.in:105
-#: data/pantheon-shell.metainfo.xml.in:119
+#: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
+#: data/desktop.metainfo.xml.in:83 data/desktop.metainfo.xml.in:105
+#: data/desktop.metainfo.xml.in:119
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/pantheon-shell.metainfo.xml.in:63
-#: data/pantheon-shell.metainfo.xml.in:90
-#: data/pantheon-shell.metainfo.xml.in:112
+#: data/desktop.metainfo.xml.in:63 data/desktop.metainfo.xml.in:90
+#: data/desktop.metainfo.xml.in:112
 msgid "New features:"
 msgstr "Característiques noves:"
 
-#: data/pantheon-shell.metainfo.xml.in:65
+#: data/desktop.metainfo.xml.in:65
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr ""
 "Afegeix una opció per atenuar els fons de pantalla quan l'estil fosc està "
 "actiu"
 
-#: data/pantheon-shell.metainfo.xml.in:69
+#: data/desktop.metainfo.xml.in:69
 msgid "Use a more vertical layout in the Text view"
 msgstr "Un disseny més vertical a la vista de text"
 
-#: data/pantheon-shell.metainfo.xml.in:92
+#: data/desktop.metainfo.xml.in:92
 msgid "There is now an undo option after removing a wallpaper"
 msgstr "Ara hi ha una opció de desfer després d'eliminar un fons de pantalla."
 
-#: data/pantheon-shell.metainfo.xml.in:93
+#: data/desktop.metainfo.xml.in:93
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr ""
 "Els fons de pantalla ara s'ordenen primer amb els fons de pantalla "
 "personalitzats."
 
-#: data/pantheon-shell.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:95
 msgid "Fixes:"
 msgstr "Correccions:"
 
-#: data/pantheon-shell.metainfo.xml.in:97
+#: data/desktop.metainfo.xml.in:97
 msgid "Wallpaper accent color follows system setting"
 msgstr ""
 "El color d'accent del fons de pantalla segueix la configuració del sistema."
 
-#: data/pantheon-shell.metainfo.xml.in:98
+#: data/desktop.metainfo.xml.in:98
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr ""
 "El contracte d'establient de fons de pantalla falla amb gràcia quan "
 "s'executa com a sudo."
 
-#: data/pantheon-shell.metainfo.xml.in:99
+#: data/desktop.metainfo.xml.in:99
 msgid "Wallpapers with the same name are distinguished"
 msgstr "Es distingeixen fons de pantalla amb el mateix nom."
 
-#: data/pantheon-shell.metainfo.xml.in:100
+#: data/desktop.metainfo.xml.in:100
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 "Canviar d'estil amb el teclat cancel·la la programació de l'estil fosc."
 
-#: data/pantheon-shell.metainfo.xml.in:101
+#: data/desktop.metainfo.xml.in:101
 msgid "Style dyslexia-friendly switch properly"
 msgstr "Estil correcte de l'interruptor compatible amb la dislèxia"
 
-#: data/pantheon-shell.metainfo.xml.in:114
+#: data/desktop.metainfo.xml.in:114
 msgid "Set custom Terminal commands for each hotcorner"
 msgstr "Establiu ordres de terminal personalitzades per a cada cantó actiu."
 
-#: data/pantheon-shell.metainfo.xml.in:115
+#: data/desktop.metainfo.xml.in:115
 msgid "Redesigned Appearance and Multitasking views"
 msgstr "Aparença redissenyada i vistes multitasca"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 18:54+0000\n"
+"POT-Creation-Date: 2024-01-12 18:04+0000\n"
 "PO-Revision-Date: 2023-07-23 14:07+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -20,43 +20,41 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/pantheon-shell.metainfo.xml.in:10
+#: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
 msgstr "Ustawienia pulpitu"
 
-#: data/pantheon-shell.metainfo.xml.in:11
+#: data/desktop.metainfo.xml.in:11
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Konfiguruj dok, gorące narożniki i zmień tło pulpitu"
 
-#: data/pantheon-shell.metainfo.xml.in:39
+#: data/desktop.metainfo.xml.in:39
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/pantheon-shell.metainfo.xml.in:46
-#: data/pantheon-shell.metainfo.xml.in:67
-#: data/pantheon-shell.metainfo.xml.in:81
-#: data/pantheon-shell.metainfo.xml.in:103
-#: data/pantheon-shell.metainfo.xml.in:117
+#: data/desktop.metainfo.xml.in:46 data/desktop.metainfo.xml.in:67
+#: data/desktop.metainfo.xml.in:81 data/desktop.metainfo.xml.in:103
+#: data/desktop.metainfo.xml.in:117
 msgid "Other updates:"
 msgstr "Inne aktualizacje:"
 
-#: data/pantheon-shell.metainfo.xml.in:48
+#: data/desktop.metainfo.xml.in:48
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
 "Przeprojektowano ustawienia Doku i Panelu by zawierały pomocne opisy tekstowe"
 
-#: data/pantheon-shell.metainfo.xml.in:49
+#: data/desktop.metainfo.xml.in:49
 msgid "Show or hide optional panel indicators"
 msgstr "Pokaż lub ukryj opcjonalne indykatory panelu"
 
-#: data/pantheon-shell.metainfo.xml.in:50
+#: data/desktop.metainfo.xml.in:50
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Naprawiono tłumaczenie opóźnienia wyświetlania slajdów oraz etykietę "
 "„Przyciemnij w trybie ciemnym”"
 
-#: data/pantheon-shell.metainfo.xml.in:51
+#: data/desktop.metainfo.xml.in:51
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
@@ -64,69 +62,66 @@ msgstr ""
 "Naprawiono problem gdzie tapety nie były usuwane gdy natychmiast zamykano "
 "ustawienia systemu"
 
-#: data/pantheon-shell.metainfo.xml.in:52
-#: data/pantheon-shell.metainfo.xml.in:70
-#: data/pantheon-shell.metainfo.xml.in:83
-#: data/pantheon-shell.metainfo.xml.in:105
-#: data/pantheon-shell.metainfo.xml.in:119
+#: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
+#: data/desktop.metainfo.xml.in:83 data/desktop.metainfo.xml.in:105
+#: data/desktop.metainfo.xml.in:119
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/pantheon-shell.metainfo.xml.in:63
-#: data/pantheon-shell.metainfo.xml.in:90
-#: data/pantheon-shell.metainfo.xml.in:112
+#: data/desktop.metainfo.xml.in:63 data/desktop.metainfo.xml.in:90
+#: data/desktop.metainfo.xml.in:112
 msgid "New features:"
 msgstr "Nowe funkcje:"
 
-#: data/pantheon-shell.metainfo.xml.in:65
+#: data/desktop.metainfo.xml.in:65
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "Dodano opcję przyciemnienia tapety gdy ciemny motyw jest włączony"
 
-#: data/pantheon-shell.metainfo.xml.in:69
+#: data/desktop.metainfo.xml.in:69
 msgid "Use a more vertical layout in the Text view"
 msgstr "Użycie bardziej pionowego układu w widoku Tekstu"
 
-#: data/pantheon-shell.metainfo.xml.in:92
+#: data/desktop.metainfo.xml.in:92
 msgid "There is now an undo option after removing a wallpaper"
 msgstr "Dodano możliwość cofnięcia po usunięciu tła pulpitu"
 
-#: data/pantheon-shell.metainfo.xml.in:93
+#: data/desktop.metainfo.xml.in:93
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr ""
 "Tła pulpitu są teraz posortowane tak by niestandardowe tła pojawiały się "
 "najpierw"
 
-#: data/pantheon-shell.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:95
 msgid "Fixes:"
 msgstr "Poprawki:"
 
-#: data/pantheon-shell.metainfo.xml.in:97
+#: data/desktop.metainfo.xml.in:97
 msgid "Wallpaper accent color follows system setting"
 msgstr "Kolor akcentu tła pulpitu jest teraz zgodny z ustawieniami systemu"
 
-#: data/pantheon-shell.metainfo.xml.in:98
+#: data/desktop.metainfo.xml.in:98
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr "Kontrakt set-wallpaper nie psuje się gdy jest uruchomiony z sudo"
 
-#: data/pantheon-shell.metainfo.xml.in:99
+#: data/desktop.metainfo.xml.in:99
 msgid "Wallpapers with the same name are distinguished"
 msgstr "Tła pulpitu z taką samą nazwą są teraz rozróżniane"
 
-#: data/pantheon-shell.metainfo.xml.in:100
+#: data/desktop.metainfo.xml.in:100
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 "Zmiana stylu przy użyciu klawiatury anuluje ustawienia automatycznego "
 "ciemnego stylu"
 
-#: data/pantheon-shell.metainfo.xml.in:101
+#: data/desktop.metainfo.xml.in:101
 msgid "Style dyslexia-friendly switch properly"
 msgstr "Przełącznik przyjazny dla dyslektyków ma teraz poprawny styl"
 
-#: data/pantheon-shell.metainfo.xml.in:114
+#: data/desktop.metainfo.xml.in:114
 msgid "Set custom Terminal commands for each hotcorner"
 msgstr "Ustawianie spersonalizowanych poleceń w każdym z rogów Terminala"
 
-#: data/pantheon-shell.metainfo.xml.in:115
+#: data/desktop.metainfo.xml.in:115
 msgid "Redesigned Appearance and Multitasking views"
 msgstr "Przeprojektowano widoki Wyświetlanie oraz Wielozadaniowość"
 
