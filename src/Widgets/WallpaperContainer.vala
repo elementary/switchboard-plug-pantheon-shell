@@ -26,15 +26,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
     private Gtk.Box card_box;
     private Gtk.Revealer check_revealer;
-    private Granite.AsyncImage image;
+    private Gtk.Picture image;
 
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
     public Gdk.Pixbuf thumb { get; set; }
     public uint64 creation_date = 0;
-
-    private Gtk.GestureMultiPress secondary_click_gesture;
 
     private int scale;
 
@@ -78,21 +76,20 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
         scale = style_context.get_scale ();
 
-        image = new Granite.AsyncImage () {
-            halign = CENTER,
-            valign = CENTER
-        };
+        image = new Gtk.Picture ();
         image.get_style_context ().set_scale (1);
 
         // We need an extra grid to not apply a scale == 1 to the "card" style.
         card_box = new Gtk.Box (VERTICAL, 0);
-        card_box.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
-        card_box.add (image);
+        card_box.add_css_class (Granite.STYLE_CLASS_CARD);
+        card_box.append (image);
 
-        var check = new Gtk.RadioButton (null) {
+        var check = new Gtk.CheckButton () {
+            active = true,
             halign = START,
             valign = START,
-            can_focus = false
+            can_focus = false,
+            can_target = false
         };
 
         check_revealer = new Gtk.Revealer () {
@@ -131,17 +128,25 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             var menu_model = new Menu ();
             menu_model.append (_("Remove"), "wallpaper.trash");
 
-            var context_menu = new Gtk.Menu.from_model (menu_model) {
-                attach_widget = this
+            var context_menu = new Gtk.PopoverMenu.from_model (menu_model) {
+                halign = START,
+                has_arrow = false
             };
-            context_menu.show_all ();
+            context_menu.set_parent (this);
 
-            secondary_click_gesture = new Gtk.GestureMultiPress (overlay) {
+            var secondary_click_gesture = new Gtk.GestureClick () {
                 button = Gdk.BUTTON_SECONDARY
             };
-            secondary_click_gesture.released.connect (() => {
-                context_menu.popup_at_pointer (null);
+            secondary_click_gesture.released.connect ((n_press, x, y) => {
+                secondary_click_gesture.set_state (CLAIMED);
+                context_menu.pointing_to = Gdk.Rectangle () {
+                    x = (int) x,
+                    y = (int) y
+                };
+                context_menu.popup ();
             });
+
+            add_controller (secondary_click_gesture);
         }
 
         activate.connect (() => {
@@ -156,7 +161,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                 }
             } else {
                 thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale);
-                image.gicon = thumb;
+                image.paintable = Gdk.Texture.for_pixbuf (thumb);
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
@@ -183,10 +188,13 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         }
 
         try {
-            yield image.set_from_file_async (File.new_for_path (thumb_path), THUMB_WIDTH, THUMB_HEIGHT, false);
+            var pixbuf = new Gdk.Pixbuf.from_file_at_scale (thumb_path, THUMB_WIDTH * scale, THUMB_HEIGHT * scale, false);
+            image.paintable = Gdk.Texture.for_pixbuf (pixbuf);
         } catch (Error e) {
-            warning (e.message);
+            critical ("Unable to set wallpaper thumbnail: %s", e.message);
+            return;
         }
+
 
         if (uri != null) {
             string path = "";

@@ -78,13 +78,19 @@
         0 3px 3px alpha(#000, 0.22);
 }
 
-.wallpaper-container radio {
+.wallpaper-container check {
+    border-radius: 50%;
     min-height: 20px;
     min-width: 20px;
     -gtk-icon-transform: scale(0.6);
 }
 
-appearance-view radiobutton .card {
+.wallpaper-container picture {
+    min-width: 162px;
+    min-height: 100px;
+}
+
+appearance-view checkbutton .card {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 86px 64px, cover;
@@ -93,10 +99,10 @@ appearance-view radiobutton .card {
     margin: 6px 6px 12px 12px;
 }
 
-appearance-view radiobutton .card.prefer-default {
+appearance-view checkbutton .card.prefer-default {
     background-color: white;
     background-image:
-        url("resource:///io/elementary/switchboard/plug/pantheon-shell/appearance-default.svg"),
+        url("resource:///io/elementary/settings/desktop/appearance-default.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),
@@ -104,10 +110,10 @@ appearance-view radiobutton .card.prefer-default {
         );
 }
 
-appearance-view radiobutton .card.prefer-dark {
+appearance-view checkbutton .card.prefer-dark {
     background-color: mix(@BLACK_300, @BLACK_500, 0.25);
     background-image:
-        url("resource:///io/elementary/switchboard/plug/pantheon-shell/appearance-dark.svg"),
+        url("resource:///io/elementary/settings/desktop/appearance-dark.svg"),
         linear-gradient(
             to bottom,
             alpha(@accent_color_300, 0.1),

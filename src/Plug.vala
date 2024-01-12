@@ -37,15 +37,15 @@ public class PantheonShell.Plug : Switchboard.Plug {
         settings.set ("desktop/text", "text");
 
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/io/elementary/switchboard/plug/pantheon-shell/plug.css");
-        Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+        provider.load_from_resource ("/io/elementary/settings/desktop/plug.css");
+        Gtk.StyleContext.add_provider_for_display (Gdk.Display.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         // DEPRECATED
         settings.set ("desktop/wallpaper", "wallpaper");
         settings.set ("desktop/hot-corners", "multitasking");
 
         Object (category: Category.PERSONAL,
-                code_name: "io.elementary.switchboard.pantheon-shell",
+                code_name: "io.elementary.settings.desktop",
                 display_name: _("Desktop"),
                 description: _("Configure the dock, hot corners, and change wallpaper"),
                 icon: "preferences-desktop",
@@ -54,8 +54,6 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (main_grid == null) {
-            main_grid = new Gtk.Grid ();
-
             wallpaper_view = new Wallpaper (this);
 
             var multitasking = new Multitasking ();
@@ -74,15 +72,25 @@ public class PantheonShell.Plug : Switchboard.Plug {
 
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.stack = stack;
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.homogeneous = true;
-            stack_switcher.margin = 24;
+            var stack_switcher = new Gtk.StackSwitcher () {
+                stack = stack,
+                halign = CENTER,
+                margin_top = 24,
+                margin_end = 24,
+                margin_bottom = 24,
+                margin_start = 24
+            };
 
-            main_grid.attach (stack_switcher, 0, 0, 1, 1);
-            main_grid.attach (stack, 0, 1, 1, 1);
-            main_grid.show_all ();
+            var switcher_sizegroup = new Gtk.SizeGroup (HORIZONTAL);
+            unowned var switcher_child = stack_switcher.get_first_child ();
+            while (switcher_child != null) {
+                switcher_sizegroup.add_widget (switcher_child);
+                switcher_child = switcher_child.get_next_sibling ();
+            }
+
+            main_grid = new Gtk.Grid ();
+            main_grid.attach (stack_switcher, 0, 0);
+            main_grid.attach (stack, 0, 1);
         }
 
         return main_grid;

@@ -51,39 +51,33 @@ public class PantheonShell.Text : Gtk.Box {
         size_grid.attach (size_scale, 0, 1);
         size_grid.attach (size_spinbutton, 1, 1);
 
-        var dyslexia_font_label = new Granite.HeaderLabel (_("Dyslexia-friendly"));
-
         var dyslexia_font_switch = new Gtk.Switch () {
             valign = Gtk.Align.CENTER
         };
 
-        var dyslexia_font_description_label = new Gtk.Label (
-            _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
-        ) {
-            wrap = true,
-            xalign = 0
+        var dyslexia_font_label = new Granite.HeaderLabel (_("Dyslexia-friendly")) {
+            hexpand = true,
+            mnemonic_widget = dyslexia_font_switch,
+            secondary_text = _("Bottom-heavy shapes and increased character spacing can help improve legibility and reading speed.")
         };
-        dyslexia_font_description_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-        var dyslexia_grid = new Gtk.Grid () {
-            column_spacing = 12
-        };
-        dyslexia_grid.attach (dyslexia_font_label, 0, 0);
-        dyslexia_grid.attach (dyslexia_font_description_label, 0, 1);
-        dyslexia_grid.attach (dyslexia_font_switch, 1, 0, 1, 2);
+        var dyslexia_box = new Gtk.Box (HORIZONTAL, 12);
+        dyslexia_box.append (dyslexia_font_label);
+        dyslexia_box.append (dyslexia_font_switch);
 
         var box = new Gtk.Box (VERTICAL, 24) {
             margin_start = 12,
             margin_end = 12,
             margin_bottom = 24
         };
-        box.add (size_grid);
-        box.add (dyslexia_grid);
+        box.append (size_grid);
+        box.append (dyslexia_box);
 
-        var clamp = new Hdy.Clamp ();
-        clamp.add (box);
+        var clamp = new Adw.Clamp () {
+            child = box
+        };
 
-        add (clamp);
+        append (clamp);
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
         interface_settings.bind ("text-scaling-factor", size_adjustment, "value", SettingsBindFlags.GET);

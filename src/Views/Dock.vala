@@ -10,58 +10,47 @@ public class PantheonShell.Dock : Gtk.Box {
     construct {
         var icon_header = new Granite.HeaderLabel (_("Dock Icon Size"));
 
-        var image_32 = new Gtk.Image () {
-            icon_name = "dock-icon-symbolic",
+        var image_32 = new Gtk.Image.from_icon_name ("dock-icon-symbolic") {
             pixel_size = 32
         };
 
-        var icon_size_32 = new Gtk.RadioButton (null) {
-            image = image_32,
+        var icon_size_32 = new Gtk.CheckButton () {
             tooltip_text = _("Small")
         };
+        image_32.set_parent (icon_size_32);
 
-        var image_48 = new Gtk.Image () {
-            icon_name = "dock-icon-symbolic",
+        var image_48 = new Gtk.Image.from_icon_name ("dock-icon-symbolic") {
             pixel_size = 48
         };
 
-        var icon_size_48 = new Gtk.RadioButton (null) {
+        var icon_size_48 = new Gtk.CheckButton () {
             group = icon_size_32,
-            image = image_48,
             tooltip_text = _("Default")
         };
+        image_48.set_parent (icon_size_48);
 
-        var image_64 = new Gtk.Image () {
-            icon_name = "dock-icon-symbolic",
+        var image_64 = new Gtk.Image.from_icon_name ("dock-icon-symbolic") {
             pixel_size = 64
         };
 
-        var icon_size_64 = new Gtk.RadioButton (null) {
+        var icon_size_64 = new Gtk.CheckButton () {
             group = icon_size_32,
-            image = image_64,
             tooltip_text = _("Large")
         };
+        image_64.set_parent (icon_size_64);
 
-        var icon_size_unsupported = new Gtk.RadioButton (null) {
+        var icon_size_unsupported = new Gtk.CheckButton () {
             group = icon_size_32
         };
 
         var icon_size_box = new Gtk.Box (HORIZONTAL, 24);
-        icon_size_box.add (icon_size_32);
-        icon_size_box.add (icon_size_48);
-        icon_size_box.add (icon_size_64);
+        icon_size_box.append (icon_size_32);
+        icon_size_box.append (icon_size_48);
+        icon_size_box.append (icon_size_64);
 
         var icon_box = new Gtk.Box (VERTICAL, 0);
-        icon_box.add (icon_header);
-        icon_box.add (icon_size_box);
-
-        var translucency_header = new Granite.HeaderLabel (_("Panel Translucency"));
-
-        var translucency_subtitle = new Gtk.Label (_("Automatically transparent or opaque based on the wallpaper")) {
-            wrap = true,
-            xalign = 0
-        };
-        translucency_subtitle.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        icon_box.append (icon_header);
+        icon_box.append (icon_size_box);
 
         var translucency_switch = new Gtk.Switch () {
             halign = END,
@@ -69,23 +58,25 @@ public class PantheonShell.Dock : Gtk.Box {
             valign = CENTER
         };
 
-        var translucency_grid = new Gtk.Grid () {
-            column_spacing = 12
+        var translucency_header = new Granite.HeaderLabel (_("Panel Translucency")) {
+            mnemonic_widget = translucency_switch,
+            secondary_text = _("Automatically transparent or opaque based on the wallpaper")
         };
-        translucency_grid.attach (translucency_header, 0, 0);
-        translucency_grid.attach (translucency_subtitle, 0, 1);
-        translucency_grid.attach (translucency_switch, 1, 0, 1, 2);
+
+        var translucency_box = new Gtk.Box (HORIZONTAL, 12);
+        translucency_box.append (translucency_header);
+        translucency_box.append (translucency_switch);
 
         var indicators_header = new Granite.HeaderLabel (_("Show in Panel"));
 
         var indicators_box = new Gtk.Box (VERTICAL, 6);
-        indicators_box.add (indicators_header);
+        indicators_box.append (indicators_header);
 
         var a11y_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.desktop.wingpanel.a11y", true);
         if (a11y_schema != null && a11y_schema.has_key ("show-indicator")) {
             var a11y_check = new Gtk.CheckButton.with_label (_("Accessibility"));
 
-            indicators_box.add (a11y_check);
+            indicators_box.append (a11y_check);
 
             var a11y_settings = new Settings ("io.elementary.desktop.wingpanel.a11y");
             a11y_settings.bind ("show-indicator", a11y_check, "active", DEFAULT);
@@ -96,8 +87,8 @@ public class PantheonShell.Dock : Gtk.Box {
             var caps_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪"));
             var num_check = new Gtk.CheckButton.with_label (_("Num Lock"));
 
-            indicators_box.add (caps_check);
-            indicators_box.add (num_check);
+            indicators_box.append (caps_check);
+            indicators_box.append (num_check);
 
             var keyboard_settings = new Settings ("io.elementary.wingpanel.keyboard");
             keyboard_settings.bind ("capslock", caps_check, "active", DEFAULT);
@@ -109,23 +100,23 @@ public class PantheonShell.Dock : Gtk.Box {
             margin_end = 12,
             margin_bottom = 12
         };
-        box.add (icon_box);
-        box.add (translucency_grid);
+        box.append (icon_box);
+        box.append (translucency_box);
 
         // Only add this box if it has more than the header in it
-        if (indicators_box.get_children ().length () > 1) {
-            box.add (indicators_box);
+        if (indicators_header.get_next_sibling () != null) {
+            box.append (indicators_box);
         }
 
-        var clamp = new Hdy.Clamp () {
+        var clamp = new Adw.Clamp () {
             child = box
         };
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = clamp
         };
 
-        add (scrolled);
+        append (scrolled);
 
         var dock_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.dock", true);
         if (dock_schema != null && dock_schema.has_key ("icon-size")) {

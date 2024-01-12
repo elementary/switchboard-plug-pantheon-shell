@@ -1,9 +1,9 @@
 project(
-    'pantheon-desktop',
+    'desktop',
     'vala', 'c',
     version: '6.5.0'
 )
-gettext_name = meson.project_name() + '-plug'
+gettext_name = 'io.elementary.settings.' + meson.project_name()
 gnome = import('gnome')
 i18n = import('i18n')
 
@@ -20,9 +20,9 @@ add_project_arguments(
 gio_dep = dependency('gio-2.0')
 glib_dep = dependency('glib-2.0')
 gobject_dep = dependency('gobject-2.0')
-granite_dep = dependency('granite', version: '>=6.0.0')
-gtk_dep = dependency('gtk+-3.0', version: '>= 3.22')
-hdy_dep = dependency ('libhandy-1')
+granite_dep = dependency('granite-7', version: '>=7.4.0')
+gtk_dep = dependency('gtk4')
+hdy_dep = dependency ('libadwaita-1')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 
 plug_resources = gnome.compile_resources(

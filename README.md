@@ -1,4 +1,4 @@
-# Switchboard Desktop Plug
+# Desktop Settings
 [![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-pantheon-shell/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
 ![screenshot](data/screenshot-appearance.png?raw=true)
@@ -7,13 +7,10 @@
 
 You'll need the following dependencies:
 
-* gnome-settings-daemon-dev
-* libswitchboard-2.0-dev
+* libswitchboard-3-dev
 * libgee-0.8-dev
 * libgexiv2-dev
-* libgtk-3-dev (>= 3.22)
 * libgtk-4-dev
-* libgranite-dev
 * libgranite-7-dev
 * meson
 * valac
@@ -26,4 +23,4 @@ Run `meson` to configure the build environment and then `ninja` to build
 
 To install, use `ninja install`
 
-    sudo ninja install
+    ninja install
