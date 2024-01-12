@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 18:54+0000\n"
+"POT-Creation-Date: 2024-01-12 18:04+0000\n"
 "PO-Revision-Date: 2023-07-15 08:30+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -23,77 +23,77 @@ msgstr "სამუშაო მაგიდა"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "მოირგეთ დოკი, ცხელი კუთხეები და შეცვლეთ ფონის სურათი"
 
-#: src/Plug.vala:66 src/Plug.vala:123
+#: src/Plug.vala:64 src/Plug.vala:131
 msgid "Wallpaper"
 msgstr "ფონური გამოსახულება"
 
-#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
-#: src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:141 src/Plug.vala:142
 msgid "Appearance"
 msgstr "გარემოს იერსახე"
 
-#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:66 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
 msgid "Text"
 msgstr "ტექსტი"
 
-#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
-#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
+#: src/Plug.vala:70 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Dock & Panel"
 msgstr "დოკი და პანელი"
 
-#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:73 src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148
 msgid "Multitasking"
 msgstr "მრავალამოცანიანობა"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:133
 msgid "Hide Mode"
 msgstr "დამალვის რეჟიმი"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:134
 msgid "Icon Size"
 msgstr "ხატულას ზომა"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:135
 msgid "Pressure reveal"
 msgstr "დაწოლა გამოსავლენად"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:136
 msgid "Display"
 msgstr "ჩვენება"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:137
 msgid "Panel translucency"
 msgstr "პანელის გამჭვირვალობა"
 
-#: src/Plug.vala:131
+#: src/Plug.vala:139
 msgid "Dark style"
 msgstr "მუქი სტილი"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:140
 msgid "Accent color"
 msgstr "აქცენტის ფერი"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:141
 msgid "Reduce motion"
 msgstr "მოძრაობის შემცირება"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:142
 msgid "Window animations"
 msgstr "ფანჯრის ანიმაციები"
 
-#: src/Plug.vala:136 src/Views/Text.vala:34
+#: src/Plug.vala:144 src/Views/Text.vala:34
 msgid "Size"
 msgstr "ზომა"
 
-#: src/Plug.vala:137 src/Views/Text.vala:54
+#: src/Plug.vala:145 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "ტექსტი დისლექსიკებისთვის"
 
-#: src/Plug.vala:139
+#: src/Plug.vala:147
 msgid "Hot Corners"
 msgstr "ცხელი კუთხეები"
 
-#: src/Plug.vala:140 src/Views/Multitasking.vala:37
+#: src/Plug.vala:148 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "ფანჯრების ახალ სამუშაო სივრცეში გადატანა"
 
@@ -127,43 +127,51 @@ msgstr "მონიშნული გამოსახულების დ�
 msgid "Style"
 msgstr "სტილი"
 
-#: src/Views/Appearance.vala:84 src/Views/Dock.vala:31
-msgid "Default"
-msgstr "ნაგულისხმები"
-
-#: src/Views/Appearance.vala:99
-msgid "Dark"
-msgstr "ბნელი"
-
-#: src/Views/Appearance.vala:106
+#: src/Views/Appearance.vala:73
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
 
-#: src/Views/Appearance.vala:112
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:28
+msgid "Default"
+msgstr "ნაგულისხმები"
+
+#: src/Views/Appearance.vala:101
+msgid "Dark"
+msgstr "ბნელი"
+
+#: src/Views/Appearance.vala:108
 msgid "Schedule"
 msgstr "განრიგი"
 
-#: src/Views/Appearance.vala:114
+#: src/Views/Appearance.vala:110
 msgid "Disabled"
 msgstr "გამორთულია"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:115
 msgid "Sunset to Sunrise"
 msgstr "დაისიდან აისამდე"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:120
 msgid "From:"
 msgstr "საიდან:"
 
-#: src/Views/Appearance.vala:130
+#: src/Views/Appearance.vala:127
 msgid "To:"
 msgstr "სადამდე:"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:307
 msgid "Accent Color"
 msgstr "აქცენტის ფერი"
+
+#: src/Views/Appearance.vala:309
+msgid ""
+"Used across the system by default. Apps can always use their own accent "
+"color."
+msgstr ""
+"ნაგულისხმებად გამოიყენება მთელ სისტემაში. აპებს ყოველთვის შეუძლიათ, საკუთარი "
+"აქცენტის ფერი გამოიყენონ."
 
 #: src/Views/Appearance.vala:313
 msgid "Blueberry"
@@ -209,56 +217,48 @@ msgstr "ფიქალი"
 msgid "Automatic based on wallpaper"
 msgstr "ავტომატური, ფონის სურათზე დაყრდნობით"
 
-#: src/Views/Appearance.vala:358
-msgid ""
-"Used across the system by default. Apps can always use their own accent "
-"color."
-msgstr ""
-"ნაგულისხმებად გამოიყენება მთელ სისტემაში. აპებს ყოველთვის შეუძლიათ, საკუთარი "
-"აქცენტის ფერი გამოიყენონ."
+#: src/Views/Appearance.vala:368
+msgid "Reduce Motion"
+msgstr "მოძრაობის შემცირება"
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:371
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
-
-#: src/Views/Appearance.vala:381
-msgid "Reduce Motion"
-msgstr "მოძრაობის შემცირება"
 
 #: src/Views/Dock.vala:11
 msgid "Dock Icon Size"
 msgstr "დოკის ხატულას ზომა"
 
-#: src/Views/Dock.vala:20
+#: src/Views/Dock.vala:18
 msgid "Small"
 msgstr "პატარა"
 
-#: src/Views/Dock.vala:42
+#: src/Views/Dock.vala:38
 msgid "Large"
 msgstr "დიდი"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:61
 msgid "Panel Translucency"
 msgstr "პანელის გამჭვირვალობა"
 
-#: src/Views/Dock.vala:60
+#: src/Views/Dock.vala:63
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "ავტომატური გამჭვირვალე ან გაუმჭვირვალე, ფონის სურათზე დამოკიდებული"
 
-#: src/Views/Dock.vala:79
+#: src/Views/Dock.vala:70
 msgid "Show in Panel"
 msgstr "პანელზე ჩვენება"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:77
 msgid "Accessibility"
 msgstr "წვდომადობა"
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:87
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:97
+#: src/Views/Dock.vala:88
 msgid "Num Lock"
 msgstr ""
 
@@ -332,51 +332,51 @@ msgid ""
 "legibility and reading speed."
 msgstr ""
 
-#: src/Views/Wallpaper.vala:83
+#: src/Views/Wallpaper.vala:82
 msgid "Import Photo…"
 msgstr "სურათის შემოტანა…"
 
-#: src/Views/Wallpaper.vala:90
+#: src/Views/Wallpaper.vala:89
 msgid "Dim with dark style:"
 msgstr "დაბნელება ბნელი სტილით:"
 
-#: src/Views/Wallpaper.vala:101
+#: src/Views/Wallpaper.vala:100
 msgid "Centered"
 msgstr "ცენტრირებული"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:101
 msgid "Zoom"
 msgstr "გადიდება"
 
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Wallpaper.vala:102
 msgid "Spanned"
 msgstr "მოცვა"
 
-#: src/Views/Wallpaper.vala:148
+#: src/Views/Wallpaper.vala:149
 msgid "Import Photo"
 msgstr "სურათის შემოტანა"
 
-#: src/Views/Wallpaper.vala:149
+#: src/Views/Wallpaper.vala:150
 msgid "Import"
 msgstr "შემოტანა"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:151
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: src/Views/Wallpaper.vala:513
+#: src/Views/Wallpaper.vala:501
 msgid "Wallpaper Deleted"
 msgstr "ფონური გამოსახულება წაიშალა"
 
-#: src/Views/Wallpaper.vala:514
+#: src/Views/Wallpaper.vala:502
 msgid "Undo"
 msgstr "დაბრუნება"
 
-#: src/Widgets/WallpaperContainer.vala:132
+#: src/Widgets/WallpaperContainer.vala:129
 msgid "Remove"
 msgstr "წაშლა"
 
-#: src/Widgets/WallpaperContainer.vala:207
+#: src/Widgets/WallpaperContainer.vala:215
 #, c-format
 msgid "Artist: %s"
 msgstr "შემსრულებელი: %s"

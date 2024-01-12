@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 18:54+0000\n"
+"POT-Creation-Date: 2024-01-12 18:04+0000\n"
 "PO-Revision-Date: 2023-06-28 21:58+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -27,83 +27,83 @@ msgstr "Радна површ"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Подесите луку, вруће углове и промените позадину"
 
-#: src/Plug.vala:66 src/Plug.vala:123
+#: src/Plug.vala:64 src/Plug.vala:131
 msgid "Wallpaper"
 msgstr "Позадина"
 
-#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
-#: src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:141 src/Plug.vala:142
 msgid "Appearance"
 msgstr "Изглед"
 
-#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:66 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
 #, fuzzy
 #| msgid "Text size"
 msgid "Text"
 msgstr "Величина текста"
 
-#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
-#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
+#: src/Plug.vala:70 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:73 src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148
 msgid "Multitasking"
 msgstr "Рад са више задатака"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:133
 msgid "Hide Mode"
 msgstr "Режим скривања"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:134
 msgid "Icon Size"
 msgstr "Величина иконице"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:135
 msgid "Pressure reveal"
 msgstr "Показивање на притисак"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:136
 msgid "Display"
 msgstr "Екран"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:137
 msgid "Panel translucency"
 msgstr "Прозрачност панела"
 
-#: src/Plug.vala:131
+#: src/Plug.vala:139
 msgid "Dark style"
 msgstr "Тамни стил"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:140
 msgid "Accent color"
 msgstr "Наглађена боја"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:141
 msgid "Reduce motion"
 msgstr ""
 
-#: src/Plug.vala:134
+#: src/Plug.vala:142
 msgid "Window animations"
 msgstr "Анимације прозора"
 
-#: src/Plug.vala:136 src/Views/Text.vala:34
+#: src/Plug.vala:144 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Величина иконице"
 
-#: src/Plug.vala:137 src/Views/Text.vala:54
+#: src/Plug.vala:145 src/Views/Text.vala:58
 #, fuzzy
 #| msgid "Dyslexia-friendly text"
 msgid "Dyslexia-friendly"
 msgstr "Текст пригодан дислексији"
 
-#: src/Plug.vala:139
+#: src/Plug.vala:147
 msgid "Hot Corners"
 msgstr "Врући углови"
 
-#: src/Plug.vala:140 src/Views/Multitasking.vala:37
+#: src/Plug.vala:148 src/Views/Multitasking.vala:37
 #, fuzzy
 #| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
@@ -141,45 +141,53 @@ msgstr "Постави изабрану слику за нову позадин�
 msgid "Style"
 msgstr "Стил:"
 
-#: src/Views/Appearance.vala:84 src/Views/Dock.vala:31
-msgid "Default"
-msgstr "Основно"
-
-#: src/Views/Appearance.vala:99
-msgid "Dark"
-msgstr "Тамно"
-
-#: src/Views/Appearance.vala:106
+#: src/Views/Appearance.vala:73
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
 msgstr ""
 
-#: src/Views/Appearance.vala:112
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:28
+msgid "Default"
+msgstr "Основно"
+
+#: src/Views/Appearance.vala:101
+msgid "Dark"
+msgstr "Тамно"
+
+#: src/Views/Appearance.vala:108
 msgid "Schedule"
 msgstr "Распоред"
 
-#: src/Views/Appearance.vala:114
+#: src/Views/Appearance.vala:110
 msgid "Disabled"
 msgstr "Искључено"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:115
 msgid "Sunset to Sunrise"
 msgstr "Сумрака до свитаја"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:120
 msgid "From:"
 msgstr "Од:"
 
-#: src/Views/Appearance.vala:130
+#: src/Views/Appearance.vala:127
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:307
 #, fuzzy
 #| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Наглађена боја"
+
+#: src/Views/Appearance.vala:309
+msgid ""
+"Used across the system by default. Apps can always use their own accent "
+"color."
+msgstr ""
+"По основи се користи у систему. Програми могу увек д користе своју сопствену "
+"боју наглашавања."
 
 #: src/Views/Appearance.vala:313
 msgid "Blueberry"
@@ -225,21 +233,13 @@ msgstr "Шкриљац"
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:358
-msgid ""
-"Used across the system by default. Apps can always use their own accent "
-"color."
+#: src/Views/Appearance.vala:368
+msgid "Reduce Motion"
 msgstr ""
-"По основи се користи у систему. Програми могу увек д користе своју сопствену "
-"боју наглашавања."
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:371
 msgid ""
 "Disable animations in the window manager and some other interface elements."
-msgstr ""
-
-#: src/Views/Appearance.vala:381
-msgid "Reduce Motion"
 msgstr ""
 
 #: src/Views/Dock.vala:11
@@ -248,37 +248,37 @@ msgstr ""
 msgid "Dock Icon Size"
 msgstr "Величина иконице"
 
-#: src/Views/Dock.vala:20
+#: src/Views/Dock.vala:18
 msgid "Small"
 msgstr "Мали"
 
-#: src/Views/Dock.vala:42
+#: src/Views/Dock.vala:38
 msgid "Large"
 msgstr "Велик"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:61
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Прозрачност панела"
 
-#: src/Views/Dock.vala:60
+#: src/Views/Dock.vala:63
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:79
+#: src/Views/Dock.vala:70
 msgid "Show in Panel"
 msgstr "Прикажи у панелу"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:77
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:87
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:97
+#: src/Views/Dock.vala:88
 msgid "Num Lock"
 msgstr ""
 
@@ -364,55 +364,55 @@ msgstr ""
 "Доњи тешки облици и повећани размак између знакова могу помоћи у побољшању "
 "читљивости и повећати брзину читања."
 
-#: src/Views/Wallpaper.vala:83
+#: src/Views/Wallpaper.vala:82
 msgid "Import Photo…"
 msgstr "Увези фотографију…"
 
-#: src/Views/Wallpaper.vala:90
+#: src/Views/Wallpaper.vala:89
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim with dark style:"
 msgstr "Тамни стил"
 
-#: src/Views/Wallpaper.vala:101
+#: src/Views/Wallpaper.vala:100
 msgid "Centered"
 msgstr "По средини"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:101
 msgid "Zoom"
 msgstr "Увеличај"
 
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Wallpaper.vala:102
 msgid "Spanned"
 msgstr "Распрострто"
 
-#: src/Views/Wallpaper.vala:148
+#: src/Views/Wallpaper.vala:149
 msgid "Import Photo"
 msgstr "Увези фотографију"
 
-#: src/Views/Wallpaper.vala:149
+#: src/Views/Wallpaper.vala:150
 msgid "Import"
 msgstr "Увези"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:151
 msgid "Cancel"
 msgstr "Откажи"
 
-#: src/Views/Wallpaper.vala:513
+#: src/Views/Wallpaper.vala:501
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Позадина"
 
-#: src/Views/Wallpaper.vala:514
+#: src/Views/Wallpaper.vala:502
 msgid "Undo"
 msgstr "Поништи"
 
-#: src/Widgets/WallpaperContainer.vala:132
+#: src/Widgets/WallpaperContainer.vala:129
 msgid "Remove"
 msgstr "Уклони"
 
-#: src/Widgets/WallpaperContainer.vala:207
+#: src/Widgets/WallpaperContainer.vala:215
 #, c-format
 msgid "Artist: %s"
 msgstr "Извођач: %s"

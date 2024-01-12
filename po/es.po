@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 18:54+0000\n"
+"POT-Creation-Date: 2024-01-12 18:04+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -28,83 +28,83 @@ msgstr "Escritorio"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Configurar el dock, esquinas activas y fondo de escritorio"
 
-#: src/Plug.vala:66 src/Plug.vala:123
+#: src/Plug.vala:64 src/Plug.vala:131
 msgid "Wallpaper"
 msgstr "Fondo de pantalla"
 
-#: src/Plug.vala:67 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
-#: src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:141 src/Plug.vala:142
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: src/Plug.vala:68 src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:66 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
 #, fuzzy
 #| msgid "Text size"
 msgid "Text"
 msgstr "Tamaño del texto"
 
-#: src/Plug.vala:72 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
-#: src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
+#: src/Plug.vala:70 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
+#: src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
 msgid "Dock & Panel"
 msgstr "Dock y panel"
 
-#: src/Plug.vala:75 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
+#: src/Plug.vala:73 src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148
 msgid "Multitasking"
 msgstr "Multitarea"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:133
 msgid "Hide Mode"
 msgstr "Modo de ocultamiento"
 
-#: src/Plug.vala:126
+#: src/Plug.vala:134
 msgid "Icon Size"
 msgstr "Tamaño de iconos"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:135
 msgid "Pressure reveal"
 msgstr "Mostrar al presionar"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:136
 msgid "Display"
 msgstr "Pantalla"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:137
 msgid "Panel translucency"
 msgstr "Traslucidez del panel"
 
-#: src/Plug.vala:131
+#: src/Plug.vala:139
 msgid "Dark style"
 msgstr "Estilo oscuro"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:140
 msgid "Accent color"
 msgstr "Color de realce"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:141
 msgid "Reduce motion"
 msgstr ""
 
-#: src/Plug.vala:134
+#: src/Plug.vala:142
 msgid "Window animations"
 msgstr "Animaciones de ventanas"
 
-#: src/Plug.vala:136 src/Views/Text.vala:34
+#: src/Plug.vala:144 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Tamaño de iconos"
 
-#: src/Plug.vala:137 src/Views/Text.vala:54
+#: src/Plug.vala:145 src/Views/Text.vala:58
 #, fuzzy
 #| msgid "Dyslexia-friendly text"
 msgid "Dyslexia-friendly"
 msgstr "Texto para disléxicos"
 
-#: src/Plug.vala:139
+#: src/Plug.vala:147
 msgid "Hot Corners"
 msgstr "Esquinas activas"
 
-#: src/Plug.vala:140 src/Views/Multitasking.vala:37
+#: src/Plug.vala:148 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "Mover ventanas a un nuevo espacio de trabajo"
 
@@ -140,15 +140,7 @@ msgstr "Configurar la imagen seleccionada como fondo de escritorio"
 msgid "Style"
 msgstr "Estilo:"
 
-#: src/Views/Appearance.vala:84 src/Views/Dock.vala:31
-msgid "Default"
-msgstr "Predeterminado"
-
-#: src/Views/Appearance.vala:99
-msgid "Dark"
-msgstr "Oscuro"
-
-#: src/Views/Appearance.vala:106
+#: src/Views/Appearance.vala:73
 msgid ""
 "Preferred visual style for system components. Apps may also choose to follow "
 "this preference."
@@ -156,31 +148,47 @@ msgstr ""
 "Estilo visual preferido para los componentes del sistema. Las aplicaciones "
 "también pueden optar por seguir esta preferencia."
 
-#: src/Views/Appearance.vala:112
+#: src/Views/Appearance.vala:86 src/Views/Dock.vala:28
+msgid "Default"
+msgstr "Predeterminado"
+
+#: src/Views/Appearance.vala:101
+msgid "Dark"
+msgstr "Oscuro"
+
+#: src/Views/Appearance.vala:108
 msgid "Schedule"
 msgstr "Horario"
 
-#: src/Views/Appearance.vala:114
+#: src/Views/Appearance.vala:110
 msgid "Disabled"
 msgstr "Desactivado"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:115
 msgid "Sunset to Sunrise"
 msgstr "Atardecer al amanecer"
 
-#: src/Views/Appearance.vala:123
+#: src/Views/Appearance.vala:120
 msgid "From:"
 msgstr "Desde:"
 
-#: src/Views/Appearance.vala:130
+#: src/Views/Appearance.vala:127
 msgid "To:"
 msgstr "Hasta:"
 
-#: src/Views/Appearance.vala:308
+#: src/Views/Appearance.vala:307
 #, fuzzy
 #| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Color de realce"
+
+#: src/Views/Appearance.vala:309
+msgid ""
+"Used across the system by default. Apps can always use their own accent "
+"color."
+msgstr ""
+"Se utiliza de manera predeterminada en todo el sistema. Las aplicaciones "
+"pueden escoger su propio color."
 
 #: src/Views/Appearance.vala:313
 msgid "Blueberry"
@@ -226,21 +234,13 @@ msgstr "Pizarra"
 msgid "Automatic based on wallpaper"
 msgstr "Automático, en función del fondo"
 
-#: src/Views/Appearance.vala:358
-msgid ""
-"Used across the system by default. Apps can always use their own accent "
-"color."
+#: src/Views/Appearance.vala:368
+msgid "Reduce Motion"
 msgstr ""
-"Se utiliza de manera predeterminada en todo el sistema. Las aplicaciones "
-"pueden escoger su propio color."
 
-#: src/Views/Appearance.vala:369
+#: src/Views/Appearance.vala:371
 msgid ""
 "Disable animations in the window manager and some other interface elements."
-msgstr ""
-
-#: src/Views/Appearance.vala:381
-msgid "Reduce Motion"
 msgstr ""
 
 #: src/Views/Dock.vala:11
@@ -249,39 +249,39 @@ msgstr ""
 msgid "Dock Icon Size"
 msgstr "Tamaño de iconos"
 
-#: src/Views/Dock.vala:20
+#: src/Views/Dock.vala:18
 msgid "Small"
 msgstr "Pequeño"
 
-#: src/Views/Dock.vala:42
+#: src/Views/Dock.vala:38
 msgid "Large"
 msgstr "Grande"
 
-#: src/Views/Dock.vala:58
+#: src/Views/Dock.vala:61
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Traslucidez del panel"
 
-#: src/Views/Dock.vala:60
+#: src/Views/Dock.vala:63
 #, fuzzy
 #| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Automático, en función del fondo"
 
-#: src/Views/Dock.vala:79
+#: src/Views/Dock.vala:70
 msgid "Show in Panel"
 msgstr "Mostrar en el panel"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:77
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:87
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:97
+#: src/Views/Dock.vala:88
 msgid "Num Lock"
 msgstr ""
 
@@ -363,55 +363,55 @@ msgstr ""
 "Las formas más gruesas por la parte inferior y un mayor espacio entre "
 "caracteres puede ayudar a mejorar la legibilidad y la velocidad de lectura."
 
-#: src/Views/Wallpaper.vala:83
+#: src/Views/Wallpaper.vala:82
 msgid "Import Photo…"
 msgstr "Importar foto…"
 
-#: src/Views/Wallpaper.vala:90
+#: src/Views/Wallpaper.vala:89
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim with dark style:"
 msgstr "Estilo oscuro"
 
-#: src/Views/Wallpaper.vala:101
+#: src/Views/Wallpaper.vala:100
 msgid "Centered"
 msgstr "Centrado"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:101
 msgid "Zoom"
 msgstr "Ampliado"
 
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Wallpaper.vala:102
 msgid "Spanned"
 msgstr "Distribuido"
 
-#: src/Views/Wallpaper.vala:148
+#: src/Views/Wallpaper.vala:149
 msgid "Import Photo"
 msgstr "Importar foto"
 
-#: src/Views/Wallpaper.vala:149
+#: src/Views/Wallpaper.vala:150
 msgid "Import"
 msgstr "Importar"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:151
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Views/Wallpaper.vala:513
+#: src/Views/Wallpaper.vala:501
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Fondo de pantalla"
 
-#: src/Views/Wallpaper.vala:514
+#: src/Views/Wallpaper.vala:502
 msgid "Undo"
 msgstr "Deshacer"
 
-#: src/Widgets/WallpaperContainer.vala:132
+#: src/Widgets/WallpaperContainer.vala:129
 msgid "Remove"
 msgstr "Quitar"
 
-#: src/Widgets/WallpaperContainer.vala:207
+#: src/Widgets/WallpaperContainer.vala:215
 #, c-format
 msgid "Artist: %s"
 msgstr "Artista: %s"
