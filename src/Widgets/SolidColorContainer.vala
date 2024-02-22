@@ -34,7 +34,10 @@ public class PantheonShell.SolidColorContainer : WallpaperContainer {
     }
 
     construct {
-        thumb.fill (rgba_to_pixel (rgba));
+        var pixbuf = new Gdk.Pixbuf (RGB, false, 8, THUMB_WIDTH, THUMB_HEIGHT);
+        pixbuf.fill (rgba_to_pixel (rgba));
+
+        image.paintable = Gdk.Texture.for_pixbuf (pixbuf);
     }
 
     // Borrowed from

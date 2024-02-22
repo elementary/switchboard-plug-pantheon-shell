@@ -21,17 +21,16 @@
 public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public signal void trash ();
 
-    private const int THUMB_WIDTH = 162;
-    private const int THUMB_HEIGHT = 100;
+    protected const int THUMB_WIDTH = 256;
+    protected const int THUMB_HEIGHT = 144;
+    protected Gtk.Picture image;
 
     private Gtk.Box card_box;
     private Gtk.Revealer check_revealer;
-    private Gtk.Picture image;
 
     public string? thumb_path { get; construct set; }
     public bool thumb_valid { get; construct; }
     public string uri { get; construct; }
-    public Gdk.Pixbuf thumb { get; set; }
     public uint64 creation_date = 0;
 
     private int scale;
@@ -76,13 +75,12 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
 
         scale = style_context.get_scale ();
 
-        image = new Gtk.Picture ();
-        image.get_style_context ().set_scale (1);
-
-        // We need an extra grid to not apply a scale == 1 to the "card" style.
-        card_box = new Gtk.Box (VERTICAL, 0);
-        card_box.add_css_class (Granite.STYLE_CLASS_CARD);
-        card_box.append (image);
+        image = new Gtk.Picture () {
+            content_fit = COVER,
+            height_request = THUMB_HEIGHT
+        };
+        image.add_css_class (Granite.STYLE_CLASS_CARD);
+        image.add_css_class (Granite.STYLE_CLASS_ROUNDED);
 
         var check = new Gtk.CheckButton () {
             active = true,
@@ -98,7 +96,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
         };
 
         var overlay = new Gtk.Overlay () {
-            child = card_box
+            child = image
         };
         overlay.add_overlay (check_revealer);
 
@@ -160,8 +158,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
                     generate_and_load_thumb ();
                 }
             } else {
-                thumb = new Gdk.Pixbuf (Gdk.Colorspace.RGB, false, 8, THUMB_WIDTH * scale, THUMB_HEIGHT * scale);
-                image.paintable = Gdk.Texture.for_pixbuf (thumb);
+                image.set_filename (thumb_path);
             }
         } catch (Error e) {
             critical ("Failed to load wallpaper thumbnail: %s", e.message);
@@ -187,14 +184,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
             return;
         }
 
-        try {
-            var pixbuf = new Gdk.Pixbuf.from_file_at_scale (thumb_path, THUMB_WIDTH * scale, THUMB_HEIGHT * scale, false);
-            image.paintable = Gdk.Texture.for_pixbuf (pixbuf);
-        } catch (Error e) {
-            critical ("Unable to set wallpaper thumbnail: %s", e.message);
-            return;
-        }
-
+        image.set_filename (thumb_path);
 
         if (uri != null) {
             string path = "";
