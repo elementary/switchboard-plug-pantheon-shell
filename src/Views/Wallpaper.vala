@@ -60,6 +60,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
             activate_on_single_click = true,
             homogeneous = true,
             selection_mode = SINGLE,
+            min_children_per_line = 3,
             max_children_per_line = 5
         };
         wallpaper_view.add_css_class (Granite.STYLE_CLASS_VIEW);
