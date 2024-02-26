@@ -58,9 +58,7 @@
     margin: 1em;
 }
 
-.wallpaper-container .card {
-    border-radius: 1px;
-    border: none;
+.wallpaper-container picture {
     margin: 0.666em; /* Needs to be separate to position checkbutton */
 }
 
@@ -83,11 +81,6 @@
     min-height: 20px;
     min-width: 20px;
     -gtk-icon-transform: scale(0.6);
-}
-
-.wallpaper-container picture {
-    min-width: 162px;
-    min-height: 100px;
 }
 
 appearance-view checkbutton .card {

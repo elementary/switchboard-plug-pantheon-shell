@@ -59,7 +59,9 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         wallpaper_view = new Gtk.FlowBox () {
             activate_on_single_click = true,
             homogeneous = true,
-            selection_mode = SINGLE
+            selection_mode = SINGLE,
+            min_children_per_line = 3,
+            max_children_per_line = 5
         };
         wallpaper_view.add_css_class (Granite.STYLE_CLASS_VIEW);
         wallpaper_view.child_activated.connect (update_checked_wallpaper);
@@ -71,6 +73,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
 
         wallpaper_scrolled_window = new Gtk.ScrolledWindow () {
             child = wallpaper_view,
+            hscrollbar_policy = NEVER,
             hexpand = true,
             vexpand = true
         };
