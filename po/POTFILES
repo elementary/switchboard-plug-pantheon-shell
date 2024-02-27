@@ -9,4 +9,3 @@ src/Views/Text.vala
 src/Views/Wallpaper.vala
 src/Widgets/SolidColorContainer.vala
 src/Widgets/WallpaperContainer.vala
-set-wallpaper-contract/set-wallpaper.vala

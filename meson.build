@@ -33,5 +33,4 @@ plug_resources = gnome.compile_resources(
 
 subdir('data')
 subdir('src')
-subdir('set-wallpaper-contract')
 subdir('po')
