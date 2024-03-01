@@ -73,12 +73,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
             var stack_switcher = new Gtk.StackSwitcher () {
-                stack = stack,
-                halign = CENTER,
-                margin_top = 24,
-                margin_end = 24,
-                margin_bottom = 24,
-                margin_start = 24
+                stack = stack
             };
 
             var switcher_sizegroup = new Gtk.SizeGroup (HORIZONTAL);
@@ -88,8 +83,13 @@ public class PantheonShell.Plug : Switchboard.Plug {
                 switcher_child = switcher_child.get_next_sibling ();
             }
 
+            var headerbar = new Adw.HeaderBar () {
+                title_widget = stack_switcher
+            };
+            headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+
             main_grid = new Gtk.Grid ();
-            main_grid.attach (stack_switcher, 0, 0);
+            main_grid.attach (headerbar, 0, 0);
             main_grid.attach (stack, 0, 1);
         }
 
