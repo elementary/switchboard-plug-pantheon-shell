@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 18:04+0000\n"
+"POT-Creation-Date: 2024-03-21 08:37+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -342,91 +342,84 @@ msgstr ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
 
-#: src/Views/Wallpaper.vala:82
+#: src/Views/Wallpaper.vala:85
 msgid "Import Photo…"
 msgstr "Import Photo…"
 
-#: src/Views/Wallpaper.vala:89
+#: src/Views/Wallpaper.vala:92
 msgid "Dim with dark style:"
 msgstr "Dim with dark style:"
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:103
 msgid "Centered"
 msgstr "Centred"
 
-#: src/Views/Wallpaper.vala:101
+#: src/Views/Wallpaper.vala:104
 msgid "Zoom"
 msgstr "Zoom"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:105
 msgid "Spanned"
 msgstr "Spanned"
 
-#: src/Views/Wallpaper.vala:149
+#: src/Views/Wallpaper.vala:152
 msgid "Import Photo"
 msgstr "Import Photo"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "Import"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:154
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Views/Wallpaper.vala:501
+#: src/Views/Wallpaper.vala:504
 msgid "Wallpaper Deleted"
 msgstr "Wallpaper Deleted"
 
-#: src/Views/Wallpaper.vala:502
+#: src/Views/Wallpaper.vala:505
 msgid "Undo"
 msgstr "Undo"
 
-#: src/Widgets/WallpaperContainer.vala:129
+#: src/Widgets/WallpaperContainer.vala:127
 msgid "Remove"
 msgstr "Remove"
 
-#: src/Widgets/WallpaperContainer.vala:215
+#: src/Widgets/WallpaperContainer.vala:205
 #, c-format
 msgid "Artist: %s"
 msgstr "Artist: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d second"
-msgstr[1] "%d seconds"
+#~ msgid "%d second"
+#~ msgid_plural "%d seconds"
+#~ msgstr[0] "%d second"
+#~ msgstr[1] "%d seconds"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d minute"
-msgstr[1] "%d minutes"
+#~ msgid "%d minute"
+#~ msgid_plural "%d minutes"
+#~ msgstr[0] "%d minute"
+#~ msgstr[1] "%d minutes"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d hour"
-msgstr[1] "%d hours"
+#~ msgid "%d hour"
+#~ msgid_plural "%d hours"
+#~ msgstr[0] "%d hour"
+#~ msgstr[1] "%d hours"
 
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "1 day"
+#~ msgid "1 day"
+#~ msgstr "1 day"
 
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "Show each photo for"
+#~ msgid "Show each photo for"
+#~ msgstr "Show each photo for"
 
-#: set-wallpaper-contract/set-wallpaper.vala:139
-msgid "Set As Desktop Slideshow"
-msgstr "Set As Desktop Slideshow"
+#~ msgid "Set As Desktop Slideshow"
+#~ msgstr "Set As Desktop Slideshow"
 
-#: set-wallpaper-contract/set-wallpaper.vala:147
-msgid "Create Slideshow"
-msgstr "Create Slideshow"
+#~ msgid "Create Slideshow"
+#~ msgstr "Create Slideshow"
 
 #~ msgid "Hide Dock"
 #~ msgstr "Hide Dock"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 18:04+0000\n"
+"POT-Creation-Date: 2024-03-21 08:37+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -351,92 +351,85 @@ msgstr ""
 "아래가 두툼한 모양과 넓어진 문자 간격은 가독성과 읽기 속도를 향상시키는 데 도"
 "움이 됩니다."
 
-#: src/Views/Wallpaper.vala:82
+#: src/Views/Wallpaper.vala:85
 msgid "Import Photo…"
 msgstr "사진 가져오기…"
 
-#: src/Views/Wallpaper.vala:89
+#: src/Views/Wallpaper.vala:92
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim with dark style:"
 msgstr "다크 스타일"
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:103
 msgid "Centered"
 msgstr "중앙 정렬"
 
-#: src/Views/Wallpaper.vala:101
+#: src/Views/Wallpaper.vala:104
 msgid "Zoom"
 msgstr "확대"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:105
 msgid "Spanned"
 msgstr "지연됨"
 
-#: src/Views/Wallpaper.vala:149
+#: src/Views/Wallpaper.vala:152
 msgid "Import Photo"
 msgstr "사진 가져오기"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "가져오기"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:154
 msgid "Cancel"
 msgstr "취소"
 
-#: src/Views/Wallpaper.vala:501
+#: src/Views/Wallpaper.vala:504
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "배경화면"
 
-#: src/Views/Wallpaper.vala:502
+#: src/Views/Wallpaper.vala:505
 msgid "Undo"
 msgstr "되돌리기"
 
-#: src/Widgets/WallpaperContainer.vala:129
+#: src/Widgets/WallpaperContainer.vala:127
 msgid "Remove"
 msgstr "제거"
 
-#: src/Widgets/WallpaperContainer.vala:215
+#: src/Widgets/WallpaperContainer.vala:205
 #, c-format
 msgid "Artist: %s"
 msgstr "아티스트: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d초"
+#~ msgid "%d second"
+#~ msgid_plural "%d seconds"
+#~ msgstr[0] "%d초"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d분"
+#~ msgid "%d minute"
+#~ msgid_plural "%d minutes"
+#~ msgstr[0] "%d분"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d시간"
+#~ msgid "%d hour"
+#~ msgid_plural "%d hours"
+#~ msgstr[0] "%d시간"
 
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "1일"
+#~ msgid "1 day"
+#~ msgstr "1일"
 
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "각 사진을 표시할 시간"
+#~ msgid "Show each photo for"
+#~ msgstr "각 사진을 표시할 시간"
 
-#: set-wallpaper-contract/set-wallpaper.vala:139
-msgid "Set As Desktop Slideshow"
-msgstr "배경화면 슬라이드쇼로 설정"
+#~ msgid "Set As Desktop Slideshow"
+#~ msgstr "배경화면 슬라이드쇼로 설정"
 
-#: set-wallpaper-contract/set-wallpaper.vala:147
-msgid "Create Slideshow"
-msgstr "슬라이드쇼 만들기"
+#~ msgid "Create Slideshow"
+#~ msgstr "슬라이드쇼 만들기"
 
 #, fuzzy
 #~| msgid "Hide Mode"

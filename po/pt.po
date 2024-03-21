@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 18:04+0000\n"
+"POT-Creation-Date: 2024-03-21 08:37+0000\n"
 "PO-Revision-Date: 2024-02-08 15:11+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -344,91 +344,84 @@ msgstr ""
 "Formas pesadas no fundo e maior espaçamento entre caracteres podem ajudar a "
 "melhorar a legibilidade e a velocidade de leitura."
 
-#: src/Views/Wallpaper.vala:82
+#: src/Views/Wallpaper.vala:85
 msgid "Import Photo…"
 msgstr "Importar imagem…"
 
-#: src/Views/Wallpaper.vala:89
+#: src/Views/Wallpaper.vala:92
 msgid "Dim with dark style:"
 msgstr "Escurecer com estilo escuro:"
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:103
 msgid "Centered"
 msgstr "Centrado"
 
-#: src/Views/Wallpaper.vala:101
+#: src/Views/Wallpaper.vala:104
 msgid "Zoom"
 msgstr "Ampliado"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:105
 msgid "Spanned"
 msgstr "Expandido"
 
-#: src/Views/Wallpaper.vala:149
+#: src/Views/Wallpaper.vala:152
 msgid "Import Photo"
 msgstr "Importar imagem"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "Importar"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:154
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Views/Wallpaper.vala:501
+#: src/Views/Wallpaper.vala:504
 msgid "Wallpaper Deleted"
 msgstr "Papel de parede eliminado"
 
-#: src/Views/Wallpaper.vala:502
+#: src/Views/Wallpaper.vala:505
 msgid "Undo"
 msgstr "Desfazer"
 
-#: src/Widgets/WallpaperContainer.vala:129
+#: src/Widgets/WallpaperContainer.vala:127
 msgid "Remove"
 msgstr "Remover"
 
-#: src/Widgets/WallpaperContainer.vala:215
+#: src/Widgets/WallpaperContainer.vala:205
 #, c-format
 msgid "Artist: %s"
 msgstr "Artista: %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d segundo"
-msgstr[1] "%d segundos"
+#~ msgid "%d second"
+#~ msgid_plural "%d seconds"
+#~ msgstr[0] "%d segundo"
+#~ msgstr[1] "%d segundos"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d minuto"
-msgstr[1] "%d minutos"
+#~ msgid "%d minute"
+#~ msgid_plural "%d minutes"
+#~ msgstr[0] "%d minuto"
+#~ msgstr[1] "%d minutos"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d hora"
-msgstr[1] "%d horas"
+#~ msgid "%d hour"
+#~ msgid_plural "%d hours"
+#~ msgstr[0] "%d hora"
+#~ msgstr[1] "%d horas"
 
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "1 dia"
+#~ msgid "1 day"
+#~ msgstr "1 dia"
 
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "Mostrar cada foto durante"
+#~ msgid "Show each photo for"
+#~ msgstr "Mostrar cada foto durante"
 
-#: set-wallpaper-contract/set-wallpaper.vala:139
-msgid "Set As Desktop Slideshow"
-msgstr "Definir como apresentação de diapositivos do ambiente de trabalho"
+#~ msgid "Set As Desktop Slideshow"
+#~ msgstr "Definir como apresentação de diapositivos do ambiente de trabalho"
 
-#: set-wallpaper-contract/set-wallpaper.vala:147
-msgid "Create Slideshow"
-msgstr "Criar apresentação de diapositivos"
+#~ msgid "Create Slideshow"
+#~ msgstr "Criar apresentação de diapositivos"
 
 #, fuzzy
 #~| msgid "Hide Mode"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-12 18:04+0000\n"
+"POT-Creation-Date: 2024-03-21 08:37+0000\n"
 "PO-Revision-Date: 2022-08-10 18:19+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -357,97 +357,90 @@ msgid ""
 msgstr ""
 "तळाशी-जड आकार आणि वर्णांमधील वाढीव अंतर सुवाच्यता आणि वाचन गती सुधारण्यात मदत करते."
 
-#: src/Views/Wallpaper.vala:82
+#: src/Views/Wallpaper.vala:85
 msgid "Import Photo…"
 msgstr "फोटो आयात करा…"
 
-#: src/Views/Wallpaper.vala:89
+#: src/Views/Wallpaper.vala:92
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim with dark style:"
 msgstr "गडद शैली"
 
-#: src/Views/Wallpaper.vala:100
+#: src/Views/Wallpaper.vala:103
 msgid "Centered"
 msgstr "केंद्रित"
 
-#: src/Views/Wallpaper.vala:101
+#: src/Views/Wallpaper.vala:104
 msgid "Zoom"
 msgstr "झूम करा"
 
-#: src/Views/Wallpaper.vala:102
+#: src/Views/Wallpaper.vala:105
 msgid "Spanned"
 msgstr "स्पॅन केलेले"
 
-#: src/Views/Wallpaper.vala:149
+#: src/Views/Wallpaper.vala:152
 msgid "Import Photo"
 msgstr "फोटो आयात करा"
 
-#: src/Views/Wallpaper.vala:150
+#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "आयात करा"
 
-#: src/Views/Wallpaper.vala:151
+#: src/Views/Wallpaper.vala:154
 msgid "Cancel"
 msgstr "रद्द करा"
 
-#: src/Views/Wallpaper.vala:501
+#: src/Views/Wallpaper.vala:504
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "वॉलपेपर"
 
-#: src/Views/Wallpaper.vala:502
+#: src/Views/Wallpaper.vala:505
 msgid "Undo"
 msgstr "पूर्ववत करा"
 
-#: src/Widgets/WallpaperContainer.vala:129
+#: src/Widgets/WallpaperContainer.vala:127
 msgid "Remove"
 msgstr "काढा"
 
-#: src/Widgets/WallpaperContainer.vala:215
+#: src/Widgets/WallpaperContainer.vala:205
 #, c-format
 msgid "Artist: %s"
 msgstr "कलाकारः %s"
 
-#: set-wallpaper-contract/set-wallpaper.vala:95
 #, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d सेकंद"
-msgstr[1] "%d  सेकंद"
+#~ msgid "%d second"
+#~ msgid_plural "%d seconds"
+#~ msgstr[0] "%d सेकंद"
+#~ msgstr[1] "%d  सेकंद"
 
-#: set-wallpaper-contract/set-wallpaper.vala:98
 #, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "मिनीट"
-msgstr[1] "मिनीटे"
+#~ msgid "%d minute"
+#~ msgid_plural "%d minutes"
+#~ msgstr[0] "मिनीट"
+#~ msgstr[1] "मिनीटे"
 
-#: set-wallpaper-contract/set-wallpaper.vala:102
 #, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d तास"
-msgstr[1] "%d  तास"
+#~ msgid "%d hour"
+#~ msgid_plural "%d hours"
+#~ msgstr[0] "%d तास"
+#~ msgstr[1] "%d  तास"
 
-#: set-wallpaper-contract/set-wallpaper.vala:105
-msgid "1 day"
-msgstr "1 दिवस"
+#~ msgid "1 day"
+#~ msgstr "1 दिवस"
 
-#: set-wallpaper-contract/set-wallpaper.vala:109
-msgid "Show each photo for"
-msgstr "साठी प्रत्येक फोटो दर्शवा"
+#~ msgid "Show each photo for"
+#~ msgstr "साठी प्रत्येक फोटो दर्शवा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:139
-msgid "Set As Desktop Slideshow"
-msgstr "डेस्कटॉप स्लाइडशो म्हणून सेट करा"
+#~ msgid "Set As Desktop Slideshow"
+#~ msgstr "डेस्कटॉप स्लाइडशो म्हणून सेट करा"
 
-#: set-wallpaper-contract/set-wallpaper.vala:147
 #, fuzzy
-#| msgid "Create slideshow"
-msgid "Create Slideshow"
-msgstr "स्लाइडशो तयार करा"
+#~| msgid "Create slideshow"
+#~ msgid "Create Slideshow"
+#~ msgstr "स्लाइडशो तयार करा"
 
 #, fuzzy
 #~| msgid "Hide Mode"
