@@ -8,7 +8,7 @@ Build-Depends: appstream,
                libadwaita-1-dev,
                libgexiv2-dev,
                libgranite-7-dev,
-               libgtk-4-dev,
+               libgtk-4-dev (>= 4.8),
                libswitchboard-3-dev,
                meson,
                valac (>= 0.26)
