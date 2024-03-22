@@ -137,8 +137,9 @@ public class PantheonShell.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Panel translucency")), "dock");
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dark style")), "appearance");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Accent color")), "appearance");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Reduce motion")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Accent Color")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Always Show Scrollbars")), "appearance");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Reduce Motion")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Window animations")), "appearance");
         search_results.set ("%s → %s".printf (display_name, _("Text")), "text");
         search_results.set ("%s → %s → %s".printf (display_name, _("Text"), _("Size")), "text");
