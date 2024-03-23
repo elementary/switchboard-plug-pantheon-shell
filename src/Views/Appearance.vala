@@ -366,16 +366,34 @@ public class PantheonShell.Appearance : Gtk.Box {
         };
 
         var animations_label = new Granite.HeaderLabel (_("Reduce Motion")) {
-            margin_top = 18,
             mnemonic_widget = animations_switch,
             secondary_text = _("Disable animations in the window manager and some other interface elements.")
         };
 
-        var animations_box = new Gtk.Box (HORIZONTAL, 12);
+        var animations_box = new Gtk.Box (HORIZONTAL, 12) {
+            margin_top = 18
+        };
         animations_box.append (animations_label);
         animations_box.append (animations_switch);
 
+        var scrollbar_switch = new Gtk.Switch () {
+            valign = CENTER
+        };
+
+        var scrollbar_label = new Granite.HeaderLabel (_("Always Show Scrollbars")) {
+            hexpand = true,
+            mnemonic_widget = scrollbar_switch,
+            secondary_text = _("Scrollbars will take up space, even when not in use.")
+        };
+
+        var scrollbar_box = new Gtk.Box (HORIZONTAL, 12) {
+            margin_top = 18
+        };
+        scrollbar_box.append (scrollbar_label);
+        scrollbar_box.append (scrollbar_switch);
+
         grid.attach (animations_box, 0, 10, 2);
+        grid.attach (scrollbar_box, 0, 11, 2);
 
         var clamp = new Adw.Clamp () {
             child = grid
@@ -385,6 +403,8 @@ public class PantheonShell.Appearance : Gtk.Box {
 
         var animations_settings = new Settings ("org.pantheon.desktop.gala.animations");
         animations_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.INVERT_BOOLEAN);
+
+        interface_settings.bind ("overlay-scrolling", scrollbar_switch, "active", INVERT_BOOLEAN);
     }
 
     private class PrefersAccentColorButton : Gtk.CheckButton {
