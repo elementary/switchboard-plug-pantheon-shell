@@ -36,7 +36,9 @@
   <url type="help">https://github.com/elementary/switchboard-plug-pantheon-shell/discussions</url>
   <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
 
-  <developer_name>elementary, Inc.</developer_name>
+  <developer id="org.elementaryos">
+    <name>elementary, Inc.</name>
+  </developer>
   <project_group>elementary</project_group>
   <update_contact>contact_at_elementary.io</update_contact>
 
