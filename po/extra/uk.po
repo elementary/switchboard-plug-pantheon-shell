@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 08:37+0000\n"
+"POT-Creation-Date: 2024-05-04 06:43+0000\n"
 "PO-Revision-Date: 2023-10-16 18:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0.2\n"
 
 #: data/desktop.metainfo.xml.in:10
@@ -28,32 +28,32 @@ msgstr "Налаштування стільниці"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Налаштування доку, дій кутів та зміна тла"
 
-#: data/desktop.metainfo.xml.in:39
+#: data/desktop.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/desktop.metainfo.xml.in:46 data/desktop.metainfo.xml.in:67
-#: data/desktop.metainfo.xml.in:81 data/desktop.metainfo.xml.in:103
-#: data/desktop.metainfo.xml.in:117
+#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:69
+#: data/desktop.metainfo.xml.in:83 data/desktop.metainfo.xml.in:105
+#: data/desktop.metainfo.xml.in:119
 msgid "Other updates:"
 msgstr "Інші оновлення:"
 
-#: data/desktop.metainfo.xml.in:48
+#: data/desktop.metainfo.xml.in:50
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr "Редизайн налаштувань Док і Панелі з корисним текстом опису"
 
-#: data/desktop.metainfo.xml.in:49
+#: data/desktop.metainfo.xml.in:51
 msgid "Show or hide optional panel indicators"
 msgstr "Показувати або приховувати додаткові індикатори панелі"
 
-#: data/desktop.metainfo.xml.in:50
+#: data/desktop.metainfo.xml.in:52
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Виправлено переклад значення затримки слайд-шоу та мітки «Притлумлювати з "
 "темним стилем»"
 
-#: data/desktop.metainfo.xml.in:51
+#: data/desktop.metainfo.xml.in:53
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
@@ -61,64 +61,64 @@ msgstr ""
 "Усунуто проблему, через яку шпалери не вилучалися одразу після закриття "
 "Системних налаштувань"
 
-#: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
-#: data/desktop.metainfo.xml.in:83 data/desktop.metainfo.xml.in:105
-#: data/desktop.metainfo.xml.in:119
+#: data/desktop.metainfo.xml.in:54 data/desktop.metainfo.xml.in:72
+#: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:107
+#: data/desktop.metainfo.xml.in:121
 msgid "Updated translations"
 msgstr "Оновлені переклади"
 
-#: data/desktop.metainfo.xml.in:63 data/desktop.metainfo.xml.in:90
-#: data/desktop.metainfo.xml.in:112
+#: data/desktop.metainfo.xml.in:65 data/desktop.metainfo.xml.in:92
+#: data/desktop.metainfo.xml.in:114
 msgid "New features:"
 msgstr "Нові функції:"
 
-#: data/desktop.metainfo.xml.in:65
+#: data/desktop.metainfo.xml.in:67
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "Додано опцію затемнення шпалер, коли активовано темний стиль"
 
-#: data/desktop.metainfo.xml.in:69
+#: data/desktop.metainfo.xml.in:71
 msgid "Use a more vertical layout in the Text view"
 msgstr "Використано вертикальніше розташування в текстовому поданні"
 
-#: data/desktop.metainfo.xml.in:92
+#: data/desktop.metainfo.xml.in:94
 msgid "There is now an undo option after removing a wallpaper"
 msgstr "Відтепер є можливість скасувати вибір після вилучення тла"
 
-#: data/desktop.metainfo.xml.in:93
+#: data/desktop.metainfo.xml.in:95
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr "Зображення тла тепер впорядковуються починаючи від власних зображень"
 
-#: data/desktop.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:97
 msgid "Fixes:"
 msgstr "Виправлення:"
 
-#: data/desktop.metainfo.xml.in:97
+#: data/desktop.metainfo.xml.in:99
 msgid "Wallpaper accent color follows system setting"
 msgstr "Основний колір тла відповідає налаштуванням системи"
 
-#: data/desktop.metainfo.xml.in:98
+#: data/desktop.metainfo.xml.in:100
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr "Set-wallpaper не правильно працював під час запуску як sudo"
 
-#: data/desktop.metainfo.xml.in:99
+#: data/desktop.metainfo.xml.in:101
 msgid "Wallpapers with the same name are distinguished"
 msgstr "Розрізнення зображень тла з однаковими назвами"
 
-#: data/desktop.metainfo.xml.in:100
+#: data/desktop.metainfo.xml.in:102
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 "Перемикання стилів за допомогою клавіатури скасовувало планування темного "
 "стилю"
 
-#: data/desktop.metainfo.xml.in:101
+#: data/desktop.metainfo.xml.in:103
 msgid "Style dyslexia-friendly switch properly"
 msgstr "Правильне перемикання стилів для людей з дислексією"
 
-#: data/desktop.metainfo.xml.in:114
+#: data/desktop.metainfo.xml.in:116
 msgid "Set custom Terminal commands for each hotcorner"
 msgstr "Встановлюйте власні команди термінала для кожного гарячого кута"
 
-#: data/desktop.metainfo.xml.in:115
+#: data/desktop.metainfo.xml.in:117
 msgid "Redesigned Appearance and Multitasking views"
 msgstr "Перероблені подання Вигляд і Багатозадачність"
 
