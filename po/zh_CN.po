@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 08:37+0000\n"
+"POT-Creation-Date: 2024-05-04 06:43+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -33,11 +33,11 @@ msgid "Wallpaper"
 msgstr "壁纸"
 
 #: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Appearance"
 msgstr "外观"
 
-#: src/Plug.vala:66 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Text"
 msgstr "文本"
 
@@ -46,7 +46,7 @@ msgstr "文本"
 msgid "Dock & Panel"
 msgstr "程序坞与顶栏"
 
-#: src/Plug.vala:73 src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148
+#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
 msgid "Multitasking"
 msgstr "多任务"
 
@@ -74,31 +74,35 @@ msgstr "透明顶栏"
 msgid "Dark style"
 msgstr "暗色风格"
 
-#: src/Plug.vala:140
-msgid "Accent color"
+#: src/Plug.vala:140 src/Views/Appearance.vala:307
+msgid "Accent Color"
 msgstr "强调色"
 
-#: src/Plug.vala:141
-msgid "Reduce motion"
+#: src/Plug.vala:141 src/Views/Appearance.vala:383
+msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:142
+#: src/Plug.vala:142 src/Views/Appearance.vala:368
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Plug.vala:143
 msgid "Window animations"
 msgstr "窗口动画"
 
-#: src/Plug.vala:144 src/Views/Text.vala:34
+#: src/Plug.vala:145 src/Views/Text.vala:34
 msgid "Size"
 msgstr "尺寸"
 
-#: src/Plug.vala:145 src/Views/Text.vala:58
+#: src/Plug.vala:146 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "阅读障碍友好型"
 
-#: src/Plug.vala:147
+#: src/Plug.vala:148
 msgid "Hot Corners"
 msgstr "热区"
 
-#: src/Plug.vala:148 src/Views/Multitasking.vala:37
+#: src/Plug.vala:149 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "移至新工作区"
 
@@ -166,10 +170,6 @@ msgstr "开始时间："
 msgid "To:"
 msgstr "结束时间："
 
-#: src/Views/Appearance.vala:307
-msgid "Accent Color"
-msgstr "强调色"
-
 #: src/Views/Appearance.vala:309
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
@@ -221,13 +221,13 @@ msgstr "石头灰"
 msgid "Automatic based on wallpaper"
 msgstr "基于壁纸自动"
 
-#: src/Views/Appearance.vala:368
-msgid "Reduce Motion"
-msgstr ""
-
-#: src/Views/Appearance.vala:371
+#: src/Views/Appearance.vala:370
 msgid ""
 "Disable animations in the window manager and some other interface elements."
+msgstr ""
+
+#: src/Views/Appearance.vala:386
+msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
 #: src/Views/Dock.vala:11
@@ -396,6 +396,9 @@ msgstr "删除"
 #, c-format
 msgid "Artist: %s"
 msgstr "艺术家：%s"
+
+#~ msgid "Accent color"
+#~ msgstr "强调色"
 
 #, c-format
 #~ msgid "%d second"

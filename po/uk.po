@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 08:37+0000\n"
+"POT-Creation-Date: 2024-05-04 06:43+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-20 05:46+0000\n"
 
@@ -34,11 +34,11 @@ msgid "Wallpaper"
 msgstr "Тло"
 
 #: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Appearance"
 msgstr "Вигляд"
 
-#: src/Plug.vala:66 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Text"
 msgstr "Текст"
 
@@ -47,7 +47,7 @@ msgstr "Текст"
 msgid "Dock & Panel"
 msgstr "Док і панель"
 
-#: src/Plug.vala:73 src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148
+#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
 msgid "Multitasking"
 msgstr "Багатозадачність"
 
@@ -75,31 +75,35 @@ msgstr "Напівпрозорість панелі"
 msgid "Dark style"
 msgstr "Темний стиль"
 
-#: src/Plug.vala:140
-msgid "Accent color"
+#: src/Plug.vala:140 src/Views/Appearance.vala:307
+msgid "Accent Color"
 msgstr "Основний колір"
 
-#: src/Plug.vala:141
-msgid "Reduce motion"
+#: src/Plug.vala:141 src/Views/Appearance.vala:383
+msgid "Always Show Scrollbars"
+msgstr ""
+
+#: src/Plug.vala:142 src/Views/Appearance.vala:368
+msgid "Reduce Motion"
 msgstr "Скоротити кількість анімацій"
 
-#: src/Plug.vala:142
+#: src/Plug.vala:143
 msgid "Window animations"
 msgstr "Анімації вікон"
 
-#: src/Plug.vala:144 src/Views/Text.vala:34
+#: src/Plug.vala:145 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Розмір"
 
-#: src/Plug.vala:145 src/Views/Text.vala:58
+#: src/Plug.vala:146 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "Придатно для читання людьми з дислексією"
 
-#: src/Plug.vala:147
+#: src/Plug.vala:148
 msgid "Hot Corners"
 msgstr "Дії кутів"
 
-#: src/Plug.vala:148 src/Views/Multitasking.vala:37
+#: src/Plug.vala:149 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "Перемістити вікно до нового робочого простору"
 
@@ -169,10 +173,6 @@ msgstr "З:"
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:307
-msgid "Accent Color"
-msgstr "Основний колір"
-
 #: src/Views/Appearance.vala:309
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
@@ -225,16 +225,16 @@ msgstr "Камінно-сірий"
 msgid "Automatic based on wallpaper"
 msgstr "Автоматично залежно від тла"
 
-#: src/Views/Appearance.vala:368
-msgid "Reduce Motion"
-msgstr "Скоротити кількість анімацій"
-
-#: src/Views/Appearance.vala:371
+#: src/Views/Appearance.vala:370
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Вимкнення анімації у віконному менеджері та деяких інших елементах "
 "інтерфейсу."
+
+#: src/Views/Appearance.vala:386
+msgid "Scrollbars will take up space, even when not in use."
+msgstr ""
 
 #: src/Views/Dock.vala:11
 msgid "Dock Icon Size"
@@ -392,6 +392,12 @@ msgstr "Вилучити"
 #, c-format
 msgid "Artist: %s"
 msgstr "Автор: %s"
+
+#~ msgid "Accent color"
+#~ msgstr "Основний колір"
+
+#~ msgid "Reduce motion"
+#~ msgstr "Скоротити кількість анімацій"
 
 #, c-format
 #~ msgid "%d second"

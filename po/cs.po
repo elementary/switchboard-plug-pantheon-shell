@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 08:37+0000\n"
+"POT-Creation-Date: 2024-05-04 06:43+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -33,11 +33,11 @@ msgid "Wallpaper"
 msgstr "Tapeta"
 
 #: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: src/Plug.vala:66 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Text"
 msgstr "Text"
 
@@ -46,7 +46,7 @@ msgstr "Text"
 msgid "Dock & Panel"
 msgstr "Dok a panel"
 
-#: src/Plug.vala:73 src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148
+#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
 msgid "Multitasking"
 msgstr "Multitasking"
 
@@ -74,31 +74,37 @@ msgstr "Průsvitnost panelu"
 msgid "Dark style"
 msgstr "Tmavý vzhled"
 
-#: src/Plug.vala:140
-msgid "Accent color"
+#: src/Plug.vala:140 src/Views/Appearance.vala:307
+#, fuzzy
+#| msgid "Accent color"
+msgid "Accent Color"
 msgstr "Barva zvýraznění"
 
-#: src/Plug.vala:141
-msgid "Reduce motion"
+#: src/Plug.vala:141 src/Views/Appearance.vala:383
+msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:142
+#: src/Plug.vala:142 src/Views/Appearance.vala:368
+msgid "Reduce Motion"
+msgstr ""
+
+#: src/Plug.vala:143
 msgid "Window animations"
 msgstr "Animace oken"
 
-#: src/Plug.vala:144 src/Views/Text.vala:34
+#: src/Plug.vala:145 src/Views/Text.vala:34
 msgid "Size"
 msgstr "Velikost"
 
-#: src/Plug.vala:145 src/Views/Text.vala:58
+#: src/Plug.vala:146 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "Pro dyslektiky"
 
-#: src/Plug.vala:147
+#: src/Plug.vala:148
 msgid "Hot Corners"
 msgstr "Aktivní rohy"
 
-#: src/Plug.vala:148 src/Views/Multitasking.vala:37
+#: src/Plug.vala:149 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "Přesunout okna na novou pracovní plochu"
 
@@ -170,12 +176,6 @@ msgstr "Od:"
 msgid "To:"
 msgstr "Do:"
 
-#: src/Views/Appearance.vala:307
-#, fuzzy
-#| msgid "Accent color"
-msgid "Accent Color"
-msgstr "Barva zvýraznění"
-
 #: src/Views/Appearance.vala:309
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
@@ -228,13 +228,13 @@ msgstr "Břidlice"
 msgid "Automatic based on wallpaper"
 msgstr "Automaticky podle pozadí plochy"
 
-#: src/Views/Appearance.vala:368
-msgid "Reduce Motion"
-msgstr ""
-
-#: src/Views/Appearance.vala:371
+#: src/Views/Appearance.vala:370
 msgid ""
 "Disable animations in the window manager and some other interface elements."
+msgstr ""
+
+#: src/Views/Appearance.vala:386
+msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
 #: src/Views/Dock.vala:11
@@ -409,6 +409,9 @@ msgstr "Odstranit"
 #, c-format
 msgid "Artist: %s"
 msgstr "Umělec: %s"
+
+#~ msgid "Accent color"
+#~ msgstr "Barva zvýraznění"
 
 #, c-format
 #~ msgid "%d second"

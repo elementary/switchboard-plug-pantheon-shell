@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 08:37+0000\n"
+"POT-Creation-Date: 2024-05-04 06:43+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -33,11 +33,11 @@ msgid "Wallpaper"
 msgstr "תמונת רקע"
 
 #: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Appearance"
 msgstr "מראה"
 
-#: src/Plug.vala:66 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Text"
 msgstr "כתב"
 
@@ -46,7 +46,7 @@ msgstr "כתב"
 msgid "Dock & Panel"
 msgstr "מעגן ולוח"
 
-#: src/Plug.vala:73 src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148
+#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
 msgid "Multitasking"
 msgstr "ריבוי משימות"
 
@@ -74,31 +74,35 @@ msgstr "שקיפות חלונית"
 msgid "Dark style"
 msgstr "סגנון חשוך"
 
-#: src/Plug.vala:140
-msgid "Accent color"
-msgstr "גוון נלווה"
+#: src/Plug.vala:140 src/Views/Appearance.vala:307
+msgid "Accent Color"
+msgstr "גוון משני"
 
-#: src/Plug.vala:141
-msgid "Reduce motion"
+#: src/Plug.vala:141 src/Views/Appearance.vala:383
+msgid "Always Show Scrollbars"
+msgstr ""
+
+#: src/Plug.vala:142 src/Views/Appearance.vala:368
+msgid "Reduce Motion"
 msgstr "הפחתת תנועה"
 
-#: src/Plug.vala:142
+#: src/Plug.vala:143
 msgid "Window animations"
 msgstr "הנפשות חלון"
 
-#: src/Plug.vala:144 src/Views/Text.vala:34
+#: src/Plug.vala:145 src/Views/Text.vala:34
 msgid "Size"
 msgstr "גודל"
 
-#: src/Plug.vala:145 src/Views/Text.vala:58
+#: src/Plug.vala:146 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "ידידותי לדיסקלציה"
 
-#: src/Plug.vala:147
+#: src/Plug.vala:148
 msgid "Hot Corners"
 msgstr "קצוות חמים"
 
-#: src/Plug.vala:148 src/Views/Multitasking.vala:37
+#: src/Plug.vala:149 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "העברת חלונות לסביבת עבודה חדשה"
 
@@ -168,10 +172,6 @@ msgstr "התחלה:"
 msgid "To:"
 msgstr "סיום:"
 
-#: src/Views/Appearance.vala:307
-msgid "Accent Color"
-msgstr "גוון משני"
-
 #: src/Views/Appearance.vala:309
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
@@ -224,14 +224,14 @@ msgstr "אפור לוח"
 msgid "Automatic based on wallpaper"
 msgstr "אוטומטית לפי הרקע"
 
-#: src/Views/Appearance.vala:368
-msgid "Reduce Motion"
-msgstr "הפחתת תנועה"
-
-#: src/Views/Appearance.vala:371
+#: src/Views/Appearance.vala:370
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr "השבתת הנפשות במנהל החלונות וברכיבי מנשק חדשים."
+
+#: src/Views/Appearance.vala:386
+msgid "Scrollbars will take up space, even when not in use."
+msgstr ""
 
 #: src/Views/Dock.vala:11
 msgid "Dock Icon Size"
@@ -389,6 +389,12 @@ msgstr "הסרה"
 #, c-format
 msgid "Artist: %s"
 msgstr "אמן: %s"
+
+#~ msgid "Accent color"
+#~ msgstr "גוון נלווה"
+
+#~ msgid "Reduce motion"
+#~ msgstr "הפחתת תנועה"
 
 #, c-format
 #~ msgid "%d second"

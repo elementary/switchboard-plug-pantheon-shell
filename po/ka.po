@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-21 08:37+0000\n"
+"POT-Creation-Date: 2024-05-04 06:43+0000\n"
 "PO-Revision-Date: 2023-07-15 08:30+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,11 +28,11 @@ msgid "Wallpaper"
 msgstr "ფონური გამოსახულება"
 
 #: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Appearance"
 msgstr "გარემოს იერსახე"
 
-#: src/Plug.vala:66 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Text"
 msgstr "ტექსტი"
 
@@ -41,7 +41,7 @@ msgstr "ტექსტი"
 msgid "Dock & Panel"
 msgstr "დოკი და პანელი"
 
-#: src/Plug.vala:73 src/Plug.vala:146 src/Plug.vala:147 src/Plug.vala:148
+#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
 msgid "Multitasking"
 msgstr "მრავალამოცანიანობა"
 
@@ -69,31 +69,35 @@ msgstr "პანელის გამჭვირვალობა"
 msgid "Dark style"
 msgstr "მუქი სტილი"
 
-#: src/Plug.vala:140
-msgid "Accent color"
+#: src/Plug.vala:140 src/Views/Appearance.vala:307
+msgid "Accent Color"
 msgstr "აქცენტის ფერი"
 
-#: src/Plug.vala:141
-msgid "Reduce motion"
+#: src/Plug.vala:141 src/Views/Appearance.vala:383
+msgid "Always Show Scrollbars"
+msgstr ""
+
+#: src/Plug.vala:142 src/Views/Appearance.vala:368
+msgid "Reduce Motion"
 msgstr "მოძრაობის შემცირება"
 
-#: src/Plug.vala:142
+#: src/Plug.vala:143
 msgid "Window animations"
 msgstr "ფანჯრის ანიმაციები"
 
-#: src/Plug.vala:144 src/Views/Text.vala:34
+#: src/Plug.vala:145 src/Views/Text.vala:34
 msgid "Size"
 msgstr "ზომა"
 
-#: src/Plug.vala:145 src/Views/Text.vala:58
+#: src/Plug.vala:146 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "ტექსტი დისლექსიკებისთვის"
 
-#: src/Plug.vala:147
+#: src/Plug.vala:148
 msgid "Hot Corners"
 msgstr "ცხელი კუთხეები"
 
-#: src/Plug.vala:148 src/Views/Multitasking.vala:37
+#: src/Plug.vala:149 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "ფანჯრების ახალ სამუშაო სივრცეში გადატანა"
 
@@ -161,10 +165,6 @@ msgstr "საიდან:"
 msgid "To:"
 msgstr "სადამდე:"
 
-#: src/Views/Appearance.vala:307
-msgid "Accent Color"
-msgstr "აქცენტის ფერი"
-
 #: src/Views/Appearance.vala:309
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
@@ -217,13 +217,13 @@ msgstr "ფიქალი"
 msgid "Automatic based on wallpaper"
 msgstr "ავტომატური, ფონის სურათზე დაყრდნობით"
 
-#: src/Views/Appearance.vala:368
-msgid "Reduce Motion"
-msgstr "მოძრაობის შემცირება"
-
-#: src/Views/Appearance.vala:371
+#: src/Views/Appearance.vala:370
 msgid ""
 "Disable animations in the window manager and some other interface elements."
+msgstr ""
+
+#: src/Views/Appearance.vala:386
+msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
 #: src/Views/Dock.vala:11
@@ -380,6 +380,12 @@ msgstr "წაშლა"
 #, c-format
 msgid "Artist: %s"
 msgstr "შემსრულებელი: %s"
+
+#~ msgid "Accent color"
+#~ msgstr "აქცენტის ფერი"
+
+#~ msgid "Reduce motion"
+#~ msgstr "მოძრაობის შემცირება"
 
 #, c-format
 #~ msgid "%d second"
