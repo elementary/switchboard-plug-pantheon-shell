@@ -428,9 +428,8 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
 
         construct {
-            unowned Gtk.StyleContext context = get_style_context ();
-            context.add_class (Granite.STYLE_CLASS_COLOR_BUTTON);
-            context.add_class (color.to_string ());
+            add_css_class (Granite.STYLE_CLASS_COLOR_BUTTON);
+            add_css_class (color.to_string ());
 
             realize.connect (() => {
                 active = color == pantheon_act.prefers_accent_color;
