@@ -72,14 +72,14 @@ public class PantheonShell.Dock : Gtk.Box {
         var indicators_box = new Gtk.Box (VERTICAL, 6);
         indicators_box.append (indicators_header);
 
-        var a11y_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.desktop.wingpanel.a11y", true);
-        if (a11y_schema != null && a11y_schema.has_key ("show-indicator")) {
+        var quicksettings_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.desktop.quick-settings", true);
+        if (quicksettings_schema != null && quicksettings_schema.has_key ("show-a11y")) {
             var a11y_check = new Gtk.CheckButton.with_label (_("Accessibility"));
 
             indicators_box.append (a11y_check);
 
-            var a11y_settings = new Settings ("io.elementary.desktop.wingpanel.a11y");
-            a11y_settings.bind ("show-indicator", a11y_check, "active", DEFAULT);
+            var a11y_settings = new Settings ("io.elementary.desktop.quick-settings");
+            a11y_settings.bind ("show-a11y", a11y_check, "active", DEFAULT);
         }
 
         var keyboard_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true);
