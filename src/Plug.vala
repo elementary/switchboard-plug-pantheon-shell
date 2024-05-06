@@ -56,6 +56,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         if (main_grid == null) {
             wallpaper_view = new Wallpaper (this);
 
+            var dock = new Dock ();
             var multitasking = new Multitasking ();
             var appearance = new Appearance ();
             var text = new Text ();
@@ -64,12 +65,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
             stack.add_titled (wallpaper_view, "wallpaper", _("Wallpaper"));
             stack.add_titled (appearance, "appearance", _("Appearance"));
             stack.add_titled (text, "text", _("Text"));
-
-            if (GLib.Environment.find_program_in_path ("plank") != null) {
-                var dock = new Dock ();
-                stack.add_titled (dock, "dock", _("Dock & Panel"));
-            }
-
+            stack.add_titled (dock, "dock", _("Dock & Panel"));
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
             var stack_switcher = new Gtk.StackSwitcher () {
