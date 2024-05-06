@@ -27,7 +27,7 @@ public class PantheonShell.Multitasking : Gtk.Box {
             halign = Gtk.Align.START,
             margin_bottom = 6
         };
-        hotcorner_title.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+        hotcorner_title.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var topleft = new HotcornerControl (_("Top Left"), "topleft");
         var topright = new HotcornerControl (_("Top Right"), "topright");
@@ -105,11 +105,10 @@ public class PantheonShell.Multitasking : Gtk.Box {
                 wrap_mode = Pango.WrapMode.WORD_CHAR
             };
 
-            unowned var label_style_context = label.get_style_context ();
-            label_style_context.add_class (Granite.STYLE_CLASS_CARD);
-            label_style_context.add_class (Granite.STYLE_CLASS_ROUNDED);
-            label_style_context.add_class ("hotcorner");
-            label_style_context.add_class (position);
+            label.add_css_class (Granite.STYLE_CLASS_CARD);
+            label.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+            label.add_css_class ("hotcorner");
+            label.add_css_class (position);
 
             var combo = new Gtk.ComboBoxText () {
                 hexpand = true,

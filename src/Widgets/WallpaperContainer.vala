@@ -33,8 +33,6 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     public string uri { get; construct; }
     public uint64 creation_date = 0;
 
-    private int scale;
-
     public bool checked {
         get {
             return Gtk.StateFlags.CHECKED in get_state_flags ();
@@ -70,10 +68,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     construct {
-        var style_context = get_style_context ();
-        style_context.add_class ("wallpaper-container");
-
-        scale = style_context.get_scale ();
+        add_css_class ("wallpaper-container");
 
         image = new Gtk.Picture () {
             content_fit = COVER,
@@ -167,7 +162,7 @@ public class PantheonShell.WallpaperContainer : Gtk.FlowBoxChild {
     }
 
     private void generate_and_load_thumb () {
-        ThumbnailGenerator.get_default ().get_thumbnail (uri, THUMB_WIDTH * scale, () => {
+        ThumbnailGenerator.get_default ().get_thumbnail (uri, THUMB_WIDTH * scale_factor, () => {
             try {
                 var file = File.new_for_uri (uri);
                 var info = file.query_info (FileAttribute.THUMBNAIL_PATH + "," + FileAttribute.THUMBNAIL_IS_VALID, 0);
