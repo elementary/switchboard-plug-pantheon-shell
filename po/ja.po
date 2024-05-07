@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-07 19:26+0000\n"
-"PO-Revision-Date: 2024-05-05 07:13+0000\n"
+"PO-Revision-Date: 2024-05-08 23:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -363,8 +363,6 @@ msgid "Import"
 msgstr "インポート"
 
 #: src/Views/Wallpaper.vala:155
-#, fuzzy
-#| msgid "Import Photo"
 msgid "Import Photos"
 msgstr "写真をインポート"
 
