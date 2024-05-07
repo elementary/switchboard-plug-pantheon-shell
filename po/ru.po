@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-07 19:26+0000\n"
-"PO-Revision-Date: 2024-05-05 07:13+0000\n"
-"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
+"PO-Revision-Date: 2024-05-08 23:13+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -363,8 +363,6 @@ msgid "Import"
 msgstr "Импортировать"
 
 #: src/Views/Wallpaper.vala:155
-#, fuzzy
-#| msgid "Import Photo"
 msgid "Import Photos"
 msgstr "Импорт фото"
 
