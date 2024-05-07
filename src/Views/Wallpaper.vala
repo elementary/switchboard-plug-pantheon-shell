@@ -505,7 +505,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
             undo_removal ();
         });
 
-        toast.closed.connect (confirm_removal);
+        toast.dismissed.connect (confirm_removal);
 
         view_overlay.add_overlay (toast);
         toast.send_notification ();

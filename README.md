@@ -11,7 +11,7 @@ You'll need the following dependencies:
 * libgee-0.8-dev
 * libgexiv2-dev
 * libgtk-4-dev (>=4.10)
-* libgranite-7-dev (>=7.4.0)
+* libgranite-7-dev (>=7.5.0)
 * meson
 * valac
 
