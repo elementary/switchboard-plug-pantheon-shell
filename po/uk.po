@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-04 06:43+0000\n"
-"PO-Revision-Date: 2023-07-01 08:07+0000\n"
+"PO-Revision-Date: 2024-05-07 19:26+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-20 05:46+0000\n"
 
 #: src/Plug.vala:49
@@ -81,7 +81,7 @@ msgstr "Основний колір"
 
 #: src/Plug.vala:141 src/Views/Appearance.vala:383
 msgid "Always Show Scrollbars"
-msgstr ""
+msgstr "Завжди показувати смуги прокручування"
 
 #: src/Plug.vala:142 src/Views/Appearance.vala:368
 msgid "Reduce Motion"
@@ -235,6 +235,7 @@ msgstr ""
 #: src/Views/Appearance.vala:386
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
+"Смуга прокручування забиратиме простір, навіть коли не використовується."
 
 #: src/Views/Dock.vala:11
 msgid "Dock Icon Size"
