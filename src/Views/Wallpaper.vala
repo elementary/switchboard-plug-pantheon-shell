@@ -152,7 +152,7 @@ public class PantheonShell.Wallpaper : Gtk.Box {
             accept_label = _("Import"),
             default_filter = filter,
             modal = true,
-            title = _("Import Photo")
+            title = _("Import Photos")
         };
 
         file_dialog.open_multiple.begin ((Gtk.Window) get_root (), null, (obj, res) => {
