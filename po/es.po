@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:43+0000\n"
+"POT-Creation-Date: 2024-05-07 19:26+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -28,89 +28,89 @@ msgstr "Escritorio"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Configurar el dock, esquinas activas y fondo de escritorio"
 
-#: src/Plug.vala:64 src/Plug.vala:131
+#: src/Plug.vala:65 src/Plug.vala:127
 msgid "Wallpaper"
 msgstr "Fondo de pantalla"
 
-#: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
+#: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Appearance"
 msgstr "Apariencia"
 
-#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
+#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
 #, fuzzy
 #| msgid "Text size"
 msgid "Text"
 msgstr "Tamaño del texto"
 
-#: src/Plug.vala:70 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
-#: src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:68 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 msgid "Dock & Panel"
 msgstr "Dock y panel"
 
-#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
+#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
 msgid "Multitasking"
 msgstr "Multitarea"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:129
 msgid "Hide Mode"
 msgstr "Modo de ocultamiento"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:130
 msgid "Icon Size"
 msgstr "Tamaño de iconos"
 
-#: src/Plug.vala:135
+#: src/Plug.vala:131
 msgid "Pressure reveal"
 msgstr "Mostrar al presionar"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:132
 msgid "Display"
 msgstr "Pantalla"
 
-#: src/Plug.vala:137
+#: src/Plug.vala:133
 msgid "Panel translucency"
 msgstr "Traslucidez del panel"
 
-#: src/Plug.vala:139
+#: src/Plug.vala:135
 msgid "Dark style"
 msgstr "Estilo oscuro"
 
-#: src/Plug.vala:140 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:307
 #, fuzzy
 #| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Color de realce"
 
-#: src/Plug.vala:141 src/Views/Appearance.vala:383
+#: src/Plug.vala:137 src/Views/Appearance.vala:383
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:142 src/Views/Appearance.vala:368
+#: src/Plug.vala:138 src/Views/Appearance.vala:368
 msgid "Reduce Motion"
 msgstr ""
 
-#: src/Plug.vala:143
+#: src/Plug.vala:139
 msgid "Window animations"
 msgstr "Animaciones de ventanas"
 
-#: src/Plug.vala:145 src/Views/Text.vala:34
+#: src/Plug.vala:141 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Tamaño de iconos"
 
-#: src/Plug.vala:146 src/Views/Text.vala:58
+#: src/Plug.vala:142 src/Views/Text.vala:58
 #, fuzzy
 #| msgid "Dyslexia-friendly text"
 msgid "Dyslexia-friendly"
 msgstr "Texto para disléxicos"
 
-#: src/Plug.vala:148
+#: src/Plug.vala:144
 msgid "Hot Corners"
 msgstr "Esquinas activas"
 
-#: src/Plug.vala:149 src/Views/Multitasking.vala:37
+#: src/Plug.vala:145 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "Mover ventanas a un nuevo espacio de trabajo"
 
@@ -315,43 +315,43 @@ msgstr "Al activar el modo de pantalla completa"
 msgid "When maximizing"
 msgstr "Al maximizar"
 
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:117
 msgid "Do nothing"
 msgstr "No hacer nada"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Multitasking View"
 msgstr "Vista multitarea"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Maximize current window"
 msgstr "Maximizar ventana actual"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Show Applications Menu"
 msgstr "Mostrar menú de aplicaciones"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show all windows"
 msgstr "Mostrar todas las ventanas"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "Cambiar a un área de trabajo nueva"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "Cambiar a un área de trabajo nueva"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 msgid "Switch to new workspace"
 msgstr "Cambiar a un área de trabajo nueva"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Execute custom command"
 msgstr "Ejecutar orden personalizada"
 
@@ -386,35 +386,36 @@ msgid "Spanned"
 msgstr "Distribuido"
 
 #: src/Views/Wallpaper.vala:152
-msgid "Import Photo"
-msgstr "Importar foto"
-
-#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "Importar"
 
-#: src/Views/Wallpaper.vala:154
-msgid "Cancel"
-msgstr "Cancelar"
+#: src/Views/Wallpaper.vala:155
+#, fuzzy
+#| msgid "Import Photo"
+msgid "Import Photos"
+msgstr "Importar foto"
 
-#: src/Views/Wallpaper.vala:504
+#: src/Views/Wallpaper.vala:501
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Fondo de pantalla"
 
-#: src/Views/Wallpaper.vala:505
+#: src/Views/Wallpaper.vala:502
 msgid "Undo"
 msgstr "Deshacer"
 
-#: src/Widgets/WallpaperContainer.vala:127
+#: src/Widgets/WallpaperContainer.vala:122
 msgid "Remove"
 msgstr "Quitar"
 
-#: src/Widgets/WallpaperContainer.vala:205
+#: src/Widgets/WallpaperContainer.vala:200
 #, c-format
 msgid "Artist: %s"
 msgstr "Artista: %s"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
 
 #~ msgid "Accent color"
 #~ msgstr "Color de realce"

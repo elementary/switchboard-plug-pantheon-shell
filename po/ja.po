@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:43+0000\n"
+"POT-Creation-Date: 2024-05-07 19:26+0000\n"
 "PO-Revision-Date: 2024-05-05 07:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -23,81 +23,81 @@ msgstr "デスクトップ"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "ドック、ホットコーナーを設定し、壁紙を変更します"
 
-#: src/Plug.vala:64 src/Plug.vala:131
+#: src/Plug.vala:65 src/Plug.vala:127
 msgid "Wallpaper"
 msgstr "壁紙"
 
-#: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
+#: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Appearance"
 msgstr "外観"
 
-#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
+#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
 msgid "Text"
 msgstr "テキスト"
 
-#: src/Plug.vala:70 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
-#: src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:68 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 msgid "Dock & Panel"
 msgstr "ドックとパネル"
 
-#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
+#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
 msgid "Multitasking"
 msgstr "マルチタスク"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:129
 msgid "Hide Mode"
 msgstr "隠す方法"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:130
 msgid "Icon Size"
 msgstr "アイコンサイズ"
 
-#: src/Plug.vala:135
+#: src/Plug.vala:131
 msgid "Pressure reveal"
 msgstr "押し込んで表示"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:132
 msgid "Display"
 msgstr "ディスプレイ"
 
-#: src/Plug.vala:137
+#: src/Plug.vala:133
 msgid "Panel translucency"
 msgstr "パネルを透過"
 
-#: src/Plug.vala:139
+#: src/Plug.vala:135
 msgid "Dark style"
 msgstr "ダークスタイル"
 
-#: src/Plug.vala:140 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:307
 msgid "Accent Color"
 msgstr "アクセントカラー"
 
-#: src/Plug.vala:141 src/Views/Appearance.vala:383
+#: src/Plug.vala:137 src/Views/Appearance.vala:383
 msgid "Always Show Scrollbars"
 msgstr "スクロールバーを常に表示"
 
-#: src/Plug.vala:142 src/Views/Appearance.vala:368
+#: src/Plug.vala:138 src/Views/Appearance.vala:368
 msgid "Reduce Motion"
 msgstr "視覚効果を減らす"
 
-#: src/Plug.vala:143
+#: src/Plug.vala:139
 msgid "Window animations"
 msgstr "ウィンドウアニメーション"
 
-#: src/Plug.vala:145 src/Views/Text.vala:34
+#: src/Plug.vala:141 src/Views/Text.vala:34
 msgid "Size"
 msgstr "サイズ"
 
-#: src/Plug.vala:146 src/Views/Text.vala:58
+#: src/Plug.vala:142 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "ディスレクシア対応"
 
-#: src/Plug.vala:148
+#: src/Plug.vala:144
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/Plug.vala:149 src/Views/Multitasking.vala:37
+#: src/Plug.vala:145 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "以下の場合にウィンドウを新しいワークスペースに移動"
 
@@ -294,39 +294,39 @@ msgstr "全画面表示にした場合"
 msgid "When maximizing"
 msgstr "最大化した場合"
 
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:117
 msgid "Do nothing"
 msgstr "何もしない"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Multitasking View"
 msgstr "マルチタスク画面"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Maximize current window"
 msgstr "現在のウィンドウを最大化"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Show Applications Menu"
 msgstr "アプリケーションメニューを表示"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show all windows"
 msgstr "すべてのウィンドウを表示"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 msgid "Switch to previous workspace"
 msgstr "左のワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 msgid "Switch to next workspace"
 msgstr "右のワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 msgid "Switch to new workspace"
 msgstr "新しいワークスペースに切り替え"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Execute custom command"
 msgstr "カスタムコマンドを実行"
 
@@ -359,33 +359,34 @@ msgid "Spanned"
 msgstr "並べる"
 
 #: src/Views/Wallpaper.vala:152
-msgid "Import Photo"
-msgstr "写真をインポート"
-
-#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "インポート"
 
-#: src/Views/Wallpaper.vala:154
-msgid "Cancel"
-msgstr "キャンセル"
+#: src/Views/Wallpaper.vala:155
+#, fuzzy
+#| msgid "Import Photo"
+msgid "Import Photos"
+msgstr "写真をインポート"
 
-#: src/Views/Wallpaper.vala:504
+#: src/Views/Wallpaper.vala:501
 msgid "Wallpaper Deleted"
 msgstr "壁紙を削除しました"
 
-#: src/Views/Wallpaper.vala:505
+#: src/Views/Wallpaper.vala:502
 msgid "Undo"
 msgstr "元に戻す"
 
-#: src/Widgets/WallpaperContainer.vala:127
+#: src/Widgets/WallpaperContainer.vala:122
 msgid "Remove"
 msgstr "削除"
 
-#: src/Widgets/WallpaperContainer.vala:205
+#: src/Widgets/WallpaperContainer.vala:200
 #, c-format
 msgid "Artist: %s"
 msgstr "アーティスト: %s"
+
+#~ msgid "Cancel"
+#~ msgstr "キャンセル"
 
 #~ msgid "Accent color"
 #~ msgstr "アクセントカラー"
