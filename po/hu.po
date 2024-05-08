@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-07 19:26+0000\n"
-"PO-Revision-Date: 2024-05-07 09:13+0000\n"
+"PO-Revision-Date: 2024-05-08 23:13+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/hu/>\n"
@@ -367,10 +367,8 @@ msgid "Import"
 msgstr "Importálás"
 
 #: src/Views/Wallpaper.vala:155
-#, fuzzy
-#| msgid "Import Photo"
 msgid "Import Photos"
-msgstr "Fotó importálása"
+msgstr "Fotók importálása"
 
 #: src/Views/Wallpaper.vala:501
 msgid "Wallpaper Deleted"
