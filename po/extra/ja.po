@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-07 19:26+0000\n"
-"PO-Revision-Date: 2023-07-24 12:54+0000\n"
+"PO-Revision-Date: 2024-05-08 23:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: data/desktop.metainfo.xml.in:51
 msgid "Show or hide optional panel indicators"
-msgstr "オプションのパネルインジケーターを表示／非表示にできる機能を追加"
+msgstr "オプションのパネルインジケーターを表示/非表示にできる機能を追加"
 
 #: data/desktop.metainfo.xml.in:52
 msgid ""
