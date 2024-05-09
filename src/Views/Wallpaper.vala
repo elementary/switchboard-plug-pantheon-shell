@@ -148,20 +148,18 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         var filter = new Gtk.FileFilter ();
         filter.add_mime_type ("image/*");
 
-        var chooser = new Gtk.FileChooserNative (
-            _("Import Photo"), null, Gtk.FileChooserAction.OPEN,
-            _("Import"),
-            _("Cancel")
-        );
-        chooser.filter = filter;
-        chooser.select_multiple = true;
+        var file_dialog = new Gtk.FileDialog () {
+            accept_label = _("Import"),
+            default_filter = filter,
+            modal = true,
+            title = _("Import Photos")
+        };
 
-        chooser.show ();
-        chooser.response.connect ((response) => {
-            if (response == Gtk.ResponseType.ACCEPT) {
-                var files = chooser.get_files ();
-                for (var i = 0; i <= files.get_n_items (); i++) {
-                    var file = (File) files.get_item (i);
+        file_dialog.open_multiple.begin ((Gtk.Window) get_root (), null, (obj, res) => {
+            var list_model = file_dialog.open_multiple.end (res);
+            if (list_model != null) {
+                for (var i = 0; i <= list_model.get_n_items (); i++) {
+                    var file = (File) list_model.get_item (i);
 
                     if (WallpaperOperation.get_is_file_in_bg_dir (file)) {
                         continue;
@@ -176,7 +174,6 @@ public class PantheonShell.Wallpaper : Gtk.Box {
                     add_wallpaper_from_file (file, local_uri);
                 }
             }
-            chooser.destroy ();
         });
     }
 

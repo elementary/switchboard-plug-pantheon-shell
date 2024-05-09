@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:43+0000\n"
+"POT-Creation-Date: 2024-05-07 19:26+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -28,91 +28,91 @@ msgstr "桌面"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "調整 Dock、熱角、和更改桌布"
 
-#: src/Plug.vala:64 src/Plug.vala:131
+#: src/Plug.vala:65 src/Plug.vala:127
 msgid "Wallpaper"
 msgstr "桌布"
 
-#: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
+#: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Appearance"
 msgstr "外觀"
 
-#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
+#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
 #, fuzzy
 #| msgid "Text size:"
 msgid "Text"
 msgstr "文字大小："
 
-#: src/Plug.vala:70 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
-#: src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:68 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
+#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
 msgstr "多工作業檢視"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:129
 msgid "Hide Mode"
 msgstr "隱藏模式"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:130
 msgid "Icon Size"
 msgstr "圖示大小"
 
-#: src/Plug.vala:135
+#: src/Plug.vala:131
 msgid "Pressure reveal"
 msgstr "壓感揭示"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:132
 msgid "Display"
 msgstr "顯示"
 
-#: src/Plug.vala:137
+#: src/Plug.vala:133
 #, fuzzy
 #| msgid "Panel translucency:"
 msgid "Panel translucency"
 msgstr "面板透明度："
 
-#: src/Plug.vala:139
+#: src/Plug.vala:135
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:140 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:307
 msgid "Accent Color"
 msgstr ""
 
-#: src/Plug.vala:141 src/Views/Appearance.vala:383
+#: src/Plug.vala:137 src/Views/Appearance.vala:383
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:142 src/Views/Appearance.vala:368
+#: src/Plug.vala:138 src/Views/Appearance.vala:368
 msgid "Reduce Motion"
 msgstr ""
 
-#: src/Plug.vala:143
+#: src/Plug.vala:139
 #, fuzzy
 #| msgid "Window animations:"
 msgid "Window animations"
 msgstr "視窗動畫："
 
-#: src/Plug.vala:145 src/Views/Text.vala:34
+#: src/Plug.vala:141 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "圖示大小"
 
-#: src/Plug.vala:146 src/Views/Text.vala:58
+#: src/Plug.vala:142 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:148
+#: src/Plug.vala:144
 msgid "Hot Corners"
 msgstr "熱角"
 
-#: src/Plug.vala:149 src/Views/Multitasking.vala:37
+#: src/Plug.vala:145 src/Views/Multitasking.vala:37
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
@@ -311,43 +311,43 @@ msgstr ""
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:117
 msgid "Do nothing"
 msgstr "不做處理"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Multitasking View"
 msgstr "多工作業檢視"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Maximize current window"
 msgstr "讓目前視窗最大化"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Show Applications Menu"
 msgstr "顯示應用程式選單"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show all windows"
 msgstr "顯示所有視窗"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "切換至新的工作空間"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "切換至新的工作空間"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 msgid "Switch to new workspace"
 msgstr "切換至新的工作空間"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Execute custom command"
 msgstr "執行自訂指令"
 
@@ -378,35 +378,36 @@ msgid "Spanned"
 msgstr "橫跨"
 
 #: src/Views/Wallpaper.vala:152
-msgid "Import Photo"
-msgstr "匯入相片"
-
-#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "匯入"
 
-#: src/Views/Wallpaper.vala:154
-msgid "Cancel"
-msgstr "取消"
+#: src/Views/Wallpaper.vala:155
+#, fuzzy
+#| msgid "Import Photo"
+msgid "Import Photos"
+msgstr "匯入相片"
 
-#: src/Views/Wallpaper.vala:504
+#: src/Views/Wallpaper.vala:501
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "桌布"
 
-#: src/Views/Wallpaper.vala:505
+#: src/Views/Wallpaper.vala:502
 msgid "Undo"
 msgstr "取消動作"
 
-#: src/Widgets/WallpaperContainer.vala:127
+#: src/Widgets/WallpaperContainer.vala:122
 msgid "Remove"
 msgstr "移除"
 
-#: src/Widgets/WallpaperContainer.vala:205
+#: src/Widgets/WallpaperContainer.vala:200
 #, c-format
 msgid "Artist: %s"
 msgstr "演出者：%s"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
 
 #, c-format
 #~ msgid "%d second"

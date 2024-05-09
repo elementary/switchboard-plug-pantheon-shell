@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:43+0000\n"
+"POT-Creation-Date: 2024-05-07 19:26+0000\n"
 "PO-Revision-Date: 2023-07-15 08:30+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -23,81 +23,81 @@ msgstr "სამუშაო მაგიდა"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "მოირგეთ დოკი, ცხელი კუთხეები და შეცვლეთ ფონის სურათი"
 
-#: src/Plug.vala:64 src/Plug.vala:131
+#: src/Plug.vala:65 src/Plug.vala:127
 msgid "Wallpaper"
 msgstr "ფონური გამოსახულება"
 
-#: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
+#: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Appearance"
 msgstr "გარემოს იერსახე"
 
-#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
+#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
 msgid "Text"
 msgstr "ტექსტი"
 
-#: src/Plug.vala:70 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
-#: src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:68 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 msgid "Dock & Panel"
 msgstr "დოკი და პანელი"
 
-#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
+#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
 msgid "Multitasking"
 msgstr "მრავალამოცანიანობა"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:129
 msgid "Hide Mode"
 msgstr "დამალვის რეჟიმი"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:130
 msgid "Icon Size"
 msgstr "ხატულას ზომა"
 
-#: src/Plug.vala:135
+#: src/Plug.vala:131
 msgid "Pressure reveal"
 msgstr "დაწოლა გამოსავლენად"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:132
 msgid "Display"
 msgstr "ჩვენება"
 
-#: src/Plug.vala:137
+#: src/Plug.vala:133
 msgid "Panel translucency"
 msgstr "პანელის გამჭვირვალობა"
 
-#: src/Plug.vala:139
+#: src/Plug.vala:135
 msgid "Dark style"
 msgstr "მუქი სტილი"
 
-#: src/Plug.vala:140 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:307
 msgid "Accent Color"
 msgstr "აქცენტის ფერი"
 
-#: src/Plug.vala:141 src/Views/Appearance.vala:383
+#: src/Plug.vala:137 src/Views/Appearance.vala:383
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:142 src/Views/Appearance.vala:368
+#: src/Plug.vala:138 src/Views/Appearance.vala:368
 msgid "Reduce Motion"
 msgstr "მოძრაობის შემცირება"
 
-#: src/Plug.vala:143
+#: src/Plug.vala:139
 msgid "Window animations"
 msgstr "ფანჯრის ანიმაციები"
 
-#: src/Plug.vala:145 src/Views/Text.vala:34
+#: src/Plug.vala:141 src/Views/Text.vala:34
 msgid "Size"
 msgstr "ზომა"
 
-#: src/Plug.vala:146 src/Views/Text.vala:58
+#: src/Plug.vala:142 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "ტექსტი დისლექსიკებისთვის"
 
-#: src/Plug.vala:148
+#: src/Plug.vala:144
 msgid "Hot Corners"
 msgstr "ცხელი კუთხეები"
 
-#: src/Plug.vala:149 src/Views/Multitasking.vala:37
+#: src/Plug.vala:145 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "ფანჯრების ახალ სამუშაო სივრცეში გადატანა"
 
@@ -290,39 +290,39 @@ msgstr "მთელ ეკრანზე გადასვლისას"
 msgid "When maximizing"
 msgstr "გადიდებისას"
 
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:117
 msgid "Do nothing"
 msgstr "უქმად ყოფნა"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Multitasking View"
 msgstr "მრავალამოცანიანი ხედი"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Maximize current window"
 msgstr "მიმდინარე ფანჯრის გადიდება"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Show Applications Menu"
 msgstr "პროგრამების მენიუს ჩვენება"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show all windows"
 msgstr "ყველა ფანჯრის ჩვენება"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 msgid "Switch to previous workspace"
 msgstr "წინა სამუშაო სივრცეზე გადართვა"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 msgid "Switch to next workspace"
 msgstr "შემდეგ სამუშაო სივრცეზე გადართვა"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 msgid "Switch to new workspace"
 msgstr "ახალ სამუშაო სივრცეზე გადართვა"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Execute custom command"
 msgstr "შესასრულებელი ბრძანების მითითება"
 
@@ -353,33 +353,34 @@ msgid "Spanned"
 msgstr "მოცვა"
 
 #: src/Views/Wallpaper.vala:152
-msgid "Import Photo"
-msgstr "სურათის შემოტანა"
-
-#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "შემოტანა"
 
-#: src/Views/Wallpaper.vala:154
-msgid "Cancel"
-msgstr "გაუქმება"
+#: src/Views/Wallpaper.vala:155
+#, fuzzy
+#| msgid "Import Photo"
+msgid "Import Photos"
+msgstr "სურათის შემოტანა"
 
-#: src/Views/Wallpaper.vala:504
+#: src/Views/Wallpaper.vala:501
 msgid "Wallpaper Deleted"
 msgstr "ფონური გამოსახულება წაიშალა"
 
-#: src/Views/Wallpaper.vala:505
+#: src/Views/Wallpaper.vala:502
 msgid "Undo"
 msgstr "დაბრუნება"
 
-#: src/Widgets/WallpaperContainer.vala:127
+#: src/Widgets/WallpaperContainer.vala:122
 msgid "Remove"
 msgstr "წაშლა"
 
-#: src/Widgets/WallpaperContainer.vala:205
+#: src/Widgets/WallpaperContainer.vala:200
 #, c-format
 msgid "Artist: %s"
 msgstr "შემსრულებელი: %s"
+
+#~ msgid "Cancel"
+#~ msgstr "გაუქმება"
 
 #~ msgid "Accent color"
 #~ msgstr "აქცენტის ფერი"

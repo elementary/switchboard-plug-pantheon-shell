@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 06:43+0000\n"
+"POT-Creation-Date: 2024-05-07 19:26+0000\n"
 "PO-Revision-Date: 2023-06-28 21:58+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -27,89 +27,89 @@ msgstr "Радна површ"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Подесите луку, вруће углове и промените позадину"
 
-#: src/Plug.vala:64 src/Plug.vala:131
+#: src/Plug.vala:65 src/Plug.vala:127
 msgid "Wallpaper"
 msgstr "Позадина"
 
-#: src/Plug.vala:65 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
-#: src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
+#: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 msgid "Appearance"
 msgstr "Изглед"
 
-#: src/Plug.vala:66 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
+#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
 #, fuzzy
 #| msgid "Text size"
 msgid "Text"
 msgstr "Величина текста"
 
-#: src/Plug.vala:70 src/Plug.vala:132 src/Plug.vala:133 src/Plug.vala:134
-#: src/Plug.vala:135 src/Plug.vala:136 src/Plug.vala:137
+#: src/Plug.vala:68 src/Plug.vala:128 src/Plug.vala:129 src/Plug.vala:130
+#: src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:73 src/Plug.vala:147 src/Plug.vala:148 src/Plug.vala:149
+#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
 msgid "Multitasking"
 msgstr "Рад са више задатака"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:129
 msgid "Hide Mode"
 msgstr "Режим скривања"
 
-#: src/Plug.vala:134
+#: src/Plug.vala:130
 msgid "Icon Size"
 msgstr "Величина иконице"
 
-#: src/Plug.vala:135
+#: src/Plug.vala:131
 msgid "Pressure reveal"
 msgstr "Показивање на притисак"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:132
 msgid "Display"
 msgstr "Екран"
 
-#: src/Plug.vala:137
+#: src/Plug.vala:133
 msgid "Panel translucency"
 msgstr "Прозрачност панела"
 
-#: src/Plug.vala:139
+#: src/Plug.vala:135
 msgid "Dark style"
 msgstr "Тамни стил"
 
-#: src/Plug.vala:140 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:307
 #, fuzzy
 #| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Наглађена боја"
 
-#: src/Plug.vala:141 src/Views/Appearance.vala:383
+#: src/Plug.vala:137 src/Views/Appearance.vala:383
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:142 src/Views/Appearance.vala:368
+#: src/Plug.vala:138 src/Views/Appearance.vala:368
 msgid "Reduce Motion"
 msgstr ""
 
-#: src/Plug.vala:143
+#: src/Plug.vala:139
 msgid "Window animations"
 msgstr "Анимације прозора"
 
-#: src/Plug.vala:145 src/Views/Text.vala:34
+#: src/Plug.vala:141 src/Views/Text.vala:34
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Величина иконице"
 
-#: src/Plug.vala:146 src/Views/Text.vala:58
+#: src/Plug.vala:142 src/Views/Text.vala:58
 #, fuzzy
 #| msgid "Dyslexia-friendly text"
 msgid "Dyslexia-friendly"
 msgstr "Текст пригодан дислексији"
 
-#: src/Plug.vala:148
+#: src/Plug.vala:144
 msgid "Hot Corners"
 msgstr "Врући углови"
 
-#: src/Plug.vala:149 src/Views/Multitasking.vala:37
+#: src/Plug.vala:145 src/Views/Multitasking.vala:37
 #, fuzzy
 #| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
@@ -316,43 +316,43 @@ msgstr "Приликом преласка на цео екран:"
 msgid "When maximizing"
 msgstr "Приликом увеличања:"
 
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:117
 msgid "Do nothing"
 msgstr "Не ради ништа"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:118
 msgid "Multitasking View"
 msgstr "Преглед са више задатака"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:119
 msgid "Maximize current window"
 msgstr "Увећај текући прозор"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:120
 msgid "Show Applications Menu"
 msgstr "Прикажи изборник програма"
 
-#: src/Views/Multitasking.vala:122
+#: src/Views/Multitasking.vala:121
 msgid "Show all windows"
 msgstr "Прикажи све прозоре"
 
-#: src/Views/Multitasking.vala:123
+#: src/Views/Multitasking.vala:122
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "Пређи на нови радни простор"
 
-#: src/Views/Multitasking.vala:124
+#: src/Views/Multitasking.vala:123
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "Пређи на нови радни простор"
 
-#: src/Views/Multitasking.vala:125
+#: src/Views/Multitasking.vala:124
 msgid "Switch to new workspace"
 msgstr "Пређи на нови радни простор"
 
-#: src/Views/Multitasking.vala:126
+#: src/Views/Multitasking.vala:125
 msgid "Execute custom command"
 msgstr "Изврши произвољну наредбу"
 
@@ -387,35 +387,36 @@ msgid "Spanned"
 msgstr "Распрострто"
 
 #: src/Views/Wallpaper.vala:152
-msgid "Import Photo"
-msgstr "Увези фотографију"
-
-#: src/Views/Wallpaper.vala:153
 msgid "Import"
 msgstr "Увези"
 
-#: src/Views/Wallpaper.vala:154
-msgid "Cancel"
-msgstr "Откажи"
+#: src/Views/Wallpaper.vala:155
+#, fuzzy
+#| msgid "Import Photo"
+msgid "Import Photos"
+msgstr "Увези фотографију"
 
-#: src/Views/Wallpaper.vala:504
+#: src/Views/Wallpaper.vala:501
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Позадина"
 
-#: src/Views/Wallpaper.vala:505
+#: src/Views/Wallpaper.vala:502
 msgid "Undo"
 msgstr "Поништи"
 
-#: src/Widgets/WallpaperContainer.vala:127
+#: src/Widgets/WallpaperContainer.vala:122
 msgid "Remove"
 msgstr "Уклони"
 
-#: src/Widgets/WallpaperContainer.vala:205
+#: src/Widgets/WallpaperContainer.vala:200
 #, c-format
 msgid "Artist: %s"
 msgstr "Извођач: %s"
+
+#~ msgid "Cancel"
+#~ msgstr "Откажи"
 
 #~ msgid "Accent color"
 #~ msgstr "Наглађена боја"
