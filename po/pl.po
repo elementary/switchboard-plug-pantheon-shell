@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-07 19:26+0000\n"
-"PO-Revision-Date: 2023-07-03 13:07+0000\n"
+"PO-Revision-Date: 2024-05-12 12:13+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-15 06:30+0000\n"
 
 #: src/Plug.vala:49
@@ -81,7 +81,7 @@ msgstr "Kolor akcentu"
 
 #: src/Plug.vala:137 src/Views/Appearance.vala:383
 msgid "Always Show Scrollbars"
-msgstr ""
+msgstr "Zawsze pokazuj paski przewijania"
 
 #: src/Plug.vala:138 src/Views/Appearance.vala:368
 msgid "Reduce Motion"
@@ -232,7 +232,7 @@ msgstr "Wyłącz animacje menedżera okien i kilku innych elementach interfejsu.
 
 #: src/Views/Appearance.vala:386
 msgid "Scrollbars will take up space, even when not in use."
-msgstr ""
+msgstr "Paski przewijania będą zajmować miejsce nawet gdy nie są używane."
 
 #: src/Views/Dock.vala:11
 msgid "Dock Icon Size"
@@ -367,10 +367,8 @@ msgid "Import"
 msgstr "Importuj"
 
 #: src/Views/Wallpaper.vala:155
-#, fuzzy
-#| msgid "Import Photo"
 msgid "Import Photos"
-msgstr "Importuj zdjęcie"
+msgstr "Importuj zdjęcia"
 
 #: src/Views/Wallpaper.vala:501
 msgid "Wallpaper Deleted"
