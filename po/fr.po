@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-07 19:26+0000\n"
-"PO-Revision-Date: 2023-07-07 12:07+0000\n"
+"PO-Revision-Date: 2024-05-15 14:13+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -80,7 +80,7 @@ msgstr "Couleur d'accentuation"
 
 #: src/Plug.vala:137 src/Views/Appearance.vala:383
 msgid "Always Show Scrollbars"
-msgstr ""
+msgstr "Toujours afficher les barres de défilement"
 
 #: src/Plug.vala:138 src/Views/Appearance.vala:368
 msgid "Reduce Motion"
@@ -234,6 +234,8 @@ msgstr ""
 #: src/Views/Appearance.vala:386
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
+"Les barres de défilement occuperont l'espace même lorsqu'elles ne sont pas "
+"utilisées."
 
 #: src/Views/Dock.vala:11
 msgid "Dock Icon Size"
@@ -369,10 +371,8 @@ msgid "Import"
 msgstr "Importer"
 
 #: src/Views/Wallpaper.vala:155
-#, fuzzy
-#| msgid "Import Photo"
 msgid "Import Photos"
-msgstr "Importer la photo"
+msgstr "Importer des photos"
 
 #: src/Views/Wallpaper.vala:501
 msgid "Wallpaper Deleted"
