@@ -463,6 +463,7 @@ public class PantheonShell.Appearance : Gtk.Box {
 
     private class DesktopPreview : Gtk.Widget {
         private static Settings settings;
+        private Gtk.Picture picture;
 
         class construct {
             set_css_name ("desktop-preview");
@@ -475,7 +476,7 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
 
         public DesktopPreview (string style_class) {
-            var picture = new Gtk.Picture () {
+            picture = new Gtk.Picture () {
                 content_fit = COVER
             };
 
@@ -519,15 +520,37 @@ public class PantheonShell.Appearance : Gtk.Box {
 
             add_css_class (style_class);
 
+            update_picture ();
+            settings.changed.connect (update_picture);
+
+        }
+
+        private void update_picture () {
+            if (settings.get_string ("picture-options") == "none") {
+                Gdk.RGBA rgba = {};
+                rgba.parse (settings.get_string ("primary-color"));
+
+                var pixbuf = new Gdk.Pixbuf (RGB, false, 8, 500, 500);
+                pixbuf.fill (PantheonShell.SolidColorContainer.rgba_to_pixel (rgba));
+
+                picture.paintable = Gdk.Texture.for_pixbuf (pixbuf);
+                return;
+            }
+
+            if (has_css_class ("dark")) {
+                var dark_file = File.new_for_uri (
+                    settings.get_string ("picture-uri-dark")
+                );
+
+                if (dark_file.query_exists ()) {
+                    picture.file = dark_file;
+                    return;
+                }
+            }
+
             picture.file = File.new_for_uri (
                 settings.get_string ("picture-uri")
             );
-
-            settings.changed["picture-uri"].connect (() => {
-                picture.file = File.new_for_uri (
-                    settings.get_string ("picture-uri")
-                );
-            });
         }
 
         ~DesktopPreview () {
