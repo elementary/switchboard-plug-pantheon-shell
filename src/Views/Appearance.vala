@@ -462,12 +462,16 @@ public class PantheonShell.Appearance : Gtk.Box {
     }
 
     private class DesktopPreview : Gtk.Widget {
+        private static Settings settings;
+
         class construct {
             set_css_name ("desktop-preview");
         }
 
         static construct {
             set_layout_manager_type (typeof (Gtk.BinLayout));
+
+            settings = new Settings ("org.gnome.desktop.background");
         }
 
         public DesktopPreview (string style_class) {
@@ -515,15 +519,13 @@ public class PantheonShell.Appearance : Gtk.Box {
 
             add_css_class (style_class);
 
-            var gnome_background_settings = new Settings ("org.gnome.desktop.background");
-
             picture.file = File.new_for_uri (
-                gnome_background_settings.get_string ("picture-uri")
+                settings.get_string ("picture-uri")
             );
 
-            gnome_background_settings.changed["picture-uri"].connect (() => {
+            settings.changed["picture-uri"].connect (() => {
                 picture.file = File.new_for_uri (
-                    gnome_background_settings.get_string ("picture-uri")
+                    settings.get_string ("picture-uri")
                 );
             });
         }
