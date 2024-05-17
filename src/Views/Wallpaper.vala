@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-2.0-or-later
- * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
+ * SPDX-FileCopyrightText: 2015-2024 elementary, Inc. (https://elementary.io)
  */
 
 public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
@@ -19,8 +19,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         FileAttribute.THUMBNAIL_PATH,
         FileAttribute.THUMBNAIL_IS_VALID
     };
-
-    public Switchboard.Plug plug { get; construct set; }
 
     private static GLib.Settings gnome_background_settings;
     private static GLib.Settings gala_background_settings;
@@ -42,8 +40,11 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
     private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
     private bool finished; // Shows that we got or wallpapers together
 
-    public Wallpaper (Switchboard.Plug _plug) {
-        Object (plug: _plug);
+    public Wallpaper () {
+        Object (
+            title: _("Wallpaper"),
+            icon: new ThemedIcon ("preferences-desktop-wallpaper")
+        );
     }
 
     static construct {
@@ -52,7 +53,21 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
     }
 
     construct {
-        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
+        var wallpaper_picture = new Gtk.Picture () {
+            content_fit = COVER
+        };
+        wallpaper_picture.add_css_class (Granite.STYLE_CLASS_CARD);
+        wallpaper_picture.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+
+        var monitor = Gdk.Display.get_default ().get_monitor_at_surface (
+            (((Gtk.Application) Application.get_default ()).active_window).get_surface ()
+        );
+
+        var monitor_ratio = (float) monitor.geometry.width / monitor.geometry.height;
+
+        var wallpaper_frame = new Gtk.AspectFrame (0.5f, 0.5f, monitor_ratio, false) {
+            child = wallpaper_picture
+        };
 
         var drop_target = new Gtk.DropTarget (typeof (Gdk.FileList), Gdk.DragAction.COPY);
 
@@ -74,19 +89,27 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         wallpaper_scrolled_window = new Gtk.ScrolledWindow () {
             child = wallpaper_view,
             hscrollbar_policy = NEVER,
-            hexpand = true,
-            vexpand = true
+            propagate_natural_height = true
         };
 
         view_overlay = new Gtk.Overlay () {
             child = wallpaper_scrolled_window
         };
 
-        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
+        var add_wallpaper_label = new Gtk.Label (_("Import Photo…"));
+
+        var add_wallpaper_box = new Gtk.Box (HORIZONTAL, 0);
+        add_wallpaper_box.append (new Gtk.Image.from_icon_name ("document-open-symbolic"));
+        add_wallpaper_box.append (add_wallpaper_label);
+
+        var add_wallpaper_button = new Gtk.Button () {
+            child = add_wallpaper_box,
             has_frame = false,
             margin_top = 3,
             margin_bottom= 3
         };
+
+        add_wallpaper_label.mnemonic_widget = add_wallpaper_button;
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
@@ -109,10 +132,7 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         dim_box.append (dim_label);
         dim_box.append (dim_switch);
 
-        combo = new Gtk.ComboBoxText () {
-            margin_end = 6,
-            valign = CENTER
-        };
+        combo = new Gtk.ComboBoxText ();
         combo.append ("centered", _("Centered"));
         combo.append ("zoom", _("Zoom"));
         combo.append ("spanned", _("Spanned"));
@@ -124,10 +144,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         }
 
         color_button = new Gtk.ColorButton () {
-            margin_top = 12,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 0,
             rgba = rgba_color
         };
         color_button.color_set.connect (update_color);
@@ -139,7 +155,8 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
 
         load_settings ();
 
-        var main_box = new Gtk.Box (VERTICAL, 0);
+        var main_box = new Gtk.Box (VERTICAL, 12);
+        main_box.append (wallpaper_frame);
         main_box.append (wallpaper_box);
         main_box.append (color_button);
         main_box.append (combo);
@@ -150,6 +167,16 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
 
         drop_target.drop.connect (on_drag_data_received);
+
+        wallpaper_picture.file = File.new_for_uri (
+            gnome_background_settings.get_string ("picture-uri")
+        );
+
+        gnome_background_settings.changed["picture-uri"].connect (() => {
+            wallpaper_picture.file = File.new_for_uri (
+                gnome_background_settings.get_string ("picture-uri")
+            );
+        });
     }
 
     private void show_wallpaper_chooser () {
