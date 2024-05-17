@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class PantheonShell.Wallpaper : Gtk.Box {
+public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
     public enum ColumnType {
         ICON,
         NAME
@@ -83,18 +83,31 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         };
 
         var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
-            margin_top = 12,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
+            has_frame = false,
+            margin_top = 3,
+            margin_bottom= 3
         };
 
-        var dim_label = new Gtk.Label (_("Dim with dark style:"));
+        var actionbar = new Gtk.ActionBar ();
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+        actionbar.pack_start (add_wallpaper_button);
+
+        var wallpaper_box = new Gtk.Box (VERTICAL, 0);
+        wallpaper_box.append (view_overlay);
+        wallpaper_box.append (actionbar);
+        wallpaper_box.add_css_class (Granite.STYLE_CLASS_FRAME);
 
         dim_switch = new Gtk.Switch () {
-            margin_end = 6,
             valign = CENTER
         };
+
+        var dim_label = new Gtk.Label (_("Dim with dark style:")) {
+            mnemonic_widget = dim_switch
+        };
+
+        var dim_box = new Gtk.Box (HORIZONTAL, 6);
+        dim_box.append (dim_label);
+        dim_box.append (dim_switch);
 
         combo = new Gtk.ComboBoxText () {
             margin_end = 6,
@@ -126,18 +139,13 @@ public class PantheonShell.Wallpaper : Gtk.Box {
 
         load_settings ();
 
-        var actionbar = new Gtk.ActionBar ();
-        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
-        actionbar.pack_start (add_wallpaper_button);
-        actionbar.pack_end (color_button);
-        actionbar.pack_end (combo);
-        actionbar.pack_end (dim_switch);
-        actionbar.pack_end (dim_label);
+        var main_box = new Gtk.Box (VERTICAL, 0);
+        main_box.append (wallpaper_box);
+        main_box.append (color_button);
+        main_box.append (combo);
+        main_box.append (dim_box);
 
-        orientation = VERTICAL;
-        append (separator);
-        append (view_overlay);
-        append (actionbar);
+        child = main_box;
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
 
