@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/io/elementary/settings/desktop">
-    <file alias="appearance-default.svg" compressed="true" preprocess="xml-stripblanks">appearance-default.svg</file>
-    <file alias="appearance-dark.svg" compressed="true" preprocess="xml-stripblanks">appearance-dark.svg</file>
+    <file compressed="true">dock.svg</file>
+    <file compressed="true">dock-dark.svg</file>
+    <file compressed="true">notify-center.svg</file>
+    <file compressed="true">notify-center-dark.svg</file>
     <file compressed="true">plug.css</file>
   </gresource>
   <gresource prefix="io/elementary/settings/icons">
