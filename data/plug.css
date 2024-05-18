@@ -83,12 +83,12 @@
     -gtk-icon-transform: scale(0.6);
 }
 
-appearance-view desktop-preview {
+.appearance-view desktop-preview {
     min-height: 96px;
     margin: 6px 6px 12px 12px;
 }
 
-appearance-view desktop-preview .shell {
+.appearance-view desktop-preview .shell {
     background-image:
         url("resource:///io/elementary/settings/desktop/notify-center.svg"),
         url("resource:///io/elementary/settings/desktop/dock.svg");
@@ -98,37 +98,37 @@ appearance-view desktop-preview .shell {
     transition: all 300ms ease-in-out;
 }
 
-appearance-view desktop-preview box:dir(rtl) {
+.appearance-view desktop-preview box:dir(rtl) {
     background-position: 3px 3px, calc(50% + 0.5px) bottom;
 }
 
-appearance-view desktop-preview.dark .shell {
+.appearance-view desktop-preview.dark .shell {
     background-image:
         url("resource:///io/elementary/settings/desktop/notify-center-dark.svg"),
         url("resource:///io/elementary/settings/desktop/dock-dark.svg");
 }
 
-appearance-view desktop-preview.dim .shell {
+.appearance-view desktop-preview.dim .shell {
     background-color: alpha(black, 0.3);
 }
 
-appearance-view desktop-preview .window {
+.appearance-view desktop-preview .window {
     border-radius: 0.25em;
     min-height: 32px;
     min-width: 40px;
 }
 
-appearance-view desktop-preview .window.back {
+.appearance-view desktop-preview .window.back {
     margin-right: 24px;
     margin-bottom: 12px;
 }
 
-appearance-view desktop-preview .window.front {
+.appearance-view desktop-preview .window.front {
     margin-left: 24px;
     margin-top: 12px;
 }
 
-appearance-view desktop-preview .window.front {
+.appearance-view desktop-preview .window.front {
     background: #fafafa;
     box-shadow:
         inset 0 1px 0 0 white,
@@ -140,8 +140,8 @@ appearance-view desktop-preview .window.front {
         0 2px 4px alpha(black, 0.3);
 }
 
-appearance-view desktop-preview .window.back,
-appearance-view desktop-preview.dark .window.front {
+.appearance-view desktop-preview .window.back,
+.appearance-view desktop-preview.dark .window.front {
     background: #444;
     box-shadow:
         inset 0 1px 0 0 alpha(white, 0.15),
