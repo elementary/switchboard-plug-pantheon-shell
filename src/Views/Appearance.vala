@@ -104,6 +104,21 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         prefer_style_box.append (prefer_default_radio);
         prefer_style_box.append (prefer_dark_radio);
 
+        var dim_switch = new Gtk.Switch () {
+            valign = CENTER
+        };
+
+        var dim_label = new Granite.HeaderLabel (_("Dim Wallpaper With Dark Style")) {
+            hexpand = true,
+            mnemonic_widget = dim_switch
+        };
+
+        var dim_box = new Gtk.Box (HORIZONTAL, 12) {
+            margin_top = 18
+        };
+        dim_box.append (dim_label);
+        dim_box.append (dim_switch);
+
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
         var schedule_disabled_radio = new Gtk.CheckButton.with_label (_("Disabled")) {
@@ -174,11 +189,12 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
             grid.attach (dark_label, 0, 0, 2);
             grid.attach (prefer_style_box, 0, 2, 2);
-            grid.attach (schedule_label, 0, 3, 2);
-            grid.attach (schedule_disabled_radio, 0, 4, 2);
-            grid.attach (schedule_sunset_radio, 0, 5, 2);
-            grid.attach (schedule_manual_radio, 0, 6);
-            grid.attach (schedule_manual_box, 1, 6);
+            grid.attach (dim_box, 0, 3, 2);
+            grid.attach (schedule_label, 0, 4, 2);
+            grid.attach (schedule_disabled_radio, 0, 5, 2);
+            grid.attach (schedule_sunset_radio, 0, 6, 2);
+            grid.attach (schedule_manual_radio, 0, 7);
+            grid.attach (schedule_manual_box, 1, 7);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -351,8 +367,8 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
             accent_box.append (slate_button);
             accent_box.append (auto_button);
 
-            grid.attach (accent_label, 0, 7, 2);
-            grid.attach (accent_box, 0, 8, 2);
+            grid.attach (accent_label, 0, 8, 2);
+            grid.attach (accent_box, 0, 9, 2);
         }
 
         var animations_switch = new Gtk.Switch () {
@@ -398,6 +414,9 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         animations_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.INVERT_BOOLEAN);
 
         interface_settings.bind ("overlay-scrolling", scrollbar_switch, "active", INVERT_BOOLEAN);
+
+        var background_settings = new GLib.Settings ("io.elementary.desktop.background");
+        background_settings.bind ("dim-wallpaper-in-dark-style", dim_switch, "active", DEFAULT);
     }
 
     private class PrefersAccentColorButton : Gtk.CheckButton {

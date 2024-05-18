@@ -21,12 +21,10 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
     };
 
     private static GLib.Settings gnome_background_settings;
-    private static GLib.Settings gala_background_settings;
 
     private Gtk.ScrolledWindow wallpaper_scrolled_window;
     private Gtk.FlowBox wallpaper_view;
     private Gtk.Overlay view_overlay;
-    private Gtk.Switch dim_switch;
     private Gtk.ComboBoxText combo;
     private Gtk.ColorButton color_button;
 
@@ -50,7 +48,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
 
     static construct {
         gnome_background_settings = new GLib.Settings ("org.gnome.desktop.background");
-        gala_background_settings = new GLib.Settings ("io.elementary.desktop.background");
     }
 
     construct {
@@ -91,13 +88,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
             margin_start = 12
         };
 
-        var dim_label = new Gtk.Label (_("Dim with dark style:"));
-
-        dim_switch = new Gtk.Switch () {
-            margin_end = 6,
-            valign = CENTER
-        };
-
         combo = new Gtk.ComboBoxText () {
             margin_end = 6,
             valign = CENTER
@@ -133,8 +123,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         actionbar.pack_start (add_wallpaper_button);
         actionbar.pack_end (color_button);
         actionbar.pack_end (combo);
-        actionbar.pack_end (dim_switch);
-        actionbar.pack_end (dim_label);
 
         var box = new Gtk.Box (VERTICAL, 0);
         box.append (view_overlay);
@@ -182,8 +170,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
     }
 
     private void load_settings () {
-        gala_background_settings.bind ("dim-wallpaper-in-dark-style", dim_switch, "active", SettingsBindFlags.DEFAULT);
-
         // TODO: need to store the previous state, before changing to none
         // when a solid color is selected, because the combobox doesn't know
         // about it anymore. The previous state should be loaded instead here.
