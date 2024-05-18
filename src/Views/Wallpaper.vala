@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2015-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class PantheonShell.Wallpaper : Gtk.Box {
+public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
     public enum ColumnType {
         ICON,
         NAME
@@ -19,8 +19,6 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         FileAttribute.THUMBNAIL_PATH,
         FileAttribute.THUMBNAIL_IS_VALID
     };
-
-    public Switchboard.Plug plug { get; construct set; }
 
     private static GLib.Settings gnome_background_settings;
     private static GLib.Settings gala_background_settings;
@@ -42,8 +40,12 @@ public class PantheonShell.Wallpaper : Gtk.Box {
     private bool prevent_update_mode = false; // When restoring the combo state, don't trigger the update.
     private bool finished; // Shows that we got or wallpapers together
 
-    public Wallpaper (Switchboard.Plug _plug) {
-        Object (plug: _plug);
+    public Wallpaper () {
+        Object (
+            title: _("Wallpaper"),
+            icon: new ThemedIcon ("preferences-desktop-wallpaper"),
+            show_end_title_buttons: true
+        );
     }
 
     static construct {
@@ -134,10 +136,12 @@ public class PantheonShell.Wallpaper : Gtk.Box {
         actionbar.pack_end (dim_switch);
         actionbar.pack_end (dim_label);
 
-        orientation = VERTICAL;
-        append (separator);
-        append (view_overlay);
-        append (actionbar);
+        var box = new Gtk.Box (VERTICAL, 0);
+        box.append (view_overlay);
+        box.append (actionbar);
+        box.add_css_class (Granite.STYLE_CLASS_FRAME);
+
+        child = box;
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
 

@@ -18,7 +18,7 @@
 *
 */
 
-public class PantheonShell.Appearance : Gtk.Box {
+public class PantheonShell.Appearance : Switchboard.SettingsPage {
     private const string INTERFACE_SCHEMA = "org.gnome.desktop.interface";
     private const string STYLESHEET_KEY = "gtk-theme";
     private const string STYLESHEET_PREFIX = "io.elementary.stylesheet.";
@@ -64,8 +64,13 @@ public class PantheonShell.Appearance : Gtk.Box {
         }
     }
 
-    class construct {
-        set_css_name ("appearance-view");
+    public Appearance () {
+        Object (
+            title: _("Appearance"),
+            description : _("Preferred accents and style for system components. Apps may also follow these preferences, but can always choose their own accents or style."),
+            icon: new ThemedIcon ("preferences-desktop-theme"),
+            show_end_title_buttons: true
+        );
     }
 
     construct {
@@ -395,11 +400,8 @@ public class PantheonShell.Appearance : Gtk.Box {
         grid.attach (animations_box, 0, 10, 2);
         grid.attach (scrollbar_box, 0, 11, 2);
 
-        var clamp = new Adw.Clamp () {
-            child = grid
-        };
-
-        append (clamp);
+        child = grid;
+        add_css_class ("appearance-view");
 
         var animations_settings = new Settings ("org.pantheon.desktop.gala.animations");
         animations_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.INVERT_BOOLEAN);

@@ -83,7 +83,7 @@
     -gtk-icon-transform: scale(0.6);
 }
 
-appearance-view checkbutton .card {
+.appearance-view checkbutton .card {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 86px 64px, cover;
@@ -92,7 +92,7 @@ appearance-view checkbutton .card {
     margin: 6px 6px 12px 12px;
 }
 
-appearance-view checkbutton .card.prefer-default {
+.appearance-view checkbutton .card.prefer-default {
     background-color: white;
     background-image:
         url("resource:///io/elementary/settings/desktop/appearance-default.svg"),
@@ -103,7 +103,7 @@ appearance-view checkbutton .card.prefer-default {
         );
 }
 
-appearance-view checkbutton .card.prefer-dark {
+.appearance-view checkbutton .card.prefer-dark {
     background-color: mix(@BLACK_300, @BLACK_500, 0.25);
     background-image:
         url("resource:///io/elementary/settings/desktop/appearance-dark.svg"),

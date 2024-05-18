@@ -19,8 +19,8 @@
 */
 
 public class PantheonShell.Plug : Switchboard.Plug {
+    private Gtk.Paned paned;
     private Gtk.Stack stack;
-    private Gtk.Grid main_grid;
 
     private Wallpaper wallpaper_view;
 
@@ -53,8 +53,8 @@ public class PantheonShell.Plug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (main_grid == null) {
-            wallpaper_view = new Wallpaper (this);
+        if (paned == null) {
+            wallpaper_view = new Wallpaper ();
 
             var dock = new Dock ();
             var multitasking = new Multitasking ();
@@ -68,28 +68,20 @@ public class PantheonShell.Plug : Switchboard.Plug {
             stack.add_titled (dock, "dock", _("Dock & Panel"));
             stack.add_titled (multitasking, "multitasking", _("Multitasking"));
 
-            var stack_switcher = new Gtk.StackSwitcher () {
-                stack = stack
+            var sidebar = new Switchboard.SettingsSidebar (stack) {
+                show_title_buttons = true
             };
 
-            var switcher_sizegroup = new Gtk.SizeGroup (HORIZONTAL);
-            unowned var switcher_child = stack_switcher.get_first_child ();
-            while (switcher_child != null) {
-                switcher_sizegroup.add_widget (switcher_child);
-                switcher_child = switcher_child.get_next_sibling ();
-            }
-
-            var headerbar = new Adw.HeaderBar () {
-                title_widget = stack_switcher
+            paned = new Gtk.Paned (HORIZONTAL) {
+                start_child = sidebar,
+                end_child = stack,
+                shrink_start_child = false,
+                shrink_end_child = false,
+                resize_start_child = false
             };
-            headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
-
-            main_grid = new Gtk.Grid ();
-            main_grid.attach (headerbar, 0, 0);
-            main_grid.attach (stack, 0, 1);
         }
 
-        return main_grid;
+        return paned;
     }
 
     public override void shown () {

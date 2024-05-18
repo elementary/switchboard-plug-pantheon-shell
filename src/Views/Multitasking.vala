@@ -19,8 +19,16 @@
 * Authored by: Tom Beckmann
 */
 
-public class PantheonShell.Multitasking : Gtk.Box {
+public class PantheonShell.Multitasking : Switchboard.SettingsPage {
     private GLib.Settings behavior_settings;
+
+    public Multitasking () {
+        Object (
+            title: _("Multitasking"),
+            icon: new ThemedIcon ("preferences-desktop-workspaces"),
+            show_end_title_buttons: true
+        );
+    }
 
     construct {
         var hotcorner_title = new Gtk.Label (_("When the pointer enters a display corner")) {
@@ -62,16 +70,7 @@ public class PantheonShell.Multitasking : Gtk.Box {
         grid.attach (workspaces_label, 0, 6, 2);
         grid.attach (checkbutton_box, 0, 7, 2);
 
-        var clamp = new Adw.Clamp () {
-            child = grid
-        };
-
-        var scrolled = new Gtk.ScrolledWindow () {
-            child = clamp,
-            hscrollbar_policy = Gtk.PolicyType.NEVER
-        };
-
-        append (scrolled);
+        child = grid;
 
         behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);

@@ -3,9 +3,17 @@
  * SPDX-FileCopyrightText: 2016-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class PantheonShell.Dock : Gtk.Box {
+public class PantheonShell.Dock : Switchboard.SettingsPage {
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
+
+    public Dock () {
+        Object (
+            title: _("Dock & Panel"),
+            icon: new ThemedIcon ("preferences-desktop"),
+            show_end_title_buttons: true
+        );
+    }
 
     construct {
         var icon_header = new Granite.HeaderLabel (_("Dock Icon Size"));
@@ -108,15 +116,7 @@ public class PantheonShell.Dock : Gtk.Box {
             box.append (indicators_box);
         }
 
-        var clamp = new Adw.Clamp () {
-            child = box
-        };
-
-        var scrolled = new Gtk.ScrolledWindow () {
-            child = clamp
-        };
-
-        append (scrolled);
+        child = box;
 
         var dock_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.dock", true);
         if (dock_schema != null && dock_schema.has_key ("icon-size")) {

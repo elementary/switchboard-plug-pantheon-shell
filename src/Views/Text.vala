@@ -18,7 +18,7 @@
 *
 */
 
-public class PantheonShell.Text : Gtk.Box {
+public class PantheonShell.Text : Switchboard.SettingsPage {
     private const string DYSLEXIA_KEY = "dyslexia-friendly-support";
     private const string FONT_KEY = "font-name";
     private const string DOCUMENT_FONT_KEY = "document-font-name";
@@ -29,6 +29,14 @@ public class PantheonShell.Text : Gtk.Box {
     private const string OD_MON_FONT = "OpenDyslexicMono Regular 10";
 
     private uint scale_timeout;
+
+    public Text () {
+        Object (
+            title: _("Text"),
+            icon: new ThemedIcon ("preferences-desktop-font"),
+            show_end_title_buttons: true
+        );
+    }
 
     construct {
         var size_label = new Granite.HeaderLabel (_("Size"));
@@ -73,11 +81,7 @@ public class PantheonShell.Text : Gtk.Box {
         box.append (size_grid);
         box.append (dyslexia_box);
 
-        var clamp = new Adw.Clamp () {
-            child = box
-        };
-
-        append (clamp);
+        child = box;
 
         var interface_settings = new Settings ("org.gnome.desktop.interface");
         interface_settings.bind ("text-scaling-factor", size_adjustment, "value", SettingsBindFlags.GET);
