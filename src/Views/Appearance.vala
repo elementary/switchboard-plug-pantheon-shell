@@ -73,23 +73,17 @@ public class PantheonShell.Appearance : Gtk.Box {
             secondary_text = _("Preferred visual style for system components. Apps may also choose to follow this preference.")
         };
 
-        var prefer_default_card = new Gtk.Grid ();
-        prefer_default_card.add_css_class (Granite.STYLE_CLASS_CARD);
-        prefer_default_card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
-        prefer_default_card.add_css_class ("prefer-default");
+        var default_preview = new DesktopPreview ("default");
 
         var prefer_default_radio = new Gtk.CheckButton ();
         prefer_default_radio.add_css_class ("image-button");
 
         var prefer_default_grid = new Gtk.Grid ();
-        prefer_default_grid.attach (prefer_default_card, 0, 0);
+        prefer_default_grid.attach (default_preview, 0, 0);
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
         prefer_default_grid.set_parent (prefer_default_radio);
 
-        var prefer_dark_card = new Gtk.Grid ();
-        prefer_dark_card.add_css_class (Granite.STYLE_CLASS_CARD);
-        prefer_dark_card.add_css_class (Granite.STYLE_CLASS_ROUNDED);
-        prefer_dark_card.add_css_class ("prefer-dark");
+        var dark_preview = new DesktopPreview ("dark");
 
         var prefer_dark_radio = new Gtk.CheckButton () {
             group = prefer_default_radio
@@ -97,7 +91,7 @@ public class PantheonShell.Appearance : Gtk.Box {
         prefer_dark_radio.add_css_class ("image-button");
 
         var prefer_dark_grid = new Gtk.Grid ();
-        prefer_dark_grid.attach (prefer_dark_card, 0, 0);
+        prefer_dark_grid.attach (dark_preview, 0, 0);
         prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
         prefer_dark_grid.set_parent (prefer_dark_radio);
 
@@ -484,5 +478,116 @@ public class PantheonShell.Appearance : Gtk.Box {
         time_double += (double) date_time.get_minute () / 60;
 
         return time_double;
+    }
+
+    private class DesktopPreview : Gtk.Widget {
+        private static Settings pantheon_settings;
+        private static Settings gnome_settings;
+        private Gtk.Picture picture;
+
+        class construct {
+            set_css_name ("desktop-preview");
+        }
+
+        static construct {
+            set_layout_manager_type (typeof (Gtk.BinLayout));
+
+            pantheon_settings = new Settings ("io.elementary.desktop.background");
+            gnome_settings = new Settings ("org.gnome.desktop.background");
+        }
+
+        public DesktopPreview (string style_class) {
+            picture = new Gtk.Picture () {
+                content_fit = COVER
+            };
+
+            var window_back = new Gtk.Box (HORIZONTAL, 0) {
+                halign = CENTER,
+                valign = CENTER
+            };
+            window_back.add_css_class ("window");
+            window_back.add_css_class ("back");
+
+            var window_front = new Gtk.Box (HORIZONTAL, 0) {
+                halign = CENTER,
+                valign = CENTER
+            };
+            window_front.add_css_class ("window");
+            window_front.add_css_class ("front");
+
+            var shell = new Gtk.Box (HORIZONTAL, 0);
+            shell.add_css_class ("shell");
+
+            var overlay = new Gtk.Overlay () {
+                child = picture,
+                overflow = HIDDEN
+            };
+            overlay.add_overlay (shell);
+            overlay.add_overlay (window_back);
+            overlay.add_overlay (window_front);
+            overlay.add_css_class (Granite.STYLE_CLASS_CARD);
+            overlay.add_css_class (Granite.STYLE_CLASS_ROUNDED);
+
+            var monitor = Gdk.Display.get_default ().get_monitor_at_surface (
+                (((Gtk.Application) Application.get_default ()).active_window).get_surface ()
+            );
+
+            var monitor_ratio = (float) monitor.geometry.width / monitor.geometry.height;
+
+            var frame = new Gtk.AspectFrame (0.5f, 0.5f, monitor_ratio, false) {
+                child = overlay
+            };
+            frame.set_parent (this);
+
+            add_css_class (style_class);
+
+            update_picture ();
+            gnome_settings.changed.connect (update_picture);
+
+            if (has_css_class ("dark")) {
+                update_dim ();
+                pantheon_settings.changed.connect (update_dim);
+            }
+        }
+
+        private void update_dim () {
+            if (pantheon_settings.get_boolean ("dim-wallpaper-in-dark-style")) {
+                add_css_class ("dim");
+            } else {
+                remove_css_class ("dim");
+            }
+        }
+
+        private void update_picture () {
+            if (gnome_settings.get_string ("picture-options") == "none") {
+                Gdk.RGBA rgba = {};
+                rgba.parse (gnome_settings.get_string ("primary-color"));
+
+                var pixbuf = new Gdk.Pixbuf (RGB, false, 8, 500, 500);
+                pixbuf.fill (PantheonShell.SolidColorContainer.rgba_to_pixel (rgba));
+
+                picture.paintable = Gdk.Texture.for_pixbuf (pixbuf);
+                return;
+            }
+
+            if (has_css_class ("dark")) {
+                var dark_file = File.new_for_uri (
+                    gnome_settings.get_string ("picture-uri-dark")
+                );
+
+                if (dark_file.query_exists ()) {
+                    picture.file = dark_file;
+                    return;
+                }
+            }
+
+            picture.file = File.new_for_uri (
+                gnome_settings.get_string ("picture-uri")
+            );
+        }
+
+        ~DesktopPreview () {
+            get_first_child ().unparent ();
+        }
     }
 }

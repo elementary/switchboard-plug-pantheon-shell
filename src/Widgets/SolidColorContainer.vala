@@ -42,7 +42,7 @@ public class PantheonShell.SolidColorContainer : WallpaperContainer {
 
     // Borrowed from
     // https://github.com/GNOME/california/blob/master/src/util/util-gfx.vala
-    private static uint32 rgba_to_pixel (Gdk.RGBA rgba) {
+    public static uint32 rgba_to_pixel (Gdk.RGBA rgba) {
         return (uint32) fp_to_uint8 (rgba.red) << 24
             | (uint32) fp_to_uint8 (rgba.green) << 16
             | (uint32) fp_to_uint8 (rgba.blue) << 8
