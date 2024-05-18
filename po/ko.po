@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 19:26+0000\n"
+"POT-Creation-Date: 2024-05-18 21:22+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -33,11 +33,11 @@ msgid "Wallpaper"
 msgstr "배경화면"
 
 #: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
-#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Appearance"
 msgstr "꾸미기"
 
-#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:67 src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Text"
 msgstr "텍스트"
 
@@ -46,7 +46,7 @@ msgstr "텍스트"
 msgid "Dock & Panel"
 msgstr "독 & 패널"
 
-#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:69 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Multitasking"
 msgstr "멀티태스킹"
 
@@ -74,35 +74,41 @@ msgstr "패널 투명도"
 msgid "Dark style"
 msgstr "다크 스타일"
 
-#: src/Plug.vala:136 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:106
+#, fuzzy
+#| msgid "Dark style"
+msgid "Dim Wallpaper With Dark Style"
+msgstr "다크 스타일"
+
+#: src/Plug.vala:137 src/Views/Appearance.vala:317
 msgid "Accent Color"
 msgstr "강조색"
 
-#: src/Plug.vala:137 src/Views/Appearance.vala:383
+#: src/Plug.vala:138 src/Views/Appearance.vala:393
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:138 src/Views/Appearance.vala:368
+#: src/Plug.vala:139 src/Views/Appearance.vala:378
 msgid "Reduce Motion"
 msgstr ""
 
-#: src/Plug.vala:139
+#: src/Plug.vala:140
 msgid "Window animations"
 msgstr "창 애니메이션"
 
-#: src/Plug.vala:141 src/Views/Text.vala:34
+#: src/Plug.vala:142 src/Views/Text.vala:34
 msgid "Size"
 msgstr "크기"
 
-#: src/Plug.vala:142 src/Views/Text.vala:58
+#: src/Plug.vala:143 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "난독증 친화적"
 
-#: src/Plug.vala:144
+#: src/Plug.vala:145
 msgid "Hot Corners"
 msgstr "핫 코너"
 
-#: src/Plug.vala:145 src/Views/Multitasking.vala:37
+#: src/Plug.vala:146 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "새 작업 공간으로 창 이동"
 
@@ -144,35 +150,35 @@ msgstr ""
 "시스템 구성 요소에 대해 선호하는 비주얼 스타일입니다. 앱은 이 기본 설정을 따"
 "르도록 선택할 수도 있습니다."
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:28
+#: src/Views/Appearance.vala:83 src/Views/Dock.vala:28
 msgid "Default"
 msgstr "기본"
 
-#: src/Views/Appearance.vala:101
+#: src/Views/Appearance.vala:95
 msgid "Dark"
 msgstr "다크"
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:117
 msgid "Schedule"
 msgstr "설정"
 
-#: src/Views/Appearance.vala:110
+#: src/Views/Appearance.vala:119
 msgid "Disabled"
 msgstr "사용 안 함"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:124
 msgid "Sunset to Sunrise"
 msgstr "해 뜰 때부터 해 질 때까지"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:129
 msgid "From:"
 msgstr "시작:"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:136
 msgid "To:"
 msgstr "끝:"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:319
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -180,56 +186,56 @@ msgstr ""
 "기본적으로 시스템 전체에 사용됩니다. 앱은 항상 고유한 강조 색상을 사용할 수 "
 "있습니다."
 
-#: src/Views/Appearance.vala:313
+#: src/Views/Appearance.vala:323
 msgid "Blueberry"
 msgstr "블루베리"
 
-#: src/Views/Appearance.vala:316
+#: src/Views/Appearance.vala:326
 msgid "Mint"
 msgstr "민트"
 
-#: src/Views/Appearance.vala:319
+#: src/Views/Appearance.vala:329
 msgid "Lime"
 msgstr "라임"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:332
 msgid "Banana"
 msgstr "바나나"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:335
 msgid "Orange"
 msgstr "오렌지"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:338
 msgid "Strawberry"
 msgstr "딸기"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:341
 msgid "Bubblegum"
 msgstr "풍선껌"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:344
 msgid "Grape"
 msgstr "포도"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:347
 msgid "Cocoa"
 msgstr "코코아"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:350
 msgid "Slate"
 msgstr "슬레이트"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:353
 msgid "Automatic based on wallpaper"
 msgstr "배경 화면에 따라 자동"
 
-#: src/Views/Appearance.vala:370
+#: src/Views/Appearance.vala:380
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:396
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
@@ -351,45 +357,39 @@ msgstr ""
 "아래가 두툼한 모양과 넓어진 문자 간격은 가독성과 읽기 속도를 향상시키는 데 도"
 "움이 됩니다."
 
-#: src/Views/Wallpaper.vala:85
+#: src/Views/Wallpaper.vala:82
 msgid "Import Photo…"
 msgstr "사진 가져오기…"
 
-#: src/Views/Wallpaper.vala:92
-#, fuzzy
-#| msgid "Dark style"
-msgid "Dim with dark style:"
-msgstr "다크 스타일"
-
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Wallpaper.vala:93
 msgid "Centered"
 msgstr "중앙 정렬"
 
-#: src/Views/Wallpaper.vala:104
+#: src/Views/Wallpaper.vala:94
 msgid "Zoom"
 msgstr "확대"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:95
 msgid "Spanned"
 msgstr "지연됨"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:140
 msgid "Import"
 msgstr "가져오기"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:143
 #, fuzzy
 #| msgid "Import Photo"
 msgid "Import Photos"
 msgstr "사진 가져오기"
 
-#: src/Views/Wallpaper.vala:501
+#: src/Views/Wallpaper.vala:487
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "배경화면"
 
-#: src/Views/Wallpaper.vala:502
+#: src/Views/Wallpaper.vala:488
 msgid "Undo"
 msgstr "되돌리기"
 
