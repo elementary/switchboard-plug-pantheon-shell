@@ -95,6 +95,7 @@ appearance-view desktop-preview .shell {
     background-repeat: no-repeat;
     background-size: 40px 55px, 54px 12px;
     background-position: calc(100% - 3px) 3px, calc(50% + 0.5px) bottom;
+    transition: all 300ms ease-in-out;
 }
 
 appearance-view desktop-preview box:dir(rtl) {
