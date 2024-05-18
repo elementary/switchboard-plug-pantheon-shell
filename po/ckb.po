@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 19:26+0000\n"
+"POT-Creation-Date: 2024-05-18 21:22+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -33,11 +33,11 @@ msgid "Wallpaper"
 msgstr "پاشبنەما"
 
 #: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
-#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Appearance"
 msgstr "دەرکەوتن"
 
-#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:67 src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Text"
 msgstr "دەق"
 
@@ -46,7 +46,7 @@ msgstr "دەق"
 msgid "Dock & Panel"
 msgstr "دۆک & پانێڵ"
 
-#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:69 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Multitasking"
 msgstr "مەڵتیتاسکینگ"
 
@@ -74,35 +74,41 @@ msgstr "هەبوونی ڕەنگ لە باگراوندی پانێڵی سەرەو�
 msgid "Dark style"
 msgstr "ستایلی تارک"
 
-#: src/Plug.vala:136 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:106
+#, fuzzy
+#| msgid "Dark style"
+msgid "Dim Wallpaper With Dark Style"
+msgstr "ستایلی تارک"
+
+#: src/Plug.vala:137 src/Views/Appearance.vala:317
 msgid "Accent Color"
 msgstr "ڕەنگی ئەکسێنت"
 
-#: src/Plug.vala:137 src/Views/Appearance.vala:383
+#: src/Plug.vala:138 src/Views/Appearance.vala:393
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:138 src/Views/Appearance.vala:368
+#: src/Plug.vala:139 src/Views/Appearance.vala:378
 msgid "Reduce Motion"
 msgstr ""
 
-#: src/Plug.vala:139
+#: src/Plug.vala:140
 msgid "Window animations"
 msgstr "ئەنیمەیشنەکانی پەنجەرە"
 
-#: src/Plug.vala:141 src/Views/Text.vala:34
+#: src/Plug.vala:142 src/Views/Text.vala:34
 msgid "Size"
 msgstr "قەبارە"
 
-#: src/Plug.vala:142 src/Views/Text.vala:58
+#: src/Plug.vala:143 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "دۆستی ناڕێکی خوێندنەوە"
 
-#: src/Plug.vala:144
+#: src/Plug.vala:145
 msgid "Hot Corners"
 msgstr "گەرمە گۆشەکان"
 
-#: src/Plug.vala:145 src/Views/Multitasking.vala:37
+#: src/Plug.vala:146 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "گواستنەوەی پەنجەرەکان بۆ ناوچەکارێکی نوێ"
 
@@ -144,35 +150,35 @@ msgstr ""
 "شێوازی بینراوی پەسەندکراو بۆ پێکهاتەکانی سیستەم. تکایە بزانە کە لەوانەیە "
 "بەرنامەکانیش بچنە دۆخی تاریکییەوە ئەگەر هەیان بێت."
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:28
+#: src/Views/Appearance.vala:83 src/Views/Dock.vala:28
 msgid "Default"
 msgstr "بنەڕەت"
 
-#: src/Views/Appearance.vala:101
+#: src/Views/Appearance.vala:95
 msgid "Dark"
 msgstr "تاریک"
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:117
 msgid "Schedule"
 msgstr "دیاریکردنی کات"
 
-#: src/Views/Appearance.vala:110
+#: src/Views/Appearance.vala:119
 msgid "Disabled"
 msgstr "وەستێنراو"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:124
 msgid "Sunset to Sunrise"
 msgstr "خۆرهەڵاتن بۆ خۆراوابوون"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:129
 msgid "From:"
 msgstr "لە:"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:136
 msgid "To:"
 msgstr "بۆ:"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:319
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -180,56 +186,56 @@ msgstr ""
 "ئەم ڕەنگەی کە دیاریدەکەیت لە هەموو سیستەمەکەدا بەکاردێت، بەڵام بەرنامەکان "
 "دەتوانن ڕەنگی خۆیان بەکاربهێنن."
 
-#: src/Views/Appearance.vala:313
+#: src/Views/Appearance.vala:323
 msgid "Blueberry"
 msgstr "بلوبێری"
 
-#: src/Views/Appearance.vala:316
+#: src/Views/Appearance.vala:326
 msgid "Mint"
 msgstr "نەعنا"
 
-#: src/Views/Appearance.vala:319
+#: src/Views/Appearance.vala:329
 msgid "Lime"
 msgstr "لیمۆ"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:332
 msgid "Banana"
 msgstr "مۆز"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:335
 msgid "Orange"
 msgstr "پڕتەقاڵ"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:338
 msgid "Strawberry"
 msgstr "شیلیک"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:341
 msgid "Bubblegum"
 msgstr "بەبڵ-گەم"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:344
 msgid "Grape"
 msgstr "ترێ"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:347
 msgid "Cocoa"
 msgstr "کاکاو"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:350
 msgid "Slate"
 msgstr "تەختە"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:353
 msgid "Automatic based on wallpaper"
 msgstr "خۆکرانە بەپێی ڕەنگی پاشبنەما"
 
-#: src/Views/Appearance.vala:370
+#: src/Views/Appearance.vala:380
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:396
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
@@ -351,43 +357,37 @@ msgstr ""
 "قورسکردنی بەشی خوارەوەی شێوەکان و زیادکردنی دووری نێوان پیتەکان دەتوانێت "
 "یارمەتیدەر بێت لە باشترکردنی خوێندنەوە و خێرایی خوێندنەوە."
 
-#: src/Views/Wallpaper.vala:85
+#: src/Views/Wallpaper.vala:82
 msgid "Import Photo…"
 msgstr "هێنانی وێنە…"
 
-#: src/Views/Wallpaper.vala:92
-#, fuzzy
-#| msgid "Dark style"
-msgid "Dim with dark style:"
-msgstr "ستایلی تارک"
-
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Wallpaper.vala:93
 msgid "Centered"
 msgstr "ناوەڕاستی وێنە"
 
-#: src/Views/Wallpaper.vala:104
+#: src/Views/Wallpaper.vala:94
 msgid "Zoom"
 msgstr "بێتەپێش"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:95
 msgid "Spanned"
 msgstr "تەواوی وێنە"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:140
 msgid "Import"
 msgstr "هێنان"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:143
 #, fuzzy
 #| msgid "Import Photo"
 msgid "Import Photos"
 msgstr "هێنانی وێنە"
 
-#: src/Views/Wallpaper.vala:501
+#: src/Views/Wallpaper.vala:487
 msgid "Wallpaper Deleted"
 msgstr "وێنەی پاشبنەما سڕایەوە"
 
-#: src/Views/Wallpaper.vala:502
+#: src/Views/Wallpaper.vala:488
 msgid "Undo"
 msgstr "هەڵوەشاندنەوە"
 

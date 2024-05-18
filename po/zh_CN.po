@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 19:26+0000\n"
+"POT-Creation-Date: 2024-05-18 21:22+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -33,11 +33,11 @@ msgid "Wallpaper"
 msgstr "壁纸"
 
 #: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
-#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Appearance"
 msgstr "外观"
 
-#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:67 src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Text"
 msgstr "文本"
 
@@ -46,7 +46,7 @@ msgstr "文本"
 msgid "Dock & Panel"
 msgstr "程序坞与顶栏"
 
-#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:69 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Multitasking"
 msgstr "多任务"
 
@@ -74,35 +74,41 @@ msgstr "透明顶栏"
 msgid "Dark style"
 msgstr "暗色风格"
 
-#: src/Plug.vala:136 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:106
+#, fuzzy
+#| msgid "Dark style"
+msgid "Dim Wallpaper With Dark Style"
+msgstr "暗色风格"
+
+#: src/Plug.vala:137 src/Views/Appearance.vala:317
 msgid "Accent Color"
 msgstr "强调色"
 
-#: src/Plug.vala:137 src/Views/Appearance.vala:383
+#: src/Plug.vala:138 src/Views/Appearance.vala:393
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:138 src/Views/Appearance.vala:368
+#: src/Plug.vala:139 src/Views/Appearance.vala:378
 msgid "Reduce Motion"
 msgstr ""
 
-#: src/Plug.vala:139
+#: src/Plug.vala:140
 msgid "Window animations"
 msgstr "窗口动画"
 
-#: src/Plug.vala:141 src/Views/Text.vala:34
+#: src/Plug.vala:142 src/Views/Text.vala:34
 msgid "Size"
 msgstr "尺寸"
 
-#: src/Plug.vala:142 src/Views/Text.vala:58
+#: src/Plug.vala:143 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "阅读障碍友好型"
 
-#: src/Plug.vala:144
+#: src/Plug.vala:145
 msgid "Hot Corners"
 msgstr "热区"
 
-#: src/Plug.vala:145 src/Views/Multitasking.vala:37
+#: src/Plug.vala:146 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "移至新工作区"
 
@@ -142,91 +148,91 @@ msgid ""
 "this preference."
 msgstr "系统组件的视觉风格偏好。应用程序可能也会遵循这个设置。"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:28
+#: src/Views/Appearance.vala:83 src/Views/Dock.vala:28
 msgid "Default"
 msgstr "默认"
 
-#: src/Views/Appearance.vala:101
+#: src/Views/Appearance.vala:95
 msgid "Dark"
 msgstr "深色"
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:117
 msgid "Schedule"
 msgstr "计划"
 
-#: src/Views/Appearance.vala:110
+#: src/Views/Appearance.vala:119
 msgid "Disabled"
 msgstr "已禁用"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:124
 msgid "Sunset to Sunrise"
 msgstr "日落至日出"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:129
 msgid "From:"
 msgstr "开始时间："
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:136
 msgid "To:"
 msgstr "结束时间："
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:319
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
 msgstr ""
 "默认情况下将用于系统全局，自带强调色的应用程序除外。它们将使用自己的强调色。"
 
-#: src/Views/Appearance.vala:313
+#: src/Views/Appearance.vala:323
 msgid "Blueberry"
 msgstr "蓝莓色"
 
-#: src/Views/Appearance.vala:316
+#: src/Views/Appearance.vala:326
 msgid "Mint"
 msgstr "薄荷绿"
 
-#: src/Views/Appearance.vala:319
+#: src/Views/Appearance.vala:329
 msgid "Lime"
 msgstr "青柠色"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:332
 msgid "Banana"
 msgstr "香蕉黄"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:335
 msgid "Orange"
 msgstr "橘子橙"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:338
 msgid "Strawberry"
 msgstr "草莓红"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:341
 msgid "Bubblegum"
 msgstr "泡泡糖"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:344
 msgid "Grape"
 msgstr "葡萄紫"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:347
 msgid "Cocoa"
 msgstr "可可色"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:350
 msgid "Slate"
 msgstr "石头灰"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:353
 msgid "Automatic based on wallpaper"
 msgstr "基于壁纸自动"
 
-#: src/Views/Appearance.vala:370
+#: src/Views/Appearance.vala:380
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:396
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
@@ -346,43 +352,37 @@ msgid ""
 "legibility and reading speed."
 msgstr "底部较粗的字形和更大的字符间距有助于提高易读性和阅读速度。"
 
-#: src/Views/Wallpaper.vala:85
+#: src/Views/Wallpaper.vala:82
 msgid "Import Photo…"
 msgstr "导入照片…"
 
-#: src/Views/Wallpaper.vala:92
-#, fuzzy
-#| msgid "Dark style"
-msgid "Dim with dark style:"
-msgstr "暗色风格"
-
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Wallpaper.vala:93
 msgid "Centered"
 msgstr "居中"
 
-#: src/Views/Wallpaper.vala:104
+#: src/Views/Wallpaper.vala:94
 msgid "Zoom"
 msgstr "缩放"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:95
 msgid "Spanned"
 msgstr "平铺"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:140
 msgid "Import"
 msgstr "导入"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:143
 #, fuzzy
 #| msgid "Import Photo"
 msgid "Import Photos"
 msgstr "导入照片"
 
-#: src/Views/Wallpaper.vala:501
+#: src/Views/Wallpaper.vala:487
 msgid "Wallpaper Deleted"
 msgstr "壁纸已删除"
 
-#: src/Views/Wallpaper.vala:502
+#: src/Views/Wallpaper.vala:488
 msgid "Undo"
 msgstr "撤销"
 

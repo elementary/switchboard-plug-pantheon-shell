@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 19:26+0000\n"
+"POT-Creation-Date: 2024-05-18 21:22+0000\n"
 "PO-Revision-Date: 2024-05-08 23:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -28,11 +28,11 @@ msgid "Wallpaper"
 msgstr "壁紙"
 
 #: src/Plug.vala:66 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
-#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
+#: src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139 src/Plug.vala:140
 msgid "Appearance"
 msgstr "外観"
 
-#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
+#: src/Plug.vala:67 src/Plug.vala:141 src/Plug.vala:142 src/Plug.vala:143
 msgid "Text"
 msgstr "テキスト"
 
@@ -41,7 +41,7 @@ msgstr "テキスト"
 msgid "Dock & Panel"
 msgstr "ドックとパネル"
 
-#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:69 src/Plug.vala:144 src/Plug.vala:145 src/Plug.vala:146
 msgid "Multitasking"
 msgstr "マルチタスク"
 
@@ -69,35 +69,41 @@ msgstr "パネルを透過"
 msgid "Dark style"
 msgstr "ダークスタイル"
 
-#: src/Plug.vala:136 src/Views/Appearance.vala:307
+#: src/Plug.vala:136 src/Views/Appearance.vala:106
+#, fuzzy
+#| msgid "Dim with dark style:"
+msgid "Dim Wallpaper With Dark Style"
+msgstr "ダークスタイル時に壁紙を暗くする:"
+
+#: src/Plug.vala:137 src/Views/Appearance.vala:317
 msgid "Accent Color"
 msgstr "アクセントカラー"
 
-#: src/Plug.vala:137 src/Views/Appearance.vala:383
+#: src/Plug.vala:138 src/Views/Appearance.vala:393
 msgid "Always Show Scrollbars"
 msgstr "スクロールバーを常に表示"
 
-#: src/Plug.vala:138 src/Views/Appearance.vala:368
+#: src/Plug.vala:139 src/Views/Appearance.vala:378
 msgid "Reduce Motion"
 msgstr "視覚効果を減らす"
 
-#: src/Plug.vala:139
+#: src/Plug.vala:140
 msgid "Window animations"
 msgstr "ウィンドウアニメーション"
 
-#: src/Plug.vala:141 src/Views/Text.vala:34
+#: src/Plug.vala:142 src/Views/Text.vala:34
 msgid "Size"
 msgstr "サイズ"
 
-#: src/Plug.vala:142 src/Views/Text.vala:58
+#: src/Plug.vala:143 src/Views/Text.vala:58
 msgid "Dyslexia-friendly"
 msgstr "ディスレクシア対応"
 
-#: src/Plug.vala:144
+#: src/Plug.vala:145
 msgid "Hot Corners"
 msgstr "ホットコーナー"
 
-#: src/Plug.vala:145 src/Views/Multitasking.vala:37
+#: src/Plug.vala:146 src/Views/Multitasking.vala:37
 msgid "Move windows to a new workspace"
 msgstr "以下の場合にウィンドウを新しいワークスペースに移動"
 
@@ -139,35 +145,35 @@ msgstr ""
 "システムコンポーネントで使用される視覚スタイルを選択します。一部のアプリもこ"
 "の設定に従うことがあります。"
 
-#: src/Views/Appearance.vala:86 src/Views/Dock.vala:28
+#: src/Views/Appearance.vala:83 src/Views/Dock.vala:28
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/Views/Appearance.vala:101
+#: src/Views/Appearance.vala:95
 msgid "Dark"
 msgstr "ダーク"
 
-#: src/Views/Appearance.vala:108
+#: src/Views/Appearance.vala:117
 msgid "Schedule"
 msgstr "スケジュール"
 
-#: src/Views/Appearance.vala:110
+#: src/Views/Appearance.vala:119
 msgid "Disabled"
 msgstr "無効"
 
-#: src/Views/Appearance.vala:115
+#: src/Views/Appearance.vala:124
 msgid "Sunset to Sunrise"
 msgstr "日没から日の出まで"
 
-#: src/Views/Appearance.vala:120
+#: src/Views/Appearance.vala:129
 msgid "From:"
 msgstr "開始:"
 
-#: src/Views/Appearance.vala:127
+#: src/Views/Appearance.vala:136
 msgid "To:"
 msgstr "終了:"
 
-#: src/Views/Appearance.vala:309
+#: src/Views/Appearance.vala:319
 msgid ""
 "Used across the system by default. Apps can always use their own accent "
 "color."
@@ -175,58 +181,58 @@ msgstr ""
 "デフォルトでは、システム全体に適用されます。各アプリは、独自のアクセントカ"
 "ラーを使用できます。"
 
-#: src/Views/Appearance.vala:313
+#: src/Views/Appearance.vala:323
 msgid "Blueberry"
 msgstr "ブルーベリー"
 
-#: src/Views/Appearance.vala:316
+#: src/Views/Appearance.vala:326
 msgid "Mint"
 msgstr "ミント"
 
-#: src/Views/Appearance.vala:319
+#: src/Views/Appearance.vala:329
 msgid "Lime"
 msgstr "ライム"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:332
 msgid "Banana"
 msgstr "バナナ"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:335
 msgid "Orange"
 msgstr "オレンジ"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:338
 msgid "Strawberry"
 msgstr "ストロベリー"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:341
 msgid "Bubblegum"
 msgstr "ピンク"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:344
 msgid "Grape"
 msgstr "グレープ"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:347
 msgid "Cocoa"
 msgstr "ココア"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:350
 msgid "Slate"
 msgstr "スレート"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:353
 msgid "Automatic based on wallpaper"
 msgstr "壁紙に基づいて自動的に設定"
 
-#: src/Views/Appearance.vala:370
+#: src/Views/Appearance.vala:380
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "ウィンドウマネージャーなどのインターフェース要素におけるアニメーションを無効"
 "化します。"
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:396
 msgid "Scrollbars will take up space, even when not in use."
 msgstr "スクロールバーが使用中でない場合も、表示領域を使用します。"
 
@@ -338,39 +344,35 @@ msgstr ""
 "下部が強調され、字間が確保された書体を使用します。これにより、読みやすさと読"
 "む速度の改善に役立つ可能性があります。"
 
-#: src/Views/Wallpaper.vala:85
+#: src/Views/Wallpaper.vala:82
 msgid "Import Photo…"
 msgstr "写真をインポート…"
 
-#: src/Views/Wallpaper.vala:92
-msgid "Dim with dark style:"
-msgstr "ダークスタイル時に壁紙を暗くする:"
-
-#: src/Views/Wallpaper.vala:103
+#: src/Views/Wallpaper.vala:93
 msgid "Centered"
 msgstr "中央に表示"
 
-#: src/Views/Wallpaper.vala:104
+#: src/Views/Wallpaper.vala:94
 msgid "Zoom"
 msgstr "画面に合わせる"
 
-#: src/Views/Wallpaper.vala:105
+#: src/Views/Wallpaper.vala:95
 msgid "Spanned"
 msgstr "並べる"
 
-#: src/Views/Wallpaper.vala:152
+#: src/Views/Wallpaper.vala:140
 msgid "Import"
 msgstr "インポート"
 
-#: src/Views/Wallpaper.vala:155
+#: src/Views/Wallpaper.vala:143
 msgid "Import Photos"
 msgstr "写真をインポート"
 
-#: src/Views/Wallpaper.vala:501
+#: src/Views/Wallpaper.vala:487
 msgid "Wallpaper Deleted"
 msgstr "壁紙を削除しました"
 
-#: src/Views/Wallpaper.vala:502
+#: src/Views/Wallpaper.vala:488
 msgid "Undo"
 msgstr "元に戻す"
 
