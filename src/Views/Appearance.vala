@@ -88,6 +88,20 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         prefer_default_grid.attach (new Gtk.Label (_("Default")), 0, 1);
         prefer_default_grid.set_parent (prefer_default_radio);
 
+        var default_photo_button = new Gtk.Button.from_icon_name ("insert-image-symbolic") {
+            tooltip_text = _("Select Photo")
+        };
+
+        var wallpaper_color_button = new Gtk.ColorDialogButton (null) {
+            tooltip_text = _("Solid color")
+        };
+
+        var default_wallpaper_options_box = new Gtk.Box (HORIZONTAL, 3) {
+            halign = CENTER
+        };
+        default_wallpaper_options_box.append (default_photo_button);
+        default_wallpaper_options_box.append (wallpaper_color_button);
+
         var dark_preview = new DesktopPreview ("dark");
 
         var prefer_dark_radio = new Gtk.CheckButton () {
@@ -100,24 +114,34 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         prefer_dark_grid.attach (new Gtk.Label (_("Dark")), 0, 1);
         prefer_dark_grid.set_parent (prefer_dark_radio);
 
-        var prefer_style_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
-        prefer_style_box.append (prefer_default_radio);
-        prefer_style_box.append (prefer_dark_radio);
-
-        var dim_switch = new Gtk.Switch () {
-            valign = CENTER
+        var photo_button = new Gtk.Button.from_icon_name ("insert-image-symbolic") {
+            tooltip_text = _("Select Photo")
         };
 
-        var dim_label = new Granite.HeaderLabel (_("Dim Wallpaper With Dark Style")) {
-            hexpand = true,
-            mnemonic_widget = dim_switch
+        var pair_button = new Gtk.Button.from_icon_name ("edit-clear-all-symbolic") {
+            tooltip_text = _("Same as default style")
         };
 
-        var dim_box = new Gtk.Box (HORIZONTAL, 12) {
-            margin_top = 18
+        var dim_toggle = new Gtk.ToggleButton () {
+            icon_name = "display-brightness-symbolic",
+            tooltip_text = _("Dim Wallpaper")
         };
-        dim_box.append (dim_label);
-        dim_box.append (dim_switch);
+
+        var dark_wallpaper_options_box = new Gtk.Box (HORIZONTAL, 3) {
+            halign = CENTER
+        };
+        dark_wallpaper_options_box.append (photo_button);
+        dark_wallpaper_options_box.append (pair_button);
+        dark_wallpaper_options_box.append (dim_toggle);
+
+        var prefer_style_grid = new Gtk.Grid () {
+            row_spacing = 6,
+            column_spacing = 12
+        };
+        prefer_style_grid.attach (prefer_default_radio, 0, 0);
+        prefer_style_grid.attach (default_wallpaper_options_box, 0, 1);
+        prefer_style_grid.attach (prefer_dark_radio, 1, 0);
+        prefer_style_grid.attach (dark_wallpaper_options_box, 1, 1);
 
         var schedule_label = new Granite.HeaderLabel (_("Schedule"));
 
@@ -188,8 +212,7 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
             grid.attach (dark_label, 0, 0, 2);
-            grid.attach (prefer_style_box, 0, 2, 2);
-            grid.attach (dim_box, 0, 3, 2);
+            grid.attach (prefer_style_grid, 0, 2, 2);
             grid.attach (schedule_label, 0, 4, 2);
             grid.attach (schedule_disabled_radio, 0, 5, 2);
             grid.attach (schedule_sunset_radio, 0, 6, 2);
@@ -416,7 +439,13 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         interface_settings.bind ("overlay-scrolling", scrollbar_switch, "active", INVERT_BOOLEAN);
 
         var background_settings = new GLib.Settings ("io.elementary.desktop.background");
-        background_settings.bind ("dim-wallpaper-in-dark-style", dim_switch, "active", DEFAULT);
+        background_settings.bind ("dim-wallpaper-in-dark-style", dim_toggle, "active", DEFAULT);
+
+        var gnome_background_settings = new Settings ("org.gnome.desktop.background");
+
+        pair_button.clicked.connect (() => {
+            gnome_background_settings.set_string ("picture-uri-dark", "");
+        });
     }
 
     private class PrefersAccentColorButton : Gtk.CheckButton {
