@@ -462,7 +462,8 @@ public class PantheonShell.Appearance : Gtk.Box {
     }
 
     private class DesktopPreview : Gtk.Widget {
-        private static Settings settings;
+        private static Settings pantheon_settings;
+        private static Settings gnome_settings;
         private Gtk.Picture picture;
 
         class construct {
@@ -472,7 +473,8 @@ public class PantheonShell.Appearance : Gtk.Box {
         static construct {
             set_layout_manager_type (typeof (Gtk.BinLayout));
 
-            settings = new Settings ("org.gnome.desktop.background");
+            pantheon_settings = new Settings ("io.elementary.desktop.background");
+            gnome_settings = new Settings ("org.gnome.desktop.background");
         }
 
         public DesktopPreview (string style_class) {
@@ -521,14 +523,26 @@ public class PantheonShell.Appearance : Gtk.Box {
             add_css_class (style_class);
 
             update_picture ();
-            settings.changed.connect (update_picture);
+            gnome_settings.changed.connect (update_picture);
 
+            if (has_css_class ("dark")) {
+                update_dim ();
+                pantheon_settings.changed.connect (update_dim);
+            }
+        }
+
+        private void update_dim () {
+            if (pantheon_settings.get_boolean ("dim-wallpaper-in-dark-style")) {
+                add_css_class ("dim");
+            } else {
+                remove_css_class ("dim");
+            }
         }
 
         private void update_picture () {
-            if (settings.get_string ("picture-options") == "none") {
+            if (gnome_settings.get_string ("picture-options") == "none") {
                 Gdk.RGBA rgba = {};
-                rgba.parse (settings.get_string ("primary-color"));
+                rgba.parse (gnome_settings.get_string ("primary-color"));
 
                 var pixbuf = new Gdk.Pixbuf (RGB, false, 8, 500, 500);
                 pixbuf.fill (PantheonShell.SolidColorContainer.rgba_to_pixel (rgba));
@@ -539,7 +553,7 @@ public class PantheonShell.Appearance : Gtk.Box {
 
             if (has_css_class ("dark")) {
                 var dark_file = File.new_for_uri (
-                    settings.get_string ("picture-uri-dark")
+                    gnome_settings.get_string ("picture-uri-dark")
                 );
 
                 if (dark_file.query_exists ()) {
@@ -549,7 +563,7 @@ public class PantheonShell.Appearance : Gtk.Box {
             }
 
             picture.file = File.new_for_uri (
-                settings.get_string ("picture-uri")
+                gnome_settings.get_string ("picture-uri")
             );
         }
 
