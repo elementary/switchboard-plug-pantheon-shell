@@ -73,11 +73,7 @@ public class PantheonShell.Text : Switchboard.SettingsPage {
         dyslexia_box.append (dyslexia_font_label);
         dyslexia_box.append (dyslexia_font_switch);
 
-        var box = new Gtk.Box (VERTICAL, 24) {
-            margin_start = 12,
-            margin_end = 12,
-            margin_bottom = 24
-        };
+        var box = new Gtk.Box (VERTICAL, 24);
         box.append (size_grid);
         box.append (dyslexia_box);
 

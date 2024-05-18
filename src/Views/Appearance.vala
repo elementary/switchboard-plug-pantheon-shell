@@ -174,10 +174,7 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         }
 
         var grid = new Gtk.Grid () {
-            row_spacing = 6,
-            margin_start = 12,
-            margin_end = 12,
-            margin_bottom = 24
+            row_spacing = 6
         };
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {

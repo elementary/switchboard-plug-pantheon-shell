@@ -57,10 +57,7 @@ public class PantheonShell.Multitasking : Switchboard.SettingsPage {
 
         var grid = new Gtk.Grid () {
             column_spacing = 12,
-            row_spacing = 6,
-            margin_start = 12,
-            margin_end = 12,
-            margin_bottom = 12
+            row_spacing = 6
         };
         grid.attach (hotcorner_title, 0, 0, 2);
         grid.attach (topleft, 0, 1, 2);

@@ -104,9 +104,6 @@ public class PantheonShell.Dock : Switchboard.SettingsPage {
         }
 
         var box = new Gtk.Box (VERTICAL, 18) {
-            margin_start = 12,
-            margin_end = 12,
-            margin_bottom = 12
         };
         box.append (icon_box);
         box.append (translucency_box);
