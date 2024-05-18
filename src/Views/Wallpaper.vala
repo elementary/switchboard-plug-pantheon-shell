@@ -51,8 +51,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
     }
 
     construct {
-        var separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
-
         var drop_target = new Gtk.DropTarget (typeof (Gdk.FileList), Gdk.DragAction.COPY);
 
         wallpaper_view = new Gtk.FlowBox () {
