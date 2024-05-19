@@ -67,17 +67,13 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
     public Appearance () {
         Object (
             title: _("Appearance"),
-            description : _("Preferred accents and style for system components. Apps may also follow these preferences, but can always choose their own accents or style."),
+            description : _("Apps may follow these preferences, but can choose their own accents or style."),
             icon: new ThemedIcon ("preferences-desktop-theme"),
             show_end_title_buttons: true
         );
     }
 
     construct {
-        var dark_label = new Granite.HeaderLabel (_("Style")) {
-            secondary_text = _("Preferred visual style for system components. Apps may also choose to follow this preference.")
-        };
-
         var default_preview = new DesktopPreview ("default");
 
         var prefer_default_radio = new Gtk.CheckButton ();
@@ -187,7 +183,6 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         };
 
         if (((GLib.DBusProxy) pantheon_act).get_cached_property ("PrefersColorScheme") != null) {
-            grid.attach (dark_label, 0, 0, 2);
             grid.attach (prefer_style_box, 0, 2, 2);
             grid.attach (dim_box, 0, 3, 2);
             grid.attach (schedule_label, 0, 4, 2);
@@ -317,8 +312,7 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
 
         if (current_stylesheet.has_prefix (STYLESHEET_PREFIX)) {
             var accent_label = new Granite.HeaderLabel (_("Accent Color")) {
-                margin_top = 18,
-                secondary_text = _("Used across the system by default. Apps can always use their own accent color.")
+                margin_top = 18
             };
 
             var blueberry_button = new PrefersAccentColorButton (pantheon_act, AccentColor.BLUE);
