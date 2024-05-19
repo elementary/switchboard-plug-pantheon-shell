@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 21:34+0000\n"
+"POT-Creation-Date: 2024-05-19 00:53+0000\n"
 "PO-Revision-Date: 2024-05-08 23:13+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -73,21 +73,21 @@ msgstr "Прозрачность панели"
 msgid "Dark style"
 msgstr "Тёмный стиль"
 
-#: src/Plug.vala:128 src/Views/Appearance.vala:111
+#: src/Plug.vala:128 src/Views/Appearance.vala:107
 #, fuzzy
 #| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Затемнять в тёмном стиле:"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:319
+#: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
 msgstr "Цветовой акцент"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:395
+#: src/Plug.vala:130 src/Views/Appearance.vala:389
 msgid "Always Show Scrollbars"
 msgstr "Всегда показывать полосы прокрутки"
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:380
+#: src/Plug.vala:131 src/Views/Appearance.vala:374
 msgid "Reduce Motion"
 msgstr "Уменьшить анимации"
 
@@ -143,111 +143,90 @@ msgstr "Назначить выбранное изображение новым 
 #| "Preferred visual style for system components. Apps may also choose to "
 #| "follow this preference."
 msgid ""
-"Preferred accents and style for system components. Apps may also follow "
-"these preferences, but can always choose their own accents or style."
+"Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
 "Предпочтительный визуальный стиль для компонентов системы. Приложения также "
 "могут следовать этому предпочтению."
 
-#: src/Views/Appearance.vala:77
-msgid "Style"
-msgstr "Стиль"
-
-#: src/Views/Appearance.vala:78
-msgid ""
-"Preferred visual style for system components. Apps may also choose to follow "
-"this preference."
-msgstr ""
-"Предпочтительный визуальный стиль для компонентов системы. Приложения также "
-"могут следовать этому предпочтению."
-
-#: src/Views/Appearance.vala:88 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
 msgstr "По умолчанию"
 
-#: src/Views/Appearance.vala:100
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr "Тёмный"
 
-#: src/Views/Appearance.vala:122
+#: src/Views/Appearance.vala:118
 msgid "Schedule"
 msgstr "Расписание"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:120
 msgid "Disabled"
 msgstr "Отключено"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:125
 msgid "Sunset to Sunrise"
 msgstr "От заката до рассвета"
 
-#: src/Views/Appearance.vala:134
+#: src/Views/Appearance.vala:130
 msgid "From:"
 msgstr "С:"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:137
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:321
-msgid ""
-"Used across the system by default. Apps can always use their own accent "
-"color."
-msgstr ""
-"Используется по всей системе. Приложения могут использовать свой собственный "
-"цветовой акцент."
-
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:319
 msgid "Blueberry"
 msgstr "Черничный"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:322
 msgid "Mint"
 msgstr "Мятный"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:325
 msgid "Lime"
 msgstr "Лаймовый"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:328
 msgid "Banana"
 msgstr "Банановый"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:331
 msgid "Orange"
 msgstr "Апельсиновый"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:334
 msgid "Strawberry"
 msgstr "Клубничный"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:337
 msgid "Bubblegum"
 msgstr "Бубльгумовый"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:340
 msgid "Grape"
 msgstr "Виноградный"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:343
 msgid "Cocoa"
 msgstr "Какао"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:346
 msgid "Slate"
 msgstr "Каменно-серый"
 
-#: src/Views/Appearance.vala:355
+#: src/Views/Appearance.vala:349
 msgid "Automatic based on wallpaper"
 msgstr "Автоматическая на основе обоев"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:376
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Отключить анимации менеджера окон и некоторых других элементов интерфейса."
 
-#: src/Views/Appearance.vala:398
+#: src/Views/Appearance.vala:392
 msgid "Scrollbars will take up space, even when not in use."
 msgstr "Полосы прокрутки будут занимать место, даже когда не используются."
 
@@ -399,6 +378,23 @@ msgstr "Удалить"
 #, c-format
 msgid "Artist: %s"
 msgstr "Автор: %s"
+
+#~ msgid "Style"
+#~ msgstr "Стиль"
+
+#~ msgid ""
+#~ "Preferred visual style for system components. Apps may also choose to "
+#~ "follow this preference."
+#~ msgstr ""
+#~ "Предпочтительный визуальный стиль для компонентов системы. Приложения "
+#~ "также могут следовать этому предпочтению."
+
+#~ msgid ""
+#~ "Used across the system by default. Apps can always use their own accent "
+#~ "color."
+#~ msgstr ""
+#~ "Используется по всей системе. Приложения могут использовать свой "
+#~ "собственный цветовой акцент."
 
 #~ msgid "Cancel"
 #~ msgstr "Отменить"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 21:34+0000\n"
+"POT-Creation-Date: 2024-05-19 00:53+0000\n"
 "PO-Revision-Date: 2023-08-10 12:08+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -79,21 +79,21 @@ msgstr "Paneel doorzichtigheid"
 msgid "Dark style"
 msgstr "Donker thema"
 
-#: src/Plug.vala:128 src/Views/Appearance.vala:111
+#: src/Plug.vala:128 src/Views/Appearance.vala:107
 #, fuzzy
 #| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Verdim met donker thema:"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:319
+#: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
 msgstr "Accent kleur"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:395
+#: src/Plug.vala:130 src/Views/Appearance.vala:389
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:380
+#: src/Plug.vala:131 src/Views/Appearance.vala:374
 msgid "Reduce Motion"
 msgstr "Beperk bewegende elementen"
 
@@ -149,111 +149,90 @@ msgstr "Geselecteerde afbeelding instellen als bureaubladachtergrond"
 #| "Preferred visual style for system components. Apps may also choose to "
 #| "follow this preference."
 msgid ""
-"Preferred accents and style for system components. Apps may also follow "
-"these preferences, but can always choose their own accents or style."
+"Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
 "Voorkeur voor visuele stijl van systeemcomponenten. Apps kunnen er ook voor "
 "kiezen deze voorkeur te volgen."
 
-#: src/Views/Appearance.vala:77
-msgid "Style"
-msgstr "Stijl"
-
-#: src/Views/Appearance.vala:78
-msgid ""
-"Preferred visual style for system components. Apps may also choose to follow "
-"this preference."
-msgstr ""
-"Voorkeur voor visuele stijl van systeemcomponenten. Apps kunnen er ook voor "
-"kiezen deze voorkeur te volgen."
-
-#: src/Views/Appearance.vala:88 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
 msgstr "Standaard"
 
-#: src/Views/Appearance.vala:100
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr "Donker"
 
-#: src/Views/Appearance.vala:122
+#: src/Views/Appearance.vala:118
 msgid "Schedule"
 msgstr "Planning"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:120
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:125
 msgid "Sunset to Sunrise"
 msgstr "Zonsondergang tot zonsopgang"
 
-#: src/Views/Appearance.vala:134
+#: src/Views/Appearance.vala:130
 msgid "From:"
 msgstr "Van:"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:137
 msgid "To:"
 msgstr "Tot:"
 
-#: src/Views/Appearance.vala:321
-msgid ""
-"Used across the system by default. Apps can always use their own accent "
-"color."
-msgstr ""
-"Wordt als standaard gebruikt door het hele systeem. Apps kunnen altijd hun "
-"eigen kleuraccent gebruiken."
-
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:319
 msgid "Blueberry"
 msgstr "Bosbes"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:322
 msgid "Mint"
 msgstr "Munt"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:325
 msgid "Lime"
 msgstr "Limoen"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:328
 msgid "Banana"
 msgstr "Banaan"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:331
 msgid "Orange"
 msgstr "Sinaasappel"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:334
 msgid "Strawberry"
 msgstr "Aardbei"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:337
 msgid "Bubblegum"
 msgstr "Kauwgom"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:340
 msgid "Grape"
 msgstr "Druif"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:343
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:346
 msgid "Slate"
 msgstr "Leisteen"
 
-#: src/Views/Appearance.vala:355
+#: src/Views/Appearance.vala:349
 msgid "Automatic based on wallpaper"
 msgstr "Automatisch gebasseerd op bureaubladachtergrond"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:376
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Schalen animaties in de vensterbeheerder en bepaalde interface elementen uit."
 
-#: src/Views/Appearance.vala:398
+#: src/Views/Appearance.vala:392
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
@@ -409,6 +388,23 @@ msgstr "Verwijder"
 #, c-format
 msgid "Artist: %s"
 msgstr "Artiest: %s"
+
+#~ msgid "Style"
+#~ msgstr "Stijl"
+
+#~ msgid ""
+#~ "Preferred visual style for system components. Apps may also choose to "
+#~ "follow this preference."
+#~ msgstr ""
+#~ "Voorkeur voor visuele stijl van systeemcomponenten. Apps kunnen er ook "
+#~ "voor kiezen deze voorkeur te volgen."
+
+#~ msgid ""
+#~ "Used across the system by default. Apps can always use their own accent "
+#~ "color."
+#~ msgstr ""
+#~ "Wordt als standaard gebruikt door het hele systeem. Apps kunnen altijd "
+#~ "hun eigen kleuraccent gebruiken."
 
 #~ msgid "Cancel"
 #~ msgstr "Annuleren"

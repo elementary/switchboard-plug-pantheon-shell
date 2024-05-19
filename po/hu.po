@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 21:34+0000\n"
+"POT-Creation-Date: 2024-05-19 00:53+0000\n"
 "PO-Revision-Date: 2024-05-08 23:13+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -77,21 +77,21 @@ msgstr "Átlátszó állapotsor"
 msgid "Dark style"
 msgstr "Sötét téma"
 
-#: src/Plug.vala:128 src/Views/Appearance.vala:111
+#: src/Plug.vala:128 src/Views/Appearance.vala:107
 #, fuzzy
 #| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Sötétítés sötét témánál:"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:319
+#: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
 msgstr "Kiemelőszín"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:395
+#: src/Plug.vala:130 src/Views/Appearance.vala:389
 msgid "Always Show Scrollbars"
 msgstr "Görgetősávok megjelenítése mindig"
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:380
+#: src/Plug.vala:131 src/Views/Appearance.vala:374
 msgid "Reduce Motion"
 msgstr "Kevesebb mozgás"
 
@@ -147,110 +147,89 @@ msgstr "Kiválasztott kép beállítása új asztali háttérképként"
 #| "Preferred visual style for system components. Apps may also choose to "
 #| "follow this preference."
 msgid ""
-"Preferred accents and style for system components. Apps may also follow "
-"these preferences, but can always choose their own accents or style."
+"Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
 "A rendszerösszetevők előnyben részesített megjelenítési témája. Az "
 "alkalmazások szintén követhetik ezt a beállítást."
 
-#: src/Views/Appearance.vala:77
-msgid "Style"
-msgstr "Téma"
-
-#: src/Views/Appearance.vala:78
-msgid ""
-"Preferred visual style for system components. Apps may also choose to follow "
-"this preference."
-msgstr ""
-"A rendszerösszetevők előnyben részesített megjelenítési témája. Az "
-"alkalmazások szintén követhetik ezt a beállítást."
-
-#: src/Views/Appearance.vala:88 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: src/Views/Appearance.vala:100
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr "Sötét"
 
-#: src/Views/Appearance.vala:122
+#: src/Views/Appearance.vala:118
 msgid "Schedule"
 msgstr "Időzítés"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:120
 msgid "Disabled"
 msgstr "Kikapcsolva"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:125
 msgid "Sunset to Sunrise"
 msgstr "Napnyugtától napkeltéig"
 
-#: src/Views/Appearance.vala:134
+#: src/Views/Appearance.vala:130
 msgid "From:"
 msgstr "Ettől:"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:137
 msgid "To:"
 msgstr "Eddig:"
 
-#: src/Views/Appearance.vala:321
-msgid ""
-"Used across the system by default. Apps can always use their own accent "
-"color."
-msgstr ""
-"A rendszerben alapértelmezetten használt. Az alkalmazások mindig "
-"használhatnak saját színt."
-
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:319
 msgid "Blueberry"
 msgstr "Áfonya"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:322
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:325
 msgid "Lime"
 msgstr "Lime"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:328
 msgid "Banana"
 msgstr "Banán"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:331
 msgid "Orange"
 msgstr "Narancs"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:334
 msgid "Strawberry"
 msgstr "Eper"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:337
 msgid "Bubblegum"
 msgstr "Rágógumi"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:340
 msgid "Grape"
 msgstr "Szőlő"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:343
 msgid "Cocoa"
 msgstr "Kakaó"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:346
 msgid "Slate"
 msgstr "Pala"
 
-#: src/Views/Appearance.vala:355
+#: src/Views/Appearance.vala:349
 msgid "Automatic based on wallpaper"
 msgstr "Automatikus a háttérkép alapján"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:376
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr "Az ablakkezelő és néhány más felületi elem animációinak letiltása."
 
-#: src/Views/Appearance.vala:398
+#: src/Views/Appearance.vala:392
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 "A görgetősávok akkor is helyet fognak foglalni, ha nincsenek használatban."
@@ -403,6 +382,23 @@ msgstr "Eltávolítás"
 #, c-format
 msgid "Artist: %s"
 msgstr "Művész: %s"
+
+#~ msgid "Style"
+#~ msgstr "Téma"
+
+#~ msgid ""
+#~ "Preferred visual style for system components. Apps may also choose to "
+#~ "follow this preference."
+#~ msgstr ""
+#~ "A rendszerösszetevők előnyben részesített megjelenítési témája. Az "
+#~ "alkalmazások szintén követhetik ezt a beállítást."
+
+#~ msgid ""
+#~ "Used across the system by default. Apps can always use their own accent "
+#~ "color."
+#~ msgstr ""
+#~ "A rendszerben alapértelmezetten használt. Az alkalmazások mindig "
+#~ "használhatnak saját színt."
 
 #~ msgid "Cancel"
 #~ msgstr "Mégse"

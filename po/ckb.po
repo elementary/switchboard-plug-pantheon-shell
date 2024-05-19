@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 21:34+0000\n"
+"POT-Creation-Date: 2024-05-19 00:53+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -77,21 +77,21 @@ msgstr "هەبوونی ڕەنگ لە باگراوندی پانێڵی سەرەو�
 msgid "Dark style"
 msgstr "ستایلی تارک"
 
-#: src/Plug.vala:128 src/Views/Appearance.vala:111
+#: src/Plug.vala:128 src/Views/Appearance.vala:107
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "ستایلی تارک"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:319
+#: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
 msgstr "ڕەنگی ئەکسێنت"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:395
+#: src/Plug.vala:130 src/Views/Appearance.vala:389
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:380
+#: src/Plug.vala:131 src/Views/Appearance.vala:374
 msgid "Reduce Motion"
 msgstr ""
 
@@ -147,110 +147,89 @@ msgstr "وێنەی دیاریکراو بکە بە وێنەی پاشبنەما"
 #| "Preferred visual style for system components. Apps may also choose to "
 #| "follow this preference."
 msgid ""
-"Preferred accents and style for system components. Apps may also follow "
-"these preferences, but can always choose their own accents or style."
+"Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
 "شێوازی بینراوی پەسەندکراو بۆ پێکهاتەکانی سیستەم. تکایە بزانە کە لەوانەیە "
 "بەرنامەکانیش بچنە دۆخی تاریکییەوە ئەگەر هەیان بێت."
 
-#: src/Views/Appearance.vala:77
-msgid "Style"
-msgstr "ستایل"
-
-#: src/Views/Appearance.vala:78
-msgid ""
-"Preferred visual style for system components. Apps may also choose to follow "
-"this preference."
-msgstr ""
-"شێوازی بینراوی پەسەندکراو بۆ پێکهاتەکانی سیستەم. تکایە بزانە کە لەوانەیە "
-"بەرنامەکانیش بچنە دۆخی تاریکییەوە ئەگەر هەیان بێت."
-
-#: src/Views/Appearance.vala:88 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
 msgstr "بنەڕەت"
 
-#: src/Views/Appearance.vala:100
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr "تاریک"
 
-#: src/Views/Appearance.vala:122
+#: src/Views/Appearance.vala:118
 msgid "Schedule"
 msgstr "دیاریکردنی کات"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:120
 msgid "Disabled"
 msgstr "وەستێنراو"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:125
 msgid "Sunset to Sunrise"
 msgstr "خۆرهەڵاتن بۆ خۆراوابوون"
 
-#: src/Views/Appearance.vala:134
+#: src/Views/Appearance.vala:130
 msgid "From:"
 msgstr "لە:"
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:137
 msgid "To:"
 msgstr "بۆ:"
 
-#: src/Views/Appearance.vala:321
-msgid ""
-"Used across the system by default. Apps can always use their own accent "
-"color."
-msgstr ""
-"ئەم ڕەنگەی کە دیاریدەکەیت لە هەموو سیستەمەکەدا بەکاردێت، بەڵام بەرنامەکان "
-"دەتوانن ڕەنگی خۆیان بەکاربهێنن."
-
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:319
 msgid "Blueberry"
 msgstr "بلوبێری"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:322
 msgid "Mint"
 msgstr "نەعنا"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:325
 msgid "Lime"
 msgstr "لیمۆ"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:328
 msgid "Banana"
 msgstr "مۆز"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:331
 msgid "Orange"
 msgstr "پڕتەقاڵ"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:334
 msgid "Strawberry"
 msgstr "شیلیک"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:337
 msgid "Bubblegum"
 msgstr "بەبڵ-گەم"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:340
 msgid "Grape"
 msgstr "ترێ"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:343
 msgid "Cocoa"
 msgstr "کاکاو"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:346
 msgid "Slate"
 msgstr "تەختە"
 
-#: src/Views/Appearance.vala:355
+#: src/Views/Appearance.vala:349
 msgid "Automatic based on wallpaper"
 msgstr "خۆکرانە بەپێی ڕەنگی پاشبنەما"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:376
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Appearance.vala:398
+#: src/Views/Appearance.vala:392
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
@@ -414,6 +393,23 @@ msgstr "سڕینەوە"
 #, c-format
 msgid "Artist: %s"
 msgstr "هونەرمەند: %s"
+
+#~ msgid "Style"
+#~ msgstr "ستایل"
+
+#~ msgid ""
+#~ "Preferred visual style for system components. Apps may also choose to "
+#~ "follow this preference."
+#~ msgstr ""
+#~ "شێوازی بینراوی پەسەندکراو بۆ پێکهاتەکانی سیستەم. تکایە بزانە کە لەوانەیە "
+#~ "بەرنامەکانیش بچنە دۆخی تاریکییەوە ئەگەر هەیان بێت."
+
+#~ msgid ""
+#~ "Used across the system by default. Apps can always use their own accent "
+#~ "color."
+#~ msgstr ""
+#~ "ئەم ڕەنگەی کە دیاریدەکەیت لە هەموو سیستەمەکەدا بەکاردێت، بەڵام بەرنامەکان "
+#~ "دەتوانن ڕەنگی خۆیان بەکاربهێنن."
 
 #~ msgid "Cancel"
 #~ msgstr "هەڵوەشاندنەوە"

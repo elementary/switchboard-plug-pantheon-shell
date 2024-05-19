@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-18 21:34+0000\n"
+"POT-Creation-Date: 2024-05-19 00:53+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -77,21 +77,21 @@ msgstr "透明顶栏"
 msgid "Dark style"
 msgstr "暗色风格"
 
-#: src/Plug.vala:128 src/Views/Appearance.vala:111
+#: src/Plug.vala:128 src/Views/Appearance.vala:107
 #, fuzzy
 #| msgid "Dark style"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "暗色风格"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:319
+#: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
 msgstr "强调色"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:395
+#: src/Plug.vala:130 src/Views/Appearance.vala:389
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:380
+#: src/Plug.vala:131 src/Views/Appearance.vala:374
 msgid "Reduce Motion"
 msgstr ""
 
@@ -147,105 +147,87 @@ msgstr "将所选图片设置为新的桌面背景"
 #| "Preferred visual style for system components. Apps may also choose to "
 #| "follow this preference."
 msgid ""
-"Preferred accents and style for system components. Apps may also follow "
-"these preferences, but can always choose their own accents or style."
+"Apps may follow these preferences, but can choose their own accents or style."
 msgstr "系统组件的视觉风格偏好。应用程序可能也会遵循这个设置。"
 
-#: src/Views/Appearance.vala:77
-msgid "Style"
-msgstr "风格"
-
-#: src/Views/Appearance.vala:78
-msgid ""
-"Preferred visual style for system components. Apps may also choose to follow "
-"this preference."
-msgstr "系统组件的视觉风格偏好。应用程序可能也会遵循这个设置。"
-
-#: src/Views/Appearance.vala:88 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
 msgstr "默认"
 
-#: src/Views/Appearance.vala:100
+#: src/Views/Appearance.vala:96
 msgid "Dark"
 msgstr "深色"
 
-#: src/Views/Appearance.vala:122
+#: src/Views/Appearance.vala:118
 msgid "Schedule"
 msgstr "计划"
 
-#: src/Views/Appearance.vala:124
+#: src/Views/Appearance.vala:120
 msgid "Disabled"
 msgstr "已禁用"
 
-#: src/Views/Appearance.vala:129
+#: src/Views/Appearance.vala:125
 msgid "Sunset to Sunrise"
 msgstr "日落至日出"
 
-#: src/Views/Appearance.vala:134
+#: src/Views/Appearance.vala:130
 msgid "From:"
 msgstr "开始时间："
 
-#: src/Views/Appearance.vala:141
+#: src/Views/Appearance.vala:137
 msgid "To:"
 msgstr "结束时间："
 
-#: src/Views/Appearance.vala:321
-msgid ""
-"Used across the system by default. Apps can always use their own accent "
-"color."
-msgstr ""
-"默认情况下将用于系统全局，自带强调色的应用程序除外。它们将使用自己的强调色。"
-
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:319
 msgid "Blueberry"
 msgstr "蓝莓色"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:322
 msgid "Mint"
 msgstr "薄荷绿"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:325
 msgid "Lime"
 msgstr "青柠色"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:328
 msgid "Banana"
 msgstr "香蕉黄"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:331
 msgid "Orange"
 msgstr "橘子橙"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:334
 msgid "Strawberry"
 msgstr "草莓红"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:337
 msgid "Bubblegum"
 msgstr "泡泡糖"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:340
 msgid "Grape"
 msgstr "葡萄紫"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:343
 msgid "Cocoa"
 msgstr "可可色"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:346
 msgid "Slate"
 msgstr "石头灰"
 
-#: src/Views/Appearance.vala:355
+#: src/Views/Appearance.vala:349
 msgid "Automatic based on wallpaper"
 msgstr "基于壁纸自动"
 
-#: src/Views/Appearance.vala:382
+#: src/Views/Appearance.vala:376
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Appearance.vala:398
+#: src/Views/Appearance.vala:392
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
@@ -407,6 +389,21 @@ msgstr "删除"
 #, c-format
 msgid "Artist: %s"
 msgstr "艺术家：%s"
+
+#~ msgid "Style"
+#~ msgstr "风格"
+
+#~ msgid ""
+#~ "Preferred visual style for system components. Apps may also choose to "
+#~ "follow this preference."
+#~ msgstr "系统组件的视觉风格偏好。应用程序可能也会遵循这个设置。"
+
+#~ msgid ""
+#~ "Used across the system by default. Apps can always use their own accent "
+#~ "color."
+#~ msgstr ""
+#~ "默认情况下将用于系统全局，自带强调色的应用程序除外。它们将使用自己的强调"
+#~ "色。"
 
 #~ msgid "Cancel"
 #~ msgstr "取消"
