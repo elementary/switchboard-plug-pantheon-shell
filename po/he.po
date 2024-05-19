@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-19 00:53+0000\n"
-"PO-Revision-Date: 2024-05-08 23:13+0000\n"
+"PO-Revision-Date: 2024-05-20 01:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
@@ -78,10 +78,8 @@ msgid "Dark style"
 msgstr "סגנון חשוך"
 
 #: src/Plug.vala:128 src/Views/Appearance.vala:107
-#, fuzzy
-#| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
-msgstr "עמעום עם סגנון חשוך:"
+msgstr "עמעום תמונת הרקע בסגנון חשוך"
 
 #: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
@@ -142,15 +140,11 @@ msgid "Set selected image to be the new desktop background"
 msgstr "הגדרת התמונה הנבחרת בתור הרקע החדש לשולחן העבודה"
 
 #: src/Views/Appearance.vala:70
-#, fuzzy
-#| msgid ""
-#| "Preferred visual style for system components. Apps may also choose to "
-#| "follow this preference."
 msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
-"סגנון חזותי מועדף לרכיבי המערכת. יכול להיות שיהיו גם יישומים שיתיישרו לפי "
-"ההעדפות האלו."
+"יכול להיות שיישומים ישתמשו בהעדפות האלה, אבל יוכלו לבחור גוונים משניים או "
+"סגנון משלהם."
 
 #: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
