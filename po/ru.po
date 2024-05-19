@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-19 00:53+0000\n"
-"PO-Revision-Date: 2024-05-08 23:13+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"PO-Revision-Date: 2024-05-20 01:13+0000\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
 "Language: ru\n"
@@ -74,10 +74,8 @@ msgid "Dark style"
 msgstr "Тёмный стиль"
 
 #: src/Plug.vala:128 src/Views/Appearance.vala:107
-#, fuzzy
-#| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
-msgstr "Затемнять в тёмном стиле:"
+msgstr "Затемнять обои в тёмном стиле"
 
 #: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
@@ -138,15 +136,11 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Назначить выбранное изображение новым фоном рабочего стола"
 
 #: src/Views/Appearance.vala:70
-#, fuzzy
-#| msgid ""
-#| "Preferred visual style for system components. Apps may also choose to "
-#| "follow this preference."
 msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
-"Предпочтительный визуальный стиль для компонентов системы. Приложения также "
-"могут следовать этому предпочтению."
+"Приложения могут следовать этим настройкам, но могут использовать "
+"собственные акценты или стиль."
 
 #: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
