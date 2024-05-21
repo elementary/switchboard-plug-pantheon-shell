@@ -79,15 +79,9 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
             child = wallpaper_scrolled_window
         };
 
-        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…")) {
-            margin_top = 12,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
-        };
+        var add_wallpaper_button = new Gtk.Button.with_label (_("Import Photo…"));
 
         combo = new Gtk.ComboBoxText () {
-            margin_end = 6,
             valign = CENTER
         };
         combo.append ("centered", _("Centered"));
@@ -101,10 +95,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         }
 
         color_button = new Gtk.ColorButton () {
-            margin_top = 12,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 0,
             rgba = rgba_color
         };
         color_button.color_set.connect (update_color);
@@ -128,6 +118,7 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         box.add_css_class (Granite.STYLE_CLASS_FRAME);
 
         child = box;
+        add_css_class ("wallpaper");
 
         add_wallpaper_button.clicked.connect (show_wallpaper_chooser);
 
