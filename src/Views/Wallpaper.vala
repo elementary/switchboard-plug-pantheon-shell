@@ -99,11 +99,6 @@ public class PantheonShell.Wallpaper : Switchboard.SettingsPage {
         };
         color_button.color_set.connect (update_color);
 
-        var size_group = new Gtk.SizeGroup (HORIZONTAL);
-        size_group.add_widget (add_wallpaper_button);
-        size_group.add_widget (combo);
-        size_group.add_widget (color_button);
-
         load_settings ();
 
         var actionbar = new Gtk.ActionBar ();
