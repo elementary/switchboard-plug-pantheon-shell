@@ -60,6 +60,42 @@ public class PantheonShell.Dock : Switchboard.SettingsPage {
         icon_box.append (icon_header);
         icon_box.append (icon_size_box);
 
+        var hide_header = new Granite.HeaderLabel (_("Hide Dock"));
+
+        var never_radio = new Gtk.CheckButton.with_label (_("Never"));
+
+        var dodge_maximized_radio = new Gtk.CheckButton.with_label (
+            _("When the focused window is maximized")
+        ) {
+            group = never_radio
+        };
+
+        var dodge_focused_radio = new Gtk.CheckButton.with_label (
+            _("When the focused window overlaps the dock")
+        ) {
+            group = never_radio
+        };
+
+        var dodge_all_radio = new Gtk.CheckButton.with_label (
+            _("When any window overlaps the dock")
+        ) {
+            group = never_radio
+        };
+
+        var always_radio = new Gtk.CheckButton.with_label (
+            _("When not being used")
+        ) {
+            group = never_radio
+        };
+
+        var hide_box = new Gtk.Box (VERTICAL, 6);
+        hide_box.append (hide_header);
+        hide_box.append (never_radio);
+        hide_box.append (dodge_maximized_radio);
+        hide_box.append (dodge_focused_radio);
+        hide_box.append (dodge_all_radio);
+        hide_box.append (always_radio);
+
         var translucency_switch = new Gtk.Switch () {
             halign = END,
             hexpand = true,
@@ -106,6 +142,7 @@ public class PantheonShell.Dock : Switchboard.SettingsPage {
         var box = new Gtk.Box (VERTICAL, 18) {
         };
         box.append (icon_box);
+        box.append (hide_box);
         box.append (translucency_box);
 
         // Only add this box if it has more than the header in it
@@ -116,74 +153,161 @@ public class PantheonShell.Dock : Switchboard.SettingsPage {
         child = box;
 
         var dock_schema = SettingsSchemaSource.get_default ().lookup ("io.elementary.dock", true);
-        if (dock_schema != null && dock_schema.has_key ("icon-size")) {
+        if (dock_schema != null) {
             var dock_settings = new Settings ("io.elementary.dock");
-            dock_settings.bind_with_mapping (
-                "icon-size", icon_size_32, "active", DEFAULT,
-                (value, variant, user_data) => {
-                    value.set_boolean (variant.get_int32 () == 32);
-                    return true;
-                },
-                (value, expected_type, user_data) => {
-                    if (value.get_boolean ()) {
-                        return new Variant.int32 (32);
-                    }
 
-                    return null;
-                },
-                null, null
-            );
+            if (dock_schema.has_key ("icon-size")) {
+                dock_settings.bind_with_mapping (
+                    "icon-size", icon_size_32, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        value.set_boolean (variant.get_int32 () == 32);
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        if (value.get_boolean ()) {
+                            return new Variant.int32 (32);
+                        }
 
-            dock_settings.bind_with_mapping (
-                "icon-size", icon_size_48, "active", DEFAULT,
-                (value, variant, user_data) => {
-                    value.set_boolean (variant.get_int32 () == 48);
-                    return true;
-                },
-                (value, expected_type, user_data) => {
-                    if (value.get_boolean ()) {
-                        return new Variant.int32 (48);
-                    }
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
 
-                    return null;
-                },
-                null, null
-            );
+                dock_settings.bind_with_mapping (
+                    "icon-size", icon_size_48, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        value.set_boolean (variant.get_int32 () == 48);
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        if (value.get_boolean ()) {
+                            return new Variant.int32 (48);
+                        }
 
-            dock_settings.bind_with_mapping (
-                "icon-size", icon_size_64, "active", DEFAULT,
-                (value, variant, user_data) => {
-                    value.set_boolean (variant.get_int32 () == 64);
-                    return true;
-                },
-                (value, expected_type, user_data) => {
-                    if (value.get_boolean ()) {
-                        return new Variant.int32 (64);
-                    }
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
 
-                    return null;
-                },
-                null, null
-            );
+                dock_settings.bind_with_mapping (
+                    "icon-size", icon_size_64, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        value.set_boolean (variant.get_int32 () == 64);
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        if (value.get_boolean ()) {
+                            return new Variant.int32 (64);
+                        }
 
-            dock_settings.bind_with_mapping (
-                "icon-size", icon_size_unsupported, "active", DEFAULT,
-                (value, variant, user_data) => {
-                    var icon_size = variant.get_int32 ();
-                    value.set_boolean (
-                        icon_size != 32 &&
-                        icon_size != 48 &&
-                        icon_size != 64
-                    );
-                    return true;
-                },
-                (value, expected_type, user_data) => {
-                    return null;
-                },
-                null, null
-            );
-        } else {
-            box.remove (icon_box);
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
+
+                dock_settings.bind_with_mapping (
+                    "icon-size", icon_size_unsupported, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        var icon_size = variant.get_int32 ();
+                        value.set_boolean (
+                            icon_size != 32 &&
+                            icon_size != 48 &&
+                            icon_size != 64
+                        );
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
+            } else {
+                box.remove (icon_box);
+            }
+
+            if (dock_schema.has_key ("autohide-mode")) {
+                dock_settings.bind_with_mapping (
+                    "autohide-mode", never_radio, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        value.set_boolean (variant.get_string () == "never");
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        if (value.get_boolean ()) {
+                            return new Variant.string ("never");
+                        }
+
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
+
+                dock_settings.bind_with_mapping (
+                    "autohide-mode", dodge_maximized_radio, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        value.set_boolean (variant.get_string () == "maximized-focus-window");
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        if (value.get_boolean ()) {
+                            return new Variant.string ("maximized-focus-window");
+                        }
+
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
+
+                dock_settings.bind_with_mapping (
+                    "autohide-mode", dodge_focused_radio, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        value.set_boolean (variant.get_string () == "overlapping-focus-window");
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        if (value.get_boolean ()) {
+                            return new Variant.string ("overlapping-focus-window");
+                        }
+
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
+
+                dock_settings.bind_with_mapping (
+                    "autohide-mode", dodge_all_radio, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        value.set_boolean (variant.get_string () == "overlapping-window");
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        if (value.get_boolean ()) {
+                            return new Variant.string ("overlapping-window");
+                        }
+
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
+
+                dock_settings.bind_with_mapping (
+                    "autohide-mode", always_radio, "active", DEFAULT,
+                    (value, variant, user_data) => {
+                        value.set_boolean (variant.get_string () == "always");
+                        return true;
+                    },
+                    (value, expected_type, user_data) => {
+                        if (value.get_boolean ()) {
+                            return new Variant.string ("always");
+                        }
+
+                        return new Variant.maybe (null, null);
+                    },
+                    null, null
+                );
+            } else {
+                box.remove (hide_box);
+            }
         }
 
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
