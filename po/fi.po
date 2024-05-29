@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2023-07-03 13:07+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -247,27 +247,51 @@ msgstr "Pieni"
 msgid "Large"
 msgstr "Suuri"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr "Piilota telakka"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "Ei koskaan"
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr "Kun kohdistettu ikkuna on suurennettu"
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr "Kun kohdistettu ikkuna on päällekkäin telakan kanssa"
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr "Kun mikä tahansa ikkuna on päällekkäin telakan kanssa"
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr "Kun ei käytössä"
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr "Paneelin läpinäkyvyys"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Automaattisesti läpinäkyvä tai läpinäkymätön taustakuvaan pohjautuen"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "Näytä paneelissa"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "Esteettömyys"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -441,24 +465,6 @@ msgstr "Artisti: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "Luo diaesitys"
-
-#~ msgid "Hide Dock"
-#~ msgstr "Piilota telakka"
-
-#~ msgid "Never"
-#~ msgstr "Ei koskaan"
-
-#~ msgid "When the focused window is maximized"
-#~ msgstr "Kun kohdistettu ikkuna on suurennettu"
-
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "Kun kohdistettu ikkuna on päällekkäin telakan kanssa"
-
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "Kun mikä tahansa ikkuna on päällekkäin telakan kanssa"
-
-#~ msgid "When not being used"
-#~ msgstr "Kun ei käytössä"
 
 #~ msgid "Dock on Primary Display"
 #~ msgstr "Telakka ensisijaisella näytöllä"

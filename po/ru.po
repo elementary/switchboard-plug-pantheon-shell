@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2024-05-20 01:13+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -236,27 +236,51 @@ msgstr "Маленький"
 msgid "Large"
 msgstr "Большой"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr "Скрывать док"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "Никогда"
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr "Когда активное окно развёрнуто"
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr "Когда активное окно перекрывает док"
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr "Когда любое окно перекрывает док"
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr "Когда не используется"
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr "Прозрачность панели"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Автоматический выбор прозрачности в зависимости от обоев"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "Показать на панели"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "Универсальный доступ"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -431,24 +455,6 @@ msgstr "Автор: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "Создать слайдшоу"
-
-#~ msgid "Hide Dock"
-#~ msgstr "Скрывать док"
-
-#~ msgid "Never"
-#~ msgstr "Никогда"
-
-#~ msgid "When the focused window is maximized"
-#~ msgstr "Когда активное окно развёрнуто"
-
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "Когда активное окно перекрывает док"
-
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "Когда любое окно перекрывает док"
-
-#~ msgid "When not being used"
-#~ msgstr "Когда не используется"
 
 #~ msgid "Dock on Primary Display"
 #~ msgstr "Док на главном экране"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -245,31 +245,65 @@ msgstr "较小"
 msgid "Large"
 msgstr "较大"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "隐藏模式"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "永不"
+
+#: src/Views/Dock.vala:68
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
+msgstr "焦点窗口最大化时"
+
+#: src/Views/Dock.vala:74
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
+msgstr "焦点窗口与程序坞重叠时"
+
+#: src/Views/Dock.vala:80
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
+msgstr "任何窗口与程序坞重叠时"
+
+#: src/Views/Dock.vala:86
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
+msgstr "不使用时"
+
+#: src/Views/Dock.vala:105
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "透明顶栏"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 #, fuzzy
 #| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "基于壁纸自动"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "在面板中显示"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "通用辅助"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr ""
 
@@ -437,34 +471,6 @@ msgstr "艺术家：%s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "创建幻灯片"
-
-#, fuzzy
-#~| msgid "Hide Mode"
-#~ msgid "Hide Dock"
-#~ msgstr "隐藏模式"
-
-#~ msgid "Never"
-#~ msgstr "永不"
-
-#, fuzzy
-#~| msgid "Focused window is maximized"
-#~ msgid "When the focused window is maximized"
-#~ msgstr "焦点窗口最大化时"
-
-#, fuzzy
-#~| msgid "Focused window overlaps the dock"
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "焦点窗口与程序坞重叠时"
-
-#, fuzzy
-#~| msgid "Any window overlaps the dock"
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "任何窗口与程序坞重叠时"
-
-#, fuzzy
-#~| msgid "Not being used"
-#~ msgid "When not being used"
-#~ msgstr "不使用时"
 
 #, fuzzy
 #~| msgid "Primary display:"

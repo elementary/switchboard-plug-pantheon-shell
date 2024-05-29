@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2024-05-27 08:13+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -243,27 +243,51 @@ msgstr "Малий"
 msgid "Large"
 msgstr "Великий"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr "Ховати Док"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "Ніколи"
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr "Коли вікно у фокусі розгорнуто"
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr "Коли вікно у фокусі перекриває док"
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr "Коли будь-яке вікно перекриває док"
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr "Коли не використовується"
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr "Напівпрозорість панелі"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Автоматична прозорість або непрозорість на основі шпалер"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "Показати на панелі"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "Доступність"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -438,24 +462,6 @@ msgstr "Автор: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "Створити слайдшоу"
-
-#~ msgid "Hide Dock"
-#~ msgstr "Ховати Док"
-
-#~ msgid "Never"
-#~ msgstr "Ніколи"
-
-#~ msgid "When the focused window is maximized"
-#~ msgstr "Коли вікно у фокусі розгорнуто"
-
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "Коли вікно у фокусі перекриває док"
-
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "Коли будь-яке вікно перекриває док"
-
-#~ msgid "When not being used"
-#~ msgstr "Коли не використовується"
 
 #~ msgid "Dock on Primary Display"
 #~ msgstr "Док на основному дисплеї"

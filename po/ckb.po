@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -247,31 +247,65 @@ msgstr "بچوک"
 msgid "Large"
 msgstr "گەورە"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "دۆخی شاردنەوە"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "هەرگیز"
+
+#: src/Views/Dock.vala:68
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
+msgstr "پەنجەرەی خاوەن سەرنج بە گەورەیی کراوەتەوە"
+
+#: src/Views/Dock.vala:74
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
+msgstr "پەنجەرەی خاوەن سەرنج دەکەوێتە سەر دۆک"
+
+#: src/Views/Dock.vala:80
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
+msgstr "هەر پەنجەرەیەک بکەوێتە سەر دۆک"
+
+#: src/Views/Dock.vala:86
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
+msgstr "بەکارناهێنرێت"
+
+#: src/Views/Dock.vala:105
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "هەبوونی ڕەنگ لە باگراوندی پانێڵی سەرەوە"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 #, fuzzy
 #| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "خۆکرانە بەپێی ڕەنگی پاشبنەما"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "لە پانێڵدا پشانم بدە"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "دەستگەیشتن"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr ""
 
@@ -446,34 +480,6 @@ msgstr "هونەرمەند: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "دروستکردنی سلایدشۆو"
-
-#, fuzzy
-#~| msgid "Hide Mode"
-#~ msgid "Hide Dock"
-#~ msgstr "دۆخی شاردنەوە"
-
-#~ msgid "Never"
-#~ msgstr "هەرگیز"
-
-#, fuzzy
-#~| msgid "Focused window is maximized"
-#~ msgid "When the focused window is maximized"
-#~ msgstr "پەنجەرەی خاوەن سەرنج بە گەورەیی کراوەتەوە"
-
-#, fuzzy
-#~| msgid "Focused window overlaps the dock"
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "پەنجەرەی خاوەن سەرنج دەکەوێتە سەر دۆک"
-
-#, fuzzy
-#~| msgid "Any window overlaps the dock"
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "هەر پەنجەرەیەک بکەوێتە سەر دۆک"
-
-#, fuzzy
-#~| msgid "Not being used"
-#~ msgid "When not being used"
-#~ msgstr "بەکارناهێنرێت"
 
 #, fuzzy
 #~| msgid "Primary display:"
