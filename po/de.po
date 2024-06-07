@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 21:47+0000\n"
-"PO-Revision-Date: 2024-05-10 13:40+0000\n"
+"PO-Revision-Date: 2024-06-08 11:16+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:06+0000\n"
 
 #: src/Plug.vala:49
@@ -78,10 +78,8 @@ msgid "Dark style"
 msgstr "Dunkler Stil"
 
 #: src/Plug.vala:128 src/Views/Appearance.vala:107
-#, fuzzy
-#| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
-msgstr "Abdunkeln mit dunklem Stil:"
+msgstr "Hintergrundbild bei dunklem Stil ebenfalls abdunkeln"
 
 #: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
@@ -142,15 +140,11 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Ausgewähltes Bild als neues Hintergrundbild festlegen"
 
 #: src/Views/Appearance.vala:70
-#, fuzzy
-#| msgid ""
-#| "Preferred visual style for system components. Apps may also choose to "
-#| "follow this preference."
 msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
-"Bevorzugtes Aussehen der Betriebssystembestandteile. Anwendungen steht es "
-"frei, diese Einstellung ebenfalls zu berücksichtigen."
+"Anwendungen beachten diese Einstellungen möglicherweise, können aber eigene "
+"Akzente oder Stile wählen."
 
 #: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
