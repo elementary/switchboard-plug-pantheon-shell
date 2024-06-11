@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2024-05-20 01:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -239,27 +239,51 @@ msgstr "קטן"
 msgid "Large"
 msgstr "גדול"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr "הסתרת מעגן"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "אף פעם"
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr "כאשר החלון במיקוד מוגדל"
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr "כאשר החלון שבמיקוד חופף מעל המעגן"
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr "כאשר חלון כלשהו חופף מעל המעגן"
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr "כאשר לא בשימוש"
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr "שקיפות לוח"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "אוטומטית שקוף או אטום לפי הרקע"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "הצגה בלוח"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "נגישות"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪‎"
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -431,24 +455,6 @@ msgstr "אמן: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "יצירת מצגת"
-
-#~ msgid "Hide Dock"
-#~ msgstr "הסתרת מעגן"
-
-#~ msgid "Never"
-#~ msgstr "אף פעם"
-
-#~ msgid "When the focused window is maximized"
-#~ msgstr "כאשר החלון במיקוד מוגדל"
-
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "כאשר החלון שבמיקוד חופף מעל המעגן"
-
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "כאשר חלון כלשהו חופף מעל המעגן"
-
-#~ msgid "When not being used"
-#~ msgstr "כאשר לא בשימוש"
 
 #~ msgid "Dock on Primary Display"
 #~ msgstr "מעגן בתצוגה העיקרית"

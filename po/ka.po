@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2023-07-15 08:30+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -234,27 +234,51 @@ msgstr "პატარა"
 msgid "Large"
 msgstr "დიდი"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr "დოკის დამალვა"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "არასოდეს"
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr "როცა ფოკუსის მქონე ფანჯარა ჩაკეცილია"
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr "როცა ფოკუსის მქონე ფანჯარა დოკს ფარავს"
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr "როცა ნებისმიერი ფანჯარა ფარავს დოკს"
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr "როცა არ გამოიყენება"
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr "პანელის გამჭვირვალობა"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "ავტომატური გამჭვირვალე ან გაუმჭვირვალე, ფონის სურათზე დამოკიდებული"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "პანელზე ჩვენება"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "წვდომადობა"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr ""
 
@@ -416,24 +440,6 @@ msgstr "შემსრულებელი: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "სლაიდშოუს შექმნა"
-
-#~ msgid "Hide Dock"
-#~ msgstr "დოკის დამალვა"
-
-#~ msgid "Never"
-#~ msgstr "არასოდეს"
-
-#~ msgid "When the focused window is maximized"
-#~ msgstr "როცა ფოკუსის მქონე ფანჯარა ჩაკეცილია"
-
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "როცა ფოკუსის მქონე ფანჯარა დოკს ფარავს"
-
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "როცა ნებისმიერი ფანჯარა ფარავს დოკს"
-
-#~ msgid "When not being used"
-#~ msgstr "როცა არ გამოიყენება"
 
 #~ msgid "Dock on Primary Display"
 #~ msgstr "ძირითად ეკრანზე მიმაგრება"

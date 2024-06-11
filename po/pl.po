@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2024-05-12 12:13+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -246,27 +246,51 @@ msgstr "Mały"
 msgid "Large"
 msgstr "Duży"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr "Ukryj dok"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "Nigdy"
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr "Gdy używane okno jest zmaksymalizowane"
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr "Gdy używane okno zachodzi na dok"
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr "Gdy dowolne okno zachodzi na dok"
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr "Gdy nie jest używany"
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr "Przezroczystość panelu"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Automatycznie zmień przeźroczystość w zależności od tapety"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "Pokaż w panelu"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "Ułatwienia dostępu"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -441,24 +465,6 @@ msgstr "Artysta: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "Utwórz pokaz slajdów"
-
-#~ msgid "Hide Dock"
-#~ msgstr "Ukryj dok"
-
-#~ msgid "Never"
-#~ msgstr "Nigdy"
-
-#~ msgid "When the focused window is maximized"
-#~ msgstr "Gdy używane okno jest zmaksymalizowane"
-
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "Gdy używane okno zachodzi na dok"
-
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "Gdy dowolne okno zachodzi na dok"
-
-#~ msgid "When not being used"
-#~ msgstr "Gdy nie jest używany"
 
 #~ msgid "Dock on Primary Display"
 #~ msgstr "Dok na głównym wyświetlaczu"

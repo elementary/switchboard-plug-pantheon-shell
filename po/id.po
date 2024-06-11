@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
@@ -247,33 +247,67 @@ msgstr "Kecil"
 msgid "Large"
 msgstr "Besar"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "Mode Sembunyi"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "Jangan"
+
+#: src/Views/Dock.vala:68
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
+msgstr "Jendela fokus maksimal"
+
+#: src/Views/Dock.vala:74
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
+msgstr "Jendela fokus tumpang tindih dok"
+
+#: src/Views/Dock.vala:80
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
+msgstr "Jendela apapun tumpang tindih dok"
+
+#: src/Views/Dock.vala:86
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
+msgstr "Tidak digunakan"
+
+#: src/Views/Dock.vala:105
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Transparansi panel"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 #, fuzzy
 #| msgid "Automatic based on wallpaper"
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "Otomatis berdasakan gambar latar belakang"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 #, fuzzy
 #| msgid "Dock & Panel"
 msgid "Show in Panel"
 msgstr "Dok & Panel"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr ""
 
@@ -444,34 +478,6 @@ msgstr "Artis: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "Buat Pertunjukan Salindia"
-
-#, fuzzy
-#~| msgid "Hide Mode"
-#~ msgid "Hide Dock"
-#~ msgstr "Mode Sembunyi"
-
-#~ msgid "Never"
-#~ msgstr "Jangan"
-
-#, fuzzy
-#~| msgid "Focused window is maximized"
-#~ msgid "When the focused window is maximized"
-#~ msgstr "Jendela fokus maksimal"
-
-#, fuzzy
-#~| msgid "Focused window overlaps the dock"
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "Jendela fokus tumpang tindih dok"
-
-#, fuzzy
-#~| msgid "Any window overlaps the dock"
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "Jendela apapun tumpang tindih dok"
-
-#, fuzzy
-#~| msgid "Not being used"
-#~ msgid "When not being used"
-#~ msgstr "Tidak digunakan"
 
 #, fuzzy
 #~| msgid "Primary display:"

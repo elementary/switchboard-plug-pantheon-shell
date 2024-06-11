@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Malayalam <https://l10n.elementary.io/projects/switchboard/"
@@ -232,27 +232,51 @@ msgstr ""
 msgid "Large"
 msgstr ""
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr ""
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr ""
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr ""
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr ""
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr ""
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr ""
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr ""
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr ""
 

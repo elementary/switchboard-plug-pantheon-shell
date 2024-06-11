@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2024-05-20 01:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -137,7 +137,8 @@ msgstr "選択された画像を新しいデスクトップの背景として設
 #: src/Views/Appearance.vala:70
 msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
-msgstr "各アプリはこれらの設定に従うことがありますが、独自のアクセントカラーやスタイ"
+msgstr ""
+"各アプリはこれらの設定に従うことがありますが、独自のアクセントカラーやスタイ"
 "ルを選択することもできます。"
 
 #: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
@@ -235,27 +236,51 @@ msgstr "小"
 msgid "Large"
 msgstr "大"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr "ドックを隠す"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "なし"
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr "フォーカスされたウィンドウが最大化された場合"
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr "フォーカスされたウィンドウと重なった場合"
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr "いずれかのウィンドウと重なった場合"
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr "使われていない場合"
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr "パネルを透過"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr "壁紙に基づいて自動的に透明または不透明にします"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "パネルに表示"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "アクセシビリティー"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr "Caps Lock ⇪"
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -424,24 +449,6 @@ msgstr "アーティスト: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "スライドショーを作成"
-
-#~ msgid "Hide Dock"
-#~ msgstr "ドックを隠す"
-
-#~ msgid "Never"
-#~ msgstr "なし"
-
-#~ msgid "When the focused window is maximized"
-#~ msgstr "フォーカスされたウィンドウが最大化された場合"
-
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "フォーカスされたウィンドウと重なった場合"
-
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "いずれかのウィンドウと重なった場合"
-
-#~ msgid "When not being used"
-#~ msgstr "使われていない場合"
 
 #~ msgid "Dock on Primary Display"
 #~ msgstr "プライマリーディスプレイ上のドック"

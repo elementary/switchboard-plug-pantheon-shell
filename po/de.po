@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
-"PO-Revision-Date: 2024-05-10 13:40+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"PO-Revision-Date: 2024-06-08 11:16+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:06+0000\n"
 
 #: src/Plug.vala:49
@@ -78,10 +78,8 @@ msgid "Dark style"
 msgstr "Dunkler Stil"
 
 #: src/Plug.vala:128 src/Views/Appearance.vala:107
-#, fuzzy
-#| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
-msgstr "Abdunkeln mit dunklem Stil:"
+msgstr "Hintergrundbild bei dunklem Stil ebenfalls abdunkeln"
 
 #: src/Plug.vala:129 src/Views/Appearance.vala:314
 msgid "Accent Color"
@@ -142,15 +140,11 @@ msgid "Set selected image to be the new desktop background"
 msgstr "Ausgewähltes Bild als neues Hintergrundbild festlegen"
 
 #: src/Views/Appearance.vala:70
-#, fuzzy
-#| msgid ""
-#| "Preferred visual style for system components. Apps may also choose to "
-#| "follow this preference."
 msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
-"Bevorzugtes Aussehen der Betriebssystembestandteile. Anwendungen steht es "
-"frei, diese Einstellung ebenfalls zu berücksichtigen."
+"Anwendungen beachten diese Einstellungen möglicherweise, können aber eigene "
+"Akzente oder Stile wählen."
 
 #: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
 msgid "Default"
@@ -249,28 +243,52 @@ msgstr "Klein"
 msgid "Large"
 msgstr "Groß"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+msgid "Hide Dock"
+msgstr "Dock ausblenden"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "Nie"
+
+#: src/Views/Dock.vala:68
+msgid "When the focused window is maximized"
+msgstr "Wenn das aktive Fenster maximiert ist"
+
+#: src/Views/Dock.vala:74
+msgid "When the focused window overlaps the dock"
+msgstr "Wenn das aktive Fenster das Dock überlappt"
+
+#: src/Views/Dock.vala:80
+msgid "When any window overlaps the dock"
+msgstr "Wenn ein beliebiges Fenster das Dock überlappt"
+
+#: src/Views/Dock.vala:86
+msgid "When not being used"
+msgstr "Wenn nicht verwendet"
+
+#: src/Views/Dock.vala:105
 msgid "Panel Translucency"
 msgstr "Leistentransparenz"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 "Automatisch transparent oder undurchsichtig, abhängig vom Hintergrundbild"
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "In der Leiste anzeigen"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr "Zugangshilfen"
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr "Feststelltaste ⇪"
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr "Num Lock"
 
@@ -442,24 +460,6 @@ msgstr "Künstler: %s"
 
 #~ msgid "Create Slideshow"
 #~ msgstr "Diaschau erstellen"
-
-#~ msgid "Hide Dock"
-#~ msgstr "Dock ausblenden"
-
-#~ msgid "Never"
-#~ msgstr "Nie"
-
-#~ msgid "When the focused window is maximized"
-#~ msgstr "Wenn das aktive Fenster maximiert ist"
-
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "Wenn das aktive Fenster das Dock überlappt"
-
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "Wenn ein beliebiges Fenster das Dock überlappt"
-
-#~ msgid "When not being used"
-#~ msgstr "Wenn nicht verwendet"
 
 #~ msgid "Dock on Primary Display"
 #~ msgstr "Dock auf dem primärem Bildschirm"

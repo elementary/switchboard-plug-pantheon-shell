@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-19 00:53+0000\n"
+"POT-Creation-Date: 2024-05-29 21:47+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -249,29 +249,63 @@ msgstr "Lille"
 msgid "Large"
 msgstr "Stor"
 
-#: src/Views/Dock.vala:69
+#: src/Views/Dock.vala:63
+#, fuzzy
+#| msgid "Hide Mode"
+msgid "Hide Dock"
+msgstr "Skjult tilstand"
+
+#: src/Views/Dock.vala:65
+msgid "Never"
+msgstr "Aldrig"
+
+#: src/Views/Dock.vala:68
+#, fuzzy
+#| msgid "Focused window is maximized"
+msgid "When the focused window is maximized"
+msgstr "Det aktive vindue er maksimeret"
+
+#: src/Views/Dock.vala:74
+#, fuzzy
+#| msgid "Focused window overlaps the dock"
+msgid "When the focused window overlaps the dock"
+msgstr "Det aktive vindue overlapper dokken"
+
+#: src/Views/Dock.vala:80
+#, fuzzy
+#| msgid "Any window overlaps the dock"
+msgid "When any window overlaps the dock"
+msgstr "Et hvilket som helst vindue overlapper dokken"
+
+#: src/Views/Dock.vala:86
+#, fuzzy
+#| msgid "Not being used"
+msgid "When not being used"
+msgstr "Anvendes ikke"
+
+#: src/Views/Dock.vala:105
 #, fuzzy
 #| msgid "Panel translucency"
 msgid "Panel Translucency"
 msgstr "Panel gennemsigtighed"
 
-#: src/Views/Dock.vala:71
+#: src/Views/Dock.vala:107
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:78
+#: src/Views/Dock.vala:114
 msgid "Show in Panel"
 msgstr "Vis i Panel"
 
-#: src/Views/Dock.vala:85
+#: src/Views/Dock.vala:121
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:95
+#: src/Views/Dock.vala:131
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:96
+#: src/Views/Dock.vala:132
 msgid "Num Lock"
 msgstr ""
 
@@ -447,34 +481,6 @@ msgstr "Kunstner: %s"
 #~| msgid "Create slideshow"
 #~ msgid "Create Slideshow"
 #~ msgstr "Lav Diasshow"
-
-#, fuzzy
-#~| msgid "Hide Mode"
-#~ msgid "Hide Dock"
-#~ msgstr "Skjult tilstand"
-
-#~ msgid "Never"
-#~ msgstr "Aldrig"
-
-#, fuzzy
-#~| msgid "Focused window is maximized"
-#~ msgid "When the focused window is maximized"
-#~ msgstr "Det aktive vindue er maksimeret"
-
-#, fuzzy
-#~| msgid "Focused window overlaps the dock"
-#~ msgid "When the focused window overlaps the dock"
-#~ msgstr "Det aktive vindue overlapper dokken"
-
-#, fuzzy
-#~| msgid "Any window overlaps the dock"
-#~ msgid "When any window overlaps the dock"
-#~ msgstr "Et hvilket som helst vindue overlapper dokken"
-
-#, fuzzy
-#~| msgid "Not being used"
-#~ msgid "When not being used"
-#~ msgstr "Anvendes ikke"
 
 #, fuzzy
 #~| msgid "Primary display:"
