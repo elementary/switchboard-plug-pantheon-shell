@@ -83,6 +83,12 @@
     -gtk-icon-transform: scale(0.6);
 }
 
+settingspage.wallpaper actionbar box.end,
+settingspage.wallpaper actionbar box.start {
+    border-spacing: 12px;
+    padding: 6px;
+}
+
 .appearance-view desktop-preview {
     min-height: 96px;
     margin: 6px 6px 12px 12px;
