@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 21:47+0000\n"
-"PO-Revision-Date: 2024-06-13 08:33+0000\n"
+"PO-Revision-Date: 2024-06-13 15:50+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/es/>\n"
@@ -29,7 +29,7 @@ msgstr "Configurar el dock, esquinas activas y fondo de escritorio"
 
 #: data/desktop.metainfo.xml.in:40
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:69
 #: data/desktop.metainfo.xml.in:83 data/desktop.metainfo.xml.in:105
