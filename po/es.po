@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 21:47+0000\n"
-"PO-Revision-Date: 2023-07-01 08:07+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-06-13 17:16+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:03+0000\n"
 
 #: src/Plug.vala:49
@@ -30,7 +30,7 @@ msgstr "Configurar el dock, esquinas activas y fondo de escritorio"
 
 #: src/Plug.vala:65 src/Plug.vala:119 src/Views/Wallpaper.vala:43
 msgid "Wallpaper"
-msgstr "Fondo de pantalla"
+msgstr "Fondo de escritorio"
 
 #: src/Plug.vala:66 src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 #: src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
@@ -86,10 +86,8 @@ msgid "Dim Wallpaper With Dark Style"
 msgstr "Estilo oscuro"
 
 #: src/Plug.vala:129 src/Views/Appearance.vala:314
-#, fuzzy
-#| msgid "Accent color"
 msgid "Accent Color"
-msgstr "Color de realce"
+msgstr "Color de énfasis"
 
 #: src/Plug.vala:130 src/Views/Appearance.vala:389
 msgid "Always Show Scrollbars"
@@ -422,10 +420,8 @@ msgid "Import Photos"
 msgstr "Importar foto"
 
 #: src/Views/Wallpaper.vala:489
-#, fuzzy
-#| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
-msgstr "Fondo de pantalla"
+msgstr "Fondo de escritorio eliminado"
 
 #: src/Views/Wallpaper.vala:490
 msgid "Undo"
