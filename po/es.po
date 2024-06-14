@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 21:47+0000\n"
-"PO-Revision-Date: 2024-06-14 03:33+0000\n"
+"PO-Revision-Date: 2024-06-15 16:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
@@ -156,7 +156,7 @@ msgstr "Oscuro"
 
 #: src/Views/Appearance.vala:118
 msgid "Schedule"
-msgstr "Horario"
+msgstr "Programar"
 
 #: src/Views/Appearance.vala:120
 msgid "Disabled"
@@ -164,7 +164,7 @@ msgstr "Desactivado"
 
 #: src/Views/Appearance.vala:125
 msgid "Sunset to Sunrise"
-msgstr "Desde el atardecer hasta el amanecer"
+msgstr "Del atardecer al amanecer"
 
 #: src/Views/Appearance.vala:130
 msgid "From:"
@@ -374,7 +374,7 @@ msgstr "Centrado"
 
 #: src/Views/Wallpaper.vala:94
 msgid "Zoom"
-msgstr "Ampliado"
+msgstr "Ampliar"
 
 #: src/Views/Wallpaper.vala:95
 msgid "Spanned"
