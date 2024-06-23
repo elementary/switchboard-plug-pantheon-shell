@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-29 21:47+0000\n"
-"PO-Revision-Date: 2024-06-15 16:16+0000\n"
+"PO-Revision-Date: 2024-06-24 03:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
@@ -326,7 +326,7 @@ msgstr "No hacer nada"
 
 #: src/Views/Multitasking.vala:114
 msgid "Multitasking View"
-msgstr "Vista multitarea"
+msgstr "Vista Multitarea"
 
 #: src/Views/Multitasking.vala:115
 msgid "Maximize current window"
