@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 20:15+0000\n"
-"PO-Revision-Date: 2024-06-14 03:33+0000\n"
+"PO-Revision-Date: 2024-07-09 21:11+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -32,14 +32,13 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/desktop.metainfo.xml.in:48
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
 msgstr "Nuevas características:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Always Show Scrollbars setting"
 msgstr ""
+"Se agregó una configuración de mostrar siempre las barras de desplazamiento"
 
 #: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
 #: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
@@ -49,21 +48,25 @@ msgstr "Otras actualizaciones:"
 
 #: data/desktop.metainfo.xml.in:54
 msgid "Redundant labels have been cleaned up on the Appearance tab"
-msgstr ""
+msgstr "Se limpiaron las etiquetas redundantes en la pestaña de Apariencia"
 
 #: data/desktop.metainfo.xml.in:55
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
 msgstr ""
+"El ajuste de atenuar el fondo del escritorio se ha movido a la pestaña de "
+"Apariencia"
 
 #: data/desktop.metainfo.xml.in:56
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr ""
+"Ahora se muestra una vista previa del escritorio normal y atenuado con el "
+"fondo de pantalla del usuario al seleccionar estilos"
 
 #: data/desktop.metainfo.xml.in:57
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Se mejoró la accesibilidad para los lectores de pantalla"
 
 #: data/desktop.metainfo.xml.in:58 data/desktop.metainfo.xml.in:76
 #: data/desktop.metainfo.xml.in:94 data/desktop.metainfo.xml.in:107
