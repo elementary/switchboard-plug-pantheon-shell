@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2023-10-16 18:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,28 +32,62 @@ msgstr "Налаштування доку, дій кутів та зміна т�
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:69
-#: data/desktop.metainfo.xml.in:83 data/desktop.metainfo.xml.in:105
-#: data/desktop.metainfo.xml.in:119
+#: data/desktop.metainfo.xml.in:48
+#, fuzzy
+#| msgid "New features:"
+msgid "New Features:"
+msgstr "Нові функції:"
+
+#: data/desktop.metainfo.xml.in:50
+msgid "Always Show Scrollbars setting"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
+#: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
+#: data/desktop.metainfo.xml.in:127
 msgid "Other updates:"
 msgstr "Інші оновлення:"
 
-#: data/desktop.metainfo.xml.in:50
+#: data/desktop.metainfo.xml.in:54
+msgid "Redundant labels have been cleaned up on the Appearance tab"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:55
+msgid "The Dim Wallpaper setting has moved to the Appearance tab"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:56
+msgid ""
+"The style selector now shows of a preview of your wallpaper as well as "
+"previewing the dim setting"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:57
+msgid "Improved screen reader accessibility"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:58 data/desktop.metainfo.xml.in:76
+#: data/desktop.metainfo.xml.in:94 data/desktop.metainfo.xml.in:107
+#: data/desktop.metainfo.xml.in:129
+msgid "Updated translations"
+msgstr "Оновлені переклади"
+
+#: data/desktop.metainfo.xml.in:72
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr "Редизайн налаштувань Док і Панелі з корисним текстом опису"
 
-#: data/desktop.metainfo.xml.in:51
+#: data/desktop.metainfo.xml.in:73
 msgid "Show or hide optional panel indicators"
 msgstr "Показувати або приховувати додаткові індикатори панелі"
 
-#: data/desktop.metainfo.xml.in:52
+#: data/desktop.metainfo.xml.in:74
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Виправлено переклад значення затримки слайд-шоу та мітки «Притлумлювати з "
 "темним стилем»"
 
-#: data/desktop.metainfo.xml.in:53
+#: data/desktop.metainfo.xml.in:75
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
@@ -61,66 +95,57 @@ msgstr ""
 "Усунуто проблему, через яку шпалери не вилучалися одразу після закриття "
 "Системних налаштувань"
 
-#: data/desktop.metainfo.xml.in:54 data/desktop.metainfo.xml.in:72
-#: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:107
-#: data/desktop.metainfo.xml.in:121
-msgid "Updated translations"
-msgstr "Оновлені переклади"
-
-#: data/desktop.metainfo.xml.in:65 data/desktop.metainfo.xml.in:92
-#: data/desktop.metainfo.xml.in:114
+#: data/desktop.metainfo.xml.in:87 data/desktop.metainfo.xml.in:114
 msgid "New features:"
 msgstr "Нові функції:"
 
-#: data/desktop.metainfo.xml.in:67
+#: data/desktop.metainfo.xml.in:89
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "Додано опцію затемнення шпалер, коли активовано темний стиль"
 
-#: data/desktop.metainfo.xml.in:71
+#: data/desktop.metainfo.xml.in:93
 msgid "Use a more vertical layout in the Text view"
 msgstr "Використано вертикальніше розташування в текстовому поданні"
 
-#: data/desktop.metainfo.xml.in:94
+#: data/desktop.metainfo.xml.in:116
 msgid "There is now an undo option after removing a wallpaper"
 msgstr "Відтепер є можливість скасувати вибір після вилучення тла"
 
-#: data/desktop.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:117
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr "Зображення тла тепер впорядковуються починаючи від власних зображень"
 
-#: data/desktop.metainfo.xml.in:97
+#: data/desktop.metainfo.xml.in:119
 msgid "Fixes:"
 msgstr "Виправлення:"
 
-#: data/desktop.metainfo.xml.in:99
+#: data/desktop.metainfo.xml.in:121
 msgid "Wallpaper accent color follows system setting"
 msgstr "Основний колір тла відповідає налаштуванням системи"
 
-#: data/desktop.metainfo.xml.in:100
+#: data/desktop.metainfo.xml.in:122
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr "Set-wallpaper не правильно працював під час запуску як sudo"
 
-#: data/desktop.metainfo.xml.in:101
+#: data/desktop.metainfo.xml.in:123
 msgid "Wallpapers with the same name are distinguished"
 msgstr "Розрізнення зображень тла з однаковими назвами"
 
-#: data/desktop.metainfo.xml.in:102
+#: data/desktop.metainfo.xml.in:124
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 "Перемикання стилів за допомогою клавіатури скасовувало планування темного "
 "стилю"
 
-#: data/desktop.metainfo.xml.in:103
+#: data/desktop.metainfo.xml.in:125
 msgid "Style dyslexia-friendly switch properly"
 msgstr "Правильне перемикання стилів для людей з дислексією"
 
-#: data/desktop.metainfo.xml.in:116
-msgid "Set custom Terminal commands for each hotcorner"
-msgstr "Встановлюйте власні команди термінала для кожного гарячого кута"
+#~ msgid "Set custom Terminal commands for each hotcorner"
+#~ msgstr "Встановлюйте власні команди термінала для кожного гарячого кута"
 
-#: data/desktop.metainfo.xml.in:117
-msgid "Redesigned Appearance and Multitasking views"
-msgstr "Перероблені подання Вигляд і Багатозадачність"
+#~ msgid "Redesigned Appearance and Multitasking views"
+#~ msgstr "Перероблені подання Вигляд і Багатозадачність"
 
 #~ msgid "Move Text settings to their own page"
 #~ msgstr "Налаштування тексту отримали власну сторінку"

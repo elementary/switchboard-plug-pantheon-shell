@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2023-07-23 14:07+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -32,29 +32,63 @@ msgstr "Konfiguruj dok, gorące narożniki i zmień tło pulpitu"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:69
-#: data/desktop.metainfo.xml.in:83 data/desktop.metainfo.xml.in:105
-#: data/desktop.metainfo.xml.in:119
+#: data/desktop.metainfo.xml.in:48
+#, fuzzy
+#| msgid "New features:"
+msgid "New Features:"
+msgstr "Nowe funkcje:"
+
+#: data/desktop.metainfo.xml.in:50
+msgid "Always Show Scrollbars setting"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
+#: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
+#: data/desktop.metainfo.xml.in:127
 msgid "Other updates:"
 msgstr "Inne aktualizacje:"
 
-#: data/desktop.metainfo.xml.in:50
+#: data/desktop.metainfo.xml.in:54
+msgid "Redundant labels have been cleaned up on the Appearance tab"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:55
+msgid "The Dim Wallpaper setting has moved to the Appearance tab"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:56
+msgid ""
+"The style selector now shows of a preview of your wallpaper as well as "
+"previewing the dim setting"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:57
+msgid "Improved screen reader accessibility"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:58 data/desktop.metainfo.xml.in:76
+#: data/desktop.metainfo.xml.in:94 data/desktop.metainfo.xml.in:107
+#: data/desktop.metainfo.xml.in:129
+msgid "Updated translations"
+msgstr "Zaktualizowane tłumaczenia"
+
+#: data/desktop.metainfo.xml.in:72
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
 "Przeprojektowano ustawienia Doku i Panelu by zawierały pomocne opisy tekstowe"
 
-#: data/desktop.metainfo.xml.in:51
+#: data/desktop.metainfo.xml.in:73
 msgid "Show or hide optional panel indicators"
 msgstr "Pokaż lub ukryj opcjonalne indykatory panelu"
 
-#: data/desktop.metainfo.xml.in:52
+#: data/desktop.metainfo.xml.in:74
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Naprawiono tłumaczenie opóźnienia wyświetlania slajdów oraz etykietę "
 "„Przyciemnij w trybie ciemnym”"
 
-#: data/desktop.metainfo.xml.in:53
+#: data/desktop.metainfo.xml.in:75
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
@@ -62,68 +96,59 @@ msgstr ""
 "Naprawiono problem gdzie tapety nie były usuwane gdy natychmiast zamykano "
 "ustawienia systemu"
 
-#: data/desktop.metainfo.xml.in:54 data/desktop.metainfo.xml.in:72
-#: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:107
-#: data/desktop.metainfo.xml.in:121
-msgid "Updated translations"
-msgstr "Zaktualizowane tłumaczenia"
-
-#: data/desktop.metainfo.xml.in:65 data/desktop.metainfo.xml.in:92
-#: data/desktop.metainfo.xml.in:114
+#: data/desktop.metainfo.xml.in:87 data/desktop.metainfo.xml.in:114
 msgid "New features:"
 msgstr "Nowe funkcje:"
 
-#: data/desktop.metainfo.xml.in:67
+#: data/desktop.metainfo.xml.in:89
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "Dodano opcję przyciemnienia tapety gdy ciemny motyw jest włączony"
 
-#: data/desktop.metainfo.xml.in:71
+#: data/desktop.metainfo.xml.in:93
 msgid "Use a more vertical layout in the Text view"
 msgstr "Użycie bardziej pionowego układu w widoku Tekstu"
 
-#: data/desktop.metainfo.xml.in:94
+#: data/desktop.metainfo.xml.in:116
 msgid "There is now an undo option after removing a wallpaper"
 msgstr "Dodano możliwość cofnięcia po usunięciu tła pulpitu"
 
-#: data/desktop.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:117
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr ""
 "Tła pulpitu są teraz posortowane tak by niestandardowe tła pojawiały się "
 "najpierw"
 
-#: data/desktop.metainfo.xml.in:97
+#: data/desktop.metainfo.xml.in:119
 msgid "Fixes:"
 msgstr "Poprawki:"
 
-#: data/desktop.metainfo.xml.in:99
+#: data/desktop.metainfo.xml.in:121
 msgid "Wallpaper accent color follows system setting"
 msgstr "Kolor akcentu tła pulpitu jest teraz zgodny z ustawieniami systemu"
 
-#: data/desktop.metainfo.xml.in:100
+#: data/desktop.metainfo.xml.in:122
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr "Kontrakt set-wallpaper nie psuje się gdy jest uruchomiony z sudo"
 
-#: data/desktop.metainfo.xml.in:101
+#: data/desktop.metainfo.xml.in:123
 msgid "Wallpapers with the same name are distinguished"
 msgstr "Tła pulpitu z taką samą nazwą są teraz rozróżniane"
 
-#: data/desktop.metainfo.xml.in:102
+#: data/desktop.metainfo.xml.in:124
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 "Zmiana stylu przy użyciu klawiatury anuluje ustawienia automatycznego "
 "ciemnego stylu"
 
-#: data/desktop.metainfo.xml.in:103
+#: data/desktop.metainfo.xml.in:125
 msgid "Style dyslexia-friendly switch properly"
 msgstr "Przełącznik przyjazny dla dyslektyków ma teraz poprawny styl"
 
-#: data/desktop.metainfo.xml.in:116
-msgid "Set custom Terminal commands for each hotcorner"
-msgstr "Ustawianie spersonalizowanych poleceń w każdym z rogów Terminala"
+#~ msgid "Set custom Terminal commands for each hotcorner"
+#~ msgstr "Ustawianie spersonalizowanych poleceń w każdym z rogów Terminala"
 
-#: data/desktop.metainfo.xml.in:117
-msgid "Redesigned Appearance and Multitasking views"
-msgstr "Przeprojektowano widoki Wyświetlanie oraz Wielozadaniowość"
+#~ msgid "Redesigned Appearance and Multitasking views"
+#~ msgstr "Przeprojektowano widoki Wyświetlanie oraz Wielozadaniowość"
 
 #~ msgid "Move Text settings to their own page"
 #~ msgstr "Przeniesiono ustawienia tekstu na osobną stronę"
