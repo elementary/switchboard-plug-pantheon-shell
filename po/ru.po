@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-09 20:15+0000\n"
+"POT-Creation-Date: 2024-07-09 21:11+0000\n"
 "PO-Revision-Date: 2024-05-20 01:13+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -77,15 +77,15 @@ msgstr "Тёмный стиль"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Затемнять обои в тёмном стиле"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:314
+#: src/Plug.vala:129 src/Views/Appearance.vala:369
 msgid "Accent Color"
 msgstr "Цветовой акцент"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:389
+#: src/Plug.vala:130 src/Views/Appearance.vala:399
 msgid "Always Show Scrollbars"
 msgstr "Всегда показывать полосы прокрутки"
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:374
+#: src/Plug.vala:131 src/Views/Appearance.vala:384
 msgid "Reduce Motion"
 msgstr "Уменьшить анимации"
 
@@ -151,76 +151,76 @@ msgid "Dark"
 msgstr "Тёмный"
 
 #: src/Views/Appearance.vala:118
-msgid "Schedule"
-msgstr "Расписание"
-
-#: src/Views/Appearance.vala:120
 msgid "Disabled"
 msgstr "Отключено"
 
-#: src/Views/Appearance.vala:125
+#: src/Views/Appearance.vala:123
 msgid "Sunset to Sunrise"
 msgstr "От заката до рассвета"
 
-#: src/Views/Appearance.vala:130
+#: src/Views/Appearance.vala:128
 msgid "From:"
 msgstr "С:"
 
-#: src/Views/Appearance.vala:137
+#: src/Views/Appearance.vala:135
 msgid "To:"
 msgstr "До:"
 
-#: src/Views/Appearance.vala:319
+#: src/Views/Appearance.vala:159
+msgid "Schedule"
+msgstr "Расписание"
+
+#: src/Views/Appearance.vala:322
 msgid "Blueberry"
 msgstr "Черничный"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:325
 msgid "Mint"
 msgstr "Мятный"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:328
 msgid "Lime"
 msgstr "Лаймовый"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:331
 msgid "Banana"
 msgstr "Банановый"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:334
 msgid "Orange"
 msgstr "Апельсиновый"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:337
 msgid "Strawberry"
 msgstr "Клубничный"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:340
 msgid "Bubblegum"
 msgstr "Бубльгумовый"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:343
 msgid "Grape"
 msgstr "Виноградный"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:346
 msgid "Cocoa"
 msgstr "Какао"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:349
 msgid "Slate"
 msgstr "Каменно-серый"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:352
 msgid "Automatic based on wallpaper"
 msgstr "Автоматическая на основе обоев"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:386
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Отключить анимации менеджера окон и некоторых других элементов интерфейса."
 
-#: src/Views/Appearance.vala:392
+#: src/Views/Appearance.vala:402
 msgid "Scrollbars will take up space, even when not in use."
 msgstr "Полосы прокрутки будут занимать место, даже когда не используются."
 

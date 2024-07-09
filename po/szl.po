@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-09 20:15+0000\n"
+"POT-Creation-Date: 2024-07-09 21:11+0000\n"
 "PO-Revision-Date: 2019-06-26 18:53+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -73,15 +73,15 @@ msgstr ""
 msgid "Dim Wallpaper With Dark Style"
 msgstr ""
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:314
+#: src/Plug.vala:129 src/Views/Appearance.vala:369
 msgid "Accent Color"
 msgstr ""
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:389
+#: src/Plug.vala:130 src/Views/Appearance.vala:399
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:374
+#: src/Plug.vala:131 src/Views/Appearance.vala:384
 msgid "Reduce Motion"
 msgstr ""
 
@@ -145,75 +145,75 @@ msgid "Dark"
 msgstr ""
 
 #: src/Views/Appearance.vala:118
-msgid "Schedule"
-msgstr ""
-
-#: src/Views/Appearance.vala:120
 msgid "Disabled"
 msgstr ""
 
-#: src/Views/Appearance.vala:125
+#: src/Views/Appearance.vala:123
 msgid "Sunset to Sunrise"
 msgstr ""
 
-#: src/Views/Appearance.vala:130
+#: src/Views/Appearance.vala:128
 msgid "From:"
 msgstr ""
 
-#: src/Views/Appearance.vala:137
+#: src/Views/Appearance.vala:135
 msgid "To:"
 msgstr ""
 
-#: src/Views/Appearance.vala:319
-msgid "Blueberry"
+#: src/Views/Appearance.vala:159
+msgid "Schedule"
 msgstr ""
 
 #: src/Views/Appearance.vala:322
-msgid "Mint"
+msgid "Blueberry"
 msgstr ""
 
 #: src/Views/Appearance.vala:325
-msgid "Lime"
+msgid "Mint"
 msgstr ""
 
 #: src/Views/Appearance.vala:328
-msgid "Banana"
+msgid "Lime"
 msgstr ""
 
 #: src/Views/Appearance.vala:331
-msgid "Orange"
+msgid "Banana"
 msgstr ""
 
 #: src/Views/Appearance.vala:334
-msgid "Strawberry"
+msgid "Orange"
 msgstr ""
 
 #: src/Views/Appearance.vala:337
-msgid "Bubblegum"
+msgid "Strawberry"
 msgstr ""
 
 #: src/Views/Appearance.vala:340
-msgid "Grape"
+msgid "Bubblegum"
 msgstr ""
 
 #: src/Views/Appearance.vala:343
-msgid "Cocoa"
+msgid "Grape"
 msgstr ""
 
 #: src/Views/Appearance.vala:346
-msgid "Slate"
+msgid "Cocoa"
 msgstr ""
 
 #: src/Views/Appearance.vala:349
+msgid "Slate"
+msgstr ""
+
+#: src/Views/Appearance.vala:352
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:386
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Appearance.vala:392
+#: src/Views/Appearance.vala:402
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
