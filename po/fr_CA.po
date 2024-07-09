@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: French (Canada) <https://l10n.elementary.io/projects/"
@@ -354,33 +354,33 @@ msgstr ""
 msgid "Import Photo…"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:93
+#: src/Views/Wallpaper.vala:87
 msgid "Centered"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:94
+#: src/Views/Wallpaper.vala:88
 msgid "Zoom"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:89
 msgid "Spanned"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:128
 msgid "Import"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:145
+#: src/Views/Wallpaper.vala:131
 msgid "Import Photos"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:489
+#: src/Views/Wallpaper.vala:475
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Fond d'écran"
 
-#: src/Views/Wallpaper.vala:490
+#: src/Views/Wallpaper.vala:476
 msgid "Undo"
 msgstr ""
 

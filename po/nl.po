@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2024-05-29 20:51+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -374,31 +374,31 @@ msgstr ""
 msgid "Import Photo…"
 msgstr "Importeer albeelding…"
 
-#: src/Views/Wallpaper.vala:93
+#: src/Views/Wallpaper.vala:87
 msgid "Centered"
 msgstr "Gecentreerd"
 
-#: src/Views/Wallpaper.vala:94
+#: src/Views/Wallpaper.vala:88
 msgid "Zoom"
 msgstr "Vergroten"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:89
 msgid "Spanned"
 msgstr "Omspannen"
 
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:128
 msgid "Import"
 msgstr "Importeer"
 
-#: src/Views/Wallpaper.vala:145
+#: src/Views/Wallpaper.vala:131
 msgid "Import Photos"
 msgstr "Importeer afbeeldingen"
 
-#: src/Views/Wallpaper.vala:489
+#: src/Views/Wallpaper.vala:475
 msgid "Wallpaper Deleted"
 msgstr "Bureaubladachtergrond verwijderd"
 
-#: src/Views/Wallpaper.vala:490
+#: src/Views/Wallpaper.vala:476
 msgid "Undo"
 msgstr "Ongedaan maken"
 

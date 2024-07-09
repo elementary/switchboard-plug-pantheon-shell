@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -385,33 +385,33 @@ msgstr "底部较粗的字形和更大的字符间距有助于提高易读性和
 msgid "Import Photo…"
 msgstr "导入照片…"
 
-#: src/Views/Wallpaper.vala:93
+#: src/Views/Wallpaper.vala:87
 msgid "Centered"
 msgstr "居中"
 
-#: src/Views/Wallpaper.vala:94
+#: src/Views/Wallpaper.vala:88
 msgid "Zoom"
 msgstr "缩放"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:89
 msgid "Spanned"
 msgstr "平铺"
 
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:128
 msgid "Import"
 msgstr "导入"
 
-#: src/Views/Wallpaper.vala:145
+#: src/Views/Wallpaper.vala:131
 #, fuzzy
 #| msgid "Import Photo"
 msgid "Import Photos"
 msgstr "导入照片"
 
-#: src/Views/Wallpaper.vala:489
+#: src/Views/Wallpaper.vala:475
 msgid "Wallpaper Deleted"
 msgstr "壁纸已删除"
 
-#: src/Views/Wallpaper.vala:490
+#: src/Views/Wallpaper.vala:476
 msgid "Undo"
 msgstr "撤销"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Vietnamese <https://l10n.elementary.io/projects/switchboard/"
@@ -363,33 +363,33 @@ msgstr ""
 msgid "Import Photo…"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:93
+#: src/Views/Wallpaper.vala:87
 msgid "Centered"
 msgstr "Canh giữa"
 
-#: src/Views/Wallpaper.vala:94
+#: src/Views/Wallpaper.vala:88
 msgid "Zoom"
 msgstr "Phóng to theo chiều ngang"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:89
 msgid "Spanned"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:128
 msgid "Import"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:145
+#: src/Views/Wallpaper.vala:131
 msgid "Import Photos"
 msgstr ""
 
-#: src/Views/Wallpaper.vala:489
+#: src/Views/Wallpaper.vala:475
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "Hình nền"
 
-#: src/Views/Wallpaper.vala:490
+#: src/Views/Wallpaper.vala:476
 msgid "Undo"
 msgstr ""
 

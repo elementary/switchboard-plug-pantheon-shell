@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2024-05-20 01:13+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -363,31 +363,31 @@ msgstr ""
 msgid "Import Photo…"
 msgstr "Import Photo…"
 
-#: src/Views/Wallpaper.vala:93
+#: src/Views/Wallpaper.vala:87
 msgid "Centered"
 msgstr "Centred"
 
-#: src/Views/Wallpaper.vala:94
+#: src/Views/Wallpaper.vala:88
 msgid "Zoom"
 msgstr "Zoom"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:89
 msgid "Spanned"
 msgstr "Spanned"
 
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:128
 msgid "Import"
 msgstr "Import"
 
-#: src/Views/Wallpaper.vala:145
+#: src/Views/Wallpaper.vala:131
 msgid "Import Photos"
 msgstr "Import Photos"
 
-#: src/Views/Wallpaper.vala:489
+#: src/Views/Wallpaper.vala:475
 msgid "Wallpaper Deleted"
 msgstr "Wallpaper Deleted"
 
-#: src/Views/Wallpaper.vala:490
+#: src/Views/Wallpaper.vala:476
 msgid "Undo"
 msgstr "Undo"
 

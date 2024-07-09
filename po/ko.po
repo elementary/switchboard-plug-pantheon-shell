@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -389,35 +389,35 @@ msgstr ""
 msgid "Import Photo…"
 msgstr "사진 가져오기…"
 
-#: src/Views/Wallpaper.vala:93
+#: src/Views/Wallpaper.vala:87
 msgid "Centered"
 msgstr "중앙 정렬"
 
-#: src/Views/Wallpaper.vala:94
+#: src/Views/Wallpaper.vala:88
 msgid "Zoom"
 msgstr "확대"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:89
 msgid "Spanned"
 msgstr "지연됨"
 
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:128
 msgid "Import"
 msgstr "가져오기"
 
-#: src/Views/Wallpaper.vala:145
+#: src/Views/Wallpaper.vala:131
 #, fuzzy
 #| msgid "Import Photo"
 msgid "Import Photos"
 msgstr "사진 가져오기"
 
-#: src/Views/Wallpaper.vala:489
+#: src/Views/Wallpaper.vala:475
 #, fuzzy
 #| msgid "Wallpaper"
 msgid "Wallpaper Deleted"
 msgstr "배경화면"
 
-#: src/Views/Wallpaper.vala:490
+#: src/Views/Wallpaper.vala:476
 msgid "Undo"
 msgstr "되돌리기"
 

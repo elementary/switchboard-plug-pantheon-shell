@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-09 20:15+0000\n"
 "PO-Revision-Date: 2024-06-24 03:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -368,31 +368,31 @@ msgstr ""
 msgid "Import Photo…"
 msgstr "Importar foto…"
 
-#: src/Views/Wallpaper.vala:93
+#: src/Views/Wallpaper.vala:87
 msgid "Centered"
 msgstr "Centrado"
 
-#: src/Views/Wallpaper.vala:94
+#: src/Views/Wallpaper.vala:88
 msgid "Zoom"
 msgstr "Ampliar"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:89
 msgid "Spanned"
 msgstr "Distribuido"
 
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:128
 msgid "Import"
 msgstr "Importar"
 
-#: src/Views/Wallpaper.vala:145
+#: src/Views/Wallpaper.vala:131
 msgid "Import Photos"
 msgstr "Importar fotos"
 
-#: src/Views/Wallpaper.vala:489
+#: src/Views/Wallpaper.vala:475
 msgid "Wallpaper Deleted"
 msgstr "Fondo de escritorio eliminado"
 
-#: src/Views/Wallpaper.vala:490
+#: src/Views/Wallpaper.vala:476
 msgid "Undo"
 msgstr "Deshacer"
 
