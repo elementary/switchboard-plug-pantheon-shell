@@ -43,6 +43,28 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.0" date="2024-07-09" urgency="medium">
+      <description>
+        <p>New Features:</p>
+        <ul>
+          <li>Always Show Scrollbars setting</li>
+        </ul>
+        <p>Other updates:</p>
+        <ul>
+          <li>Redundant labels have been cleaned up on the Appearance tab</li>
+          <li>The Dim Wallpaper setting has moved to the Appearance tab</li>
+          <li>The style selector now shows of a preview of your wallpaper as well as previewing the dim setting</li>
+          <li>Improved screen reader accessibility</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-pantheon-shell/issues/153">Non-FHD images are stretched in the desktop images overview</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-pantheon-shell/pull/309">Port to GTK4</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-pantheon-shell/pull/382">change wallpaper for dark theme settings</issue>
+      </issues>
+    </release>
+
     <release version="6.5.0" date="2023-07-24" urgency="medium">
       <description>
         <p>Other updates:</p>
@@ -109,20 +131,7 @@
       </description>
     </release>
 
-    <release version="6.2.0" date="2022-07-02" urgency="medium">
-      <description>
-        <p>New features:</p>
-        <ul>
-          <li>Set custom Terminal commands for each hotcorner</li>
-          <li>Redesigned Appearance and Multitasking views</li>
-        </ul>
-        <p>Other updates:</p>
-        <ul>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="6.2.0" date="2022-07-02" urgency="medium" />
     <release version="6.1.0" date="2021-11-23" urgency="medium" />
     <release version="6.0.0" date="2021-07-15" urgency="medium" />
     <release version="2.8.4" date="2020-04-22" urgency="medium" />
