@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 21:11+0000\n"
-"PO-Revision-Date: 2024-07-04 16:16+0000\n"
+"PO-Revision-Date: 2024-07-10 22:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -32,8 +32,6 @@ msgid "elementary, Inc."
 msgstr "elementary בע״מ"
 
 #: data/desktop.metainfo.xml.in:48
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
 msgstr "יכולות חדשות:"
 
