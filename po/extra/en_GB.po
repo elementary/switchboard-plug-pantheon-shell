@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 21:11+0000\n"
-"PO-Revision-Date: 2023-07-23 14:07+0000\n"
+"PO-Revision-Date: 2024-07-11 23:16+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/desktop-plug-extra/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -32,14 +32,12 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/desktop.metainfo.xml.in:48
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
-msgstr "New features:"
+msgstr "New Features:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Always Show Scrollbars setting"
-msgstr ""
+msgstr "Always Show Scrollbars setting"
 
 #: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
 #: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
@@ -49,21 +47,23 @@ msgstr "Other updates:"
 
 #: data/desktop.metainfo.xml.in:54
 msgid "Redundant labels have been cleaned up on the Appearance tab"
-msgstr ""
+msgstr "Redundant labels have been cleaned up on the Appearance tab"
 
 #: data/desktop.metainfo.xml.in:55
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
-msgstr ""
+msgstr "The Dim Wallpaper setting has moved to the Appearance tab"
 
 #: data/desktop.metainfo.xml.in:56
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr ""
+"The style selector now shows of a preview of your wallpaper as well as "
+"previewing the dim setting"
 
 #: data/desktop.metainfo.xml.in:57
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Improved screen reader accessibility"
 
 #: data/desktop.metainfo.xml.in:58 data/desktop.metainfo.xml.in:76
 #: data/desktop.metainfo.xml.in:94 data/desktop.metainfo.xml.in:107
