@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 21:11+0000\n"
-"PO-Revision-Date: 2023-07-23 14:07+0000\n"
+"PO-Revision-Date: 2024-07-10 22:16+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -33,14 +33,12 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/desktop.metainfo.xml.in:48
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
 msgstr "Característiques noves:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Always Show Scrollbars setting"
-msgstr ""
+msgstr "Mostra sempre la configuració de les barres de desplaçament."
 
 #: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
 #: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
@@ -50,21 +48,23 @@ msgstr "Altres actualitzacions:"
 
 #: data/desktop.metainfo.xml.in:54
 msgid "Redundant labels have been cleaned up on the Appearance tab"
-msgstr ""
+msgstr "Les etiquetes redundants s'han netejat a la pestanya d'aparença."
 
 #: data/desktop.metainfo.xml.in:55
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
-msgstr ""
+msgstr "La configuració de fons atenuat s'ha mogut a la pestanya d'aparença."
 
 #: data/desktop.metainfo.xml.in:56
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr ""
+"El selector d'estil ara mostra una vista prèvia del fons de pantalla, així "
+"com una vista prèvia de la configuració tènue."
 
 #: data/desktop.metainfo.xml.in:57
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Millora de l'accessibilitat del lector de pantalla"
 
 #: data/desktop.metainfo.xml.in:58 data/desktop.metainfo.xml.in:76
 #: data/desktop.metainfo.xml.in:94 data/desktop.metainfo.xml.in:107
