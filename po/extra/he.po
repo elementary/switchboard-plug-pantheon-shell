@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-09 21:11+0000\n"
-"PO-Revision-Date: 2024-07-10 22:16+0000\n"
+"PO-Revision-Date: 2024-07-13 06:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -37,7 +37,7 @@ msgstr "יכולות חדשות:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Always Show Scrollbars setting"
-msgstr ""
+msgstr "תמיד להציג הגדרות סרגלי גלילה"
 
 #: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
 #: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
@@ -47,21 +47,23 @@ msgstr "עדכונים אחרים:"
 
 #: data/desktop.metainfo.xml.in:54
 msgid "Redundant labels have been cleaned up on the Appearance tab"
-msgstr ""
+msgstr "תוויות מיותרות הוסרו מלשונית המראה"
 
 #: data/desktop.metainfo.xml.in:55
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
-msgstr ""
+msgstr "הגדרת עמעום תמונת רקע הועברה ללשונית המראה"
 
 #: data/desktop.metainfo.xml.in:56
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr ""
+"בורר העיצוב מציג תצוגה מקדימה של תמונת הרקע שלך לצד תצוגה מקדימה של המצב "
+"המעומעם"
 
 #: data/desktop.metainfo.xml.in:57
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "נגישות מקריא המסך השתפרה"
 
 #: data/desktop.metainfo.xml.in:58 data/desktop.metainfo.xml.in:76
 #: data/desktop.metainfo.xml.in:94 data/desktop.metainfo.xml.in:107
