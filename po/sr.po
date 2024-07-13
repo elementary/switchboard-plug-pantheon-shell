@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-09 21:11+0000\n"
+"POT-Creation-Date: 2024-07-13 16:17+0000\n"
 "PO-Revision-Date: 2023-06-28 21:58+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -123,32 +123,6 @@ msgstr "Врући углови"
 #| msgid "Move windows to a new workspace:"
 msgid "Move windows to a new workspace"
 msgstr "Премести прозоре на нови радни простор:"
-
-#.
-#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
-#. *
-#. * This program is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This program is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU General Public
-#. * License along with this program; if not, write to the
-#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#. * Boston, MA 02110-1301 USA
-#.
-#: src/Translations.vala:20
-msgid "Set as _Desktop Background"
-msgstr "Постави за позадину _радне површи"
-
-#: src/Translations.vala:21
-msgid "Set selected image to be the new desktop background"
-msgstr "Постави изабрану слику за нову позадину радне површи"
 
 #: src/Views/Appearance.vala:70
 msgid ""
@@ -436,6 +410,12 @@ msgstr "Уклони"
 #, c-format
 msgid "Artist: %s"
 msgstr "Извођач: %s"
+
+#~ msgid "Set as _Desktop Background"
+#~ msgstr "Постави за позадину _радне површи"
+
+#~ msgid "Set selected image to be the new desktop background"
+#~ msgstr "Постави изабрану слику за нову позадину радне површи"
 
 #, fuzzy
 #~| msgid "Style:"

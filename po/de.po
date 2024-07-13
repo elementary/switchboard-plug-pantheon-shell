@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-09 21:11+0000\n"
+"POT-Creation-Date: 2024-07-13 16:17+0000\n"
 "PO-Revision-Date: 2024-06-08 11:16+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -112,32 +112,6 @@ msgstr "Aktive Ecken"
 #: src/Plug.vala:138 src/Views/Multitasking.vala:45
 msgid "Move windows to a new workspace"
 msgstr "Fenster in eine neue Arbeitsfläche verschieben"
-
-#.
-#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
-#. *
-#. * This program is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This program is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU General Public
-#. * License along with this program; if not, write to the
-#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#. * Boston, MA 02110-1301 USA
-#.
-#: src/Translations.vala:20
-msgid "Set as _Desktop Background"
-msgstr "Als Hintergrund_bild festlegen"
-
-#: src/Translations.vala:21
-msgid "Set selected image to be the new desktop background"
-msgstr "Ausgewähltes Bild als neues Hintergrundbild festlegen"
 
 #: src/Views/Appearance.vala:70
 msgid ""
@@ -404,6 +378,12 @@ msgstr "Entfernen"
 #, c-format
 msgid "Artist: %s"
 msgstr "Künstler: %s"
+
+#~ msgid "Set as _Desktop Background"
+#~ msgstr "Als Hintergrund_bild festlegen"
+
+#~ msgid "Set selected image to be the new desktop background"
+#~ msgstr "Ausgewähltes Bild als neues Hintergrundbild festlegen"
 
 #~ msgid "Style"
 #~ msgstr "Stil"
