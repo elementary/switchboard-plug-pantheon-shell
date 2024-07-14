@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-13 16:17+0000\n"
-"PO-Revision-Date: 2024-07-10 22:16+0000\n"
+"PO-Revision-Date: 2024-07-15 07:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -83,9 +83,8 @@ msgstr "オプションのパネルインジケーターを表示/非表示に�
 #: data/desktop.metainfo.xml.in:74
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
-msgstr ""
-"スライドショーの表示時間と \"ダークスタイル時に壁紙を暗くする\" ラベルがシス"
-"テム言語で表示されない不具合を修正"
+msgstr "スライドショーの表示時間と \"ダークモード時に壁紙を暗くする\" "
+"ラベルがシステム言語で表示されない不具合を修正"
 
 #: data/desktop.metainfo.xml.in:75
 msgid ""
@@ -101,7 +100,7 @@ msgstr "新機能:"
 
 #: data/desktop.metainfo.xml.in:89
 msgid "Add an option to dim wallpapers when dark style is active"
-msgstr "ダークスタイル有効時に壁紙を暗くするオプションを追加"
+msgstr "ダークモード有効時に壁紙を暗くするオプションを追加"
 
 #: data/desktop.metainfo.xml.in:93
 msgid "Use a more vertical layout in the Text view"
@@ -135,9 +134,8 @@ msgstr "ファイル名が同一複数の背景画像を別のものとして認
 
 #: data/desktop.metainfo.xml.in:124
 msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
-"スタイルの切り替えをキー操作で行った際に、ダークスタイルのスケジュールを無効"
-"化するように修正"
+msgstr "スタイルの切り替えをキー操作で行った際に、ダークモードのスケジュールを無効化"
+"するように修正"
 
 #: data/desktop.metainfo.xml.in:125
 msgid "Style dyslexia-friendly switch properly"
