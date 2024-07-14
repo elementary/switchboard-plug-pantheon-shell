@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-13 16:17+0000\n"
-"PO-Revision-Date: 2024-06-24 03:16+0000\n"
+"PO-Revision-Date: 2024-07-15 07:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
 #: src/Plug.vala:49
@@ -70,11 +70,11 @@ msgstr "パネルを透過"
 
 #: src/Plug.vala:127
 msgid "Dark style"
-msgstr "ダークスタイル"
+msgstr "ダークモード"
 
 #: src/Plug.vala:128 src/Views/Appearance.vala:107
 msgid "Dim Wallpaper With Dark Style"
-msgstr "ダークスタイル時に壁紙を暗くする"
+msgstr "ダークモード時に壁紙を暗くする"
 
 #: src/Plug.vala:129 src/Views/Appearance.vala:369
 msgid "Accent Color"
