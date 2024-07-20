@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-13 16:17+0000\n"
-"PO-Revision-Date: 2023-10-16 18:10+0000\n"
+"PO-Revision-Date: 2024-07-21 09:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -33,14 +33,12 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/desktop.metainfo.xml.in:48
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
 msgstr "Нові функції:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Always Show Scrollbars setting"
-msgstr ""
+msgstr "Налаштування Завжди показувати смуги прокручування"
 
 #: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
 #: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
@@ -50,21 +48,23 @@ msgstr "Інші оновлення:"
 
 #: data/desktop.metainfo.xml.in:54
 msgid "Redundant labels have been cleaned up on the Appearance tab"
-msgstr ""
+msgstr "На вкладці Вигляд прибрано зайві мітки"
 
 #: data/desktop.metainfo.xml.in:55
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
-msgstr ""
+msgstr "Налаштування Затемнення шпалер» переміщено на вкладку Зовнішній вигляд"
 
 #: data/desktop.metainfo.xml.in:56
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr ""
+"У перемикачі стилів тепер показано попередній перегляд шпалер, а також "
+"попередній перегляд параметра тьмяності"
 
 #: data/desktop.metainfo.xml.in:57
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Поліпшення доступності для зчитувачів з екрана"
 
 #: data/desktop.metainfo.xml.in:58 data/desktop.metainfo.xml.in:76
 #: data/desktop.metainfo.xml.in:94 data/desktop.metainfo.xml.in:107
