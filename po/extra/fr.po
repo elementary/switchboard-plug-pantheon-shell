@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-13 16:17+0000\n"
-"PO-Revision-Date: 2024-07-10 22:16+0000\n"
+"PO-Revision-Date: 2024-07-23 18:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -37,7 +37,7 @@ msgstr "Nouvelles fonctionnalités :"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Always Show Scrollbars setting"
-msgstr ""
+msgstr "Toujours afficher les paramètres des barres de défilement"
 
 #: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
 #: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
@@ -47,17 +47,21 @@ msgstr "Autres mises à jour :"
 
 #: data/desktop.metainfo.xml.in:54
 msgid "Redundant labels have been cleaned up on the Appearance tab"
-msgstr ""
+msgstr "Les étiquettes redondantes ont été retirées de l'onglet « Apparence »"
 
 #: data/desktop.metainfo.xml.in:55
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
 msgstr ""
+"Le paramètre « Atténuer le fond d'écran » a été déplacé dans l'onglet « "
+"Apparence »"
 
 #: data/desktop.metainfo.xml.in:56
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr ""
+"Le sélecteur de style affiche désormais un aperçu de votre fond d'écran "
+"ainsi qu'un aperçu du réglage de la luminosité"
 
 #: data/desktop.metainfo.xml.in:57
 msgid "Improved screen reader accessibility"
