@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
+"POT-Creation-Date: 2024-07-13 16:17+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -83,15 +83,15 @@ msgstr "Koyu renk tema"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Koyu renk tema kullanırken karart:"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:314
+#: src/Plug.vala:129 src/Views/Appearance.vala:369
 msgid "Accent Color"
 msgstr "Vurgu Rengi"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:389
+#: src/Plug.vala:130 src/Views/Appearance.vala:399
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:374
+#: src/Plug.vala:131 src/Views/Appearance.vala:384
 msgid "Reduce Motion"
 msgstr "Animasyonları Azalt"
 
@@ -115,32 +115,6 @@ msgstr "Etkin Köşeler"
 msgid "Move windows to a new workspace"
 msgstr "Pencereleri yeni bir çalışma alanına taşı"
 
-#.
-#. * Copyright (c) 2017 elementary LLC. (https://github.com/elementary/switchboard-plug-pantheon-shell)
-#. *
-#. * This program is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This program is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU General Public
-#. * License along with this program; if not, write to the
-#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#. * Boston, MA 02110-1301 USA
-#.
-#: src/Translations.vala:20
-msgid "Set as _Desktop Background"
-msgstr "_Masaüstü Arkapalanı Olarak Ayarla"
-
-#: src/Translations.vala:21
-msgid "Set selected image to be the new desktop background"
-msgstr "Seçili resmi yeni masaüstü arkaplanı olarak ayarla"
-
 #: src/Views/Appearance.vala:70
 #, fuzzy
 #| msgid ""
@@ -161,77 +135,77 @@ msgid "Dark"
 msgstr "Koyu"
 
 #: src/Views/Appearance.vala:118
-msgid "Schedule"
-msgstr "Zamanlama"
-
-#: src/Views/Appearance.vala:120
 msgid "Disabled"
 msgstr "Devre dışı bırakıldı"
 
-#: src/Views/Appearance.vala:125
+#: src/Views/Appearance.vala:123
 msgid "Sunset to Sunrise"
 msgstr "Otomatik"
 
-#: src/Views/Appearance.vala:130
+#: src/Views/Appearance.vala:128
 msgid "From:"
 msgstr "Başlangıç:"
 
-#: src/Views/Appearance.vala:137
+#: src/Views/Appearance.vala:135
 msgid "To:"
 msgstr "Bitiş:"
 
-#: src/Views/Appearance.vala:319
+#: src/Views/Appearance.vala:159
+msgid "Schedule"
+msgstr "Zamanlama"
+
+#: src/Views/Appearance.vala:322
 msgid "Blueberry"
 msgstr "Yaban mersini"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:325
 msgid "Mint"
 msgstr "Nane yeşili"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:328
 msgid "Lime"
 msgstr "Limon yeşili"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:331
 msgid "Banana"
 msgstr "Muz sarısı"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:334
 msgid "Orange"
 msgstr "Turuncu"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:337
 msgid "Strawberry"
 msgstr "Çilek kırmızısı"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:340
 msgid "Bubblegum"
 msgstr "Pembe"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:343
 msgid "Grape"
 msgstr "Mor"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:346
 msgid "Cocoa"
 msgstr "Kahverengi"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:349
 msgid "Slate"
 msgstr "Koyu gri"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:352
 msgid "Automatic based on wallpaper"
 msgstr "Duvar kağıdına göre otomatik"
 
-#: src/Views/Appearance.vala:376
+#: src/Views/Appearance.vala:386
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Pencere yöneticisinde ve diğer bazı arayüz ögelerinde animasyonları devre "
 "dışı bırakın."
 
-#: src/Views/Appearance.vala:392
+#: src/Views/Appearance.vala:402
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
@@ -387,33 +361,33 @@ msgstr ""
 msgid "Import Photo…"
 msgstr "Fotoğrafı İçe Aktar…"
 
-#: src/Views/Wallpaper.vala:93
+#: src/Views/Wallpaper.vala:87
 msgid "Centered"
 msgstr "Ortala"
 
-#: src/Views/Wallpaper.vala:94
+#: src/Views/Wallpaper.vala:88
 msgid "Zoom"
 msgstr "Yakınlaştır"
 
-#: src/Views/Wallpaper.vala:95
+#: src/Views/Wallpaper.vala:89
 msgid "Spanned"
 msgstr "Yayılmış"
 
-#: src/Views/Wallpaper.vala:142
+#: src/Views/Wallpaper.vala:128
 msgid "Import"
 msgstr "İçe Aktar"
 
-#: src/Views/Wallpaper.vala:145
+#: src/Views/Wallpaper.vala:131
 #, fuzzy
 #| msgid "Import Photo"
 msgid "Import Photos"
 msgstr "Fotoğrafı İçe Aktar"
 
-#: src/Views/Wallpaper.vala:489
+#: src/Views/Wallpaper.vala:475
 msgid "Wallpaper Deleted"
 msgstr "Duvar Kağıdı Silindi"
 
-#: src/Views/Wallpaper.vala:490
+#: src/Views/Wallpaper.vala:476
 msgid "Undo"
 msgstr "Geri Al"
 
@@ -425,6 +399,12 @@ msgstr "Kaldır"
 #, c-format
 msgid "Artist: %s"
 msgstr "Sanatçı: %s"
+
+#~ msgid "Set as _Desktop Background"
+#~ msgstr "_Masaüstü Arkapalanı Olarak Ayarla"
+
+#~ msgid "Set selected image to be the new desktop background"
+#~ msgstr "Seçili resmi yeni masaüstü arkaplanı olarak ayarla"
 
 #~ msgid "Style"
 #~ msgstr "Stil"

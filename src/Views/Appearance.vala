@@ -115,8 +115,6 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         dim_box.append (dim_label);
         dim_box.append (dim_switch);
 
-        var schedule_label = new Granite.HeaderLabel (_("Schedule"));
-
         var schedule_disabled_radio = new Gtk.CheckButton.with_label (_("Disabled")) {
             margin_bottom = 3
         };
@@ -147,7 +145,19 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         schedule_manual_box.append (to_time);
 
         var schedule_manual_radio = new Gtk.CheckButton () {
+            child = schedule_manual_box,
             group = schedule_disabled_radio
+        };
+
+        var schedule_box = new Gtk.Box (VERTICAL, 3) {
+            accessible_role = LIST
+        };
+        schedule_box.append (schedule_disabled_radio);
+        schedule_box.append (schedule_sunset_radio);
+        schedule_box.append (schedule_manual_radio);
+
+        var schedule_label = new Granite.HeaderLabel (_("Schedule")) {
+            mnemonic_widget = schedule_box
         };
 
         Pantheon.AccountsService? pantheon_act = null;
@@ -186,10 +196,7 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
             grid.attach (prefer_style_box, 0, 2, 2);
             grid.attach (dim_box, 0, 3, 2);
             grid.attach (schedule_label, 0, 4, 2);
-            grid.attach (schedule_disabled_radio, 0, 5, 2);
-            grid.attach (schedule_sunset_radio, 0, 6, 2);
-            grid.attach (schedule_manual_radio, 0, 7);
-            grid.attach (schedule_manual_box, 1, 7);
+            grid.attach (schedule_box, 0, 5, 2);
 
             switch (pantheon_act.prefers_color_scheme) {
                 case Granite.Settings.ColorScheme.DARK:
@@ -311,10 +318,6 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         debug ("Current stylesheet: %s", current_stylesheet);
 
         if (current_stylesheet.has_prefix (STYLESHEET_PREFIX)) {
-            var accent_label = new Granite.HeaderLabel (_("Accent Color")) {
-                margin_top = 18
-            };
-
             var blueberry_button = new PrefersAccentColorButton (pantheon_act, AccentColor.BLUE);
             blueberry_button.tooltip_text = _("Blueberry");
 
@@ -348,7 +351,9 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
             var auto_button = new PrefersAccentColorButton (pantheon_act, AccentColor.NO_PREFERENCE, blueberry_button);
             auto_button.tooltip_text = _("Automatic based on wallpaper");
 
-            var accent_box = new Gtk.Box (HORIZONTAL, 6);
+            var accent_box = new Gtk.Box (HORIZONTAL, 6) {
+                accessible_role = Gtk.AccessibleRole.LIST
+            };
             accent_box.append (blueberry_button);
             accent_box.append (mint_button);
             accent_box.append (lime_button);
@@ -360,6 +365,11 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
             accent_box.append (cocoa_button);
             accent_box.append (slate_button);
             accent_box.append (auto_button);
+
+            var accent_label = new Granite.HeaderLabel (_("Accent Color")) {
+                margin_top = 18,
+                mnemonic_widget = accent_box
+            };
 
             grid.attach (accent_label, 0, 8, 2);
             grid.attach (accent_box, 0, 9, 2);

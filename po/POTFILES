@@ -1,7 +1,6 @@
 src/IOHelper.vala
 src/Plug.vala
 src/ThumbnailGenerator.vala
-src/Translations.vala
 src/Views/Appearance.vala
 src/Views/Dock.vala
 src/Views/Multitasking.vala

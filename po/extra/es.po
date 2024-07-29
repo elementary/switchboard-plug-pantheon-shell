@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 21:47+0000\n"
-"PO-Revision-Date: 2024-06-14 03:33+0000\n"
+"POT-Creation-Date: 2024-07-13 16:17+0000\n"
+"PO-Revision-Date: 2024-07-09 21:11+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -31,30 +31,67 @@ msgstr "Configure el Dock, las esquinas activas y el fondo de escritorio"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:69
-#: data/desktop.metainfo.xml.in:83 data/desktop.metainfo.xml.in:105
-#: data/desktop.metainfo.xml.in:119
+#: data/desktop.metainfo.xml.in:48
+msgid "New Features:"
+msgstr "Nuevas características:"
+
+#: data/desktop.metainfo.xml.in:50
+msgid "Always Show Scrollbars setting"
+msgstr ""
+"Se agregó una configuración de mostrar siempre las barras de desplazamiento"
+
+#: data/desktop.metainfo.xml.in:52 data/desktop.metainfo.xml.in:70
+#: data/desktop.metainfo.xml.in:91 data/desktop.metainfo.xml.in:105
+#: data/desktop.metainfo.xml.in:127
 msgid "Other updates:"
 msgstr "Otras actualizaciones:"
 
-#: data/desktop.metainfo.xml.in:50
+#: data/desktop.metainfo.xml.in:54
+msgid "Redundant labels have been cleaned up on the Appearance tab"
+msgstr "Se limpiaron las etiquetas redundantes en la pestaña de Apariencia"
+
+#: data/desktop.metainfo.xml.in:55
+msgid "The Dim Wallpaper setting has moved to the Appearance tab"
+msgstr ""
+"El ajuste de atenuar el fondo del escritorio se ha movido a la pestaña de "
+"Apariencia"
+
+#: data/desktop.metainfo.xml.in:56
+msgid ""
+"The style selector now shows of a preview of your wallpaper as well as "
+"previewing the dim setting"
+msgstr ""
+"Ahora se muestra una vista previa del escritorio normal y atenuado con el "
+"fondo de pantalla del usuario al seleccionar estilos"
+
+#: data/desktop.metainfo.xml.in:57
+msgid "Improved screen reader accessibility"
+msgstr "Se mejoró la accesibilidad para los lectores de pantalla"
+
+#: data/desktop.metainfo.xml.in:58 data/desktop.metainfo.xml.in:76
+#: data/desktop.metainfo.xml.in:94 data/desktop.metainfo.xml.in:107
+#: data/desktop.metainfo.xml.in:129
+msgid "Updated translations"
+msgstr "Traducciones actualizadas"
+
+#: data/desktop.metainfo.xml.in:72
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
 "Se ha rediseñado la vista de configuración de «Panel y Dock» con un texto "
 "descriptivo útil"
 
-#: data/desktop.metainfo.xml.in:51
+#: data/desktop.metainfo.xml.in:73
 msgid "Show or hide optional panel indicators"
 msgstr "Ahora se puede mostrar u ocultar indicadores opcionales en el Panel"
 
-#: data/desktop.metainfo.xml.in:52
+#: data/desktop.metainfo.xml.in:74
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Se corrigió el valor de espera de traslación en el carrusel de imágenes y la "
 "etiqueta de «Atenuar con estilo oscuro»"
 
-#: data/desktop.metainfo.xml.in:53
+#: data/desktop.metainfo.xml.in:75
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
@@ -62,77 +99,69 @@ msgstr ""
 "Se corrigió un error donde los fondos de escritorio no se quitaban al cerrar "
 "Configuración del Sistema inmediatamente después"
 
-#: data/desktop.metainfo.xml.in:54 data/desktop.metainfo.xml.in:72
-#: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:107
-#: data/desktop.metainfo.xml.in:121
-msgid "Updated translations"
-msgstr "Traducciones actualizadas"
-
-#: data/desktop.metainfo.xml.in:65 data/desktop.metainfo.xml.in:92
-#: data/desktop.metainfo.xml.in:114
+#: data/desktop.metainfo.xml.in:87 data/desktop.metainfo.xml.in:114
 msgid "New features:"
 msgstr "Nuevas características:"
 
-#: data/desktop.metainfo.xml.in:67
+#: data/desktop.metainfo.xml.in:89
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr ""
 "Se agregó una opción para atenuar fondos de escritorio cuando el estilo "
 "oscuro está activo"
 
-#: data/desktop.metainfo.xml.in:71
+#: data/desktop.metainfo.xml.in:93
 msgid "Use a more vertical layout in the Text view"
 msgstr "Se usa una disposición más vertical en la vista de Texto"
 
-#: data/desktop.metainfo.xml.in:94
+#: data/desktop.metainfo.xml.in:116
 msgid "There is now an undo option after removing a wallpaper"
 msgstr ""
 "Ahora existe una opción de deshacer después de quitar un fondo de escritorio"
 
-#: data/desktop.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:117
 msgid "Wallpapers are now sorted with custom wallpapers first"
 msgstr ""
 "Ahora los fondos de escritorio se ordenan colocando los fondos "
 "personalizados primero"
 
-#: data/desktop.metainfo.xml.in:97
+#: data/desktop.metainfo.xml.in:119
 msgid "Fixes:"
 msgstr "Correcciones:"
 
-#: data/desktop.metainfo.xml.in:99
+#: data/desktop.metainfo.xml.in:121
 msgid "Wallpaper accent color follows system setting"
 msgstr ""
 "El color de énfasis del fondo de escritorio ahora sigue la configuración de "
 "sistema"
 
-#: data/desktop.metainfo.xml.in:100
+#: data/desktop.metainfo.xml.in:122
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
 msgstr ""
 "El contrato para establecer el fondo de escritorio ahora falla correctamente "
 "si se usa «sudo»"
 
-#: data/desktop.metainfo.xml.in:101
+#: data/desktop.metainfo.xml.in:123
 msgid "Wallpapers with the same name are distinguished"
-msgstr "Ahora se distinguen los fondos de escritorio que tengan el mismo nombre"
+msgstr ""
+"Ahora se distinguen los fondos de escritorio que tengan el mismo nombre"
 
-#: data/desktop.metainfo.xml.in:102
+#: data/desktop.metainfo.xml.in:124
 msgid "Switching styles with the keyboard cancels dark style scheduling"
 msgstr ""
 "Ahora al cambiar estilos con el teclado se cancela el ajuste de horario del "
 "estilo oscuro"
 
-#: data/desktop.metainfo.xml.in:103
+#: data/desktop.metainfo.xml.in:125
 msgid "Style dyslexia-friendly switch properly"
 msgstr "El estilo apto para dislexia se cambia correctamente"
 
-#: data/desktop.metainfo.xml.in:116
-msgid "Set custom Terminal commands for each hotcorner"
-msgstr ""
-"Se pueden utilizar comandos personalizados del terminal para cada esquina "
-"activa"
+#~ msgid "Set custom Terminal commands for each hotcorner"
+#~ msgstr ""
+#~ "Se pueden utilizar comandos personalizados del terminal para cada esquina "
+#~ "activa"
 
-#: data/desktop.metainfo.xml.in:117
-msgid "Redesigned Appearance and Multitasking views"
-msgstr "Se rediseñaron las vistas de Multitarea y Apariencia"
+#~ msgid "Redesigned Appearance and Multitasking views"
+#~ msgstr "Se rediseñaron las vistas de Multitarea y Apariencia"
 
 #~ msgid ""
 #~ "Dyslexia-friendly text preference to use the OpenDyslexia font system-wide"
