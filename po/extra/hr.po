@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-13 16:17+0000\n"
-"PO-Revision-Date: 2020-04-12 11:10+0000\n"
-"Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
+"PO-Revision-Date: 2024-08-07 18:17+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/hr/>\n"
 "Language: hr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: data/desktop.metainfo.xml.in:11
 msgid "Configure the dock, hot corners, and change wallpaper"
-msgstr ""
+msgstr "Prilagodite dok, kuteve prečaca i promijenite pozadinu"
 
 #: data/desktop.metainfo.xml.in:40
 msgid "elementary, Inc."
