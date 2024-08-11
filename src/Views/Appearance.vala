@@ -271,7 +271,6 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
                 mutter_settings.set_enum ("color-scheme", Granite.Settings.ColorScheme.DARK);
             });
 
-
             /* Connect to focus_in_event so that this is only triggered
              * through user interaction, not if scheduling changes the selection
              */
