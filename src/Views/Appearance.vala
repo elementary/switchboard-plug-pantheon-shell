@@ -259,10 +259,16 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
 
             prefer_default_radio.toggled.connect (() => {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.NO_PREFERENCE;
+
+                var mutter_settings = new GLib.Settings ("org.gnome.desktop.interface");
+                mutter_settings.set_enum ("color-scheme", Granite.Settings.ColorScheme.NO_PREFERENCE);
             });
 
             prefer_dark_radio.toggled.connect (() => {
                 pantheon_act.prefers_color_scheme = Granite.Settings.ColorScheme.DARK;
+
+                var mutter_settings = new GLib.Settings ("org.gnome.desktop.interface");
+                mutter_settings.set_enum ("color-scheme", Granite.Settings.ColorScheme.DARK);
             });
 
             /* Connect to focus_in_event so that this is only triggered
