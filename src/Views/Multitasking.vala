@@ -69,7 +69,7 @@ public class PantheonShell.Multitasking : Switchboard.SettingsPage {
 
         child = grid;
 
-        behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
+        behavior_settings = new GLib.Settings ("io.elementary.desktop.wm.behavior");
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
         behavior_settings.bind ("move-maximized-workspace", maximize_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
     }
@@ -90,7 +90,7 @@ public class PantheonShell.Multitasking : Switchboard.SettingsPage {
         }
 
         static construct {
-            settings = new Settings ("org.pantheon.desktop.gala.behavior");
+            settings = new Settings ("io.elementary.desktop.wm.behavior");
             size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.BOTH);
         }
 
