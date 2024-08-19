@@ -119,7 +119,7 @@ public class PantheonShell.Dock : Switchboard.SettingsPage {
         };
 
         var scroll_to_switch_workspaces_header = new Granite.HeaderLabel (_("Panel Scroll")) {
-            mnemonic_widget = translucency_switch,
+            mnemonic_widget = scroll_to_switch_workspaces_switch,
             secondary_text = _("Scroll on the panel to switch workspaces")
         };
 
