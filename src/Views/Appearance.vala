@@ -420,7 +420,7 @@ public class PantheonShell.Appearance : Switchboard.SettingsPage {
         child = grid;
         add_css_class ("appearance-view");
 
-        var animations_settings = new Settings ("org.pantheon.desktop.gala.animations");
+        var animations_settings = new Settings ("io.elementary.desktop.wm.animations");
         animations_settings.bind ("enable-animations", animations_switch, "active", SettingsBindFlags.INVERT_BOOLEAN);
 
         interface_settings.bind ("overlay-scrolling", scrollbar_switch, "active", INVERT_BOOLEAN);
