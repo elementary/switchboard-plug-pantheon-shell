@@ -6,6 +6,7 @@
 public class PantheonShell.Dock : Switchboard.SettingsPage {
     private const string PANEL_SCHEMA = "io.elementary.desktop.wingpanel";
     private const string TRANSLUCENCY_KEY = "use-transparency";
+    private const string SCROLL_TO_SWITCH_WORKSPACES_KEY = "scroll-to-switch-workspaces";
 
     public Dock () {
         Object (
@@ -111,6 +112,21 @@ public class PantheonShell.Dock : Switchboard.SettingsPage {
         translucency_box.append (translucency_header);
         translucency_box.append (translucency_switch);
 
+        var scroll_to_switch_workspaces_switch = new Gtk.Switch () {
+            halign = END,
+            hexpand = true,
+            valign = CENTER
+        };
+
+        var scroll_to_switch_workspaces_header = new Granite.HeaderLabel (_("Panel Scroll")) {
+            mnemonic_widget = translucency_switch,
+            secondary_text = _("Scroll on the panel to switch workspaces")
+        };
+
+        var scroll_to_switch_workspaces_box = new Gtk.Box (HORIZONTAL, 12);
+        scroll_to_switch_workspaces_box.append (scroll_to_switch_workspaces_header);
+        scroll_to_switch_workspaces_box.append (scroll_to_switch_workspaces_switch);
+
         var indicators_header = new Granite.HeaderLabel (_("Show in Panel"));
 
         var indicators_box = new Gtk.Box (VERTICAL, 6);
@@ -144,6 +160,7 @@ public class PantheonShell.Dock : Switchboard.SettingsPage {
         box.append (icon_box);
         box.append (hide_box);
         box.append (translucency_box);
+        box.append (scroll_to_switch_workspaces_box);
 
         // Only add this box if it has more than the header in it
         if (indicators_header.get_next_sibling () != null) {
@@ -312,5 +329,6 @@ public class PantheonShell.Dock : Switchboard.SettingsPage {
 
         var panel_settings = new GLib.Settings (PANEL_SCHEMA);
         panel_settings.bind (TRANSLUCENCY_KEY, translucency_switch, "active", SettingsBindFlags.DEFAULT);
+        panel_settings.bind (SCROLL_TO_SWITCH_WORKSPACES_KEY, scroll_to_switch_workspaces_switch, "active", SettingsBindFlags.DEFAULT);
     }
 }
