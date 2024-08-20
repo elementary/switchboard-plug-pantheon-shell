@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 16:17+0000\n"
+"POT-Creation-Date: 2024-08-20 13:58+0000\n"
 "PO-Revision-Date: 2024-05-29 20:51+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -85,15 +85,15 @@ msgstr "Donker thema"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Verdim met donker thema:"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:369
+#: src/Plug.vala:129 src/Views/Appearance.vala:375
 msgid "Accent Color"
 msgstr "Accent kleur"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:399
+#: src/Plug.vala:130 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
 msgstr "Schuifbalken altijd tonen"
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:384
+#: src/Plug.vala:131 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
 msgstr "Beperk bewegende elementen"
 
@@ -156,57 +156,57 @@ msgstr "Tot:"
 msgid "Schedule"
 msgstr "Planning"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:328
 msgid "Blueberry"
 msgstr "Bosbes"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:331
 msgid "Mint"
 msgstr "Munt"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:334
 msgid "Lime"
 msgstr "Limoen"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:337
 msgid "Banana"
 msgstr "Banaan"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:340
 msgid "Orange"
 msgstr "Sinaasappel"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:343
 msgid "Strawberry"
 msgstr "Aardbei"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:346
 msgid "Bubblegum"
 msgstr "Kauwgom"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid "Grape"
 msgstr "Druif"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:352
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:355
 msgid "Slate"
 msgstr "Leisteen"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:358
 msgid "Automatic based on wallpaper"
 msgstr "Automatisch gebasseerd op bureaubladachtergrond"
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:392
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Schalen animaties in de vensterbeheerder en bepaalde interface elementen uit."
 
-#: src/Views/Appearance.vala:402
+#: src/Views/Appearance.vala:408
 msgid "Scrollbars will take up space, even when not in use."
 msgstr "Schuifbalken nemen ruimte in, zelfs als ze niet worden gebruikt."
 

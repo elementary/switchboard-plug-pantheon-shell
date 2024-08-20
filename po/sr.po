@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pantheon-desktop-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 16:17+0000\n"
+"POT-Creation-Date: 2024-08-20 13:58+0000\n"
 "PO-Revision-Date: 2023-06-28 21:58+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -84,17 +84,17 @@ msgstr "Тамни стил"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Тамни стил"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:369
+#: src/Plug.vala:129 src/Views/Appearance.vala:375
 #, fuzzy
 #| msgid "Accent color"
 msgid "Accent Color"
 msgstr "Наглађена боја"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:399
+#: src/Plug.vala:130 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:384
+#: src/Plug.vala:131 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
 msgstr ""
 
@@ -157,56 +157,56 @@ msgstr "До:"
 msgid "Schedule"
 msgstr "Распоред"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:328
 msgid "Blueberry"
 msgstr "Боровница"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:331
 msgid "Mint"
 msgstr "Нана"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:334
 msgid "Lime"
 msgstr "Лимета"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:337
 msgid "Banana"
 msgstr "Банана"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:340
 msgid "Orange"
 msgstr "Наранџа"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:343
 msgid "Strawberry"
 msgstr "Јагода"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:346
 msgid "Bubblegum"
 msgstr "Жвакаћа гума"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid "Grape"
 msgstr "Грожђе"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:352
 msgid "Cocoa"
 msgstr "Какао"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:355
 msgid "Slate"
 msgstr "Шкриљац"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:358
 msgid "Automatic based on wallpaper"
 msgstr ""
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:392
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 
-#: src/Views/Appearance.vala:402
+#: src/Views/Appearance.vala:408
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
