@@ -1,3 +1,9 @@
+io.elementary.settings.desktop (8.0.1) noble; urgency=medium
+
+  * Release 8.0.1
+
+ -- Danielle Foré <danielle@elementary.io>  Tue, 20 Aug 2024 08:27:51 -0700
+
 io.elementary.settings.desktop (8.0.0) noble; urgency=medium
 
   * Release 8.0.0
