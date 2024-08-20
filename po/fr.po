@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 16:17+0000\n"
+"POT-Creation-Date: 2024-08-20 13:58+0000\n"
 "PO-Revision-Date: 2024-05-23 21:21+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -81,15 +81,15 @@ msgstr "Thème sombre"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Atténuer le fond d'écran avec le thème sombre"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:369
+#: src/Plug.vala:129 src/Views/Appearance.vala:375
 msgid "Accent Color"
 msgstr "Couleur d'accentuation"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:399
+#: src/Plug.vala:130 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
 msgstr "Toujours afficher les barres de défilement"
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:384
+#: src/Plug.vala:131 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
 msgstr "Réduire le mouvement"
 
@@ -148,58 +148,58 @@ msgstr "Jusqu'à :"
 msgid "Schedule"
 msgstr "Horaire"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:328
 msgid "Blueberry"
 msgstr "Myrtille"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:331
 msgid "Mint"
 msgstr "Menthe"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:334
 msgid "Lime"
 msgstr "Citron Vert"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:337
 msgid "Banana"
 msgstr "Banane"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:340
 msgid "Orange"
 msgstr "Orange"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:343
 msgid "Strawberry"
 msgstr "Fraise"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:346
 msgid "Bubblegum"
 msgstr "Chewing-gum"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid "Grape"
 msgstr "Raisin"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:352
 msgid "Cocoa"
 msgstr "Cacao"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:355
 msgid "Slate"
 msgstr "Ardoise"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:358
 msgid "Automatic based on wallpaper"
 msgstr "Automatique à partir du fond d'écran"
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:392
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Désactiver les animations dans le gestionnaire de fenêtres et certains "
 "autres éléments de l'interface."
 
-#: src/Views/Appearance.vala:402
+#: src/Views/Appearance.vala:408
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 "Les barres de défilement occuperont l'espace même lorsqu'elles ne sont pas "

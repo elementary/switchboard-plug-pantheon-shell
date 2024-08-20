@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 16:17+0000\n"
+"POT-Creation-Date: 2024-08-20 13:58+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -83,15 +83,15 @@ msgstr "Koyu renk tema"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Koyu renk tema kullanırken karart:"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:369
+#: src/Plug.vala:129 src/Views/Appearance.vala:375
 msgid "Accent Color"
 msgstr "Vurgu Rengi"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:399
+#: src/Plug.vala:130 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:384
+#: src/Plug.vala:131 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
 msgstr "Animasyonları Azalt"
 
@@ -154,58 +154,58 @@ msgstr "Bitiş:"
 msgid "Schedule"
 msgstr "Zamanlama"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:328
 msgid "Blueberry"
 msgstr "Yaban mersini"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:331
 msgid "Mint"
 msgstr "Nane yeşili"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:334
 msgid "Lime"
 msgstr "Limon yeşili"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:337
 msgid "Banana"
 msgstr "Muz sarısı"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:340
 msgid "Orange"
 msgstr "Turuncu"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:343
 msgid "Strawberry"
 msgstr "Çilek kırmızısı"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:346
 msgid "Bubblegum"
 msgstr "Pembe"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid "Grape"
 msgstr "Mor"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:352
 msgid "Cocoa"
 msgstr "Kahverengi"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:355
 msgid "Slate"
 msgstr "Koyu gri"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:358
 msgid "Automatic based on wallpaper"
 msgstr "Duvar kağıdına göre otomatik"
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:392
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Pencere yöneticisinde ve diğer bazı arayüz ögelerinde animasyonları devre "
 "dışı bırakın."
 
-#: src/Views/Appearance.vala:402
+#: src/Views/Appearance.vala:408
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 

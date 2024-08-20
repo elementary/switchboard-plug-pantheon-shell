@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 16:17+0000\n"
+"POT-Creation-Date: 2024-08-20 13:58+0000\n"
 "PO-Revision-Date: 2024-05-23 09:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -82,15 +82,15 @@ msgstr "Estil fosc"
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Fons de pantalla fosc amb estil fosc"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:369
+#: src/Plug.vala:129 src/Views/Appearance.vala:375
 msgid "Accent Color"
 msgstr "Accentuació del color"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:399
+#: src/Plug.vala:130 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
 msgstr "Mostra sempre les barres de desplaçament."
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:384
+#: src/Plug.vala:131 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
 msgstr "Redueix el moviment"
 
@@ -149,58 +149,58 @@ msgstr "A:"
 msgid "Schedule"
 msgstr "Planificació"
 
-#: src/Views/Appearance.vala:322
+#: src/Views/Appearance.vala:328
 msgid "Blueberry"
 msgstr "Nabiu"
 
-#: src/Views/Appearance.vala:325
+#: src/Views/Appearance.vala:331
 msgid "Mint"
 msgstr "Menta"
 
-#: src/Views/Appearance.vala:328
+#: src/Views/Appearance.vala:334
 msgid "Lime"
 msgstr "Llima"
 
-#: src/Views/Appearance.vala:331
+#: src/Views/Appearance.vala:337
 msgid "Banana"
 msgstr "Plàtan"
 
-#: src/Views/Appearance.vala:334
+#: src/Views/Appearance.vala:340
 msgid "Orange"
 msgstr "Taronja"
 
-#: src/Views/Appearance.vala:337
+#: src/Views/Appearance.vala:343
 msgid "Strawberry"
 msgstr "Maduixa"
 
-#: src/Views/Appearance.vala:340
+#: src/Views/Appearance.vala:346
 msgid "Bubblegum"
 msgstr "Xiclet"
 
-#: src/Views/Appearance.vala:343
+#: src/Views/Appearance.vala:349
 msgid "Grape"
 msgstr "Raïm"
 
-#: src/Views/Appearance.vala:346
+#: src/Views/Appearance.vala:352
 msgid "Cocoa"
 msgstr "Cacau"
 
-#: src/Views/Appearance.vala:349
+#: src/Views/Appearance.vala:355
 msgid "Slate"
 msgstr "Pissarra"
 
-#: src/Views/Appearance.vala:352
+#: src/Views/Appearance.vala:358
 msgid "Automatic based on wallpaper"
 msgstr "Automàtic segons el fons"
 
-#: src/Views/Appearance.vala:386
+#: src/Views/Appearance.vala:392
 msgid ""
 "Disable animations in the window manager and some other interface elements."
 msgstr ""
 "Desactiveu les animacions al gestor de finestres i alguns altres elements de "
 "la interfície."
 
-#: src/Views/Appearance.vala:402
+#: src/Views/Appearance.vala:408
 msgid "Scrollbars will take up space, even when not in use."
 msgstr "Les barres de desplaçament ocuparan espai, fins i tot quan no s'usin."
 
