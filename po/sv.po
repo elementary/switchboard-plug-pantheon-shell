@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 13:58+0000\n"
+"POT-Creation-Date: 2024-08-20 20:10+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Swedish <https://l10n.elementary.io/projects/switchboard/"
@@ -45,7 +45,7 @@ msgid "Text"
 msgstr "Ikonstorlek:"
 
 #: src/Plug.vala:68 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
-#: src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125 src/Views/Dock.vala:12
+#: src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125 src/Views/Dock.vala:13
 msgid "Dock & Panel"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
 
-#: src/Views/Appearance.vala:84 src/Views/Dock.vala:36
+#: src/Views/Appearance.vala:84 src/Views/Dock.vala:37
 msgid "Default"
 msgstr "Standard"
 
@@ -206,75 +206,83 @@ msgstr ""
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
 
-#: src/Views/Dock.vala:19
+#: src/Views/Dock.vala:20
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Dock Icon Size"
 msgstr "Ikonstorlek"
 
-#: src/Views/Dock.vala:26
+#: src/Views/Dock.vala:27
 msgid "Small"
 msgstr "Liten"
 
-#: src/Views/Dock.vala:46
+#: src/Views/Dock.vala:47
 msgid "Large"
 msgstr "Stor"
 
-#: src/Views/Dock.vala:63
+#: src/Views/Dock.vala:64
 #, fuzzy
 #| msgid "Hide Mode"
 msgid "Hide Dock"
 msgstr "Dolt läge"
 
-#: src/Views/Dock.vala:65
+#: src/Views/Dock.vala:66
 msgid "Never"
 msgstr "Aldrig"
 
-#: src/Views/Dock.vala:68
+#: src/Views/Dock.vala:69
 #, fuzzy
 #| msgid "Focused window is maximized"
 msgid "When the focused window is maximized"
 msgstr "Fokuserat fönster är maximerat"
 
-#: src/Views/Dock.vala:74
+#: src/Views/Dock.vala:75
 #, fuzzy
 #| msgid "Focused window overlaps the dock"
 msgid "When the focused window overlaps the dock"
 msgstr "Fokuserat fönster överlappar dockan"
 
-#: src/Views/Dock.vala:80
+#: src/Views/Dock.vala:81
 #, fuzzy
 #| msgid "Any window overlaps the dock"
 msgid "When any window overlaps the dock"
 msgstr "Något fönster överlappar dockan"
 
-#: src/Views/Dock.vala:86
+#: src/Views/Dock.vala:87
 #, fuzzy
 #| msgid "Not being used"
 msgid "When not being used"
 msgstr "Används inte"
 
-#: src/Views/Dock.vala:105
+#: src/Views/Dock.vala:106
 msgid "Panel Translucency"
 msgstr ""
 
-#: src/Views/Dock.vala:107
+#: src/Views/Dock.vala:108
 msgid "Automatically transparent or opaque based on the wallpaper"
 msgstr ""
 
-#: src/Views/Dock.vala:114
+#: src/Views/Dock.vala:121
+msgid "Panel Scroll"
+msgstr ""
+
+#: src/Views/Dock.vala:123
+msgid "Scroll on the panel to switch workspaces"
+msgstr ""
+
+#: src/Views/Dock.vala:130
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Dock.vala:121
+#: src/Views/Dock.vala:137
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Dock.vala:131
+#: src/Views/Dock.vala:147
 msgid "Caps Lock ⇪"
 msgstr ""
 
-#: src/Views/Dock.vala:132
+#: src/Views/Dock.vala:148
 msgid "Num Lock"
 msgstr ""
 
