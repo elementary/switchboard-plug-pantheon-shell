@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 20:10+0000\n"
-"PO-Revision-Date: 2024-05-20 01:13+0000\n"
+"PO-Revision-Date: 2024-08-22 01:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -247,11 +247,11 @@ msgstr "אוטומטית שקוף או אטום לפי הרקע"
 
 #: src/Views/Dock.vala:121
 msgid "Panel Scroll"
-msgstr ""
+msgstr "גלילת לוח"
 
 #: src/Views/Dock.vala:123
 msgid "Scroll on the panel to switch workspaces"
-msgstr ""
+msgstr "גלילה על הלוח תחליף מרחבי עבודה"
 
 #: src/Views/Dock.vala:130
 msgid "Show in Panel"
