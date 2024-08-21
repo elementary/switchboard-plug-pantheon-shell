@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 20:10+0000\n"
-"PO-Revision-Date: 2024-05-20 01:13+0000\n"
+"PO-Revision-Date: 2024-08-22 01:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-25 05:57+0000\n"
 
 #: src/Plug.vala:49
@@ -244,11 +244,11 @@ msgstr "Автоматический выбор прозрачности в за
 
 #: src/Views/Dock.vala:121
 msgid "Panel Scroll"
-msgstr ""
+msgstr "Прокрутка панели"
 
 #: src/Views/Dock.vala:123
 msgid "Scroll on the panel to switch workspaces"
-msgstr ""
+msgstr "Прокрутите на панели, чтобы переключить рабочие столы"
 
 #: src/Views/Dock.vala:130
 msgid "Show in Panel"
