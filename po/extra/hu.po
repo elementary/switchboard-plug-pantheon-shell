@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 20:10+0000\n"
-"PO-Revision-Date: 2024-08-07 18:17+0000\n"
+"PO-Revision-Date: 2024-08-22 01:16+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/hu/>\n"
@@ -35,7 +35,7 @@ msgstr "elementary, Inc."
 #: data/desktop.metainfo.xml.in:79 data/desktop.metainfo.xml.in:100
 #: data/desktop.metainfo.xml.in:114 data/desktop.metainfo.xml.in:136
 msgid "Other updates:"
-msgstr ""
+msgstr "Egyéb frissítések:"
 
 #: data/desktop.metainfo.xml.in:50 data/desktop.metainfo.xml.in:67
 #: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:103
@@ -44,8 +44,6 @@ msgid "Updated translations"
 msgstr "Frissített fordítások"
 
 #: data/desktop.metainfo.xml.in:57
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
 msgstr "Új funkciók:"
 
