@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 20:10+0000\n"
-"PO-Revision-Date: 2024-08-17 10:16+0000\n"
+"PO-Revision-Date: 2024-09-01 23:41+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/nl/>\n"
@@ -46,8 +46,6 @@ msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
 #: data/desktop.metainfo.xml.in:57
-#, fuzzy
-#| msgid "New features:"
 msgid "New Features:"
 msgstr "Nieuwe functies:"
 
