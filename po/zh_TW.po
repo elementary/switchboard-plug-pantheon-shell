@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 20:10+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-06 10:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hant/>\n"
@@ -116,7 +116,7 @@ msgstr "將視窗移動到新的工作空間"
 #: src/Views/Appearance.vala:70
 msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
-msgstr ""
+msgstr "應用程式可能會遵循這些設定，但也能選擇它們自己的強調色或風格。"
 
 #: src/Views/Appearance.vala:84 src/Views/Dock.vala:37
 msgid "Default"
@@ -152,39 +152,39 @@ msgstr "藍莓"
 
 #: src/Views/Appearance.vala:331
 msgid "Mint"
-msgstr ""
+msgstr "薄荷"
 
 #: src/Views/Appearance.vala:334
 msgid "Lime"
-msgstr ""
+msgstr "萊姆"
 
 #: src/Views/Appearance.vala:337
 msgid "Banana"
-msgstr ""
+msgstr "香蕉"
 
 #: src/Views/Appearance.vala:340
 msgid "Orange"
-msgstr ""
+msgstr "橘色"
 
 #: src/Views/Appearance.vala:343
 msgid "Strawberry"
-msgstr ""
+msgstr "草莓"
 
 #: src/Views/Appearance.vala:346
 msgid "Bubblegum"
-msgstr ""
+msgstr "粉色"
 
 #: src/Views/Appearance.vala:349
 msgid "Grape"
-msgstr ""
+msgstr "葡萄"
 
 #: src/Views/Appearance.vala:352
 msgid "Cocoa"
-msgstr ""
+msgstr "可可"
 
 #: src/Views/Appearance.vala:355
 msgid "Slate"
-msgstr ""
+msgstr "石板"
 
 #: src/Views/Appearance.vala:358
 msgid "Automatic based on wallpaper"
@@ -193,11 +193,11 @@ msgstr "自動從桌布決定"
 #: src/Views/Appearance.vala:392
 msgid ""
 "Disable animations in the window manager and some other interface elements."
-msgstr ""
+msgstr "停用視窗管理員和其他一些介面元素的動畫效果。"
 
 #: src/Views/Appearance.vala:408
 msgid "Scrollbars will take up space, even when not in use."
-msgstr ""
+msgstr "捲動軸即使未在使用也會佔用空間。"
 
 #: src/Views/Dock.vala:20
 msgid "Dock Icon Size"
