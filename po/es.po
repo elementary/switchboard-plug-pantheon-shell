@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 20:10+0000\n"
-"PO-Revision-Date: 2024-08-22 01:16+0000\n"
+"PO-Revision-Date: 2024-09-09 10:20+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/es/>\n"
@@ -356,7 +356,7 @@ msgstr "Centrado"
 
 #: src/Views/Wallpaper.vala:88
 msgid "Zoom"
-msgstr "Ampliar"
+msgstr "Ampliado"
 
 #: src/Views/Wallpaper.vala:89
 msgid "Spanned"
