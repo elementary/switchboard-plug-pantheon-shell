@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 20:10+0000\n"
-"PO-Revision-Date: 2024-09-06 10:13+0000\n"
+"PO-Revision-Date: 2024-09-14 02:16+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/desktop-plug-extra/zh_Hant/>\n"
@@ -118,7 +118,7 @@ msgstr "桌布強調色現在會跟隨系統設定"
 
 #: data/desktop.metainfo.xml.in:131
 msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
+msgstr "讓「設為桌布」項目誤用 sudo 執行時能適當的離開"
 
 #: data/desktop.metainfo.xml.in:132
 msgid "Wallpapers with the same name are distinguished"
@@ -130,7 +130,7 @@ msgstr "用鍵盤切換風格時會取消深色風格排程"
 
 #: data/desktop.metainfo.xml.in:134
 msgid "Style dyslexia-friendly switch properly"
-msgstr ""
+msgstr "修正失讀症友善開關的風格"
 
 #~ msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 #~ msgstr "修正登入與鎖定畫面設定桌面時的問題"
