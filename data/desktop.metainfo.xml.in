@@ -43,6 +43,16 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.1.0" date="2024-09-16" urgency="medium">
+      <description>
+        <p>Other updates:</p>
+        <ul>
+          <li>Add setting for scroll to switch workspaces</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="8.0.1" date="2024-08-19" urgency="medium">
       <description>
         <p>Other updates:</p>
