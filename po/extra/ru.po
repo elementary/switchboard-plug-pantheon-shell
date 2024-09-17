@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 20:10+0000\n"
+"POT-Creation-Date: 2024-09-17 17:50+0000\n"
 "PO-Revision-Date: 2024-07-11 23:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,35 +32,39 @@ msgstr "Настройка дока, активных углов и обоев"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:61
-#: data/desktop.metainfo.xml.in:79 data/desktop.metainfo.xml.in:100
-#: data/desktop.metainfo.xml.in:114 data/desktop.metainfo.xml.in:136
+#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:58
+#: data/desktop.metainfo.xml.in:71 data/desktop.metainfo.xml.in:89
+#: data/desktop.metainfo.xml.in:110
 msgid "Other updates:"
 msgstr "Остальные обновления:"
 
-#: data/desktop.metainfo.xml.in:50 data/desktop.metainfo.xml.in:67
-#: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:103
-#: data/desktop.metainfo.xml.in:116 data/desktop.metainfo.xml.in:138
+#: data/desktop.metainfo.xml.in:50
+msgid "Add setting for scroll to switch workspaces"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
+#: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/desktop.metainfo.xml.in:57
+#: data/desktop.metainfo.xml.in:67
 msgid "New Features:"
 msgstr "Новые возможности:"
 
-#: data/desktop.metainfo.xml.in:59
+#: data/desktop.metainfo.xml.in:69
 msgid "Always Show Scrollbars setting"
 msgstr "Настройка «Всегда показывать полосы прокрутки»"
 
-#: data/desktop.metainfo.xml.in:63
+#: data/desktop.metainfo.xml.in:73
 msgid "Redundant labels have been cleaned up on the Appearance tab"
 msgstr "Удалены ненужные метки из вкладки «Внешний вид»"
 
-#: data/desktop.metainfo.xml.in:64
+#: data/desktop.metainfo.xml.in:74
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
 msgstr "Настройка затемнения обоев перемещена во вкладку «Внешний вид»"
 
-#: data/desktop.metainfo.xml.in:65
+#: data/desktop.metainfo.xml.in:75
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
@@ -68,83 +72,75 @@ msgstr ""
 "Выборщик стиля теперь отображает предпросмотр ваших обоев и настройки их "
 "затемнения"
 
-#: data/desktop.metainfo.xml.in:66
+#: data/desktop.metainfo.xml.in:76
 msgid "Improved screen reader accessibility"
 msgstr "Улучшена доступность для экранного диктора"
 
-#: data/desktop.metainfo.xml.in:81
+#: data/desktop.metainfo.xml.in:91
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
 "Переработаны параметры Дока и Панели, добавлены полезные описания к "
 "настройкам"
 
-#: data/desktop.metainfo.xml.in:82
+#: data/desktop.metainfo.xml.in:92
 msgid "Show or hide optional panel indicators"
 msgstr ""
 "Добавлена возможность показать или скрыть дополнительные индикаторы панели"
 
-#: data/desktop.metainfo.xml.in:83
+#: data/desktop.metainfo.xml.in:93
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Исправлены переводы задержки слайд-шоу и текста \"Затемнять при тёмном "
 "стиле\""
 
-#: data/desktop.metainfo.xml.in:84
+#: data/desktop.metainfo.xml.in:94
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
 msgstr ""
 "Исправлена ошибка, из-за которой обои не удалялись при закрытии приложения"
 
-#: data/desktop.metainfo.xml.in:96 data/desktop.metainfo.xml.in:123
+#: data/desktop.metainfo.xml.in:106
 msgid "New features:"
 msgstr "Новые возможности:"
 
-#: data/desktop.metainfo.xml.in:98
+#: data/desktop.metainfo.xml.in:108
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "Добавлена опция для затемнения обоев, когда включён тёмный стиль"
 
-#: data/desktop.metainfo.xml.in:102
+#: data/desktop.metainfo.xml.in:112
 msgid "Use a more vertical layout in the Text view"
 msgstr ""
 "Использование более вертикального расположения элементов во вкладке «Текст»"
 
-#: data/desktop.metainfo.xml.in:125
-msgid "There is now an undo option after removing a wallpaper"
-msgstr "Появилась опция отмены после удаления обоев"
+#~ msgid "There is now an undo option after removing a wallpaper"
+#~ msgstr "Появилась опция отмены после удаления обоев"
 
-#: data/desktop.metainfo.xml.in:126
-msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr "Обои теперь сортируются с пользовательскими обоями в начале"
+#~ msgid "Wallpapers are now sorted with custom wallpapers first"
+#~ msgstr "Обои теперь сортируются с пользовательскими обоями в начале"
 
-#: data/desktop.metainfo.xml.in:128
-msgid "Fixes:"
-msgstr "Исправления:"
+#~ msgid "Fixes:"
+#~ msgstr "Исправления:"
 
-#: data/desktop.metainfo.xml.in:130
-msgid "Wallpaper accent color follows system setting"
-msgstr "Акцентный цвет в меню обоев теперь следует настройкам системы"
+#~ msgid "Wallpaper accent color follows system setting"
+#~ msgstr "Акцентный цвет в меню обоев теперь следует настройкам системы"
 
-#: data/desktop.metainfo.xml.in:131
-msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
-"Контракт для установки обоев теперь выдаёт ошибку когда запущен от "
-"суперпользователя"
+#~ msgid "Set-wallpaper contract fails gracefully when run as sudo"
+#~ msgstr ""
+#~ "Контракт для установки обоев теперь выдаёт ошибку когда запущен от "
+#~ "суперпользователя"
 
-#: data/desktop.metainfo.xml.in:132
-msgid "Wallpapers with the same name are distinguished"
-msgstr "Обои с одинаковыми именами теперь различаются"
+#~ msgid "Wallpapers with the same name are distinguished"
+#~ msgstr "Обои с одинаковыми именами теперь различаются"
 
-#: data/desktop.metainfo.xml.in:133
-msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
-"Изменение стиля системы с помощью клавиатуры отменяет расписание тёмного "
-"режима"
+#~ msgid "Switching styles with the keyboard cancels dark style scheduling"
+#~ msgstr ""
+#~ "Изменение стиля системы с помощью клавиатуры отменяет расписание тёмного "
+#~ "режима"
 
-#: data/desktop.metainfo.xml.in:134
-msgid "Style dyslexia-friendly switch properly"
-msgstr "Правильная стилизация переключателя шрифта для людей с дислексией"
+#~ msgid "Style dyslexia-friendly switch properly"
+#~ msgstr "Правильная стилизация переключателя шрифта для людей с дислексией"
 
 #~ msgid "Set custom Terminal commands for each hotcorner"
 #~ msgstr "Назначайте собственные команды Терминала для каждого активного угла"

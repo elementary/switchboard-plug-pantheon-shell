@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 20:10+0000\n"
+"POT-Creation-Date: 2024-09-17 17:50+0000\n"
 "PO-Revision-Date: 2024-07-15 07:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -31,35 +31,39 @@ msgstr "ドック、ホットコーナーを設定し、壁紙を変更します
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:61
-#: data/desktop.metainfo.xml.in:79 data/desktop.metainfo.xml.in:100
-#: data/desktop.metainfo.xml.in:114 data/desktop.metainfo.xml.in:136
+#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:58
+#: data/desktop.metainfo.xml.in:71 data/desktop.metainfo.xml.in:89
+#: data/desktop.metainfo.xml.in:110
 msgid "Other updates:"
 msgstr "そのほかのアップデート:"
 
-#: data/desktop.metainfo.xml.in:50 data/desktop.metainfo.xml.in:67
-#: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:103
-#: data/desktop.metainfo.xml.in:116 data/desktop.metainfo.xml.in:138
+#: data/desktop.metainfo.xml.in:50
+msgid "Add setting for scroll to switch workspaces"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
+#: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/desktop.metainfo.xml.in:57
+#: data/desktop.metainfo.xml.in:67
 msgid "New Features:"
 msgstr "新機能:"
 
-#: data/desktop.metainfo.xml.in:59
+#: data/desktop.metainfo.xml.in:69
 msgid "Always Show Scrollbars setting"
 msgstr "“スクロールバーを常に表示”の設定"
 
-#: data/desktop.metainfo.xml.in:63
+#: data/desktop.metainfo.xml.in:73
 msgid "Redundant labels have been cleaned up on the Appearance tab"
 msgstr "“外観”タブの不要ラベルを除去"
 
-#: data/desktop.metainfo.xml.in:64
+#: data/desktop.metainfo.xml.in:74
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
 msgstr "“壁紙を暗くする”の設定を“外観”タブに移動"
 
-#: data/desktop.metainfo.xml.in:65
+#: data/desktop.metainfo.xml.in:75
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
@@ -67,27 +71,27 @@ msgstr ""
 "スタイル選択のボタンに、壁紙のプレビュー機能、および“壁紙を暗くする”の設定に"
 "追従する機能を追加"
 
-#: data/desktop.metainfo.xml.in:66
+#: data/desktop.metainfo.xml.in:76
 msgid "Improved screen reader accessibility"
 msgstr "スクリーンリーダーのアクセシビリティを改善"
 
-#: data/desktop.metainfo.xml.in:81
+#: data/desktop.metainfo.xml.in:91
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
 "“ドックとパネル”の設定をデザイン変更 (わかりやすいように説明テキストを追加)"
 
-#: data/desktop.metainfo.xml.in:82
+#: data/desktop.metainfo.xml.in:92
 msgid "Show or hide optional panel indicators"
 msgstr "オプションのパネルインジケーターを表示/非表示にできる機能を追加"
 
-#: data/desktop.metainfo.xml.in:83
+#: data/desktop.metainfo.xml.in:93
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "スライドショーの表示時間と \"ダークモード時に壁紙を暗くする\" ラベルがシステ"
 "ム言語で表示されない不具合を修正"
 
-#: data/desktop.metainfo.xml.in:84
+#: data/desktop.metainfo.xml.in:94
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
@@ -95,53 +99,46 @@ msgstr ""
 "壁紙の削除操作直後に“システム設定”を終了すると、壁紙が削除されていない不具合"
 "を修正"
 
-#: data/desktop.metainfo.xml.in:96 data/desktop.metainfo.xml.in:123
+#: data/desktop.metainfo.xml.in:106
 msgid "New features:"
 msgstr "新機能:"
 
-#: data/desktop.metainfo.xml.in:98
+#: data/desktop.metainfo.xml.in:108
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "ダークモード有効時に壁紙を暗くするオプションを追加"
 
-#: data/desktop.metainfo.xml.in:102
+#: data/desktop.metainfo.xml.in:112
 msgid "Use a more vertical layout in the Text view"
 msgstr "“テキスト”ビューを縦のレイアウトに変更"
 
-#: data/desktop.metainfo.xml.in:125
-msgid "There is now an undo option after removing a wallpaper"
-msgstr "壁紙の削除を元に戻せる機能を追加"
+#~ msgid "There is now an undo option after removing a wallpaper"
+#~ msgstr "壁紙の削除を元に戻せる機能を追加"
 
-#: data/desktop.metainfo.xml.in:126
-msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr "ユーザーが追加した壁紙が壁紙一覧の先頭に表示されるように修正"
+#~ msgid "Wallpapers are now sorted with custom wallpapers first"
+#~ msgstr "ユーザーが追加した壁紙が壁紙一覧の先頭に表示されるように修正"
 
-#: data/desktop.metainfo.xml.in:128
-msgid "Fixes:"
-msgstr "修正点:"
+#~ msgid "Fixes:"
+#~ msgstr "修正点:"
 
-#: data/desktop.metainfo.xml.in:130
-msgid "Wallpaper accent color follows system setting"
-msgstr "壁紙のアクセントカラーがシステム設定に従うように修正"
+#~ msgid "Wallpaper accent color follows system setting"
+#~ msgstr "壁紙のアクセントカラーがシステム設定に従うように修正"
 
-#: data/desktop.metainfo.xml.in:131
-msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
-"メニュー項目“デスクトップの背景として設定”が root ユーザーで実行された場合、"
-"適切に終了するように修正"
+#~ msgid "Set-wallpaper contract fails gracefully when run as sudo"
+#~ msgstr ""
+#~ "メニュー項目“デスクトップの背景として設定”が root ユーザーで実行された場"
+#~ "合、適切に終了するように修正"
 
-#: data/desktop.metainfo.xml.in:132
-msgid "Wallpapers with the same name are distinguished"
-msgstr "ファイル名が同一複数の背景画像を別のものとして認識するように修正"
+#~ msgid "Wallpapers with the same name are distinguished"
+#~ msgstr "ファイル名が同一複数の背景画像を別のものとして認識するように修正"
 
-#: data/desktop.metainfo.xml.in:133
-msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
-"スタイルの切り替えをキー操作で行った際に、ダークモードのスケジュールを無効化"
-"するように修正"
+#~ msgid "Switching styles with the keyboard cancels dark style scheduling"
+#~ msgstr ""
+#~ "スタイルの切り替えをキー操作で行った際に、ダークモードのスケジュールを無効"
+#~ "化するように修正"
 
-#: data/desktop.metainfo.xml.in:134
-msgid "Style dyslexia-friendly switch properly"
-msgstr "“ディスレクシアに対応”スイッチが適切なスタイルで表示されるように修正"
+#~ msgid "Style dyslexia-friendly switch properly"
+#~ msgstr ""
+#~ "“ディスレクシアに対応”スイッチが適切なスタイルで表示されるように修正"
 
 #~ msgid "Set custom Terminal commands for each hotcorner"
 #~ msgstr "各ホットコーナーに別々のカスタムコマンドを設定できる機能を追加"
