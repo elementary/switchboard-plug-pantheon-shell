@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 20:10+0000\n"
+"POT-Creation-Date: 2024-09-17 17:50+0000\n"
 "PO-Revision-Date: 2020-05-29 15:23+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -31,105 +31,77 @@ msgstr "Konfigurer dokken, varme hjørner, og skift skrivebordsbaggrund"
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:61
-#: data/desktop.metainfo.xml.in:79 data/desktop.metainfo.xml.in:100
-#: data/desktop.metainfo.xml.in:114 data/desktop.metainfo.xml.in:136
+#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:58
+#: data/desktop.metainfo.xml.in:71 data/desktop.metainfo.xml.in:89
+#: data/desktop.metainfo.xml.in:110
 msgid "Other updates:"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:50 data/desktop.metainfo.xml.in:67
-#: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:103
-#: data/desktop.metainfo.xml.in:116 data/desktop.metainfo.xml.in:138
+#: data/desktop.metainfo.xml.in:50
+msgid "Add setting for scroll to switch workspaces"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
+#: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "Opdaterede oversættelser"
 
-#: data/desktop.metainfo.xml.in:57
+#: data/desktop.metainfo.xml.in:67
 msgid "New Features:"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:59
+#: data/desktop.metainfo.xml.in:69
 msgid "Always Show Scrollbars setting"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:63
+#: data/desktop.metainfo.xml.in:73
 msgid "Redundant labels have been cleaned up on the Appearance tab"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:64
+#: data/desktop.metainfo.xml.in:74
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:65
+#: data/desktop.metainfo.xml.in:75
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:66
+#: data/desktop.metainfo.xml.in:76
 msgid "Improved screen reader accessibility"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:81
+#: data/desktop.metainfo.xml.in:91
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:82
+#: data/desktop.metainfo.xml.in:92
 msgid "Show or hide optional panel indicators"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:83
+#: data/desktop.metainfo.xml.in:93
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:84
+#: data/desktop.metainfo.xml.in:94
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:96 data/desktop.metainfo.xml.in:123
+#: data/desktop.metainfo.xml.in:106
 msgid "New features:"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:98
+#: data/desktop.metainfo.xml.in:108
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr ""
 
-#: data/desktop.metainfo.xml.in:102
+#: data/desktop.metainfo.xml.in:112
 msgid "Use a more vertical layout in the Text view"
-msgstr ""
-
-#: data/desktop.metainfo.xml.in:125
-msgid "There is now an undo option after removing a wallpaper"
-msgstr ""
-
-#: data/desktop.metainfo.xml.in:126
-msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr ""
-
-#: data/desktop.metainfo.xml.in:128
-msgid "Fixes:"
-msgstr ""
-
-#: data/desktop.metainfo.xml.in:130
-msgid "Wallpaper accent color follows system setting"
-msgstr ""
-
-#: data/desktop.metainfo.xml.in:131
-msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr ""
-
-#: data/desktop.metainfo.xml.in:132
-msgid "Wallpapers with the same name are distinguished"
-msgstr ""
-
-#: data/desktop.metainfo.xml.in:133
-msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr ""
-
-#: data/desktop.metainfo.xml.in:134
-msgid "Style dyslexia-friendly switch properly"
 msgstr ""
 
 #~ msgid "Illustrate Dock icon sizes"

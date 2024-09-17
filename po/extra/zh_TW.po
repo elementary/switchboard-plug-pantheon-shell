@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-20 20:10+0000\n"
+"POT-Creation-Date: 2024-09-17 17:50+0000\n"
 "PO-Revision-Date: 2024-09-14 02:16+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -31,106 +31,102 @@ msgstr "調整 Dock、熱角、變更桌布等設定"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:61
-#: data/desktop.metainfo.xml.in:79 data/desktop.metainfo.xml.in:100
-#: data/desktop.metainfo.xml.in:114 data/desktop.metainfo.xml.in:136
+#: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:58
+#: data/desktop.metainfo.xml.in:71 data/desktop.metainfo.xml.in:89
+#: data/desktop.metainfo.xml.in:110
 msgid "Other updates:"
 msgstr "其他更新："
 
-#: data/desktop.metainfo.xml.in:50 data/desktop.metainfo.xml.in:67
-#: data/desktop.metainfo.xml.in:85 data/desktop.metainfo.xml.in:103
-#: data/desktop.metainfo.xml.in:116 data/desktop.metainfo.xml.in:138
+#: data/desktop.metainfo.xml.in:50
+msgid "Add setting for scroll to switch workspaces"
+msgstr ""
+
+#: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
+#: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
+#: data/desktop.metainfo.xml.in:113
 msgid "Updated translations"
 msgstr "翻譯更新"
 
-#: data/desktop.metainfo.xml.in:57
+#: data/desktop.metainfo.xml.in:67
 msgid "New Features:"
 msgstr "新功能："
 
-#: data/desktop.metainfo.xml.in:59
+#: data/desktop.metainfo.xml.in:69
 msgid "Always Show Scrollbars setting"
 msgstr "「總是顯示捲動軸」設定值"
 
-#: data/desktop.metainfo.xml.in:63
+#: data/desktop.metainfo.xml.in:73
 msgid "Redundant labels have been cleaned up on the Appearance tab"
 msgstr "清理「外觀」分頁中的重複的文字標籤"
 
-#: data/desktop.metainfo.xml.in:64
+#: data/desktop.metainfo.xml.in:74
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
 msgstr "「暗化桌布」設定已移至外觀分頁"
 
-#: data/desktop.metainfo.xml.in:65
+#: data/desktop.metainfo.xml.in:75
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr "風格選取按鈕現在會顯示您的桌布的預覽與暗化設定值的預覽"
 
-#: data/desktop.metainfo.xml.in:66
+#: data/desktop.metainfo.xml.in:76
 msgid "Improved screen reader accessibility"
 msgstr "改善螢幕閱讀器輔助"
 
-#: data/desktop.metainfo.xml.in:81
+#: data/desktop.metainfo.xml.in:91
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr "重新設計 Dock 及面板設定，加上更有幫助的說明文字"
 
-#: data/desktop.metainfo.xml.in:82
+#: data/desktop.metainfo.xml.in:92
 msgid "Show or hide optional panel indicators"
 msgstr "顯示或隱藏非必要的面板指示器"
 
-#: data/desktop.metainfo.xml.in:83
+#: data/desktop.metainfo.xml.in:93
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr "修正幻燈片延遲數值與「深色風格時暗化」標籤的翻譯"
 
-#: data/desktop.metainfo.xml.in:84
+#: data/desktop.metainfo.xml.in:94
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
 msgstr "修正移除桌布後馬上關閉系統設定值時桌布不會真的被移除的問題"
 
-#: data/desktop.metainfo.xml.in:96 data/desktop.metainfo.xml.in:123
+#: data/desktop.metainfo.xml.in:106
 msgid "New features:"
 msgstr "新功能："
 
-#: data/desktop.metainfo.xml.in:98
+#: data/desktop.metainfo.xml.in:108
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "新增選項來在使用深色風格時暗化桌布"
 
-#: data/desktop.metainfo.xml.in:102
+#: data/desktop.metainfo.xml.in:112
 msgid "Use a more vertical layout in the Text view"
 msgstr "在文字檢視中使用更為垂直的佈局"
 
-#: data/desktop.metainfo.xml.in:125
-msgid "There is now an undo option after removing a wallpaper"
-msgstr "移除桌布後能夠進行復原"
+#~ msgid "There is now an undo option after removing a wallpaper"
+#~ msgstr "移除桌布後能夠進行復原"
 
-#: data/desktop.metainfo.xml.in:126
-msgid "Wallpapers are now sorted with custom wallpapers first"
-msgstr "使用者的桌布現在會排在前面"
+#~ msgid "Wallpapers are now sorted with custom wallpapers first"
+#~ msgstr "使用者的桌布現在會排在前面"
 
-#: data/desktop.metainfo.xml.in:128
-msgid "Fixes:"
-msgstr "修正："
+#~ msgid "Fixes:"
+#~ msgstr "修正："
 
-#: data/desktop.metainfo.xml.in:130
-msgid "Wallpaper accent color follows system setting"
-msgstr "桌布強調色現在會跟隨系統設定"
+#~ msgid "Wallpaper accent color follows system setting"
+#~ msgstr "桌布強調色現在會跟隨系統設定"
 
-#: data/desktop.metainfo.xml.in:131
-msgid "Set-wallpaper contract fails gracefully when run as sudo"
-msgstr "讓「設為桌布」項目誤用 sudo 執行時能適當的離開"
+#~ msgid "Set-wallpaper contract fails gracefully when run as sudo"
+#~ msgstr "讓「設為桌布」項目誤用 sudo 執行時能適當的離開"
 
-#: data/desktop.metainfo.xml.in:132
-msgid "Wallpapers with the same name are distinguished"
-msgstr "分別顯示同樣名稱的桌布"
+#~ msgid "Wallpapers with the same name are distinguished"
+#~ msgstr "分別顯示同樣名稱的桌布"
 
-#: data/desktop.metainfo.xml.in:133
-msgid "Switching styles with the keyboard cancels dark style scheduling"
-msgstr "用鍵盤切換風格時會取消深色風格排程"
+#~ msgid "Switching styles with the keyboard cancels dark style scheduling"
+#~ msgstr "用鍵盤切換風格時會取消深色風格排程"
 
-#: data/desktop.metainfo.xml.in:134
-msgid "Style dyslexia-friendly switch properly"
-msgstr "修正失讀症友善開關的風格"
+#~ msgid "Style dyslexia-friendly switch properly"
+#~ msgstr "修正失讀症友善開關的風格"
 
 #~ msgid "Fix issues with setting wallpapers on the Login and Lock screen"
 #~ msgstr "修正登入與鎖定畫面設定桌面時的問題"
