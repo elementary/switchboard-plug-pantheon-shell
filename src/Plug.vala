@@ -123,6 +123,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Pressure reveal")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Display")), "dock");
         search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Panel translucency")), "dock");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Dock & Panel"), _("Scroll on the panel to switch workspaces")), "dock");
         search_results.set ("%s → %s".printf (display_name, _("Appearance")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dark style")), "appearance");
         search_results.set ("%s → %s → %s".printf (display_name, _("Appearance"), _("Dim Wallpaper With Dark Style")), "appearance");
