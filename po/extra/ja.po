@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-17 17:50+0000\n"
-"PO-Revision-Date: 2024-07-15 07:16+0000\n"
+"PO-Revision-Date: 2024-09-18 11:52+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -39,7 +39,7 @@ msgstr "そのほかのアップデート:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Add setting for scroll to switch workspaces"
-msgstr ""
+msgstr "スクロールでワークスペースを切り替える設定を追加"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
 #: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
