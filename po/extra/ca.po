@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-17 17:50+0000\n"
-"PO-Revision-Date: 2024-07-10 22:16+0000\n"
+"PO-Revision-Date: 2024-09-18 11:52+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ca/>\n"
@@ -41,6 +41,7 @@ msgstr "Altres actualitzacions:"
 #: data/desktop.metainfo.xml.in:50
 msgid "Add setting for scroll to switch workspaces"
 msgstr ""
+"Afegir una configuració per al desplaçament per canviar d'espai de treball"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
 #: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
