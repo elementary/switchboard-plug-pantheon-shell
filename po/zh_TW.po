@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2024-09-14 02:16+0000\n"
+"PO-Revision-Date: 2024-09-19 10:09+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hant/>\n"
@@ -96,7 +96,7 @@ msgstr "總是顯示捲動軸"
 
 #: src/Plug.vala:132 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
-msgstr ""
+msgstr "減少動態效果"
 
 #: src/Plug.vala:133
 msgid "Window animations"
