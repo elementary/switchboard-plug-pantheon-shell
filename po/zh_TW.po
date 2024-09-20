@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2024-09-19 10:09+0000\n"
+"PO-Revision-Date: 2024-09-20 09:43+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hant/>\n"
@@ -377,7 +377,7 @@ msgstr "移除"
 #: src/Widgets/WallpaperContainer.vala:200
 #, c-format
 msgid "Artist: %s"
-msgstr "作家：%s"
+msgstr "藝術家：%s"
 
 #~ msgid "Set as _Desktop Background"
 #~ msgstr "設為桌面背景(_D)"
