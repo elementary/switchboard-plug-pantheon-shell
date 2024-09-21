@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2024-09-01 23:41+0000\n"
+"PO-Revision-Date: 2024-09-22 14:53+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/nl/>\n"
@@ -41,7 +41,7 @@ msgstr "Andere updates:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Add setting for scroll to switch workspaces"
-msgstr ""
+msgstr "Voeg instelling toe om tussen werkruimtes te scrollen"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
 #: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
@@ -55,7 +55,7 @@ msgstr "Nieuwe functies:"
 
 #: data/desktop.metainfo.xml.in:69
 msgid "Always Show Scrollbars setting"
-msgstr ""
+msgstr "Toon scrollbalken altijd-instelling"
 
 #: data/desktop.metainfo.xml.in:73
 msgid "Redundant labels have been cleaned up on the Appearance tab"
