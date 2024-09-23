@@ -1,3 +1,9 @@
+io.elementary.settings.desktop (8.1.0) noble; urgency=medium
+
+  * Release 8.1.0 (#420)
+
+ -- elementary, Inc. <builds@elementary.io>  Mon, 23 Sep 2024 12:50:01 +0000
+
 io.elementary.settings.desktop (8.0.1) noble; urgency=medium
 
   * Release 8.0.1
