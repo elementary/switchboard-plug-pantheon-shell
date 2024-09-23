@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-pantheon-shell\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-17 17:50+0000\n"
+"POT-Creation-Date: 2024-09-19 00:15+0000\n"
 "PO-Revision-Date: 2020-10-02 07:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Uyghur <https://l10n.elementary.io/projects/switchboard/"
@@ -33,24 +33,25 @@ msgstr ""
 msgid "Wallpaper"
 msgstr "ئۈستەل تەگ رەسىمى"
 
-#: src/Plug.vala:66 src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
-#: src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
+#: src/Plug.vala:66 src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
+#: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Views/Appearance.vala:69
 msgid "Appearance"
 msgstr ""
 
-#: src/Plug.vala:67 src/Plug.vala:133 src/Plug.vala:134 src/Plug.vala:135
+#: src/Plug.vala:67 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 #: src/Views/Text.vala:35
 #, fuzzy
 msgid "Text"
 msgstr "سىنبەلگە چوڭلۇقى:"
 
 #: src/Plug.vala:68 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
-#: src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125 src/Views/Dock.vala:13
+#: src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Views/Dock.vala:13
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:69 src/Plug.vala:136 src/Plug.vala:137 src/Plug.vala:138
+#: src/Plug.vala:69 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/Multitasking.vala:27
 #, fuzzy
 #| msgid "Multitasking View"
@@ -78,45 +79,49 @@ msgstr "كۆرسىتىش"
 msgid "Panel translucency"
 msgstr ""
 
-#: src/Plug.vala:127
+#: src/Plug.vala:126 src/Views/Dock.vala:123
+msgid "Scroll on the panel to switch workspaces"
+msgstr ""
+
+#: src/Plug.vala:128
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:128 src/Views/Appearance.vala:107
+#: src/Plug.vala:129 src/Views/Appearance.vala:107
 msgid "Dim Wallpaper With Dark Style"
 msgstr ""
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:375
+#: src/Plug.vala:130 src/Views/Appearance.vala:375
 msgid "Accent Color"
 msgstr ""
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:405
+#: src/Plug.vala:131 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:390
+#: src/Plug.vala:132 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
 msgstr ""
 
-#: src/Plug.vala:132
+#: src/Plug.vala:133
 msgid "Window animations"
 msgstr ""
 
-#: src/Plug.vala:134 src/Views/Text.vala:42
+#: src/Plug.vala:135 src/Views/Text.vala:42
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "سىنبەلگە چوڭلۇقى"
 
-#: src/Plug.vala:135 src/Views/Text.vala:66
+#: src/Plug.vala:136 src/Views/Text.vala:66
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:137
+#: src/Plug.vala:138
 msgid "Hot Corners"
 msgstr "قىزىق بۇلۇڭلار"
 
-#: src/Plug.vala:138 src/Views/Multitasking.vala:45
+#: src/Plug.vala:139 src/Views/Multitasking.vala:45
 msgid "Move windows to a new workspace"
 msgstr ""
 
@@ -264,10 +269,6 @@ msgstr ""
 
 #: src/Views/Dock.vala:121
 msgid "Panel Scroll"
-msgstr ""
-
-#: src/Views/Dock.vala:123
-msgid "Scroll on the panel to switch workspaces"
 msgstr ""
 
 #: src/Views/Dock.vala:130

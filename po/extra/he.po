@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-17 17:50+0000\n"
-"PO-Revision-Date: 2024-07-23 18:16+0000\n"
+"POT-Creation-Date: 2024-09-19 00:15+0000\n"
+"PO-Revision-Date: 2024-09-22 14:53+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/he/>\n"
@@ -39,7 +39,7 @@ msgstr "עדכונים אחרים:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Add setting for scroll to switch workspaces"
-msgstr ""
+msgstr "נוספה הגדרה לגלול כדי להחליף מרחבי עבודה"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
 #: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
