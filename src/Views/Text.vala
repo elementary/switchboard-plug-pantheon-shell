@@ -50,7 +50,9 @@ public class PantheonShell.Text : Switchboard.SettingsPage {
         size_scale.add_mark (1, Gtk.PositionType.TOP, null);
         size_scale.add_mark (1.25, Gtk.PositionType.TOP, null);
 
-        var size_spinbutton = new Gtk.SpinButton (size_adjustment, 0.25, 2);
+        var size_spinbutton = new Gtk.SpinButton (size_adjustment, 0.25, 2) {
+            valign = CENTER
+        };
 
         var size_grid = new Gtk.Grid () {
             column_spacing = 12
