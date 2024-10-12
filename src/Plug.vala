@@ -79,6 +79,9 @@ public class PantheonShell.Plug : Switchboard.Plug {
                 shrink_end_child = false,
                 resize_start_child = false
             };
+
+            var settings = new Settings ("io.elementary.settings");
+            settings.bind ("sidebar-position", paned, "position", DEFAULT);
         }
 
         return paned;
