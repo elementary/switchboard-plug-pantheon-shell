@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2024-09-20 09:43+0000\n"
+"PO-Revision-Date: 2024-11-06 11:18+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-pantheon-shell/zh_Hant/>\n"
@@ -76,7 +76,7 @@ msgstr "面板透明度"
 
 #: src/Plug.vala:126 src/Views/Dock.vala:123
 msgid "Scroll on the panel to switch workspaces"
-msgstr "在面板上捲動來切換工作空間"
+msgstr "在面板上捲動來切換工作區"
 
 #: src/Plug.vala:128
 msgid "Dark style"
@@ -116,7 +116,7 @@ msgstr "熱角"
 
 #: src/Plug.vala:139 src/Views/Multitasking.vala:45
 msgid "Move windows to a new workspace"
-msgstr "將視窗移動到新的工作空間"
+msgstr "將視窗移動到新的工作區"
 
 #: src/Views/Appearance.vala:70
 msgid ""
@@ -318,15 +318,15 @@ msgstr "顯示所有視窗"
 
 #: src/Views/Multitasking.vala:118
 msgid "Switch to previous workspace"
-msgstr "切換至上一個工作空間"
+msgstr "切換至上一個工作區"
 
 #: src/Views/Multitasking.vala:119
 msgid "Switch to next workspace"
-msgstr "切換至下一個工作空間"
+msgstr "切換至下一個工作區"
 
 #: src/Views/Multitasking.vala:120
 msgid "Switch to new workspace"
-msgstr "切換至新的工作空間"
+msgstr "切換至新的工作區"
 
 #: src/Views/Multitasking.vala:121
 msgid "Execute custom command"
