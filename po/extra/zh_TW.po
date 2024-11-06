@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2024-09-19 10:09+0000\n"
+"PO-Revision-Date: 2024-11-06 11:18+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/desktop-plug-extra/zh_Hant/>\n"
@@ -39,7 +39,7 @@ msgstr "其他更新："
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Add setting for scroll to switch workspaces"
-msgstr "新增設定是否要捲動來切換工作空間的開關"
+msgstr "新增設定是否要捲動來切換工作區的開關"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
 #: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
