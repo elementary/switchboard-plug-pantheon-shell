@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
 "PO-Revision-Date: 2024-11-06 01:04+0000\n"
-"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
+"Last-Translator: Gustavo Silva <g.costasalles@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/desktop-plug-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -35,11 +35,11 @@ msgstr "elementary, Inc."
 #: data/desktop.metainfo.xml.in:71 data/desktop.metainfo.xml.in:89
 #: data/desktop.metainfo.xml.in:110
 msgid "Other updates:"
-msgstr ""
+msgstr "Outras atualizações:"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Add setting for scroll to switch workspaces"
-msgstr ""
+msgstr "Adiciona configuração para roda do mouse mudar espaços de trabalho"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
 #: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
