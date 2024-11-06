@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2024-08-07 18:17+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-11-06 01:04+0000\n"
+"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/desktop-plug-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -49,29 +49,31 @@ msgstr "Traduções atualizadas"
 
 #: data/desktop.metainfo.xml.in:67
 msgid "New Features:"
-msgstr ""
+msgstr "Novos Recursos:"
 
 #: data/desktop.metainfo.xml.in:69
 msgid "Always Show Scrollbars setting"
-msgstr ""
+msgstr "Configuração sempre Mostrar Barras de Rolagem"
 
 #: data/desktop.metainfo.xml.in:73
 msgid "Redundant labels have been cleaned up on the Appearance tab"
-msgstr ""
+msgstr "Rótulos redundantes foram limpos na guia Aparência"
 
 #: data/desktop.metainfo.xml.in:74
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
-msgstr ""
+msgstr "A configuração Dim Wallpaper foi movida para a guia Aparência"
 
 #: data/desktop.metainfo.xml.in:75
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr ""
+"O seletor de estilo agora mostra uma prévia do seu papel de parede, bem como "
+"uma prévia da configuração de escurecimento"
 
 #: data/desktop.metainfo.xml.in:76
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Acessibilidade aprimorada do leitor de tela"
 
 #: data/desktop.metainfo.xml.in:91
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
