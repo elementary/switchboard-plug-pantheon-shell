@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2024-11-27 11:10+0000\n"
+"PO-Revision-Date: 2024-11-28 11:16+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -36,7 +36,7 @@ msgstr "Papel de parede"
 #: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
 #: src/Views/Appearance.vala:69
 msgid "Appearance"
-msgstr "Aparência"
+msgstr "Aspeto"
 
 #: src/Plug.vala:67 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
 #: src/Views/Text.vala:35
@@ -92,7 +92,7 @@ msgstr "Cor de destaque"
 
 #: src/Plug.vala:131 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
-msgstr "Mostrar sempre barras de deslocação"
+msgstr "Mostrar sempre as barras de deslocamento"
 
 #: src/Plug.vala:132 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
@@ -236,11 +236,11 @@ msgstr "Quando a janela focada está maximizada"
 
 #: src/Views/Dock.vala:75
 msgid "When the focused window overlaps the dock"
-msgstr "quando a janela focada sobrepõe-se à doca"
+msgstr "Quando a janela focada se sobrepõe à doca"
 
 #: src/Views/Dock.vala:81
 msgid "When any window overlaps the dock"
-msgstr "Quando qualquer janela sobrepõe-se à doca"
+msgstr "Quando qualquer janela se sobrepõe à doca"
 
 #: src/Views/Dock.vala:87
 msgid "When not being used"
