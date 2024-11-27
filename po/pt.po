@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2024-02-08 15:11+0000\n"
+"PO-Revision-Date: 2024-11-27 11:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -76,17 +76,15 @@ msgstr "Translucidez do painel"
 
 #: src/Plug.vala:126 src/Views/Dock.vala:123
 msgid "Scroll on the panel to switch workspaces"
-msgstr ""
+msgstr "Deslizar no painel para alternar entre áreas de trabalho"
 
 #: src/Plug.vala:128
 msgid "Dark style"
 msgstr "Estilo escuro"
 
 #: src/Plug.vala:129 src/Views/Appearance.vala:107
-#, fuzzy
-#| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
-msgstr "Escurecer com estilo escuro:"
+msgstr "Escurecer o papel de parede com o estilo escuro"
 
 #: src/Plug.vala:130 src/Views/Appearance.vala:375
 msgid "Accent Color"
@@ -94,7 +92,7 @@ msgstr "Cor de destaque"
 
 #: src/Plug.vala:131 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
-msgstr ""
+msgstr "Mostrar sempre barras de deslocação"
 
 #: src/Plug.vala:132 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
@@ -121,15 +119,11 @@ msgid "Move windows to a new workspace"
 msgstr "Mover as janelas para uma nova área de trabalho"
 
 #: src/Views/Appearance.vala:70
-#, fuzzy
-#| msgid ""
-#| "Preferred visual style for system components. Apps may also choose to "
-#| "follow this preference."
 msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
-"Estilo visual preferido para os componentes do sistema. As aplicações também "
-"podem optar por seguir esta preferência."
+"As aplicações podem seguir estas preferências, mas podem escolher os seus "
+"próprios detalhes ou estilo."
 
 #: src/Views/Appearance.vala:84 src/Views/Dock.vala:37
 msgid "Default"
@@ -213,6 +207,8 @@ msgstr ""
 #: src/Views/Appearance.vala:408
 msgid "Scrollbars will take up space, even when not in use."
 msgstr ""
+"As barras de deslocamento ocuparão espaço, mesmo quando não estão a ser "
+"utilizadas."
 
 #: src/Views/Dock.vala:20
 msgid "Dock Icon Size"
@@ -227,38 +223,28 @@ msgid "Large"
 msgstr "Grande"
 
 #: src/Views/Dock.vala:64
-#, fuzzy
-#| msgid "Hide Mode"
 msgid "Hide Dock"
-msgstr "Modo Oculto"
+msgstr "Ocultar doca"
 
 #: src/Views/Dock.vala:66
 msgid "Never"
 msgstr "Nunca"
 
 #: src/Views/Dock.vala:69
-#, fuzzy
-#| msgid "Focused window is maximized"
 msgid "When the focused window is maximized"
-msgstr "Janela focada está maximizada"
+msgstr "Quando a janela focada está maximizada"
 
 #: src/Views/Dock.vala:75
-#, fuzzy
-#| msgid "Focused window overlaps the dock"
 msgid "When the focused window overlaps the dock"
-msgstr "Janela focada sobrepõe-se à doca"
+msgstr "quando a janela focada sobrepõe-se à doca"
 
 #: src/Views/Dock.vala:81
-#, fuzzy
-#| msgid "Any window overlaps the dock"
 msgid "When any window overlaps the dock"
-msgstr "Qualquer janela sobrepõe-se à doca"
+msgstr "Quando qualquer janela sobrepõe-se à doca"
 
 #: src/Views/Dock.vala:87
-#, fuzzy
-#| msgid "Not being used"
 msgid "When not being used"
-msgstr "Não está a ser usada"
+msgstr "Quando não está a ser utilizada"
 
 #: src/Views/Dock.vala:106
 msgid "Panel Translucency"
@@ -270,11 +256,11 @@ msgstr "Automaticamente transparente ou opaco com base no papel de parede"
 
 #: src/Views/Dock.vala:121
 msgid "Panel Scroll"
-msgstr ""
+msgstr "Deslizar do painel"
 
 #: src/Views/Dock.vala:130
 msgid "Show in Panel"
-msgstr "Mostrar no Painel"
+msgstr "Mostrar no painel"
 
 #: src/Views/Dock.vala:137
 msgid "Accessibility"
@@ -381,10 +367,8 @@ msgid "Import"
 msgstr "Importar"
 
 #: src/Views/Wallpaper.vala:131
-#, fuzzy
-#| msgid "Import Photo"
 msgid "Import Photos"
-msgstr "Importar imagem"
+msgstr "Importar imagens"
 
 #: src/Views/Wallpaper.vala:475
 msgid "Wallpaper Deleted"
