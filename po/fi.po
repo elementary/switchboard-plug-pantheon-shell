@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-19 00:15+0000\n"
-"PO-Revision-Date: 2023-07-03 13:07+0000\n"
+"PO-Revision-Date: 2024-12-02 12:16+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:46+0000\n"
 
 #: src/Plug.vala:49
@@ -76,17 +76,15 @@ msgstr "Paneelin läpinäkyvyys"
 
 #: src/Plug.vala:126 src/Views/Dock.vala:123
 msgid "Scroll on the panel to switch workspaces"
-msgstr ""
+msgstr "Vieritä paneelissa vaihtaaksesi työtiloja"
 
 #: src/Plug.vala:128
 msgid "Dark style"
 msgstr "Tumma tyyli"
 
 #: src/Plug.vala:129 src/Views/Appearance.vala:107
-#, fuzzy
-#| msgid "Dim with dark style:"
 msgid "Dim Wallpaper With Dark Style"
-msgstr "Himmennä tummalla tyylillä:"
+msgstr "Himmennetty taustakuva tummalla tyylillä"
 
 #: src/Plug.vala:130 src/Views/Appearance.vala:375
 msgid "Accent Color"
@@ -94,7 +92,7 @@ msgstr "Korostusväri"
 
 #: src/Plug.vala:131 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
-msgstr ""
+msgstr "Näytä vierityspalkit aina"
 
 #: src/Plug.vala:132 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
@@ -121,15 +119,11 @@ msgid "Move windows to a new workspace"
 msgstr "Siirrä ikkunat uuteen työtilaan"
 
 #: src/Views/Appearance.vala:70
-#, fuzzy
-#| msgid ""
-#| "Preferred visual style for system components. Apps may also choose to "
-#| "follow this preference."
 msgid ""
 "Apps may follow these preferences, but can choose their own accents or style."
 msgstr ""
-"Ensisijainen visuaalinen tyyli järjestelmän komponenteille. Sovellukset "
-"voivat seurata tätä asetusta."
+"Sovellukset voivat seurata näitä asetuksia, mutta voivat halutessaan käyttää "
+"omaa korostusta tai tyyliä."
 
 #: src/Views/Appearance.vala:84 src/Views/Dock.vala:37
 msgid "Default"
@@ -212,7 +206,7 @@ msgstr ""
 
 #: src/Views/Appearance.vala:408
 msgid "Scrollbars will take up space, even when not in use."
-msgstr ""
+msgstr "Vierityspalkit vievät tilaa myös silloin, kun niitä ei tarvita."
 
 #: src/Views/Dock.vala:20
 msgid "Dock Icon Size"
@@ -260,7 +254,7 @@ msgstr "Automaattisesti läpinäkyvä tai läpinäkymätön taustakuvaan pohjaut
 
 #: src/Views/Dock.vala:121
 msgid "Panel Scroll"
-msgstr ""
+msgstr "Paneelin vieritys"
 
 #: src/Views/Dock.vala:130
 msgid "Show in Panel"
@@ -371,10 +365,8 @@ msgid "Import"
 msgstr "Tuo"
 
 #: src/Views/Wallpaper.vala:131
-#, fuzzy
-#| msgid "Import Photo"
 msgid "Import Photos"
-msgstr "Tuo kuva"
+msgstr "Tuo kuvia"
 
 #: src/Views/Wallpaper.vala:475
 msgid "Wallpaper Deleted"
