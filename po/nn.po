@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-19 00:15+0000\n"
+"POT-Creation-Date: 2024-12-03 00:56+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -28,103 +28,107 @@ msgstr "Skrivebord"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Sett opp dokken, aktive hjørne og endre bakgrunnsbilete"
 
-#: src/Plug.vala:65 src/Plug.vala:119 src/Views/Wallpaper.vala:43
+#: src/Plug.vala:65 src/Plug.vala:125 src/Views/Wallpaper.vala:43
 msgid "Wallpaper"
 msgstr "Bakgrunnsbilete"
 
-#: src/Plug.vala:66 src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
-#: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:66 src/Plug.vala:133 src/Plug.vala:134 src/Plug.vala:135
+#: src/Plug.vala:136 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/Appearance.vala:69
 msgid "Appearance"
 msgstr "Utsjånad"
 
-#: src/Plug.vala:67 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
 #: src/Views/Text.vala:35
 #, fuzzy
 #| msgid "Text size:"
 msgid "Text"
 msgstr "Tekststorleik:"
 
-#: src/Plug.vala:68 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
-#: src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:68 src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
 #: src/Views/Dock.vala:13
 msgid "Dock & Panel"
 msgstr ""
 
-#: src/Plug.vala:69 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
-#: src/Views/Multitasking.vala:27
+#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:146 src/Views/Multitasking.vala:27
 #, fuzzy
 #| msgid "Multitasking View"
 msgid "Multitasking"
 msgstr "Vis arbeidsområde"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:127
 msgid "Hide Mode"
 msgstr "Skjulemodus"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:128
 msgid "Icon Size"
 msgstr "Ikonstorleik"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:129
 msgid "Pressure reveal"
 msgstr "Vis når den blir trykt på"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:130
 msgid "Display"
 msgstr "Skjerm"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:131
 #, fuzzy
 #| msgid "Panel translucency:"
 msgid "Panel translucency"
 msgstr "Panelgjennomsiktigheit:"
 
-#: src/Plug.vala:126 src/Views/Dock.vala:123
+#: src/Plug.vala:132 src/Views/Dock.vala:123
 msgid "Scroll on the panel to switch workspaces"
 msgstr ""
 
-#: src/Plug.vala:128
+#: src/Plug.vala:134
 msgid "Dark style"
 msgstr ""
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:107
+#: src/Plug.vala:135 src/Views/Appearance.vala:107
 msgid "Dim Wallpaper With Dark Style"
 msgstr ""
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:375
+#: src/Plug.vala:136 src/Views/Appearance.vala:375
 msgid "Accent Color"
 msgstr ""
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:405
+#: src/Plug.vala:137 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
 msgstr ""
 
-#: src/Plug.vala:132 src/Views/Appearance.vala:390
+#: src/Plug.vala:138 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
 msgstr ""
 
-#: src/Plug.vala:133
+#: src/Plug.vala:139
 #, fuzzy
 #| msgid "Window animations:"
 msgid "Window animations"
 msgstr "Vindaugeanimasjonar"
 
-#: src/Plug.vala:135 src/Views/Text.vala:42
+#: src/Plug.vala:141 src/Views/Text.vala:42
 #, fuzzy
 #| msgid "Icon Size"
 msgid "Size"
 msgstr "Ikonstorleik"
 
-#: src/Plug.vala:136 src/Views/Text.vala:66
+#: src/Plug.vala:142 src/Views/Text.vala:68
 msgid "Dyslexia-friendly"
 msgstr ""
 
-#: src/Plug.vala:138
+#: src/Plug.vala:144
 msgid "Hot Corners"
 msgstr "Aktive hjørne"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:45
+#: src/Plug.vala:145 src/Views/Multitasking.vala:47
+msgid "Activate Hot Corners in fullscreen"
+msgstr ""
+
+#: src/Plug.vala:146 src/Views/Multitasking.vala:59
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Move windows to a new workspace"
@@ -300,71 +304,75 @@ msgstr ""
 msgid "When the pointer enters a display corner"
 msgstr "Når pila nærmar kjem inn i hjørnet av skjermen:"
 
-#: src/Views/Multitasking.vala:40
+#: src/Views/Multitasking.vala:38
 msgid "Top Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:41
+#: src/Views/Multitasking.vala:39
 msgid "Top Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:40
 msgid "Bottom Left"
 msgstr ""
 
-#: src/Views/Multitasking.vala:43
+#: src/Views/Multitasking.vala:41
 msgid "Bottom Right"
 msgstr ""
 
-#: src/Views/Multitasking.vala:49
+#: src/Views/Multitasking.vala:48
+msgid "May interfere with fullscreen video games, for example"
+msgstr ""
+
+#: src/Views/Multitasking.vala:61
 msgid "When entering fullscreen"
 msgstr ""
 
-#: src/Views/Multitasking.vala:50
+#: src/Views/Multitasking.vala:62
 msgid "When maximizing"
 msgstr ""
 
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:125
 msgid "Do nothing"
 msgstr "Ikkje gjer noko"
 
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:126
 msgid "Multitasking View"
 msgstr "Vis arbeidsområde"
 
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:127
 msgid "Maximize current window"
 msgstr "Maksimer det aktive vindauget"
 
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:128
 msgid "Show Applications Menu"
 msgstr "Vis applikasjonsmeny"
 
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:129
 msgid "Show all windows"
 msgstr "Vis alle vindauge"
 
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:130
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to previous workspace"
 msgstr "Byt til nytt arbeidsområde"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:131
 #, fuzzy
 #| msgid "Switch to new workspace"
 msgid "Switch to next workspace"
 msgstr "Byt til nytt arbeidsområde"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:132
 msgid "Switch to new workspace"
 msgstr "Byt til nytt arbeidsområde"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:133
 msgid "Execute custom command"
 msgstr "Utfør den eigendefinerte kommandoen"
 
-#: src/Views/Text.vala:69
+#: src/Views/Text.vala:71
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."

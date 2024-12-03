@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-19 00:15+0000\n"
+"POT-Creation-Date: 2024-12-03 00:56+0000\n"
 "PO-Revision-Date: 2024-08-22 01:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -24,93 +24,99 @@ msgstr "Рабочий стол"
 msgid "Configure the dock, hot corners, and change wallpaper"
 msgstr "Настройка дока, активных углов и обоев"
 
-#: src/Plug.vala:65 src/Plug.vala:119 src/Views/Wallpaper.vala:43
+#: src/Plug.vala:65 src/Plug.vala:125 src/Views/Wallpaper.vala:43
 msgid "Wallpaper"
 msgstr "Обои"
 
-#: src/Plug.vala:66 src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
-#: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
+#: src/Plug.vala:66 src/Plug.vala:133 src/Plug.vala:134 src/Plug.vala:135
+#: src/Plug.vala:136 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
 #: src/Views/Appearance.vala:69
 msgid "Appearance"
 msgstr "Внешний вид"
 
-#: src/Plug.vala:67 src/Plug.vala:134 src/Plug.vala:135 src/Plug.vala:136
+#: src/Plug.vala:67 src/Plug.vala:140 src/Plug.vala:141 src/Plug.vala:142
 #: src/Views/Text.vala:35
 msgid "Text"
 msgstr "Текст"
 
-#: src/Plug.vala:68 src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
-#: src/Plug.vala:123 src/Plug.vala:124 src/Plug.vala:125 src/Plug.vala:126
+#: src/Plug.vala:68 src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
 #: src/Views/Dock.vala:13
 msgid "Dock & Panel"
 msgstr "Док и панель"
 
-#: src/Plug.vala:69 src/Plug.vala:137 src/Plug.vala:138 src/Plug.vala:139
-#: src/Views/Multitasking.vala:27
+#: src/Plug.vala:69 src/Plug.vala:143 src/Plug.vala:144 src/Plug.vala:145
+#: src/Plug.vala:146 src/Views/Multitasking.vala:27
 msgid "Multitasking"
 msgstr "Многозадачность"
 
-#: src/Plug.vala:121
+#: src/Plug.vala:127
 msgid "Hide Mode"
 msgstr "Режим скрытия"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:128
 msgid "Icon Size"
 msgstr "Размер значков"
 
-#: src/Plug.vala:123
+#: src/Plug.vala:129
 msgid "Pressure reveal"
 msgstr "Надавить для раскрытия"
 
-#: src/Plug.vala:124
+#: src/Plug.vala:130
 msgid "Display"
 msgstr "Отображение"
 
-#: src/Plug.vala:125
+#: src/Plug.vala:131
 msgid "Panel translucency"
 msgstr "Прозрачность панели"
 
-#: src/Plug.vala:126 src/Views/Dock.vala:123
+#: src/Plug.vala:132 src/Views/Dock.vala:123
 msgid "Scroll on the panel to switch workspaces"
 msgstr "Прокрутите на панели, чтобы переключить рабочие столы"
 
-#: src/Plug.vala:128
+#: src/Plug.vala:134
 msgid "Dark style"
 msgstr "Тёмный стиль"
 
-#: src/Plug.vala:129 src/Views/Appearance.vala:107
+#: src/Plug.vala:135 src/Views/Appearance.vala:107
 msgid "Dim Wallpaper With Dark Style"
 msgstr "Затемнять обои в тёмном стиле"
 
-#: src/Plug.vala:130 src/Views/Appearance.vala:375
+#: src/Plug.vala:136 src/Views/Appearance.vala:375
 msgid "Accent Color"
 msgstr "Цветовой акцент"
 
-#: src/Plug.vala:131 src/Views/Appearance.vala:405
+#: src/Plug.vala:137 src/Views/Appearance.vala:405
 msgid "Always Show Scrollbars"
 msgstr "Всегда показывать полосы прокрутки"
 
-#: src/Plug.vala:132 src/Views/Appearance.vala:390
+#: src/Plug.vala:138 src/Views/Appearance.vala:390
 msgid "Reduce Motion"
 msgstr "Уменьшить анимации"
 
-#: src/Plug.vala:133
+#: src/Plug.vala:139
 msgid "Window animations"
 msgstr "Анимации окон"
 
-#: src/Plug.vala:135 src/Views/Text.vala:42
+#: src/Plug.vala:141 src/Views/Text.vala:42
 msgid "Size"
 msgstr "Размер"
 
-#: src/Plug.vala:136 src/Views/Text.vala:66
+#: src/Plug.vala:142 src/Views/Text.vala:68
 msgid "Dyslexia-friendly"
 msgstr "Текст для людей с дислексией"
 
-#: src/Plug.vala:138
+#: src/Plug.vala:144
 msgid "Hot Corners"
 msgstr "Активные углы"
 
-#: src/Plug.vala:139 src/Views/Multitasking.vala:45
+#: src/Plug.vala:145 src/Views/Multitasking.vala:47
+#, fuzzy
+#| msgid "When entering fullscreen"
+msgid "Activate Hot Corners in fullscreen"
+msgstr "При входе в полноэкранный режим"
+
+#: src/Plug.vala:146 src/Views/Multitasking.vala:59
 msgid "Move windows to a new workspace"
 msgstr "Перемещать окно на новый рабочий стол"
 
@@ -271,67 +277,71 @@ msgstr "Num Lock"
 msgid "When the pointer enters a display corner"
 msgstr "При наведении курсора в угол экрана"
 
-#: src/Views/Multitasking.vala:40
+#: src/Views/Multitasking.vala:38
 msgid "Top Left"
 msgstr "Слева сверху"
 
-#: src/Views/Multitasking.vala:41
+#: src/Views/Multitasking.vala:39
 msgid "Top Right"
 msgstr "Справа сверху"
 
-#: src/Views/Multitasking.vala:42
+#: src/Views/Multitasking.vala:40
 msgid "Bottom Left"
 msgstr "Слева снизу"
 
-#: src/Views/Multitasking.vala:43
+#: src/Views/Multitasking.vala:41
 msgid "Bottom Right"
 msgstr "Справа снизу"
 
-#: src/Views/Multitasking.vala:49
+#: src/Views/Multitasking.vala:48
+msgid "May interfere with fullscreen video games, for example"
+msgstr ""
+
+#: src/Views/Multitasking.vala:61
 msgid "When entering fullscreen"
 msgstr "При входе в полноэкранный режим"
 
-#: src/Views/Multitasking.vala:50
+#: src/Views/Multitasking.vala:62
 msgid "When maximizing"
 msgstr "Во время развертывания"
 
-#: src/Views/Multitasking.vala:113
+#: src/Views/Multitasking.vala:125
 msgid "Do nothing"
 msgstr "Ничего не делать"
 
-#: src/Views/Multitasking.vala:114
+#: src/Views/Multitasking.vala:126
 msgid "Multitasking View"
 msgstr "Многозадачный вид"
 
-#: src/Views/Multitasking.vala:115
+#: src/Views/Multitasking.vala:127
 msgid "Maximize current window"
 msgstr "Развернуть текущее окно"
 
-#: src/Views/Multitasking.vala:116
+#: src/Views/Multitasking.vala:128
 msgid "Show Applications Menu"
 msgstr "Показать меню приложений"
 
-#: src/Views/Multitasking.vala:117
+#: src/Views/Multitasking.vala:129
 msgid "Show all windows"
 msgstr "Показать все окна"
 
-#: src/Views/Multitasking.vala:118
+#: src/Views/Multitasking.vala:130
 msgid "Switch to previous workspace"
 msgstr "Переключиться на предыдущий рабочий стол"
 
-#: src/Views/Multitasking.vala:119
+#: src/Views/Multitasking.vala:131
 msgid "Switch to next workspace"
 msgstr "Переключиться на следующий рабочий стол"
 
-#: src/Views/Multitasking.vala:120
+#: src/Views/Multitasking.vala:132
 msgid "Switch to new workspace"
 msgstr "Переключиться на новый рабочий стол"
 
-#: src/Views/Multitasking.vala:121
+#: src/Views/Multitasking.vala:133
 msgid "Execute custom command"
 msgstr "Выполнить пользовательскую команду"
 
-#: src/Views/Text.vala:69
+#: src/Views/Text.vala:71
 msgid ""
 "Bottom-heavy shapes and increased character spacing can help improve "
 "legibility and reading speed."
