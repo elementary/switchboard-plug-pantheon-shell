@@ -43,6 +43,16 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.2.0" date="2024-12-02" urgency="medium">
+      <description>
+        <p>Other updates:</p>
+        <ul>
+          <li>Add setting for fullscreen hotcorners</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="8.1.0" date="2024-09-23" urgency="medium">
       <description>
         <p>Other updates:</p>
