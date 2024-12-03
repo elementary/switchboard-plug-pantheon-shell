@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-19 00:15+0000\n"
+"POT-Creation-Date: 2024-12-03 00:56+0000\n"
 "PO-Revision-Date: 2024-09-18 11:52+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -32,43 +32,51 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:58
-#: data/desktop.metainfo.xml.in:71 data/desktop.metainfo.xml.in:89
-#: data/desktop.metainfo.xml.in:110
+#: data/desktop.metainfo.xml.in:68 data/desktop.metainfo.xml.in:81
+#: data/desktop.metainfo.xml.in:99 data/desktop.metainfo.xml.in:120
 msgid "Other updates:"
 msgstr "Otras actualizaciones:"
 
 #: data/desktop.metainfo.xml.in:50
+#, fuzzy
+#| msgid "Add setting for scroll to switch workspaces"
+msgid "Add setting for fullscreen hotcorners"
+msgstr ""
+"Se agregó una opción para desplazarse con la rueda del ratón para cambiar "
+"entre espacios de trabajo"
+
+#: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:61
+#: data/desktop.metainfo.xml.in:70 data/desktop.metainfo.xml.in:87
+#: data/desktop.metainfo.xml.in:105 data/desktop.metainfo.xml.in:123
+msgid "Updated translations"
+msgstr "Traducciones actualizadas"
+
+#: data/desktop.metainfo.xml.in:60
 msgid "Add setting for scroll to switch workspaces"
 msgstr ""
 "Se agregó una opción para desplazarse con la rueda del ratón para cambiar "
 "entre espacios de trabajo"
 
-#: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
-#: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
-#: data/desktop.metainfo.xml.in:113
-msgid "Updated translations"
-msgstr "Traducciones actualizadas"
-
-#: data/desktop.metainfo.xml.in:67
+#: data/desktop.metainfo.xml.in:77
 msgid "New Features:"
 msgstr "Nuevas características:"
 
-#: data/desktop.metainfo.xml.in:69
+#: data/desktop.metainfo.xml.in:79
 msgid "Always Show Scrollbars setting"
 msgstr ""
 "Se agregó una configuración de mostrar siempre las barras de desplazamiento"
 
-#: data/desktop.metainfo.xml.in:73
+#: data/desktop.metainfo.xml.in:83
 msgid "Redundant labels have been cleaned up on the Appearance tab"
 msgstr "Se limpiaron las etiquetas redundantes en la pestaña de Apariencia"
 
-#: data/desktop.metainfo.xml.in:74
+#: data/desktop.metainfo.xml.in:84
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
 msgstr ""
 "El ajuste de atenuar el fondo del escritorio se ha movido a la pestaña de "
 "Apariencia"
 
-#: data/desktop.metainfo.xml.in:75
+#: data/desktop.metainfo.xml.in:85
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
@@ -76,28 +84,28 @@ msgstr ""
 "Ahora se muestra una vista previa del escritorio normal y atenuado con el "
 "fondo de pantalla del usuario al seleccionar estilos"
 
-#: data/desktop.metainfo.xml.in:76
+#: data/desktop.metainfo.xml.in:86
 msgid "Improved screen reader accessibility"
 msgstr "Se mejoró la accesibilidad para los lectores de pantalla"
 
-#: data/desktop.metainfo.xml.in:91
+#: data/desktop.metainfo.xml.in:101
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr ""
 "Se ha rediseñado la vista de configuración de «Panel y Dock» con un texto "
 "descriptivo útil"
 
-#: data/desktop.metainfo.xml.in:92
+#: data/desktop.metainfo.xml.in:102
 msgid "Show or hide optional panel indicators"
 msgstr "Ahora se puede mostrar u ocultar indicadores opcionales en el Panel"
 
-#: data/desktop.metainfo.xml.in:93
+#: data/desktop.metainfo.xml.in:103
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr ""
 "Se corrigió el valor de espera de traslación en el carrusel de imágenes y la "
 "etiqueta de «Atenuar con estilo oscuro»"
 
-#: data/desktop.metainfo.xml.in:94
+#: data/desktop.metainfo.xml.in:104
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
@@ -105,17 +113,17 @@ msgstr ""
 "Se corrigió un error donde los fondos de escritorio no se quitaban al cerrar "
 "Configuración del Sistema inmediatamente después"
 
-#: data/desktop.metainfo.xml.in:106
+#: data/desktop.metainfo.xml.in:116
 msgid "New features:"
 msgstr "Nuevas características:"
 
-#: data/desktop.metainfo.xml.in:108
+#: data/desktop.metainfo.xml.in:118
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr ""
 "Se agregó una opción para atenuar fondos de escritorio cuando el estilo "
 "oscuro está activo"
 
-#: data/desktop.metainfo.xml.in:112
+#: data/desktop.metainfo.xml.in:122
 msgid "Use a more vertical layout in the Text view"
 msgstr "Se usa una disposición más vertical en la vista de Texto"
 

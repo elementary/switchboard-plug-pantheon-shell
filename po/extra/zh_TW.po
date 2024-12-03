@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-19 00:15+0000\n"
+"POT-Creation-Date: 2024-12-03 00:56+0000\n"
 "PO-Revision-Date: 2024-11-06 11:18+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -32,75 +32,81 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/desktop.metainfo.xml.in:48 data/desktop.metainfo.xml.in:58
-#: data/desktop.metainfo.xml.in:71 data/desktop.metainfo.xml.in:89
-#: data/desktop.metainfo.xml.in:110
+#: data/desktop.metainfo.xml.in:68 data/desktop.metainfo.xml.in:81
+#: data/desktop.metainfo.xml.in:99 data/desktop.metainfo.xml.in:120
 msgid "Other updates:"
 msgstr "其他更新："
 
 #: data/desktop.metainfo.xml.in:50
-msgid "Add setting for scroll to switch workspaces"
+#, fuzzy
+#| msgid "Add setting for scroll to switch workspaces"
+msgid "Add setting for fullscreen hotcorners"
 msgstr "新增設定是否要捲動來切換工作區的開關"
 
-#: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:60
-#: data/desktop.metainfo.xml.in:77 data/desktop.metainfo.xml.in:95
-#: data/desktop.metainfo.xml.in:113
+#: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:61
+#: data/desktop.metainfo.xml.in:70 data/desktop.metainfo.xml.in:87
+#: data/desktop.metainfo.xml.in:105 data/desktop.metainfo.xml.in:123
 msgid "Updated translations"
 msgstr "翻譯更新"
 
-#: data/desktop.metainfo.xml.in:67
+#: data/desktop.metainfo.xml.in:60
+msgid "Add setting for scroll to switch workspaces"
+msgstr "新增設定是否要捲動來切換工作區的開關"
+
+#: data/desktop.metainfo.xml.in:77
 msgid "New Features:"
 msgstr "新功能："
 
-#: data/desktop.metainfo.xml.in:69
+#: data/desktop.metainfo.xml.in:79
 msgid "Always Show Scrollbars setting"
 msgstr "「總是顯示捲動軸」設定值"
 
-#: data/desktop.metainfo.xml.in:73
+#: data/desktop.metainfo.xml.in:83
 msgid "Redundant labels have been cleaned up on the Appearance tab"
 msgstr "清理「外觀」分頁中的重複的文字標籤"
 
-#: data/desktop.metainfo.xml.in:74
+#: data/desktop.metainfo.xml.in:84
 msgid "The Dim Wallpaper setting has moved to the Appearance tab"
 msgstr "「暗化桌布」設定已移至外觀分頁"
 
-#: data/desktop.metainfo.xml.in:75
+#: data/desktop.metainfo.xml.in:85
 msgid ""
 "The style selector now shows of a preview of your wallpaper as well as "
 "previewing the dim setting"
 msgstr "風格選取按鈕現在會顯示您的桌布的預覽與暗化設定值的預覽"
 
-#: data/desktop.metainfo.xml.in:76
+#: data/desktop.metainfo.xml.in:86
 msgid "Improved screen reader accessibility"
 msgstr "改善螢幕閱讀器輔助"
 
-#: data/desktop.metainfo.xml.in:91
+#: data/desktop.metainfo.xml.in:101
 msgid "Redesign Dock &amp; Panel settings with helpful description text"
 msgstr "重新設計 Dock 及面板設定，加上更有幫助的說明文字"
 
-#: data/desktop.metainfo.xml.in:92
+#: data/desktop.metainfo.xml.in:102
 msgid "Show or hide optional panel indicators"
 msgstr "顯示或隱藏非必要的面板指示器"
 
-#: data/desktop.metainfo.xml.in:93
+#: data/desktop.metainfo.xml.in:103
 msgid ""
 "Fix translation of slideshow delay value and \"Dim with dark style\" label"
 msgstr "修正幻燈片延遲數值與「深色風格時暗化」標籤的翻譯"
 
-#: data/desktop.metainfo.xml.in:94
+#: data/desktop.metainfo.xml.in:104
 msgid ""
 "Fix an issue where wallpapers were not removed when closing System Settings "
 "immediately after"
 msgstr "修正移除桌布後馬上關閉系統設定值時桌布不會真的被移除的問題"
 
-#: data/desktop.metainfo.xml.in:106
+#: data/desktop.metainfo.xml.in:116
 msgid "New features:"
 msgstr "新功能："
 
-#: data/desktop.metainfo.xml.in:108
+#: data/desktop.metainfo.xml.in:118
 msgid "Add an option to dim wallpapers when dark style is active"
 msgstr "新增選項來在使用深色風格時暗化桌布"
 
-#: data/desktop.metainfo.xml.in:112
+#: data/desktop.metainfo.xml.in:122
 msgid "Use a more vertical layout in the Text view"
 msgstr "在文字檢視中使用更為垂直的佈局"
 
