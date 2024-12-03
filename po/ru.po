@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Russian (Desktop)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 00:56+0000\n"
-"PO-Revision-Date: 2024-08-22 01:16+0000\n"
+"PO-Revision-Date: 2024-12-04 06:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/ru/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 "X-Launchpad-Export-Date: 2017-02-25 05:57+0000\n"
 
 #: src/Plug.vala:49
@@ -111,10 +111,8 @@ msgid "Hot Corners"
 msgstr "Активные углы"
 
 #: src/Plug.vala:145 src/Views/Multitasking.vala:47
-#, fuzzy
-#| msgid "When entering fullscreen"
 msgid "Activate Hot Corners in fullscreen"
-msgstr "При входе в полноэкранный режим"
+msgstr "Включить активные углы в полноэкранном режиме"
 
 #: src/Plug.vala:146 src/Views/Multitasking.vala:59
 msgid "Move windows to a new workspace"
@@ -295,7 +293,7 @@ msgstr "Справа снизу"
 
 #: src/Views/Multitasking.vala:48
 msgid "May interfere with fullscreen video games, for example"
-msgstr ""
+msgstr "Можешь мешать, например, в полноэкранных видеоиграх"
 
 #: src/Views/Multitasking.vala:61
 msgid "When entering fullscreen"
