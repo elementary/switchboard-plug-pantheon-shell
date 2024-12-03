@@ -142,6 +142,7 @@ public class PantheonShell.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Text"), _("Dyslexia-friendly")), "text");
         search_results.set ("%s → %s".printf (display_name, _("Multitasking")), "multitasking");
         search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Hot Corners")), "multitasking");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Activate Hot Corners in fullscreen")), "multitasking");
         search_results.set ("%s → %s → %s".printf (display_name, _("Multitasking"), _("Move windows to a new workspace")), "multitasking");
         return search_results;
     }
