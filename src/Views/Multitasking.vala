@@ -31,27 +31,37 @@ public class PantheonShell.Multitasking : Switchboard.SettingsPage {
     }
 
     construct {
-        var hotcorner_title = new Gtk.Label (_("When the pointer enters a display corner")) {
-            halign = Gtk.Align.START,
+        var hotcorner_title = new Granite.HeaderLabel (_("When the pointer enters a display corner")) {
             margin_bottom = 6
         };
-        hotcorner_title.add_css_class (Granite.STYLE_CLASS_H4_LABEL);
 
         var topleft = new HotcornerControl (_("Top Left"), "topleft");
         var topright = new HotcornerControl (_("Top Right"), "topright");
         var bottomleft = new HotcornerControl (_("Bottom Left"), "bottomleft");
         var bottomright = new HotcornerControl (_("Bottom Right"), "bottomright");
 
-        var workspaces_label = new Granite.HeaderLabel (_("Move windows to a new workspace")) {
+        var fullscreen_hotcorner_switch = new Gtk.Switch () {
+            valign = CENTER
+        };
+
+        var fullscreen_hotcorner_header = new Granite.HeaderLabel (_("Activate Hot Corners in fullscreen")) {
+            secondary_text = _("May interfere with fullscreen video games, for example"),
+            hexpand = true,
+            mnemonic_widget = fullscreen_hotcorner_switch
+        };
+
+        var fullscreen_hotcorner_box = new Gtk.Box (HORIZONTAL, 12) {
             margin_top = 12
         };
+        fullscreen_hotcorner_box.append (fullscreen_hotcorner_header);
+        fullscreen_hotcorner_box.append (fullscreen_hotcorner_switch);
+
+        var workspaces_label = new Granite.HeaderLabel (_("Move windows to a new workspace"));
 
         var fullscreen_checkbutton = new Gtk.CheckButton.with_label (_("When entering fullscreen"));
         var maximize_checkbutton = new Gtk.CheckButton.with_label (_("When maximizing"));
 
-        var checkbutton_box = new Gtk.Box (HORIZONTAL, 12) {
-            margin_bottom = 12
-        };
+        var checkbutton_box = new Gtk.Box (HORIZONTAL, 12);
         checkbutton_box.append (fullscreen_checkbutton);
         checkbutton_box.append (maximize_checkbutton);
 
@@ -64,12 +74,14 @@ public class PantheonShell.Multitasking : Switchboard.SettingsPage {
         grid.attach (topright, 0, 2, 2);
         grid.attach (bottomleft, 0, 3, 2);
         grid.attach (bottomright, 0, 4, 2);
-        grid.attach (workspaces_label, 0, 6, 2);
-        grid.attach (checkbutton_box, 0, 7, 2);
+        grid.attach (fullscreen_hotcorner_box, 0, 6, 2);
+        grid.attach (workspaces_label, 0, 7, 2);
+        grid.attach (checkbutton_box, 0, 8, 2);
 
         child = grid;
 
         behavior_settings = new GLib.Settings ("io.elementary.desktop.wm.behavior");
+        behavior_settings.bind ("enable-hotcorners-in-fullscreen", fullscreen_hotcorner_switch, "active", DEFAULT);
         behavior_settings.bind ("move-fullscreened-workspace", fullscreen_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
         behavior_settings.bind ("move-maximized-workspace", maximize_checkbutton, "active", GLib.SettingsBindFlags.DEFAULT);
     }
