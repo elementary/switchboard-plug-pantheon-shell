@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 00:56+0000\n"
-"PO-Revision-Date: 2024-09-18 11:52+0000\n"
+"PO-Revision-Date: 2024-12-05 12:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -38,10 +38,8 @@ msgid "Other updates:"
 msgstr "そのほかのアップデート:"
 
 #: data/desktop.metainfo.xml.in:50
-#, fuzzy
-#| msgid "Add setting for scroll to switch workspaces"
 msgid "Add setting for fullscreen hotcorners"
-msgstr "スクロールでワークスペースを切り替える設定を追加"
+msgstr "全画面表示中のホットコーナーを有効化/無効化する設定を追加"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:61
 #: data/desktop.metainfo.xml.in:70 data/desktop.metainfo.xml.in:87
