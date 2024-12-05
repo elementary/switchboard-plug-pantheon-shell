@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 00:56+0000\n"
-"PO-Revision-Date: 2024-08-22 01:16+0000\n"
+"PO-Revision-Date: 2024-12-05 12:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -115,10 +115,8 @@ msgid "Hot Corners"
 msgstr "קצוות חמים"
 
 #: src/Plug.vala:145 src/Views/Multitasking.vala:47
-#, fuzzy
-#| msgid "When entering fullscreen"
 msgid "Activate Hot Corners in fullscreen"
-msgstr "בעת מעבר למסך מלא"
+msgstr "הפעלת פינות חמות במסך מלא"
 
 #: src/Plug.vala:146 src/Views/Multitasking.vala:59
 msgid "Move windows to a new workspace"
@@ -298,7 +296,7 @@ msgstr "ימין למטה"
 
 #: src/Views/Multitasking.vala:48
 msgid "May interfere with fullscreen video games, for example"
-msgstr ""
+msgstr "יכול להפריע למשחקים במסך מלא, למשל"
 
 #: src/Views/Multitasking.vala:61
 msgid "When entering fullscreen"
