@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 00:56+0000\n"
-"PO-Revision-Date: 2024-09-19 00:15+0000\n"
+"PO-Revision-Date: 2024-12-18 23:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -39,10 +39,8 @@ msgid "Other updates:"
 msgstr "Інші оновлення:"
 
 #: data/desktop.metainfo.xml.in:50
-#, fuzzy
-#| msgid "Add setting for scroll to switch workspaces"
 msgid "Add setting for fullscreen hotcorners"
-msgstr "Додано налаштування гортання для перемикання робочих просторів"
+msgstr "Додано налаштування гарячих кутів у повноекранному режимі"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:61
 #: data/desktop.metainfo.xml.in:70 data/desktop.metainfo.xml.in:87
