@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 00:56+0000\n"
-"PO-Revision-Date: 2024-09-22 14:53+0000\n"
+"PO-Revision-Date: 2024-12-20 08:28+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -102,7 +102,7 @@ msgstr ""
 
 #: data/desktop.metainfo.xml.in:116
 msgid "New features:"
-msgstr "Nieuwe functionaliteit:"
+msgstr "Nieuwe functies:"
 
 #: data/desktop.metainfo.xml.in:118
 msgid "Add an option to dim wallpapers when dark style is active"
