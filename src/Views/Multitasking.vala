@@ -164,46 +164,45 @@ public class PantheonShell.Multitasking : Switchboard.SettingsPage {
                 null, null
             );
 
-            get_command_string ();
-
-            settings.changed["hotcorner-custom-command"].connect (() => {
-                get_command_string ();
-            });
-
-            command_entry.changed.connect (() => {
-                var this_command = "hotcorner-%s:%s".printf (position, command_entry.text);
-
-                var setting_string = settings.get_string ("hotcorner-custom-command");
-
-                var found = false;
-                string[] commands = setting_string.split (";;");
-                for (int i = 0; i < commands.length ; i++) {
-                    if (commands[i].has_prefix ("hotcorner-" + position)) {
-                        found = true;
-                        commands[i] = this_command;
+            settings.bind_with_mapping (
+                "hotcorner-custom-command",
+                command_entry,
+                "text",
+                DEFAULT,
+                (value, variant, instance) => {
+                    string[] commands = ((string) variant).split (";;");
+                    foreach (unowned string command in commands) {
+                        if (command.has_prefix ("hotcorner-" + ((HotcornerControl) instance).position)) {
+                            value.set_string (command.replace ("hotcorner-%s:".printf (((HotcornerControl) instance).position), ""));
+                            return true;
+                        }
                     }
-                }
 
-                if (!found) {
-                    commands += this_command;
-                }
+                    value.set_string ("");
+                    return true;
+                },
+                (value, expected_type, instance) => {
+                    var this_command = "hotcorner-%s:%s".printf (((HotcornerControl) instance).position, value.get_string ());
 
-                settings.set_string ("hotcorner-custom-command", string.joinv (";;", commands));
-            });
-        }
+                    var setting_string = settings.get_string ("hotcorner-custom-command");
 
-        private void get_command_string () {
-            var setting_string = settings.get_string ("hotcorner-custom-command");
-            var this_command = "";
+                    var found = false;
+                    string[] commands = setting_string.split (";;");
+                    for (int i = 0; i < commands.length ; i++) {
+                        if (commands[i].has_prefix ("hotcorner-" + ((HotcornerControl) instance).position)) {
+                            found = true;
+                            commands[i] = this_command;
+                        }
+                    }
 
-            string[] commands = setting_string.split (";;");
-            foreach (unowned string command in commands) {
-                if (command.has_prefix ("hotcorner-" + position)) {
-                    this_command = command.replace ("hotcorner-%s:".printf (position), "");
-                }
-            }
+                    if (!found) {
+                        commands += this_command;
+                    }
 
-            command_entry.text = this_command;
+                    return new Variant.string (string.joinv (";;", commands));
+                },
+                this, null
+            );
         }
     }
 }
