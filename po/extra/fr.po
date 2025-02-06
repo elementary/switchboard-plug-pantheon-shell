@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 00:56+0000\n"
-"PO-Revision-Date: 2024-07-23 18:16+0000\n"
+"PO-Revision-Date: 2025-02-07 15:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "desktop-plug-extra/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: data/desktop.metainfo.xml.in:10
 msgid "Desktop Settings"
@@ -39,7 +39,7 @@ msgstr "Autres mises à jour :"
 
 #: data/desktop.metainfo.xml.in:50
 msgid "Add setting for fullscreen hotcorners"
-msgstr ""
+msgstr "Ajout d'un paramètre pour les coins intelligents en plein écran"
 
 #: data/desktop.metainfo.xml.in:51 data/desktop.metainfo.xml.in:61
 #: data/desktop.metainfo.xml.in:70 data/desktop.metainfo.xml.in:87
@@ -50,6 +50,8 @@ msgstr "Mise à jour des traductions"
 #: data/desktop.metainfo.xml.in:60
 msgid "Add setting for scroll to switch workspaces"
 msgstr ""
+"Ajout d'un paramètre pour permettre le changement d'espace de travail au "
+"défilement de la souris"
 
 #: data/desktop.metainfo.xml.in:77
 msgid "New Features:"
