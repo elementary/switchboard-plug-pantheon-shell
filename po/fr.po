@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-03 00:56+0000\n"
-"PO-Revision-Date: 2024-08-27 08:16+0000\n"
+"PO-Revision-Date: 2025-02-07 15:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-pantheon-shell/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.9.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:15+0000\n"
 
 #: src/Plug.vala:49
@@ -115,10 +115,8 @@ msgid "Hot Corners"
 msgstr "Coins dynamiques"
 
 #: src/Plug.vala:145 src/Views/Multitasking.vala:47
-#, fuzzy
-#| msgid "When entering fullscreen"
 msgid "Activate Hot Corners in fullscreen"
-msgstr "Lors du passage en plein écran"
+msgstr "Activer les coins intelligents en plein écran"
 
 #: src/Plug.vala:146 src/Views/Multitasking.vala:59
 msgid "Move windows to a new workspace"
@@ -302,7 +300,7 @@ msgstr "En bas à droite"
 
 #: src/Views/Multitasking.vala:48
 msgid "May interfere with fullscreen video games, for example"
-msgstr ""
+msgstr "Peut entrer en conflit avec des jeux vidéo en plein écran par exemple"
 
 #: src/Views/Multitasking.vala:61
 msgid "When entering fullscreen"
